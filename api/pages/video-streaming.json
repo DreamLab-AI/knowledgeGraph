@@ -3,19 +3,18 @@
   "title": "Video Streaming",
   "slug": "video-streaming",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:video-streaming",
+  "classIri": "urn:ngm:class:video-streaming",
   "domain": "infrastructure",
   "definition": "Video Streaming is a technology infrastructure concept and a type of Network Infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

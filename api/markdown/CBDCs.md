@@ -636,364 +636,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cbdcs",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cbdcs",
+  "@type": "Class",
   "label": "CBDCs",
+  "definition": "Central Bank Digital Currencies (CBDCs) are sovereign digital money issued directly by a nation's central bank, representing a liability of the issuing central bank rather than a commercial bank or private institution, denominated in the official unit of account and designed to function as legal ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:central-bank-money",
-      "vc:label": "Central Bank Money"
+      "@id": "urn:ngm:class:central-bank-money",
+      "label": "Central Bank Money"
     },
     {
-      "@id": "urn:visionflow:linked:legal-tender",
-      "vc:label": "Legal Tender"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-instrument",
-      "vc:label": "Payment Instrument"
+      "@id": "urn:ngm:class:legal-tender",
+      "label": "Legal Tender"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fc35df84119641860a94e5ef32391b405a919676631faedbe2609039a7467726"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cbdc-api",
+        "label": "CBDC API"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-ledger",
+        "label": "CBDC Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-wallet",
+        "label": "CBDC Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:distribution-tier",
+        "label": "Distribution Tier"
+      },
+      {
+        "@id": "urn:ngm:class:offline-cbdc",
+        "label": "Offline CBDC"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "@id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:offline-payments",
+        "label": "Offline Payments"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-settlement",
+        "label": "Real Time Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:centralised-ledger-design",
+        "label": "Centralised Ledger Design"
+      },
+      {
+        "@id": "urn:ngm:class:dlt-ledger-design",
+        "label": "DLT Ledger Design"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:tiered-anonymity",
+        "label": "Tiered Anonymity"
+      },
+      {
+        "@id": "urn:ngm:class:two-tier-distribution-model",
+        "label": "Two Tier Distribution Model"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:api-standards",
+        "label": "API Standards"
+      },
+      {
+        "@id": "urn:ngm:class:dlt",
+        "label": "DLT"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      },
+      {
+        "@id": "urn:ngm:class:digital-pound",
+        "label": "Digital Pound"
+      },
+      {
+        "@id": "urn:ngm:class:digital-yuan",
+        "label": "Digital Yuan"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:m-bridge",
+        "label": "mBridge"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:project-nexus",
+        "label": "Project Nexus"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:currency-internationalisation",
+        "label": "Currency Internationalisation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:payment-efficiency",
+        "label": "Payment Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "@id": "urn:ngm:class:bis-cpmi-standards",
+        "label": "BIS CPMI Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ecb-digital-euro-regulation",
+        "label": "ECB Digital Euro Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+        "label": "FATF Guidance on Virtual Assets"
+      },
+      {
+        "@id": "urn:ngm:class:fsb-cross-border-payments-roadmap",
+        "label": "FSB Cross Border Payments Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:imf-cbdc-framework",
+        "label": "IMF CBDC Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fc35df84119641860a94e5ef32391b405a919676631faedbe2609039a7467726@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Central Bank Digital Currencies (CBDCs)** are sovereign digital money issued directly by a nation's central bank, representing a liability of the issuing central bank rather than a commercial bank or private institution, denominated in the official unit of account (e.g. pounds sterling, euros, yuan), and designed to function as legal tender alongside or in place of physical cash and commercial-bank deposits. CBDCs combine the trust and finality of central-bank money — which carries zero credit risk, unlike commercial-bank deposits — with the programmability, traceability, and efficiency of digital payment infrastructure, enabling near-instant settlement, potential offline operation, and conditional or rule-based transaction logic. They are distinguished from [[Stablecoins]] (private issuance, typically collateral-backed) and [[Cryptocurrency]] (decentralised, no central issuer) by the direct liability relationship with a sovereign monetary authority and the absence of algorithmic price stabilisation mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cbdc-api",
-      "vc:label": "CBDC API"
-    },
-    {
-      "@id": "urn:visionflow:linked:cbdc-ledger",
-      "vc:label": "CBDC Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:cbdc-wallet",
-      "vc:label": "CBDC Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:distribution-tier",
-      "vc:label": "Distribution Tier"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-cbdc",
-      "vc:label": "Offline CBDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:retail-cbdc",
-      "vc:label": "Retail CBDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:wholesale-cbdc",
-      "vc:label": "Wholesale CBDC"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:central-bank",
-      "vc:label": "Central Bank"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-infrastructure",
-      "vc:label": "Payment Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-security",
-      "vc:label": "Cryptographic Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monetary-sovereignty",
-      "vc:label": "Monetary Sovereignty"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-payments",
-      "vc:label": "Cross Border Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-policy-transmission",
-      "vc:label": "Monetary Policy Transmission"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-payments",
-      "vc:label": "Offline Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-settlement",
-      "vc:label": "Real Time Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-execution",
-      "vc:label": "Smart Contract Execution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:centralised-ledger-design",
-      "vc:label": "Centralised Ledger Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:dlt-ledger-design",
-      "vc:label": "DLT Ledger Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:tiered-anonymity",
-      "vc:label": "Tiered Anonymity"
-    },
-    {
-      "@id": "urn:visionflow:linked:two-tier-distribution-model",
-      "vc:label": "Two Tier Distribution Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-by-design",
-      "vc:label": "Privacy By Design"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:central-bank",
-      "vc:label": "Central Bank"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-standards",
-      "vc:label": "Cryptographic Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-policy",
-      "vc:label": "Monetary Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-infrastructure",
-      "vc:label": "Digital Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:currency-internationalisation",
-      "vc:label": "Currency Internationalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability",
-      "vc:label": "Financial Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-efficiency",
-      "vc:label": "Payment Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-enforcement",
-      "vc:label": "Sanctions Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monetary-sovereignty",
-      "vc:label": "Monetary Sovereignty"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:api-standards",
-      "vc:label": "API Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:dlt",
-      "vc:label": "DLT"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-enhancing-technologies",
-      "vc:label": "Privacy Enhancing Technologies"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:commercial-bank-deposits",
-      "vc:label": "Commercial Bank Deposits"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-money",
-      "vc:label": "E-Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:fed-now",
-      "vc:label": "FedNow"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-cash",
-      "vc:label": "Physical Cash"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoins",
-      "vc:label": "Stablecoins"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-payments",
-      "vc:label": "Cross Border Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-euro",
-      "vc:label": "Digital Euro"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-pound",
-      "vc:label": "Digital Pound"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-yuan",
-      "vc:label": "Digital Yuan"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:m-bridge",
-      "vc:label": "mBridge"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-policy",
-      "vc:label": "Monetary Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-nexus",
-      "vc:label": "Project Nexus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:basel-committee",
-      "vc:label": "Basel Committee"
-    },
-    {
-      "@id": "urn:visionflow:linked:bis-cpmi-standards",
-      "vc:label": "BIS CPMI Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecb-digital-euro-regulation",
-      "vc:label": "ECB Digital Euro Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-guidance-on-virtual-assets",
-      "vc:label": "FATF Guidance on Virtual Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsb-cross-border-payments-roadmap",
-      "vc:label": "FSB Cross Border Payments Roadmap"
-    },
-    {
-      "@id": "urn:visionflow:linked:imf-cbdc-framework",
-      "vc:label": "IMF CBDC Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-policy",
-      "vc:label": "Monetary Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-currency",
-      "vc:label": "Digital Currency"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

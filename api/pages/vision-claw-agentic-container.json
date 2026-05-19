@@ -3,119 +3,123 @@
   "title": "VisionClaw Agentic Container",
   "slug": "vision-claw-agentic-container",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vision-claw-agentic-container",
+  "classIri": "urn:ngm:class:vision-claw-agentic-container",
   "domain": "artificial-intelligence",
-  "definition": "A [[Sovereign Mesh|sovereign, manifest-driven]] agentic runtime container that orchestrates [[DID Nostr Identity|DID Nostr]] agents across a decentralised [[Peer-to-Peer Network|peer-to-peer network]], enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and content-addressed state through a unified [[URI Canonicaliser|URI grammar]] and [[Linked Data Encoder|JSON-LD federation surfaces]].",
+  "definition": "A [[Sovereign Mesh|sovereign, manifest-driven]] agentic runtime container that orchestrates [[DID Nostr Identity|DID Nostr]] agents across a decentralised [[Peer-to-Peer Network|peer-to-peer network]], enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.88,
-  "authorityScore": 0.92,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:adapter-slot",
+        "id": "urn:ngm:class:adapter-slot",
         "label": "Adapter Slot"
       },
       {
-        "id": "urn:visionflow:owl:class:agent-event-stream",
+        "id": "urn:ngm:class:agent-event-stream",
         "label": "Agent Event Stream"
       },
       {
-        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:linked-data-encoder",
+        "id": "urn:ngm:class:linked-data-encoder",
         "label": "Linked Data Encoder"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-filter",
+        "id": "urn:ngm:class:privacy-filter",
         "label": "Privacy Filter"
       },
       {
-        "id": "urn:visionflow:owl:class:sovereign-mesh",
+        "id": "urn:ngm:class:sovereign-mesh",
         "label": "Sovereign Mesh"
       },
       {
-        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "id": "urn:ngm:class:uri-canonicaliser",
         "label": "URI Canonicaliser"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credential-surface",
+        "id": "urn:ngm:class:verifiable-credential-surface",
         "label": "Verifiable Credential Surface"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
         "label": "BIP-340 Schnorr Keypair"
       },
       {
-        "id": "urn:visionflow:linked:json-ld-context",
+        "id": "urn:ngm:class:json-ld-context",
         "label": "JSON-LD Context"
       },
       {
-        "id": "urn:visionflow:linked:manifest-file",
+        "id": "urn:ngm:class:manifest-file",
         "label": "Manifest File"
       },
       {
-        "id": "urn:visionflow:linked:nostr-relay",
+        "id": "urn:ngm:class:nostr-relay",
         "label": "Nostr Relay"
       },
       {
-        "id": "urn:visionflow:linked:solid-pod-storage",
+        "id": "urn:ngm:class:solid-pod-storage",
         "label": "Solid Pod Storage"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-agent-operation",
+        "id": "urn:ngm:class:autonomous-agent-operation",
         "label": "Autonomous Agent Operation"
       },
       {
-        "id": "urn:visionflow:linked:cross-agent-federation",
+        "id": "urn:ngm:class:cross-agent-federation",
         "label": "Cross-Agent Federation"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-coordination",
+        "id": "urn:ngm:class:decentralised-coordination",
         "label": "Decentralised Coordination"
       },
       {
-        "id": "urn:visionflow:linked:verifiable-assertion",
+        "id": "urn:ngm:class:verifiable-assertion",
         "label": "Verifiable Assertion"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:json-ld-1-1",
+        "id": "urn:ngm:class:json-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
-        "id": "urn:visionflow:linked:sparc-architecture",
+        "id": "urn:ngm:class:sparc-architecture",
         "label": "SPARC Architecture"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-verifiable-credentials-2-0",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials-2-0",
         "label": "W3C Verifiable Credentials 2.0"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

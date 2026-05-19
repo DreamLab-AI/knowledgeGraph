@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pegasus",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pegasus",
+  "@type": "Class",
   "label": "PEGASUS",
+  "definition": "Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45c4b2309b58bab4ed7e7fca15ab5dde6c4d9ccfafde4579fcd25a50679aba9b"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45c4b2309b58bab4ed7e7fca15ab5dde6c4d9ccfafde4579fcd25a50679aba9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

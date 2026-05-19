@@ -120,48 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:activation-function",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:activation-function",
+  "@type": "Class",
   "label": "Activation Function",
+  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:neural-network-component",
-      "vc:label": "Neural Network Component"
+      "@id": "urn:ngm:class:neural-network-component",
+      "label": "Neural Network Component"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:39fc46921ad5394d7a5258bad8becfa25caf45c614cd7a14c28b189635e57ac2"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:39fc46921ad5394d7a5258bad8becfa25caf45c614cd7a14c28b189635e57ac2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

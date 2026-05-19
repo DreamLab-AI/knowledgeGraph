@@ -108,41 +108,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:low-energy-consumption",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:low-energy-consumption",
+  "@type": "Class",
   "label": "Low Energy Consumption",
+  "definition": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (less than PoW).",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-energy-consumption",
-      "vc:label": "Blockchain Energy Consumption"
+      "@id": "urn:ngm:class:blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:37be8ac994f26f057f693f2f32327408af55c3e690f7f8c95716ad4a15888244"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:37be8ac994f26f057f693f2f32327408af55c3e690f7f8c95716ad4a15888244@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (99% less than PoW).",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

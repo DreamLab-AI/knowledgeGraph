@@ -3,19 +3,18 @@
   "title": "T5",
   "slug": "t5",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:t5",
+  "classIri": "urn:ngm:class:t5",
   "domain": "artificial-intelligence",
   "definition": "Text-to-Text Transfer Transformer: a unified framework that converts all NLP tasks into a text-to-text format, using an encoder-decoder architecture with a span-corruption pre-training objective.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

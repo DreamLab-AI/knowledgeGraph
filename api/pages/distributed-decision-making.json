@@ -3,135 +3,219 @@
   "title": "Distributed Decision Making",
   "slug": "distributed-decision-making",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-decision-making",
+  "classIri": "urn:ngm:class:distributed-decision-making",
   "domain": "distributed-collaboration",
-  "definition": "Distributed decision making encompasses the full spectrum of collective and algorithmic processes by which multiple autonomous agents, nodes, organisations, or individuals arrive at binding or coordinating choices without relying on a single central authority. The domain synthesises theoretical foundations from Arrow's social choice theory (1951), Ostrom's polycentric governance (1990 Nobel Memorial Prize in Economic Sciences), Byzantine fault tolerance (Lamport, Shostak, Pease 1982), and the FLP impossibility theorem (Fischer, Lynch, Paterson 1985) with practical engineering instantiated in consensus protocols (Raft, PBFT, Tendermint, HotStuff), blockchain governance (on-chain voting, off-chain signalling, token-weighted delegation), decentralised autonomous organisations (DAOs), multi-agent reinforcement learning (MARL), prediction markets, and organisational design patterns (Galbraith star model, Ostrom's polycentric governance, sociocracy, holacracy). Distributed decision making differs from distributed computing in that it explicitly addresses the legitimacy, preference-aggregation, and incentive-compatibility dimensions of collective choice, not merely the technical replicati",
+  "definition": "Distributed decision making encompasses the full spectrum of collective and algorithmic processes by which multiple autonomous agents, nodes, organisations, or individuals arrive at binding or coordinating choices without relying on a single central authority.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:collective-intelligence",
+      "id": "urn:ngm:class:collective-intelligence",
       "label": "Collective Intelligence"
     },
     {
-      "id": "urn:visionflow:linked:coordination-mechanisms",
+      "id": "urn:ngm:class:coordination-mechanisms",
       "label": "Coordination Mechanisms"
-    },
-    {
-      "id": "urn:visionflow:linked:organisational-governance",
-      "label": "Organisational Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:appeal-mechanism",
+        "id": "urn:ngm:class:appeal-mechanism",
         "label": "Appeal Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:conflict-resolution",
+        "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
       },
       {
-        "id": "urn:visionflow:linked:consensus-protocols",
+        "id": "urn:ngm:class:consensus-protocols",
         "label": "Consensus Protocols"
       },
       {
-        "id": "urn:visionflow:linked:decision-documentation",
+        "id": "urn:ngm:class:decision-documentation",
         "label": "Decision Documentation"
       },
       {
-        "id": "urn:visionflow:linked:delegation-mechanisms",
+        "id": "urn:ngm:class:delegation-mechanisms",
         "label": "Delegation Mechanisms"
       },
       {
-        "id": "urn:visionflow:linked:quorum-systems",
+        "id": "urn:ngm:class:quorum-systems",
         "label": "Quorum Systems"
       },
       {
-        "id": "urn:visionflow:linked:voting-mechanisms",
+        "id": "urn:ngm:class:voting-mechanisms",
         "label": "Voting Mechanisms"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:explicit-decision-criteria",
+        "id": "urn:ngm:class:explicit-decision-criteria",
         "label": "Explicit Decision Criteria"
       },
       {
-        "id": "urn:visionflow:linked:incentive-compatibility",
+        "id": "urn:ngm:class:incentive-compatibility",
         "label": "Incentive Compatibility"
       },
       {
-        "id": "urn:visionflow:linked:time-boxed-feedback-windows",
+        "id": "urn:ngm:class:time-boxed-feedback-windows",
         "label": "Time-boxed Feedback Windows"
       },
       {
-        "id": "urn:visionflow:linked:transparent-information-access",
+        "id": "urn:ngm:class:transparent-information-access",
         "label": "Transparent Information Access"
       },
       {
-        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-autonomous-organisations",
+        "id": "urn:ngm:class:decentralised-autonomous-organisations",
         "label": "Decentralised Autonomous Organisations"
       },
       {
-        "id": "urn:visionflow:linked:decision-traceability",
+        "id": "urn:ngm:class:decision-traceability",
         "label": "Decision Traceability"
       },
       {
-        "id": "urn:visionflow:linked:equitable-voice-across-time-zones",
+        "id": "urn:ngm:class:equitable-voice-across-time-zones",
         "label": "Equitable Voice Across Time Zones"
       },
       {
-        "id": "urn:visionflow:linked:polycentric-governance",
+        "id": "urn:ngm:class:polycentric-governance",
         "label": "Polycentric Governance"
       },
       {
-        "id": "urn:visionflow:linked:trustless-coordination",
+        "id": "urn:ngm:class:trustless-coordination",
         "label": "Trustless Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:lazy-consensus",
+        "id": "urn:ngm:class:lazy-consensus",
         "label": "Lazy Consensus"
       },
       {
-        "id": "urn:visionflow:linked:liquid-democracy",
+        "id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy"
       },
       {
-        "id": "urn:visionflow:linked:pbft",
+        "id": "urn:ngm:class:pbft",
         "label": "PBFT"
       },
       {
-        "id": "urn:visionflow:linked:raft-consensus",
+        "id": "urn:ngm:class:raft-consensus",
         "label": "Raft Consensus"
       },
       {
-        "id": "urn:visionflow:linked:tendermint",
+        "id": "urn:ngm:class:tendermint",
         "label": "Tendermint"
       },
       {
-        "id": "urn:visionflow:owl:class:conviction-voting",
+        "id": "urn:ngm:class:conviction-voting",
         "label": "Conviction Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:commit-reveal-schemes",
+        "label": "Commit-Reveal Schemes"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao-treasury-management",
+        "label": "DAO Treasury Management"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:open-source-project-governance",
+        "label": "Open-Source Project Governance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposals",
+        "label": "Ethereum Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-process",
+        "label": "IETF RFC Process"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000-risk-management",
+        "label": "ISO 31000 Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-decentralised-identifiers",
+        "label": "W3C Decentralised Identifiers"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration-patterns",
+        "label": "Asynchronous Collaboration Patterns"
+      },
+      {
+        "id": "urn:ngm:class:collective-action-problems",
+        "label": "Collective Action Problems"
+      },
+      {
+        "id": "urn:ngm:class:common-pool-resource-governance",
+        "label": "Common-Pool Resource Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

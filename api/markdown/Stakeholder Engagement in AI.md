@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stakeholder-engagement-in-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+  "@type": "Class",
   "label": "Stakeholder Engagement in AI",
+  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive gov...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f64ee1ed6013e24e7333b70f20955158fd62a2e5391c52acd50426a96a27ce13"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f64ee1ed6013e24e7333b70f20955158fd62a2e5391c52acd50426a96a27ce13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive governance. This engagement encompasses diverse stakeholders including end users, affected communities, subject matter experts, civil society organizations, regulators, and internal organizational stakeholders, soliciting input through various methods to inform AI system design, risk assessment, and governance decisions. Engagement methods span the participation spectrum from information provision (transparency reports, public documentation), consultation (surveys, focus groups, public comment periods), collaboration (co-design workshops, participatory research), and empowerment (community oversight boards, contestation mechanisms). Effective stakeholder engagement identifies power asymmetries and barriers to participation, ensuring meaningful inclusion of marginalized and vulnerable groups, uses accessible communication avoiding technical jargon, provides adequate time and resources for infor",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -156,102 +156,67 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:network-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:network-layer",
+  "@type": "Class",
   "label": "Network Layer",
+  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:architectural-layer",
-      "vc:label": "ArchitecturalLayer"
+      "@id": "urn:ngm:class:architectural-layer",
+      "label": "ArchitecturalLayer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f6ed4c1c16a670412656421bbc7634524db787ea40edbdb762af7104f77d55d2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-stack",
+        "label": "Protocol Stack"
+      },
+      {
+        "@id": "urn:ngm:class:qo-s-manager",
+        "label": "QoS Manager"
+      },
+      {
+        "@id": "urn:ngm:class:routing-engine",
+        "label": "Routing Engine"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bandwidth-allocation",
+        "label": "Bandwidth Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management",
+        "label": "Latency Management"
+      },
+      {
+        "@id": "urn:ngm:class:message-delivery",
+        "label": "Message Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:network-resilience",
+        "label": "Network Resilience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f6ed4c1c16a670412656421bbc7634524db787ea40edbdb762af7104f77d55d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:congestion-control",
-      "vc:label": "Congestion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-stack",
-      "vc:label": "Protocol Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:qo-s-manager",
-      "vc:label": "QoS Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-engine",
-      "vc:label": "Routing Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-topology",
-      "vc:label": "Network Topology"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-allocation",
-      "vc:label": "Bandwidth Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:latency-management",
-      "vc:label": "Latency Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-delivery",
-      "vc:label": "Message Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-resilience",
-      "vc:label": "Network Resilience"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-layer",
-      "vc:label": "Physical Layer"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:middleware-layer",
-      "vc:label": "Middleware Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-layer",
-      "vc:label": "Physical Layer"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

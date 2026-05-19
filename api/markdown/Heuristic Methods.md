@@ -120,41 +120,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:heuristic-methods",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:heuristic-methods",
+  "@type": "Class",
   "label": "Heuristic Methods",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d6505ba320905f65e5ff23b3bac8d306cdec820f7bdb3d5ea674b20a18b0c029"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d6505ba320905f65e5ff23b3bac8d306cdec820f7bdb3d5ea674b20a18b0c029@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These methods include search heuristics (A*, hill climbing, simulated annealing), rule-of-thumb strategies, and metaheuristics (genetic algorithms, particle swarm optimization). Heuristics trade completeness and optimality for efficiency, making them essential for combinatorial optimization, planning, and decision-making in large search spaces. Modern applications integrate heuristics with learning algorithms, creating adaptive heuristic systems that improve through experience.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "Heuristic Mods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

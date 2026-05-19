@@ -224,138 +224,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-protection",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-protection",
+  "@type": "Class",
   "label": "Data Protection",
+  "definition": "A comprehensive set of processes and technologies that safeguard personal and system data in virtual environments through encryption, access control, privacy preservation, and regulatory compliance mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:security-architecture",
-      "vc:label": "Security Architecture"
+      "@id": "urn:ngm:class:security-architecture",
+      "label": "Security Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:771a939e4497a012d8f7afdcad4d58cbef104d0e0296a2ba60547de40dcc58e6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-system",
+        "label": "Audit System"
+      },
+      {
+        "@id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:encryption-service",
+        "label": "Encryption Service"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy-engine",
+        "label": "Privacy Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:user-trust",
+        "label": "User Trust"
+      },
+      {
+        "@id": "urn:ngm:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:771a939e4497a012d8f7afdcad4d58cbef104d0e0296a2ba60547de40dcc58e6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive set of processes and technologies that safeguard personal and system data in virtual environments through encryption, access control, privacy preservation, and regulatory compliance mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:compliance-management",
-      "vc:label": "Compliance Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-engineering",
-      "vc:label": "Privacy Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-framework",
-      "vc:label": "Security Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-system",
-      "vc:label": "Audit System"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-loss-prevention",
-      "vc:label": "Data Loss Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption-service",
-      "vc:label": "Encryption Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy-engine",
-      "vc:label": "Privacy Policy Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:authorization",
-      "vc:label": "Authorization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-privacy",
-      "vc:label": "Data Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-trust",
-      "vc:label": "User Trust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-data-sharing",
-      "vc:label": "Secure Data Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:regulatory-requirements",
-      "vc:label": "Regulatory Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-policy",
-      "vc:label": "Security Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

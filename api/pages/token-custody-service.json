@@ -3,74 +3,83 @@
   "title": "Token Custody Service",
   "slug": "token-custody-service",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:token-custody-service",
+  "classIri": "urn:ngm:class:token-custody-service",
   "domain": "spatial-computing",
   "definition": "A secure infrastructure system for safeguarding digital tokens and cryptographic assets through multi-signature wallets, cold storage, and enterprise-grade custodial services in virtual economy environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-infrastructure",
+      "id": "urn:ngm:class:digital-asset-infrastructure",
       "label": "Digital Asset Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-trail-system",
+        "id": "urn:ngm:class:audit-trail-system",
         "label": "Audit Trail System"
       },
       {
-        "id": "urn:visionflow:linked:cold-storage-system",
+        "id": "urn:ngm:class:cold-storage-system",
         "label": "Cold Storage System"
       },
       {
-        "id": "urn:visionflow:linked:key-management-service",
+        "id": "urn:ngm:class:key-management-service",
         "label": "Key Management Service"
       },
       {
-        "id": "urn:visionflow:linked:multi-signature-wallet",
+        "id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallet"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:security-module",
+        "id": "urn:ngm:class:security-module",
         "label": "Security Module"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control-system",
+        "id": "urn:ngm:class:access-control-system",
         "label": "Access Control System"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-recovery",
+        "id": "urn:ngm:class:asset-recovery",
         "label": "Asset Recovery"
       },
       {
-        "id": "urn:visionflow:linked:institutional-trading",
+        "id": "urn:ngm:class:institutional-trading",
         "label": "Institutional Trading"
       },
       {
-        "id": "urn:visionflow:linked:secure-token-storage",
+        "id": "urn:ngm:class:secure-token-storage",
         "label": "Secure Token Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

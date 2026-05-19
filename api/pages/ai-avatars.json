@@ -3,37 +3,41 @@
   "title": "AI Avatars",
   "slug": "ai-avatars",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-avatars",
+  "classIri": "urn:ngm:class:ai-avatars",
   "domain": "distributed-collaboration",
-  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation.\"",
+  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence witho...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:speech-synthesis",
+        "id": "urn:ngm:class:speech-synthesis",
         "label": "SpeechSynthesis"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:photorealistic-telepresence",
+        "id": "urn:ngm:class:photorealistic-telepresence",
         "label": "PhotorealisticTelepresence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

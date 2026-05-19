@@ -3,37 +3,46 @@
   "title": "Blockchain Sustainability",
   "slug": "blockchain-sustainability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-sustainability",
+  "classIri": "urn:ngm:class:blockchain-sustainability",
   "domain": "blockchain",
-  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies. Proof-of-Stake networks like Ethereum post-Merge achieve 99.9% energy reduction versus Proof-of-Work, while protocols like Algorand have achieved carbon-negative status.",
+  "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:carbon-credit",
+        "id": "urn:ngm:class:carbon-credit",
         "label": "Carbon Credit"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof-of-Stake"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg-compliance",
+        "label": "ESG Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {

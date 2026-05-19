@@ -3,53 +3,57 @@
   "title": "Avatar Customization",
   "slug": "avatar-customization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-customization",
+  "classIri": "urn:ngm:class:avatar-customization",
   "domain": "spatial-computing",
   "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-personalization",
+      "id": "urn:ngm:class:digital-personalization",
       "label": "Digital Personalization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:asset-libraries",
+        "id": "urn:ngm:class:asset-libraries",
         "label": "Asset Libraries"
       },
       {
-        "id": "urn:visionflow:linked:customization-tools",
+        "id": "urn:ngm:class:customization-tools",
         "label": "Customization Tools"
       },
       {
-        "id": "urn:visionflow:linked:real-time-preview",
+        "id": "urn:ngm:class:real-time-preview",
         "label": "Real-Time Preview"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:identity-representation",
+        "id": "urn:ngm:class:identity-representation",
         "label": "Identity Representation"
       },
       {
-        "id": "urn:visionflow:linked:self-expression",
+        "id": "urn:ngm:class:self-expression",
         "label": "Self-Expression"
       },
       {
-        "id": "urn:visionflow:linked:social-distinction",
+        "id": "urn:ngm:class:social-distinction",
         "label": "Social Distinction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

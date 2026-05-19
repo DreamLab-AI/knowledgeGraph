@@ -3,19 +3,18 @@
   "title": "Digital Avatar",
   "slug": "digital-avatar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-avatar",
+  "classIri": "urn:ngm:class:digital-avatar",
   "domain": "spatial-computing",
-  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]]. Digital avatars enable social presence, facilitate user interaction, and serve as persistent identity anchors within [[Metaverse]] platforms and immersive applications. bridges-to:: [[DID Nostr Identity]]",
+  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-representation",
+      "id": "urn:ngm:class:virtual-representation",
       "label": "Virtual Representation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

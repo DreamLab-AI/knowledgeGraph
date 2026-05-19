@@ -240,54 +240,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:layer2-scaling",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:layer2-scaling",
+  "@type": "Class",
   "label": "Layer2Scaling",
+  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (ereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]].",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-scalability",
-      "vc:label": "Blockchain Scalability"
+      "@id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:54b599a17f6c3bf5f2ef9c4975f3bc4a23debf0d09023d717b9e0b27f1d32737"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-throughput-transaction",
+        "label": "HighThroughputTransaction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "CryptographicProof"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:54b599a17f6c3bf5f2ef9c4975f3bc4a23debf0d09023d717b9e0b27f1d32737@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (Ethereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]]. Layer 2 solutions address blockchain congestion and high fees by moving computation off-chain—[[Optimism]] and [[Arbitrum]] use [[OptimisticRollup|optimistic rollups]] (assume validity, prove fraud), [[zkSync]] and [[Polygon]] use [[ZeroKnowledgeProof|zero-knowledge rollups]] (prove correctness)—enabling metaverse transactions at near-free costs and sub-second settlement. Bridges enable [[InteroperabilityProtocol|cross-layer asset transfers]] supporting multi-chain applications.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-throughput-transaction",
-      "vc:label": "HighThroughputTransaction"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "CryptographicProof"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

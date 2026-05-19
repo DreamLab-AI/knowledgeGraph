@@ -3,19 +3,18 @@
   "title": "MEV",
   "slug": "mev",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mev",
+  "classIri": "urn:ngm:class:mev",
   "domain": "blockchain",
   "definition": "Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:front-running",
+        "label": "Front-Running"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

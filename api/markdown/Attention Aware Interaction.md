@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:attention-aware-interaction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:attention-aware-interaction",
+  "@type": "Class",
   "label": "Attention Aware Interaction",
+  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, A...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attention-modeling",
+        "label": "Attention Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking-hardware",
+        "label": "Eye Tracking Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-detection-algorithms",
+        "label": "Gaze Detection Algorithms"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-based-selection",
+        "label": "Gaze-Based Selection"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:96d5522bb18827fad83b2490b9006fee5d4cc4206c393de3218cd6d0145c1dfc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:attention-modeling",
-      "vc:label": "Attention Modeling"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-tracking-hardware",
-      "vc:label": "Eye Tracking Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaze-detection-algorithms",
-      "vc:label": "Gaze Detection Algorithms"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-interfaces",
-      "vc:label": "Adaptive Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:foveated-rendering",
-      "vc:label": "Foveated Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaze-based-selection",
-      "vc:label": "Gaze-Based Selection"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

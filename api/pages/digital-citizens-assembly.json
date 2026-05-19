@@ -3,82 +3,95 @@
   "title": "Digital Citizens' Assembly",
   "slug": "digital-citizens-assembly",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-citizens-assembly",
+  "classIri": "urn:ngm:class:digital-citizens-assembly",
   "domain": "spatial-computing",
-  "definition": "Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making. bridges-to:: [[Sensor Input]]",
+  "definition": "Digital Citizens' Assembly is a type of Metaverse governance and safeguarding in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:deliberation-agent",
+        "id": "urn:ngm:class:deliberation-agent",
         "label": "Deliberation Agent"
       },
       {
-        "id": "urn:visionflow:linked:policy-synthesis-engine",
+        "id": "urn:ngm:class:policy-synthesis-engine",
         "label": "Policy Synthesis Engine"
       },
       {
-        "id": "urn:visionflow:linked:voting-mechanism",
+        "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:participant-management-system",
+        "id": "urn:ngm:class:participant-management-system",
         "label": "Participant Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:xr-meeting-space",
+        "id": "urn:ngm:class:xr-meeting-space",
         "label": "XR Meeting Space"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:decision-recording-system",
+        "id": "urn:ngm:class:decision-recording-system",
         "label": "Decision Recording System"
       },
       {
-        "id": "urn:visionflow:linked:secure-communication",
+        "id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collective-decision-making",
+        "id": "urn:ngm:class:collective-decision-making",
         "label": "Collective Decision-Making"
       },
       {
-        "id": "urn:visionflow:linked:democratic-deliberation",
+        "id": "urn:ngm:class:democratic-deliberation",
         "label": "Democratic Deliberation"
       },
       {
-        "id": "urn:visionflow:owl:class:participatory-policy-making",
+        "id": "urn:ngm:class:participatory-policy-making",
         "label": "Participatory Policy Making"
       },
       {
-        "id": "urn:visionflow:owl:class:transparent-governance",
+        "id": "urn:ngm:class:transparent-governance",
         "label": "Transparent Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:civic-engagement-platform",
+        "label": "Civic Engagement Platform"
+      },
+      {
+        "id": "urn:ngm:class:democratic-governance-system",
+        "label": "Democratic Governance System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

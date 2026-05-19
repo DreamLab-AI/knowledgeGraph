@@ -132,62 +132,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:network-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:network-protocol",
+  "@type": "Class",
   "label": "Network Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
-    }
-  ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b3e94a63b968823a0f27714b9a90dcb328ceb0a7d96429125efb53f6e6bf6174"
+  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures.",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-transmission",
+        "label": "Data Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "distributed-collaboration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b3e94a63b968823a0f27714b9a90dcb328ceb0a7d96429125efb53f6e6bf6174@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-transmission",
-      "vc:label": "Data Transmission"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-communication",
-      "vc:label": "Network Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

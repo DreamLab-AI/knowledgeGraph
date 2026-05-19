@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-ai-security",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-ai-security",
+  "@type": "Class",
   "label": "Edge AI Security",
+  "definition": "Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b84396eb89cd770de65806648c4e903a0d1174d4de162e448015a1e6d01569a6"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b84396eb89cd770de65806648c4e903a0d1174d4de162e448015a1e6d01569a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Edge AI Security protects machine learning systems deployed on distributed edge devices against adversarial attacks, model theft, data poisoning, and unauthorized access while respecting resource constraints of embedded environments. Edge security differs from cloud security by prioritizing offline operation, physical accessibility threats, and extreme resource scarcity. Trusted Execution Environments (TEEs) like ARM TrustZone isolate sensitive AI operations in hardware-protected secure enclaves, preventing unauthorized model inspection or parameter access even by device operating systems. Model encryption protects intellectual property; weights are decrypted only within TEEs during inference. Secure bootstrap chains verify device firmware integrity before executing AI models, preventing compromised code from manipulating inference. Defense mechanisms against adversarial attacks include input validation, anomaly detection, and certified robustness techniques tolerating small input perturbations. Model extraction attacks steal intellectual property by querying inference endpoints; edge systems mitigate this through rate limiting, access control, and covert deployment of detection me",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

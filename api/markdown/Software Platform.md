@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:software-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:software-platform",
+  "@type": "Class",
   "label": "Software Platform",
+  "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scala...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technology-infrastructure",
-      "vc:label": "Technology Infrastructure"
+      "@id": "urn:ngm:class:technology-infrastructure",
+      "label": "Technology Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8cfb11ffb6058f8790fb2622fda1a6abc2d20a54d71bd0dfbaf4b370b73f2a3c"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8cfb11ffb6058f8790fb2622fda1a6abc2d20a54d71bd0dfbaf4b370b73f2a3c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scalable application delivery.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:application-development",
-      "vc:label": "Application Development"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:calibration-target",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:calibration-target",
+  "@type": "Class",
   "label": "Calibration Target",
+  "definition": "A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:reference-standard",
-      "vc:label": "Reference Standard"
+      "@id": "urn:ngm:class:reference-standard",
+      "label": "Reference Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3f34c826744c596be63019f2ac87bbb6e0e487cd2c093220c32107ce762c71c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:flatness-control",
+        "label": "Flatness Control"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-definition",
+        "label": "Pattern Definition"
+      },
+      {
+        "@id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:color-accuracy",
+        "label": "Color Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3f34c826744c596be63019f2ac87bbb6e0e487cd2c093220c32107ce762c71c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:flatness-control",
-      "vc:label": "Flatness Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:pattern-definition",
-      "vc:label": "Pattern Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:precision-manufacturing",
-      "vc:label": "Precision Manufacturing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "Camera Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:color-accuracy",
-      "vc:label": "Color Accuracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:lens-distortion-correction",
-      "vc:label": "Lens Distortion Correction"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

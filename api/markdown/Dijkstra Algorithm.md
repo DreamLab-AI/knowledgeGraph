@@ -188,72 +188,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dijkstra-algorithm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dijkstra-algorithm",
+  "@type": "Class",
   "label": "Dijkstra Algorithm",
+  "definition": "A graph search algorithm that finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edge weights. It systematically explores nodes in order of increasing distance from the source, guaranteeing optimal solutions.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:rb-1016-path-planning",
-      "vc:label": "RB-1016-path-planning"
+      "@id": "urn:ngm:class:rb-1016-path-planning",
+      "label": "RB-1016-path-planning"
     },
     {
-      "@id": "urn:visionflow:owl:class:graph-search",
-      "vc:label": "Graph Search"
+      "@id": "urn:ngm:class:graph-search",
+      "label": "Graph Search"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:non-negative-weights",
+        "label": "Non-negative Weights"
+      },
+      {
+        "@id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      },
+      {
+        "@id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ff186978d098fd8f5cdc9d88272671750ff0a852e6dc63623e98c3dbef2e704e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A graph search algorithm that finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edge weights. It systematically explores nodes in order of increasing distance from the source, guaranteeing optimal solutions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.99",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:non-negative-weights",
-      "vc:label": "Non-negative Weights"
-    },
-    {
-      "@id": "urn:visionflow:linked:weighted-graph",
-      "vc:label": "Weighted Graph"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:graph-representation",
-      "vc:label": "Graph Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:priority-queue",
-      "vc:label": "Priority Queue"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,70 +3,74 @@
   "title": "Cross-Chain Messaging",
   "slug": "cross-chain-messaging",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-chain-messaging",
+  "classIri": "urn:ngm:class:cross-chain-messaging",
   "domain": "blockchain",
   "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:interoperability-protocol",
+      "id": "urn:ngm:class:interoperability-protocol",
       "label": "Interoperability Protocol"
     },
     {
-      "id": "urn:visionflow:linked:message-passing-system",
+      "id": "urn:ngm:class:message-passing-system",
       "label": "Message Passing System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:handler-execution",
+        "id": "urn:ngm:class:handler-execution",
         "label": "Handler Execution"
       },
       {
-        "id": "urn:visionflow:linked:message-queue",
+        "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       },
       {
-        "id": "urn:visionflow:linked:proof-verification",
+        "id": "urn:ngm:class:proof-verification",
         "label": "Proof Verification"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-proof",
+        "id": "urn:ngm:class:blockchain-proof",
         "label": "Blockchain Proof"
       },
       {
-        "id": "urn:visionflow:linked:message-authentication",
+        "id": "urn:ngm:class:message-authentication",
         "label": "Message Authentication"
       },
       {
-        "id": "urn:visionflow:linked:relay-network",
+        "id": "urn:ngm:class:relay-network",
         "label": "Relay Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-movement",
+        "id": "urn:ngm:class:asset-movement",
         "label": "Asset Movement"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-function-calls",
+        "id": "urn:ngm:class:cross-chain-function-calls",
         "label": "Cross-Chain Function Calls"
       },
       {
-        "id": "urn:visionflow:linked:state-synchronisation",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

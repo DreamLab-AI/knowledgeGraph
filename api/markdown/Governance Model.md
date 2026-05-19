@@ -180,112 +180,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:governance-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:governance-model",
+  "@type": "Class",
   "label": "Governance Model",
+  "definition": "Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3f5c13b0fe9d59e83301f1a4728aaab56981a9929e23fcb720bca2312f945759"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decision-structure",
+        "label": "Decision Structure"
+      },
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-framework",
+        "label": "Ethical Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3f5c13b0fe9d59e83301f1a4728aaab56981a9929e23fcb720bca2312f945759@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture",
-      "vc:label": "Metaverse Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-structure",
-      "vc:label": "Decision Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-framework",
-      "vc:label": "Policy Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethical-framework",
-      "vc:label": "Ethical Framework"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:self-regulation",
-      "vc:label": "Self-Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance",
-      "vc:label": "Community Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-governance",
-      "vc:label": "Decentralized Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:stakeholder-agreement",
-      "vc:label": "Stakeholder Agreement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

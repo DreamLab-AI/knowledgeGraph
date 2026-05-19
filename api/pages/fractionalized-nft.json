@@ -3,78 +3,91 @@
   "title": "Fractionalized NFT",
   "slug": "fractionalized-nft",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fractionalized-nft",
+  "classIri": "urn:ngm:class:fractionalized-nft",
   "domain": "spatial-computing",
   "definition": "A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:fractionalization-contract",
+        "id": "urn:ngm:class:fractionalization-contract",
         "label": "Fractionalization Contract"
       },
       {
-        "id": "urn:visionflow:linked:nft",
+        "id": "urn:ngm:class:nft",
         "label": "NFT"
       },
       {
-        "id": "urn:visionflow:linked:ownership-registry",
+        "id": "urn:ngm:class:ownership-registry",
         "label": "Ownership Registry"
       },
       {
-        "id": "urn:visionflow:owl:class:fungible-token",
+        "id": "urn:ngm:class:fungible-token",
         "label": "Fungible Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:erc-1155",
+        "id": "urn:ngm:class:erc-1155",
         "label": "ERC-1155"
       },
       {
-        "id": "urn:visionflow:linked:fractionalization-protocol",
+        "id": "urn:ngm:class:fractionalization-protocol",
         "label": "Fractionalization Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collective-ownership",
+        "id": "urn:ngm:class:collective-ownership",
         "label": "Collective Ownership"
       },
       {
-        "id": "urn:visionflow:linked:fractional-trading",
+        "id": "urn:ngm:class:fractional-trading",
         "label": "Fractional Trading"
       },
       {
-        "id": "urn:visionflow:linked:nft-liquidity",
+        "id": "urn:ngm:class:nft-liquidity",
         "label": "NFT Liquidity"
       },
       {
-        "id": "urn:visionflow:owl:class:price-discovery",
+        "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      },
+      {
+        "id": "urn:ngm:class:shared-ownership-model",
+        "label": "Shared Ownership Model"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

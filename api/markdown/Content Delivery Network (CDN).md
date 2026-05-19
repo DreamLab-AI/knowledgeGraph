@@ -188,122 +188,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:content-delivery-network-cdn",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:content-delivery-network-cdn",
+  "@type": "Class",
   "label": "Content Delivery Network (CDN)",
+  "definition": "A geographically distributed network of proxy servers and data centers designed to provide high availability, high performance, and low latency content delivery by caching content closer to end-users.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ff5effa6442e4ed2ba51af2bc9215b3ca9a8dc0474a7aa787378736a2d5f0d4a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cache-system",
+        "label": "Cache System"
+      },
+      {
+        "@id": "urn:ngm:class:edge-server",
+        "label": "Edge Server"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:origin-server",
+        "label": "Origin Server"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dns-service",
+        "label": "DNS Service"
+      },
+      {
+        "@id": "urn:ngm:class:storage-system",
+        "label": "Storage System"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ddo-s-protection",
+        "label": "DDoS Protection"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-redundancy",
+        "label": "Geographic Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-content-delivery",
+        "label": "Low-Latency Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-distribution",
+        "label": "Scalable Distribution"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ff5effa6442e4ed2ba51af2bc9215b3ca9a8dc0474a7aa787378736a2d5f0d4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A geographically distributed network of proxy servers and data centers designed to provide high availability, high performance, and low latency content delivery by caching content closer to end-users.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cache-system",
-      "vc:label": "Cache System"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-server",
-      "vc:label": "Edge Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-balancer",
-      "vc:label": "Load Balancer"
-    },
-    {
-      "@id": "urn:visionflow:linked:origin-server",
-      "vc:label": "Origin Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-protocol",
-      "vc:label": "Routing Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dns-service",
-      "vc:label": "DNS Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-system",
-      "vc:label": "Storage System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ddo-s-protection",
-      "vc:label": "DDoS Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:geographic-redundancy",
-      "vc:label": "Geographic Redundancy"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-content-delivery",
-      "vc:label": "Low-Latency Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-distribution",
-      "vc:label": "Scalable Distribution"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-center",
-      "vc:label": "Data Center"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-service-provider",
-      "vc:label": "Internet Service Provider"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

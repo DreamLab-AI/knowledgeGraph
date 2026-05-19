@@ -3,19 +3,18 @@
   "title": "Decision Transparency",
   "slug": "decision-transparency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decision-transparency",
+  "classIri": "urn:ngm:class:decision-transparency",
   "domain": "artificial-intelligence",
   "definition": "Transparency of AI decision-making processes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

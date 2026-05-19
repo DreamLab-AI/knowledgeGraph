@@ -3,53 +3,57 @@
   "title": "Digital Economy",
   "slug": "digital-economy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-economy",
+  "classIri": "urn:ngm:class:digital-economy",
   "domain": "spatial-computing",
-  "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the metaverse. bridges-to:: [[Blockchain]]",
+  "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the met...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:economic-systems",
+      "id": "urn:ngm:class:economic-systems",
       "label": "Economic Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-payments",
+        "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:digital-value-exchange",
+        "id": "urn:ngm:class:digital-value-exchange",
         "label": "Digital Value Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:token-economics",
+        "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

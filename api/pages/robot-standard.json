@@ -3,191 +3,354 @@
   "title": "Robot Standard",
   "slug": "robot-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-standard",
+  "classIri": "urn:ngm:class:robot-standard",
   "domain": "robotics",
-  "definition": "RobotStandard is a normative technical instrument \u2014 a specification, guideline, or regulation \u2014 issued by a recognised standards development organisation (SDO) or regulatory body to define mandatory or voluntary safety requirements, performance criteria, interoperability protocols, and terminology for the design, manufacture, integration, and operation of robotic systems across industrial, collaborative, personal-care, service, and autonomous-vehicle domains. The global regime is structured around ISO Technical Committee 299 (six active working groups covering vocabulary, industrial safety, service robots, collaborative robots, mobile service robots, and AI in robotics), the IEEE Robotics and Automation Society standards programme (IEEE 1872 CORA ontology), the Robotic Industries Association framework (RIA R15.06, R15.08), the OPC Foundation's robotics companion specification (OPC UA Part 17 Robotics, Release 1.1.0, 2023), and \u2014 from 14 January 2027 \u2014 the EU Machinery Regulation 2023/1230, which replaces Machinery Directive 2006/42/EC with direct-effect essential health and safety requirements (EHSRs) addressing AI-controlled and autonomously behaving robotic systems.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:industrial-safety",
-      "label": "Industrial Safety"
-    },
-    {
-      "id": "urn:visionflow:linked:normative-framework",
-      "label": "Normative Framework"
-    },
-    {
-      "id": "urn:visionflow:linked:product-regulation",
-      "label": "Product Regulation"
-    }
-  ],
+  "definition": "RobotStandard is a normative technical instrument \u2014 a specification, guideline, or regulation \u2014 issued by a recognised standards development organisation (SDO) or regulatory body to define mandatory or voluntary safety requirements, performance criteria, interoperability protocols, and terminolog...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:conformity-assessment",
+        "id": "urn:ngm:class:conformity-assessment",
         "label": "Conformity Assessment"
       },
       {
-        "id": "urn:visionflow:linked:ieee-1872",
+        "id": "urn:ngm:class:ieee-1872",
         "label": "IEEE 1872"
       },
       {
-        "id": "urn:visionflow:linked:iso-10218",
+        "id": "urn:ngm:class:iso-10218",
         "label": "ISO 10218"
       },
       {
-        "id": "urn:visionflow:linked:iso-13482",
+        "id": "urn:ngm:class:iso-13482",
         "label": "ISO 13482"
       },
       {
-        "id": "urn:visionflow:linked:iso-3691-4",
+        "id": "urn:ngm:class:iso-3691-4",
         "label": "ISO 3691-4"
       },
       {
-        "id": "urn:visionflow:linked:iso-ts-15066",
+        "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
       },
       {
-        "id": "urn:visionflow:linked:normative-annex",
+        "id": "urn:ngm:class:normative-annex",
         "label": "Normative Annex"
       },
       {
-        "id": "urn:visionflow:linked:opc-ua-robotics",
+        "id": "urn:ngm:class:opc-ua-robotics",
         "label": "OPC UA Robotics"
       },
       {
-        "id": "urn:visionflow:linked:performance-criterion",
+        "id": "urn:ngm:class:performance-criterion",
         "label": "Performance Criterion"
       },
       {
-        "id": "urn:visionflow:linked:safety-function",
+        "id": "urn:ngm:class:safety-function",
         "label": "Safety Function"
       },
       {
-        "id": "urn:visionflow:linked:test-method",
+        "id": "urn:ngm:class:test-method",
         "label": "Test Method"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ce-marking",
+        "id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
       },
       {
-        "id": "urn:visionflow:linked:conformity-assessment-body",
+        "id": "urn:ngm:class:conformity-assessment-body",
         "label": "Conformity Assessment Body"
       },
       {
-        "id": "urn:visionflow:linked:declaration-of-conformity",
+        "id": "urn:ngm:class:declaration-of-conformity",
         "label": "Declaration of Conformity"
       },
       {
-        "id": "urn:visionflow:linked:harmonised-standard",
+        "id": "urn:ngm:class:harmonised-standard",
         "label": "Harmonised Standard"
       },
       {
-        "id": "urn:visionflow:linked:protective-measure",
+        "id": "urn:ngm:class:protective-measure",
         "label": "Protective Measure"
       },
       {
-        "id": "urn:visionflow:linked:safety-function",
+        "id": "urn:ngm:class:safety-function",
         "label": "Safety Function"
       },
       {
-        "id": "urn:visionflow:linked:technical-documentation",
+        "id": "urn:ngm:class:technical-documentation",
         "label": "Technical Documentation"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-mobile-robot-safety",
+        "id": "urn:ngm:class:autonomous-mobile-robot-safety",
         "label": "Autonomous Mobile Robot Safety"
       },
       {
-        "id": "urn:visionflow:linked:ce-marking",
+        "id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
       },
       {
-        "id": "urn:visionflow:linked:cobot-deployment",
+        "id": "urn:ngm:class:cobot-deployment",
         "label": "Cobot Deployment"
       },
       {
-        "id": "urn:visionflow:linked:digital-product-passport",
+        "id": "urn:ngm:class:digital-product-passport",
         "label": "Digital Product Passport"
       },
       {
-        "id": "urn:visionflow:linked:iio-t-integration",
+        "id": "urn:ngm:class:iio-t-integration",
         "label": "IIoT Integration"
       },
       {
-        "id": "urn:visionflow:linked:market-access",
+        "id": "urn:ngm:class:market-access",
         "label": "Market Access"
       },
       {
-        "id": "urn:visionflow:linked:robot-interoperability",
+        "id": "urn:ngm:class:robot-interoperability",
         "label": "Robot Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:robot-skill-transfer",
+        "id": "urn:ngm:class:robot-skill-transfer",
         "label": "Robot Skill Transfer"
       },
       {
-        "id": "urn:visionflow:linked:safe-human-robot-collaboration",
+        "id": "urn:ngm:class:safe-human-robot-collaboration",
         "label": "Safe Human-Robot Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ehsr-framework",
+        "id": "urn:ngm:class:ehsr-framework",
         "label": "EHSR Framework"
       },
       {
-        "id": "urn:visionflow:linked:eu-machinery-regulation",
+        "id": "urn:ngm:class:eu-machinery-regulation",
         "label": "EU Machinery Regulation"
       },
       {
-        "id": "urn:visionflow:linked:iso-tc-299",
+        "id": "urn:ngm:class:iso-tc-299",
         "label": "ISO TC 299"
       },
       {
-        "id": "urn:visionflow:linked:opc-ua-node-set",
+        "id": "urn:ngm:class:opc-ua-node-set",
         "label": "OPC UA NodeSet"
       },
       {
-        "id": "urn:visionflow:linked:owl-ontology",
+        "id": "urn:ngm:class:owl-ontology",
         "label": "OWL Ontology"
       },
       {
-        "id": "urn:visionflow:linked:performance-level-method",
+        "id": "urn:ngm:class:performance-level-method",
         "label": "Performance Level Method"
       },
       {
-        "id": "urn:visionflow:linked:safety-integrity-level",
+        "id": "urn:ngm:class:safety-integrity-level",
         "label": "Safety Integrity Level"
       },
       {
-        "id": "urn:visionflow:linked:speed-and-separation-monitoring",
+        "id": "urn:ngm:class:speed-and-separation-monitoring",
         "label": "Speed and Separation Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:force-control",
+        "id": "urn:ngm:class:force-control",
         "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:industrial-safety",
+        "label": "Industrial Safety"
+      },
+      {
+        "id": "urn:ngm:class:normative-framework",
+        "label": "Normative Framework"
+      },
+      {
+        "id": "urn:ngm:class:product-regulation",
+        "label": "Product Regulation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-torque-sensing",
+        "label": "Force Torque Sensing"
+      },
+      {
+        "id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:owl-2-dl",
+        "label": "OWL 2 DL"
+      },
+      {
+        "id": "urn:ngm:class:performance-level",
+        "label": "Performance Level"
+      },
+      {
+        "id": "urn:ngm:class:risk-graph-method",
+        "label": "Risk Graph Method"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:slam-navigation",
+        "label": "SLAM Navigation"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "id": "urn:ngm:class:laser-scanner",
+        "label": "Laser Scanner"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robots",
+        "label": "Collaborative Robots"
+      },
+      {
+        "id": "urn:ngm:class:driverless-industrial-trucks",
+        "label": "Driverless Industrial Trucks"
+      },
+      {
+        "id": "urn:ngm:class:exoskeletons",
+        "label": "Exoskeletons"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robots",
+        "label": "Industrial Robots"
+      },
+      {
+        "id": "urn:ngm:class:modular-robots",
+        "label": "Modular Robots"
+      },
+      {
+        "id": "urn:ngm:class:personal-care-robots",
+        "label": "Personal Care Robots"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robots",
+        "label": "Surgical Robots"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      },
+      {
+        "id": "urn:ngm:class:bsi",
+        "label": "BSI"
+      },
+      {
+        "id": "urn:ngm:class:din",
+        "label": "DIN"
+      },
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics and Automation Society"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-299",
+        "label": "ISO TC 299"
+      },
+      {
+        "id": "urn:ngm:class:opc-foundation",
+        "label": "OPC Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ria",
+        "label": "RIA"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:iec-80601-2-78",
+        "label": "IEC 80601-2-78"
+      },
+      {
+        "id": "urn:ngm:class:iso-12100",
+        "label": "ISO 12100"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "id": "urn:ngm:class:iso-13855",
+        "label": "ISO 13855"
+      },
+      {
+        "id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "id": "urn:ngm:class:iso-sae-21434",
+        "label": "ISO SAE 21434"
+      },
+      {
+        "id": "urn:ngm:class:niosh-guidelines",
+        "label": "NIOSH Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS Industrial"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
   "wikilinks": [
     {

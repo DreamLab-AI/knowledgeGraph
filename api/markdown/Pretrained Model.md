@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pretrained-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pretrained-model",
+  "@type": "Class",
   "label": "Pretrained Model",
+  "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:model",
-      "vc:label": "Model"
+      "@id": "urn:ngm:class:model",
+      "label": "Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4463ad8f7c6f1ccf8454e8b170276c8c7d7f014beedee9f429c953d18b24d072"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4463ad8f7c6f1ccf8454e8b170276c8c7d7f014beedee9f429c953d18b24d072@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

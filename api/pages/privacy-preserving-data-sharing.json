@@ -3,32 +3,36 @@
   "title": "Privacy Preserving Data Sharing",
   "slug": "privacy-preserving-data-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
+  "classIri": "urn:ngm:class:privacy-preserving-data-sharing",
   "domain": "infrastructure",
   "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-sharing",
+      "id": "urn:ngm:class:data-sharing",
       "label": "Data Sharing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-analytics",
+        "id": "urn:ngm:class:collaborative-analytics",
         "label": "Collaborative Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,90 +3,99 @@
   "title": "Virtual Securities Offering (VSO)",
   "slug": "virtual-securities-offering-vso",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-securities-offering-vso",
+  "classIri": "urn:ngm:class:virtual-securities-offering-vso",
   "domain": "spatial-computing",
   "definition": "A tokenized securities issuance process that leverages blockchain technology to create, distribute, and manage digital representations of traditional securities with embedded regulatory compliance and automated governance mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compliance-validation-engine",
+        "id": "urn:ngm:class:compliance-validation-engine",
         "label": "Compliance Validation Engine"
       },
       {
-        "id": "urn:visionflow:linked:distribution-mechanism",
+        "id": "urn:ngm:class:distribution-mechanism",
         "label": "Distribution Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:investor-registry",
+        "id": "urn:ngm:class:investor-registry",
         "label": "Investor Registry"
       },
       {
-        "id": "urn:visionflow:linked:token-issuance-contract",
+        "id": "urn:ngm:class:token-issuance-contract",
         "label": "Token Issuance Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:secondary-market-integration",
+        "id": "urn:ngm:class:secondary-market-integration",
         "label": "Secondary Market Integration"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:custody-solution",
+        "id": "urn:ngm:class:custody-solution",
         "label": "Custody Solution"
       },
       {
-        "id": "urn:visionflow:linked:kyc-aml-system",
+        "id": "urn:ngm:class:kyc-aml-system",
         "label": "KYC/AML System"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-framework",
+        "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:24-7-trading",
+        "id": "urn:ngm:class:24-7-trading",
         "label": "24/7 Trading"
       },
       {
-        "id": "urn:visionflow:linked:automated-compliance",
+        "id": "urn:ngm:class:automated-compliance",
         "label": "Automated Compliance"
       },
       {
-        "id": "urn:visionflow:linked:fractional-ownership",
+        "id": "urn:ngm:class:fractional-ownership",
         "label": "Fractional Ownership"
       },
       {
-        "id": "urn:visionflow:linked:global-capital-access",
+        "id": "urn:ngm:class:global-capital-access",
         "label": "Global Capital Access"
       },
       {
-        "id": "urn:visionflow:linked:programmable-securities",
+        "id": "urn:ngm:class:programmable-securities",
         "label": "Programmable Securities"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-ecosystem",
+        "label": "Digital Asset Ecosystem"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

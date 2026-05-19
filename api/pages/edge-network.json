@@ -3,74 +3,78 @@
   "title": "Edge Network",
   "slug": "edge-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-network",
+  "classIri": "urn:ngm:class:edge-network",
   "domain": "spatial-computing",
   "definition": "Distributed set of computing nodes providing local processing close to users to improve performance, reduce latency, and optimize bandwidth for immersive applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:load-distribution-service",
+        "id": "urn:ngm:class:load-distribution-service",
         "label": "Load Distribution Service"
       },
       {
-        "id": "urn:visionflow:linked:network-management-system",
+        "id": "urn:ngm:class:network-management-system",
         "label": "Network Management System"
       },
       {
-        "id": "urn:visionflow:linked:orchestration-layer",
+        "id": "urn:ngm:class:orchestration-layer",
         "label": "Orchestration Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "id": "urn:ngm:class:edge-computing-node",
         "label": "Edge Computing Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:connectivity-fabric",
+        "id": "urn:ngm:class:connectivity-fabric",
         "label": "Connectivity Fabric"
       },
       {
-        "id": "urn:visionflow:linked:coordination-protocol",
+        "id": "urn:ngm:class:coordination-protocol",
         "label": "Coordination Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bandwidth-optimization",
+        "id": "urn:ngm:class:bandwidth-optimization",
         "label": "Bandwidth Optimization"
       },
       {
-        "id": "urn:visionflow:linked:distributed-processing",
+        "id": "urn:ngm:class:distributed-processing",
         "label": "Distributed Processing"
       },
       {
-        "id": "urn:visionflow:linked:latency-reduction",
+        "id": "urn:ngm:class:latency-reduction",
         "label": "Latency Reduction"
       },
       {
-        "id": "urn:visionflow:linked:regional-compute",
+        "id": "urn:ngm:class:regional-compute",
         "label": "Regional Compute"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

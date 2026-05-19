@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:liquid-proof-of-stake",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:liquid-proof-of-stake",
+  "@type": "Class",
   "label": "Liquid Proof of Stake",
+  "definition": "A PoS variant allowing token holders to delegate their staking rights to validators (bakers) while retaining token ownership and liquidity.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
+      "@id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:836f5c9030f0566d66d8e6626d9f3a9cd0198173f3c8acfa36a93a0a0cbf72df"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:836f5c9030f0566d66d8e6626d9f3a9cd0198173f3c8acfa36a93a0a0cbf72df@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A PoS variant allowing token holders to delegate their staking rights to validators (bakers) while retaining token ownership and liquidity.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

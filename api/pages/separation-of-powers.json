@@ -3,32 +3,36 @@
   "title": "Separation Of Powers",
   "slug": "separation-of-powers",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:separation-of-powers",
+  "classIri": "urn:ngm:class:separation-of-powers",
   "domain": "spatial-computing",
   "definition": "Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:dao-governance",
+      "id": "urn:ngm:class:dao-governance",
       "label": "DAO Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-control",
+        "id": "urn:ngm:class:decentralized-control",
         "label": "Decentralized Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

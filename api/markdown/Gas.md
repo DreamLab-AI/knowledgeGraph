@@ -132,45 +132,28 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gas",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gas",
+  "@type": "Class",
   "label": "Gas",
+  "definition": "Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:economic-mechanism",
-      "vc:label": "EconomicMechanism"
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "EconomicMechanism"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:595b3372a1672215d290d79df47127578a28f57df1b6c7f4b837f0c5c1515d7b"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:595b3372a1672215d290d79df47127578a28f57df1b6c7f4b837f0c5c1515d7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Transaction execution cost unit within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

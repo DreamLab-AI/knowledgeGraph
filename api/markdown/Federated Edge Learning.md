@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:federated-edge-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:federated-edge-learning",
+  "@type": "Class",
   "label": "Federated Edge Learning",
+  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:05e1534b160f8f1379dd2973584ad09c5dc24e1a69c278cc372616618a08addc"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:05e1534b160f8f1379dd2973584ad09c5dc24e1a69c278cc372616618a08addc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device. This paradigm addresses privacy concerns by transmitting only model updates (gradients) rather than raw sensitive data to aggregation servers. Participants train local models on their devices using private datasets, then securely aggregate updates into a global model that improves collectively. Federated Edge Learning maintains data sovereignty, allowing healthcare systems, financial institutions, and autonomous fleets to benefit from collaborative intelligence without compromising individual privacy. The architecture comprises edge clients performing local training with limited computational resources, aggregation servers coordinating model updates, and secure aggregation protocols ensuring gradient confidentiality. Communication efficiency is critical; techniques like gradient compression, selective client participation, and quantization reduce network overhead by 10x or more. The approach supports differential privacy mechanisms, adding calibrated noise to gradients for formal pri",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

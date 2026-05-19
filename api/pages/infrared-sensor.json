@@ -3,106 +3,106 @@
   "title": "InfraredSensor",
   "slug": "infrared-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrared-sensor",
+  "classIri": "urn:ngm:class:infrared-sensor",
   "domain": "robotics",
-  "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, employing either passive detection of ambient thermal radiation (PIR sensors responding to temperature differentials in the environment) or active emission-reflection measurement (IR emitters paired with receivers for distance ranging and obstacle avoidance), with applications spanning mobile robot navigation, industrial automation, human-robot interaction (gesture recognition, presence detection), thermal imaging for inspection tasks, and line-following robots, and characterized by technical parameters including spectral response range (near-infrared 0.7-1.4 \u03bcm, short-wave 1.4-3 \u03bcm, mid-wave 3-8 \u03bcm, long-wave 8-15 \u03bcm, far-infrared 15-1000 \u03bcm), detection range (typically 2 cm to 10 meters for proximity sensors, up to 100 meters for long-range thermal cameras), response time (microseconds to milliseconds), field of view (narrow-beam 5-15\u00b0 for range-finding, wide-angle 90-120\u00b0 for motion detectio",
+  "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, empl...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:optoelectronic-device",
+      "id": "urn:ngm:class:optoelectronic-device",
       "label": "OptoelectronicDevice"
     },
     {
-      "id": "urn:visionflow:linked:thermal-imager",
+      "id": "urn:ngm:class:thermal-imager",
       "label": "ThermalImager"
-    },
-    {
-      "id": "urn:visionflow:owl:class:proximity-sensor",
-      "label": "ProximitySensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.88,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:analog-digital-converter",
+        "id": "urn:ngm:class:analog-digital-converter",
         "label": "AnalogDigitalConverter"
       },
       {
-        "id": "urn:visionflow:linked:iremitter",
+        "id": "urn:ngm:class:iremitter",
         "label": "IREmitter"
       },
       {
-        "id": "urn:visionflow:linked:irreceiver",
+        "id": "urn:ngm:class:irreceiver",
         "label": "IRReceiver"
       },
       {
-        "id": "urn:visionflow:linked:lens-assembly",
+        "id": "urn:ngm:class:lens-assembly",
         "label": "LensAssembly"
       },
       {
-        "id": "urn:visionflow:linked:optical-filter",
+        "id": "urn:ngm:class:optical-filter",
         "label": "OpticalFilter"
       },
       {
-        "id": "urn:visionflow:linked:signal-amplifier",
+        "id": "urn:ngm:class:signal-amplifier",
         "label": "SignalAmplifier"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
       {
-        "id": "urn:visionflow:linked:optical-alignment",
+        "id": "urn:ngm:class:optical-alignment",
         "label": "OpticalAlignment"
       },
       {
-        "id": "urn:visionflow:linked:temperature-compensation",
+        "id": "urn:ngm:class:temperature-compensation",
         "label": "TemperatureCompensation"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "PowerSupply"
       },
       {
-        "id": "urn:visionflow:owl:class:signal-processing",
+        "id": "urn:ngm:class:signal-processing",
         "label": "SignalProcessing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:gesture-recognition",
+        "id": "urn:ngm:class:gesture-recognition",
         "label": "GestureRecognition"
       },
       {
-        "id": "urn:visionflow:linked:line-following",
+        "id": "urn:ngm:class:line-following",
         "label": "LineFollowing"
       },
       {
-        "id": "urn:visionflow:linked:navigation-control",
+        "id": "urn:ngm:class:navigation-control",
         "label": "NavigationControl"
       },
       {
-        "id": "urn:visionflow:linked:thermal-inspection",
+        "id": "urn:ngm:class:thermal-inspection",
         "label": "ThermalInspection"
       },
       {
-        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "id": "urn:ngm:class:obstacle-avoidance",
         "label": "ObstacleAvoidance"
       },
       {
-        "id": "urn:visionflow:owl:class:presence-detection",
+        "id": "urn:ngm:class:presence-detection",
         "label": "PresenceDetection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

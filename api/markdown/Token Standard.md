@@ -128,60 +128,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:token-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:token-standard",
+  "@type": "Class",
   "label": "Token Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:86c2a5a5881391ad5b61cc3969094760199129dd17b46e6a279bc00d97e86ee3"
+  "definition": "Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fungibility",
+        "label": "Fungibility"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:86c2a5a5881391ad5b61cc3969094760199129dd17b46e6a279bc00d97e86ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem. Standards like ERC-20 (fungible tokens) and ERC-721 (NFTs) establish common APIs for token transfers, balance queries, approvals, and metadata, enabling seamless integration across wallets, exchanges, and dApps.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:fungibility",
-      "vc:label": "Fungibility"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

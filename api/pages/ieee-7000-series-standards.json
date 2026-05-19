@@ -3,27 +3,31 @@
   "title": "IEEE 7000 Series Standards",
   "slug": "ieee-7000-series-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ieee-7000-series-standards",
+  "classIri": "urn:ngm:class:ieee-7000-series-standards",
   "domain": "artificial-intelligence",
-  "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ethics standards providing process-based guidance for addressing ethical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI. This series encompasses multiple complementary standards: IEEE 7000 (core standard for addressing ethical concerns in system design providing systems engineering process for value-sensitive design that identifies stakeholder values and translates them into verifiable requirements), IEEE P7001 (transparency of autonomous systems defining transparency requirements, metrics, and implementation guidance enabling stakeholders to understand system capabilities, limitations, and decision processes), IEEE P7002 (data privacy process establishing privacy-by-design methodologies, privacy impact assessment procedures, and technical safeguards for personal data protection in AI systems), IEEE P7003 (algorithmic bias considerations providing bias assessment methods, fairness testing procedures, and mitigation strategies addressing discriminatory outcomes across protected groups), IEEE P7010 (wellbeing metrics standard for autono",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ics standards providing process-based guidance for addressing ical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

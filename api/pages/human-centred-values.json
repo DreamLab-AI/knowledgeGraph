@@ -3,19 +3,18 @@
   "title": "Human Centred Values",
   "slug": "human-centred-values",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-centred-values",
+  "classIri": "urn:ngm:class:human-centred-values",
   "domain": "spatial-computing",
-  "definition": "AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness and human dignity.",
+  "definition": "AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness an...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

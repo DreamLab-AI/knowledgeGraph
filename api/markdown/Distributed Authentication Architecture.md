@@ -120,54 +120,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-authentication-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-authentication-architecture",
+  "@type": "Class",
   "label": "Distributed Authentication Architecture",
+  "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2120d0250fac9d1eb1985730b8479938d72ca8fcdf71373db64da05e393fb4de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

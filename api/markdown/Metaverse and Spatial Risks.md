@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-and-spatial-risks",
+  "@type": "Class",
   "label": "Metaverse and Spatial Risks",
+  "definition": "Metaverse and Spatial Risks is a spatial computing concept and a type of Metaverse governance and safeguarding.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:10711974a3630a663f6cff68a5e5b489f8416acbdbc6844e44f8cf3aafbf6257"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:10711974a3630a663f6cff68a5e5b489f8416acbdbc6844e44f8cf3aafbf6257@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Metaverse and Spatial Risks is a spatial computing concept and a type of Metaverse governance and safeguarding.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

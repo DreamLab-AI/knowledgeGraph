@@ -3,207 +3,351 @@
   "title": "Collaborative Whiteboard",
   "slug": "collaborative-whiteboard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collaborative-whiteboard",
+  "classIri": "urn:ngm:class:collaborative-whiteboard",
   "domain": "distributed-collaboration",
-  "definition": "A **Collaborative Whiteboard** is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with [[CRDT]]-based (Conflict-free Replicated Data Type) or Operational Transformation synchronisation to resolve concurrent edits across geographically distributed participants. Platforms include Miro (founded 2011, $17.5 billion valuation 2022, 60+ million users by 2026), FigJam (Figma, launched 2021), Mural (founded 2011, enterprise-focused), Lucidchart (Lucid Software, founded 2010), Microsoft Whiteboard (Azure-backed, Teams-integrated), and Excalidraw (open-source, MIT licence, 85,000+ GitHub stars by 2026). Core capabilities encompass: infinite-canvas panning and zooming; freehand vector drawing with pressure-sensitive stylus support (Apple Pencil, Samsung S Pen, Surface Pen); pre-built shape libraries; sticky notes; dot-voting and anonymous voting; countdown timers; template libraries covering retrospectives, design sprints, user journey maps, Wardley maps, and 2,000+ community patterns; mind-map mode; kanban frames; real-time cursor presence with p",
+  "definition": "A Collaborative Whiteboard is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with [[CRDT]]-based (Conflict-free Replicated Data Type) or Operational...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-workspace",
+      "id": "urn:ngm:class:digital-workspace",
       "label": "Digital Workspace"
     },
     {
-      "id": "urn:visionflow:linked:visual-collaboration-tools",
+      "id": "urn:ngm:class:visual-collaboration-tools",
       "label": "Visual Collaboration Tools"
-    },
-    {
-      "id": "urn:visionflow:linked:remote-work-technology",
-      "label": "Remote Work Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:breakout-board",
+        "id": "urn:ngm:class:breakout-board",
         "label": "Breakout Board"
       },
       {
-        "id": "urn:visionflow:linked:connector",
+        "id": "urn:ngm:class:connector",
         "label": "Connector"
       },
       {
-        "id": "urn:visionflow:linked:embed-widget",
+        "id": "urn:ngm:class:embed-widget",
         "label": "Embed Widget"
       },
       {
-        "id": "urn:visionflow:linked:follow-mode",
+        "id": "urn:ngm:class:follow-mode",
         "label": "Follow Mode"
       },
       {
-        "id": "urn:visionflow:linked:frame",
+        "id": "urn:ngm:class:frame",
         "label": "Frame"
       },
       {
-        "id": "urn:visionflow:linked:freehand-drawing",
+        "id": "urn:ngm:class:freehand-drawing",
         "label": "Freehand Drawing"
       },
       {
-        "id": "urn:visionflow:linked:infinite-canvas",
+        "id": "urn:ngm:class:infinite-canvas",
         "label": "Infinite Canvas"
       },
       {
-        "id": "urn:visionflow:linked:kanban-board",
+        "id": "urn:ngm:class:kanban-board",
         "label": "Kanban Board"
       },
       {
-        "id": "urn:visionflow:linked:mind-map",
+        "id": "urn:ngm:class:mind-map",
         "label": "Mind Map"
       },
       {
-        "id": "urn:visionflow:linked:real-time-cursors",
+        "id": "urn:ngm:class:real-time-cursors",
         "label": "Real-time Cursors"
       },
       {
-        "id": "urn:visionflow:linked:shape-library",
+        "id": "urn:ngm:class:shape-library",
         "label": "Shape Library"
       },
       {
-        "id": "urn:visionflow:linked:sticky-notes",
+        "id": "urn:ngm:class:sticky-notes",
         "label": "Sticky Notes"
       },
       {
-        "id": "urn:visionflow:linked:template-library",
+        "id": "urn:ngm:class:template-library",
         "label": "Template Library"
       },
       {
-        "id": "urn:visionflow:linked:timer",
+        "id": "urn:ngm:class:timer",
         "label": "Timer"
       },
       {
-        "id": "urn:visionflow:linked:voting-system",
+        "id": "urn:ngm:class:voting-system",
         "label": "Voting System"
       },
       {
-        "id": "urn:visionflow:owl:class:crdt",
+        "id": "urn:ngm:class:crdt",
         "label": "CRDT"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:visionflow:linked:browser-graphics-rendering",
+        "id": "urn:ngm:class:browser-graphics-rendering",
         "label": "Browser Graphics Rendering"
       },
       {
-        "id": "urn:visionflow:linked:cloud-storage",
+        "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
       },
       {
-        "id": "urn:visionflow:linked:content-delivery-network",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
-        "id": "urn:visionflow:linked:operational-transformation",
+        "id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
       },
       {
-        "id": "urn:visionflow:linked:web-gl",
+        "id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       },
       {
-        "id": "urn:visionflow:linked:web-socket",
+        "id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {
-        "id": "urn:visionflow:owl:class:crdt",
+        "id": "urn:ngm:class:crdt",
         "label": "CRDT"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:affinity-diagramming",
+        "id": "urn:ngm:class:affinity-diagramming",
         "label": "Affinity Diagramming"
       },
       {
-        "id": "urn:visionflow:linked:asynchronous-ideation",
+        "id": "urn:ngm:class:asynchronous-ideation",
         "label": "Asynchronous Ideation"
       },
       {
-        "id": "urn:visionflow:linked:collaborative-design",
+        "id": "urn:ngm:class:collaborative-design",
         "label": "Collaborative Design"
       },
       {
-        "id": "urn:visionflow:linked:design-sprint",
+        "id": "urn:ngm:class:design-sprint",
         "label": "Design Sprint"
       },
       {
-        "id": "urn:visionflow:linked:design-thinking",
+        "id": "urn:ngm:class:design-thinking",
         "label": "Design Thinking"
       },
       {
-        "id": "urn:visionflow:linked:distributed-brainstorming",
+        "id": "urn:ngm:class:distributed-brainstorming",
         "label": "Distributed Brainstorming"
       },
       {
-        "id": "urn:visionflow:linked:retrospective",
+        "id": "urn:ngm:class:retrospective",
         "label": "Retrospective"
       },
       {
-        "id": "urn:visionflow:linked:sprint-planning",
+        "id": "urn:ngm:class:sprint-planning",
         "label": "Sprint Planning"
       },
       {
-        "id": "urn:visionflow:linked:user-journey-mapping",
+        "id": "urn:ngm:class:user-journey-mapping",
         "label": "User Journey Mapping"
       },
       {
-        "id": "urn:visionflow:linked:visual-process-mapping",
+        "id": "urn:ngm:class:visual-process-mapping",
         "label": "Visual Process Mapping"
       },
       {
-        "id": "urn:visionflow:linked:wardley-mapping",
+        "id": "urn:ngm:class:wardley-mapping",
         "label": "Wardley Mapping"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:conflict-resolution",
+        "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
       },
       {
-        "id": "urn:visionflow:linked:lww-register",
+        "id": "urn:ngm:class:lww-register",
         "label": "LWW Register"
       },
       {
-        "id": "urn:visionflow:linked:operational-transformation",
+        "id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
       },
       {
-        "id": "urn:visionflow:linked:or-set",
+        "id": "urn:ngm:class:or-set",
         "label": "OR Set"
       },
       {
-        "id": "urn:visionflow:linked:vector-graphics",
+        "id": "urn:ngm:class:vector-graphics",
         "label": "Vector Graphics"
       },
       {
-        "id": "urn:visionflow:owl:class:crdt",
+        "id": "urn:ngm:class:crdt",
         "label": "CRDT"
       },
       {
-        "id": "urn:visionflow:owl:class:web-rtc",
+        "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:canvas-api",
+        "label": "Canvas API"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:sentence-transformers",
+        "label": "Sentence Transformers"
+      },
+      {
+        "id": "urn:ngm:class:svg",
+        "label": "SVG"
+      },
+      {
+        "id": "urn:ngm:class:web-gl",
+        "label": "WebGL"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agile-retrospective",
+        "label": "Agile Retrospective"
+      },
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "id": "urn:ngm:class:liberating-structures",
+        "label": "Liberating Structures"
+      },
+      {
+        "id": "urn:ngm:class:remote-facilitation",
+        "label": "Remote Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:sprint-planning",
+        "label": "Sprint Planning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:crdt-academic-literature",
+        "label": "CRDT Academic Literature"
+      },
+      {
+        "id": "urn:ngm:class:iso-9241-usability",
+        "label": "ISO 9241 Usability"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-pointer-events",
+        "label": "W3C Pointer Events"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc-standard",
+        "label": "WebRTC Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:confluence",
+        "label": "Confluence"
+      },
+      {
+        "id": "urn:ngm:class:design-tools",
+        "label": "Design Tools"
+      },
+      {
+        "id": "urn:ngm:class:digital-collaboration-platform",
+        "label": "Digital Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:excalidraw",
+        "label": "Excalidraw"
+      },
+      {
+        "id": "urn:ngm:class:fig-jam",
+        "label": "FigJam"
+      },
+      {
+        "id": "urn:ngm:class:figma",
+        "label": "Figma"
+      },
+      {
+        "id": "urn:ngm:class:jira",
+        "label": "Jira"
+      },
+      {
+        "id": "urn:ngm:class:miro",
+        "label": "Miro"
+      },
+      {
+        "id": "urn:ngm:class:mural",
+        "label": "Mural"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:slack",
+        "label": "Slack"
+      },
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ]
   },
   "wikilinks": [
     {

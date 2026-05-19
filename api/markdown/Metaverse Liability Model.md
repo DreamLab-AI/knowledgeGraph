@@ -232,144 +232,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-liability-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-liability-model",
+  "@type": "Class",
   "label": "Metaverse Liability Model",
+  "definition": "A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:95776ae17a0f43e1586f6a3a0c3183ace0eb60074fa7e8adb3fe5983b7ef76c2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-agent-liability",
+        "label": "AI Agent Liability"
+      },
+      {
+        "@id": "urn:ngm:class:content-creator-liability",
+        "label": "Content Creator Liability"
+      },
+      {
+        "@id": "urn:ngm:class:harm-redress-mechanism",
+        "label": "Harm Redress Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-integration",
+        "label": "Insurance Integration"
+      },
+      {
+        "@id": "urn:ngm:class:platform-liability-framework",
+        "label": "Platform Liability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:user-liability-rules",
+        "label": "User Liability Rules"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "@id": "urn:ngm:class:harm-classification-system",
+        "label": "Harm Classification System"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdiction-mapping",
+        "label": "Jurisdiction Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:liability-attribution-engine",
+        "label": "Liability Attribution Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:harm-compensation",
+        "label": "Harm Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:legal-accountability",
+        "label": "Legal Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:platform-protection",
+        "label": "Platform Protection"
+      },
+      {
+        "@id": "urn:ngm:class:user-protection",
+        "label": "User Protection"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:legal-governance-framework",
+        "label": "Legal Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-society-regulations",
+        "label": "Virtual Society Regulations"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:95776ae17a0f43e1586f6a3a0c3183ace0eb60074fa7e8adb3fe5983b7ef76c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:legal-governance-framework",
-      "vc:label": "Legal Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-society-regulations",
-      "vc:label": "Virtual Society Regulations"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-liability",
-      "vc:label": "AI Agent Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-creator-liability",
-      "vc:label": "Content Creator Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:harm-redress-mechanism",
-      "vc:label": "Harm Redress Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-integration",
-      "vc:label": "Insurance Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-liability-framework",
-      "vc:label": "Platform Liability Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-liability-rules",
-      "vc:label": "User Liability Rules"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dispute-resolution",
-      "vc:label": "Dispute Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-collection",
-      "vc:label": "Evidence Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:harm-classification-system",
-      "vc:label": "Harm Classification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:jurisdiction-mapping",
-      "vc:label": "Jurisdiction Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:liability-attribution-engine",
-      "vc:label": "Liability Attribution Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:harm-compensation",
-      "vc:label": "Harm Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-accountability",
-      "vc:label": "Legal Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-protection",
-      "vc:label": "Platform Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-protection",
-      "vc:label": "User Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:activity-logging",
-      "vc:label": "Activity Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-precedent-database",
-      "vc:label": "Legal Precedent Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:terms-of-service",
-      "vc:label": "Terms of Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

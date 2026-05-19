@@ -184,41 +184,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:soft-robotics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:soft-robotics",
+  "@type": "Class",
   "label": "Soft Robotics",
+  "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired...",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0781463ea4880cacdf58db89f39590fa5231af5e40f0ea4a0376bfffc8c67bc4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Robotics discipline employing compliant, flexible materials enabling safe human interaction and adaptation to unstructured environments, with applications across surgical robotics, food handling automation, wearable assistive devices, and collaborative manufacturing—advancing through bio-inspired design, soft actuation, and machine learning control.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

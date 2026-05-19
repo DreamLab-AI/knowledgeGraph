@@ -3,19 +3,18 @@
   "title": "Feature Engineering",
   "slug": "feature-engineering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feature-engineering",
+  "classIri": "urn:ngm:class:feature-engineering",
   "domain": "artificial-intelligence",
   "definition": "Feature Engineering is a artificial intelligence concept and a type of Data Preprocessing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:data-preprocessing",
+      "id": "urn:ngm:class:data-preprocessing",
       "label": "Data Preprocessing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

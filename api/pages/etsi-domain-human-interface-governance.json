@@ -3,27 +3,31 @@
   "title": "ETSI_Domain_Human_Interface___Governance",
   "slug": "etsi-domain-human-interface-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-human-interface-governance",
+  "classIri": "urn:ngm:class:etsi-domain-human-interface-governance",
   "domain": "artificial-intelligence",
-  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]].",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

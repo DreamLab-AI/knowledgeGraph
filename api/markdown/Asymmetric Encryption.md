@@ -140,72 +140,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asymmetric-encryption",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asymmetric-encryption",
+  "@type": "Class",
   "label": "Asymmetric Encryption",
+  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2f5a4d8084f339413d851408f42ab0cb9745700c4a52c4f696d26dbc27dab995@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cryptographic system using mathematically related public-private key pairs where the public key encrypts data that only the corresponding private key can decrypt. Asymmetric encryption provides the foundational cryptographic primitive for blockchain identity, digital signatures, and secure communication, enabling trustless verification without pre-shared secrets.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:symmetric-encryption",
-      "vc:label": "Symmetric Encryption"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

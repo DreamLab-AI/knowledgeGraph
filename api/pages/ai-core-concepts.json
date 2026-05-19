@@ -3,19 +3,18 @@
   "title": "ai core concepts",
   "slug": "ai-core-concepts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-core-concepts",
+  "classIri": "urn:ngm:class:ai-core-concepts",
   "domain": "artificial-intelligence",
-  "definition": "Core artificial intelligence concepts encompass foundational frameworks and methodologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architectures ([[NeuralNetwork|neural networks]], [[TransformerModel|transformers]], [[ConvolutionalNeuralNetwork|CNNs]]), and classical symbolic reasoning. Integration with metaverse applications includes [[LLM|large language models]] for [[NPCInteraction|NPC dialogue]], [[ComputerVision|computer vision]] for [[EnvironmentPerception|environment perception]], and [[GenerativeAI|generative AI]] for [[ContentGeneration|procedural content generation]], with ethics considerations addressing [[AIBias|bias mitigation]], [[Explainability|interpretability]], and [[TransparencyRequirements|transparency]] standards.",
+  "definition": "Core artificial intelligence concepts encompass foundational frameworks and modologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architect...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

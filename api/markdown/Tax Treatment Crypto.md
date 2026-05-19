@@ -172,41 +172,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tax-treatment-crypto",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tax-treatment-crypto",
+  "@type": "Class",
   "label": "Tax Treatment Crypto",
+  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation income taxation value-added tax and goods-and-services tax treatment (e), whilst purchases of ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-compliance",
-      "vc:label": "Blockchain Compliance"
+      "@id": "urn:ngm:class:blockchain-compliance",
+      "label": "Blockchain Compliance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6f3018d8ecd79b210d02b49f6012f2e08fce736f514edb7e28e09ad4dec8c117"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6f3018d8ecd79b210d02b49f6012f2e08fce736f514edb7e28e09ad4dec8c117@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation (wherein cryptocurrency dispositions generate capital gains or losses calculated as fair market value at disposition minus cost basis, with long-term holdings exceeding 12 months taxed at preferential rates 0-20% in the United States compared to ordinary income rates up to 37% for short-term holdings), income taxation (treating cryptocurrency received through mining as ordinary income at fair market value when successfully mined with miners potentially subject to self-employment tax at 15.3%, staking rewards as income when received, airdrops as ordinary income when dominion and control is established per IRS Revenue Ruling 2019-24, and payment for services as compensation), value-added tax and goods-and-services tax treatment (with the European Court of Justice in Skatteverket v. David Hedqvist C-264/14 2015 establishing VAT exemption for cryptocurrency-to-fiat exchanges as exempt financial services under Council Directive 2006/112/EC Article 135(1)(e), whilst purchases of goods usi",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

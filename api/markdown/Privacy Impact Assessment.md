@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-impact-assessment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-impact-assessment",
+  "@type": "Class",
   "label": "Privacy Impact Assessment",
+  "definition": "Privacy Impact Assessment is a structured eprocess identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ab4619ea0c5ba1dda0c75dba40ea2b6046cc0ef8a1a39f5425eeb5e9e26250a2"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ab4619ea0c5ba1dda0c75dba40ea2b6046cc0ef8a1a39f5425eeb5e9e26250a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy Impact Assessment is a structured evaluation process identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights. This assessment methodology follows defined stages including systematic description documenting processing operations (data flows, purposes, retention periods, recipients), necessity and proportionality assessment evaluating whether processing is essential for stated purposes and uses minimal data required, privacy risk identification analyzing potential harms including unauthorized access, discrimination, surveillance, function creep, and re-identification risks, risk severity and likelihood evaluation producing risk matrices categorizing threats as low, medium, high, or very high based on potential impact and probability, mitigation strategy design specifying technical and organizational measures reducing risks to acceptable levels, and residual risk assessment determining whether remaining risks after mitigation require consultation with data protection authorities per GDPR Ar",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

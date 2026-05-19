@@ -3,19 +3,18 @@
   "title": "HOST January 17th Presentation",
   "slug": "host-january-17th-presentation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:host-january-17th-presentation",
+  "classIri": "urn:ngm:class:host-january-17th-presentation",
   "domain": "infrastructure",
   "definition": "HOST January 17th Presentation is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

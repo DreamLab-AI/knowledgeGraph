@@ -3,110 +3,114 @@
   "title": "RoboticsCoreConcepts",
   "slug": "robotics-core-concepts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotics-core-concepts",
+  "classIri": "urn:ngm:class:robotics-core-concepts",
   "domain": "robotics",
-  "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories\u2014autonomous systems (encompassing independent robotic platforms implementing path planning algorithms such as A* achieving 95-99% collision-free navigation, RRT* providing asymptotic optimality with O(n log n) computational complexity, and SLAM simultaneous localization and mapping using extended Kalman filters EKF achieving \u00b15cm positioning accuracy in structured environments or particle filters with 1000-10,000 particles for non-Gaussian distributions), manipulation and actuation (covering robotic arms with 3-9 degrees of freedom achieving \u00b10.05mm repeatability in industrial applications using PD position control with gains Kp=100-1000 N\u00b7m/rad and Kd=10-50 N\u00b7m\u00b7s/rad, and soft robotics employing pneumatic actuators generating 5-50N gripping force at 0.2-2 bar pressure or shape memory alloy SMA actuators with 4-8% strain recovery and 10-100 MPa stress generation), perception and intelligence (integrating sensor fusion combining vision (RGB-D cameras 640\u00d7480 to 1920\u00d71080 resolution at 30-60 FPS",
+  "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories\u2014autonomous systems (encompassing independent robotic platforms implementing path planning algorithms suc...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.88,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:autonomous-robot",
+        "id": "urn:ngm:class:autonomous-robot",
         "label": "AutonomousRobot"
       },
       {
-        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "HumanRobotInteraction"
       },
       {
-        "id": "urn:visionflow:owl:class:manipulator-arm",
+        "id": "urn:ngm:class:manipulator-arm",
         "label": "ManipulatorArm"
       },
       {
-        "id": "urn:visionflow:owl:class:path-planning",
+        "id": "urn:ngm:class:path-planning",
         "label": "PathPlanning"
       },
       {
-        "id": "urn:visionflow:owl:class:robot-learning",
+        "id": "urn:ngm:class:robot-learning",
         "label": "RobotLearning"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "id": "urn:ngm:class:sensor-fusion",
         "label": "SensorFusion"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       },
       {
-        "id": "urn:visionflow:owl:class:soft-robotics",
+        "id": "urn:ngm:class:soft-robotics",
         "label": "SoftRobotics"
       },
       {
-        "id": "urn:visionflow:owl:class:swarm-robotics",
+        "id": "urn:ngm:class:swarm-robotics",
         "label": "SwarmRobotics"
       },
       {
-        "id": "urn:visionflow:owl:class:teleoperation",
+        "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-methods",
+        "id": "urn:ngm:class:computational-methods",
         "label": "ComputationalMethods"
       },
       {
-        "id": "urn:visionflow:linked:hardware-design",
+        "id": "urn:ngm:class:hardware-design",
         "label": "HardwareDesign"
       },
       {
-        "id": "urn:visionflow:linked:mathematical-foundations",
+        "id": "urn:ngm:class:mathematical-foundations",
         "label": "MathematicalFoundations"
       },
       {
-        "id": "urn:visionflow:linked:physics-modeling",
+        "id": "urn:ngm:class:physics-modeling",
         "label": "PhysicsModeling"
       },
       {
-        "id": "urn:visionflow:owl:class:software-engineering",
+        "id": "urn:ngm:class:software-engineering",
         "label": "SoftwareEngineering"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicles",
         "label": "AutonomousVehicles"
       },
       {
-        "id": "urn:visionflow:linked:industrial-automation",
+        "id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:visionflow:linked:robotics-education",
+        "id": "urn:ngm:class:robotics-education",
         "label": "RoboticsEducation"
       },
       {
-        "id": "urn:visionflow:linked:robotics-research",
+        "id": "urn:ngm:class:robotics-research",
         "label": "RoboticsResearch"
       },
       {
-        "id": "urn:visionflow:linked:service-robotics",
+        "id": "urn:ngm:class:service-robotics",
         "label": "ServiceRobotics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -99,41 +99,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:vesuvian-scrolls",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:vesuvian-scrolls",
+  "@type": "Class",
   "label": "Vesuvian Scrolls",
+  "definition": "Vesuvian Scrolls is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ca1ee3313fc7d8819aee242d6b6eae3050b0df9e0227efeb044ce718f579033f"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ca1ee3313fc7d8819aee242d6b6eae3050b0df9e0227efeb044ce718f579033f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Vesuvian Scrolls is a technology infrastructure concept and a type of infrastructure.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -152,41 +152,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:implementation-examples",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:implementation-examples",
+  "@type": "Class",
   "label": "implementation examples",
+  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[Met...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c54e8d62e6c192f7eccf1f296b7b19bcb05a34a0642a42894b5a1342440a597b"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c54e8d62e6c192f7eccf1f296b7b19bcb05a34a0642a42894b5a1342440a597b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[MetaversePlatformAPIs|metaverse platform integrations]]. These examples span [[DeFiProtocols|DeFi protocol]] mechanics, [[DAOGovernance|DAO governance]] implementation, [[CrossChainBridging|cross-chain communication]], and [[PrivacyPreservingProtocols|privacy-preserving techniques]], serving as reference designs for developers and educational resources for researchers. Well-documented implementation examples with security audits, gas optimisation techniques, and [[BestPractices|best practices]] guidance accelerate adoption and reduce deployment risks.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

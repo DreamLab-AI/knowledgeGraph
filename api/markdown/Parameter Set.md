@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:parameter-set",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:parameter-set",
+  "@type": "Class",
   "label": "Parameter Set",
+  "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:configuration",
-      "vc:label": "Configuration"
+      "@id": "urn:ngm:class:configuration",
+      "label": "Configuration"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3f3f36a5961fb8b8bcd99e8055fd44e4cbc545ece09b1ce96029b3dfdf51994"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3f3f36a5961fb8b8bcd99e8055fd44e4cbc545ece09b1ce96029b3dfdf51994@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:reproducibility",
-      "vc:label": "Reproducibility"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

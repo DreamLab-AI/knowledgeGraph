@@ -420,358 +420,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:learning-algorithm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:learning-algorithm",
+  "@type": "Class",
   "label": "Learning Algorithm",
+  "definition": "LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning unsupervised learning (discovering latent structure in unlabelled data ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-intelligence",
-      "vc:label": "Computational Intelligence"
+      "@id": "urn:ngm:class:computational-intelligence",
+      "label": "Computational Intelligence"
     },
     {
-      "@id": "urn:visionflow:linked:optimisation",
-      "vc:label": "Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:576c14b519a995be2ba92a4fe165446d602c6fa68b679409aae985ec50d5ed6e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actor-network",
+        "label": "Actor Network"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learner",
+        "label": "Continual Learner"
+      },
+      {
+        "@id": "urn:ngm:class:critic-network",
+        "label": "Critic Network"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learner",
+        "label": "Meta-Learner"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:query-strategy",
+        "label": "Query Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:replay-buffer",
+        "label": "Replay Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:byol",
+        "label": "BYOL"
+      },
+      {
+        "@id": "urn:ngm:class:dino",
+        "label": "DINO"
+      },
+      {
+        "@id": "urn:ngm:class:dqn",
+        "label": "DQN"
+      },
+      {
+        "@id": "urn:ngm:class:ewc",
+        "label": "EWC"
+      },
+      {
+        "@id": "urn:ngm:class:maml",
+        "label": "MAML"
+      },
+      {
+        "@id": "urn:ngm:class:mu-zero",
+        "label": "MuZero"
+      },
+      {
+        "@id": "urn:ngm:class:ppo",
+        "label": "PPO"
+      },
+      {
+        "@id": "urn:ngm:class:sac",
+        "label": "SAC"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-clr",
+        "label": "SimCLR"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-loss",
+        "label": "Contrastive Loss"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-processes",
+        "label": "Markov Decision Processes"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-transactions-on-neural-networks",
+        "label": "IEEE Transactions on Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Journal of Machine Learning Research"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:576c14b519a995be2ba92a4fe165446d602c6fa68b679409aae985ec50d5ed6e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms — supervised learning (mapping labelled inputs to outputs via empirical risk minimisation over a hypothesis class, training neural networks, support vector machines, decision trees and gradient-boosted ensembles from labelled examples), unsupervised learning (discovering latent structure in unlabelled data via clustering, dimensionality reduction, and density estimation without supervisory signal), semi-supervised learning (combining sparse labelled examples with abundant unlabelled data through graph-based label propagation, pseudo-labelling, consistency regularisation, and MixMatch/FixMatch), self-supervised learning (constructing supervisory signals from data structure — masked language modelling for BERT, autoregressive next-token prediction for GPT, masked image modelling for MAE), reinforcement learning (optimising sequential decision-making via Bellman equations and reward signals within Markov Decision Processes), meta-learning (adapting rapidly across task distributions fr",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:actor-network",
-      "vc:label": "Actor Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:continual-learner",
-      "vc:label": "Continual Learner"
-    },
-    {
-      "@id": "urn:visionflow:linked:critic-network",
-      "vc:label": "Critic Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-learner",
-      "vc:label": "Meta-Learner"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-gradient",
-      "vc:label": "Policy Gradient"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-strategy",
-      "vc:label": "Query Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:replay-buffer",
-      "vc:label": "Replay Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-function",
-      "vc:label": "Value Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:loss-function",
-      "vc:label": "Loss Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:evaluation-metric",
-      "vc:label": "Evaluation Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperparameter-tuning",
-      "vc:label": "Hyperparameter Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:objective-function",
-      "vc:label": "Objective Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-architecture",
-      "vc:label": "Model Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimiser",
-      "vc:label": "Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-agents",
-      "vc:label": "Autonomous Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:few-shot-learning",
-      "vc:label": "Few-Shot Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-optimisation",
-      "vc:label": "Policy Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:representation-learning",
-      "vc:label": "Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-control",
-      "vc:label": "Robotic Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:byol",
-      "vc:label": "BYOL"
-    },
-    {
-      "@id": "urn:visionflow:linked:dino",
-      "vc:label": "DINO"
-    },
-    {
-      "@id": "urn:visionflow:linked:dqn",
-      "vc:label": "DQN"
-    },
-    {
-      "@id": "urn:visionflow:linked:ewc",
-      "vc:label": "EWC"
-    },
-    {
-      "@id": "urn:visionflow:linked:maml",
-      "vc:label": "MAML"
-    },
-    {
-      "@id": "urn:visionflow:linked:mu-zero",
-      "vc:label": "MuZero"
-    },
-    {
-      "@id": "urn:visionflow:linked:ppo",
-      "vc:label": "PPO"
-    },
-    {
-      "@id": "urn:visionflow:linked:sac",
-      "vc:label": "SAC"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:curriculum-learning",
-      "vc:label": "Curriculum Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sim-clr",
-      "vc:label": "SimCLR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:calculus-of-variations",
-      "vc:label": "Calculus of Variations"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-programming",
-      "vc:label": "Dynamic Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-computing",
-      "vc:label": "Scientific Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:automatic-differentiation",
-      "vc:label": "Automatic Differentiation"
-    },
-    {
-      "@id": "urn:visionflow:linked:contrastive-loss",
-      "vc:label": "Contrastive Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-decision-processes",
-      "vc:label": "Markov Decision Processes"
-    },
-    {
-      "@id": "urn:visionflow:linked:monte-carlo-methods",
-      "vc:label": "Monte Carlo Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:evolutionary-algorithms",
-      "vc:label": "Evolutionary Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-systems",
-      "vc:label": "Rule-Based Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:expert-systems",
-      "vc:label": "Expert Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symbolic-ai",
-      "vc:label": "Symbolic AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:continual-learning",
-      "vc:label": "Continual Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-learning",
-      "vc:label": "Meta-Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-supervised-learning",
-      "vc:label": "Self-Supervised Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:active-learning",
-      "vc:label": "Active Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:curriculum-learning",
-      "vc:label": "Curriculum Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semi-supervised-learning",
-      "vc:label": "Semi-Supervised Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-transactions-on-neural-networks",
-      "vc:label": "IEEE Transactions on Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:journal-of-machine-learning-research",
-      "vc:label": "Journal of Machine Learning Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

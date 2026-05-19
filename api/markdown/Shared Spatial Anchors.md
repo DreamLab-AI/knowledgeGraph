@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:shared-spatial-anchors",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shared-spatial-anchors",
+  "@type": "Class",
   "label": "Shared Spatial Anchors",
+  "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d8536fbcd46c9dc4cc0031c82b91bab55be9571e6a6663e9b4049a9e4a9c9f01"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-ar-experiences",
+        "label": "Collaborative AR Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d8536fbcd46c9dc4cc0031c82b91bab55be9571e6a6663e9b4049a9e4a9c9f01@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-ar-experiences",
-      "vc:label": "Collaborative AR Experiences"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

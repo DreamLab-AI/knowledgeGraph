@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:granular-consent-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:granular-consent-control",
+  "@type": "Class",
   "label": "Granular Consent Control",
+  "definition": "Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and use...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:privacy-framework",
-      "vc:label": "Privacy Framework"
+      "@id": "urn:ngm:class:privacy-framework",
+      "label": "Privacy Framework"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef82115f65d5e0801ccc9f35a037b6ff7ec839de1074aa6eb0387a26c7b9af4a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-data-autonomy",
+        "label": "User Data Autonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef82115f65d5e0801ccc9f35a037b6ff7ec839de1074aa6eb0387a26c7b9af4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and user autonomy over personal information.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-data-autonomy",
-      "vc:label": "User Data Autonomy"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

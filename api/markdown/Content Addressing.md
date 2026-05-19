@@ -240,124 +240,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:content-addressing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:content-addressing",
+  "@type": "Class",
   "label": "Content Addressing",
+  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receip...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
+      "@id": "urn:ngm:class:data-layer",
+      "label": "Data Layer"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-hash",
+        "label": "Content Hash"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:hash-minting",
+        "label": "Hash Minting"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-encoding",
+        "label": "Deterministic Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "@id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:permanent-referenceability",
+        "label": "Permanent Referenceability"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:content-addressed-storage-principles",
+        "label": "Content-Addressed Storage Principles"
+      },
+      {
+        "@id": "urn:ngm:class:git-object-addressing",
+        "label": "Git Object Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4da4de12c4f6a7966f3a052c0aea379843ebeed4e17e6635aa73a5741a10af8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receipts, events, pods, activities) to be referenced by their content rather than by location or opaque identifiers.",
-  "vc:qualityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-hash",
-      "vc:label": "Content Hash"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-serialisation",
-      "vc:label": "Deterministic Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-minting",
-      "vc:label": "Hash Minting"
-    },
-    {
-      "@id": "urn:visionflow:linked:sha-256-hashing",
-      "vc:label": "SHA-256 Hashing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:canonical-json",
-      "vc:label": "Canonical JSON"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-encoding",
-      "vc:label": "Deterministic Encoding"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-storage",
-      "vc:label": "Decentralised Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:deduplication",
-      "vc:label": "Deduplication"
-    },
-    {
-      "@id": "urn:visionflow:linked:permanent-referenceability",
-      "vc:label": "Permanent Referenceability"
-    },
-    {
-      "@id": "urn:visionflow:linked:tamper-detection",
-      "vc:label": "Tamper Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immutability",
-      "vc:label": "Immutability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:content-addressed-storage-principles",
-      "vc:label": "Content-Addressed Storage Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-object-addressing",
-      "vc:label": "Git Object Addressing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs-content-addressing",
-      "vc:label": "IPFS Content Addressing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-hash-functions",
-      "vc:label": "Blockchain Hash Functions"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-hash-table",
-      "vc:label": "Distributed Hash Table"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ]
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

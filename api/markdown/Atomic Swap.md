@@ -160,66 +160,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:atomic-swap",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:atomic-swap",
+  "@type": "Class",
   "label": "Atomic Swap",
+  "definition": "Trustless peer-to-peer cryptocurrency exchange mechanism across different blockchains using Hash Time-Locked Contracts (HTLCs) that guarantees atomic execution where the swap either completes fully or not at all, eliminating counterparty risk without requiring centralized intermediaries.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-protocol",
-      "vc:label": "Blockchain Protocol"
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d64fce874cf711a852f123ef29e1fb18fff53a49cac102b6d24c255e988eae9a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d64fce874cf711a852f123ef29e1fb18fff53a49cac102b6d24c255e988eae9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Trustless peer-to-peer cryptocurrency exchange mechanism across different blockchains using Hash Time-Locked Contracts (HTLCs) that guarantees atomic execution where the swap either completes fully or not at all, eliminating counterparty risk without requiring centralized intermediaries.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-chain-interoperability",
-      "vc:label": "Cross-Chain Interoperability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:hash-time-locked-contract",
-      "vc:label": "Hash Time-Locked Contract"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

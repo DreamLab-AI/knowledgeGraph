@@ -212,114 +212,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:technology-adoption",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:technology-adoption",
+  "@type": "Class",
   "label": "Technology Adoption",
+  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, etrial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:evaluation",
+        "label": "Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:implementation",
+        "label": "Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:sustained-use",
+        "label": "Sustained Use"
+      },
+      {
+        "@id": "urn:ngm:class:trial",
+        "label": "Trial"
+      },
+      {
+        "@id": "urn:ngm:class:awareness",
+        "label": "Awareness"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-buy-in",
+        "label": "Stakeholder Buy-In"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:competitive-advantage",
+        "label": "Competitive Advantage"
+      },
+      {
+        "@id": "urn:ngm:class:innovation-diffusion",
+        "label": "Innovation Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cd8afcfe203670af0e6884bef2fcf07d88d48b6475824f8d7f0ee04d9f2273cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.93",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:evaluation",
-      "vc:label": "Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:implementation",
-      "vc:label": "Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustained-use",
-      "vc:label": "Sustained Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:trial",
-      "vc:label": "Trial"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:awareness",
-      "vc:label": "Awareness"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:change-management",
-      "vc:label": "Change Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-buy-in",
-      "vc:label": "Stakeholder Buy-In"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training",
-      "vc:label": "Training"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:competitive-advantage",
-      "vc:label": "Competitive Advantage"
-    },
-    {
-      "@id": "urn:visionflow:linked:innovation-diffusion",
-      "vc:label": "Innovation Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ecosystem-maturity",
-      "vc:label": "Ecosystem Maturity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards",
-      "vc:label": "Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-education",
-      "vc:label": "User Education"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,74 +3,87 @@
   "title": "Privacy-Enhancing Computation (PEC)",
   "slug": "privacy-enhancing-computation-pec",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
+  "classIri": "urn:ngm:class:privacy-enhancing-computation-pec",
   "domain": "spatial-computing",
-  "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic methods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
+  "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic mods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:homomorphic-encryption",
+        "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
       },
       {
-        "id": "urn:visionflow:linked:zero-knowledge-proofs",
+        "id": "urn:ngm:class:zero-knowledge-proofs",
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "id": "urn:visionflow:owl:class:differential-privacy",
+        "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
       },
       {
-        "id": "urn:visionflow:owl:class:secure-multi-party-computation",
+        "id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multi-Party Computation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "id": "urn:ngm:class:cryptographic-primitives",
         "label": "Cryptographic Primitives"
       },
       {
-        "id": "urn:visionflow:linked:key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "id": "urn:ngm:class:trust-infrastructure",
         "label": "Trust Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:privacy-compliant-processing",
+        "id": "urn:ngm:class:privacy-compliant-processing",
         "label": "Privacy-Compliant Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:confidential-computing",
+        "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+        "id": "urn:ngm:class:privacy-preserving-analytics",
         "label": "Privacy-Preserving Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:secure-data-sharing",
+        "id": "urn:ngm:class:secure-data-sharing",
         "label": "Secure Data Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-architecture",
+        "label": "Privacy Architecture"
+      },
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

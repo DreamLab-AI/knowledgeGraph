@@ -3,82 +3,91 @@
   "title": "Smart Royalties Ledger",
   "slug": "smart-royalties-ledger",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:smart-royalties-ledger",
+  "classIri": "urn:ngm:class:smart-royalties-ledger",
   "domain": "infrastructure",
   "definition": "An automated tracking and distribution system that records creator royalty obligations, calculates payment amounts, and executes compensation transfers for digital content and NFT sales in virtual economy environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:economic-layer",
+      "id": "urn:ngm:class:economic-layer",
       "label": "Economic Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-record",
+        "id": "urn:ngm:class:audit-record",
         "label": "Audit Record"
       },
       {
-        "id": "urn:visionflow:linked:distribution-queue",
+        "id": "urn:ngm:class:distribution-queue",
         "label": "Distribution Queue"
       },
       {
-        "id": "urn:visionflow:linked:payment-tracking-engine",
+        "id": "urn:ngm:class:payment-tracking-engine",
         "label": "Payment Tracking Engine"
       },
       {
-        "id": "urn:visionflow:linked:royalty-calculator",
+        "id": "urn:ngm:class:royalty-calculator",
         "label": "Royalty Calculator"
       },
       {
-        "id": "urn:visionflow:linked:settlement-system",
+        "id": "urn:ngm:class:settlement-system",
         "label": "Settlement System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:identity-system",
+        "id": "urn:ngm:class:identity-system",
         "label": "Identity System"
       },
       {
-        "id": "urn:visionflow:linked:payment-gateway",
+        "id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"
       },
       {
-        "id": "urn:visionflow:linked:transaction-processor",
+        "id": "urn:ngm:class:transaction-processor",
         "label": "Transaction Processor"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-royalty-contract",
+        "id": "urn:ngm:class:smart-royalty-contract",
         "label": "Smart Royalty Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-creator-compensation",
+        "id": "urn:ngm:class:automated-creator-compensation",
         "label": "Automated Creator Compensation"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-attribution",
+        "id": "urn:ngm:class:cross-platform-attribution",
         "label": "Cross-Platform Attribution"
       },
       {
-        "id": "urn:visionflow:owl:class:multi-party-royalties",
+        "id": "urn:ngm:class:multi-party-royalties",
         "label": "Multi-Party Royalties"
       },
       {
-        "id": "urn:visionflow:owl:class:transparent-revenue-sharing",
+        "id": "urn:ngm:class:transparent-revenue-sharing",
         "label": "Transparent Revenue Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy-infrastructure",
+        "label": "Creator Economy Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

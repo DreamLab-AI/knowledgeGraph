@@ -3,53 +3,66 @@
   "title": "Current Sensor",
   "slug": "current-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:current-sensor",
+  "classIri": "urn:ngm:class:current-sensor",
   "domain": "robotics",
-  "definition": "**Current Sensor** - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
+  "definition": "Current Sensor - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     },
     {
-      "id": "urn:visionflow:owl:class:sensor",
+      "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.09,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:analogue-to-digital-conversion",
+        "id": "urn:ngm:class:analogue-to-digital-conversion",
         "label": "Analogue-to-Digital Conversion"
       },
       {
-        "id": "urn:visionflow:linked:signal-conditioning",
+        "id": "urn:ngm:class:signal-conditioning",
         "label": "Signal Conditioning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:efficiency-monitoring",
+        "id": "urn:ngm:class:efficiency-monitoring",
         "label": "Efficiency Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:overload-protection",
+        "id": "urn:ngm:class:overload-protection",
         "label": "Overload Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motor-control-system",
+        "label": "Motor Control System"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

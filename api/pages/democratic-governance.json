@@ -3,27 +3,31 @@
   "title": "Democratic Governance",
   "slug": "democratic-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:democratic-governance",
+  "classIri": "urn:ngm:class:democratic-governance",
   "domain": "infrastructure",
-  "definition": "Democratic Governance is a concept within the metaverse domain. Further enrichment pending.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:regulatory-framework",
-      "label": "Regulatory Framework"
-    }
-  ],
+  "definition": "Democratic Governance is an infrastructure concept.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

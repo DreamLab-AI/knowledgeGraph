@@ -3,91 +3,95 @@
   "title": "URI Canonicaliser",
   "slug": "uri-canonicaliser",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:uri-canonicaliser",
+  "classIri": "urn:ngm:class:uri-canonicaliser",
   "domain": "infrastructure",
-  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1\u2013R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification of agent-emitted artefacts.",
+  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1\u2013R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:identity-systems",
+      "id": "urn:ngm:class:identity-systems",
       "label": "Identity Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.89,
-  "authorityScore": 0.93,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:hash-computation",
+        "id": "urn:ngm:class:hash-computation",
         "label": "Hash Computation"
       },
       {
-        "id": "urn:visionflow:linked:scope-bearer",
+        "id": "urn:ngm:class:scope-bearer",
         "label": "Scope Bearer"
       },
       {
-        "id": "urn:visionflow:linked:slug-derivation",
+        "id": "urn:ngm:class:slug-derivation",
         "label": "Slug Derivation"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bip-340-pubkey",
+        "id": "urn:ngm:class:bip-340-pubkey",
         "label": "BIP-340 Pubkey"
       },
       {
-        "id": "urn:visionflow:linked:json-stringification",
+        "id": "urn:ngm:class:json-stringification",
         "label": "JSON Stringification"
       },
       {
-        "id": "urn:visionflow:linked:sha-256-hash-function",
+        "id": "urn:ngm:class:sha-256-hash-function",
         "label": "SHA-256 Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:uri-rfc-8141",
+        "id": "urn:ngm:class:uri-rfc-8141",
         "label": "URI RFC 8141"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-resolution",
+        "id": "urn:ngm:class:decentralised-resolution",
         "label": "Decentralised Resolution"
       },
       {
-        "id": "urn:visionflow:linked:deterministic-serialisation",
+        "id": "urn:ngm:class:deterministic-serialisation",
         "label": "Deterministic Serialisation"
       },
       {
-        "id": "urn:visionflow:linked:tamper-detection",
+        "id": "urn:ngm:class:tamper-detection",
         "label": "Tamper Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ietf-content-addressable-architecture",
+        "id": "urn:ngm:class:ietf-content-addressable-architecture",
         "label": "IETF Content-Addressable Architecture"
       },
       {
-        "id": "urn:visionflow:linked:rfc-8141-urn-syntax",
+        "id": "urn:ngm:class:rfc-8141-urn-syntax",
         "label": "RFC 8141 URN Syntax"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

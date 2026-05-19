@@ -208,128 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:emotional-analytics-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emotional-analytics-engine",
+  "@type": "Class",
   "label": "Emotional Analytics Engine",
+  "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:affective-state-predictor",
+        "label": "Affective State Predictor"
+      },
+      {
+        "@id": "urn:ngm:class:facial-expression-analyzer",
+        "label": "Facial Expression Analyzer"
+      },
+      {
+        "@id": "urn:ngm:class:physiological-sensor-processor",
+        "label": "Physiological Sensor Processor"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-classification-model",
+        "label": "Sentiment Classification Model"
+      },
+      {
+        "@id": "urn:ngm:class:voice-emotion-detector",
+        "label": "Voice Emotion Detector"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data-stream",
+        "label": "Sensor Data Stream"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-user-interface",
+        "label": "Adaptive User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion-Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:affective-computing-system",
+        "label": "Affective Computing System"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-analytics-platform",
+        "label": "User Experience Analytics Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:140d31a371b071500259aa3b136ef902ab5232d2f72654592e3d9ce23e5417a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing-system",
-      "vc:label": "Affective Computing System"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience-analytics-platform",
-      "vc:label": "User Experience Analytics Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:affective-state-predictor",
-      "vc:label": "Affective State Predictor"
-    },
-    {
-      "@id": "urn:visionflow:linked:facial-expression-analyzer",
-      "vc:label": "Facial Expression Analyzer"
-    },
-    {
-      "@id": "urn:visionflow:linked:physiological-sensor-processor",
-      "vc:label": "Physiological Sensor Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:sentiment-classification-model",
-      "vc:label": "Sentiment Classification Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-emotion-detector",
-      "vc:label": "Voice Emotion Detector"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:privacy-protection",
-      "vc:label": "Privacy Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data-stream",
-      "vc:label": "Sensor Data Stream"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-model",
-      "vc:label": "Machine Learning Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-Time Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-user-interface",
-      "vc:label": "Adaptive User Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:mental-health-monitoring",
-      "vc:label": "Mental Health Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emotion-aware-interaction",
-      "vc:label": "Emotion-Aware Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biometric-sensors",
-      "vc:label": "Biometric Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-processing",
-      "vc:label": "Speech Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

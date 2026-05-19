@@ -456,408 +456,323 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-layer",
+  "@type": "Class",
   "label": "Data Layer",
+  "definition": "Data Layer is the architectural tier within a layered, n-tier, hexagonal, or modular system responsible for the durable persistence, transactional integrity, indexed retrieval, replication, and abstraction of stateful data — encompassing both the enterprise-architecture sense (the data access lay...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:architectural-layer",
-      "vc:label": "Architectural Layer"
+      "@id": "urn:ngm:class:architectural-layer",
+      "label": "Architectural Layer"
     },
     {
-      "@id": "urn:visionflow:linked:software-layer",
-      "vc:label": "Software Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-tier",
-      "vc:label": "System Tier"
+      "@id": "urn:ngm:class:software-layer",
+      "label": "Software Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a2bfff0db09447658b3c9134ac906c79839d083058567cb292b71fdf8749be6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "@id": "urn:ngm:class:connection-pool",
+        "label": "Connection Pool"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:data-indexing",
+        "label": "Data Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:database-engine",
+        "label": "Database Engine"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:object-relational-mapper",
+        "label": "Object-Relational Mapper"
+      },
+      {
+        "@id": "urn:ngm:class:replication-service",
+        "label": "Replication Service"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-manager",
+        "label": "Transaction Manager"
+      },
+      {
+        "@id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:backup-strategy",
+        "label": "Backup Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:storage-medium",
+        "label": "Storage Medium"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:acid-compliance",
+        "label": "ACID Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scaling",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:polyglot-persistence",
+        "label": "Polyglot Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:rollup-scaling",
+        "label": "Rollup Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-query",
+        "label": "Semantic Query"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:active-record",
+        "label": "Active Record"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      },
+      {
+        "@id": "urn:ngm:class:data-mapper-pattern",
+        "label": "Data Mapper Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:hexagonal-architecture",
+        "label": "Hexagonal Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:ports-and-adapters",
+        "label": "Ports and Adapters"
+      },
+      {
+        "@id": "urn:ngm:class:repository-pattern",
+        "label": "Repository Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:unit-of-work",
+        "label": "Unit of Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      },
+      {
+        "@id": "urn:ngm:class:cypher",
+        "label": "Cypher"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:jdbc",
+        "label": "JDBC"
+      },
+      {
+        "@id": "urn:ngm:class:odbc",
+        "label": "ODBC"
+      },
+      {
+        "@id": "urn:ngm:class:orm-frameworks",
+        "label": "ORM Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:avail",
+        "label": "Avail"
+      },
+      {
+        "@id": "urn:ngm:class:celestia",
+        "label": "Celestia"
+      },
+      {
+        "@id": "urn:ngm:class:clean-architecture",
+        "label": "Clean Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:eigen-da",
+        "label": "EigenDA"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-agg-layer",
+        "label": "Polygon AggLayer"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:business-logic-layer",
+        "label": "Business Logic Layer"
+      },
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:execution-layer",
+        "label": "Execution Layer"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-layer",
+        "label": "Reporting Layer"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ansi-sql",
+        "label": "ANSI SQL"
+      },
+      {
+        "@id": "urn:ngm:class:celestia-specifications",
+        "label": "Celestia Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:cidr-architecture",
+        "label": "CIDR Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075"
+      },
+      {
+        "@id": "urn:ngm:class:jdbc-specification",
+        "label": "JDBC Specification"
+      },
+      {
+        "@id": "urn:ngm:class:jpa-specification",
+        "label": "JPA Specification"
+      },
+      {
+        "@id": "urn:ngm:class:odbc-specification",
+        "label": "ODBC Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a2bfff0db09447658b3c9134ac906c79839d083058567cb292b71fdf8749be6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Data Layer** is the architectural tier within a layered, n-tier, hexagonal, or modular system responsible for the durable persistence, transactional integrity, indexed retrieval, replication, and abstraction of stateful data — encompassing both the enterprise-architecture sense (the **data access layer** of n-tier applications, sometimes called the **persistence layer**, **data tier** or **DAL**, comprising database engines, ORMs, repository patterns, query processors, transaction managers, replication services, caching layers and storage drivers, formalised by Edward Yourdon and Larry Constantine in 1970s structured design, refined through Eric Evans' 2003 *Domain-Driven Design*, Vaughn Vernon's 2013 *Implementing Domain-Driven Design*, Alistair Cockburn's 2005 *Hexagonal Architecture* with its ports-and-adapters formulation, Robert C. Martin's 2012 *Clean Architecture* with its outer-ring framing of databases as detail-level implementation concerns, and Martin Fowler's 2002 *Patterns of Enterprise Application Architecture* canonising the Repository, Data Mapper, Active Record, Unit of Work, Identity Map and Query Object patterns) and the modular-blockchain sense (the **data ava",
-  "vc:qualityScore": {
-    "@value": "0.53",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cache-layer",
-      "vc:label": "Cache Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:connection-pool",
-      "vc:label": "Connection Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-availability-sampling",
-      "vc:label": "Data Availability Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-indexing",
-      "vc:label": "Data Indexing"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-engine",
-      "vc:label": "Database Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:erasure-coding",
-      "vc:label": "Erasure Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:kzg-commitment",
-      "vc:label": "KZG Commitment"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-relational-mapper",
-      "vc:label": "Object-Relational Mapper"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-service",
-      "vc:label": "Replication Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-manager",
-      "vc:label": "Transaction Manager"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:query-processor",
-      "vc:label": "Query Processor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schema-registry",
-      "vc:label": "Schema Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:backup-strategy",
-      "vc:label": "Backup Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:file-system",
-      "vc:label": "File System"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-definition",
-      "vc:label": "Schema Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-medium",
-      "vc:label": "Storage Medium"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:acid-compliance",
-      "vc:label": "ACID Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-availability",
-      "vc:label": "Data Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-consistency",
-      "vc:label": "Data Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-persistence",
-      "vc:label": "Data Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:horizontal-scaling",
-      "vc:label": "Horizontal Scaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:polyglot-persistence",
-      "vc:label": "Polyglot Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rollup-scaling",
-      "vc:label": "Rollup Scaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-query",
-      "vc:label": "Semantic Query"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:active-record",
-      "vc:label": "Active Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:cqrs",
-      "vc:label": "CQRS"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-mapper-pattern",
-      "vc:label": "Data Mapper Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-sourcing",
-      "vc:label": "Event Sourcing"
-    },
-    {
-      "@id": "urn:visionflow:linked:hexagonal-architecture",
-      "vc:label": "Hexagonal Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:ports-and-adapters",
-      "vc:label": "Ports and Adapters"
-    },
-    {
-      "@id": "urn:visionflow:linked:repository-pattern",
-      "vc:label": "Repository Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:unit-of-work",
-      "vc:label": "Unit of Work"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:file-system",
-      "vc:label": "File System"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-hierarchy",
-      "vc:label": "Memory Hierarchy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:operating-system",
-      "vc:label": "Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-layer",
-      "vc:label": "Physical Layer"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:business-logic-layer",
-      "vc:label": "Business Logic Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-model",
-      "vc:label": "Domain Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:execution-layer",
-      "vc:label": "Execution Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-layer",
-      "vc:label": "Reporting Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-layer",
-      "vc:label": "Settlement Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:application-layer",
-      "vc:label": "Application Layer"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bloom-filter",
-      "vc:label": "Bloom Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:cypher",
-      "vc:label": "Cypher"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-ql",
-      "vc:label": "GraphQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:jdbc",
-      "vc:label": "JDBC"
-    },
-    {
-      "@id": "urn:visionflow:linked:odbc",
-      "vc:label": "ODBC"
-    },
-    {
-      "@id": "urn:visionflow:linked:orm-frameworks",
-      "vc:label": "ORM Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:reed-solomon-codes",
-      "vc:label": "Reed-Solomon Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:sql",
-      "vc:label": "SQL"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:business-logic-layer",
-      "vc:label": "Business Logic Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:consensus-layer",
-      "vc:label": "Consensus Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:execution-layer",
-      "vc:label": "Execution Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:presentation-layer",
-      "vc:label": "Presentation Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-layer",
-      "vc:label": "Settlement Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:application-layer",
-      "vc:label": "Application Layer"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:avail",
-      "vc:label": "Avail"
-    },
-    {
-      "@id": "urn:visionflow:linked:celestia",
-      "vc:label": "Celestia"
-    },
-    {
-      "@id": "urn:visionflow:linked:clean-architecture",
-      "vc:label": "Clean Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-driven-design",
-      "vc:label": "Domain-Driven Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:eigen-da",
-      "vc:label": "EigenDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:microservices",
-      "vc:label": "Microservices"
-    },
-    {
-      "@id": "urn:visionflow:linked:modular-blockchain",
-      "vc:label": "Modular Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:polygon-agg-layer",
-      "vc:label": "Polygon AggLayer"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ansi-sql",
-      "vc:label": "ANSI SQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:celestia-specifications",
-      "vc:label": "Celestia Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:cidr-architecture",
-      "vc:label": "CIDR Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-4844",
-      "vc:label": "EIP-4844"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-9075",
-      "vc:label": "ISO/IEC 9075"
-    },
-    {
-      "@id": "urn:visionflow:linked:jdbc-specification",
-      "vc:label": "JDBC Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:jpa-specification",
-      "vc:label": "JPA Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:odbc-specification",
-      "vc:label": "ODBC Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:data-availability",
-      "vc:label": "Data Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:database",
-      "vc:label": "Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:application-layer",
-      "vc:label": "Application Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ]
+  "quality": 0.53,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

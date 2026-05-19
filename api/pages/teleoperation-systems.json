@@ -3,19 +3,18 @@
   "title": "Teleoperation Systems",
   "slug": "teleoperation-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:teleoperation-systems",
+  "classIri": "urn:ngm:class:teleoperation-systems",
   "domain": "distributed-collaboration",
-  "definition": "\"Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-machine coupling for remote physical interaction.\"",
+  "definition": "\"Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-mac...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotic-telepresence",
+      "id": "urn:ngm:class:robotic-telepresence",
       "label": "Robotic Telepresence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

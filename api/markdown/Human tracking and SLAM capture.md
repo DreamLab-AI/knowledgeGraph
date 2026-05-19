@@ -99,41 +99,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-tracking-and-slam-capture",
+  "@type": "Class",
   "label": "Human tracking and SLAM capture",
+  "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:sensor-technology",
-      "vc:label": "Sensor Technology"
+      "@id": "urn:ngm:class:sensor-technology",
+      "label": "Sensor Technology"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a6165d3e89a0f5333c88ae7c44537c14570f61efaf22a24a7eef46ae079f6d93"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a6165d3e89a0f5333c88ae7c44537c14570f61efaf22a24a7eef46ae079f6d93@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

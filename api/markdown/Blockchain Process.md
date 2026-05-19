@@ -108,48 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-process",
+  "@type": "Class",
   "label": "Blockchain Process",
+  "definition": "Blockchain Process is a blockchain and distributed systems concept and a type of blockchain.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:14068595c93b2ab0d810ccfcd80d2b8eeaa6f90cb72151f3846076a111ba4b42"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:14068595c93b2ab0d810ccfcd80d2b8eeaa6f90cb72151f3846076a111ba4b42@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain Process is a blockchain and distributed systems concept and a type of blockchain.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

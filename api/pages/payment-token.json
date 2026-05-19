@@ -3,19 +3,18 @@
   "title": "Payment Token",
   "slug": "payment-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:payment-token",
+  "classIri": "urn:ngm:class:payment-token",
   "domain": "blockchain",
-  "definition": "Tokens used for payments.",
+  "definition": "Payment Token is a type of Cryptocurrency Token in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptocurrency-token",
+      "id": "urn:ngm:class:cryptocurrency-token",
       "label": "Cryptocurrency Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Hydraulic Cylinder",
   "slug": "hydraulic-cylinder",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hydraulic-cylinder",
+  "classIri": "urn:ngm:class:hydraulic-cylinder",
   "domain": "robotics",
   "definition": "Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hydraulic-actuator",
+      "id": "urn:ngm:class:hydraulic-actuator",
       "label": "Hydraulic Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

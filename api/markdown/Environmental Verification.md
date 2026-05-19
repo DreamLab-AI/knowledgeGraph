@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:environmental-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:environmental-verification",
+  "@type": "Class",
   "label": "Environmental Verification",
+  "definition": "Environmental Verification is a type of Spatial Computing in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2cfc270aac5628f448cc69cc4e8459e23108db8cdd585de389a9d1fc7c20c0e3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2cfc270aac5628f448cc69cc4e8459e23108db8cdd585de389a9d1fc7c20c0e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Environmental Verification is a concept within the metaverse domain. Further enrichment pending.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

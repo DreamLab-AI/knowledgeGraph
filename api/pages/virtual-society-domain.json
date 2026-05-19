@@ -3,19 +3,18 @@
   "title": "Virtual Society Domain",
   "slug": "virtual-society-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-society-domain",
+  "classIri": "urn:ngm:class:virtual-society-domain",
   "domain": "spatial-computing",
-  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behavior and rights in persistent virtual worlds.",
+  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ical and regulatory considerations governing behavior and rights in persistent virtual wo...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-society",
+      "id": "urn:ngm:class:digital-society",
       "label": "Digital Society"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

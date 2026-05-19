@@ -3,19 +3,18 @@
   "title": "Swarm Robotics",
   "slug": "swarm-robotics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:swarm-robotics",
+  "classIri": "urn:ngm:class:swarm-robotics",
   "domain": "robotics",
-  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks. Individual robots with limited sensing, computation, and actuation communicate locally with neighbours, creating [[EmergentBehavior|emergent]] system-level intelligence enabling tasks like coordinated navigation, object transport, and environmental sensing that exceed individual capabilities. Applications span [[SearchAndRescue|search and rescue]], agricultural monitoring, warehouse logistics, and construction automation, with resilience from [[FaultTolerance|fault tolerance]] and scalability enabling deployment of thousands of autonomous agents.",
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

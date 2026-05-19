@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pure-proof-of-stake",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pure-proof-of-stake",
+  "@type": "Class",
   "label": "Pure Proof of Stake",
+  "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
+      "@id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:de1e8d65b56da883b2c049a0357d97b44d371ece0f0756ebd778e78768fb73f8"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:de1e8d65b56da883b2c049a0357d97b44d371ece0f0756ebd778e78768fb73f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

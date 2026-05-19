@@ -3,151 +3,247 @@
   "title": "Exteroceptive Sensor",
   "slug": "exteroceptive-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:exteroceptive-sensor",
+  "classIri": "urn:ngm:class:exteroceptive-sensor",
   "domain": "robotics",
-  "definition": "Exteroceptive sensors are robot perception transducers that measure information about the external environment surrounding the robot rather than its internal kinematic, dynamic, or energetic state, providing the raw signals from which obstacle maps, semantic scene representations, object poses, terrain affordances, and social context for [[Human-Robot Interaction]] are computed; the modality spans optical sensing (RGB cameras 1-50 MP at 30-240 Hz, stereo rigs 60-960 Hz disparity matching, RGB-D structured-light/time-of-flight depth cameras delivering 100K-2M points/frame such as Intel RealSense D455/D456/D457 with 87\u00b0 HFOV 6 m range $200-$400, ZED 2/2i/X by Stereolabs with neural depth $450-$1500, Microsoft Kinect Azure DK with 1024\u00d71024 ToF depth + 12 MP RGB $399, Apple LiDAR Pro consumer dToF on iPad/iPhone Pro, Luxonis OAK-D-Lite/Pro embedded Myriad-X edge-AI $99-$399), laser scanning ([[Lidar]] 3D rotating mechanical 16-256 beam Velodyne HDL-32/64/Puck/Alpha Prime, Ouster OS0 wide-field/OS1 mid-range/OS2 long-range 32-128 channel digital flash CMOS $7K-$24K, Hesai AT128/AT256/AT512 hybrid solid-state $1500-$8000 standard on XPeng/NIO/Li Auto Chinese EVs, Livox Mid-360/Avia/HAP ",
+  "definition": "Exteroceptive sensors are robot perception transducers that measure information about the external environment surrounding the robot rather than its internal kinematic, dynamic, or energetic state, providing the raw signals from which obstacle maps, semantic scene representations, object poses, t...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:environmental-sensor",
+      "id": "urn:ngm:class:environmental-sensor",
       "label": "Environmental Sensor"
     },
     {
-      "id": "urn:visionflow:linked:perception-transducer",
+      "id": "urn:ngm:class:perception-transducer",
       "label": "Perception Transducer"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robot-sensor",
-      "label": "Robot Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-interface",
+        "id": "urn:ngm:class:data-interface",
         "label": "Data Interface"
       },
       {
-        "id": "urn:visionflow:linked:optical-window",
+        "id": "urn:ngm:class:optical-window",
         "label": "Optical Window"
       },
       {
-        "id": "urn:visionflow:linked:sensing-element",
+        "id": "urn:ngm:class:sensing-element",
         "label": "Sensing Element"
       },
       {
-        "id": "urn:visionflow:linked:sensor-housing",
+        "id": "urn:ngm:class:sensor-housing",
         "label": "Sensor Housing"
       },
       {
-        "id": "urn:visionflow:linked:signal-conditioning",
+        "id": "urn:ngm:class:signal-conditioning",
         "label": "Signal Conditioning"
       },
       {
-        "id": "urn:visionflow:owl:class:analog-to-digital-converter",
+        "id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analog-to-Digital Converter"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-target",
+        "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
       {
-        "id": "urn:visionflow:linked:computational-processing",
+        "id": "urn:ngm:class:computational-processing",
         "label": "Computational Processing"
       },
       {
-        "id": "urn:visionflow:linked:coordinate-frame",
+        "id": "urn:ngm:class:coordinate-frame",
         "label": "Coordinate Frame"
       },
       {
-        "id": "urn:visionflow:linked:sensor-driver",
+        "id": "urn:ngm:class:sensor-driver",
         "label": "Sensor Driver"
       },
       {
-        "id": "urn:visionflow:linked:time-synchronisation",
+        "id": "urn:ngm:class:time-synchronisation",
         "label": "Time Synchronisation"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:grasp-planning",
+        "id": "urn:ngm:class:grasp-planning",
         "label": "Grasp Planning"
       },
       {
-        "id": "urn:visionflow:linked:localisation",
+        "id": "urn:ngm:class:localisation",
         "label": "Localisation"
       },
       {
-        "id": "urn:visionflow:linked:mapping",
+        "id": "urn:ngm:class:mapping",
         "label": "Mapping"
       },
       {
-        "id": "urn:visionflow:linked:visual-servoing",
+        "id": "urn:ngm:class:visual-servoing",
         "label": "Visual Servoing"
       },
       {
-        "id": "urn:visionflow:owl:class:object-detection",
+        "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       },
       {
-        "id": "urn:visionflow:owl:class:scene-understanding",
+        "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:visionflow:owl:class:social-robotics",
+        "id": "urn:ngm:class:social-robotics",
         "label": "Social Robotics"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:acoustic-sensing",
+        "id": "urn:ngm:class:acoustic-sensing",
         "label": "Acoustic Sensing"
       },
       {
-        "id": "urn:visionflow:linked:event-driven-sensing",
+        "id": "urn:ngm:class:event-driven-sensing",
         "label": "Event-Driven Sensing"
       },
       {
-        "id": "urn:visionflow:linked:radar-sensing",
+        "id": "urn:ngm:class:radar-sensing",
         "label": "Radar Sensing"
       },
       {
-        "id": "urn:visionflow:linked:range-sensing",
+        "id": "urn:ngm:class:range-sensing",
         "label": "Range Sensing"
       },
       {
-        "id": "urn:visionflow:linked:tactile-sensing",
+        "id": "urn:ngm:class:tactile-sensing",
         "label": "Tactile Sensing"
       },
       {
-        "id": "urn:visionflow:linked:thermal-sensing",
+        "id": "urn:ngm:class:thermal-sensing",
         "label": "Thermal Sensing"
       },
       {
-        "id": "urn:visionflow:linked:vision-sensing",
+        "id": "urn:ngm:class:vision-sensing",
         "label": "Vision Sensing"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61496",
+        "label": "IEC 61496"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-21448-sotif",
+        "label": "ISO 21448 SOTIF"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO/TS 15066"
+      },
+      {
+        "id": "urn:ngm:class:ros-sensor-msgs",
+        "label": "ROS sensor_msgs"
+      },
+      {
+        "id": "urn:ngm:class:sae-j3016",
+        "label": "SAE J3016"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-perception",
+        "label": "3D Perception"
+      },
+      {
+        "id": "urn:ngm:class:bird-s-eye-view-perception",
+        "label": "Bird's-Eye-View Perception"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
   "wikilinks": [
     {

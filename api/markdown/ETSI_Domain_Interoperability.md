@@ -188,41 +188,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-interoperability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-interoperability",
+  "@type": "Class",
   "label": "ETSI_Domain_Interoperability",
+  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work toger effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ffa8dd97782644ea48bb53741853976a6f6a470c45cd4f40e00804e586fde101"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ffa8dd97782644ea48bb53741853976a6f6a470c45cd4f40e00804e586fde101@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols. Interoperability frameworks implement [[NGSI-LD]] and [[SAREF]] (Smart Applications Reference Ontology) enabling connected infrastructures to exchange and interpret data across platforms, with infrastructure quality metrics assessing trustworthiness through completeness, accuracy, bias, integrity, and reliability—particularly critical in AI-driven contexts. Regulatory alignment through EU Data Act Article 35 mandates interoperable specifications and centralised standards repositories, whilst accessibility standards (ETSI ES 204 009) ensure inclusive communication combining voice, real-time text, and sign language video compliance with European Accessibility Act requirements across diverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

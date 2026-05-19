@@ -3,82 +3,95 @@
   "title": "Virtual Property Right",
   "slug": "virtual-property-right",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-property-right",
+  "classIri": "urn:ngm:class:virtual-property-right",
   "domain": "spatial-computing",
   "definition": "A legally recognized claim to ownership, use, transfer, or exclusion rights over digital assets, virtual goods, or intangible resources within virtual environments, enforced through technical mechanisms, platform policies, or legal frameworks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:enforcement-system",
+        "id": "urn:ngm:class:enforcement-system",
         "label": "Enforcement System"
       },
       {
-        "id": "urn:visionflow:linked:exclusion-right",
+        "id": "urn:ngm:class:exclusion-right",
         "label": "Exclusion Right"
       },
       {
-        "id": "urn:visionflow:linked:ownership-claim",
+        "id": "urn:ngm:class:ownership-claim",
         "label": "Ownership Claim"
       },
       {
-        "id": "urn:visionflow:linked:transfer-mechanism",
+        "id": "urn:ngm:class:transfer-mechanism",
         "label": "Transfer Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:usage-permission",
+        "id": "urn:ngm:class:usage-permission",
         "label": "Usage Permission"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:authentication-mechanism",
+        "id": "urn:ngm:class:authentication-mechanism",
         "label": "Authentication Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:legal-recognition",
+        "id": "urn:ngm:class:legal-recognition",
         "label": "Legal Recognition"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-registry",
+        "id": "urn:ngm:class:asset-registry",
         "label": "Asset Registry"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ip-protection",
+        "id": "urn:ngm:class:ip-protection",
         "label": "IP Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-asset-trading",
+        "id": "urn:ngm:class:virtual-asset-trading",
         "label": "Virtual Asset Trading"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-land-rights",
+        "id": "urn:ngm:class:virtual-land-rights",
         "label": "Virtual Land Rights"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:legal-system",
+        "label": "Legal System"
+      },
+      {
+        "id": "urn:ngm:class:property-law-framework",
+        "label": "Property Law Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

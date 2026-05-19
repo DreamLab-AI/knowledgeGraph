@@ -3,19 +3,18 @@
   "title": "Stakeholder Engagement in AI",
   "slug": "stakeholder-engagement-in-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:stakeholder-engagement-in-ai",
+  "classIri": "urn:ngm:class:stakeholder-engagement-in-ai",
   "domain": "artificial-intelligence",
-  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive governance. This engagement encompasses diverse stakeholders including end users, affected communities, subject matter experts, civil society organizations, regulators, and internal organizational stakeholders, soliciting input through various methods to inform AI system design, risk assessment, and governance decisions. Engagement methods span the participation spectrum from information provision (transparency reports, public documentation), consultation (surveys, focus groups, public comment periods), collaboration (co-design workshops, participatory research), and empowerment (community oversight boards, contestation mechanisms). Effective stakeholder engagement identifies power asymmetries and barriers to participation, ensuring meaningful inclusion of marginalized and vulnerable groups, uses accessible communication avoiding technical jargon, provides adequate time and resources for infor",
+  "definition": "Stakeholder Engagement in AI is a participatory process that systematically identifies, involves, and incorporates perspectives from individuals, groups, and communities affected by or having legitimate interests in AI systems, ensuring inclusive design, accountable deployment, and responsive gov...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

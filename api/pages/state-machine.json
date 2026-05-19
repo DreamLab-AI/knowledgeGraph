@@ -3,147 +3,259 @@
   "title": "State Machine",
   "slug": "state-machine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-machine",
+  "classIri": "urn:ngm:class:state-machine",
   "domain": "infrastructure",
-  "definition": "StateMachine is a computational abstraction \u2014 rooted in automata theory and formal language theory \u2014 representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state \u00d7 input) \u2192 next-state, and optionally an output function. Formally, a deterministic finite automaton (DFA) is the quintuple M = (Q, \u03a3, \u03b4, q\u2080, F) where Q is the finite non-empty set of states, \u03a3 the input alphabet, \u03b4: Q \u00d7 \u03a3 \u2192 Q the total transition function, q\u2080 \u2208 Q the start state, and F \u2286 Q the set of accepting states; the machine accepts string w \u2208 \u03a3* iff \u03b4*(q\u2080, w) \u2208 F where \u03b4* is the extension of \u03b4 to strings. Moore machines extend this to a sextuple (Q, \u03a3, \u0394, \u03b4, \u03bb, q\u2080) where \u0394 is the output alphabet and \u03bb: Q \u2192 \u0394 the state-output function, so outputs depend only on current state; Mealy machines restructure as (Q, \u03a3, \u0394, \u03b4, \u03bb, q\u2080) with \u03bb: Q \u00d7 \u03a3 \u2192 \u0394 so outputs depend on both state and current input, giving strictly equivalent expressiveness to Moore machines under bisimulation but with more compact representations for many transducers. Nondeterministic finite automata (NFA) replace \u03b4 with \u0394: Q \u00d7 \u03a3",
+  "definition": "StateMachine is a computational abstraction \u2014 rooted in automata theory and formal language theory \u2014 representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state \u00d7 inpu...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:automata-theory",
+      "id": "urn:ngm:class:automata-theory",
       "label": "Automata Theory"
     },
     {
-      "id": "urn:visionflow:linked:computational-model",
+      "id": "urn:ngm:class:computational-model",
       "label": "Computational Model"
-    },
-    {
-      "id": "urn:visionflow:linked:concurrency-theory",
-      "label": "Concurrency Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:accepting-state",
+        "id": "urn:ngm:class:accepting-state",
         "label": "Accepting State"
       },
       {
-        "id": "urn:visionflow:linked:input-alphabet",
+        "id": "urn:ngm:class:input-alphabet",
         "label": "Input Alphabet"
       },
       {
-        "id": "urn:visionflow:linked:output-function",
+        "id": "urn:ngm:class:output-function",
         "label": "Output Function"
       },
       {
-        "id": "urn:visionflow:linked:stack",
+        "id": "urn:ngm:class:stack",
         "label": "Stack"
       },
       {
-        "id": "urn:visionflow:linked:start-state",
+        "id": "urn:ngm:class:start-state",
         "label": "Start State"
       },
       {
-        "id": "urn:visionflow:linked:state",
+        "id": "urn:ngm:class:state",
         "label": "State"
       },
       {
-        "id": "urn:visionflow:linked:tape",
+        "id": "urn:ngm:class:tape",
         "label": "Tape"
       },
       {
-        "id": "urn:visionflow:linked:transition-function",
+        "id": "urn:ngm:class:transition-function",
         "label": "Transition Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:determinism",
+        "id": "urn:ngm:class:determinism",
         "label": "Determinism"
       },
       {
-        "id": "urn:visionflow:linked:event-model",
+        "id": "urn:ngm:class:event-model",
         "label": "Event Model"
       },
       {
-        "id": "urn:visionflow:linked:replication-log",
+        "id": "urn:ngm:class:replication-log",
         "label": "Replication Log"
       },
       {
-        "id": "urn:visionflow:linked:state-space",
+        "id": "urn:ngm:class:state-space",
         "label": "State Space"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:behaviour-tree",
+        "id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Tree"
       },
       {
-        "id": "urn:visionflow:linked:parser",
+        "id": "urn:ngm:class:parser",
         "label": "Parser"
       },
       {
-        "id": "urn:visionflow:linked:protocol-verification",
+        "id": "urn:ngm:class:protocol-verification",
         "label": "Protocol Verification"
       },
       {
-        "id": "urn:visionflow:linked:regular-expression",
+        "id": "urn:ngm:class:regular-expression",
         "label": "Regular Expression"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:finite-automaton",
+        "id": "urn:ngm:class:finite-automaton",
         "label": "Finite Automaton"
       },
       {
-        "id": "urn:visionflow:linked:pushdown-automaton",
+        "id": "urn:ngm:class:pushdown-automaton",
         "label": "Pushdown Automaton"
       },
       {
-        "id": "urn:visionflow:linked:replicated-state-machine",
+        "id": "urn:ngm:class:replicated-state-machine",
         "label": "Replicated State Machine"
       },
       {
-        "id": "urn:visionflow:linked:spring-state-machine",
+        "id": "urn:ngm:class:spring-state-machine",
         "label": "Spring State Machine"
       },
       {
-        "id": "urn:visionflow:linked:statecharts",
+        "id": "urn:ngm:class:statecharts",
         "label": "Statecharts"
       },
       {
-        "id": "urn:visionflow:linked:turing-machine",
+        "id": "urn:ngm:class:turing-machine",
         "label": "Turing Machine"
       },
       {
-        "id": "urn:visionflow:linked:xstate",
+        "id": "urn:ngm:class:xstate",
         "label": "XState"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:scxml",
+        "label": "SCXML"
+      },
+      {
+        "id": "urn:ngm:class:uml",
+        "label": "UML"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:ui-state-management",
+        "label": "UI State Management"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.X"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-9562",
+        "label": "IETF RFC 9562"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-10746-rm-odp",
+        "label": "ISO/IEC 10746 RM-ODP"
+      },
+      {
+        "id": "urn:ngm:class:omg-uml-2-5-1",
+        "label": "OMG UML 2.5.1"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-scxml",
+        "label": "W3C SCXML"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
   },
   "wikilinks": [
     {

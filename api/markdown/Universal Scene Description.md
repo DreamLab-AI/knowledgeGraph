@@ -392,310 +392,247 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:universal-scene-description",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:universal-scene-description",
+  "@type": "Class",
   "label": "Universal Scene Description",
+  "definition": "Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:asset-pipeline",
-      "vc:label": "Asset Pipeline"
+      "@id": "urn:ngm:class:asset-pipeline",
+      "label": "Asset Pipeline"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-d-file-format",
-      "vc:label": "3D File Format"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
+      "@id": "urn:ngm:class:3-d-file-format",
+      "label": "3D File Format"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5ccf9e06b584664571d4ac76f379b8ddc0103fda3f46b8e840496f88dd9ff1dd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:composition-arcs",
+        "label": "Composition Arcs"
+      },
+      {
+        "@id": "urn:ngm:class:crate-format",
+        "label": "Crate Format"
+      },
+      {
+        "@id": "urn:ngm:class:hydra",
+        "label": "Hydra"
+      },
+      {
+        "@id": "urn:ngm:class:layer-stack",
+        "label": "Layer Stack"
+      },
+      {
+        "@id": "urn:ngm:class:material-x",
+        "label": "MaterialX"
+      },
+      {
+        "@id": "urn:ngm:class:open-subdiv",
+        "label": "OpenSubdiv"
+      },
+      {
+        "@id": "urn:ngm:class:usd-skel",
+        "label": "UsdSkel"
+      },
+      {
+        "@id": "urn:ngm:class:usdz",
+        "label": "USDZ"
+      },
+      {
+        "@id": "urn:ngm:class:variant-sets",
+        "label": "Variant Sets"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:layer-resolution",
+        "label": "Layer Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:renderer",
+        "label": "Renderer"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-scene-assembly",
+        "label": "Collaborative Scene Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:cross-dcc-interoperability",
+        "label": "Cross-DCC Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:non-destructive-editing",
+        "label": "Non-Destructive Editing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hydra-scene-delegate",
+        "label": "Hydra Scene Delegate"
+      },
+      {
+        "@id": "urn:ngm:class:livrps-composition",
+        "label": "LIVRPS Composition"
+      },
+      {
+        "@id": "urn:ngm:class:material-x-shading",
+        "label": "MaterialX Shading"
+      },
+      {
+        "@id": "urn:ngm:class:open-pbr-material-model",
+        "label": "OpenPBR Material Model"
+      },
+      {
+        "@id": "urn:ngm:class:open-subdiv-refinement",
+        "label": "OpenSubdiv Refinement"
+      },
+      {
+        "@id": "urn:ngm:class:variant-selection",
+        "label": "Variant Selection"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:c-api",
+        "label": "C++ API"
+      },
+      {
+        "@id": "urn:ngm:class:glsl-shaders",
+        "label": "GLSL Shaders"
+      },
+      {
+        "@id": "urn:ngm:class:open-gl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:open-vdb",
+        "label": "OpenVDB"
+      },
+      {
+        "@id": "urn:ngm:class:python-api",
+        "label": "Python API"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aousd",
+        "label": "AOUSD"
+      },
+      {
+        "@id": "urn:ngm:class:apple-vision-pro",
+        "label": "Apple Vision Pro"
+      },
+      {
+        "@id": "urn:ngm:class:autodesk-maya",
+        "label": "Autodesk Maya"
+      },
+      {
+        "@id": "urn:ngm:class:houdini",
+        "label": "Houdini"
+      },
+      {
+        "@id": "urn:ngm:class:blender",
+        "label": "Blender"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-omniverse",
+        "label": "NVIDIA Omniverse"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ar-quick-look",
+        "label": "AR Quick Look"
+      },
+      {
+        "@id": "urn:ngm:class:film-and-animation-pipeline",
+        "label": "Film and Animation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-simulation",
+        "label": "Industrial Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platforms",
+        "label": "Metaverse Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-simulation",
+        "label": "Robotics Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:alliance-for-open-usd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:joint-development-foundation",
+        "label": "Joint Development Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:pixar-animation-studios",
+        "label": "Pixar Animation Studios"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5ccf9e06b584664571d4ac76f379b8ddc0103fda3f46b8e840496f88dd9ff1dd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Universal Scene Description (USD / OpenUSD) is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source in 2016 under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and collaborating on three-dimensional scenes at production scale. The system expresses rich hierarchical scene data—geometry, materials, lighting, cameras, skeletal animation, physics, and custom domain schemas—through a unified data model in which every authored value is an \"opinion\" that participates in a deterministic composition algorithm called the LIVRPS strength-ordering stack (Local overrides, Inherits, Variants, References, Payloads, Specializes). Composition arcs—sublayers, references, payloads, variants, inherits, and specializes—let pipelines decompose complex productions into thousands of independently maintained asset files that are composited non-destructively at resolve time without modifying source data. The layering architecture underpins an entire industrial workflow paradigm: a model department authors base geometry layers; rigging, shading, lightin",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:composition-arcs",
-      "vc:label": "Composition Arcs"
-    },
-    {
-      "@id": "urn:visionflow:linked:crate-format",
-      "vc:label": "Crate Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:hydra",
-      "vc:label": "Hydra"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-stack",
-      "vc:label": "Layer Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-x",
-      "vc:label": "MaterialX"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-subdiv",
-      "vc:label": "OpenSubdiv"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-skel",
-      "vc:label": "UsdSkel"
-    },
-    {
-      "@id": "urn:visionflow:linked:usdz",
-      "vc:label": "USDZ"
-    },
-    {
-      "@id": "urn:visionflow:linked:variant-sets",
-      "vc:label": "Variant Sets"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asset-pipeline",
-      "vc:label": "Asset Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-resolution",
-      "vc:label": "Layer Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:renderer",
-      "vc:label": "Renderer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schema-registry",
-      "vc:label": "Schema Registry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-scene-assembly",
-      "vc:label": "Collaborative Scene Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-dcc-interoperability",
-      "vc:label": "Cross-DCC Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-destructive-editing",
-      "vc:label": "Non-Destructive Editing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:hydra-scene-delegate",
-      "vc:label": "Hydra Scene Delegate"
-    },
-    {
-      "@id": "urn:visionflow:linked:livrps-composition",
-      "vc:label": "LIVRPS Composition"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-x-shading",
-      "vc:label": "MaterialX Shading"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-pbr-material-model",
-      "vc:label": "OpenPBR Material Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-subdiv-refinement",
-      "vc:label": "OpenSubdiv Refinement"
-    },
-    {
-      "@id": "urn:visionflow:linked:variant-selection",
-      "vc:label": "Variant Selection"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:asset-resolution",
-      "vc:label": "Asset Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-composition-algorithm",
-      "vc:label": "Layer Composition Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-color-io",
-      "vc:label": "OpenColorIO"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-system",
-      "vc:label": "Schema System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdf-path-addressing",
-      "vc:label": "SdfPath Addressing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ar-quick-look",
-      "vc:label": "AR Quick Look"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-and-animation-pipeline",
-      "vc:label": "Film and Animation Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-simulation",
-      "vc:label": "Industrial Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:metaverse-platforms",
-      "vc:label": "Metaverse Platforms"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-simulation",
-      "vc:label": "Robotics Simulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:c-api",
-      "vc:label": "C++ API"
-    },
-    {
-      "@id": "urn:visionflow:linked:glsl-shaders",
-      "vc:label": "GLSL Shaders"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-gl",
-      "vc:label": "OpenGL"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-vdb",
-      "vc:label": "OpenVDB"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-api",
-      "vc:label": "Python API"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulkan",
-      "vc:label": "Vulkan"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:alembic",
-      "vc:label": "Alembic"
-    },
-    {
-      "@id": "urn:visionflow:linked:collada",
-      "vc:label": "COLLADA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fbx",
-      "vc:label": "FBX"
-    },
-    {
-      "@id": "urn:visionflow:linked:gl-tf",
-      "vc:label": "glTF"
-    },
-    {
-      "@id": "urn:visionflow:linked:obj",
-      "vc:label": "OBJ"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:aousd",
-      "vc:label": "AOUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-vision-pro",
-      "vc:label": "Apple Vision Pro"
-    },
-    {
-      "@id": "urn:visionflow:linked:autodesk-maya",
-      "vc:label": "Autodesk Maya"
-    },
-    {
-      "@id": "urn:visionflow:linked:houdini",
-      "vc:label": "Houdini"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blender",
-      "vc:label": "Blender"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
-      "vc:label": "NVIDIA Omniverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unreal-engine",
-      "vc:label": "Unreal Engine"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:alliance-for-open-usd",
-      "vc:label": "Alliance for OpenUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-development-foundation",
-      "vc:label": "Joint Development Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation",
-      "vc:label": "Linux Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pixar-animation-studios",
-      "vc:label": "Pixar Animation Studios"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:credential-format-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:credential-format-standard",
+  "@type": "Class",
   "label": "Credential Format Standard",
+  "definition": "Technical specifications defining the structure, encoding, and cryptographic verification mods for digital credentials, enabling secure issuance, storage, and verification of identity documents, certifications, and attestations across different platforms and systems through interoperable formats ...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-standards",
-      "vc:label": "Identity Standards"
+      "@id": "urn:ngm:class:identity-standards",
+      "label": "Identity Standards"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6dcc2c937fad1c9c2490437b829d9154c4d677d3d6c2a8caba78a05e4fed39a4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:issuer-infrastructure",
+        "label": "Issuer Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:identity-portability",
+        "label": "Identity Portability"
+      },
+      {
+        "@id": "urn:ngm:class:trust-interoperability",
+        "label": "Trust Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6dcc2c937fad1c9c2490437b829d9154c4d677d3d6c2a8caba78a05e4fed39a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical specifications defining the structure, encoding, and cryptographic verification methods for digital credentials, enabling secure issuance, storage, and verification of identity documents, certifications, and attestations across different platforms and systems through interoperable formats like W3C Verifiable Credentials.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proofs",
-      "vc:label": "Cryptographic Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:issuer-infrastructure",
-      "vc:label": "Issuer Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-body",
-      "vc:label": "Standards Body"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-verification",
-      "vc:label": "Credential Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-portability",
-      "vc:label": "Identity Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-interoperability",
-      "vc:label": "Trust Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

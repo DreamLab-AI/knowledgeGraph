@@ -196,116 +196,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:social-impact-assessment-sia",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-impact-assessment-sia",
+  "@type": "Class",
   "label": "Social Impact Assessment (SIA)",
+  "definition": "Systematic eof potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e2979585c11cba664ae085ffa734ce413a203c5f016e4ba0fc131106b48f5604"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:community-consultation",
+        "label": "Community Consultation"
+      },
+      {
+        "@id": "urn:ngm:class:impact-metrics",
+        "label": "Impact Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:impact-indicators",
+        "label": "Impact Indicators"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-mapping",
+        "label": "Stakeholder Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-protection",
+        "label": "Community Protection"
+      },
+      {
+        "@id": "urn:ngm:class:policy-development",
+        "label": "Policy Development"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-deployment",
+        "label": "Responsible Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-alignment",
+        "label": "Stakeholder Alignment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e2979585c11cba664ae085ffa734ce413a203c5f016e4ba0fc131106b48f5604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic evaluation of potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:compliance-management",
-      "vc:label": "Compliance Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:community-consultation",
-      "vc:label": "Community Consultation"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-metrics",
-      "vc:label": "Impact Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-analysis",
-      "vc:label": "Stakeholder Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-collection",
-      "vc:label": "Data Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-indicators",
-      "vc:label": "Impact Indicators"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-mapping",
-      "vc:label": "Stakeholder Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-protection",
-      "vc:label": "Community Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-development",
-      "vc:label": "Policy Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-deployment",
-      "vc:label": "Responsible Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-alignment",
-      "vc:label": "Stakeholder Alignment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:community-engagement",
-      "vc:label": "Community Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethics-framework",
-      "vc:label": "Ethics Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-responsibility-policy",
-      "vc:label": "Social Responsibility Policy"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

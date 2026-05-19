@@ -3,53 +3,57 @@
   "title": "Digital Asset Infrastructure",
   "slug": "digital-asset-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-infrastructure",
+  "classIri": "urn:ngm:class:digital-asset-infrastructure",
   "domain": "infrastructure",
-  "definition": "The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications. bridges-to:: [[Blockchain]]",
+  "definition": "The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-systems",
+        "id": "urn:ngm:class:cryptographic-systems",
         "label": "Cryptographic Systems"
       },
       {
-        "id": "urn:visionflow:linked:node-network",
+        "id": "urn:ngm:class:node-network",
         "label": "Node Network"
       },
       {
-        "id": "urn:visionflow:linked:storage-solutions",
+        "id": "urn:ngm:class:storage-solutions",
         "label": "Storage Solutions"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-custody",
+        "id": "urn:ngm:class:asset-custody",
         "label": "Asset Custody"
       },
       {
-        "id": "urn:visionflow:linked:key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:visionflow:owl:class:transaction-processing",
+        "id": "urn:ngm:class:transaction-processing",
         "label": "Transaction Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

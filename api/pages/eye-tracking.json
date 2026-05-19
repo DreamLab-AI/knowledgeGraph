@@ -3,94 +3,107 @@
   "title": "Eye Tracking",
   "slug": "eye-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:eye-tracking",
+  "classIri": "urn:ngm:class:eye-tracking",
   "domain": "spatial-computing",
   "definition": "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrared-camera",
+      "id": "urn:ngm:class:infrared-camera",
       "label": "Infrared Camera"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:calibration-system",
+        "id": "urn:ngm:class:calibration-system",
         "label": "Calibration System"
       },
       {
-        "id": "urn:visionflow:linked:hot-mirror",
+        "id": "urn:ngm:class:hot-mirror",
         "label": "Hot Mirror"
       },
       {
-        "id": "urn:visionflow:linked:image-sensor",
+        "id": "urn:ngm:class:image-sensor",
         "label": "Image Sensor"
       },
       {
-        "id": "urn:visionflow:linked:pupil-detection-algorithm",
+        "id": "urn:ngm:class:pupil-detection-algorithm",
         "label": "Pupil Detection Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-camera",
+        "id": "urn:ngm:class:infrared-camera",
         "label": "Infrared Camera"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "id": "urn:ngm:class:infrared-led-illuminator",
         "label": "Infrared LED Illuminator"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:high-speed-camera",
+        "id": "urn:ngm:class:high-speed-camera",
         "label": "High-Speed Camera"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-data-bus",
+        "id": "urn:ngm:class:low-latency-data-bus",
         "label": "Low-Latency Data Bus"
       },
       {
-        "id": "urn:visionflow:linked:real-time-processing-unit",
+        "id": "urn:ngm:class:real-time-processing-unit",
         "label": "Real-Time Processing Unit"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Light Source"
       },
       {
-        "id": "urn:visionflow:owl:class:optical-calibration-target",
+        "id": "urn:ngm:class:optical-calibration-target",
         "label": "Optical Calibration Target"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:attention-analytics",
+        "id": "urn:ngm:class:attention-analytics",
         "label": "Attention Analytics"
       },
       {
-        "id": "urn:visionflow:linked:eye-gesture-control",
+        "id": "urn:ngm:class:eye-gesture-control",
         "label": "Eye Gesture Control"
       },
       {
-        "id": "urn:visionflow:linked:foveated-rendering",
+        "id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gaze-based-interaction",
+        "id": "urn:ngm:class:gaze-based-interaction",
         "label": "Gaze-Based Interaction"
       },
       {
-        "id": "urn:visionflow:linked:vergence-accommodation-matching",
+        "id": "urn:ngm:class:vergence-accommodation-matching",
         "label": "Vergence-Accommodation Matching"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction-framework",
+        "label": "Human-Computer Interaction Framework"
+      },
+      {
+        "id": "urn:ngm:class:perceptual-computing-system",
+        "label": "Perceptual Computing System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

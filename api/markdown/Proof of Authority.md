@@ -116,48 +116,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:proof-of-authority",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proof-of-authority",
+  "@type": "Class",
   "label": "Proof of Authority",
+  "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:proof-based-consensus",
-      "vc:label": "Proof-Based Consensus"
+      "@id": "urn:ngm:class:proof-based-consensus",
+      "label": "Proof-Based Consensus"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:abe569049b761e062c28926c645338c96df6d28c8cb92b6fba05367a894925d4"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:abe569049b761e062c28926c645338c96df6d28c8cb92b6fba05367a894925d4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

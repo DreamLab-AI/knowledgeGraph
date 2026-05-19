@@ -112,54 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dao-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dao-governance",
+  "@type": "Class",
   "label": "DAO Governance",
+  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:community-governance",
-      "vc:label": "Community Governance"
+      "@id": "urn:ngm:class:community-governance",
+      "label": "Community Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:71aa001af0ef7f09506e4e57f429194b7d9cd7fd42e07b050e6a55aee8c27d63"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:71aa001af0ef7f09506e4e57f429194b7d9cd7fd42e07b050e6a55aee8c27d63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. DAOs are non-hierarchical organisations that perform and record routine tasks on peer-to-peer, cryptographically secure networks, with governance rules encoded as smart contracts that automatically execute approved decisions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-decision-making",
-      "vc:label": "Decentralised Decision-Making"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

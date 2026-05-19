@@ -168,106 +168,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-data-management-creative-media",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-data-management-creative-media",
+  "@type": "Class",
   "label": "ETSI Domain: Data Management + Creative Media",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-database",
+        "label": "Asset Database"
+      },
+      {
+        "@id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:media-library",
+        "label": "Media Library"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:creative-media",
+        "label": "Creative Media"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-version-control",
+        "label": "Asset Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-authoring",
+        "label": "Collaborative Authoring"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:10263b664d72c2df2787cfcfc33876526efce4fef5452418675c556400a7c422@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-database",
-      "vc:label": "Asset Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-pipeline",
-      "vc:label": "Content Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-control",
-      "vc:label": "Version Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:media-library",
-      "vc:label": "Media Library"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:creative-media",
-      "vc:label": "Creative Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-version-control",
-      "vc:label": "Asset Version Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaborative-authoring",
-      "vc:label": "Collaborative Authoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-distribution",
-      "vc:label": "Content Distribution"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-storage",
-      "vc:label": "Distributed Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

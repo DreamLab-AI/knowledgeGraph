@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0040-backlash",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0040-backlash",
+  "@type": "Class",
   "label": "rb 0040 backlash",
+  "definition": "backlash is a robotics and autonomous systems concept and a type of Backlash.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:backlash",
-      "vc:label": "Backlash"
+      "@id": "urn:ngm:class:backlash",
+      "label": "Backlash"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fb630d81b592f9d7e8e25775841bfad98db95dd8dc8c29f1f435c2ddd35bf39a"
-  },
-  "vc:inferenceRule": "R2SemanticMatch",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fb630d81b592f9d7e8e25775841bfad98db95dd8dc8c29f1f435c2ddd35bf39a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "backlash is a robotics and autonomous systems concept and a type of Backlash."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2SemanticMatch"
+  }
 }
 ```
 

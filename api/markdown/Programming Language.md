@@ -120,41 +120,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:programming-language",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:programming-language",
+  "@type": "Class",
   "label": "Programming Language",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:80efa816c8860e7fb796d7c46309d61c3d2022b95e5e58b1dbf053ec0e10d81a"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:80efa816c8860e7fb796d7c46309d61c3d2022b95e5e58b1dbf053ec0e10d81a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML/DL ecosystems), Julia (high-performance numerical computing), R (statistical analysis), and domain-specific languages like TensorFlow's graph definition language. Key features include support for tensor operations, automatic differentiation, GPU acceleration, functional programming paradigms, and integration with ML frameworks. Modern AI languages emphasize readability, expressiveness, performance, and ecosystem richness.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

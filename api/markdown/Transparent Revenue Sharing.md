@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transparent-revenue-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transparent-revenue-sharing",
+  "@type": "Class",
   "label": "Transparent Revenue Sharing",
+  "definition": "A financial distribution model where allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:revenue-distribution",
-      "vc:label": "Revenue Distribution"
+      "@id": "urn:ngm:class:revenue-distribution",
+      "label": "Revenue Distribution"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b668757afd374bc4651593d707103ef9ea8b1c86372f4300a1f5f8e7e76c888e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b668757afd374bc4651593d707103ef9ea8b1c86372f4300a1f5f8e7e76c888e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

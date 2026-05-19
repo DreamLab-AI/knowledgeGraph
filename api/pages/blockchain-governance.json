@@ -3,70 +3,73 @@
   "title": "Blockchain Governance",
   "slug": "blockchain-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-governance",
+  "classIri": "urn:ngm:class:blockchain-governance",
   "domain": "blockchain",
-  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:decentralized-organization",
-      "label": "Decentralized Organization"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    }
-  ],
+  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:dao-structure",
+        "id": "urn:ngm:class:dao-structure",
         "label": "DAO Structure"
       },
       {
-        "id": "urn:visionflow:owl:class:on-chain-voting",
+        "id": "urn:ngm:class:on-chain-voting",
         "label": "On-Chain Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:proposal-system",
+        "id": "urn:ngm:class:proposal-system",
         "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-organization",
+        "label": "Decentralized Organization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:token-based-representation",
+        "id": "urn:ngm:class:token-based-representation",
         "label": "Token-Based Representation"
       },
       {
-        "id": "urn:visionflow:linked:voting-mechanism",
+        "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-alignment",
+        "id": "urn:ngm:class:community-alignment",
         "label": "Community Alignment"
       },
       {
-        "id": "urn:visionflow:linked:decentralized-decision-making",
+        "id": "urn:ngm:class:decentralized-decision-making",
         "label": "Decentralized Decision-Making"
       },
       {
-        "id": "urn:visionflow:linked:protocol-evolution",
+        "id": "urn:ngm:class:protocol-evolution",
         "label": "Protocol Evolution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Secure Data Sharing",
   "slug": "secure-data-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:secure-data-sharing",
+  "classIri": "urn:ngm:class:secure-data-sharing",
   "domain": "infrastructure",
   "definition": "Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-security",
+      "id": "urn:ngm:class:data-security",
       "label": "Data Security"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:confidential-collaboration",
+        "id": "urn:ngm:class:confidential-collaboration",
         "label": "Confidential Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

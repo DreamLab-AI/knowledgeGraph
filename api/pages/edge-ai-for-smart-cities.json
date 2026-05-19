@@ -3,19 +3,18 @@
   "title": "Edge AI for Smart Cities",
   "slug": "edge-ai-for-smart-cities",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-ai-for-smart-cities",
+  "classIri": "urn:ngm:class:edge-ai-for-smart-cities",
   "domain": "artificial-intelligence",
-  "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure\u2014smart cameras, IoT sensors, edge gateways\u2014enabling real-time autonomous city systems without centralized cloud processing. Smart city applications span traffic management, public safety, environmental monitoring, and energy optimization, each requiring sub-second response times infeasible with cloud latency. Intelligent traffic management systems deploy AI-enabled cameras at intersections for real-time congestion detection, automated signal timing, and incident response, reducing commute times and emissions through local inference. Computer vision models identify pedestrians, cyclists, vehicles, and traffic conditions milliseconds after capture, enabling immediate signal adjustments. Public safety monitoring through smart cameras detects unusual activities (loitering, crowd anomalies, abandoned objects) locally, alerting authorities within seconds rather than hours of manual review. Environmental monitoring networks analyze air quality, noise levels, and pollution patterns across neighborhoods, supporting real-time alerts and policy decisions. Energy optimization systems balance p",
+  "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure\u2014smart cameras, IoT sensors, edge gateways\u2014enabling real-time autonomous city systems without centralized cloud processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

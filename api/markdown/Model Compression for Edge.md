@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-compression-for-edge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-compression-for-edge",
+  "@type": "Class",
   "label": "Model Compression for Edge",
+  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d73a3067b0127adcd2591a3586168ce9f9fd623c41b62f8eeb3d64c90b28b498@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, knowledge distillation, and architectural optimization. This approach addresses deployment constraints including model size limitations where edge devices typically support models under 5-50MB compared to gigabyte-scale cloud models, memory bandwidth restrictions as edge processors have limited cache and DRAM bandwidth constraining data movement, computational capacity measured in GFLOPS or TOPS rather than TFLOPS of cloud GPUs, energy budgets requiring inference within milliwatt to watt power envelopes for battery-powered or thermally-constrained devices, and latency requirements demanding real-time inference under 20-100ms for interactive applications. Core techniques span quantization reducing numerical precision from FP32 to INT8 (4x compression) or even INT4/binary (8-32x compression) with minimal accuracy loss through quantization-aware training, pruning removing redundant weights thr",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

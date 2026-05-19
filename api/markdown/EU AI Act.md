@@ -544,360 +544,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:eu-ai-act",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:eu-ai-act",
+  "@type": "Class",
   "label": "EU AI Act",
+  "definition": "The EU AI Act (Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence) is the first horizontal, cross-sectoral statutory framework for artificial intelligence anywhere in the world, adopted by the European Un...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:product-safety-regulation",
-      "vc:label": "Product Safety Regulation"
+      "@id": "urn:ngm:class:product-safety-regulation",
+      "label": "Product Safety Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:risk-based-regulation",
-      "vc:label": "Risk-Based Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-regulation",
-      "vc:label": "AI Regulation"
+      "@id": "urn:ngm:class:risk-based-regulation",
+      "label": "Risk-Based Regulation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d341c9814226ae07e8573e2e5cd6c7d53337f632ecf9f9cad578e99ce2bd0b59"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:advisory-forum",
+        "label": "Advisory Forum"
+      },
+      {
+        "@id": "urn:ngm:class:ai-pact",
+        "label": "AI Pact"
+      },
+      {
+        "@id": "urn:ngm:class:annex-iii-high-risk-list",
+        "label": "Annex III High-Risk List"
+      },
+      {
+        "@id": "urn:ngm:class:article-5-prohibitions",
+        "label": "Article 5 Prohibitions"
+      },
+      {
+        "@id": "urn:ngm:class:eu-database-for-high-risk-ai",
+        "label": "EU Database for High-Risk AI"
+      },
+      {
+        "@id": "urn:ngm:class:european-ai-board",
+        "label": "European AI Board"
+      },
+      {
+        "@id": "urn:ngm:class:gpai-code-of-practice",
+        "label": "GPAI Code of Practice"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-panel",
+        "label": "Scientific Panel"
+      },
+      {
+        "@id": "urn:ngm:class:ai-office",
+        "label": "AI Office"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management-system",
+        "label": "Risk Management System"
+      },
+      {
+        "@id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-auditing-profession",
+        "label": "AI Auditing Profession"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-ai-trade",
+        "label": "Cross-Border AI Trade"
+      },
+      {
+        "@id": "urn:ngm:class:internal-market-harmonisation",
+        "label": "Internal Market Harmonisation"
+      },
+      {
+        "@id": "urn:ngm:class:standardised-ai-compliance",
+        "label": "Standardised AI Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:brussels-effect",
+        "label": "Brussels Effect"
+      },
+      {
+        "@id": "urn:ngm:class:co-decision-procedure",
+        "label": "Co-Decision Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:new-legislative-framework",
+        "label": "New Legislative Framework"
+      },
+      {
+        "@id": "urn:ngm:class:precautionary-principle",
+        "label": "Precautionary Principle"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cen-cenelec",
+        "label": "CEN-CENELEC"
+      },
+      {
+        "@id": "urn:ngm:class:common-specifications",
+        "label": "Common Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:harmonised-standards",
+        "label": "Harmonised Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO IEC 23894"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:notified-bodies",
+        "label": "Notified Bodies"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxes",
+        "label": "Sandboxes"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-article-22-compliance",
+        "label": "GDPR Article 22 Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:biometric-systems",
+        "label": "Biometric Systems"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-ai",
+        "label": "General Purpose AI"
+      },
+      {
+        "@id": "urn:ngm:class:high-risk-ai-systems",
+        "label": "High-Risk AI Systems"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-reports",
+        "label": "Algorithmic Transparency Reports"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cen-cenelec-jtc-21",
+        "label": "CEN-CENELEC JTC 21"
+      },
+      {
+        "@id": "urn:ngm:class:council-of-the-european-union",
+        "label": "Council of the European Union"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO IEC JTC 1 SC 42"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d341c9814226ae07e8573e2e5cd6c7d53337f632ecf9f9cad578e99ce2bd0b59@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The **EU AI Act** (Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence) is the first horizontal, cross-sectoral statutory framework for artificial intelligence anywhere in the world, adopted by the European Union under the Treaty on the Functioning of the European Union (TFEU) Articles 16 (data protection) and 114 (internal market harmonisation), published in the Official Journal of the European Union (OJ L of 12 July 2024) and entering into force on 1 August 2024 with a staged application calendar—Article 5 unacceptable-risk prohibitions plus Article 4 AI literacy obligations effective 2 February 2025, General-Purpose AI (GPAI) model rules under Articles 51-55 plus governance bodies (AI Office, AI Board, Scientific Panel, Advisory Forum) effective 2 August 2025, the bulk of high-risk system obligations under Title III effective 2 August 2026, and full integration of Annex I product-safety legislation effective 2 August 2027—structured around a **risk-based pyramid** classifying AI systems into four tiers (unacceptable risk prohibited outright under Article 5, high-risk permitted only under ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:advisory-forum",
-      "vc:label": "Advisory Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-pact",
-      "vc:label": "AI Pact"
-    },
-    {
-      "@id": "urn:visionflow:linked:annex-iii-high-risk-list",
-      "vc:label": "Annex III High-Risk List"
-    },
-    {
-      "@id": "urn:visionflow:linked:article-5-prohibitions",
-      "vc:label": "Article 5 Prohibitions"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-database-for-high-risk-ai",
-      "vc:label": "EU Database for High-Risk AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-ai-board",
-      "vc:label": "European AI Board"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpai-code-of-practice",
-      "vc:label": "GPAI Code of Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-panel",
-      "vc:label": "Scientific Panel"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-office",
-      "vc:label": "AI Office"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ce-marking",
-      "vc:label": "CE Marking"
-    },
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment",
-      "vc:label": "Conformity Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:fundamental-rights-impact-assessment",
-      "vc:label": "Fundamental Rights Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-market-monitoring",
-      "vc:label": "Post-Market Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-management-system",
-      "vc:label": "Risk Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-documentation",
-      "vc:label": "Technical Documentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-oversight",
-      "vc:label": "Human Oversight"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:notified-body",
-      "vc:label": "Notified Body"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-auditing-profession",
-      "vc:label": "AI Auditing Profession"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-ai-trade",
-      "vc:label": "Cross-Border AI Trade"
-    },
-    {
-      "@id": "urn:visionflow:linked:internal-market-harmonisation",
-      "vc:label": "Internal Market Harmonisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:standardised-ai-compliance",
-      "vc:label": "Standardised AI Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustworthy-ai",
-      "vc:label": "Trustworthy AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
-      "vc:label": "Algorithmic Accountability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:brussels-effect",
-      "vc:label": "Brussels Effect"
-    },
-    {
-      "@id": "urn:visionflow:linked:co-decision-procedure",
-      "vc:label": "Co-Decision Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:co-regulation",
-      "vc:label": "Co-Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:new-legislative-framework",
-      "vc:label": "New Legislative Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:precautionary-principle",
-      "vc:label": "Precautionary Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-based-approach",
-      "vc:label": "Risk-Based Approach"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:charter-of-fundamental-rights",
-      "vc:label": "Charter of Fundamental Rights"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-markets-act",
-      "vc:label": "Digital Markets Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:general-data-protection-regulation",
-      "vc:label": "General Data Protection Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:machinery-regulation",
-      "vc:label": "Machinery Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-devices-regulation",
-      "vc:label": "Medical Devices Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-liability-directive",
-      "vc:label": "Product Liability Directive"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-services-act",
-      "vc:label": "Digital Services Act"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:biometric-systems",
-      "vc:label": "Biometric Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake-detection",
-      "vc:label": "Deepfake Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:emotion-recognition",
-      "vc:label": "Emotion Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:general-purpose-ai",
-      "vc:label": "General Purpose AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-risk-ai-systems",
-      "vc:label": "High-Risk AI Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-transparency-reports",
-      "vc:label": "Algorithmic Transparency Reports"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cen-cenelec",
-      "vc:label": "CEN-CENELEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-specifications",
-      "vc:label": "Common Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:harmonised-standards",
-      "vc:label": "Harmonised Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-23894",
-      "vc:label": "ISO IEC 23894"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-42001",
-      "vc:label": "ISO IEC 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:notified-bodies",
-      "vc:label": "Notified Bodies"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandboxes",
-      "vc:label": "Sandboxes"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:china-algorithm-registry",
-      "vc:label": "China Algorithm Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:colorado-ai-act",
-      "vc:label": "Colorado AI Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:nyc-local-law-144",
-      "vc:label": "NYC Local Law 144"
-    },
-    {
-      "@id": "urn:visionflow:linked:singapore-model-ai-governance-framework",
-      "vc:label": "Singapore Model AI Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ai-regulation",
-      "vc:label": "UK AI Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-executive-order-14110",
-      "vc:label": "US Executive Order 14110"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:digital-sovereignty",
-      "vc:label": "Digital Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-ai",
-      "vc:label": "Frontier AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias",
-      "vc:label": "Algorithmic Bias"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection-regulation",
-      "vc:label": "Data Protection Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gdpr-article-22-compliance",
-      "vc:label": "GDPR Article 22 Compliance"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cen-cenelec-jtc-21",
-      "vc:label": "CEN-CENELEC JTC 21"
-    },
-    {
-      "@id": "urn:visionflow:linked:council-of-the-european-union",
-      "vc:label": "Council of the European Union"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-commission",
-      "vc:label": "European Commission"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-parliament",
-      "vc:label": "European Parliament"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-42",
-      "vc:label": "ISO IEC JTC 1 SC 42"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-regulation",
-      "vc:label": "Digital Regulation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

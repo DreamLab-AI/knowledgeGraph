@@ -3,19 +3,18 @@
   "title": "rb 0044 velocity",
   "slug": "rb-0044-velocity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0044-velocity",
+  "classIri": "urn:ngm:class:rb-0044-velocity",
   "domain": "robotics",
   "definition": "velocity is a robotics and autonomous systems concept and a type of Robot Kinematics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-kinematics",
+      "id": "urn:ngm:class:robot-kinematics",
       "label": "Robot Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

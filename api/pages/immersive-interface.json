@@ -3,32 +3,36 @@
   "title": "Immersive Interface",
   "slug": "immersive-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-interface",
+  "classIri": "urn:ngm:class:immersive-interface",
   "domain": "spatial-computing",
-  "definition": "User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.",
+  "definition": "User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input mods that enable natural, intuitive engagement with virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:human-computer-interface",
+      "id": "urn:ngm:class:human-computer-interface",
       "label": "Human-Computer Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:natural-vr-interaction",
+        "id": "urn:ngm:class:natural-vr-interaction",
         "label": "Natural VR Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

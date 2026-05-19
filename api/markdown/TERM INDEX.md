@@ -136,41 +136,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:term-index",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:term-index",
+  "@type": "Class",
   "label": "TERM INDEX",
+  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7fdfd46cc2b2d62bb0417cbd6c4fabb273bb0c8fe64ab592521595232c2401e4"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7fdfd46cc2b2d62bb0417cbd6c4fabb273bb0c8fe64ab592521595232c2401e4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -97,46 +97,7 @@ public:: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ophan-twitter-links",
-  "@type": "OntologyClass",
-  "label": "Ophan Twitter Links",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e49c9b7782bec0f9be89b653e1e95c977dfdb6611db04705e74da9e4c8e9a039"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e49c9b7782bec0f9be89b653e1e95c977dfdb6611db04705e74da9e4c8e9a039@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Ophan Twitter Links is a technology infrastructure concept and a type of infrastructure.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
-}
-```
+
 
 ```json-ld
 {

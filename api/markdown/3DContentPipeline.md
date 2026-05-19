@@ -107,48 +107,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-dcontent-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-dcontent-pipeline",
+  "@type": "Class",
   "label": "3DContentPipeline",
+  "definition": "3DContentPipeline is a technology infrastructure concept and a type of infrastructure.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dad791bf39d34ebb57c7fa88dad839248db97d55a4048bb1b7b5281afeb82227@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3DContentPipeline is a technology infrastructure concept and a type of infrastructure.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

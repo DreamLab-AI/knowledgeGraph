@@ -3,82 +3,86 @@
   "title": "Cybersecurity Standard",
   "slug": "cybersecurity-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cybersecurity-standard",
+  "classIri": "urn:ngm:class:cybersecurity-standard",
   "domain": "robotics",
-  "definition": "Cybersecurity standard addresses digital security threats to robot systems through standardised practices for vulnerability assessment, secure communications, authentication, and incident response. These standards protect robots from remote exploitation, data theft, and malicious control whilst maintaining operational availability in safety-critical deployments.",
+  "definition": "Cybersecurity standard addresses digital security threats to robot systems through standardised practices for vulnerability assessment, secure communications, authentication, and incident response.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:security-standards",
+      "id": "urn:ngm:class:security-standards",
       "label": "Security Standards"
     },
     {
-      "id": "urn:visionflow:owl:class:robot-standard",
+      "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-logging",
+        "id": "urn:ngm:class:audit-logging",
         "label": "Audit Logging"
       },
       {
-        "id": "urn:visionflow:linked:authentication-mechanism",
+        "id": "urn:ngm:class:authentication-mechanism",
         "label": "Authentication Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:encryption-protocol",
+        "id": "urn:ngm:class:encryption-protocol",
         "label": "Encryption Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:secure-communication-channel",
+        "id": "urn:ngm:class:secure-communication-channel",
         "label": "Secure Communication Channel"
       },
       {
-        "id": "urn:visionflow:linked:threat-detection",
+        "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
       },
       {
-        "id": "urn:visionflow:linked:vulnerability-assessment",
+        "id": "urn:ngm:class:vulnerability-assessment",
         "label": "Vulnerability Assessment"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance-assurance",
+        "id": "urn:ngm:class:compliance-assurance",
         "label": "Compliance Assurance"
       },
       {
-        "id": "urn:visionflow:linked:malicious-control-prevention",
+        "id": "urn:ngm:class:malicious-control-prevention",
         "label": "Malicious Control Prevention"
       },
       {
-        "id": "urn:visionflow:linked:protected-data-transmission",
+        "id": "urn:ngm:class:protected-data-transmission",
         "label": "Protected Data Transmission"
       },
       {
-        "id": "urn:visionflow:linked:secure-teleoperation",
+        "id": "urn:ngm:class:secure-teleoperation",
         "label": "Secure Teleoperation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

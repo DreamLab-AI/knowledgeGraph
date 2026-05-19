@@ -124,48 +124,19 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-development-tools",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-development-tools",
+  "@type": "Class",
   "label": "AI Development Tools",
-  "subClassOf": [
-    {
-      "@id": "owl:Thing",
-      "vc:label": "owl:Thing"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1ea42c3a911089a3b7057a2bc079e92ca96fedfde48664872157caf1df020f3c"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1ea42c3a911089a3b7057a2bc079e92ca96fedfde48664872157caf1df020f3c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. These tools include deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimization toolkits, MLOps infrastructure, and specialized IDEs with AI-assisted coding capabilities. Modern AI development tools emphasize reproducibility, scalability, and accessibility, enabling both researchers and practitioners to build sophisticated AI applications efficiently.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

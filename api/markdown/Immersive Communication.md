@@ -112,48 +112,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-communication",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-communication",
+  "@type": "Class",
   "label": "Immersive Communication",
+  "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments.",
+  "domain": "distributed-collaboration",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
+      "@id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4dbf23a6b16453f836bf6b115067b59e5295c0afbba5b9fdd4cd980201d67bcf"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4dbf23a6b16453f836bf6b115067b59e5295c0afbba5b9fdd4cd980201d67bcf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments. This includes VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality communication platforms that transcend traditional 2D video interfaces.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

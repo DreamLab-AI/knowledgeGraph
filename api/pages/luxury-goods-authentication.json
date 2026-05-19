@@ -3,19 +3,18 @@
   "title": "Luxury Goods Authentication",
   "slug": "luxury-goods-authentication",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:luxury-goods-authentication",
+  "classIri": "urn:ngm:class:luxury-goods-authentication",
   "domain": "blockchain",
-  "definition": "Blockchain technology addressing the \u00a3400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. LVMH's Aura Blockchain Consortium (Prada Group, Cartier, Mercedes-Benz) has registered millions of luxury products, demonstrating that blockchain authentication increases purchase confidence (65-70% of consumers report higher willingness to purchase authenticated products) whilst enabling the rapidly growing \u00a330-35 billion secondary luxury market where 20-30% of goods may be counterfeit, with blockchain-verified products commanding 8-12% premiums over non-certified equivalents.",
+  "definition": "Blockchain technology addressing the \u00a3400-450 global counterfeit luxury market (of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:provenance-tracking",
+      "id": "urn:ngm:class:provenance-tracking",
       "label": "Provenance Tracking"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.9,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

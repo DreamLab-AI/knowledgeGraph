@@ -520,280 +520,207 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:testnet",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:testnet",
+  "@type": "Class",
   "label": "Testnet",
+  "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:protocol-implementation",
-      "vc:label": "Protocol Implementation"
+      "@id": "urn:ngm:class:protocol-implementation",
+      "label": "Protocol Implementation"
     },
     {
-      "@id": "urn:visionflow:owl:class:testing-infrastructure",
-      "vc:label": "Testing Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
+      "@id": "urn:ngm:class:testing-infrastructure",
+      "label": "Testing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9e964691e40b18ac8d6574bf3e7ce9e71d9faa479f306efdc5198bdd9a84a852"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-explorer",
+        "label": "Block Explorer"
+      },
+      {
+        "@id": "urn:ngm:class:faucet",
+        "label": "Faucet"
+      },
+      {
+        "@id": "urn:ngm:class:mining-staking-pool",
+        "label": "Mining/Staking Pool"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-rules",
+        "label": "Consensus Rules"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:native-token-distribution",
+        "label": "Native Token Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-protocol",
+        "label": "Peer-to-Peer Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consensus-research",
+        "label": "Consensus Research"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-integration",
+        "label": "Cross-Chain Integration"
+      },
+      {
+        "@id": "urn:ngm:class:d-app-deployment",
+        "label": "dApp Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-testing",
+        "label": "Protocol Testing"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-development",
+        "label": "Smart Contract Development"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:pbft-consensus",
+        "label": "PBFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:validator-selection",
+        "label": "Validator Selection"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof-of-Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof-of-Work"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "@id": "urn:ngm:class:rlp-encoding",
+        "label": "RLP Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-mempool",
+        "label": "Transaction Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:staging-environment",
+        "label": "Staging Environment"
+      },
+      {
+        "@id": "urn:ngm:class:validator-economics",
+        "label": "Validator Economics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bug-discovery",
+        "label": "Bug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:developer-onboarding",
+        "label": "Developer Onboarding"
+      },
+      {
+        "@id": "urn:ngm:class:performance-benchmarking",
+        "label": "Performance Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:security-auditing",
+        "label": "Security Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:validator-training",
+        "label": "Validator Training"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-specification",
+        "label": "Ethereum Specification"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot-runtime",
+        "label": "Polkadot Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9e964691e40b18ac8d6574bf3e7ce9e71d9faa479f306efdc5198bdd9a84a852@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 million+ validators/testers maintaining testnet nodes generating blocks every 12-15 seconds Ethereum Sepolia, Bitcoin Testnet3 network difficulty adjusted to 1/3 mainnet targeting ~10 minute blocks with ~2000 active miners), enabling smart contract developers to deploy and test contract code under realistic network conditions without financial risk or mainnet state pollution, protocol upgrade testing where new consensus rules, cryptographic algorithms (post-quantum lattice-based signatures, BLS aggregation), and economic mechanisms are validated on live networks before mainnet activation (Ethereum 2.0 Beacon Chain testing 2020-2021 across Pyrmont/Goerli/Sepolia testnets with 300K+ validators, Bitcoin Taproot upgrade tested on Signet with 150+ block producers), operational testing of full-stack node infrastructure including peer-to-peer networking (libp2p with 500+ concurrent connections per",
-  "vc:qualityScore": {
-    "@value": "0.51",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-explorer",
-      "vc:label": "Block Explorer"
-    },
-    {
-      "@id": "urn:visionflow:linked:faucet",
-      "vc:label": "Faucet"
-    },
-    {
-      "@id": "urn:visionflow:linked:mining-staking-pool",
-      "vc:label": "Mining/Staking Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:full-node",
-      "vc:label": "Full Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:genesis-block",
-      "vc:label": "Genesis Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:validator-node",
-      "vc:label": "Validator Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:consensus-rules",
-      "vc:label": "Consensus Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:native-token-distribution",
-      "vc:label": "Native Token Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-protocol",
-      "vc:label": "Peer-to-Peer Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-management",
-      "vc:label": "State Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consensus-research",
-      "vc:label": "Consensus Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-integration",
-      "vc:label": "Cross-Chain Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:d-app-deployment",
-      "vc:label": "dApp Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-testing",
-      "vc:label": "Protocol Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-development",
-      "vc:label": "Smart Contract Development"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:pbft-consensus",
-      "vc:label": "PBFT Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-selection",
-      "vc:label": "Validator Selection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof-of-Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof-of-Work"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine-replication",
-      "vc:label": "State Machine Replication"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:database-systems",
-      "vc:label": "Database Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-models",
-      "vc:label": "Economic Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-verification-theory",
-      "vc:label": "Formal Verification Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-protocol-stack",
-      "vc:label": "Network Protocol Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bug-discovery",
-      "vc:label": "Bug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:developer-onboarding",
-      "vc:label": "Developer Onboarding"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-benchmarking",
-      "vc:label": "Performance Benchmarking"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-auditing",
-      "vc:label": "Security Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-training",
-      "vc:label": "Validator Training"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:merkle-trees",
-      "vc:label": "Merkle Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlp-encoding",
-      "vc:label": "RLP Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-mempool",
-      "vc:label": "Transaction Mempool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signatures",
-      "vc:label": "Digital Signatures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-discovery",
-      "vc:label": "Peer Discovery"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:local-development-network",
-      "vc:label": "Local Development Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:mainnet",
-      "vc:label": "Mainnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:simulation-environment",
-      "vc:label": "Simulation Environment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-blockchain",
-      "vc:label": "Private Blockchain"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-upgrade",
-      "vc:label": "Protocol Upgrade"
-    },
-    {
-      "@id": "urn:visionflow:linked:staging-environment",
-      "vc:label": "Staging Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-economics",
-      "vc:label": "Validator Economics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-core",
-      "vc:label": "Bitcoin Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-specification",
-      "vc:label": "Ethereum Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkadot-runtime",
-      "vc:label": "Polkadot Runtime"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cosmos-ibc",
-      "vc:label": "Cosmos IBC"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.51,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

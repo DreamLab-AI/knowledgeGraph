@@ -3,32 +3,36 @@
   "title": "Regulatory Standards",
   "slug": "regulatory-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:regulatory-standards",
+  "classIri": "urn:ngm:class:regulatory-standards",
   "domain": "spatial-computing",
   "definition": "Legal and compliance frameworks governing metaverse and extended reality platforms, including data protection (GDPR), artificial intelligence (EU AI Act), digital services (DSA), and accessibility requirements that ensure user rights protection in immersive environments.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:compliance-framework",
-      "label": "Compliance Framework"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-protection",
+        "id": "urn:ngm:class:user-protection",
         "label": "User Protection"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

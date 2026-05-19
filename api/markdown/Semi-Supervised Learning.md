@@ -112,48 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:semi-supervised-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:semi-supervised-learning",
+  "@type": "Class",
   "label": "Semi-Supervised Learning",
+  "definition": "Semi-Supervised Learning is a artificial intelligence concept and a type of Machine Learning. that enables Data-Efficient Learning.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f9b045e980ce49944f0781f6b1e091c69571a28d60dc254357ac0a642d455c48"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-efficient-learning",
+        "label": "Data-Efficient Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f9b045e980ce49944f0781f6b1e091c69571a28d60dc254357ac0a642d455c48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Semi-Supervised Learning is a artificial intelligence concept and a type of Machine Learning. that enables Data-Efficient Learning.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:data-efficient-learning",
-      "vc:label": "Data-Efficient Learning"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

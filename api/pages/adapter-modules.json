@@ -3,19 +3,18 @@
   "title": "Adapter Modules",
   "slug": "adapter-modules",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adapter-modules",
+  "classIri": "urn:ngm:class:adapter-modules",
   "domain": "spatial-computing",
   "definition": "Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:learning-module",
+      "id": "urn:ngm:class:learning-module",
       "label": "Learning Module"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

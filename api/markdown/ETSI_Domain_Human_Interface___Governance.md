@@ -148,48 +148,27 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-human-interface-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-human-interface-governance",
+  "@type": "Class",
   "label": "ETSI_Domain_Human_Interface___Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32"
+  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]].",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:86e96c32cb2e0487d6d5b2513872e4d24934e250452402ddede3f56ddbfa9f32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

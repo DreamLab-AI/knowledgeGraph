@@ -136,41 +136,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:voting-systems",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:voting-systems",
+  "@type": "Class",
   "label": "Voting Systems",
+  "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus o...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "Blockchain Governance"
+      "@id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a9234967b7807ea1053986b8f45c2c27a17b5b66e9d6e864fc85c3a109fbf1a1"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a9234967b7807ea1053986b8f45c2c27a17b5b66e9d6e864fc85c3a109fbf1a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus of \"nearly universal\" agreement that no technology can adequately secure online public elections, and real-world implementations spanning Voatz (80,000+ votes across 50+ elections), Estonia (50%+ votes cast online), and Moscow (65,000 voters) demonstrating both potential cost reductions from $7-25 to under $0.50 per vote and significant security concerns.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.82",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

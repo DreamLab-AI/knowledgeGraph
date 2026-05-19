@@ -3,27 +3,22 @@
   "title": "Algorithmic Accountability",
   "slug": "algorithmic-accountability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:algorithmic-accountability",
+  "classIri": "urn:ngm:class:algorithmic-accountability",
   "domain": "artificial-intelligence",
   "definition": "Algorithmic Accountability is a responsibility framework that ensures AI systems and their developers are answerable for the decisions, outcomes, and impacts produced by algorithmic processes, including mechanisms for redress, transparency, and oversight.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:aigovernance-principle",
+      "id": "urn:ngm:class:aigovernance-principle",
       "label": "AIGovernancePrinciple"
     },
     {
-      "id": "urn:visionflow:owl:class:ethical-framework",
+      "id": "urn:ngm:class:ethical-framework",
       "label": "EthicalFramework"
-    },
-    {
-      "id": "urn:visionflow:owl:class:regulatory-compliance",
-      "label": "RegulatoryCompliance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -31,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

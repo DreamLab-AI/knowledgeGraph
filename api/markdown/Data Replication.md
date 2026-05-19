@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-replication",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-replication",
+  "@type": "Class",
   "label": "Data Replication",
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized ne...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:storage-systems",
+        "label": "Storage Systems"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consistency-guarantees",
+        "label": "Consistency Guarantees"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:397395b0be9aa725e66d0db0c7e51646dcfe35af6af7c524d76afb521e7abbf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:storage-systems",
-      "vc:label": "Storage Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consistency-guarantees",
-      "vc:label": "Consistency Guarantees"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-availability",
-      "vc:label": "Data Availability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "rb 0032 manipulability",
   "slug": "rb-0032-manipulability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0032-manipulability",
+  "classIri": "urn:ngm:class:rb-0032-manipulability",
   "domain": "robotics",
   "definition": "manipulability is a robotics and autonomous systems concept and a type of Robot.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot",
+      "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Communication Software",
   "slug": "communication-software",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:communication-software",
+  "classIri": "urn:ngm:class:communication-software",
   "domain": "spatial-computing",
-  "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.",
+  "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services t...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaboration-technology",
+      "id": "urn:ngm:class:collaboration-technology",
       "label": "Collaboration Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-visual-systems",
+        "id": "urn:ngm:class:audio-visual-systems",
         "label": "Audio Visual Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:user-interface",
+        "id": "urn:ngm:class:user-interface",
         "label": "User Interface"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:real-time-collaboration",
+        "id": "urn:ngm:class:real-time-collaboration",
         "label": "Real-Time Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:virtual-meetings",
+        "id": "urn:ngm:class:virtual-meetings",
         "label": "Virtual Meetings"
       },
       {
-        "id": "urn:visionflow:owl:class:remote-communication",
+        "id": "urn:ngm:class:remote-communication",
         "label": "Remote Communication"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

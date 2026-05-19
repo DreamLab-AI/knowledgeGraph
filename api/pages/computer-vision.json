@@ -3,82 +3,86 @@
   "title": "Computer Vision",
   "slug": "computer-vision",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:computer-vision",
+  "classIri": "urn:ngm:class:computer-vision",
   "domain": "artificial-intelligence",
-  "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities. Computer vision encompasses image classification, object detection, segmentation, tracking, 3D reconstruction, and visual reasoning using deep learning architectures, particularly convolutional neural networks, to extract meaningful information from digital images and video.",
+  "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:vision-processing",
+      "id": "urn:ngm:class:vision-processing",
       "label": "Vision Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:visionflow:owl:class:image-classification",
+        "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-tracking",
+        "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:object-detection",
+        "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:image-processing",
+        "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:feature-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:visionflow:owl:class:pattern-recognition",
+        "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-vehicle-navigation",
+        "id": "urn:ngm:class:autonomous-vehicle-navigation",
         "label": "Autonomous Vehicle Navigation"
       },
       {
-        "id": "urn:visionflow:linked:quality-control",
+        "id": "urn:ngm:class:quality-control",
         "label": "Quality Control"
       },
       {
-        "id": "urn:visionflow:linked:robotics-perception",
+        "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:visionflow:linked:surveillance-systems",
+        "id": "urn:ngm:class:surveillance-systems",
         "label": "Surveillance Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:medical-imaging-ai",
+        "id": "urn:ngm:class:medical-imaging-ai",
         "label": "Medical Imaging AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

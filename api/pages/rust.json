@@ -3,151 +3,243 @@
   "title": "Rust",
   "slug": "rust",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rust",
+  "classIri": "urn:ngm:class:rust",
   "domain": "infrastructure",
-  "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft, and Mozilla as platinum founding members), whose central technical innovation is a compile-time ownership-and-borrowing memory model that eliminates the entire class of memory-safety errors \u2014 null-pointer dereferences, use-after-free, double-free, data races, buffer overflows \u2014 without a garbage collector or runtime overhead, achieving the dual objectives of C/C++-grade throughput (typically within 5% of equivalent C on CPU-bound benchmarks, LLVM code generation, zero-cost abstractions) and memory safety guarantees previously reachable only through managed runtimes (Java, Go, C#) that impose GC pause latencies of 1-50 ms incompatible with hard-real-time or kernel contexts. The ownership system enforces three invariants at compile time via the borrow checker: (i) every value has exactly one owner whose scope determines the value's lifetime; (ii) at any moment a value may have either one exc",
+  "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft,...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:compiled-language",
+      "id": "urn:ngm:class:compiled-language",
       "label": "Compiled Language"
     },
     {
-      "id": "urn:visionflow:linked:concurrent-programming-language",
+      "id": "urn:ngm:class:concurrent-programming-language",
       "label": "Concurrent Programming Language"
-    },
-    {
-      "id": "urn:visionflow:linked:memory-safe-language",
-      "label": "Memory-Safe Language"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:async-runtime",
+        "id": "urn:ngm:class:async-runtime",
         "label": "Async Runtime"
       },
       {
-        "id": "urn:visionflow:linked:borrow-checker",
+        "id": "urn:ngm:class:borrow-checker",
         "label": "Borrow Checker"
       },
       {
-        "id": "urn:visionflow:linked:cargo",
+        "id": "urn:ngm:class:cargo",
         "label": "Cargo"
       },
       {
-        "id": "urn:visionflow:linked:lifetime-annotations",
+        "id": "urn:ngm:class:lifetime-annotations",
         "label": "Lifetime Annotations"
       },
       {
-        "id": "urn:visionflow:linked:macro-system",
+        "id": "urn:ngm:class:macro-system",
         "label": "Macro System"
       },
       {
-        "id": "urn:visionflow:linked:ownership-system",
+        "id": "urn:ngm:class:ownership-system",
         "label": "Ownership System"
       },
       {
-        "id": "urn:visionflow:linked:rust-standard-library",
+        "id": "urn:ngm:class:rust-standard-library",
         "label": "Rust Standard Library"
       },
       {
-        "id": "urn:visionflow:linked:trait-system",
+        "id": "urn:ngm:class:trait-system",
         "label": "Trait System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:borrow-checker",
+        "id": "urn:ngm:class:borrow-checker",
         "label": "Borrow Checker"
       },
       {
-        "id": "urn:visionflow:linked:cargo-package-manager",
+        "id": "urn:ngm:class:cargo-package-manager",
         "label": "Cargo Package Manager"
       },
       {
-        "id": "urn:visionflow:linked:crates-io-registry",
+        "id": "urn:ngm:class:crates-io-registry",
         "label": "Crates.io Registry"
       },
       {
-        "id": "urn:visionflow:linked:llvm",
+        "id": "urn:ngm:class:llvm",
         "label": "LLVM"
       },
       {
-        "id": "urn:visionflow:linked:type-system",
+        "id": "urn:ngm:class:type-system",
         "label": "Type System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:blockchain-development",
+        "id": "urn:ngm:class:blockchain-development",
         "label": "Blockchain Development"
       },
       {
-        "id": "urn:visionflow:linked:concurrent-programming",
+        "id": "urn:ngm:class:concurrent-programming",
         "label": "Concurrent Programming"
       },
       {
-        "id": "urn:visionflow:linked:embedded-systems",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:visionflow:linked:linux-kernel-development",
+        "id": "urn:ngm:class:linux-kernel-development",
         "label": "Linux Kernel Development"
       },
       {
-        "id": "urn:visionflow:linked:memory-safety",
+        "id": "urn:ngm:class:memory-safety",
         "label": "Memory Safety"
       },
       {
-        "id": "urn:visionflow:linked:systems-programming",
+        "id": "urn:ngm:class:systems-programming",
         "label": "Systems Programming"
       },
       {
-        "id": "urn:visionflow:linked:zero-cost-abstractions",
+        "id": "urn:ngm:class:zero-cost-abstractions",
         "label": "Zero-Cost Abstractions"
       },
       {
-        "id": "urn:visionflow:owl:class:web-assembly",
+        "id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:affine-type-system",
+        "id": "urn:ngm:class:affine-type-system",
         "label": "Affine Type System"
       },
       {
-        "id": "urn:visionflow:linked:async-await-pattern",
+        "id": "urn:ngm:class:async-await-pattern",
         "label": "Async Await Pattern"
       },
       {
-        "id": "urn:visionflow:linked:ownership-model",
+        "id": "urn:ngm:class:ownership-model",
         "label": "Ownership Model"
       },
       {
-        "id": "urn:visionflow:linked:pattern-matching",
+        "id": "urn:ngm:class:pattern-matching",
         "label": "Pattern Matching"
       },
       {
-        "id": "urn:visionflow:linked:raii",
+        "id": "urn:ngm:class:raii",
         "label": "RAII"
       },
       {
-        "id": "urn:visionflow:linked:trait-objects",
+        "id": "urn:ngm:class:trait-objects",
         "label": "Trait Objects"
       },
       {
-        "id": "urn:visionflow:linked:zero-cost-abstractions",
+        "id": "urn:ngm:class:zero-cost-abstractions",
         "label": "Zero-Cost Abstractions"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cargo",
+        "label": "Cargo"
+      },
+      {
+        "id": "urn:ngm:class:clippy",
+        "label": "Clippy"
+      },
+      {
+        "id": "urn:ngm:class:crates-io",
+        "label": "Crates.io"
+      },
+      {
+        "id": "urn:ngm:class:llvm-ir",
+        "label": "LLVM IR"
+      },
+      {
+        "id": "urn:ngm:class:rustfmt",
+        "label": "Rustfmt"
+      },
+      {
+        "id": "urn:ngm:class:tokio",
+        "label": "Tokio"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-networks",
+        "label": "Blockchain Networks"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
+      },
+      {
+        "id": "urn:ngm:class:network-services",
+        "label": "Network Services"
+      },
+      {
+        "id": "urn:ngm:class:web-servers",
+        "label": "Web Servers"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:rust-edition-system",
+        "label": "Rust Edition System"
+      },
+      {
+        "id": "urn:ngm:class:rust-foundation",
+        "label": "Rust Foundation"
+      },
+      {
+        "id": "urn:ngm:class:rust-language-reference",
+        "label": "Rust Language Reference"
+      },
+      {
+        "id": "urn:ngm:class:rust-rfc-process",
+        "label": "Rust RFC Process"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compiler-design",
+        "label": "Compiler Design"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:operating-systems",
+        "label": "Operating Systems"
+      },
+      {
+        "id": "urn:ngm:class:systems-programming",
+        "label": "Systems Programming"
+      }
+    ]
   },
   "wikilinks": [
     {

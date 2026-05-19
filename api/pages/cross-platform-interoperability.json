@@ -3,37 +3,51 @@
   "title": "Cross-Platform Interoperability",
   "slug": "cross-platform-interoperability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-platform-interoperability",
+  "classIri": "urn:ngm:class:cross-platform-interoperability",
   "domain": "infrastructure",
-  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.",
+  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:next-generation-mobile",
+      "id": "urn:ngm:class:next-generation-mobile",
       "label": "Next Generation Mobile"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:light-client",
+        "id": "urn:ngm:class:light-client",
         "label": "Light Client"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:layer-0",
+        "label": "Layer 0"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -124,42 +124,31 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:neuromorphic-chip",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:neuromorphic-chip",
+  "@type": "Class",
   "label": "Neuromorphic Chip",
+  "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8cef11300256e9adc1000d91063fff9175be3ff8fa86bfc96950f3d129013c29"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8cef11300256e9adc1000d91063fff9175be3ff8fa86bfc96950f3d129013c29@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:neuromorphic-chips",
+      "label": "Neuromorphic Chips"
+    }
+  ]
 }
 ```
 

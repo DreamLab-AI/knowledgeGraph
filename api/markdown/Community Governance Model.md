@@ -204,130 +204,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:community-governance-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:community-governance-model",
+  "@type": "Class",
   "label": "Community Governance Model",
+  "definition": "A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:75537a245d178500a915daccbd290091f72896425c52148f6e9f504336469569"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decision-rules",
+        "label": "Decision Rules"
+      },
+      {
+        "@id": "urn:ngm:class:dispute-resolution-process",
+        "label": "Dispute Resolution Process"
+      },
+      {
+        "@id": "urn:ngm:class:membership-criteria",
+        "label": "Membership Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-mechanism",
+        "label": "Proposal Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:voting-system",
+        "label": "Voting System"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "@id": "urn:ngm:class:community-decision-making",
+        "label": "Community Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-participation",
+        "label": "Democratic Participation"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-governance",
+        "label": "Transparent Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:75537a245d178500a915daccbd290091f72896425c52148f6e9f504336469569@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
-      "vc:label": "Decentralized Autonomous Organization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-community-platform",
-      "vc:label": "Virtual Community Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:decision-rules",
-      "vc:label": "Decision Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:dispute-resolution-process",
-      "vc:label": "Dispute Resolution Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:membership-criteria",
-      "vc:label": "Membership Criteria"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-mechanism",
-      "vc:label": "Proposal Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-system",
-      "vc:label": "Voting System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collective-action",
-      "vc:label": "Collective Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-decision-making",
-      "vc:label": "Community Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:democratic-participation",
-      "vc:label": "Democratic Participation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparent-governance",
-      "vc:label": "Transparent Governance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

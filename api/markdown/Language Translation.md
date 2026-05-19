@@ -112,48 +112,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:language-translation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:language-translation",
+  "@type": "Class",
   "label": "Language Translation",
+  "definition": "Language Translation is a type of Distributed Collaboration in the distributed collaboration domain.",
+  "domain": "distributed-collaboration",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:162bb937c74890a379898d4589e830dbf526dd4aaae36cdb0775426f3ac4ad77"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:162bb937c74890a379898d4589e830dbf526dd4aaae36cdb0775426f3ac4ad77@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Language Translation is a concept within the telecollaboration domain. Further enrichment pending.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

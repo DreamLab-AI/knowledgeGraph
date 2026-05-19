@@ -3,86 +3,99 @@
   "title": "Identity Federation",
   "slug": "identity-federation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:identity-federation",
+  "classIri": "urn:ngm:class:identity-federation",
   "domain": "infrastructure",
   "definition": "A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:attribute-exchange",
+        "id": "urn:ngm:class:attribute-exchange",
         "label": "Attribute Exchange"
       },
       {
-        "id": "urn:visionflow:linked:credential-mapping",
+        "id": "urn:ngm:class:credential-mapping",
         "label": "Credential Mapping"
       },
       {
-        "id": "urn:visionflow:linked:policy-negotiation",
+        "id": "urn:ngm:class:policy-negotiation",
         "label": "Policy Negotiation"
       },
       {
-        "id": "urn:visionflow:linked:session-propagation",
+        "id": "urn:ngm:class:session-propagation",
         "label": "Session Propagation"
       },
       {
-        "id": "urn:visionflow:linked:token-translation",
+        "id": "urn:ngm:class:token-translation",
         "label": "Token Translation"
       },
       {
-        "id": "urn:visionflow:linked:trust-establishment",
+        "id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:federation-protocol",
+        "id": "urn:ngm:class:federation-protocol",
         "label": "Federation Protocol"
       },
       {
-        "id": "urn:visionflow:linked:metadata-exchange",
+        "id": "urn:ngm:class:metadata-exchange",
         "label": "Metadata Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-provider-id-p",
+        "id": "urn:ngm:class:identity-provider-id-p",
         "label": "Identity Provider (IdP)"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-framework",
+        "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:b2-b-collaboration",
+        "id": "urn:ngm:class:b2-b-collaboration",
         "label": "B2B Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:cross-domain-sso",
+        "id": "urn:ngm:class:cross-domain-sso",
         "label": "Cross-Domain SSO"
       },
       {
-        "id": "urn:visionflow:linked:decentralized-identity",
+        "id": "urn:ngm:class:decentralized-identity",
         "label": "Decentralized Identity"
       },
       {
-        "id": "urn:visionflow:linked:multi-organization-access",
+        "id": "urn:ngm:class:multi-organization-access",
         "label": "Multi-Organization Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-authentication-architecture",
+        "label": "Distributed Authentication Architecture"
+      },
+      {
+        "id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

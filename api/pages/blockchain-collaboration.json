@@ -3,37 +3,41 @@
   "title": "Blockchain Collaboration",
   "slug": "blockchain-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-collaboration",
+  "classIri": "urn:ngm:class:blockchain-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent record-keeping without centralised intermediaries.\"",
+  "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent recor...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "ConsensusProtocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:transparent-decision-making",
+        "id": "urn:ngm:class:transparent-decision-making",
         "label": "TransparentDecisionMaking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

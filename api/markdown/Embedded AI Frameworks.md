@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:embedded-ai-frameworks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:embedded-ai-frameworks",
+  "@type": "Class",
   "label": "Embedded AI Frameworks",
+  "definition": "Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:63a21da8434fccf69feed030def62d05d90c54afa5418a6c4114bc4a150189fa"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:63a21da8434fccf69feed030def62d05d90c54afa5418a6c4114bc4a150189fa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Embedded AI Frameworks provide software infrastructure and tooling optimized for deploying and running machine learning models on resource-constrained embedded systems and edge devices. These frameworks target footprints of 100KB-10MB runtime size, supporting inference with minimal RAM (50-500MB), tailored for microcontrollers, mobile processors, and single-board computers. TensorFlow Lite achieves <500KB core runtime, enabling models on 1MB-RAM Arduino boards; ONNX Runtime provides hardware-agnostic model execution with optimized paths for mobile and embedded targets; OpenVINO targets edge deployment across Intel and ARM processors with automated optimization pipelines. Embedded frameworks provide model quantization (INT8/FP16), pruning integration, hardware acceleration abstraction supporting NPUs/FPGAs/DSPs, and optimized inference kernels. They eliminate unnecessary functionality from full TensorFlow/PyTorch: no graph construction, limited dynamic operations, streamlined memory allocation avoiding heap fragmentation on embedded systems. Frameworks support model format conversion (ONNX, SavedModel) ensuring compatibility across platforms. Delegation APIs abstract hardware accele",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

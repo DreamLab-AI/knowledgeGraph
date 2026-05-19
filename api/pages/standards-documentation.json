@@ -3,19 +3,18 @@
   "title": "Standards Documentation",
   "slug": "standards-documentation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:standards-documentation",
+  "classIri": "urn:ngm:class:standards-documentation",
   "domain": "spatial-computing",
-  "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery methods, and presentation to ensure consistency, clarity, and accuracy across all content.",
+  "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery mods, and presentation to ensure consistency, clarity, and accuracy across all content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

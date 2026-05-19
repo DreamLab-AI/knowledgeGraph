@@ -3,86 +3,95 @@
   "title": "Money",
   "slug": "money",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:money",
+  "classIri": "urn:ngm:class:money",
   "domain": "blockchain",
   "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 1.0,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:fiat-currency",
+        "id": "urn:ngm:class:fiat-currency",
         "label": "Fiat Currency"
       },
       {
-        "id": "urn:visionflow:owl:class:central-bank-digital-currency",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-money",
+        "id": "urn:ngm:class:digital-money",
         "label": "Digital Money"
       },
       {
-        "id": "urn:visionflow:owl:class:stablecoin",
+        "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:acceptance-network",
+        "id": "urn:ngm:class:acceptance-network",
         "label": "Acceptance Network"
       },
       {
-        "id": "urn:visionflow:linked:issuing-authority",
+        "id": "urn:ngm:class:issuing-authority",
         "label": "Issuing Authority"
       },
       {
-        "id": "urn:visionflow:linked:liquidity",
+        "id": "urn:ngm:class:liquidity",
         "label": "Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:trust",
+        "id": "urn:ngm:class:trust",
         "label": "Trust"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-payments",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
       },
       {
-        "id": "urn:visionflow:linked:debt",
+        "id": "urn:ngm:class:debt",
         "label": "Debt"
       },
       {
-        "id": "urn:visionflow:linked:economic-exchange",
+        "id": "urn:ngm:class:economic-exchange",
         "label": "Economic Exchange"
       },
       {
-        "id": "urn:visionflow:linked:savings",
+        "id": "urn:ngm:class:savings",
         "label": "Savings"
       },
       {
-        "id": "urn:visionflow:owl:class:price-discovery",
+        "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

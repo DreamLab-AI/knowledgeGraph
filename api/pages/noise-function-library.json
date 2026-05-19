@@ -3,32 +3,36 @@
   "title": "Noise Function Library",
   "slug": "noise-function-library",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:noise-function-library",
+  "classIri": "urn:ngm:class:noise-function-library",
   "domain": "spatial-computing",
   "definition": "A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:graphics-library",
+      "id": "urn:ngm:class:graphics-library",
       "label": "Graphics Library"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:procedural-content",
+        "id": "urn:ngm:class:procedural-content",
         "label": "Procedural Content"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

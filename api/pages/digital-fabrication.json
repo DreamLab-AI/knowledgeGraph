@@ -3,19 +3,13 @@
   "title": "Digital Fabrication",
   "slug": "digital-fabrication",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-fabrication",
+  "classIri": "urn:ngm:class:digital-fabrication",
   "domain": "artificial-intelligence",
-  "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies. AI optimizes fabrication processes through generative design, predictive maintenance, quality control via computer vision, and adaptive toolpath planning. Machine learning models predict material behavior, optimize support structures, detect defects in real-time, and enable mass customization. Applications include topology optimization for lightweight structures, AI-driven 3D printing parameter tuning, and robotic manufacturing systems with reinforcement learning-based control.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

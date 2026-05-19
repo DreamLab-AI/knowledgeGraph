@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-commissioning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-commissioning",
+  "@type": "Class",
   "label": "Virtual Commissioning",
+  "definition": "The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:506a0912dbbbb089cfe52e3b7fb751a9e61a359b7f830a4433a4bfe3e9584c62"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:506a0912dbbbb089cfe52e3b7fb751a9e61a359b7f830a4433a4bfe3e9584c62@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

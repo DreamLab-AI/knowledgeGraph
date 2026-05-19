@@ -3,19 +3,18 @@
   "title": "Virtual Society",
   "slug": "virtual-society",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-society",
+  "classIri": "urn:ngm:class:virtual-society",
   "domain": "spatial-computing",
   "definition": "A virtual society component in the Metaverse domain that enables VirtualWorld.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:social-structure",
+      "id": "urn:ngm:class:social-structure",
       "label": "Social Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

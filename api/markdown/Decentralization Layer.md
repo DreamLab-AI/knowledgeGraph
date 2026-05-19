@@ -172,104 +172,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralization-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralization-layer",
+  "@type": "Class",
   "label": "Decentralization Layer",
+  "definition": "Structural layer that distributes data and control across nodes to reduce central dependence and increase trust through P2P networking, blockchain, and distributed consensus mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aa094da312b653c1057214524edaaa4048dfb0aceb5c828b0e8197a2dc63113a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:p2-p-network",
+        "label": "P2P Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:trust-distribution",
+        "label": "Trust Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aa094da312b653c1057214524edaaa4048dfb0aceb5c828b0e8197a2dc63113a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Structural layer that distributes data and control across nodes to reduce central dependence and increase trust through P2P networking, blockchain, and distributed consensus mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:middleware-layer",
-      "vc:label": "Middleware Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:distributed-hash-table",
-      "vc:label": "Distributed Hash Table"
-    },
-    {
-      "@id": "urn:visionflow:linked:p2-p-network",
-      "vc:label": "P2P Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-storage",
-      "vc:label": "Distributed Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-distribution",
-      "vc:label": "Trust Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

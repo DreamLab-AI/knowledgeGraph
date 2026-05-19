@@ -192,116 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:generative-design-tool",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:generative-design-tool",
+  "@type": "Class",
   "label": "Generative Design Tool",
+  "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-generator",
+        "label": "3D Generator"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:design-optimizer",
+        "label": "Design Optimizer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:design-database",
+        "label": "Design Database"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "@id": "urn:ngm:class:design-optimization",
+        "label": "Design Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint-Based Design"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-modeling",
+        "label": "Parametric Modeling"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:content-creation-tool",
+        "label": "Content Creation Tool"
+      },
+      {
+        "@id": "urn:ngm:class:authoring-tool",
+        "label": "Authoring Tool"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6c5cff6c7b6c1005e7fcf150fb529f4745cc8df2ff8fa05a1d7ace40207d8d92@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:content-creation-tool",
-      "vc:label": "Content Creation Tool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authoring-tool",
-      "vc:label": "Authoring Tool"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-generator",
-      "vc:label": "3D Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-model",
-      "vc:label": "AI Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:constraint-solver",
-      "vc:label": "Constraint Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-optimizer",
-      "vc:label": "Design Optimizer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:design-database",
-      "vc:label": "Design Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
-      "vc:label": "Machine Learning Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-design",
-      "vc:label": "Automated Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-optimization",
-      "vc:label": "Design Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constraint-based-design",
-      "vc:label": "Constraint-Based Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parametric-modeling",
-      "vc:label": "Parametric Modeling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ai-engine",
-      "vc:label": "AI Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimization-algorithm",
-      "vc:label": "Optimization Algorithm"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

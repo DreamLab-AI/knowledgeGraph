@@ -3,19 +3,18 @@
   "title": "Voice Memo",
   "slug": "voice-memo",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:voice-memo",
+  "classIri": "urn:ngm:class:voice-memo",
   "domain": "distributed-collaboration",
   "definition": "Asynchronous audio communication allowing users to record and share voice messages, providing richer context than text while maintaining time flexibility.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

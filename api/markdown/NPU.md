@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:npu",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:npu",
+  "@type": "Class",
   "label": "NPU",
+  "definition": "Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-hardware",
-      "vc:label": "AI Hardware"
+      "@id": "urn:ngm:class:ai-hardware",
+      "label": "AI Hardware"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd12376f9d8bf886f1ddd82c1b6bf2f0216b28ca87b3bc67704dd90bde76cf55"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd12376f9d8bf886f1ddd82c1b6bf2f0216b28ca87b3bc67704dd90bde76cf55@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -3,19 +3,18 @@
   "title": "Rule of Law",
   "slug": "rule-of-law",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rule-of-law",
+  "classIri": "urn:ngm:class:rule-of-law",
   "domain": "infrastructure",
   "definition": "The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:legal-framework",
+      "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

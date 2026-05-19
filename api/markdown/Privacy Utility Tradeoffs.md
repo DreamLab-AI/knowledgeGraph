@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-utility-tradeoffs",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-utility-tradeoffs",
+  "@type": "Class",
   "label": "Privacy Utility Tradeoffs",
+  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other per...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ba7f6558d8e6a1183bc561c72bd0abbf7424f36a76d4e775bd4137132a31e113"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ba7f6558d8e6a1183bc561c72bd0abbf7424f36a76d4e775bd4137132a31e113@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other performance metrics necessary for effective decision-making), characterized by Pareto frontiers of achievable (privacy, utility) pairs where improving privacy typically requires sacrificing utility and vice versa. This tradeoff manifests through multiple mechanisms including noise addition in differential privacy where larger epsilon budgets (weaker privacy) enable more accurate results while smaller epsilon (stronger privacy) introduces more noise degrading utility, generalization in k-anonymity where higher k values (stronger privacy through larger anonymity sets) require more aggressive generalization reducing data granularity and analytical value, encryption overhead in homomorphic encryption where fully homomorphic schemes (strongest privacy enabling arbitrary encrypted computation) incur 10-100x performance penalties versus partially homomorphic schemes with limited operations, and aggre",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

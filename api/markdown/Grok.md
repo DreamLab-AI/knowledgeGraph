@@ -664,440 +664,327 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:grok",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:grok",
+  "@type": "Class",
   "label": "Grok",
+  "definition": "Grok is the family of large language models developed by xAI, the AI laboratory founded in July 2023 by Elon Musk toger with researchers Igor Babuschkin (ex-DeepMind, ex-OpenAI), Tony Wu (ex-Google Brain), Christian Szegedy (Inception/BatchNorm co-author, ex-Google), Yuhuai \"Tony\" Wu (ex-Google, ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:frontier-model",
-      "vc:label": "Frontier Model"
+      "@id": "urn:ngm:class:frontier-model",
+      "label": "Frontier Model"
     },
     {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-model",
-      "vc:label": "Transformer Model"
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f8f2f2826b43e55990f34a6cf0f39677c5a200f3da8e57d4712e9e1b23c97cd3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:big-brain-mode",
+        "label": "Big Brain Mode"
+      },
+      {
+        "@id": "urn:ngm:class:deep-search",
+        "label": "DeepSearch"
+      },
+      {
+        "@id": "urn:ngm:class:grok-1",
+        "label": "Grok-1"
+      },
+      {
+        "@id": "urn:ngm:class:grok-1-5",
+        "label": "Grok-1.5"
+      },
+      {
+        "@id": "urn:ngm:class:grok-1-5-v",
+        "label": "Grok-1.5V"
+      },
+      {
+        "@id": "urn:ngm:class:grok-2",
+        "label": "Grok-2"
+      },
+      {
+        "@id": "urn:ngm:class:grok-3",
+        "label": "Grok 3"
+      },
+      {
+        "@id": "urn:ngm:class:grok-3-reasoning",
+        "label": "Grok 3 Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:grok-4",
+        "label": "Grok 4"
+      },
+      {
+        "@id": "urn:ngm:class:grok-vision",
+        "label": "Grok Vision"
+      },
+      {
+        "@id": "urn:ngm:class:think-mode",
+        "label": "Think Mode"
+      },
+      {
+        "@id": "urn:ngm:class:x-ai-api",
+        "label": "xAI API"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:colossus-supercluster",
+        "label": "Colossus Supercluster"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-h100",
+        "label": "NVIDIA H100"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-infrastructure",
+        "label": "Reinforcement Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-corpus",
+        "label": "Training Data Corpus"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-web-browsing",
+        "label": "Agentic Web Browsing"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-assistance",
+        "label": "Conversational Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-web-search",
+        "label": "Real-Time Web Search"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-understanding",
+        "label": "Vision Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain of Thought Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-variants",
+        "label": "Constitutional AI Variants"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-routing",
+        "label": "Mixture of Experts Routing"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-position-embeddings",
+        "label": "Rotary Position Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-decoder-architecture",
+        "label": "Transformer Decoder Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aurora-image-model",
+        "label": "Aurora Image Model"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1-image-generation",
+        "label": "FLUX.1 Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:rmsnorm",
+        "label": "RMSNorm"
+      },
+      {
+        "@id": "urn:ngm:class:swi-glu",
+        "label": "SwiGLU"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt-engineering",
+        "label": "System Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:colossus-supercluster",
+        "label": "Colossus Supercluster"
+      },
+      {
+        "@id": "urn:ngm:class:elon-musk",
+        "label": "Elon Musk"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:tesla",
+        "label": "Tesla"
+      },
+      {
+        "@id": "urn:ngm:class:x-ai",
+        "label": "xAI"
+      },
+      {
+        "@id": "urn:ngm:class:x-platform",
+        "label": "X Platform"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:developer-tooling",
+        "label": "Developer Tooling"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-news-analysis",
+        "label": "Real-Time News Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:tesla-in-cabin-ai",
+        "label": "Tesla In-Cabin AI"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-llm-integrations",
+        "label": "Third-Party LLM Integrations"
+      },
+      {
+        "@id": "urn:ngm:class:x-ai-consumer-app",
+        "label": "xAI Consumer App"
+      },
+      {
+        "@id": "urn:ngm:class:x-ai-enterprise-api",
+        "label": "xAI Enterprise API"
+      },
+      {
+        "@id": "urn:ngm:class:x-premium",
+        "label": "X Premium"
+      },
+      {
+        "@id": "urn:ngm:class:x-premium-plus",
+        "label": "X Premium Plus"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aime",
+        "label": "AIME"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-forum-voluntary-commitments",
+        "label": "Frontier Model Forum Voluntary Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:gpqa-diamond",
+        "label": "GPQA Diamond"
+      },
+      {
+        "@id": "urn:ngm:class:gsm8-k",
+        "label": "GSM8K"
+      },
+      {
+        "@id": "urn:ngm:class:human-eval",
+        "label": "HumanEval"
+      },
+      {
+        "@id": "urn:ngm:class:live-code-bench",
+        "label": "LiveCodeBench"
+      },
+      {
+        "@id": "urn:ngm:class:lmsys-chatbot-arena",
+        "label": "LMSYS Chatbot Arena"
+      },
+      {
+        "@id": "urn:ngm:class:math-benchmark",
+        "label": "MATH Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:mmlu-benchmark",
+        "label": "MMLU Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:swe-bench",
+        "label": "SWE-Bench"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f8f2f2826b43e55990f34a6cf0f39677c5a200f3da8e57d4712e9e1b23c97cd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Grok is the family of large language models developed by xAI, the AI laboratory founded in July 2023 by Elon Musk together with researchers Igor Babuschkin (ex-DeepMind, ex-OpenAI), Tony Wu (ex-Google Brain), Christian Szegedy (Inception/BatchNorm co-author, ex-Google), Yuhuai \"Tony\" Wu (ex-Google, formal mathematics), Greg Yang (μP parameterisation, ex-Microsoft Research), Jimmy Ba (Adam optimiser co-inventor, University of Toronto/Vector Institute), Manuel Kroiss (ex-DeepMind), Zihang Dai (Transformer-XL co-author), Ross Nordeen (ex-Tesla compute), and Kyle Kosic (ex-OpenAI), positioned as a \"maximum-truth-seeking\" conversational assistant with rapid release cadence and deep integration into X (formerly Twitter) Premium+ subscriptions, spanning a model lineage from Grok-1 (November 2023, 314-billion-parameter Mixture-of-Experts with 8 experts and 2 active per token, released under Apache 2.0 open weights March 17 2024 via the official xAI/grok-1 GitHub repository becoming the largest open-weights LLM at release), Grok-1.5 (March 2024, 128K-token context window, MMLU 73.0, HumanEval 74.1, MATH 50.6), Grok-1.5V (April 2024, first xAI multimodal model with RealWorldQA spatial-reason",
-  "vc:qualityScore": {
-    "@value": "0.51",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:big-brain-mode",
-      "vc:label": "Big Brain Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-search",
-      "vc:label": "DeepSearch"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-1",
-      "vc:label": "Grok-1"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-1-5",
-      "vc:label": "Grok-1.5"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-1-5-v",
-      "vc:label": "Grok-1.5V"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-2",
-      "vc:label": "Grok-2"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-3",
-      "vc:label": "Grok 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-3-reasoning",
-      "vc:label": "Grok 3 Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-4",
-      "vc:label": "Grok 4"
-    },
-    {
-      "@id": "urn:visionflow:linked:grok-vision",
-      "vc:label": "Grok Vision"
-    },
-    {
-      "@id": "urn:visionflow:linked:think-mode",
-      "vc:label": "Think Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai-api",
-      "vc:label": "xAI API"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:colossus-supercluster",
-      "vc:label": "Colossus Supercluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-h100",
-      "vc:label": "NVIDIA H100"
-    },
-    {
-      "@id": "urn:visionflow:linked:reinforcement-learning-infrastructure",
-      "vc:label": "Reinforcement Learning Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf-pipeline",
-      "vc:label": "RLHF Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokeniser",
-      "vc:label": "Tokeniser"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-corpus",
-      "vc:label": "Training Data Corpus"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-web-browsing",
-      "vc:label": "Agentic Web Browsing"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversational-assistance",
-      "vc:label": "Conversational Assistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-reasoning",
-      "vc:label": "Mathematical Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-web-search",
-      "vc:label": "Real-Time Web Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-understanding",
-      "vc:label": "Vision Language Understanding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought-reasoning",
-      "vc:label": "Chain of Thought Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:constitutional-ai-variants",
-      "vc:label": "Constitutional AI Variants"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "FlashAttention"
-    },
-    {
-      "@id": "urn:visionflow:linked:grouped-query-attention",
-      "vc:label": "Grouped Query Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixture-of-experts-routing",
-      "vc:label": "Mixture of Experts Routing"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-position-embeddings",
-      "vc:label": "Rotary Position Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-decoder-architecture",
-      "vc:label": "Transformer Decoder Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-scale-distributed-training",
-      "vc:label": "Large-Scale Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-parallelism",
-      "vc:label": "Tensor Parallelism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-attention",
-      "vc:label": "Self Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:developer-tooling",
-      "vc:label": "Developer Tooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-news-analysis",
-      "vc:label": "Real-Time News Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:tesla-in-cabin-ai",
-      "vc:label": "Tesla In-Cabin AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:third-party-llm-integrations",
-      "vc:label": "Third-Party LLM Integrations"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai-consumer-app",
-      "vc:label": "xAI Consumer App"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai-enterprise-api",
-      "vc:label": "xAI Enterprise API"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-premium",
-      "vc:label": "X Premium"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-premium-plus",
-      "vc:label": "X Premium Plus"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:aurora-image-model",
-      "vc:label": "Aurora Image Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:flux-1-image-generation",
-      "vc:label": "FLUX.1 Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rmsnorm",
-      "vc:label": "RMSNorm"
-    },
-    {
-      "@id": "urn:visionflow:linked:swi-glu",
-      "vc:label": "SwiGLU"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-prompt-engineering",
-      "vc:label": "System Prompt Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byte-pair-encoding",
-      "vc:label": "Byte Pair Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparse-mixture-of-experts",
-      "vc:label": "Sparse Mixture of Experts"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:claude-3-5-sonnet",
-      "vc:label": "Claude 3.5 Sonnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-3-7-sonnet",
-      "vc:label": "Claude 3.7 Sonnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-seek-r1",
-      "vc:label": "DeepSeek-R1"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-seek-v3",
-      "vc:label": "DeepSeek V3"
-    },
-    {
-      "@id": "urn:visionflow:linked:gemini-2-5-pro",
-      "vc:label": "Gemini 2.5 Pro"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpt-4o",
-      "vc:label": "GPT-4o"
-    },
-    {
-      "@id": "urn:visionflow:linked:llama-3-3",
-      "vc:label": "Llama 3.3"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-large-2",
-      "vc:label": "Mistral Large 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:o1",
-      "vc:label": "o1"
-    },
-    {
-      "@id": "urn:visionflow:linked:o3",
-      "vc:label": "o3"
-    },
-    {
-      "@id": "urn:visionflow:linked:qwen-2-5",
-      "vc:label": "Qwen 2.5"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-safety-institute",
-      "vc:label": "AI Safety Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:anthropic",
-      "vc:label": "Anthropic"
-    },
-    {
-      "@id": "urn:visionflow:linked:colossus-supercluster",
-      "vc:label": "Colossus Supercluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:elon-musk",
-      "vc:label": "Elon Musk"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:tesla",
-      "vc:label": "Tesla"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai",
-      "vc:label": "xAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-platform",
-      "vc:label": "X Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai",
-      "vc:label": "OpenAI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:aime",
-      "vc:label": "AIME"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum-voluntary-commitments",
-      "vc:label": "Frontier Model Forum Voluntary Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpqa-diamond",
-      "vc:label": "GPQA Diamond"
-    },
-    {
-      "@id": "urn:visionflow:linked:gsm8-k",
-      "vc:label": "GSM8K"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-eval",
-      "vc:label": "HumanEval"
-    },
-    {
-      "@id": "urn:visionflow:linked:live-code-bench",
-      "vc:label": "LiveCodeBench"
-    },
-    {
-      "@id": "urn:visionflow:linked:lmsys-chatbot-arena",
-      "vc:label": "LMSYS Chatbot Arena"
-    },
-    {
-      "@id": "urn:visionflow:linked:math-benchmark",
-      "vc:label": "MATH Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:mmlu-benchmark",
-      "vc:label": "MMLU Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:swe-bench",
-      "vc:label": "SWE-Bench"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:frontier-model",
-      "vc:label": "Frontier Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    }
-  ]
+  "quality": 0.51,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

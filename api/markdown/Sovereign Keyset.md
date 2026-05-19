@@ -252,124 +252,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sovereign-keyset",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sovereign-keyset",
+  "@type": "Class",
   "label": "Sovereign Keyset",
+  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authentica...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
+      "@id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "@id": "urn:ngm:class:key-rotation-policy",
+        "label": "Key Rotation Policy"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware-security-module-optional",
+        "label": "Hardware Security Module (optional)"
+      },
+      {
+        "@id": "urn:ngm:class:key-storage",
+        "label": "Key Storage"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1-elliptic-curve",
+        "label": "secp256k1 Elliptic Curve"
+      },
+      {
+        "@id": "urn:ngm:class:secure-random-number-generator",
+        "label": "Secure Random Number Generator"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-trust",
+        "label": "Decentralised Trust"
+      },
+      {
+        "@id": "urn:ngm:class:message-signing",
+        "label": "Message Signing"
+      },
+      {
+        "@id": "urn:ngm:class:peer-authentication",
+        "label": "Peer Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5d876110829283e948e8e296df6753b30add09d697715365e55caa92ac499f63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.",
-  "vc:qualityScore": {
-    "@value": "0.86",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
-      "vc:label": "BIP-340 Schnorr Keypair"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-rotation-policy",
-      "vc:label": "Key Rotation Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-key",
-      "vc:label": "Private Key"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key",
-      "vc:label": "Public Key"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module-optional",
-      "vc:label": "Hardware Security Module (optional)"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-storage",
-      "vc:label": "Key Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
-      "vc:label": "secp256k1 Elliptic Curve"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-random-number-generator",
-      "vc:label": "Secure Random Number Generator"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-issuance",
-      "vc:label": "Credential Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-trust",
-      "vc:label": "Decentralised Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-signing",
-      "vc:label": "Message Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-authentication",
-      "vc:label": "Peer Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bip-340",
-      "vc:label": "BIP-340"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1",
-      "vc:label": "secp256k1"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-core",
-      "vc:label": "W3C DID Core"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-keypair",
-      "vc:label": "Blockchain Keypair"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schnorr-signature",
-      "vc:label": "Schnorr Signature"
-    }
-  ]
+  "quality": 0.86,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

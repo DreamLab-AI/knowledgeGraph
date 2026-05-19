@@ -3,19 +3,18 @@
   "title": "Autoencoder",
   "slug": "autoencoder",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:autoencoder",
+  "classIri": "urn:ngm:class:autoencoder",
   "domain": "artificial-intelligence",
   "definition": "Autoencoder is a artificial intelligence concept and a type of Deep Learning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

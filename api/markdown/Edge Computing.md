@@ -528,364 +528,291 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-computing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-computing",
+  "@type": "Class",
   "label": "Edge Computing",
+  "definition": "Edge Computing is a distributed computing paradigm that relocates computation, storage, and intelligence from centralised hyperscale data centres towards the topological extremities of the network — into base stations, on-premises micro data centres, customer-premises gateways, vehicles, industri...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:decentralised-architecture",
-      "vc:label": "Decentralised Architecture"
+      "@id": "urn:ngm:class:decentralised-architecture",
+      "label": "Decentralised Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:latency-sensitive-infrastructure",
-      "vc:label": "Latency-Sensitive Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-function-virtualisation",
-      "vc:label": "Network Function Virtualisation"
+      "@id": "urn:ngm:class:latency-sensitive-infrastructure",
+      "label": "Latency-Sensitive Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:78101acfd579c02149c87e7d5ef616d2f88c7e0e286d1d81be142b40a408424a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-application-server",
+        "label": "Edge Application Server"
+      },
+      {
+        "@id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:edge-node",
+        "label": "Edge Node"
+      },
+      {
+        "@id": "urn:ngm:class:edge-orchestrator",
+        "label": "Edge Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:fallback-mechanism",
+        "label": "Fallback Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:local-processing",
+        "label": "Local Processing"
+      },
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-orchestration",
+        "label": "Edge Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bandwidth-efficiency",
+        "label": "Bandwidth Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-processing",
+        "label": "Decentralised Processing"
+      },
+      {
+        "@id": "urn:ngm:class:offline-operation",
+        "label": "Offline Operation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reduced-latency",
+        "label": "Reduced Latency"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cloudlet-architecture",
+        "label": "Cloudlet Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:edge-caching",
+        "label": "Edge Caching"
+      },
+      {
+        "@id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "@id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "Multi-access Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:kube-edge",
+        "label": "KubeEdge"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:open-yurt",
+        "label": "OpenYurt"
+      },
+      {
+        "@id": "urn:ngm:class:v8-isolates",
+        "label": "V8 Isolates"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:6-g",
+        "label": "6G"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:tiny-ml",
+        "label": "TinyML"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-llm",
+        "label": "On-Device LLM"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1934-open-fog",
+        "label": "IEEE 1934 OpenFog"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t-y-3508",
+        "label": "ITU-T Y.3508"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation-edge",
+        "label": "Linux Foundation Edge"
+      },
+      {
+        "@id": "urn:ngm:class:o-ran-alliance",
+        "label": "O-RAN Alliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:78101acfd579c02149c87e7d5ef616d2f88c7e0e286d1d81be142b40a408424a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Edge Computing is a distributed computing paradigm that relocates computation, storage, and intelligence from centralised hyperscale data centres towards the topological extremities of the network — into base stations, on-premises micro data centres, customer-premises gateways, vehicles, industrial PLCs and end-user devices — forming a hierarchical compute continuum from cloud (Tier 0 hyperscale regions <50 ms RTT) through fog/regional (Tier 1 metropolitan 10-30 ms) and edge (Tier 2 access network 1-10 ms) to far-edge (Tier 3 on-premises 0.5-2 ms) and finally on-device (Tier 4 sub-millisecond), formalised across multiple converging standards bodies and reference architectures (ETSI Multi-access Edge Computing MEC ISG founded 2014 ratifying the GS MEC 003 framework specifying virtualisation infrastructure manager VIM, multi-access edge orchestrator MEO, mobile edge platform manager MEPM, and a Mp1/Mp2/Mp3 service-API surface allowing third-party applications onboarded as Virtual Network Functions VNFs or containers to consume location, radio network information RNI, bandwidth management, and UE identity APIs co-located with the radio access network; 3GPP Release 15-18 specifying the",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-aggregation",
-      "vc:label": "Data Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-application-server",
-      "vc:label": "Edge Application Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-gateway",
-      "vc:label": "Edge Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-node",
-      "vc:label": "Edge Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-orchestrator",
-      "vc:label": "Edge Orchestrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:fallback-mechanism",
-      "vc:label": "Fallback Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-processing",
-      "vc:label": "Local Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronisation",
-      "vc:label": "Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-ai-accelerator",
-      "vc:label": "Edge AI Accelerator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:5-g-network",
-      "vc:label": "5G Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:container-runtime",
-      "vc:label": "Container Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-synchronisation",
-      "vc:label": "Time Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-orchestration",
-      "vc:label": "Edge Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-acceleration",
-      "vc:label": "Hardware Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-efficiency",
-      "vc:label": "Bandwidth Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-processing",
-      "vc:label": "Decentralised Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-operation",
-      "vc:label": "Offline Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-computation",
-      "vc:label": "Privacy-Preserving Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-ai-inference",
-      "vc:label": "Real-Time AI Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduced-latency",
-      "vc:label": "Reduced Latency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:resilience",
-      "vc:label": "Resilience"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cloudlet-architecture",
-      "vc:label": "Cloudlet Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-ai-inference",
-      "vc:label": "Edge AI Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-caching",
-      "vc:label": "Edge Caching"
-    },
-    {
-      "@id": "urn:visionflow:linked:fog-computing",
-      "vc:label": "Fog Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-access-edge-computing",
-      "vc:label": "Multi-access Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-slicing",
-      "vc:label": "Network Slicing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:5-g-core",
-      "vc:label": "5G Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:containerisation",
-      "vc:label": "Containerisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-function-virtualisation",
-      "vc:label": "Network Function Virtualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-defined-networking",
-      "vc:label": "Software-Defined Networking"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-sensitive-networking",
-      "vc:label": "Time-Sensitive Networking"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-io-t",
-      "vc:label": "Industrial IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-device-llm",
-      "vc:label": "On-Device LLM"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-city",
-      "vc:label": "Smart City"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:container-image",
-      "vc:label": "Container Image"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-acceleration",
-      "vc:label": "GPU Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:linked:kube-edge",
-      "vc:label": "KubeEdge"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-processing-unit",
-      "vc:label": "Neural Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-yurt",
-      "vc:label": "OpenYurt"
-    },
-    {
-      "@id": "urn:visionflow:linked:v8-isolates",
-      "vc:label": "V8 Isolates"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-cloud-computing",
-      "vc:label": "Centralised Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:mainframe-computing",
-      "vc:label": "Mainframe Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-on-device-computing",
-      "vc:label": "Pure On-Device Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-cdn",
-      "vc:label": "Traditional CDN"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:5-g",
-      "vc:label": "5G"
-    },
-    {
-      "@id": "urn:visionflow:linked:6-g",
-      "vc:label": "6G"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tiny-ml",
-      "vc:label": "TinyML"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:3-gpp",
-      "vc:label": "3GPP"
-    },
-    {
-      "@id": "urn:visionflow:linked:cncf",
-      "vc:label": "CNCF"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi-mec",
-      "vc:label": "ETSI MEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1934-open-fog",
-      "vc:label": "IEEE 1934 OpenFog"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t-y-3508",
-      "vc:label": "ITU-T Y.3508"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation-edge",
-      "vc:label": "Linux Foundation Edge"
-    },
-    {
-      "@id": "urn:visionflow:linked:o-ran-alliance",
-      "vc:label": "O-RAN Alliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-layer",
-      "vc:label": "Compute Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

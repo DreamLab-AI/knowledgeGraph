@@ -124,54 +124,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:aiapplications",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:aiapplications",
+  "@type": "Class",
   "label": "AIApplications",
+  "definition": "A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:befd85f49a23293fe9ce611589bd86294d7a371992519deafd1eff776a52fb13"
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-capability",
+        "label": "AI Capability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:befd85f49a23293fe9ce611589bd86294d7a371992519deafd1eff776a52fb13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ai-capability",
-      "vc:label": "AI Capability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:industry-vertical",
-      "vc:label": "Industry Vertical"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

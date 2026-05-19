@@ -97,46 +97,7 @@ public:: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:executing-javascript-in-a-code-block",
-  "@type": "OntologyClass",
-  "label": "Executing Javascript in a code block",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd4974f8622bc155c036ce08618895c51ec411a0f4a1f28221cdfca5cb3578d9"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd4974f8622bc155c036ce08618895c51ec411a0f4a1f28221cdfca5cb3578d9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Executing Javascript in a code block is a technology infrastructure concept and a type of infrastructure.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
-}
-```
+
 
 ```json-ld
 {

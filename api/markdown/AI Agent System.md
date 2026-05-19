@@ -840,239 +840,163 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-agent-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-agent-system",
+  "@type": "Class",
   "label": "AI Agent System",
-  "subClassOf": [],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1f8ad08aab30b7a3ef23f788dde49abb79c17bd5ef90d0aca4e0541ddaa6350e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:action-executor",
-      "vc:label": "Action Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-engine",
-      "vc:label": "Decision Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-planner",
-      "vc:label": "Goal Planner"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-base",
-      "vc:label": "Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-system",
-      "vc:label": "Memory System"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use-system",
-      "vc:label": "Tool Use System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-module",
-      "vc:label": "Learning Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:perception-system",
-      "vc:label": "Perception System"
+      "@id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:action-space",
-      "vc:label": "Action Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:api-access",
-      "vc:label": "API Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-system",
-      "vc:label": "Authentication System"
-    },
-    {
-      "@id": "urn:visionflow:linked:environment-model",
-      "vc:label": "Environment Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-budget",
-      "vc:label": "Resource Budget"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reward-function",
-      "vc:label": "Reward Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-behavior",
-      "vc:label": "Adaptive Behavior"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-operation",
-      "vc:label": "Autonomous Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-automation",
-      "vc:label": "Browser Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-interaction",
-      "vc:label": "Database Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:file-system-access",
-      "vc:label": "File System Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-achievement",
-      "vc:label": "Goal Achievement"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-coordination",
-      "vc:label": "Multi-Agent Coordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-behavior",
-      "vc:label": "Autonomous Behavior"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-making",
-      "vc:label": "Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-learning",
-      "vc:label": "Meta-Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:planning-algorithm",
-      "vc:label": "Planning Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:active-learning",
-      "vc:label": "Active Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-trading",
-      "vc:label": "Algorithmic Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-economic-agent",
-      "vc:label": "Autonomous Economic Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-trading-bot",
-      "vc:label": "Bitcoin Trading Bot"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-agent",
-      "vc:label": "DeFi Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-node",
-      "vc:label": "Lightning Network Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-channel-management",
-      "vc:label": "Payment Channel Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-interaction",
-      "vc:label": "Protocol Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "vc:label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
-      "vc:label": "Intelligent Virtual Entity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "@id": "urn:ngm:class:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:goal-planner",
+        "label": "Goal Planner"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:memory-system",
+        "label": "Memory System"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use-system",
+        "label": "Tool Use System"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:learning-module",
+        "label": "Learning Module"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "@id": "urn:ngm:class:api-access",
+        "label": "API Access"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "@id": "urn:ngm:class:resource-budget",
+        "label": "Resource Budget"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-behavior",
+        "label": "Adaptive Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:database-interaction",
+        "label": "Database Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:file-system-access",
+        "label": "File System Access"
+      },
+      {
+        "@id": "urn:ngm:class:goal-achievement",
+        "label": "Goal Achievement"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-algorithm",
+        "label": "Planning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
+  },
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

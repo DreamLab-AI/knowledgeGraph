@@ -156,76 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-footprint-indicator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-footprint-indicator",
+  "@type": "Class",
   "label": "Carbon Footprint Indicator",
+  "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:environmental-kpi",
-      "vc:label": "Environmental KPI"
+      "@id": "urn:ngm:class:environmental-kpi",
+      "label": "Environmental KPI"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:66d4319c92e712ea34aad39b648edc4c287c52d75d9a132cf8d01c60aeeed83c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:emissions-data",
+        "label": "Emissions Data"
+      },
+      {
+        "@id": "urn:ngm:class:measurement-methodology",
+        "label": "Measurement Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-framework",
+        "label": "Reporting Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:target-tracking",
+        "label": "Target Tracking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:66d4319c92e712ea34aad39b648edc4c287c52d75d9a132cf8d01c60aeeed83c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:emissions-data",
-      "vc:label": "Emissions Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:measurement-methodology",
-      "vc:label": "Measurement Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-framework",
-      "vc:label": "Reporting Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:benchmarking",
-      "vc:label": "Benchmarking"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-monitoring",
-      "vc:label": "Performance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-tracking",
-      "vc:label": "Target Tracking"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

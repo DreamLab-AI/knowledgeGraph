@@ -116,62 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compliance-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-verification",
+  "@type": "Class",
   "label": "Compliance Verification",
+  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and...",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
+      "@id": "urn:ngm:class:compliance-monitoring",
+      "label": "Compliance Monitoring"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6f5e1b4d8df64aae2c011fc0d7fec0327e2b3a0a457107d39497c0acdffb8eea"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:kyc-aml-requirements",
+        "label": "KYC/AML Requirements"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6f5e1b4d8df64aae2c011fc0d7fec0327e2b3a0a457107d39497c0acdffb8eea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:kyc-aml-requirements",
-      "vc:label": "KYC/AML Requirements"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

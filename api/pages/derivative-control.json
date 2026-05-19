@@ -3,82 +3,82 @@
   "title": "Derivative Control",
   "slug": "derivative-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:derivative-control",
+  "classIri": "urn:ngm:class:derivative-control",
   "domain": "robotics",
-  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response. When combined with [[Proportional Control]] and [[Integral Control]] in [[PID Control]], the derivative term enhances stability and enables faster, less overshoot-prone convergence to setpoints in robotic [[Control Systems]].",
+  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:control-actions",
+      "id": "urn:ngm:class:control-actions",
       "label": "Control Actions"
     },
     {
-      "id": "urn:visionflow:linked:pid-control-component",
+      "id": "urn:ngm:class:pid-control-component",
       "label": "PID Control Component"
-    },
-    {
-      "id": "urn:visionflow:owl:class:feedback-control",
-      "label": "Feedback Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:damping-action",
+        "id": "urn:ngm:class:damping-action",
         "label": "Damping Action"
       },
       {
-        "id": "urn:visionflow:linked:derivative-gain",
+        "id": "urn:ngm:class:derivative-gain",
         "label": "Derivative Gain"
       },
       {
-        "id": "urn:visionflow:linked:error-rate-measurement",
+        "id": "urn:ngm:class:error-rate-measurement",
         "label": "Error Rate Measurement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:error-signal",
+        "id": "urn:ngm:class:error-signal",
         "label": "Error Signal"
       },
       {
-        "id": "urn:visionflow:linked:gain-tuning",
+        "id": "urn:ngm:class:gain-tuning",
         "label": "Gain Tuning"
       },
       {
-        "id": "urn:visionflow:linked:low-pass-filtering",
+        "id": "urn:ngm:class:low-pass-filtering",
         "label": "Low-Pass Filtering"
       },
       {
-        "id": "urn:visionflow:linked:time-derivative",
+        "id": "urn:ngm:class:time-derivative",
         "label": "Time Derivative"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:faster-convergence",
+        "id": "urn:ngm:class:faster-convergence",
         "label": "Faster Convergence"
       },
       {
-        "id": "urn:visionflow:linked:oscillation-damping",
+        "id": "urn:ngm:class:oscillation-damping",
         "label": "Oscillation Damping"
       },
       {
-        "id": "urn:visionflow:linked:reduced-overshoot",
+        "id": "urn:ngm:class:reduced-overshoot",
         "label": "Reduced Overshoot"
       },
       {
-        "id": "urn:visionflow:linked:stability-improvement",
+        "id": "urn:ngm:class:stability-improvement",
         "label": "Stability Improvement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

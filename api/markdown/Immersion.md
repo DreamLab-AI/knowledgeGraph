@@ -180,98 +180,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersion",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersion",
+  "@type": "Class",
   "label": "Immersion",
+  "definition": "Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9eaa0f8f2c16e6f69bc70e5f2e42a5758735b3e1ab1afc26c98bfa3b75d07552"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cognitive-immersion",
+        "label": "Cognitive Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-immersion",
+        "label": "Sensory Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-immersion",
+        "label": "Emotional Immersion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-quality",
+        "label": "Content Quality"
+      },
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-mechanism",
+        "label": "Interaction Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
+      },
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9eaa0f8f2c16e6f69bc70e5f2e42a5758735b3e1ab1afc26c98bfa3b75d07552@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-immersion",
-      "vc:label": "Cognitive Immersion"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-immersion",
-      "vc:label": "Sensory Immersion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emotional-immersion",
-      "vc:label": "Emotional Immersion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-quality",
-      "vc:label": "Content Quality"
-    },
-    {
-      "@id": "urn:visionflow:linked:display-technology",
-      "vc:label": "Display Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:interaction-mechanism",
-      "vc:label": "Interaction Mechanism"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:flow-state",
-      "vc:label": "Flow State"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-engagement",
-      "vc:label": "User Engagement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence",
-      "vc:label": "Presence"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:visual-fidelity",
-      "vc:label": "Visual Fidelity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audio-spatialization",
-      "vc:label": "Audio Spatialization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

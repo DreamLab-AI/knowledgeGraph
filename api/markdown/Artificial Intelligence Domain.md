@@ -128,60 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:artificial-intelligence-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:artificial-intelligence-domain",
+  "@type": "Class",
   "label": "Artificial Intelligence Domain",
+  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research modologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technology-domain",
-      "vc:label": "Technology Domain"
+      "@id": "urn:ngm:class:technology-domain",
+      "label": "Technology Domain"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eacd980e5a0601ed079e499c4db6d3b37d2fc9c717a195391f4a7a80536280e5"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eacd980e5a0601ed079e499c4db6d3b37d2fc9c717a195391f4a7a80536280e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-technology",
-      "vc:label": "Blockchain Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-technology",
-      "vc:label": "Metaverse Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics-systems",
-      "vc:label": "Robotics Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

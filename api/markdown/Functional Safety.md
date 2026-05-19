@@ -152,90 +152,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:functional-safety",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:functional-safety",
+  "@type": "Class",
   "label": "Functional Safety",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:safety-engineering",
-      "vc:label": "Safety Engineering"
+      "@id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:testing-and-validation",
+        "label": "Testing & Validation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:human-robot-safety",
+        "label": "Human-Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:liability-mitigation",
+        "label": "Liability Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:safe-operation-certification",
+        "label": "Safe Operation Certification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b2e8996bbf5418f585223b07ab1e43c19b32a6d47ad273842a84ae946556662@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
-  "vc:qualityScore": {
-    "@value": "0.64",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.18",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:fault-tree-analysis",
-      "vc:label": "Fault Tree Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:hazard-analysis",
-      "vc:label": "Hazard Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:testing-and-validation",
-      "vc:label": "Testing & Validation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:human-robot-safety",
-      "vc:label": "Human-Robot Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:liability-mitigation",
-      "vc:label": "Liability Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-operation-certification",
-      "vc:label": "Safe Operation Certification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.64,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

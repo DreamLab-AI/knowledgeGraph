@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0018-inspection-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0018-inspection-robot",
+  "@type": "Class",
   "label": "rb 0018 inspection robot",
+  "definition": "inspection robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
+      "@id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cd51caf4246d16aabaef26f3786c54575ab8c523dbb44075b7a5e5f0c043d304"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cd51caf4246d16aabaef26f3786c54575ab8c523dbb44075b7a5e5f0c043d304@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "inspection robot is a robotics and autonomous systems concept and a type of Mobile Robot."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

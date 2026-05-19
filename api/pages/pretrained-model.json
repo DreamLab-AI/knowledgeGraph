@@ -3,19 +3,18 @@
   "title": "Pretrained Model",
   "slug": "pretrained-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pretrained-model",
+  "classIri": "urn:ngm:class:pretrained-model",
   "domain": "artificial-intelligence",
   "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model",
+      "id": "urn:ngm:class:model",
       "label": "Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

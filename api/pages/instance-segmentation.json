@@ -3,19 +3,18 @@
   "title": "Instance Segmentation",
   "slug": "instance-segmentation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:instance-segmentation",
+  "classIri": "urn:ngm:class:instance-segmentation",
   "domain": "spatial-computing",
-  "definition": "Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects. Instance segmentation models (Mask R-CNN, YOLACT, SOLOv2) enable fine-grained object localisation essential for robotics manipulation, autonomous driving, and medical image analysis.",
+  "definition": "Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

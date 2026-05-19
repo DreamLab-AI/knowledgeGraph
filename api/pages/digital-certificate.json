@@ -3,53 +3,57 @@
   "title": "Digital Certificate",
   "slug": "digital-certificate",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-certificate",
+  "classIri": "urn:ngm:class:digital-certificate",
   "domain": "spatial-computing",
-  "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations. bridges-to:: [[DID Nostr Identity]]",
+  "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-security",
+      "id": "urn:ngm:class:digital-security",
       "label": "Digital Security"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:certificate-authority",
+        "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:secure-communication",
+        "id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication"
       },
       {
-        "id": "urn:visionflow:linked:trust-establishment",
+        "id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

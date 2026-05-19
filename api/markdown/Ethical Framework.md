@@ -176,52 +176,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ethical-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ethical-framework",
+  "@type": "Class",
   "label": "Ethical Framework",
+  "definition": "An ical Framework is a structured set of moral principles, values, and reasoning mods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-governance-principle",
-      "vc:label": "AI Governance Principle"
+      "@id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:951326ddc60af3b8a6358b007329869fdef2a100cabd2c1be8dcc9363f1ff0d6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An Ethical Framework is a structured set of moral principles, values, and reasoning methods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm. Ethical frameworks for AI translate philosophical traditions and moral reasoning into practical guidelines addressing unique challenges posed by algorithmic decision-making: how to ensure fairness when training data reflects historical discrimination, how to balance accuracy with transparency when complex models resist interpretation, how to assign responsibility when autonomous systems cause harm, and how to preserve human agency when AI systems make consequential recommendations. These frameworks draw from multiple ethical traditions including consequentialism (evaluating AI systems by their outcomes and impacts), deontology (establishing duties and rules AI systems must follow regardless of consequences), virtue ethics (cultivating organizational practices promoting responsible AI development), and care ethics (emphasizing relationships and contextual understanding). Ethical frameworks provide structured approaches for identifying, analyzing, and resolvin",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

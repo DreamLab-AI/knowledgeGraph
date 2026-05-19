@@ -112,48 +112,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:algorithmic-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-framework",
+  "@type": "Class",
   "label": "Algorithmic Framework",
+  "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-framework",
-      "vc:label": "AI Framework"
+      "@id": "urn:ngm:class:ai-framework",
+      "label": "AI Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:718d781749d9f1673ca3c32bfcc596edb53190d417b810de52cf1358336a2fc3"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:718d781749d9f1673ca3c32bfcc596edb53190d417b810de52cf1358336a2fc3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

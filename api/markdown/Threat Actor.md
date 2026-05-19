@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:threat-actor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:threat-actor",
+  "@type": "Class",
   "label": "Threat Actor",
+  "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:attack-vector",
-      "vc:label": "Attack Vector"
+      "@id": "urn:ngm:class:attack-vector",
+      "label": "Attack Vector"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ad1bde4085076714db13f8095a6b9d11eeada83925f3f1e261976d3252f5d66b"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ad1bde4085076714db13f8095a6b9d11eeada83925f3f1e261976d3252f5d66b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

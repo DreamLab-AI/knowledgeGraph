@@ -3,86 +3,95 @@
   "title": "Metaverse Architecture Stack",
   "slug": "metaverse-architecture-stack",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-architecture-stack",
+  "classIri": "urn:ngm:class:metaverse-architecture-stack",
   "domain": "spatial-computing",
   "definition": "Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-architecture",
+      "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:component-definitions",
+        "id": "urn:ngm:class:component-definitions",
         "label": "Component Definitions"
       },
       {
-        "id": "urn:visionflow:linked:interface-specifications",
+        "id": "urn:ngm:class:interface-specifications",
         "label": "Interface Specifications"
       },
       {
-        "id": "urn:visionflow:owl:class:application-layer",
+        "id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-layer",
+        "id": "urn:ngm:class:compute-layer",
         "label": "Compute Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:data-layer",
+        "id": "urn:ngm:class:data-layer",
         "label": "Data Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:network-layer",
+        "id": "urn:ngm:class:network-layer",
         "label": "Network Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:physical-layer",
+        "id": "urn:ngm:class:physical-layer",
         "label": "Physical Layer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:interoperability-protocols",
+        "id": "urn:ngm:class:interoperability-protocols",
         "label": "Interoperability Protocols"
       },
       {
-        "id": "urn:visionflow:linked:layering-principles",
+        "id": "urn:ngm:class:layering-principles",
         "label": "Layering Principles"
       },
       {
-        "id": "urn:visionflow:owl:class:interface-standards",
+        "id": "urn:ngm:class:interface-standards",
         "label": "Interface Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:component-reusability",
+        "id": "urn:ngm:class:component-reusability",
         "label": "Component Reusability"
       },
       {
-        "id": "urn:visionflow:linked:multi-vendor-integration",
+        "id": "urn:ngm:class:multi-vendor-integration",
         "label": "Multi-vendor Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:scalable-architecture",
+        "id": "urn:ngm:class:scalable-architecture",
         "label": "Scalable Architecture"
       },
       {
-        "id": "urn:visionflow:owl:class:system-interoperability",
+        "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

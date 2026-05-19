@@ -3,127 +3,203 @@
   "title": "Testnet",
   "slug": "testnet",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:testnet",
+  "classIri": "urn:ngm:class:testnet",
   "domain": "blockchain",
-  "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 million+ validators/testers maintaining testnet nodes generating blocks every 12-15 seconds Ethereum Sepolia, Bitcoin Testnet3 network difficulty adjusted to 1/3 mainnet targeting ~10 minute blocks with ~2000 active miners), enabling smart contract developers to deploy and test contract code under realistic network conditions without financial risk or mainnet state pollution, protocol upgrade testing where new consensus rules, cryptographic algorithms (post-quantum lattice-based signatures, BLS aggregation), and economic mechanisms are validated on live networks before mainnet activation (Ethereum 2.0 Beacon Chain testing 2020-2021 across Pyrmont/Goerli/Sepolia testnets with 300K+ validators, Bitcoin Taproot upgrade tested on Signet with 150+ block producers), operational testing of full-stack node infrastructure including peer-to-peer networking (libp2p with 500+ concurrent connections per",
+  "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:protocol-implementation",
+      "id": "urn:ngm:class:protocol-implementation",
       "label": "Protocol Implementation"
     },
     {
-      "id": "urn:visionflow:owl:class:testing-infrastructure",
+      "id": "urn:ngm:class:testing-infrastructure",
       "label": "Testing Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-system",
-      "label": "Distributed System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.51,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:block-explorer",
+        "id": "urn:ngm:class:block-explorer",
         "label": "Block Explorer"
       },
       {
-        "id": "urn:visionflow:linked:faucet",
+        "id": "urn:ngm:class:faucet",
         "label": "Faucet"
       },
       {
-        "id": "urn:visionflow:linked:mining-staking-pool",
+        "id": "urn:ngm:class:mining-staking-pool",
         "label": "Mining/Staking Pool"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:full-node",
+        "id": "urn:ngm:class:full-node",
         "label": "Full Node"
       },
       {
-        "id": "urn:visionflow:owl:class:genesis-block",
+        "id": "urn:ngm:class:genesis-block",
         "label": "Genesis Block"
       },
       {
-        "id": "urn:visionflow:owl:class:validator-node",
+        "id": "urn:ngm:class:validator-node",
         "label": "Validator Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:consensus-rules",
+        "id": "urn:ngm:class:consensus-rules",
         "label": "Consensus Rules"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "id": "urn:ngm:class:cryptographic-primitives",
         "label": "Cryptographic Primitives"
       },
       {
-        "id": "urn:visionflow:linked:native-token-distribution",
+        "id": "urn:ngm:class:native-token-distribution",
         "label": "Native Token Distribution"
       },
       {
-        "id": "urn:visionflow:linked:peer-to-peer-protocol",
+        "id": "urn:ngm:class:peer-to-peer-protocol",
         "label": "Peer-to-Peer Protocol"
       },
       {
-        "id": "urn:visionflow:linked:state-management",
+        "id": "urn:ngm:class:state-management",
         "label": "State Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consensus-research",
+        "id": "urn:ngm:class:consensus-research",
         "label": "Consensus Research"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-integration",
+        "id": "urn:ngm:class:cross-chain-integration",
         "label": "Cross-Chain Integration"
       },
       {
-        "id": "urn:visionflow:linked:d-app-deployment",
+        "id": "urn:ngm:class:d-app-deployment",
         "label": "dApp Deployment"
       },
       {
-        "id": "urn:visionflow:linked:protocol-testing",
+        "id": "urn:ngm:class:protocol-testing",
         "label": "Protocol Testing"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-development",
+        "id": "urn:ngm:class:smart-contract-development",
         "label": "Smart Contract Development"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:pbft-consensus",
+        "id": "urn:ngm:class:pbft-consensus",
         "label": "PBFT Consensus"
       },
       {
-        "id": "urn:visionflow:linked:validator-selection",
+        "id": "urn:ngm:class:validator-selection",
         "label": "Validator Selection"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof-of-Stake"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Proof-of-Work"
       },
       {
-        "id": "urn:visionflow:owl:class:state-machine-replication",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "State Machine Replication"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:rlp-encoding",
+        "label": "RLP Encoding"
+      },
+      {
+        "id": "urn:ngm:class:transaction-mempool",
+        "label": "Transaction Mempool"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bug-discovery",
+        "label": "Bug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:developer-onboarding",
+        "label": "Developer Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:performance-benchmarking",
+        "label": "Performance Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:security-auditing",
+        "label": "Security Auditing"
+      },
+      {
+        "id": "urn:ngm:class:validator-training",
+        "label": "Validator Training"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-specification",
+        "label": "Ethereum Specification"
+      },
+      {
+        "id": "urn:ngm:class:polkadot-runtime",
+        "label": "Polkadot Runtime"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:staging-environment",
+        "label": "Staging Environment"
+      },
+      {
+        "id": "urn:ngm:class:validator-economics",
+        "label": "Validator Economics"
+      }
+    ]
   },
   "wikilinks": [
     {

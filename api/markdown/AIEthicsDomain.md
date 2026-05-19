@@ -108,48 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:aiethics-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:aiethics-domain",
+  "@type": "Class",
   "label": "AIEthicsDomain",
+  "definition": "The AIicsDomain represents the comprehensive knowledge domain of ical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ee4caeab1a4407f751128d6485e34dfaf4703d24b8cb99618407eba67bf6d73e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The AIEthicsDomain represents the comprehensive knowledge domain of ethical considerations, fairness principles, governance frameworks, and accountability mechanisms in artificial intelligence systems. This domain encompasses the theoretical foundations and practical methodologies for ensuring AI systems are developed, deployed, and operated in ways that are fair, transparent, accountable, and aligned with human values. It includes fairness metrics and definitions, bias detection and mitigation techniques, algorithmic accountability frameworks, transparency and explainability methods, AI governance structures, ethical decision-making frameworks, impact assessment methodologies, and responsible AI development practices. The domain spans from fundamental fairness concepts and mathematical formulations to organizational governance structures and regulatory compliance frameworks. It addresses critical challenges including algorithmic discrimination, disparate impact, group vs individual fairness tradeoffs, intersectional fairness considerations, fairness-accuracy tradeoffs, and the social implications of AI deployment across diverse contexts and populations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

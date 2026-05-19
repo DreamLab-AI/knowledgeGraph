@@ -3,19 +3,18 @@
   "title": "Collaboration",
   "slug": "collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collaboration",
+  "classIri": "urn:ngm:class:collaboration",
   "domain": "infrastructure",
   "definition": "Collaboration is a technology infrastructure concept and a type of Collaboration Platform.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaboration-platform",
+      "id": "urn:ngm:class:collaboration-platform",
       "label": "Collaboration Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

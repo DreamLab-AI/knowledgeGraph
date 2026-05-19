@@ -3,32 +3,36 @@
   "title": "Metaverse Platform",
   "slug": "metaverse-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-platform",
+  "classIri": "urn:ngm:class:metaverse-platform",
   "domain": "spatial-computing",
   "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-world",
+      "id": "urn:ngm:class:virtual-world",
       "label": "Virtual World"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:virtual-social-interaction",
+        "id": "urn:ngm:class:virtual-social-interaction",
         "label": "Virtual Social Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

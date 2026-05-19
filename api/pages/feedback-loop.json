@@ -3,151 +3,275 @@
   "title": "Feedback Loop",
   "slug": "feedback-loop",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feedback-loop",
+  "classIri": "urn:ngm:class:feedback-loop",
   "domain": "infrastructure",
-  "definition": "Feedback Loop is a cybernetic and control-theoretic structure in which the output of a system is routed back as input to influence its subsequent behaviour, producing closed-loop regulation, amplification, learning, or instability depending on the loop's sign, gain, delay, and phase characteristics, formalised by Norbert Wiener in *Cybernetics: Or Control and Communication in the Animal and the Machine* (1948) and elaborated through the Macy Conferences (1946-1953), W. Ross Ashby's *Introduction to Cybernetics* (1956) and Law of Requisite Variety (V(E) \u2265 V(D) \u2014 only variety can absorb variety), Heinz von Foerster's second-order cybernetics (the observer-included loop), Gregory Bateson's *Steps to an Ecology of Mind* (1972) on circular causality and double-bind, and Humberto Maturana and Francisco Varela's autopoiesis (1972-1980) describing organisationally closed self-producing loops, instantiated across engineering control (negative-feedback governors from James Watt's centrifugal governor 1788 yielding James Clerk Maxwell's *On Governors* 1868 \u2014 the founding paper of control theory, operational-amplifier negative feedback Black/Bode/Nyquist at Bell Labs 1927-1940 enabling Bode pl",
+  "definition": "Feedback Loop is a cybernetic and control-theoretic structure in which the output of a system is routed back as input to influence its subsequent behaviour, producing closed-loop regulation, amplification, learning, or instability depending on the loop's sign, gain, delay, and phase characteristi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:circular-causality",
+      "id": "urn:ngm:class:circular-causality",
       "label": "Circular Causality"
     },
     {
-      "id": "urn:visionflow:linked:closed-loop-system",
+      "id": "urn:ngm:class:closed-loop-system",
       "label": "Closed-Loop System"
-    },
-    {
-      "id": "urn:visionflow:linked:control-mechanism",
-      "label": "Control Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
-        "id": "urn:visionflow:linked:comparator",
+        "id": "urn:ngm:class:comparator",
         "label": "Comparator"
       },
       {
-        "id": "urn:visionflow:linked:controller",
+        "id": "urn:ngm:class:controller",
         "label": "Controller"
       },
       {
-        "id": "urn:visionflow:linked:error-signal",
+        "id": "urn:ngm:class:error-signal",
         "label": "Error Signal"
       },
       {
-        "id": "urn:visionflow:linked:feedback-path",
+        "id": "urn:ngm:class:feedback-path",
         "label": "Feedback Path"
       },
       {
-        "id": "urn:visionflow:linked:loop-delay",
+        "id": "urn:ngm:class:loop-delay",
         "label": "Loop Delay"
       },
       {
-        "id": "urn:visionflow:linked:loop-gain",
+        "id": "urn:ngm:class:loop-gain",
         "label": "Loop Gain"
       },
       {
-        "id": "urn:visionflow:linked:setpoint",
+        "id": "urn:ngm:class:setpoint",
         "label": "Setpoint"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor",
+        "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:communication-channel",
+        "id": "urn:ngm:class:communication-channel",
         "label": "Communication Channel"
       },
       {
-        "id": "urn:visionflow:linked:energy-source",
+        "id": "urn:ngm:class:energy-source",
         "label": "Energy Source"
       },
       {
-        "id": "urn:visionflow:linked:measurement",
+        "id": "urn:ngm:class:measurement",
         "label": "Measurement"
       },
       {
-        "id": "urn:visionflow:linked:process-variable",
+        "id": "urn:ngm:class:process-variable",
         "label": "Process Variable"
       },
       {
-        "id": "urn:visionflow:linked:reference-signal",
+        "id": "urn:ngm:class:reference-signal",
         "label": "Reference Signal"
       },
       {
-        "id": "urn:visionflow:owl:class:sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Sampling"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptation",
+        "id": "urn:ngm:class:adaptation",
         "label": "Adaptation"
       },
       {
-        "id": "urn:visionflow:linked:goal-directed-behaviour",
+        "id": "urn:ngm:class:goal-directed-behaviour",
         "label": "Goal-Directed Behaviour"
       },
       {
-        "id": "urn:visionflow:linked:homeostasis",
+        "id": "urn:ngm:class:homeostasis",
         "label": "Homeostasis"
       },
       {
-        "id": "urn:visionflow:linked:learning",
+        "id": "urn:ngm:class:learning",
         "label": "Learning"
       },
       {
-        "id": "urn:visionflow:linked:self-organisation",
+        "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
       {
-        "id": "urn:visionflow:linked:self-regulation",
+        "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
       },
       {
-        "id": "urn:visionflow:linked:stability",
+        "id": "urn:ngm:class:stability",
         "label": "Stability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bang-bang-control",
+        "id": "urn:ngm:class:bang-bang-control",
         "label": "Bang-Bang Control"
       },
       {
-        "id": "urn:visionflow:linked:model-predictive-control",
+        "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
       },
       {
-        "id": "urn:visionflow:linked:negative-feedback",
+        "id": "urn:ngm:class:negative-feedback",
         "label": "Negative Feedback"
       },
       {
-        "id": "urn:visionflow:linked:pid-control",
+        "id": "urn:ngm:class:pid-control",
         "label": "PID Control"
       },
       {
-        "id": "urn:visionflow:linked:positive-feedback",
+        "id": "urn:ngm:class:positive-feedback",
         "label": "Positive Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:adaptive-control",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      },
+      {
+        "id": "urn:ngm:class:causal-loop-diagram",
+        "label": "Causal Loop Diagram"
+      },
+      {
+        "id": "urn:ngm:class:laplace-transform",
+        "label": "Laplace Transform"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-stability",
+        "label": "Lyapunov Stability"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-criterion",
+        "label": "Nyquist Criterion"
+      },
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:climate-regulation",
+        "label": "Climate Regulation"
+      },
+      {
+        "id": "urn:ngm:class:engagement-optimisation",
+        "label": "Engagement Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:homeostasis",
+        "label": "Homeostasis"
+      },
+      {
+        "id": "urn:ngm:class:model-alignment",
+        "label": "Model Alignment"
+      },
+      {
+        "id": "urn:ngm:class:population-dynamics",
+        "label": "Population Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      },
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      },
+      {
+        "id": "urn:ngm:class:iso-9001-pdca",
+        "label": "ISO 9001 PDCA"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autopoiesis",
+        "label": "Autopoiesis"
+      },
+      {
+        "id": "urn:ngm:class:causal-loop-diagram",
+        "label": "Causal Loop Diagram"
+      },
+      {
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "id": "urn:ngm:class:goodhart-s-law",
+        "label": "Goodhart's Law"
+      },
+      {
+        "id": "urn:ngm:class:homeostasis",
+        "label": "Homeostasis"
+      },
+      {
+        "id": "urn:ngm:class:model-collapse",
+        "label": "Model Collapse"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:systems-dynamics",
+        "label": "Systems Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:tipping-point",
+        "label": "Tipping Point"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

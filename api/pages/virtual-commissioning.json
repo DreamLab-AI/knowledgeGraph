@@ -3,19 +3,18 @@
   "title": "Virtual Commissioning",
   "slug": "virtual-commissioning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-commissioning",
+  "classIri": "urn:ngm:class:virtual-commissioning",
   "domain": "spatial-computing",
   "definition": "The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin",
+      "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

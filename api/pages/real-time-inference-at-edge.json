@@ -3,19 +3,18 @@
   "title": "Real-Time Inference at Edge",
   "slug": "real-time-inference-at-edge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-inference-at-edge",
+  "classIri": "urn:ngm:class:real-time-inference-at-edge",
   "domain": "artificial-intelligence",
-  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications. Real-time inference guarantees P99 latency below 10-100ms depending on application requirements, supporting 60+ frames-per-second video processing for autonomous vehicle perception or sub-millisecond control loops for robotic systems. The architecture implements hard real-time constraints with priority scheduling, ensuring critical inference tasks always meet timing deadlines regardless of system load or competing workloads. Hardware acceleration through NPUs (Neural Processing Units), FPGAs, or specialized ASICs (Application-Specific Integrated Circuits) enables real-time performance by offloading computation from energy-hungry CPUs. Real-time systems employ overlapping computation and I/O through techniques like CUDA streams, pipelined inference, and speculative execution to maximize throughput while meeting latency bounds. The challenge extends beyond single-inference latency to end-to-end system latency: sensor acquisition, preprocessing, model inference, postproces",
+  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

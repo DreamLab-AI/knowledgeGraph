@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trustworthy-ai-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trustworthy-ai-framework",
+  "@type": "Class",
   "label": "Trustworthy AI Framework",
+  "definition": "Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0a72e22a562d00428534737f59f5293271490addbdfb21dd8820d9bff67d2f33"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0a72e22a562d00428534737f59f5293271490addbdfb21dd8820d9bff67d2f33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ethical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation. Developed primarily by the EU High-Level Expert Group on AI (2019) and formalized in the EU AI Act (2024), this framework defines trustworthiness through seven key dimensions: human agency and oversight (preserving meaningful human control), technical robustness and safety (ensuring reliable and secure performance), privacy and data governance (protecting personal information and data rights), transparency and explainability (enabling understanding of system operation and decisions), diversity non-discrimination and fairness (ensuring equitable treatment across demographic groups), societal and environmental wellbeing (considering broader impacts on communities and sustainability), and accountability (establishing clear responsibility and redress mechanisms). The framework implements a risk-based approach categorizing AI systems by impact level (unacceptable risk, high risk, limited risk, minima",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

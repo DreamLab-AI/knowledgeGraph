@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:shared-virtual-world",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shared-virtual-world",
+  "@type": "Class",
   "label": "Shared Virtual World",
+  "definition": "A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-environment",
-      "vc:label": "Virtual Environment"
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e1dd77201f50b3cf46140cc1dc4454c0a9c207b9b2200649a09cdf3f1cff1c77"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-social-presence",
+        "label": "Digital Social Presence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e1dd77201f50b3cf46140cc1dc4454c0a9c207b9b2200649a09cdf3f1cff1c77@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-social-presence",
-      "vc:label": "Digital Social Presence"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

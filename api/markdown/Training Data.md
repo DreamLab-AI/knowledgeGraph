@@ -416,330 +416,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:training-data",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:training-data",
+  "@type": "Class",
   "label": "Training Data",
+  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:dataset",
-      "vc:label": "Dataset"
+      "@id": "urn:ngm:class:dataset",
+      "label": "Dataset"
     },
     {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-representation",
-      "vc:label": "Knowledge Representation"
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:448fcf503cf3cf8673bdd49f9e36d2796d5e6dc381fd84c5331d8c62e2a2560e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:annotation",
+        "label": "Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:code-corpus",
+        "label": "Code Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:data-cards",
+        "label": "Data Cards"
+      },
+      {
+        "@id": "urn:ngm:class:data-splits",
+        "label": "Data Splits"
+      },
+      {
+        "@id": "urn:ngm:class:features",
+        "label": "Features"
+      },
+      {
+        "@id": "urn:ngm:class:image-dataset",
+        "label": "Image Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:labels",
+        "label": "Labels"
+      },
+      {
+        "@id": "urn:ngm:class:quality-signals",
+        "label": "Quality Signals"
+      },
+      {
+        "@id": "urn:ngm:class:text-corpus",
+        "label": "Text Corpus"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:annotation-standards",
+        "label": "Annotation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-deduplication",
+        "label": "Data Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-assurance",
+        "label": "Data Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:language-identification",
+        "label": "Language Identification"
+      },
+      {
+        "@id": "urn:ngm:class:locality-sensitive-hashing",
+        "label": "Locality Sensitive Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:min-hash",
+        "label": "MinHash"
+      },
+      {
+        "@id": "urn:ngm:class:near-duplicate-removal",
+        "label": "Near Duplicate Removal"
+      },
+      {
+        "@id": "urn:ngm:class:quality-filtering",
+        "label": "Quality Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:sem-de-dup",
+        "label": "SemDeDup"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cdla",
+        "label": "CDLA"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "@id": "urn:ngm:class:open-rail",
+        "label": "OpenRAIL"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cdla",
+        "label": "CDLA"
+      },
+      {
+        "@id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "@id": "urn:ngm:class:open-rail",
+        "label": "OpenRAIL"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ipo",
+        "label": "UK IPO"
+      },
+      {
+        "@id": "urn:ngm:class:us-copyright-office",
+        "label": "US Copyright Office"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:448fcf503cf3cf8673bdd49f9e36d2796d5e6dc381fd84c5331d8c62e2a2560e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-descent or equivalent procedures. The quality, scale, diversity, and legal provenance of training data constitutes the single largest determinant of downstream model capability, safety alignment, and societal impact, making training data curation the most consequential engineering decision in modern [[Artificial Intelligence]]. Web-scale corpora now dominate language model training: [[CommonCrawl]] (operating since 2008, petabyte-scale monthly snapshots, backbone of nearly every major LLM) is transformed by specialised derivatives including FineWeb (HuggingFace 2024, 15T token English web corpus outperforming DCLM-Baseline on standard benchmarks per Penedo et al. 2024), FineWeb-Edu (1.3T tokens filtered for educational content via LLM-based classifier scoring using Llama-3-70B with 78% human-judge agreement), Dolma (AI2 Allen Institute, 3T token open-access corpus spanning web, scientific, ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:annotation",
-      "vc:label": "Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-corpus",
-      "vc:label": "Code Corpus"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-cards",
-      "vc:label": "Data Cards"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-splits",
-      "vc:label": "Data Splits"
-    },
-    {
-      "@id": "urn:visionflow:linked:features",
-      "vc:label": "Features"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-dataset",
-      "vc:label": "Image Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:labels",
-      "vc:label": "Labels"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-signals",
-      "vc:label": "Quality Signals"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-corpus",
-      "vc:label": "Text Corpus"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:annotation-standards",
-      "vc:label": "Annotation Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-deduplication",
-      "vc:label": "Data Deduplication"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-quality-assurance",
-      "vc:label": "Data Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:licensing",
-      "vc:label": "Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-scraping",
-      "vc:label": "Web Scraping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:instruction-tuning",
-      "vc:label": "Instruction Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:language-identification",
-      "vc:label": "Language Identification"
-    },
-    {
-      "@id": "urn:visionflow:linked:locality-sensitive-hashing",
-      "vc:label": "Locality Sensitive Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:min-hash",
-      "vc:label": "MinHash"
-    },
-    {
-      "@id": "urn:visionflow:linked:near-duplicate-removal",
-      "vc:label": "Near Duplicate Removal"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-filtering",
-      "vc:label": "Quality Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:sem-de-dup",
-      "vc:label": "SemDeDup"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:common-crawl",
-      "vc:label": "CommonCrawl"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-scraping",
-      "vc:label": "Web Scraping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-pipeline",
-      "vc:label": "Data Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cdla",
-      "vc:label": "CDLA"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-commons",
-      "vc:label": "Creative Commons"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-rail",
-      "vc:label": "OpenRAIL"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-data",
-      "vc:label": "Synthetic Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:active-learning",
-      "vc:label": "Active Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:dataset-bias",
-      "vc:label": "Dataset Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:distribution-shift",
-      "vc:label": "Distribution Shift"
-    },
-    {
-      "@id": "urn:visionflow:linked:memorisation",
-      "vc:label": "Memorisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-poisoning",
-      "vc:label": "Data Poisoning"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:copyright",
-      "vc:label": "Copyright"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
-      "vc:label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
-      "vc:label": "Model Optimisation and Performance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cdla",
-      "vc:label": "CDLA"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-commons",
-      "vc:label": "Creative Commons"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-rail",
-      "vc:label": "OpenRAIL"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ipo",
-      "vc:label": "UK IPO"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-copyright-office",
-      "vc:label": "US Copyright Office"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

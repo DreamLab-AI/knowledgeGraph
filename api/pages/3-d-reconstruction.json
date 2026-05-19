@@ -3,53 +3,57 @@
   "title": "3D Reconstruction",
   "slug": "3-d-reconstruction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-reconstruction",
+  "classIri": "urn:ngm:class:3-d-reconstruction",
   "domain": "spatial-computing",
-  "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM). This technology enables digital capture of real-world objects and environments for [[Digital Twin]] creation and immersive environment mapping.",
+  "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:feature-matching",
+        "id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
       },
       {
-        "id": "urn:visionflow:linked:image-processing",
+        "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:environmental-mapping",
+        "id": "urn:ngm:class:environmental-mapping",
         "label": "Environmental Mapping"
       },
       {
-        "id": "urn:visionflow:linked:point-cloud-generation",
+        "id": "urn:ngm:class:point-cloud-generation",
         "label": "Point Cloud Generation"
       },
       {
-        "id": "urn:visionflow:linked:real-world-digitisation",
+        "id": "urn:ngm:class:real-world-digitisation",
         "label": "Real-world Digitisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-signal-processing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-signal-processing",
+  "@type": "Class",
   "label": "Digital Signal Processing",
+  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a2d6cb90e05406c7bc5336c298b6d52f8205bf804f5da1ecbe525b68667966fe"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithms",
+        "label": "Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:dsp-hardware",
+        "label": "DSP Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audio-enhancement",
+        "label": "Audio Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2d6cb90e05406c7bc5336c298b6d52f8205bf804f5da1ecbe525b68667966fe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences. bridges-to:: [[Sensor Input]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:algorithms",
-      "vc:label": "Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:linked:dsp-hardware",
-      "vc:label": "DSP Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensors",
-      "vc:label": "Sensors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:audio-enhancement",
-      "vc:label": "Audio Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:video-processing",
-      "vc:label": "Video Processing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

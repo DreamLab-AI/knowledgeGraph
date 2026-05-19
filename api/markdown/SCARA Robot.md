@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:scara-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:scara-robot",
+  "@type": "Class",
   "label": "SCARA Robot",
+  "definition": "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:industrial-robot",
-      "vc:label": "Industrial Robot"
+      "@id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9968599a1163b1e5344046261008633d619e3724cf9761304bfb98c73826cdd3"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9968599a1163b1e5344046261008633d619e3724cf9761304bfb98c73826cdd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

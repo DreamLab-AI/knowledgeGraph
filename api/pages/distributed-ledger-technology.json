@@ -3,14 +3,13 @@
   "title": "Distributed Ledger Technology",
   "slug": "distributed-ledger-technology",
   "public": true,
-  "classIri": "urn:visionflow:linked:distributed-ledger-technology",
+  "classIri": "urn:ngm:class:distributed-ledger-technology",
   "domain": "blockchain",
   "definition": "Distributed Ledger Technology is a foundational concept in blockchain that serves as a classification parent for 6 related concepts in the ontology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

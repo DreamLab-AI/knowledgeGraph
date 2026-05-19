@@ -3,61 +3,65 @@
   "title": "3D User Interface",
   "slug": "3-d-user-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-user-interface",
+  "classIri": "urn:ngm:class:3-d-user-interface",
   "domain": "spatial-computing",
-  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands. 3DUI design balances [[Accessibility Standard]]s with intuitive spatial affordances appropriate for VR, AR, and metaverse interactions.",
+  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:interaction-design",
+      "id": "urn:ngm:class:interaction-design",
       "label": "Interaction Design"
     },
     {
-      "id": "urn:visionflow:owl:class:user-interface",
+      "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gaze-tracking",
+        "id": "urn:ngm:class:gaze-tracking",
         "label": "Gaze Tracking"
       },
       {
-        "id": "urn:visionflow:linked:voice-input",
+        "id": "urn:ngm:class:voice-input",
         "label": "Voice Input"
       },
       {
-        "id": "urn:visionflow:owl:class:hand-tracking",
+        "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accessible-immersion",
+        "id": "urn:ngm:class:accessible-immersion",
         "label": "Accessible Immersion"
       },
       {
-        "id": "urn:visionflow:linked:intuitive-interaction",
+        "id": "urn:ngm:class:intuitive-interaction",
         "label": "Intuitive Interaction"
       },
       {
-        "id": "urn:visionflow:linked:user-navigation",
+        "id": "urn:ngm:class:user-navigation",
         "label": "User Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

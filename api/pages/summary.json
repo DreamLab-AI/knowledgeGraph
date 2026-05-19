@@ -3,19 +3,18 @@
   "title": "SUMMARY",
   "slug": "summary",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:summary",
+  "classIri": "urn:ngm:class:summary",
   "domain": "spatial-computing",
-  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates [[BlockchainTechnology|blockchain-based assets]], [[SmartContracts|smart contracts]], and [[DecentralizedIdentity|decentralised identity]] systems to support genuine digital ownership, interoperability, and governance across platforms. Contemporary metaverse implementations span gaming worlds, social platforms, professional collaboration environments, and virtual economies representing hundreds of billions in user-generated value.",
+  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

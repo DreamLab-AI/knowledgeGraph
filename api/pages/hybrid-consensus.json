@@ -3,19 +3,18 @@
   "title": "Hybrid Consensus",
   "slug": "hybrid-consensus",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hybrid-consensus",
+  "classIri": "urn:ngm:class:hybrid-consensus",
   "domain": "blockchain",
-  "definition": "Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements.",
+  "definition": "Consensus mechanisms combining multiple approaches, typically merging proof-based mods with BFT finality or mixing PoW and PoS elements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "id": "urn:ngm:class:consensus-mechanism",
       "label": "Consensus Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

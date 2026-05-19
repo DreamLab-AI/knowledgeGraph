@@ -3,95 +3,104 @@
   "title": "NGM Domain",
   "slug": "ngm-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ngm-domain",
+  "classIri": "urn:ngm:class:ngm-domain",
   "domain": "infrastructure",
-  "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts \u2014 identity primitives, data governance constructs, semantic web patterns, and integration infrastructure \u2014 that do not belong exclusively to any single specialised domain (ai, bc, mv, rb, tc) but are required as shared dependencies by all of them. It corresponds to the `http://narrativegoldmine.com/ontology#` IRI namespace and acts as the backbone against which domain-specific ontologies align their upper-level classes and properties.",
+  "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts \u2014 identity primitives, data governance constructs, semantic web patterns, and integration infrastructure \u2014 that do not belong exclusively to any single special...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:knowledge-graph-domain",
+      "id": "urn:ngm:class:knowledge-graph-domain",
       "label": "Knowledge Graph Domain"
     },
     {
-      "id": "urn:visionflow:linked:ontology-namespace",
+      "id": "urn:ngm:class:ontology-namespace",
       "label": "Ontology Namespace"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.65,
-  "authorityScore": 0.75,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:solid-pod",
+        "id": "urn:ngm:class:solid-pod",
         "label": "Solid Pod"
       },
       {
-        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "id": "urn:ngm:class:uri-canonicaliser",
         "label": "URI Canonicaliser"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credential-surface",
+        "id": "urn:ngm:class:verifiable-credential-surface",
         "label": "Verifiable Credential Surface"
       },
       {
-        "id": "urn:visionflow:owl:class:vision-claw-agentic-container",
+        "id": "urn:ngm:class:vision-claw-agentic-container",
         "label": "VisionClaw Agentic Container"
       },
       {
-        "id": "urn:visionflow:owl:class:web-assembly",
+        "id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:json-ld-context",
+        "id": "urn:ngm:class:json-ld-context",
         "label": "JSON-LD Context"
       },
       {
-        "id": "urn:visionflow:linked:owl-2-web-ontology-language",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL 2 Web Ontology Language"
       },
       {
-        "id": "urn:visionflow:linked:rdf-data-model",
+        "id": "urn:ngm:class:rdf-data-model",
         "label": "RDF Data Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-domain-concept-linking",
+        "id": "urn:ngm:class:cross-domain-concept-linking",
         "label": "Cross-Domain Concept Linking"
       },
       {
-        "id": "urn:visionflow:linked:federated-knowledge-graph",
+        "id": "urn:ngm:class:federated-knowledge-graph",
         "label": "Federated Knowledge Graph"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:w3-c-json-ld-1-1",
+        "id": "urn:ngm:class:w3-c-json-ld-1-1",
         "label": "W3C JSON-LD 1.1"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-owl-2-specification",
+        "id": "urn:ngm:class:w3-c-owl-2-specification",
         "label": "W3C OWL 2 Specification"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-rdf-specification",
+        "id": "urn:ngm:class:w3-c-rdf-specification",
         "label": "W3C RDF Specification"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:narrative-gold-mine-ontology",
+        "label": "Narrative Gold Mine Ontology"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

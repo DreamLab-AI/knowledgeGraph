@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:shared-ownership-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shared-ownership-model",
+  "@type": "Class",
   "label": "Shared Ownership Model",
+  "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:asset-tokenization",
-      "vc:label": "Asset Tokenization"
+      "@id": "urn:ngm:class:asset-tokenization",
+      "label": "Asset Tokenization"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f166915e2fdacae869ea464d4c6d46c134346e702d0c6e809c5f661fb31f6863"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:democratized-investment",
+        "label": "Democratized Investment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f166915e2fdacae869ea464d4c6d46c134346e702d0c6e809c5f661fb31f6863@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:democratized-investment",
-      "vc:label": "Democratized Investment"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

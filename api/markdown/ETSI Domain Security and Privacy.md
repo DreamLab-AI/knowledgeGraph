@@ -172,41 +172,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-security-and-privacy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
+  "@type": "Class",
   "label": "ETSI Domain Security and Privacy",
+  "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f3eca0779763e75d4a01ebc72d001ad6ddb36e37b2f156c1aa6aaa003e95de77"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f3eca0779763e75d4a01ebc72d001ad6ddb36e37b2f156c1aa6aaa003e95de77@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures. Security domains address threat surface mapping, [[Post-Quantum Cryptography]] for long-term resilience, [[Privacy-Enhancing Computation]] enabling computation on encrypted data, and [[Digital Evidence Chain of Custody]] ensuring forensic integrity for virtual-world incidents. Privacy controls include [[Privacy Impact Assessment]] methodologies, cross-border data transfer restrictions aligned with [[GDPR]], token custody security preventing unauthorised access to digital assets, and psychological profiling safeguards protecting user behaviour data from exploitation in immersive environments with heightened vulnerability concerns.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,32 +3,36 @@
   "title": "Monte Carlo Tree Search",
   "slug": "monte-carlo-tree-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monte-carlo-tree-search",
+  "classIri": "urn:ngm:class:monte-carlo-tree-search",
   "domain": "artificial-intelligence",
   "definition": "Monte Carlo Tree Search is a artificial intelligence concept and a type of Search Algorithms. that enables Game Playing AI.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:search-algorithms",
+      "id": "urn:ngm:class:search-algorithms",
       "label": "Search Algorithms"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:game-playing-ai",
+        "id": "urn:ngm:class:game-playing-ai",
         "label": "Game Playing AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

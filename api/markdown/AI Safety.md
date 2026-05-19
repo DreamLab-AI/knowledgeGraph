@@ -116,52 +116,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-safety",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-safety",
+  "@type": "Class",
   "label": "AI Safety",
+  "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
+      "@id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f8689da52fe3f4df6e5a203a8b131b39e31d813a3c123f548217e6707bb13aa2"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f8689da52fe3f4df6e5a203a8b131b39e31d813a3c123f548217e6707bb13aa2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

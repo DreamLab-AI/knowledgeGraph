@@ -3,19 +3,18 @@
   "title": "Weight Decay",
   "slug": "weight-decay",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:weight-decay",
+  "classIri": "urn:ngm:class:weight-decay",
   "domain": "artificial-intelligence",
   "definition": "A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning-technique",
+      "id": "urn:ngm:class:machine-learning-technique",
       "label": "Machine Learning Technique"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

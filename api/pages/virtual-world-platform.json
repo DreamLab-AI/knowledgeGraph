@@ -3,19 +3,18 @@
   "title": "Virtual World Platform",
   "slug": "virtual-world-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-world-platform",
+  "classIri": "urn:ngm:class:virtual-world-platform",
   "domain": "spatial-computing",
-  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital assets and governance.",
+  "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital asse...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-platform",
+      "id": "urn:ngm:class:digital-platform",
       "label": "Digital Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

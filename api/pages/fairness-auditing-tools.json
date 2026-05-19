@@ -3,19 +3,18 @@
   "title": "Fairness Auditing Tools",
   "slug": "fairness-auditing-tools",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fairness-auditing-tools",
+  "classIri": "urn:ngm:class:fairness-auditing-tools",
   "domain": "artificial-intelligence",
-  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities. Leading open-source tools include Fairlearn (Microsoft, MIT license) providing fairness metrics and mitigation algorithms for Python with scikit-learn integration, AIF360 (IBM, Apache-2.0 license) offering comprehensive bias detection and mitigation across the ML pipeline with 70+ fairness metrics, What-If Tool (Google, Apache-2.0) providing interactive visual interfaces for TensorFlow model exploration and counterfactual analysis, Aequitas (University of Chicago, MIT license) focusing on fairness auditing for criminal justice and policy applications, and FairTest (Columbia University, MIT license) enabling statistical fairness testing with association discovery. These tools implement fairness metrics including demographic parity, equalized odds, and predictive parity, provide visualizations such as fairness dashboards, confusion matrices disaggregated by group, and disparity charts, and support mitigation techniques including reweighting, threshold optimization, a",
+  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "User Authentication Mechanism",
   "slug": "user-authentication-mechanism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-authentication-mechanism",
+  "classIri": "urn:ngm:class:user-authentication-mechanism",
   "domain": "infrastructure",
   "definition": "User Authentication Mechanism is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

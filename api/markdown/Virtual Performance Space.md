@@ -224,136 +224,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-performance-space",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-performance-space",
+  "@type": "Class",
   "label": "Virtual Performance Space",
+  "definition": "Immersive virtual venue environment designed for hosting live performances, concerts, theater productions, events, and social gatherings with real-time audience interaction and multimedia presentation capabilities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
+      "@id": "urn:ngm:class:virtual-reality",
+      "label": "Virtual Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6965d178c9332cab096499b815d82dd7ae0a1dade93f3ffa72094424d5f49337"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audience-seating",
+        "label": "Audience Seating"
+      },
+      {
+        "@id": "urn:ngm:class:lighting-system",
+        "label": "Lighting System"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction-features",
+        "label": "Social Interaction Features"
+      },
+      {
+        "@id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-stage",
+        "label": "Virtual Stage"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-streaming",
+        "label": "Real-Time Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence-system",
+        "label": "Social Presence System"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hybrid-performances",
+        "label": "Hybrid Performances"
+      },
+      {
+        "@id": "urn:ngm:class:live-events",
+        "label": "Live Events"
+      },
+      {
+        "@id": "urn:ngm:class:social-gatherings",
+        "label": "Social Gatherings"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-concerts",
+        "label": "Virtual Concerts"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-theater",
+        "label": "Virtual Theater"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6965d178c9332cab096499b815d82dd7ae0a1dade93f3ffa72094424d5f49337@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Immersive virtual venue environment designed for hosting live performances, concerts, theater productions, events, and social gatherings with real-time audience interaction and multimedia presentation capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-venue",
-      "vc:label": "Metaverse Venue"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-event-platform",
-      "vc:label": "Virtual Event Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audience-seating",
-      "vc:label": "Audience Seating"
-    },
-    {
-      "@id": "urn:visionflow:linked:lighting-system",
-      "vc:label": "Lighting System"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction-features",
-      "vc:label": "Social Interaction Features"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audio-system",
-      "vc:label": "Audio System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-stage",
-      "vc:label": "Virtual Stage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:visual-effects",
-      "vc:label": "Visual Effects"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:real-time-streaming",
-      "vc:label": "Real-Time Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-presence-system",
-      "vc:label": "Social Presence System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-system",
-      "vc:label": "Avatar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hybrid-performances",
-      "vc:label": "Hybrid Performances"
-    },
-    {
-      "@id": "urn:visionflow:linked:live-events",
-      "vc:label": "Live Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-gatherings",
-      "vc:label": "Social Gatherings"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-concerts",
-      "vc:label": "Virtual Concerts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-theater",
-      "vc:label": "Virtual Theater"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

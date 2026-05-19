@@ -3,147 +3,263 @@
   "title": "Hash Function",
   "slug": "hash-function",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hash-function",
+  "classIri": "urn:ngm:class:hash-function",
   "domain": "blockchain",
-  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* \u2192 {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n \u2208 {128, 160, 224, 256, 384, 512}), whose security and utility derive from three formally distinct property regimes governing different deployment contexts: (1) **cryptographic hash functions** simultaneously satisfying pre-image resistance (given y \u2208 {0,1}^n it is computationally infeasible to find any x such that H(x) = y, requiring \u22482^n work), second pre-image resistance (given x\u2081 it is infeasible to find x\u2082 \u2260 x\u2081 with H(x\u2081) = H(x\u2082), \u22482^n work), collision resistance (it is infeasible to find any pair x\u2081 \u2260 x\u2082 with H(x\u2081) = H(x\u2082), bounded below by the birthday paradox at \u22482^(n/2) work), and ideally pseudo-randomness / indistinguishability from a random oracle, instantiated by NIST-standardised constructions including SHA-1 (Merkle-Damg\u00e5rd, 160-bit, deprecated by NIST SP 800-131A in 2011 following Wang et al. 2005 theoretical collision attack at 2^69 operations and broken by SHAttered Stevens-Bursztein-Karpman-Albertini-Markov 2017 Google Mountain View producing t",
+  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* \u2192 {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n \u2208 {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:compression-function",
+      "id": "urn:ngm:class:compression-function",
       "label": "Compression Function"
     },
     {
-      "id": "urn:visionflow:linked:cryptographic-algorithm",
+      "id": "urn:ngm:class:cryptographic-algorithm",
       "label": "Cryptographic Algorithm"
-    },
-    {
-      "id": "urn:visionflow:linked:deterministic-function",
-      "label": "Deterministic Function"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compression-function",
+        "id": "urn:ngm:class:compression-function",
         "label": "Compression Function"
       },
       {
-        "id": "urn:visionflow:linked:initialization-vector",
+        "id": "urn:ngm:class:initialization-vector",
         "label": "Initialization Vector"
       },
       {
-        "id": "urn:visionflow:linked:internal-state",
+        "id": "urn:ngm:class:internal-state",
         "label": "Internal State"
       },
       {
-        "id": "urn:visionflow:linked:output-truncation",
+        "id": "urn:ngm:class:output-truncation",
         "label": "Output Truncation"
       },
       {
-        "id": "urn:visionflow:linked:padding-scheme",
+        "id": "urn:ngm:class:padding-scheme",
         "label": "Padding Scheme"
       },
       {
-        "id": "urn:visionflow:linked:round-function",
+        "id": "urn:ngm:class:round-function",
         "label": "Round Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:avalanche-effect",
+        "id": "urn:ngm:class:avalanche-effect",
         "label": "Avalanche Effect"
       },
       {
-        "id": "urn:visionflow:linked:computational-security",
+        "id": "urn:ngm:class:computational-security",
         "label": "Computational Security"
       },
       {
-        "id": "urn:visionflow:linked:determinism",
+        "id": "urn:ngm:class:determinism",
         "label": "Determinism"
       },
       {
-        "id": "urn:visionflow:linked:pseudo-randomness",
+        "id": "urn:ngm:class:pseudo-randomness",
         "label": "Pseudo-Randomness"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptography",
+        "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:blockchain-immutability",
+        "id": "urn:ngm:class:blockchain-immutability",
         "label": "Blockchain Immutability"
       },
       {
-        "id": "urn:visionflow:linked:commitment-scheme",
+        "id": "urn:ngm:class:commitment-scheme",
         "label": "Commitment Scheme"
       },
       {
-        "id": "urn:visionflow:linked:data-integrity",
+        "id": "urn:ngm:class:data-integrity",
         "label": "Data Integrity"
       },
       {
-        "id": "urn:visionflow:linked:deduplication",
+        "id": "urn:ngm:class:deduplication",
         "label": "Deduplication"
       },
       {
-        "id": "urn:visionflow:linked:key-derivation",
+        "id": "urn:ngm:class:key-derivation",
         "label": "Key Derivation"
       },
       {
-        "id": "urn:visionflow:linked:message-authentication-code",
+        "id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
       },
       {
-        "id": "urn:visionflow:linked:password-storage",
+        "id": "urn:ngm:class:password-storage",
         "label": "Password Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Proof-of-Work"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:indistinguishability",
+        "id": "urn:ngm:class:indistinguishability",
         "label": "Indistinguishability"
       },
       {
-        "id": "urn:visionflow:linked:pre-image-resistance",
+        "id": "urn:ngm:class:pre-image-resistance",
         "label": "Pre-Image Resistance"
       },
       {
-        "id": "urn:visionflow:linked:random-oracle-model",
+        "id": "urn:ngm:class:random-oracle-model",
         "label": "Random Oracle Model"
       },
       {
-        "id": "urn:visionflow:linked:second-pre-image-resistance",
+        "id": "urn:ngm:class:second-pre-image-resistance",
         "label": "Second Pre-Image Resistance"
       },
       {
-        "id": "urn:visionflow:owl:class:collision-resistance",
+        "id": "urn:ngm:class:collision-resistance",
         "label": "Collision Resistance"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:davies-meyer-construction",
+        "label": "Davies-Meyer Construction"
+      },
+      {
+        "id": "urn:ngm:class:haifa-construction",
+        "label": "HAIFA Construction"
+      },
+      {
+        "id": "urn:ngm:class:merkle-damg-rd-construction",
+        "label": "Merkle-Damg\u00e5rd Construction"
+      },
+      {
+        "id": "urn:ngm:class:sponge-construction",
+        "label": "Sponge Construction"
+      },
+      {
+        "id": "urn:ngm:class:wide-pipe-construction",
+        "label": "Wide-Pipe Construction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf-rfc-2104-hmac",
+        "label": "IETF RFC 2104 HMAC"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-6234",
+        "label": "IETF RFC 6234"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-8439",
+        "label": "IETF RFC 8439"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-9106-argon2",
+        "label": "IETF RFC 9106 Argon2"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-10118-3",
+        "label": "ISO/IEC 10118-3"
+      },
+      {
+        "id": "urn:ngm:class:nist-fips-180-4",
+        "label": "NIST FIPS 180-4"
+      },
+      {
+        "id": "urn:ngm:class:nist-fips-202",
+        "label": "NIST FIPS 202"
+      },
+      {
+        "id": "urn:ngm:class:nist-fips-205",
+        "label": "NIST FIPS 205"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:birthday-attack",
+        "label": "Birthday Attack"
+      },
+      {
+        "id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      },
+      {
+        "id": "urn:ngm:class:cryptanalysis",
+        "label": "Cryptanalysis"
+      },
+      {
+        "id": "urn:ngm:class:length-extension-attack",
+        "label": "Length-Extension Attack"
+      },
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

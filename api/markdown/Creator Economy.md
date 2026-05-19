@@ -208,132 +208,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:creator-economy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:creator-economy",
+  "@type": "Class",
   "label": "Creator Economy",
+  "definition": "Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6c4cd42f1e6ab437462996034a7e9be906a02d8d7b4dbe6d3fb6094ee92848e2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-distribution-platform",
+        "label": "Content Distribution Platform"
+      },
+      {
+        "@id": "urn:ngm:class:monetization-system",
+        "label": "Monetization System"
+      },
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      },
+      {
+        "@id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:digital-goods",
+        "label": "Digital Goods"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6c4cd42f1e6ab437462996034a7e9be906a02d8d7b4dbe6d3fb6094ee92848e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-distribution-platform",
-      "vc:label": "Content Distribution Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetization-system",
-      "vc:label": "Monetization System"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-economy",
-      "vc:label": "Token Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-royalty-token",
-      "vc:label": "Creator Royalty Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-workflow",
-      "vc:label": "Digital Asset Workflow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-goods",
-      "vc:label": "Digital Goods"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-marketplace",
-      "vc:label": "Digital Marketplace"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-content-pipeline",
-      "vc:label": "Metaverse Content Pipeline"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:payment-processing",
-      "vc:label": "Payment Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creator-monetization",
-      "vc:label": "Creator Monetization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-trading",
-      "vc:label": "Digital Asset Trading"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-minting",
-      "vc:label": "NFT Minting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:royalty-distribution",
-      "vc:label": "Royalty Distribution"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:content-licensing",
-      "vc:label": "Content Licensing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange-dex",
-      "vc:label": "Decentralized Exchange (DEX)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-currency",
-      "vc:label": "Virtual Currency"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

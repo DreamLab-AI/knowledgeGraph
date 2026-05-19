@@ -132,45 +132,28 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:partition-attack",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:partition-attack",
+  "@type": "Class",
   "label": "Partition Attack",
+  "definition": "Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:network-component",
-      "vc:label": "NetworkComponent"
+      "@id": "urn:ngm:class:network-component",
+      "label": "NetworkComponent"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ea0602c7edd0ed7970fa40ab5016a7c3e2be6663691241509a0b32d1bd72a8e2"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ea0602c7edd0ed7970fa40ab5016a7c3e2be6663691241509a0b32d1bd72a8e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

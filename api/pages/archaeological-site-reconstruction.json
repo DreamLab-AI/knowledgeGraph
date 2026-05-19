@@ -3,53 +3,57 @@
   "title": "Archaeological Site Reconstruction",
   "slug": "archaeological-site-reconstruction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:archaeological-site-reconstruction",
+  "classIri": "urn:ngm:class:archaeological-site-reconstruction",
   "domain": "spatial-computing",
-  "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.",
+  "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-heritage",
+      "id": "urn:ngm:class:digital-heritage",
       "label": "Digital Heritage"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:historical-research",
+        "id": "urn:ngm:class:historical-research",
         "label": "Historical Research"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
       {
-        "id": "urn:visionflow:owl:class:photogrammetry",
+        "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:educational-experiences",
+        "id": "urn:ngm:class:educational-experiences",
         "label": "Educational Experiences"
       },
       {
-        "id": "urn:visionflow:linked:heritage-preservation",
+        "id": "urn:ngm:class:heritage-preservation",
         "label": "Heritage Preservation"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "id": "urn:ngm:class:virtual-tourism",
         "label": "Virtual Tourism"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

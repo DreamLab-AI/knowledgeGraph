@@ -172,41 +172,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-and-governance-domain",
+  "@type": "Class",
   "label": "Trust and Governance Domain",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aeae9cf8e9a6016a67d3af099e426f58117c43b3b5d33292b4b05dc253554414"
+  "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aeae9cf8e9a6016a67d3af099e426f58117c43b3b5d33292b4b05dc253554414@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems. It encompasses computational trust models, regulatory compliance, decision traceability, multi-stakeholder oversight, and ethical frameworks that enable transparent, accountable, and trustworthy interactions between humans, organizations, and autonomous systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

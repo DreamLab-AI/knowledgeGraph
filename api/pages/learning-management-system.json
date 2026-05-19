@@ -3,32 +3,36 @@
   "title": "Learning Management System",
   "slug": "learning-management-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-management-system",
+  "classIri": "urn:ngm:class:learning-management-system",
   "domain": "spatial-computing",
   "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:vr-training-delivery",
+        "id": "urn:ngm:class:vr-training-delivery",
         "label": "VR Training Delivery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

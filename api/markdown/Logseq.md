@@ -416,418 +416,331 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:logseq",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:logseq",
+  "@type": "Class",
   "label": "Logseq",
+  "definition": "Logseq is a privacy-first, open-source, local-first personal knowledge management (PKM) platform built on a block-based outliner architecture, implemented primarily in ClojureScript with a DataScript in-memory Datalog query engine, providing bidirectional linking, hierarchical namespaces, propert...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:local-first-software",
-      "vc:label": "Local-First Software"
+      "@id": "urn:ngm:class:local-first-software",
+      "label": "Local-First Software"
     },
     {
-      "@id": "urn:visionflow:linked:note-taking-application",
-      "vc:label": "Note-Taking Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:outliner",
-      "vc:label": "Outliner"
+      "@id": "urn:ngm:class:note-taking-application",
+      "label": "Note-Taking Application"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:477baa615fbb7d1c53dbe4e8249c5f36eed118fa91c3f0aa375e6ad86cd7076d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-embed",
+        "label": "Block Embed"
+      },
+      {
+        "@id": "urn:ngm:class:block-reference",
+        "label": "Block Reference"
+      },
+      {
+        "@id": "urn:ngm:class:datalog-query",
+        "label": "Datalog Query"
+      },
+      {
+        "@id": "urn:ngm:class:flashcard",
+        "label": "Flashcard"
+      },
+      {
+        "@id": "urn:ngm:class:graph-view",
+        "label": "Graph View"
+      },
+      {
+        "@id": "urn:ngm:class:journal",
+        "label": "Journal"
+      },
+      {
+        "@id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "@id": "urn:ngm:class:page",
+        "label": "Page"
+      },
+      {
+        "@id": "urn:ngm:class:pdf-annotation",
+        "label": "PDF Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:plugin-api",
+        "label": "Plugin API"
+      },
+      {
+        "@id": "urn:ngm:class:whiteboard",
+        "label": "Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:property",
+        "label": "Property"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clojure-script",
+        "label": "ClojureScript"
+      },
+      {
+        "@id": "urn:ngm:class:data-script",
+        "label": "DataScript"
+      },
+      {
+        "@id": "urn:ngm:class:datalog",
+        "label": "Datalog"
+      },
+      {
+        "@id": "urn:ngm:class:electron",
+        "label": "Electron"
+      },
+      {
+        "@id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "@id": "urn:ngm:class:react",
+        "label": "React"
+      },
+      {
+        "@id": "urn:ngm:class:rum",
+        "label": "Rum"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-cljs",
+        "label": "Shadow-cljs"
+      },
+      {
+        "@id": "urn:ngm:class:sqlite",
+        "label": "SQLite"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bidirectional-linking",
+        "label": "Bidirectional Linking"
+      },
+      {
+        "@id": "urn:ngm:class:block-transclusion",
+        "label": "Block Transclusion"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-authoring",
+        "label": "Ontology Authoring"
+      },
+      {
+        "@id": "urn:ngm:class:pdf-annotation",
+        "label": "PDF Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real Time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:second-brain",
+        "label": "Second Brain"
+      },
+      {
+        "@id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "@id": "urn:ngm:class:task-management",
+        "label": "Task Management"
+      },
+      {
+        "@id": "urn:ngm:class:zettelkasten",
+        "label": "Zettelkasten"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:block-reference",
+        "label": "Block Reference"
+      },
+      {
+        "@id": "urn:ngm:class:datalog",
+        "label": "Datalog"
+      },
+      {
+        "@id": "urn:ngm:class:local-first-software",
+        "label": "Local-First Software"
+      },
+      {
+        "@id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "@id": "urn:ngm:class:org-mode",
+        "label": "Org-mode"
+      },
+      {
+        "@id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real Time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:capacitor",
+        "label": "Capacitor"
+      },
+      {
+        "@id": "urn:ngm:class:data-script",
+        "label": "DataScript"
+      },
+      {
+        "@id": "urn:ngm:class:electron",
+        "label": "Electron"
+      },
+      {
+        "@id": "urn:ngm:class:gulp",
+        "label": "Gulp"
+      },
+      {
+        "@id": "urn:ngm:class:rum",
+        "label": "Rum"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-cljs",
+        "label": "Shadow-cljs"
+      },
+      {
+        "@id": "urn:ngm:class:sqlite",
+        "label": "SQLite"
+      },
+      {
+        "@id": "urn:ngm:class:wasm",
+        "label": "WASM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:getting-things-done",
+        "label": "Getting Things Done"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:networked-thought",
+        "label": "Networked Thought"
+      },
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:personal-knowledge-management",
+        "label": "Personal Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:second-brain",
+        "label": "Second Brain"
+      },
+      {
+        "@id": "urn:ngm:class:zettelkasten",
+        "label": "Zettelkasten"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "@id": "urn:ngm:class:getting-things-done",
+        "label": "Getting Things Done"
+      },
+      {
+        "@id": "urn:ngm:class:literature-review",
+        "label": "Literature Review"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:research-knowledge-base",
+        "label": "Research Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:second-brain",
+        "label": "Second Brain"
+      },
+      {
+        "@id": "urn:ngm:class:spaced-repetition-learning",
+        "label": "Spaced Repetition Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zettelkasten",
+        "label": "Zettelkasten"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:clojure-script-specification",
+        "label": "ClojureScript Specification"
+      },
+      {
+        "@id": "urn:ngm:class:common-mark",
+        "label": "CommonMark"
+      },
+      {
+        "@id": "urn:ngm:class:datalog-specification",
+        "label": "Datalog Specification"
+      },
+      {
+        "@id": "urn:ngm:class:markdown-specification",
+        "label": "Markdown Specification"
+      },
+      {
+        "@id": "urn:ngm:class:org-mode-specification",
+        "label": "Org-mode Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:477baa615fbb7d1c53dbe4e8249c5f36eed118fa91c3f0aa375e6ad86cd7076d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Logseq is a privacy-first, open-source, local-first personal knowledge management (PKM) platform built on a block-based outliner architecture, implemented primarily in ClojureScript with a DataScript in-memory Datalog query engine, providing bidirectional linking, hierarchical namespaces, property-based metadata, advanced Datalog queries, graph visualisation, spaced repetition flashcards, PDF annotation, whiteboards, and a rich plugin API across desktop (Electron), web, and mobile (Capacitor) deployment surfaces. Originally released publicly in 2020 by Tienson Qin as an open-source, local-first alternative to Roam Research, Logseq stores knowledge as human-readable plain-text Markdown or Org-mode files on the user's local device (file-graph mode), giving users full data sovereignty through direct file-system ownership and compatibility with any text editor or version control system. A major architectural transition has been underway since 2023 toward a Database (DB) version that persists block-level data in SQLite via WebAssembly (WASM), enabling fine-grained block timestamps, real-time collaboration (RTC) synchronisation via CRDTs, structured property types with schema validation,",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-embed",
-      "vc:label": "Block Embed"
-    },
-    {
-      "@id": "urn:visionflow:linked:block-reference",
-      "vc:label": "Block Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:datalog-query",
-      "vc:label": "Datalog Query"
-    },
-    {
-      "@id": "urn:visionflow:linked:flashcard",
-      "vc:label": "Flashcard"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-view",
-      "vc:label": "Graph View"
-    },
-    {
-      "@id": "urn:visionflow:linked:journal",
-      "vc:label": "Journal"
-    },
-    {
-      "@id": "urn:visionflow:linked:namespace",
-      "vc:label": "Namespace"
-    },
-    {
-      "@id": "urn:visionflow:linked:page",
-      "vc:label": "Page"
-    },
-    {
-      "@id": "urn:visionflow:linked:pdf-annotation",
-      "vc:label": "PDF Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:plugin-api",
-      "vc:label": "Plugin API"
-    },
-    {
-      "@id": "urn:visionflow:linked:whiteboard",
-      "vc:label": "Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:block",
-      "vc:label": "Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:property",
-      "vc:label": "Property"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clojure-script",
-      "vc:label": "ClojureScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-script",
-      "vc:label": "DataScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:datalog",
-      "vc:label": "Datalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:electron",
-      "vc:label": "Electron"
-    },
-    {
-      "@id": "urn:visionflow:linked:markdown",
-      "vc:label": "Markdown"
-    },
-    {
-      "@id": "urn:visionflow:linked:react",
-      "vc:label": "React"
-    },
-    {
-      "@id": "urn:visionflow:linked:rum",
-      "vc:label": "Rum"
-    },
-    {
-      "@id": "urn:visionflow:linked:shadow-cljs",
-      "vc:label": "Shadow-cljs"
-    },
-    {
-      "@id": "urn:visionflow:linked:sqlite",
-      "vc:label": "SQLite"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bidirectional-linking",
-      "vc:label": "Bidirectional Linking"
-    },
-    {
-      "@id": "urn:visionflow:linked:block-transclusion",
-      "vc:label": "Block Transclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-authoring",
-      "vc:label": "Ontology Authoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:pdf-annotation",
-      "vc:label": "PDF Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-collaboration",
-      "vc:label": "Real Time Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:second-brain",
-      "vc:label": "Second Brain"
-    },
-    {
-      "@id": "urn:visionflow:linked:spaced-repetition",
-      "vc:label": "Spaced Repetition"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-management",
-      "vc:label": "Task Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:zettelkasten",
-      "vc:label": "Zettelkasten"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph-construction",
-      "vc:label": "Knowledge Graph Construction"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:block-reference",
-      "vc:label": "Block Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:datalog",
-      "vc:label": "Datalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-first-software",
-      "vc:label": "Local-First Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:markdown",
-      "vc:label": "Markdown"
-    },
-    {
-      "@id": "urn:visionflow:linked:org-mode",
-      "vc:label": "Org-mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-graph",
-      "vc:label": "Property Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-collaboration",
-      "vc:label": "Real Time Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:crdt",
-      "vc:label": "CRDT"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:capacitor",
-      "vc:label": "Capacitor"
-    },
-    {
-      "@id": "urn:visionflow:linked:clojure-script",
-      "vc:label": "ClojureScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-script",
-      "vc:label": "DataScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:electron",
-      "vc:label": "Electron"
-    },
-    {
-      "@id": "urn:visionflow:linked:react",
-      "vc:label": "React"
-    },
-    {
-      "@id": "urn:visionflow:linked:shadow-cljs",
-      "vc:label": "Shadow-cljs"
-    },
-    {
-      "@id": "urn:visionflow:linked:sqlite",
-      "vc:label": "SQLite"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm",
-      "vc:label": "WASM"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:academic-research",
-      "vc:label": "Academic Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:getting-things-done",
-      "vc:label": "Getting Things Done"
-    },
-    {
-      "@id": "urn:visionflow:linked:literature-review",
-      "vc:label": "Literature Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-engineering",
-      "vc:label": "Ontology Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-knowledge-base",
-      "vc:label": "Research Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:second-brain",
-      "vc:label": "Second Brain"
-    },
-    {
-      "@id": "urn:visionflow:linked:spaced-repetition-learning",
-      "vc:label": "Spaced Repetition Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:zettelkasten",
-      "vc:label": "Zettelkasten"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:capacitor",
-      "vc:label": "Capacitor"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-script",
-      "vc:label": "DataScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:electron",
-      "vc:label": "Electron"
-    },
-    {
-      "@id": "urn:visionflow:linked:gulp",
-      "vc:label": "Gulp"
-    },
-    {
-      "@id": "urn:visionflow:linked:rum",
-      "vc:label": "Rum"
-    },
-    {
-      "@id": "urn:visionflow:linked:shadow-cljs",
-      "vc:label": "Shadow-cljs"
-    },
-    {
-      "@id": "urn:visionflow:linked:sqlite",
-      "vc:label": "SQLite"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm",
-      "vc:label": "WASM"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:athens-research",
-      "vc:label": "Athens Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:confluence",
-      "vc:label": "Confluence"
-    },
-    {
-      "@id": "urn:visionflow:linked:heptabase",
-      "vc:label": "Heptabase"
-    },
-    {
-      "@id": "urn:visionflow:linked:notion",
-      "vc:label": "Notion"
-    },
-    {
-      "@id": "urn:visionflow:linked:obsidian",
-      "vc:label": "Obsidian"
-    },
-    {
-      "@id": "urn:visionflow:linked:reflect",
-      "vc:label": "Reflect"
-    },
-    {
-      "@id": "urn:visionflow:linked:roam-research",
-      "vc:label": "Roam Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:tana",
-      "vc:label": "Tana"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:getting-things-done",
-      "vc:label": "Getting Things Done"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:networked-thought",
-      "vc:label": "Networked Thought"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl",
-      "vc:label": "OWL"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-knowledge-management",
-      "vc:label": "Personal Knowledge Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:second-brain",
-      "vc:label": "Second Brain"
-    },
-    {
-      "@id": "urn:visionflow:linked:zettelkasten",
-      "vc:label": "Zettelkasten"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:clojure-script-specification",
-      "vc:label": "ClojureScript Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-mark",
-      "vc:label": "CommonMark"
-    },
-    {
-      "@id": "urn:visionflow:linked:datalog-specification",
-      "vc:label": "Datalog Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:markdown-specification",
-      "vc:label": "Markdown Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:org-mode-specification",
-      "vc:label": "Org-mode Specification"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Land Economics",
   "slug": "land-economics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:land-economics",
+  "classIri": "urn:ngm:class:land-economics",
   "domain": "spatial-computing",
   "definition": "Land Economics is a spatial computing concept and a type of Metaverse.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

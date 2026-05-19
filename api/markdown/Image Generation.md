@@ -344,41 +344,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:image-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:image-generation",
+  "@type": "Class",
   "label": "Image Generation",
+  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ca85e9570b25e86c711bcbf1b2f22da61be7c914fb360077305db263e08ac078@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

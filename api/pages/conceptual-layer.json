@@ -3,19 +3,18 @@
   "title": "Conceptual Layer",
   "slug": "conceptual-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:conceptual-layer",
+  "classIri": "urn:ngm:class:conceptual-layer",
   "domain": "infrastructure",
-  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations. This layer encompasses abstract definitions, conceptual frameworks, theoretical foundations, design principles, and logical models that describe what things are and what they should do, without specifying how they are implemented. Concepts in this layer are implementation-agnostic: they can be realized through various technical approaches, protocols, or systems while maintaining their essential conceptual properties. The ConceptualLayer includes abstract data structures (the concept of a blockchain as an ordered chain of blocks, independent of specific blockchain implementations), theoretical protocols (abstract consensus models, independent of specific consensus algorithms), design patterns (decentralization as a principle, independent of specific decentralization mechanisms), foundational principles (immutability, transparency, trustlessness as properties), and logical frameworks (fairness definitions, security properties, correctness criteria). This layer serves as the foundation for",
+  "definition": "The ConceptualLayer represents the abstraction level of pure concepts, theoretical models, principles, and design patterns that are independent of specific technical implementations or realizations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

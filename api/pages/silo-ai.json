@@ -3,107 +3,190 @@
   "title": "Silo AI",
   "slug": "silo-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:silo-ai",
+  "classIri": "urn:ngm:individual:silo-ai",
   "domain": "artificial-intelligence",
-  "definition": "Silo AI is a Finnish artificial intelligence company founded in Helsinki in 2017, recognised as Europe's largest private AI lab prior to its acquisition by Advanced Micro Devices (AMD) in August 2024, specialising in end-to-end enterprise AI solutions, multilingual open-source large language model development, and European digital sovereignty through language technology research, having produced the Poro 34B model (2023) \u2014 the first major open Finnish/English LLM trained on the LUMI EuroHPC supercomputer \u2014 and the Viking model family (7B, 13B, 33B, 2024) covering all Nordic languages (Danish, Finnish, Icelandic, Norwegian, Swedish) and programming languages under the Apache 2.0 licence, training models on up to 4,096 AMD MI250X GPUs with datasets of 1\u20132 trillion tokens using architectures ranging from BLOOM with ALiBi embeddings (Poro) to Llama-2-style transformer stacks with flash attention, rotary embeddings and grouped query attention (Viking), both produced via the LumiOpen collaboration between Silo AI's SiloGen arm, the University of Turku's TurkuNLP group, and the EU-funded High Performance Language Technologies (HPLT) project, addressing the fundamental challenge of low-res",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:anthropic-claude",
-      "label": "Anthropic Claude"
-    },
-    {
-      "id": "urn:visionflow:owl:class:competition-in-ai",
-      "label": "Competition in AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-companies",
-      "label": "AI Companies"
-    }
-  ],
+  "definition": "Finnish AI company specialising in enterprise AI solutions, multilingual open-source large language model development including the Poro series, and applied AI integration for Nordic and European organisations.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-adoption",
+        "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:checkpoints",
+        "id": "urn:ngm:class:checkpoints",
         "label": "Checkpoints"
       },
       {
-        "id": "urn:visionflow:owl:class:comfy-ui",
+        "id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:ai-adoption",
+        "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-scrapers",
+        "id": "urn:ngm:class:ai-scrapers",
         "label": "AI Scrapers"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-search",
+        "id": "urn:ngm:class:ai-search",
         "label": "AI Search"
       },
       {
-        "id": "urn:visionflow:owl:class:chatbots",
+        "id": "urn:ngm:class:chatbots",
         "label": "Chatbots"
       },
       {
-        "id": "urn:visionflow:owl:class:cognitive-ai",
+        "id": "urn:ngm:class:cognitive-ai",
         "label": "Cognitive AI"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
         "label": "Algorithmic Bias and Variance"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:bias-in-large-language-models",
+        "id": "urn:ngm:class:bias-in-large-language-models",
         "label": "Bias in Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:checkpoints",
+        "id": "urn:ngm:class:checkpoints",
         "label": "Checkpoints"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
   },
   "wikilinks": [
     {

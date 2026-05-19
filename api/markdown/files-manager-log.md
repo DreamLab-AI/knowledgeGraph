@@ -102,46 +102,7 @@ public:: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:files-manager-log",
-  "@type": "OntologyClass",
-  "label": "files-manager-log",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7cef13a08d9f5274c2b056962e114cb41908edb36b7d2bcef3d3b2e229d08486"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7cef13a08d9f5274c2b056962e114cb41908edb36b7d2bcef3d3b2e229d08486@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "files-manager-log is a technology infrastructure concept and a type of infrastructure.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
-}
-```
+
 
 ```json-ld
 {

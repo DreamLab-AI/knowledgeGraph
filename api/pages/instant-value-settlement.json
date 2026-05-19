@@ -3,167 +3,307 @@
   "title": "Instant value settlement",
   "slug": "instant-value-settlement",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:instant-value-settlement",
+  "classIri": "urn:ngm:class:instant-value-settlement",
   "domain": "blockchain",
-  "definition": "**Instant value settlement** is the process by which the transfer of economic value between counterparties \u2014 whether central-bank fiat currency, commercial bank money, tokenised deposits, stablecoins, securities, or programmable digital money \u2014 is completed in real time (sub-second to at most a few seconds) with immediate, irrevocable finality, eliminating or collapsing the traditional settlement lag (T+2 for equities in most markets, one to three business days for cross-border wire, several working days for correspondent-chain SWIFT transfers) that has characterised financial infrastructure since manual clearing houses in the nineteenth century. True instant settlement is distinguished from instant notification of a deferred settlement obligation: the critical property is that the payer's account is debited and the payee's account is irrevocably credited in a single atomic operation, eliminating principal risk (the risk that one counterparty delivers while the other fails to settle) and dramatically reducing liquidity needs by eliminating intraday float.",
+  "definition": "Instant value settlement is the process by which the transfer of economic value between counterparties \u2014 wher central-bank fiat currency, commercial bank money, tokenised deposits, stablecoins, securities, or programmable digital money \u2014 is completed in real time (sub-second to at most a few seco...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-infrastructure",
+      "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
     },
     {
-      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
-    },
-    {
-      "id": "urn:visionflow:owl:class:smart-contract",
-      "label": "Smart Contract"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:atomic-swap",
+        "id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
         "label": "Cryptography Security and Privacy"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
       {
-        "id": "urn:visionflow:owl:class:lightning-network",
+        "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-coins",
+        "id": "urn:ngm:class:stable-coins",
         "label": "Stable Coins"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
         "label": "Cryptography Security and Privacy"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:btc-layer-3",
+        "id": "urn:ngm:class:btc-layer-3",
         "label": "BTC Layer 3"
       },
       {
-        "id": "urn:visionflow:owl:class:cbdcs",
+        "id": "urn:ngm:class:cbdcs",
         "label": "CBDCs"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-border-compliance",
+        "id": "urn:ngm:class:cross-border-compliance",
         "label": "Cross Border Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       },
       {
-        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-coins",
+        "id": "urn:ngm:class:stable-coins",
         "label": "Stable Coins"
       },
       {
-        "id": "urn:visionflow:owl:class:treasury-management",
+        "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:atomic-swap",
+        "id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-ledger",
+        "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
       {
-        "id": "urn:visionflow:owl:class:lightning-network",
+        "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ]
   },
   "wikilinks": [
     {

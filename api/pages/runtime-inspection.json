@@ -3,19 +3,18 @@
   "title": "Runtime Inspection",
   "slug": "runtime-inspection",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:runtime-inspection",
+  "classIri": "urn:ngm:class:runtime-inspection",
   "domain": "artificial-intelligence",
   "definition": "Runtime Inspection is a artificial intelligence concept and a type of Ai Governance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "Ai Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

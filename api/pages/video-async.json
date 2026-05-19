@@ -3,19 +3,18 @@
   "title": "Video Async",
   "slug": "video-async",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:video-async",
+  "classIri": "urn:ngm:class:video-async",
   "domain": "distributed-collaboration",
   "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+      "id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

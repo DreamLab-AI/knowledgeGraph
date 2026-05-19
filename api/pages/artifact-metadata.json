@@ -3,53 +3,57 @@
   "title": "Artifact Metadata",
   "slug": "artifact-metadata",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:artifact-metadata",
+  "classIri": "urn:ngm:class:artifact-metadata",
   "domain": "spatial-computing",
-  "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verification and long-term accessibility.",
+  "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verifica...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-metadata",
+      "id": "urn:ngm:class:digital-metadata",
       "label": "Digital Metadata"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-recording",
+        "id": "urn:ngm:class:blockchain-recording",
         "label": "Blockchain Recording"
       },
       {
-        "id": "urn:visionflow:linked:documentation-practices",
+        "id": "urn:ngm:class:documentation-practices",
         "label": "Documentation Practices"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authenticity-tracking",
+        "id": "urn:ngm:class:authenticity-tracking",
         "label": "Authenticity Tracking"
       },
       {
-        "id": "urn:visionflow:linked:cultural-preservation",
+        "id": "urn:ngm:class:cultural-preservation",
         "label": "Cultural Preservation"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-verification",
+        "id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-mesh",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-mesh",
+  "@type": "Class",
   "label": "Spatial Mesh",
+  "definition": "A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6ae410d414628592c62dbf681819f342cd2d84109d6b24d102045446fd8ba434"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6ae410d414628592c62dbf681819f342cd2d84109d6b24d102045446fd8ba434@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ar-occlusion",
-      "vc:label": "AR Occlusion"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

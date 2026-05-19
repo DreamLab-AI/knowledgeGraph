@@ -164,48 +164,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:agreement-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:agreement-protocol",
+  "@type": "Class",
   "label": "Agreement Protocol",
+  "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-protocol",
-      "vc:label": "Distributed Protocol"
+      "@id": "urn:ngm:class:distributed-protocol",
+      "label": "Distributed Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f028ba27d2cb2ff9b3b358839aacc08c2663b44960bbfa1711677f95223fbfa1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomi",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

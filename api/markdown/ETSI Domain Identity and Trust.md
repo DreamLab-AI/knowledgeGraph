@@ -156,48 +156,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-identity-and-trust",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
+  "@type": "Class",
   "label": "ETSI Domain Identity and Trust",
+  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]].",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:83eb4634ac30dc414d01000d07cc8af5c27dc5a4fa1de1a2877a6ce148c49920"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:83eb4634ac30dc414d01000d07cc8af5c27dc5a4fa1de1a2877a6ce148c49920@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]]. This domain integrates [[DigitalIdentity]], [[VerifiableCredentials]], [[ZeroTrustArchitecture]], [[BiometricAuthentication]], and [[DecentralisedIdentity]] to enable secure, privacy-respecting identity assurance across distributed metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

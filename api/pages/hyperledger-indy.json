@@ -3,159 +3,303 @@
   "title": "Hyperledger Indy",
   "slug": "hyperledger-indy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hyperledger-indy",
+  "classIri": "urn:ngm:class:hyperledger-indy",
   "domain": "blockchain",
-  "definition": "**Hyperledger Indy** is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the [[Linux Foundation]]-resident [[Hyperledger Foundation]] (now consolidated under the **LF Decentralized Trust** umbrella since June 2024) that provides the canonical reference implementation of a **verifiable data registry** (VDR) for **[[Self-Sovereign Identity]]** (SSI) infrastructure, originally seeded in September 2017 by a code contribution from the **[[Sovrin Foundation]]** (a Utah-incorporated non-profit established in 2016 by Phil Windley, Jason Law and Drummond Reed to operationalise the Sovrin Trust Framework and the public-permissioned Sovrin Network), implementing a four-node-minimum ordering quorum of **stewards** running the **[[Plenum]]** consensus protocol (a Python-based [[Practical Byzantine Fault Tolerance|PBFT]] derivative incorporating the **RBFT** (Redundant BFT, Aublin-Mokhtar-Qu\u00e9ma 2013) and **Aardvark** (Clement-Wong-Alvisi-Dahlin 2009) view-change resilience improvements ensuring liveness under faulty primary replicas), where the on-ledger state is deliberately constrained to four object types \u2014 public **DIDs** under the `did:sov` lega",
+  "definition": "Hyperledger Indy is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the [[Linux Foundation]]-resident [[Hyperledger Foundation]] (now consolidated under the LF Decentralized Trust umbrella since June 2024) that provides the canonical reference implem...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralized-identifier-method",
+      "id": "urn:ngm:class:decentralized-identifier-method",
       "label": "Decentralized Identifier Method"
     },
     {
-      "id": "urn:visionflow:linked:permissioned-distributed-ledger",
+      "id": "urn:ngm:class:permissioned-distributed-ledger",
       "label": "Permissioned Distributed Ledger"
-    },
-    {
-      "id": "urn:visionflow:owl:class:verifiable-data-registry",
-      "label": "Verifiable Data Registry"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:anon-creds",
+        "id": "urn:ngm:class:anon-creds",
         "label": "AnonCreds"
       },
       {
-        "id": "urn:visionflow:linked:aries-askar",
+        "id": "urn:ngm:class:aries-askar",
         "label": "Aries Askar"
       },
       {
-        "id": "urn:visionflow:linked:credential-definition",
+        "id": "urn:ngm:class:credential-definition",
         "label": "Credential Definition"
       },
       {
-        "id": "urn:visionflow:linked:credential-schema",
+        "id": "urn:ngm:class:credential-schema",
         "label": "Credential Schema"
       },
       {
-        "id": "urn:visionflow:linked:genesis-transaction-file",
+        "id": "urn:ngm:class:genesis-transaction-file",
         "label": "Genesis Transaction File"
       },
       {
-        "id": "urn:visionflow:linked:indy-credx",
+        "id": "urn:ngm:class:indy-credx",
         "label": "Indy Credx"
       },
       {
-        "id": "urn:visionflow:linked:indy-node",
+        "id": "urn:ngm:class:indy-node",
         "label": "Indy Node"
       },
       {
-        "id": "urn:visionflow:linked:indy-vdr",
+        "id": "urn:ngm:class:indy-vdr",
         "label": "Indy VDR"
       },
       {
-        "id": "urn:visionflow:linked:plenum",
+        "id": "urn:ngm:class:plenum",
         "label": "Plenum"
       },
       {
-        "id": "urn:visionflow:linked:revocation-registry",
+        "id": "urn:ngm:class:revocation-registry",
         "label": "Revocation Registry"
       },
       {
-        "id": "urn:visionflow:linked:steward-node",
+        "id": "urn:ngm:class:steward-node",
         "label": "Steward Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-accumulator",
+        "id": "urn:ngm:class:cryptographic-accumulator",
         "label": "Cryptographic Accumulator"
       },
       {
-        "id": "urn:visionflow:linked:genesis-pool-configuration",
+        "id": "urn:ngm:class:genesis-pool-configuration",
         "label": "Genesis Pool Configuration"
       },
       {
-        "id": "urn:visionflow:linked:hyperledger-aries",
+        "id": "urn:ngm:class:hyperledger-aries",
         "label": "Hyperledger Aries"
       },
       {
-        "id": "urn:visionflow:linked:secure-wallet-storage",
+        "id": "urn:ngm:class:secure-wallet-storage",
         "label": "Secure Wallet Storage"
       },
       {
-        "id": "urn:visionflow:linked:steward-network",
+        "id": "urn:ngm:class:steward-network",
         "label": "Steward Network"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:issuer-holder-verifier-triangle",
+        "id": "urn:ngm:class:issuer-holder-verifier-triangle",
         "label": "Issuer-Holder-Verifier Triangle"
       },
       {
-        "id": "urn:visionflow:linked:multi-tenant-identity-ledger",
+        "id": "urn:ngm:class:multi-tenant-identity-ledger",
         "label": "Multi-Tenant Identity Ledger"
       },
       {
-        "id": "urn:visionflow:linked:offline-credential-verification",
+        "id": "urn:ngm:class:offline-credential-verification",
         "label": "Offline Credential Verification"
       },
       {
-        "id": "urn:visionflow:linked:predicate-proof",
+        "id": "urn:ngm:class:predicate-proof",
         "label": "Predicate Proof"
       },
       {
-        "id": "urn:visionflow:linked:revocation-without-correlation",
+        "id": "urn:ngm:class:revocation-without-correlation",
         "label": "Revocation without Correlation"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:linked:unlinkable-credential-presentation",
+        "id": "urn:ngm:class:unlinkable-credential-presentation",
         "label": "Unlinkable Credential Presentation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:sovrin-trust-framework",
+        "id": "urn:ngm:class:sovrin-trust-framework",
         "label": "Sovrin Trust Framework"
       },
       {
-        "id": "urn:visionflow:linked:trust-over-ip-stack",
+        "id": "urn:ngm:class:trust-over-ip-stack",
         "label": "Trust over IP Stack"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-decentralized-identifier-specification",
+        "id": "urn:ngm:class:w3-c-decentralized-identifier-specification",
         "label": "W3C Decentralized Identifier Specification"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-verifiable-credentials-data-model",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
       },
       {
-        "id": "urn:visionflow:linked:zkp-based-anonymous-credentials",
+        "id": "urn:ngm:class:zkp-based-anonymous-credentials",
         "label": "ZKP-Based Anonymous Credentials"
       },
       {
-        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self-Sovereign Identity"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-hash-table-routing",
+        "label": "Distributed Hash Table Routing"
+      },
+      {
+        "id": "urn:ngm:class:indy-plenum",
+        "label": "Indy Plenum"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-cryptographic-schemes",
+        "label": "Multi-Signature Cryptographic Schemes"
+      },
+      {
+        "id": "urn:ngm:class:plenum-consensus",
+        "label": "Plenum Consensus"
+      },
+      {
+        "id": "urn:ngm:class:python-3-6",
+        "label": "Python 3.6+"
+      },
+      {
+        "id": "urn:ngm:class:rocks-db",
+        "label": "RocksDB"
+      },
+      {
+        "id": "urn:ngm:class:sovrin-token-deprecated",
+        "label": "Sovrin Token (deprecated)"
+      },
+      {
+        "id": "urn:ngm:class:zero-mq",
+        "label": "ZeroMQ"
+      },
+      {
+        "id": "urn:ngm:class:rust",
+        "label": "Rust"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-border-credential-recognition",
+        "label": "Cross-Border Credential Recognition"
+      },
+      {
+        "id": "urn:ngm:class:e-idas-article-6a-wallet-trust-model",
+        "label": "eIDAS Article 6a Wallet Trust Model"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-data-minimisation",
+        "label": "GDPR Data Minimisation"
+      },
+      {
+        "id": "urn:ngm:class:government-digital-identity",
+        "label": "Government Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-compliance",
+        "label": "Privacy-Preserving Compliance"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-organizational-credentials",
+        "label": "Verifiable Organizational Credentials"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:anon-creds-specification-v1-0",
+        "label": "AnonCreds Specification v1.0"
+      },
+      {
+        "id": "urn:ngm:class:did-indy-method-specification",
+        "label": "did:indy Method Specification"
+      },
+      {
+        "id": "urn:ngm:class:did-sov-method-specification",
+        "label": "did:sov Method Specification"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "ISO/IEC 18013-5 (mDL)"
+      },
+      {
+        "id": "urn:ngm:class:sovrin-governance-framework-v2",
+        "label": "Sovrin Governance Framework v2"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-technology-stack",
+        "label": "Trust over IP Technology Stack"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-core-1-0",
+        "label": "W3C DID Core 1.0"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials-data-model-v2-0",
+        "label": "W3C Verifiable Credentials Data Model v2.0"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aries-cloud-agent-python",
+        "label": "Aries Cloud Agent Python"
+      },
+      {
+        "id": "urn:ngm:class:bifold-wallet",
+        "label": "Bifold Wallet"
+      },
+      {
+        "id": "urn:ngm:class:credo",
+        "label": "Credo"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-ursa",
+        "label": "Hyperledger Ursa"
+      },
+      {
+        "id": "urn:ngm:class:idunion",
+        "label": "IDUnion"
+      },
+      {
+        "id": "urn:ngm:class:indicio",
+        "label": "Indicio"
+      },
+      {
+        "id": "urn:ngm:class:lf-decentralized-trust",
+        "label": "LF Decentralized Trust"
+      },
+      {
+        "id": "urn:ngm:class:open-wallet-foundation",
+        "label": "OpenWallet Foundation"
+      },
+      {
+        "id": "urn:ngm:class:sovrin-foundation",
+        "label": "Sovrin Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust over IP Foundation"
+      }
+    ]
   },
   "wikilinks": [
     {

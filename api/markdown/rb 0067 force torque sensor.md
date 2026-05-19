@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0067-force-torque-sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0067-force-torque-sensor",
+  "@type": "Class",
   "label": "rb 0067 force torque sensor",
+  "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:force-torque-sensor",
-      "vc:label": "Force Torque Sensor"
+      "@id": "urn:ngm:class:force-torque-sensor",
+      "label": "Force Torque Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:759e61aed0b4916f0e2f0149c9129feecfc0a5a16a5e38cce5f6a6b959215146"
-  },
-  "vc:inferenceRule": "R2DirectParent",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:759e61aed0b4916f0e2f0149c9129feecfc0a5a16a5e38cce5f6a6b959215146@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2DirectParent"
+  }
 }
 ```
 

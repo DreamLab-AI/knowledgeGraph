@@ -168,86 +168,71 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+  "@type": "Class",
   "label": "Hardware Abstraction Layer (HAL)",
+  "definition": "Software interface that lets applications interact with hardware without device-specific code, providing a standardized abstraction between software and hardware components.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b52c36d5510d639535056cd9fb9768390a11f573d62d905f364b8db0c3a2ba0b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:abstraction-modules",
+        "label": "Abstraction Modules"
+      },
+      {
+        "@id": "urn:ngm:class:api-interfaces",
+        "label": "API Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Drivers"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware-resources",
+        "label": "Hardware Resources"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:device-portability",
+        "label": "Device Portability"
+      },
+      {
+        "@id": "urn:ngm:class:platform-independence",
+        "label": "Platform Independence"
+      },
+      {
+        "@id": "urn:ngm:class:unified-hardware-access",
+        "label": "Unified Hardware Access"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b52c36d5510d639535056cd9fb9768390a11f573d62d905f364b8db0c3a2ba0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software interface that lets applications interact with hardware without device-specific code, providing a standardized abstraction between software and hardware components.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:abstraction-modules",
-      "vc:label": "Abstraction Modules"
-    },
-    {
-      "@id": "urn:visionflow:linked:api-interfaces",
-      "vc:label": "API Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:device-drivers",
-      "vc:label": "Device Drivers"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:hardware-resources",
-      "vc:label": "Hardware Resources"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:operating-system",
-      "vc:label": "Operating System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:device-portability",
-      "vc:label": "Device Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-independence",
-      "vc:label": "Platform Independence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unified-hardware-access",
-      "vc:label": "Unified Hardware Access"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

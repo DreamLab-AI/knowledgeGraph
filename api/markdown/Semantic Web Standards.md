@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:semantic-web-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:semantic-web-standards",
+  "@type": "Class",
   "label": "Semantic Web Standards",
+  "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:web-standards",
-      "vc:label": "Web Standards"
+      "@id": "urn:ngm:class:web-standards",
+      "label": "Web Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:000691b95f6b465c7ee2a97973ccce00b772645aee150a71c8414c651570e322"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:000691b95f6b465c7ee2a97973ccce00b772645aee150a71c8414c651570e322@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:data-interoperability",
-      "vc:label": "Data Interoperability"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

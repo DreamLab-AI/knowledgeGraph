@@ -3,19 +3,18 @@
   "title": "rb 0068 vision system",
   "slug": "rb-0068-vision-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0068-vision-system",
+  "classIri": "urn:ngm:class:rb-0068-vision-system",
   "domain": "robotics",
   "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics-systems",
+      "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

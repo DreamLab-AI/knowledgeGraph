@@ -3,19 +3,18 @@
   "title": "Cryptographic Primitive",
   "slug": "cryptographic-primitive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-primitive",
+  "classIri": "urn:ngm:class:cryptographic-primitive",
   "domain": "blockchain",
-  "definition": "The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed. Primitives include hash functions, encryption algorithms, digital signatures, message authentication codes, and key exchange protocols, each providing specific security properties but requiring combination in security protocols to address multiple security requirements.",
+  "definition": "The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptography",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -200,124 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nft-renting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nft-renting",
+  "@type": "Class",
   "label": "NFT Renting",
+  "definition": "Process of temporarily assigning usage rights for a non-fungible token without transferring ownership, enforced through smart contract time-bound licensing mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c573708c6930c295ab1fede09871a31cff509384317fa6985e2d9c3606ae66dd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:rental-agreement-terms",
+        "label": "Rental Agreement Terms"
+      },
+      {
+        "@id": "urn:ngm:class:rental-smart-contract",
+        "label": "Rental Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:time-lock-mechanism",
+        "label": "Time Lock Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:usage-rights-token",
+        "label": "Usage Rights Token"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:nft-ownership-verification",
+        "label": "NFT Ownership Verification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-utilization",
+        "label": "Asset Utilization"
+      },
+      {
+        "@id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Management"
+      },
+      {
+        "@id": "urn:ngm:class:revenue-generation",
+        "label": "Revenue Generation"
+      },
+      {
+        "@id": "urn:ngm:class:temporary-asset-access",
+        "label": "Temporary Asset Access"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c573708c6930c295ab1fede09871a31cff509384317fa6985e2d9c3606ae66dd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Process of temporarily assigning usage rights for a non-fungible token without transferring ownership, enforced through smart contract time-bound licensing mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-lending",
-      "vc:label": "Digital Asset Lending"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-marketplace",
-      "vc:label": "NFT Marketplace"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:rental-agreement-terms",
-      "vc:label": "Rental Agreement Terms"
-    },
-    {
-      "@id": "urn:visionflow:linked:rental-smart-contract",
-      "vc:label": "Rental Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-lock-mechanism",
-      "vc:label": "Time Lock Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-rights-token",
-      "vc:label": "Usage Rights Token"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:nft-ownership-verification",
-      "vc:label": "NFT Ownership Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-execution",
-      "vc:label": "Smart Contract Execution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-utilization",
-      "vc:label": "Asset Utilization"
-    },
-    {
-      "@id": "urn:visionflow:linked:collateral-management",
-      "vc:label": "Collateral Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:revenue-generation",
-      "vc:label": "Revenue Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:temporary-asset-access",
-      "vc:label": "Temporary Asset Access"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:escrow-mechanism",
-      "vc:label": "Escrow Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-oracle",
-      "vc:label": "Time Oracle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

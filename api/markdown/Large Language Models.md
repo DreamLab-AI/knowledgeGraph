@@ -296,164 +296,127 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:large-language-models",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:large-language-models",
+  "@type": "Class",
   "label": "Large Language Models",
+  "definition": "[[Large Language Models]] (LLMs) are [[Foundation Models]] with s to s of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
+      "@id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
     },
     {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
+      "@id": "urn:ngm:class:foundation-models",
+      "label": "Foundation Models"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7afdcd93f8ffd63f1e2e95dbdbd71ea448637141bed1604216acd02fcca2c955"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:model-parameters",
+        "label": "Model Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:translation",
+        "label": "Translation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7afdcd93f8ffd63f1e2e95dbdbd71ea448637141bed1604216acd02fcca2c955@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Large Language Models]] (LLMs) are [[Foundation Models]] with billions to trillions of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot Learning]], and [[Prompt Engineering]]. LLMs represent a paradigm shift in [[Artificial Intelligence]], demonstrating emergent capabilities in reasoning, code generation, multilingual understanding, and complex task decomposition.",
-  "vc:qualityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:embedding",
-      "vc:label": "Embedding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-parameters",
-      "vc:label": "Model Parameters"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenization",
-      "vc:label": "Tokenization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-scale-datasets",
-      "vc:label": "Large-Scale Datasets"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-optimization",
-      "vc:label": "Model Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:natural-language-understanding",
-      "vc:label": "Natural Language Understanding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:question-answering",
-      "vc:label": "Question Answering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reasoning",
-      "vc:label": "Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-generation",
-      "vc:label": "Text Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:translation",
-      "vc:label": "Translation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-head-attention",
-      "vc:label": "Multi-Head Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:positional-encoding",
-      "vc:label": "Positional Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-attention",
-      "vc:label": "Self Attention"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-economic-agents",
-      "vc:label": "Autonomous Economic Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:l402-payment-protocol",
-      "vc:label": "L402 Payment Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

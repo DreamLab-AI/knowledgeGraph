@@ -3,32 +3,36 @@
   "title": "Shared Spatial Anchors",
   "slug": "shared-spatial-anchors",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:shared-spatial-anchors",
+  "classIri": "urn:ngm:class:shared-spatial-anchors",
   "domain": "spatial-computing",
   "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-ar-experiences",
+        "id": "urn:ngm:class:collaborative-ar-experiences",
         "label": "Collaborative AR Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -120,54 +120,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:standardized-asset-classification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:standardized-asset-classification",
+  "@type": "Class",
   "label": "Standardized Asset Classification",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23"
+  "definition": "Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance mod, value mechanism, rights conferred, fungibility, and redemption properties.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4f257fd736c81469655ce1b063e2a7869b0eac0d3be81dae0ca1f2cfab3bab23@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance method, value mechanism, rights conferred, fungibility, and redemption properties.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,61 +3,78 @@
   "title": "Stablecoin",
   "slug": "stablecoin",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:stablecoin",
+  "classIri": "urn:ngm:class:stablecoin",
   "domain": "blockchain",
   "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:crypto-token",
+      "id": "urn:ngm:class:crypto-token",
       "label": "Crypto Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:collateral-reserves",
+        "id": "urn:ngm:class:collateral-reserves",
         "label": "Collateral Reserves"
       },
       {
-        "id": "urn:visionflow:linked:price-oracle",
+        "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-transactions",
+        "id": "urn:ngm:class:cross-border-transactions",
         "label": "Cross-Border Transactions"
       },
       {
-        "id": "urn:visionflow:linked:price-stability",
+        "id": "urn:ngm:class:price-stability",
         "label": "Price Stability"
       },
       {
-        "id": "urn:visionflow:owl:class:value-transfer",
+        "id": "urn:ngm:class:value-transfer",
         "label": "Value Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

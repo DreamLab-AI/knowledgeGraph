@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:open-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-ai",
+  "@type": "Class",
   "label": "Open AI",
+  "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:aicompanies",
-      "vc:label": "AICompanies"
+      "@id": "urn:ngm:class:aicompanies",
+      "label": "AICompanies"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4dc019f2c31f788a214bb52d13d472f431e0a9a712f3163d077ff6d636b0eab0"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4dc019f2c31f788a214bb52d13d472f431e0a9a712f3163d077ff6d636b0eab0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model. Following an October 2025 restructuring, the non-profit OpenAI Foundation holds 26% of the for-profit OpenAI Group PBC (public benefit corporation), with Microsoft owning 27% and the company valued at $500 billion.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

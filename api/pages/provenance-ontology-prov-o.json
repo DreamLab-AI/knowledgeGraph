@@ -3,98 +3,107 @@
   "title": "Provenance Ontology (PROV-O)",
   "slug": "provenance-ontology-prov-o",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:provenance-ontology-prov-o",
+  "classIri": "urn:ngm:class:provenance-ontology-prov-o",
   "domain": "spatial-computing",
   "definition": "W3C standard ontology for representing and interchanging provenance information, capturing the origin, attribution, derivation, and lifecycle of digital entities through formal Entity-Activity-Agent relationships.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:activity-model",
+        "id": "urn:ngm:class:activity-model",
         "label": "Activity Model"
       },
       {
-        "id": "urn:visionflow:linked:agent-model",
+        "id": "urn:ngm:class:agent-model",
         "label": "Agent Model"
       },
       {
-        "id": "urn:visionflow:linked:attribution-model",
+        "id": "urn:ngm:class:attribution-model",
         "label": "Attribution Model"
       },
       {
-        "id": "urn:visionflow:linked:derivation-chains",
+        "id": "urn:ngm:class:derivation-chains",
         "label": "Derivation Chains"
       },
       {
-        "id": "urn:visionflow:linked:entity-model",
+        "id": "urn:ngm:class:entity-model",
         "label": "Entity Model"
       },
       {
-        "id": "urn:visionflow:linked:generation-events",
+        "id": "urn:ngm:class:generation-events",
         "label": "Generation Events"
       },
       {
-        "id": "urn:visionflow:linked:influence-patterns",
+        "id": "urn:ngm:class:influence-patterns",
         "label": "Influence Patterns"
       },
       {
-        "id": "urn:visionflow:linked:qualified-relations",
+        "id": "urn:ngm:class:qualified-relations",
         "label": "Qualified Relations"
       },
       {
-        "id": "urn:visionflow:linked:usage-events",
+        "id": "urn:ngm:class:usage-events",
         "label": "Usage Events"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ontology-reasoner",
+        "id": "urn:ngm:class:ontology-reasoner",
         "label": "Ontology Reasoner"
       },
       {
-        "id": "urn:visionflow:linked:rdf-store",
+        "id": "urn:ngm:class:rdf-store",
         "label": "RDF Store"
       },
       {
-        "id": "urn:visionflow:owl:class:sparql-endpoint",
+        "id": "urn:ngm:class:sparql-endpoint",
         "label": "SPARQL Endpoint"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:audit-trails",
+        "id": "urn:ngm:class:audit-trails",
         "label": "Audit Trails"
       },
       {
-        "id": "urn:visionflow:linked:blockchain-provenance",
+        "id": "urn:ngm:class:blockchain-provenance",
         "label": "Blockchain Provenance"
       },
       {
-        "id": "urn:visionflow:linked:data-lineage-tracking",
+        "id": "urn:ngm:class:data-lineage-tracking",
         "label": "Data Lineage Tracking"
       },
       {
-        "id": "urn:visionflow:linked:scientific-reproducibility",
+        "id": "urn:ngm:class:scientific-reproducibility",
         "label": "Scientific Reproducibility"
       },
       {
-        "id": "urn:visionflow:linked:trust-verification",
+        "id": "urn:ngm:class:trust-verification",
         "label": "Trust Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

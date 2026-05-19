@@ -156,80 +156,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-development",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-development",
+  "@type": "Class",
   "label": "3D Development",
+  "definition": "3D Development encompasses the modologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:software-development",
-      "vc:label": "Software Development"
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4a2d62e1a3b98ba53b3658dddb713d407a638b0b9c2ac28c8727bd3abf4b521f"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-creation",
+        "label": "Metaverse Creation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-design",
+        "label": "Virtual Environment Design"
+      },
+      {
+        "@id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4a2d62e1a3b98ba53b3658dddb713d407a638b0b9c2ac28c8727bd3abf4b521f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modeling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-graphics-standard",
-      "vc:label": "3D Graphics Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:metaverse-creation",
-      "vc:label": "Metaverse Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-environment-design",
-      "vc:label": "Virtual Environment Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-applications",
-      "vc:label": "XR Applications"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

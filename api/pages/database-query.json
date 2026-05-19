@@ -3,19 +3,18 @@
   "title": "Database Query",
   "slug": "database-query",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:database-query",
+  "classIri": "urn:ngm:class:database-query",
   "domain": "infrastructure",
-  "definition": "Database Query is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Database Query is a type of Data Management in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

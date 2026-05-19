@@ -3,19 +3,18 @@
   "title": "rb 0030 jacobian matrix",
   "slug": "rb-0030-jacobian-matrix",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0030-jacobian-matrix",
+  "classIri": "urn:ngm:class:rb-0030-jacobian-matrix",
   "domain": "robotics",
   "definition": "jacobian matrix is a robotics and autonomous systems concept and a type of Kinematics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:kinematics",
+      "id": "urn:ngm:class:kinematics",
       "label": "Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

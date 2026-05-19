@@ -1104,114 +1104,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bitcoin",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bitcoin",
+  "@type": "Class",
   "label": "Bitcoin",
+  "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
+      "@id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fe5d36310904c83e4a90a885db9b3a2ae9e314eb501fca3b7312dcb4d71a5094"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-transfer",
+        "label": "Peer-to-Peer Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fe5d36310904c83e4a90a885db9b3a2ae9e314eb501fca3b7312dcb4d71a5094@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
-  "vc:qualityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "1.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:utxo",
-      "vc:label": "UTXO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:block",
-      "vc:label": "Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mempool",
-      "vc:label": "Mempool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:script",
-      "vc:label": "Script"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction",
-      "vc:label": "Transaction"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-transfer",
-      "vc:label": "Peer-to-Peer Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monetary-sovereignty",
-      "vc:label": "Monetary Sovereignty"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sha-256",
-      "vc:label": "SHA-256"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:renewable-energy",
-      "vc:label": "Renewable Energy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:value-transfer",
-      "vc:label": "Value Transfer"
-    }
-  ]
+  "quality": 0.96,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

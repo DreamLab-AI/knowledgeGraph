@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-system-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-system-architecture",
+  "@type": "Class",
   "label": "Distributed System Architecture",
+  "definition": "An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting s of concurrent users.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:26e3a8eb1994db3f07a8d5c4a1669d476871d446114ea56be9a0a101139ea05a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting millions of concurrent users.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
-      "vc:label": "Metaverse Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

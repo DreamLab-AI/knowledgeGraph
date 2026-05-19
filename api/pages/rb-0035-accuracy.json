@@ -3,19 +3,18 @@
   "title": "rb 0035 accuracy",
   "slug": "rb-0035-accuracy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0035-accuracy",
+  "classIri": "urn:ngm:class:rb-0035-accuracy",
   "domain": "robotics",
-  "definition": "**Accuracy** - Difference between commanded and actual position",
+  "definition": "Accuracy - Difference between commanded and actual position",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot",
+      "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

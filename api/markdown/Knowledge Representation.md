@@ -124,41 +124,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:knowledge-representation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-representation",
+  "@type": "Class",
   "label": "Knowledge Representation",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "owl:Thing"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2610607495987874185a2fe856c2c73f5d12cec16ed825e0d8b0305202098b94"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2610607495987874185a2fe856c2c73f5d12cec16ed825e0d8b0305202098b94@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural symbolic integration). Modern knowledge representation combines symbolic and subsymbolic methods, enabling systems to perform logical reasoning while learning from data.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

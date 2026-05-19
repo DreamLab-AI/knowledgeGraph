@@ -216,136 +216,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-interop-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-interop-protocol",
+  "@type": "Class",
   "label": "Digital Twin Interop Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b7e59ba6ba2a35e7d3b5cec12263d5becf9b6a90d3cd370db03fd1b5d5a9ddf7"
+  "definition": "Digital Twin Interop Protocol is a spatial computing concept.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-layer",
+        "label": "Authentication Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-exchange-format",
+        "label": "Data Exchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-simulation",
+        "label": "Federated Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-state-sync",
+        "label": "Real-Time State Sync"
+      },
+      {
+        "@id": "urn:ngm:class:twin-composition",
+        "label": "Twin Composition"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-digital-twins",
+        "label": "Cross-Platform Digital Twins"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-architecture",
+        "label": "Interoperability Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b7e59ba6ba2a35e7d3b5cec12263d5becf9b6a90d3cd370db03fd1b5d5a9ddf7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Standardised API and communication framework enabling exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems across platforms. bridges-to:: [[Autonomous Robot]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-framework",
-      "vc:label": "Digital Twin Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-architecture",
-      "vc:label": "Interoperability Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:api-specification",
-      "vc:label": "API Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-layer",
-      "vc:label": "Authentication Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-exchange-format",
-      "vc:label": "Data Exchange Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-interface",
-      "vc:label": "Query Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-schema",
-      "vc:label": "Metadata Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-synchronization",
-      "vc:label": "State Synchronization"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-serialization",
-      "vc:label": "Data Serialization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schema-registry",
-      "vc:label": "Schema Registry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:federated-simulation",
-      "vc:label": "Federated Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-state-sync",
-      "vc:label": "Real-Time State Sync"
-    },
-    {
-      "@id": "urn:visionflow:linked:twin-composition",
-      "vc:label": "Twin Composition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-digital-twins",
-      "vc:label": "Cross-Platform Digital Twins"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graph-ql",
-      "vc:label": "GraphQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:mqtt",
-      "vc:label": "MQTT"
-    },
-    {
-      "@id": "urn:visionflow:linked:opc-ua",
-      "vc:label": "OPC UA"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket",
-      "vc:label": "WebSocket"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

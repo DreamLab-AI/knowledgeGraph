@@ -200,120 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:glossary-index",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:glossary-index",
+  "@type": "Class",
   "label": "Glossary Index",
+  "definition": "A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-organization-system",
-      "vc:label": "Knowledge Organization System"
+      "@id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2b6fbf11d6856368c73d552cadf989969e7b12497e0b45841446e26a132bf228"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cross-references",
+        "label": "Cross References"
+      },
+      {
+        "@id": "urn:ngm:class:synonym-mappings",
+        "label": "Synonym Mappings"
+      },
+      {
+        "@id": "urn:ngm:class:term-definitions",
+        "label": "Term Definitions"
+      },
+      {
+        "@id": "urn:ngm:class:usage-examples",
+        "label": "Usage Examples"
+      },
+      {
+        "@id": "urn:ngm:class:category-hierarchies",
+        "label": "Category Hierarchies"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:multi-language-support",
+        "label": "Multi-Language Support"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology-schema",
+        "label": "Metaverse Ontology Schema"
+      },
+      {
+        "@id": "urn:ngm:class:skos-vocabulary",
+        "label": "SKOS Vocabulary"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consistency-checking",
+        "label": "Consistency Checking"
+      },
+      {
+        "@id": "urn:ngm:class:terminology-lookup",
+        "label": "Terminology Lookup"
+      },
+      {
+        "@id": "urn:ngm:class:learning-resources",
+        "label": "Learning Resources"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:documentation-system",
+        "label": "Documentation System"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management-infrastructure",
+        "label": "Knowledge Management Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2b6fbf11d6856368c73d552cadf989969e7b12497e0b45841446e26a132bf228@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:documentation-system",
-      "vc:label": "Documentation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-management-infrastructure",
-      "vc:label": "Knowledge Management Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cross-references",
-      "vc:label": "Cross References"
-    },
-    {
-      "@id": "urn:visionflow:linked:synonym-mappings",
-      "vc:label": "Synonym Mappings"
-    },
-    {
-      "@id": "urn:visionflow:linked:term-definitions",
-      "vc:label": "Term Definitions"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-examples",
-      "vc:label": "Usage Examples"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:category-hierarchies",
-      "vc:label": "Category Hierarchies"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:multi-language-support",
-      "vc:label": "Multi-Language Support"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-ontology-schema",
-      "vc:label": "Metaverse Ontology Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:skos-vocabulary",
-      "vc:label": "SKOS Vocabulary"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consistency-checking",
-      "vc:label": "Consistency Checking"
-    },
-    {
-      "@id": "urn:visionflow:linked:terminology-lookup",
-      "vc:label": "Terminology Lookup"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-resources",
-      "vc:label": "Learning Resources"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-search",
-      "vc:label": "Semantic Search"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:semantic-relations",
-      "vc:label": "Semantic Relations"
-    },
-    {
-      "@id": "urn:visionflow:linked:thesaurus-structure",
-      "vc:label": "Thesaurus Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:controlled-vocabulary",
-      "vc:label": "Controlled Vocabulary"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

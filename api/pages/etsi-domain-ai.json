@@ -3,53 +3,62 @@
   "title": "ETSI Domain AI",
   "slug": "etsi-domain-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-ai",
+  "classIri": "urn:ngm:class:etsi-domain-ai",
   "domain": "artificial-intelligence",
   "definition": "Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
+        "id": "urn:ngm:class:etsi-domain-ai-creative-media",
         "label": "ETSI Domain AI Creative Media"
       },
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+        "id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
         "label": "ETSI Domain AI Data Mgmt"
       },
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+        "id": "urn:ngm:class:etsi-domain-ai-governance",
         "label": "ETSI Domain AI Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+        "id": "urn:ngm:class:etsi-domain-ai-human-interface",
         "label": "ETSI Domain AI Human Interface"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-service-classification",
+        "id": "urn:ngm:class:ai-service-classification",
         "label": "AI Service Classification"
       },
       {
-        "id": "urn:visionflow:linked:intelligence-layer-categorization",
+        "id": "urn:ngm:class:intelligence-layer-categorization",
         "label": "Intelligence Layer Categorization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

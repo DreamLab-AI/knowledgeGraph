@@ -164,98 +164,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-chain-messaging",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-chain-messaging",
+  "@type": "Class",
   "label": "Cross-Chain Messaging",
+  "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
+      "@id": "urn:ngm:class:interoperability-protocol",
+      "label": "Interoperability Protocol"
     },
     {
-      "@id": "urn:visionflow:linked:message-passing-system",
-      "vc:label": "Message Passing System"
+      "@id": "urn:ngm:class:message-passing-system",
+      "label": "Message Passing System"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e5fa5bdea7e59ab08c0f35631dd8257b2644c2cc017a5be155d1ecaf8fe6d439"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:handler-execution",
+        "label": "Handler Execution"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:proof-verification",
+        "label": "Proof Verification"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-proof",
+        "label": "Blockchain Proof"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:relay-network",
+        "label": "Relay Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-movement",
+        "label": "Asset Movement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-function-calls",
+        "label": "Cross-Chain Function Calls"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e5fa5bdea7e59ab08c0f35631dd8257b2644c2cc017a5be155d1ecaf8fe6d439@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:handler-execution",
-      "vc:label": "Handler Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-queue",
-      "vc:label": "Message Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-verification",
-      "vc:label": "Proof Verification"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-proof",
-      "vc:label": "Blockchain Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication",
-      "vc:label": "Message Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:relay-network",
-      "vc:label": "Relay Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-movement",
-      "vc:label": "Asset Movement"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-function-calls",
-      "vc:label": "Cross-Chain Function Calls"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-synchronisation",
-      "vc:label": "State Synchronisation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-computation",
-      "vc:label": "Decentralised Computation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

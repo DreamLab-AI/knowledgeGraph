@@ -3,19 +3,18 @@
   "title": "Root Mean Square Error",
   "slug": "root-mean-square-error",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:root-mean-square-error",
+  "classIri": "urn:ngm:class:root-mean-square-error",
   "domain": "spatial-computing",
-  "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the target variable whilst giving disproportionate weight to larger errors, making it particularly sensitive to outliers and appropriate when large prediction errors are significantly more problematic than small errors.",
+  "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the ta...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mean-absolute-error",
+      "id": "urn:ngm:class:mean-absolute-error",
       "label": "Mean Absolute Error"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

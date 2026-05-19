@@ -3,94 +3,98 @@
   "title": "Digital Goods Registry",
   "slug": "digital-goods-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-goods-registry",
+  "classIri": "urn:ngm:class:digital-goods-registry",
   "domain": "spatial-computing",
-  "definition": "Centralised or distributed system for cataloguing, tracking, and managing digital goods and virtual assets across metaverse platforms, providing authoritative records of existence, ownership, and provenance. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Goods Registry is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-catalog",
+        "id": "urn:ngm:class:asset-catalog",
         "label": "Asset Catalog"
       },
       {
-        "id": "urn:visionflow:linked:metadata-store",
+        "id": "urn:ngm:class:metadata-store",
         "label": "Metadata Store"
       },
       {
-        "id": "urn:visionflow:linked:ownership-records",
+        "id": "urn:ngm:class:ownership-records",
         "label": "Ownership Records"
       },
       {
-        "id": "urn:visionflow:linked:provenance-tracker",
+        "id": "urn:ngm:class:provenance-tracker",
         "label": "Provenance Tracker"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:search-index",
+        "id": "urn:ngm:class:search-index",
         "label": "Search Index"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:authentication-service",
+        "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:data-storage",
+        "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-provider",
+        "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-discovery",
+        "id": "urn:ngm:class:asset-discovery",
         "label": "Asset Discovery"
       },
       {
-        "id": "urn:visionflow:linked:ownership-transfer",
+        "id": "urn:ngm:class:ownership-transfer",
         "label": "Ownership Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:marketplace-integration",
+        "id": "urn:ngm:class:marketplace-integration",
         "label": "Marketplace Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-verification",
+        "id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

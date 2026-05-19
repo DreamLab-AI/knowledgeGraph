@@ -216,134 +216,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:content-moderation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:content-moderation",
+  "@type": "Class",
   "label": "Content Moderation",
+  "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a9913f9ef85e5399ec3870d193f830e643b7a6daee3b5ba3bddb35b7e2d880bc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:appeal-process",
+        "label": "Appeal Process"
+      },
+      {
+        "@id": "urn:ngm:class:automated-filtering",
+        "label": "Automated Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:content-classification-system",
+        "label": "Content Classification System"
+      },
+      {
+        "@id": "urn:ngm:class:human-review-workflow",
+        "label": "Human Review Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement-engine",
+        "label": "Policy Enforcement Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-analysis-tools",
+        "label": "Content Analysis Tools"
+      },
+      {
+        "@id": "urn:ngm:class:moderation-policy",
+        "label": "Moderation Policy"
+      },
+      {
+        "@id": "urn:ngm:class:reviewer-training-program",
+        "label": "Reviewer Training Program"
+      },
+      {
+        "@id": "urn:ngm:class:community-standards",
+        "label": "Community Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-guidelines-enforcement",
+        "label": "Community Guidelines Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:harmful-content-prevention",
+        "label": "Harmful Content Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:safe-user-experience",
+        "label": "Safe User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:platform-governance-system",
+        "label": "Platform Governance System"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety-infrastructure",
+        "label": "Trust and Safety Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a9913f9ef85e5399ec3870d193f830e643b7a6daee3b5ba3bddb35b7e2d880bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:platform-governance-system",
-      "vc:label": "Platform Governance System"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-and-safety-infrastructure",
-      "vc:label": "Trust and Safety Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:appeal-process",
-      "vc:label": "Appeal Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-filtering",
-      "vc:label": "Automated Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-classification-system",
-      "vc:label": "Content Classification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-review-workflow",
-      "vc:label": "Human Review Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-enforcement-engine",
-      "vc:label": "Policy Enforcement Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-analysis-tools",
-      "vc:label": "Content Analysis Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:moderation-policy",
-      "vc:label": "Moderation Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:reviewer-training-program",
-      "vc:label": "Reviewer Training Program"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-standards",
-      "vc:label": "Community Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-guidelines-enforcement",
-      "vc:label": "Community Guidelines Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:harmful-content-prevention",
-      "vc:label": "Harmful Content Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-user-experience",
-      "vc:label": "Safe User Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:decision-framework",
-      "vc:label": "Decision Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-moderators",
-      "vc:label": "Human Moderators"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-system",
-      "vc:label": "Reporting System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-models",
-      "vc:label": "Machine Learning Models"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

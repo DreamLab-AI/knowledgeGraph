@@ -3,32 +3,36 @@
   "title": "Hardware Acceleration",
   "slug": "hardware-acceleration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hardware-acceleration",
+  "classIri": "urn:ngm:class:hardware-acceleration",
   "domain": "spatial-computing",
   "definition": "The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:real-time-vr-performance",
+        "id": "urn:ngm:class:real-time-vr-performance",
         "label": "Real-Time VR Performance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

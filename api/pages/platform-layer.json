@@ -3,78 +3,87 @@
   "title": "Platform Layer",
   "slug": "platform-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:platform-layer",
+  "classIri": "urn:ngm:class:platform-layer",
   "domain": "spatial-computing",
   "definition": "Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-service",
+        "id": "urn:ngm:class:asset-service",
         "label": "Asset Service"
       },
       {
-        "id": "urn:visionflow:linked:identity-service",
+        "id": "urn:ngm:class:identity-service",
         "label": "Identity Service"
       },
       {
-        "id": "urn:visionflow:linked:persistence-service",
+        "id": "urn:ngm:class:persistence-service",
         "label": "Persistence Service"
       },
       {
-        "id": "urn:visionflow:linked:world-state-service",
+        "id": "urn:ngm:class:world-state-service",
         "label": "World State Service"
       },
       {
-        "id": "urn:visionflow:owl:class:platform-middleware",
+        "id": "urn:ngm:class:platform-middleware",
         "label": "Platform Middleware"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:authentication-system",
+        "id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
-        "id": "urn:visionflow:owl:class:database-system",
+        "id": "urn:ngm:class:database-system",
         "label": "Database System"
       },
       {
-        "id": "urn:visionflow:owl:class:networking-layer",
+        "id": "urn:ngm:class:networking-layer",
         "label": "Networking Layer"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:application-development",
+        "id": "urn:ngm:class:application-development",
         "label": "Application Development"
       },
       {
-        "id": "urn:visionflow:linked:asset-portability",
+        "id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
       },
       {
-        "id": "urn:visionflow:linked:cross-world-interoperability",
+        "id": "urn:ngm:class:cross-world-interoperability",
         "label": "Cross-World Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:user-identity-management",
+        "id": "urn:ngm:class:user-identity-management",
         "label": "User Identity Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

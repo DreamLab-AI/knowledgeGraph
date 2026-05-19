@@ -3,32 +3,36 @@
   "title": "Spatial User Interfaces",
   "slug": "spatial-user-interfaces",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-user-interfaces",
+  "classIri": "urn:ngm:class:spatial-user-interfaces",
   "domain": "spatial-computing",
-  "definition": "Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.",
+  "definition": "Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware mods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6D...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-interaction",
+        "id": "urn:ngm:class:immersive-interaction",
         "label": "Immersive Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

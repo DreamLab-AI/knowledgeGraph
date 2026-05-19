@@ -3,62 +3,79 @@
   "title": "Closed-Loop Control",
   "slug": "closed-loop-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:closed-loop-control",
+  "classIri": "urn:ngm:class:closed-loop-control",
   "domain": "robotics",
   "definition": "A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-system",
+      "id": "urn:ngm:class:control-system",
       "label": "Control System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.98,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
-        "id": "urn:visionflow:linked:controller",
+        "id": "urn:ngm:class:controller",
         "label": "Controller"
       },
       {
-        "id": "urn:visionflow:linked:sensor-system",
+        "id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
       },
       {
-        "id": "urn:visionflow:owl:class:feedback-mechanism",
+        "id": "urn:ngm:class:feedback-mechanism",
         "label": "Feedback Mechanism"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
         "label": "RB-1007-trajectory-generation"
       },
       {
-        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "id": "urn:ngm:class:rb-1013-localization",
         "label": "RB-1013-localization"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:pid-control",
+        "id": "urn:ngm:class:pid-control",
         "label": "PID Control"
       },
       {
-        "id": "urn:visionflow:linked:rb-1004-adaptive-control",
+        "id": "urn:ngm:class:rb-1004-adaptive-control",
         "label": "RB-1004-adaptive-control"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

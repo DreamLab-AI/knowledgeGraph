@@ -3,19 +3,18 @@
   "title": "Task Specific Head",
   "slug": "task-specific-head",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:task-specific-head",
+  "classIri": "urn:ngm:class:task-specific-head",
   "domain": "spatial-computing",
   "definition": "A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

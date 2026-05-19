@@ -3,19 +3,18 @@
   "title": "3D Content Generation",
   "slug": "3-d-content-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-content-generation",
+  "classIri": "urn:ngm:class:3-d-content-generation",
   "domain": "artificial-intelligence",
-  "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.",
+  "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven mods.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:generative-ai",
+      "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

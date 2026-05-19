@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-interaction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-interaction",
+  "@type": "Class",
   "label": "Spatial Interaction",
+  "definition": "The design and implementation of user input mods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human Computer Interaction"
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a59e2e108f9c85d9603c78d206093861ae69d0a01d893fc2b6da9601d2b0b0f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-user-experience",
+        "label": "Immersive User Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a59e2e108f9c85d9603c78d206093861ae69d0a01d893fc2b6da9601d2b0b0f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The design and implementation of user input methods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-user-experience",
-      "vc:label": "Immersive User Experience"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

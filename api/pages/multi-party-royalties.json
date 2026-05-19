@@ -3,32 +3,36 @@
   "title": "Multi Party Royalties",
   "slug": "multi-party-royalties",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:multi-party-royalties",
+  "classIri": "urn:ngm:class:multi-party-royalties",
   "domain": "spatial-computing",
-  "definition": "A blockchain-based revenue distribution mechanism that uses smart contracts to automatically split and distribute royalty payments among multiple stakeholders including creators, collaborators, developers, and brands based on predefined ownership percentages.",
+  "definition": "A blockchain-based distribution mechanism that uses smart contracts to automatically split and distribute royalty payments among multiple stakeholders including creators, collaborators, developers, and brands based on predefined ownership percentages.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:revenue-sharing",
+      "id": "urn:ngm:class:revenue-sharing",
       "label": "Revenue Sharing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:creator-economy",
+        "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

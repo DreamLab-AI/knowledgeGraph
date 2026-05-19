@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:environmental-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:environmental-standards",
+  "@type": "Class",
   "label": "Environmental Standards",
+  "definition": "Regulatory frameworks and technical specifications governing the environmental sustainability of metaverse infrastructure, including energy efficiency requirements for data centres, carbon footprint disclosure mandates, and e-waste management guidelines for XR hardware.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:456134548913486400c5849cb5dde7bf875407ed475828608fe7ef917772b48b"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:456134548913486400c5849cb5dde7bf875407ed475828608fe7ef917772b48b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Regulatory frameworks and technical specifications governing the environmental sustainability of metaverse infrastructure, including energy efficiency requirements for data centres, carbon footprint disclosure mandates, and e-waste management guidelines for XR hardware.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

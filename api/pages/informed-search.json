@@ -3,19 +3,18 @@
   "title": "Informed Search",
   "slug": "informed-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:informed-search",
+  "classIri": "urn:ngm:class:informed-search",
   "domain": "artificial-intelligence",
-  "definition": "Informed Search is a concept within the ai domain. Further enrichment pending.",
+  "definition": "Informed Search is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

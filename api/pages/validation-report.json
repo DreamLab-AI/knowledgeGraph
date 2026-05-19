@@ -3,19 +3,18 @@
   "title": "VALIDATION_REPORT",
   "slug": "validation-report",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:validation-report",
+  "classIri": "urn:ngm:class:validation-report",
   "domain": "spatial-computing",
-  "definition": "A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems. Validation reports document conformance to standards, identify inconsistencies, and provide recommendations for [[QualityAssurance|quality improvements]].",
+  "definition": "A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

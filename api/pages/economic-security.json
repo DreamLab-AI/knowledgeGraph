@@ -3,31 +3,36 @@
   "title": "Economic Security",
   "slug": "economic-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:economic-security",
+  "classIri": "urn:ngm:class:economic-security",
   "domain": "blockchain",
   "definition": "Cost of attack vs reward within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "id": "urn:ngm:class:economic-mechanism",
       "label": "EconomicMechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

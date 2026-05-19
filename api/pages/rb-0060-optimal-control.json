@@ -3,19 +3,18 @@
   "title": "rb 0060 optimal control",
   "slug": "rb-0060-optimal-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0060-optimal-control",
+  "classIri": "urn:ngm:class:rb-0060-optimal-control",
   "domain": "robotics",
   "definition": "optimal control is a robotics and autonomous systems concept and a type of Control Theory.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-theory",
+      "id": "urn:ngm:class:control-theory",
       "label": "Control Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "SLAM",
   "slug": "slam",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:slam",
+  "classIri": "urn:ngm:class:slam",
   "domain": "spatial-computing",
-  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map construction]] in real-time. Essential for [[AutonomousNavigation|autonomous navigation]], [[AugmentedReality|AR/VR systems]], and [[AutonomousVehicles|autonomous vehicles]], SLAM processes sensor data from [[LiDAR]], [[RGBDCamera|RGB-D cameras]], and [[VisualOdometry|visual odometry]] to estimate robot pose and build spatial representations. Modern implementations integrate [[DeepLearning|neural networks]] for improved robustness and performance in dynamic environments.",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-mapping",
+      "id": "urn:ngm:class:spatial-mapping",
       "label": "Spatial Mapping"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

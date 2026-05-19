@@ -156,60 +156,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:video-conferencing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:video-conferencing",
+  "@type": "Class",
   "label": "Video Conferencing",
+  "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tc-0010-synchronous-collaboration",
-      "vc:label": "TC-0010-Synchronous-Collaboration"
+      "@id": "urn:ngm:class:tc-0010-synchronous-collaboration",
+      "label": "TC-0010-Synchronous-Collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-communication-protocols",
+        "label": "Real-Time Communication Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:face-to-face-interaction",
+        "label": "Face-to-Face Interaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:tele-150-webrtc",
+        "label": "TELE-150-webrtc"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7fbb2c7706a4ba4c7006b16cd45bee12dbe9c2119f00b3e9f68152c44c04a562@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:real-time-communication-protocols",
-      "vc:label": "Real-Time Communication Protocols"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:face-to-face-interaction",
-      "vc:label": "Face-to-Face Interaction"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:tele-150-webrtc",
-      "vc:label": "TELE-150-webrtc"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

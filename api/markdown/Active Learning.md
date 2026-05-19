@@ -328,178 +328,131 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:active-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:active-learning",
+  "@type": "Class",
   "label": "Active Learning",
+  "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident pr...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-efficient-learning",
-      "vc:label": "Data-Efficient Learning"
+      "@id": "urn:ngm:class:data-efficient-learning",
+      "label": "Data-Efficient Learning"
     },
     {
-      "@id": "urn:visionflow:owl:class:interactive-learning",
-      "vc:label": "Interactive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "vc:label": "Human-in-the-Loop Learning"
+      "@id": "urn:ngm:class:interactive-learning",
+      "label": "Interactive Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f7bc70d86543bf99fe83fc9cdc6633fafbaa0bd5a87c64a84f6cb34812641b96"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-measure",
+        "label": "Diversity Measure"
+      },
+      {
+        "@id": "urn:ngm:class:label-budget",
+        "label": "Label Budget"
+      },
+      {
+        "@id": "urn:ngm:class:query-strategy",
+        "label": "Query Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:stopping-criterion",
+        "label": "Stopping Criterion"
+      },
+      {
+        "@id": "urn:ngm:class:unlabeled-data-pool",
+        "label": "Unlabeled Data Pool"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:base-learner",
+        "label": "Base Learner"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:human-oracle",
+        "label": "Human Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:query-selection-algorithm",
+        "label": "Query Selection Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:unlabeled-data",
+        "label": "Unlabeled Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cost-effective-annotation",
+        "label": "Cost-Effective Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:expert-knowledge-elicitation",
+        "label": "Expert Knowledge Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-model-development",
+        "label": "Rapid Model Development"
+      },
+      {
+        "@id": "urn:ngm:class:sample-complexity-reduction",
+        "label": "Sample Complexity Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:data-efficient-learning",
+        "label": "Data-Efficient Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:density-weighted-methods",
+        "label": "Density-Weighted Methods"
+      },
+      {
+        "@id": "urn:ngm:class:expected-error-reduction",
+        "label": "Expected Error Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:expected-model-change",
+        "label": "Expected Model Change"
+      },
+      {
+        "@id": "urn:ngm:class:query-by-committee",
+        "label": "Query-by-Committee"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-sampling",
+        "label": "Uncertainty Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7bc70d86543bf99fe83fc9cdc6633fafbaa0bd5a87c64a84f6cb34812641b96@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident predictions, query-by-committee maximizing ensemble disagreement, expected model change targeting highest gradient impact, expected error reduction minimizing generalization loss, variance reduction lowering prediction uncertainty, density-weighted methods balancing informativeness with representativeness to avoid outliers) applied across learning scenarios (pool-based batch selection from large unlabeled repositories 10K-1M+ examples prevalent in computer vision/NLP, stream-based sequential binary accept/reject decisions for real-time applications, query synthesis generating artificial examples rarely used due to unnaturalness), achieving 50-99% labeling cost reduction by requiring 10-100× less labeled data for equivalent performance compared to passive random sampling particularly critical in domains with expensive expert annotation (medical imaging radiologists $200-$500/hour annotating 10",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:acquisition-function",
-      "vc:label": "Acquisition Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:diversity-measure",
-      "vc:label": "Diversity Measure"
-    },
-    {
-      "@id": "urn:visionflow:linked:label-budget",
-      "vc:label": "Label Budget"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-strategy",
-      "vc:label": "Query Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:stopping-criterion",
-      "vc:label": "Stopping Criterion"
-    },
-    {
-      "@id": "urn:visionflow:linked:unlabeled-data-pool",
-      "vc:label": "Unlabeled Data Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-oracle",
-      "vc:label": "Blockchain Oracle"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:base-learner",
-      "vc:label": "Base Learner"
-    },
-    {
-      "@id": "urn:visionflow:linked:evaluation-metric",
-      "vc:label": "Evaluation Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-oracle",
-      "vc:label": "Human Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-selection-algorithm",
-      "vc:label": "Query Selection Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:unlabeled-data",
-      "vc:label": "Unlabeled Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cost-effective-annotation",
-      "vc:label": "Cost-Effective Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-knowledge-elicitation",
-      "vc:label": "Expert Knowledge Elicitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-model-development",
-      "vc:label": "Rapid Model Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:sample-complexity-reduction",
-      "vc:label": "Sample Complexity Reduction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-efficient-learning",
-      "vc:label": "Data-Efficient Learning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:density-weighted-methods",
-      "vc:label": "Density-Weighted Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:expected-error-reduction",
-      "vc:label": "Expected Error Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:expected-model-change",
-      "vc:label": "Expected Model Change"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-by-committee",
-      "vc:label": "Query-by-Committee"
-    },
-    {
-      "@id": "urn:visionflow:linked:uncertainty-sampling",
-      "vc:label": "Uncertainty Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:variance-reduction",
-      "vc:label": "Variance Reduction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:pac-learning-theory",
-      "vc:label": "PAC Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:uncertainty-quantification",
-      "vc:label": "Uncertainty Quantification"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-space-learning",
-      "vc:label": "Version Space Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

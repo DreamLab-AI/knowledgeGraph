@@ -3,19 +3,18 @@
   "title": "Data Augmentation Strategies",
   "slug": "data-augmentation-strategies",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-augmentation-strategies",
+  "classIri": "urn:ngm:class:data-augmentation-strategies",
   "domain": "artificial-intelligence",
   "definition": "Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

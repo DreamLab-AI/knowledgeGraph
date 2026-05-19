@@ -3,19 +3,18 @@
   "title": "Ontology Definition",
   "slug": "ontology-definition",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ontology-definition",
+  "classIri": "urn:ngm:class:ontology-definition",
   "domain": "infrastructure",
-  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms\u2014foundational for governance, identity, and asset management standardisation.",
+  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms\u2014fou...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -192,118 +192,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-integration-interface",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-integration-interface",
+  "@type": "Class",
   "label": "Data Integration Interface",
+  "definition": "A standardized set of protocols, rules, and formats for unifying and mediating data flows across heterogeneous platforms, enabling seamless data exchange and interoperability.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e8f8e032dd0ab4679c7a43527aa0916adebbe83b663564cab99baf89153bc228"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-adapter",
+        "label": "Data Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-translator",
+        "label": "Protocol Translator"
+      },
+      {
+        "@id": "urn:ngm:class:schema-mapper",
+        "label": "Schema Mapper"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-data-exchange",
+        "label": "Cross-Platform Data Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronization",
+        "label": "Real-Time Synchronization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e8f8e032dd0ab4679c7a43527aa0916adebbe83b663564cab99baf89153bc228@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A standardized set of protocols, rules, and formats for unifying and mediating data flows across heterogeneous platforms, enabling seamless data exchange and interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-framework",
-      "vc:label": "Interoperability Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-adapter",
-      "vc:label": "Data Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-broker",
-      "vc:label": "Message Broker"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-translator",
-      "vc:label": "Protocol Translator"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-mapper",
-      "vc:label": "Schema Mapper"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-schema",
-      "vc:label": "Data Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-data-exchange",
-      "vc:label": "Cross-Platform Data Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-federation",
-      "vc:label": "Data Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
-      "vc:label": "Real-Time Synchronization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:service-discovery",
-      "vc:label": "Service Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-registry",
-      "vc:label": "Metadata Registry"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

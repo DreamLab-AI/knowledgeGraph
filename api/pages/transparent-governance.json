@@ -3,19 +3,18 @@
   "title": "Transparent Governance",
   "slug": "transparent-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparent-governance",
+  "classIri": "urn:ngm:class:transparent-governance",
   "domain": "artificial-intelligence",
   "definition": "A governance model where rules, processes, decisions, and their enforcement are openly visible, verifiable, and accessible to all stakeholders, typically implemented through blockchain technology, public smart contracts, and open data practices.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance",
+      "id": "urn:ngm:class:governance",
       "label": "Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

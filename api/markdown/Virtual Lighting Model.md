@@ -200,124 +200,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-lighting-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-lighting-model",
+  "@type": "Class",
   "label": "Virtual Lighting Model",
+  "definition": "Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
+      "@id": "urn:ngm:class:photorealistic-rendering",
+      "label": "Photorealistic Rendering"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d57ba634e9ec31b4e4ae0a24558da0187471682cd8a571a3609a10366248cd5b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:brdf-function",
+        "label": "BRDF Function"
+      },
+      {
+        "@id": "urn:ngm:class:light-source-model",
+        "label": "Light Source Model"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-computation",
+        "label": "Shadow Computation"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:material-properties",
+        "label": "Material Properties"
+      },
+      {
+        "@id": "urn:ngm:class:shader-program",
+        "label": "Shader Program"
+      },
+      {
+        "@id": "urn:ngm:class:surface-normals",
+        "label": "Surface Normals"
+      },
+      {
+        "@id": "urn:ngm:class:light-parameters",
+        "label": "Light Parameters"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:mood-and-atmosphere",
+        "label": "Mood and Atmosphere"
+      },
+      {
+        "@id": "urn:ngm:class:realistic-illumination",
+        "label": "Realistic Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:shading-system",
+        "label": "Shading System"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d57ba634e9ec31b4e4ae0a24558da0187471682cd8a571a3609a10366248cd5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:shading-system",
-      "vc:label": "Shading System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ambient-occlusion",
-      "vc:label": "Ambient Occlusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:brdf-function",
-      "vc:label": "BRDF Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:light-source-model",
-      "vc:label": "Light Source Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:shadow-computation",
-      "vc:label": "Shadow Computation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-illumination",
-      "vc:label": "Global Illumination"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:material-properties",
-      "vc:label": "Material Properties"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-program",
-      "vc:label": "Shader Program"
-    },
-    {
-      "@id": "urn:visionflow:linked:surface-normals",
-      "vc:label": "Surface Normals"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:light-parameters",
-      "vc:label": "Light Parameters"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-lighting",
-      "vc:label": "Dynamic Lighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:mood-and-atmosphere",
-      "vc:label": "Mood and Atmosphere"
-    },
-    {
-      "@id": "urn:visionflow:linked:realistic-illumination",
-      "vc:label": "Realistic Illumination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing-unit",
-      "vc:label": "Graphics Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rasterization",
-      "vc:label": "Rasterization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ray-tracing",
-      "vc:label": "Ray Tracing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

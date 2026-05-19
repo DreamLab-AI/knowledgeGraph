@@ -3,19 +3,18 @@
   "title": "Human tracking and SLAM capture",
   "slug": "human-tracking-and-slam-capture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+  "classIri": "urn:ngm:class:human-tracking-and-slam-capture",
   "domain": "robotics",
   "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:sensor-technology",
+      "id": "urn:ngm:class:sensor-technology",
       "label": "Sensor Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

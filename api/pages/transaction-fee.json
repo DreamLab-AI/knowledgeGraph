@@ -3,23 +3,22 @@
   "title": "Transaction Fee",
   "slug": "transaction-fee",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transaction-fee",
+  "classIri": "urn:ngm:class:transaction-fee",
   "domain": "blockchain",
   "definition": "Payment for transaction processing within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
-      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "id": "urn:ngm:class:economic-mechanism",
       "label": "EconomicMechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

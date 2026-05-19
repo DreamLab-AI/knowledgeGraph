@@ -220,41 +220,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-avatar",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-avatar",
+  "@type": "Class",
   "label": "Digital Avatar",
+  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]].",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-representation",
-      "vc:label": "Virtual Representation"
+      "@id": "urn:ngm:class:virtual-representation",
+      "label": "Virtual Representation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ac1af76c70314839d95bd7fdaaa10caed31f49600a2247b81632181bd9d70d18@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]]. Digital avatars enable social presence, facilitate user interaction, and serve as persistent identity anchors within [[Metaverse]] platforms and immersive applications. bridges-to:: [[DID Nostr Identity]]",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,139 +3,231 @@
   "title": "Microsoft Copilot",
   "slug": "microsoft-copilot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:microsoft-copilot",
+  "classIri": "urn:ngm:class:microsoft-copilot",
   "domain": "artificial-intelligence",
-  "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's $13 billion cumulative investment in OpenAI (initial $1 billion in 2019, subsequent rounds 2021-2023), deployed across five principal product lines: (1) GitHub Copilot \u2014 a code-completion and agentic software development assistant launched in technical preview June 2021 and GA June 2022, originally powered by OpenAI Codex (a GPT-3 variant fine-tuned on 159 GB of public GitHub code), promoted to GPT-4o as default completion model from May 2024, and expanded by late 2024 into a multi-model marketplace supporting Anthropic Claude 3.5/4 Sonnet, Google Gemini 2.0 Flash/2.5 Pro, OpenAI o3, and GPT-4.1, with 4.7 million paid subscribers, ~77,000 enterprise customers by January 2026 and deployment at approximately 90% of Fortune 100 companies; (2) Microsoft 365 Copilot \u2014 an LLM assistant integrated throughout Word, Excel, PowerPoint, Outlook, Teams, and OneNote, generally available from November 2023 at $30/user/month annual commitment, bundled into M365 Personal/Family from January 2025, reachin",
+  "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's cumulative investment in OpenAI (initial subsequent rounds 2021-2023), deployed across five principa...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:code-generation",
+      "id": "urn:ngm:class:code-generation",
       "label": "Code Generation"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-adoption",
+      "id": "urn:ngm:class:ai-adoption",
       "label": "AI Adoption"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:azure-open-ai-service",
+        "id": "urn:ngm:class:azure-open-ai-service",
         "label": "Azure OpenAI Service"
       },
       {
-        "id": "urn:visionflow:linked:copilot-pc",
+        "id": "urn:ngm:class:copilot-pc",
         "label": "Copilot+ PC"
       },
       {
-        "id": "urn:visionflow:linked:copilot-studio",
+        "id": "urn:ngm:class:copilot-studio",
         "label": "Copilot Studio"
       },
       {
-        "id": "urn:visionflow:linked:git-hub-copilot",
+        "id": "urn:ngm:class:git-hub-copilot",
         "label": "GitHub Copilot"
       },
       {
-        "id": "urn:visionflow:linked:m365-copilot",
+        "id": "urn:ngm:class:m365-copilot",
         "label": "M365 Copilot"
       },
       {
-        "id": "urn:visionflow:linked:security-copilot",
+        "id": "urn:ngm:class:security-copilot",
         "label": "Security Copilot"
       },
       {
-        "id": "urn:visionflow:linked:windows-recall",
+        "id": "urn:ngm:class:windows-recall",
         "label": "Windows Recall"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:azure-open-ai-service",
+        "id": "urn:ngm:class:azure-open-ai-service",
         "label": "Azure OpenAI Service"
       },
       {
-        "id": "urn:visionflow:linked:git-hub",
+        "id": "urn:ngm:class:git-hub",
         "label": "GitHub"
       },
       {
-        "id": "urn:visionflow:linked:gpt-4o",
+        "id": "urn:ngm:class:gpt-4o",
         "label": "GPT-4o"
       },
       {
-        "id": "urn:visionflow:linked:microsoft-365",
+        "id": "urn:ngm:class:microsoft-365",
         "label": "Microsoft 365"
       },
       {
-        "id": "urn:visionflow:linked:npu-hardware",
+        "id": "urn:ngm:class:npu-hardware",
         "label": "NPU Hardware"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:productivity-automation",
+        "id": "urn:ngm:class:productivity-automation",
         "label": "Productivity Automation"
       },
       {
-        "id": "urn:visionflow:linked:threat-detection",
+        "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-adoption",
+        "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "id": "urn:ngm:class:cli-multi-agent-systems",
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:multi-agent-systems",
+        "id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval Augmented Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:gpts-and-custom-assistants",
+        "label": "GPTs and Custom Assistants"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-responsible-ai-standard",
+        "label": "Microsoft Responsible AI Standard"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
+    ]
   },
   "wikilinks": [
     {

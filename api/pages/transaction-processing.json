@@ -3,19 +3,18 @@
   "title": "Transaction Processing",
   "slug": "transaction-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transaction-processing",
+  "classIri": "urn:ngm:class:transaction-processing",
   "domain": "infrastructure",
   "definition": "Transaction Processing is a technology infrastructure concept and a type of Blockchain Transaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-transaction",
+      "id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

@@ -3,53 +3,57 @@
   "title": "Calculation Parameters",
   "slug": "calculation-parameters",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:calculation-parameters",
+  "classIri": "urn:ngm:class:calculation-parameters",
   "domain": "spatial-computing",
   "definition": "Configurable variables and settings that control the behavior, accuracy, and performance of computational simulations and models, including solver options, convergence criteria, time steps, and optimization constraints that fine-tune simulation outputs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:configuration-setting",
+      "id": "urn:ngm:class:configuration-setting",
       "label": "Configuration Setting"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:parameter-definition",
+        "id": "urn:ngm:class:parameter-definition",
         "label": "Parameter Definition"
       },
       {
-        "id": "urn:visionflow:linked:sensitivity-analysis",
+        "id": "urn:ngm:class:sensitivity-analysis",
         "label": "Sensitivity Analysis"
       },
       {
-        "id": "urn:visionflow:linked:validation-rules",
+        "id": "urn:ngm:class:validation-rules",
         "label": "Validation Rules"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:model-calibration",
+        "id": "urn:ngm:class:model-calibration",
         "label": "Model Calibration"
       },
       {
-        "id": "urn:visionflow:linked:performance-tuning",
+        "id": "urn:ngm:class:performance-tuning",
         "label": "Performance Tuning"
       },
       {
-        "id": "urn:visionflow:linked:simulation-control",
+        "id": "urn:ngm:class:simulation-control",
         "label": "Simulation Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

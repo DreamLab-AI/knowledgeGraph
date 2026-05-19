@@ -3,111 +3,124 @@
   "title": "WebRTC",
   "slug": "web-rtc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:web-rtc",
+  "classIri": "urn:ngm:class:web-rtc",
   "domain": "distributed-collaboration",
-  "definition": "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (`getUserMedia`, `RTCPeerConnection`, `RTCDataChannel`), combining [[ICE Protocol|Interactive Connectivity Establishment]] for NAT traversal, [[DTLS-SRTP]] for mandatory end-to-end encryption, and adaptive codec negotiation (VP8/VP9/AV1, Opus) to deliver sub-100 ms real-time communication without plugins, forming the foundational transport layer for modern telecollaboration platforms, [[OpenXR]] collaborative XR experiences, and agent-to-agent audio-visual communication channels within [[VisionClaw Agentic Container]] deployments.",
+  "definition": "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (`getUserMedia`, `RTCPeerConnection`, `RTCDataChannel`), combining [[ICE...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:peer-to-peer-network-protocol",
+      "id": "urn:ngm:class:peer-to-peer-network-protocol",
       "label": "Peer-to-Peer Network Protocol"
     },
     {
-      "id": "urn:visionflow:linked:real-time-communication-protocol",
+      "id": "urn:ngm:class:real-time-communication-protocol",
       "label": "Real-Time Communication Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.88,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:get-user-media-api",
+        "id": "urn:ngm:class:get-user-media-api",
         "label": "getUserMedia API"
       },
       {
-        "id": "urn:visionflow:linked:ice-protocol",
+        "id": "urn:ngm:class:ice-protocol",
         "label": "ICE Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rtcdata-channel",
+        "id": "urn:ngm:class:rtcdata-channel",
         "label": "RTCDataChannel"
       },
       {
-        "id": "urn:visionflow:linked:rtcpeer-connection",
+        "id": "urn:ngm:class:rtcpeer-connection",
         "label": "RTCPeerConnection"
       },
       {
-        "id": "urn:visionflow:linked:sdp-offer-answer",
+        "id": "urn:ngm:class:sdp-offer-answer",
         "label": "SDP Offer-Answer"
       },
       {
-        "id": "urn:visionflow:linked:stun-server",
+        "id": "urn:ngm:class:stun-server",
         "label": "STUN Server"
       },
       {
-        "id": "urn:visionflow:linked:turn-server",
+        "id": "urn:ngm:class:turn-server",
         "label": "TURN Server"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:dtls-srtp-encryption",
+        "id": "urn:ngm:class:dtls-srtp-encryption",
         "label": "DTLS-SRTP Encryption"
       },
       {
-        "id": "urn:visionflow:linked:ice-protocol",
+        "id": "urn:ngm:class:ice-protocol",
         "label": "ICE Protocol"
       },
       {
-        "id": "urn:visionflow:linked:sdp-session-description",
+        "id": "urn:ngm:class:sdp-session-description",
         "label": "SDP Session Description"
       },
       {
-        "id": "urn:visionflow:linked:web-socket-signalling",
+        "id": "urn:ngm:class:web-socket-signalling",
         "label": "WebSocket Signalling"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-xr",
+        "id": "urn:ngm:class:collaborative-xr",
         "label": "Collaborative XR"
       },
       {
-        "id": "urn:visionflow:linked:peer-to-peer-video-conferencing",
+        "id": "urn:ngm:class:peer-to-peer-video-conferencing",
         "label": "Peer-to-Peer Video Conferencing"
       },
       {
-        "id": "urn:visionflow:linked:real-time-data-transfer",
+        "id": "urn:ngm:class:real-time-data-transfer",
         "label": "Real-Time Data Transfer"
       },
       {
-        "id": "urn:visionflow:linked:zero-install-communication",
+        "id": "urn:ngm:class:zero-install-communication",
         "label": "Zero-Install Communication"
       },
       {
-        "id": "urn:visionflow:owl:class:screen-sharing",
+        "id": "urn:ngm:class:screen-sharing",
         "label": "Screen Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:dtls-srtp-rfc-5764",
+        "id": "urn:ngm:class:dtls-srtp-rfc-5764",
         "label": "DTLS-SRTP RFC 5764"
       },
       {
-        "id": "urn:visionflow:linked:ietf-rtcweb-standards",
+        "id": "urn:ngm:class:ietf-rtcweb-standards",
         "label": "IETF RTCWEB Standards"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-web-rtc-1-0-specification",
+        "id": "urn:ngm:class:w3-c-web-rtc-1-0-specification",
         "label": "W3C WebRTC 1.0 Specification"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecollaboration-stack",
+        "label": "Telecollaboration Stack"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing-platform",
+        "label": "Video Conferencing Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Standards Conformance Testing",
   "slug": "standards-conformance-testing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:standards-conformance-testing",
+  "classIri": "urn:ngm:class:standards-conformance-testing",
   "domain": "spatial-computing",
-  "definition": "Testing or verification activities that determine whether a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.",
+  "definition": "Testing or verification activities that determine wher a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0063-sliding-mode-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0063-sliding-mode-control",
+  "@type": "Class",
   "label": "rb 0063 sliding mode control",
+  "definition": "sliding mode control is a robotics and autonomous systems concept and a type of Control Theory.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:24610823c52aaf970deb69dc8b13dc5587e4c44940560e60a35f147c4d30118b"
-  },
-  "vc:inferenceRule": "R3SemanticCategoryInference",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:24610823c52aaf970deb69dc8b13dc5587e4c44940560e60a35f147c4d30118b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "sliding mode control is a robotics and autonomous systems concept and a type of Control Theory."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R3SemanticCategoryInference"
+  }
 }
 ```
 

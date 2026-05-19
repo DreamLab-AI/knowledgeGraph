@@ -184,92 +184,77 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-network",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-network",
+  "@type": "Class",
   "label": "Edge Network",
+  "definition": "Distributed set of computing nodes providing local processing close to users to improve performance, reduce latency, and optimize bandwidth for immersive applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ba7da9030d6b367f7a284c0060ead343a657f481aac30c288b28a2acb566e79a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:load-distribution-service",
+        "label": "Load Distribution Service"
+      },
+      {
+        "@id": "urn:ngm:class:network-management-system",
+        "label": "Network Management System"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:connectivity-fabric",
+        "label": "Connectivity Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-processing",
+        "label": "Distributed Processing"
+      },
+      {
+        "@id": "urn:ngm:class:latency-reduction",
+        "label": "Latency Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:regional-compute",
+        "label": "Regional Compute"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ba7da9030d6b367f7a284c0060ead343a657f481aac30c288b28a2acb566e79a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Distributed set of computing nodes providing local processing close to users to improve performance, reduce latency, and optimize bandwidth for immersive applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:load-distribution-service",
-      "vc:label": "Load Distribution Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-management-system",
-      "vc:label": "Network Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:orchestration-layer",
-      "vc:label": "Orchestration Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing-node",
-      "vc:label": "Edge Computing Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:connectivity-fabric",
-      "vc:label": "Connectivity Fabric"
-    },
-    {
-      "@id": "urn:visionflow:linked:coordination-protocol",
-      "vc:label": "Coordination Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-optimization",
-      "vc:label": "Bandwidth Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-processing",
-      "vc:label": "Distributed Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:latency-reduction",
-      "vc:label": "Latency Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:regional-compute",
-      "vc:label": "Regional Compute"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

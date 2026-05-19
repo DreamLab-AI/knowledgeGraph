@@ -3,74 +3,83 @@
   "title": "Procedural Audio Generator",
   "slug": "procedural-audio-generator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:procedural-audio-generator",
+  "classIri": "urn:ngm:class:procedural-audio-generator",
   "domain": "spatial-computing",
   "definition": "System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audio-synthesis-engine",
+        "id": "urn:ngm:class:audio-synthesis-engine",
         "label": "Audio Synthesis Engine"
       },
       {
-        "id": "urn:visionflow:linked:context-analysis-module",
+        "id": "urn:ngm:class:context-analysis-module",
         "label": "Context Analysis Module"
       },
       {
-        "id": "urn:visionflow:linked:real-time-mixer",
+        "id": "urn:ngm:class:real-time-mixer",
         "label": "Real-Time Mixer"
       },
       {
-        "id": "urn:visionflow:owl:class:parameter-modulation-system",
+        "id": "urn:ngm:class:parameter-modulation-system",
         "label": "Parameter Modulation System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-api",
+        "id": "urn:ngm:class:audio-api",
         "label": "Audio API"
       },
       {
-        "id": "urn:visionflow:owl:class:context-awareness-system",
+        "id": "urn:ngm:class:context-awareness-system",
         "label": "Context Awareness System"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signal-processing",
+        "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-music",
+        "id": "urn:ngm:class:adaptive-music",
         "label": "Adaptive Music"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-soundscapes",
+        "id": "urn:ngm:class:dynamic-soundscapes",
         "label": "Dynamic Soundscapes"
       },
       {
-        "id": "urn:visionflow:linked:interactive-audio",
+        "id": "urn:ngm:class:interactive-audio",
         "label": "Interactive Audio"
       },
       {
-        "id": "urn:visionflow:linked:responsive-sound-effects",
+        "id": "urn:ngm:class:responsive-sound-effects",
         "label": "Responsive Sound Effects"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:audio-rendering-pipeline",
+        "label": "Audio Rendering Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

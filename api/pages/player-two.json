@@ -3,19 +3,18 @@
   "title": "Player Two",
   "slug": "player-two",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:player-two",
+  "classIri": "urn:ngm:class:player-two",
   "domain": "infrastructure",
   "definition": "Player Two is a technology infrastructure concept and a type of Collaboration Platform.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaboration-platform",
+      "id": "urn:ngm:class:collaboration-platform",
       "label": "Collaboration Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

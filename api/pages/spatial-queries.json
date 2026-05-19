@@ -3,32 +3,36 @@
   "title": "Spatial Queries",
   "slug": "spatial-queries",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-queries",
+  "classIri": "urn:ngm:class:spatial-queries",
   "domain": "spatial-computing",
   "definition": "Database queries that select geographic features based on location or spatial relationships such as intersection, containment, proximity, and adjacency, implemented using R-tree spatial indexing and filter-refine strategies per OGC Simple Features and SQL/MM Spatial standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:database-query",
+      "id": "urn:ngm:class:database-query",
       "label": "Database Query"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:location-based-search",
+        "id": "urn:ngm:class:location-based-search",
         "label": "Location Based Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

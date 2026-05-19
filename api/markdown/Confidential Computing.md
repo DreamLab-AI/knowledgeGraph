@@ -132,52 +132,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:confidential-computing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:confidential-computing",
+  "@type": "Class",
   "label": "Confidential Computing",
+  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, op...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5fa05bed90e724cd5d32271a71231109606cbab30482cddfe2fd8f372765a80c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, operating systems, hypervisors, and cloud providers. This approach addresses the three states of data protection by extending encryption beyond data at rest (storage encryption) and data in transit (TLS/network encryption) to data in use (memory encryption during active computation), implementing secure enclaves that are isolated memory regions with hardware-enforced access controls preventing external observation or modification even by ring-0 privileged code. Hardware technologies enabling confidential computing include Intel SGX (Software Guard Extensions) providing application-level enclaves with encrypted memory up to 256MB protected from OS and hypervisor inspection, AMD SEV (Secure Encrypted Virtualization) offering VM-level protection encrypting entire virtual machine memory with VM-specific keys inaccessible to hypervisor, ARM TrustZone partitioning processor into secure and normal w",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,187 +3,319 @@
   "title": "Storage Infrastructure",
   "slug": "storage-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:storage-infrastructure",
+  "classIri": "urn:ngm:class:storage-infrastructure",
   "domain": "infrastructure",
-  "definition": "Comprehensive ecosystem of physical and logical systems that provide durable, scalable, and performant data retention, retrieval, and replication across distributed computing environments. Storage infrastructure encompasses six primary paradigms: **object storage** (AWS S3, Google Cloud Storage, Azure Blob, MinIO, Cloudflare R2, Backblaze B2) delivering web-scale unstructured data archival at exabyte capacity with 11-nines (99.999999999%) annual durability via multi-region Reed-Solomon erasure coding; **block storage** (AWS EBS gp3/io2 Block Express, GCP Hyperdisk, Azure Premium SSD v2, on-premises NVMe-oF fabric-attached flash) providing sub-millisecond IOPS for databases and stateful VM workloads; **file storage** (AWS EFS, FSx for Lustre/NetApp, Azure Files SMB, GCP Filestore) enabling POSIX-compliant shared filesystems for HPC, MPI, and multi-tenant clusters; **distributed software-defined storage** (Ceph REEF/Squid, GlusterFS, Rook-Ceph on Kubernetes) aggregating commodity hardware into unified S3-object-block-file namespaces without single points of failure; **data lake open table formats** (Apache Iceberg 1.4-1.6, Delta Lake 3.x with UniForm, Apache Hudi 1.0) imposing ACID t",
+  "definition": "Comprehensive ecosystem of physical and logical systems that provide durable, scalable, and performant data retention, retrieval, and replication across distributed computing environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-layer",
+      "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:apache-iceberg",
+        "id": "urn:ngm:class:apache-iceberg",
         "label": "Apache Iceberg"
       },
       {
-        "id": "urn:visionflow:linked:block-storage",
+        "id": "urn:ngm:class:block-storage",
         "label": "Block Storage"
       },
       {
-        "id": "urn:visionflow:linked:ceph",
+        "id": "urn:ngm:class:ceph",
         "label": "Ceph"
       },
       {
-        "id": "urn:visionflow:linked:data-lakes",
+        "id": "urn:ngm:class:data-lakes",
         "label": "Data Lakes"
       },
       {
-        "id": "urn:visionflow:linked:distributed-storage",
+        "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:visionflow:linked:file-storage",
+        "id": "urn:ngm:class:file-storage",
         "label": "File Storage"
       },
       {
-        "id": "urn:visionflow:linked:filecoin",
+        "id": "urn:ngm:class:filecoin",
         "label": "Filecoin"
       },
       {
-        "id": "urn:visionflow:linked:ipfs",
+        "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:visionflow:linked:nvme",
+        "id": "urn:ngm:class:nvme",
         "label": "NVMe"
       },
       {
-        "id": "urn:visionflow:linked:object-storage",
+        "id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
       },
       {
-        "id": "urn:visionflow:linked:persistent-memory",
+        "id": "urn:ngm:class:persistent-memory",
         "label": "Persistent Memory"
       },
       {
-        "id": "urn:visionflow:linked:vector-databases",
+        "id": "urn:ngm:class:vector-databases",
         "label": "Vector Databases"
       },
       {
-        "id": "urn:visionflow:linked:zfs",
+        "id": "urn:ngm:class:zfs",
         "label": "ZFS"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:consistency-protocols",
+        "id": "urn:ngm:class:consistency-protocols",
         "label": "Consistency Protocols"
       },
       {
-        "id": "urn:visionflow:linked:encryption",
+        "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       },
       {
-        "id": "urn:visionflow:linked:erasure-coding",
+        "id": "urn:ngm:class:erasure-coding",
         "label": "Erasure Coding"
       },
       {
-        "id": "urn:visionflow:linked:identity-and-access-management",
+        "id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:visionflow:owl:class:data-replication",
+        "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:physical-layer",
+        "id": "urn:ngm:class:physical-layer",
         "label": "Physical Layer"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:big-data-analytics",
+        "id": "urn:ngm:class:big-data-analytics",
         "label": "Big Data Analytics"
       },
       {
-        "id": "urn:visionflow:linked:content-delivery-networks",
+        "id": "urn:ngm:class:content-delivery-networks",
         "label": "Content Delivery Networks"
       },
       {
-        "id": "urn:visionflow:linked:data-lakes",
+        "id": "urn:ngm:class:data-lakes",
         "label": "Data Lakes"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-applications",
+        "id": "urn:ngm:class:decentralised-applications",
         "label": "Decentralised Applications"
       },
       {
-        "id": "urn:visionflow:linked:disaster-recovery",
+        "id": "urn:ngm:class:disaster-recovery",
         "label": "Disaster Recovery"
       },
       {
-        "id": "urn:visionflow:linked:lakehouse-architecture",
+        "id": "urn:ngm:class:lakehouse-architecture",
         "label": "Lakehouse Architecture"
       },
       {
-        "id": "urn:visionflow:linked:rag",
+        "id": "urn:ngm:class:rag",
         "label": "RAG"
       },
       {
-        "id": "urn:visionflow:linked:vector-search",
+        "id": "urn:ngm:class:vector-search",
         "label": "Vector Search"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:apache-hudi",
+        "id": "urn:ngm:class:apache-hudi",
         "label": "Apache Hudi"
       },
       {
-        "id": "urn:visionflow:linked:apache-iceberg",
+        "id": "urn:ngm:class:apache-iceberg",
         "label": "Apache Iceberg"
       },
       {
-        "id": "urn:visionflow:linked:crdts",
+        "id": "urn:ngm:class:crdts",
         "label": "CRDTs"
       },
       {
-        "id": "urn:visionflow:linked:crush-algorithm",
+        "id": "urn:ngm:class:crush-algorithm",
         "label": "CRUSH Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:delta-lake",
+        "id": "urn:ngm:class:delta-lake",
         "label": "Delta Lake"
       },
       {
-        "id": "urn:visionflow:linked:hnsw-index",
+        "id": "urn:ngm:class:hnsw-index",
         "label": "HNSW Index"
       },
       {
-        "id": "urn:visionflow:linked:nvme-o-f",
+        "id": "urn:ngm:class:nvme-o-f",
         "label": "NVMe-oF"
       },
       {
-        "id": "urn:visionflow:linked:posix",
+        "id": "urn:ngm:class:posix",
         "label": "POSIX"
       },
       {
-        "id": "urn:visionflow:linked:reed-solomon-codes",
+        "id": "urn:ngm:class:reed-solomon-codes",
         "label": "Reed-Solomon Codes"
       },
       {
-        "id": "urn:visionflow:linked:s3-api",
+        "id": "urn:ngm:class:s3-api",
         "label": "S3 API"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:aes-256-encryption",
+        "label": "AES-256 Encryption"
+      },
+      {
+        "id": "urn:ngm:class:blake3",
+        "label": "Blake3"
+      },
+      {
+        "id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-erasure-coding",
+        "label": "Reed-Solomon Erasure Coding"
+      },
+      {
+        "id": "urn:ngm:class:zstandard-compression",
+        "label": "Zstandard Compression"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-model-training",
+        "label": "AI Model Training"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "id": "urn:ngm:class:data-warehousing",
+        "label": "Data Warehousing"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cxl-consortium",
+        "label": "CXL Consortium"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27040",
+        "label": "ISO IEC 27040"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-111",
+        "label": "NIST SP 800-111"
+      },
+      {
+        "id": "urn:ngm:class:nvm-express-specification",
+        "label": "NVM Express Specification"
+      },
+      {
+        "id": "urn:ngm:class:posix-ieee-1003-1",
+        "label": "POSIX IEEE 1003.1"
+      },
+      {
+        "id": "urn:ngm:class:snia",
+        "label": "SNIA"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-ipld",
+        "label": "W3C IPLD"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "id": "urn:ngm:class:fin-ops",
+        "label": "FinOps"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:lakehouse-architecture",
+        "label": "Lakehouse Architecture"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

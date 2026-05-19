@@ -348,41 +348,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+  "@type": "Class",
   "label": "AI Upscaling and Super-Resolution",
+  "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:66caed5f36e2538e7bf6c986b0178bef00b746f43b45ed11dfbf6e0381481b27"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:66caed5f36e2538e7bf6c986b0178bef00b746f43b45ed11dfbf6e0381481b27@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

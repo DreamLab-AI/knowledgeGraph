@@ -3,32 +3,36 @@
   "title": "Reward Function",
   "slug": "reward-function",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reward-function",
+  "classIri": "urn:ngm:class:reward-function",
   "domain": "spatial-computing",
   "definition": "A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes in game environments, virtual worlds, and autonomous systems through feedback signals.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:reinforcement-learning",
+      "id": "urn:ngm:class:reinforcement-learning",
       "label": "Reinforcement Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-agent-learning",
+        "id": "urn:ngm:class:autonomous-agent-learning",
         "label": "Autonomous Agent Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

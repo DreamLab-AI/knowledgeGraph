@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-processing-hardware",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-processing-hardware",
+  "@type": "Class",
   "label": "Data Processing Hardware",
+  "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and ...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-infrastructure",
-      "vc:label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d442c028a064e55bb8f6834c82d517ecf10de46c24a468576a19e7cefbace2e2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cooling-systems",
+        "label": "Cooling Systems"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-processing",
+        "label": "AI Processing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d442c028a064e55bb8f6834c82d517ecf10de46c24a468576a19e7cefbace2e2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cooling-systems",
-      "vc:label": "Cooling Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-bandwidth-memory",
-      "vc:label": "High-Bandwidth Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-infrastructure",
-      "vc:label": "Power Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-processing",
-      "vc:label": "AI Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:immersive-computing",
-      "vc:label": "Immersive Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

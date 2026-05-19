@@ -3,32 +3,36 @@
   "title": "Parental Controls",
   "slug": "parental-controls",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:parental-controls",
+  "classIri": "urn:ngm:class:parental-controls",
   "domain": "spatial-computing",
   "definition": "Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-safety",
+      "id": "urn:ngm:class:digital-safety",
       "label": "Digital Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:safe-online-environment",
+        "id": "urn:ngm:class:safe-online-environment",
         "label": "Safe Online Environment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

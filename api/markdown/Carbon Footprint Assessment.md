@@ -156,76 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-footprint-assessment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-footprint-assessment",
+  "@type": "Class",
   "label": "Carbon Footprint Assessment",
+  "definition": "A comprehensive emodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-assessment",
-      "vc:label": "Environmental Assessment"
+      "@id": "urn:ngm:class:environmental-assessment",
+      "label": "Environmental Assessment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a7636ababbbe78acccdacc82501a1bd38e190c02898d0939a7ebddbb664b2a63"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:boundary-definition",
+        "label": "Boundary Definition"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-data",
+        "label": "Lifecycle Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hotspot-identification",
+        "label": "Hotspot Identification"
+      },
+      {
+        "@id": "urn:ngm:class:impact-quantification",
+        "label": "Impact Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:reduction-strategy",
+        "label": "Reduction Strategy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a7636ababbbe78acccdacc82501a1bd38e190c02898d0939a7ebddbb664b2a63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive evaluation methodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:boundary-definition",
-      "vc:label": "Boundary Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factors",
-      "vc:label": "Emission Factors"
-    },
-    {
-      "@id": "urn:visionflow:linked:lifecycle-data",
-      "vc:label": "Lifecycle Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hotspot-identification",
-      "vc:label": "Hotspot Identification"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-quantification",
-      "vc:label": "Impact Quantification"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduction-strategy",
-      "vc:label": "Reduction Strategy"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

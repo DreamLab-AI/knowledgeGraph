@@ -3,139 +3,243 @@
   "title": "AnimateDiff",
   "slug": "animate-diff",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:animate-diff",
+  "classIri": "urn:ngm:class:animate-diff",
   "domain": "artificial-intelligence",
-  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models\u2014principally [[Stable Diffusion]] and its community derivatives\u2014without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Maneesh Agrawala, Dahua Lin, and Bo Dai (CUHK/Shanghai AI Lab/UC Berkeley) and published as an ICLR 2024 Spotlight paper (arXiv:2307.04725). The central technical insight is that the temporal dimension of video can be decoupled from the spatial appearance dimension: a lightweight Motion Module\u2014a stack of Transformer-based temporal self-attention blocks injected into each resolution level of the frozen SD UNet after the existing ResNet and cross-attention layers\u2014is trained once on a large general-purpose video corpus using a three-stage pipeline (domain adapter pre-training \u2192 motion module training \u2192 optional MotionLoRA fine-tuning) and thereafter transfers to any downstream personalised model sharing the same base architecture, preserving that model's visual style and prompt-following behaviour while adding temporally consistent frame-to-frame motion. At inference, the combined model generates",
+  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models\u2014principally [[Stable Diffusion]] and its community derivatives\u2014without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Man...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:latent-diffusion",
+      "id": "urn:ngm:class:latent-diffusion",
       "label": "Latent Diffusion"
     },
     {
-      "id": "urn:visionflow:linked:text-to-video",
+      "id": "urn:ngm:class:text-to-video",
       "label": "Text-to-Video"
-    },
-    {
-      "id": "urn:visionflow:linked:video-generation",
-      "label": "Video Generation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ddim-scheduler",
+        "id": "urn:ngm:class:ddim-scheduler",
         "label": "DDIM Scheduler"
       },
       {
-        "id": "urn:visionflow:linked:denoising-network",
+        "id": "urn:ngm:class:denoising-network",
         "label": "Denoising Network"
       },
       {
-        "id": "urn:visionflow:linked:domain-adapter",
+        "id": "urn:ngm:class:domain-adapter",
         "label": "Domain Adapter"
       },
       {
-        "id": "urn:visionflow:linked:motion-adapter",
+        "id": "urn:ngm:class:motion-adapter",
         "label": "MotionAdapter"
       },
       {
-        "id": "urn:visionflow:linked:motion-module",
+        "id": "urn:ngm:class:motion-module",
         "label": "Motion Module"
       },
       {
-        "id": "urn:visionflow:linked:temporal-attention",
+        "id": "urn:ngm:class:temporal-attention",
         "label": "Temporal Attention"
       },
       {
-        "id": "urn:visionflow:linked:unet-architecture",
+        "id": "urn:ngm:class:unet-architecture",
         "label": "UNet Architecture"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:pre-trained-text-to-image-model",
+        "id": "urn:ngm:class:pre-trained-text-to-image-model",
         "label": "Pre-trained Text-to-Image Model"
       },
       {
-        "id": "urn:visionflow:linked:video-training-dataset",
+        "id": "urn:ngm:class:video-training-dataset",
         "label": "Video Training Dataset"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:animated-gif-generation",
+        "id": "urn:ngm:class:animated-gif-generation",
         "label": "Animated GIF Generation"
       },
       {
-        "id": "urn:visionflow:linked:camera-motion-control",
+        "id": "urn:ngm:class:camera-motion-control",
         "label": "Camera Motion Control"
       },
       {
-        "id": "urn:visionflow:linked:image-to-video",
+        "id": "urn:ngm:class:image-to-video",
         "label": "Image-to-Video"
       },
       {
-        "id": "urn:visionflow:linked:style-transfer-video",
+        "id": "urn:ngm:class:style-transfer-video",
         "label": "Style Transfer Video"
       },
       {
-        "id": "urn:visionflow:linked:text-to-video",
+        "id": "urn:ngm:class:text-to-video",
         "label": "Text-to-Video"
       },
       {
-        "id": "urn:visionflow:linked:video-to-video",
+        "id": "urn:ngm:class:video-to-video",
         "label": "Video-to-Video"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-video",
+        "id": "urn:ngm:class:ai-video",
         "label": "AI Video"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adversarial-diffusion-distillation",
+        "id": "urn:ngm:class:adversarial-diffusion-distillation",
         "label": "Adversarial Diffusion Distillation"
       },
       {
-        "id": "urn:visionflow:linked:denoising-diffusion-probabilistic-model",
+        "id": "urn:ngm:class:denoising-diffusion-probabilistic-model",
         "label": "Denoising Diffusion Probabilistic Model"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:low-rank-adaptation",
+        "id": "urn:ngm:class:low-rank-adaptation",
         "label": "Low-Rank Adaptation"
       },
       {
-        "id": "urn:visionflow:linked:temporal-self-attention",
+        "id": "urn:ngm:class:temporal-self-attention",
         "label": "Temporal Self-Attention"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:vae-encoder-decoder",
+        "label": "VAE Encoder Decoder"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automatic1111-web-ui",
+        "label": "Automatic1111 WebUI"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ar-xiv",
+        "label": "arXiv"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers-api",
+        "label": "Hugging Face Diffusers API"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:motion-module",
+        "label": "Motion Module"
+      },
+      {
+        "id": "urn:ngm:class:temporal-attention",
+        "label": "Temporal Attention"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,87 +3,91 @@
   "title": "Federation Surface",
   "slug": "federation-surface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:federation-surface",
+  "classIri": "urn:ngm:class:federation-surface",
   "domain": "infrastructure",
-  "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1\u2013S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.",
+  "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1\u2013S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge grap...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:middleware-layer",
+      "id": "urn:ngm:class:middleware-layer",
       "label": "Middleware Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.86,
-  "authorityScore": 0.89,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:json-ld-context",
+        "id": "urn:ngm:class:json-ld-context",
         "label": "JSON-LD Context"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
       {
-        "id": "urn:visionflow:owl:class:linked-data-encoder",
+        "id": "urn:ngm:class:linked-data-encoder",
         "label": "Linked Data Encoder"
       },
       {
-        "id": "urn:visionflow:owl:class:uri-canonicaliser",
+        "id": "urn:ngm:class:uri-canonicaliser",
         "label": "URI Canonicaliser"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:http-endpoint",
+        "id": "urn:ngm:class:http-endpoint",
         "label": "HTTP Endpoint"
       },
       {
-        "id": "urn:visionflow:linked:json-ld-1-1-standard",
+        "id": "urn:ngm:class:json-ld-1-1-standard",
         "label": "JSON-LD 1.1 Standard"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-vocabulary",
+        "id": "urn:ngm:class:w3-c-vocabulary",
         "label": "W3C Vocabulary"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-monitoring",
+        "id": "urn:ngm:class:automated-monitoring",
         "label": "Automated Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:blockchain-oracle-integration",
+        "id": "urn:ngm:class:blockchain-oracle-integration",
         "label": "Blockchain Oracle Integration"
       },
       {
-        "id": "urn:visionflow:linked:cross-system-querying",
+        "id": "urn:ngm:class:cross-system-querying",
         "label": "Cross-System Querying"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-graph-federation",
+        "id": "urn:ngm:class:knowledge-graph-federation",
         "label": "Knowledge Graph Federation"
       },
       {
-        "id": "urn:visionflow:linked:linked-data-consumption",
+        "id": "urn:ngm:class:linked-data-consumption",
         "label": "Linked Data Consumption"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:json-ld-1-1",
+        "id": "urn:ngm:class:json-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-linked-data-platform",
+        "id": "urn:ngm:class:w3-c-linked-data-platform",
         "label": "W3C Linked Data Platform"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -172,60 +172,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-rights",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-rights",
+  "@type": "Class",
   "label": "Human Rights",
+  "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "revised",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604"
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-technology",
+        "label": "Blockchain Technology"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-rights",
+        "label": "Privacy Rights"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
-  "vc:qualityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-technology",
-      "vc:label": "Blockchain Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-rights",
-      "vc:label": "Privacy Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-rights",
-      "vc:label": "Digital Rights"
-    }
-  ]
+  "quality": 0.95,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

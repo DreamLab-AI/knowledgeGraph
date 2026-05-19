@@ -120,41 +120,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:natural-language-processing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:natural-language-processing",
+  "@type": "Class",
   "label": "Natural Language Processing",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ebddba0ada7eb57fd1f6224ea27a2ecbc1ef825f9316e77641bd92b19a97d285"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ebddba0ada7eb57fd1f6224ea27a2ecbc1ef825f9316e77641bd92b19a97d285@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language. Core tasks include text classification, named entity recognition, machine translation, sentiment analysis, question answering, and language generation. Modern NLP leverages transformer architectures (BERT, GPT, T5), pre-training on massive corpora, and fine-tuning for downstream tasks. Advanced systems perform multimodal understanding (text-image), multilingual processing, and exhibit emergent capabilities like reasoning and code generation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

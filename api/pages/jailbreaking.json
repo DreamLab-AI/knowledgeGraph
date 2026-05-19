@@ -3,123 +3,207 @@
   "title": "Jailbreaking",
   "slug": "jailbreaking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:jailbreaking",
+  "classIri": "urn:ngm:class:jailbreaking",
   "domain": "artificial-intelligence",
-  "definition": "Jailbreaking of large language models (LLMs) is the practice of crafting inputs\u2014prompts, instruction sequences, encoded payloads, or multi-turn conversational strategies\u2014that cause a model to produce outputs that circumvent its safety training, content policies, or alignment objectives. Unlike classical software exploitation (which targets memory corruption or privilege escalation), LLM jailbreaking exploits the generative and instruction-following nature of transformer-based models: the same capacity for flexible, context-sensitive language production that makes LLMs useful also creates a vast, high-dimensional input space that safety training cannot exhaustively cover. The adversarial surface encompasses single-turn prompt injection, persona adoption (e.g. \"Do Anything Now\" / DAN), low-resource language transfer, multi-turn incremental manipulation (Crescendo), ASCII art obfuscation, many-shot in-context learning, best-of-n sampling pressure, and compound attacks combining multiple vectors. Defences range from input/output classifiers (Llama Guard 3, Guardrails AI), Constitutional AI and reinforcement learning from human feedback (RLHF) alignment procedures, Constitutional Classi",
+  "definition": "Jailbreaking of large language models (LLMs) is the practice of crafting inputs\u2014prompts, instruction sequences, encoded payloads, or multi-turn conversational strategies\u2014that cause a model to produce outputs that circumvent its safety training, content policies, or alignment objectives.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:adversarial-machine-learning",
+      "id": "urn:ngm:class:adversarial-machine-learning",
       "label": "Adversarial Machine Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:prompt-engineering",
+      "id": "urn:ngm:class:prompt-engineering",
       "label": "Prompt Engineering"
-    },
-    {
-      "id": "urn:visionflow:owl:class:ai-risks",
-      "label": "AI Risks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ascii-art-attack",
+        "id": "urn:ngm:class:ascii-art-attack",
         "label": "ASCII Art Attack"
       },
       {
-        "id": "urn:visionflow:linked:best-of-n-jailbreaking",
+        "id": "urn:ngm:class:best-of-n-jailbreaking",
         "label": "Best-of-N Jailbreaking"
       },
       {
-        "id": "urn:visionflow:linked:crescendo-attack",
+        "id": "urn:ngm:class:crescendo-attack",
         "label": "Crescendo Attack"
       },
       {
-        "id": "urn:visionflow:linked:low-resource-language-attack",
+        "id": "urn:ngm:class:low-resource-language-attack",
         "label": "Low-Resource Language Attack"
       },
       {
-        "id": "urn:visionflow:linked:many-shot-jailbreaking",
+        "id": "urn:ngm:class:many-shot-jailbreaking",
         "label": "Many-Shot Jailbreaking"
       },
       {
-        "id": "urn:visionflow:linked:persona-attack",
+        "id": "urn:ngm:class:persona-attack",
         "label": "Persona Attack"
       },
       {
-        "id": "urn:visionflow:linked:prompt-injection",
+        "id": "urn:ngm:class:prompt-injection",
         "label": "Prompt Injection"
       },
       {
-        "id": "urn:visionflow:linked:skeleton-key-attack",
+        "id": "urn:ngm:class:skeleton-key-attack",
         "label": "Skeleton Key Attack"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:safety-training",
+        "id": "urn:ngm:class:safety-training",
         "label": "Safety Training"
       },
       {
-        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adversarial-evaluation",
+        "id": "urn:ngm:class:adversarial-evaluation",
         "label": "Adversarial Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:harmful-content-generation",
+        "id": "urn:ngm:class:harmful-content-generation",
         "label": "Harmful Content Generation"
       },
       {
-        "id": "urn:visionflow:linked:policy-circumvention",
+        "id": "urn:ngm:class:policy-circumvention",
         "label": "Policy Circumvention"
       },
       {
-        "id": "urn:visionflow:owl:class:red-teaming",
+        "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:constitutional-classifiers",
+        "id": "urn:ngm:class:constitutional-classifiers",
         "label": "Constitutional Classifiers"
       },
       {
-        "id": "urn:visionflow:linked:guardrails-ai",
+        "id": "urn:ngm:class:guardrails-ai",
         "label": "Guardrails AI"
       },
       {
-        "id": "urn:visionflow:linked:llama-guard",
+        "id": "urn:ngm:class:llama-guard",
         "label": "Llama Guard"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:classifier-models",
+        "label": "Classifier Models"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-red-teaming",
+        "label": "AI Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi",
+        "label": "AISI"
+      },
+      {
+        "id": "urn:ngm:class:mitre-atlas",
+        "label": "MITRE ATLAS"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

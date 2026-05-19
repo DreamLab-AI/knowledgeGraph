@@ -128,52 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:threaded-messaging",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:threaded-messaging",
+  "@type": "Class",
   "label": "Threaded Messaging",
+  "definition": "Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "vc:label": "Asynchronous Collaboration"
+      "@id": "urn:ngm:class:asynchronous-collaboration",
+      "label": "Asynchronous Collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0b96025270d184284eae2d39d06cadf7e18b3481d72cdeb5f3ddafcc81d331b1"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0b96025270d184284eae2d39d06cadf7e18b3481d72cdeb5f3ddafcc81d331b1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

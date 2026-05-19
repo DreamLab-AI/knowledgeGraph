@@ -3,19 +3,18 @@
   "title": "Placing on the Market",
   "slug": "placing-on-the-market",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:placing-on-the-market",
+  "classIri": "urn:ngm:class:placing-on-the-market",
   "domain": "spatial-computing",
   "definition": "The first making available of an AI system on the Union market.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

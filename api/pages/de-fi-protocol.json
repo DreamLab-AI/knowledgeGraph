@@ -3,27 +3,31 @@
   "title": "De Fi Protocol",
   "slug": "de-fi-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:de-fi-protocol",
+  "classIri": "urn:ngm:class:de-fi-protocol",
   "domain": "blockchain",
   "definition": "A blockchain-based financial application providing decentralized financial services via smart contracts.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -188,80 +188,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:monte-carlo-localization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:monte-carlo-localization",
+  "@type": "Class",
   "label": "Monte Carlo Localization",
+  "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:rb-1013-localization",
-      "vc:label": "RB-1013-localization"
+      "@id": "urn:ngm:class:rb-1013-localization",
+      "label": "RB-1013-localization"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:map",
+        "label": "Map"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-measurements",
+        "label": "Sensor Measurements"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:global-localization",
+        "label": "Global Localization"
+      },
+      {
+        "@id": "urn:ngm:class:kidnapped-robot-problem",
+        "label": "Kidnapped Robot Problem"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:28de37c294a7bb6265eeae86b0834c9df7b57ac02f211862680698fb08f243ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:map",
-      "vc:label": "Map"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-model",
-      "vc:label": "Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-measurements",
-      "vc:label": "Sensor Measurements"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:global-localization",
-      "vc:label": "Global Localization"
-    },
-    {
-      "@id": "urn:visionflow:linked:kidnapped-robot-problem",
-      "vc:label": "Kidnapped Robot Problem"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:importance-sampling",
-      "vc:label": "Importance Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1008-odometry",
-      "vc:label": "RB-1008-odometry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

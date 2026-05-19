@@ -3,78 +3,91 @@
   "title": "NFT Renting",
   "slug": "nft-renting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nft-renting",
+  "classIri": "urn:ngm:class:nft-renting",
   "domain": "spatial-computing",
   "definition": "Process of temporarily assigning usage rights for a non-fungible token without transferring ownership, enforced through smart contract time-bound licensing mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:rental-agreement-terms",
+        "id": "urn:ngm:class:rental-agreement-terms",
         "label": "Rental Agreement Terms"
       },
       {
-        "id": "urn:visionflow:linked:rental-smart-contract",
+        "id": "urn:ngm:class:rental-smart-contract",
         "label": "Rental Smart Contract"
       },
       {
-        "id": "urn:visionflow:linked:time-lock-mechanism",
+        "id": "urn:ngm:class:time-lock-mechanism",
         "label": "Time Lock Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:usage-rights-token",
+        "id": "urn:ngm:class:usage-rights-token",
         "label": "Usage Rights Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:nft-ownership-verification",
+        "id": "urn:ngm:class:nft-ownership-verification",
         "label": "NFT Ownership Verification"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-execution",
+        "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:payment-system",
+        "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-utilization",
+        "id": "urn:ngm:class:asset-utilization",
         "label": "Asset Utilization"
       },
       {
-        "id": "urn:visionflow:linked:collateral-management",
+        "id": "urn:ngm:class:collateral-management",
         "label": "Collateral Management"
       },
       {
-        "id": "urn:visionflow:linked:revenue-generation",
+        "id": "urn:ngm:class:revenue-generation",
         "label": "Revenue Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:temporary-asset-access",
+        "id": "urn:ngm:class:temporary-asset-access",
         "label": "Temporary Asset Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

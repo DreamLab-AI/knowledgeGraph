@@ -3,42 +3,46 @@
   "title": "State Channel",
   "slug": "state-channel",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-channel",
+  "classIri": "urn:ngm:class:state-channel",
   "domain": "blockchain",
   "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:off-chain-scaling",
+        "id": "urn:ngm:class:off-chain-scaling",
         "label": "Off-Chain Scaling"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

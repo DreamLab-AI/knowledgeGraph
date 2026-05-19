@@ -3,19 +3,18 @@
   "title": "AI Upscaling and Super-Resolution",
   "slug": "ai-upscaling-and-super-resolution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
+  "classIri": "urn:ngm:class:ai-upscaling-and-super-resolution",
   "domain": "artificial-intelligence",
   "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:generative-ai",
+      "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.92,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

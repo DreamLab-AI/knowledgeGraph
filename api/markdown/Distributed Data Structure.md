@@ -160,48 +160,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-data-structure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-data-structure",
+  "@type": "Class",
   "label": "Distributed Data Structure",
+  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination. Unlike traditional data structures that reside in a single memory space or storage system, distributed data structures partition data across a network of independent nodes, employing replication, partitioning, and consensus protocols to maintain consistency and availability. These structures provide the foundational storage architecture for blockchain systems, enabling properties such as fault tolerance, censorship resistance, and scalability through horizontal expansion. Distributed data structures in blockchain contexts must address fundamental challenges including data consistency across asynchronous networks, Byzantine fault tolerance, and conflict resolution without trusted intermediaries. Common implementations include distributed hash tables, Merkle trees, append-only logs, and peer-to-peer storage networks, each optimized for specific trade-offs between consistency, availability, and partition tolerance as defined by the CAP theorem.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

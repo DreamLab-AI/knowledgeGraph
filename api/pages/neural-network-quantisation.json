@@ -3,19 +3,18 @@
   "title": "Neural Network Quantisation",
   "slug": "neural-network-quantisation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:neural-network-quantisation",
+  "classIri": "urn:ngm:class:neural-network-quantisation",
   "domain": "artificial-intelligence",
-  "definition": "Neural Network Quantization is a model compression technique reducing numerical precision of weights and activations from floating-point (FP32, FP16) to lower-bit integer representations (INT8, INT4, binary) decreasing memory footprint, improving inference speed through efficient integer arithmetic, and enabling deployment on hardware with specialized integer processing units. This technique implements quantization through mapping continuous floating-point values to discrete integer levels using scale factor s and zero-point z with quantized value q = round(x/s) + z, supporting uniform quantization with evenly-spaced quantization levels and non-uniform quantization concentrating levels in high-density regions of value distributions. Quantization approaches include post-training quantization (PTQ) applying quantization to pre-trained models without retraining through calibration on representative dataset determining optimal scale/zero-point parameters (fast but may incur 1-3% accuracy loss), and quantization-aware training (QAT) simulating quantization during training through fake quantization operators enabling model to adapt learning quantization-friendly representations (slower b",
+  "definition": "Neural Network Quantization is a model compression technique reducing numerical precision of weights and activations from floating-point (FP32, FP16) to lower-bit integer representations (INT8, INT4, binary) decreasing memory footprint, improving inference speed through efficient integer arithmet...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

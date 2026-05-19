@@ -3,37 +3,41 @@
   "title": "Proposal System",
   "slug": "proposal-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proposal-system",
+  "classIri": "urn:ngm:class:proposal-system",
   "domain": "blockchain",
-  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain execution]] via [[SmartContract|smart contracts]]. Proposal systems implement thresholds\u2014[[GovernanceToken]] requirements for initiation, quorum thresholds for binding, timelocks before execution\u2014creating barriers preventing spam whilst enabling broad participation. Systems balance bottom-up permissionless initiation with governance efficiency, facing challenges around proposal spam, voter fatigue (5-15% typical participation), and professionalization concentrating power amongst technical elites.",
+  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain exe...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:snapshot",
+        "id": "urn:ngm:class:snapshot",
         "label": "Snapshot"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:on-chain-voting",
+        "id": "urn:ngm:class:on-chain-voting",
         "label": "OnChainVoting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

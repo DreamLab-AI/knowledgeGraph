@@ -3,118 +3,122 @@
   "title": "Open World",
   "slug": "open-world",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-world",
+  "classIri": "urn:ngm:class:open-world",
   "domain": "spatial-computing",
   "definition": "A game design paradigm featuring large-scale virtual environments with non-linear progression, extensive player freedom, emergent gameplay, and exploratory mechanics that allow users to interact with the world in diverse ways beyond predetermined narrative paths.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:dynamic-world",
+        "id": "urn:ngm:class:dynamic-world",
         "label": "Dynamic World"
       },
       {
-        "id": "urn:visionflow:linked:emergent-gameplay",
+        "id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
       },
       {
-        "id": "urn:visionflow:linked:exploration-system",
+        "id": "urn:ngm:class:exploration-system",
         "label": "Exploration System"
       },
       {
-        "id": "urn:visionflow:linked:free-roaming",
+        "id": "urn:ngm:class:free-roaming",
         "label": "Free Roaming"
       },
       {
-        "id": "urn:visionflow:linked:multiple-objectives",
+        "id": "urn:ngm:class:multiple-objectives",
         "label": "Multiple Objectives"
       },
       {
-        "id": "urn:visionflow:linked:player-agency",
+        "id": "urn:ngm:class:player-agency",
         "label": "Player Agency"
       },
       {
-        "id": "urn:visionflow:linked:quest-system",
+        "id": "urn:ngm:class:quest-system",
         "label": "Quest System"
       },
       {
-        "id": "urn:visionflow:linked:sandbox-mechanics",
+        "id": "urn:ngm:class:sandbox-mechanics",
         "label": "Sandbox Mechanics"
       },
       {
-        "id": "urn:visionflow:owl:class:non-linear-narrative",
+        "id": "urn:ngm:class:non-linear-narrative",
         "label": "Non-Linear Narrative"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-system",
+        "id": "urn:ngm:class:ai-system",
         "label": "AI System"
       },
       {
-        "id": "urn:visionflow:linked:state-management",
+        "id": "urn:ngm:class:state-management",
         "label": "State Management"
       },
       {
-        "id": "urn:visionflow:linked:streaming-technology",
+        "id": "urn:ngm:class:streaming-technology",
         "label": "Streaming Technology"
       },
       {
-        "id": "urn:visionflow:owl:class:game-engine",
+        "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-simulation",
+        "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:visionflow:owl:class:procedural-generation",
+        "id": "urn:ngm:class:procedural-generation",
         "label": "Procedural Generation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:creative-expression",
+        "id": "urn:ngm:class:creative-expression",
         "label": "Creative Expression"
       },
       {
-        "id": "urn:visionflow:linked:emergent-behavior",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behavior"
       },
       {
-        "id": "urn:visionflow:linked:exploration",
+        "id": "urn:ngm:class:exploration",
         "label": "Exploration"
       },
       {
-        "id": "urn:visionflow:linked:player-choice",
+        "id": "urn:ngm:class:player-choice",
         "label": "Player Choice"
       },
       {
-        "id": "urn:visionflow:linked:sandbox-creation",
+        "id": "urn:ngm:class:sandbox-creation",
         "label": "Sandbox Creation"
       },
       {
-        "id": "urn:visionflow:owl:class:non-linear-storytelling",
+        "id": "urn:ngm:class:non-linear-storytelling",
         "label": "Non-Linear Storytelling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

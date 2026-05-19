@@ -3,19 +3,18 @@
   "title": "Mixtral",
   "slug": "mixtral",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mixtral",
+  "classIri": "urn:ngm:class:mixtral",
   "domain": "artificial-intelligence",
   "definition": "A Sparse Mixture of Experts language model with 8 expert networks where each token is routed to 2 experts, achieving 47B total parameters whilst maintaining 13B active parameters per token for efficient inference.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:large-language-models",
+      "id": "urn:ngm:class:large-language-models",
       "label": "Large Language Models"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

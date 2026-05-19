@@ -3,19 +3,18 @@
   "title": "Local Explanation",
   "slug": "local-explanation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:local-explanation",
+  "classIri": "urn:ngm:class:local-explanation",
   "domain": "spatial-computing",
   "definition": "Interpretability techniques that explain individual model predictions for specific instances, providing insight into why a particular input produced a given output without necessarily characterising the model's global behaviour.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-interpretability",
+      "id": "urn:ngm:class:model-interpretability",
       "label": "Model Interpretability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

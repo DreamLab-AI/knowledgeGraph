@@ -168,90 +168,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:force-torque-sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:force-torque-sensor",
+  "@type": "Class",
   "label": "Force Torque Sensor",
+  "definition": "Force-Torque Sensor - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:signal-amplification",
+        "label": "Signal Amplification"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:precision-assembly",
+        "label": "Precision Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotic-grasping",
+        "label": "Soft Robotic Grasping"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "@id": "urn:ngm:class:wrist-assembly",
+        "label": "Wrist Assembly"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8641695bef5deceb549566875322a351013c2420a1ed23ae4007f5fed1fb0f13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Force-Torque Sensor** - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.",
-  "vc:qualityScore": {
-    "@value": "0.63",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.17",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:haptic-feedback-system",
-      "vc:label": "Haptic Feedback System"
-    },
-    {
-      "@id": "urn:visionflow:linked:wrist-assembly",
-      "vc:label": "Wrist Assembly"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:calibration",
-      "vc:label": "Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-amplification",
-      "vc:label": "Signal Amplification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:precision-assembly",
-      "vc:label": "Precision Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:soft-robotic-grasping",
-      "vc:label": "Soft Robotic Grasping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.63,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Event Driven Architecture",
   "slug": "event-driven-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:event-driven-architecture",
+  "classIri": "urn:ngm:class:event-driven-architecture",
   "domain": "spatial-computing",
   "definition": "A software architecture pattern for metaverse systems built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems for immersive virtual experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalable-metaverse-infrastructure",
+        "id": "urn:ngm:class:scalable-metaverse-infrastructure",
         "label": "Scalable Metaverse Infrastructure"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

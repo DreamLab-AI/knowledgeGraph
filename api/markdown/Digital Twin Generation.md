@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-generation",
+  "@type": "Class",
   "label": "Digital Twin Generation",
+  "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:automated-modeling",
-      "vc:label": "Automated Modeling"
+      "@id": "urn:ngm:class:automated-modeling",
+      "label": "Automated Modeling"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:afc29d05df3253a1fb4e1e2d4c5d9423dbfcfaa44acadaebaba3690be4133cb9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-capture",
+        "label": "3D Capture"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-training",
+        "label": "AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:mass-digitization",
+        "label": "Mass Digitization"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:afc29d05df3253a1fb4e1e2d4c5d9423dbfcfaa44acadaebaba3690be4133cb9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-capture",
-      "vc:label": "3D Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-training",
-      "vc:label": "AI Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:mass-digitization",
-      "vc:label": "Mass Digitization"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-prototyping",
-      "vc:label": "Rapid Prototyping"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

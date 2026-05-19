@@ -3,53 +3,57 @@
   "title": "Central Bank Digital Currency",
   "slug": "central-bank-digital-currency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:central-bank-digital-currency",
+  "classIri": "urn:ngm:class:central-bank-digital-currency",
   "domain": "infrastructure",
   "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-currency",
+      "id": "urn:ngm:class:digital-currency",
       "label": "Digital Currency"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:central-bank-infrastructure",
+        "id": "urn:ngm:class:central-bank-infrastructure",
         "label": "Central Bank Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:payment-network",
+        "id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:financial-inclusion",
+        "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
-        "id": "urn:visionflow:linked:monetary-policy-transmission",
+        "id": "urn:ngm:class:monetary-policy-transmission",
         "label": "Monetary Policy Transmission"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-payments",
+        "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

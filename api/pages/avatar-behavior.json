@@ -3,19 +3,18 @@
   "title": "Avatar Behavior",
   "slug": "avatar-behavior",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-behavior",
+  "classIri": "urn:ngm:class:avatar-behavior",
   "domain": "spatial-computing",
   "definition": "Behavioral patterns of avatars and NPCs, often driven by AI/ML.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

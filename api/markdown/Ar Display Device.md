@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-display-device",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-display-device",
+  "@type": "Class",
   "label": "Ar Display Device",
+  "definition": "AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:display-hardware",
-      "vc:label": "Display Hardware"
+      "@id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9d97c22fcb5899dd7ecfcce514acc3190c278910cf7420e25582ec1b44a8b7e9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:pose-tracking",
+        "label": "Pose Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:augmented-reality-experiences",
+        "label": "Augmented Reality Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-interaction",
+        "label": "Mixed Reality Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9d97c22fcb5899dd7ecfcce514acc3190c278910cf7420e25582ec1b44a8b7e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:display-technology",
-      "vc:label": "Display Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-systems",
-      "vc:label": "Optical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:pose-tracking",
-      "vc:label": "Pose Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:augmented-reality-experiences",
-      "vc:label": "Augmented Reality Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-reality-interaction",
-      "vc:label": "Mixed Reality Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

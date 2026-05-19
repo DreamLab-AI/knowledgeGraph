@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Interoperability",
   "slug": "etsi-domain-interoperability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-interoperability",
+  "classIri": "urn:ngm:class:etsi-domain-interoperability",
   "domain": "infrastructure",
-  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work together effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols. Interoperability frameworks implement [[NGSI-LD]] and [[SAREF]] (Smart Applications Reference Ontology) enabling connected infrastructures to exchange and interpret data across platforms, with infrastructure quality metrics assessing trustworthiness through completeness, accuracy, bias, integrity, and reliability\u2014particularly critical in AI-driven contexts. Regulatory alignment through EU Data Act Article 35 mandates interoperable specifications and centralised standards repositories, whilst accessibility standards (ETSI ES 204 009) ensure inclusive communication combining voice, real-time text, and sign language video compliance with European Accessibility Act requirements across diverse platforms.",
+  "definition": "ETSI domain interoperability standards enabling different systems and organisations to work toger effectively through technical and semantic data exchange mechanisms, shared vocabularies, and standardised protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

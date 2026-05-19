@@ -3,53 +3,57 @@
   "title": "Carbon Accounting",
   "slug": "carbon-accounting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-accounting",
+  "classIri": "urn:ngm:class:carbon-accounting",
   "domain": "spatial-computing",
   "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:environmental-accounting",
+      "id": "urn:ngm:class:environmental-accounting",
       "label": "Environmental Accounting"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Data Collection"
       },
       {
-        "id": "urn:visionflow:linked:emission-factors",
+        "id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
       },
       {
-        "id": "urn:visionflow:linked:verification-process",
+        "id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:climate-action-planning",
+        "id": "urn:ngm:class:climate-action-planning",
         "label": "Climate Action Planning"
       },
       {
-        "id": "urn:visionflow:linked:emissions-reporting",
+        "id": "urn:ngm:class:emissions-reporting",
         "label": "Emissions Reporting"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

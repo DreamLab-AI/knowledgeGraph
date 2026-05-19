@@ -264,158 +264,119 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:account-abstraction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:account-abstraction",
+  "@type": "Class",
   "label": "Account Abstraction",
+  "definition": "A paradigm shift in ereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:account-factory",
+        "label": "Account Factory"
+      },
+      {
+        "@id": "urn:ngm:class:bundler",
+        "label": "Bundler"
+      },
+      {
+        "@id": "urn:ngm:class:entry-point-contract",
+        "label": "EntryPoint Contract"
+      },
+      {
+        "@id": "urn:ngm:class:paymaster-contract",
+        "label": "Paymaster Contract"
+      },
+      {
+        "@id": "urn:ngm:class:signature-aggregator",
+        "label": "Signature Aggregator"
+      },
+      {
+        "@id": "urn:ngm:class:user-operation",
+        "label": "UserOperation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:gas-abstraction",
+        "label": "Gas Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:signature-verification",
+        "label": "Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:account-recovery",
+        "label": "Account Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:batch-operations",
+        "label": "Batch Operations"
+      },
+      {
+        "@id": "urn:ngm:class:gasless-transactions",
+        "label": "Gasless Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-validation",
+        "label": "Programmable Validation"
+      },
+      {
+        "@id": "urn:ngm:class:session-keys",
+        "label": "Session Keys"
+      },
+      {
+        "@id": "urn:ngm:class:social-recovery",
+        "label": "Social Recovery"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "@id": "urn:ngm:class:gas-sponsorship",
+        "label": "Gas Sponsorship"
+      },
+      {
+        "@id": "urn:ngm:class:user-operation-mempool",
+        "label": "UserOperation Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ccb7820f26406934aec17d7ecf469195c4cf5cca7eeb9774fcb01770baa7e660@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A paradigm shift in Ethereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts (EOAs controlled by private keys) and contract accounts through a novel UserOperation mempool architecture where bundlers aggregate operations into single transactions, paymaster contracts sponsor gas fees enabling gasless user experiences, and EntryPoint singleton contract (deployed at 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789 across 30+ EVM chains as of January 2025) validates signatures and executes operations, supporting 2.4 million accounts managing $840 million in assets with 18,000+ daily active wallets, enabling innovations including social recovery through guardian networks (threshold m-of-n approval patterns reducing single-point-of-failure private key loss), session keys for limited-scope permissions (game applications granting temporary transaction authority without full account control), batch transactions reducing 5-8 separate operations into single atomic execution saving",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:account-factory",
-      "vc:label": "Account Factory"
-    },
-    {
-      "@id": "urn:visionflow:linked:bundler",
-      "vc:label": "Bundler"
-    },
-    {
-      "@id": "urn:visionflow:linked:entry-point-contract",
-      "vc:label": "EntryPoint Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:paymaster-contract",
-      "vc:label": "Paymaster Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:signature-aggregator",
-      "vc:label": "Signature Aggregator"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-operation",
-      "vc:label": "UserOperation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:evm",
-      "vc:label": "EVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:gas-abstraction",
-      "vc:label": "Gas Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:signature-verification",
-      "vc:label": "Signature Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:account-recovery",
-      "vc:label": "Account Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:batch-operations",
-      "vc:label": "Batch Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:gasless-transactions",
-      "vc:label": "Gasless Transactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-validation",
-      "vc:label": "Programmable Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-keys",
-      "vc:label": "Session Keys"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-recovery",
-      "vc:label": "Social Recovery"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:erc-4337",
-      "vc:label": "ERC-4337"
-    },
-    {
-      "@id": "urn:visionflow:linked:gas-sponsorship",
-      "vc:label": "Gas Sponsorship"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-operation-mempool",
-      "vc:label": "UserOperation Mempool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:account-model",
-      "vc:label": "Account Model"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bundler-network",
-      "vc:label": "Bundler Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:entry-point-singleton",
-      "vc:label": "EntryPoint Singleton"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-4337",
-      "vc:label": "ERC-4337"
-    },
-    {
-      "@id": "urn:visionflow:linked:paymaster-infrastructure",
-      "vc:label": "Paymaster Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

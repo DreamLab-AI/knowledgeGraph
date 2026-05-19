@@ -3,131 +3,227 @@
   "title": "Inpainting",
   "slug": "inpainting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:inpainting",
+  "classIri": "urn:ngm:class:inpainting",
   "domain": "artificial-intelligence",
-  "definition": "Inpainting is the computational task of plausibly reconstructing missing, occluded, masked or unwanted regions of an image or video so the completed output appears coherent with the surrounding (known) context, originally formalised in the digital domain by Bertalmio, Sapiro, Caselles and Ballester (SIGGRAPH 2000) as a partial-differential-equation (PDE) problem that propagates isophote lines from the boundary of a hole inward via anisotropic diffusion of intensity (a Navier-Stokes-inspired transport process subsequently re-derived by Bertalmio, Bertozzi and Sapiro 2001 as a streamfunction-vorticity coupling between image gradient and Laplacian), evolving over the next two decades through exemplar-based and patch-synthesis methods (Criminisi, P\u00e9rez and Toyama CVPR 2003/PAMI 2004 introducing a priority-driven greedy patch-copy schedule that propagates structure before texture by ranking boundary patches by a confidence \u00d7 data term; Drori, Cohen-Or and Yeshurun 2003 fragment-based completion; PatchMatch by Barnes, Shechtman, Finkelstein and Goldman SIGGRAPH 2009 introducing a randomised approximate nearest-neighbour-field algorithm that achieved order-of-magnitude speed-ups and becam",
+  "definition": "Inpainting is the computational task of plausibly reconstructing missing, occluded, masked or unwanted regions of an image or video so the completed output appears coherent with the surrounding (known) context, originally formalised in the digital domain by Bertalmio, Sapiro, Caselles and Ballest...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:image-editing",
+      "id": "urn:ngm:class:image-editing",
       "label": "Image Editing"
     },
     {
-      "id": "urn:visionflow:linked:image-restoration",
+      "id": "urn:ngm:class:image-restoration",
       "label": "Image Restoration"
-    },
-    {
-      "id": "urn:visionflow:owl:class:computer-vision-task",
-      "label": "Computer Vision Task"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:conditioning-encoder",
+        "id": "urn:ngm:class:conditioning-encoder",
         "label": "Conditioning Encoder"
       },
       {
-        "id": "urn:visionflow:linked:context-region",
+        "id": "urn:ngm:class:context-region",
         "label": "Context Region"
       },
       {
-        "id": "urn:visionflow:linked:generator-network",
+        "id": "urn:ngm:class:generator-network",
         "label": "Generator Network"
       },
       {
-        "id": "urn:visionflow:linked:mask",
+        "id": "urn:ngm:class:mask",
         "label": "Mask"
       },
       {
-        "id": "urn:visionflow:linked:sampling-procedure",
+        "id": "urn:ngm:class:sampling-procedure",
         "label": "Sampling Procedure"
       },
       {
-        "id": "urn:visionflow:owl:class:loss-function",
+        "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:differentiable-architecture",
+        "id": "urn:ngm:class:differentiable-architecture",
         "label": "Differentiable Architecture"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:mask-specification",
+        "id": "urn:ngm:class:mask-specification",
         "label": "Mask Specification"
       },
       {
-        "id": "urn:visionflow:linked:pretrained-generative-prior",
+        "id": "urn:ngm:class:pretrained-generative-prior",
         "label": "Pretrained Generative Prior"
       },
       {
-        "id": "urn:visionflow:linked:training-data-distribution",
+        "id": "urn:ngm:class:training-data-distribution",
         "label": "Training Data Distribution"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:disocclusion",
+        "id": "urn:ngm:class:disocclusion",
         "label": "Disocclusion"
       },
       {
-        "id": "urn:visionflow:linked:garment-removal",
+        "id": "urn:ngm:class:garment-removal",
         "label": "Garment Removal"
       },
       {
-        "id": "urn:visionflow:linked:generative-fill",
+        "id": "urn:ngm:class:generative-fill",
         "label": "Generative Fill"
       },
       {
-        "id": "urn:visionflow:linked:object-removal",
+        "id": "urn:ngm:class:object-removal",
         "label": "Object Removal"
       },
       {
-        "id": "urn:visionflow:linked:outpainting",
+        "id": "urn:ngm:class:outpainting",
         "label": "Outpainting"
       },
       {
-        "id": "urn:visionflow:linked:photo-restoration",
+        "id": "urn:ngm:class:photo-restoration",
         "label": "Photo Restoration"
       },
       {
-        "id": "urn:visionflow:linked:scene-completion",
+        "id": "urn:ngm:class:scene-completion",
         "label": "Scene Completion"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:conditional-generation",
+        "id": "urn:ngm:class:conditional-generation",
         "label": "Conditional Generation"
       },
       {
-        "id": "urn:visionflow:linked:diffusion-reverse-process",
+        "id": "urn:ngm:class:diffusion-reverse-process",
         "label": "Diffusion Reverse Process"
       },
       {
-        "id": "urn:visionflow:linked:patch-synthesis",
+        "id": "urn:ngm:class:patch-synthesis",
         "label": "Patch Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:pde-anisotropic-diffusion",
+        "id": "urn:ngm:class:pde-anisotropic-diffusion",
         "label": "PDE Anisotropic Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:variational-inference",
+        "id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:fourier-convolution",
+        "label": "Fourier Convolution"
+      },
+      {
+        "id": "urn:ngm:class:gated-convolution",
+        "label": "Gated Convolution"
+      },
+      {
+        "id": "urn:ngm:class:partial-convolution",
+        "label": "Partial Convolution"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-restoration",
+        "label": "Cultural Heritage Restoration"
+      },
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-reconstruction",
+        "label": "Medical Image Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:photo-editing-software",
+        "label": "Photo Editing Software"
+      },
+      {
+        "id": "urn:ngm:class:video-post-production",
+        "label": "Video Post-Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:eccv",
+        "label": "ECCV"
+      },
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      },
+      {
+        "id": "urn:ngm:class:apple-intelligence",
+        "label": "Apple Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ]
   },
   "wikilinks": [
     {

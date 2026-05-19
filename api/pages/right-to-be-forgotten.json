@@ -3,74 +3,87 @@
   "title": "Right to Be Forgotten",
   "slug": "right-to-be-forgotten",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:right-to-be-forgotten",
+  "classIri": "urn:ngm:class:right-to-be-forgotten",
   "domain": "infrastructure",
   "definition": "A privacy right framework enabling individuals to request deletion or removal of personal data from online platforms and databases, with verification and audit mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-framework",
+      "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:deletion-request",
+        "id": "urn:ngm:class:deletion-request",
         "label": "Deletion Request"
       },
       {
-        "id": "urn:visionflow:linked:erasure-verification",
+        "id": "urn:ngm:class:erasure-verification",
         "label": "Erasure Verification"
       },
       {
-        "id": "urn:visionflow:linked:privacy-policy",
+        "id": "urn:ngm:class:privacy-policy",
         "label": "Privacy Policy"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-inventory",
+        "id": "urn:ngm:class:data-inventory",
         "label": "Data Inventory"
       },
       {
-        "id": "urn:visionflow:owl:class:consent-management",
+        "id": "urn:ngm:class:consent-management",
         "label": "Consent Management"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance-reporting",
+        "id": "urn:ngm:class:compliance-reporting",
         "label": "Compliance Reporting"
       },
       {
-        "id": "urn:visionflow:linked:content-removal",
+        "id": "urn:ngm:class:content-removal",
         "label": "Content Removal"
       },
       {
-        "id": "urn:visionflow:linked:data-erasure",
+        "id": "urn:ngm:class:data-erasure",
         "label": "Data Erasure"
       },
       {
-        "id": "urn:visionflow:owl:class:user-privacy-control",
+        "id": "urn:ngm:class:user-privacy-control",
         "label": "User Privacy Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-protection-framework",
+        "label": "Data Protection Framework"
+      },
+      {
+        "id": "urn:ngm:class:privacy-rights-system",
+        "label": "Privacy Rights System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

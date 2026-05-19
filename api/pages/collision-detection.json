@@ -3,151 +3,315 @@
   "title": "Collision Detection",
   "slug": "collision-detection",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collision-detection",
+  "classIri": "urn:ngm:class:collision-detection",
   "domain": "spatial-computing",
-  "definition": "**Collision Detection** is the computational discipline of determining when two or more geometric primitives, rigid bodies, deformable meshes, articulated kinematic chains, or volumetric fields occupy overlapping regions of a shared spatial domain, decomposed canonically into a **broad phase** that rapidly culls non-overlapping pairs from O(n\u00b2) candidate combinatorics down to near-linear expected work using spatial-acceleration structures (axis-aligned bounding-box / AABB trees, oriented bounding-box / OBB trees, bounding-sphere hierarchies, k-DOP discrete-oriented polytopes, [[Bounding Volume Hierarchy|BVH]] with surface-area-heuristic top-down construction or linear-LBVH bottom-up Morton-code parallel construction on GPU, [[Sweep and Prune]] incremental sorted-projection algorithm exploiting temporal coherence between frames, [[Spatial Hashing]] uniform-grid hash tables for unbounded scenes, [[BSP Tree|binary space partitioning]] trees for static level geometry, octrees / kd-trees for ray-coherent queries, BVH refitting which updates internal nodes from updated leaf AABBs in O(n) without full rebuild) and a **narrow phase** that performs exact or near-exact geometric tests on sur",
+  "definition": "Collision Detection is the computational discipline of determining when two or more geometric primitives, rigid bodies, deformable meshes, articulated kinematic chains, or volumetric fields occupy overlapping regions of a shared spatial domain, decomposed canonically into a broad phase that rapid...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:physics-simulation",
+      "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:broad-phase-detection",
+        "id": "urn:ngm:class:broad-phase-detection",
         "label": "Broad-Phase Detection"
       },
       {
-        "id": "urn:visionflow:linked:contact-manifold",
+        "id": "urn:ngm:class:contact-manifold",
         "label": "Contact Manifold"
       },
       {
-        "id": "urn:visionflow:linked:contact-resolution",
+        "id": "urn:ngm:class:contact-resolution",
         "label": "Contact Resolution"
       },
       {
-        "id": "urn:visionflow:linked:narrow-phase-detection",
+        "id": "urn:ngm:class:narrow-phase-detection",
         "label": "Narrow-Phase Detection"
       },
       {
-        "id": "urn:visionflow:linked:penetration-depth",
+        "id": "urn:ngm:class:penetration-depth",
         "label": "Penetration Depth"
       },
       {
-        "id": "urn:visionflow:linked:separating-axis-theorem",
+        "id": "urn:ngm:class:separating-axis-theorem",
         "label": "Separating Axis Theorem"
       },
       {
-        "id": "urn:visionflow:linked:time-of-impact",
+        "id": "urn:ngm:class:time-of-impact",
         "label": "Time of Impact"
       },
       {
-        "id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:coordinate-frame",
+        "id": "urn:ngm:class:coordinate-frame",
         "label": "Coordinate Frame"
       },
       {
-        "id": "urn:visionflow:linked:floating-point-arithmetic",
+        "id": "urn:ngm:class:floating-point-arithmetic",
         "label": "Floating-Point Arithmetic"
       },
       {
-        "id": "urn:visionflow:linked:geometric-primitive",
+        "id": "urn:ngm:class:geometric-primitive",
         "label": "Geometric Primitive"
       },
       {
-        "id": "urn:visionflow:linked:numerical-robustness",
+        "id": "urn:ngm:class:numerical-robustness",
         "label": "Numerical Robustness"
       },
       {
-        "id": "urn:visionflow:linked:spatial-partitioning",
+        "id": "urn:ngm:class:spatial-partitioning",
         "label": "Spatial Partitioning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cloth-simulation",
+        "id": "urn:ngm:class:cloth-simulation",
         "label": "Cloth Simulation"
       },
       {
-        "id": "urn:visionflow:linked:ragdoll-animation",
+        "id": "urn:ngm:class:ragdoll-animation",
         "label": "Ragdoll Animation"
       },
       {
-        "id": "urn:visionflow:linked:safety-certification",
+        "id": "urn:ngm:class:safety-certification",
         "label": "Safety Certification"
       },
       {
-        "id": "urn:visionflow:owl:class:collision-avoidance",
+        "id": "urn:ngm:class:collision-avoidance",
         "label": "Collision Avoidance"
       },
       {
-        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-simulation",
+        "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:visionflow:owl:class:quality-assurance",
+        "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bsp-tree",
+        "id": "urn:ngm:class:bsp-tree",
         "label": "BSP Tree"
       },
       {
-        "id": "urn:visionflow:linked:conservative-advancement",
+        "id": "urn:ngm:class:conservative-advancement",
         "label": "Conservative Advancement"
       },
       {
-        "id": "urn:visionflow:linked:continuous-collision-detection",
+        "id": "urn:ngm:class:continuous-collision-detection",
         "label": "Continuous Collision Detection"
       },
       {
-        "id": "urn:visionflow:linked:epa-algorithm",
+        "id": "urn:ngm:class:epa-algorithm",
         "label": "EPA Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:gjk-algorithm",
+        "id": "urn:ngm:class:gjk-algorithm",
         "label": "GJK Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:signed-distance-field",
+        "id": "urn:ngm:class:signed-distance-field",
         "label": "Signed Distance Field"
       },
       {
-        "id": "urn:visionflow:linked:spatial-hashing",
+        "id": "urn:ngm:class:spatial-hashing",
         "label": "Spatial Hashing"
       },
       {
-        "id": "urn:visionflow:linked:sweep-and-prune",
+        "id": "urn:ngm:class:sweep-and-prune",
         "label": "Sweep and Prune"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:box2-d",
+        "label": "Box2D"
+      },
+      {
+        "id": "urn:ngm:class:brax",
+        "label": "Brax"
+      },
+      {
+        "id": "urn:ngm:class:bullet-physics",
+        "label": "Bullet Physics"
+      },
+      {
+        "id": "urn:ngm:class:drake",
+        "label": "Drake"
+      },
+      {
+        "id": "urn:ngm:class:fcl",
+        "label": "FCL"
+      },
+      {
+        "id": "urn:ngm:class:havok-physics",
+        "label": "Havok Physics"
+      },
+      {
+        "id": "urn:ngm:class:jolt-physics",
+        "label": "Jolt Physics"
+      },
+      {
+        "id": "urn:ngm:class:mu-jo-co",
+        "label": "MuJoCo"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-flex",
+        "label": "NVIDIA Flex"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-phys-x",
+        "label": "NVIDIA PhysX"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-warp",
+        "label": "NVIDIA Warp"
+      },
+      {
+        "id": "urn:ngm:class:open-dynamics-engine",
+        "label": "Open Dynamics Engine"
+      },
+      {
+        "id": "urn:ngm:class:rapier-physics",
+        "label": "Rapier Physics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:crash-simulation",
+        "label": "Crash Simulation"
+      },
+      {
+        "id": "urn:ngm:class:surgical-simulation",
+        "label": "Surgical Simulation"
+      },
+      {
+        "id": "urn:ngm:class:video-games",
+        "label": "Video Games"
+      },
+      {
+        "id": "urn:ngm:class:vr-ar",
+        "label": "VR/AR"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-18039",
+        "label": "ISO/IEC 18039"
+      },
+      {
+        "id": "urn:ngm:class:khronos-open-xr",
+        "label": "Khronos OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:mjcf",
+        "label": "MJCF"
+      },
+      {
+        "id": "urn:ngm:class:ros-rep",
+        "label": "ROS REP"
+      },
+      {
+        "id": "urn:ngm:class:urdf",
+        "label": "URDF"
+      },
+      {
+        "id": "urn:ngm:class:usd-physics-schema",
+        "label": "USD Physics Schema"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-web-xr",
+        "label": "W3C WebXR"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloth-simulation",
+        "label": "Cloth Simulation"
+      },
+      {
+        "id": "urn:ngm:class:deep-sdf",
+        "label": "DeepSDF"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:neural-implicit-surface",
+        "label": "Neural Implicit Surface"
+      },
+      {
+        "id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
   },
   "wikilinks": [
     {

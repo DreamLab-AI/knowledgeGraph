@@ -3,19 +3,13 @@
   "title": "Information Security",
   "slug": "information-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:information-security",
+  "classIri": "urn:ngm:class:information-security",
   "domain": "artificial-intelligence",
-  "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

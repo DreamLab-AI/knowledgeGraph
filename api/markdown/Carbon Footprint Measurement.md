@@ -368,372 +368,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-footprint-measurement",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-footprint-measurement",
+  "@type": "Class",
   "label": "Carbon Footprint Measurement",
+  "definition": "Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:climate-risk-management",
-      "vc:label": "Climate Risk Management"
+      "@id": "urn:ngm:class:climate-risk-management",
+      "label": "Climate Risk Management"
     },
     {
-      "@id": "urn:visionflow:linked:measurement-frameworks",
-      "vc:label": "Measurement Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "Sustainability Reporting"
+      "@id": "urn:ngm:class:measurement-frameworks",
+      "label": "Measurement Frameworks"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b3d5d7a5c19bcc3c4520260b740ab7da6f86b9f3c2c4789372d2367eb003e988"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:boundary-setting",
+        "label": "Boundary Setting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting-software",
+        "label": "Carbon Accounting Software"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "@id": "urn:ngm:class:emission-inventory",
+        "label": "Emission Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:scope-classification",
+        "label": "Scope Classification"
+      },
+      {
+        "@id": "urn:ngm:class:verification-and-assurance",
+        "label": "Verification and Assurance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factor-databases",
+        "label": "Emission Factor Databases"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14067",
+        "label": "ISO 14067"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-boundary-definition",
+        "label": "Organisational Boundary Definition"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-data",
+        "label": "Supply Chain Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:csrd-compliance",
+        "label": "CSRD Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:decarbonisation-strategy",
+        "label": "Decarbonisation Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science-Based Targets"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:location-based-accounting",
+        "label": "Location-Based Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:market-based-accounting",
+        "label": "Market-Based Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:product-carbon-footprint",
+        "label": "Product Carbon Footprint"
+      },
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai",
+        "label": "AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-data",
+        "label": "Satellite Data"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:climate-tech",
+        "label": "Climate Tech"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:climate-tech",
+        "label": "Climate Tech"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:esrs-e1",
+        "label": "ESRS E1"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14040",
+        "label": "ISO 14040"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14067",
+        "label": "ISO 14067"
+      },
+      {
+        "@id": "urn:ngm:class:streamlined-energy-and-carbon-reporting",
+        "label": "Streamlined Energy and Carbon Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b3d5d7a5c19bcc3c4520260b740ab7da6f86b9f3c2c4789372d2367eb003e988@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic quantitative methodology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Report (AR6, 2021) global warming potentials (GWP₁₀₀): CO₂ = 1, CH₄ = 27.9, N₂O = 273, HFC-134a = 1,526, SF₆ = 25,200, NF₃ = 17,400. [[Carbon Footprint Measurement]] integrates the [[GHG Protocol]] three-scope framework (Scope 1 direct combustion/process/fugitive, Scope 2 purchased energy location-based and market-based, Scope 3 fifteen value-chain categories) with [[ISO 14064]] organisational accounting principles, [[ISO 14067]] product carbon footprint (PCF) methodology, and [[Lifecycle Assessment]] (LCA) per ISO 14040/14044.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:boundary-setting",
-      "vc:label": "Boundary Setting"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-accounting-software",
-      "vc:label": "Carbon Accounting Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factors",
-      "vc:label": "Emission Factors"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-inventory",
-      "vc:label": "Emission Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:lifecycle-assessment",
-      "vc:label": "Lifecycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-monitoring",
-      "vc:label": "Satellite Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-classification",
-      "vc:label": "Scope Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-and-assurance",
-      "vc:label": "Verification and Assurance"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:activity-data",
-      "vc:label": "Activity Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factor-databases",
-      "vc:label": "Emission Factor Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol",
-      "vc:label": "GHG Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14064",
-      "vc:label": "ISO 14064"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14067",
-      "vc:label": "ISO 14067"
-    },
-    {
-      "@id": "urn:visionflow:linked:organisational-boundary-definition",
-      "vc:label": "Organisational Boundary Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-data",
-      "vc:label": "Supply Chain Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:csrd-compliance",
-      "vc:label": "CSRD Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:decarbonisation-strategy",
-      "vc:label": "Decarbonisation Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-target-setting",
-      "vc:label": "Net Zero Target Setting"
-    },
-    {
-      "@id": "urn:visionflow:linked:science-based-targets",
-      "vc:label": "Science-Based Targets"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:location-based-accounting",
-      "vc:label": "Location-Based Accounting"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-based-accounting",
-      "vc:label": "Market-Based Accounting"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-carbon-footprint",
-      "vc:label": "Product Carbon Footprint"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-1-emissions",
-      "vc:label": "Scope 1 Emissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-2-emissions",
-      "vc:label": "Scope 2 Emissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-3-emissions",
-      "vc:label": "Scope 3 Emissions"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:activity-data",
-      "vc:label": "Activity Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai",
-      "vc:label": "AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factors",
-      "vc:label": "Emission Factors"
-    },
-    {
-      "@id": "urn:visionflow:linked:erp-systems",
-      "vc:label": "ERP Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-data",
-      "vc:label": "Satellite Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-transparency",
-      "vc:label": "Supply Chain Transparency"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-tech",
-      "vc:label": "Climate Tech"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "Sustainability Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ai",
-      "vc:label": "AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:lifecycle-assessment",
-      "vc:label": "Lifecycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-sensing",
-      "vc:label": "Remote Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-data",
-      "vc:label": "Satellite Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:carbon-offsetting",
-      "vc:label": "Carbon Offsetting"
-    },
-    {
-      "@id": "urn:visionflow:linked:greenwashing",
-      "vc:label": "Greenwashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-carbon-markets",
-      "vc:label": "Voluntary Carbon Markets"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:climate-tech",
-      "vc:label": "Climate Tech"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol",
-      "vc:label": "GHG Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainability",
-      "vc:label": "Sustainability"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:esrs-e1",
-      "vc:label": "ESRS E1"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol",
-      "vc:label": "GHG Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14040",
-      "vc:label": "ISO 14040"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14064",
-      "vc:label": "ISO 14064"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14067",
-      "vc:label": "ISO 14067"
-    },
-    {
-      "@id": "urn:visionflow:linked:streamlined-energy-and-carbon-reporting",
-      "vc:label": "Streamlined Energy and Carbon Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcfd",
-      "vc:label": "TCFD"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai",
-      "vc:label": "AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-tech",
-      "vc:label": "Climate Tech"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-data",
-      "vc:label": "Satellite Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

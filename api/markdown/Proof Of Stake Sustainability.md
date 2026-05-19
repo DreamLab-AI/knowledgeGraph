@@ -288,126 +288,93 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:proof-of-stake-sustainability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proof-of-stake-sustainability",
+  "@type": "Class",
   "label": "Proof Of Stake Sustainability",
+  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of [[Proof of Stake]] consensus mechanisms that make them a viable long-term alternative to energy-intensive [[Proof of Work]] systems.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:environmental-technology",
-      "vc:label": "Environmental Technology"
+      "@id": "urn:ngm:class:environmental-technology",
+      "label": "Environmental Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:blockchain-sustainability",
-      "vc:label": "Blockchain Sustainability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
+      "@id": "urn:ngm:class:blockchain-sustainability",
+      "label": "Blockchain Sustainability"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5f8e905bdc2ea1e35eaf2506d8c97de3268513f71aed41fc90cf46080409020b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:delegation-protocol",
+        "label": "Delegation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-conditions",
+        "label": "Slashing Conditions"
+      },
+      {
+        "@id": "urn:ngm:class:staking-mechanism",
+        "label": "Staking Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:validator-selection",
+        "label": "Validator Selection"
+      },
+      {
+        "@id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:validator-infrastructure",
+        "label": "Validator Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:green-blockchain-initiatives",
+        "label": "Green Blockchain Initiatives"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-consensus",
+        "label": "Sustainable Consensus"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5f8e905bdc2ea1e35eaf2506d8c97de3268513f71aed41fc90cf46080409020b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of [[Proof of Stake]] consensus mechanisms that make them a viable long-term alternative to energy-intensive [[Proof of Work]] systems. It encompasses the dramatic reduction in [[Energy Consumption]] achieved by replacing computational mining with stake-weighted [[Validator]] selection, the economic incentive alignment that secures the network through bonded capital rather than hardware expenditure, and the regulatory compliance advantages that arise from verifiable environmental credentials.",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.75",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:delegation-protocol",
-      "vc:label": "Delegation Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:slashing-conditions",
-      "vc:label": "Slashing Conditions"
-    },
-    {
-      "@id": "urn:visionflow:linked:staking-mechanism",
-      "vc:label": "Staking Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-selection",
-      "vc:label": "Validator Selection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reward-distribution",
-      "vc:label": "Reward Distribution"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:network-security",
-      "vc:label": "Network Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-infrastructure",
-      "vc:label": "Validator Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "Token Economics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:institutional-adoption",
-      "vc:label": "Institutional Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:esg-reporting",
-      "vc:label": "ESG Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:green-blockchain-initiatives",
-      "vc:label": "Green Blockchain Initiatives"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainable-consensus",
-      "vc:label": "Sustainable Consensus"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-virtual-infrastructure",
-      "vc:label": "Sustainable Virtual Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

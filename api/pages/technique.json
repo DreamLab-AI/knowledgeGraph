@@ -3,19 +3,18 @@
   "title": "Technique",
   "slug": "technique",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:technique",
+  "classIri": "urn:ngm:class:technique",
   "domain": "artificial-intelligence",
   "definition": "Technique is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

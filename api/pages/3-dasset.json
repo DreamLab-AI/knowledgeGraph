@@ -3,19 +3,18 @@
   "title": "3DAsset",
   "slug": "3-dasset",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-dasset",
+  "classIri": "urn:ngm:class:3-dasset",
   "domain": "spatial-computing",
   "definition": "3DAsset is a spatial computing concept and a type of Digital Asset Management.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

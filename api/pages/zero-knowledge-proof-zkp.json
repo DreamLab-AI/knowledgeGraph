@@ -3,82 +3,95 @@
   "title": "Zero-Knowledge Proof (ZKP)",
   "slug": "zero-knowledge-proof-zkp",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:zero-knowledge-proof-zkp",
+  "classIri": "urn:ngm:class:zero-knowledge-proof-zkp",
   "domain": "infrastructure",
   "definition": "A cryptographic protocol that enables one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any information beyond the validity of the statement itself.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptography",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bulletproofs",
+        "id": "urn:ngm:class:bulletproofs",
         "label": "Bulletproofs"
       },
       {
-        "id": "urn:visionflow:linked:interactive-zkp",
+        "id": "urn:ngm:class:interactive-zkp",
         "label": "Interactive ZKP"
       },
       {
-        "id": "urn:visionflow:linked:non-interactive-zkp",
+        "id": "urn:ngm:class:non-interactive-zkp",
         "label": "Non-Interactive ZKP"
       },
       {
-        "id": "urn:visionflow:linked:plonk",
+        "id": "urn:ngm:class:plonk",
         "label": "PLONK"
       },
       {
-        "id": "urn:visionflow:owl:class:zk-snarks",
+        "id": "urn:ngm:class:zk-snarks",
         "label": "zk-SNARKs"
       },
       {
-        "id": "urn:visionflow:owl:class:zk-starks",
+        "id": "urn:ngm:class:zk-starks",
         "label": "zk-STARKs"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:polynomial-commitment-scheme",
+        "id": "urn:ngm:class:polynomial-commitment-scheme",
         "label": "Polynomial Commitment Scheme"
       },
       {
-        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:confidential-transactions",
+        "id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transactions"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preserving-identity",
+        "id": "urn:ngm:class:privacy-preserving-identity",
         "label": "Privacy-Preserving Identity"
       },
       {
-        "id": "urn:visionflow:linked:private-authentication",
+        "id": "urn:ngm:class:private-authentication",
         "label": "Private Authentication"
       },
       {
-        "id": "urn:visionflow:linked:verifiable-computation",
+        "id": "urn:ngm:class:verifiable-computation",
         "label": "Verifiable Computation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptographic-verification-system",
+        "label": "Cryptographic Verification System"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -136,52 +136,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:io-t-sensors",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:io-t-sensors",
+  "@type": "Class",
   "label": "Io T Sensors",
+  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis.",
+  "domain": "robotics",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
+      "@id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c914dbc1871d42c40fe9f3e8bbc7d7e2f9f423a68e1ee0b16e04cb06c421982@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:smart-manufacturing",
-      "vc:label": "Smart Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:responsible-ai-principles",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:responsible-ai-principles",
+  "@type": "Class",
   "label": "Responsible AI Principles",
+  "definition": "Responsible AI Principles are foundational ical commitments and normative guidelines that govern AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
+      "@id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a7a5fde053465538e239265d308e38ea7884538795614782f52e8605e943616a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a7a5fde053465538e239265d308e38ea7884538795614782f52e8605e943616a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Responsible AI Principles are foundational ethical commitments and normative guidelines that govern AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes. These principles establish organizational values and constraints that guide technical decisions, risk management, and stakeholder engagement throughout the AI lifecycle. Core principles widely adopted across international frameworks include fairness and non-discrimination (ensuring equitable treatment across demographic groups and mitigating algorithmic bias), transparency and explainability (providing understandable information about system functionality and decision logic), accountability and governance (establishing clear responsibility for AI outcomes and oversight mechanisms), privacy and data protection (safeguarding personal information and respecting data rights), safety and security (ensuring robust performance and resistance to adversarial attacks), human agency and oversight (preserving meaningful human control and decision-making authority), and societal and environmental wellbeing (considering broader impacts on communities and sustainability). These prin",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

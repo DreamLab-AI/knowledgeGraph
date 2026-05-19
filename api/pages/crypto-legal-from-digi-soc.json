@@ -3,19 +3,18 @@
   "title": "Crypto Legal from DigiSoc",
   "slug": "crypto-legal-from-digi-soc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:crypto-legal-from-digi-soc",
+  "classIri": "urn:ngm:class:crypto-legal-from-digi-soc",
   "domain": "blockchain",
   "definition": "Crypto Legal from DigiSoc is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.55,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Recall",
   "slug": "recall",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:recall",
+  "classIri": "urn:ngm:class:recall",
   "domain": "spatial-computing",
-  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.",
+  "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in d...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ]
   },
   "wikilinks": [
     {

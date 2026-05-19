@@ -3,32 +3,36 @@
   "title": "Resolution Test Chart",
   "slug": "resolution-test-chart",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:resolution-test-chart",
+  "classIri": "urn:ngm:class:resolution-test-chart",
   "domain": "spatial-computing",
   "definition": "Standardized calibration patterns such as ISO 12233 charts used to measure and validate the optical resolution, colour accuracy, and image quality of displays in virtual reality and augmented reality headsets through computational analysis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:calibration-tools",
+      "id": "urn:ngm:class:calibration-tools",
       "label": "Calibration Tools"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:display-calibration",
+        "id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

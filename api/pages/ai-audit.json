@@ -3,28 +3,27 @@
   "title": "AI Audit",
   "slug": "ai-audit",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-audit",
+  "classIri": "urn:ngm:class:ai-audit",
   "domain": "artificial-intelligence",
-  "definition": "A systematic, independent examination and evaluation of an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.",
+  "definition": "A systematic, independent examination and eof an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:access-to-systems-and-personnel",
+        "id": "urn:ngm:class:access-to-systems-and-personnel",
         "label": "access to systems and personnel"
       },
       {
-        "id": "urn:visionflow:linked:ai-documentation",
+        "id": "urn:ngm:class:ai-documentation",
         "label": "AI documentation"
       }
     ],
@@ -32,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

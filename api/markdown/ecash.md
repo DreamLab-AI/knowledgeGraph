@@ -316,41 +316,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ecash",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ecash",
+  "@type": "Class",
   "label": "ecash",
+  "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
+      "@id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6827b2f088798ff2cca8e2955b3fce9cd9f8e16f49c8ec12779760d57998d9eb"
-  },
-  "vc:inferenceRule": "R2WikilinkParentInference",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6827b2f088798ff2cca8e2955b3fce9cd9f8e16f49c8ec12779760d57998d9eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2WikilinkParentInference"
   }
 }
 ```

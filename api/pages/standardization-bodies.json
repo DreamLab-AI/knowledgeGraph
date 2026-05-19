@@ -3,32 +3,36 @@
   "title": "Standardization Bodies",
   "slug": "standardization-bodies",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:standardization-bodies",
+  "classIri": "urn:ngm:class:standardization-bodies",
   "domain": "spatial-computing",
-  "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.",
+  "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating member organizations for interoperability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards-organization",
+      "id": "urn:ngm:class:standards-organization",
       "label": "Standards Organization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:technology-interoperability",
+        "id": "urn:ngm:class:technology-interoperability",
         "label": "Technology Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

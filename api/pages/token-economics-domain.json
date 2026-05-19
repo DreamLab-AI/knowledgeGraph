@@ -3,27 +3,31 @@
   "title": "Token Economics Domain",
   "slug": "token-economics-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:token-economics-domain",
+  "classIri": "urn:ngm:class:token-economics-domain",
   "domain": "blockchain",
-  "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems. This domain includes cryptocurrency design and properties, token standards and specifications (ERC-20, ERC-721, ERC-1155), tokenomics models (supply schedules, inflation, burning mechanisms, vesting), incentive alignment mechanisms (staking rewards, transaction fees, block rewards, penalty mechanisms), economic security models (cost of attack, validator economics, fee markets), decentralized finance (DeFi) economic primitives (automated market makers, lending protocols, yield farming), non-fungible token (NFT) economics, governance token mechanisms, utility token design, and economic game theory as applied to blockchain systems. Token economics bridges computer science, cryptography, and economic theory, applying mechanism design, game theory, and monetary economics to create self-sustaining decentralized systems. The domain addresses critical challenges including aligning participant incentives with network security and health, designing sustainable token supply mo",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

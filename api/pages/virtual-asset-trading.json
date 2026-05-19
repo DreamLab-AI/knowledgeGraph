@@ -3,19 +3,18 @@
   "title": "Virtual Asset Trading",
   "slug": "virtual-asset-trading",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-asset-trading",
+  "classIri": "urn:ngm:class:virtual-asset-trading",
   "domain": "spatial-computing",
   "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

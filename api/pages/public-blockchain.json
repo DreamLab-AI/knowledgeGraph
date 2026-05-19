@@ -3,19 +3,18 @@
   "title": "Public Blockchain",
   "slug": "public-blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:public-blockchain",
+  "classIri": "urn:ngm:class:public-blockchain",
   "domain": "infrastructure",
-  "definition": "Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin]], [[Ethereum]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sacrificing scalability and energy efficiency compared to private alternatives.",
+  "definition": "Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin]], [[ereum]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sac...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

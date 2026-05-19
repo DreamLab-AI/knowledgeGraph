@@ -3,78 +3,91 @@
   "title": "Feedback Mechanism",
   "slug": "feedback-mechanism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feedback-mechanism",
+  "classIri": "urn:ngm:class:feedback-mechanism",
   "domain": "spatial-computing",
-  "definition": "Method providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments.",
+  "definition": "Mod providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-experience-pipeline",
+      "id": "urn:ngm:class:immersive-experience-pipeline",
       "label": "Immersive Experience Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audio-response-module",
+        "id": "urn:ngm:class:audio-response-module",
         "label": "Audio Response Module"
       },
       {
-        "id": "urn:visionflow:linked:haptic-feedback-system",
+        "id": "urn:ngm:class:haptic-feedback-system",
         "label": "Haptic Feedback System"
       },
       {
-        "id": "urn:visionflow:linked:sensory-integration-controller",
+        "id": "urn:ngm:class:sensory-integration-controller",
         "label": "Sensory Integration Controller"
       },
       {
-        "id": "urn:visionflow:linked:visual-feedback-renderer",
+        "id": "urn:ngm:class:visual-feedback-renderer",
         "label": "Visual Feedback Renderer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:input-detection",
+        "id": "urn:ngm:class:input-detection",
         "label": "Input Detection"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-network",
+        "id": "urn:ngm:class:low-latency-network",
         "label": "Low Latency Network"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data",
+        "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:enhanced-presence",
+        "id": "urn:ngm:class:enhanced-presence",
         "label": "Enhanced Presence"
       },
       {
-        "id": "urn:visionflow:linked:natural-interaction",
+        "id": "urn:ngm:class:natural-interaction",
         "label": "Natural Interaction"
       },
       {
-        "id": "urn:visionflow:linked:sensory-immersion",
+        "id": "urn:ngm:class:sensory-immersion",
         "label": "Sensory Immersion"
       },
       {
-        "id": "urn:visionflow:linked:user-feedback-loop",
+        "id": "urn:ngm:class:user-feedback-loop",
         "label": "User Feedback Loop"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-interaction-system",
+        "label": "User Interaction System"
+      },
+      {
+        "id": "urn:ngm:class:immersive-experience-pipeline",
+        "label": "Immersive Experience Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

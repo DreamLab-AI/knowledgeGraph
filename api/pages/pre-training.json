@@ -3,19 +3,18 @@
   "title": "Pre Training",
   "slug": "pre-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pre-training",
+  "classIri": "urn:ngm:class:pre-training",
   "domain": "artificial-intelligence",
   "definition": "The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

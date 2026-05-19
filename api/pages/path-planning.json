@@ -3,57 +3,70 @@
   "title": "Path Planning",
   "slug": "path-planning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:path-planning",
+  "classIri": "urn:ngm:class:path-planning",
   "domain": "robotics",
   "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-planning",
+      "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.97,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:environment-model",
+        "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
       },
       {
-        "id": "urn:visionflow:linked:goal-configuration",
+        "id": "urn:ngm:class:goal-configuration",
         "label": "Goal Configuration"
       },
       {
-        "id": "urn:visionflow:linked:mapping",
+        "id": "urn:ngm:class:mapping",
         "label": "Mapping"
       },
       {
-        "id": "urn:visionflow:linked:start-configuration",
+        "id": "urn:ngm:class:start-configuration",
         "label": "Start Configuration"
       },
       {
-        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "id": "urn:ngm:class:rb-1013-localization",
         "label": "RB-1013-localization"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
         "label": "RB-1007-trajectory-generation"
       },
       {
-        "id": "urn:visionflow:owl:class:navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-1017-rrt-algorithm",
+        "label": "RB-1017-rrt-algorithm"
+      },
+      {
+        "id": "urn:ngm:class:rb-1018-dijkstra-algorithm",
+        "label": "RB-1018-dijkstra-algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

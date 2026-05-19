@@ -172,48 +172,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:permissioned-blockchain",
+  "@type": "Class",
   "label": "Permissioned Blockchain",
+  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintainin...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bc-0120-consensus-mechanism",
+        "label": "BC-0120-consensus-mechanism"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:19c6a790aa4c8f946d79c28ef559b03773f9cd7c17e5fe8dab6c579c5547d6ac@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintaining regulatory compliance and business confidentiality. Permissioned blockchains implement access control at multiple layers—node permissioning restricting which organisations participate, account permissioning controlling transaction submission, and [[PrivateChannels]] enabling confidential subsets of participants to conduct transactions invisibly to others—deployed extensively in enterprise contexts including [[Hyperledger Fabric]], [[Quorum Blockchain]], and [[R3 Corda]] supporting supply chain, trade finance, healthcare, and financial services applications.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
-      "vc:label": "BC-0120-consensus-mechanism"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

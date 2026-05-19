@@ -3,19 +3,18 @@
   "title": "Reputation-Based BFT",
   "slug": "reputation-based-bft",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reputation-based-bft",
+  "classIri": "urn:ngm:class:reputation-based-bft",
   "domain": "blockchain",
   "definition": "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

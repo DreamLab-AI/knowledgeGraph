@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-virtualization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-virtualization",
+  "@type": "Class",
   "label": "Data Virtualization",
+  "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reduci...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-integration",
-      "vc:label": "Data Integration"
+      "@id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-connectors",
+        "label": "Data Connectors"
+      },
+      {
+        "@id": "urn:ngm:class:query-engine",
+        "label": "Query Engine"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-access",
+        "label": "Real-Time Data Access"
+      },
+      {
+        "@id": "urn:ngm:class:unified-data-view",
+        "label": "Unified Data View"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:60fcab24a0a9cf23da9d9d031cfb50c701c6e7d9062c370a3ecf4ab3985d69e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-connectors",
-      "vc:label": "Data Connectors"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-engine",
-      "vc:label": "Query Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-federation",
-      "vc:label": "Data Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-data-access",
-      "vc:label": "Real-Time Data Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:unified-data-view",
-      "vc:label": "Unified Data View"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

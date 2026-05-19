@@ -116,54 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bagging",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bagging",
+  "@type": "Class",
   "label": "Bagging",
+  "definition": "Bagging is a artificial intelligence concept and a type of Ensemble Mods. that enables Parallel Training.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ensemble-methods",
-      "vc:label": "Ensemble Methods"
+      "@id": "urn:ngm:class:ensemble-methods",
+      "label": "Ensemble Methods"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:parallel-training",
+        "label": "Parallel Training"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:daa68d41d7c470b612c36697f95ce59222aa1fa0843eb601465a0d8f3e8b37ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Bagging is a artificial intelligence concept and a type of Ensemble Methods. that enables Parallel Training.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:parallel-training",
-      "vc:label": "Parallel Training"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "AI Governance",
   "slug": "ai-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-governance",
+  "classIri": "urn:ngm:class:ai-governance",
   "domain": "artificial-intelligence",
-  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies. This includes regulatory compliance (GDPR, AI Act), organizational policies for ethical AI, risk management protocols, accountability structures, and stakeholder engagement processes. AI governance addresses concerns around algorithmic transparency, human oversight, impact assessments, and the establishment of AI ethics boards. Effective governance balances innovation with risk mitigation, ensuring AI systems align with societal values and legal requirements.",
+  "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance-framework",
+      "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

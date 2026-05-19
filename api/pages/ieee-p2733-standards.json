@@ -3,32 +3,36 @@
   "title": "Ieee P2733 Standards",
   "slug": "ieee-p2733-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ieee-p2733-standards",
+  "classIri": "urn:ngm:class:ieee-p2733-standards",
   "domain": "spatial-computing",
-  "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.",
+  "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ical design practices that ensure safe and accessible immersive experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:xr-technical-standard",
+      "id": "urn:ngm:class:xr-technical-standard",
       "label": "XR Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:safe-immersive-experiences",
+        "id": "urn:ngm:class:safe-immersive-experiences",
         "label": "Safe Immersive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -148,74 +148,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-application-industry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-application-industry",
+  "@type": "Class",
   "label": "ETSI Domain Application + Industry",
+  "definition": "Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e8233b79e371b6f64bfcb86578a1ddb58d73e8498bdd1f9da60c57a7bce2735d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:industrial-application-classification",
+        "label": "Industrial Application Classification"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-platform-categorization",
+        "label": "Manufacturing Platform Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e8233b79e371b6f64bfcb86578a1ddb58d73e8498bdd1f9da60c57a7bce2735d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:industrial-application-classification",
-      "vc:label": "Industrial Application Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-platform-categorization",
-      "vc:label": "Manufacturing Platform Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
-      "vc:label": "VirtualEconomyDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

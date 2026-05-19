@@ -3,143 +3,247 @@
   "title": "Attention",
   "slug": "attention",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:attention",
+  "classIri": "urn:ngm:class:attention",
   "domain": "artificial-intelligence",
-  "definition": "**Attention** is a differentiable content-based addressing mechanism for neural networks that computes a weighted combination of value vectors according to learned compatibility scores between a query vector and a set of key vectors, formalised in its most influential form as Scaled Dot-Product Attention (Vaswani et al. 2017) by the closed-form operator Attention(Q, K, V) = softmax(QK^T / \u221ad_k) V where Q \u2208 \u211d^{n\u00d7d_k} is a matrix of n query vectors, K \u2208 \u211d^{m\u00d7d_k} is a matrix of m key vectors, V \u2208 \u211d^{m\u00d7d_v} is the matching matrix of value vectors, d_k is the key dimensionality and the \u221ad_k denominator prevents the softmax from saturating into one-hot regimes at high d_k where unscaled dot products acquire variance d_k and drive gradient collapse, originating in the additive (Bahdanau-style) formulation of Bahdanau, Cho & Bengio (ICLR 2015) \"Neural Machine Translation by Jointly Learning to Align and Translate\" which broke the fixed-vector bottleneck of Sutskever-Vinyals-Le (NeurIPS 2014) encoder-decoder seq2seq by allowing each decoder step to softly align over all encoder hidden states via score(s, h) = v^T tanh(W_s s + W_h h), refined into the simpler multiplicative (Luong) variant ",
+  "definition": "Attention is a differentiable content-based addressing mechanism for neural networks that computes a weighted combination of value vectors according to learned compatibility scores between a query vector and a set of key vectors, formalised in its most influential form as Scaled Dot-Product Atten...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:differentiable-memory",
+      "id": "urn:ngm:class:differentiable-memory",
       "label": "Differentiable Memory"
     },
     {
-      "id": "urn:visionflow:linked:neural-network-mechanism",
+      "id": "urn:ngm:class:neural-network-mechanism",
       "label": "Neural Network Mechanism"
-    },
-    {
-      "id": "urn:visionflow:linked:representation-learning",
-      "label": "Representation Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:attention-score",
+        "id": "urn:ngm:class:attention-score",
         "label": "Attention Score"
       },
       {
-        "id": "urn:visionflow:linked:key",
+        "id": "urn:ngm:class:key",
         "label": "Key"
       },
       {
-        "id": "urn:visionflow:linked:query",
+        "id": "urn:ngm:class:query",
         "label": "Query"
       },
       {
-        "id": "urn:visionflow:linked:softmax",
+        "id": "urn:ngm:class:softmax",
         "label": "Softmax"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-head",
+        "id": "urn:ngm:class:attention-head",
         "label": "Attention Head"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-weight",
+        "id": "urn:ngm:class:attention-weight",
         "label": "Attention Weight"
       },
       {
-        "id": "urn:visionflow:owl:class:positional-encoding",
+        "id": "urn:ngm:class:positional-encoding",
         "label": "Positional Encoding"
       },
       {
-        "id": "urn:visionflow:owl:class:value",
+        "id": "urn:ngm:class:value",
         "label": "Value"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:differentiable-architecture",
+        "id": "urn:ngm:class:differentiable-architecture",
         "label": "Differentiable Architecture"
       },
       {
-        "id": "urn:visionflow:linked:embedding",
+        "id": "urn:ngm:class:embedding",
         "label": "Embedding"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:linear-projection",
+        "id": "urn:ngm:class:linear-projection",
         "label": "Linear Projection"
       },
       {
-        "id": "urn:visionflow:linked:matrix-multiplication",
+        "id": "urn:ngm:class:matrix-multiplication",
         "label": "Matrix Multiplication"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-modal-conditioning",
+        "id": "urn:ngm:class:cross-modal-conditioning",
         "label": "Cross-Modal Conditioning"
       },
       {
-        "id": "urn:visionflow:linked:in-context-learning",
+        "id": "urn:ngm:class:in-context-learning",
         "label": "In-Context Learning"
       },
       {
-        "id": "urn:visionflow:linked:large-language-model",
+        "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
       },
       {
-        "id": "urn:visionflow:linked:long-context-window",
+        "id": "urn:ngm:class:long-context-window",
         "label": "Long Context Window"
       },
       {
-        "id": "urn:visionflow:linked:neural-machine-translation",
+        "id": "urn:ngm:class:neural-machine-translation",
         "label": "Neural Machine Translation"
       },
       {
-        "id": "urn:visionflow:linked:vision-transformer",
+        "id": "urn:ngm:class:vision-transformer",
         "label": "Vision Transformer"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:content-based-addressing",
+        "id": "urn:ngm:class:content-based-addressing",
         "label": "Content-Based Addressing"
       },
       {
-        "id": "urn:visionflow:linked:differentiable-lookup",
+        "id": "urn:ngm:class:differentiable-lookup",
         "label": "Differentiable Lookup"
       },
       {
-        "id": "urn:visionflow:linked:permutation-equivariance",
+        "id": "urn:ngm:class:permutation-equivariance",
         "label": "Permutation Equivariance"
       },
       {
-        "id": "urn:visionflow:linked:soft-alignment",
+        "id": "urn:ngm:class:soft-alignment",
         "label": "Soft Alignment"
       },
       {
-        "id": "urn:visionflow:linked:weighted-aggregation",
+        "id": "urn:ngm:class:weighted-aggregation",
         "label": "Weighted Aggregation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:causal-mask",
+        "label": "Causal Mask"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention-kernel",
+        "label": "FlashAttention Kernel"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "id": "urn:ngm:class:scaled-dot-product",
+        "label": "Scaled Dot Product"
+      },
+      {
+        "id": "urn:ngm:class:sliding-window",
+        "label": "Sliding Window"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:acl",
+        "label": "ACL"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-triton",
+        "label": "OpenAI Triton"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:memory-augmented-neural-network",
+        "label": "Memory-Augmented Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-turing-machine",
+        "label": "Neural Turing Machine"
+      },
+      {
+        "id": "urn:ngm:class:pointer-network",
+        "label": "Pointer Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ]
   },
   "wikilinks": [
     {

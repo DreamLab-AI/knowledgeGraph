@@ -228,136 +228,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:zero-trust-architecture-zta",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:zero-trust-architecture-zta",
+  "@type": "Class",
   "label": "Zero-Trust Architecture (ZTA)",
+  "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:security-architecture",
-      "vc:label": "Security Architecture"
+      "@id": "urn:ngm:class:security-architecture",
+      "label": "Security Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:65755ee38490bf138d5687d8b0de86e4af454280e09ece51bb78da705fc067e3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:continuous-verification",
+        "label": "Continuous Verification"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege-access-control",
+        "label": "Least-Privilege Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:device-authentication",
+        "label": "Device Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:logging-and-monitoring",
+        "label": "Logging and Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:breach-containment",
+        "label": "Breach Containment"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-access-control",
+        "label": "Dynamic Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:insider-threat-mitigation",
+        "label": "Insider Threat Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:microsegmentation",
+        "label": "Microsegmentation"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5BodyWikilinksConvergence",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:65755ee38490bf138d5687d8b0de86e4af454280e09ece51bb78da705fc067e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:cybersecurity-framework",
-      "vc:label": "Cybersecurity Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-architecture",
-      "vc:label": "Security Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:continuous-verification",
-      "vc:label": "Continuous Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:least-privilege-access-control",
-      "vc:label": "Least-Privilege Access Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-decision-point",
-      "vc:label": "Policy Decision Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-enforcement-point",
-      "vc:label": "Policy Enforcement Point"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:device-authentication",
-      "vc:label": "Device Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption",
-      "vc:label": "Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:logging-and-monitoring",
-      "vc:label": "Logging and Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-segmentation",
-      "vc:label": "Network Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:breach-containment",
-      "vc:label": "Breach Containment"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-access-control",
-      "vc:label": "Dynamic Access Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:insider-threat-mitigation",
-      "vc:label": "Insider Threat Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsegmentation",
-      "vc:label": "Microsegmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-detection",
-      "vc:label": "Threat Detection"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:authentication-protocol",
-      "vc:label": "Authentication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:authorization-framework",
-      "vc:label": "Authorization Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-information-and-event-management-siem",
-      "vc:label": "Security Information and Event Management (SIEM)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5BodyWikilinksConvergence"
+  }
 }
 ```
 

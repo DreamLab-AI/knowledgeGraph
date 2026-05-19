@@ -404,298 +404,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:convergence",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:convergence",
+  "@type": "Class",
   "label": "Convergence",
+  "definition": "Technological Convergence is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities, applications, and social configurations that none of the converging components ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:general-purpose-technology",
-      "vc:label": "General Purpose Technology"
+      "@id": "urn:ngm:class:general-purpose-technology",
+      "label": "General Purpose Technology"
     },
     {
-      "@id": "urn:visionflow:linked:innovation-systems",
-      "vc:label": "Innovation Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:sociotechnical-systems",
-      "vc:label": "Sociotechnical Systems"
+      "@id": "urn:ngm:class:innovation-systems",
+      "label": "Innovation Systems"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3c1b11b47cbd2c9936c2d5865e6c7c56d4bd847a635e34f3d31e02d7de2e36f9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-and-blockchain",
+        "label": "AI and Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:biocomputing",
+        "label": "Biocomputing"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:nbic-convergence",
+        "label": "NBIC Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cross-domain-research-infrastructure",
+        "label": "Cross-Domain Research Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocols",
+        "label": "Interoperability Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:moore-s-law",
+        "label": "Moore's Law"
+      },
+      {
+        "@id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-coordination",
+        "label": "Regulatory Coordination"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "@id": "urn:ngm:class:smart-cities",
+        "label": "Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:technological-singularity",
+        "label": "Technological Singularity"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:general-purpose-technology-theory",
+        "label": "General Purpose Technology Theory"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:schumpeterian-innovation",
+        "label": "Schumpeterian Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:systems-of-systems-design",
+        "label": "Systems of Systems Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:disruptive-innovation",
+        "label": "Disruptive Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:emerging-technologies",
+        "label": "Emerging Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:moore-s-law",
+        "label": "Moore's Law"
+      },
+      {
+        "@id": "urn:ngm:class:nbic-convergence",
+        "label": "NBIC Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-sti-directorate",
+        "label": "OECD STI Directorate"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3c1b11b47cbd2c9936c2d5865e6c7c56d4bd847a635e34f3d31e02d7de2e36f9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technological Convergence is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities, applications, and social configurations that none of the converging components could have achieved independently. First systematically theorised in the 2002 US National Science Foundation / Department of Commerce report \"Converging Technologies for Improving Human Performance\" (Roco & Bainbridge), the concept formalises an observation implicit in the history of technology since the Industrial Revolution: that breakthrough innovation almost always arises at disciplinary boundaries rather than within established fields. The canonical [[NBIC Convergence]] framework (Nano-Bio-Info-Cogno) identified four mutually reinforcing S&T waves whose intersection was expected to drive capability discontinuities across health, productivity, security, and human cognition over the period 2002–2030; 2026 empirical evidence validates most directional predictions while substantially accelerating timelines.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-and-blockchain",
-      "vc:label": "AI and Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:biocomputing",
-      "vc:label": "Biocomputing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-physical-systems",
-      "vc:label": "Cyber Physical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:nbic-convergence",
-      "vc:label": "NBIC Convergence"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-economy",
-      "vc:label": "Platform Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quantum-computing",
-      "vc:label": "Quantum Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cross-domain-research-infrastructure",
-      "vc:label": "Cross-Domain Research Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperability-protocols",
-      "vc:label": "Interoperability Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:moore-s-law",
-      "vc:label": "Moore's Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-standards",
-      "vc:label": "Open Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-coordination",
-      "vc:label": "Regulatory Coordination"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:embodied-ai",
-      "vc:label": "Embodied AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:industry-4-0",
-      "vc:label": "Industry 4.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-cities",
-      "vc:label": "Smart Cities"
-    },
-    {
-      "@id": "urn:visionflow:linked:technological-singularity",
-      "vc:label": "Technological Singularity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:precision-medicine",
-      "vc:label": "Precision Medicine"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:general-purpose-technology-theory",
-      "vc:label": "General Purpose Technology Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-economy",
-      "vc:label": "Platform Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:schumpeterian-innovation",
-      "vc:label": "Schumpeterian Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-of-systems-design",
-      "vc:label": "Systems of Systems Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:quantum-mechanics",
-      "vc:label": "Quantum Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-technology",
-      "vc:label": "Semiconductor Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-biology",
-      "vc:label": "Synthetic Biology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:industry-4-0",
-      "vc:label": "Industry 4.0"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quantum-computing",
-      "vc:label": "Quantum Computing"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:digital-divide",
-      "vc:label": "Digital Divide"
-    },
-    {
-      "@id": "urn:visionflow:linked:silo-innovation",
-      "vc:label": "Silo Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:technological-singularity",
-      "vc:label": "Technological Singularity"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-lock-in",
-      "vc:label": "Technology Lock-In"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:disruptive-innovation",
-      "vc:label": "Disruptive Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:emerging-technologies",
-      "vc:label": "Emerging Technologies"
-    },
-    {
-      "@id": "urn:visionflow:linked:moore-s-law",
-      "vc:label": "Moore's Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:nbic-convergence",
-      "vc:label": "NBIC Convergence"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-effects",
-      "vc:label": "Network Effects"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-economy",
-      "vc:label": "Platform Economy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-standards-association",
-      "vc:label": "IEEE Standards Association"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-jtc-1",
-      "vc:label": "ISO/IEC JTC 1"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-sti-directorate",
-      "vc:label": "OECD STI Directorate"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -208,124 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gl-tf-3-d-file-format",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gl-tf-3-d-file-format",
+  "@type": "Class",
   "label": "glTF (3D File Format)",
+  "definition": "A royalty-free, open-standard 3D asset transmission format developed by Khronos Group that efficiently specifies scene structure, geometry, materials, animations, and other properties for real-time rendering.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e0266ab1ae8c8f59ff4549329c17dff061617916a87c9f6770b2a02d73b94dd4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:animation-channels",
+        "label": "Animation Channels"
+      },
+      {
+        "@id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "@id": "urn:ngm:class:texture-references",
+        "label": "Texture References"
+      },
+      {
+        "@id": "urn:ngm:class:binary-buffer",
+        "label": "Binary Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-asset-exchange",
+        "label": "3D Asset Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:content-interoperability",
+        "label": "Content Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-rendering",
+        "label": "Runtime Rendering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:asset-interchange-system",
+        "label": "Asset Interchange System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R4SemanticSimilarity",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e0266ab1ae8c8f59ff4549329c17dff061617916a87c9f6770b2a02d73b94dd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A royalty-free, open-standard 3D asset transmission format developed by Khronos Group that efficiently specifies scene structure, geometry, materials, animations, and other properties for real-time rendering.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:3-d-content-pipeline",
-      "vc:label": "3D Content Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-interchange-system",
-      "vc:label": "Asset Interchange System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:animation-channels",
-      "vc:label": "Animation Channels"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-definition",
-      "vc:label": "Material Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-data",
-      "vc:label": "Mesh Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-references",
-      "vc:label": "Texture References"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:binary-buffer",
-      "vc:label": "Binary Buffer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:binary-encoding",
-      "vc:label": "Binary Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-asset-exchange",
-      "vc:label": "3D Asset Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-interoperability",
-      "vc:label": "Content Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-compatibility",
-      "vc:label": "Cross-Platform Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:runtime-rendering",
-      "vc:label": "Runtime Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:base64-encoding",
-      "vc:label": "Base64 Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:mime-types",
-      "vc:label": "MIME Types"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri-specification",
-      "vc:label": "URI Specification"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R4SemanticSimilarity"
+  }
 }
 ```
 

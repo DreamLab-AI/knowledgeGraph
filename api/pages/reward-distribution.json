@@ -3,32 +3,36 @@
   "title": "Reward Distribution",
   "slug": "reward-distribution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reward-distribution",
+  "classIri": "urn:ngm:class:reward-distribution",
   "domain": "spatial-computing",
   "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tokenomics",
+      "id": "urn:ngm:class:tokenomics",
       "label": "Tokenomics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:network-participation",
+        "id": "urn:ngm:class:network-participation",
         "label": "Network Participation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

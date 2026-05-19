@@ -3,32 +3,36 @@
   "title": "Immersive Technology",
   "slug": "immersive-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-technology",
+  "classIri": "urn:ngm:class:immersive-technology",
   "domain": "spatial-computing",
   "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-technology",
+      "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:metaverse-platform",
+        "id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-construction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-construction",
+  "@type": "Class",
   "label": "Digital Twin Construction",
+  "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bim",
+        "label": "BIM"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:building-lifecycle-management",
+        "label": "Building Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:construction-optimization",
+        "label": "Construction Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c7f23018ae27ab58b22f3440e8f7117edfeee43665e79f37e13079cc4b71a69d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bim",
-      "vc:label": "BIM"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-platform",
-      "vc:label": "Cloud Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:building-lifecycle-management",
-      "vc:label": "Building Lifecycle Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:construction-optimization",
-      "vc:label": "Construction Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

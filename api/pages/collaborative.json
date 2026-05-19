@@ -3,19 +3,18 @@
   "title": "collaborative",
   "slug": "collaborative",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collaborative",
+  "classIri": "urn:ngm:class:collaborative",
   "domain": "infrastructure",
   "definition": "collaborative is a technology infrastructure concept and a type of Collaboration.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaboration",
+      "id": "urn:ngm:class:collaboration",
       "label": "Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

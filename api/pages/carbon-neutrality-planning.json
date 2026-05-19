@@ -3,53 +3,57 @@
   "title": "Carbon Neutrality Planning",
   "slug": "carbon-neutrality-planning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-neutrality-planning",
+  "classIri": "urn:ngm:class:carbon-neutrality-planning",
   "domain": "spatial-computing",
   "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:strategic-planning",
+      "id": "urn:ngm:class:strategic-planning",
       "label": "Strategic Planning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ghg-baseline",
+        "id": "urn:ngm:class:ghg-baseline",
         "label": "GHG Baseline"
       },
       {
-        "id": "urn:visionflow:linked:implementation-strategy",
+        "id": "urn:ngm:class:implementation-strategy",
         "label": "Implementation Strategy"
       },
       {
-        "id": "urn:visionflow:linked:reduction-targets",
+        "id": "urn:ngm:class:reduction-targets",
         "label": "Reduction Targets"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:climate-action",
+        "id": "urn:ngm:class:climate-action",
         "label": "Climate Action"
       },
       {
-        "id": "urn:visionflow:linked:decarbonization",
+        "id": "urn:ngm:class:decarbonization",
         "label": "Decarbonization"
       },
       {
-        "id": "urn:visionflow:linked:net-zero-achievement",
+        "id": "urn:ngm:class:net-zero-achievement",
         "label": "Net Zero Achievement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

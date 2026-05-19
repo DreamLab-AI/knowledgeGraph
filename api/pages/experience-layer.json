@@ -3,82 +3,95 @@
   "title": "Experience Layer",
   "slug": "experience-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:experience-layer",
+  "classIri": "urn:ngm:class:experience-layer",
   "domain": "spatial-computing",
   "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:interaction-manager",
+        "id": "urn:ngm:class:interaction-manager",
         "label": "Interaction Manager"
       },
       {
-        "id": "urn:visionflow:linked:presence-system",
+        "id": "urn:ngm:class:presence-system",
         "label": "Presence System"
       },
       {
-        "id": "urn:visionflow:linked:ux-framework",
+        "id": "urn:ngm:class:ux-framework",
         "label": "UX Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-interface",
+        "id": "urn:ngm:class:immersive-interface",
         "label": "Immersive Interface"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:graphics-pipeline",
+        "id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:input-system",
+        "id": "urn:ngm:class:input-system",
         "label": "Input System"
       },
       {
-        "id": "urn:visionflow:owl:class:audio-system",
+        "id": "urn:ngm:class:audio-system",
         "label": "Audio System"
       },
       {
-        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:natural-interaction",
+        "id": "urn:ngm:class:natural-interaction",
         "label": "Natural Interaction"
       },
       {
-        "id": "urn:visionflow:linked:user-engagement",
+        "id": "urn:ngm:class:user-engagement",
         "label": "User Engagement"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experience",
+        "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
       },
       {
-        "id": "urn:visionflow:owl:class:presence",
+        "id": "urn:ngm:class:presence",
         "label": "Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-architecture",
+        "label": "User Interface Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

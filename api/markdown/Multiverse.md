@@ -240,156 +240,119 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:multiverse",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multiverse",
+  "@type": "Class",
   "label": "Multiverse",
+  "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-web",
-      "vc:label": "Spatial Web"
+      "@id": "urn:ngm:class:spatial-web",
+      "label": "Spatial Web"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1fa2a598ecc71960d90bf07c7380a092ec9e3566353907ba45de54b76ca36b13"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-translation-layer",
+        "label": "Asset Translation Layer"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:multi-world-governance",
+        "label": "Multi-World Governance"
+      },
+      {
+        "@id": "urn:ngm:class:universal-inventory",
+        "label": "Universal Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:portal-system",
+        "label": "Portal System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-bridging",
+        "label": "Asset Bridging"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-authentication",
+        "label": "Cross-Platform Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-translation",
+        "label": "Protocol Translation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:standard-format-support",
+        "label": "Standard Format Support"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-world-travel",
+        "label": "Cross-World Travel"
+      },
+      {
+        "@id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "@id": "urn:ngm:class:multi-platform-gaming",
+        "label": "Multi-Platform Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:cross-metaverse-commerce",
+        "label": "Cross-Metaverse Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:universal-avatar",
+        "label": "Universal Avatar"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1fa2a598ecc71960d90bf07c7380a092ec9e3566353907ba45de54b76ca36b13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-web",
-      "vc:label": "Spatial Web"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-translation-layer",
-      "vc:label": "Asset Translation Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-identity",
-      "vc:label": "Federated Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-world-governance",
-      "vc:label": "Multi-World Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-inventory",
-      "vc:label": "Universal Inventory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
-      "vc:label": "Cross-Chain Bridge"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:portal-system",
-      "vc:label": "Portal System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asset-bridging",
-      "vc:label": "Asset Bridging"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-authentication",
-      "vc:label": "Cross-Platform Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-governance",
-      "vc:label": "Distributed Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-translation",
-      "vc:label": "Protocol Translation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-federation",
-      "vc:label": "Identity Federation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standard-format-support",
-      "vc:label": "Standard Format Support"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-portability",
-      "vc:label": "Asset Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-world-travel",
-      "vc:label": "Cross-World Travel"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-social-networks",
-      "vc:label": "Federated Social Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-platform-gaming",
-      "vc:label": "Multi-Platform Gaming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-metaverse-commerce",
-      "vc:label": "Cross-Metaverse Commerce"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:universal-avatar",
-      "vc:label": "Universal Avatar"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-identifier",
-      "vc:label": "Decentralized Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-credential",
-      "vc:label": "Verifiable Credential"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-standard",
-      "vc:label": "Interoperability Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

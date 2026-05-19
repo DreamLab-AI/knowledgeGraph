@@ -148,48 +148,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:complete-hri-terms-reference",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:complete-hri-terms-reference",
+  "@type": "Class",
   "label": "COMPLETE_HRI_TERMS_REFERENCE",
+  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]].",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9e1cd53b67ad0dca5162b4e1c38d231c10796750613a24395186142823f5d5af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

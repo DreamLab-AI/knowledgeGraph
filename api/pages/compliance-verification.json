@@ -3,32 +3,36 @@
   "title": "Compliance Verification",
   "slug": "compliance-verification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compliance-verification",
+  "classIri": "urn:ngm:class:compliance-verification",
   "domain": "infrastructure",
-  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and transaction monitoring obligations. Blockchain-based compliance systems leverage immutable ledgers, smart contracts, and AI-driven analytics to maintain tamper-proof records and detect suspicious activities in real-time.",
+  "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:compliance-monitoring",
+      "id": "urn:ngm:class:compliance-monitoring",
       "label": "Compliance Monitoring"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:kyc-aml-requirements",
+        "id": "urn:ngm:class:kyc-aml-requirements",
         "label": "KYC/AML Requirements"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

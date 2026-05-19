@@ -3,19 +3,18 @@
   "title": "Licensing Requirements",
   "slug": "licensing-requirements",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:licensing-requirements",
+  "classIri": "urn:ngm:class:licensing-requirements",
   "domain": "blockchain",
-  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers\u2014a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements\u2014incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.",
+  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

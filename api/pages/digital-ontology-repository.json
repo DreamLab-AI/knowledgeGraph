@@ -3,94 +3,98 @@
   "title": "Digital Ontology Repository",
   "slug": "digital-ontology-repository",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-ontology-repository",
+  "classIri": "urn:ngm:class:digital-ontology-repository",
   "domain": "spatial-computing",
-  "definition": "A structured collection system that stores, versions, and manages formal ontologies and semantic models to enable interoperability and shared understanding across metaverse domains. bridges-to:: [[Computer Vision]]",
+  "definition": "Digital Ontology Repository is a type of Metadata Repository in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metadata-repository",
+      "id": "urn:ngm:class:metadata-repository",
       "label": "Metadata Repository"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ontology-storage-system",
+        "id": "urn:ngm:class:ontology-storage-system",
         "label": "Ontology Storage System"
       },
       {
-        "id": "urn:visionflow:linked:query-interface",
+        "id": "urn:ngm:class:query-interface",
         "label": "Query Interface"
       },
       {
-        "id": "urn:visionflow:linked:validation-engine",
+        "id": "urn:ngm:class:validation-engine",
         "label": "Validation Engine"
       },
       {
-        "id": "urn:visionflow:linked:version-control",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control-system",
+        "id": "urn:ngm:class:access-control-system",
         "label": "Access Control System"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-registry",
+        "id": "urn:ngm:class:metadata-registry",
         "label": "Metadata Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:database-management-system",
+        "id": "urn:ngm:class:database-management-system",
         "label": "Database Management System"
       },
       {
-        "id": "urn:visionflow:linked:semantic-reasoning-engine",
+        "id": "urn:ngm:class:semantic-reasoning-engine",
         "label": "Semantic Reasoning Engine"
       },
       {
-        "id": "urn:visionflow:linked:uri-resolution-service",
+        "id": "urn:ngm:class:uri-resolution-service",
         "label": "URI Resolution Service"
       },
       {
-        "id": "urn:visionflow:owl:class:authentication-service",
+        "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standard",
+        "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-domain-integration",
+        "id": "urn:ngm:class:cross-domain-integration",
         "label": "Cross-Domain Integration"
       },
       {
-        "id": "urn:visionflow:linked:ontology-reuse",
+        "id": "urn:ngm:class:ontology-reuse",
         "label": "Ontology Reuse"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-sharing",
+        "id": "urn:ngm:class:knowledge-sharing",
         "label": "Knowledge Sharing"
       },
       {
-        "id": "urn:visionflow:owl:class:vocabulary-governance",
+        "id": "urn:ngm:class:vocabulary-governance",
         "label": "Vocabulary Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

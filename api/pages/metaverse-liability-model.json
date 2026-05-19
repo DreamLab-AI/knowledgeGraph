@@ -3,94 +3,107 @@
   "title": "Metaverse Liability Model",
   "slug": "metaverse-liability-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-liability-model",
+  "classIri": "urn:ngm:class:metaverse-liability-model",
   "domain": "spatial-computing",
   "definition": "A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-agent-liability",
+        "id": "urn:ngm:class:ai-agent-liability",
         "label": "AI Agent Liability"
       },
       {
-        "id": "urn:visionflow:linked:content-creator-liability",
+        "id": "urn:ngm:class:content-creator-liability",
         "label": "Content Creator Liability"
       },
       {
-        "id": "urn:visionflow:linked:harm-redress-mechanism",
+        "id": "urn:ngm:class:harm-redress-mechanism",
         "label": "Harm Redress Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:insurance-integration",
+        "id": "urn:ngm:class:insurance-integration",
         "label": "Insurance Integration"
       },
       {
-        "id": "urn:visionflow:linked:platform-liability-framework",
+        "id": "urn:ngm:class:platform-liability-framework",
         "label": "Platform Liability Framework"
       },
       {
-        "id": "urn:visionflow:linked:user-liability-rules",
+        "id": "urn:ngm:class:user-liability-rules",
         "label": "User Liability Rules"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:dispute-resolution",
+        "id": "urn:ngm:class:dispute-resolution",
         "label": "Dispute Resolution"
       },
       {
-        "id": "urn:visionflow:linked:evidence-collection",
+        "id": "urn:ngm:class:evidence-collection",
         "label": "Evidence Collection"
       },
       {
-        "id": "urn:visionflow:linked:harm-classification-system",
+        "id": "urn:ngm:class:harm-classification-system",
         "label": "Harm Classification System"
       },
       {
-        "id": "urn:visionflow:linked:jurisdiction-mapping",
+        "id": "urn:ngm:class:jurisdiction-mapping",
         "label": "Jurisdiction Mapping"
       },
       {
-        "id": "urn:visionflow:linked:liability-attribution-engine",
+        "id": "urn:ngm:class:liability-attribution-engine",
         "label": "Liability Attribution Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:harm-compensation",
+        "id": "urn:ngm:class:harm-compensation",
         "label": "Harm Compensation"
       },
       {
-        "id": "urn:visionflow:linked:legal-accountability",
+        "id": "urn:ngm:class:legal-accountability",
         "label": "Legal Accountability"
       },
       {
-        "id": "urn:visionflow:linked:platform-protection",
+        "id": "urn:ngm:class:platform-protection",
         "label": "Platform Protection"
       },
       {
-        "id": "urn:visionflow:linked:user-protection",
+        "id": "urn:ngm:class:user-protection",
         "label": "User Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:legal-governance-framework",
+        "label": "Legal Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:virtual-society-regulations",
+        "label": "Virtual Society Regulations"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

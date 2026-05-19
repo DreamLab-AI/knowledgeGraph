@@ -99,41 +99,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collaborative",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collaborative",
+  "@type": "Class",
   "label": "collaborative",
+  "definition": "collaborative is a technology infrastructure concept and a type of Collaboration.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:collaboration",
-      "vc:label": "Collaboration"
+      "@id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:428b8c2492ddf10af2895951ac2aad0d608fa15c49128a400b4a27b8c3736795"
-  },
-  "vc:inferenceRule": "R2SemanticLabelMatch",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:428b8c2492ddf10af2895951ac2aad0d608fa15c49128a400b4a27b8c3736795@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "collaborative is a technology infrastructure concept and a type of Collaboration.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2SemanticLabelMatch"
   }
 }
 ```

@@ -3,32 +3,36 @@
   "title": "Monitoring Dashboard",
   "slug": "monitoring-dashboard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monitoring-dashboard",
+  "classIri": "urn:ngm:class:monitoring-dashboard",
   "domain": "artificial-intelligence",
   "definition": "Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-visualisation",
+      "id": "urn:ngm:class:data-visualisation",
       "label": "Data Visualisation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:operational-intelligence",
+        "id": "urn:ngm:class:operational-intelligence",
         "label": "Operational Intelligence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

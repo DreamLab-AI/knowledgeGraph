@@ -3,19 +3,18 @@
   "title": "Supply Chain Management",
   "slug": "supply-chain-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:supply-chain-management",
+  "classIri": "urn:ngm:class:supply-chain-management",
   "domain": "blockchain",
-  "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks. This includes traceability systems, provenance verification, and transparency solutions that leverage blockchain's immutability and decentralisation.",
+  "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

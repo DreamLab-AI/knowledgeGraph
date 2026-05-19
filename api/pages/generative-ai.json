@@ -3,119 +3,115 @@
   "title": "Generative AI",
   "slug": "generative-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:generative-ai",
+  "classIri": "urn:ngm:class:generative-ai",
   "domain": "artificial-intelligence",
-  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].",
+  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
-    },
-    {
-      "id": "urn:visionflow:owl:class:deep-learning",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:machine-learning",
-      "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.9,
-  "authorityScore": 0.93,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:gan",
+        "id": "urn:ngm:class:gan",
         "label": "GAN"
       },
       {
-        "id": "urn:visionflow:linked:vae",
+        "id": "urn:ngm:class:vae",
         "label": "VAE"
       },
       {
-        "id": "urn:visionflow:owl:class:diffusion-models",
+        "id": "urn:ngm:class:diffusion-models",
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-network",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:large-scale-datasets",
+        "id": "urn:ngm:class:large-scale-datasets",
         "label": "Large-Scale Datasets"
       },
       {
-        "id": "urn:visionflow:linked:neural-network-training",
+        "id": "urn:ngm:class:neural-network-training",
         "label": "Neural Network Training"
       },
       {
-        "id": "urn:visionflow:owl:class:model-architecture",
+        "id": "urn:ngm:class:model-architecture",
         "label": "Model Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-art",
+        "id": "urn:ngm:class:ai-art",
         "label": "AI Art"
       },
       {
-        "id": "urn:visionflow:linked:automated-design",
+        "id": "urn:ngm:class:automated-design",
         "label": "Automated Design"
       },
       {
-        "id": "urn:visionflow:linked:content-creation",
+        "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
       },
       {
-        "id": "urn:visionflow:linked:creative-ai",
+        "id": "urn:ngm:class:creative-ai",
         "label": "Creative AI"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-media",
+        "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:audio-generation",
+        "id": "urn:ngm:class:audio-generation",
         "label": "Audio Generation"
       },
       {
-        "id": "urn:visionflow:linked:video-generation",
+        "id": "urn:ngm:class:video-generation",
         "label": "Video Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:image-generation",
+        "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:text-generation",
+        "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

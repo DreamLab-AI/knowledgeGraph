@@ -3,37 +3,41 @@
   "title": "Real-Time Language Translation",
   "slug": "real-time-language-translation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-language-translation",
+  "classIri": "urn:ngm:class:real-time-language-translation",
   "domain": "distributed-collaboration",
-  "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machine translation, speech recognition, and text-to-speech synthesis.\"",
+  "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machin...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:neural-machine-translation",
+        "id": "urn:ngm:class:neural-machine-translation",
         "label": "NeuralMachineTranslation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-lingual-collaboration",
+        "id": "urn:ngm:class:cross-lingual-collaboration",
         "label": "CrossLingualCollaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

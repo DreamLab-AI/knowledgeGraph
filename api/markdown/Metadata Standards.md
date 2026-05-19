@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metadata-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metadata-standards",
+  "@type": "Class",
   "label": "Metadata Standards",
+  "definition": "Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-standards",
-      "vc:label": "Data Standards"
+      "@id": "urn:ngm:class:data-standards",
+      "label": "Data Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e17856a629eedf80b89587f854bb6c16079a0513628011a3ae235d402010e095"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-system-data-exchange",
+        "label": "Cross-System Data Exchange"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e17856a629eedf80b89587f854bb6c16079a0513628011a3ae235d402010e095@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-system-data-exchange",
-      "vc:label": "Cross-System Data Exchange"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

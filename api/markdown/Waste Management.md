@@ -228,41 +228,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:waste-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:waste-management",
+  "@type": "Class",
   "label": "Waste Management",
+  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:15a430938940ba67a135cf0e81c77fd0dbf89592f8d88fa5d50bfc7031517431@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle. Blockchain-based systems enable [[WasteTraceability|waste traceability]], verify compliance with environmental regulations, incentivise proper disposal through [[TokenizedIncentives|tokenised reward systems]], and facilitate [[ExtendedProducerResponsibility|extended producer responsibility]] by tracking products from manufacturing through end-of-life recovery. Applications include [[E-WasteTracking|electronic waste tracking]], [[HazardousWaste|hazardous material monitoring]], and [[RecyclingOptimization|recycling optimisation]] where transparency and verifiable compliance prevent illegal waste dumping and improve environmental outcomes.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

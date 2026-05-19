@@ -3,167 +3,311 @@
   "title": "AI Risks",
   "slug": "ai-risks",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-risks",
+  "classIri": "urn:ngm:class:ai-risks",
   "domain": "artificial-intelligence",
-  "definition": "AI Risks is the umbrella ontological category denoting the full taxonomy of potential and realised adverse impacts arising from the design, development, deployment, integration, or societal embedding of artificial intelligence systems, spanning four canonical risk-source domains\u2014**misuse** (intentional adversarial use including AI-enabled cyberattack, biological and chemical weapon uplift, mass disinformation, fraud, surveillance, autonomous weapons), **accidents** (specification gaming, reward hacking, distributional shift, scalable-oversight failure, deceptive alignment, mesa-optimisation, emergent unsafe capabilities), **structural** (concentration of compute/capital/power in a small oligopoly of frontier labs, labour-market disruption, epistemic pollution, democratic erosion, geopolitical AI race dynamics), and **systemic socio-technical** (algorithmic bias and discrimination, privacy and data-protection failure, hallucination and confabulation, opacity, environmental cost)\u2014formalised in the MIT AI Risk Repository released August 2024 by Slattery, Saeri, Grundy, Graham, Noetel et al. cataloguing 700+ unique risks across 23 papers and 7 risk taxonomies (700+ rows in the Causal a",
+  "definition": "AI Risks is the umbrella ontological category denoting the full taxonomy of potential and realised adverse impacts arising from the design, development, deployment, integration, or societal embedding of artificial intelligence systems, spanning four canonical risk-source domains\u2014misuse (intention...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:governance-object",
+      "id": "urn:ngm:class:governance-object",
       "label": "Governance Object"
     },
     {
-      "id": "urn:visionflow:linked:harm-taxonomy",
+      "id": "urn:ngm:class:harm-taxonomy",
       "label": "Harm Taxonomy"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-risk",
-      "label": "Technology Risk"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:accident-risks",
+        "id": "urn:ngm:class:accident-risks",
         "label": "Accident Risks"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-weapons",
+        "id": "urn:ngm:class:autonomous-weapons",
         "label": "Autonomous Weapons"
       },
       {
-        "id": "urn:visionflow:linked:catastrophic-ai-risk",
+        "id": "urn:ngm:class:catastrophic-ai-risk",
         "label": "Catastrophic AI Risk"
       },
       {
-        "id": "urn:visionflow:linked:cbrn-uplift-risk",
+        "id": "urn:ngm:class:cbrn-uplift-risk",
         "label": "CBRN Uplift Risk"
       },
       {
-        "id": "urn:visionflow:linked:existential-ai-risk",
+        "id": "urn:ngm:class:existential-ai-risk",
         "label": "Existential AI Risk"
       },
       {
-        "id": "urn:visionflow:linked:hallucination",
+        "id": "urn:ngm:class:hallucination",
         "label": "Hallucination"
       },
       {
-        "id": "urn:visionflow:linked:misuse-risks",
+        "id": "urn:ngm:class:misuse-risks",
         "label": "Misuse Risks"
       },
       {
-        "id": "urn:visionflow:linked:prompt-injection",
+        "id": "urn:ngm:class:prompt-injection",
         "label": "Prompt Injection"
       },
       {
-        "id": "urn:visionflow:linked:structural-risks",
+        "id": "urn:ngm:class:structural-risks",
         "label": "Structural Risks"
       },
       {
-        "id": "urn:visionflow:linked:training-data-poisoning",
+        "id": "urn:ngm:class:training-data-poisoning",
         "label": "Training Data Poisoning"
       },
       {
-        "id": "urn:visionflow:owl:class:algorithmic-bias",
+        "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:visionflow:owl:class:deepfakes",
+        "id": "urn:ngm:class:deepfakes",
         "label": "Deepfakes"
       },
       {
-        "id": "urn:visionflow:owl:class:model-inversion",
+        "id": "urn:ngm:class:model-inversion",
         "label": "Model Inversion"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:algorithmic-auditing",
+        "id": "urn:ngm:class:algorithmic-auditing",
         "label": "Algorithmic Auditing"
       },
       {
-        "id": "urn:visionflow:linked:capability-evaluations",
+        "id": "urn:ngm:class:capability-evaluations",
         "label": "Capability Evaluations"
       },
       {
-        "id": "urn:visionflow:linked:incident-reporting",
+        "id": "urn:ngm:class:incident-reporting",
         "label": "Incident Reporting"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-methodology",
+        "id": "urn:ngm:class:risk-assessment-methodology",
         "label": "Risk Assessment Methodology"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-consultation",
+        "id": "urn:ngm:class:stakeholder-consultation",
         "label": "Stakeholder Consultation"
       },
       {
-        "id": "urn:visionflow:linked:threat-modelling",
+        "id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modelling"
       },
       {
-        "id": "urn:visionflow:owl:class:red-teaming",
+        "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-liability-frameworks",
+        "id": "urn:ngm:class:ai-liability-frameworks",
         "label": "AI Liability Frameworks"
       },
       {
-        "id": "urn:visionflow:linked:algorithmic-impact-assessments",
+        "id": "urn:ngm:class:algorithmic-impact-assessments",
         "label": "Algorithmic Impact Assessments"
       },
       {
-        "id": "urn:visionflow:linked:compute-governance",
+        "id": "urn:ngm:class:compute-governance",
         "label": "Compute Governance"
       },
       {
-        "id": "urn:visionflow:linked:frontier-model-regulation",
+        "id": "urn:ngm:class:frontier-model-regulation",
         "label": "Frontier Model Regulation"
       },
       {
-        "id": "urn:visionflow:linked:pre-deployment-evaluation",
+        "id": "urn:ngm:class:pre-deployment-evaluation",
         "label": "Pre-deployment Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:responsible-scaling-policies",
+        "id": "urn:ngm:class:responsible-scaling-policies",
         "label": "Responsible Scaling Policies"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:defence-in-depth",
+        "id": "urn:ngm:class:defence-in-depth",
         "label": "Defence in Depth"
       },
       {
-        "id": "urn:visionflow:linked:precautionary-principle",
+        "id": "urn:ngm:class:precautionary-principle",
         "label": "Precautionary Principle"
       },
       {
-        "id": "urn:visionflow:linked:risk-based-regulation",
+        "id": "urn:ngm:class:risk-based-regulation",
         "label": "Risk-Based Regulation"
       },
       {
-        "id": "urn:visionflow:linked:sociotechnical-analysis",
+        "id": "urn:ngm:class:sociotechnical-analysis",
         "label": "Sociotechnical Analysis"
       },
       {
-        "id": "urn:visionflow:linked:tiered-capability-thresholds",
+        "id": "urn:ngm:class:tiered-capability-thresholds",
         "label": "Tiered Capability Thresholds"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adversarial-robustness-testing",
+        "label": "Adversarial Robustness Testing"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-frameworks",
+        "label": "Evaluation Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:risk-registers",
+        "label": "Risk Registers"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:insurance-underwriting",
+        "label": "Insurance Underwriting"
+      },
+      {
+        "id": "urn:ngm:class:international-coordination",
+        "label": "International Coordination"
+      },
+      {
+        "id": "urn:ngm:class:liability-adjudication",
+        "label": "Liability Adjudication"
+      },
+      {
+        "id": "urn:ngm:class:public-awareness",
+        "label": "Public Awareness"
+      },
+      {
+        "id": "urn:ngm:class:standards-development",
+        "label": "Standards Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "id": "urn:ngm:class:council-of-europe-ai-convention",
+        "label": "Council of Europe AI Convention"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO/IEC 23894"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:mit-ai-risk-repository",
+        "label": "MIT AI Risk Repository"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:seoul-declaration",
+        "label": "Seoul Declaration"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:us-ai-safety-institute",
+        "label": "US AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
   },
   "wikilinks": [
     {

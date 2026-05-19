@@ -3,32 +3,36 @@
   "title": "Machine Learning Infrastructure",
   "slug": "machine-learning-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-infrastructure",
+  "classIri": "urn:ngm:class:machine-learning-infrastructure",
   "domain": "artificial-intelligence",
   "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalable-ai-training",
+        "id": "urn:ngm:class:scalable-ai-training",
         "label": "Scalable AI Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

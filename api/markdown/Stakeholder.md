@@ -160,41 +160,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stakeholder",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stakeholder",
+  "@type": "Class",
   "label": "Stakeholder",
+  "definition": "Any individual, group, organisation, or entity that has an interest in, is affected by, influences, or holds rights regarding an artificial intelligence system throughout its lifecycle, including those who develop, deploy, operate, use, regulate, are impacted by, or hold accountability for AI sys...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b6c2a19457526cfd70239d24c467116b5e6affe18a6bb4a6db1754c336410bf0"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b6c2a19457526cfd70239d24c467116b5e6affe18a6bb4a6db1754c336410bf0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Any individual, group, organisation, or entity that has an interest in, is affected by, influences, or holds rights regarding an artificial intelligence system throughout its lifecycle, including those who develop, deploy, operate, use, regulate, are impacted by, or hold accountability for AI systems, as well as broader society and communities whose interests may be affected by AI system design, deployment, or outcomes, encompassing both direct participants in AI value chains and indirect parties with legitimate concerns about AI systems' societal implications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

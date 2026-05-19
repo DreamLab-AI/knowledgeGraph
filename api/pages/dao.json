@@ -3,19 +3,18 @@
   "title": "DAO",
   "slug": "dao",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dao",
+  "classIri": "urn:ngm:class:dao",
   "domain": "blockchain",
-  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale. [[DAOs]] employ [[Smart Contracts]], [[Consensus Voting]], and [[Blockchain-Based Records]] for transparent decision-making and treasury management.",
+  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

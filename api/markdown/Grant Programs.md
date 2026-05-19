@@ -296,41 +296,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:grant-programs",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:grant-programs",
+  "@type": "Class",
   "label": "Grant Programs",
+  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives—ranging from prospective grants (Uniswap ) to retroactive public goods funding ([[Optimism]] ) to inn...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0aafc309bcfe3c2ac02c36595c34b5ab9c35d633e12cec25d36e79e611b10d2c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth billions to ecosystem development, public goods funding, protocol research, and community initiatives—ranging from prospective grants (Uniswap $74M) to retroactive public goods funding ([[Optimism]] $30M) to innovative quadratic funding mechanisms ([[Gitcoin]] $50M+).",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

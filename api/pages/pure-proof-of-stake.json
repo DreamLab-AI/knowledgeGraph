@@ -3,19 +3,18 @@
   "title": "Pure Proof of Stake",
   "slug": "pure-proof-of-stake",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pure-proof-of-stake",
+  "classIri": "urn:ngm:class:pure-proof-of-stake",
   "domain": "blockchain",
   "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:proof-of-stake",
+      "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

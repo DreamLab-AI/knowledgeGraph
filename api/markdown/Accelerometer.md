@@ -164,70 +164,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accelerometer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accelerometer",
+  "@type": "Class",
   "label": "Accelerometer",
+  "definition": "Accelerometer - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:motion-detection",
+        "label": "Motion Detection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aa41aa793835d38f56e9593d8a54382a76e22df89de2123f185c9bd38f051bed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Accelerometer** - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.",
-  "vc:qualityScore": {
-    "@value": "0.55",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.10",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:inertial-measurement-unit",
-      "vc:label": "Inertial Measurement Unit"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:signal-conditioning",
-      "vc:label": "Signal Conditioning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "Gesture Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-detection",
-      "vc:label": "Motion Detection"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.55,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

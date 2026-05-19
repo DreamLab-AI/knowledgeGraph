@@ -3,37 +3,41 @@
   "title": "Digital Twin Collaboration",
   "slug": "digital-twin-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-collaboration",
+  "classIri": "urn:ngm:class:digital-twin-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems.\"",
+  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:cloud-computing",
+        "id": "urn:ngm:class:cloud-computing",
         "label": "CloudComputing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-simulation",
+        "id": "urn:ngm:class:collaborative-simulation",
         "label": "CollaborativeSimulation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

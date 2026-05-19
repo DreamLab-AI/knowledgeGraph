@@ -3,45 +3,58 @@
   "title": "Cognitive Load Metric",
   "slug": "cognitive-load-metric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cognitive-load-metric",
+  "classIri": "urn:ngm:class:cognitive-load-metric",
   "domain": "spatial-computing",
   "definition": "Quantitative measure of mental effort required during virtual interaction tasks, typically assessed using standardized scales like NASA-TLX.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:measurement-framework",
+        "id": "urn:ngm:class:measurement-framework",
         "label": "Measurement Framework"
       },
       {
-        "id": "urn:visionflow:linked:psychometric-scale",
+        "id": "urn:ngm:class:psychometric-scale",
         "label": "Psychometric Scale"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:interface-design-validation",
+        "id": "urn:ngm:class:interface-design-validation",
         "label": "Interface Design Validation"
       },
       {
-        "id": "urn:visionflow:owl:class:performance-optimization",
+        "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-assessment",
+        "label": "User Experience Assessment"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

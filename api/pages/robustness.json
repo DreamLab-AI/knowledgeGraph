@@ -3,19 +3,18 @@
   "title": "Robustness",
   "slug": "robustness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robustness",
+  "classIri": "urn:ngm:class:robustness",
   "domain": "artificial-intelligence",
   "definition": "The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-safety",
+      "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

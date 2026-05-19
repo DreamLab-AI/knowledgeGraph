@@ -3,135 +3,219 @@
   "title": "Chatbots",
   "slug": "chatbots",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:chatbots",
+  "classIri": "urn:ngm:class:chatbots",
   "domain": "artificial-intelligence",
-  "definition": "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern [[Large Language Models|LLM]]-powered agents capable of open-domain, multi-turn, multimodal dialogue; operationally defined by three core functional layers: (1) Natural Language Understanding (NLU) parsing raw user utterances into machine-interpretable representations via [[Intent Recognition]], [[Slot Filling]], and sentiment detection; (2) [[Dialogue State Tracking]] (DST) tracking conversation state across turns, resolving co-references and ellipsis; (3) Natural Language Generation (NLG) producing contextually appropriate responses through template-fill, retrieval, or auto-regressive decoding from a generative language model; deployed across a global market valued at $9.57 billion in 2025 (projected $26+ billion by 2030, CAGR ~23%), handling 65% of enterprise customer support interactions without human escalation (up from 30% in 2022), achieving average ROI of $3.50 per $1 invested, reducing per-interac",
+  "definition": "Software systems designed to simulate conversation with human users through text or voice interfaces, spanning an architectural spectrum from rule-based pattern-matching programs (ELIZA, 1966; ALICE/AIML, 1995) through retrieval-based and intent-classification pipelines to modern [[Large Language...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:dialogue-systems",
+      "id": "urn:ngm:class:dialogue-systems",
       "label": "Dialogue Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:conversational-ai",
-      "label": "Conversational AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:dialogue-state-tracking",
+        "id": "urn:ngm:class:dialogue-state-tracking",
         "label": "Dialogue State Tracking"
       },
       {
-        "id": "urn:visionflow:linked:intent-recognition",
+        "id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
       },
       {
-        "id": "urn:visionflow:linked:natural-language-generation",
+        "id": "urn:ngm:class:natural-language-generation",
         "label": "Natural Language Generation"
       },
       {
-        "id": "urn:visionflow:linked:persona",
+        "id": "urn:ngm:class:persona",
         "label": "Persona"
       },
       {
-        "id": "urn:visionflow:linked:response-selection",
+        "id": "urn:ngm:class:response-selection",
         "label": "Response Selection"
       },
       {
-        "id": "urn:visionflow:linked:slot-filling",
+        "id": "urn:ngm:class:slot-filling",
         "label": "Slot Filling"
       },
       {
-        "id": "urn:visionflow:owl:class:context-window",
+        "id": "urn:ngm:class:context-window",
         "label": "Context Window"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:api-integration",
+        "id": "urn:ngm:class:api-integration",
         "label": "API Integration"
       },
       {
-        "id": "urn:visionflow:linked:inference-engine",
+        "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-base",
+        "id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
       {
-        "id": "urn:visionflow:linked:natural-language-understanding",
+        "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:customer-service-automation",
+        "id": "urn:ngm:class:customer-service-automation",
         "label": "Customer Service Automation"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-retrieval",
+        "id": "urn:ngm:class:knowledge-retrieval",
         "label": "Knowledge Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:lead-generation",
+        "id": "urn:ngm:class:lead-generation",
         "label": "Lead Generation"
       },
       {
-        "id": "urn:visionflow:linked:task-automation",
+        "id": "urn:ngm:class:task-automation",
         "label": "Task Automation"
       },
       {
-        "id": "urn:visionflow:linked:virtual-assistants",
+        "id": "urn:ngm:class:virtual-assistants",
         "label": "Virtual Assistants"
       },
       {
-        "id": "urn:visionflow:linked:voice-interfaces",
+        "id": "urn:ngm:class:voice-interfaces",
         "label": "Voice Interfaces"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:intent-classification",
+        "id": "urn:ngm:class:intent-classification",
         "label": "Intent Classification"
       },
       {
-        "id": "urn:visionflow:linked:multi-turn-dialogue",
+        "id": "urn:ngm:class:multi-turn-dialogue",
         "label": "Multi-turn Dialogue"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:slot-filling",
+        "id": "urn:ngm:class:slot-filling",
         "label": "Slot Filling"
       },
       {
-        "id": "urn:visionflow:owl:class:model-context-protocol",
+        "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bertscore",
+        "label": "BERTScore"
+      },
+      {
+        "id": "urn:ngm:class:bleu",
+        "label": "BLEU"
+      },
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-commerce"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-30401",
+        "label": "ISO 30401"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol-specification",
+        "label": "Model Context Protocol Specification"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-voice-browser-working-group",
+        "label": "W3C Voice Browser Working Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-turn-dialogue",
+        "label": "Multi-turn Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:persona",
+        "label": "Persona"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:voice-interfaces",
+        "label": "Voice Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      }
+    ]
   },
   "wikilinks": [
     {

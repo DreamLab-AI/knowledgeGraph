@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0105-speed-and-separation-monitoring",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
+  "@type": "Class",
   "label": "rb 0105 speed and separation monitoring",
+  "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:light-curtain",
-      "vc:label": "Light Curtain"
+      "@id": "urn:ngm:class:light-curtain",
+      "label": "Light Curtain"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:065e5621bb21004baca2e890d66286f4c02708762c44f5ae95e888cbb9defd2a"
-  },
-  "vc:inferenceRule": "R5",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:065e5621bb21004baca2e890d66286f4c02708762c44f5ae95e888cbb9defd2a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5"
+  }
 }
 ```
 

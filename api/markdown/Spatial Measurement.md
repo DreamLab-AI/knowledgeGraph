@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-measurement",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-measurement",
+  "@type": "Class",
   "label": "Spatial Measurement",
+  "definition": "Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:depth-sensing",
-      "vc:label": "Depth Sensing"
+      "@id": "urn:ngm:class:depth-sensing",
+      "label": "Depth Sensing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c09a4daae951f561b39673b4ea1fb4e3eefa1a750e68ff28d166f780573629c1"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-environment-mapping",
+        "label": "3D Environment Mapping"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c09a4daae951f561b39673b4ea1fb4e3eefa1a750e68ff28d166f780573629c1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-environment-mapping",
-      "vc:label": "3D Environment Mapping"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

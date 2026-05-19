@@ -176,94 +176,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:loyalty-token",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:loyalty-token",
+  "@type": "Class",
   "label": "Loyalty Token",
+  "definition": "A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:loyalty-programs",
-      "vc:label": "Loyalty Programs"
+      "@id": "urn:ngm:class:loyalty-programs",
+      "label": "Loyalty Programs"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e2c0e0b56558c32c1583db0b39e32a72e2467187ec45bdb4571621bcba73eca9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:brand-engagement",
+        "label": "Brand Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:membership-program",
+        "label": "Membership Program"
+      },
+      {
+        "@id": "urn:ngm:class:customer-rewards",
+        "label": "Customer Rewards"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e2c0e0b56558c32c1583db0b39e32a72e2467187ec45bdb4571621bcba73eca9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:crypto-token",
-      "vc:label": "Crypto Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-asset",
-      "vc:label": "Virtual Asset"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:brand-engagement",
-      "vc:label": "Brand Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:incentive-mechanism",
-      "vc:label": "Incentive Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:membership-program",
-      "vc:label": "Membership Program"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:customer-rewards",
-      "vc:label": "Customer Rewards"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

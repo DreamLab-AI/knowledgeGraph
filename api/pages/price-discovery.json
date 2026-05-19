@@ -3,40 +3,44 @@
   "title": "Price Discovery",
   "slug": "price-discovery",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:price-discovery",
+  "classIri": "urn:ngm:class:price-discovery",
   "domain": "blockchain",
   "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:market-microstructure",
+      "id": "urn:ngm:class:market-microstructure",
       "label": "Market Microstructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fair-valuation",
+        "id": "urn:ngm:class:fair-valuation",
         "label": "Fair Valuation"
       },
       {
-        "id": "urn:visionflow:linked:market-efficiency",
+        "id": "urn:ngm:class:market-efficiency",
         "label": "Market Efficiency"
       },
       {
-        "id": "urn:visionflow:linked:price-transparency",
+        "id": "urn:ngm:class:price-transparency",
         "label": "Price Transparency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

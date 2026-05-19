@@ -3,32 +3,36 @@
   "title": "Inclusive Xr Experience",
   "slug": "inclusive-xr-experience",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:inclusive-xr-experience",
+  "classIri": "urn:ngm:class:inclusive-xr-experience",
   "domain": "spatial-computing",
   "definition": "Extended reality applications and environments designed to provide equitable, accessible experiences for users of all abilities, incorporating assistive technologies, alternative interaction modalities, and adaptive features that ensure meaningful participation in VR, AR, and metaverse spaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:accessible-experience",
+      "id": "urn:ngm:class:accessible-experience",
       "label": "Accessible Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:equitable-metaverse-access",
+        "id": "urn:ngm:class:equitable-metaverse-access",
         "label": "Equitable Metaverse Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

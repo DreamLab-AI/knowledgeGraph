@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:regulatory-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:regulatory-standards",
+  "@type": "Class",
   "label": "Regulatory Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e3197ae973580dfdd9121d59a5f13012506e8feba5fc403ca73079b52ca8635d"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e3197ae973580dfdd9121d59a5f13012506e8feba5fc403ca73079b52ca8635d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Legal and compliance frameworks governing metaverse and extended reality platforms, including data protection (GDPR), artificial intelligence (EU AI Act), digital services (DSA), and accessibility requirements that ensure user rights protection in immersive environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-protection",
+        "label": "User Protection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-protection",
-      "vc:label": "User Protection"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

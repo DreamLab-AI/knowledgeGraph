@@ -392,314 +392,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-framework",
+  "@type": "Class",
   "label": "Trust Framework",
+  "definition": "Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:certification-scheme",
-      "vc:label": "Certification Scheme"
+      "@id": "urn:ngm:class:certification-scheme",
+      "label": "Certification Scheme"
     },
     {
-      "@id": "urn:visionflow:linked:framework",
-      "vc:label": "Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-framework",
-      "vc:label": "Policy Framework"
+      "@id": "urn:ngm:class:framework",
+      "label": "Framework"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accreditation-body",
+        "label": "Accreditation Body"
+      },
+      {
+        "@id": "urn:ngm:class:assurance-level",
+        "label": "Assurance Level"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment-body",
+        "label": "Conformity Assessment Body"
+      },
+      {
+        "@id": "urn:ngm:class:credential-issuer",
+        "label": "Credential Issuer"
+      },
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      },
+      {
+        "@id": "urn:ngm:class:relying-party",
+        "label": "Relying Party"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:trust-list",
+        "label": "Trust List"
+      },
+      {
+        "@id": "urn:ngm:class:trust-mark",
+        "label": "Trust Mark"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:digital-credentials",
+        "label": "Digital Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-portability",
+        "label": "Credential Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-authentication",
+        "label": "Cross-Border Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-authentication",
+        "label": "Risk-Based Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:trust-transitivity",
+        "label": "Trust Transitivity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:e-idas-2",
+        "label": "eIDAS 2"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-federation",
+        "label": "OpenID Federation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-over-ip",
+        "label": "Trust over IP"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:iso-iec-17065",
+        "label": "ISO/IEC 17065"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:dsit",
+        "label": "DSIT"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ecosystem. A trust framework specifies what constitutes acceptable identity evidence, which credential types are recognised, which assurance levels are required for given transaction risk profiles, how accreditation of service providers is achieved, and which revocation and audit obligations apply. Trust frameworks operate simultaneously as governance instruments (defining legal and contractual obligations), technical specifications (defining interoperable protocols and data formats), and certification schemes (mandating conformity assessment by accredited bodies). Modern trust frameworks address identity assurance across the full digital identity lifecycle — identity proofing (binding a claimed identity to a real-world person or entity), authenticator management (controlling the authentication mechanisms used subsequently), and federation (communicating verified identity assertions across or",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accreditation-body",
-      "vc:label": "Accreditation Body"
-    },
-    {
-      "@id": "urn:visionflow:linked:assurance-level",
-      "vc:label": "Assurance Level"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment-body",
-      "vc:label": "Conformity Assessment Body"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-issuer",
-      "vc:label": "Credential Issuer"
-    },
-    {
-      "@id": "urn:visionflow:linked:federation",
-      "vc:label": "Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-proofing",
-      "vc:label": "Identity Proofing"
-    },
-    {
-      "@id": "urn:visionflow:linked:relying-party",
-      "vc:label": "Relying Party"
-    },
-    {
-      "@id": "urn:visionflow:linked:revocation-mechanism",
-      "vc:label": "Revocation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-anchor",
-      "vc:label": "Trust Anchor"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-list",
-      "vc:label": "Trust List"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-mark",
-      "vc:label": "Trust Mark"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment",
-      "vc:label": "Conformity Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "Cryptographic Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-credentials",
-      "vc:label": "Digital Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-enforcement-point",
-      "vc:label": "Policy Enforcement Point"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-portability",
-      "vc:label": "Credential Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-authentication",
-      "vc:label": "Cross-Border Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-based-authentication",
-      "vc:label": "Risk-Based Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-transitivity",
-      "vc:label": "Trust Transitivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:e-idas-2",
-      "vc:label": "eIDAS 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-63",
-      "vc:label": "NIST SP 800-63"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-federation",
-      "vc:label": "OpenID Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-over-ip",
-      "vc:label": "Trust over IP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-protection-law",
-      "vc:label": "Data Protection Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifiers",
-      "vc:label": "Decentralised Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-governance",
-      "vc:label": "Identity Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signatures",
-      "vc:label": "Digital Signatures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:iso-iec-17065",
-      "vc:label": "ISO/IEC 17065"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-27001",
-      "vc:label": "ISO/IEC 27001"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-web-token",
-      "vc:label": "JSON Web Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:sd-jwt",
-      "vc:label": "SD-JWT"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-509-certificate",
-      "vc:label": "X.509 Certificate"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ad-hoc-identity",
-      "vc:label": "Ad Hoc Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:siloed-identity",
-      "vc:label": "Siloed Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-of-trust",
-      "vc:label": "Web of Trust"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-identity",
-      "vc:label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-and-access-management",
-      "vc:label": "Identity and Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-enhancing-technologies",
-      "vc:label": "Privacy Enhancing Technologies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:dsit",
-      "vc:label": "DSIT"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-commission",
-      "vc:label": "European Commission"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso",
-      "vc:label": "ISO"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

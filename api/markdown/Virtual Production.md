@@ -2332,48 +2332,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-production",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-production",
+  "@type": "Class",
   "label": "Virtual Production",
+  "definition": "Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real Time Rendering"
+      "@id": "urn:ngm:class:real-time-rendering",
+      "label": "Real Time Rendering"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bd211d395a4ea32ddb94fe3caa193c53328fd5c8f00630b57b42914cceb7e8dd"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bd211d395a4ea32ddb94fe3caa193c53328fd5c8f00630b57b42914cceb7e8dd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.94",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

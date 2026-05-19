@@ -212,128 +212,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mixed-reality-mr",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mixed-reality-mr",
+  "@type": "Class",
   "label": "Mixed Reality (MR)",
+  "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0958beede384b877af44c6fe56fc8ec1af17e6a08d0b294662473a3876f74b37"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lighting-estimation",
+        "label": "Lighting Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-rendering",
+        "label": "Occlusion Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mesh",
+        "label": "Spatial Mesh"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-lighting",
+        "label": "Environmental Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:object-tracking",
+        "label": "Object Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-3-d-reconstruction",
+        "label": "Real-Time 3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bidirectional-interaction",
+        "label": "Bidirectional Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:realistic-occlusion",
+        "label": "Realistic Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:shared-spatial-anchors",
+        "label": "Shared Spatial Anchors"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-physical-collision",
+        "label": "Virtual-Physical Collision"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0958beede384b877af44c6fe56fc8ec1af17e6a08d0b294662473a3876f74b37@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:depth-camera",
-      "vc:label": "Depth Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:lighting-estimation",
-      "vc:label": "Lighting Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:occlusion-rendering",
-      "vc:label": "Occlusion Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:physics-simulation-engine",
-      "vc:label": "Physics Simulation Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-mesh",
-      "vc:label": "Spatial Mesh"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:environmental-lighting",
-      "vc:label": "Environmental Lighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-tracking",
-      "vc:label": "Object Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-3-d-reconstruction",
-      "vc:label": "Real-Time 3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bidirectional-interaction",
-      "vc:label": "Bidirectional Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:realistic-occlusion",
-      "vc:label": "Realistic Occlusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shared-spatial-anchors",
-      "vc:label": "Shared Spatial Anchors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-physical-collision",
-      "vc:label": "Virtual-Physical Collision"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-sensing",
-      "vc:label": "Depth Sensing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

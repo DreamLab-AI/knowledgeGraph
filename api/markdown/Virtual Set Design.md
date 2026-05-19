@@ -128,48 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-set-design",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-set-design",
+  "@type": "Class",
   "label": "Virtual Set Design",
+  "definition": "The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:production-design",
-      "vc:label": "Production Design"
+      "@id": "urn:ngm:class:production-design",
+      "label": "Production Design"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:489ee90d5e6eb3f00cfb9e6386801e6dd14460607d51831ccabb555fdcea01c8"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:489ee90d5e6eb3f00cfb9e6386801e6dd14460607d51831ccabb555fdcea01c8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

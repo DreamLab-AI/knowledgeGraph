@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0090-emergency-stop",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0090-emergency-stop",
+  "@type": "Class",
   "label": "rb 0090 emergency stop",
+  "definition": "emergency stop is a robotics and autonomous systems concept and a type of Robot Safety.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robot-safety",
-      "vc:label": "Robot Safety"
+      "@id": "urn:ngm:class:robot-safety",
+      "label": "Robot Safety"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5b8a03436224ff61745021029e8954e850e618732d3f0b8d17aa4d0a3fa50368"
-  },
-  "vc:inferenceRule": "R4SemanticRelation",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5b8a03436224ff61745021029e8954e850e618732d3f0b8d17aa4d0a3fa50368@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "emergency stop is a robotics and autonomous systems concept and a type of Robot Safety."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R4SemanticRelation"
+  }
 }
 ```
 

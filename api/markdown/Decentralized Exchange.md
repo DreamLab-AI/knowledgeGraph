@@ -768,368 +768,283 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-exchange",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-exchange",
+  "@type": "Class",
   "label": "Decentralized Exchange",
+  "definition": "A Decentralized Exchange (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of [[Smart Contract]] state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or oper...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:decentralised-finance-primitive",
-      "vc:label": "Decentralised Finance Primitive"
+      "@id": "urn:ngm:class:decentralised-finance-primitive",
+      "label": "Decentralised Finance Primitive"
     },
     {
-      "@id": "urn:visionflow:linked:financial-protocol",
-      "vc:label": "Financial Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:trading-venue",
-      "vc:label": "Trading Venue"
+      "@id": "urn:ngm:class:financial-protocol",
+      "label": "Financial Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eba5df47bd83180382865541866780a342016d85fce8d0fbdd9de2b08cf45da3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity-position",
+        "label": "Concentrated Liquidity Position"
+      },
+      {
+        "@id": "urn:ngm:class:fee-tier",
+        "label": "Fee Tier"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider-token",
+        "label": "Liquidity Provider Token"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:pool-manager",
+        "label": "Pool Manager"
+      },
+      {
+        "@id": "urn:ngm:class:router-contract",
+        "label": "Router Contract"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody-wallet",
+        "label": "Self-Custody Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:composable-finance",
+        "label": "Composable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:long-tail-asset-listing",
+        "label": "Long-Tail Asset Listing"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-trading",
+        "label": "Permissionless Trading"
+      },
+      {
+        "@id": "urn:ngm:class:token-swapping",
+        "label": "Token Swapping"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:batch-auction-matching",
+        "label": "Batch Auction Matching"
+      },
+      {
+        "@id": "urn:ngm:class:coincidence-of-wants",
+        "label": "Coincidence of Wants"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:constant-product-invariant",
+        "label": "Constant Product Invariant"
+      },
+      {
+        "@id": "urn:ngm:class:intent-based-execution",
+        "label": "Intent-Based Execution"
+      },
+      {
+        "@id": "urn:ngm:class:native-asset-cross-chain-swap",
+        "label": "Native Asset Cross-Chain Swap"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constant-product-formula",
+        "label": "Constant Product Formula"
+      },
+      {
+        "@id": "urn:ngm:class:dutch-auction",
+        "label": "Dutch Auction"
+      },
+      {
+        "@id": "urn:ngm:class:flash-accounting",
+        "label": "Flash Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-mean-invariant",
+        "label": "Geometric Mean Invariant"
+      },
+      {
+        "@id": "urn:ngm:class:hooks-pattern",
+        "label": "Hooks Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:stable-swap-invariant",
+        "label": "StableSwap Invariant"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:tick-based-liquidity",
+        "label": "Tick-Based Liquidity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aggregator",
+        "label": "Aggregator"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:maximal-extractable-value",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "@id": "urn:ngm:class:vampire-attack",
+        "label": "Vampire Attack"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:composability",
+        "label": "Composability"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-aggregation",
+        "label": "Crypto Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:curve-stable-swap-paper",
+        "label": "Curve StableSwap Paper"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1153-transient-storage",
+        "label": "EIP-1153 Transient Storage"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-2612-permit",
+        "label": "ERC-2612 Permit"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation-eu-2023-1114",
+        "label": "MiCA Regulation EU 2023-1114"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap-v2-whitepaper",
+        "label": "Uniswap V2 Whitepaper"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap-v3-whitepaper",
+        "label": "Uniswap V3 Whitepaper"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eba5df47bd83180382865541866780a342016d85fce8d0fbdd9de2b08cf45da3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A **Decentralized Exchange** (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of [[Smart Contract]] state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or operator-controlled order book, replacing the traditional exchange's trust assumptions with cryptoeconomic guarantees encoded in deterministic on-chain code, with three dominant architectural families covering (i) **automated market makers (AMMs)** pricing trades algorithmically against [[Liquidity Pool]] reserves using deterministic invariants — the constant-product `x*y=k` of [[Uniswap V2]] (Adams, Zinsmeister and Robinson 2020) extended by [[Uniswap V3]] concentrated liquidity (May 2021) and [[Uniswap V4]] hooks architecture (January 2025), [[Curve Finance]] StableSwap (Egorov 2019), [[Balancer Protocol]] weighted geometric-mean pools (Martinelli and McDonald 2019), [[Bancor Network]] continuous bonding curves with impermanent-loss protection (Hertzog and Benartzi 2017), and [[Maverick Protocol]] directional concentrated liquidity, (ii) **on-chain order books** matching limit orders thro",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:concentrated-liquidity-position",
-      "vc:label": "Concentrated Liquidity Position"
-    },
-    {
-      "@id": "urn:visionflow:linked:fee-tier",
-      "vc:label": "Fee Tier"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-provider-token",
-      "vc:label": "Liquidity Provider Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:order-book",
-      "vc:label": "Order Book"
-    },
-    {
-      "@id": "urn:visionflow:linked:pool-manager",
-      "vc:label": "Pool Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:router-contract",
-      "vc:label": "Router Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:automated-market-maker",
-      "vc:label": "Automated Market Maker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-oracle",
-      "vc:label": "Blockchain Oracle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-pool",
-      "vc:label": "Liquidity Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:block-production",
-      "vc:label": "Block Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-consensus",
-      "vc:label": "Blockchain Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody-wallet",
-      "vc:label": "Self-Custody Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gas-fee-market",
-      "vc:label": "Gas Fee Market"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:composable-finance",
-      "vc:label": "Composable Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-tail-asset-listing",
-      "vc:label": "Long-Tail Asset Listing"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-trading",
-      "vc:label": "Permissionless Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-swapping",
-      "vc:label": "Token Swapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-farming",
-      "vc:label": "Yield Farming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:atomic-swap",
-      "vc:label": "Atomic Swap"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:batch-auction-matching",
-      "vc:label": "Batch Auction Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:coincidence-of-wants",
-      "vc:label": "Coincidence of Wants"
-    },
-    {
-      "@id": "urn:visionflow:linked:concentrated-liquidity",
-      "vc:label": "Concentrated Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:constant-product-invariant",
-      "vc:label": "Constant Product Invariant"
-    },
-    {
-      "@id": "urn:visionflow:linked:intent-based-execution",
-      "vc:label": "Intent-Based Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:native-asset-cross-chain-swap",
-      "vc:label": "Native Asset Cross-Chain Swap"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:block-producer",
-      "vc:label": "Block Producer"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosmos-sdk",
-      "vc:label": "Cosmos SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20",
-      "vc:label": "ERC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:evm",
-      "vc:label": "EVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-rollup",
-      "vc:label": "Layer-2 Rollup"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solana",
-      "vc:label": "Solana"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:asset-tokenisation",
-      "vc:label": "Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:composability",
-      "vc:label": "Composability"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-aggregation",
-      "vc:label": "Crypto Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self-Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-economy",
-      "vc:label": "Token Economy"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:constant-product-formula",
-      "vc:label": "Constant Product Formula"
-    },
-    {
-      "@id": "urn:visionflow:linked:dutch-auction",
-      "vc:label": "Dutch Auction"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-accounting",
-      "vc:label": "Flash Accounting"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometric-mean-invariant",
-      "vc:label": "Geometric Mean Invariant"
-    },
-    {
-      "@id": "urn:visionflow:linked:hooks-pattern",
-      "vc:label": "Hooks Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-swap-invariant",
-      "vc:label": "StableSwap Invariant"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-signature-scheme",
-      "vc:label": "Threshold Signature Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:tick-based-liquidity",
-      "vc:label": "Tick-Based Liquidity"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralized-exchange",
-      "vc:label": "Centralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:dark-pool",
-      "vc:label": "Dark Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-maker-brokerage",
-      "vc:label": "Market Maker Brokerage"
-    },
-    {
-      "@id": "urn:visionflow:linked:over-the-counter-trading",
-      "vc:label": "Over-the-Counter Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-stock-exchange",
-      "vc:label": "Traditional Stock Exchange"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:aggregator",
-      "vc:label": "Aggregator"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-loan",
-      "vc:label": "Flash Loan"
-    },
-    {
-      "@id": "urn:visionflow:linked:impermanent-loss",
-      "vc:label": "Impermanent Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-mining",
-      "vc:label": "Liquidity Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:maximal-extractable-value",
-      "vc:label": "Maximal Extractable Value"
-    },
-    {
-      "@id": "urn:visionflow:linked:vampire-attack",
-      "vc:label": "Vampire Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-farming",
-      "vc:label": "Yield Farming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:curve-stable-swap-paper",
-      "vc:label": "Curve StableSwap Paper"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-1153-transient-storage",
-      "vc:label": "EIP-1153 Transient Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20",
-      "vc:label": "ERC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-2612-permit",
-      "vc:label": "ERC-2612 Permit"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-regulation-eu-2023-1114",
-      "vc:label": "MiCA Regulation EU 2023-1114"
-    },
-    {
-      "@id": "urn:visionflow:linked:uniswap-v2-whitepaper",
-      "vc:label": "Uniswap V2 Whitepaper"
-    },
-    {
-      "@id": "urn:visionflow:linked:uniswap-v3-whitepaper",
-      "vc:label": "Uniswap V3 Whitepaper"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:centralized-exchange",
-      "vc:label": "Centralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-markets",
-      "vc:label": "Financial Markets"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

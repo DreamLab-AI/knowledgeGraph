@@ -416,336 +416,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:particle-filter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:particle-filter",
+  "@type": "Class",
   "label": "Particle Filter",
+  "definition": "ParticleFilter denotes a class of [[Sequential Monte Carlo]] (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:monte-carlo-method",
-      "vc:label": "Monte Carlo Method"
+      "@id": "urn:ngm:class:monte-carlo-method",
+      "label": "Monte Carlo Method"
     },
     {
-      "@id": "urn:visionflow:linked:nonparametric-filter",
-      "vc:label": "Nonparametric Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:recursive-bayesian-estimator",
-      "vc:label": "Recursive Bayesian Estimator"
+      "@id": "urn:ngm:class:nonparametric-filter",
+      "label": "Nonparametric Filter"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6ce502c10ecf48276cbb77466ede8cc9c93a131fb173e7dc562466356cc7f6f8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:effective-sample-size",
+        "label": "Effective Sample Size"
+      },
+      {
+        "@id": "urn:ngm:class:importance-weight",
+        "label": "Importance Weight"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "@id": "urn:ngm:class:particle-set",
+        "label": "Particle Set"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-distribution",
+        "label": "Proposal Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:resampling-scheme",
+        "label": "Resampling Scheme"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
+      },
+      {
+        "@id": "urn:ngm:class:resampling-algorithm",
+        "label": "Resampling Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fast-slam",
+        "label": "FastSLAM"
+      },
+      {
+        "@id": "urn:ngm:class:global-localisation",
+        "label": "Global Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:kidnapped-robot-recovery",
+        "label": "Kidnapped Robot Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:multi-target-tracking",
+        "label": "Multi-Target Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localization"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:auxiliary-variable-method",
+        "label": "Auxiliary Variable Method"
+      },
+      {
+        "@id": "urn:ngm:class:kld-sampling",
+        "label": "KLD-Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:mcmc-move-step",
+        "label": "MCMC Move Step"
+      },
+      {
+        "@id": "urn:ngm:class:rao-blackwellisation",
+        "label": "Rao-Blackwellisation"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-importance-resampling",
+        "label": "Sampling Importance Resampling"
+      },
+      {
+        "@id": "urn:ngm:class:sequential-importance-sampling",
+        "label": "Sequential Importance Sampling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "@id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-state",
+        "label": "Hidden State"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:icra",
+        "label": "ICRA"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      },
+      {
+        "@id": "urn:ngm:class:iros",
+        "label": "IROS"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:rss-conference",
+        "label": "RSS Conference"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6ce502c10ecf48276cbb77466ede8cc9c93a131fb173e7dc562466356cc7f6f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ParticleFilter denotes a class of [[Sequential Monte Carlo]] (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i=1..N} of N discrete particles (hypotheses) drawn from the state space, realising exact nonlinear non-Gaussian [[Bayes Filter]] recursion without the Gaussian or linearity assumptions required by the [[Kalman Filter]] family, at the cost of O(N) per-step computation where N typically ranges from 100 to 100,000 depending on state-space dimensionality and required precision. The canonical bootstrap filter (Gordon, Salmond & Smith 1993) executes a three-phase recursion per timestep: (1) **prediction** — draw N candidate particles x_t^(i) ∼ p(x_t | u_t, x_{t-1}^(i)) by propagating each prior particle through the [[Motion Model]] with additive process noise, dispersing the particle cloud according to dynamic uncertainty; (2) **weight update** — assign importance weight w_t^(i) = p(z_t | x_t^(i)) evaluating each particle's consistency with the current sensor observation z_t under the observation ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:effective-sample-size",
-      "vc:label": "Effective Sample Size"
-    },
-    {
-      "@id": "urn:visionflow:linked:importance-weight",
-      "vc:label": "Importance Weight"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-model",
-      "vc:label": "Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:observation-model",
-      "vc:label": "Observation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:particle-set",
-      "vc:label": "Particle Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-distribution",
-      "vc:label": "Proposal Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampling-scheme",
-      "vc:label": "Resampling Scheme"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:likelihood-function",
-      "vc:label": "Likelihood Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-model",
-      "vc:label": "Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-number-generator",
-      "vc:label": "Random Number Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampling-algorithm",
-      "vc:label": "Resampling Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space-model",
-      "vc:label": "State Space Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fast-slam",
-      "vc:label": "FastSLAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-localisation",
-      "vc:label": "Global Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:kidnapped-robot-recovery",
-      "vc:label": "Kidnapped Robot Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-target-tracking",
-      "vc:label": "Multi-Target Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-localisation",
-      "vc:label": "Robot Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-tracking",
-      "vc:label": "Target Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monte-carlo-localization",
-      "vc:label": "Monte Carlo Localization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:auxiliary-variable-method",
-      "vc:label": "Auxiliary Variable Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:kld-sampling",
-      "vc:label": "KLD-Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcmc-move-step",
-      "vc:label": "MCMC Move Step"
-    },
-    {
-      "@id": "urn:visionflow:linked:rao-blackwellisation",
-      "vc:label": "Rao-Blackwellisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampling-importance-resampling",
-      "vc:label": "Sampling Importance Resampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequential-importance-sampling",
-      "vc:label": "Sequential Importance Sampling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:importance-sampling",
-      "vc:label": "Importance Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-assumption",
-      "vc:label": "Markov Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:monte-carlo-integration",
-      "vc:label": "Monte Carlo Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space-model",
-      "vc:label": "State Space Model"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-vehicle",
-      "vc:label": "Autonomous Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mobile-robot-platform",
-      "vc:label": "Mobile Robot Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:wheeled-robot",
-      "vc:label": "Wheeled Robot"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:imu",
-      "vc:label": "IMU"
-    },
-    {
-      "@id": "urn:visionflow:linked:occupancy-grid",
-      "vc:label": "Occupancy Grid"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gyroscope",
-      "vc:label": "Gyroscope"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "Lidar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:odometry",
-      "vc:label": "Odometry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:extended-kalman-filter",
-      "vc:label": "Extended Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaussian-process",
-      "vc:label": "Gaussian Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:histogram-filter",
-      "vc:label": "Histogram Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:unscented-kalman-filter",
-      "vc:label": "Unscented Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hidden-state",
-      "vc:label": "Hidden State"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:localization",
-      "vc:label": "Localization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monte-carlo-tree-search",
-      "vc:label": "Monte Carlo Tree Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:simulation",
-      "vc:label": "Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:icra",
-      "vc:label": "ICRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-signal-processing-society",
-      "vc:label": "IEEE Signal Processing Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:iros",
-      "vc:label": "IROS"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-navigation-stack",
-      "vc:label": "ROS Navigation Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:rss-conference",
-      "vc:label": "RSS Conference"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

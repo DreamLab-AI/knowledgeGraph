@@ -224,124 +224,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:linked-data-encoder",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:linked-data-encoder",
+  "@type": "Class",
   "label": "Linked Data Encoder",
+  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1–S11) that are queryable, linkable, and mac...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
+      "@id": "urn:ngm:class:data-layer",
+      "label": "Data Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:context-pinning",
+        "label": "Context Pinning"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-mapping",
+        "label": "Semantic Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:uri-resolution",
+        "label": "URI Resolution"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:canonical-json",
+        "label": "Canonical JSON"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld-1-1-standard",
+        "label": "JSON-LD 1.1 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-vocabulary",
+        "label": "W3C Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-system-querying",
+        "label": "Cross-System Querying"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-integration",
+        "label": "Knowledge Graph Integration"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-consumption",
+        "label": "Linked Data Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-federation",
+        "label": "Semantic Federation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:json-ld-1-1",
+        "label": "JSON-LD 1.1"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-semantics",
+        "label": "RDF Semantics"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-linked-data",
+        "label": "W3C Linked Data"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fa8dd2fcb5e4bcdc9e1d3c80144106b8c41732ac02f7a6f320c9bd1b727d0de7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1–S11) that are queryable, linkable, and machine-readable without agent-specific API adapters.",
-  "vc:qualityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:context-pinning",
-      "vc:label": "Context Pinning"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld-context",
-      "vc:label": "JSON-LD Context"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-mapping",
-      "vc:label": "Semantic Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri-resolution",
-      "vc:label": "URI Resolution"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:canonical-json",
-      "vc:label": "Canonical JSON"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld-1-1-standard",
-      "vc:label": "JSON-LD 1.1 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-vocabulary",
-      "vc:label": "W3C Vocabulary"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
-      "vc:label": "URI Canonicaliser"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-system-querying",
-      "vc:label": "Cross-System Querying"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-graph-integration",
-      "vc:label": "Knowledge Graph Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data-consumption",
-      "vc:label": "Linked Data Consumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-federation",
-      "vc:label": "Semantic Federation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:json-ld-1-1",
-      "vc:label": "JSON-LD 1.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-semantics",
-      "vc:label": "RDF Semantics"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-linked-data",
-      "vc:label": "W3C Linked Data"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:rdf-store",
-      "vc:label": "RDF Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ]
+  "quality": 0.87,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

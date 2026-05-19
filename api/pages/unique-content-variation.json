@@ -3,19 +3,18 @@
   "title": "Unique Content Variation",
   "slug": "unique-content-variation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:unique-content-variation",
+  "classIri": "urn:ngm:class:unique-content-variation",
   "domain": "spatial-computing",
   "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:generative-content",
+      "id": "urn:ngm:class:generative-content",
       "label": "Generative Content"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

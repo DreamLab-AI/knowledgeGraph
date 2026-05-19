@@ -3,19 +3,18 @@
   "title": "Anti Counterfeiting",
   "slug": "anti-counterfeiting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:anti-counterfeiting",
+  "classIri": "urn:ngm:class:anti-counterfeiting",
   "domain": "blockchain",
-  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, electronics, and consumer products.",
+  "definition": "Blockchain-based systems employing cryptographic verification, immutable ledgers, and physical-digital integration technologies (NFC tags, QR codes, RFID) to authenticate products, prevent counterfeiting, and establish verifiable supply chain provenance across pharmaceuticals, luxury goods, elect...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:supply-chain-blockchain",
+      "id": "urn:ngm:class:supply-chain-blockchain",
       "label": "Supply Chain Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.88,
   "maturity": "draft",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

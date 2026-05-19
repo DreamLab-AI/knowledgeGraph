@@ -3,19 +3,18 @@
   "title": "Monetary Policy Implementation",
   "slug": "monetary-policy-implementation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monetary-policy-implementation",
+  "classIri": "urn:ngm:class:monetary-policy-implementation",
   "domain": "spatial-computing",
   "definition": "A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:economic-mechanism",
+      "id": "urn:ngm:class:economic-mechanism",
       "label": "Economic Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

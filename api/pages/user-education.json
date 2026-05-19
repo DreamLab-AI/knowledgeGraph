@@ -3,19 +3,18 @@
   "title": "User Education",
   "slug": "user-education",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-education",
+  "classIri": "urn:ngm:class:user-education",
   "domain": "spatial-computing",
-  "definition": "User Education is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "User Education is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

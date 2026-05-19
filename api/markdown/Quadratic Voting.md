@@ -520,390 +520,307 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:quadratic-voting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quadratic-voting",
+  "@type": "Class",
   "label": "Quadratic Voting",
+  "definition": "Collective decision-making mechanism where the cost of casting n votes on any single proposal equals n² voice credits, formalising preference-intensity revelation whilst resisting plutocratic capture — developed by Steven Lalley and E.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:governance-protocol",
-      "vc:label": "Governance Protocol"
+      "@id": "urn:ngm:class:governance-protocol",
+      "label": "Governance Protocol"
     },
     {
-      "@id": "urn:visionflow:linked:public-goods-funding",
-      "vc:label": "Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-theory",
-      "vc:label": "Voting Theory"
+      "@id": "urn:ngm:class:public-goods-funding",
+      "label": "Public Goods Funding"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9be65381017e2dc46472b27bbd6d86371a3af788e1bda626d340ed477ae33cb2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "@id": "urn:ngm:class:grant-round",
+        "label": "Grant Round"
+      },
+      {
+        "@id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "@id": "urn:ngm:class:maci",
+        "label": "MACI"
+      },
+      {
+        "@id": "urn:ngm:class:matching-pool",
+        "label": "Matching Pool"
+      },
+      {
+        "@id": "urn:ngm:class:pairwise-qf",
+        "label": "Pairwise QF"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:voice-credits",
+        "label": "Voice Credits"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proofs",
+        "label": "Merkle Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:voice-credit-allocation",
+        "label": "Voice Credit Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anti-plutocratic-governance",
+        "label": "Anti-Plutocratic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:community-led-allocation",
+        "label": "Community-Led Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:preference-intensity-revelation",
+        "label": "Preference Intensity Revelation"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:welfare-optimisation",
+        "label": "Welfare Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:clr-fund-protocol",
+        "label": "clr.fund Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "@id": "urn:ngm:class:lalley-weyl-qv-protocol",
+        "label": "Lalley-Weyl QV Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "@id": "urn:ngm:class:maci-v2",
+        "label": "MACI v2"
+      },
+      {
+        "@id": "urn:ngm:class:optimism-rpgf",
+        "label": "Optimism RPGF"
+      },
+      {
+        "@id": "urn:ngm:class:pairwise-qf",
+        "label": "Pairwise QF"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bright-id",
+        "label": "BrightID"
+      },
+      {
+        "@id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-mainnet",
+        "label": "Ethereum Mainnet"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proofs",
+        "label": "Merkle Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-id",
+        "label": "Polygon ID"
+      },
+      {
+        "@id": "urn:ngm:class:worldcoin",
+        "label": "Worldcoin"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:harberger-tax",
+        "label": "Harberger Tax"
+      },
+      {
+        "@id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      },
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:radical-markets",
+        "label": "Radical Markets"
+      },
+      {
+        "@id": "urn:ngm:class:radicalx-change",
+        "label": "RadicalxChange"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:civic-technology",
+        "label": "Civic Technology"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-governance",
+        "label": "DeFi Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-funding",
+        "label": "Open Source Funding"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-budgeting",
+        "label": "Participatory Budgeting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ethereum-research-forum",
+        "label": "Ethereum Research Forum"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:maci-git-hub",
+        "label": "MACI GitHub"
+      },
+      {
+        "@id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-and-scaling-explorations",
+        "label": "Privacy and Scaling Explorations"
+      },
+      {
+        "@id": "urn:ngm:class:radicalx-change-foundation",
+        "label": "RadicalxChange Foundation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9be65381017e2dc46472b27bbd6d86371a3af788e1bda626d340ed477ae33cb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Collective decision-making mechanism where the cost of casting n votes on any single proposal equals n² voice credits, formalising preference-intensity revelation whilst resisting plutocratic capture — developed by Steven Lalley and E. Glen Weyl (2018 AEA Papers and Proceedings), extended into Quadratic Funding (QF) by Buterin, Hitzig and Weyl (2019 Liberal Radicalism / Management Science) where matching subsidies scale as (Σ√cᵢ)² − Σcᵢ to amplify projects with broad community support over concentrated large donations, achieving asymptotic convergence to utilitarian social welfare optimum in large populations (Lalley-Weyl 2018), 50-99% reduction in plutocratic distortion versus token-weighted voting, deployed in [[Gitcoin]] 20+ grant rounds distributing $60 M+ to Ethereum public goods (2019-2026), [[Optimism]] RPGF rounds 1-6 allocating $170 M+ (2021-2024), MACI (Minimal Anti-Collusion Infrastructure, PSE Team 2020-2024) providing ZK-SNARK-backed collusion resistance, the Colorado House Democratic Caucus 2019 pilot (107 legislators, 100 voice credits each), Decentraland DAO ($12 M 2023 grant allocation), Taiwan Presidential Hackathon (200K+ citizen participants), clr.fund on-chain ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:gitcoin-passport",
-      "vc:label": "Gitcoin Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:grant-round",
-      "vc:label": "Grant Round"
-    },
-    {
-      "@id": "urn:visionflow:linked:liberal-radicalism",
-      "vc:label": "Liberal Radicalism"
-    },
-    {
-      "@id": "urn:visionflow:linked:maci",
-      "vc:label": "MACI"
-    },
-    {
-      "@id": "urn:visionflow:linked:matching-pool",
-      "vc:label": "Matching Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:pairwise-qf",
-      "vc:label": "Pairwise QF"
-    },
-    {
-      "@id": "urn:visionflow:linked:quadratic-funding",
-      "vc:label": "Quadratic Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:retroactive-public-goods-funding",
-      "vc:label": "Retroactive Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:sybil-resistance",
-      "vc:label": "Sybil Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-credits",
-      "vc:label": "Voice Credits"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:commit-reveal-scheme",
-      "vc:label": "Commit-Reveal Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-proofs",
-      "vc:label": "Merkle Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:sybil-resistance",
-      "vc:label": "Sybil Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-credit-allocation",
-      "vc:label": "Voice Credit Allocation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-oracle",
-      "vc:label": "Blockchain Oracle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anti-plutocratic-governance",
-      "vc:label": "Anti-Plutocratic Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-led-allocation",
-      "vc:label": "Community-Led Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:incentive-compatibility",
-      "vc:label": "Incentive Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:preference-intensity-revelation",
-      "vc:label": "Preference Intensity Revelation"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-goods-funding",
-      "vc:label": "Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:retroactive-public-goods-funding",
-      "vc:label": "Retroactive Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:welfare-optimisation",
-      "vc:label": "Welfare Optimisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:allo-protocol",
-      "vc:label": "Allo Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:clr-fund-protocol",
-      "vc:label": "clr.fund Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin-grants",
-      "vc:label": "Gitcoin Grants"
-    },
-    {
-      "@id": "urn:visionflow:linked:lalley-weyl-qv-protocol",
-      "vc:label": "Lalley-Weyl QV Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:liberal-radicalism",
-      "vc:label": "Liberal Radicalism"
-    },
-    {
-      "@id": "urn:visionflow:linked:maci-v2",
-      "vc:label": "MACI v2"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimism-rpgf",
-      "vc:label": "Optimism RPGF"
-    },
-    {
-      "@id": "urn:visionflow:linked:pairwise-qf",
-      "vc:label": "Pairwise QF"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:circom",
-      "vc:label": "Circom"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:groth16",
-      "vc:label": "Groth16"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:welfare-economics",
-      "vc:label": "Welfare Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zk-snarks",
-      "vc:label": "ZK-SNARKs"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:civic-technology",
-      "vc:label": "Civic Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-governance",
-      "vc:label": "DeFi Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-democracy",
-      "vc:label": "Digital Democracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-funding",
-      "vc:label": "Open Source Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:participatory-budgeting",
-      "vc:label": "Participatory Budgeting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:allo-protocol",
-      "vc:label": "Allo Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:bright-id",
-      "vc:label": "BrightID"
-    },
-    {
-      "@id": "urn:visionflow:linked:commit-reveal-scheme",
-      "vc:label": "Commit-Reveal Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-mainnet",
-      "vc:label": "Ethereum Mainnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin-passport",
-      "vc:label": "Gitcoin Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-proofs",
-      "vc:label": "Merkle Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:polygon-id",
-      "vc:label": "Polygon ID"
-    },
-    {
-      "@id": "urn:visionflow:linked:worldcoin",
-      "vc:label": "Worldcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zk-snarks",
-      "vc:label": "ZK-SNARKs"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:futarchy",
-      "vc:label": "Futarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:harberger-tax",
-      "vc:label": "Harberger Tax"
-    },
-    {
-      "@id": "urn:visionflow:linked:one-person-one-vote",
-      "vc:label": "One-Person-One-Vote"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-voting",
-      "vc:label": "Token-Weighted Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-sig-governance",
-      "vc:label": "Multi-Sig Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:common-pool-resources",
-      "vc:label": "Common Pool Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin",
-      "vc:label": "Gitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:harberger-tax",
-      "vc:label": "Harberger Tax"
-    },
-    {
-      "@id": "urn:visionflow:linked:liberal-radicalism",
-      "vc:label": "Liberal Radicalism"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimism",
-      "vc:label": "Optimism"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-goods",
-      "vc:label": "Public Goods"
-    },
-    {
-      "@id": "urn:visionflow:linked:radical-markets",
-      "vc:label": "Radical Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:radicalx-change",
-      "vc:label": "RadicalxChange"
-    },
-    {
-      "@id": "urn:visionflow:linked:retroactive-public-goods-funding",
-      "vc:label": "Retroactive Public Goods Funding"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ethereum-research-forum",
-      "vc:label": "Ethereum Research Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin",
-      "vc:label": "Gitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:maci-git-hub",
-      "vc:label": "MACI GitHub"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimism-collective",
-      "vc:label": "Optimism Collective"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-and-scaling-explorations",
-      "vc:label": "Privacy and Scaling Explorations"
-    },
-    {
-      "@id": "urn:visionflow:linked:radicalx-change-foundation",
-      "vc:label": "RadicalxChange Foundation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

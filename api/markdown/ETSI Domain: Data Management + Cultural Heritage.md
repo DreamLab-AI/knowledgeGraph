@@ -168,106 +168,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-data-management-cultural-heritage",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage",
+  "@type": "Class",
   "label": "ETSI Domain: Data Management + Cultural Heritage",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:heritage-database",
+        "label": "Heritage Database"
+      },
+      {
+        "@id": "urn:ngm:class:preservation-system",
+        "label": "Preservation System"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage-digitization",
+        "label": "Cultural Heritage Digitization"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:educational-outreach",
+        "label": "Educational Outreach"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-preservation",
+        "label": "Long-term Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:public-access",
+        "label": "Public Access"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4f864918ae3ec311fdb9efc342951682d0dbad1939181a146258cfe1bc0c8f44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:heritage-database",
-      "vc:label": "Heritage Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:preservation-system",
-      "vc:label": "Preservation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-archive",
-      "vc:label": "Digital Archive"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-digitization",
-      "vc:label": "Cultural Heritage Digitization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:educational-outreach",
-      "vc:label": "Educational Outreach"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-preservation",
-      "vc:label": "Long-term Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-access",
-      "vc:label": "Public Access"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:metadata-schemas",
-      "vc:label": "Metadata Schemas"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:archival-standards",
-      "vc:label": "Archival Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

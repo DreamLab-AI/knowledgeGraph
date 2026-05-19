@@ -212,128 +212,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:latency-management-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:latency-management-protocol",
+  "@type": "Class",
   "label": "Latency Management Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ecde76a0c8416a51ae3633d442cba4fec84455194ddc3691284a3f755de32c89"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ecde76a0c8416a51ae3633d442cba4fec84455194ddc3691284a3f755de32c89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A systematic process for monitoring, measuring, and minimizing network delay in interactive metaverse sessions through adaptive techniques including traffic prioritization, predictive buffering, and dynamic routing optimization.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dynamic-routing",
+        "label": "Dynamic Routing"
+      },
+      {
+        "@id": "urn:ngm:class:latency-monitoring-system",
+        "label": "Latency Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-buffering",
+        "label": "Predictive Buffering"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service-manager",
+        "label": "Quality of Service Manager"
+      },
+      {
+        "@id": "urn:ngm:class:traffic-prioritization-engine",
+        "label": "Traffic Prioritization Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:latency-measurement-tools",
+        "label": "Latency Measurement Tools"
+      },
+      {
+        "@id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:priority-policies",
+        "label": "Priority Policies"
+      },
+      {
+        "@id": "urn:ngm:class:routing-algorithms",
+        "label": "Routing Algorithms"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:low-latency-interaction",
+        "label": "Low-Latency Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:predictable-performance",
+        "label": "Predictable Performance"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-responsiveness",
+        "label": "Real-Time Responsiveness"
+      },
+      {
+        "@id": "urn:ngm:class:smooth-user-experience",
+        "label": "Smooth User Experience"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-performance-management",
+        "label": "Network Performance Management"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-experience-framework",
+        "label": "Quality of Experience Framework"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:network-performance-management",
-      "vc:label": "Network Performance Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-of-experience-framework",
-      "vc:label": "Quality of Experience Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-routing",
-      "vc:label": "Dynamic Routing"
-    },
-    {
-      "@id": "urn:visionflow:linked:latency-monitoring-system",
-      "vc:label": "Latency Monitoring System"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictive-buffering",
-      "vc:label": "Predictive Buffering"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-of-service-manager",
-      "vc:label": "Quality of Service Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:traffic-prioritization-engine",
-      "vc:label": "Traffic Prioritization Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:latency-measurement-tools",
-      "vc:label": "Latency Measurement Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-performance-metrics",
-      "vc:label": "Network Performance Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:priority-policies",
-      "vc:label": "Priority Policies"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-algorithms",
-      "vc:label": "Routing Algorithms"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:low-latency-interaction",
-      "vc:label": "Low-Latency Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictable-performance",
-      "vc:label": "Predictable Performance"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-responsiveness",
-      "vc:label": "Real-Time Responsiveness"
-    },
-    {
-      "@id": "urn:visionflow:linked:smooth-user-experience",
-      "vc:label": "Smooth User Experience"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-management",
-      "vc:label": "Bandwidth Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:congestion-control",
-      "vc:label": "Congestion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:packet-scheduling",
-      "vc:label": "Packet Scheduling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

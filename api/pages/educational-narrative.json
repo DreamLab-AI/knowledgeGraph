@@ -3,32 +3,36 @@
   "title": "Educational Narrative",
   "slug": "educational-narrative",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:educational-narrative",
+  "classIri": "urn:ngm:class:educational-narrative",
   "domain": "spatial-computing",
   "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-learning",
+      "id": "urn:ngm:class:immersive-learning",
       "label": "Immersive Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:personalised-learning",
+        "id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Clinic",
   "slug": "virtual-clinic",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-clinic",
+  "classIri": "urn:ngm:class:virtual-clinic",
   "domain": "spatial-computing",
   "definition": "A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-environment",
+      "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

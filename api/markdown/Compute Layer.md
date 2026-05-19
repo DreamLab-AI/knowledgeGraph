@@ -196,138 +196,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compute-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compute-layer",
+  "@type": "Class",
   "label": "Compute Layer",
+  "definition": "Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d578499318800d394c8ec7b4a8bbb0ed9be04cb883c58b652f341e24f87c70e9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-processing-service",
+        "label": "AI Processing Service"
+      },
+      {
+        "@id": "urn:ngm:class:compute-orchestrator",
+        "label": "Compute Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:experience-layer",
+        "label": "Experience Layer"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:processing-hardware",
+        "label": "Processing Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-architecture-stack",
+        "label": "Metaverse Architecture Stack"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d578499318800d394c8ec7b4a8bbb0ed9be04cb883c58b652f341e24f87c70e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture-stack",
-      "vc:label": "Metaverse Architecture Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-stack",
-      "vc:label": "Metaverse Stack"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-processing-service",
-      "vc:label": "AI Processing Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:compute-orchestrator",
-      "vc:label": "Compute Orchestrator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:experience-layer",
-      "vc:label": "Experience Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:simulation-engine",
-      "vc:label": "Simulation Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-resources",
-      "vc:label": "GPU Resources"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage-layer",
-      "vc:label": "Data Storage Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:processing-hardware",
-      "vc:label": "Processing Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-inference",
-      "vc:label": "AI Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:container-orchestration",
-      "vc:label": "Container Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-balancer",
-      "vc:label": "Load Balancer"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-scheduler",
-      "vc:label": "Resource Scheduler"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

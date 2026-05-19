@@ -3,19 +3,18 @@
   "title": "Robust Control",
   "slug": "robust-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robust-control",
+  "classIri": "urn:ngm:class:robust-control",
   "domain": "spatial-computing",
-  "definition": "- maturity:: draft",
+  "definition": "Robust Control is a type of Control Algorithms in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:control-algorithms",
+      "id": "urn:ngm:class:control-algorithms",
       "label": "ControlAlgorithms"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Computer Vision System",
   "slug": "computer-vision-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:computer-vision-system",
+  "classIri": "urn:ngm:class:computer-vision-system",
   "domain": "spatial-computing",
-  "definition": "Computer Vision System is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Computer Vision System is a type of Computer Vision in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

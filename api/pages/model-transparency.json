@@ -3,32 +3,36 @@
   "title": "Model Transparency",
   "slug": "model-transparency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-transparency",
+  "classIri": "urn:ngm:class:model-transparency",
   "domain": "artificial-intelligence",
   "definition": "The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
+      "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:trustworthy-ai-systems",
+        "id": "urn:ngm:class:trustworthy-ai-systems",
         "label": "Trustworthy AI Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

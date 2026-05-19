@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:game-narratives",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:game-narratives",
+  "@type": "Class",
   "label": "Game Narratives",
+  "definition": "Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:interactive-storytelling",
-      "vc:label": "Interactive Storytelling"
+      "@id": "urn:ngm:class:interactive-storytelling",
+      "label": "Interactive Storytelling"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fe2d6238a70a23c1a94a1dfd373d3880e1f15469c59a36552718c941fc04554d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-gaming-experiences",
+        "label": "Immersive Gaming Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fe2d6238a70a23c1a94a1dfd373d3880e1f15469c59a36552718c941fc04554d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-gaming-experiences",
-      "vc:label": "Immersive Gaming Experiences"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

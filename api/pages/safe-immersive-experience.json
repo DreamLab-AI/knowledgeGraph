@@ -3,32 +3,36 @@
   "title": "Safe Immersive Experience",
   "slug": "safe-immersive-experience",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:safe-immersive-experience",
+  "classIri": "urn:ngm:class:safe-immersive-experience",
   "domain": "spatial-computing",
   "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:user-safety",
+      "id": "urn:ngm:class:user-safety",
       "label": "User Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:responsible-xr-design",
+        "id": "urn:ngm:class:responsible-xr-design",
         "label": "Responsible XR Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,207 +3,410 @@
   "title": "Foundation Models",
   "slug": "foundation-models",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:foundation-models",
+  "classIri": "urn:ngm:individual:foundation-models",
   "domain": "artificial-intelligence",
-  "definition": "Foundation Models are large-scale machine learning models pretrained on broad data at scale using self-supervised objectives (next-token prediction, masked token prediction, contrastive image-text alignment, denoising diffusion) and adaptable to a wide spectrum of downstream tasks through fine-tuning, instruction tuning, in-context learning, prompting, retrieval augmentation, or lightweight parameter-efficient adaptation (LoRA, QLoRA, adapter layers, prefix tuning), a category and terminological frame formally introduced by the Stanford Center for Research on Foundation Models (CRFM) in August 2021 through the 212-page multi-author position paper \"On the Opportunities and Risks of Foundation Models\" (Bommasani, Hudson, Adeli, Altman, Arora, von Arx, Bernstein, Bohg, Bosselut, Brunskill, Brynjolfsson, Buch, Card, Castellon, Chatterji, Chen, Creel, Davis, Demszky, Donahue, Doumbouya, Durmus, Ermon, Etchemendy, Ethayarajh, Fei-Fei, Finn, Gale, Gillespie, Goel, Goodman, Grossman, Guha, Hashimoto, Henderson, Hewitt, Ho, Hong, Hsu, Huang, Icard, Jain, Jurafsky, Kalluri, Karamcheti, Keeling, Khani, Khattab, Koh, Krass, Krishna, Kuditipudi, Kumar, Ladhak, Lee, Lee, Leskovec, Levent, Li, Li",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:general-purpose-ai",
-      "label": "General-Purpose AI"
-    },
-    {
-      "id": "urn:visionflow:linked:self-supervised-learning",
-      "label": "Self-Supervised Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:pretrained-model",
-      "label": "Pretrained Model"
-    }
-  ],
+  "definition": "Foundation Models are large-scale machine learning models pretrained on broad data at scale using self-supervised objectives (next-token prediction, masked token prediction, contrastive image-text alignment, denoising diffusion) and adaptable to a wide spectrum of downstream tasks through fine-tu...",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:embedding-layer",
+        "id": "urn:ngm:class:embedding-layer",
         "label": "Embedding Layer"
       },
       {
-        "id": "urn:visionflow:linked:output-head",
+        "id": "urn:ngm:class:output-head",
         "label": "Output Head"
       },
       {
-        "id": "urn:visionflow:linked:preference-optimisation",
+        "id": "urn:ngm:class:preference-optimisation",
         "label": "Preference Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:pretraining-stage",
+        "id": "urn:ngm:class:pretraining-stage",
         "label": "Pretraining Stage"
       },
       {
-        "id": "urn:visionflow:linked:safety-classifier",
+        "id": "urn:ngm:class:safety-classifier",
         "label": "Safety Classifier"
       },
       {
-        "id": "urn:visionflow:linked:system-prompt",
+        "id": "urn:ngm:class:system-prompt",
         "label": "System Prompt"
       },
       {
-        "id": "urn:visionflow:linked:tokeniser",
+        "id": "urn:ngm:class:tokeniser",
         "label": "Tokeniser"
       },
       {
-        "id": "urn:visionflow:linked:transformer-block",
+        "id": "urn:ngm:class:transformer-block",
         "label": "Transformer Block"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts",
         "label": "Mixture of Experts"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-deduplication",
+        "id": "urn:ngm:class:data-deduplication",
         "label": "Data Deduplication"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:large-scale-distributed-training",
+        "id": "urn:ngm:class:large-scale-distributed-training",
         "label": "Large-Scale Distributed Training"
       },
       {
-        "id": "urn:visionflow:linked:massive-training-corpus",
+        "id": "urn:ngm:class:massive-training-corpus",
         "label": "Massive Training Corpus"
       },
       {
-        "id": "urn:visionflow:linked:nvidia-b200",
+        "id": "urn:ngm:class:nvidia-b200",
         "label": "NVIDIA B200"
       },
       {
-        "id": "urn:visionflow:linked:nvidia-h100",
+        "id": "urn:ngm:class:nvidia-h100",
         "label": "NVIDIA H100"
       },
       {
-        "id": "urn:visionflow:linked:nvidia-h200",
+        "id": "urn:ngm:class:nvidia-h200",
         "label": "NVIDIA H200"
       },
       {
-        "id": "urn:visionflow:linked:training-data-curation",
+        "id": "urn:ngm:class:training-data-curation",
         "label": "Training Data Curation"
       },
       {
-        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenisation",
+        "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agentic-workflows",
+        "id": "urn:ngm:class:agentic-workflows",
         "label": "Agentic Workflows"
       },
       {
-        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
         "label": "Chain of Thought Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:few-shot-learning",
+        "id": "urn:ngm:class:few-shot-learning",
         "label": "Few-Shot Learning"
       },
       {
-        "id": "urn:visionflow:linked:in-context-learning",
+        "id": "urn:ngm:class:in-context-learning",
         "label": "In-Context Learning"
       },
       {
-        "id": "urn:visionflow:linked:mathematical-reasoning",
+        "id": "urn:ngm:class:mathematical-reasoning",
         "label": "Mathematical Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:tool-use",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       },
       {
-        "id": "urn:visionflow:linked:zero-shot-learning",
+        "id": "urn:ngm:class:zero-shot-learning",
         "label": "Zero-Shot Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:multimodal-understanding",
+        "id": "urn:ngm:class:multimodal-understanding",
         "label": "Multimodal Understanding"
       },
       {
-        "id": "urn:visionflow:owl:class:synthetic-data-generation",
+        "id": "urn:ngm:class:synthetic-data-generation",
         "label": "Synthetic Data Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:flash-attention",
+        "id": "urn:ngm:class:flash-attention",
         "label": "FlashAttention"
       },
       {
-        "id": "urn:visionflow:linked:grouped-query-attention",
+        "id": "urn:ngm:class:grouped-query-attention",
         "label": "Grouped Query Attention"
       },
       {
-        "id": "urn:visionflow:linked:mixture-of-experts-routing",
+        "id": "urn:ngm:class:mixture-of-experts-routing",
         "label": "Mixture of Experts Routing"
       },
       {
-        "id": "urn:visionflow:linked:multi-head-latent-attention",
+        "id": "urn:ngm:class:multi-head-latent-attention",
         "label": "Multi-Head Latent Attention"
       },
       {
-        "id": "urn:visionflow:linked:rmsnorm",
+        "id": "urn:ngm:class:rmsnorm",
         "label": "RMSNorm"
       },
       {
-        "id": "urn:visionflow:linked:rotary-position-embeddings",
+        "id": "urn:ngm:class:rotary-position-embeddings",
         "label": "Rotary Position Embeddings"
       },
       {
-        "id": "urn:visionflow:linked:swi-glu",
+        "id": "urn:ngm:class:swi-glu",
         "label": "SwiGLU"
       },
       {
-        "id": "urn:visionflow:owl:class:layer-normalisation",
+        "id": "urn:ngm:class:layer-normalisation",
         "label": "Layer Normalisation"
       },
       {
-        "id": "urn:visionflow:owl:class:self-attention",
+        "id": "urn:ngm:class:self-attention",
         "label": "Self Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:denoising-diffusion",
+        "label": "Denoising Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:distillation",
+        "label": "Distillation"
+      },
+      {
+        "id": "urn:ngm:class:masked-language-modelling",
+        "label": "Masked Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:next-token-prediction",
+        "label": "Next-Token Prediction"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-training",
+        "label": "Synthetic Data Training"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:coding-assistants",
+        "label": "Coding Assistants"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:search-and-retrieval",
+        "label": "Search and Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agi-eval",
+        "label": "AGI-Eval"
+      },
+      {
+        "id": "urn:ngm:class:big-bench",
+        "label": "BIG-Bench"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum-voluntary-commitments",
+        "label": "Frontier Model Forum Voluntary Commitments"
+      },
+      {
+        "id": "urn:ngm:class:gpai-code-of-practice",
+        "label": "GPAI Code of Practice"
+      },
+      {
+        "id": "urn:ngm:class:gpqa-diamond",
+        "label": "GPQA Diamond"
+      },
+      {
+        "id": "urn:ngm:class:helm",
+        "label": "HELM"
+      },
+      {
+        "id": "urn:ngm:class:human-eval",
+        "label": "HumanEval"
+      },
+      {
+        "id": "urn:ngm:class:lmsys-chatbot-arena",
+        "label": "LMSYS Chatbot Arena"
+      },
+      {
+        "id": "urn:ngm:class:mmlu-benchmark",
+        "label": "MMLU Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:mmlu-pro",
+        "label": "MMLU-Pro"
+      },
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-Bench"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alibaba-qwen",
+        "label": "Alibaba Qwen"
+      },
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:cohere",
+        "label": "Cohere"
+      },
+      {
+        "id": "urn:ngm:class:deep-seek",
+        "label": "DeepSeek"
+      },
+      {
+        "id": "urn:ngm:class:emergent-abilities",
+        "label": "Emergent Abilities"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model",
+        "label": "Frontier Model"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "id": "urn:ngm:class:homogenisation",
+        "label": "Homogenisation"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:stanford-crfm",
+        "label": "Stanford CRFM"
+      },
+      {
+        "id": "urn:ngm:class:synthesia",
+        "label": "Synthesia"
+      },
+      {
+        "id": "urn:ngm:class:wayve",
+        "label": "Wayve"
+      },
+      {
+        "id": "urn:ngm:class:x-ai",
+        "label": "xAI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:google-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:mistral",
+        "label": "Mistral"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ]
   },
   "wikilinks": [
     {

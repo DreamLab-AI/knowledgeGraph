@@ -3,19 +3,18 @@
   "title": "Model Interpretability",
   "slug": "model-interpretability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-interpretability",
+  "classIri": "urn:ngm:class:model-interpretability",
   "domain": "artificial-intelligence",
   "definition": "The degree to which a human can understand the cause-effect relationships within a machine learning model's decision-making process, encompassing both the model's internal mechanisms and the reasoning behind specific predictions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:explainable-ai",
+      "id": "urn:ngm:class:explainable-ai",
       "label": "Explainable AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

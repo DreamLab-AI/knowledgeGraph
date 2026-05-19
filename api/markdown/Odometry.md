@@ -180,76 +180,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:odometry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:odometry",
+  "@type": "Class",
   "label": "Odometry",
+  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
+      "@id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f5d40044dcbc11c9869c0b7cde93510877db91c199503310882bbbfd44ce5592"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:motion-sensors",
+        "label": "Motion Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:visual-sensors",
+        "label": "Visual Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f5d40044dcbc11c9869c0b7cde93510877db91c199503310882bbbfd44ce5592@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.94",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:motion-sensors",
-      "vc:label": "Motion Sensors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:navigation",
-      "vc:label": "Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rb-1013-localization",
-      "vc:label": "RB-1013-localization"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:imu",
-      "vc:label": "IMU"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-sensors",
-      "vc:label": "Visual Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:camera",
-      "vc:label": "Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:encoder",
-      "vc:label": "Encoder"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

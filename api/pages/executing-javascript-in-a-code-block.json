@@ -3,28 +3,6 @@
   "title": "Executing Javascript in a code block",
   "slug": "executing-javascript-in-a-code-block",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:executing-javascript-in-a-code-block",
-  "domain": "infrastructure",
-  "definition": "Executing Javascript in a code block is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

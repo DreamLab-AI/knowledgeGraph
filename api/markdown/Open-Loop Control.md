@@ -148,60 +148,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:open-loop-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-loop-control",
+  "@type": "Class",
   "label": "Open-Loop Control",
+  "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:control-system",
-      "vc:label": "Control System"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:85c85a276a0300f8c7b914629e1ea5df831452107aee69b4b78a779e9ff5aab5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:85c85a276a0300f8c7b914629e1ea5df831452107aee69b4b78a779e9ff5aab5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:rb-1002-closed-loop-control",
-      "vc:label": "RB-1002-closed-loop-control"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

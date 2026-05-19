@@ -112,48 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:supply-chain-blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:supply-chain-blockchain",
+  "@type": "Class",
   "label": "Supply Chain Blockchain",
+  "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4de1962d9b3801669d62d451fc90bc2ddac7e2266d695d0e229fba6ccaa00f1e"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:product-traceability",
+        "label": "Product Traceability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4de1962d9b3801669d62d451fc90bc2ddac7e2266d695d0e229fba6ccaa00f1e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers. Blockchain provides an immutable, shared record of transactions enabling real-time visibility, authentication of origin, quality verification, and automated compliance through smart contracts, addressing challenges of counterfeiting, fraud, and supply chain opacity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:product-traceability",
-      "vc:label": "Product Traceability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

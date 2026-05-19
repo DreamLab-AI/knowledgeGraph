@@ -3,53 +3,57 @@
   "title": "Digital Twin Generation",
   "slug": "digital-twin-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-generation",
+  "classIri": "urn:ngm:class:digital-twin-generation",
   "domain": "spatial-computing",
-  "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications. bridges-to:: [[Computer Vision]]",
+  "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:automated-modeling",
+      "id": "urn:ngm:class:automated-modeling",
       "label": "Automated Modeling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-capture",
+        "id": "urn:ngm:class:3-d-capture",
         "label": "3D Capture"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-ai",
+        "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-training",
+        "id": "urn:ngm:class:ai-training",
         "label": "AI Training"
       },
       {
-        "id": "urn:visionflow:linked:mass-digitization",
+        "id": "urn:ngm:class:mass-digitization",
         "label": "Mass Digitization"
       },
       {
-        "id": "urn:visionflow:linked:rapid-prototyping",
+        "id": "urn:ngm:class:rapid-prototyping",
         "label": "Rapid Prototyping"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

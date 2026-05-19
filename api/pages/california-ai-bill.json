@@ -3,167 +3,295 @@
   "title": "California AI bill",
   "slug": "california-ai-bill",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:california-ai-bill",
+  "classIri": "urn:ngm:class:california-ai-bill",
   "domain": "artificial-intelligence",
-  "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale [[Frontier Models]] \u2014 most prominently Senate Bill 1047 (SB 1047, 2024, vetoed) and its successor Senate Bill 53 (SB 53, 2025, signed), together with associated transparency and data-governance instruments such as AB 2013 (2024, signed). The corpus sits at the intersection of [[AI Safety]], [[Liability]], [[Algorithmic Accountability]], and [[Technology Policy]], establishing California as the primary sub-national jurisdiction attempting to regulate frontier AI development in the United States and, by the California-effect spillover dynamic historically observed in vehicle emissions and consumer-privacy regulation, potentially shaping norms globally.",
+  "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale [[Frontier Models]] \u2014 most prominently Senate Bill 1047 (SB 1047...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:frontier-model-governance",
+      "id": "urn:ngm:class:frontier-model-governance",
       "label": "Frontier Model Governance"
     },
     {
-      "id": "urn:visionflow:linked:legislative-instrument",
+      "id": "urn:ngm:class:legislative-instrument",
       "label": "Legislative Instrument"
-    },
-    {
-      "id": "urn:visionflow:linked:state-law",
-      "label": "State Law"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ab-1008",
+        "id": "urn:ngm:class:ab-1008",
         "label": "AB 1008"
       },
       {
-        "id": "urn:visionflow:linked:ab-2013",
+        "id": "urn:ngm:class:ab-2013",
         "label": "AB 2013"
       },
       {
-        "id": "urn:visionflow:linked:ab-489",
+        "id": "urn:ngm:class:ab-489",
         "label": "AB 489"
       },
       {
-        "id": "urn:visionflow:linked:compliance-statement",
+        "id": "urn:ngm:class:compliance-statement",
         "label": "Compliance Statement"
       },
       {
-        "id": "urn:visionflow:linked:critical-safety-incident-reporting",
+        "id": "urn:ngm:class:critical-safety-incident-reporting",
         "label": "Critical Safety Incident Reporting"
       },
       {
-        "id": "urn:visionflow:linked:frontier-ai-framework",
+        "id": "urn:ngm:class:frontier-ai-framework",
         "label": "Frontier AI Framework"
       },
       {
-        "id": "urn:visionflow:linked:frontier-model-division",
+        "id": "urn:ngm:class:frontier-model-division",
         "label": "Frontier Model Division"
       },
       {
-        "id": "urn:visionflow:linked:kill-switch-mandate",
+        "id": "urn:ngm:class:kill-switch-mandate",
         "label": "Kill Switch Mandate"
       },
       {
-        "id": "urn:visionflow:linked:sb-1047",
+        "id": "urn:ngm:class:sb-1047",
         "label": "SB 1047"
       },
       {
-        "id": "urn:visionflow:linked:sb-53",
+        "id": "urn:ngm:class:sb-53",
         "label": "SB 53"
       },
       {
-        "id": "urn:visionflow:linked:sb-942",
+        "id": "urn:ngm:class:sb-942",
         "label": "SB 942"
       },
       {
-        "id": "urn:visionflow:linked:whistleblower-protection",
+        "id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Protection"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:attorney-general-enforcement",
+        "id": "urn:ngm:class:attorney-general-enforcement",
         "label": "Attorney General Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:compute-threshold",
+        "id": "urn:ngm:class:compute-threshold",
         "label": "Compute Threshold"
       },
       {
-        "id": "urn:visionflow:linked:frontier-models",
+        "id": "urn:ngm:class:frontier-models",
         "label": "Frontier Models"
       },
       {
-        "id": "urn:visionflow:linked:liability-framework",
+        "id": "urn:ngm:class:liability-framework",
         "label": "Liability Framework"
       },
       {
-        "id": "urn:visionflow:linked:revenue-threshold",
+        "id": "urn:ngm:class:revenue-threshold",
         "label": "Revenue Threshold"
       },
       {
-        "id": "urn:visionflow:linked:safety-evaluation",
+        "id": "urn:ngm:class:safety-evaluation",
         "label": "Safety Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:training-data-documentation",
+        "id": "urn:ngm:class:training-data-documentation",
         "label": "Training Data Documentation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-safety-transparency",
+        "id": "urn:ngm:class:ai-safety-transparency",
         "label": "AI Safety Transparency"
       },
       {
-        "id": "urn:visionflow:linked:consumer-privacy-in-ai",
+        "id": "urn:ngm:class:consumer-privacy-in-ai",
         "label": "Consumer Privacy in AI"
       },
       {
-        "id": "urn:visionflow:linked:healthcare-ai-accountability",
+        "id": "urn:ngm:class:healthcare-ai-accountability",
         "label": "Healthcare AI Accountability"
       },
       {
-        "id": "urn:visionflow:linked:incident-reporting",
+        "id": "urn:ngm:class:incident-reporting",
         "label": "Incident Reporting"
       },
       {
-        "id": "urn:visionflow:linked:training-data-disclosure",
+        "id": "urn:ngm:class:training-data-disclosure",
         "label": "Training Data Disclosure"
       },
       {
-        "id": "urn:visionflow:linked:whistleblower-protection",
+        "id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:critical-harm-framework",
+        "id": "urn:ngm:class:critical-harm-framework",
         "label": "Critical Harm Framework"
       },
       {
-        "id": "urn:visionflow:linked:dual-threshold-regulation",
+        "id": "urn:ngm:class:dual-threshold-regulation",
         "label": "Dual Threshold Regulation"
       },
       {
-        "id": "urn:visionflow:linked:pre-deployment-safety-checks",
+        "id": "urn:ngm:class:pre-deployment-safety-checks",
         "label": "Pre-Deployment Safety Checks"
       },
       {
-        "id": "urn:visionflow:linked:risk-based-ai-governance",
+        "id": "urn:ngm:class:risk-based-ai-governance",
         "label": "Risk-Based AI Governance"
       },
       {
-        "id": "urn:visionflow:linked:transparency-mandate",
+        "id": "urn:ngm:class:transparency-mandate",
         "label": "Transparency Mandate"
       },
       {
-        "id": "urn:visionflow:linked:whistleblower-mechanism",
+        "id": "urn:ngm:class:whistleblower-mechanism",
         "label": "Whistleblower Mechanism"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:catastrophic-risk-assessment",
+        "label": "Catastrophic Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:flop-threshold",
+        "label": "FLOP Threshold"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-sp-800-series",
+        "label": "NIST SP 800 Series"
+      },
+      {
+        "id": "urn:ngm:class:revenue-threshold",
+        "label": "Revenue Threshold"
+      },
+      {
+        "id": "urn:ngm:class:third-party-safety-audit",
+        "label": "Third-Party Safety Audit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:federal-preemption-debate",
+        "label": "Federal Preemption Debate"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:startup-ecosystem",
+        "label": "Startup Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:california-attorney-general",
+        "label": "California Attorney General"
+      },
+      {
+        "id": "urn:ngm:class:california-legislature",
+        "label": "California Legislature"
+      },
+      {
+        "id": "urn:ngm:class:california-office-of-emergency-services",
+        "label": "California Office of Emergency Services"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO IEC JTC 1 SC 42"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:california-effect",
+        "label": "California Effect"
+      },
+      {
+        "id": "urn:ngm:class:federal-preemption",
+        "label": "Federal Preemption"
+      },
+      {
+        "id": "urn:ngm:class:gavin-newsom",
+        "label": "Gavin Newsom"
+      },
+      {
+        "id": "urn:ngm:class:geoffrey-hinton",
+        "label": "Geoffrey Hinton"
+      },
+      {
+        "id": "urn:ngm:class:machine-unlearning",
+        "label": "Machine Unlearning"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-capture",
+        "label": "Regulatory Capture"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:scott-wiener",
+        "label": "Scott Wiener"
+      },
+      {
+        "id": "urn:ngm:class:yoshua-bengio",
+        "label": "Yoshua Bengio"
+      },
+      {
+        "id": "urn:ngm:class:google-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ]
   },
   "wikilinks": [
     {

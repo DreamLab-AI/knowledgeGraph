@@ -208,120 +208,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gaze-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gaze-control",
+  "@type": "Class",
   "label": "Gaze Control",
+  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]].",
+  "domain": "robotics",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:attention-control",
-      "vc:label": "Attention Control"
+      "@id": "urn:ngm:class:attention-control",
+      "label": "Attention Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:eye-movement-controller",
+        "label": "Eye Movement Controller"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-target-estimator",
+        "label": "Gaze Target Estimator"
+      },
+      {
+        "@id": "urn:ngm:class:head-movement-mechanism",
+        "label": "Head Movement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:visual-attention-model",
+        "label": "Visual Attention Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-actuators",
+        "label": "Camera Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:social-understanding",
+        "label": "Social Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:visual-perception",
+        "label": "Visual Perception"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:attention-redirection",
+        "label": "Attention Redirection"
+      },
+      {
+        "@id": "urn:ngm:class:joint-attention",
+        "label": "Joint Attention"
+      },
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:social-signal-transmission",
+        "label": "Social Signal Transmission"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e5b706d3e7eb59e03141b8c59b911671cc7b096f4645448ba873ac091a3795cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles—directing perception toward task-relevant features—and social functions—signalling attentiveness and promoting human comprehension of robot behaviour.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:eye-movement-controller",
-      "vc:label": "Eye Movement Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaze-target-estimator",
-      "vc:label": "Gaze Target Estimator"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-movement-mechanism",
-      "vc:label": "Head Movement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-attention-model",
-      "vc:label": "Visual Attention Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-actuators",
-      "vc:label": "Camera Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-understanding",
-      "vc:label": "Social Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-tracking",
-      "vc:label": "Target Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-perception",
-      "vc:label": "Visual Perception"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:attention-redirection",
-      "vc:label": "Attention Redirection"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-attention",
-      "vc:label": "Joint Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:natural-interaction",
-      "vc:label": "Natural Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-signal-transmission",
-      "vc:label": "Social Signal Transmission"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:kinematics-computation",
-      "vc:label": "Kinematics Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-detection",
-      "vc:label": "Target Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

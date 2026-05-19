@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:narrative-content",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:narrative-content",
+  "@type": "Class",
   "label": "Narrative Content",
+  "definition": "Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-content",
-      "vc:label": "Digital Content"
+      "@id": "urn:ngm:class:digital-content",
+      "label": "Digital Content"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9dbd5fac2a0d14909be1292835e35cdeeaa603bb802643f7a5180607cf732cfc"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9dbd5fac2a0d14909be1292835e35cdeeaa603bb802643f7a5180607cf732cfc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:personalized-virtual-experiences",
-      "vc:label": "Personalized Virtual Experiences"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

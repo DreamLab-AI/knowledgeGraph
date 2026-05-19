@@ -3,94 +3,94 @@
   "title": "Proof Of Stake Sustainability",
   "slug": "proof-of-stake-sustainability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proof-of-stake-sustainability",
+  "classIri": "urn:ngm:class:proof-of-stake-sustainability",
   "domain": "blockchain",
-  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of [[Proof of Stake]] consensus mechanisms that make them a viable long-term alternative to energy-intensive [[Proof of Work]] systems. It encompasses the dramatic reduction in [[Energy Consumption]] achieved by replacing computational mining with stake-weighted [[Validator]] selection, the economic incentive alignment that secures the network through bonded capital rather than hardware expenditure, and the regulatory compliance advantages that arise from verifiable environmental credentials.",
+  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of [[Proof of Stake]] consensus mechanisms that make them a viable long-term alternative to energy-intensive [[Proof of Work]] systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:environmental-technology",
+      "id": "urn:ngm:class:environmental-technology",
       "label": "Environmental Technology"
     },
     {
-      "id": "urn:visionflow:owl:class:blockchain-sustainability",
+      "id": "urn:ngm:class:blockchain-sustainability",
       "label": "Blockchain Sustainability"
-    },
-    {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
-      "label": "Consensus Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.75,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:delegation-protocol",
+        "id": "urn:ngm:class:delegation-protocol",
         "label": "Delegation Protocol"
       },
       {
-        "id": "urn:visionflow:linked:slashing-conditions",
+        "id": "urn:ngm:class:slashing-conditions",
         "label": "Slashing Conditions"
       },
       {
-        "id": "urn:visionflow:linked:staking-mechanism",
+        "id": "urn:ngm:class:staking-mechanism",
         "label": "Staking Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:validator-selection",
+        "id": "urn:ngm:class:validator-selection",
         "label": "Validator Selection"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-distribution",
+        "id": "urn:ngm:class:reward-distribution",
         "label": "Reward Distribution"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:network-security",
+        "id": "urn:ngm:class:network-security",
         "label": "Network Security"
       },
       {
-        "id": "urn:visionflow:linked:validator-infrastructure",
+        "id": "urn:ngm:class:validator-infrastructure",
         "label": "Validator Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:visionflow:owl:class:token-economics",
+        "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:institutional-adoption",
+        "id": "urn:ngm:class:institutional-adoption",
         "label": "Institutional Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:esg-reporting",
+        "id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting"
       },
       {
-        "id": "urn:visionflow:owl:class:green-blockchain-initiatives",
+        "id": "urn:ngm:class:green-blockchain-initiatives",
         "label": "Green Blockchain Initiatives"
       },
       {
-        "id": "urn:visionflow:owl:class:sustainable-consensus",
+        "id": "urn:ngm:class:sustainable-consensus",
         "label": "Sustainable Consensus"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

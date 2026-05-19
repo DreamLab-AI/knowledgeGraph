@@ -3,19 +3,18 @@
   "title": "Quantum AI",
   "slug": "quantum-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:quantum-ai",
+  "classIri": "urn:ngm:class:quantum-ai",
   "domain": "artificial-intelligence",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Quantum AI is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

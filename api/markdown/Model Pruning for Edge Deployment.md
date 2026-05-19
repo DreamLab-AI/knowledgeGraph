@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-pruning-for-edge-deployment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-pruning-for-edge-deployment",
+  "@type": "Class",
   "label": "Model Pruning for Edge Deployment",
+  "definition": "Model Pruning for Edge Deployment systematically removes redundant weights and neurons from neural networks, reducing model size and computational requirements while maintaining sufficient accuracy for edge inference.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b51390d5a4dc02ecd354fec39a1a402aa07d890cd94eee8f602888f3f6fa1b10@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Model Pruning for Edge Deployment systematically removes redundant weights and neurons from neural networks, reducing model size and computational requirements while maintaining sufficient accuracy for edge inference. Pruning achieves 10-100x compression ratios by exploiting the observation that large trained networks contain significant redundancy; many weights contribute negligibly to predictions. Structured pruning removes entire filters, channels, or layers, naturally reducing memory and compute requirements on hardware lacking specialized sparse matrix support. Unstructured pruning removes individual weights, achieving higher sparsity (90%+ of weights eliminated) but requiring specialized hardware or software support for sparse tensor operations. Channel pruning identifies and removes underutilized convolutional channels, reducing both parameter count and computation. Magnitude pruning removes weights below learned thresholds; lottery ticket hypothesis pruning identifies critical subnetworks that achieve comparable accuracy with far fewer parameters. Fine-tuning after pruning recovers accuracy degradation, typically losing only 1-3% accuracy while reducing model size by 10x. I",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

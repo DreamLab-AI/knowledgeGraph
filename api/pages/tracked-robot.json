@@ -3,19 +3,18 @@
   "title": "Tracked Robot",
   "slug": "tracked-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tracked-robot",
+  "classIri": "urn:ngm:class:tracked-robot",
   "domain": "robotics",
   "definition": "Tracked robot uses continuous tracks providing superior traction on rough terrain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ground-robot",
+      "id": "urn:ngm:class:ground-robot",
       "label": "Ground Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

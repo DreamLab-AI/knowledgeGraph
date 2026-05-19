@@ -3,19 +3,18 @@
   "title": "Virtual Office Spaces",
   "slug": "virtual-office-spaces",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-office-spaces",
+  "classIri": "urn:ngm:class:virtual-office-spaces",
   "domain": "distributed-collaboration",
-  "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote participation through immersive telepresence platforms.\"",
+  "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote p...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-environment",
+      "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,45 +3,58 @@
   "title": "Adaptive Control",
   "slug": "adaptive-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adaptive-control",
+  "classIri": "urn:ngm:class:adaptive-control",
   "domain": "robotics",
   "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "id": "urn:ngm:class:rb-1002-closed-loop-control",
       "label": "RB-1002-closed-loop-control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:parameter-adaptation-mechanism",
+        "id": "urn:ngm:class:parameter-adaptation-mechanism",
         "label": "Parameter Adaptation Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:system-identification",
+        "id": "urn:ngm:class:system-identification",
         "label": "System Identification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:self-tuning-systems",
+        "id": "urn:ngm:class:self-tuning-systems",
         "label": "Self-Tuning Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:robust-control",
+        "id": "urn:ngm:class:robust-control",
         "label": "Robust Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parameter-estimation",
+        "label": "Parameter Estimation"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -240,148 +240,115 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:threat-surface-map",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:threat-surface-map",
+  "@type": "Class",
   "label": "Threat Surface Map",
+  "definition": "A comprehensive security visualization and inventory framework that identifies, catalogs, and models all potential attack vectors, vulnerability exposure points, and threat entry paths across network, application, data, identity, and infrastructure layers of a system.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
-      "vc:label": "Metaverse and Spatial Risks"
+      "@id": "urn:ngm:class:metaverse-and-spatial-risks",
+      "label": "Metaverse and Spatial Risks"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e303f3334726fe652a71347102923b6d75c35a816131ef83bd41883f34f0af8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attack-vector-inventory",
+        "label": "Attack Vector Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:exposure-point-catalog",
+        "label": "Exposure Point Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-matrix",
+        "label": "Risk Assessment Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:security-control-mapping",
+        "label": "Security Control Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-surface",
+        "label": "Vulnerability Surface"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-inventory",
+        "label": "Asset Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing-tools",
+        "label": "Penetration Testing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:security-monitoring",
+        "label": "Security Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-scanner",
+        "label": "Vulnerability Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "@id": "urn:ngm:class:security-posture-management",
+        "label": "Security Posture Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence-platform",
+        "label": "Threat Intelligence Platform"
+      },
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e303f3334726fe652a71347102923b6d75c35a816131ef83bd41883f34f0af8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive security visualization and inventory framework that identifies, catalogs, and models all potential attack vectors, vulnerability exposure points, and threat entry paths across network, application, data, identity, and infrastructure layers of a system.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:risk-management-framework",
-      "vc:label": "Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-intelligence-platform",
-      "vc:label": "Threat Intelligence Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-architecture",
-      "vc:label": "Security Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attack-vector-inventory",
-      "vc:label": "Attack Vector Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:exposure-point-catalog",
-      "vc:label": "Exposure Point Catalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-assessment-matrix",
-      "vc:label": "Risk Assessment Matrix"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-control-mapping",
-      "vc:label": "Security Control Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-model",
-      "vc:label": "Threat Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerability-surface",
-      "vc:label": "Vulnerability Surface"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asset-inventory",
-      "vc:label": "Asset Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:penetration-testing-tools",
-      "vc:label": "Penetration Testing Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-monitoring",
-      "vc:label": "Security Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerability-scanner",
-      "vc:label": "Vulnerability Scanner"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-topology",
-      "vc:label": "Network Topology"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:incident-response",
-      "vc:label": "Incident Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:penetration-testing",
-      "vc:label": "Penetration Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-audit",
-      "vc:label": "Security Audit"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-posture-management",
-      "vc:label": "Security Posture Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:configuration-management-database",
-      "vc:label": "Configuration Management Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-and-access-management",
-      "vc:label": "Identity and Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-information-and-event-management",
-      "vc:label": "Security Information and Event Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-intelligence-feed",
-      "vc:label": "Threat Intelligence Feed"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

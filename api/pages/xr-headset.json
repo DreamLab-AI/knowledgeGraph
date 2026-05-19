@@ -3,19 +3,18 @@
   "title": "XR Headset",
   "slug": "xr-headset",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-headset",
+  "classIri": "urn:ngm:class:xr-headset",
   "domain": "spatial-computing",
-  "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field of view.",
+  "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field o...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:xr-hardware",
+      "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

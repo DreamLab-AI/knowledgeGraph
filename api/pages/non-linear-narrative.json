@@ -3,32 +3,36 @@
   "title": "Non Linear Narrative",
   "slug": "non-linear-narrative",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:non-linear-narrative",
+  "classIri": "urn:ngm:class:non-linear-narrative",
   "domain": "spatial-computing",
   "definition": "A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:narrative-structure",
+      "id": "urn:ngm:class:narrative-structure",
       "label": "Narrative Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:player-agency",
+        "id": "urn:ngm:class:player-agency",
         "label": "Player Agency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

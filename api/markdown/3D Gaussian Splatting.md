@@ -136,60 +136,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-gaussian-splatting",
+  "@type": "Class",
   "label": "3D Gaussian Splatting",
+  "definition": "\"A neural rendering technique that represents 3D scenes as collections of s of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepre...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
-      "vc:label": "TELE-050-neural-rendering-telepresence"
+      "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "DifferentiableRendering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:photorealistic-telepresence",
+        "label": "PhotorealisticTelepresence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:differentiable-rendering",
-      "vc:label": "DifferentiableRendering"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:photorealistic-telepresence",
-      "vc:label": "PhotorealisticTelepresence"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

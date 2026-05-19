@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fast-spatial-queries",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fast-spatial-queries",
+  "@type": "Class",
   "label": "Fast Spatial Queries",
+  "definition": "Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-metaverse-interactions",
+        "label": "Real-Time Metaverse Interactions"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:real-time-metaverse-interactions",
-      "vc:label": "Real-Time Metaverse Interactions"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

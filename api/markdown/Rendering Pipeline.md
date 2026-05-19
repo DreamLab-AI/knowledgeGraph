@@ -508,416 +508,335 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rendering-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rendering-pipeline",
+  "@type": "Class",
   "label": "Rendering Pipeline",
+  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations — vertex buffers, index buffers, textures, uniform data, and acceleration structures — into a two-dimensional raster image suitable for display or further processing.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
+      "@id": "urn:ngm:class:gpu-compute",
+      "label": "GPU Compute"
     },
     {
-      "@id": "urn:visionflow:linked:rasterisation",
-      "vc:label": "Rasterisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-systems",
-      "vc:label": "Real-Time Systems"
+      "@id": "urn:ngm:class:rasterisation",
+      "label": "Rasterisation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:be8f73a5889de102a23207692b4b16482c72d85e4dc5f1f8bf6df1d5dbdfa696"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:acceleration-structure",
+        "label": "Acceleration Structure"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:fragment-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "@id": "urn:ngm:class:g-buffer",
+        "label": "G-Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-shader",
+        "label": "Mesh Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rasteriser",
+        "label": "Rasteriser"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing-stage",
+        "label": "Ray Tracing Stage"
+      },
+      {
+        "@id": "urn:ngm:class:tessellation-stage",
+        "label": "Tessellation Stage"
+      },
+      {
+        "@id": "urn:ngm:class:visibility-buffer",
+        "label": "Visibility Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:render-target",
+        "label": "Render Target"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "@id": "urn:ngm:class:index-buffer",
+        "label": "Index Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:shader-compilation",
+        "label": "Shader Compilation"
+      },
+      {
+        "@id": "urn:ngm:class:texture-sampler",
+        "label": "Texture Sampler"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-buffer",
+        "label": "Vertex Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post-Processing"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:clustered-shading",
+        "label": "Clustered Shading"
+      },
+      {
+        "@id": "urn:ngm:class:deferred-rendering",
+        "label": "Deferred Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:forward-rendering",
+        "label": "Forward Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-driven-rendering",
+        "label": "GPU-Driven Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-ray-tracing",
+        "label": "Hybrid Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-shader-pipeline",
+        "label": "Mesh Shader Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:visibility-buffer-rendering",
+        "label": "Visibility Buffer Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:direct-x-12",
+        "label": "DirectX 12"
+      },
+      {
+        "@id": "urn:ngm:class:dlss",
+        "label": "DLSS"
+      },
+      {
+        "@id": "urn:ngm:class:fsr",
+        "label": "FSR"
+      },
+      {
+        "@id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "@id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "@id": "urn:ngm:class:metal",
+        "label": "Metal"
+      },
+      {
+        "@id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:web-gpu",
+        "label": "WebGPU"
+      },
+      {
+        "@id": "urn:ngm:class:wgsl",
+        "label": "WGSL"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:film-visual-effects",
+        "label": "Film Visual Effects"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:video-game-development",
+        "label": "Video Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apple-metal",
+        "label": "Apple Metal"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-754",
+        "label": "IEEE 754"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-direct-x",
+        "label": "Microsoft DirectX"
+      },
+      {
+        "@id": "urn:ngm:class:open-gl-arb",
+        "label": "OpenGL ARB"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-gpu",
+        "label": "W3C WebGPU"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:be8f73a5889de102a23207692b4b16482c72d85e4dc5f1f8bf6df1d5dbdfa696@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations — vertex buffers, index buffers, textures, uniform data, and acceleration structures — into a two-dimensional raster image suitable for display or further processing. It encompasses programmable shader stages (vertex, hull/tessellation control, domain/tessellation evaluation, geometry, fragment/pixel, compute, mesh, task/amplification) and fixed-function hardware blocks (primitive assembly, rasteriser, depth-stencil unit, render output unit, blending) executing across massively parallel SIMD warps (NVIDIA), wavefronts (AMD), or SIMD groups (Metal/Vulkan subgroups), achieving teraflop-scale throughput at 300-450 W power envelopes on discrete desktop hardware. The classical programmable rasterisation pipeline was formalised by SGI GL and codified in OpenGL 1.0 (1992), evolving through DirectX 9 shader model 3.0 (2004) separating vertex and pixel shaders, DirectX 10 unified shader architecture (2006) adding geometry shaders, DirectX 11 tessellation (2009), and the modern low-overhead explicit API era — AMD Mantle (2014), DirectX 12 (July 2015), Metal 1 (June 2",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:acceleration-structure",
-      "vc:label": "Acceleration Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-buffer",
-      "vc:label": "Depth Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:fragment-shader",
-      "vc:label": "Fragment Shader"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-buffer",
-      "vc:label": "G-Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometry-shader",
-      "vc:label": "Geometry Shader"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-shader",
-      "vc:label": "Mesh Shader"
-    },
-    {
-      "@id": "urn:visionflow:linked:rasteriser",
-      "vc:label": "Rasteriser"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-tracing-stage",
-      "vc:label": "Ray Tracing Stage"
-    },
-    {
-      "@id": "urn:visionflow:linked:tessellation-stage",
-      "vc:label": "Tessellation Stage"
-    },
-    {
-      "@id": "urn:visionflow:linked:visibility-buffer",
-      "vc:label": "Visibility Buffer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-shader",
-      "vc:label": "Compute Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:render-target",
-      "vc:label": "Render Target"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vertex-shader",
-      "vc:label": "Vertex Shader"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-resources",
-      "vc:label": "GPU Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:index-buffer",
-      "vc:label": "Index Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-bandwidth",
-      "vc:label": "Memory Bandwidth"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-compilation",
-      "vc:label": "Shader Compilation"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-sampler",
-      "vc:label": "Texture Sampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:vertex-buffer",
-      "vc:label": "Vertex Buffer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-illumination",
-      "vc:label": "Global Illumination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-rendering",
-      "vc:label": "Neural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physically-based-rendering",
-      "vc:label": "Physically Based Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:post-processing",
-      "vc:label": "Post-Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ray-tracing",
-      "vc:label": "Ray Tracing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:clustered-shading",
-      "vc:label": "Clustered Shading"
-    },
-    {
-      "@id": "urn:visionflow:linked:deferred-rendering",
-      "vc:label": "Deferred Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:forward-rendering",
-      "vc:label": "Forward Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-driven-rendering",
-      "vc:label": "GPU-Driven Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-ray-tracing",
-      "vc:label": "Hybrid Ray Tracing"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-shader-pipeline",
-      "vc:label": "Mesh Shader Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:visibility-buffer-rendering",
-      "vc:label": "Visibility Buffer Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bvh-acceleration-structure",
-      "vc:label": "BVH Acceleration Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-architecture",
-      "vc:label": "GPU Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-hierarchy",
-      "vc:label": "Memory Hierarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-model",
-      "vc:label": "Shader Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:simd-processing",
-      "vc:label": "SIMD Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-visual-effects",
-      "vc:label": "Film Visual Effects"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging",
-      "vc:label": "Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-visualisation",
-      "vc:label": "Scientific Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-game-development",
-      "vc:label": "Video Game Development"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:direct-x-12",
-      "vc:label": "DirectX 12"
-    },
-    {
-      "@id": "urn:visionflow:linked:dlss",
-      "vc:label": "DLSS"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsr",
-      "vc:label": "FSR"
-    },
-    {
-      "@id": "urn:visionflow:linked:glsl",
-      "vc:label": "GLSL"
-    },
-    {
-      "@id": "urn:visionflow:linked:hlsl",
-      "vc:label": "HLSL"
-    },
-    {
-      "@id": "urn:visionflow:linked:metal",
-      "vc:label": "Metal"
-    },
-    {
-      "@id": "urn:visionflow:linked:spir-v",
-      "vc:label": "SPIR-V"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulkan",
-      "vc:label": "Vulkan"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-gpu",
-      "vc:label": "WebGPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:wgsl",
-      "vc:label": "WGSL"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:offline-rendering",
-      "vc:label": "Offline Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:path-tracing",
-      "vc:label": "Path Tracing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-casting",
-      "vc:label": "Ray Casting"
-    },
-    {
-      "@id": "urn:visionflow:linked:scan-line-rendering",
-      "vc:label": "Scan-Line Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-rasterisation",
-      "vc:label": "Software Rasterisation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-shader",
-      "vc:label": "Compute Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-rendering",
-      "vc:label": "Neural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physically-based-rendering",
-      "vc:label": "Physically Based Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pixel-shader",
-      "vc:label": "Pixel Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
-      "vc:label": "Real-Time Rendering Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:render-pipeline",
-      "vc:label": "Render Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shader",
-      "vc:label": "Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shader-language",
-      "vc:label": "Shader Language"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vertex-shader",
-      "vc:label": "Vertex Shader"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apple-metal",
-      "vc:label": "Apple Metal"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-754",
-      "vc:label": "IEEE 754"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-group",
-      "vc:label": "Khronos Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-direct-x",
-      "vc:label": "Microsoft DirectX"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-gl-arb",
-      "vc:label": "OpenGL ARB"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-gpu",
-      "vc:label": "W3C WebGPU"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:gpu-resources",
-      "vc:label": "GPU Resources"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

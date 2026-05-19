@@ -3,32 +3,36 @@
   "title": "Model Architecture",
   "slug": "model-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-architecture",
+  "classIri": "urn:ngm:class:model-architecture",
   "domain": "artificial-intelligence",
   "definition": "The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-model-development",
+        "id": "urn:ngm:class:ai-model-development",
         "label": "AI Model Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

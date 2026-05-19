@@ -3,19 +3,18 @@
   "title": "Manipulation",
   "slug": "manipulation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:manipulation",
+  "classIri": "urn:ngm:class:manipulation",
   "domain": "robotics",
-  "definition": "Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment. This encompasses grasping, object handling, dexterous manipulation, and the end effectors and planning algorithms that enable robots to perform precise physical tasks.",
+  "definition": "Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics-systems",
+      "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

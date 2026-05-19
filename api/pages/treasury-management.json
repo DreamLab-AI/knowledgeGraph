@@ -3,175 +3,331 @@
   "title": "Treasury Management",
   "slug": "treasury-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:treasury-management",
+  "classIri": "urn:ngm:class:treasury-management",
   "domain": "blockchain",
-  "definition": "**Treasury management** in [[Blockchain Network|blockchain]] and [[DAO|decentralised autonomous organisation]] (DAO) contexts encompasses the governance-directed custody, allocation, diversification, yield generation, and reporting of organisational funds held in [[Smart Contract|smart contract]]-controlled wallets, spanning on-chain governance tokens, stablecoins, blue-chip crypto assets, tokenised real-world assets (RWAs), and protocol-owned liquidity positions. The discipline emerged from the 2020-2021 DeFi boom when protocols accumulated billions in native governance tokens through token launches, liquidity mining programmes, and community treasury allocations \u2014 Uniswap DAO holding 430M+ UNI (~$7B+ at peak 2021 prices), MakerDAO/Sky Protocol controlling $8B+ including DAI reserves and RWA collateral, Optimism Collective accumulating OP tokens for public-goods funding via its bicameral governance structure, and ENS DAO holding ENS tokens plus an ETH endowment \u2014 creating an entirely novel form of programmable, transparent, community-governed institutional finance where every transaction is permanently auditable on-chain and major spending decisions require cryptographic consensus",
+  "definition": "Treasury management in [[Blockchain Network|blockchain]] and [[DAO|decentralised autonomous organisation]] (DAO) contexts encompasses the governance-directed custody, allocation, diversification, yield generation, and reporting of organisational funds held in [[Smart Contract|smart contract]]-con...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:corporate-finance",
+      "id": "urn:ngm:class:corporate-finance",
       "label": "Corporate Finance"
     },
     {
-      "id": "urn:visionflow:linked:financial-management",
+      "id": "urn:ngm:class:financial-management",
       "label": "Financial Management"
-    },
-    {
-      "id": "urn:visionflow:linked:institutional-asset-management",
-      "label": "Institutional Asset Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:governance-proposal",
+        "id": "urn:ngm:class:governance-proposal",
         "label": "Governance Proposal"
       },
       {
-        "id": "urn:visionflow:linked:grant-program",
+        "id": "urn:ngm:class:grant-program",
         "label": "Grant Program"
       },
       {
-        "id": "urn:visionflow:linked:multisig-wallet",
+        "id": "urn:ngm:class:multisig-wallet",
         "label": "Multisig Wallet"
       },
       {
-        "id": "urn:visionflow:linked:protocol-owned-liquidity",
+        "id": "urn:ngm:class:protocol-owned-liquidity",
         "label": "Protocol-Owned Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:rwa-allocation",
+        "id": "urn:ngm:class:rwa-allocation",
         "label": "RWA Allocation"
       },
       {
-        "id": "urn:visionflow:linked:spending-policy",
+        "id": "urn:ngm:class:spending-policy",
         "label": "Spending Policy"
       },
       {
-        "id": "urn:visionflow:linked:token-buyback",
+        "id": "urn:ngm:class:token-buyback",
         "label": "Token Buyback"
       },
       {
-        "id": "urn:visionflow:linked:treasury-analytics",
+        "id": "urn:ngm:class:treasury-analytics",
         "label": "Treasury Analytics"
       },
       {
-        "id": "urn:visionflow:linked:treasury-diversification",
+        "id": "urn:ngm:class:treasury-diversification",
         "label": "Treasury Diversification"
       },
       {
-        "id": "urn:visionflow:linked:yield-strategy",
+        "id": "urn:ngm:class:yield-strategy",
         "label": "Yield Strategy"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audit-function",
+        "id": "urn:ngm:class:audit-function",
         "label": "Audit Function"
       },
       {
-        "id": "urn:visionflow:linked:custody-infrastructure",
+        "id": "urn:ngm:class:custody-infrastructure",
         "label": "Custody Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:financial-reporting",
+        "id": "urn:ngm:class:financial-reporting",
         "label": "Financial Reporting"
       },
       {
-        "id": "urn:visionflow:linked:legal-entity-structure",
+        "id": "urn:ngm:class:legal-entity-structure",
         "label": "Legal Entity Structure"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-governance",
+        "id": "urn:ngm:class:on-chain-governance",
         "label": "On-Chain Governance"
       },
       {
-        "id": "urn:visionflow:linked:risk-framework",
+        "id": "urn:ngm:class:risk-framework",
         "label": "Risk Framework"
       },
       {
-        "id": "urn:visionflow:linked:token-valuation",
+        "id": "urn:ngm:class:token-valuation",
         "label": "Token Valuation"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-grant-funding",
+        "id": "urn:ngm:class:community-grant-funding",
         "label": "Community Grant Funding"
       },
       {
-        "id": "urn:visionflow:linked:dao-sustainability",
+        "id": "urn:ngm:class:dao-sustainability",
         "label": "DAO Sustainability"
       },
       {
-        "id": "urn:visionflow:linked:ecosystem-development",
+        "id": "urn:ngm:class:ecosystem-development",
         "label": "Ecosystem Development"
       },
       {
-        "id": "urn:visionflow:linked:operational-runway",
+        "id": "urn:ngm:class:operational-runway",
         "label": "Operational Runway"
       },
       {
-        "id": "urn:visionflow:linked:protocol-owned-liquidity",
+        "id": "urn:ngm:class:protocol-owned-liquidity",
         "label": "Protocol-Owned Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:token-holder-value-accrual",
+        "id": "urn:ngm:class:token-holder-value-accrual",
         "label": "Token Holder Value Accrual"
       },
       {
-        "id": "urn:visionflow:linked:yield-generation",
+        "id": "urn:ngm:class:yield-generation",
         "label": "Yield Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:delegated-treasury-management",
+        "id": "urn:ngm:class:delegated-treasury-management",
         "label": "Delegated Treasury Management"
       },
       {
-        "id": "urn:visionflow:linked:dollar-cost-averaging",
+        "id": "urn:ngm:class:dollar-cost-averaging",
         "label": "Dollar-Cost Averaging"
       },
       {
-        "id": "urn:visionflow:linked:multi-signature-custody",
+        "id": "urn:ngm:class:multi-signature-custody",
         "label": "Multi-Signature Custody"
       },
       {
-        "id": "urn:visionflow:linked:otc-token-sale",
+        "id": "urn:ngm:class:otc-token-sale",
         "label": "OTC Token Sale"
       },
       {
-        "id": "urn:visionflow:linked:protocol-owned-liquidity-bonding",
+        "id": "urn:ngm:class:protocol-owned-liquidity-bonding",
         "label": "Protocol-Owned Liquidity Bonding"
       },
       {
-        "id": "urn:visionflow:linked:quadratic-funding",
+        "id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
       },
       {
-        "id": "urn:visionflow:linked:rwa-integration",
+        "id": "urn:ngm:class:rwa-integration",
         "label": "RWA Integration"
       },
       {
-        "id": "urn:visionflow:linked:tiered-governance-model",
+        "id": "urn:ngm:class:tiered-governance-model",
         "label": "Tiered Governance Model"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "id": "urn:ngm:class:coinshift",
+        "label": "Coinshift"
+      },
+      {
+        "id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "id": "urn:ngm:class:deep-dao",
+        "label": "DeepDAO"
+      },
+      {
+        "id": "urn:ngm:class:dune-analytics",
+        "label": "Dune Analytics"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "id": "urn:ngm:class:karpatkey",
+        "label": "Karpatkey"
+      },
+      {
+        "id": "urn:ngm:class:lido-finance",
+        "label": "Lido Finance"
+      },
+      {
+        "id": "urn:ngm:class:llama",
+        "label": "Llama"
+      },
+      {
+        "id": "urn:ngm:class:nansen",
+        "label": "Nansen"
+      },
+      {
+        "id": "urn:ngm:class:pendle-finance",
+        "label": "Pendle Finance"
+      },
+      {
+        "id": "urn:ngm:class:safe-multisig",
+        "label": "Safe Multisig"
+      },
+      {
+        "id": "urn:ngm:class:tres-finance",
+        "label": "Tres Finance"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "id": "urn:ngm:class:de-fi-ecosystem",
+        "label": "DeFi Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:ecosystem-grants",
+        "label": "Ecosystem Grants"
+      },
+      {
+        "id": "urn:ngm:class:financial-transparency",
+        "label": "Financial Transparency"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:protocol-sustainability",
+        "label": "Protocol Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:token-holder-value",
+        "label": "Token Holder Value"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aicpa-digital-asset-practice-aid-2022",
+        "label": "AICPA Digital Asset Practice Aid 2022"
+      },
+      {
+        "id": "urn:ngm:class:dao-legal-frameworks",
+        "label": "DAO Legal Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "id": "urn:ngm:class:gaap-fair-value-accounting",
+        "label": "GAAP Fair Value Accounting"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:sec-form-8-k",
+        "label": "SEC Form 8-K"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:ngm:class:enzyme-finance",
+        "label": "Enzyme Finance"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:metaplanet",
+        "label": "Metaplanet"
+      },
+      {
+        "id": "urn:ngm:class:olympus-dao",
+        "label": "OlympusDAO"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      }
+    ]
   },
   "wikilinks": [
     {

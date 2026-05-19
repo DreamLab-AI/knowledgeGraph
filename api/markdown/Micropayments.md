@@ -396,310 +396,247 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:micropayments",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:micropayments",
+  "@type": "Class",
   "label": "Micropayments",
+  "definition": "Micropayments are electronic payment transactions with values typically below — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the co...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-finance",
-      "vc:label": "Digital Finance"
+      "@id": "urn:ngm:class:digital-finance",
+      "label": "Digital Finance"
     },
     {
-      "@id": "urn:visionflow:linked:payment-systems",
-      "vc:label": "Payment Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "vc:label": "Lightning and Similar L2"
+      "@id": "urn:ngm:class:payment-systems",
+      "label": "Payment Systems"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b81644c50276bc3f2817634950247796c9da8df44fcfe633954972cd213438a5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-zaps",
+        "label": "Nostr Zaps"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:stacker-news",
+        "label": "Stacker News"
+      },
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:ecash",
+        "label": "Ecash"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:stacker-news",
+        "label": "Stacker News"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b81644c50276bc3f2817634950247796c9da8df44fcfe633954972cd213438a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Micropayments are electronic payment transactions with values typically below USD $5 — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the combined burden of technical transaction costs (interchange fees, card network minimums, batch settlement latency) and psychological transaction costs (Nick Szabo's 1999 formalisation of \"mental transaction costs\" — the cognitive burden of evaluating whether an expenditure is worth authorising, which Szabo demonstrated sets the practical lower bound on price granularity independent of technical efficiency). The concept predates the commercial internet: David Chaum's 1982 blind-signature ecash patent established the cryptographic basis for privacy-preserving bearer payment; Ronald Rivest and Adi Shamir's 1996 PayWord and MicroMint schemes proposed hash-chain and coin-batch micro-schemes for web content; Jakob Nielsen's 1998 NNGroup essay argued for micropayments as the antidote to advertising-subsidised journalism. What changed between 1998 and 2024 was not demand — demand for sub-dolla",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:fedimint",
-      "vc:label": "Fedimint"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-zaps",
-      "vc:label": "Nostr Zaps"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-channel",
-      "vc:label": "Payment Channel"
-    },
-    {
-      "@id": "urn:visionflow:linked:stacker-news",
-      "vc:label": "Stacker News"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cashu",
-      "vc:label": "Cashu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecash",
-      "vc:label": "Ecash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "vc:label": "Lightning and Similar L2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t",
-      "vc:label": "IoT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:fedimint",
-      "vc:label": "Fedimint"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-as-a-service",
-      "vc:label": "Blockchain As A Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:btc-layer-3",
-      "vc:label": "BTC Layer 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cashu",
-      "vc:label": "Cashu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "vc:label": "Lightning and Similar L2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr protocol"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-value-proposition",
-      "vc:label": "Bitcoin Value Proposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:stacker-news",
-      "vc:label": "Stacker News"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr protocol"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cashu",
-      "vc:label": "Cashu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdc-frameworks",
-      "vc:label": "CBDC Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "vc:label": "Lightning and Similar L2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:advertising-revenue",
-      "vc:label": "Advertising Revenue"
-    },
-    {
-      "@id": "urn:visionflow:linked:subscription-models",
-      "vc:label": "Subscription Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-banking",
-      "vc:label": "Traditional Banking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-as-money",
-      "vc:label": "Bitcoin As Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-etf",
-      "vc:label": "Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-value-proposition",
-      "vc:label": "Bitcoin Value Proposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:btc-layer-3",
-      "vc:label": "BTC Layer 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:money",
-      "vc:label": "Money"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdc-frameworks",
-      "vc:label": "CBDC Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-and-similar-l2",
-      "vc:label": "Lightning and Similar L2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr protocol"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

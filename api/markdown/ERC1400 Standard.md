@@ -108,41 +108,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:erc1400-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:erc1400-standard",
+  "@type": "Class",
   "label": "ERC1400 Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cf2bb2e9ced3e494a669da241a719e43118ef2a5600b3fe6b33ddd09464faca1"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cf2bb2e9ced3e494a669da241a719e43118ef2a5600b3fe6b33ddd09464faca1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Security token standard with compliance controls and transfer restrictions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

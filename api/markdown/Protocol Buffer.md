@@ -103,41 +103,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:protocol-buffer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:protocol-buffer",
+  "@type": "Class",
   "label": "Protocol Buffer",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-format",
-      "vc:label": "Data Format"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:997c9988809767c175aee1e612dca3ae38d8a13d1cec50d20eee48f1bd973b99"
-  },
-  "vc:inferenceRule": "R5SemanticWikilinks",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:997c9988809767c175aee1e612dca3ae38d8a13d1cec50d20eee48f1bd973b99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Protocol Buffer is a technology infrastructure concept and a type of Data Format.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "infrastructure",
+  "maturity": "draft",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5SemanticWikilinks"
   }
 }
 ```

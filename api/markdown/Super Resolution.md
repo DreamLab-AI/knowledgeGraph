@@ -136,41 +136,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:super-resolution",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:super-resolution",
+  "@type": "Class",
   "label": "Super Resolution",
+  "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
+      "@id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6973dbd27cf347a0033bbfea67956ec15a659714231b75918bc6f29179d7d0f3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6973dbd27cf347a0033bbfea67956ec15a659714231b75918bc6f29179d7d0f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models. Single image super-resolution (SISR) networks (SRCNN, ESRGAN, Real-ESRGAN) reconstruct plausible high-resolution images from degraded inputs, enabling applications in medical imaging enhancement, satellite imagery analysis, and consumer photo enhancement.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

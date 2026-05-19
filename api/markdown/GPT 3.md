@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gpt-3",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:gpt-3",
+  "@type": "Individual",
   "label": "GPT 3",
-  "subClassOf": [
+  "definition": "An autoregressive language model with 175 parameters, 10× larger than any previous non-sparse language model, demonstrating few-shot and zero-shot learning capabilities without fine-tuning.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  },
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
     }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:838db2460579afacb79c54c7df39f22937acb6bae1954b147091060e2b1222c0"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:838db2460579afacb79c54c7df39f22937acb6bae1954b147091060e2b1222c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An autoregressive language model with 175 billion parameters, 10× larger than any previous non-sparse language model, demonstrating few-shot and zero-shot learning capabilities without fine-tuning.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  ]
 }
 ```
 

@@ -3,215 +3,362 @@
   "title": "NVIDIA",
   "slug": "nvidia",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nvidia",
+  "classIri": "urn:ngm:individual:nvidia",
   "domain": "infrastructure",
-  "definition": "**NVIDIA Corporation** (NASDAQ: NVDA) is a Santa Clara, California-headquartered fabless semiconductor and AI computing company founded in 1993 by Jensen Huang, Chris Malachowsky and Curtis Priem that evolved from a consumer graphics processor pioneer into the dominant supplier of accelerated computing hardware and software for artificial intelligence training and inference, achieving a $3 trillion market capitalisation milestone in June 2024 \u2014 briefly making NVDA the world's most valuable publicly traded company \u2014 underpinned by fiscal year 2025 (ending January 2025) revenues of approximately $130B growing ~114% year-on-year. The demand driver is NVIDIA's data centre GPU franchise: the H100/H200 Hopper-architecture tensor-core GPUs became the de-facto standard for training large language models and diffusion models from 2022 onward, commanding 80-95% of AI accelerator market revenue share. The March 2024 Blackwell architecture launch (GTC 2024, San Jose) introduced the B100, B200 (192 GB HBM3e, 8 TB/s, 20 PFLOPS FP4), GB200 Superchip (two B200 GPUs + Grace ARM CPU via NVLink-C2C at 900 GB/s), and the GB200 NVL72 rack platform integrating 36 Grace CPUs and 72 B200 GPUs through NVSw",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:accelerated-computing-platform",
-      "label": "Accelerated Computing Platform"
-    },
-    {
-      "id": "urn:visionflow:linked:ai-hardware-vendor",
-      "label": "AI Hardware Vendor"
-    },
-    {
-      "id": "urn:visionflow:linked:fabless-semiconductor",
-      "label": "Fabless Semiconductor"
-    }
-  ],
+  "definition": "Semiconductor company that designs GPUs and system-on-chip units for gaming, professional visualisation, data-centre AI training, and inference acceleration via its CUDA parallel computing platform.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.54,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:blackwell-gpu",
+        "id": "urn:ngm:class:blackwell-gpu",
         "label": "Blackwell GPU"
       },
       {
-        "id": "urn:visionflow:linked:cuda-platform",
+        "id": "urn:ngm:class:cuda-platform",
         "label": "CUDA Platform"
       },
       {
-        "id": "urn:visionflow:linked:drive-av",
+        "id": "urn:ngm:class:drive-av",
         "label": "Drive AV"
       },
       {
-        "id": "urn:visionflow:linked:gb200-nvl72",
+        "id": "urn:ngm:class:gb200-nvl72",
         "label": "GB200 NVL72"
       },
       {
-        "id": "urn:visionflow:linked:h100-gpu",
+        "id": "urn:ngm:class:h100-gpu",
         "label": "H100 GPU"
       },
       {
-        "id": "urn:visionflow:linked:h200-gpu",
+        "id": "urn:ngm:class:h200-gpu",
         "label": "H200 GPU"
       },
       {
-        "id": "urn:visionflow:linked:infini-band-networking",
+        "id": "urn:ngm:class:infini-band-networking",
         "label": "InfiniBand Networking"
       },
       {
-        "id": "urn:visionflow:linked:isaac-robotics",
+        "id": "urn:ngm:class:isaac-robotics",
         "label": "Isaac Robotics"
       },
       {
-        "id": "urn:visionflow:linked:ne-mo",
+        "id": "urn:ngm:class:ne-mo",
         "label": "NeMo"
       },
       {
-        "id": "urn:visionflow:linked:nim-microservices",
+        "id": "urn:ngm:class:nim-microservices",
         "label": "NIM Microservices"
       },
       {
-        "id": "urn:visionflow:linked:nvlink",
+        "id": "urn:ngm:class:nvlink",
         "label": "NVLink"
       },
       {
-        "id": "urn:visionflow:linked:nvswitch",
+        "id": "urn:ngm:class:nvswitch",
         "label": "NVSwitch"
       },
       {
-        "id": "urn:visionflow:linked:omniverse",
+        "id": "urn:ngm:class:omniverse",
         "label": "Omniverse"
       },
       {
-        "id": "urn:visionflow:linked:rapids",
+        "id": "urn:ngm:class:rapids",
         "label": "RAPIDS"
       },
       {
-        "id": "urn:visionflow:linked:rtx-consumer-gpu",
+        "id": "urn:ngm:class:rtx-consumer-gpu",
         "label": "RTX Consumer GPU"
       },
       {
-        "id": "urn:visionflow:linked:spectrum-x-ethernet",
+        "id": "urn:ngm:class:spectrum-x-ethernet",
         "label": "Spectrum-X Ethernet"
       },
       {
-        "id": "urn:visionflow:linked:tensor-rt",
+        "id": "urn:ngm:class:tensor-rt",
         "label": "TensorRT"
       },
       {
-        "id": "urn:visionflow:linked:tensor-rt-llm",
+        "id": "urn:ngm:class:tensor-rt-llm",
         "label": "TensorRT-LLM"
       },
       {
-        "id": "urn:visionflow:linked:triton-inference-server",
+        "id": "urn:ngm:class:triton-inference-server",
         "label": "Triton Inference Server"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:arm-architecture-license",
+        "id": "urn:ngm:class:arm-architecture-license",
         "label": "ARM Architecture License"
       },
       {
-        "id": "urn:visionflow:linked:co-wo-s-packaging",
+        "id": "urn:ngm:class:co-wo-s-packaging",
         "label": "CoWoS Packaging"
       },
       {
-        "id": "urn:visionflow:linked:cuda-ecosystem",
+        "id": "urn:ngm:class:cuda-ecosystem",
         "label": "CUDA Ecosystem"
       },
       {
-        "id": "urn:visionflow:linked:hbm3e-memory",
+        "id": "urn:ngm:class:hbm3e-memory",
         "label": "HBM3e Memory"
       },
       {
-        "id": "urn:visionflow:linked:nvlink-interconnect",
+        "id": "urn:ngm:class:nvlink-interconnect",
         "label": "NVLink Interconnect"
       },
       {
-        "id": "urn:visionflow:linked:software-stack",
+        "id": "urn:ngm:class:software-stack",
         "label": "Software Stack"
       },
       {
-        "id": "urn:visionflow:linked:tsmc-advanced-packaging",
+        "id": "urn:ngm:class:tsmc-advanced-packaging",
         "label": "TSMC Advanced Packaging"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-inference-at-scale",
+        "id": "urn:ngm:class:ai-inference-at-scale",
         "label": "AI Inference at Scale"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-vehicle-perception",
+        "id": "urn:ngm:class:autonomous-vehicle-perception",
         "label": "Autonomous Vehicle Perception"
       },
       {
-        "id": "urn:visionflow:linked:digital-twin-simulation",
+        "id": "urn:ngm:class:digital-twin-simulation",
         "label": "Digital Twin Simulation"
       },
       {
-        "id": "urn:visionflow:linked:generative-ai-deployment",
+        "id": "urn:ngm:class:generative-ai-deployment",
         "label": "Generative AI Deployment"
       },
       {
-        "id": "urn:visionflow:linked:gpu-accelerated-data-science",
+        "id": "urn:ngm:class:gpu-accelerated-data-science",
         "label": "GPU-Accelerated Data Science"
       },
       {
-        "id": "urn:visionflow:linked:large-language-model-training",
+        "id": "urn:ngm:class:large-language-model-training",
         "label": "Large Language Model Training"
       },
       {
-        "id": "urn:visionflow:linked:robotics-ai",
+        "id": "urn:ngm:class:robotics-ai",
         "label": "Robotics AI"
       },
       {
-        "id": "urn:visionflow:linked:scientific-hpc",
+        "id": "urn:ngm:class:scientific-hpc",
         "label": "Scientific HPC"
       },
       {
-        "id": "urn:visionflow:owl:class:drug-discovery-ai",
+        "id": "urn:ngm:class:drug-discovery-ai",
         "label": "Drug Discovery AI"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:blackwell-architecture",
+        "id": "urn:ngm:class:blackwell-architecture",
         "label": "Blackwell Architecture"
       },
       {
-        "id": "urn:visionflow:linked:cuda-parallel-computing-model",
+        "id": "urn:ngm:class:cuda-parallel-computing-model",
         "label": "CUDA Parallel Computing Model"
       },
       {
-        "id": "urn:visionflow:linked:fp8-mixed-precision-training",
+        "id": "urn:ngm:class:fp8-mixed-precision-training",
         "label": "FP8 Mixed Precision Training"
       },
       {
-        "id": "urn:visionflow:linked:hopper-architecture",
+        "id": "urn:ngm:class:hopper-architecture",
         "label": "Hopper Architecture"
       },
       {
-        "id": "urn:visionflow:linked:infini-band-scale-out-networking",
+        "id": "urn:ngm:class:infini-band-scale-out-networking",
         "label": "InfiniBand Scale-Out Networking"
       },
       {
-        "id": "urn:visionflow:linked:nvlink-scale-up-networking",
+        "id": "urn:ngm:class:nvlink-scale-up-networking",
         "label": "NVLink Scale-Up Networking"
       },
       {
-        "id": "urn:visionflow:linked:structured-sparsity-acceleration",
+        "id": "urn:ngm:class:structured-sparsity-acceleration",
         "label": "Structured Sparsity Acceleration"
       },
       {
-        "id": "urn:visionflow:linked:tensor-core-architecture",
+        "id": "urn:ngm:class:tensor-core-architecture",
         "label": "Tensor Core Architecture"
       },
       {
-        "id": "urn:visionflow:linked:transformer-engine",
+        "id": "urn:ngm:class:transformer-engine",
         "label": "Transformer Engine"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:co-wo-s-l-advanced-packaging",
+        "label": "CoWoS-L Advanced Packaging"
+      },
+      {
+        "id": "urn:ngm:class:gddr7-memory",
+        "label": "GDDR7 Memory"
+      },
+      {
+        "id": "urn:ngm:class:hbm3e-high-bandwidth-memory",
+        "label": "HBM3e High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:nvlink-c2-c-die-to-die",
+        "label": "NVLink-C2C Die-to-Die"
+      },
+      {
+        "id": "urn:ngm:class:nvswitch-4th-gen",
+        "label": "NVSwitch 4th Gen"
+      },
+      {
+        "id": "urn:ngm:class:pcie-gen-5",
+        "label": "PCIe Gen 5"
+      },
+      {
+        "id": "urn:ngm:class:sxm5-form-factor",
+        "label": "SXM5 Form Factor"
+      },
+      {
+        "id": "urn:ngm:class:tsmc-n3-process",
+        "label": "TSMC N3 Process"
+      },
+      {
+        "id": "urn:ngm:class:tsmc-n4-n-process",
+        "label": "TSMC N4N Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:amazon-aws-ai",
+        "label": "Amazon AWS AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:google-gemini-infrastructure",
+        "label": "Google Gemini Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:meta-lla-ma-training",
+        "label": "Meta LLaMA Training"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-azure-ai",
+        "label": "Microsoft Azure AI"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-gpt-training",
+        "label": "OpenAI GPT Training"
+      },
+      {
+        "id": "urn:ngm:class:scientific-hpc",
+        "label": "Scientific HPC"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-ai-infrastructure",
+        "label": "Sovereign AI Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery-ai",
+        "label": "Drug Discovery AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cuda-programming-model",
+        "label": "CUDA Programming Model"
+      },
+      {
+        "id": "urn:ngm:class:jedec-hbm-standard",
+        "label": "JEDEC HBM Standard"
+      },
+      {
+        "id": "urn:ngm:class:nvlink-protocol",
+        "label": "NVLink Protocol"
+      },
+      {
+        "id": "urn:ngm:class:onnx-model-format",
+        "label": "ONNX Model Format"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-api-compatibility",
+        "label": "OpenAI API Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:open-xla",
+        "label": "OpenXLA"
+      },
+      {
+        "id": "urn:ngm:class:pcie-standard",
+        "label": "PCIe Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:arm-holdings",
+        "label": "ARM Holdings"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:data-centre-infrastructure",
+        "label": "Data Centre Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:jensen-huang",
+        "label": "Jensen Huang"
+      },
+      {
+        "id": "urn:ngm:class:mellanox",
+        "label": "Mellanox"
+      },
+      {
+        "id": "urn:ngm:class:stargate-initiative",
+        "label": "Stargate Initiative"
+      },
+      {
+        "id": "urn:ngm:class:us-china-tech-war",
+        "label": "US China Tech War"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:image-processing-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:image-processing-software",
+  "@type": "Class",
   "label": "Image Processing Software",
+  "definition": "Software systems that acquire, process, analyse, and visualise digital images for metaverse applications, employing computer vision algorithms for user tracking, environment creation, gesture recognition, 3D reconstruction, and real-time visual enhancement in virtual and augmented reality environ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computer-vision-system",
-      "vc:label": "Computer Vision System"
+      "@id": "urn:ngm:class:computer-vision-system",
+      "label": "Computer Vision System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bfe2ec6f900ab71626792a6862a66419344ba7ed732729402ee65ecbbb7dd0b2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:visual-metaverse-interaction",
+        "label": "Visual Metaverse Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bfe2ec6f900ab71626792a6862a66419344ba7ed732729402ee65ecbbb7dd0b2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software systems that acquire, process, analyse, and visualise digital images for metaverse applications, employing computer vision algorithms for user tracking, environment creation, gesture recognition, 3D reconstruction, and real-time visual enhancement in virtual and augmented reality environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:visual-metaverse-interaction",
-      "vc:label": "Visual Metaverse Interaction"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

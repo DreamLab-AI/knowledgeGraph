@@ -3,163 +3,279 @@
   "title": "Graph Database",
   "slug": "graph-database",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:graph-database",
+  "classIri": "urn:ngm:class:graph-database",
   "domain": "infrastructure",
-  "definition": "A [[Graph Database]] is a specialised data management system representing data as a network of nodes (vertices) connected by relationships (edges) carrying their own properties and semantics, contrasted with relational databases that scatter relationships across foreign-key joins, organised around three dominant data models (labelled property graph LPG popularised by Neo4j 2007 where nodes and edges both carry typed labels and property maps, supporting Cypher / GQL / Gremlin; W3C Semantic Web RDF triple store decomposing data into subject-predicate-object triples queried via SPARQL 1.1 and reasoned over with OWL 2 / SHACL; hypergraph and generalised relation models where a single edge connects any number of nodes, exemplified by HyperGraphDB and OpenCog AtomSpace), implemented through **index-free adjacency** where each node stores direct pointers to its neighbours yielding O(1) per-hop traversal cost independent of graph size\u2014Neo4j benchmarks demonstrate 1,000\u00d7 speedups on 4-7 hop friend-of-friend queries over PostgreSQL on a 1M-node graph, with the advantage widening exponentially with depth, dominating a $3.5-4.5B 2025 graph database market projected to reach $10-14B by 2030 at ",
+  "definition": "A [[Graph Database]] is a specialised data management system representing data as a network of nodes (vertices) connected by relationships (edges) carrying their own properties and semantics, contrasted with relational databases that scatter relationships across foreign-key joins, organised aroun...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:data-management-system",
+      "id": "urn:ngm:class:data-management-system",
       "label": "Data Management System"
     },
     {
-      "id": "urn:visionflow:linked:database",
+      "id": "urn:ngm:class:database",
       "label": "Database"
-    },
-    {
-      "id": "urn:visionflow:linked:no-sql-database",
-      "label": "NoSQL Database"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:edge-storage",
+        "id": "urn:ngm:class:edge-storage",
         "label": "Edge Storage"
       },
       {
-        "id": "urn:visionflow:linked:graph-query-language",
+        "id": "urn:ngm:class:graph-query-language",
         "label": "Graph Query Language"
       },
       {
-        "id": "urn:visionflow:linked:node-storage",
+        "id": "urn:ngm:class:node-storage",
         "label": "Node Storage"
       },
       {
-        "id": "urn:visionflow:linked:query-optimiser",
+        "id": "urn:ngm:class:query-optimiser",
         "label": "Query Optimiser"
       },
       {
-        "id": "urn:visionflow:linked:relationship-indexing",
+        "id": "urn:ngm:class:relationship-indexing",
         "label": "Relationship Indexing"
       },
       {
-        "id": "urn:visionflow:linked:storage-engine",
+        "id": "urn:ngm:class:storage-engine",
         "label": "Storage Engine"
       },
       {
-        "id": "urn:visionflow:linked:transaction-manager",
+        "id": "urn:ngm:class:transaction-manager",
         "label": "Transaction Manager"
       },
       {
-        "id": "urn:visionflow:linked:traversal-engine",
+        "id": "urn:ngm:class:traversal-engine",
         "label": "Traversal Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:property-schema",
+        "id": "urn:ngm:class:property-schema",
         "label": "Property Schema"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:indexing-algorithm",
+        "id": "urn:ngm:class:indexing-algorithm",
         "label": "Indexing Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:memory-management",
+        "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
       },
       {
-        "id": "urn:visionflow:linked:persistent-storage",
+        "id": "urn:ngm:class:persistent-storage",
         "label": "Persistent Storage"
       },
       {
-        "id": "urn:visionflow:linked:query-parser",
+        "id": "urn:ngm:class:query-parser",
         "label": "Query Parser"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fraud-detection",
+        "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
       },
       {
-        "id": "urn:visionflow:linked:graph-rag",
+        "id": "urn:ngm:class:graph-rag",
         "label": "GraphRAG"
       },
       {
-        "id": "urn:visionflow:linked:network-analysis",
+        "id": "urn:ngm:class:network-analysis",
         "label": "Network Analysis"
       },
       {
-        "id": "urn:visionflow:linked:recommendation-system",
+        "id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation System"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management-system",
+        "id": "urn:ngm:class:identity-management-system",
         "label": "Identity Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-graph",
+        "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-search",
+        "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:cypher-query-language",
+        "id": "urn:ngm:class:cypher-query-language",
         "label": "Cypher Query Language"
       },
       {
-        "id": "urn:visionflow:linked:gql-standard",
+        "id": "urn:ngm:class:gql-standard",
         "label": "GQL Standard"
       },
       {
-        "id": "urn:visionflow:linked:graph-traversal-algorithm",
+        "id": "urn:ngm:class:graph-traversal-algorithm",
         "label": "Graph Traversal Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:gremlin",
+        "id": "urn:ngm:class:gremlin",
         "label": "Gremlin"
       },
       {
-        "id": "urn:visionflow:linked:index-free-adjacency",
+        "id": "urn:ngm:class:index-free-adjacency",
         "label": "Index-Free Adjacency"
       },
       {
-        "id": "urn:visionflow:linked:property-graph-model",
+        "id": "urn:ngm:class:property-graph-model",
         "label": "Property Graph Model"
       },
       {
-        "id": "urn:visionflow:linked:rdf-triple-store",
+        "id": "urn:ngm:class:rdf-triple-store",
         "label": "RDF Triple Store"
       },
       {
-        "id": "urn:visionflow:linked:sparql",
+        "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adjacency-list",
+        "label": "Adjacency List"
+      },
+      {
+        "id": "urn:ngm:class:b-tree",
+        "label": "B-Tree"
+      },
+      {
+        "id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      },
+      {
+        "id": "urn:ngm:class:lsm-tree",
+        "label": "LSM Tree"
+      },
+      {
+        "id": "urn:ngm:class:mvcc",
+        "label": "MVCC"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-analytics",
+        "label": "Cybersecurity Analytics"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-tinker-pop",
+        "label": "Apache TinkerPop"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-39075-2024-gql",
+        "label": "ISO/IEC 39075:2024 GQL"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-owl-2",
+        "label": "W3C OWL 2"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-rdf-1-1",
+        "label": "W3C RDF 1.1"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-shacl",
+        "label": "W3C SHACL"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-sparql-1-1",
+        "label": "W3C SPARQL 1.1"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:multi-model-database",
+        "label": "Multi-Model Database"
+      },
+      {
+        "id": "urn:ngm:class:network-science",
+        "label": "Network Science"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ]
   },
   "wikilinks": [
     {

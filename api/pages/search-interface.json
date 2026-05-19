@@ -3,32 +3,36 @@
   "title": "Search Interface",
   "slug": "search-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:search-interface",
+  "classIri": "urn:ngm:class:search-interface",
   "domain": "spatial-computing",
   "definition": "User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:user-interface",
+      "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-query-experience",
+        "id": "urn:ngm:class:user-query-experience",
         "label": "User Query Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

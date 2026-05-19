@@ -204,118 +204,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accessibility-audit-tool",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accessibility-audit-tool",
+  "@type": "Class",
   "label": "Accessibility Audit Tool",
+  "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:70af827f62984f2f4d7f04b1ff53940fdd48860dd469477100dc3bfd7b7addbd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:automated-testing-engine",
+        "label": "Automated Testing Engine"
+      },
+      {
+        "@id": "urn:ngm:class:report-generator",
+        "label": "Report Generator"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-validator",
+        "label": "WCAG Validator"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:testing-framework",
+        "label": "Testing Framework"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-analyzer",
+        "label": "User Interface Analyzer"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessibility-reporting",
+        "label": "Accessibility Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:quality-assurance-toolchain",
+        "label": "Quality Assurance Toolchain"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:70af827f62984f2f4d7f04b1ff53940fdd48860dd469477100dc3bfd7b7addbd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:quality-assurance-toolchain",
-      "vc:label": "Quality Assurance Toolchain"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:automated-testing-engine",
-      "vc:label": "Automated Testing Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:report-generator",
-      "vc:label": "Report Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:wcag-validator",
-      "vc:label": "WCAG Validator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-dashboard",
-      "vc:label": "Compliance Dashboard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:testing-framework",
-      "vc:label": "Testing Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-interface-analyzer",
-      "vc:label": "User Interface Analyzer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility-standards",
-      "vc:label": "Accessibility Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-reporting",
-      "vc:label": "Accessibility Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:testing-protocol",
-      "vc:label": "Testing Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:wcag-guidelines",
-      "vc:label": "WCAG Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-accessibility-standards",
-      "vc:label": "XR Accessibility Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

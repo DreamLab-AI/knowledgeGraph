@@ -148,74 +148,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:neural-network",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:neural-network",
+  "@type": "Class",
   "label": "Neural Network",
+  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, a...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c87287a3bc82f57ac28d52e34cbd59a87cce2a02012009739bcf41b1ce27a8f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
-      "vc:label": "Recurrent Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

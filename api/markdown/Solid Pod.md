@@ -284,156 +284,113 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:solid-pod",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:solid-pod",
+  "@type": "Class",
   "label": "Solid Pod",
+  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), ...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:linked-data-platform-resource",
-      "vc:label": "Linked Data Platform Resource"
+      "@id": "urn:ngm:class:linked-data-platform-resource",
+      "label": "Linked Data Platform Resource"
     },
     {
-      "@id": "urn:visionflow:owl:class:personal-data-store",
-      "vc:label": "Personal Data Store"
+      "@id": "urn:ngm:class:personal-data-store",
+      "label": "Personal Data Store"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:acp-access-control-policy",
+        "label": "ACP Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ldp-container",
+        "label": "LDP Container"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-resource",
+        "label": "RDF Resource"
+      },
+      {
+        "@id": "urn:ngm:class:wac-access-control-list",
+        "label": "WAC Access Control List"
+      },
+      {
+        "@id": "urn:ngm:class:web-id-profile",
+        "label": "WebID Profile"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-data-model",
+        "label": "RDF Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:turtle-serialisation",
+        "label": "Turtle Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:web-id",
+        "label": "WebID"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agent-personalisation",
+        "label": "Agent Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:interoperable-personal-data",
+        "label": "Interoperable Personal Data"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3-c-linked-data-platform",
+        "label": "W3C Linked Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-solid-protocol",
+        "label": "W3C Solid Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-access-control",
+        "label": "W3C Web Access Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-web-stack",
+        "label": "Decentralised Web Stack"
+      },
+      {
+        "@id": "urn:ngm:class:solid-ecosystem",
+        "label": "Solid Ecosystem"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2580e104b1eaccdddf7c122da74321efa6a6d87c030d8e4bcce5fb026e0ab740@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), so that authorised applications can read and write data without the data ever leaving the owner's pod or being locked into any single application silo. In the [[VisionClaw Agentic Container]] architecture, Solid Pods serve as the personal context store for agent preference profiles, credential histories, and verifiable presentation caches, consumed via the [[Model Context Protocol]] tool surface.",
-  "vc:qualityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.78",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-web-stack",
-      "vc:label": "Decentralised Web Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:solid-ecosystem",
-      "vc:label": "Solid Ecosystem"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:acp-access-control-policy",
-      "vc:label": "ACP Access Control Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ldp-container",
-      "vc:label": "LDP Container"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-resource",
-      "vc:label": "RDF Resource"
-    },
-    {
-      "@id": "urn:visionflow:linked:wac-access-control-list",
-      "vc:label": "WAC Access Control List"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id-profile",
-      "vc:label": "WebID Profile"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:http-protocol",
-      "vc:label": "HTTP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-data-model",
-      "vc:label": "RDF Data Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:turtle-serialisation",
-      "vc:label": "Turtle Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id",
-      "vc:label": "WebID"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agent-personalisation",
-      "vc:label": "Agent Personalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identity",
-      "vc:label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperable-personal-data",
-      "vc:label": "Interoperable Personal Data"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:w3-c-linked-data-platform",
-      "vc:label": "W3C Linked Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-solid-protocol",
-      "vc:label": "W3C Solid Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-access-control",
-      "vc:label": "W3C Web Access Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:css-community-solid-server",
-      "vc:label": "CSS Community Solid Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:inrupt-pod-spaces",
-      "vc:label": "Inrupt Pod Spaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-solid-server",
-      "vc:label": "Node Solid Server"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
-      "vc:label": "Verifiable Credential Surface"
-    }
-  ]
+  "quality": 0.65,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:skos-vocabulary",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:skos-vocabulary",
+  "@type": "Class",
   "label": "Skos Vocabulary",
+  "definition": "A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-organization-system",
-      "vc:label": "Knowledge Organization System"
+      "@id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e389cdf30dee4a4a1d9475cfd035769d53c2373f744d52417a3e4493f1701743"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:linked-vocabulary-publishing",
+        "label": "Linked Vocabulary Publishing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e389cdf30dee4a4a1d9475cfd035769d53c2373f744d52417a3e4493f1701743@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:linked-vocabulary-publishing",
-      "vc:label": "Linked Vocabulary Publishing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

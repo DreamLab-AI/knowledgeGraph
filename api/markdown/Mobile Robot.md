@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mobile-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mobile-robot",
+  "@type": "Class",
   "label": "Mobile Robot",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
-    }
-  ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3b2452c5bd0e7df0a50cdde8d5a71f54cf3ce47c32e8e3d8de113cedafae01e1"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3b2452c5bd0e7df0a50cdde8d5a71f54cf3ce47c32e8e3d8de113cedafae01e1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "robotics",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "robotics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-rb-0001",
+        "label": "Robot (RB-0001)"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:robot-rb-0001",
-      "vc:label": "Robot (RB-0001)"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

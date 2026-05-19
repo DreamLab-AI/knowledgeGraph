@@ -208,128 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tourism-metaverse",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tourism-metaverse",
+  "@type": "Class",
   "label": "Tourism Metaverse",
+  "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:71fb4203a01b177dd909585623bcde669f32a85be721144ddbb2379e864cd0be"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cultural-exhibit",
+        "label": "Cultural Exhibit"
+      },
+      {
+        "@id": "urn:ngm:class:tour-guide-system",
+        "label": "Tour Guide System"
+      },
+      {
+        "@id": "urn:ngm:class:travel-planner",
+        "label": "Travel Planner"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-destination",
+        "label": "Virtual Destination"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessibility-enhancement",
+        "label": "Accessibility Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:destination-marketing",
+        "label": "Destination Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:71fb4203a01b177dd909585623bcde669f32a85be721144ddbb2379e864cd0be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cultural-exhibit",
-      "vc:label": "Cultural Exhibit"
-    },
-    {
-      "@id": "urn:visionflow:linked:tour-guide-system",
-      "vc:label": "Tour Guide System"
-    },
-    {
-      "@id": "urn:visionflow:linked:travel-planner",
-      "vc:label": "Travel Planner"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:geospatial-engine",
-      "vc:label": "Geospatial Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-destination",
-      "vc:label": "Virtual Destination"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-management-system",
-      "vc:label": "Content Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-system",
-      "vc:label": "Avatar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-enhancement",
-      "vc:label": "Accessibility Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-preservation",
-      "vc:label": "Cultural Heritage Preservation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:destination-marketing",
-      "vc:label": "Destination Marketing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-tourism",
-      "vc:label": "Virtual Tourism"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:360-video",
-      "vc:label": "360 Video"
-    },
-    {
-      "@id": "urn:visionflow:linked:geographic-information-system",
-      "vc:label": "Geographic Information System"
-    },
-    {
-      "@id": "urn:visionflow:linked:translation-service",
-      "vc:label": "Translation Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

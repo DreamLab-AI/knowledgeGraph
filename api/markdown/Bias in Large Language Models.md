@@ -548,348 +548,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bias-in-large-language-models",
+  "@type": "Class",
   "label": "Bias in Large Language Models",
+  "definition": "Bias in Large Language Models is the systematic skew in the outputs, representations, and decisions of transformer-based foundation models (GPT-4o/4.5, Claude 3.5/4 Sonnet/Opus, Gemini 1.5/2.0 Pro, Llama 3/4, Mistral Large, Qwen 2.5, DeepSeek-V3) toward particular social groups, viewpoints, langu...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:representational-harm",
-      "vc:label": "Representational Harm"
+      "@id": "urn:ngm:class:representational-harm",
+      "label": "Representational Harm"
     },
     {
-      "@id": "urn:visionflow:linked:sociotechnical-harm",
-      "vc:label": "Sociotechnical Harm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias",
-      "vc:label": "Algorithmic Bias"
+      "@id": "urn:ngm:class:sociotechnical-harm",
+      "label": "Sociotechnical Harm"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3a50184ea727ae1e00baa0cca475c4888317c077028190047968698e265ad081"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:age-bias",
+        "label": "Age Bias"
+      },
+      {
+        "@id": "urn:ngm:class:allocational-bias",
+        "label": "Allocational Bias"
+      },
+      {
+        "@id": "urn:ngm:class:disability-bias",
+        "label": "Disability Bias"
+      },
+      {
+        "@id": "urn:ngm:class:gender-bias",
+        "label": "Gender Bias"
+      },
+      {
+        "@id": "urn:ngm:class:linguistic-bias",
+        "label": "Linguistic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:political-bias",
+        "label": "Political Bias"
+      },
+      {
+        "@id": "urn:ngm:class:racial-bias",
+        "label": "Racial Bias"
+      },
+      {
+        "@id": "urn:ngm:class:religious-bias",
+        "label": "Religious Bias"
+      },
+      {
+        "@id": "urn:ngm:class:representational-bias",
+        "label": "Representational Bias"
+      },
+      {
+        "@id": "urn:ngm:class:socioeconomic-bias",
+        "label": "Socioeconomic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:sycophancy-bias",
+        "label": "Sycophancy Bias"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:human-rater-pool",
+        "label": "Human Rater Pool"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning-dataset",
+        "label": "Instruction Tuning Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:pretraining-corpus",
+        "label": "Pretraining Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-composition",
+        "label": "Training Data Composition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cultural-homogenization",
+        "label": "Cultural Homogenization"
+      },
+      {
+        "@id": "urn:ngm:class:discriminatory-decision-making",
+        "label": "Discriminatory Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "@id": "urn:ngm:class:stereotype-propagation",
+        "label": "Stereotype Propagation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:distributional-representation-learning",
+        "label": "Distributional Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-association-encoding",
+        "label": "Implicit Association Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-pattern-reproduction",
+        "label": "Statistical Pattern Reproduction"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bbq-benchmark",
+        "label": "BBQ Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:bold-benchmark",
+        "label": "BOLD Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:crow-s-pairs",
+        "label": "CrowS-Pairs"
+      },
+      {
+        "@id": "urn:ngm:class:honest-benchmark",
+        "label": "HONEST Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:real-toxicity-prompts",
+        "label": "RealToxicityPrompts"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-set",
+        "label": "StereoSet"
+      },
+      {
+        "@id": "urn:ngm:class:wino-bias",
+        "label": "WinoBias"
+      },
+      {
+        "@id": "urn:ngm:class:wino-queer",
+        "label": "WinoQueer"
+      },
+      {
+        "@id": "urn:ngm:class:word-embedding-association-test",
+        "label": "Word Embedding Association Test"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fairness-in-ai",
+        "label": "Fairness in AI"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bias-auditing",
+        "label": "Bias Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-reporting",
+        "label": "Responsible AI Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:acl",
+        "label": "ACL"
+      },
+      {
+        "@id": "urn:ngm:class:aies",
+        "label": "AIES"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-10",
+        "label": "EU AI Act Article 10"
+      },
+      {
+        "@id": "urn:ngm:class:facc-t",
+        "label": "FAccT"
+      },
+      {
+        "@id": "urn:ngm:class:ico-guidance-on-ai",
+        "label": "ICO Guidance on AI"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO/IEC TR 24027"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3a50184ea727ae1e00baa0cca475c4888317c077028190047968698e265ad081@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Bias in Large Language Models is the systematic skew in the outputs, representations, and decisions of transformer-based foundation models (GPT-4o/4.5, Claude 3.5/4 Sonnet/Opus, Gemini 1.5/2.0 Pro, Llama 3/4, Mistral Large, Qwen 2.5, DeepSeek-V3) toward particular social groups, viewpoints, languages, cultures, or value systems, manifesting as **representational harm** (stereotyping, demeaning portrayal, under-representation or erasure of demographic groups in generated text and images) and **allocational harm** (unequal allocation of resources, opportunities, or treatment when LLMs are deployed in hiring, lending, healthcare triage, content moderation, education or criminal justice), arising from the compounded effects of training-data composition (Common Crawl Western/Anglophone/male/young-skilled internet-user dominance with ~46% English content despite English being native to ~5% of humanity, GitHub code corpora reflecting Silicon Valley demographics, books3/PG-19 historical-literature canon embedding 19th-20th century prejudices, Reddit/4chan/Twitter conversation corpora amplifying online toxicity baselines), pretraining objective (next-token cross-entropy faithfully reproduci",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:age-bias",
-      "vc:label": "Age Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:allocational-bias",
-      "vc:label": "Allocational Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:disability-bias",
-      "vc:label": "Disability Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:gender-bias",
-      "vc:label": "Gender Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:linguistic-bias",
-      "vc:label": "Linguistic Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:political-bias",
-      "vc:label": "Political Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:racial-bias",
-      "vc:label": "Racial Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:religious-bias",
-      "vc:label": "Religious Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:representational-bias",
-      "vc:label": "Representational Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:socioeconomic-bias",
-      "vc:label": "Socioeconomic Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:sycophancy-bias",
-      "vc:label": "Sycophancy Bias"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:human-rater-pool",
-      "vc:label": "Human Rater Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:instruction-tuning-dataset",
-      "vc:label": "Instruction Tuning Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:pretraining-corpus",
-      "vc:label": "Pretraining Corpus"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf-pipeline",
-      "vc:label": "RLHF Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokeniser",
-      "vc:label": "Tokeniser"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-composition",
-      "vc:label": "Training Data Composition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cultural-homogenization",
-      "vc:label": "Cultural Homogenization"
-    },
-    {
-      "@id": "urn:visionflow:linked:discriminatory-decision-making",
-      "vc:label": "Discriminatory Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-asymmetry",
-      "vc:label": "Information Asymmetry"
-    },
-    {
-      "@id": "urn:visionflow:linked:stereotype-propagation",
-      "vc:label": "Stereotype Propagation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:distributional-representation-learning",
-      "vc:label": "Distributional Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:implicit-association-encoding",
-      "vc:label": "Implicit Association Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:preference-aggregation",
-      "vc:label": "Preference Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-pattern-reproduction",
-      "vc:label": "Statistical Pattern Reproduction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:common-crawl",
-      "vc:label": "Common Crawl"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:reddit-corpus",
-      "vc:label": "Reddit Corpus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-fine-tuning",
-      "vc:label": "Supervised Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bias-auditing",
-      "vc:label": "Bias Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-evaluation",
-      "vc:label": "Model Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-ai-reporting",
-      "vc:label": "Responsible AI Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
-      "vc:label": "Algorithmic Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:red-teaming",
-      "vc:label": "Red Teaming"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bbq-benchmark",
-      "vc:label": "BBQ Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:bold-benchmark",
-      "vc:label": "BOLD Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:crow-s-pairs",
-      "vc:label": "CrowS-Pairs"
-    },
-    {
-      "@id": "urn:visionflow:linked:honest-benchmark",
-      "vc:label": "HONEST Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-toxicity-prompts",
-      "vc:label": "RealToxicityPrompts"
-    },
-    {
-      "@id": "urn:visionflow:linked:stereo-set",
-      "vc:label": "StereoSet"
-    },
-    {
-      "@id": "urn:visionflow:linked:wino-bias",
-      "vc:label": "WinoBias"
-    },
-    {
-      "@id": "urn:visionflow:linked:wino-queer",
-      "vc:label": "WinoQueer"
-    },
-    {
-      "@id": "urn:visionflow:linked:word-embedding-association-test",
-      "vc:label": "Word Embedding Association Test"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:confirmation-bias",
-      "vc:label": "Confirmation Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:inductive-bias",
-      "vc:label": "Inductive Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:selection-bias",
-      "vc:label": "Selection Bias"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:fairness-in-ai",
-      "vc:label": "Fairness in AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:hallucination",
-      "vc:label": "Hallucination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-detection-methods",
-      "vc:label": "Bias Detection Methods"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-mitigation-techniques",
-      "vc:label": "Bias Mitigation Techniques"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:acl",
-      "vc:label": "ACL"
-    },
-    {
-      "@id": "urn:visionflow:linked:aies",
-      "vc:label": "AIES"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-10",
-      "vc:label": "EU AI Act Article 10"
-    },
-    {
-      "@id": "urn:visionflow:linked:facc-t",
-      "vc:label": "FAccT"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-guidance-on-ai",
-      "vc:label": "ICO Guidance on AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-tr-24027",
-      "vc:label": "ISO/IEC TR 24027"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:fairness-in-ai",
-      "vc:label": "Fairness in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-platform-digital-twins",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-platform-digital-twins",
+  "@type": "Class",
   "label": "Cross Platform Digital Twins",
+  "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible sy...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin-technology",
-      "vc:label": "Digital Twin Technology"
+      "@id": "urn:ngm:class:digital-twin-technology",
+      "label": "Digital Twin Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standards",
+        "label": "Interoperability Standards"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-simulation",
+        "label": "Collaborative Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-vendor-ecosystems",
+        "label": "Multi-Vendor Ecosystems"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8402e0777b104d5870eb954f7d4e08c868af652e85e119fb24c4f4cebe895a04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:api-integration",
-      "vc:label": "API Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperability-standards",
-      "vc:label": "Interoperability Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:universal-scene-description",
-      "vc:label": "Universal Scene Description"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-simulation",
-      "vc:label": "Collaborative Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-vendor-ecosystems",
-      "vc:label": "Multi-Vendor Ecosystems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-integration",
-      "vc:label": "Data Integration"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

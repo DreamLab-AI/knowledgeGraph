@@ -212,122 +212,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:climate-action-dao",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:climate-action-dao",
+  "@type": "Class",
   "label": "Climate Action DAO",
+  "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate pro...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:collective-governance",
-      "vc:label": "CollectiveGovernance"
+      "@id": "urn:ngm:class:collective-governance",
+      "label": "CollectiveGovernance"
     },
     {
-      "@id": "urn:visionflow:linked:impact-investment",
-      "vc:label": "ImpactInvestment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
-      "vc:label": "DecentralizedAutonomousOrganization"
+      "@id": "urn:ngm:class:impact-investment",
+      "label": "ImpactInvestment"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:impact-metrics",
+        "label": "ImpactMetrics"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "VotingMechanism"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "GovernanceToken"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "ProposalSystem"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "TreasuryManagement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:community-participation",
+        "label": "CommunityParticipation"
+      },
+      {
+        "@id": "urn:ngm:class:impact-verification",
+        "label": "ImpactVerification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "SmartContracts"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "TokenEconomics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credit-retirement",
+        "label": "CarbonCreditRetirement"
+      },
+      {
+        "@id": "urn:ngm:class:climate-project-funding",
+        "label": "ClimateProjectFunding"
+      },
+      {
+        "@id": "urn:ngm:class:community-coordination",
+        "label": "CommunityCoordination"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-governance",
+        "label": "TransparentGovernance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f666888f5aba00e1d85678b4678ea8f70daf1c4331fb0b652aff6fce0d9d2ef4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate projects, purchasing and retiring carbon credits, managing regenerative finance (ReFi) portfolios, and distributing climate impact rewards, with notable examples including KlimaDAO (carbon market liquidity), Gitcoin Climate Solutions ($10M+ distributed), and Regen Network (ecological data marketplace).",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.85",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:impact-metrics",
-      "vc:label": "ImpactMetrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-mechanism",
-      "vc:label": "VotingMechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "GovernanceToken"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proposal-system",
-      "vc:label": "ProposalSystem"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "TreasuryManagement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:community-participation",
-      "vc:label": "CommunityParticipation"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-verification",
-      "vc:label": "ImpactVerification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "SmartContracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "TokenEconomics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credit-retirement",
-      "vc:label": "CarbonCreditRetirement"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-project-funding",
-      "vc:label": "ClimateProjectFunding"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-coordination",
-      "vc:label": "CommunityCoordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparent-governance",
-      "vc:label": "TransparentGovernance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

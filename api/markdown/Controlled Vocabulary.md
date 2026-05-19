@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:controlled-vocabulary",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:controlled-vocabulary",
+  "@type": "Class",
   "label": "Controlled Vocabulary",
+  "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:information-architecture",
-      "vc:label": "Information Architecture"
+      "@id": "urn:ngm:class:information-architecture",
+      "label": "Information Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:998223d0181c56e2f1503bf76e43d9755ecf80345aa4e184355f35e19a80570a"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:domain-expertise",
+        "label": "Domain Expertise"
+      },
+      {
+        "@id": "urn:ngm:class:maintenance-process",
+        "label": "Maintenance Process"
+      },
+      {
+        "@id": "urn:ngm:class:term-governance",
+        "label": "Term Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accurate-retrieval",
+        "label": "Accurate Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:data-standardization",
+        "label": "Data Standardization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:998223d0181c56e2f1503bf76e43d9755ecf80345aa4e184355f35e19a80570a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:domain-expertise",
-      "vc:label": "Domain Expertise"
-    },
-    {
-      "@id": "urn:visionflow:linked:maintenance-process",
-      "vc:label": "Maintenance Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:term-governance",
-      "vc:label": "Term Governance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accurate-retrieval",
-      "vc:label": "Accurate Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-discovery",
-      "vc:label": "Content Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-standardization",
-      "vc:label": "Data Standardization"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

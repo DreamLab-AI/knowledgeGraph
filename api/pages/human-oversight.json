@@ -3,40 +3,44 @@
   "title": "Human Oversight",
   "slug": "human-oversight",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-oversight",
+  "classIri": "urn:ngm:class:human-oversight",
   "domain": "spatial-computing",
-  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.",
+  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:continuous-improvement",
+        "id": "urn:ngm:class:continuous-improvement",
         "label": "continuous improvement"
       },
       {
-        "id": "urn:visionflow:linked:error-correction",
+        "id": "urn:ngm:class:error-correction",
         "label": "error correction"
       },
       {
-        "id": "urn:visionflow:owl:class:accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

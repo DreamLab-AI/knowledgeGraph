@@ -116,42 +116,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0068-vision-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0068-vision-system",
+  "@type": "Class",
   "label": "rb 0068 vision system",
+  "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics-systems",
-      "vc:label": "Robotics Systems"
+      "@id": "urn:ngm:class:robotics-systems",
+      "label": "Robotics Systems"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e2d8560bd18b033e4240e57ff873c96a9b83f669e35b981cbff810ec79e40d7"
-  },
-  "vc:inferenceRule": "R3CategorySpecialization",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e2d8560bd18b033e4240e57ff873c96a9b83f669e35b981cbff810ec79e40d7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R3CategorySpecialization"
+  }
 }
 ```
 

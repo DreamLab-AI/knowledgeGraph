@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-society-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-society-domain",
+  "@type": "Class",
   "label": "Virtual Society Domain",
+  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ical and regulatory considerations governing behavior and rights in persistent virtual wo...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-society",
-      "vc:label": "Digital Society"
+      "@id": "urn:ngm:class:digital-society",
+      "label": "Digital Society"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d621fea3afa610bd2bea50b99a277418cf28eef88f93505598f613adfe659a3d"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d621fea3afa610bd2bea50b99a277418cf28eef88f93505598f613adfe659a3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behavior and rights in persistent virtual worlds.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

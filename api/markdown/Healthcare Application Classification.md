@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:healthcare-application-classification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:healthcare-application-classification",
+  "@type": "Class",
   "label": "Healthcare Application Classification",
+  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic eand deployment of immersive medical technologies.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:healthcare-technology",
-      "vc:label": "Healthcare Technology"
+      "@id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:structured-healthcare-innovation",
+        "label": "Structured Healthcare Innovation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:14c67a8e9f47bc7cf6aa8acb010d763a6cba852d7be9a7067919d8b53c316c7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:structured-healthcare-innovation",
-      "vc:label": "Structured Healthcare Innovation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

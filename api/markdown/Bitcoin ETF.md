@@ -628,364 +628,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bitcoin-etf",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bitcoin-etf",
+  "@type": "Class",
   "label": "Bitcoin ETF",
+  "definition": "A Bitcoin ETF (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of [[Bitcoin]] (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional broke...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bitcoin-exposure-product",
-      "vc:label": "Bitcoin Exposure Product"
+      "@id": "urn:ngm:class:bitcoin-exposure-product",
+      "label": "Bitcoin Exposure Product"
     },
     {
-      "@id": "urn:visionflow:linked:exchange-traded-fund",
-      "vc:label": "Exchange-Traded Fund"
-    },
-    {
-      "@id": "urn:visionflow:linked:passive-index-product",
-      "vc:label": "Passive Index Product"
+      "@id": "urn:ngm:class:exchange-traded-fund",
+      "label": "Exchange-Traded Fund"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:28748a006ef2ac75bcd7cc773a9507411f4a9bd77e0ecd776b856ffc902ccc91"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authorized-participant",
+        "label": "Authorized Participant"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-custody",
+        "label": "Bitcoin Custody"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-reference-rate",
+        "label": "Bitcoin Reference Rate"
+      },
+      {
+        "@id": "urn:ngm:class:creation-unit-basket",
+        "label": "Creation Unit Basket"
+      },
+      {
+        "@id": "urn:ngm:class:fund-administrator",
+        "label": "Fund Administrator"
+      },
+      {
+        "@id": "urn:ngm:class:net-asset-value-calculation",
+        "label": "Net Asset Value Calculation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-agreement",
+        "label": "Trust Agreement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:fund-sponsor",
+        "label": "Fund Sponsor"
+      },
+      {
+        "@id": "urn:ngm:class:independent-trustee",
+        "label": "Independent Trustee"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      },
+      {
+        "@id": "urn:ngm:class:rule-19b-4-approval",
+        "label": "Rule 19b-4 Approval"
+      },
+      {
+        "@id": "urn:ngm:class:sec-form-s-1-registration",
+        "label": "SEC Form S-1 Registration"
+      },
+      {
+        "@id": "urn:ngm:class:stock-exchange-listing",
+        "label": "Stock Exchange Listing"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-sharing-agreement",
+        "label": "Surveillance Sharing Agreement"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-inclusion-in-model-portfolio",
+        "label": "Bitcoin Inclusion in Model Portfolio"
+      },
+      {
+        "@id": "urn:ngm:class:brokerage-account-bitcoin-access",
+        "label": "Brokerage-Account Bitcoin Access"
+      },
+      {
+        "@id": "urn:ngm:class:options-on-bitcoin-etf",
+        "label": "Options on Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:pension-fund-bitcoin-allocation",
+        "label": "Pension Fund Bitcoin Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:retirement-account-bitcoin-allocation",
+        "label": "Retirement Account Bitcoin Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:tax-advantaged-bitcoin-exposure",
+        "label": "Tax-Advantaged Bitcoin Exposure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cash-creation-process",
+        "label": "Cash Creation Process"
+      },
+      {
+        "@id": "urn:ngm:class:daily-creation-redemption-mechanism",
+        "label": "Daily Creation Redemption Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:in-kind-creation-process",
+        "label": "In-Kind Creation Process"
+      },
+      {
+        "@id": "urn:ngm:class:investment-company-act-1940-wrapper",
+        "label": "Investment Company Act 1940 Wrapper"
+      },
+      {
+        "@id": "urn:ngm:class:nav-based-pricing",
+        "label": "NAV-Based Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:passive-bitcoin-tracking",
+        "label": "Passive Bitcoin Tracking"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:anchorage-digital",
+        "label": "Anchorage Digital"
+      },
+      {
+        "@id": "urn:ngm:class:bit-go",
+        "label": "BitGo"
+      },
+      {
+        "@id": "urn:ngm:class:cme-brr",
+        "label": "CME BRR"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-custody",
+        "label": "Coinbase Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:fidelity-digital-assets",
+        "label": "Fidelity Digital Assets"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-custody",
+        "label": "Gemini Custody"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallets",
+        "label": "Multi-Signature Wallets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-options",
+        "label": "Bitcoin Options"
+      },
+      {
+        "@id": "urn:ngm:class:european-bitcoin-etp",
+        "label": "European Bitcoin ETP"
+      },
+      {
+        "@id": "urn:ngm:class:grayscale-v-sec",
+        "label": "Grayscale v SEC"
+      },
+      {
+        "@id": "urn:ngm:class:hong-kong-spot-bitcoin-etf",
+        "label": "Hong Kong Spot Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:monochrome-ibtc",
+        "label": "Monochrome IBTC"
+      },
+      {
+        "@id": "urn:ngm:class:purpose-bitcoin-etf",
+        "label": "Purpose Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:spot-ether-etf",
+        "label": "Spot Ether ETF"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-liquidity",
+        "label": "Bitcoin Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-bitcoin-adoption",
+        "label": "Institutional Bitcoin Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:regulated-bitcoin-market",
+        "label": "Regulated Bitcoin Market"
+      },
+      {
+        "@id": "urn:ngm:class:retail-bitcoin-access",
+        "label": "Retail Bitcoin Access"
+      },
+      {
+        "@id": "urn:ngm:class:wealth-manager-distribution",
+        "label": "Wealth Manager Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cftc-commodity-classification",
+        "label": "CFTC Commodity Classification"
+      },
+      {
+        "@id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "@id": "urn:ngm:class:fca-cryptoasset-promotions-regime",
+        "label": "FCA Cryptoasset Promotions Regime"
+      },
+      {
+        "@id": "urn:ngm:class:investment-company-act-1940",
+        "label": "Investment Company Act 1940"
+      },
+      {
+        "@id": "urn:ngm:class:sec-form-s-1",
+        "label": "SEC Form S-1"
+      },
+      {
+        "@id": "urn:ngm:class:sec-rule-19b-4",
+        "label": "SEC Rule 19b-4"
+      },
+      {
+        "@id": "urn:ngm:class:securities-act-1933",
+        "label": "Securities Act 1933"
+      },
+      {
+        "@id": "urn:ngm:class:securities-exchange-act-1934",
+        "label": "Securities Exchange Act 1934"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:28748a006ef2ac75bcd7cc773a9507411f4a9bd77e0ecd776b856ffc902ccc91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A **Bitcoin ETF** (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of [[Bitcoin]] (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional brokerage accounts, ISAs, IRAs, 401(k)s and other tax-advantaged wrappers, structurally distinct from direct on-chain [[Bitcoin]] ownership in that the fund — not the end investor — bears the cryptographic custody, key management, hot/cold wallet segregation, multi-signature operational controls and insurance arrangements necessary to hold the underlying asset. The category emerged from a **decade-long regulatory standoff** (2013 — 2024) during which the [[United States Securities and Exchange Commission|SEC]] issued more than twenty-five sequential denials of spot [[Bitcoin]] ETF applications — beginning with the **Winklevoss Bitcoin Trust** filed by Tyler and Cameron Winklevoss with NYSE Arca in July 2013 (denied March 2017, refiled and re-denied July 2018), continuing through **Bitwise Asset Management** (October 2019 denial), **VanEck/SolidX** (multiple withdrawals and denials 2017-2021)",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authorized-participant",
-      "vc:label": "Authorized Participant"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-custody",
-      "vc:label": "Bitcoin Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-reference-rate",
-      "vc:label": "Bitcoin Reference Rate"
-    },
-    {
-      "@id": "urn:visionflow:linked:creation-unit-basket",
-      "vc:label": "Creation Unit Basket"
-    },
-    {
-      "@id": "urn:visionflow:linked:fund-administrator",
-      "vc:label": "Fund Administrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-asset-value-calculation",
-      "vc:label": "Net Asset Value Calculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-agreement",
-      "vc:label": "Trust Agreement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:fund-sponsor",
-      "vc:label": "Fund Sponsor"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-trustee",
-      "vc:label": "Independent Trustee"
-    },
-    {
-      "@id": "urn:visionflow:linked:qualified-custodian",
-      "vc:label": "Qualified Custodian"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-19b-4-approval",
-      "vc:label": "Rule 19b-4 Approval"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-form-s-1-registration",
-      "vc:label": "SEC Form S-1 Registration"
-    },
-    {
-      "@id": "urn:visionflow:linked:stock-exchange-listing",
-      "vc:label": "Stock Exchange Listing"
-    },
-    {
-      "@id": "urn:visionflow:linked:surveillance-sharing-agreement",
-      "vc:label": "Surveillance Sharing Agreement"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-inclusion-in-model-portfolio",
-      "vc:label": "Bitcoin Inclusion in Model Portfolio"
-    },
-    {
-      "@id": "urn:visionflow:linked:brokerage-account-bitcoin-access",
-      "vc:label": "Brokerage-Account Bitcoin Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:options-on-bitcoin-etf",
-      "vc:label": "Options on Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:pension-fund-bitcoin-allocation",
-      "vc:label": "Pension Fund Bitcoin Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:retirement-account-bitcoin-allocation",
-      "vc:label": "Retirement Account Bitcoin Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-advantaged-bitcoin-exposure",
-      "vc:label": "Tax-Advantaged Bitcoin Exposure"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cash-creation-process",
-      "vc:label": "Cash Creation Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:daily-creation-redemption-mechanism",
-      "vc:label": "Daily Creation Redemption Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:in-kind-creation-process",
-      "vc:label": "In-Kind Creation Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:investment-company-act-1940-wrapper",
-      "vc:label": "Investment Company Act 1940 Wrapper"
-    },
-    {
-      "@id": "urn:visionflow:linked:nav-based-pricing",
-      "vc:label": "NAV-Based Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:passive-bitcoin-tracking",
-      "vc:label": "Passive Bitcoin Tracking"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:authorized-participant-network",
-      "vc:label": "Authorized Participant Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network",
-      "vc:label": "Bitcoin Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:cme-bitcoin-reference-rate",
-      "vc:label": "CME Bitcoin Reference Rate"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-maker-network",
-      "vc:label": "Market Maker Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:qualified-custodian",
-      "vc:label": "Qualified Custodian"
-    },
-    {
-      "@id": "urn:visionflow:linked:stock-exchange",
-      "vc:label": "Stock Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-liquidity",
-      "vc:label": "Bitcoin Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-bitcoin-adoption",
-      "vc:label": "Institutional Bitcoin Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulated-bitcoin-market",
-      "vc:label": "Regulated Bitcoin Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:retail-bitcoin-access",
-      "vc:label": "Retail Bitcoin Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:wealth-manager-distribution",
-      "vc:label": "Wealth Manager Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:anchorage-digital",
-      "vc:label": "Anchorage Digital"
-    },
-    {
-      "@id": "urn:visionflow:linked:bit-go",
-      "vc:label": "BitGo"
-    },
-    {
-      "@id": "urn:visionflow:linked:cme-brr",
-      "vc:label": "CME BRR"
-    },
-    {
-      "@id": "urn:visionflow:linked:coinbase-custody",
-      "vc:label": "Coinbase Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:cold-storage",
-      "vc:label": "Cold Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:fidelity-digital-assets",
-      "vc:label": "Fidelity Digital Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:gemini-custody",
-      "vc:label": "Gemini Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature-wallets",
-      "vc:label": "Multi-Signature Wallets"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-lightning-wallet",
-      "vc:label": "Bitcoin Lightning Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-mining-equity",
-      "vc:label": "Bitcoin Mining Equity"
-    },
-    {
-      "@id": "urn:visionflow:linked:grayscale-bitcoin-trust",
-      "vc:label": "Grayscale Bitcoin Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:pro-shares-bito",
-      "vc:label": "ProShares BITO"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody-bitcoin",
-      "vc:label": "Self-Custody Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-holdings",
-      "vc:label": "Spot Bitcoin Holdings"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micro-strategy",
-      "vc:label": "MicroStrategy"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-options",
-      "vc:label": "Bitcoin Options"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-bitcoin-etp",
-      "vc:label": "European Bitcoin ETP"
-    },
-    {
-      "@id": "urn:visionflow:linked:grayscale-v-sec",
-      "vc:label": "Grayscale v SEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:hong-kong-spot-bitcoin-etf",
-      "vc:label": "Hong Kong Spot Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:monochrome-ibtc",
-      "vc:label": "Monochrome IBTC"
-    },
-    {
-      "@id": "urn:visionflow:linked:purpose-bitcoin-etf",
-      "vc:label": "Purpose Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-ether-etf",
-      "vc:label": "Spot Ether ETF"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cftc-commodity-classification",
-      "vc:label": "CFTC Commodity Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:fasb-asu-2023-08",
-      "vc:label": "FASB ASU 2023-08"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-cryptoasset-promotions-regime",
-      "vc:label": "FCA Cryptoasset Promotions Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:investment-company-act-1940",
-      "vc:label": "Investment Company Act 1940"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-form-s-1",
-      "vc:label": "SEC Form S-1"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-rule-19b-4",
-      "vc:label": "SEC Rule 19b-4"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-act-1933",
-      "vc:label": "Securities Act 1933"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-exchange-act-1934",
-      "vc:label": "Securities Exchange Act 1934"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:capital-markets",
-      "vc:label": "Capital Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:exchange-traded-fund",
-      "vc:label": "Exchange-Traded Fund"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

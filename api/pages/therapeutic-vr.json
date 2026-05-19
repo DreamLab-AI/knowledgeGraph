@@ -3,19 +3,18 @@
   "title": "Therapeutic VR",
   "slug": "therapeutic-vr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:therapeutic-vr",
+  "classIri": "urn:ngm:class:therapeutic-vr",
   "domain": "spatial-computing",
   "definition": "The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-reality-applications",
+      "id": "urn:ngm:class:virtual-reality-applications",
       "label": "Virtual Reality Applications"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

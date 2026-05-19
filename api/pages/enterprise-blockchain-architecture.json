@@ -3,24 +3,23 @@
   "title": "Enterprise Blockchain Architecture",
   "slug": "enterprise-blockchain-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
+  "classIri": "urn:ngm:class:enterprise-blockchain-architecture",
   "domain": "blockchain",
-  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by [[Hyperledger Fabric]], [[Hyperledger Besu]], and [[Corda]].",
+  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by [[Hyperledger F...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
+        "id": "urn:ngm:class:bc-0120-consensus-mechanism",
         "label": "BC-0120-consensus-mechanism"
       }
     ],
@@ -28,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

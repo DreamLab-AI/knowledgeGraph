@@ -3,82 +3,95 @@
   "title": "Latency Management Protocol",
   "slug": "latency-management-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:latency-management-protocol",
+  "classIri": "urn:ngm:class:latency-management-protocol",
   "domain": "spatial-computing",
   "definition": "A systematic process for monitoring, measuring, and minimizing network delay in interactive metaverse sessions through adaptive techniques including traffic prioritization, predictive buffering, and dynamic routing optimization.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
-      "label": "Network Infrastructure"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:dynamic-routing",
+        "id": "urn:ngm:class:dynamic-routing",
         "label": "Dynamic Routing"
       },
       {
-        "id": "urn:visionflow:linked:latency-monitoring-system",
+        "id": "urn:ngm:class:latency-monitoring-system",
         "label": "Latency Monitoring System"
       },
       {
-        "id": "urn:visionflow:linked:predictive-buffering",
+        "id": "urn:ngm:class:predictive-buffering",
         "label": "Predictive Buffering"
       },
       {
-        "id": "urn:visionflow:linked:quality-of-service-manager",
+        "id": "urn:ngm:class:quality-of-service-manager",
         "label": "Quality of Service Manager"
       },
       {
-        "id": "urn:visionflow:linked:traffic-prioritization-engine",
+        "id": "urn:ngm:class:traffic-prioritization-engine",
         "label": "Traffic Prioritization Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:latency-measurement-tools",
+        "id": "urn:ngm:class:latency-measurement-tools",
         "label": "Latency Measurement Tools"
       },
       {
-        "id": "urn:visionflow:linked:network-performance-metrics",
+        "id": "urn:ngm:class:network-performance-metrics",
         "label": "Network Performance Metrics"
       },
       {
-        "id": "urn:visionflow:linked:priority-policies",
+        "id": "urn:ngm:class:priority-policies",
         "label": "Priority Policies"
       },
       {
-        "id": "urn:visionflow:linked:routing-algorithms",
+        "id": "urn:ngm:class:routing-algorithms",
         "label": "Routing Algorithms"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:low-latency-interaction",
+        "id": "urn:ngm:class:low-latency-interaction",
         "label": "Low-Latency Interaction"
       },
       {
-        "id": "urn:visionflow:linked:predictable-performance",
+        "id": "urn:ngm:class:predictable-performance",
         "label": "Predictable Performance"
       },
       {
-        "id": "urn:visionflow:linked:real-time-responsiveness",
+        "id": "urn:ngm:class:real-time-responsiveness",
         "label": "Real-Time Responsiveness"
       },
       {
-        "id": "urn:visionflow:linked:smooth-user-experience",
+        "id": "urn:ngm:class:smooth-user-experience",
         "label": "Smooth User Experience"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-performance-management",
+        "label": "Network Performance Management"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-experience-framework",
+        "label": "Quality of Experience Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

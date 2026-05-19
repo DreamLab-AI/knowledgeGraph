@@ -264,176 +264,135 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse",
+  "@type": "Class",
   "label": "Metaverse",
+  "definition": "A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:multiverse",
-      "vc:label": "Multiverse"
+      "@id": "urn:ngm:class:multiverse",
+      "label": "Multiverse"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0f10c04725802e53af1b4240ffe64ccde9b80b905b5505f5a15cf87526880fc9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:social-system",
+        "label": "Social System"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-interaction",
+        "label": "Synchronous Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-identity-system",
+        "label": "User Identity System"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-state",
+        "label": "Persistent State"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronization",
+        "label": "Real-time Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-world-portability",
+        "label": "Cross-World Portability"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0f10c04725802e53af1b4240ffe64ccde9b80b905b5505f5a15cf87526880fc9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:multiverse",
-      "vc:label": "Multiverse"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-system",
-      "vc:label": "Social System"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronous-interaction",
-      "vc:label": "Synchronous Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-identity-system",
-      "vc:label": "User Identity System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar",
-      "vc:label": "Avatar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:persistent-state",
-      "vc:label": "Persistent State"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-rendering",
-      "vc:label": "3D Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
-      "vc:label": "Real-time Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-world-portability",
-      "vc:label": "Cross-World Portability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-ownership",
-      "vc:label": "Digital Ownership"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-entertainment",
-      "vc:label": "Immersive Entertainment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-vr",
-      "vc:label": "Social VR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-collaboration",
-      "vc:label": "Virtual Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-commerce",
-      "vc:label": "Virtual Commerce"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:content-distribution-network",
-      "vc:label": "Content Distribution Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet",
-      "vc:label": "Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "ZK-STARKs",
   "slug": "zk-starks",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:zk-starks",
+  "classIri": "urn:ngm:class:zk-starks",
   "domain": "spatial-computing",
-  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.",
+  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "id": "urn:ngm:class:zero-knowledge-proof",
       "label": "Zero Knowledge Proof"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Metaverse Infrastructure",
   "slug": "metaverse-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-infrastructure",
+  "classIri": "urn:ngm:class:metaverse-infrastructure",
   "domain": "infrastructure",
   "definition": "Technical infrastructure supporting metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

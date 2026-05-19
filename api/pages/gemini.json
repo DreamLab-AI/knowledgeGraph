@@ -3,19 +3,13 @@
   "title": "Gemini",
   "slug": "gemini",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gemini",
+  "classIri": "urn:ngm:individual:gemini",
   "domain": "artificial-intelligence",
   "definition": "A family of multimodal AI models developed by Google DeepMind that natively process text, images, audio, and video, designed for efficiency across different scales from mobile devices to data centres.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

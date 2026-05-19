@@ -3,19 +3,18 @@
   "title": "Sentiment Analysis",
   "slug": "sentiment-analysis",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sentiment-analysis",
+  "classIri": "urn:ngm:class:sentiment-analysis",
   "domain": "artificial-intelligence",
-  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes. Sentiment analysis employs transformer-based classifiers to enable applications in social media monitoring, customer feedback analysis, market research, and brand reputation management.",
+  "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

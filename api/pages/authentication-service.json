@@ -3,49 +3,53 @@
   "title": "Authentication Service",
   "slug": "authentication-service",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:authentication-service",
+  "classIri": "urn:ngm:class:authentication-service",
   "domain": "infrastructure",
-  "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.",
+  "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:security-service",
+      "id": "urn:ngm:class:security-service",
       "label": "Security Service"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authorisation",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
       },
       {
-        "id": "urn:visionflow:linked:single-sign-on",
+        "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
       },
       {
-        "id": "urn:visionflow:owl:class:session-management",
+        "id": "urn:ngm:class:session-management",
         "label": "Session Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:credential-validation",
+        "id": "urn:ngm:class:credential-validation",
         "label": "Credential Validation"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -128,41 +128,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-and-data-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-and-data-governance",
+  "@type": "Class",
   "label": "Privacy and Data Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7707e1990e41a13a713ba4e5aca7beb8a1ed5a85637daff6d238dc0bbbd64c02"
+  "definition": "Privacy and Data Governance is a trustworthiness dimension ensuring AI systems protect personal information, respect data rights, maintain data quality, and implement appropriate access controls throughout data collection, processing, storage, and sharing activities.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7707e1990e41a13a713ba4e5aca7beb8a1ed5a85637daff6d238dc0bbbd64c02@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy and Data Governance is a trustworthiness dimension ensuring AI systems protect personal information, respect data rights, maintain data quality, and implement appropriate access controls throughout data collection, processing, storage, and sharing activities. This dimension encompasses four core components: privacy protection (implementing data minimization collecting only necessary information, purpose limitation ensuring data used only for specified purposes, privacy by design embedding privacy safeguards into system architecture from inception, and privacy by default configuring systems to maximum privacy protection without user intervention), data quality (ensuring accuracy of data reflecting current reality, completeness with all required information present, currency maintaining up-to-date information, and integrity preventing unauthorized modification or corruption), access control (implementing role-based access restricting data access to authorized personnel with legitimate need, enforcing need-to-know principles limiting information exposure, maintaining comprehensive audit trails documenting all data access and modifications, and protecting against unauthorized a",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

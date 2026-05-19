@@ -3,19 +3,18 @@
   "title": "Making Available",
   "slug": "making-available",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:making-available",
+  "classIri": "urn:ngm:class:making-available",
   "domain": "spatial-computing",
-  "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, whether in return for payment or free of charge.",
+  "definition": "The supply of an AI system for distribution or use on the Union market in the course of a commercial activity, wher in return for payment or free of charge.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

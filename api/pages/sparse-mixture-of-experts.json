@@ -3,19 +3,18 @@
   "title": "Sparse Mixture of Experts",
   "slug": "sparse-mixture-of-experts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sparse-mixture-of-experts",
+  "classIri": "urn:ngm:class:sparse-mixture-of-experts",
   "domain": "artificial-intelligence",
-  "definition": "An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 billion parameters with manageable inference costs.",
+  "definition": "An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 parameters with manageable inference costs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-architecture",
+      "id": "urn:ngm:class:model-architecture",
       "label": "Model Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

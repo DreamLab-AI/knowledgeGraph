@@ -164,76 +164,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:community-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:community-standards",
+  "@type": "Class",
   "label": "Community Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f896db608cb6be0c364a8997c67dbb169ca1d2bc5e5d796b4d6da971d2e3313e"
+  "definition": "The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, an...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:moderation-tools",
+        "label": "Moderation Tools"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-mechanisms",
+        "label": "Reporting Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f896db608cb6be0c364a8997c67dbb169ca1d2bc5e5d796b4d6da971d2e3313e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:moderation-tools",
-      "vc:label": "Moderation Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-mechanisms",
-      "vc:label": "Reporting Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:trust-building",
-      "vc:label": "Trust Building"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-safety",
-      "vc:label": "User Safety"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Honesty",
   "slug": "honesty",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:honesty",
+  "classIri": "urn:ngm:class:honesty",
   "domain": "artificial-intelligence",
   "definition": "An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-alignment",
+      "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

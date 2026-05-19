@@ -3,19 +3,18 @@
   "title": "Pid Controller",
   "slug": "pid-controller",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pid-controller",
+  "classIri": "urn:ngm:class:pid-controller",
   "domain": "spatial-computing",
-  "definition": "- maturity:: draft",
+  "definition": "Pid Controller is a type of Feedback Control in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:rb-0047-feedback-control",
+      "id": "urn:ngm:class:rb-0047-feedback-control",
       "label": "rb 0047 feedback control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

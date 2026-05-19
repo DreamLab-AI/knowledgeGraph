@@ -3,28 +3,6 @@
   "title": "Executing Python and Javascript together on same page",
   "slug": "executing-python-and-javascript-together-on-same-page",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:executing-python-and-javascript-together-on-same-page",
-  "domain": "infrastructure",
-  "definition": "Executing Python and Javascript together on same page is a technology infrastructure concept and a type of Runtime Environment.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:runtime-environment",
-      "label": "Runtime Environment"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

@@ -132,60 +132,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:relayer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:relayer",
+  "@type": "Class",
   "label": "Relayer",
+  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
+      "@id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cfcada562c4361d988eedbce718729f50ec24004fdb6d80705308388af8bb793"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cfcada562c4361d988eedbce718729f50ec24004fdb6d80705308388af8bb793@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
-      "vc:label": "Cross-Chain Bridge"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:message-passing",
-      "vc:label": "Message Passing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:light-client",
-      "vc:label": "Light Client"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

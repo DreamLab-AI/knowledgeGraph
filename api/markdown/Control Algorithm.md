@@ -408,334 +408,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:control-algorithm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:control-algorithm",
+  "@type": "Class",
   "label": "Control Algorithm",
+  "definition": "ControlAlgorithm is a formalised mathematical and computational procedure that generates actuator commands to drive a dynamic system from its current state toward a desired target state, exploiting feedback from sensors, an internal model of the plant, or learned approximations of system dynamics...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:dynamical-systems",
-      "vc:label": "Dynamical Systems"
+      "@id": "urn:ngm:class:dynamical-systems",
+      "label": "Dynamical Systems"
     },
     {
-      "@id": "urn:visionflow:linked:computational-intelligence",
-      "vc:label": "Computational Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimal-control",
-      "vc:label": "Optimal Control"
+      "@id": "urn:ngm:class:computational-intelligence",
+      "label": "Computational Intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:549171c909e7a080c3fb4c7c2fa668b708a7356659737d583a460c8a06813ba4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adaptation-law",
+        "label": "Adaptation Law"
+      },
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:receding-horizon",
+        "label": "Receding Horizon"
+      },
+      {
+        "@id": "urn:ngm:class:reference-model",
+        "label": "Reference Model"
+      },
+      {
+        "@id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "@id": "urn:ngm:class:safety-constraint",
+        "label": "Safety Constraint"
+      },
+      {
+        "@id": "urn:ngm:class:state-observer",
+        "label": "State Observer"
+      },
+      {
+        "@id": "urn:ngm:class:switching-surface",
+        "label": "Switching Surface"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator-model",
+        "label": "Actuator Model"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-specification",
+        "label": "Constraint Specification"
+      },
+      {
+        "@id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-feedback",
+        "label": "Sensor Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerant-control",
+        "label": "Fault-Tolerant Control"
+      },
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:h-infinity-control",
+        "label": "H-Infinity Control"
+      },
+      {
+        "@id": "urn:ngm:class:iterative-learning-control",
+        "label": "Iterative Learning Control"
+      },
+      {
+        "@id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hardware-in-the-loop-testing",
+        "label": "Hardware-in-the-Loop Testing"
+      },
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aerospace",
+        "label": "Aerospace"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:chemical-process-control",
+        "label": "Chemical Process Control"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61511",
+        "label": "IEC 61511"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "@id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:549171c909e7a080c3fb4c7c2fa668b708a7356659737d583a460c8a06813ba4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ControlAlgorithm is a formalised mathematical and computational procedure that generates actuator commands to drive a dynamic system from its current state toward a desired target state, exploiting feedback from sensors, an internal model of the plant, or learned approximations of system dynamics, and spanning a hierarchy of algorithmic families: classical proportional–integral–derivative (PID) control achieving steady-state error cancellation via u(t) = K_p·e(t) + K_i·∫e dt + K_d·(de/dt); Linear Quadratic Regulator (LQR) minimising the infinite-horizon quadratic cost J = ∫₀^∞(x^T·Q·x + u^T·R·u)dt by solving the algebraic Riccati equation P·A + A^T·P − P·B·R⁻¹·B^T·P + Q = 0 to obtain optimal gain K* = R⁻¹·B^T·P; Model Predictive Control (MPC) solving a receding-horizon finite-time constrained optimisation min_{u} Σ_{k=0}^{N−1}[x_k^T·Q·x_k + u_k^T·R·u_k] + x_N^T·P_f·x_N subject to state and input constraint polytopes at each sample step; H-infinity (H∞) robust control minimising the L₂-induced gain from disturbance w to performance output z (‖T_{zw}‖_∞ < γ) via two-Riccati or LMI synthesis; sliding mode control (SMC) driving trajectories onto a switching surface s(x) = 0 in finite t",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adaptation-law",
-      "vc:label": "Adaptation Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:cost-function",
-      "vc:label": "Cost Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:receding-horizon",
-      "vc:label": "Receding Horizon"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-model",
-      "vc:label": "Reference Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:reward-signal",
-      "vc:label": "Reward Signal"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-constraint",
-      "vc:label": "Safety Constraint"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-observer",
-      "vc:label": "State Observer"
-    },
-    {
-      "@id": "urn:visionflow:linked:switching-surface",
-      "vc:label": "Switching Surface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pid-controller",
-      "vc:label": "PID Controller"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator-model",
-      "vc:label": "Actuator Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:constraint-specification",
-      "vc:label": "Constraint Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:plant-model",
-      "vc:label": "Plant Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-feedback",
-      "vc:label": "Sensor Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:stability-analysis",
-      "vc:label": "Stability Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space",
-      "vc:label": "State Space"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-management",
-      "vc:label": "Energy Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:fault-tolerant-control",
-      "vc:label": "Fault-Tolerant Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:process-automation",
-      "vc:label": "Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-control",
-      "vc:label": "Force Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:h-infinity-control",
-      "vc:label": "H-Infinity Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:iterative-learning-control",
-      "vc:label": "Iterative Learning Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-quadratic-regulator",
-      "vc:label": "Linear Quadratic Regulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:sliding-mode-control",
-      "vc:label": "Sliding Mode Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adaptive-control",
-      "vc:label": "Adaptive Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pid-controller",
-      "vc:label": "PID Controller"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:convex-optimisation",
-      "vc:label": "Convex Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:differential-equations",
-      "vc:label": "Differential Equations"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:lyapunov-stability",
-      "vc:label": "Lyapunov Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimisation",
-      "vc:label": "Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:aerospace",
-      "vc:label": "Aerospace"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:chemical-process-control",
-      "vc:label": "Chemical Process Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-robotics",
-      "vc:label": "Humanoid Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-systems",
-      "vc:label": "Power Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:hardware-in-the-loop-testing",
-      "vc:label": "Hardware-in-the-Loop Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-identification",
-      "vc:label": "System Identification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:simulation",
-      "vc:label": "Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bang-bang-control",
-      "vc:label": "Bang-Bang Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-systems",
-      "vc:label": "Rule-Based Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:expert-systems",
-      "vc:label": "Expert Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-loop-control",
-      "vc:label": "Open-Loop Control"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:dynamics",
-      "vc:label": "Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-critical-systems",
-      "vc:label": "Safety-Critical Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:do-178-c",
-      "vc:label": "DO-178C"
-    },
-    {
-      "@id": "urn:visionflow:linked:iec-61511",
-      "vc:label": "IEC 61511"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-control-systems-society",
-      "vc:label": "IEEE Control Systems Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifac",
-      "vc:label": "IFAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-26262",
-      "vc:label": "ISO 26262"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

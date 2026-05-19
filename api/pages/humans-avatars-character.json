@@ -3,19 +3,18 @@
   "title": "Humans, Avatars , Character",
   "slug": "humans-avatars-character",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:humans-avatars-character",
+  "classIri": "urn:ngm:class:humans-avatars-character",
   "domain": "infrastructure",
-  "definition": "Humans, Avatars , Character is a technology infrastructure concept and a type of infrastructure.",
+  "definition": "Humans, Avatars Character is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

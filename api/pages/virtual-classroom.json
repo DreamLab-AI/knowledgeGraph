@@ -3,19 +3,18 @@
   "title": "Virtual Classroom",
   "slug": "virtual-classroom",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-classroom",
+  "classIri": "urn:ngm:class:virtual-classroom",
   "domain": "spatial-computing",
   "definition": "An online learning environment that replicates a traditional classroom's interactive experience without physical boundaries, leveraging education technology to connect students and instructors through real-time engagement, collaboration tools, and shared learning materials.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-environment",
+      "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

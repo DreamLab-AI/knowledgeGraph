@@ -212,130 +212,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cultural-heritage-xr-experience",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+  "@type": "Class",
   "label": "Cultural Heritage XR Experience",
+  "definition": "An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cultural-metadata",
+        "label": "Cultural Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-exhibit",
+        "label": "Interactive Exhibit"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:ar-overlay",
+        "label": "AR Overlay"
+      },
+      {
+        "@id": "urn:ngm:class:educational-narrative",
+        "label": "Educational Narrative"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cultural-database",
+        "label": "Cultural Database"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime-environment",
+        "label": "XR Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cultural-education",
+        "label": "Cultural Education"
+      },
+      {
+        "@id": "urn:ngm:class:heritage-tourism",
+        "label": "Heritage Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:archaeological-site-reconstruction",
+        "label": "Archaeological Site Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-museum-tour",
+        "label": "Virtual Museum Tour"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation-system",
+        "label": "Cultural Heritage Preservation System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:83fef7f5400eafa6447c5738cc7e70f2b32dcedb742db08d0df4c6c13eaf192e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An immersive extended reality application designed to preserve, present, and educate users about cultural heritage through interactive 3D reconstructions, AR overlays, and virtual museum experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-preservation-system",
-      "vc:label": "Cultural Heritage Preservation System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cultural-metadata",
-      "vc:label": "Cultural Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-exhibit",
-      "vc:label": "Interactive Exhibit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-overlay",
-      "vc:label": "AR Overlay"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:educational-narrative",
-      "vc:label": "Educational Narrative"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cultural-database",
-      "vc:label": "Cultural Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio-system",
-      "vc:label": "Spatial Audio System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-runtime-environment",
-      "vc:label": "XR Runtime Environment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cultural-education",
-      "vc:label": "Cultural Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:heritage-tourism",
-      "vc:label": "Heritage Tourism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:archaeological-site-reconstruction",
-      "vc:label": "Archaeological Site Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-museum-tour",
-      "vc:label": "Virtual Museum Tour"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:heritage-documentation",
-      "vc:label": "Heritage Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:li-dar-scanning",
-      "vc:label": "LiDAR Scanning"
-    },
-    {
-      "@id": "urn:visionflow:linked:museum-api",
-      "vc:label": "Museum API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

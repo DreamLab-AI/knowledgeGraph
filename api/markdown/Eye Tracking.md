@@ -220,140 +220,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:eye-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:eye-tracking",
+  "@type": "Class",
   "label": "Eye Tracking",
+  "definition": "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrared-camera",
-      "vc:label": "Infrared Camera"
+      "@id": "urn:ngm:class:infrared-camera",
+      "label": "Infrared Camera"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c8156483e73a6211f097437ed0f386a178c35e6636897c9b87efe71e9392c875"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:calibration-system",
+        "label": "Calibration System"
+      },
+      {
+        "@id": "urn:ngm:class:hot-mirror",
+        "label": "Hot Mirror"
+      },
+      {
+        "@id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:pupil-detection-algorithm",
+        "label": "Pupil Detection Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-camera",
+        "label": "Infrared Camera"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-led-illuminator",
+        "label": "Infrared LED Illuminator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:high-speed-camera",
+        "label": "High-Speed Camera"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-data-bus",
+        "label": "Low-Latency Data Bus"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing-unit",
+        "label": "Real-Time Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-light-source",
+        "label": "Infrared Light Source"
+      },
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:attention-analytics",
+        "label": "Attention Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:eye-gesture-control",
+        "label": "Eye Gesture Control"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-based-interaction",
+        "label": "Gaze-Based Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:vergence-accommodation-matching",
+        "label": "Vergence-Accommodation Matching"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction-framework",
+        "label": "Human-Computer Interaction Framework"
+      },
+      {
+        "@id": "urn:ngm:class:perceptual-computing-system",
+        "label": "Perceptual Computing System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c8156483e73a6211f097437ed0f386a178c35e6636897c9b87efe71e9392c875@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:human-computer-interaction-framework",
-      "vc:label": "Human-Computer Interaction Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:perceptual-computing-system",
-      "vc:label": "Perceptual Computing System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:calibration-system",
-      "vc:label": "Calibration System"
-    },
-    {
-      "@id": "urn:visionflow:linked:hot-mirror",
-      "vc:label": "Hot Mirror"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-sensor",
-      "vc:label": "Image Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:pupil-detection-algorithm",
-      "vc:label": "Pupil Detection Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrared-camera",
-      "vc:label": "Infrared Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrared-led-illuminator",
-      "vc:label": "Infrared LED Illuminator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:high-speed-camera",
-      "vc:label": "High-Speed Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-data-bus",
-      "vc:label": "Low-Latency Data Bus"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-processing-unit",
-      "vc:label": "Real-Time Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrared-light-source",
-      "vc:label": "Infrared Light Source"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optical-calibration-target",
-      "vc:label": "Optical Calibration Target"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:attention-analytics",
-      "vc:label": "Attention Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-gesture-control",
-      "vc:label": "Eye Gesture Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:foveated-rendering",
-      "vc:label": "Foveated Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaze-based-interaction",
-      "vc:label": "Gaze-Based Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:vergence-accommodation-matching",
-      "vc:label": "Vergence-Accommodation Matching"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing-unit",
-      "vc:label": "Graphics Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-mounted-display",
-      "vc:label": "Head-Mounted Display"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-headset",
-      "vc:label": "XR Headset"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

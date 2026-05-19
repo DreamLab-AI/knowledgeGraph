@@ -492,416 +492,335 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-in-games",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-in-games",
+  "@type": "Class",
   "label": "AI in Games",
+  "definition": "AI in Games is the interdisciplinary research and engineering field encompassing the design, implementation, and study of computational systems that perceive, decide, learn, and generate within interactive entertainment software, spanning classical symbolic techniques (finite-state machines FSM d...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:entertainment-technology",
-      "vc:label": "Entertainment Technology"
+      "@id": "urn:ngm:class:entertainment-technology",
+      "label": "Entertainment Technology"
     },
     {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-computing",
-      "vc:label": "Interactive Computing"
+      "@id": "urn:ngm:class:game-development",
+      "label": "Game Development"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6b5f28ee5917f5bda9922cb45ebf56636257fd879388fa39ba2237311367b453"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:game-playing-agents",
+        "label": "Game-Playing Agents"
+      },
+      {
+        "@id": "urn:ngm:class:goap",
+        "label": "GOAP"
+      },
+      {
+        "@id": "urn:ngm:class:htn-planning",
+        "label": "HTN Planning"
+      },
+      {
+        "@id": "urn:ngm:class:influence-map",
+        "label": "Influence Map"
+      },
+      {
+        "@id": "urn:ngm:class:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:npc-dialogue-system",
+        "label": "NPC Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-authoring-pipeline",
+        "label": "Content Authoring Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:game-state-representation",
+        "label": "Game State Representation"
+      },
+      {
+        "@id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-constraints",
+        "label": "Real-Time Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-tutoring",
+        "label": "Adaptive Tutoring"
+      },
+      {
+        "@id": "urn:ngm:class:automated-playtesting",
+        "label": "Automated Playtesting"
+      },
+      {
+        "@id": "urn:ngm:class:believable-npc-behaviour",
+        "label": "Believable NPC Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-difficulty-adjustment",
+        "label": "Dynamic Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-narrative",
+        "label": "Dynamic Narrative"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-game-experience",
+        "label": "Personalised Game Experience"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-replayability",
+        "label": "Procedural Replayability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:a-search",
+        "label": "A* Search"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-zero",
+        "label": "AlphaZero"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:dreamer-v3",
+        "label": "DreamerV3"
+      },
+      {
+        "@id": "urn:ngm:class:impala",
+        "label": "IMPALA"
+      },
+      {
+        "@id": "urn:ngm:class:mu-zero",
+        "label": "MuZero"
+      },
+      {
+        "@id": "urn:ngm:class:perlin-noise",
+        "label": "Perlin Noise"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimization",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:recast-navmesh",
+        "label": "Recast Navmesh"
+      },
+      {
+        "@id": "urn:ngm:class:simplex-noise",
+        "label": "Simplex Noise"
+      },
+      {
+        "@id": "urn:ngm:class:utility-ai",
+        "label": "Utility AI"
+      },
+      {
+        "@id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "@id": "urn:ngm:class:wave-function-collapse",
+        "label": "Wave Function Collapse"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:domain-randomization",
+        "label": "Domain Randomization"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:partially-observable-mdp",
+        "label": "Partially Observable MDP"
+      },
+      {
+        "@id": "urn:ngm:class:reward-shaping",
+        "label": "Reward Shaping"
+      },
+      {
+        "@id": "urn:ngm:class:self-play",
+        "label": "Self-Play"
+      },
+      {
+        "@id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:esports",
+        "label": "Esports"
+      },
+      {
+        "@id": "urn:ngm:class:game-analytics",
+        "label": "Game Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:game-user-research",
+        "label": "Game User Research"
+      },
+      {
+        "@id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:speedrunning",
+        "label": "Speedrunning"
+      },
+      {
+        "@id": "urn:ngm:class:twitch-plays",
+        "label": "Twitch Plays"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bevy",
+        "label": "Bevy"
+      },
+      {
+        "@id": "urn:ngm:class:convai",
+        "label": "Convai"
+      },
+      {
+        "@id": "urn:ngm:class:cry-engine",
+        "label": "CryEngine"
+      },
+      {
+        "@id": "urn:ngm:class:game-maker",
+        "label": "GameMaker"
+      },
+      {
+        "@id": "urn:ngm:class:godot",
+        "label": "Godot"
+      },
+      {
+        "@id": "urn:ngm:class:inworld-ai",
+        "label": "Inworld AI"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-ace",
+        "label": "NVIDIA ACE"
+      },
+      {
+        "@id": "urn:ngm:class:roblox",
+        "label": "Roblox"
+      },
+      {
+        "@id": "urn:ngm:class:unity-ml-agents",
+        "label": "Unity ML-Agents"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aaai-aiide",
+        "label": "AAAI AIIDE"
+      },
+      {
+        "@id": "urn:ngm:class:fdg-conference",
+        "label": "FDG Conference"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-conference-on-games",
+        "label": "IEEE Conference on Games"
+      },
+      {
+        "@id": "urn:ngm:class:igda-ai-special-interest-group",
+        "label": "IGDA AI Special Interest Group"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-gl-tf",
+        "label": "Khronos glTF"
+      },
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6b5f28ee5917f5bda9922cb45ebf56636257fd879388fa39ba2237311367b453@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI in Games is the interdisciplinary research and engineering field encompassing the design, implementation, and study of computational systems that perceive, decide, learn, and generate within interactive entertainment software, spanning classical symbolic techniques (finite-state machines FSM driving Pac-Man ghost personalities 1980 through Halo Combat Evolved 2001 squad behaviour, hierarchical behaviour trees popularised by Halo 2 Bungie 2004 and now standard across Unreal Engine 5/Unity NavMesh/CryEngine/Godot 4 with 50,000+ shipped titles, Goal-Oriented Action Planning GOAP introduced by Jeff Orkin for F.E.A.R. Monolith 2005 enabling emergent squad tactics via STRIPS-style backward chaining over action preconditions/effects, Hierarchical Task Network HTN planning shipped in Killzone 2 Guerrilla 2009 and Transformers 3 High Moon decomposing high-level intents into primitive task sequences, pathfinding via A* Hart-Nilsson-Raphael 1968 over navigation meshes Recast/Detour Mikko Mononen open-source library 2009 used by Unreal/Unity/CryEngine/id Tech/Cyberpunk 2077 CD Projekt, influence maps Dave Mark IGDA tactical analysis colouring spatial threat/opportunity fields, Monte Carlo T",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:animation-controller",
-      "vc:label": "Animation Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:behaviour-trees",
-      "vc:label": "Behaviour Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:finite-state-machine",
-      "vc:label": "Finite State Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-playing-agents",
-      "vc:label": "Game-Playing Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:goap",
-      "vc:label": "GOAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:htn-planning",
-      "vc:label": "HTN Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:influence-map",
-      "vc:label": "Influence Map"
-    },
-    {
-      "@id": "urn:visionflow:linked:navigation-mesh",
-      "vc:label": "Navigation Mesh"
-    },
-    {
-      "@id": "urn:visionflow:linked:npc-dialogue-system",
-      "vc:label": "NPC Dialogue System"
-    },
-    {
-      "@id": "urn:visionflow:linked:pathfinding",
-      "vc:label": "Pathfinding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monte-carlo-tree-search",
-      "vc:label": "Monte Carlo Tree Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-content-generation",
-      "vc:label": "Procedural Content Generation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-authoring-pipeline",
-      "vc:label": "Content Authoring Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-state-representation",
-      "vc:label": "Game State Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:player-modelling",
-      "vc:label": "Player Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-constraints",
-      "vc:label": "Real-Time Constraints"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-reasoning",
-      "vc:label": "Spatial Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-tutoring",
-      "vc:label": "Adaptive Tutoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-playtesting",
-      "vc:label": "Automated Playtesting"
-    },
-    {
-      "@id": "urn:visionflow:linked:believable-npc-behaviour",
-      "vc:label": "Believable NPC Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-difficulty-adjustment",
-      "vc:label": "Dynamic Difficulty Adjustment"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-narrative",
-      "vc:label": "Dynamic Narrative"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergent-gameplay",
-      "vc:label": "Emergent Gameplay"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalised-game-experience",
-      "vc:label": "Personalised Game Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:procedural-replayability",
-      "vc:label": "Procedural Replayability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:a-search",
-      "vc:label": "A* Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-zero",
-      "vc:label": "AlphaZero"
-    },
-    {
-      "@id": "urn:visionflow:linked:behaviour-tree",
-      "vc:label": "Behaviour Tree"
-    },
-    {
-      "@id": "urn:visionflow:linked:dreamer-v3",
-      "vc:label": "DreamerV3"
-    },
-    {
-      "@id": "urn:visionflow:linked:impala",
-      "vc:label": "IMPALA"
-    },
-    {
-      "@id": "urn:visionflow:linked:mu-zero",
-      "vc:label": "MuZero"
-    },
-    {
-      "@id": "urn:visionflow:linked:perlin-noise",
-      "vc:label": "Perlin Noise"
-    },
-    {
-      "@id": "urn:visionflow:linked:proximal-policy-optimization",
-      "vc:label": "Proximal Policy Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:recast-navmesh",
-      "vc:label": "Recast Navmesh"
-    },
-    {
-      "@id": "urn:visionflow:linked:simplex-noise",
-      "vc:label": "Simplex Noise"
-    },
-    {
-      "@id": "urn:visionflow:linked:utility-ai",
-      "vc:label": "Utility AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:voronoi-diagram",
-      "vc:label": "Voronoi Diagram"
-    },
-    {
-      "@id": "urn:visionflow:linked:wave-function-collapse",
-      "vc:label": "Wave Function Collapse"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:planning-algorithms",
-      "vc:label": "Planning Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-reasoning",
-      "vc:label": "Probabilistic Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:search-algorithms",
-      "vc:label": "Search Algorithms"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bevy",
-      "vc:label": "Bevy"
-    },
-    {
-      "@id": "urn:visionflow:linked:convai",
-      "vc:label": "Convai"
-    },
-    {
-      "@id": "urn:visionflow:linked:cry-engine",
-      "vc:label": "CryEngine"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-maker",
-      "vc:label": "GameMaker"
-    },
-    {
-      "@id": "urn:visionflow:linked:godot",
-      "vc:label": "Godot"
-    },
-    {
-      "@id": "urn:visionflow:linked:inworld-ai",
-      "vc:label": "Inworld AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-ace",
-      "vc:label": "NVIDIA ACE"
-    },
-    {
-      "@id": "urn:visionflow:linked:roblox",
-      "vc:label": "Roblox"
-    },
-    {
-      "@id": "urn:visionflow:linked:unity-ml-agents",
-      "vc:label": "Unity ML-Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unreal-engine",
-      "vc:label": "Unreal Engine"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:domain-randomization",
-      "vc:label": "Domain Randomization"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-decision-process",
-      "vc:label": "Markov Decision Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:partially-observable-mdp",
-      "vc:label": "Partially Observable MDP"
-    },
-    {
-      "@id": "urn:visionflow:linked:reward-shaping",
-      "vc:label": "Reward Shaping"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-play",
-      "vc:label": "Self-Play"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:curriculum-learning",
-      "vc:label": "Curriculum Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:classical-ai-without-learning",
-      "vc:label": "Classical AI without Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:hand-authored-dialogue",
-      "vc:label": "Hand-Authored Dialogue"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-expert-systems",
-      "vc:label": "Rule-Based Expert Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:scripted-npcs",
-      "vc:label": "Scripted NPCs"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-quest-trees",
-      "vc:label": "Static Quest Trees"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:computational-creativity",
-      "vc:label": "Computational Creativity"
-    },
-    {
-      "@id": "urn:visionflow:linked:esports",
-      "vc:label": "Esports"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-analytics",
-      "vc:label": "Game Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-user-research",
-      "vc:label": "Game User Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:player-modelling",
-      "vc:label": "Player Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:speedrunning",
-      "vc:label": "Speedrunning"
-    },
-    {
-      "@id": "urn:visionflow:linked:twitch-plays",
-      "vc:label": "Twitch Plays"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:aaai-aiide",
-      "vc:label": "AAAI AIIDE"
-    },
-    {
-      "@id": "urn:visionflow:linked:fdg-conference",
-      "vc:label": "FDG Conference"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-conference-on-games",
-      "vc:label": "IEEE Conference on Games"
-    },
-    {
-      "@id": "urn:visionflow:linked:igda-ai-special-interest-group",
-      "vc:label": "IGDA AI Special Interest Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-gl-tf",
-      "vc:label": "Khronos glTF"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-usd",
-      "vc:label": "OpenUSD"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

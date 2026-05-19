@@ -140,74 +140,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
+  "@type": "Class",
   "label": "ETSI Domain AI + Data Mgmt",
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-      "vc:label": "ETSI Domain AI"
+      "@id": "urn:ngm:class:etsi-domain-ai",
+      "label": "ETSI Domain AI"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:235ff84fb1cdf9469f9fcf06ebd45bc22bfe2f7ce9ff50be02cfba8581be4049"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:intelligent-analytics-categorization",
+        "label": "Intelligent Analytics Categorization"
+      },
+      {
+        "@id": "urn:ngm:class:ml-pipeline-classification",
+        "label": "ML Pipeline Classification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:235ff84fb1cdf9469f9fcf06ebd45bc22bfe2f7ce9ff50be02cfba8581be4049@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:intelligent-analytics-categorization",
-      "vc:label": "Intelligent Analytics Categorization"
-    },
-    {
-      "@id": "urn:visionflow:linked:ml-pipeline-classification",
-      "vc:label": "ML Pipeline Classification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-      "vc:label": "ETSI Domain AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

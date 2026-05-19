@@ -552,348 +552,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-companions",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-companions",
+  "@type": "Class",
   "label": "AI companions",
+  "definition": "AI companions are a class of consumer-facing conversational artificial intelligence systems explicitly designed and marketed to form ongoing affective, social, and parasocial relationships with individual human users—distinct from task-oriented assistants (Siri, Alexa, Google Assistant) that opti...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:affective-computing-system",
-      "vc:label": "Affective Computing System"
+      "@id": "urn:ngm:class:affective-computing-system",
+      "label": "Affective Computing System"
     },
     {
-      "@id": "urn:visionflow:linked:consumer-ai-product",
-      "vc:label": "Consumer AI Product"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model-application",
-      "vc:label": "Large Language Model Application"
+      "@id": "urn:ngm:class:consumer-ai-product",
+      "label": "Consumer AI Product"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1c34f1533cb1544bfc74d2ce0b63ed3ce32d94e883be5e98daf8cb77cb330e69"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:affective-tone-module",
+        "label": "Affective Tone Module"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-renderer",
+        "label": "Avatar Renderer"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation-pipeline",
+        "label": "Content Moderation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-memory-store",
+        "label": "Long-Term Memory Store"
+      },
+      {
+        "@id": "urn:ngm:class:persona-system",
+        "label": "Persona System"
+      },
+      {
+        "@id": "urn:ngm:class:safety-filter",
+        "label": "Safety Filter"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-paywall",
+        "label": "Subscription Paywall"
+      },
+      {
+        "@id": "urn:ngm:class:voice-synthesis-module",
+        "label": "Voice Synthesis Module"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-inference-capacity",
+        "label": "GPU Inference Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creative-collaboration",
+        "label": "Creative Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:elder-companionship",
+        "label": "Elder Companionship"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-support",
+        "label": "Emotional Support"
+      },
+      {
+        "@id": "urn:ngm:class:language-practice",
+        "label": "Language Practice"
+      },
+      {
+        "@id": "urn:ngm:class:loneliness-mitigation",
+        "label": "Loneliness Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:parasocial-bonding",
+        "label": "Parasocial Bonding"
+      },
+      {
+        "@id": "urn:ngm:class:relationship-simulation",
+        "label": "Relationship Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:role-play",
+        "label": "Role-Play"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:age-gating",
+        "label": "Age Gating"
+      },
+      {
+        "@id": "urn:ngm:class:engagement-optimisation",
+        "label": "Engagement Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:memory-retrieval",
+        "label": "Memory Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:persona-conditioning",
+        "label": "Persona Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-tracking",
+        "label": "Sentiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diffusion-image-generation",
+        "label": "Diffusion Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "@id": "urn:ngm:class:live2-d-animation",
+        "label": "Live2D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:safety-classifiers",
+        "label": "Safety Classifiers"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intimacy",
+        "label": "Artificial Intimacy"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-interaction",
+        "label": "Human-AI Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:loneliness-epidemic",
+        "label": "Loneliness Epidemic"
+      },
+      {
+        "@id": "urn:ngm:class:parasocial-interaction",
+        "label": "Parasocial Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bereavement-processing",
+        "label": "Bereavement Processing"
+      },
+      {
+        "@id": "urn:ngm:class:creative-writing",
+        "label": "Creative Writing"
+      },
+      {
+        "@id": "urn:ngm:class:dementia-engagement",
+        "label": "Dementia Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:fan-fiction",
+        "label": "Fan Fiction"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-self-help",
+        "label": "Mental Health Self-Help"
+      },
+      {
+        "@id": "urn:ngm:class:neurodivergent-communication",
+        "label": "Neurodivergent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:social-skills-training",
+        "label": "Social Skills Training"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:ftc-ai-enforcement",
+        "label": "FTC AI Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom-guidance",
+        "label": "Ofcom Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1c34f1533cb1544bfc74d2ce0b63ed3ce32d94e883be5e98daf8cb77cb330e69@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**AI companions** are a class of consumer-facing conversational artificial intelligence systems explicitly designed and marketed to form ongoing affective, social, and parasocial relationships with individual human users—distinct from task-oriented assistants (Siri, Alexa, Google Assistant) that optimise instrumental utility, distinct from general-purpose chatbots (ChatGPT, Claude, Gemini) that prioritise information retrieval and task completion, and distinct from clinical therapy bots (Woebot Health, Wysa) that deliver structured psychotherapeutic protocols under medical-device or wellness-tool framings, AI companions instead optimise for emotional engagement, persistent memory of personal disclosure, role-play depth, perceived warmth, and the user's subjective sense of being heard, known, and accompanied, typically combining a large language model backbone (often a fine-tuned variant of LLaMA, Mistral, GPT-class, or a proprietary model) with custom RLHF for affective tone, retrieval-augmented long-term memory tracking biographical facts and relationship history across thousands of turns, persona/character scaffolding (user-defined or platform-curated avatars with fixed names, ba",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:affective-tone-module",
-      "vc:label": "Affective Tone Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:avatar-renderer",
-      "vc:label": "Avatar Renderer"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-moderation-pipeline",
-      "vc:label": "Content Moderation Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-memory-store",
-      "vc:label": "Long-Term Memory Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:persona-system",
-      "vc:label": "Persona System"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-filter",
-      "vc:label": "Safety Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:subscription-paywall",
-      "vc:label": "Subscription Paywall"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-synthesis-module",
-      "vc:label": "Voice Synthesis Module"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-inference-capacity",
-      "vc:label": "GPU Inference Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-storage",
-      "vc:label": "Persistent Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-authentication",
-      "vc:label": "User Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creative-collaboration",
-      "vc:label": "Creative Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:elder-companionship",
-      "vc:label": "Elder Companionship"
-    },
-    {
-      "@id": "urn:visionflow:linked:emotional-support",
-      "vc:label": "Emotional Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-practice",
-      "vc:label": "Language Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:loneliness-mitigation",
-      "vc:label": "Loneliness Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:parasocial-bonding",
-      "vc:label": "Parasocial Bonding"
-    },
-    {
-      "@id": "urn:visionflow:linked:relationship-simulation",
-      "vc:label": "Relationship Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:role-play",
-      "vc:label": "Role-Play"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:age-gating",
-      "vc:label": "Age Gating"
-    },
-    {
-      "@id": "urn:visionflow:linked:engagement-optimisation",
-      "vc:label": "Engagement Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-retrieval",
-      "vc:label": "Memory Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:persona-conditioning",
-      "vc:label": "Persona Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:sentiment-tracking",
-      "vc:label": "Sentiment Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cloud-inference-infrastructure",
-      "vc:label": "Cloud Inference Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-app-distribution",
-      "vc:label": "Mobile App Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-processing",
-      "vc:label": "Payment Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-and-safety-operations",
-      "vc:label": "Trust and Safety Operations"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bereavement-processing",
-      "vc:label": "Bereavement Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-writing",
-      "vc:label": "Creative Writing"
-    },
-    {
-      "@id": "urn:visionflow:linked:dementia-engagement",
-      "vc:label": "Dementia Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:fan-fiction",
-      "vc:label": "Fan Fiction"
-    },
-    {
-      "@id": "urn:visionflow:linked:mental-health-self-help",
-      "vc:label": "Mental Health Self-Help"
-    },
-    {
-      "@id": "urn:visionflow:linked:neurodivergent-communication",
-      "vc:label": "Neurodivergent Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-skills-training",
-      "vc:label": "Social Skills Training"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-image-generation",
-      "vc:label": "Diffusion Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedding-search",
-      "vc:label": "Embedding Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:live2-d-animation",
-      "vc:label": "Live2D Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-classifiers",
-      "vc:label": "Safety Classifiers"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-synthesis",
-      "vc:label": "Speech Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:direct-preference-optimisation",
-      "vc:label": "Direct Preference Optimisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ai-assistant",
-      "vc:label": "AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-service-bot",
-      "vc:label": "Customer Service Bot"
-    },
-    {
-      "@id": "urn:visionflow:linked:general-purpose-chatbot",
-      "vc:label": "General-Purpose Chatbot"
-    },
-    {
-      "@id": "urn:visionflow:linked:search-augmented-chatbot",
-      "vc:label": "Search-Augmented Chatbot"
-    },
-    {
-      "@id": "urn:visionflow:linked:therapy-chatbot",
-      "vc:label": "Therapy Chatbot"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-assistant",
-      "vc:label": "Voice Assistant"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing",
-      "vc:label": "Affective Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:artificial-intimacy",
-      "vc:label": "Artificial Intimacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-ai-interaction",
-      "vc:label": "Human-AI Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:loneliness-epidemic",
-      "vc:label": "Loneliness Epidemic"
-    },
-    {
-      "@id": "urn:visionflow:linked:parasocial-interaction",
-      "vc:label": "Parasocial Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa",
-      "vc:label": "C2PA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ftc-ai-enforcement",
-      "vc:label": "FTC AI Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom-guidance",
-      "vc:label": "Ofcom Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-online-safety-act",
-      "vc:label": "UK Online Safety Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing",
-      "vc:label": "Affective Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

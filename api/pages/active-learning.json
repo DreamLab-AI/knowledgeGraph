@@ -3,131 +3,131 @@
   "title": "Active Learning",
   "slug": "active-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:active-learning",
+  "classIri": "urn:ngm:class:active-learning",
   "domain": "artificial-intelligence",
-  "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident predictions, query-by-committee maximizing ensemble disagreement, expected model change targeting highest gradient impact, expected error reduction minimizing generalization loss, variance reduction lowering prediction uncertainty, density-weighted methods balancing informativeness with representativeness to avoid outliers) applied across learning scenarios (pool-based batch selection from large unlabeled repositories 10K-1M+ examples prevalent in computer vision/NLP, stream-based sequential binary accept/reject decisions for real-time applications, query synthesis generating artificial examples rarely used due to unnaturalness), achieving 50-99% labeling cost reduction by requiring 10-100\u00d7 less labeled data for equivalent performance compared to passive random sampling particularly critical in domains with expensive expert annotation (medical imaging radiologists $200-$500/hour annotating 10",
+  "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident pr...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-efficient-learning",
+      "id": "urn:ngm:class:data-efficient-learning",
       "label": "Data-Efficient Learning"
     },
     {
-      "id": "urn:visionflow:owl:class:interactive-learning",
+      "id": "urn:ngm:class:interactive-learning",
       "label": "Interactive Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "label": "Human-in-the-Loop Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.88,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acquisition-function",
+        "id": "urn:ngm:class:acquisition-function",
         "label": "Acquisition Function"
       },
       {
-        "id": "urn:visionflow:linked:diversity-measure",
+        "id": "urn:ngm:class:diversity-measure",
         "label": "Diversity Measure"
       },
       {
-        "id": "urn:visionflow:linked:label-budget",
+        "id": "urn:ngm:class:label-budget",
         "label": "Label Budget"
       },
       {
-        "id": "urn:visionflow:linked:query-strategy",
+        "id": "urn:ngm:class:query-strategy",
         "label": "Query Strategy"
       },
       {
-        "id": "urn:visionflow:linked:stopping-criterion",
+        "id": "urn:ngm:class:stopping-criterion",
         "label": "Stopping Criterion"
       },
       {
-        "id": "urn:visionflow:linked:unlabeled-data-pool",
+        "id": "urn:ngm:class:unlabeled-data-pool",
         "label": "Unlabeled Data Pool"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:base-learner",
+        "id": "urn:ngm:class:base-learner",
         "label": "Base Learner"
       },
       {
-        "id": "urn:visionflow:linked:evaluation-metric",
+        "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:visionflow:linked:human-oracle",
+        "id": "urn:ngm:class:human-oracle",
         "label": "Human Oracle"
       },
       {
-        "id": "urn:visionflow:linked:query-selection-algorithm",
+        "id": "urn:ngm:class:query-selection-algorithm",
         "label": "Query Selection Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:unlabeled-data",
+        "id": "urn:ngm:class:unlabeled-data",
         "label": "Unlabeled Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cost-effective-annotation",
+        "id": "urn:ngm:class:cost-effective-annotation",
         "label": "Cost-Effective Annotation"
       },
       {
-        "id": "urn:visionflow:linked:expert-knowledge-elicitation",
+        "id": "urn:ngm:class:expert-knowledge-elicitation",
         "label": "Expert Knowledge Elicitation"
       },
       {
-        "id": "urn:visionflow:linked:rapid-model-development",
+        "id": "urn:ngm:class:rapid-model-development",
         "label": "Rapid Model Development"
       },
       {
-        "id": "urn:visionflow:linked:sample-complexity-reduction",
+        "id": "urn:ngm:class:sample-complexity-reduction",
         "label": "Sample Complexity Reduction"
       },
       {
-        "id": "urn:visionflow:owl:class:data-efficient-learning",
+        "id": "urn:ngm:class:data-efficient-learning",
         "label": "Data-Efficient Learning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:density-weighted-methods",
+        "id": "urn:ngm:class:density-weighted-methods",
         "label": "Density-Weighted Methods"
       },
       {
-        "id": "urn:visionflow:linked:expected-error-reduction",
+        "id": "urn:ngm:class:expected-error-reduction",
         "label": "Expected Error Reduction"
       },
       {
-        "id": "urn:visionflow:linked:expected-model-change",
+        "id": "urn:ngm:class:expected-model-change",
         "label": "Expected Model Change"
       },
       {
-        "id": "urn:visionflow:linked:query-by-committee",
+        "id": "urn:ngm:class:query-by-committee",
         "label": "Query-by-Committee"
       },
       {
-        "id": "urn:visionflow:linked:uncertainty-sampling",
+        "id": "urn:ngm:class:uncertainty-sampling",
         "label": "Uncertainty Sampling"
       },
       {
-        "id": "urn:visionflow:linked:variance-reduction",
+        "id": "urn:ngm:class:variance-reduction",
         "label": "Variance Reduction"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

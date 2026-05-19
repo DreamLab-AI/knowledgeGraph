@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-venue",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-venue",
+  "@type": "Class",
   "label": "Metaverse Venue",
+  "definition": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-environment",
-      "vc:label": "Virtual Environment"
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c411e63e6a07316ab62d5e909bb56a30e850574003eb09981484096df22b90e5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:global-virtual-gatherings",
+        "label": "Global Virtual Gatherings"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c411e63e6a07316ab62d5e909bb56a30e850574003eb09981484096df22b90e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:global-virtual-gatherings",
-      "vc:label": "Global Virtual Gatherings"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

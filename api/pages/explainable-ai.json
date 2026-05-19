@@ -3,19 +3,18 @@
   "title": "Explainable AI",
   "slug": "explainable-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:explainable-ai",
+  "classIri": "urn:ngm:class:explainable-ai",
   "domain": "artificial-intelligence",
   "definition": "AI systems designed to provide clear, understandable explanations of their decision-making processes, enabling stakeholders to comprehend how and why specific outputs are generated.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

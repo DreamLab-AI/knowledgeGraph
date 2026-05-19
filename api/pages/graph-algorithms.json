@@ -3,19 +3,18 @@
   "title": "Graph Algorithms",
   "slug": "graph-algorithms",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:graph-algorithms",
+  "classIri": "urn:ngm:class:graph-algorithms",
   "domain": "artificial-intelligence",
-  "definition": "Graph Algorithms is a concept within the ai domain. Further enrichment pending.",
+  "definition": "Graph Algorithms is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

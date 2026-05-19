@@ -3,37 +3,41 @@
   "title": "Augmented Reality Collaboration",
   "slug": "augmented-reality-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:augmented-reality-collaboration",
+  "classIri": "urn:ngm:class:augmented-reality-collaboration",
   "domain": "distributed-collaboration",
-  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices.\"",
+  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:tele-002-telecollaboration",
+      "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:tele-150-webrtc",
+        "id": "urn:ngm:class:tele-150-webrtc",
         "label": "TELE-150-webrtc"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-design",
+        "id": "urn:ngm:class:collaborative-design",
         "label": "CollaborativeDesign"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

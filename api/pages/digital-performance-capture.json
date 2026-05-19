@@ -3,78 +3,87 @@
   "title": "Digital Performance Capture",
   "slug": "digital-performance-capture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-performance-capture",
+  "classIri": "urn:ngm:class:digital-performance-capture",
   "domain": "spatial-computing",
-  "definition": "Integrated capture of body, facial, and voice data for real-time animation of digital characters in virtual environments. bridges-to:: [[Computer Vision]]",
+  "definition": "Digital Performance Capture is a type of Creative Media Domain in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:creative-media-domain",
+      "id": "urn:ngm:class:creative-media-domain",
       "label": "Creative Media Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:facial-capture-system",
+        "id": "urn:ngm:class:facial-capture-system",
         "label": "Facial Capture System"
       },
       {
-        "id": "urn:visionflow:linked:motion-capture-system",
+        "id": "urn:ngm:class:motion-capture-system",
         "label": "Motion Capture System"
       },
       {
-        "id": "urn:visionflow:linked:real-time-solver",
+        "id": "urn:ngm:class:real-time-solver",
         "label": "Real-Time Solver"
       },
       {
-        "id": "urn:visionflow:linked:voice-recording-system",
+        "id": "urn:ngm:class:voice-recording-system",
         "label": "Voice Recording System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-recording-equipment",
+        "id": "urn:ngm:class:audio-recording-equipment",
         "label": "Audio Recording Equipment"
       },
       {
-        "id": "urn:visionflow:linked:optical-sensors",
+        "id": "urn:ngm:class:optical-sensors",
         "label": "Optical Sensors"
       },
       {
-        "id": "urn:visionflow:linked:synchronization-system",
+        "id": "urn:ngm:class:synchronization-system",
         "label": "Synchronization System"
       },
       {
-        "id": "urn:visionflow:owl:class:marker-based-tracking",
+        "id": "urn:ngm:class:marker-based-tracking",
         "label": "Marker-Based Tracking"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:live-performance",
+        "id": "urn:ngm:class:live-performance",
         "label": "Live Performance"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-actor-creation",
+        "id": "urn:ngm:class:digital-actor-creation",
         "label": "Digital Actor Creation"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-character-animation",
+        "id": "urn:ngm:class:real-time-character-animation",
         "label": "Real-Time Character Animation"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-production",
+        "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reality-capture-workflow",
+        "label": "Reality Capture Workflow"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

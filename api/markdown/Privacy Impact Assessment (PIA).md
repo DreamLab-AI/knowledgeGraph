@@ -204,128 +204,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-impact-assessment-pia",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-impact-assessment-pia",
+  "@type": "Class",
   "label": "Privacy Impact Assessment (PIA)",
+  "definition": "Systematic eprocess that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ical standards.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8b0632a9b65545bf090c40353cc4f287d6f808cab04f96fb550004b1c5b933ad"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-verification-system",
+        "label": "Compliance Verification System"
+      },
+      {
+        "@id": "urn:ngm:class:impact-analysis-framework",
+        "label": "Impact Analysis Framework"
+      },
+      {
+        "@id": "urn:ngm:class:mitigation-strategy-generator",
+        "label": "Mitigation Strategy Generator"
+      },
+      {
+        "@id": "urn:ngm:class:risk-identification-module",
+        "label": "Risk Identification Module"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-consultation-engine",
+        "label": "Stakeholder Consultation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-flow-mapping",
+        "label": "Data Flow Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-database",
+        "label": "Regulatory Compliance Database"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:user-trust",
+        "label": "User Trust"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-data-processing",
+        "label": "Transparent Data Processing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-protection-management-system",
+        "label": "Data Protection Management System"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-governance-framework",
+        "label": "Privacy Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b0632a9b65545bf090c40353cc4f287d6f808cab04f96fb550004b1c5b933ad@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic evaluation process that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ethical standards.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:data-protection-management-system",
-      "vc:label": "Data Protection Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-governance-framework",
-      "vc:label": "Privacy Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-verification-system",
-      "vc:label": "Compliance Verification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-analysis-framework",
-      "vc:label": "Impact Analysis Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:mitigation-strategy-generator",
-      "vc:label": "Mitigation Strategy Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-identification-module",
-      "vc:label": "Risk Identification Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-consultation-engine",
-      "vc:label": "Stakeholder Consultation Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-flow-mapping",
-      "vc:label": "Data Flow Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-requirements",
-      "vc:label": "Privacy Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-compliance-database",
-      "vc:label": "Regulatory Compliance Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-assessment-methodology",
-      "vc:label": "Risk Assessment Methodology"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-trust",
-      "vc:label": "User Trust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-by-design",
-      "vc:label": "Privacy By Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-mitigation",
-      "vc:label": "Risk Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparent-data-processing",
-      "vc:label": "Transparent Data Processing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:organizational-privacy-policy",
-      "vc:label": "Organizational Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-data-inventory",
-      "vc:label": "Personal Data Inventory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

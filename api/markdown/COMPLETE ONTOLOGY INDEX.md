@@ -160,48 +160,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:complete-ontology-index",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:complete-ontology-index",
+  "@type": "Class",
   "label": "COMPLETE ONTOLOGY INDEX",
+  "definition": "A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-ontology",
-      "vc:label": "Metaverse Ontology"
+      "@id": "urn:ngm:class:metaverse-ontology",
+      "label": "Metaverse Ontology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:28c729f4dfe35badc87d9e73376ba77bbe08836d3fc95a68ff4f5e1b331191ee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

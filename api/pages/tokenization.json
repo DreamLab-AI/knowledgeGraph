@@ -3,78 +3,91 @@
   "title": "Tokenization",
   "slug": "tokenization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tokenization",
+  "classIri": "urn:ngm:class:tokenization",
   "domain": "artificial-intelligence",
   "definition": "Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-metadata",
+        "id": "urn:ngm:class:asset-metadata",
         "label": "Asset Metadata"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-transaction",
+        "id": "urn:ngm:class:blockchain-transaction",
         "label": "Blockchain Transaction"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:token-standard-protocol",
+        "id": "urn:ngm:class:token-standard-protocol",
         "label": "Token Standard Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fractional-ownership",
+        "id": "urn:ngm:class:fractional-ownership",
         "label": "Fractional Ownership"
       },
       {
-        "id": "urn:visionflow:linked:ownership-transfer",
+        "id": "urn:ngm:class:ownership-transfer",
         "label": "Ownership Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-trading",
+        "id": "urn:ngm:class:asset-trading",
         "label": "Asset Trading"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-minting",
+        "id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-economy",
+        "label": "Blockchain Economy"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

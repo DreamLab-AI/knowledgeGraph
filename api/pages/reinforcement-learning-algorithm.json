@@ -3,19 +3,13 @@
   "title": "Reinforcement Learning Algorithm",
   "slug": "reinforcement-learning-algorithm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reinforcement-learning-algorithm",
+  "classIri": "urn:ngm:class:reinforcement-learning-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals. Core algorithms include value-based methods (Q-learning, DQN), policy gradient methods (REINFORCE, PPO, TRPO), actor-critic approaches (A3C, SAC), and model-based RL. Advanced techniques incorporate deep neural networks for function approximation, experience replay, target networks, and exploration strategies. Applications span robotics, game playing, autonomous systems, resource management, and personalized recommendations.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

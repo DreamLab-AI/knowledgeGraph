@@ -488,448 +488,343 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:green-blockchain-initiatives",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:green-blockchain-initiatives",
+  "@type": "Class",
   "label": "Green Blockchain Initiatives",
+  "definition": "Green Blockchain Initiatives encompass the coordinated technological, economic, and governance efforts aimed at eliminating or materially reducing the environmental footprint of distributed ledger systems, spanning four principal intervention vectors: (1) consensus mechanism replacement — transit...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:esg",
-      "vc:label": "ESG"
+      "@id": "urn:ngm:class:esg",
+      "label": "ESG"
     },
     {
-      "@id": "urn:visionflow:linked:sustainable-finance",
-      "vc:label": "Sustainable Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-technology",
-      "vc:label": "Environmental Technology"
+      "@id": "urn:ngm:class:sustainable-finance",
+      "label": "Sustainable Finance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1cc7e94b92b26143daf8ae3ecc2252be6082a8fbfec5e43a2f8ad406097274d7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset-programme",
+        "label": "Carbon Offset Programme"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-token-standard",
+        "label": "Carbon Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:energy-attribute-certificates",
+        "label": "Energy Attribute Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:green-mining-pool",
+        "label": "Green Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-mrv",
+        "label": "On-Chain MRV"
+      },
+      {
+        "@id": "urn:ngm:class:re-fi-protocol",
+        "label": "ReFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:regenerative-finance",
+        "label": "Regenerative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-mining",
+        "label": "Renewable Energy Mining"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:carbon-accounting-standards",
+        "label": "Carbon Accounting Standards"
+      },
+      {
+        "@id": "urn:ngm:class:energy-monitoring-infrastructure",
+        "label": "Energy Monitoring Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:independent-verification",
+        "label": "Independent Verification"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-mrv",
+        "label": "On-Chain MRV"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-supply",
+        "label": "Renewable Energy Supply"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:biodiversity-credit-markets",
+        "label": "Biodiversity Credit Markets"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance-innovation",
+        "label": "Climate Finance Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:esg-compliant-de-fi",
+        "label": "ESG-Compliant DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:green-bond-tokenisation",
+        "label": "Green Bond Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-digital-assets",
+        "label": "Net-Zero Digital Assets"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-carbon-markets",
+        "label": "Tokenised Carbon Markets"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:base-carbon-tonne-standard",
+        "label": "Base Carbon Tonne Standard"
+      },
+      {
+        "@id": "urn:ngm:class:core-carbon-principles",
+        "label": "Core Carbon Principles"
+      },
+      {
+        "@id": "urn:ngm:class:energy-attribute-certificates",
+        "label": "Energy Attribute Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard-digital-assets",
+        "label": "Gold Standard Digital Assets"
+      },
+      {
+        "@id": "urn:ngm:class:icvcm-framework",
+        "label": "ICVCM Framework"
+      },
+      {
+        "@id": "urn:ngm:class:verra-vcs-methodology",
+        "label": "Verra VCS Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chainlink-oracles",
+        "label": "Chainlink Oracles"
+      },
+      {
+        "@id": "urn:ngm:class:d-climate-network",
+        "label": "dClimate Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:multi-sig-wallets",
+        "label": "Multi-Sig Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorand",
+        "label": "Algorand"
+      },
+      {
+        "@id": "urn:ngm:class:celo",
+        "label": "Celo"
+      },
+      {
+        "@id": "urn:ngm:class:clean-spark",
+        "label": "CleanSpark"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:iris-energy",
+        "label": "Iris Energy"
+      },
+      {
+        "@id": "urn:ngm:class:klima-dao",
+        "label": "KlimaDAO"
+      },
+      {
+        "@id": "urn:ngm:class:regen-network",
+        "label": "Regen Network"
+      },
+      {
+        "@id": "urn:ngm:class:toucan-protocol",
+        "label": "Toucan Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:kunming-montreal-gbf",
+        "label": "Kunming-Montreal GBF"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:regenerative-finance",
+        "label": "Regenerative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:sfdr-disclosure",
+        "label": "SFDR Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd-reporting",
+        "label": "TCFD Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:tnfd",
+        "label": "TNFD"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ccri-methodology",
+        "label": "CCRI Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard-foundation",
+        "label": "Gold Standard Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca",
+        "label": "MiCA"
+      },
+      {
+        "@id": "urn:ngm:class:sfdr",
+        "label": "SFDR"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "@id": "urn:ngm:class:verra-vcs-standard",
+        "label": "Verra VCS Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1cc7e94b92b26143daf8ae3ecc2252be6082a8fbfec5e43a2f8ad406097274d7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Green Blockchain Initiatives** encompass the coordinated technological, economic, and governance efforts aimed at eliminating or materially reducing the environmental footprint of distributed ledger systems, spanning four principal intervention vectors: (1) consensus mechanism replacement — transitioning from energy-intensive [[Proof of Work]] to [[Proof of Stake]] and delegated variants reducing per-transaction electricity consumption by 99.0-99.95%, exemplified by Ethereum's September 2022 Merge cutting annualised electricity draw from approximately 78 TWh to under 0.01 TWh whilst preserving settlement finality; (2) renewable energy sourcing and certification — directing mining and validation workloads toward stranded hydroelectric, curtailed wind, and geothermal resources through PPAs, RECs, EACs, and direct co-location with generation facilities, documented by CCRI sector reports 2024-2026 and Galaxy Digital's 2024 Bitcoin Mining Electricity Report estimating 52-58% renewable/low-carbon energy share across the Bitcoin network as of Q4 2024; (3) tokenised environmental markets — creating blockchain-native representations of carbon credits, biodiversity credits, and renewable e",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-offset-programme",
-      "vc:label": "Carbon Offset Programme"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-token-standard",
-      "vc:label": "Carbon Token Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-attribute-certificates",
-      "vc:label": "Energy Attribute Certificates"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-mining-pool",
-      "vc:label": "Green Mining Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-mrv",
-      "vc:label": "On-Chain MRV"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-fi-protocol",
-      "vc:label": "ReFi Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:regenerative-finance",
-      "vc:label": "Regenerative Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy-mining",
-      "vc:label": "Renewable Energy Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:carbon-accounting-standards",
-      "vc:label": "Carbon Accounting Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-monitoring-infrastructure",
-      "vc:label": "Energy Monitoring Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-verification",
-      "vc:label": "Independent Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-mrv",
-      "vc:label": "On-Chain MRV"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-network",
-      "vc:label": "Oracle Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy-supply",
-      "vc:label": "Renewable Energy Supply"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:biodiversity-credit-markets",
-      "vc:label": "Biodiversity Credit Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-finance-innovation",
-      "vc:label": "Climate Finance Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-compliant-de-fi",
-      "vc:label": "ESG-Compliant DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-bond-tokenisation",
-      "vc:label": "Green Bond Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-digital-assets",
-      "vc:label": "Net-Zero Digital Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-carbon-markets",
-      "vc:label": "Tokenised Carbon Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-carbon-market",
-      "vc:label": "Voluntary Carbon Market"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:base-carbon-tonne-standard",
-      "vc:label": "Base Carbon Tonne Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:core-carbon-principles",
-      "vc:label": "Core Carbon Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-attribute-certificates",
-      "vc:label": "Energy Attribute Certificates"
-    },
-    {
-      "@id": "urn:visionflow:linked:gold-standard-digital-assets",
-      "vc:label": "Gold Standard Digital Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:icvcm-framework",
-      "vc:label": "ICVCM Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:verra-vcs-methodology",
-      "vc:label": "Verra VCS Methodology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delegated-proof-of-stake",
-      "vc:label": "Delegated Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-governance",
-      "vc:label": "Decentralised Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-reporting-standards",
-      "vc:label": "ESG Reporting Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy",
-      "vc:label": "Renewable Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-imagery",
-      "vc:label": "Satellite Imagery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:kunming-montreal-gbf",
-      "vc:label": "Kunming-Montreal GBF"
-    },
-    {
-      "@id": "urn:visionflow:linked:paris-agreement",
-      "vc:label": "Paris Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:regenerative-finance",
-      "vc:label": "Regenerative Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sfdr-disclosure",
-      "vc:label": "SFDR Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-development-goals",
-      "vc:label": "Sustainable Development Goals"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcfd-reporting",
-      "vc:label": "TCFD Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:tnfd",
-      "vc:label": "TNFD"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-carbon-market",
-      "vc:label": "Voluntary Carbon Market"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:chainlink-oracles",
-      "vc:label": "Chainlink Oracles"
-    },
-    {
-      "@id": "urn:visionflow:linked:d-climate-network",
-      "vc:label": "dClimate Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "vc:label": "Decentralised Autonomous Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-scaling",
-      "vc:label": "Layer 2 Scaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-sig-wallets",
-      "vc:label": "Multi-Sig Wallets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:energy-intensive-consensus",
-      "vc:label": "Energy-Intensive Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:legacy-credit-markets",
-      "vc:label": "Legacy Credit Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:otc-carbon-trading",
-      "vc:label": "OTC Carbon Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-carbon-registry",
-      "vc:label": "Traditional Carbon Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-mining",
-      "vc:label": "Bitcoin Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:algorand",
-      "vc:label": "Algorand"
-    },
-    {
-      "@id": "urn:visionflow:linked:celo",
-      "vc:label": "Celo"
-    },
-    {
-      "@id": "urn:visionflow:linked:clean-spark",
-      "vc:label": "CleanSpark"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:iris-energy",
-      "vc:label": "Iris Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:klima-dao",
-      "vc:label": "KlimaDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:regen-network",
-      "vc:label": "Regen Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:toucan-protocol",
-      "vc:label": "Toucan Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-environmental-issues",
-      "vc:label": "Bitcoin Environmental Issues"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solana",
-      "vc:label": "Solana"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ccri-methodology",
-      "vc:label": "CCRI Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-climate-accord",
-      "vc:label": "Crypto Climate Accord"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol",
-      "vc:label": "GHG Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:gold-standard-foundation",
-      "vc:label": "Gold Standard Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:icvcm-core-carbon-principles",
-      "vc:label": "ICVCM Core Carbon Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14064",
-      "vc:label": "ISO 14064"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca",
-      "vc:label": "MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:sfdr",
-      "vc:label": "SFDR"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcfd",
-      "vc:label": "TCFD"
-    },
-    {
-      "@id": "urn:visionflow:linked:verra-vcs-standard",
-      "vc:label": "Verra VCS Standard"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg",
-      "vc:label": "ESG"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy",
-      "vc:label": "Renewable Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-carbon-market",
-      "vc:label": "Voluntary Carbon Market"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

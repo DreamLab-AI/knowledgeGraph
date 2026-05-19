@@ -3,27 +3,31 @@
   "title": "Protocol Buffer",
   "slug": "protocol-buffer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:protocol-buffer",
+  "classIri": "urn:ngm:class:protocol-buffer",
   "domain": "infrastructure",
   "definition": "Protocol Buffer is a technology infrastructure concept and a type of Data Format.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:data-format",
-      "label": "Data Format"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

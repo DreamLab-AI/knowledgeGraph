@@ -144,56 +144,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-processing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-processing",
+  "@type": "Class",
   "label": "Real-time Processing",
+  "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
+      "@id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5aa46440031c85c27ad0d52f31cd478533c4db9f7852ab5be73428766afe2cf2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5aa46440031c85c27ad0d52f31cd478533c4db9f7852ab5be73428766afe2cf2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output. Systems respond to events within strict time constraints (typically milliseconds to seconds), enabling immediate decision-making through continuous stream-oriented processing rather than batch operations.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

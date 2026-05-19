@@ -3,155 +3,271 @@
   "title": "Scene Capture and Reconstruction",
   "slug": "scene-capture-and-reconstruction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:scene-capture-and-reconstruction",
+  "classIri": "urn:ngm:class:scene-capture-and-reconstruction",
   "domain": "artificial-intelligence",
-  "definition": "Scene Capture and Reconstruction is a fundamental computer-vision and spatial-computing discipline concerned with recovering complete geometric, radiometric, and semantic representations of physical environments from sensor observations \u2014 primarily calibrated multi-view photographs, RGB-D frames, LiDAR point clouds, or combinations thereof \u2014 spanning a spectrum of algorithmic families: classical photogrammetric Structure-from-Motion (SfM) pipelines (COLMAP Sch\u00f6nberger & Frahm 2016 applying exhaustive SIFT feature matching, incremental bundle adjustment, and dense Multi-View Stereo to produce textured mesh models deployed at survey, archaeological, and forensic scale); commercial photogrammetry platforms (RealityCapture \u2014 acquired by Epic Games in 2023 \u2014 achieving photorealistic mesh-and-texture output from thousands of images in under an hour on consumer GPU hardware with LiDAR fusion capability; Agisoft Metashape used across 15,000+ surveying, cultural-heritage, and AEC installations globally; Polycam iPhone/iPad LiDAR app with 5M+ downloads offering one-tap NeRF and Gaussian Splat export; Luma AI Genie offering browser-based NeRF capture and the world's first commercially availab",
+  "definition": "Scene Capture and Reconstruction is a fundamental computer-vision and spatial-computing discipline concerned with recovering complete geometric, radiometric, and semantic representations of physical environments from sensor observations \u2014 primarily calibrated multi-view photographs, RGB-D frames,...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "computer-vision"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:differentiable-renderer",
+        "id": "urn:ngm:class:differentiable-renderer",
         "label": "Differentiable Renderer"
       },
       {
-        "id": "urn:visionflow:linked:mesh-extraction",
+        "id": "urn:ngm:class:mesh-extraction",
         "label": "Mesh Extraction"
       },
       {
-        "id": "urn:visionflow:linked:multi-view-stereo",
+        "id": "urn:ngm:class:multi-view-stereo",
         "label": "Multi-View Stereo"
       },
       {
-        "id": "urn:visionflow:linked:signed-distance-function",
+        "id": "urn:ngm:class:signed-distance-function",
         "label": "Signed Distance Function"
       },
       {
-        "id": "urn:visionflow:linked:structure-from-motion",
+        "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure from Motion"
       },
       {
-        "id": "urn:visionflow:linked:volume-rendering",
+        "id": "urn:ngm:class:volume-rendering",
         "label": "Volume Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
         "label": "3D Gaussian Splatting"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-radiance-field",
+        "id": "urn:ngm:class:neural-radiance-field",
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:visionflow:owl:class:point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bundle-adjustment",
+        "id": "urn:ngm:class:bundle-adjustment",
         "label": "Bundle Adjustment"
       },
       {
-        "id": "urn:visionflow:linked:differentiable-rendering",
+        "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
       },
       {
-        "id": "urn:visionflow:linked:feature-matching",
+        "id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:multi-view-images",
+        "id": "urn:ngm:class:multi-view-images",
         "label": "Multi-View Images"
       },
       {
-        "id": "urn:visionflow:owl:class:camera-parameters",
+        "id": "urn:ngm:class:camera-parameters",
         "label": "Camera Parameters"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Preservation"
       },
       {
-        "id": "urn:visionflow:linked:surgical-navigation",
+        "id": "urn:ngm:class:surgical-navigation",
         "label": "Surgical Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-content-generation",
+        "id": "urn:ngm:class:3-d-content-generation",
         "label": "3D Content Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:3-dasset",
+        "id": "urn:ngm:class:3-dasset",
         "label": "3DAsset"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-technology",
+        "id": "urn:ngm:class:ar-technology",
         "label": "AR Technology"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-production",
+        "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bundle-adjustment",
+        "id": "urn:ngm:class:bundle-adjustment",
         "label": "Bundle Adjustment"
       },
       {
-        "id": "urn:visionflow:linked:differentiable-rendering",
+        "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gaussian-splatting-rasterisation",
+        "id": "urn:ngm:class:gaussian-splatting-rasterisation",
         "label": "Gaussian Splatting Rasterisation"
       },
       {
-        "id": "urn:visionflow:linked:marching-cubes",
+        "id": "urn:ngm:class:marching-cubes",
         "label": "Marching Cubes"
       },
       {
-        "id": "urn:visionflow:linked:signed-distance-function",
+        "id": "urn:ngm:class:signed-distance-function",
         "label": "Signed Distance Function"
       },
       {
-        "id": "urn:visionflow:linked:structure-from-motion",
+        "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
       },
       {
-        "id": "urn:visionflow:linked:volume-rendering-integral",
+        "id": "urn:ngm:class:volume-rendering-integral",
         "label": "Volume Rendering Integral"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agisoft-metashape",
+        "label": "Agisoft Metashape"
+      },
+      {
+        "id": "urn:ngm:class:colmap",
+        "label": "COLMAP"
+      },
+      {
+        "id": "urn:ngm:class:luma-ai",
+        "label": "Luma AI"
+      },
+      {
+        "id": "urn:ngm:class:ne-rfstudio",
+        "label": "NeRFstudio"
+      },
+      {
+        "id": "urn:ngm:class:polycam",
+        "label": "Polycam"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture",
+        "label": "RealityCapture"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:3-dcontent-pipeline",
+        "label": "3DContentPipeline"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:digital-avatar",
+        "label": "Digital Avatar"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:eccv",
+        "label": "ECCV"
+      },
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "id": "urn:ngm:class:iso-19157-geospatial-data-quality",
+        "label": "ISO 19157 Geospatial Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:etsi-domain-immersive-reality-capture-crossover",
+        "label": "ETSI Domain Immersive + Reality Capture Crossover"
+      },
+      {
+        "id": "urn:ngm:class:human-capture-and-recognition",
+        "label": "Human Capture & Recognition"
+      },
+      {
+        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ]
   },
   "wikilinks": [
     {

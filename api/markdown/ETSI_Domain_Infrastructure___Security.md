@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-security",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-infrastructure-security",
+  "@type": "Class",
   "label": "ETSI_Domain_Infrastructure___Security",
+  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6db4899690154f635930a7ff478bfbc191f36ba397899ea54af4f9a9193a7f03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

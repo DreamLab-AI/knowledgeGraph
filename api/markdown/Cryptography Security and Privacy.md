@@ -672,416 +672,339 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptography-security-and-privacy",
+  "@type": "Class",
   "label": "Cryptography Security and Privacy",
+  "definition": "Cryptography Security and Privacy denotes the cross-disciplinary infrastructure layer combining mathematical primitives (symmetric encryption AES-GCM/ChaCha20-Poly1305/ASCON-128 NIST lightweight finalist February 2023, hash functions SHA-2/SHA-3 Keccak/BLAKE3 throughput 6.8 GB/s single-thread, pa...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computer-science",
-      "vc:label": "Computer Science"
+      "@id": "urn:ngm:class:computer-science",
+      "label": "Computer Science"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-engineering",
-      "vc:label": "Privacy Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-computing",
-      "vc:label": "Trusted Computing"
+      "@id": "urn:ngm:class:privacy-engineering",
+      "label": "Privacy Engineering"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:113ebd415ce78710525effdc28ce86fb5109d5ce2625028fd0b7f30d6c0082e4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-library",
+        "label": "Cryptographic Library"
+      },
+      {
+        "@id": "urn:ngm:class:entropy-source",
+        "label": "Entropy Source"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "@id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anonymous-communication",
+        "label": "Anonymous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:confidentiality",
+        "label": "Confidentiality"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:aes-gcm",
+        "label": "AES-GCM"
+      },
+      {
+        "@id": "urn:ngm:class:argon2",
+        "label": "Argon2"
+      },
+      {
+        "@id": "urn:ngm:class:blake3",
+        "label": "BLAKE3"
+      },
+      {
+        "@id": "urn:ngm:class:cha-cha20-poly1305",
+        "label": "ChaCha20-Poly1305"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:ml-dsa",
+        "label": "ML-DSA"
+      },
+      {
+        "@id": "urn:ngm:class:ml-kem",
+        "label": "ML-KEM"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      },
+      {
+        "@id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:slh-dsa",
+        "label": "SLH-DSA"
+      },
+      {
+        "@id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "@id": "urn:ngm:class:x25519",
+        "label": "X25519"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:constant-time-programming",
+        "label": "Constant-Time Programming"
+      },
+      {
+        "@id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-commitments",
+        "label": "Polynomial Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "@id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:confidential-ai",
+        "label": "Confidential AI"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:secure-messaging",
+        "label": "Secure Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:anssi-france",
+        "label": "ANSSI France"
+      },
+      {
+        "@id": "urn:ngm:class:bsi-germany",
+        "label": "BSI Germany"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-quantum-safe-cryptography",
+        "label": "ETSI Quantum-Safe Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:fips-140-3",
+        "label": "FIPS 140-3"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-cfrg",
+        "label": "IETF CFRG"
+      },
+      {
+        "@id": "urn:ngm:class:irtf",
+        "label": "IRTF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1-sc-27",
+        "label": "ISO IEC JTC 1 SC 27"
+      },
+      {
+        "@id": "urn:ngm:class:ncsc-uk",
+        "label": "NCSC UK"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:113ebd415ce78710525effdc28ce86fb5109d5ce2625028fd0b7f30d6c0082e4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cryptography Security and Privacy denotes the cross-disciplinary infrastructure layer combining mathematical primitives (symmetric encryption AES-GCM/ChaCha20-Poly1305/ASCON-128 NIST lightweight finalist February 2023, hash functions SHA-2/SHA-3 Keccak/BLAKE3 throughput 6.8 GB/s single-thread, password hashing Argon2id RFC 9106/bcrypt/scrypt RFC 7914, asymmetric RSA-2048/4096, elliptic-curve ECDH X25519/NIST P-256/P-384/P-521, digital signatures EdDSA Ed25519 RFC 8032/Schnorr BIP-340, post-quantum NIST FIPS 203 ML-KEM CRYSTALS-Kyber August 2024/FIPS 204 ML-DSA CRYSTALS-Dilithium/FIPS 205 SLH-DSA SPHINCS+/FIPS 206 FN-DSA Falcon draft 2025), advanced protocols (zero-knowledge proofs zk-SNARKs Groth16/PLONK/Halo2 recursive composition, zk-STARKs StarkWare transparent quantum-resistant 100K-1M constraints/second, Bulletproofs range proofs without trusted setup, fully homomorphic encryption FHE Microsoft SEAL/IBM HELib/OpenFHE/Zama Concrete/fhEVM Aleo Penumbra 2024 bootstrapping 10ms-1s per gate, secure multi-party computation SPDZ active security/MASCOT OT-based/AGMPC garbled circuits/Inpher Sepior threshold signing 2-of-3 to n-of-n), trusted execution environments (Intel SGX deprecate",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:homomorphic-encryption",
-      "vc:label": "Homomorphic Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-exchange",
-      "vc:label": "Key Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication-code",
-      "vc:label": "Message Authentication Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-execution-environment",
-      "vc:label": "Trusted Execution Environment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:key-derivation-function",
-      "vc:label": "Key Derivation Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
-      "vc:label": "Post-Quantum Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:random-number-generation",
-      "vc:label": "Random Number Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-multi-party-computation",
-      "vc:label": "Secure Multi-Party Computation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symmetric-encryption",
-      "vc:label": "Symmetric Encryption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero-Knowledge Proof"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-hardness-assumption",
-      "vc:label": "Computational Hardness Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-library",
-      "vc:label": "Cryptographic Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:entropy-source",
-      "vc:label": "Entropy Source"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management",
-      "vc:label": "Key Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-foundations",
-      "vc:label": "Mathematical Foundations"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-oracle-model",
-      "vc:label": "Random Oracle Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-compliance",
-      "vc:label": "Standards Compliance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anonymous-communication",
-      "vc:label": "Anonymous Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:confidentiality",
-      "vc:label": "Confidentiality"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-integrity",
-      "vc:label": "Data Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:end-to-end-encryption",
-      "vc:label": "End-to-End Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-computation",
-      "vc:label": "Privacy-Preserving Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-computation",
-      "vc:label": "Verifiable Computation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:confidential-computing",
-      "vc:label": "Confidential Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:aes-gcm",
-      "vc:label": "AES-GCM"
-    },
-    {
-      "@id": "urn:visionflow:linked:argon2",
-      "vc:label": "Argon2"
-    },
-    {
-      "@id": "urn:visionflow:linked:blake3",
-      "vc:label": "BLAKE3"
-    },
-    {
-      "@id": "urn:visionflow:linked:cha-cha20-poly1305",
-      "vc:label": "ChaCha20-Poly1305"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed25519",
-      "vc:label": "Ed25519"
-    },
-    {
-      "@id": "urn:visionflow:linked:ml-dsa",
-      "vc:label": "ML-DSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ml-kem",
-      "vc:label": "ML-KEM"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:sha-3",
-      "vc:label": "SHA-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-protocol",
-      "vc:label": "Signal Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:slh-dsa",
-      "vc:label": "SLH-DSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls-1-3",
-      "vc:label": "TLS 1.3"
-    },
-    {
-      "@id": "urn:visionflow:linked:x25519",
-      "vc:label": "X25519"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:complexity-theory",
-      "vc:label": "Complexity Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:elliptic-curve-theory",
-      "vc:label": "Elliptic Curve Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security",
-      "vc:label": "Hardware Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:lattice-cryptography",
-      "vc:label": "Lattice Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:number-theory",
-      "vc:label": "Number Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-computing-threat-model",
-      "vc:label": "Quantum Computing Threat Model"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:confidential-ai",
-      "vc:label": "Confidential AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-machine-learning",
-      "vc:label": "Privacy-Preserving Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-messaging",
-      "vc:label": "Secure Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralised-web",
-      "vc:label": "Decentralised Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:constant-time-programming",
-      "vc:label": "Constant-Time Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:finite-field-arithmetic",
-      "vc:label": "Finite Field Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:modular-arithmetic",
-      "vc:label": "Modular Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:polynomial-commitments",
-      "vc:label": "Polynomial Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-enclave",
-      "vc:label": "Secure Enclave"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:classical-surveillance-systems",
-      "vc:label": "Classical Surveillance Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:obfuscation-only-defence",
-      "vc:label": "Obfuscation-Only Defence"
-    },
-    {
-      "@id": "urn:visionflow:linked:plaintext-communication",
-      "vc:label": "Plaintext Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-through-obscurity",
-      "vc:label": "Security Through Obscurity"
-    },
-    {
-      "@id": "urn:visionflow:linked:unauthenticated-systems",
-      "vc:label": "Unauthenticated Systems"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:digital-forensics",
-      "vc:label": "Digital Forensics"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-cryptography",
-      "vc:label": "Quantum Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:side-channel-attack",
-      "vc:label": "Side-Channel Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:steganography",
-      "vc:label": "Steganography"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-modelling",
-      "vc:label": "Threat Modelling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cybersecurity",
-      "vc:label": "Cybersecurity"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:anssi-france",
-      "vc:label": "ANSSI France"
-    },
-    {
-      "@id": "urn:visionflow:linked:bsi-germany",
-      "vc:label": "BSI Germany"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi-quantum-safe-cryptography",
-      "vc:label": "ETSI Quantum-Safe Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:fips-140-3",
-      "vc:label": "FIPS 140-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-cfrg",
-      "vc:label": "IETF CFRG"
-    },
-    {
-      "@id": "urn:visionflow:linked:irtf",
-      "vc:label": "IRTF"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-27",
-      "vc:label": "ISO IEC JTC 1 SC 27"
-    },
-    {
-      "@id": "urn:visionflow:linked:ncsc-uk",
-      "vc:label": "NCSC UK"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

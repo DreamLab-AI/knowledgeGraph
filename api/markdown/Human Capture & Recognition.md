@@ -200,120 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-capture-and-recognition",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-capture-and-recognition",
+  "@type": "Class",
   "label": "Human Capture & Recognition",
+  "definition": "Techniques for digitally acquiring and interpreting human appearance, motion, and biometric data for use in virtual and augmented environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:reality-capture",
-      "vc:label": "Reality Capture"
+      "@id": "urn:ngm:class:reality-capture",
+      "label": "Reality Capture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1579ef04176a70af3748903a17827be9ee4cfb6e6d1cff07addbcb2e1a43586c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-analysis",
+        "label": "Biometric Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:reality-modeling",
+        "label": "Reality Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:depth-cameras",
+        "label": "Depth Cameras"
+      },
+      {
+        "@id": "urn:ngm:class:optical-sensors",
+        "label": "Optical Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-models",
+        "label": "Machine Learning Models"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-visualization",
+        "label": "3D Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-creation",
+        "label": "Avatar Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-identity",
+        "label": "Virtual Identity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reality-capture",
+        "label": "Reality Capture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1579ef04176a70af3748903a17827be9ee4cfb6e6d1cff07addbcb2e1a43586c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Techniques for digitally acquiring and interpreting human appearance, motion, and biometric data for use in virtual and augmented environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:reality-capture",
-      "vc:label": "Reality Capture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scanning",
-      "vc:label": "3D Scanning"
-    },
-    {
-      "@id": "urn:visionflow:linked:biometric-analysis",
-      "vc:label": "Biometric Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:facial-recognition",
-      "vc:label": "Facial Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-modeling",
-      "vc:label": "Reality Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:depth-cameras",
-      "vc:label": "Depth Cameras"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-sensors",
-      "vc:label": "Optical Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-models",
-      "vc:label": "Machine Learning Models"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-visualization",
-      "vc:label": "3D Visualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-creation",
-      "vc:label": "Avatar Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-generation",
-      "vc:label": "Digital Twin Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-identity",
-      "vc:label": "Virtual Identity"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:image-processing",
-      "vc:label": "Image Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

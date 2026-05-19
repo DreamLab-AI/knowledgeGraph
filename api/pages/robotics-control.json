@@ -3,19 +3,13 @@
   "title": "Robotics Control",
   "slug": "robotics-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotics-control",
+  "classIri": "urn:ngm:class:robotics-control",
   "domain": "artificial-intelligence",
-  "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution. AI-driven control employs reinforcement learning for policy optimization, computer vision for perception, motion planning algorithms, and sensor fusion. Key challenges include real-time decision-making, handling uncertainty, sim-to-real transfer, and safety assurance. Modern approaches leverage deep learning for visuomotor control, imitation learning from demonstrations, and meta-learning for rapid adaptation to new tasks and environments.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

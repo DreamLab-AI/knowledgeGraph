@@ -3,32 +3,36 @@
   "title": "Creative Media Domain",
   "slug": "creative-media-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:creative-media-domain",
+  "classIri": "urn:ngm:class:creative-media-domain",
   "domain": "spatial-computing",
   "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-augmented-creativity",
+        "id": "urn:ngm:class:ai-augmented-creativity",
         "label": "AI-Augmented Creativity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

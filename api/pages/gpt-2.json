@@ -3,19 +3,13 @@
   "title": "GPT 2",
   "slug": "gpt-2",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gpt-2",
+  "classIri": "urn:ngm:individual:gpt-2",
   "domain": "artificial-intelligence",
-  "definition": "A 1.5 billion parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "A 1.5 parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

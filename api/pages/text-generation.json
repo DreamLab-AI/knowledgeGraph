@@ -3,19 +3,18 @@
   "title": "Text Generation",
   "slug": "text-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:text-generation",
+  "classIri": "urn:ngm:class:text-generation",
   "domain": "spatial-computing",
-  "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production. Modern text generation employs transformer-based language models (GPT, T5, BLOOM) with autoregressive or sequence-to-sequence architectures, controllable generation techniques, and prompt engineering to produce human-quality text across diverse domains and styles.",
+  "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:language-modeling",
+      "id": "urn:ngm:class:language-modeling",
       "label": "Language Modeling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

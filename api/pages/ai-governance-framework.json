@@ -3,82 +3,91 @@
   "title": "AI Governance Framework",
   "slug": "ai-governance-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-governance-framework",
+  "classIri": "urn:ngm:class:ai-governance-framework",
   "domain": "artificial-intelligence",
   "definition": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-risk-assessment",
+        "id": "urn:ngm:class:ai-risk-assessment",
         "label": "AI Risk Assessment"
       },
       {
-        "id": "urn:visionflow:linked:audit-mechanism",
+        "id": "urn:ngm:class:audit-mechanism",
         "label": "Audit Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:compliance-policy",
+        "id": "urn:ngm:class:compliance-policy",
         "label": "Compliance Policy"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-ethics-checklist",
+        "id": "urn:ngm:class:ai-ethics-checklist",
         "label": "AI Ethics Checklist"
       },
       {
-        "id": "urn:visionflow:owl:class:algorithmic-transparency-index",
+        "id": "urn:ngm:class:algorithmic-transparency-index",
         "label": "Algorithmic Transparency Index"
       },
       {
-        "id": "urn:visionflow:owl:class:ethical-framework",
+        "id": "urn:ngm:class:ethical-framework",
         "label": "Ethical Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:data-governance",
+        "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-accountability",
+        "id": "urn:ngm:class:ai-accountability",
         "label": "AI Accountability"
       },
       {
-        "id": "urn:visionflow:linked:ai-transparency",
+        "id": "urn:ngm:class:ai-transparency",
         "label": "AI Transparency"
       },
       {
-        "id": "urn:visionflow:linked:ethical-ai-operation",
+        "id": "urn:ngm:class:ethical-ai-operation",
         "label": "Ethical AI Operation"
       },
       {
-        "id": "urn:visionflow:owl:class:responsible-ai",
+        "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

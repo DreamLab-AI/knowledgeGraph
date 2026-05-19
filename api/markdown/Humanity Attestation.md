@@ -196,116 +196,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:humanity-attestation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:humanity-attestation",
+  "@type": "Class",
   "label": "Humanity Attestation",
+  "definition": "Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4e6a31a7089d7d766e1569d5dfd2973250a25fe448a6a526e9469e54992c4a19"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behavioral-analysis",
+        "label": "Behavioral Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:captcha",
+        "label": "CAPTCHA"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:challenge-protocol",
+        "label": "Challenge Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:verification-mechanism",
+        "label": "Verification Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:account-security",
+        "label": "Account Security"
+      },
+      {
+        "@id": "urn:ngm:class:bot-prevention",
+        "label": "Bot Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4e6a31a7089d7d766e1569d5dfd2973250a25fe448a6a526e9469e54992c4a19@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:authentication-system",
-      "vc:label": "Authentication System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-analysis",
-      "vc:label": "Behavioral Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:biometric-verification",
-      "vc:label": "Biometric Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:captcha",
-      "vc:label": "CAPTCHA"
-    },
-    {
-      "@id": "urn:visionflow:linked:challenge-response-protocol",
-      "vc:label": "Challenge-Response Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:challenge-protocol",
-      "vc:label": "Challenge Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-mechanism",
-      "vc:label": "Verification Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:account-security",
-      "vc:label": "Account Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:bot-prevention",
-      "vc:label": "Bot Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-prevention",
-      "vc:label": "Fraud Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-establishment",
-      "vc:label": "Trust Establishment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "Cryptographic Proof"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

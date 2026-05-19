@@ -224,48 +224,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:food-safety-blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:food-safety-blockchain",
+  "@type": "Class",
   "label": "Food Safety Blockchain",
+  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e1f5c007ac75022ffccec1d2fae12150ffe84585cce8c0c42327df083b570e11@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestlé) and VeChain's Walmart China deployment demonstrate transformative impact on the £55 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

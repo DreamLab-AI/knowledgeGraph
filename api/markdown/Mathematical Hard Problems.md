@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mathematical-hard-problems",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mathematical-hard-problems",
+  "@type": "Class",
   "label": "Mathematical Hard Problems",
+  "definition": "Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-security",
-      "vc:label": "Cryptographic Security"
+      "@id": "urn:ngm:class:cryptographic-security",
+      "label": "Cryptographic Security"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:edaec4264e03172e45dacdf09756c42df6d97b08ff23fd811f571c56847fe595"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-digital-systems",
+        "label": "Secure Digital Systems"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:edaec4264e03172e45dacdf09756c42df6d97b08ff23fd811f571c56847fe595@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:secure-digital-systems",
-      "vc:label": "Secure Digital Systems"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

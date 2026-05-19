@@ -168,86 +168,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-data",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-data",
+  "@type": "Class",
   "label": "ETSI Domain Data",
+  "definition": "Domain categorisation for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
-      "vc:label": "Etsi Metaverse Domain Model"
+      "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+      "label": "Etsi Metaverse Domain Model"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:034d71e92cd5714fab05b1aba1c9a565628dc6891f503ce0a9bf97506aaeadbc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-systems",
+        "label": "AI Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:intelligence",
+        "label": "Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "ETSI Metaverse Domain Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:034d71e92cd5714fab05b1aba1c9a565628dc6891f503ce0a9bf97506aaeadbc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain categorisation for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
-      "vc:label": "ETSI Metaverse Domain Model"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-systems",
-      "vc:label": "AI Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:intelligence",
-      "vc:label": "Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-analytics",
-      "vc:label": "Predictive Analytics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

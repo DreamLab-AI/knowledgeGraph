@@ -3,19 +3,13 @@
   "title": "AI Concept",
   "slug": "ai-concept",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-concept",
+  "classIri": "urn:ngm:class:ai-concept",
   "domain": "artificial-intelligence",
-  "definition": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures. AI concepts encompass both symbolic AI approaches (knowledge representation, logic-based reasoning) and subsymbolic methods (connectionist networks, distributed representations). These foundational concepts serve as the theoretical basis for designing, implementing, and evaluating intelligent systems across various domains.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

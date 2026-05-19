@@ -3,27 +3,31 @@
   "title": "NFT Standards",
   "slug": "nft-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nft-standards",
+  "classIri": "urn:ngm:class:nft-standards",
   "domain": "blockchain",
   "definition": "NFT Standards is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

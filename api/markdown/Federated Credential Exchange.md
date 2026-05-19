@@ -192,120 +192,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:federated-credential-exchange",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:federated-credential-exchange",
+  "@type": "Class",
   "label": "Federated Credential Exchange",
+  "definition": "A cross-platform workflow process that enables secure sharing and translation of identity credentials between different identity providers using standardized protocols, attribute mapping, and user consent mechanisms.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:attribute-sharing",
-      "vc:label": "Attribute Sharing"
+      "@id": "urn:ngm:class:attribute-sharing",
+      "label": "Attribute Sharing"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aba142237ced478d70573449b34df34a70fdcd878471c5e50833e38f059504a6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attribute-translation",
+        "label": "Attribute Translation"
+      },
+      {
+        "@id": "urn:ngm:class:consent-verification",
+        "label": "Consent Verification"
+      },
+      {
+        "@id": "urn:ngm:class:credential-request",
+        "label": "Credential Request"
+      },
+      {
+        "@id": "urn:ngm:class:secure-exchange-protocol",
+        "label": "Secure Exchange Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attribute-schema",
+        "label": "Attribute Schema"
+      },
+      {
+        "@id": "urn:ngm:class:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-sharing",
+        "label": "Attribute Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:federated-identity-system",
+        "label": "Federated Identity System"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aba142237ced478d70573449b34df34a70fdcd878471c5e50833e38f059504a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cross-platform workflow process that enables secure sharing and translation of identity credentials between different identity providers using standardized protocols, attribute mapping, and user consent mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:federated-identity-system",
-      "vc:label": "Federated Identity System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attribute-translation",
-      "vc:label": "Attribute Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:consent-verification",
-      "vc:label": "Consent Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-request",
-      "vc:label": "Credential Request"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-exchange-protocol",
-      "vc:label": "Secure Exchange Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:attribute-schema",
-      "vc:label": "Attribute Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:federation-protocol",
-      "vc:label": "Federation Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consent-management",
-      "vc:label": "Consent Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-authentication",
-      "vc:label": "Privacy-Preserving Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-sign-on",
-      "vc:label": "Single Sign-On"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attribute-sharing",
-      "vc:label": "Attribute Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:trust-registry",
-      "vc:label": "Trust Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:credential-format-standard",
-      "vc:label": "Credential Format Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

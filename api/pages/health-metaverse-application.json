@@ -3,90 +3,99 @@
   "title": "Health Metaverse Application",
   "slug": "health-metaverse-application",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:health-metaverse-application",
+  "classIri": "urn:ngm:class:health-metaverse-application",
   "domain": "spatial-computing",
   "definition": "A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:diagnostic-interface",
+        "id": "urn:ngm:class:diagnostic-interface",
         "label": "Diagnostic Interface"
       },
       {
-        "id": "urn:visionflow:linked:health-record-system",
+        "id": "urn:ngm:class:health-record-system",
         "label": "Health Record System"
       },
       {
-        "id": "urn:visionflow:linked:medical-simulation",
+        "id": "urn:ngm:class:medical-simulation",
         "label": "Medical Simulation"
       },
       {
-        "id": "urn:visionflow:linked:patient-portal",
+        "id": "urn:ngm:class:patient-portal",
         "label": "Patient Portal"
       },
       {
-        "id": "urn:visionflow:linked:therapy-environment",
+        "id": "urn:ngm:class:therapy-environment",
         "label": "Therapy Environment"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-clinic",
+        "id": "urn:ngm:class:virtual-clinic",
         "label": "Virtual Clinic"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:biometric-sensor-integration",
+        "id": "urn:ngm:class:biometric-sensor-integration",
         "label": "Biometric Sensor Integration"
       },
       {
-        "id": "urn:visionflow:linked:end-to-end-encryption",
+        "id": "urn:ngm:class:end-to-end-encryption",
         "label": "End-to-End Encryption"
       },
       {
-        "id": "urn:visionflow:linked:haptic-feedback-system",
+        "id": "urn:ngm:class:haptic-feedback-system",
         "label": "Haptic Feedback System"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:medical-education",
+        "id": "urn:ngm:class:medical-education",
         "label": "Medical Education"
       },
       {
-        "id": "urn:visionflow:linked:mental-health-therapy",
+        "id": "urn:ngm:class:mental-health-therapy",
         "label": "Mental Health Therapy"
       },
       {
-        "id": "urn:visionflow:linked:rehabilitation-program",
+        "id": "urn:ngm:class:rehabilitation-program",
         "label": "Rehabilitation Program"
       },
       {
-        "id": "urn:visionflow:linked:surgical-training",
+        "id": "urn:ngm:class:surgical-training",
         "label": "Surgical Training"
       },
       {
-        "id": "urn:visionflow:linked:telemedicine",
+        "id": "urn:ngm:class:telemedicine",
         "label": "Telemedicine"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

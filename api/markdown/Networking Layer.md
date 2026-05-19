@@ -192,112 +192,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:networking-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:networking-layer",
+  "@type": "Class",
   "label": "Networking Layer",
+  "definition": "Communication systems that connect components and users across distributed metaverse environments through network protocols and software.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-architecture",
-      "vc:label": "Infrastructure Architecture"
+      "@id": "urn:ngm:class:infrastructure-architecture",
+      "label": "Infrastructure Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3f35235c85b2137ab107083ad7c299a208c62ee4028d00e139b9f87bd352bfca"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-transmission-service",
+        "label": "Data Transmission Service"
+      },
+      {
+        "@id": "urn:ngm:class:routing-infrastructure",
+        "label": "Routing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:communication-software",
+        "label": "Communication Software"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:communication-protocols",
+        "label": "Communication Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:network-standards",
+        "label": "Network Standards"
+      },
+      {
+        "@id": "urn:ngm:class:physical-network-hardware",
+        "label": "Physical Network Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-connectivity",
+        "label": "Cross-Platform Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-interaction",
+        "label": "Low-latency Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3f35235c85b2137ab107083ad7c299a208c62ee4028d00e139b9f87bd352bfca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Communication systems that connect components and users across distributed metaverse environments through network protocols and software.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-architecture",
-      "vc:label": "Infrastructure Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-transmission-service",
-      "vc:label": "Data Transmission Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-infrastructure",
-      "vc:label": "Routing Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-software",
-      "vc:label": "Communication Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:communication-protocols",
-      "vc:label": "Communication Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-standards",
-      "vc:label": "Network Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-network-hardware",
-      "vc:label": "Physical Network Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-connectivity",
-      "vc:label": "Cross-Platform Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-interaction",
-      "vc:label": "Low-latency Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-communication",
-      "vc:label": "Real-time Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:osi-model",
-      "vc:label": "OSI Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcp-ip-stack",
-      "vc:label": "TCP/IP Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-topology",
-      "vc:label": "Network Topology"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

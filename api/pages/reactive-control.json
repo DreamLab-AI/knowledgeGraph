@@ -3,19 +3,18 @@
   "title": "Reactive Control",
   "slug": "reactive-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reactive-control",
+  "classIri": "urn:ngm:class:reactive-control",
   "domain": "robotics",
-  "definition": "Reactive Control is a concept within the robotics domain. Further enrichment pending.",
+  "definition": "Reactive Control is a type of Robotics in the robotics domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

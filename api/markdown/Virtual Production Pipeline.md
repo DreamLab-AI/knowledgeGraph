@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-production-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-production-pipeline",
+  "@type": "Class",
   "label": "Virtual Production Pipeline",
+  "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
+      "@id": "urn:ngm:class:virtual-production",
+      "label": "Virtual Production"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:96d7d837a9d4ef7a28fe525ab1f80dd675862cfdeebc4b591a76dc6e2fdaf73c"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:96d7d837a9d4ef7a28fe525ab1f80dd675862cfdeebc4b591a76dc6e2fdaf73c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:xr-testing-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:xr-testing-infrastructure",
+  "@type": "Class",
   "label": "XR Testing Infrastructure",
+  "definition": "The hardware, software, and modological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:testing-infrastructure",
-      "vc:label": "Testing Infrastructure"
+      "@id": "urn:ngm:class:testing-infrastructure",
+      "label": "Testing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

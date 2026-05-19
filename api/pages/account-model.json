@@ -3,23 +3,22 @@
   "title": "Account Model",
   "slug": "account-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:account-model",
+  "classIri": "urn:ngm:class:account-model",
   "domain": "blockchain",
   "definition": "Balance-based accounting model within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-data-structure",
+      "id": "urn:ngm:class:distributed-data-structure",
       "label": "DistributedDataStructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -564,356 +564,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-objects",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-objects",
+  "@type": "Class",
   "label": "Digital Objects",
+  "definition": "Digital Objects is an umbrella ontology concept covering three closely-related but historically distinct senses of \"an addressable, transferable, identifiable unit of digital content\": (1) Digital Object Architecture (DOA), the formal information-infrastructure paradigm proposed by Robert E.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-artefact",
-      "vc:label": "Digital Artefact"
+      "@id": "urn:ngm:class:digital-artefact",
+      "label": "Digital Artefact"
     },
     {
-      "@id": "urn:visionflow:linked:identified-entity",
-      "vc:label": "Identified Entity"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-resource",
-      "vc:label": "Information Resource"
+      "@id": "urn:ngm:class:identified-entity",
+      "label": "Identified Entity"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e7d7cca113dbd28ad6b73e811497465e86d363007fa09050f800bff5d4de419"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata-record",
+        "label": "Metadata Record"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-identifier",
+        "label": "Persistent Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-chain",
+        "label": "Provenance Chain"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-endpoint",
+        "label": "Resolution Endpoint"
+      },
+      {
+        "@id": "urn:ngm:class:transferable-rights",
+        "label": "Transferable Rights"
+      },
+      {
+        "@id": "urn:ngm:class:typed-payload",
+        "label": "Typed Payload"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-binding",
+        "label": "Cryptographic Binding"
+      },
+      {
+        "@id": "urn:ngm:class:identifier-registry",
+        "label": "Identifier Registry"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-infrastructure",
+        "label": "Resolution Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:citation",
+        "label": "Citation"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-preservation",
+        "label": "Long-Term Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-automation",
+        "label": "Royalty Automation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bitcoin-ordinals",
+        "label": "Bitcoin Ordinals"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:gl-tf-asset-specification",
+        "label": "glTF Asset Specification"
+      },
+      {
+        "@id": "urn:ngm:class:handle-system-protocol",
+        "label": "Handle System Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:usd-scene-description",
+        "label": "USD Scene Description"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ark",
+        "label": "ARK"
+      },
+      {
+        "@id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:doi",
+        "label": "DOI"
+      },
+      {
+        "@id": "urn:ngm:class:handle",
+        "label": "Handle"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:nft-metadata-standard",
+        "label": "NFT Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:orcid",
+        "label": "ORCID"
+      },
+      {
+        "@id": "urn:ngm:class:ror",
+        "label": "ROR"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-identifier",
+        "label": "Persistent Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage",
+        "label": "Cultural Heritage"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:scholarly-communication",
+        "label": "Scholarly Communication"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ethereum-erc-721",
+        "label": "Ethereum ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-3650",
+        "label": "IETF RFC 3650"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-3651",
+        "label": "IETF RFC 3651"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-3652",
+        "label": "IETF RFC 3652"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26324",
+        "label": "ISO 26324"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t-x-1255",
+        "label": "ITU-T X.1255"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-gl-tf",
+        "label": "Khronos glTF"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did",
+        "label": "W3C DID"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e7d7cca113dbd28ad6b73e811497465e86d363007fa09050f800bff5d4de419@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Digital Objects** is an umbrella ontology concept covering three closely-related but historically distinct senses of \"an addressable, transferable, identifiable unit of digital content\": (1) **Digital Object Architecture (DOA)**, the formal information-infrastructure paradigm proposed by Robert E. Kahn (CNRI, co-inventor of TCP/IP) and Robert Wilensky in 1995 and standardised as ITU-T Recommendation X.1255 (September 2013), which defines a digital object as a typed, structured entity bound to a globally unique persistent identifier (a Handle) carrying mutable metadata and immutable payload, resolved through a federated Global Handle Registry (GHR) operated by the DONA Foundation in Geneva with thirteen Multi-Primary Administrators (MPAs) including CNRI, IDF/DOI Foundation, ITU, the Chinese Academy of Sciences and the Korean Institute of Science and Technology Information, instantiated in production via the Handle System (RFC 3650/3651/3652), DOI (Digital Object Identifier, ISO 26324, >270 million registered DOIs across Crossref, DataCite, mEDRA, JaLC, KISTI, Airiti and Public.Resource.Org as of 2025), ARK (Archival Resource Key, California Digital Library, 8 billion+ identifiers)",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:metadata-record",
-      "vc:label": "Metadata Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-identifier",
-      "vc:label": "Persistent Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:provenance-chain",
-      "vc:label": "Provenance Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-endpoint",
-      "vc:label": "Resolution Endpoint"
-    },
-    {
-      "@id": "urn:visionflow:linked:transferable-rights",
-      "vc:label": "Transferable Rights"
-    },
-    {
-      "@id": "urn:visionflow:linked:typed-payload",
-      "vc:label": "Typed Payload"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-binding",
-      "vc:label": "Cryptographic Binding"
-    },
-    {
-      "@id": "urn:visionflow:linked:identifier-registry",
-      "vc:label": "Identifier Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-infrastructure",
-      "vc:label": "Resolution Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-layer",
-      "vc:label": "Storage Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:citation",
-      "vc:label": "Citation"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-preservation",
-      "vc:label": "Long-Term Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-automation",
-      "vc:label": "Royalty Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-portability",
-      "vc:label": "Avatar Portability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-ownership",
-      "vc:label": "Digital Ownership"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-ordinals",
-      "vc:label": "Bitcoin Ordinals"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1155",
-      "vc:label": "ERC-1155"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-721",
-      "vc:label": "ERC-721"
-    },
-    {
-      "@id": "urn:visionflow:linked:gl-tf-asset-specification",
-      "vc:label": "glTF Asset Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:handle-system-protocol",
-      "vc:label": "Handle System Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-scene-description",
-      "vc:label": "USD Scene Description"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-hash-table",
-      "vc:label": "Distributed Hash Table"
-    },
-    {
-      "@id": "urn:visionflow:linked:dns",
-      "vc:label": "DNS"
-    },
-    {
-      "@id": "urn:visionflow:linked:http",
-      "vc:label": "HTTP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-addressing",
-      "vc:label": "Content Addressing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage",
-      "vc:label": "Cultural Heritage"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identity",
-      "vc:label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-art",
-      "vc:label": "Digital Art"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:scholarly-communication",
-      "vc:label": "Scholarly Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ark",
-      "vc:label": "ARK"
-    },
-    {
-      "@id": "urn:visionflow:linked:arweave",
-      "vc:label": "Arweave"
-    },
-    {
-      "@id": "urn:visionflow:linked:c2-pa",
-      "vc:label": "C2PA"
-    },
-    {
-      "@id": "urn:visionflow:linked:doi",
-      "vc:label": "DOI"
-    },
-    {
-      "@id": "urn:visionflow:linked:handle",
-      "vc:label": "Handle"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft-metadata-standard",
-      "vc:label": "NFT Metadata Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:orcid",
-      "vc:label": "ORCID"
-    },
-    {
-      "@id": "urn:visionflow:linked:ror",
-      "vc:label": "ROR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:database-row",
-      "vc:label": "Database Row"
-    },
-    {
-      "@id": "urn:visionflow:linked:ephemeral-resource",
-      "vc:label": "Ephemeral Resource"
-    },
-    {
-      "@id": "urn:visionflow:linked:filesystem-path",
-      "vc:label": "Filesystem Path"
-    },
-    {
-      "@id": "urn:visionflow:linked:url",
-      "vc:label": "URL"
-    },
-    {
-      "@id": "urn:visionflow:linked:urn",
-      "vc:label": "URN"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifier",
-      "vc:label": "Decentralised Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-identifier",
-      "vc:label": "Persistent Identifier"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar",
-      "vc:label": "Avatar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token",
-      "vc:label": "Token"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ethereum-erc-721",
-      "vc:label": "Ethereum ERC-721"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-3650",
-      "vc:label": "IETF RFC 3650"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-3651",
-      "vc:label": "IETF RFC 3651"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-3652",
-      "vc:label": "IETF RFC 3652"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-26324",
-      "vc:label": "ISO 26324"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t-x-1255",
-      "vc:label": "ITU-T X.1255"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-gl-tf",
-      "vc:label": "Khronos glTF"
-    },
-    {
-      "@id": "urn:visionflow:linked:metaverse-standards-forum",
-      "vc:label": "Metaverse Standards Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did",
-      "vc:label": "W3C DID"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:persistent-identifiers",
-      "vc:label": "Persistent Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

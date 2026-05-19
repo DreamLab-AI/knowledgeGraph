@@ -3,53 +3,57 @@
   "title": "Avatar Portability",
   "slug": "avatar-portability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-portability",
+  "classIri": "urn:ngm:class:avatar-portability",
   "domain": "spatial-computing",
   "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-asset-portability",
+      "id": "urn:ngm:class:digital-asset-portability",
       "label": "Digital Asset Portability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:platform-integration",
+        "id": "urn:ngm:class:platform-integration",
         "label": "Platform Integration"
       },
       {
-        "id": "urn:visionflow:linked:standardized-formats",
+        "id": "urn:ngm:class:standardized-formats",
         "label": "Standardized Formats"
       },
       {
-        "id": "urn:visionflow:linked:translation-frameworks",
+        "id": "urn:ngm:class:translation-frameworks",
         "label": "Translation Frameworks"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-continuity",
+        "id": "urn:ngm:class:asset-continuity",
         "label": "Asset Continuity"
       },
       {
-        "id": "urn:visionflow:linked:seamless-world-transitions",
+        "id": "urn:ngm:class:seamless-world-transitions",
         "label": "Seamless World Transitions"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

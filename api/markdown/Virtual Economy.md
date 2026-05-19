@@ -103,41 +103,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-economy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-economy",
+  "@type": "Class",
   "label": "Virtual Economy",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a2d42b7909721ea721053c108c0304bb124ef6332d5d8d16f4faf1b622c519c7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2d42b7909721ea721053c108c0304bb124ef6332d5d8d16f4faf1b622c519c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Virtual Economy is a blockchain and distributed systems concept and a type of blockchain.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "blockchain",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

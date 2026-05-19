@@ -168,60 +168,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-collaboration",
+  "@type": "Class",
   "label": "Digital Twin Collaboration",
+  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
-      "vc:label": "TELE-002-telecollaboration"
+      "@id": "urn:ngm:class:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "CloudComputing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-simulation",
+        "label": "CollaborativeSimulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1b2d1d758c6e9ba13962c42d0d105c74e0676580a14fb8d829d982908cec1b56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams, enabling remote collaboration on physical systems.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "CloudComputing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-simulation",
-      "vc:label": "CollaborativeSimulation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

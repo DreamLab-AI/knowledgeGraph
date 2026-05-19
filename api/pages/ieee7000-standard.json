@@ -3,32 +3,36 @@
   "title": "Ieee7000 Standard",
   "slug": "ieee7000-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ieee7000-standard",
+  "classIri": "urn:ngm:class:ieee7000-standard",
   "domain": "spatial-computing",
-  "definition": "IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ethical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through implementation.",
+  "definition": "IEEE Standard Model Process for Addressing ical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ethical-design-standard",
+      "id": "urn:ngm:class:ethical-design-standard",
       "label": "Ethical Design Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ethical-technology-development",
+        "id": "urn:ngm:class:ethical-technology-development",
         "label": "Ethical Technology Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

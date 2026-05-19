@@ -3,19 +3,18 @@
   "title": "Security Layer",
   "slug": "security-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:security-layer",
+  "classIri": "urn:ngm:class:security-layer",
   "domain": "infrastructure",
-  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality and privacy, and maintain system security properties. This layer encompasses cryptographic primitives as implemented security mechanisms (hash functions providing integrity, digital signatures providing authentication, encryption providing confidentiality), security protocols (key exchange, secure communication, authentication protocols), threat models and attack vectors (51% attacks, Sybil attacks, eclipse attacks, smart contract vulnerabilities), security analysis and verification (formal verification, security auditing, penetration testing), defensive mechanisms (access control, authorization, sandboxing, rate limiting), and security properties as realized through specific implementations (immutability through hash linking, non-repudiation through digital signatures, privacy through zero-knowledge proofs). Unlike ConceptualLayer which addresses abstract security properties, SecurityLayer",
+  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

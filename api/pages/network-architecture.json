@@ -3,19 +3,13 @@
   "title": "Network Architecture",
   "slug": "network-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-architecture",
+  "classIri": "urn:ngm:class:network-architecture",
   "domain": "artificial-intelligence",
-  "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

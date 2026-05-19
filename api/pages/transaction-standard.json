@@ -3,86 +3,99 @@
   "title": "Transaction Standard",
   "slug": "transaction-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transaction-standard",
+  "classIri": "urn:ngm:class:transaction-standard",
   "domain": "spatial-computing",
   "definition": "A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:payment-system",
-      "label": "Payment System"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:authentication-mechanism",
+        "id": "urn:ngm:class:authentication-mechanism",
         "label": "Authentication Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:integrity-verification",
+        "id": "urn:ngm:class:integrity-verification",
         "label": "Integrity Verification"
       },
       {
-        "id": "urn:visionflow:linked:message-format",
+        "id": "urn:ngm:class:message-format",
         "label": "Message Format"
       },
       {
-        "id": "urn:visionflow:linked:settlement-protocol",
+        "id": "urn:ngm:class:settlement-protocol",
         "label": "Settlement Protocol"
       },
       {
-        "id": "urn:visionflow:linked:transaction-ledger",
+        "id": "urn:ngm:class:transaction-ledger",
         "label": "Transaction Ledger"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-persistence",
+        "id": "urn:ngm:class:data-persistence",
         "label": "Data Persistence"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:network-protocol",
+        "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:atomic-swaps",
+        "id": "urn:ngm:class:atomic-swaps",
         "label": "Atomic Swaps"
       },
       {
-        "id": "urn:visionflow:linked:economic-interoperability",
+        "id": "urn:ngm:class:economic-interoperability",
         "label": "Economic Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:secure-asset-transfer",
+        "id": "urn:ngm:class:secure-asset-transfer",
         "label": "Secure Asset Transfer"
       },
       {
-        "id": "urn:visionflow:linked:transaction-auditability",
+        "id": "urn:ngm:class:transaction-auditability",
         "label": "Transaction Auditability"
       },
       {
-        "id": "urn:visionflow:owl:class:multi-party-transactions",
+        "id": "urn:ngm:class:multi-party-transactions",
         "label": "Multi-Party Transactions"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy-infrastructure",
+        "label": "Virtual Economy Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

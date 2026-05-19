@@ -3,95 +3,99 @@
   "title": "Adapter Slot",
   "slug": "adapter-slot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adapter-slot",
+  "classIri": "urn:ngm:class:adapter-slot",
   "domain": "infrastructure",
-  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.",
+  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Ev...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.89,
-  "authorityScore": 0.91,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bead-adapter",
+        "id": "urn:ngm:class:bead-adapter",
         "label": "Bead Adapter"
       },
       {
-        "id": "urn:visionflow:linked:event-adapter",
+        "id": "urn:ngm:class:event-adapter",
         "label": "Event Adapter"
       },
       {
-        "id": "urn:visionflow:linked:memory-adapter",
+        "id": "urn:ngm:class:memory-adapter",
         "label": "Memory Adapter"
       },
       {
-        "id": "urn:visionflow:linked:orchestrator-adapter",
+        "id": "urn:ngm:class:orchestrator-adapter",
         "label": "Orchestrator Adapter"
       },
       {
-        "id": "urn:visionflow:linked:pod-adapter",
+        "id": "urn:ngm:class:pod-adapter",
         "label": "Pod Adapter"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:interface-specification",
+        "id": "urn:ngm:class:interface-specification",
         "label": "Interface Specification"
       },
       {
-        "id": "urn:visionflow:linked:manifest-declaration",
+        "id": "urn:ngm:class:manifest-declaration",
         "label": "Manifest Declaration"
       },
       {
-        "id": "urn:visionflow:linked:runtime-initialization",
+        "id": "urn:ngm:class:runtime-initialization",
         "label": "Runtime Initialization"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:deployment-flexibility",
+        "id": "urn:ngm:class:deployment-flexibility",
         "label": "Deployment Flexibility"
       },
       {
-        "id": "urn:visionflow:linked:pluggable-memory",
+        "id": "urn:ngm:class:pluggable-memory",
         "label": "Pluggable Memory"
       },
       {
-        "id": "urn:visionflow:linked:pluggable-storage",
+        "id": "urn:ngm:class:pluggable-storage",
         "label": "Pluggable Storage"
       },
       {
-        "id": "urn:visionflow:linked:pluggable-telemetry",
+        "id": "urn:ngm:class:pluggable-telemetry",
         "label": "Pluggable Telemetry"
       },
       {
-        "id": "urn:visionflow:linked:pluggable-work-distribution",
+        "id": "urn:ngm:class:pluggable-work-distribution",
         "label": "Pluggable Work Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adapter-pattern",
+        "id": "urn:ngm:class:adapter-pattern",
         "label": "Adapter Pattern"
       },
       {
-        "id": "urn:visionflow:linked:dependency-injection",
+        "id": "urn:ngm:class:dependency-injection",
         "label": "Dependency Injection"
       },
       {
-        "id": "urn:visionflow:linked:strategy-pattern",
+        "id": "urn:ngm:class:strategy-pattern",
         "label": "Strategy Pattern"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

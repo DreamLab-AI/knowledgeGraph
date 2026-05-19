@@ -3,27 +3,31 @@
   "title": "Vocabulary Governance",
   "slug": "vocabulary-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vocabulary-governance",
+  "classIri": "urn:ngm:class:vocabulary-governance",
   "domain": "artificial-intelligence",
-  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:knowledge-management",
-      "label": "Knowledge Management"
-    }
-  ],
+  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistenc...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

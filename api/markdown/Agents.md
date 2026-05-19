@@ -568,340 +568,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:agents",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:agents",
+  "@type": "Class",
   "label": "Agents",
+  "definition": "Agents are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:intelligent-system",
-      "vc:label": "Intelligent System"
+      "@id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
     },
     {
-      "@id": "urn:visionflow:linked:cognitive-architecture",
-      "vc:label": "Cognitive Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
+      "@id": "urn:ngm:class:cognitive-architecture",
+      "label": "Cognitive Architecture"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:776feb9cde0267f8a89094a64e1932b884a8a7c2ed43b9af98d52b198c1721e7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:observation-buffer",
+        "label": "Observation Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning-trace",
+        "label": "Reasoning Trace"
+      },
+      {
+        "@id": "urn:ngm:class:reflection-loop",
+        "label": "Reflection Loop"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "@id": "urn:ngm:class:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:ai-software-engineering",
+        "label": "AI Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "@id": "urn:ngm:class:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan-and-Execute"
+      },
+      {
+        "@id": "urn:ngm:class:re-act",
+        "label": "ReAct"
+      },
+      {
+        "@id": "urn:ngm:class:reflexion",
+        "label": "Reflexion"
+      },
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA-ACL"
+      },
+      {
+        "@id": "urn:ngm:class:function-schemas",
+        "label": "Function Schemas"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-llm",
+        "label": "Tool-Augmented LLM"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-workflow",
+        "label": "Enterprise Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:personal-assistance",
+        "label": "Personal Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-automation",
+        "label": "Software Development Automation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-control",
+        "label": "Robotics Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "@id": "urn:ngm:class:fipa-acl-2002",
+        "label": "FIPA-ACL (2002)"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol-anthropic-2024",
+        "label": "Model Context Protocol (Anthropic 2024)"
+      },
+      {
+        "@id": "urn:ngm:class:owasp-llm-top-10-2025",
+        "label": "OWASP LLM Top 10 (2025)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:776feb9cde0267f8a89094a64e1932b884a8a7c2ed43b9af98d52b198c1721e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Agents** are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, API requests, browser/operating-system actions, robotic effectors) in pursuit of designated goals, performance measures or instructions, encompassing classical AI architectures formalised by Russell & Norvig in *Artificial Intelligence: A Modern Approach* (1995, 4th edition 2020, \"anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators\") with the PEAS task-environment specification (Performance measure, Environment, Actuators, Sensors) and five canonical agent types (simple reflex agents using condition-action rules without state, model-based reflex agents maintaining internal world models, goal-based agents incorporating explicit future-state targets, utility-based agents optimising expected utility under uncertainty, learning agents containing performance/critic/learning/problem-generator components updating behaviou",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:action-executor",
-      "vc:label": "Action Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-memory",
-      "vc:label": "Agent Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:observation-buffer",
-      "vc:label": "Observation Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:planning-module",
-      "vc:label": "Planning Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasoning-trace",
-      "vc:label": "Reasoning Trace"
-    },
-    {
-      "@id": "urn:visionflow:linked:reflection-loop",
-      "vc:label": "Reflection Loop"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-prompt",
-      "vc:label": "System Prompt"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-compute",
-      "vc:label": "Inference Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-definition",
-      "vc:label": "Tool Definition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-window",
-      "vc:label": "Context Window"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-oversight",
-      "vc:label": "Human Oversight"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-workflow",
-      "vc:label": "Agentic Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-software-engineering",
-      "vc:label": "AI Software Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-task-execution",
-      "vc:label": "Autonomous Task Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-automation",
-      "vc:label": "Browser Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-use",
-      "vc:label": "Computer Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-research",
-      "vc:label": "Deep Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-orchestration",
-      "vc:label": "Multi-Agent Orchestration"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bdi-architecture",
-      "vc:label": "BDI Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-net-protocol",
-      "vc:label": "Contract Net Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:plan-and-execute",
-      "vc:label": "Plan-and-Execute"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act",
-      "vc:label": "ReAct"
-    },
-    {
-      "@id": "urn:visionflow:linked:reflexion",
-      "vc:label": "Reflexion"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-consistency",
-      "vc:label": "Self-Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:subsumption-architecture",
-      "vc:label": "Subsumption Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:tree-of-thoughts",
-      "vc:label": "Tree of Thoughts"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:function-calling-api",
-      "vc:label": "Function Calling API"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:customer-service-automation",
-      "vc:label": "Customer Service Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-workflow",
-      "vc:label": "Enterprise Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-assistance",
-      "vc:label": "Personal Assistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-research",
-      "vc:label": "Scientific Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-development-automation",
-      "vc:label": "Software Development Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics-control",
-      "vc:label": "Robotics Control"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:agent2-agent-protocol",
-      "vc:label": "Agent2Agent Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought",
-      "vc:label": "Chain of Thought"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedding-search",
-      "vc:label": "Embedding Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:fipa-acl",
-      "vc:label": "FIPA-ACL"
-    },
-    {
-      "@id": "urn:visionflow:linked:function-schemas",
-      "vc:label": "Function Schemas"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:digital-assistant-siri-alexa",
-      "vc:label": "Digital Assistant (Siri/Alexa)"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-inference-pipeline",
-      "vc:label": "Static Inference Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbot",
-      "vc:label": "Chatbot"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:agentic-ai",
-      "vc:label": "Agentic AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-architecture",
-      "vc:label": "Cognitive Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:embodied-ai",
-      "vc:label": "Embodied AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-system",
-      "vc:label": "Multi-Agent System"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-augmented-llm",
-      "vc:label": "Tool-Augmented LLM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:agent2-agent-protocol-google-2025",
-      "vc:label": "Agent2Agent Protocol (Google 2025)"
-    },
-    {
-      "@id": "urn:visionflow:linked:fipa-acl-2002",
-      "vc:label": "FIPA-ACL (2002)"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-context-protocol-anthropic-2024",
-      "vc:label": "Model Context Protocol (Anthropic 2024)"
-    },
-    {
-      "@id": "urn:visionflow:linked:owasp-llm-top-10-2025",
-      "vc:label": "OWASP LLM Top 10 (2025)"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

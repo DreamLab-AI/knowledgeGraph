@@ -3,32 +3,36 @@
   "title": "Participant Coordination",
   "slug": "participant-coordination",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:participant-coordination",
+  "classIri": "urn:ngm:class:participant-coordination",
   "domain": "spatial-computing",
   "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:multi-user-systems",
+      "id": "urn:ngm:class:multi-user-systems",
       "label": "Multi-User Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:shared-virtual-experiences",
+        "id": "urn:ngm:class:shared-virtual-experiences",
         "label": "Shared Virtual Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -192,122 +192,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robotics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robotics",
+  "@type": "Class",
   "label": "Robotics",
+  "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems.",
+  "domain": "robotics",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automation",
-      "vc:label": "Automation"
+      "@id": "urn:ngm:class:automation",
+      "label": "Automation"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:27b5317e28ce917af8169a0afd21a7f6fcb5075a1b4bfc2a5ffe486c2cb8acfb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:control-systems",
+        "label": "Control Systems"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:precision-engineering",
+        "label": "Precision Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:27b5317e28ce917af8169a0afd21a7f6fcb5075a1b4bfc2a5ffe486c2cb8acfb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems. Modern robotics integrates artificial intelligence, machine vision, advanced sensors, IoT connectivity, and digital twins to create adaptive, flexible, and increasingly autonomous systems capable of operating in unstructured environments alongside humans.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:robotic-arm",
-      "vc:label": "Robotic Arm"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-system",
-      "vc:label": "Sensor System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-control",
-      "vc:label": "Motion Control"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuators",
-      "vc:label": "Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-systems",
-      "vc:label": "Control Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-manufacturing",
-      "vc:label": "Autonomous Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-robotics",
-      "vc:label": "Humanoid Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-automation",
-      "vc:label": "Industrial Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:precision-engineering",
-      "vc:label": "Precision Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-manufacturing",
-      "vc:label": "Smart Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-automation",
-      "vc:label": "Warehouse Automation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

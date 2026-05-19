@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:long-term-archival",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:long-term-archival",
+  "@type": "Class",
   "label": "Long Term Archival",
+  "definition": "Strategies and technologies for preserving digital assets, metaverse content, and cultural heritage data over extended periods (10+ years), using durable storage media, format migration protocols, and AI-enhanced preservation systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-preservation",
-      "vc:label": "Digital Preservation"
+      "@id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9c5248d2b6dfedea4549de94170e00133ebdc8f633f3ec8a0783c4322d25ab44"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:future-asset-access",
+        "label": "Future Asset Access"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9c5248d2b6dfedea4549de94170e00133ebdc8f633f3ec8a0783c4322d25ab44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Strategies and technologies for preserving digital assets, metaverse content, and cultural heritage data over extended periods (10+ years), using durable storage media, format migration protocols, and AI-enhanced preservation systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:future-asset-access",
-      "vc:label": "Future Asset Access"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

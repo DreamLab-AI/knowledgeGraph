@@ -3,19 +3,18 @@
   "title": "Learning Platform Categorization",
   "slug": "learning-platform-categorization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-platform-categorization",
+  "classIri": "urn:ngm:class:learning-platform-categorization",
   "domain": "spatial-computing",
   "definition": "A learning platform categorization component in the Metaverse domain that enables EtsiDomainApplicationEducation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-classification",
+      "id": "urn:ngm:class:metaverse-classification",
       "label": "Metaverse Classification"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

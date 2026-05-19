@@ -3,19 +3,18 @@
   "title": "Composite AI",
   "slug": "composite-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:composite-ai",
+  "classIri": "urn:ngm:class:composite-ai",
   "domain": "artificial-intelligence",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Composite AI is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Helpfulness",
   "slug": "helpfulness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:helpfulness",
+  "classIri": "urn:ngm:class:helpfulness",
   "domain": "artificial-intelligence",
   "definition": "An alignment objective ensuring AI systems provide useful, relevant, and informative responses to user queries. Helpfulness represents a key dimension of AI utility that must be balanced against harmlessness and honesty.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-alignment",
+      "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

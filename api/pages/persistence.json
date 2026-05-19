@@ -3,19 +3,18 @@
   "title": "Persistence",
   "slug": "persistence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:persistence",
+  "classIri": "urn:ngm:class:persistence",
   "domain": "spatial-computing",
-  "definition": "The foundational architectural mechanism ensuring data, state, and identity continuity across sessions, platforms, and time within metaverse ecosystems through distributed databases, blockchain ledgers, and file systems. Persistence coordinates multi-tier storage (hot caches, relational databases, object storage, blockchain) implementing various consistency models from strong (critical ownership records) to eventual (social feeds) to enable users to resume experiences seamlessly, maintain ownership verification, and preserve contextual information across platform boundaries. Applications span virtual worlds ([[Decentraland]], [[The Sandbox]]), multiplayer gaming (MMORPGs), enterprise collaboration ([[Microsoft Mesh]]), and educational simulations, with quality metrics including 11-nines durability for critical data, <5 minute recovery time objectives, and <100ms consistency lag for strong consistency guarantees.",
+  "definition": "The foundational architectural mechanism ensuring data, state, and identity continuity across sessions, platforms, and time within metaverse ecosystems through distributed databases, blockchain ledgers, and file systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

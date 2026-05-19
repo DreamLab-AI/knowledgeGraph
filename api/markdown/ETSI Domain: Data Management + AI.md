@@ -168,106 +168,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-data-management-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-data-management-ai",
+  "@type": "Class",
   "label": "ETSI Domain: Data Management + AI",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting AI/ML workflows, training data management, model versioning, and inference serving.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
-      "vc:label": "ETSI Domain AI + Data Mgmt"
+      "@id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
+      "label": "ETSI Domain AI + Data Mgmt"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cb93146f6e22ee5d540fcb40a52ffb4bd14ea4a9403e90ec336a414e712a48e9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-repository",
+        "label": "Training Data Repository"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-and-machine-learning",
+        "label": "AI & Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ml-operations",
+        "label": "ML Operations"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb93146f6e22ee5d540fcb40a52ffb4bd14ea4a9403e90ec336a414e712a48e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting AI/ML workflows, training data management, model versioning, and inference serving.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:experiment-tracking",
-      "vc:label": "Experiment Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-registry",
-      "vc:label": "Model Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feature-store",
-      "vc:label": "Feature Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data-repository",
-      "vc:label": "Training Data Repository"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-and-machine-learning",
-      "vc:label": "AI & Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ml-operations",
-      "vc:label": "ML Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-deployment",
-      "vc:label": "Model Deployment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-versioning",
-      "vc:label": "Data Versioning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-pipelines",
-      "vc:label": "Data Pipelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlops-infrastructure",
-      "vc:label": "MLOps Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

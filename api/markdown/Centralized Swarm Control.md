@@ -184,106 +184,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:centralized-swarm-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:centralized-swarm-control",
+  "@type": "Class",
   "label": "Centralized Swarm Control",
+  "definition": "Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimisation but creating a single point of failure.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:centralized-control-architecture",
-      "vc:label": "Centralized Control Architecture"
+      "@id": "urn:ngm:class:centralized-control-architecture",
+      "label": "Centralized Control Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:swarm-control",
-      "vc:label": "Swarm Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:swarm-control",
+      "label": "Swarm Control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e9dc59c2783c0fef14e65a973eddc99adc14e8c585244ac50a6e06920e03ba45"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:central-controller",
+        "label": "Central Controller"
+      },
+      {
+        "@id": "urn:ngm:class:communication-network",
+        "label": "Communication Network"
+      },
+      {
+        "@id": "urn:ngm:class:global-state-model",
+        "label": "Global State Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:synchronised-timing",
+        "label": "Synchronised Timing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:centralised-monitoring",
+        "label": "Centralised Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:coordinated-swarm-behaviour",
+        "label": "Coordinated Swarm Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:global-task-optimisation",
+        "label": "Global Task Optimisation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e9dc59c2783c0fef14e65a973eddc99adc14e8c585244ac50a6e06920e03ba45@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimisation but creating a single point of failure. In this model, the central controller maintains a complete model of swarm state, computes optimal commands for each [[Robot Agent]], and broadcasts directives, contrasting with [[Decentralized Swarm Control]] approaches where autonomy is distributed.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:central-controller",
-      "vc:label": "Central Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:communication-network",
-      "vc:label": "Communication Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-state-model",
-      "vc:label": "Global State Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-resources",
-      "vc:label": "Computational Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-agent-communication",
-      "vc:label": "Inter-Agent Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronised-timing",
-      "vc:label": "Synchronised Timing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:centralised-monitoring",
-      "vc:label": "Centralised Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:coordinated-swarm-behaviour",
-      "vc:label": "Coordinated Swarm Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-task-optimisation",
-      "vc:label": "Global Task Optimisation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:hierarchical-control-systems",
-      "vc:label": "Hierarchical Control Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-swarm-control",
-      "vc:label": "Decentralized Swarm Control"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

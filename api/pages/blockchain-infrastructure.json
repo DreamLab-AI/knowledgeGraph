@@ -3,41 +3,59 @@
   "title": "Blockchain Infrastructure",
   "slug": "blockchain-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-infrastructure",
+  "classIri": "urn:ngm:class:blockchain-infrastructure",
   "domain": "blockchain",
-  "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.",
+  "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that toger provide the physical and logical substrate for distributed ledger operation and decentralized applic...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-systems-infrastructure",
+      "id": "urn:ngm:class:distributed-systems-infrastructure",
       "label": "Distributed Systems Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:cryptography",
+        "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-application",
+        "id": "urn:ngm:class:blockchain-application",
         "label": "Blockchain Application"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -176,52 +176,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-risk",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-risk",
+  "@type": "Class",
   "label": "AI Risk",
+  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
+      "@id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:92e14ad85c7e5c0efcaabdad62710912b47a6c8ee377d4af01aa3edb6c3963ef"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92e14ad85c7e5c0efcaabdad62710912b47a6c8ee377d4af01aa3edb6c3963ef@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation. AI risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:linked:ai-risk-assessment",
-      "vc:label": "AI Risk Assessment"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
+      "@id": "urn:ngm:class:ai-risks",
+      "label": "AI Risks"
     }
   ]
 }

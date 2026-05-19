@@ -3,27 +3,31 @@
   "title": "XR Accessibility Standards",
   "slug": "xr-accessibility-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-accessibility-standards",
+  "classIri": "urn:ngm:class:xr-accessibility-standards",
   "domain": "spatial-computing",
   "definition": "Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:accessibility",
-      "label": "Accessibility"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

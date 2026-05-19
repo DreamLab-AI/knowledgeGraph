@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-asset-lending",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-asset-lending",
+  "@type": "Class",
   "label": "Digital Asset Lending",
+  "definition": "Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d25901eacd2fa402759eade89305f2a308efad79719f276bfed2cac36eedea8c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collateral-management",
+        "label": "Collateral Management"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-systems",
+        "label": "Liquidation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:leverage-trading",
+        "label": "Leverage Trading"
+      },
+      {
+        "@id": "urn:ngm:class:yield-generation",
+        "label": "Yield Generation"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d25901eacd2fa402759eade89305f2a308efad79719f276bfed2cac36eedea8c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:collateral-management",
-      "vc:label": "Collateral Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidation-systems",
-      "vc:label": "Liquidation Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:leverage-trading",
-      "vc:label": "Leverage Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-generation",
-      "vc:label": "Yield Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

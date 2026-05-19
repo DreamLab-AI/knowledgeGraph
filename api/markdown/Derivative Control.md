@@ -200,106 +200,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:derivative-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:derivative-control",
+  "@type": "Class",
   "label": "Derivative Control",
+  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:control-actions",
-      "vc:label": "Control Actions"
+      "@id": "urn:ngm:class:control-actions",
+      "label": "Control Actions"
     },
     {
-      "@id": "urn:visionflow:linked:pid-control-component",
-      "vc:label": "PID Control Component"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-control",
-      "vc:label": "Feedback Control"
+      "@id": "urn:ngm:class:pid-control-component",
+      "label": "PID Control Component"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:damping-action",
+        "label": "Damping Action"
+      },
+      {
+        "@id": "urn:ngm:class:derivative-gain",
+        "label": "Derivative Gain"
+      },
+      {
+        "@id": "urn:ngm:class:error-rate-measurement",
+        "label": "Error Rate Measurement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "@id": "urn:ngm:class:gain-tuning",
+        "label": "Gain Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:low-pass-filtering",
+        "label": "Low-Pass Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:time-derivative",
+        "label": "Time Derivative"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:faster-convergence",
+        "label": "Faster Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:oscillation-damping",
+        "label": "Oscillation Damping"
+      },
+      {
+        "@id": "urn:ngm:class:reduced-overshoot",
+        "label": "Reduced Overshoot"
+      },
+      {
+        "@id": "urn:ngm:class:stability-improvement",
+        "label": "Stability Improvement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e9da0e2da0d213b2d8ea1f60aa6a45d31be93dacbb64e56103cfa7473d90572@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Derivative control responds to the rate of change of system error, providing damping that opposes oscillations and improves transient response. When combined with [[Proportional Control]] and [[Integral Control]] in [[PID Control]], the derivative term enhances stability and enables faster, less overshoot-prone convergence to setpoints in robotic [[Control Systems]].",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:damping-action",
-      "vc:label": "Damping Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:derivative-gain",
-      "vc:label": "Derivative Gain"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-rate-measurement",
-      "vc:label": "Error Rate Measurement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:error-signal",
-      "vc:label": "Error Signal"
-    },
-    {
-      "@id": "urn:visionflow:linked:gain-tuning",
-      "vc:label": "Gain Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-pass-filtering",
-      "vc:label": "Low-Pass Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-derivative",
-      "vc:label": "Time Derivative"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:faster-convergence",
-      "vc:label": "Faster Convergence"
-    },
-    {
-      "@id": "urn:visionflow:linked:oscillation-damping",
-      "vc:label": "Oscillation Damping"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduced-overshoot",
-      "vc:label": "Reduced Overshoot"
-    },
-    {
-      "@id": "urn:visionflow:linked:stability-improvement",
-      "vc:label": "Stability Improvement"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

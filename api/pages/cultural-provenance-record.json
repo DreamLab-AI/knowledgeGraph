@@ -3,82 +3,95 @@
   "title": "Cultural Provenance Record",
   "slug": "cultural-provenance-record",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cultural-provenance-record",
+  "classIri": "urn:ngm:class:cultural-provenance-record",
   "domain": "spatial-computing",
   "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:authentication-record",
+        "id": "urn:ngm:class:authentication-record",
         "label": "Authentication Record"
       },
       {
-        "id": "urn:visionflow:linked:condition-report",
+        "id": "urn:ngm:class:condition-report",
         "label": "Condition Report"
       },
       {
-        "id": "urn:visionflow:linked:cultural-context",
+        "id": "urn:ngm:class:cultural-context",
         "label": "Cultural Context"
       },
       {
-        "id": "urn:visionflow:linked:ownership-chain",
+        "id": "urn:ngm:class:ownership-chain",
         "label": "Ownership Chain"
       },
       {
-        "id": "urn:visionflow:owl:class:artifact-metadata",
+        "id": "urn:ngm:class:artifact-metadata",
         "label": "Artifact Metadata"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-ledger",
+        "id": "urn:ngm:class:blockchain-ledger",
         "label": "Blockchain Ledger"
       },
       {
-        "id": "urn:visionflow:linked:conservation-database",
+        "id": "urn:ngm:class:conservation-database",
         "label": "Conservation Database"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-schema",
+        "id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schema"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authenticity-certification",
+        "id": "urn:ngm:class:authenticity-certification",
         "label": "Authenticity Certification"
       },
       {
-        "id": "urn:visionflow:linked:cultural-heritage-tracking",
+        "id": "urn:ngm:class:cultural-heritage-tracking",
         "label": "Cultural Heritage Tracking"
       },
       {
-        "id": "urn:visionflow:linked:ownership-transfer",
+        "id": "urn:ngm:class:ownership-transfer",
         "label": "Ownership Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-verification",
+        "id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-management-system",
+        "label": "Cultural Heritage Management System"
+      },
+      {
+        "id": "urn:ngm:class:museum-information-system",
+        "label": "Museum Information System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

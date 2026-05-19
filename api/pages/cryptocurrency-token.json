@@ -3,19 +3,18 @@
   "title": "Cryptocurrency Token",
   "slug": "cryptocurrency-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptocurrency-token",
+  "classIri": "urn:ngm:class:cryptocurrency-token",
   "domain": "blockchain",
   "definition": "Cryptocurrency Token is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.7,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Display Hardware",
   "slug": "display-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:display-hardware",
+  "classIri": "urn:ngm:class:display-hardware",
   "domain": "spatial-computing",
   "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hardware",
+      "id": "urn:ngm:class:hardware",
       "label": "Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:display-technology",
+        "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
       },
       {
-        "id": "urn:visionflow:linked:graphics-processing",
+        "id": "urn:ngm:class:graphics-processing",
         "label": "Graphics Processing"
       },
       {
-        "id": "urn:visionflow:linked:optical-systems",
+        "id": "urn:ngm:class:optical-systems",
         "label": "Optical Systems"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-visualization",
+        "id": "urn:ngm:class:immersive-visualization",
         "label": "Immersive Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:mixed-reality",
+        "id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

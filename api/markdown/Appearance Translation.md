@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:appearance-translation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:appearance-translation",
+  "@type": "Class",
   "label": "Appearance Translation",
+  "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across di...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:neural-image-processing",
-      "vc:label": "Neural Image Processing"
+      "@id": "urn:ngm:class:neural-image-processing",
+      "label": "Neural Image Processing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:420fddc1823797c3495ae92d8df00d75efa99e6ba98f43f2773d5748887dd48c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-preservation",
+        "label": "Content Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:style-representations",
+        "label": "Style Representations"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:artistic-stylization",
+        "label": "Artistic Stylization"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-content-transformation",
+        "label": "Visual Content Transformation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:420fddc1823797c3495ae92d8df00d75efa99e6ba98f43f2773d5748887dd48c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across different aesthetic representations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-preservation",
-      "vc:label": "Content Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:style-representations",
-      "vc:label": "Style Representations"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:artistic-stylization",
-      "vc:label": "Artistic Stylization"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-adaptation",
-      "vc:label": "Domain Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-content-transformation",
-      "vc:label": "Visual Content Transformation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

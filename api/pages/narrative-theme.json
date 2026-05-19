@@ -3,32 +3,36 @@
   "title": "Narrative Theme",
   "slug": "narrative-theme",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:narrative-theme",
+  "classIri": "urn:ngm:class:narrative-theme",
   "domain": "spatial-computing",
   "definition": "The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:narrative-structure",
+      "id": "urn:ngm:class:narrative-structure",
       "label": "Narrative Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:storytelling",
+        "id": "urn:ngm:class:storytelling",
         "label": "Storytelling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

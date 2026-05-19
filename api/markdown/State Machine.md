@@ -396,326 +396,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:state-machine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:state-machine",
+  "@type": "Class",
   "label": "State Machine",
+  "definition": "StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automata-theory",
-      "vc:label": "Automata Theory"
+      "@id": "urn:ngm:class:automata-theory",
+      "label": "Automata Theory"
     },
     {
-      "@id": "urn:visionflow:linked:computational-model",
-      "vc:label": "Computational Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:concurrency-theory",
-      "vc:label": "Concurrency Theory"
+      "@id": "urn:ngm:class:computational-model",
+      "label": "Computational Model"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d466acd6f03cae3d52e5656b79f52e028503903e578119bd2136c259b4f94053"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accepting-state",
+        "label": "Accepting State"
+      },
+      {
+        "@id": "urn:ngm:class:input-alphabet",
+        "label": "Input Alphabet"
+      },
+      {
+        "@id": "urn:ngm:class:output-function",
+        "label": "Output Function"
+      },
+      {
+        "@id": "urn:ngm:class:stack",
+        "label": "Stack"
+      },
+      {
+        "@id": "urn:ngm:class:start-state",
+        "label": "Start State"
+      },
+      {
+        "@id": "urn:ngm:class:state",
+        "label": "State"
+      },
+      {
+        "@id": "urn:ngm:class:tape",
+        "label": "Tape"
+      },
+      {
+        "@id": "urn:ngm:class:transition-function",
+        "label": "Transition Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "@id": "urn:ngm:class:event-model",
+        "label": "Event Model"
+      },
+      {
+        "@id": "urn:ngm:class:replication-log",
+        "label": "Replication Log"
+      },
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:parser",
+        "label": "Parser"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-verification",
+        "label": "Protocol Verification"
+      },
+      {
+        "@id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:finite-automaton",
+        "label": "Finite Automaton"
+      },
+      {
+        "@id": "urn:ngm:class:pushdown-automaton",
+        "label": "Pushdown Automaton"
+      },
+      {
+        "@id": "urn:ngm:class:replicated-state-machine",
+        "label": "Replicated State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:spring-state-machine",
+        "label": "Spring State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:statecharts",
+        "label": "Statecharts"
+      },
+      {
+        "@id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "@id": "urn:ngm:class:xstate",
+        "label": "XState"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:scxml",
+        "label": "SCXML"
+      },
+      {
+        "@id": "urn:ngm:class:uml",
+        "label": "UML"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "@id": "urn:ngm:class:ui-state-management",
+        "label": "UI State Management"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.X"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-9562",
+        "label": "IETF RFC 9562"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-10746-rm-odp",
+        "label": "ISO/IEC 10746 RM-ODP"
+      },
+      {
+        "@id": "urn:ngm:class:omg-uml-2-5-1",
+        "label": "OMG UML 2.5.1"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-scxml",
+        "label": "W3C SCXML"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d466acd6f03cae3d52e5656b79f52e028503903e578119bd2136c259b4f94053@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × input) → next-state, and optionally an output function. Formally, a deterministic finite automaton (DFA) is the quintuple M = (Q, Σ, δ, q₀, F) where Q is the finite non-empty set of states, Σ the input alphabet, δ: Q × Σ → Q the total transition function, q₀ ∈ Q the start state, and F ⊆ Q the set of accepting states; the machine accepts string w ∈ Σ* iff δ*(q₀, w) ∈ F where δ* is the extension of δ to strings. Moore machines extend this to a sextuple (Q, Σ, Δ, δ, λ, q₀) where Δ is the output alphabet and λ: Q → Δ the state-output function, so outputs depend only on current state; Mealy machines restructure as (Q, Σ, Δ, δ, λ, q₀) with λ: Q × Σ → Δ so outputs depend on both state and current input, giving strictly equivalent expressiveness to Moore machines under bisimulation but with more compact representations for many transducers. Nondeterministic finite automata (NFA) replace δ with Δ: Q × Σ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accepting-state",
-      "vc:label": "Accepting State"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-alphabet",
-      "vc:label": "Input Alphabet"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-function",
-      "vc:label": "Output Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:stack",
-      "vc:label": "Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:start-state",
-      "vc:label": "Start State"
-    },
-    {
-      "@id": "urn:visionflow:linked:state",
-      "vc:label": "State"
-    },
-    {
-      "@id": "urn:visionflow:linked:tape",
-      "vc:label": "Tape"
-    },
-    {
-      "@id": "urn:visionflow:linked:transition-function",
-      "vc:label": "Transition Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:determinism",
-      "vc:label": "Determinism"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-model",
-      "vc:label": "Event Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-log",
-      "vc:label": "Replication Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space",
-      "vc:label": "State Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-tree",
-      "vc:label": "Behaviour Tree"
-    },
-    {
-      "@id": "urn:visionflow:linked:parser",
-      "vc:label": "Parser"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-verification",
-      "vc:label": "Protocol Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:regular-expression",
-      "vc:label": "Regular Expression"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:finite-automaton",
-      "vc:label": "Finite Automaton"
-    },
-    {
-      "@id": "urn:visionflow:linked:pushdown-automaton",
-      "vc:label": "Pushdown Automaton"
-    },
-    {
-      "@id": "urn:visionflow:linked:replicated-state-machine",
-      "vc:label": "Replicated State Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:spring-state-machine",
-      "vc:label": "Spring State Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:statecharts",
-      "vc:label": "Statecharts"
-    },
-    {
-      "@id": "urn:visionflow:linked:turing-machine",
-      "vc:label": "Turing Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:xstate",
-      "vc:label": "XState"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:formal-language-theory",
-      "vc:label": "Formal Language Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-theory",
-      "vc:label": "Type Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:compiler",
-      "vc:label": "Compiler"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-ai",
-      "vc:label": "Game AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:ui-state-management",
-      "vc:label": "UI State Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:paxos",
-      "vc:label": "Paxos"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft",
-      "vc:label": "Raft"
-    },
-    {
-      "@id": "urn:visionflow:linked:scxml",
-      "vc:label": "SCXML"
-    },
-    {
-      "@id": "urn:visionflow:linked:uml",
-      "vc:label": "UML"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero-Knowledge Proof"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:actor-model",
-      "vc:label": "Actor Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:dataflow-model",
-      "vc:label": "Dataflow Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:petri-net",
-      "vc:label": "Petri Net"
-    },
-    {
-      "@id": "urn:visionflow:linked:reactive-programming",
-      "vc:label": "Reactive Programming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-802-x",
-      "vc:label": "IEEE 802.X"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-9562",
-      "vc:label": "IETF RFC 9562"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-10746-rm-odp",
-      "vc:label": "ISO/IEC 10746 RM-ODP"
-    },
-    {
-      "@id": "urn:visionflow:linked:omg-uml-2-5-1",
-      "vc:label": "OMG UML 2.5.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-scxml",
-      "vc:label": "W3C SCXML"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

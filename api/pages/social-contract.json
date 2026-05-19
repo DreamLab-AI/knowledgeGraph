@@ -3,40 +3,44 @@
   "title": "Social Contract",
   "slug": "social-contract",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:social-contract",
+  "classIri": "urn:ngm:class:social-contract",
   "domain": "infrastructure",
-  "definition": "A philosophical and political theory positing that individuals consent, either explicitly or tacitly, to surrender certain freedoms and submit to authority in exchange for protection of their remaining rights and maintenance of social order. The concept establishes that legitimate political authority derives from agreement among rational individuals rather than divine right or natural hierarchy.",
+  "definition": "A philosophical and political theory positing that individuals consent, either explicitly or tacitly, to surrender certain freedoms and submit to authority in exchange for protection of their remaining rights and maintenance of social order.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:civil-society",
+        "id": "urn:ngm:class:civil-society",
         "label": "Civil Society"
       },
       {
-        "id": "urn:visionflow:linked:constitutional-law",
+        "id": "urn:ngm:class:constitutional-law",
         "label": "Constitutional Law"
       },
       {
-        "id": "urn:visionflow:owl:class:democratic-governance",
+        "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

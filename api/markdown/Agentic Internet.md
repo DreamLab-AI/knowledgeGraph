@@ -1304,404 +1304,311 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:agentic-internet",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:agentic-internet",
+  "@type": "Class",
   "label": "Agentic Internet",
+  "definition": "Agentic Internet is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (hu...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agent-oriented-computing",
-      "vc:label": "Agent-Oriented Computing"
+      "@id": "urn:ngm:class:agent-oriented-computing",
+      "label": "Agent-Oriented Computing"
     },
     {
-      "@id": "urn:visionflow:linked:sociotechnical-system",
-      "vc:label": "Sociotechnical System"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-architecture",
-      "vc:label": "Web Architecture"
+      "@id": "urn:ngm:class:sociotechnical-system",
+      "label": "Sociotechnical System"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0139ffa1e9c52fd0aaa29b745e1c101c3c9014264813645e7a5b543d218bce2e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:a2-a-protocol",
+        "label": "A2A Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:agent-marketplace",
+        "label": "Agent Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-commerce-layer",
+        "label": "Agentic Commerce Layer"
+      },
+      {
+        "@id": "urn:ngm:class:browser-agent",
+        "label": "Browser Agent"
+      },
+      {
+        "@id": "urn:ngm:class:capability-token",
+        "label": "Capability Token"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:discovery-protocol",
+        "label": "Discovery Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-memory",
+        "label": "Persistent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-search",
+        "label": "Agentic Search"
+      },
+      {
+        "@id": "urn:ngm:class:api-first-web",
+        "label": "API-First Web"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-workflows",
+        "label": "Autonomous Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:cross-vendor-agent-interoperability",
+        "label": "Cross-Vendor Agent Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:long-horizon-task-execution",
+        "label": "Long-Horizon Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:machine-to-machine-commerce",
+        "label": "Machine-to-Machine Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:personal-ai",
+        "label": "Personal AI"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-service-composition",
+        "label": "Programmatic Service Composition"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:capability-discovery",
+        "label": "Capability Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:elicitation",
+        "label": "Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-responses",
+        "label": "Streaming Responses"
+      },
+      {
+        "@id": "urn:ngm:class:task-lifecycle-management",
+        "label": "Task Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:google-gemini",
+        "label": "Google Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:meta-llama",
+        "label": "Meta Llama"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-gpt",
+        "label": "OpenAI GPT"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:mistral",
+        "label": "Mistral"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-economy",
+        "label": "Agentic Economy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "@id": "urn:ngm:class:browser-use",
+        "label": "Browser Use"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-agents",
+        "label": "Internet of Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:zero-click-search",
+        "label": "Zero-Click Search"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:booking-agents",
+        "label": "Booking Agents"
+      },
+      {
+        "@id": "urn:ngm:class:coding-copilots",
+        "label": "Coding Copilots"
+      },
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:personal-assistants",
+        "label": "Personal Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:procurement-agents",
+        "label": "Procurement Agents"
+      },
+      {
+        "@id": "urn:ngm:class:research-agents",
+        "label": "Research Agents"
+      },
+      {
+        "@id": "urn:ngm:class:shopping-agents",
+        "label": "Shopping Agents"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:agntcy",
+        "label": "AGNTCY"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust over IP Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0139ffa1e9c52fd0aaa29b745e1c101c3c9014264813645e7a5b543d218bce2e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Agentic Internet** is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (human users, enterprises, other agents); operationally instantiated through a 2024-2026 stack comprising tool-and-data connection protocols ([[Model Context Protocol]] released by [[Anthropic]] 25 November 2024 as 'USB-C for AI', adopted by [[OpenAI]] March 2025, [[Google DeepMind]] April 2025, [[Microsoft]] Copilot Studio, [[Replit]], [[Sourcegraph]], [[Block]], [[Apollo]], with 2025-06-18 protocol revision adding elicitation, structured outputs and OAuth 2.1 authorisation), agent-to-agent interoperability ([[A2A Protocol]] announced by [[Google]] 9 April 2025 at Cloud Next with 50+ launch partners spanning [[Atlassian]], [[Box]], [[Cohere]], [[Intuit]], [[LangChain]], [[MongoDB]], [[PayPal]], [[Salesforce]], [[SAP]], [[ServiceNow]], [[Workday]], using HTTP+JSON-RPC+Server-Sent Events with AgentCard capability discovery and Task lifecycle), computer-using agents ([[Anthropic Computer Use",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:a2-a-protocol",
-      "vc:label": "A2A Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-identity",
-      "vc:label": "Agent Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-marketplace",
-      "vc:label": "Agent Marketplace"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-orchestrator",
-      "vc:label": "Agent Orchestrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-runtime",
-      "vc:label": "Agent Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:agentic-commerce-layer",
-      "vc:label": "Agentic Commerce Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-agent",
-      "vc:label": "Browser Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:capability-token",
-      "vc:label": "Capability Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-registry",
-      "vc:label": "Tool Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:authorisation",
-      "vc:label": "Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:discovery-protocol",
-      "vc:label": "Discovery Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-memory",
-      "vc:label": "Persistent Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasoning-engine",
-      "vc:label": "Reasoning Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:transport-layer",
-      "vc:label": "Transport Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-search",
-      "vc:label": "Agentic Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:api-first-web",
-      "vc:label": "API-First Web"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-workflows",
-      "vc:label": "Autonomous Workflows"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-vendor-agent-interoperability",
-      "vc:label": "Cross-Vendor Agent Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-horizon-task-execution",
-      "vc:label": "Long-Horizon Task Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:machine-to-machine-commerce",
-      "vc:label": "Machine-to-Machine Commerce"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-ai",
-      "vc:label": "Personal AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmatic-service-composition",
-      "vc:label": "Programmatic Service Composition"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:capability-discovery",
-      "vc:label": "Capability Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:elicitation",
-      "vc:label": "Elicitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc",
-      "vc:label": "JSON-RPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-responses",
-      "vc:label": "Streaming Responses"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-lifecycle-management",
-      "vc:label": "Task Lifecycle Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-schema",
-      "vc:label": "Tool Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dns",
-      "vc:label": "DNS"
-    },
-    {
-      "@id": "urn:visionflow:linked:http",
-      "vc:label": "HTTP"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth",
-      "vc:label": "OAuth"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest",
-      "vc:label": "REST"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls",
-      "vc:label": "TLS"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-sockets",
-      "vc:label": "WebSockets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:json",
-      "vc:label": "JSON"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:booking-agents",
-      "vc:label": "Booking Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:coding-copilots",
-      "vc:label": "Coding Copilots"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-service-automation",
-      "vc:label": "Customer Service Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-assistants",
-      "vc:label": "Personal Assistants"
-    },
-    {
-      "@id": "urn:visionflow:linked:procurement-agents",
-      "vc:label": "Procurement Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-agents",
-      "vc:label": "Research Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:shopping-agents",
-      "vc:label": "Shopping Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-engineering-agents",
-      "vc:label": "Software Engineering Agents"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:embeddings",
-      "vc:label": "Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-gemini",
-      "vc:label": "Google Gemini"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-llama",
-      "vc:label": "Meta Llama"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-gpt",
-      "vc:label": "OpenAI GPT"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mistral",
-      "vc:label": "Mistral"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:browser-centric-internet",
-      "vc:label": "Browser-Centric Internet"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-in-the-loop-workflow",
-      "vc:label": "Human-in-the-Loop Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-web",
-      "vc:label": "Static Web"
-    },
-    {
-      "@id": "urn:visionflow:linked:walled-garden",
-      "vc:label": "Walled Garden"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-2-0-saa-s",
-      "vc:label": "Web 2.0 SaaS"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3-blockchain-agents",
-      "vc:label": "Web3 Blockchain Agents"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:agentic-economy",
-      "vc:label": "Agentic Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-agents",
-      "vc:label": "AI Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-agents",
-      "vc:label": "Autonomous Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-use",
-      "vc:label": "Browser Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-use",
-      "vc:label": "Computer Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-agents",
-      "vc:label": "Internet of Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-click-search",
-      "vc:label": "Zero-Click Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:death-of-the-internet",
-      "vc:label": "Death of the Internet"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:agntcy",
-      "vc:label": "AGNTCY"
-    },
-    {
-      "@id": "urn:visionflow:linked:anthropic",
-      "vc:label": "Anthropic"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation",
-      "vc:label": "Linux Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-foundation",
-      "vc:label": "OpenID Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-over-ip-foundation",
-      "vc:label": "Trust over IP Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:web-science",
-      "vc:label": "Web Science"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

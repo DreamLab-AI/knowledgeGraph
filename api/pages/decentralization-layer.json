@@ -3,74 +3,83 @@
   "title": "Decentralization Layer",
   "slug": "decentralization-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decentralization-layer",
+  "classIri": "urn:ngm:class:decentralization-layer",
   "domain": "spatial-computing",
   "definition": "Structural layer that distributes data and control across nodes to reduce central dependence and increase trust through P2P networking, blockchain, and distributed consensus mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:distributed-hash-table",
+        "id": "urn:ngm:class:distributed-hash-table",
         "label": "Distributed Hash Table"
       },
       {
-        "id": "urn:visionflow:linked:p2-p-network",
+        "id": "urn:ngm:class:p2-p-network",
         "label": "P2P Network"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "id": "urn:ngm:class:cryptographic-primitives",
         "label": "Cryptographic Primitives"
       },
       {
-        "id": "urn:visionflow:linked:distributed-storage",
+        "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-sovereignty",
+        "id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:visionflow:linked:trust-distribution",
+        "id": "urn:ngm:class:trust-distribution",
         "label": "Trust Distribution"
       },
       {
-        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,40 +3,44 @@
   "title": "Transparency (OECD)",
   "slug": "transparency-oecd",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparency-oecd",
+  "classIri": "urn:ngm:class:transparency-oecd",
   "domain": "artificial-intelligence",
   "definition": "AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:contestability",
+        "id": "urn:ngm:class:contestability",
         "label": "contestability"
       },
       {
-        "id": "urn:visionflow:linked:informed-decision-making",
+        "id": "urn:ngm:class:informed-decision-making",
         "label": "Informed decision-making"
       },
       {
-        "id": "urn:visionflow:linked:trust",
+        "id": "urn:ngm:class:trust",
         "label": "trust"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

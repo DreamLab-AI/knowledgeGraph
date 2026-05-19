@@ -108,41 +108,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nlptask",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nlptask",
+  "@type": "Class",
   "label": "NLPTask",
+  "definition": "Natural Language Processing (NLP) tasks are computational problems involving human language understanding and generation, including text classification, sentiment analysis (identifying positive/negative/neutral opinions), named entity recognition, machine translation, text summarization, and ques...",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d1ced0ecbc0d9072d8a7ffba01d384e6dc563a96643b6fadbdbaaa6a26de0604"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d1ced0ecbc0d9072d8a7ffba01d384e6dc563a96643b6fadbdbaaa6a26de0604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Natural Language Processing (NLP) tasks are computational problems involving human language understanding and generation, including text classification, sentiment analysis (identifying positive/negative/neutral opinions), named entity recognition, machine translation, text summarization, and question answering. These tasks leverage machine learning approaches from traditional models (Naive Bayes, SVM) to transformer-based architectures (BERT, GPT) that have revolutionized accuracy through powerful text representations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

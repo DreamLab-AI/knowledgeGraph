@@ -3,19 +3,18 @@
   "title": "Virtual Stage",
   "slug": "virtual-stage",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-stage",
+  "classIri": "urn:ngm:class:virtual-stage",
   "domain": "spatial-computing",
   "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:production-facility",
+      "id": "urn:ngm:class:production-facility",
       "label": "Production Facility"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

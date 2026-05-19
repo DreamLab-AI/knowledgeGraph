@@ -3,74 +3,74 @@
   "title": "Centralized Swarm Control",
   "slug": "centralized-swarm-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:centralized-swarm-control",
+  "classIri": "urn:ngm:class:centralized-swarm-control",
   "domain": "robotics",
-  "definition": "Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimisation but creating a single point of failure. In this model, the central controller maintains a complete model of swarm state, computes optimal commands for each [[Robot Agent]], and broadcasts directives, contrasting with [[Decentralized Swarm Control]] approaches where autonomy is distributed.",
+  "definition": "Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimisation but creating a single point of failure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:centralized-control-architecture",
+      "id": "urn:ngm:class:centralized-control-architecture",
       "label": "Centralized Control Architecture"
     },
     {
-      "id": "urn:visionflow:linked:swarm-control",
+      "id": "urn:ngm:class:swarm-control",
       "label": "Swarm Control"
-    },
-    {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:central-controller",
+        "id": "urn:ngm:class:central-controller",
         "label": "Central Controller"
       },
       {
-        "id": "urn:visionflow:linked:communication-network",
+        "id": "urn:ngm:class:communication-network",
         "label": "Communication Network"
       },
       {
-        "id": "urn:visionflow:linked:global-state-model",
+        "id": "urn:ngm:class:global-state-model",
         "label": "Global State Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-resources",
+        "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
       },
       {
-        "id": "urn:visionflow:linked:inter-agent-communication",
+        "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
       },
       {
-        "id": "urn:visionflow:linked:synchronised-timing",
+        "id": "urn:ngm:class:synchronised-timing",
         "label": "Synchronised Timing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:centralised-monitoring",
+        "id": "urn:ngm:class:centralised-monitoring",
         "label": "Centralised Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:coordinated-swarm-behaviour",
+        "id": "urn:ngm:class:coordinated-swarm-behaviour",
         "label": "Coordinated Swarm Behaviour"
       },
       {
-        "id": "urn:visionflow:linked:global-task-optimisation",
+        "id": "urn:ngm:class:global-task-optimisation",
         "label": "Global Task Optimisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

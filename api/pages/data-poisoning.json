@@ -3,19 +3,18 @@
   "title": "Data Poisoning",
   "slug": "data-poisoning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-poisoning",
+  "classIri": "urn:ngm:class:data-poisoning",
   "domain": "artificial-intelligence",
   "definition": "A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:adversarial-attack",
+      "id": "urn:ngm:class:adversarial-attack",
       "label": "Adversarial Attack"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

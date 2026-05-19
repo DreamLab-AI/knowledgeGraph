@@ -3,19 +3,18 @@
   "title": "Logic Programming",
   "slug": "logic-programming",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:logic-programming",
+  "classIri": "urn:ngm:class:logic-programming",
   "domain": "artificial-intelligence",
   "definition": "Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:programming-paradigm",
+      "id": "urn:ngm:class:programming-paradigm",
       "label": "Programming Paradigm"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

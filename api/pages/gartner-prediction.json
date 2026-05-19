@@ -3,19 +3,18 @@
   "title": "Gartner Prediction",
   "slug": "gartner-prediction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gartner-prediction",
+  "classIri": "urn:ngm:class:gartner-prediction",
   "domain": "artificial-intelligence",
-  "definition": "Indicates environments where something operates.",
+  "definition": "Gartner Prediction is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

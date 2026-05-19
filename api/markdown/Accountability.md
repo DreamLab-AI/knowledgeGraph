@@ -156,72 +156,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accountability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accountability",
+  "@type": "Class",
   "label": "Accountability",
+  "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:explainability-ai-0063",
+        "label": "Explainability (AI-0063)"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-ai-0062",
+        "label": "Transparency (AI-0062)"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management-ai-0078",
+        "label": "Risk Management (AI-0078)"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:db173d41e6082a085c6cfbca98265045a9f369c86409bcf95715a165ce4334b4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:explainability-ai-0063",
-      "vc:label": "Explainability (AI-0063)"
-    },
-    {
-      "@id": "urn:visionflow:linked:transparency-ai-0062",
-      "vc:label": "Transparency (AI-0062)"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance",
-      "vc:label": "Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-management-ai-0078",
-      "vc:label": "Risk Management (AI-0078)"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust",
-      "vc:label": "Trust"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

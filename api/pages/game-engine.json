@@ -3,90 +3,103 @@
   "title": "Game Engine",
   "slug": "game-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:game-engine",
+  "classIri": "urn:ngm:class:game-engine",
   "domain": "spatial-computing",
   "definition": "Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-platform",
+      "id": "urn:ngm:class:software-platform",
       "label": "Software Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-management-system",
+        "id": "urn:ngm:class:asset-management-system",
         "label": "Asset Management System"
       },
       {
-        "id": "urn:visionflow:linked:audio-engine",
+        "id": "urn:ngm:class:audio-engine",
         "label": "Audio Engine"
       },
       {
-        "id": "urn:visionflow:linked:scripting-runtime",
+        "id": "urn:ngm:class:scripting-runtime",
         "label": "Scripting Runtime"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-engine",
+        "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
         "label": "Real-Time Rendering Pipeline"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:visionflow:owl:class:scene-graph",
+        "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:graphics-api",
+        "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       },
       {
-        "id": "urn:visionflow:owl:class:operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:interactive-experience",
+        "id": "urn:ngm:class:interactive-experience",
         "label": "Interactive Experience"
       },
       {
-        "id": "urn:visionflow:linked:multiplayer-gameplay",
+        "id": "urn:ngm:class:multiplayer-gameplay",
         "label": "Multiplayer Gameplay"
       },
       {
-        "id": "urn:visionflow:owl:class:procedural-content-generation",
+        "id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-world-creation",
+        "id": "urn:ngm:class:virtual-world-creation",
         "label": "Virtual World Creation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:development-infrastructure",
+        "label": "Development Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-platform",
+        "label": "Software Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

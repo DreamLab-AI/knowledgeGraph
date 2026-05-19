@@ -172,48 +172,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hyperledger-besu",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hyperledger-besu",
+  "@type": "Class",
   "label": "Hyperledger Besu",
+  "definition": "Enterprise-grade ereum client developed by [[Hyperledger Foundation]] supporting both public and private blockchain deployments with multiple consensus mechanisms—[[ProofOfWork]], [[ProofOfAuthority]], [[Practical Byzantine Fault Tolerance|PBFT]].",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d049053df1cf9b4d57ee78bd9af6401b7b156825db3ed717c54ec02cdcee358f"
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "ConsensusProtocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d049053df1cf9b4d57ee78bd9af6401b7b156825db3ed717c54ec02cdcee358f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Enterprise-grade Ethereum client developed by [[Hyperledger Foundation]] supporting both public and private blockchain deployments with multiple consensus mechanisms—[[ProofOfWork]], [[ProofOfAuthority]], [[Practical Byzantine Fault Tolerance|PBFT]]. Besu provides full Ethereum compatibility whilst enabling permissioned networks through identity verification and privacy features like [[PrivateChannels]], making it suitable for enterprise consortia and regulatory compliance. The client integrates with [[Hyperledger Fabric]] and [[InterledgerProtocol]] for cross-chain interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "ConsensusProtocol"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

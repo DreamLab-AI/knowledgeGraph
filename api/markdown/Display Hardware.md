@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:display-hardware",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:display-hardware",
+  "@type": "Class",
   "label": "Display Hardware",
+  "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:hardware",
-      "vc:label": "Hardware"
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3f26e20e0d1b799f0fcba34531d43a4c659ee4f34ebc8c83bb5a40d4dd000a7b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-visualization",
+        "label": "Immersive Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3f26e20e0d1b799f0fcba34531d43a4c659ee4f34ebc8c83bb5a40d4dd000a7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:display-technology",
-      "vc:label": "Display Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphics-processing",
-      "vc:label": "Graphics Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-systems",
-      "vc:label": "Optical Systems"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-visualization",
-      "vc:label": "Immersive Visualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality",
-      "vc:label": "Mixed Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Hyperparameter",
   "slug": "hyperparameter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hyperparameter",
+  "classIri": "urn:ngm:class:hyperparameter",
   "domain": "artificial-intelligence",
   "definition": "A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "established",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -220,128 +220,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-citizenship",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-citizenship",
+  "@type": "Class",
   "label": "Digital Citizenship",
+  "definition": "Digital Citizenship is a type of Virtual Society in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-society",
-      "vc:label": "Virtual Society"
+      "@id": "urn:ngm:class:virtual-society",
+      "label": "Virtual Society"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:735e70f50cf9ae863c3c1bf389a9322a93a16fb07f7a80ae8a5143ccea74f537"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-controls",
+        "label": "Access Controls"
+      },
+      {
+        "@id": "urn:ngm:class:civic-duties",
+        "label": "Civic Duties"
+      },
+      {
+        "@id": "urn:ngm:class:community-membership",
+        "label": "Community Membership"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:participation-framework",
+        "label": "Participation Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-to-services",
+        "label": "Access to Services"
+      },
+      {
+        "@id": "urn:ngm:class:community-voting",
+        "label": "Community Voting"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:civic-participation",
+        "label": "Civic Participation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-constitution",
+        "label": "Digital Constitution"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:735e70f50cf9ae863c3c1bf389a9322a93a16fb07f7a80ae8a5143ccea74f537@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces. bridges-to:: [[Telecollaboration]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-constitution",
-      "vc:label": "Digital Constitution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-society",
-      "vc:label": "Virtual Society"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:access-controls",
-      "vc:label": "Access Controls"
-    },
-    {
-      "@id": "urn:visionflow:linked:civic-duties",
-      "vc:label": "Civic Duties"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-membership",
-      "vc:label": "Community Membership"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-rights",
-      "vc:label": "Digital Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participation-framework",
-      "vc:label": "Participation Framework"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:access-to-services",
-      "vc:label": "Access to Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-voting",
-      "vc:label": "Community Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction",
-      "vc:label": "Social Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:civic-participation",
-      "vc:label": "Civic Participation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:privacy-protection",
-      "vc:label": "Privacy Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance-model",
-      "vc:label": "Community Governance Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

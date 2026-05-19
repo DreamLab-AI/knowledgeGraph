@@ -404,354 +404,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mistral-and-mixtral",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mistral-and-mixtral",
+  "@type": "Class",
   "label": "Mistral and Mixtral",
+  "definition": "Mistral and Mixtral constitute the model family produced by Mistral AI SAS representing Europe's leading independent large language model research laboratory and the primary European challenger to US-dominated foundation model providers (OpenAI, Anthropic, Google DeepMind).",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open Source AI"
+      "@id": "urn:ngm:class:open-source-ai",
+      "label": "Open Source AI"
     },
     {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
+      "@id": "urn:ngm:class:transformer-architecture",
+      "label": "Transformer Architecture"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fc44d15267e8e239896843079863e693d01983c84059a9b1f22b46b667a0338b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:codestral",
+        "label": "Codestral"
+      },
+      {
+        "@id": "urn:ngm:class:la-plateforme",
+        "label": "La Plateforme"
+      },
+      {
+        "@id": "urn:ngm:class:le-chat",
+        "label": "Le Chat"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-7-b",
+        "label": "Mistral 7B"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-large-2",
+        "label": "Mistral Large 2"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-nemo",
+        "label": "Mistral Nemo"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-small",
+        "label": "Mistral Small"
+      },
+      {
+        "@id": "urn:ngm:class:mixtral-8x22-b",
+        "label": "Mixtral 8x22B"
+      },
+      {
+        "@id": "urn:ngm:class:mixtral-8x7-b",
+        "label": "Mixtral 8x7B"
+      },
+      {
+        "@id": "urn:ngm:class:pixtral-12-b",
+        "label": "Pixtral 12B"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-positional-embeddings",
+        "label": "Rotary Positional Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:sliding-window-attention",
+        "label": "Sliding Window Attention"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:edge-ai-deployment",
+        "label": "Edge AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-llm-deployment",
+        "label": "Enterprise LLM Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:open-weights-research",
+        "label": "Open Weights Research"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-eu-ai",
+        "label": "Sovereign EU AI"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:sentence-piece-tokenisation",
+        "label": "SentencePiece Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:sliding-window-attention",
+        "label": "Sliding Window Attention"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-2-0-licence",
+        "label": "Apache 2.0 Licence"
+      },
+      {
+        "@id": "urn:ngm:class:awq-quantisation",
+        "label": "AWQ Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:gguf-format",
+        "label": "GGUF Format"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:la-plateforme-api",
+        "label": "La Plateforme API"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      },
+      {
+        "@id": "urn:ngm:class:mnpl-licence",
+        "label": "MNPL Licence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:european-tech-ecosystem",
+        "label": "European Tech Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-partnership",
+        "label": "Microsoft Partnership"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:code-completion",
+        "label": "Code Completion"
+      },
+      {
+        "@id": "urn:ngm:class:multi-turn-dialogue",
+        "label": "Multi-turn Dialogue"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-nlp",
+        "label": "Multilingual NLP"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output-generation",
+        "label": "Structured Output Generation"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-tasks",
+        "label": "Vision Language Tasks"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub-standards",
+        "label": "Hugging Face Hub Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fc44d15267e8e239896843079863e693d01983c84059a9b1f22b46b667a0338b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mistral and Mixtral constitute the model family produced by Mistral AI SAS (Paris, France, founded May 2023 by Arthur Mensch, Guillaume Lample, and Timothée Lacroix — alumni of DeepMind and Meta FAIR), representing Europe's leading independent large language model research laboratory and the primary European challenger to US-dominated foundation model providers (OpenAI, Anthropic, Google DeepMind). The family spans dense transformer models (Mistral 7B v0.1, September 2023, Apache 2.0, achieving Llama 2 13B-equivalent performance at half the parameter count through grouped-query attention reducing KV-cache memory 40% and sliding window attention enabling 8K–32K context extension without quadratic cost scaling), sparse Mixture-of-Experts architectures (Mixtral 8x7B, December 2023, activating 2 of 8 expert FFN layers per token yielding 12.9B active parameters from 46.7B total, achieving GPT-3.5 parity at 6× lower active FLOPs; Mixtral 8x22B, April 2024, 141B total/39B active parameters, 64K context, GPT-4 parity on coding and mathematics), frontier-scale dense models (Mistral Large 2, July 2024, 123B parameters, 128K context, MNPL licence, 84.0% MMLU and 92.1% HumanEval outperforming ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:codestral",
-      "vc:label": "Codestral"
-    },
-    {
-      "@id": "urn:visionflow:linked:la-plateforme",
-      "vc:label": "La Plateforme"
-    },
-    {
-      "@id": "urn:visionflow:linked:le-chat",
-      "vc:label": "Le Chat"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-7-b",
-      "vc:label": "Mistral 7B"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-large-2",
-      "vc:label": "Mistral Large 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-nemo",
-      "vc:label": "Mistral Nemo"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-small",
-      "vc:label": "Mistral Small"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixtral-8x22-b",
-      "vc:label": "Mixtral 8x22B"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixtral-8x7-b",
-      "vc:label": "Mixtral 8x7B"
-    },
-    {
-      "@id": "urn:visionflow:linked:pixtral-12-b",
-      "vc:label": "Pixtral 12B"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "Flash Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-cluster",
-      "vc:label": "GPU Cluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:grouped-query-attention",
-      "vc:label": "Grouped Query Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-positional-embeddings",
-      "vc:label": "Rotary Positional Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:sliding-window-attention",
-      "vc:label": "Sliding Window Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:edge-ai-deployment",
-      "vc:label": "Edge AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-llm-deployment",
-      "vc:label": "Enterprise LLM Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-weights-research",
-      "vc:label": "Open Weights Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-eu-ai",
-      "vc:label": "Sovereign EU AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:grouped-query-attention",
-      "vc:label": "Grouped Query Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:sentence-piece-tokenisation",
-      "vc:label": "SentencePiece Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sliding-window-attention",
-      "vc:label": "Sliding Window Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byte-pair-encoding",
-      "vc:label": "Byte Pair Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:direct-preference-optimisation",
-      "vc:label": "Direct Preference Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparse-mixture-of-experts",
-      "vc:label": "Sparse Mixture of Experts"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-infrastructure",
-      "vc:label": "GPU Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-optimisation",
-      "vc:label": "Inference Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:triton-inference-server",
-      "vc:label": "Triton Inference Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:v-llm",
-      "vc:label": "vLLM"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:code-completion",
-      "vc:label": "Code Completion"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-turn-dialogue",
-      "vc:label": "Multi-turn Dialogue"
-    },
-    {
-      "@id": "urn:visionflow:linked:multilingual-nlp",
-      "vc:label": "Multilingual NLP"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-output-generation",
-      "vc:label": "Structured Output Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-tasks",
-      "vc:label": "Vision Language Tasks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:apache-2-0-licence",
-      "vc:label": "Apache 2.0 Licence"
-    },
-    {
-      "@id": "urn:visionflow:linked:awq-quantisation",
-      "vc:label": "AWQ Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf-format",
-      "vc:label": "GGUF Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:la-plateforme-api",
-      "vc:label": "La Plateforme API"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-azure",
-      "vc:label": "Microsoft Azure"
-    },
-    {
-      "@id": "urn:visionflow:linked:mnpl-licence",
-      "vc:label": "MNPL Licence"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:claude-3",
-      "vc:label": "Claude 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:command-r",
-      "vc:label": "Command R+"
-    },
-    {
-      "@id": "urn:visionflow:linked:falcon",
-      "vc:label": "Falcon"
-    },
-    {
-      "@id": "urn:visionflow:linked:qwen",
-      "vc:label": "Qwen"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gemini",
-      "vc:label": "Gemini"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt-4",
-      "vc:label": "GPT 4"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:llama-3",
-      "vc:label": "Llama 3"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-regulation",
-      "vc:label": "AI Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-tech-ecosystem",
-      "vc:label": "European Tech Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-partnership",
-      "vc:label": "Microsoft Partnership"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open Source AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-ai",
-      "vc:label": "Sovereign AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apache-software-foundation",
-      "vc:label": "Apache Software Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub-standards",
-      "vc:label": "Hugging Face Hub Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-27001",
-      "vc:label": "ISO 27001"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

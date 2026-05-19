@@ -148,41 +148,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-reality-capture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-reality-capture",
+  "@type": "Class",
   "label": "ETSI_Domain_Reality_Capture",
+  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:96f92ad99ee179be4ab8ad64d5c8ec833a090a3c9d45a2ade0196796d7e83504@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

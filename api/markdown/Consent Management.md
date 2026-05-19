@@ -196,120 +196,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:consent-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consent-management",
+  "@type": "Class",
   "label": "Consent Management",
+  "definition": "System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:161ab31a75af7dd932667d9eb8cd0cea11a1286da888a53c288c923dff9d7325"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-logger",
+        "label": "Audit Logger"
+      },
+      {
+        "@id": "urn:ngm:class:consent-registry",
+        "label": "Consent Registry"
+      },
+      {
+        "@id": "urn:ngm:class:permission-controller",
+        "label": "Permission Controller"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:user-control",
+        "label": "User Control"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to be Forgotten"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to Be Forgotten"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-data-management-ethics",
+        "label": "ETSI Domain: Data Management + Ethics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:161ab31a75af7dd932667d9eb8cd0cea11a1286da888a53c288c923dff9d7325@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-data-management-ethics",
-      "vc:label": "ETSI Domain: Data Management + Ethics"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-logger",
-      "vc:label": "Audit Logger"
-    },
-    {
-      "@id": "urn:visionflow:linked:consent-registry",
-      "vc:label": "Consent Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:permission-controller",
-      "vc:label": "Permission Controller"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-interface",
-      "vc:label": "User Interface"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-governance-framework",
-      "vc:label": "Data Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy",
-      "vc:label": "Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-authentication",
-      "vc:label": "User Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-privacy",
-      "vc:label": "Data Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-control",
-      "vc:label": "User Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:right-to-be-forgotten",
-      "vc:label": "Right to be Forgotten"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:right-to-be-forgotten",
-      "vc:label": "Right to Be Forgotten"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparency",
-      "vc:label": "Transparency"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Pneumatic Cylinder",
   "slug": "pneumatic-cylinder",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pneumatic-cylinder",
+  "classIri": "urn:ngm:class:pneumatic-cylinder",
   "domain": "robotics",
   "definition": "Pneumatic cylinder uses compressed air to produce linear motion.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:pneumatic-actuator",
+      "id": "urn:ngm:class:pneumatic-actuator",
       "label": "Pneumatic Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

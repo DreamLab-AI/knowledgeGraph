@@ -3,19 +3,18 @@
   "title": "Private Blockchain",
   "slug": "private-blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:private-blockchain",
+  "classIri": "urn:ngm:class:private-blockchain",
   "domain": "blockchain",
   "definition": "A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

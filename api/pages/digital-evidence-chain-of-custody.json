@@ -3,82 +3,91 @@
   "title": "Digital Evidence Chain of Custody",
   "slug": "digital-evidence-chain-of-custody",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-evidence-chain-of-custody",
+  "classIri": "urn:ngm:class:digital-evidence-chain-of-custody",
   "domain": "infrastructure",
-  "definition": "Forensic procedure preserving integrity and authenticity of digital evidence through cryptographic sealing and immutable logging from capture to legal presentation. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Evidence Chain of Custody is a type of Legal Framework in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:legal-framework",
+      "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-log",
+        "id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
       },
       {
-        "id": "urn:visionflow:linked:timestamp-authority",
+        "id": "urn:ngm:class:timestamp-authority",
         "label": "Timestamp Authority"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-ledger",
+        "id": "urn:ngm:class:blockchain-ledger",
         "label": "Blockchain Ledger"
       },
       {
-        "id": "urn:visionflow:linked:secure-storage",
+        "id": "urn:ngm:class:secure-storage",
         "label": "Secure Storage"
       },
       {
-        "id": "urn:visionflow:linked:tamper-detection",
+        "id": "urn:ngm:class:tamper-detection",
         "label": "Tamper Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:evidence-integrity-verification",
+        "id": "urn:ngm:class:evidence-integrity-verification",
         "label": "Evidence Integrity Verification"
       },
       {
-        "id": "urn:visionflow:linked:forensic-investigation",
+        "id": "urn:ngm:class:forensic-investigation",
         "label": "Forensic Investigation"
       },
       {
-        "id": "urn:visionflow:linked:legal-admissibility",
+        "id": "urn:ngm:class:legal-admissibility",
         "label": "Legal Admissibility"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

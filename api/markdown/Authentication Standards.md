@@ -144,76 +144,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:authentication-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:authentication-standards",
+  "@type": "Class",
   "label": "Authentication Standards",
+  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to meta...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:security-standards",
-      "vc:label": "Security Standards"
+      "@id": "urn:ngm:class:security-standards",
+      "label": "Security Standards"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5586ce89f21bd9888d067adba2416cec3ae733ea252be0d977817fd0c5e19591"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:client-implementation",
+        "label": "Client Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-authenticators",
+        "label": "Hardware Authenticators"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:phishing-resistance",
+        "label": "Phishing Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:secure-platform-access",
+        "label": "Secure Platform Access"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5586ce89f21bd9888d067adba2416cec3ae733ea252be0d977817fd0c5e19591@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:client-implementation",
-      "vc:label": "Client Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-authenticators",
-      "vc:label": "Hardware Authenticators"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:passwordless-authentication",
-      "vc:label": "Passwordless Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:phishing-resistance",
-      "vc:label": "Phishing Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-platform-access",
-      "vc:label": "Secure Platform Access"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

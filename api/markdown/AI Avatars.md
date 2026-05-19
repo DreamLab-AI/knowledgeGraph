@@ -168,60 +168,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-avatars",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-avatars",
+  "@type": "Class",
   "label": "AI Avatars",
+  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence witho...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:photorealistic-telepresence",
+        "label": "PhotorealisticTelepresence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:28892f111f0677f53150ed25689e4bf2bd9e9a5558d8fa184585af529afe9733@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence without explicit keyframe animation.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:speech-synthesis",
-      "vc:label": "SpeechSynthesis"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:photorealistic-telepresence",
-      "vc:label": "PhotorealisticTelepresence"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Learning Resources",
   "slug": "learning-resources",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-resources",
+  "classIri": "urn:ngm:class:learning-resources",
   "domain": "spatial-computing",
   "definition": "Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-education",
+        "id": "urn:ngm:class:immersive-education",
         "label": "Immersive Education"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

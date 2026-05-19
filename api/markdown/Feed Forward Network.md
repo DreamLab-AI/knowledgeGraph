@@ -356,274 +356,215 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:feed-forward-network",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:feed-forward-network",
+  "@type": "Class",
   "label": "Feed Forward Network",
+  "definition": "A feed-forward network (FFN) is a class of artificial neural network in which information propagates strictly in one direction — from input nodes through one or more hidden layers to output nodes — with no feedback cycles, recurrent connections, or lateral synapses between units at the same layer.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:differentiable-programming",
-      "vc:label": "Differentiable Programming"
+      "@id": "urn:ngm:class:differentiable-programming",
+      "label": "Differentiable Programming"
     },
     {
-      "@id": "urn:visionflow:linked:parametric-model",
-      "vc:label": "Parametric Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
+      "@id": "urn:ngm:class:parametric-model",
+      "label": "Parametric Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:be00522cbae393ac4072c18cc4903a16605fa2776476bd650f404741032baf3e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bias-vector",
+        "label": "Bias Vector"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-layer",
+        "label": "Hidden Layer"
+      },
+      {
+        "@id": "urn:ngm:class:input-layer",
+        "label": "Input Layer"
+      },
+      {
+        "@id": "urn:ngm:class:output-layer",
+        "label": "Output Layer"
+      },
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:feature-learning",
+        "label": "Feature Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:universal-approximation",
+        "label": "Universal Approximation"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:multi-layer-perceptron",
+        "label": "Multi-Layer Perceptron"
+      },
+      {
+        "@id": "urn:ngm:class:position-wise-ffn",
+        "label": "Position-wise FFN"
+      },
+      {
+        "@id": "urn:ngm:class:swi-glu",
+        "label": "SwiGLU"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gelu",
+        "label": "GELU"
+      },
+      {
+        "@id": "urn:ngm:class:re-lu",
+        "label": "ReLU"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:be00522cbae393ac4072c18cc4903a16605fa2776476bd650f404741032baf3e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A feed-forward network (FFN) is a class of artificial neural network in which information propagates strictly in one direction — from input nodes through one or more hidden layers to output nodes — with no feedback cycles, recurrent connections, or lateral synapses between units at the same layer. The defining structural constraint is acyclicity: the underlying directed graph contains no closed paths, meaning activations computed at layer l depend only on activations from layers 0 through l−1 and never on their own future outputs. This acyclicity renders the network a deterministic function f: ℝⁿ → ℝᵐ that maps an input vector x ∈ ℝⁿ to an output vector ŷ ∈ ℝᵐ through a composed sequence of affine transformations interleaved with element-wise non-linearities, expressible as ŷ = f_L(W_L f_{L-1}(W_{L-1} ··· f_1(W_1 x + b_1) ··· + b_{L-1}) + b_L) where W_l ∈ ℝ^{d_l × d_{l-1}} are weight matrices, b_l ∈ ℝ^{d_l} are bias vectors, and f_l are activation functions applied element-wise at each layer l ∈ {1, …, L}.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bias-vector",
-      "vc:label": "Bias Vector"
-    },
-    {
-      "@id": "urn:visionflow:linked:hidden-layer",
-      "vc:label": "Hidden Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-layer",
-      "vc:label": "Input Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-layer",
-      "vc:label": "Output Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:weight-matrix",
-      "vc:label": "Weight Matrix"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:activation-function",
-      "vc:label": "Activation Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:loss-function",
-      "vc:label": "Loss Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:automatic-differentiation",
-      "vc:label": "Automatic Differentiation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperparameter-tuning",
-      "vc:label": "Hyperparameter Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:weight-initialisation",
-      "vc:label": "Weight Initialisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:feature-learning",
-      "vc:label": "Feature Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-approximation",
-      "vc:label": "Universal Approximation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine-tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:multi-layer-perceptron",
-      "vc:label": "Multi-Layer Perceptron"
-    },
-    {
-      "@id": "urn:visionflow:linked:position-wise-ffn",
-      "vc:label": "Position-wise FFN"
-    },
-    {
-      "@id": "urn:visionflow:linked:swi-glu",
-      "vc:label": "SwiGLU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:residual-connection",
-      "vc:label": "Residual Connection"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:calculus",
-      "vc:label": "Calculus"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimisation-theory",
-      "vc:label": "Optimisation Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gelu",
-      "vc:label": "GELU"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-lu",
-      "vc:label": "ReLU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dropout",
-      "vc:label": "Dropout"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:layer-normalisation",
-      "vc:label": "Layer Normalisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:state-space-model",
-      "vc:label": "State Space Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-neural-network",
-      "vc:label": "Graph Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
-      "vc:label": "Recurrent Neural Network"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autoencoder",
-      "vc:label": "Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee",
-      "vc:label": "IEEE"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

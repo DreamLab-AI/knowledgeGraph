@@ -3,19 +3,18 @@
   "title": "Marine Robot",
   "slug": "marine-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:marine-robot",
+  "classIri": "urn:ngm:class:marine-robot",
   "domain": "robotics",
   "definition": "Marine robot is a robot capable of operating on or under water surfaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
+      "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

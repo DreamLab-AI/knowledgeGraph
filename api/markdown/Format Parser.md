@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:format-parser",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:format-parser",
+  "@type": "Class",
   "label": "Format Parser",
+  "definition": "Software components that interpret and convert various 3D asset file formats into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
+      "@id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a4c563bbff1744fb2c273d440bc030cc16042c18d99f8e3d7b0a1a487f7540c2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-content",
+        "label": "Cross-Platform Content"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a4c563bbff1744fb2c273d440bc030cc16042c18d99f8e3d7b0a1a487f7540c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-content",
-      "vc:label": "Cross-Platform Content"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

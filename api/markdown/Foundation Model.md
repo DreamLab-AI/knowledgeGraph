@@ -13,27 +13,20 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:foundation-model",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:foundation-model",
+  "@type": "Individual",
   "label": "Foundation Model",
-  "vc:sourceDomain": "artificial-intelligence",
-  "definition": "Foundation Model is a foundational concept in artificial intelligence that serves as a classification parent for 6 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "definition": "Large-scale machine learning model pretrained on broad, general-purpose data and subsequently adapted via fine-tuning or prompting to a wide variety of downstream tasks.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.3,
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
 }
 ```
 

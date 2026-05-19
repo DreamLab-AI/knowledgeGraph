@@ -224,140 +224,111 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:scene-graph",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:scene-graph",
+  "@type": "Class",
   "label": "Scene Graph",
+  "definition": "A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:67ad4d9f6651fca18d524de8b9ede795e1102f2b0692cd99ce3beaee582da3d3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-node",
+        "label": "Camera Node"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-node",
+        "label": "Geometry Node"
+      },
+      {
+        "@id": "urn:ngm:class:group-node",
+        "label": "Group Node"
+      },
+      {
+        "@id": "urn:ngm:class:scene-node",
+        "label": "Scene Node"
+      },
+      {
+        "@id": "urn:ngm:class:transform-node",
+        "label": "Transform Node"
+      },
+      {
+        "@id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:transform-matrix",
+        "label": "Transform Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "@id": "urn:ngm:class:scene-rendering",
+        "label": "Scene Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-queries",
+        "label": "Spatial Queries"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:67ad4d9f6651fca18d524de8b9ede795e1102f2b0692cd99ce3beaee582da3d3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:3-d-engine",
-      "vc:label": "3D Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gl-tf-3-d-file-format",
-      "vc:label": "glTF (3D File Format)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-node",
-      "vc:label": "Camera Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometry-node",
-      "vc:label": "Geometry Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:group-node",
-      "vc:label": "Group Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:scene-node",
-      "vc:label": "Scene Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:transform-node",
-      "vc:label": "Transform Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:light-node",
-      "vc:label": "Light Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bounding-volume",
-      "vc:label": "Bounding Volume"
-    },
-    {
-      "@id": "urn:visionflow:linked:transform-matrix",
-      "vc:label": "Transform Matrix"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-index",
-      "vc:label": "Spatial Index"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:frustum-culling",
-      "vc:label": "Frustum Culling"
-    },
-    {
-      "@id": "urn:visionflow:linked:scene-rendering",
-      "vc:label": "Scene Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-detection",
-      "vc:label": "Collision Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:level-of-detail",
-      "vc:label": "Level of Detail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-queries",
-      "vc:label": "Spatial Queries"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:coordinate-system",
-      "vc:label": "Coordinate System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

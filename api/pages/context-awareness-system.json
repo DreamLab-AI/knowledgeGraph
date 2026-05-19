@@ -3,53 +3,57 @@
   "title": "Context Awareness System",
   "slug": "context-awareness-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:context-awareness-system",
+  "classIri": "urn:ngm:class:context-awareness-system",
   "domain": "spatial-computing",
   "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:intelligent-systems",
+      "id": "urn:ngm:class:intelligent-systems",
       "label": "Intelligent Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:data-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:io-t-sensors",
+        "id": "urn:ngm:class:io-t-sensors",
         "label": "IoT Sensors"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-services",
+        "id": "urn:ngm:class:adaptive-services",
         "label": "Adaptive Services"
       },
       {
-        "id": "urn:visionflow:linked:location-based-services",
+        "id": "urn:ngm:class:location-based-services",
         "label": "Location Based Services"
       },
       {
-        "id": "urn:visionflow:linked:situational-awareness",
+        "id": "urn:ngm:class:situational-awareness",
         "label": "Situational Awareness"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -388,48 +388,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cryptographic-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptographic-domain",
+  "@type": "Class",
   "label": "Cryptographic Domain",
+  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
+      "@id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. This domain includes cryptographic hash functions (SHA-256, Keccak-256, RIPEMD-160), digital signature schemes (ECDSA, EdDSA, Schnorr signatures), public-key cryptography, Merkle tree structures, cryptographic accumulators, commitment schemes, zero-knowledge proof systems (zk-SNARKs, zk-STARKs, Bulletproofs), threshold cryptography, multi-signature schemes, and other cryptographic building blocks that provide security, integrity, and verifiability in blockchain systems. These cryptographic mechanisms enable fundamental blockchain properties including immutability (through hash linking), authenticity (through digital signatures), privacy (through encryption and zero-knowledge proofs), and verifiability (through Merkle proofs and cryptographic commitments). The domain focuses specifically on cryptographic techniques as applied in blockchain contexts, distinguishing it from general cryptography by emphasizing distributed system requirements, performance considerations for decentralized",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

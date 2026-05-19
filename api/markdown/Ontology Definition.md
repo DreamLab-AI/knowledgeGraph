@@ -128,41 +128,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ontology-definition",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ontology-definition",
+  "@type": "Class",
   "label": "Ontology Definition",
+  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—fou...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:799edfcb329741de2a3e2cb483c830eba5fe0a38c4458b5b57d972aa17380a3f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A formal, explicit specification of metaverse concepts, relationships, and axioms using knowledge representation frameworks (OWL, RDF, JSON-LD), defining entities through orthogonal dimensions (physicality, role) enabling semantic interoperability and automated classification across platforms—foundational for governance, identity, and asset management standardisation.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

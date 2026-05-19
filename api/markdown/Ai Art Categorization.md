@@ -136,76 +136,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-art-categorization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-art-categorization",
+  "@type": "Class",
   "label": "Ai Art Categorization",
+  "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning mods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation modology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the cr...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:art-classification",
-      "vc:label": "Art Classification"
+      "@id": "urn:ngm:class:art-classification",
+      "label": "Art Classification"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef780b752d67f74465ef12d421fddaa4b287ee2a78a75cefc359299687bcf24f"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:art-historical-knowledge",
+        "label": "Art Historical Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:art-curation",
+        "label": "Art Curation"
+      },
+      {
+        "@id": "urn:ngm:class:authenticity-detection",
+        "label": "Authenticity Detection"
+      },
+      {
+        "@id": "urn:ngm:class:style-analysis",
+        "label": "Style Analysis"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef780b752d67f74465ef12d421fddaa4b287ee2a78a75cefc359299687bcf24f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning methods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation methodology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the creative process.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:art-historical-knowledge",
-      "vc:label": "Art Historical Knowledge"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:art-curation",
-      "vc:label": "Art Curation"
-    },
-    {
-      "@id": "urn:visionflow:linked:authenticity-detection",
-      "vc:label": "Authenticity Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:style-analysis",
-      "vc:label": "Style Analysis"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

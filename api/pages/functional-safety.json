@@ -3,57 +3,70 @@
   "title": "Functional Safety",
   "slug": "functional-safety",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:functional-safety",
+  "classIri": "urn:ngm:class:functional-safety",
   "domain": "robotics",
-  "definition": "**Functional Safety** - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
+  "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:safety-engineering",
+      "id": "urn:ngm:class:safety-engineering",
       "label": "Safety Engineering"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.64,
-  "authorityScore": 0.18,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:fault-tree-analysis",
+        "id": "urn:ngm:class:fault-tree-analysis",
         "label": "Fault Tree Analysis"
       },
       {
-        "id": "urn:visionflow:linked:hazard-analysis",
+        "id": "urn:ngm:class:hazard-analysis",
         "label": "Hazard Analysis"
       },
       {
-        "id": "urn:visionflow:linked:testing-and-validation",
+        "id": "urn:ngm:class:testing-and-validation",
         "label": "Testing & Validation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:human-robot-safety",
+        "id": "urn:ngm:class:human-robot-safety",
         "label": "Human-Robot Safety"
       },
       {
-        "id": "urn:visionflow:linked:liability-mitigation",
+        "id": "urn:ngm:class:liability-mitigation",
         "label": "Liability Mitigation"
       },
       {
-        "id": "urn:visionflow:linked:safe-operation-certification",
+        "id": "urn:ngm:class:safe-operation-certification",
         "label": "Safe Operation Certification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

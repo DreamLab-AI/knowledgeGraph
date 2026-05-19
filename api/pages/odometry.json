@@ -3,41 +3,62 @@
   "title": "Odometry",
   "slug": "odometry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:odometry",
+  "classIri": "urn:ngm:class:odometry",
   "domain": "robotics",
   "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:state-estimation",
+      "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.94,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:motion-sensors",
+        "id": "urn:ngm:class:motion-sensors",
         "label": "Motion Sensors"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:rb-1013-localization",
+        "id": "urn:ngm:class:rb-1013-localization",
         "label": "RB-1013-localization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:visual-sensors",
+        "label": "Visual Sensors"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Agentic Mycelia",
   "slug": "agentic-mycelia",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:agentic-mycelia",
+  "classIri": "urn:ngm:class:agentic-mycelia",
   "domain": "artificial-intelligence",
   "definition": "Agentic Mycelia is a artificial intelligence concept and a type of Agent Frameworks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
+      "id": "urn:ngm:class:agent-frameworks",
       "label": "Agent Frameworks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -164,92 +164,63 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-user-interface",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-user-interface",
+  "@type": "Class",
   "label": "3D User Interface",
+  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:interaction-design",
-      "vc:label": "Interaction Design"
+      "@id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
     },
     {
-      "@id": "urn:visionflow:owl:class:user-interface",
-      "vc:label": "User Interface"
+      "@id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:72b680895805b41a73d849ff6524c93b15e26499e2d4376fb4705af0814f6040"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gaze-tracking",
+        "label": "Gaze Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:voice-input",
+        "label": "Voice Input"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessible-immersion",
+        "label": "Accessible Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:intuitive-interaction",
+        "label": "Intuitive Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-navigation",
+        "label": "User Navigation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:72b680895805b41a73d849ff6524c93b15e26499e2d4376fb4705af0814f6040@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands. 3DUI design balances [[Accessibility Standard]]s with intuitive spatial affordances appropriate for VR, AR, and metaverse interactions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gaze-tracking",
-      "vc:label": "Gaze Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-input",
-      "vc:label": "Voice Input"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accessible-immersion",
-      "vc:label": "Accessible Immersion"
-    },
-    {
-      "@id": "urn:visionflow:linked:intuitive-interaction",
-      "vc:label": "Intuitive Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-navigation",
-      "vc:label": "User Navigation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "Gesture Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility-standard",
-      "vc:label": "Accessibility Standard"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

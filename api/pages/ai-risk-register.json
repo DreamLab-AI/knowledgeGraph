@@ -3,19 +3,18 @@
   "title": "AI Risk Register",
   "slug": "ai-risk-register",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-risk-register",
+  "classIri": "urn:ngm:class:ai-risk-register",
   "domain": "artificial-intelligence",
-  "definition": "AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood evaluations, assigned ownership, mitigation strategies, and current status to support risk governance and decision-making. This register captures diverse risk categories including technical risks (model performance failures, robustness issues, adversarial vulnerabilities), ethical risks (fairness violations, discrimination, bias amplification), legal and compliance risks (regulatory violations, liability exposure, contractual breaches), operational risks (system availability, integration failures, resource constraints), security and privacy risks (data breaches, privacy violations, adversarial attacks), reputational risks (public backlash, stakeholder concerns, brand damage), and societal risks (unintended consequences, systemic impacts, dual-use concerns). Each risk entry typically documents risk identifier and title, detailed description of the risk scenario, affected systems and stakeholders, likelihood rating (rare, unlikely, possible, likely, almost ce",
+  "definition": "AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood es, assigned ownership, mitigation strategies, and current status to...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-risk-management",
+      "id": "urn:ngm:class:ai-risk-management",
       "label": "AI Risk Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

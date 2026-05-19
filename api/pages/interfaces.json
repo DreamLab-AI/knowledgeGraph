@@ -3,19 +3,18 @@
   "title": "Interfaces",
   "slug": "interfaces",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interfaces",
+  "classIri": "urn:ngm:class:interfaces",
   "domain": "infrastructure",
   "definition": "Interfaces is a technology infrastructure concept and a type of User Interface.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:user-interface",
+      "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

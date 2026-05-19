@@ -212,41 +212,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:product-recall-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:product-recall-management",
+  "@type": "Class",
   "label": "Product Recall Management",
+  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days → 2.2 seconds mango tracing),...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5bbbc580423079f25fb297b4bdeb9ea5027badf2004c1225889a342e72f62559"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5bbbc580423079f25fb297b4bdeb9ea5027badf2004c1225889a342e72f62559@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-85% whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days → 2.2 seconds mango tracing), [[Carrefour]], [[MediLedger]], and automotive consortia for food safety, pharmaceuticals, and vehicle component recalls.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,19 +3,18 @@
   "title": "Interoperability",
   "slug": "interoperability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interoperability",
+  "classIri": "urn:ngm:class:interoperability",
   "domain": "infrastructure",
-  "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.",
+  "definition": "The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Decoder",
   "slug": "decoder",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decoder",
+  "classIri": "urn:ngm:class:decoder",
   "domain": "artificial-intelligence",
   "definition": "The component in an encoder-decoder architecture that generates the output sequence autoregressively, using masked self-attention, cross-attention to encoder outputs, and feed-forward layers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

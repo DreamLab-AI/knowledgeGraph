@@ -124,72 +124,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:visioning-lab-property-crosswalk",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:visioning-lab-property-crosswalk",
+  "@type": "Class",
   "label": "VisioningLab-Property-Crosswalk",
+  "definition": "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "→ ai:status",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:52d492846a8cc9529b38ebd87998f011411b8d1f4681cd8ddd578920fd774a4a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-has-part",
+        "label": "→ ai:hasPart"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-requires",
+        "label": "→ ai:requires"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-enables",
+        "label": "→ ai:enables"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-implements",
+        "label": "→ ai:implements"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:52d492846a8cc9529b38ebd87998f011411b8d1f4681cd8ddd578920fd774a4a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-has-part",
-      "vc:label": "→ ai:hasPart"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-requires",
-      "vc:label": "→ ai:requires"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-enables",
-      "vc:label": "→ ai:enables"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ai-implements",
-      "vc:label": "→ ai:implements"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ai-depends-on",
-      "vc:label": "→ ai:dependsOn"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

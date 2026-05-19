@@ -3,53 +3,57 @@
   "title": "Digital Asset Management",
   "slug": "digital-asset-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-management",
+  "classIri": "urn:ngm:class:digital-asset-management",
   "domain": "spatial-computing",
-  "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions. bridges-to:: [[Blockchain]]",
+  "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:investment-management",
+      "id": "urn:ngm:class:investment-management",
       "label": "Investment Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:analytics-tools",
+        "id": "urn:ngm:class:analytics-tools",
         "label": "Analytics Tools"
       },
       {
-        "id": "urn:visionflow:linked:compliance-systems",
+        "id": "urn:ngm:class:compliance-systems",
         "label": "Compliance Systems"
       },
       {
-        "id": "urn:visionflow:linked:custody-solutions",
+        "id": "urn:ngm:class:custody-solutions",
         "label": "Custody Solutions"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-allocation",
+        "id": "urn:ngm:class:asset-allocation",
         "label": "Asset Allocation"
       },
       {
-        "id": "urn:visionflow:linked:portfolio-optimization",
+        "id": "urn:ngm:class:portfolio-optimization",
         "label": "Portfolio Optimization"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

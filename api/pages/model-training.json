@@ -3,175 +3,283 @@
   "title": "Model Training",
   "slug": "model-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-training",
+  "classIri": "urn:ngm:class:model-training",
   "domain": "artificial-intelligence",
-  "definition": "Model Training is the end-to-end computational process by which a neural network's parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies suitable for deployment. For contemporary foundation models \u2014 autoregressive transformer decoders ranging from 1B to 671B parameters \u2014 the process is stratified into four principal phases: (1) pre-training on self-supervised objectives across 8T\u201315T tokens of curated web, code, and document data using the causal language modelling (CLM) loss L = \u2212(1/T) \u03a3\u209c log P_\u03b8(x\u209c|x\u2081,...,x\u209c\u208b\u2081); (2) supervised fine-tuning (SFT) on 10K\u20131M high-quality instruction\u2013response pairs applying the CLM loss only over response tokens; (3) preference alignment via reinforcement learning from human feedback (RLHF) with proximal policy optimisation (PPO) maximising a scalar reward model while penalising KL-divergence from the SFT reference policy J(\u03b8) = E[R_\u03c6(x,y)] \u2212 \u03b2\u00b7KL(\u03c0_\u03b8\u2016\u03c0_ref), or via the simpler direct preference optimisation (DPO, Rafailov et al. 2023) which elides the explicit reward model by re-parameterising t",
+  "definition": "Model Training is the end-to-end computational process by which a neural network's parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:neural-networks",
+      "id": "urn:ngm:class:neural-networks",
       "label": "Neural Networks"
     },
     {
-      "id": "urn:visionflow:linked:optimisation",
+      "id": "urn:ngm:class:optimisation",
       "label": "Optimisation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-curation",
+        "id": "urn:ngm:class:data-curation",
         "label": "Data Curation"
       },
       {
-        "id": "urn:visionflow:linked:gradient-checkpointing",
+        "id": "urn:ngm:class:gradient-checkpointing",
         "label": "Gradient Checkpointing"
       },
       {
-        "id": "urn:visionflow:linked:kto",
+        "id": "urn:ngm:class:kto",
         "label": "KTO"
       },
       {
-        "id": "urn:visionflow:linked:policy-optimisation",
+        "id": "urn:ngm:class:policy-optimisation",
         "label": "Policy Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:visionflow:owl:class:direct-preference-optimization",
+        "id": "urn:ngm:class:direct-preference-optimization",
         "label": "Direct Preference Optimization"
       },
       {
-        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
       },
       {
-        "id": "urn:visionflow:owl:class:pre-training",
+        "id": "urn:ngm:class:pre-training",
         "label": "Pre-training"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-model",
+        "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
       },
       {
-        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-clusters",
+        "id": "urn:ngm:class:gpu-clusters",
         "label": "GPU Clusters"
       },
       {
-        "id": "urn:visionflow:linked:tokeniser",
+        "id": "urn:ngm:class:tokeniser",
         "label": "Tokeniser"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:data-pipeline",
+        "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-computing",
+        "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:loss-function",
+        "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
       },
       {
-        "id": "urn:visionflow:owl:class:optimiser",
+        "id": "urn:ngm:class:optimiser",
         "label": "Optimiser"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:alignment",
+        "id": "urn:ngm:class:alignment",
         "label": "Alignment"
       },
       {
-        "id": "urn:visionflow:linked:emergent-capabilities",
+        "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Capabilities"
       },
       {
-        "id": "urn:visionflow:linked:instruction-following",
+        "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:reasoning",
+        "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adam-w",
+        "id": "urn:ngm:class:adam-w",
         "label": "AdamW"
       },
       {
-        "id": "urn:visionflow:linked:causal-language-modelling",
+        "id": "urn:ngm:class:causal-language-modelling",
         "label": "Causal Language Modelling"
       },
       {
-        "id": "urn:visionflow:linked:pipeline-parallelism",
+        "id": "urn:ngm:class:pipeline-parallelism",
         "label": "Pipeline Parallelism"
       },
       {
-        "id": "urn:visionflow:linked:tensor-parallelism",
+        "id": "urn:ngm:class:tensor-parallelism",
         "label": "Tensor Parallelism"
       },
       {
-        "id": "urn:visionflow:linked:ze-ro-optimisation",
+        "id": "urn:ngm:class:ze-ro-optimisation",
         "label": "ZeRO Optimisation"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       },
       {
-        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
         "label": "LoRA DoRA etc"
       },
       {
-        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:google-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:grok",
+        "label": "Grok"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:chinchilla-scaling-laws",
+        "label": "Chinchilla Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:responsible-scaling-policies",
+        "label": "Responsible Scaling Policies"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ]
   },
   "wikilinks": [
     {

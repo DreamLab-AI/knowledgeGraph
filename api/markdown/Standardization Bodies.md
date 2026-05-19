@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:standardization-bodies",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:standardization-bodies",
+  "@type": "Class",
   "label": "Standardization Bodies",
+  "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating member organizations for interoperability.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:standards-organization",
-      "vc:label": "Standards Organization"
+      "@id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:96adef1d715288d4832933ead250a252bfff94f976a3916eff4e0cf219e5794d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:technology-interoperability",
+        "label": "Technology Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:96adef1d715288d4832933ead250a252bfff94f976a3916eff4e0cf219e5794d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating 1,800 member organizations for interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:technology-interoperability",
-      "vc:label": "Technology Interoperability"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

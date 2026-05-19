@@ -3,32 +3,36 @@
   "title": "Jurisdictional Boundary",
   "slug": "jurisdictional-boundary",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:jurisdictional-boundary",
+  "classIri": "urn:ngm:class:jurisdictional-boundary",
   "domain": "spatial-computing",
   "definition": "Legal and regulatory demarcations applicable to metaverse and virtual world governance, addressing the complex challenge of determining which laws apply when virtual activities span multiple physical jurisdictions with no clear territorial boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:legal-framework",
+      "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:virtual-world-governance",
+        "id": "urn:ngm:class:virtual-world-governance",
         "label": "Virtual World Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

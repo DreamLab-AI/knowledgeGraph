@@ -3,19 +3,18 @@
   "title": "Documentation Standards",
   "slug": "documentation-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:documentation-standards",
+  "classIri": "urn:ngm:class:documentation-standards",
   "domain": "spatial-computing",
-  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
+  "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ical considerations for immersive technology development.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

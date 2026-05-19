@@ -172,72 +172,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:optimal-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:optimal-control",
+  "@type": "Class",
   "label": "Optimal Control",
+  "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:rb-1002-closed-loop-control",
-      "vc:label": "RB-1002-closed-loop-control"
+      "@id": "urn:ngm:class:rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:680fa6c0f73eb32de9e8017652cefa274e0cbe30da33519fcadb5923d421748e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:system-dynamics-model",
+        "label": "System Dynamics Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:680fa6c0f73eb32de9e8017652cefa274e0cbe30da33519fcadb5923d421748e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cost-function",
-      "vc:label": "Cost Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-dynamics-model",
-      "vc:label": "System Dynamics Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:rb-1007-trajectory-generation",
-      "vc:label": "RB-1007-trajectory-generation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:linear-quadratic-regulator",
-      "vc:label": "Linear Quadratic Regulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimization-algorithm",
-      "vc:label": "Optimization Algorithm"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

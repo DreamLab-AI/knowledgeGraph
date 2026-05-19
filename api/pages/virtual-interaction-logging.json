@@ -3,19 +3,18 @@
   "title": "Virtual Interaction Logging",
   "slug": "virtual-interaction-logging",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-interaction-logging",
+  "classIri": "urn:ngm:class:virtual-interaction-logging",
   "domain": "spatial-computing",
   "definition": "The systematic recording and analysis of user interactions, behaviors, and activities within virtual environments, capturing data on movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimization.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-analytics",
+      "id": "urn:ngm:class:data-analytics",
       "label": "Data Analytics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,13 @@
   "title": "GPT 4",
   "slug": "gpt-4",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gpt-4",
+  "classIri": "urn:ngm:individual:gpt-4",
   "domain": "artificial-intelligence",
   "definition": "A large-scale, multimodal transformer-based model that accepts image and text inputs and produces text outputs, exhibiting human-level performance on various professional and academic benchmarks.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:large-language-model",
-      "label": "Large Language Model"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

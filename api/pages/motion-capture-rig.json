@@ -3,86 +3,95 @@
   "title": "Motion Capture Rig",
   "slug": "motion-capture-rig",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:motion-capture-rig",
+  "classIri": "urn:ngm:class:motion-capture-rig",
   "domain": "spatial-computing",
   "definition": "Physical hardware or software system capturing human motion for animation or simulation through cameras, markers, sensors, and tracking infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-processing-unit",
+        "id": "urn:ngm:class:data-processing-unit",
         "label": "Data Processing Unit"
       },
       {
-        "id": "urn:visionflow:linked:imu-sensors",
+        "id": "urn:ngm:class:imu-sensors",
         "label": "IMU Sensors"
       },
       {
-        "id": "urn:visionflow:linked:optical-cameras",
+        "id": "urn:ngm:class:optical-cameras",
         "label": "Optical Cameras"
       },
       {
-        "id": "urn:visionflow:linked:tracking-volume",
+        "id": "urn:ngm:class:tracking-volume",
         "label": "Tracking Volume"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-target",
+        "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-markers",
+        "id": "urn:ngm:class:motion-markers",
         "label": "Motion Markers"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:high-speed-networking",
+        "id": "urn:ngm:class:high-speed-networking",
         "label": "High-Speed Networking"
       },
       {
-        "id": "urn:visionflow:linked:synchronized-timing",
+        "id": "urn:ngm:class:synchronized-timing",
         "label": "Synchronized Timing"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-solver-software",
+        "id": "urn:ngm:class:motion-solver-software",
         "label": "Motion Solver Software"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:biomechanical-analysis",
+        "id": "urn:ngm:class:biomechanical-analysis",
         "label": "Biomechanical Analysis"
       },
       {
-        "id": "urn:visionflow:linked:performance-capture",
+        "id": "urn:ngm:class:performance-capture",
         "label": "Performance Capture"
       },
       {
-        "id": "urn:visionflow:owl:class:animation-retargeting",
+        "id": "urn:ngm:class:animation-retargeting",
         "label": "Animation Retargeting"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-production",
+        "id": "urn:ngm:class:virtual-production",
         "label": "Virtual Production"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reality-capture-system",
+        "label": "Reality Capture System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

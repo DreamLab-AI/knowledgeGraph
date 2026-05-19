@@ -3,19 +3,18 @@
   "title": "Etsi Metaverse Domain Model",
   "slug": "etsi-metaverse-domain-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
+  "classIri": "urn:ngm:class:etsi-metaverse-domain-model",
   "domain": "spatial-computing",
   "definition": "A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:domain-model",
+      "id": "urn:ngm:class:domain-model",
       "label": "Domain Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

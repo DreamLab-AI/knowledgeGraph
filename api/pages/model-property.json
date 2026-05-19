@@ -3,32 +3,36 @@
   "title": "Model Property",
   "slug": "model-property",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-property",
+  "classIri": "urn:ngm:class:model-property",
   "domain": "artificial-intelligence",
-  "definition": "A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).",
+  "definition": "A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference co...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-concept",
+      "id": "urn:ngm:class:ai-concept",
       "label": "AI Concept"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:model-comparison",
+        "id": "urn:ngm:class:model-comparison",
         "label": "Model Comparison"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

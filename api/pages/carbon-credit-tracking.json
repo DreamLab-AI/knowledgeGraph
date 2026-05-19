@@ -3,147 +3,271 @@
   "title": "Carbon Credit Tracking",
   "slug": "carbon-credit-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-credit-tracking",
+  "classIri": "urn:ngm:class:carbon-credit-tracking",
   "domain": "blockchain",
-  "definition": "**Carbon Credit Tracking** is the application of [[Blockchain]] and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim \u2014 replacing fragmented centralised registries with immutable, publicly auditable on-chain provenance that eliminates double-counting and enables programmatic carbon accounting. Each tokenised carbon credit \u2014 standardly representing one metric tonne of CO2 equivalent (tCO2e) removed or avoided \u2014 is minted as a cryptographic token embedding verifiable metadata: project type, vintage year, geographic coordinates, applicable carbon standard ([[Verra VCS]] or [[Gold Standard]] or [[Climate Action Reserve]]), UN Sustainable Development Goal co-benefits, and monitoring provenance.",
+  "definition": "Carbon Credit Tracking is the application of [[Blockchain]] and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:carbon-markets",
+      "id": "urn:ngm:class:carbon-markets",
       "label": "Carbon Markets"
     },
     {
-      "id": "urn:visionflow:linked:distributed-ledger-application",
+      "id": "urn:ngm:class:distributed-ledger-application",
       "label": "Distributed Ledger Application"
-    },
-    {
-      "id": "urn:visionflow:linked:environmental-finance",
-      "label": "Environmental Finance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:carbon-registry-bridge",
+        "id": "urn:ngm:class:carbon-registry-bridge",
         "label": "Carbon Registry Bridge"
       },
       {
-        "id": "urn:visionflow:linked:corresponding-adjustment-record",
+        "id": "urn:ngm:class:corresponding-adjustment-record",
         "label": "Corresponding Adjustment Record"
       },
       {
-        "id": "urn:visionflow:linked:credit-issuance-engine",
+        "id": "urn:ngm:class:credit-issuance-engine",
         "label": "Credit Issuance Engine"
       },
       {
-        "id": "urn:visionflow:linked:mrv-oracle",
+        "id": "urn:ngm:class:mrv-oracle",
         "label": "MRV Oracle"
       },
       {
-        "id": "urn:visionflow:linked:permanence-buffer-pool",
+        "id": "urn:ngm:class:permanence-buffer-pool",
         "label": "Permanence Buffer Pool"
       },
       {
-        "id": "urn:visionflow:linked:retirement-smart-contract",
+        "id": "urn:ngm:class:retirement-smart-contract",
         "label": "Retirement Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-credit-token",
+        "id": "urn:ngm:class:carbon-credit-token",
         "label": "Carbon Credit Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:carbon-standard-certification",
+        "id": "urn:ngm:class:carbon-standard-certification",
         "label": "Carbon Standard Certification"
       },
       {
-        "id": "urn:visionflow:linked:immutable-audit-trail",
+        "id": "urn:ngm:class:immutable-audit-trail",
         "label": "Immutable Audit Trail"
       },
       {
-        "id": "urn:visionflow:linked:kyc-aml-compliance",
+        "id": "urn:ngm:class:kyc-aml-compliance",
         "label": "KYC AML Compliance"
       },
       {
-        "id": "urn:visionflow:linked:oracle-network",
+        "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
       },
       {
-        "id": "urn:visionflow:linked:verified-emissions-data",
+        "id": "urn:ngm:class:verified-emissions-data",
         "label": "Verified Emissions Data"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:article-6-compliance",
+        "id": "urn:ngm:class:article-6-compliance",
         "label": "Article 6 Compliance"
       },
       {
-        "id": "urn:visionflow:linked:automated-carbon-accounting",
+        "id": "urn:ngm:class:automated-carbon-accounting",
         "label": "Automated Carbon Accounting"
       },
       {
-        "id": "urn:visionflow:linked:carbon-price-discovery",
+        "id": "urn:ngm:class:carbon-price-discovery",
         "label": "Carbon Price Discovery"
       },
       {
-        "id": "urn:visionflow:linked:corporate-carbon-neutrality",
+        "id": "urn:ngm:class:corporate-carbon-neutrality",
         "label": "Corporate Carbon Neutrality"
       },
       {
-        "id": "urn:visionflow:linked:fractional-carbon-credit-ownership",
+        "id": "urn:ngm:class:fractional-carbon-credit-ownership",
         "label": "Fractional Carbon Credit Ownership"
       },
       {
-        "id": "urn:visionflow:linked:real-time-carbon-offsetting",
+        "id": "urn:ngm:class:real-time-carbon-offsetting",
         "label": "Real-Time Carbon Offsetting"
       },
       {
-        "id": "urn:visionflow:linked:voluntary-carbon-markets",
+        "id": "urn:ngm:class:voluntary-carbon-markets",
         "label": "Voluntary Carbon Markets"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:corsia-aviation-offsets",
+        "id": "urn:ngm:class:corsia-aviation-offsets",
         "label": "CORSIA Aviation Offsets"
       },
       {
-        "id": "urn:visionflow:linked:eu-taxonomy-green-finance",
+        "id": "urn:ngm:class:eu-taxonomy-green-finance",
         "label": "EU Taxonomy Green Finance"
       },
       {
-        "id": "urn:visionflow:linked:gold-standard-certification",
+        "id": "urn:ngm:class:gold-standard-certification",
         "label": "Gold Standard Certification"
       },
       {
-        "id": "urn:visionflow:linked:icvcm-core-carbon-principles",
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
         "label": "ICVCM Core Carbon Principles"
       },
       {
-        "id": "urn:visionflow:linked:paris-agreement-article-6",
+        "id": "urn:ngm:class:paris-agreement-article-6",
         "label": "Paris Agreement Article 6"
       },
       {
-        "id": "urn:visionflow:linked:verra-vcs-methodology",
+        "id": "urn:ngm:class:verra-vcs-methodology",
         "label": "Verra VCS Methodology"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chainlink-oracles",
+        "label": "Chainlink Oracles"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Tokens"
+      },
+      {
+        "id": "urn:ngm:class:erc-721-nfts",
+        "label": "ERC-721 NFTs"
+      },
+      {
+        "id": "urn:ngm:class:hedera-hashgraph",
+        "label": "Hedera Hashgraph"
+      },
+      {
+        "id": "urn:ngm:class:polygon-network",
+        "label": "Polygon Network"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biodiversity-credits",
+        "label": "Biodiversity Credits"
+      },
+      {
+        "id": "urn:ngm:class:climate-tech",
+        "label": "Climate Tech"
+      },
+      {
+        "id": "urn:ngm:class:corporate-climate-commitments",
+        "label": "Corporate Climate Commitments"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:nature-based-solutions",
+        "label": "Nature-Based Solutions"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:corsia",
+        "label": "CORSIA"
+      },
+      {
+        "id": "urn:ngm:class:eu-corporate-sustainability-reporting-directive",
+        "label": "EU Corporate Sustainability Reporting Directive"
+      },
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "ICVCM Core Carbon Principles"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement-article-6",
+        "label": "Paris Agreement Article 6"
+      },
+      {
+        "id": "urn:ngm:class:verra-vcs-standard",
+        "label": "Verra VCS Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "id": "urn:ngm:class:environmental-finance",
+        "label": "Environmental Finance"
+      },
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "id": "urn:ngm:class:mrv",
+        "label": "MRV"
+      },
+      {
+        "id": "urn:ngm:class:nfts",
+        "label": "NFTs"
+      },
+      {
+        "id": "urn:ngm:class:voluntary-carbon-markets",
+        "label": "Voluntary Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ]
   },
   "wikilinks": [
     {

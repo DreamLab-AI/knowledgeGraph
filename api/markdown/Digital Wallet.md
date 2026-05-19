@@ -136,71 +136,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-wallet",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-wallet",
+  "@type": "Class",
   "label": "Digital Wallet",
-  "subClassOf": [],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6402dc919a240baac8ade7024c5598fc92dcad1db552e42aecf098b456d3f2ef"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6402dc919a240baac8ade7024c5598fc92dcad1db552e42aecf098b456d3f2ef@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
+  "domain": "blockchain",
+  "maturity": "draft",
+  "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-security",
-      "vc:label": "Cryptographic Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-key",
-      "vc:label": "Private Key"
+      "@id": "urn:ngm:class:blockchain-core",
+      "label": "Blockchain"
     }
   ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:de-fi-access",
-      "vc:label": "DeFi Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-signing",
-      "vc:label": "Transaction Signing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:de-fi-access",
+        "label": "DeFi Access"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ]
+  },
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

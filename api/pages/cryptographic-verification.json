@@ -3,19 +3,18 @@
   "title": "Cryptographic Verification",
   "slug": "cryptographic-verification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-verification",
+  "classIri": "urn:ngm:class:cryptographic-verification",
   "domain": "infrastructure",
-  "definition": "Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Cryptographic Verification is a type of Cryptographic System in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptographic-system",
+      "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

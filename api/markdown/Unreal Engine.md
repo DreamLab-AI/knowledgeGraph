@@ -376,362 +376,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:unreal-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:unreal-engine",
+  "@type": "Class",
   "label": "Unreal Engine",
+  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform — simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service — whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized mic...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:creative-tools",
-      "vc:label": "creative-tools"
+      "@id": "urn:ngm:class:creative-tools",
+      "label": "creative-tools"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ee5a356b7b61a5899e41cc599b2527758d0754ec2e3086061e70bbdce9191121"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-technology",
+        "label": "Motion Capture Technology"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph-format",
+        "label": "Scene Graph Format"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-rendering-service",
+        "label": "Cloud Rendering Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-terrain",
+        "label": "Procedural Terrain"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "Virtual Production Volume"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-vp",
+        "label": "Virtual Production (VP)"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-stage",
+        "label": "Virtual Stage"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:3-danimation",
+        "label": "3DAnimation"
+      },
+      {
+        "@id": "urn:ngm:class:3-dcontent-pipeline",
+        "label": "3DContentPipeline"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:3-dcontent-pipeline",
+        "label": "3DContentPipeline"
+      },
+      {
+        "@id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:digital-performance-capture",
+        "label": "Digital Performance Capture"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-technology",
+        "label": "Motion Capture Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:humans-avatars-character-md",
+        "label": "Humans, Avatars , Character.md"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-md",
+        "label": "Virtual Production.md"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non Player Character"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph-format",
+        "label": "Scene Graph Format"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-rendering-service",
+        "label": "Cloud Rendering Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience-pipeline",
+        "label": "Immersive Experience Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-omniverse",
+        "label": "NVIDIA Omniverse"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3-d-graphics-standard",
+        "label": "3D Graphics Standard"
+      },
+      {
+        "@id": "urn:ngm:class:3-dasset-standard",
+        "label": "3DAssetStandard"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph-format",
+        "label": "Scene Graph Format"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ee5a356b7b61a5899e41cc599b2527758d0754ec2e3086061e70bbdce9191121@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform — simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service — whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized micropolygon geometry (enabling film-quality assets with billions of polygons rendered in real time through a hierarchical cluster-based DAG with software rasterisation that outperforms hardware rasterisation for sub-pixel triangles), Lumen fully dynamic global illumination and reflections (ray-marched scene distance-fields and surface-cache radiosity achieving hardware ray-tracing quality on non-RTX hardware, with HWRT path available on NVIDIA RTX / AMD RDNA 2+), Chaos physics and destruction (XPBD unified solver for rigid body, cloth, soft body, fluid, vehicle, and hair simulation), World Partition streaming open-world system (automated cell-based streaming replacing manual level-streaming volumes, supporting 1 km² to continental-scale environments with One File Per Actor OFPA for multi-user collaboration), and MetaHuman Creator (browser-based 4D-scan-grounded parametric digital-human author",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-shader",
-      "vc:label": "Compute Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dynamic-character-animation",
-      "vc:label": "Dynamic Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture-technology",
-      "vc:label": "Motion Capture Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pixel-shader",
-      "vc:label": "Pixel Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-generation",
-      "vc:label": "Procedural Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-character-animation",
-      "vc:label": "Real Time Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-asset",
-      "vc:label": "3D Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu",
-      "vc:label": "GPU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-file-format",
-      "vc:label": "3D File Format"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-model",
-      "vc:label": "3D Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph-format",
-      "vc:label": "Scene Graph Format"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-game-agent",
-      "vc:label": "AI Game Agent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-rendering-service",
-      "vc:label": "Cloud Rendering Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-creation",
-      "vc:label": "Digital Twin Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:film-production",
-      "vc:label": "Film Production"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experience",
-      "vc:label": "Immersive Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-gaming",
-      "vc:label": "Immersive Gaming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-terrain",
-      "vc:label": "Procedural Terrain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-pipeline",
-      "vc:label": "Virtual Production Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-volume",
-      "vc:label": "Virtual Production Volume"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-vp",
-      "vc:label": "Virtual Production (VP)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-stage",
-      "vc:label": "Virtual Stage"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:3-danimation",
-      "vc:label": "3DAnimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-dcontent-pipeline",
-      "vc:label": "3DContentPipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fluid-simulation",
-      "vc:label": "Fluid Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:level-of-detail",
-      "vc:label": "Level of Detail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture",
-      "vc:label": "Motion Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:occlusion-culling",
-      "vc:label": "Occlusion Culling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-generation",
-      "vc:label": "Procedural Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gpu",
-      "vc:label": "GPU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-file-format",
-      "vc:label": "3D File Format"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-model",
-      "vc:label": "3D Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-scene-graph",
-      "vc:label": "Ar Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-character-animation",
-      "vc:label": "Real Time Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
-      "vc:label": "3D Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:character-model",
-      "vc:label": "Character Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:character-rigging",
-      "vc:label": "Character Rigging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-rendering-service",
-      "vc:label": "Cloud Rendering Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experience-pipeline",
-      "vc:label": "Immersive Experience Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture-rig",
-      "vc:label": "Motion Capture Rig"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
-      "vc:label": "NVIDIA Omniverse"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:3-dcontent-pipeline",
-      "vc:label": "3DContentPipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-avatars",
-      "vc:label": "AI Avatars"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animation-retargeting",
-      "vc:label": "Animation Retargeting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-shader",
-      "vc:label": "Compute Shader"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-performance-capture",
-      "vc:label": "Digital Performance Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dynamic-character-animation",
-      "vc:label": "Dynamic Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture-technology",
-      "vc:label": "Motion Capture Technology"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animation-software",
-      "vc:label": "Animation Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nvidia-omniverse",
-      "vc:label": "NVIDIA Omniverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:simulation-engine",
-      "vc:label": "Simulation Engine"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:humans-avatars-character-md",
-      "vc:label": "Humans, Avatars , Character.md"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-production-md",
-      "vc:label": "Virtual Production.md"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fluid-simulation",
-      "vc:label": "Fluid Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:geospatial-engine",
-      "vc:label": "Geospatial Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-entertainment",
-      "vc:label": "Immersive Entertainment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-learning",
-      "vc:label": "Immersive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-player-character",
-      "vc:label": "Non Player Character"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph-format",
-      "vc:label": "Scene Graph Format"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-workflow",
-      "vc:label": "Virtual Production Workflow"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-graphics-standard",
-      "vc:label": "3D Graphics Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-dasset-standard",
-      "vc:label": "3DAssetStandard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph-format",
-      "vc:label": "Scene Graph Format"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

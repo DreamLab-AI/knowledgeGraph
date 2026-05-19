@@ -3,19 +3,18 @@
   "title": "LLaMA",
   "slug": "lla-ma",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lla-ma",
+  "classIri": "urn:ngm:class:lla-ma",
   "domain": "spatial-computing",
   "definition": "Large Language Model Meta AI: a collection of foundation language models ranging from 7B to 65B parameters, designed to be efficient and performant whilst using only publicly available data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -140,62 +140,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:creative-media-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:creative-media-domain",
+  "@type": "Class",
   "label": "Creative Media Domain",
+  "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-augmented-creativity",
+        "label": "AI-Augmented Creativity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5789806c1c0ad4394a33e4adfc1ee86ee6595338e5dad5a577549a24ff7a1fb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-augmented-creativity",
-      "vc:label": "AI-Augmented Creativity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:digital-media",
-      "vc:label": "Digital Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:entertainment-industry",
-      "vc:label": "Entertainment Industry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-technology",
-      "vc:label": "Metaverse Technology"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

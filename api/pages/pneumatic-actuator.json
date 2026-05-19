@@ -3,155 +3,251 @@
   "title": "Pneumatic Actuator",
   "slug": "pneumatic-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pneumatic-actuator",
+  "classIri": "urn:ngm:class:pneumatic-actuator",
   "domain": "robotics",
-  "definition": "PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion \u2014 linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) \u2014 and serves as the primary actuation primitive in robotics domains requiring inherent compliance, explosion-proof operation, high power-to-weight ratios, and safe physical human-robot interaction. Pneumatic actuators operate by regulating the flow and pressure of compressed air (typically 4\u20138 bar gauge in industrial settings, 0.1\u20132 bar in soft-robotics applications) through directional-control valves (4/2, 5/2, proportional) into one or two working chambers, generating force according to F = P\u00b7A \u2212 P_back\u00b7A_back \u2212 F_friction, where P is supply pressure, A is bore area, and P_back is back-pressure in double-acting configurations.",
+  "definition": "PneumaticActuator is a mechanical device that converts compressed-air energy into controlled mechanical motion \u2014 linear (cylinders, bellows), rotary (vane motors, semi-rotary actuators), or contractile (McKibben muscles, fibre-reinforced elastomers, Festo fluidic muscles) \u2014 and serves as the prim...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:compliant-mechanism",
+      "id": "urn:ngm:class:compliant-mechanism",
       "label": "Compliant Mechanism"
     },
     {
-      "id": "urn:visionflow:linked:fluid-power-device",
+      "id": "urn:ngm:class:fluid-power-device",
       "label": "Fluid Power Device"
-    },
-    {
-      "id": "urn:visionflow:linked:robotic-actuator",
-      "label": "Robotic Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:air-supply-system",
+        "id": "urn:ngm:class:air-supply-system",
         "label": "Air Supply System"
       },
       {
-        "id": "urn:visionflow:linked:directional-control-valve",
+        "id": "urn:ngm:class:directional-control-valve",
         "label": "Directional Control Valve"
       },
       {
-        "id": "urn:visionflow:linked:elastomeric-chamber",
+        "id": "urn:ngm:class:elastomeric-chamber",
         "label": "Elastomeric Chamber"
       },
       {
-        "id": "urn:visionflow:linked:fibre-reinforcement",
+        "id": "urn:ngm:class:fibre-reinforcement",
         "label": "Fibre Reinforcement"
       },
       {
-        "id": "urn:visionflow:linked:mc-kibben-muscle",
+        "id": "urn:ngm:class:mc-kibben-muscle",
         "label": "McKibben Muscle"
       },
       {
-        "id": "urn:visionflow:linked:pneumatic-network",
+        "id": "urn:ngm:class:pneumatic-network",
         "label": "Pneumatic Network"
       },
       {
-        "id": "urn:visionflow:linked:position-sensor",
+        "id": "urn:ngm:class:position-sensor",
         "label": "Position Sensor"
       },
       {
-        "id": "urn:visionflow:linked:pressure-regulator",
+        "id": "urn:ngm:class:pressure-regulator",
         "label": "Pressure Regulator"
       },
       {
-        "id": "urn:visionflow:linked:proportional-valve",
+        "id": "urn:ngm:class:proportional-valve",
         "label": "Proportional Valve"
       },
       {
-        "id": "urn:visionflow:owl:class:pneumatic-cylinder",
+        "id": "urn:ngm:class:pneumatic-cylinder",
         "label": "Pneumatic Cylinder"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:air-compressor",
+        "id": "urn:ngm:class:air-compressor",
         "label": "Air Compressor"
       },
       {
-        "id": "urn:visionflow:linked:compressed-air-supply",
+        "id": "urn:ngm:class:compressed-air-supply",
         "label": "Compressed Air Supply"
       },
       {
-        "id": "urn:visionflow:linked:directional-control-valves",
+        "id": "urn:ngm:class:directional-control-valves",
         "label": "Directional Control Valves"
       },
       {
-        "id": "urn:visionflow:linked:filter-regulator-lubricator-unit",
+        "id": "urn:ngm:class:filter-regulator-lubricator-unit",
         "label": "Filter-Regulator-Lubricator Unit"
       },
       {
-        "id": "urn:visionflow:linked:pneumatic-tubing",
+        "id": "urn:ngm:class:pneumatic-tubing",
         "label": "Pneumatic Tubing"
       },
       {
-        "id": "urn:visionflow:linked:pressure-regulation",
+        "id": "urn:ngm:class:pressure-regulation",
         "label": "Pressure Regulation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliant-grasping",
+        "id": "urn:ngm:class:compliant-grasping",
         "label": "Compliant Grasping"
       },
       {
-        "id": "urn:visionflow:linked:explosion-proof-actuation",
+        "id": "urn:ngm:class:explosion-proof-actuation",
         "label": "Explosion-Proof Actuation"
       },
       {
-        "id": "urn:visionflow:linked:hazardous-environment-operation",
+        "id": "urn:ngm:class:hazardous-environment-operation",
         "label": "Hazardous Environment Operation"
       },
       {
-        "id": "urn:visionflow:linked:rehabilitation-robotics",
+        "id": "urn:ngm:class:rehabilitation-robotics",
         "label": "Rehabilitation Robotics"
       },
       {
-        "id": "urn:visionflow:linked:safe-physical-interaction",
+        "id": "urn:ngm:class:safe-physical-interaction",
         "label": "Safe Physical Interaction"
       },
       {
-        "id": "urn:visionflow:linked:soft-locomotion",
+        "id": "urn:ngm:class:soft-locomotion",
         "label": "Soft Locomotion"
       },
       {
-        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:fibre-reinforced-elastomer-actuation",
+        "id": "urn:ngm:class:fibre-reinforced-elastomer-actuation",
         "label": "Fibre-Reinforced Elastomer Actuation"
       },
       {
-        "id": "urn:visionflow:linked:fluidic-muscle-principle",
+        "id": "urn:ngm:class:fluidic-muscle-principle",
         "label": "Fluidic Muscle Principle"
       },
       {
-        "id": "urn:visionflow:linked:iso-15552-standard",
+        "id": "urn:ngm:class:iso-15552-standard",
         "label": "ISO 15552 Standard"
       },
       {
-        "id": "urn:visionflow:linked:iso-6432-standard",
+        "id": "urn:ngm:class:iso-6432-standard",
         "label": "ISO 6432 Standard"
       },
       {
-        "id": "urn:visionflow:linked:mc-kibben-muscle-mechanics",
+        "id": "urn:ngm:class:mc-kibben-muscle-mechanics",
         "label": "McKibben Muscle Mechanics"
       },
       {
-        "id": "urn:visionflow:linked:pneu-net-architecture",
+        "id": "urn:ngm:class:pneu-net-architecture",
         "label": "PneuNet Architecture"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-fibre-reinforcement",
+        "label": "Carbon Fibre Reinforcement"
+      },
+      {
+        "id": "urn:ngm:class:compressed-air",
+        "label": "Compressed Air"
+      },
+      {
+        "id": "urn:ngm:class:elastomeric-materials",
+        "label": "Elastomeric Materials"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:proportional-pressure-control",
+        "label": "Proportional Pressure Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton-design",
+        "label": "Exoskeleton Design"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:medical-robotics",
+        "label": "Medical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place-robotics",
+        "label": "Pick and Place Robotics"
+      },
+      {
+        "id": "urn:ngm:class:soft-gripper-systems",
+        "label": "Soft Gripper Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61000-emc-standards-for-control-valves",
+        "label": "IEC 61000 EMC Standards for Control Valves"
+      },
+      {
+        "id": "urn:ngm:class:iso-15552",
+        "label": "ISO 15552"
+      },
+      {
+        "id": "urn:ngm:class:iso-4414-pneumatic-fluid-power",
+        "label": "ISO 4414 Pneumatic Fluid Power"
+      },
+      {
+        "id": "urn:ngm:class:iso-6432",
+        "label": "ISO 6432"
+      },
+      {
+        "id": "urn:ngm:class:nfpa-t3-21-3",
+        "label": "NFPA T3.21.3"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fluidic-logic",
+        "label": "Fluidic Logic"
+      },
+      {
+        "id": "urn:ngm:class:robot-compliance",
+        "label": "Robot Compliance"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:soft-matter-physics",
+        "label": "Soft Matter Physics"
+      },
+      {
+        "id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      }
+    ]
   },
   "wikilinks": [
     {

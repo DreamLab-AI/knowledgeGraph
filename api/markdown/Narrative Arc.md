@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:narrative-arc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:narrative-arc",
+  "@type": "Class",
   "label": "Narrative Arc",
+  "definition": "The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:storytelling-structure",
-      "vc:label": "Storytelling Structure"
+      "@id": "urn:ngm:class:storytelling-structure",
+      "label": "Storytelling Structure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5527ab64db9553639c714062229bbb21668a62c8841c1fe71bc17b831db739b6"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:non-linear-narrative",
+        "label": "Non Linear Narrative"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5527ab64db9553639c714062229bbb21668a62c8841c1fe71bc17b831db739b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:non-linear-narrative",
-      "vc:label": "Non Linear Narrative"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

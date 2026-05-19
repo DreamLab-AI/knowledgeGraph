@@ -224,140 +224,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-production-vp",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-production-vp",
+  "@type": "Class",
   "label": "Virtual Production (VP)",
+  "definition": "Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:rendering-technique",
-      "vc:label": "Rendering Technique"
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ccf50b678310feddb32aafc818f3823009d7c29415970854bfaad5db50acce0b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:compositing-pipeline",
+        "label": "Compositing Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:led-volume",
+        "label": "LED Volume"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-camera",
+        "label": "Virtual Camera"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-tracking-system",
+        "label": "Camera Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:led-display-system",
+        "label": "LED Display System"
+      },
+      {
+        "@id": "urn:ngm:class:render-engine",
+        "label": "Render Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:in-camera-vfx",
+        "label": "In-Camera VFX"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-filmmaking",
+        "label": "Interactive Filmmaking"
+      },
+      {
+        "@id": "urn:ngm:class:live-compositing",
+        "label": "Live Compositing"
+      },
+      {
+        "@id": "urn:ngm:class:previsualization",
+        "label": "Previsualization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-scouting",
+        "label": "Virtual Scouting"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:broadcast-production",
+        "label": "Broadcast Production"
+      },
+      {
+        "@id": "urn:ngm:class:film-production-workflow",
+        "label": "Film Production Workflow"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ccf50b678310feddb32aafc818f3823009d7c29415970854bfaad5db50acce0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:broadcast-production",
-      "vc:label": "Broadcast Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-production-workflow",
-      "vc:label": "Film Production Workflow"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-tracking",
-      "vc:label": "Camera Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:compositing-pipeline",
-      "vc:label": "Compositing Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:led-volume",
-      "vc:label": "LED Volume"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture",
-      "vc:label": "Motion Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-camera",
-      "vc:label": "Virtual Camera"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-tracking-system",
-      "vc:label": "Camera Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:led-display-system",
-      "vc:label": "LED Display System"
-    },
-    {
-      "@id": "urn:visionflow:linked:render-engine",
-      "vc:label": "Render Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-hardware",
-      "vc:label": "XR Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:in-camera-vfx",
-      "vc:label": "In-Camera VFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-filmmaking",
-      "vc:label": "Interactive Filmmaking"
-    },
-    {
-      "@id": "urn:visionflow:linked:live-compositing",
-      "vc:label": "Live Compositing"
-    },
-    {
-      "@id": "urn:visionflow:linked:previsualization",
-      "vc:label": "Previsualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-scouting",
-      "vc:label": "Virtual Scouting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:color-grading",
-      "vc:label": "Color Grading"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-graphics",
-      "vc:label": "Real-Time Graphics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-set-design",
-      "vc:label": "Virtual Set Design"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

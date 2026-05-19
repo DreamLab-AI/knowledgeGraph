@@ -3,19 +3,18 @@
   "title": "rb 0012 wheeled mobile robot",
   "slug": "rb-0012-wheeled-mobile-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0012-wheeled-mobile-robot",
+  "classIri": "urn:ngm:class:rb-0012-wheeled-mobile-robot",
   "domain": "robotics",
   "definition": "wheeled mobile robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
+      "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

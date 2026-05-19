@@ -232,41 +232,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-core-concepts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-core-concepts",
+  "@type": "Class",
   "label": "blockchain core concepts",
+  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataS...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1121dbbc946cec157189fcc3c1998a490a5fdbb1db2313ec5fd0a803fda43122"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1121dbbc946cec157189fcc3c1998a490a5fdbb1db2313ec5fd0a803fda43122@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataStructure|data structures]] ([[MerkleTree|Merkle trees]], [[HashFunction|hash functions]]). Essential components include [[Transaction|transactions]], [[SmartContract|smart contracts]], [[Token|tokens]], and [[BlockchainGovernance|governance mechanisms]], with application frameworks spanning [[DecentralisedFinance|DeFi]], [[NFT|NFTs]], and [[MetaverseEconomy|metaverse economies]]. Broader considerations encompass [[Scalability|scalability]] solutions ([[LayerTwo|Layer 2s]]), [[Interoperability|cross-chain interoperability]], [[PrivacyEnhancements|privacy enhancements]], and [[RegulatoryCompliance|regulatory compliance]] across jurisdictions.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,32 +3,36 @@
   "title": "Metaverse Stack",
   "slug": "metaverse-stack",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-stack",
+  "classIri": "urn:ngm:class:metaverse-stack",
   "domain": "spatial-computing",
-  "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that together enable the creation and operation of persistent virtual world environments.",
+  "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that toger enable the creation and operation of persistent virtual world environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-stack",
+      "id": "urn:ngm:class:technology-stack",
       "label": "Technology Stack"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:virtual-world-operation",
+        "id": "urn:ngm:class:virtual-world-operation",
         "label": "Virtual World Operation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

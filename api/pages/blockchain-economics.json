@@ -3,19 +3,18 @@
   "title": "Blockchain Economics",
   "slug": "blockchain-economics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-economics",
+  "classIri": "urn:ngm:class:blockchain-economics",
   "domain": "blockchain",
-  "definition": "Blockchain Economics is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Blockchain Economics is a type of Token Economics in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:token-economics",
+      "id": "urn:ngm:class:token-economics",
       "label": "Token Economics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

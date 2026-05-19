@@ -3,119 +3,195 @@
   "title": "Cortex Agent",
   "slug": "cortex-agent",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cortex-agent",
+  "classIri": "urn:ngm:class:cortex-agent",
   "domain": "artificial-intelligence",
-  "definition": "Cortex Agent is a class of enterprise agentic AI system that orchestrates multi-step reasoning and action across both structured and unstructured data sources within a governed cloud data platform, with Snowflake Cortex Agents (General Availability November 4, 2025) as the dominant production instantiation \u2014 a framework that receives natural-language user queries, plans multi-step execution strategies using a frontier LLM orchestrator, invokes a registered toolkit (Cortex Analyst translating NL to SQL for structured warehoused data via YAML semantic models or native Semantic Views with full RBAC; Cortex Search executing hybrid BM25-plus-vector retrieval over unstructured document collections managed within Snowflake; custom stored procedures and user-defined functions for domain computation; and Brave-API web search for real-time external information), executes a four-stage cognitive cycle of planning, tool use, reflection, and monitoring, and synthesises grounded natural-language responses with optional data citations \u2014 all without data leaving the Snowflake account perimeter, ensuring governance and data sovereignty across financial services, healthcare, life sciences, retail, an",
+  "definition": "Cortex Agent is a class of enterprise agentic AI system that orchestrates multi-step reasoning and action across both structured and unstructured data sources within a governed cloud data platform, with Snowflake Cortex Agents (General Availability November 4, 2025) as the dominant production ins...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:agentic-internet",
+      "id": "urn:ngm:class:agentic-internet",
       "label": "Agentic Internet"
     },
     {
-      "id": "urn:visionflow:owl:class:agents",
+      "id": "urn:ngm:class:agents",
       "label": "Agents"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cognitive-ai",
-      "label": "Cognitive AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:context-engineering",
+        "id": "urn:ngm:class:context-engineering",
         "label": "Context Engineering"
       },
       {
-        "id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "id": "urn:visionflow:owl:class:feedback-loop",
+        "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:graph-database",
+        "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:data-layer",
+        "id": "urn:ngm:class:data-layer",
         "label": "Data Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-computing",
+        "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:call-centres",
+        "id": "urn:ngm:class:call-centres",
         "label": "Call Centres"
       },
       {
-        "id": "urn:visionflow:owl:class:chatbots",
+        "id": "urn:ngm:class:chatbots",
         "label": "Chatbots"
       },
       {
-        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "id": "urn:ngm:class:cli-multi-agent-systems",
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-use-and-browser-agents",
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
         "label": "Computer Use and Browser Agents"
       },
       {
-        "id": "urn:visionflow:owl:class:gpts-and-custom-assistants",
+        "id": "urn:ngm:class:gpts-and-custom-assistants",
         "label": "GPTs and Custom Assistants"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval Augmented Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:context-engineering",
+        "id": "urn:ngm:class:context-engineering",
         "label": "Context Engineering"
       },
       {
-        "id": "urn:visionflow:owl:class:feedback-loop",
+        "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      }
+    ]
   },
   "wikilinks": [
     {

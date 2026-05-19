@@ -3,49 +3,53 @@
   "title": "Cross-Platform Identity",
   "slug": "cross-platform-identity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-platform-identity",
+  "classIri": "urn:ngm:class:cross-platform-identity",
   "domain": "infrastructure",
-  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.",
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:identity-management",
+      "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:federated-access",
+        "id": "urn:ngm:class:federated-access",
         "label": "Federated Access"
       },
       {
-        "id": "urn:visionflow:linked:single-sign-on",
+        "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
       },
       {
-        "id": "urn:visionflow:linked:user-experience",
+        "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:trust-relationships",
+        "id": "urn:ngm:class:trust-relationships",
         "label": "Trust Relationships"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-federation",
+        "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

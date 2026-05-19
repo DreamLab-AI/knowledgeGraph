@@ -3,19 +3,18 @@
   "title": "Post Processing",
   "slug": "post-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:post-processing",
+  "classIri": "urn:ngm:class:post-processing",
   "domain": "spatial-computing",
   "definition": "Post Processing is a spatial computing concept and a type of Visual Effects.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:visual-effects",
+      "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

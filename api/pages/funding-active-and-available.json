@@ -3,19 +3,18 @@
   "title": "Funding (active and available)",
   "slug": "funding-active-and-available",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:funding-active-and-available",
+  "classIri": "urn:ngm:class:funding-active-and-available",
   "domain": "infrastructure",
   "definition": "Funding (active and available) is a technology infrastructure concept and a type of Resource Management.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:resource-management",
+      "id": "urn:ngm:class:resource-management",
       "label": "Resource Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

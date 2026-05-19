@@ -3,135 +3,223 @@
   "title": "Empathetic AI",
   "slug": "empathetic-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:empathetic-ai",
+  "classIri": "urn:ngm:class:empathetic-ai",
   "domain": "artificial-intelligence",
-  "definition": "Empathetic AI is a subfield of [[Affective Computing]] and [[Human-Computer Interaction]] concerned with computational systems that perceive, model, and respond to human affective states \u2014 including emotions, sentiment, stress, mood, and social cues \u2014 to produce contextually appropriate, emotionally resonant, and ethically grounded interactions. Rooted in Rosalind Picard's foundational 1997 monograph *Affective Computing* (MIT Press), empathetic AI integrates multimodal perception (facial action unit recognition via the Facial Action Coding System / FACS mapping 44 AUs across ~7,000 muscles; prosodic and paralinguistic voice analysis extracting pitch F0 variability, speech rate jitter/shimmer, energy envelope; physiological sensing from EEG, galvanic skin response, heart rate variability; lexical-semantic sentiment analysis over dialogue history) with generative response modules (large language models fine-tuned on empathic dialogue corpora, retrieval-augmented conversation over psychological knowledge bases, reinforcement learning from human feedback scoring emotional appropriateness) across a spectrum of deployment contexts: companion AI and social robots (Replika, Woebot, Wysa, ",
+  "definition": "Empathetic AI is a subfield of [[Affective Computing]] and [[Human-Computer Interaction]] concerned with computational systems that perceive, model, and respond to human affective states \u2014 including emotions, sentiment, stress, mood, and social cues \u2014 to produce contextually appropriate, emotiona...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:affective-computing",
+      "id": "urn:ngm:class:affective-computing",
       "label": "Affective Computing"
     },
     {
-      "id": "urn:visionflow:owl:class:cognitive-ai",
+      "id": "urn:ngm:class:cognitive-ai",
       "label": "Cognitive AI"
-    },
-    {
-      "id": "urn:visionflow:owl:class:multimodal-ai",
-      "label": "Multimodal AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:affective-dialogue-management",
+        "id": "urn:ngm:class:affective-dialogue-management",
         "label": "Affective Dialogue Management"
       },
       {
-        "id": "urn:visionflow:linked:emotion-recognition",
+        "id": "urn:ngm:class:emotion-recognition",
         "label": "Emotion Recognition"
       },
       {
-        "id": "urn:visionflow:linked:empathic-response-generation",
+        "id": "urn:ngm:class:empathic-response-generation",
         "label": "Empathic Response Generation"
       },
       {
-        "id": "urn:visionflow:linked:facial-action-coding-system",
+        "id": "urn:ngm:class:facial-action-coding-system",
         "label": "Facial Action Coding System"
       },
       {
-        "id": "urn:visionflow:linked:personality-modelling",
+        "id": "urn:ngm:class:personality-modelling",
         "label": "Personality Modelling"
       },
       {
-        "id": "urn:visionflow:linked:physiological-signal-processing",
+        "id": "urn:ngm:class:physiological-signal-processing",
         "label": "Physiological Signal Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:sentiment-analysis",
+        "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:affective-language-models",
+        "id": "urn:ngm:class:affective-language-models",
         "label": "Affective Language Models"
       },
       {
-        "id": "urn:visionflow:linked:emotional-training-data",
+        "id": "urn:ngm:class:emotional-training-data",
         "label": "Emotional Training Data"
       },
       {
-        "id": "urn:visionflow:linked:ethical-governance-framework",
+        "id": "urn:ngm:class:ethical-governance-framework",
         "label": "Ethical Governance Framework"
       },
       {
-        "id": "urn:visionflow:linked:informed-consent-mechanism",
+        "id": "urn:ngm:class:informed-consent-mechanism",
         "label": "Informed Consent Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:multimodal-perception",
+        "id": "urn:ngm:class:multimodal-perception",
         "label": "Multimodal Perception"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:companion-ai",
+        "id": "urn:ngm:class:companion-ai",
         "label": "Companion AI"
       },
       {
-        "id": "urn:visionflow:linked:emotionally-aware-customer-service",
+        "id": "urn:ngm:class:emotionally-aware-customer-service",
         "label": "Emotionally Aware Customer Service"
       },
       {
-        "id": "urn:visionflow:linked:mental-health-support",
+        "id": "urn:ngm:class:mental-health-support",
         "label": "Mental Health Support"
       },
       {
-        "id": "urn:visionflow:linked:personalised-education",
+        "id": "urn:ngm:class:personalised-education",
         "label": "Personalised Education"
       },
       {
-        "id": "urn:visionflow:linked:therapeutic-chatbots",
+        "id": "urn:ngm:class:therapeutic-chatbots",
         "label": "Therapeutic Chatbots"
       },
       {
-        "id": "urn:visionflow:linked:voice-emotional-interface",
+        "id": "urn:ngm:class:voice-emotional-interface",
         "label": "Voice Emotional Interface"
       },
       {
-        "id": "urn:visionflow:owl:class:social-robotics",
+        "id": "urn:ngm:class:social-robotics",
         "label": "Social Robotics"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:categorical-emotion-classification",
+        "id": "urn:ngm:class:categorical-emotion-classification",
         "label": "Categorical Emotion Classification"
       },
       {
-        "id": "urn:visionflow:linked:dimensional-emotion-models",
+        "id": "urn:ngm:class:dimensional-emotion-models",
         "label": "Dimensional Emotion Models"
       },
       {
-        "id": "urn:visionflow:linked:empathic-response-strategies",
+        "id": "urn:ngm:class:empathic-response-strategies",
         "label": "Empathic Response Strategies"
       },
       {
-        "id": "urn:visionflow:linked:facial-action-coding-system",
+        "id": "urn:ngm:class:facial-action-coding-system",
         "label": "Facial Action Coding System"
       },
       {
-        "id": "urn:visionflow:linked:valence-arousal-dominance-space",
+        "id": "urn:ngm:class:valence-arousal-dominance-space",
         "label": "Valence-Arousal-Dominance Space"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanisms",
+        "label": "Attention Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:facial-landmark-detection",
+        "label": "Facial Landmark Detection"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-fusion",
+        "label": "Multimodal Fusion"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-lexicons",
+        "label": "Sentiment Lexicons"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adaptive-learning-systems",
+        "label": "Adaptive Learning Systems"
+      },
+      {
+        "id": "urn:ngm:class:crisis-intervention",
+        "label": "Crisis Intervention"
+      },
+      {
+        "id": "urn:ngm:class:elder-care-robots",
+        "label": "Elder Care Robots"
+      },
+      {
+        "id": "urn:ngm:class:mental-health-care",
+        "label": "Mental Health Care"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-p7014-standard-for-ethical-considerations-in-emulated-empathy",
+        "label": "IEEE P7014 Standard for Ethical Considerations in Emulated Empathy"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ]
   },
   "wikilinks": [
     {

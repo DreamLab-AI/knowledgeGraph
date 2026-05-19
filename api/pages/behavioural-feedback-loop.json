@@ -3,78 +3,82 @@
   "title": "Behavioural Feedback Loop",
   "slug": "behavioural-feedback-loop",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:behavioural-feedback-loop",
+  "classIri": "urn:ngm:class:behavioural-feedback-loop",
   "domain": "spatial-computing",
   "definition": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:action-detection",
+        "id": "urn:ngm:class:action-detection",
         "label": "Action Detection"
       },
       {
-        "id": "urn:visionflow:linked:adaptive-reinforcement",
+        "id": "urn:ngm:class:adaptive-reinforcement",
         "label": "Adaptive Reinforcement"
       },
       {
-        "id": "urn:visionflow:linked:environment-response",
+        "id": "urn:ngm:class:environment-response",
         "label": "Environment Response"
       },
       {
-        "id": "urn:visionflow:owl:class:behavior-analysis",
+        "id": "urn:ngm:class:behavior-analysis",
         "label": "Behavior Analysis"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-model",
+        "id": "urn:ngm:class:ai-model",
         "label": "AI Model"
       },
       {
-        "id": "urn:visionflow:linked:state-management",
+        "id": "urn:ngm:class:state-management",
         "label": "State Management"
       },
       {
-        "id": "urn:visionflow:linked:user-tracking",
+        "id": "urn:ngm:class:user-tracking",
         "label": "User Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-processing",
+        "id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-experience",
+        "id": "urn:ngm:class:adaptive-experience",
         "label": "Adaptive Experience"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-adjustment",
+        "id": "urn:ngm:class:dynamic-adjustment",
         "label": "Dynamic Adjustment"
       },
       {
-        "id": "urn:visionflow:linked:personalized-interaction",
+        "id": "urn:ngm:class:personalized-interaction",
         "label": "Personalized Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:behavioral-learning",
+        "id": "urn:ngm:class:behavioral-learning",
         "label": "Behavioral Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

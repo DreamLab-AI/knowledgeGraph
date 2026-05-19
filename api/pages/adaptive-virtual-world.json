@@ -3,53 +3,57 @@
   "title": "Adaptive Virtual World",
   "slug": "adaptive-virtual-world",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adaptive-virtual-world",
+  "classIri": "urn:ngm:class:adaptive-virtual-world",
   "domain": "spatial-computing",
   "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-world",
+      "id": "urn:ngm:class:virtual-world",
       "label": "Virtual World"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:neural-networks",
+        "id": "urn:ngm:class:neural-networks",
         "label": "Neural Networks"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-ai",
+        "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:visionflow:owl:class:procedural-generation",
+        "id": "urn:ngm:class:procedural-generation",
         "label": "Procedural Generation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:emergent-gameplay",
+        "id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
       },
       {
-        "id": "urn:visionflow:linked:persistent-world-evolution",
+        "id": "urn:ngm:class:persistent-world-evolution",
         "label": "Persistent World Evolution"
       },
       {
-        "id": "urn:visionflow:linked:personalized-environments",
+        "id": "urn:ngm:class:personalized-environments",
         "label": "Personalized Environments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

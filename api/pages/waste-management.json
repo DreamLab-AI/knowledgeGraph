@@ -3,19 +3,18 @@
   "title": "Waste Management",
   "slug": "waste-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:waste-management",
+  "classIri": "urn:ngm:class:waste-management",
   "domain": "blockchain",
-  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle. Blockchain-based systems enable [[WasteTraceability|waste traceability]], verify compliance with environmental regulations, incentivise proper disposal through [[TokenizedIncentives|tokenised reward systems]], and facilitate [[ExtendedProducerResponsibility|extended producer responsibility]] by tracking products from manufacturing through end-of-life recovery. Applications include [[E-WasteTracking|electronic waste tracking]], [[HazardousWaste|hazardous material monitoring]], and [[RecyclingOptimization|recycling optimisation]] where transparency and verifiable compliance prevent illegal waste dumping and improve environmental outcomes.",
+  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

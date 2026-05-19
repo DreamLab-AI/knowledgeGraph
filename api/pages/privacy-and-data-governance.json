@@ -3,27 +3,31 @@
   "title": "Privacy and Data Governance",
   "slug": "privacy-and-data-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-and-data-governance",
+  "classIri": "urn:ngm:class:privacy-and-data-governance",
   "domain": "artificial-intelligence",
-  "definition": "Privacy and Data Governance is a trustworthiness dimension ensuring AI systems protect personal information, respect data rights, maintain data quality, and implement appropriate access controls throughout data collection, processing, storage, and sharing activities. This dimension encompasses four core components: privacy protection (implementing data minimization collecting only necessary information, purpose limitation ensuring data used only for specified purposes, privacy by design embedding privacy safeguards into system architecture from inception, and privacy by default configuring systems to maximum privacy protection without user intervention), data quality (ensuring accuracy of data reflecting current reality, completeness with all required information present, currency maintaining up-to-date information, and integrity preventing unauthorized modification or corruption), access control (implementing role-based access restricting data access to authorized personnel with legitimate need, enforcing need-to-know principles limiting information exposure, maintaining comprehensive audit trails documenting all data access and modifications, and protecting against unauthorized a",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "Privacy and Data Governance is a trustworthiness dimension ensuring AI systems protect personal information, respect data rights, maintain data quality, and implement appropriate access controls throughout data collection, processing, storage, and sharing activities.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,86 +3,99 @@
   "title": "Biometric Binding Mechanism",
   "slug": "biometric-binding-mechanism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:biometric-binding-mechanism",
+  "classIri": "urn:ngm:class:biometric-binding-mechanism",
   "domain": "spatial-computing",
   "definition": "Physical hardware device that captures and verifies biometric traits (fingerprints, iris patterns, facial geometry) to bind digital identities to authenticated users.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:facial-recognition-sensor",
+        "id": "urn:ngm:class:facial-recognition-sensor",
         "label": "Facial Recognition Sensor"
       },
       {
-        "id": "urn:visionflow:linked:fingerprint-scanner",
+        "id": "urn:ngm:class:fingerprint-scanner",
         "label": "Fingerprint Scanner"
       },
       {
-        "id": "urn:visionflow:linked:iris-recognition-camera",
+        "id": "urn:ngm:class:iris-recognition-camera",
         "label": "Iris Recognition Camera"
       },
       {
-        "id": "urn:visionflow:linked:secure-element-chip",
+        "id": "urn:ngm:class:secure-element-chip",
         "label": "Secure Element Chip"
       },
       {
-        "id": "urn:visionflow:linked:template-matching-processor",
+        "id": "urn:ngm:class:template-matching-processor",
         "label": "Template Matching Processor"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:anti-spoofing-module",
+        "id": "urn:ngm:class:anti-spoofing-module",
         "label": "Anti-Spoofing Module"
       },
       {
-        "id": "urn:visionflow:linked:encrypted-storage",
+        "id": "urn:ngm:class:encrypted-storage",
         "label": "Encrypted Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-illuminator",
+        "id": "urn:ngm:class:infrared-illuminator",
         "label": "Infrared Illuminator"
       },
       {
-        "id": "urn:visionflow:owl:class:optical-sensor-array",
+        "id": "urn:ngm:class:optical-sensor-array",
         "label": "Optical Sensor Array"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:multi-factor-authentication",
+        "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:zero-trust-security-framework",
+        "label": "Zero Trust Security Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

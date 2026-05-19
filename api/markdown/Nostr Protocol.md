@@ -288,168 +288,121 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nostr-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nostr-protocol",
+  "@type": "Class",
   "label": "Nostr Protocol",
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of s...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-identity-system",
-      "vc:label": "Cryptographic Identity System"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-communication-protocol",
-      "vc:label": "Decentralised Communication Protocol"
+      "@id": "urn:ngm:class:decentralised-communication-protocol",
+      "label": "Decentralised Communication Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:nip-architecture",
+        "label": "NIP Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-client",
+        "label": "Nostr Client"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-event",
+        "label": "Nostr Event"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-relay",
+        "label": "Nostr Relay"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:web-id-profile",
+        "label": "WebID Profile"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:json-serialisation",
+        "label": "JSON Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1-elliptic-curve",
+        "label": "secp256k1 Elliptic Curve"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agent-to-agent-communication",
+        "label": "Agent-to-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistant-messaging",
+        "label": "Censorship-Resistant Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:data-vending-machine",
+        "label": "Data Vending Machine"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-zap-payments",
+        "label": "Lightning Zap Payments"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:nip-01-core-protocol",
+        "label": "NIP-01 Core Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:nip-05-identity-verification",
+        "label": "NIP-05 Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:nip-47-wallet-connect",
+        "label": "NIP-47 Wallet Connect"
+      },
+      {
+        "@id": "urn:ngm:class:nip-90-data-vending-machines",
+        "label": "NIP-90 Data Vending Machines"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-identity-system",
+        "label": "Cryptographic Identity System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin-ecosystem",
+        "label": "Bitcoin Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-social-web",
+        "label": "Decentralised Social Web"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a9e0c851e5a22714d9b097756c7a355eb4aa7d19f368c5fdcb85a4b71fb19b04@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of stateless relay servers, so that no single entity can deplatform a user without their private key being lost; the protocol's NIP (Nostr Implementation Possibility) architecture allows feature extension whilst preserving a small, auditable core that integrates natively with [[Bitcoin Lightning Network]] payments and serves as a decentralised identity and communication layer for [[VisionClaw Agentic Container]] agent-to-agent messaging and [[DID Nostr Identity]] resolution.",
-  "vc:qualityScore": {
-    "@value": "0.70",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.80",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-ecosystem",
-      "vc:label": "Bitcoin Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-social-web",
-      "vc:label": "Decentralised Social Web"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:nip-architecture",
-      "vc:label": "NIP Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-client",
-      "vc:label": "Nostr Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-event",
-      "vc:label": "Nostr Event"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-relay",
-      "vc:label": "Nostr Relay"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id-profile",
-      "vc:label": "WebID Profile"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:json-serialisation",
-      "vc:label": "JSON Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1-elliptic-curve",
-      "vc:label": "secp256k1 Elliptic Curve"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-protocol",
-      "vc:label": "WebSocket Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agent-to-agent-communication",
-      "vc:label": "Agent-to-Agent Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:censorship-resistant-messaging",
-      "vc:label": "Censorship-Resistant Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-vending-machine",
-      "vc:label": "Data Vending Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-zap-payments",
-      "vc:label": "Lightning Zap Payments"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:nip-01-core-protocol",
-      "vc:label": "NIP-01 Core Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:nip-05-identity-verification",
-      "vc:label": "NIP-05 Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:nip-47-wallet-connect",
-      "vc:label": "NIP-47 Wallet Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:nip-90-data-vending-machines",
-      "vc:label": "NIP-90 Data Vending Machines"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:e-prosima-fast-dds",
-      "vc:label": "eProsima Fast DDS"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1-library",
-      "vc:label": "secp256k1 Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-protocol",
-      "vc:label": "WebSocket Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-lightning-network",
-      "vc:label": "Bitcoin Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid-pod",
-      "vc:label": "Solid Pod"
-    }
-  ]
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

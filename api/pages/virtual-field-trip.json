@@ -3,19 +3,18 @@
   "title": "Virtual Field Trip",
   "slug": "virtual-field-trip",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-field-trip",
+  "classIri": "urn:ngm:class:virtual-field-trip",
   "domain": "spatial-computing",
   "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Semantic Segmentation",
   "slug": "semantic-segmentation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:semantic-segmentation",
+  "classIri": "urn:ngm:class:semantic-segmentation",
   "domain": "artificial-intelligence",
-  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances. Semantic segmentation networks (FCN, U-Net, DeepLab) produce dense pixel-wise predictions enabling scene understanding applications in medical imaging, autonomous driving, and satellite imagery analysis.",
+  "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

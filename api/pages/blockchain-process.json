@@ -3,19 +3,18 @@
   "title": "Blockchain Process",
   "slug": "blockchain-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-process",
+  "classIri": "urn:ngm:class:blockchain-process",
   "domain": "blockchain",
   "definition": "Blockchain Process is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

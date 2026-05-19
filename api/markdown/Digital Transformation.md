@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-transformation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-transformation",
+  "@type": "Class",
   "label": "Digital Transformation",
+  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:organizational-change",
-      "vc:label": "Organizational Change"
+      "@id": "urn:ngm:class:organizational-change",
+      "label": "Organizational Change"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:business-innovation",
+        "label": "Business Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4aa4aa8fa2a02c7b47774172c4968a0de7a189afc0ca16e1d8e79674f46b8810@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:change-management",
-      "vc:label": "Change Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:business-innovation",
-      "vc:label": "Business Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-experience",
-      "vc:label": "Customer Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-efficiency",
-      "vc:label": "Operational Efficiency"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

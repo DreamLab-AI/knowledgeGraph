@@ -336,74 +336,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tc-0002-collaborative-document-editing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tc-0002-collaborative-document-editing",
+  "@type": "Class",
   "label": "tc 0002 collaborative document editing",
+  "definition": "Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:knowledge-co-creation",
-      "vc:label": "Knowledge Co-Creation"
+      "@id": "urn:ngm:class:knowledge-co-creation",
+      "label": "Knowledge Co-Creation"
     },
     {
-      "@id": "urn:visionflow:owl:class:remote-collaboration",
-      "vc:label": "Remote Collaboration"
+      "@id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3bd5444a5f19399bfee6de92dc2e4cffb4e7e51293db9fb333326a634a76e1a0"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:comments",
+        "label": "Comments"
+      },
+      {
+        "@id": "urn:ngm:class:version-history",
+        "label": "Version History"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-teamwork",
+        "label": "Distributed Teamwork"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-building",
+        "label": "Knowledge Building"
+      },
+      {
+        "@id": "urn:ngm:class:peer-learning",
+        "label": "Peer Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3bd5444a5f19399bfee6de92dc2e4cffb4e7e51293db9fb333326a634a76e1a0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:comments",
-      "vc:label": "Comments"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-history",
-      "vc:label": "Version History"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-teamwork",
-      "vc:label": "Distributed Teamwork"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-building",
-      "vc:label": "Knowledge Building"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-learning",
-      "vc:label": "Peer Learning"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

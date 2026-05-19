@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-signature-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-signature-verification",
+  "@type": "Class",
   "label": "Digital Signature Verification",
+  "definition": "Digital Signature Verification is a type of Cryptographic Verification in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-verification",
-      "vc:label": "Cryptographic Verification"
+      "@id": "urn:ngm:class:cryptographic-verification",
+      "label": "Cryptographic Verification"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eece5ec84af5ed25aec0f96874f198aeedb5a9d5900f3f835018d3c872e0d77a"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hash-algorithm",
+        "label": "Hash Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:signature-algorithm",
+        "label": "Signature Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:document-integrity",
+        "label": "Document Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-authentication",
+        "label": "Transaction Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eece5ec84af5ed25aec0f96874f198aeedb5a9d5900f3f835018d3c872e0d77a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was created by the corresponding private key and that the signed content has not been modified. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:hash-algorithm",
-      "vc:label": "Hash Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:signature-algorithm",
-      "vc:label": "Signature Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key",
-      "vc:label": "Public Key"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:document-integrity",
-      "vc:label": "Document Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-authentication",
-      "vc:label": "Transaction Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Robot Sensor",
   "slug": "robot-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-sensor",
+  "classIri": "urn:ngm:class:robot-sensor",
   "domain": "robotics",
-  "definition": "**Robot Sensor** - Robot Sensor in robotics systems",
+  "definition": "Robot Sensor - Robot Sensor in robotics systems",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

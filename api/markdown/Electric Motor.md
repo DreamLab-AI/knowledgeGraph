@@ -208,120 +208,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:electric-motor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:electric-motor",
+  "@type": "Class",
   "label": "Electric Motor",
+  "definition": "Electric motor converts electrical energy into rotational mechanical power through electromagnetic forces, forming the most widespread actuation technology in modern robotics.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:rotating-machinery",
-      "vc:label": "Rotating Machinery"
+      "@id": "urn:ngm:class:rotating-machinery",
+      "label": "Rotating Machinery"
     },
     {
-      "@id": "urn:visionflow:owl:class:electric-actuator",
-      "vc:label": "Electric Actuator"
+      "@id": "urn:ngm:class:electric-actuator",
+      "label": "Electric Actuator"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7cdfc1372b50b7cddfec1feac087f7eed8bec28245c1f46d4ce50baac7e578cc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bearings",
+        "label": "Bearings"
+      },
+      {
+        "@id": "urn:ngm:class:power-terminals",
+        "label": "Power Terminals"
+      },
+      {
+        "@id": "urn:ngm:class:rotor",
+        "label": "Rotor"
+      },
+      {
+        "@id": "urn:ngm:class:shaft",
+        "label": "Shaft"
+      },
+      {
+        "@id": "urn:ngm:class:stator",
+        "label": "Stator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:electrical-power-supply",
+        "label": "Electrical Power Supply"
+      },
+      {
+        "@id": "urn:ngm:class:heat-dissipation",
+        "label": "Heat Dissipation"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-load",
+        "label": "Mechanical Load"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver-electronics",
+        "label": "Motor Driver Electronics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:joint-actuation",
+        "label": "Joint Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:rotational-motion",
+        "label": "Rotational Motion"
+      },
+      {
+        "@id": "urn:ngm:class:speed-control",
+        "label": "Speed Control"
+      },
+      {
+        "@id": "urn:ngm:class:torque-generation",
+        "label": "Torque Generation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7cdfc1372b50b7cddfec1feac087f7eed8bec28245c1f46d4ce50baac7e578cc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Electric motor converts electrical energy into rotational mechanical power through electromagnetic forces, forming the most widespread actuation technology in modern robotics. Motors operate across a spectrum of designs—from simple brush DC motors to complex brushless variants and AC induction motors—each offering different efficiency, control characteristics, and power-to-weight performance trade-offs suitable for varied robotic applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bearings",
-      "vc:label": "Bearings"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-terminals",
-      "vc:label": "Power Terminals"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotor",
-      "vc:label": "Rotor"
-    },
-    {
-      "@id": "urn:visionflow:linked:shaft",
-      "vc:label": "Shaft"
-    },
-    {
-      "@id": "urn:visionflow:linked:stator",
-      "vc:label": "Stator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:electrical-power-supply",
-      "vc:label": "Electrical Power Supply"
-    },
-    {
-      "@id": "urn:visionflow:linked:heat-dissipation",
-      "vc:label": "Heat Dissipation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanical-load",
-      "vc:label": "Mechanical Load"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver-electronics",
-      "vc:label": "Motor Driver Electronics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:joint-actuation",
-      "vc:label": "Joint Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotational-motion",
-      "vc:label": "Rotational Motion"
-    },
-    {
-      "@id": "urn:visionflow:linked:speed-control",
-      "vc:label": "Speed Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:torque-generation",
-      "vc:label": "Torque Generation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:electromagnetic-theory",
-      "vc:label": "Electromagnetic Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-electronics",
-      "vc:label": "Power Electronics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

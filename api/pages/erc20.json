@@ -3,19 +3,18 @@
   "title": "ERC20",
   "slug": "erc20",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc20",
+  "classIri": "urn:ngm:class:erc20",
   "domain": "blockchain",
-  "definition": "The Ethereum fungible token standard defining a common interface for token transfers and balances.",
+  "definition": "The ereum fungible token standard defining a common interface for token transfers and balances.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

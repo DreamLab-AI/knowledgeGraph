@@ -448,104 +448,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tc-0003-telepresence-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tc-0003-telepresence-robot",
+  "@type": "Class",
   "label": "tc 0003 telepresence robot",
+  "definition": "Telepresence Robot - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:telepresence-technology",
-      "vc:label": "Telepresence Technology"
+      "@id": "urn:ngm:class:telepresence-technology",
+      "label": "Telepresence Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:remote-collaboration",
-      "vc:label": "Remote Collaboration"
+      "@id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:561a1f6bc37429c1a0d7c8d0bbad229ff4dd6cfd8f663735953c0f39cfaae246"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-system",
+        "label": "Camera System"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation-mechanism",
+        "label": "Manipulation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:microphone",
+        "label": "Microphone"
+      },
+      {
+        "@id": "urn:ngm:class:motor-controller",
+        "label": "Motor Controller"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation-support",
+        "label": "Autonomous Navigation Support"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:embodied-collaboration",
+        "label": "Embodied Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-presence-avatar",
+        "label": "Hybrid Presence Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:physical-presence",
+        "label": "Physical Presence"
+      },
+      {
+        "@id": "urn:ngm:class:remote-task-execution",
+        "label": "Remote Task Execution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:computer-vision-understanding",
+        "label": "Computer Vision Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:5-g-low-latency-networks",
+        "label": "5G Low-Latency Networks"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:561a1f6bc37429c1a0d7c8d0bbad229ff4dd6cfd8f663735953c0f39cfaae246@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-system",
-      "vc:label": "Camera System"
-    },
-    {
-      "@id": "urn:visionflow:linked:manipulation-mechanism",
-      "vc:label": "Manipulation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:microphone",
-      "vc:label": "Microphone"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-controller",
-      "vc:label": "Motor Controller"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-navigation-support",
-      "vc:label": "Autonomous Navigation Support"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:embodied-collaboration",
-      "vc:label": "Embodied Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-presence-avatar",
-      "vc:label": "Hybrid Presence Avatar"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-presence",
-      "vc:label": "Physical Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-task-execution",
-      "vc:label": "Remote Task Execution"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:computer-vision-understanding",
-      "vc:label": "Computer Vision Understanding"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:5-g-low-latency-networks",
-      "vc:label": "5G Low-Latency Networks"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-marketplace",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-marketplace",
+  "@type": "Class",
   "label": "Digital Marketplace",
+  "definition": "Digital Marketplace is a type of E Commerce in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:e-commerce",
-      "vc:label": "E-Commerce"
+      "@id": "urn:ngm:class:e-commerce",
+      "label": "E-Commerce"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9bb62210defb05ebc38d5b2cf277289cb733a738b996347ee26de572d7430e9d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-wallets",
+        "label": "Digital Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:nft-trading",
+        "label": "NFT Trading"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset-exchange",
+        "label": "Virtual Asset Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9bb62210defb05ebc38d5b2cf277289cb733a738b996347ee26de572d7430e9d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:digital-wallets",
-      "vc:label": "Digital Wallets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:nft-trading",
-      "vc:label": "NFT Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-asset-exchange",
-      "vc:label": "Virtual Asset Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

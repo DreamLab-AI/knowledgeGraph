@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:inclusive-xr-design",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inclusive-xr-design",
+  "@type": "Class",
   "label": "Inclusive Xr Design",
+  "definition": "Design modologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input mods, adaptive interfaces, and assistive technology in...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:accessible-design",
-      "vc:label": "Accessible Design"
+      "@id": "urn:ngm:class:accessible-design",
+      "label": "Accessible Design"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:31997c695cb4065db8cdd01ac199327629920c8a5bd7dff71c9cf7a8e6f8bf7b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:universal-xr-access",
+        "label": "Universal XR Access"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31997c695cb4065db8cdd01ac199327629920c8a5bd7dff71c9cf7a8e6f8bf7b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Design methodologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input methods, adaptive interfaces, and assistive technology integration.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:universal-xr-access",
-      "vc:label": "Universal XR Access"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -212,136 +212,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-rendering-pipeline",
+  "@type": "Class",
   "label": "Real-Time Rendering Pipeline",
+  "definition": "Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:render-pipeline",
-      "vc:label": "Render Pipeline"
+      "@id": "urn:ngm:class:render-pipeline",
+      "label": "Render Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:074b30d9ecfc0666d27f313a3fffc1aec307211b2814d552fafa8a3a58d006e4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fragment-shading",
+        "label": "Fragment Shading"
+      },
+      {
+        "@id": "urn:ngm:class:frame-buffer-operations",
+        "label": "Frame Buffer Operations"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-processing",
+        "label": "Vertex Processing"
+      },
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post-Processing"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-models",
+        "label": "3D Models"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:shaders",
+        "label": "Shaders"
+      },
+      {
+        "@id": "urn:ngm:class:textures",
+        "label": "Textures"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-3-d-graphics",
+        "label": "Interactive 3D Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-visualization",
+        "label": "Real-Time Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:graphics-rendering-system",
+        "label": "Graphics Rendering System"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:074b30d9ecfc0666d27f313a3fffc1aec307211b2814d552fafa8a3a58d006e4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:graphics-rendering-system",
-      "vc:label": "Graphics Rendering System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:fragment-shading",
-      "vc:label": "Fragment Shading"
-    },
-    {
-      "@id": "urn:visionflow:linked:frame-buffer-operations",
-      "vc:label": "Frame Buffer Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometry-processing",
-      "vc:label": "Geometry Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:vertex-processing",
-      "vc:label": "Vertex Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-based-animation",
-      "vc:label": "Physics-Based Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:post-processing",
-      "vc:label": "Post-Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rasterization",
-      "vc:label": "Rasterization"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-models",
-      "vc:label": "3D Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphics-processing-unit",
-      "vc:label": "Graphics Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:shaders",
-      "vc:label": "Shaders"
-    },
-    {
-      "@id": "urn:visionflow:linked:textures",
-      "vc:label": "Textures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-lighting",
-      "vc:label": "Dynamic Lighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-3-d-graphics",
-      "vc:label": "Interactive 3D Graphics"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-visualization",
-      "vc:label": "Real-Time Visualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gpu-driver",
-      "vc:label": "GPU Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-management",
-      "vc:label": "Memory Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

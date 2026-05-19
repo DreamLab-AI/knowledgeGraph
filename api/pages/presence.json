@@ -3,66 +3,75 @@
   "title": "Presence",
   "slug": "presence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:presence",
+  "classIri": "urn:ngm:class:presence",
   "domain": "spatial-computing",
   "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-experience",
+      "id": "urn:ngm:class:immersive-experience",
       "label": "Immersive Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:self-presence",
+        "id": "urn:ngm:class:self-presence",
         "label": "Self Presence"
       },
       {
-        "id": "urn:visionflow:owl:class:social-presence",
+        "id": "urn:ngm:class:social-presence",
         "label": "Social Presence"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-presence",
+        "id": "urn:ngm:class:spatial-presence",
         "label": "Spatial Presence"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:haptic-device",
+        "id": "urn:ngm:class:haptic-device",
         "label": "Haptic Device"
       },
       {
-        "id": "urn:visionflow:linked:sensory-feedback",
+        "id": "urn:ngm:class:sensory-feedback",
         "label": "Sensory Feedback"
       },
       {
-        "id": "urn:visionflow:linked:visual-display",
+        "id": "urn:ngm:class:visual-display",
         "label": "Visual Display"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:embodiment",
+        "id": "urn:ngm:class:embodiment",
         "label": "Embodiment"
       },
       {
-        "id": "urn:visionflow:linked:engagement",
+        "id": "urn:ngm:class:engagement",
         "label": "Engagement"
       },
       {
-        "id": "urn:visionflow:linked:social-connection",
+        "id": "urn:ngm:class:social-connection",
         "label": "Social Connection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

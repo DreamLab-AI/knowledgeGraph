@@ -3,131 +3,223 @@
   "title": "Algorithmic Bias and Variance",
   "slug": "algorithmic-bias-and-variance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
+  "classIri": "urn:ngm:class:algorithmic-bias-and-variance",
   "domain": "artificial-intelligence",
-  "definition": "**Algorithmic Bias and Variance** denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components \u2014 squared bias, variance, and irreducible noise \u2014 formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y \u2212 f\u0302(x))\u00b2] = (E[f\u0302(x)] \u2212 f(x))\u00b2 + E[(f\u0302(x) \u2212 E[f\u0302(x)])\u00b2] + \u03c3\u00b2, where f is the true regression function, f\u0302 the learned estimator over random training samples of fixed size n drawn i.i.d. from a joint distribution P(X,Y), and \u03c3\u00b2 the Bayes-optimal noise floor independent of any chosen hypothesis class; the decomposition follows from adding and subtracting E[f\u0302(x)] inside the mean-squared error and exploiting the bias-noise and variance-noise cross terms vanishing under the i.i.d. and zero-mean-noise assumptions, yielding a structural identity that governs why **underfitting** (a hypothesis class H so restrictive that even its best member misrepresents f, e.g. a linear model fitted to a cubic relationship) manifests as high bias with low variance whilst **overfitting** (a hypothesis class so flexible that f\u0302 tracks training noise, e.g. a degree-15 polynomial through 20 points or a 10\u2079-parameter network on 10\u2074 samples) manifes",
+  "definition": "Algorithmic Bias and Variance denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components \u2014 squared bias, variance, and irreducible noise \u2014 formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y \u2212 f\u0302(x))\u00b2] = (E[f\u0302(x)] \u2212 f(x))\u00b2 + E[(...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:generalisation-theory",
+      "id": "urn:ngm:class:generalisation-theory",
       "label": "Generalisation Theory"
     },
     {
-      "id": "urn:visionflow:linked:model-evaluation",
+      "id": "urn:ngm:class:model-evaluation",
       "label": "Model Evaluation"
-    },
-    {
-      "id": "urn:visionflow:linked:statistical-learning-theory",
-      "label": "Statistical Learning Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bias-component",
+        "id": "urn:ngm:class:bias-component",
         "label": "Bias Component"
       },
       {
-        "id": "urn:visionflow:linked:hypothesis-class",
+        "id": "urn:ngm:class:hypothesis-class",
         "label": "Hypothesis Class"
       },
       {
-        "id": "urn:visionflow:linked:irreducible-error",
+        "id": "urn:ngm:class:irreducible-error",
         "label": "Irreducible Error"
       },
       {
-        "id": "urn:visionflow:linked:learning-curve",
+        "id": "urn:ngm:class:learning-curve",
         "label": "Learning Curve"
       },
       {
-        "id": "urn:visionflow:linked:mean-squared-error",
+        "id": "urn:ngm:class:mean-squared-error",
         "label": "Mean Squared Error"
       },
       {
-        "id": "urn:visionflow:linked:validation-curve",
+        "id": "urn:ngm:class:validation-curve",
         "label": "Validation Curve"
       },
       {
-        "id": "urn:visionflow:linked:variance-component",
+        "id": "urn:ngm:class:variance-component",
         "label": "Variance Component"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:hypothesis-space",
+        "id": "urn:ngm:class:hypothesis-space",
         "label": "Hypothesis Space"
       },
       {
-        "id": "urn:visionflow:linked:resampling-method",
+        "id": "urn:ngm:class:resampling-method",
         "label": "Resampling Method"
       },
       {
-        "id": "urn:visionflow:linked:sample-complexity",
+        "id": "urn:ngm:class:sample-complexity",
         "label": "Sample Complexity"
       },
       {
-        "id": "urn:visionflow:linked:training-distribution",
+        "id": "urn:ngm:class:training-distribution",
         "label": "Training Distribution"
       },
       {
-        "id": "urn:visionflow:owl:class:loss-function",
+        "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:capacity-control",
+        "id": "urn:ngm:class:capacity-control",
         "label": "Capacity Control"
       },
       {
-        "id": "urn:visionflow:linked:generalisation-bound",
+        "id": "urn:ngm:class:generalisation-bound",
         "label": "Generalisation Bound"
       },
       {
-        "id": "urn:visionflow:linked:hyperparameter-tuning",
+        "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:visionflow:linked:model-selection",
+        "id": "urn:ngm:class:model-selection",
         "label": "Model Selection"
       },
       {
-        "id": "urn:visionflow:linked:risk-minimisation",
+        "id": "urn:ngm:class:risk-minimisation",
         "label": "Risk Minimisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bootstrap",
+        "id": "urn:ngm:class:bootstrap",
         "label": "Bootstrap"
       },
       {
-        "id": "urn:visionflow:linked:cross-validation",
+        "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
       },
       {
-        "id": "urn:visionflow:linked:holdout-method",
+        "id": "urn:ngm:class:holdout-method",
         "label": "Holdout Method"
       },
       {
-        "id": "urn:visionflow:linked:k-fold",
+        "id": "urn:ngm:class:k-fold",
         "label": "K-Fold"
       },
       {
-        "id": "urn:visionflow:linked:loocv",
+        "id": "urn:ngm:class:loocv",
         "label": "LOOCV"
       },
       {
-        "id": "urn:visionflow:linked:stratified-sampling",
+        "id": "urn:ngm:class:stratified-sampling",
         "label": "Stratified Sampling"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bootstrap-resampling",
+        "label": "Bootstrap Resampling"
+      },
+      {
+        "id": "urn:ngm:class:concentration-inequalities",
+        "label": "Concentration Inequalities"
+      },
+      {
+        "id": "urn:ngm:class:expectation-operator",
+        "label": "Expectation Operator"
+      },
+      {
+        "id": "urn:ngm:class:variance-decomposition",
+        "label": "Variance Decomposition"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ensemble-learning",
+        "label": "Ensemble Learning"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:stacking",
+        "label": "Stacking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hastie-tibshirani-friedman-esl",
+        "label": "Hastie-Tibshirani-Friedman ESL"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "scikit-learn"
+      },
+      {
+        "id": "urn:ngm:class:tensor-flow-model-analysis",
+        "label": "TensorFlow Model Analysis"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:double-descent",
+        "label": "Double Descent"
+      },
+      {
+        "id": "urn:ngm:class:grokking",
+        "label": "Grokking"
+      },
+      {
+        "id": "urn:ngm:class:inductive-bias",
+        "label": "Inductive Bias"
+      },
+      {
+        "id": "urn:ngm:class:neural-scaling-laws",
+        "label": "Neural Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ]
   },
   "wikilinks": [
     {

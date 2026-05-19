@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:adaptive-virtual-world",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adaptive-virtual-world",
+  "@type": "Class",
   "label": "Adaptive Virtual World",
+  "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
+      "@id": "urn:ngm:class:virtual-world",
+      "label": "Virtual World"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:69e256596a9f75d58a08e4a7371adadd1eecc5b3924ed92599a7452ac004e548"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-world-evolution",
+        "label": "Persistent World Evolution"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-environments",
+        "label": "Personalized Environments"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:69e256596a9f75d58a08e4a7371adadd1eecc5b3924ed92599a7452ac004e548@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-generation",
-      "vc:label": "Procedural Generation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:emergent-gameplay",
-      "vc:label": "Emergent Gameplay"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-world-evolution",
-      "vc:label": "Persistent World Evolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-environments",
-      "vc:label": "Personalized Environments"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

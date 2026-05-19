@@ -240,152 +240,115 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:velocity-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:velocity-control",
+  "@type": "Class",
   "label": "VelocityControl",
+  "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity ω in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (±full-scale accu...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ad07f69a9b70c56365508eae6f73464d7111d0f6c176666f7bb4e7462755d363"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:error-calculation",
+        "label": "ErrorCalculation"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-compensation",
+        "label": "FeedforwardCompensation"
+      },
+      {
+        "@id": "urn:ngm:class:picontroller",
+        "label": "PIController"
+      },
+      {
+        "@id": "urn:ngm:class:state-observer",
+        "label": "StateObserver"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-measurement",
+        "label": "VelocityMeasurement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth-design",
+        "label": "BandwidthDesign"
+      },
+      {
+        "@id": "urn:ngm:class:controller-tuning",
+        "label": "ControllerTuning"
+      },
+      {
+        "@id": "urn:ngm:class:noise-filtering",
+        "label": "NoiseFiltering"
+      },
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "StabilityAnalysis"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-estimation",
+        "label": "VelocityEstimation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:constant-throughput",
+        "label": "ConstantThroughput"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "EnergyEfficiency"
+      },
+      {
+        "@id": "urn:ngm:class:speed-regulation",
+        "label": "SpeedRegulation"
+      },
+      {
+        "@id": "urn:ngm:class:synchronized-motion",
+        "label": "SynchronizedMotion"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-profiling",
+        "label": "VelocityProfiling"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cascade-control",
+        "label": "CascadeControl"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-control",
+        "label": "FeedforwardControl"
+      },
+      {
+        "@id": "urn:ngm:class:observer-design",
+        "label": "ObserverDesign"
+      },
+      {
+        "@id": "urn:ngm:class:picontrol",
+        "label": "PIControl"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "AdaptiveControl"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ad07f69a9b70c56365508eae6f73464d7111d0f6c176666f7bb4e7462755d363@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity ω in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (±0.1% full-scale accuracy), optical encoders differentiated numerically (1000-10,000 pulses per revolution providing 0.006-0.06 °/pulse resolution), or inertial measurement units (IMUs with ±2% velocity estimation error), computing velocity error (commanded minus measured), and adjusting motor current or voltage through proportional-integral (PI) controllers (C(s) = K_p + K_i/s with typical gains K_p = 0.5-5 A/(rad/s), K_i = 10-100 A/(rad·s)), velocity feedforward compensation (u_ff = J·ω̇_cmd + B·ω_cmd accounting for inertia J and damping B), or state observers (Luenberger observers reconstructing velocity from position measurements when direct velocity sensing unavailable), with applications including CNC machine tool spindle speed regulation (maintaining 6,000-24,000 RPM ±0.5% for precision milling), conveyor belt speed synchronization (coordinating multiple belts at 0.5-5 m/s ±2% for packaging lines), ",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:error-calculation",
-      "vc:label": "ErrorCalculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedforward-compensation",
-      "vc:label": "FeedforwardCompensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:picontroller",
-      "vc:label": "PIController"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-observer",
-      "vc:label": "StateObserver"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-measurement",
-      "vc:label": "VelocityMeasurement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-design",
-      "vc:label": "BandwidthDesign"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller-tuning",
-      "vc:label": "ControllerTuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-filtering",
-      "vc:label": "NoiseFiltering"
-    },
-    {
-      "@id": "urn:visionflow:linked:stability-analysis",
-      "vc:label": "StabilityAnalysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-estimation",
-      "vc:label": "VelocityEstimation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:constant-throughput",
-      "vc:label": "ConstantThroughput"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-efficiency",
-      "vc:label": "EnergyEfficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:speed-regulation",
-      "vc:label": "SpeedRegulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronized-motion",
-      "vc:label": "SynchronizedMotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-profiling",
-      "vc:label": "VelocityProfiling"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cascade-control",
-      "vc:label": "CascadeControl"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedforward-control",
-      "vc:label": "FeedforwardControl"
-    },
-    {
-      "@id": "urn:visionflow:linked:observer-design",
-      "vc:label": "ObserverDesign"
-    },
-    {
-      "@id": "urn:visionflow:linked:picontrol",
-      "vc:label": "PIControl"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adaptive-control",
-      "vc:label": "AdaptiveControl"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:current-amplifier",
-      "vc:label": "CurrentAmplifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-controller",
-      "vc:label": "DigitalController"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver",
-      "vc:label": "MotorDriver"
-    },
-    {
-      "@id": "urn:visionflow:linked:pwmmodulator",
-      "vc:label": "PWMModulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-sensor",
-      "vc:label": "VelocitySensor"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,53 +3,57 @@
   "title": "Adaptive Virtual Experience",
   "slug": "adaptive-virtual-experience",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adaptive-virtual-experience",
+  "classIri": "urn:ngm:class:adaptive-virtual-experience",
   "domain": "spatial-computing",
-  "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.",
+  "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality exp...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:virtual-reality-experience",
+      "id": "urn:ngm:class:virtual-reality-experience",
       "label": "Virtual Reality Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:real-time-analytics",
+        "id": "urn:ngm:class:real-time-analytics",
         "label": "Real-Time Analytics"
       },
       {
-        "id": "urn:visionflow:linked:user-behavior-tracking",
+        "id": "urn:ngm:class:user-behavior-tracking",
         "label": "User Behavior Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-gaming",
+        "id": "urn:ngm:class:dynamic-gaming",
         "label": "Dynamic Gaming"
       },
       {
-        "id": "urn:visionflow:linked:personalized-learning",
+        "id": "urn:ngm:class:personalized-learning",
         "label": "Personalized Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:therapeutic-vr",
+        "id": "urn:ngm:class:therapeutic-vr",
         "label": "Therapeutic VR"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

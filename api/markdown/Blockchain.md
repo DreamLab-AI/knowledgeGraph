@@ -212,130 +212,93 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain",
+  "@type": "Class",
   "label": "Blockchain",
+  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-system",
-      "vc:label": "Cryptographic System"
+      "@id": "urn:ngm:class:cryptographic-system",
+      "label": "Cryptographic System"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-data-structure",
-      "vc:label": "Distributed Data Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c380251c9e85cd6a1de499584e9770137447f253c792d70e5116eddb6b22745b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "1.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:block",
-      "vc:label": "Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining",
-      "vc:label": "Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:node",
-      "vc:label": "Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction",
-      "vc:label": "Transaction"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-consensus",
-      "vc:label": "Distributed Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-transparency",
-      "vc:label": "Supply Chain Transparency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "Token Economics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

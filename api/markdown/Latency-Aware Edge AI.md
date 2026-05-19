@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:latency-aware-edge-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:latency-aware-edge-ai",
+  "@type": "Class",
   "label": "Latency-Aware Edge AI",
+  "definition": "Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cce16d201a2438a013de241102a0a032905d9cd14d71502851e9118b483dd81f"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cce16d201a2438a013de241102a0a032905d9cd14d71502851e9118b483dd81f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption. These systems continuously monitor network conditions, device load, and inference deadlines, selecting optimal inference strategies from a portfolio of options. Dynamic model selection automatically chooses different neural network architectures (fast shallow networks versus accurate deep networks) based on available time budget; 50ms deadline might use lightweight EfficientNet-B0 while 500ms deadline allows ResNet-50. Adaptive offloading intelligently routes inference between edge and cloud: simple queries execute locally within milliseconds, complex requests offload to cloud when network latency allows before deadline expiration. Cascading inference employs early-exit networks that provide predictions at intermediate layers, reducing latency when initial predictions carry sufficient confidence. Adaptive batching accumulates multiple inference requests into batches for efficient processing when time permits; streaming requests process individually for minimal latency. Latency prediction models estimate e",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

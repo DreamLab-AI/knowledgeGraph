@@ -140,80 +140,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asset-trading",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asset-trading",
+  "@type": "Class",
   "label": "Asset Trading",
+  "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:financial-services",
-      "vc:label": "Financial Services"
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ebf204c663151541db89a92b0979156ceece2915413e87d9df965a0b4f1b988e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-pool",
-      "vc:label": "Liquidity Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:market-making",
-      "vc:label": "Market Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Definitions and frameworks for Metaverse",
   "slug": "definitions-and-frameworks-for-metaverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
+  "classIri": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
   "domain": "spatial-computing",
   "definition": "Definitions and frameworks for Metaverse is a spatial computing concept and a type of Metaverse Ontology.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-ontology",
+      "id": "urn:ngm:class:metaverse-ontology",
       "label": "Metaverse Ontology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

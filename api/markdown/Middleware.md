@@ -204,116 +204,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:middleware",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:middleware",
+  "@type": "Class",
   "label": "Middleware",
+  "definition": "Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-infrastructure",
-      "vc:label": "Digital Infrastructure"
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e04ede167a0b5e50ff9ad496a7e3fef9d21953fe32dc6f7e4ae54e21325677c8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:service-registry",
+        "label": "Service Registry"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-communication",
+        "label": "Distributed Communication"
+      },
+      {
+        "@id": "urn:ngm:class:resource-abstraction",
+        "label": "Resource Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:service-integration",
+        "label": "Service Integration"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e04ede167a0b5e50ff9ad496a7e3fef9d21953fe32dc6f7e4ae54e21325677c8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:software-architecture",
-      "vc:label": "Software Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:message-queue",
-      "vc:label": "Message Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-registry",
-      "vc:label": "Service Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:operating-system",
-      "vc:label": "Operating System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-communication",
-      "vc:label": "Distributed Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-abstraction",
-      "vc:label": "Resource Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-integration",
-      "vc:label": "Service Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:service-discovery",
-      "vc:label": "Service Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-format",
-      "vc:label": "Data Format"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

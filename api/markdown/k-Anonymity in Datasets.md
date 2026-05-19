@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:k-anonymity-in-datasets",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:k-anonymity-in-datasets",
+  "@type": "Class",
   "label": "k-Anonymity in Datasets",
+  "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-analytics",
-      "vc:label": "Privacy Preserving Analytics"
+      "@id": "urn:ngm:class:privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:22a3c57cc34b3d0ee443e5b6bdfae8f1a8086659731e3cc21303b1f047581faa"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:22a3c57cc34b3d0ee443e5b6bdfae8f1a8086659731e3cc21303b1f047581faa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing re-identification attacks by guaranteeing anonymity sets of at least size k. This technique achieves anonymization through generalization (replacing specific values with broader categories, such as exact age → age range [30-40], 5-digit zip code → 3-digit prefix) and suppression (removing or masking particularly identifying attribute values when generalization insufficient), producing equivalence classes where all records within a class share identical quasi-identifier values. The privacy guarantee states that for any record in the dataset, an adversary with knowledge of quasi-identifiers cannot distinguish the target individual from k-1 others, formalized as minimum group size ≥ k for all equivalence classes partitioned by quasi-identifiers. However, limitations include vulnerability to homogeneity attacks when sensitive attributes lack diversity within equivalence classes (all k individua",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

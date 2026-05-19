@@ -172,58 +172,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-lifecycle",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-lifecycle",
+  "@type": "Class",
   "label": "AI Lifecycle",
+  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specifi...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement-throughout",
+        "label": "Stakeholder engagement throughout"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3e633251988c52e351377fde04a94aa8d06f4ed06f9cd923fcbc3b177511bf47@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:stakeholder-engagement-throughout",
-      "vc:label": "Stakeholder engagement throughout"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-oversight",
-      "vc:label": "Human Oversight"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:animation-retargeting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:animation-retargeting",
+  "@type": "Class",
   "label": "Animation Retargeting",
+  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:animation-technology",
-      "vc:label": "Animation Technology"
+      "@id": "urn:ngm:class:animation-technology",
+      "label": "Animation Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e6ad1e5697a4c811f34a31ce45d268a0e2ca5bc40ff10a7c9d3d2ce99f0bfd1a"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:pose-matching",
+        "label": "Pose Matching"
+      },
+      {
+        "@id": "urn:ngm:class:skeleton-mapping",
+        "label": "Skeleton Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation-reuse",
+        "label": "Character Animation Reuse"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-workflows",
+        "label": "Motion Capture Workflows"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e6ad1e5697a4c811f34a31ce45d268a0e2ca5bc40ff10a7c9d3d2ce99f0bfd1a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:pose-matching",
-      "vc:label": "Pose Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:skeleton-mapping",
-      "vc:label": "Skeleton Mapping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:avatar-animation",
-      "vc:label": "Avatar Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:character-animation-reuse",
-      "vc:label": "Character Animation Reuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-capture-workflows",
-      "vc:label": "Motion Capture Workflows"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

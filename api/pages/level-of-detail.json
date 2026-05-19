@@ -3,19 +3,18 @@
   "title": "Level of Detail",
   "slug": "level-of-detail",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:level-of-detail",
+  "classIri": "urn:ngm:class:level-of-detail",
   "domain": "spatial-computing",
   "definition": "Level of Detail is a spatial computing concept and a type of Metaverse.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

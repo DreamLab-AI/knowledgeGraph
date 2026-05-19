@@ -520,340 +520,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:imitation-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:imitation-learning",
+  "@type": "Class",
   "label": "Imitation Learning",
+  "definition": "Imitation Learning (IL), also termed Learning from Demonstration (LfD) or Programming by Demonstration (PbD), is the sequential-decision-making paradigm in which an autonomous agent acquires a policy π(a|s) mapping observations to actions by mimicking expert demonstrations rather than by maximisi...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:learning-from-demonstration",
-      "vc:label": "Learning from Demonstration"
+      "@id": "urn:ngm:class:learning-from-demonstration",
+      "label": "Learning from Demonstration"
     },
     {
-      "@id": "urn:visionflow:linked:policy-learning",
-      "vc:label": "Policy Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequential-decision-making",
-      "vc:label": "Sequential Decision Making"
+      "@id": "urn:ngm:class:policy-learning",
+      "label": "Policy Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:014bd402a2cc53624a9f232d92d5c175fbd375c79e15caf7ff55b04d3516399e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-decoder",
+        "label": "Action Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:demonstration-dataset",
+        "label": "Demonstration Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:discriminator",
+        "label": "Discriminator"
+      },
+      {
+        "@id": "urn:ngm:class:expert-demonstration",
+        "label": "Expert Demonstration"
+      },
+      {
+        "@id": "urn:ngm:class:observation-encoder",
+        "label": "Observation Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:policy-network",
+        "label": "Policy Network"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation-interface",
+        "label": "Teleoperation Interface"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "@id": "urn:ngm:class:demonstrator",
+        "label": "Demonstrator"
+      },
+      {
+        "@id": "urn:ngm:class:expert-trajectories",
+        "label": "Expert Trajectories"
+      },
+      {
+        "@id": "urn:ngm:class:function-approximator",
+        "label": "Function Approximator"
+      },
+      {
+        "@id": "urn:ngm:class:observation-space",
+        "label": "Observation Space"
+      },
+      {
+        "@id": "urn:ngm:class:state-action-pairs",
+        "label": "State Action Pairs"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-embodiment-transfer",
+        "label": "Cross-Embodiment Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:generalist-robot-policies",
+        "label": "Generalist Robot Policies"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-task-specification",
+        "label": "Rapid Task Specification"
+      },
+      {
+        "@id": "urn:ngm:class:reward-free-learning",
+        "label": "Reward-Free Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sample-efficient-robotics",
+        "label": "Sample-Efficient Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:skill-transfer",
+        "label": "Skill Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:action-chunking-transformer",
+        "label": "Action Chunking Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:airl",
+        "label": "AIRL"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-cloning",
+        "label": "Behavioural Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "@id": "urn:ngm:class:gail",
+        "label": "GAIL"
+      },
+      {
+        "@id": "urn:ngm:class:goal-conditioned-behaviour-cloning",
+        "label": "Goal Conditioned Behaviour Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:dagger",
+        "label": "DAgger"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:inverse-dynamics-model",
+        "label": "Inverse Dynamics Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-policies",
+        "label": "Transformer Policies"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-models",
+        "label": "Vision Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:apprenticeship-learning",
+        "label": "Apprenticeship Learning"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:offline-reinforcement-learning",
+        "label": "Offline Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-action-models",
+        "label": "Vision Language Action Models"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:drone-acrobatics",
+        "label": "Drone Acrobatics"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-control",
+        "label": "Humanoid Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:calvin",
+        "label": "CALVIN"
+      },
+      {
+        "@id": "urn:ngm:class:droid-dataset",
+        "label": "DROID Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:libero",
+        "label": "LIBERO"
+      },
+      {
+        "@id": "urn:ngm:class:open-x-embodiment",
+        "label": "Open X-Embodiment"
+      },
+      {
+        "@id": "urn:ngm:class:rlbench",
+        "label": "RLBench"
+      },
+      {
+        "@id": "urn:ngm:class:robomimic-benchmark",
+        "label": "Robomimic Benchmark"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:014bd402a2cc53624a9f232d92d5c175fbd375c79e15caf7ff55b04d3516399e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Imitation Learning (IL), also termed Learning from Demonstration (LfD) or Programming by Demonstration (PbD), is the sequential-decision-making paradigm in which an autonomous agent acquires a policy π(a|s) mapping observations to actions by mimicking expert demonstrations rather than by maximising a hand-specified reward function or by trial-and-error exploration, encompassing four canonical algorithmic families—Behavioural Cloning (BC, supervised learning on state-action pairs (s_t, a_t) drawn from N demonstration trajectories τᵢ ~ π_E originated by Bain & Sammut 1995 robot soccer and Pomerleau 1989 ALVINN neural-network autonomous driving Carnegie Mellon Humvee), Inverse Reinforcement Learning (IRL, recovering a reward function R(s,a) under which the demonstrator π_E is optimal then solving the induced MDP—Ng & Russell 2000 algorithmic foundations, Abbeel & Ng 2004 apprenticeship learning via feature matching, Ziebart 2008 Maximum-Entropy IRL resolving reward ambiguity via principle of maximum causal entropy), interactive imitation learning (DAgger Dataset Aggregation Ross-Gordon-Bagnell 2011 AISTATS iteratively rolling out the learner policy and querying the expert on encounter",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:action-decoder",
-      "vc:label": "Action Decoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:demonstration-dataset",
-      "vc:label": "Demonstration Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:discriminator",
-      "vc:label": "Discriminator"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-demonstration",
-      "vc:label": "Expert Demonstration"
-    },
-    {
-      "@id": "urn:visionflow:linked:observation-encoder",
-      "vc:label": "Observation Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-network",
-      "vc:label": "Policy Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:teleoperation-interface",
-      "vc:label": "Teleoperation Interface"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:action-space",
-      "vc:label": "Action Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:demonstrator",
-      "vc:label": "Demonstrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-trajectories",
-      "vc:label": "Expert Trajectories"
-    },
-    {
-      "@id": "urn:visionflow:linked:function-approximator",
-      "vc:label": "Function Approximator"
-    },
-    {
-      "@id": "urn:visionflow:linked:observation-space",
-      "vc:label": "Observation Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-action-pairs",
-      "vc:label": "State Action Pairs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:loss-function",
-      "vc:label": "Loss Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-embodiment-transfer",
-      "vc:label": "Cross-Embodiment Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:generalist-robot-policies",
-      "vc:label": "Generalist Robot Policies"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-task-specification",
-      "vc:label": "Rapid Task Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:reward-free-learning",
-      "vc:label": "Reward-Free Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:sample-efficient-robotics",
-      "vc:label": "Sample-Efficient Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:skill-transfer",
-      "vc:label": "Skill Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:action-chunking-transformer",
-      "vc:label": "Action Chunking Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:airl",
-      "vc:label": "AIRL"
-    },
-    {
-      "@id": "urn:visionflow:linked:behavioural-cloning",
-      "vc:label": "Behavioural Cloning"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-policy",
-      "vc:label": "Diffusion Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:gail",
-      "vc:label": "GAIL"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-conditioned-behaviour-cloning",
-      "vc:label": "Goal Conditioned Behaviour Cloning"
-    },
-    {
-      "@id": "urn:visionflow:linked:inverse-reinforcement-learning",
-      "vc:label": "Inverse Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dagger",
-      "vc:label": "DAgger"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:markov-decision-process",
-      "vc:label": "Markov Decision Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:maximum-entropy-principle",
-      "vc:label": "Maximum Entropy Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:no-regret-online-learning",
-      "vc:label": "No-Regret Online Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-driving",
-      "vc:label": "Autonomous Driving"
-    },
-    {
-      "@id": "urn:visionflow:linked:dexterous-manipulation",
-      "vc:label": "Dexterous Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:drone-acrobatics",
-      "vc:label": "Drone Acrobatics"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-control",
-      "vc:label": "Humanoid Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-manipulation",
-      "vc:label": "Robot Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:inverse-dynamics-model",
-      "vc:label": "Inverse Dynamics Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-policies",
-      "vc:label": "Transformer Policies"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-models",
-      "vc:label": "Vision Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:classical-control",
-      "vc:label": "Classical Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimal-control",
-      "vc:label": "Optimal Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supervised-learning",
-      "vc:label": "Supervised Learning"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:apprenticeship-learning",
-      "vc:label": "Apprenticeship Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-learning",
-      "vc:label": "Meta-Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-reinforcement-learning",
-      "vc:label": "Offline Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-supervised-learning",
-      "vc:label": "Self-Supervised Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:sim-to-real-transfer",
-      "vc:label": "Sim-to-Real Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-action-models",
-      "vc:label": "Vision Language Action Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:calvin",
-      "vc:label": "CALVIN"
-    },
-    {
-      "@id": "urn:visionflow:linked:droid-dataset",
-      "vc:label": "DROID Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:libero",
-      "vc:label": "LIBERO"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-x-embodiment",
-      "vc:label": "Open X-Embodiment"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlbench",
-      "vc:label": "RLBench"
-    },
-    {
-      "@id": "urn:visionflow:linked:robomimic-benchmark",
-      "vc:label": "Robomimic Benchmark"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

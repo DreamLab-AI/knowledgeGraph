@@ -208,116 +208,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:provenance-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:provenance-verification",
+  "@type": "Class",
   "label": "Provenance Verification",
+  "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f9d61e911d37f4dcf82f90a7156a2f76f2568b870e1548817d7b939ec927b87a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authenticity-checking",
+        "label": "Authenticity Checking"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-custody-tracking",
+        "label": "Chain of Custody Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:ledger-record-verification",
+        "label": "Ledger Record Verification"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-validation",
+        "label": "Metadata Validation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-authentication",
+        "label": "Asset Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-auditing",
+        "label": "Compliance Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-validation",
+        "label": "Ownership Validation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f9d61e911d37f4dcf82f90a7156a2f76f2568b870e1548817d7b939ec927b87a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authenticity-checking",
-      "vc:label": "Authenticity Checking"
-    },
-    {
-      "@id": "urn:visionflow:linked:chain-of-custody-tracking",
-      "vc:label": "Chain of Custody Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:ledger-record-verification",
-      "vc:label": "Ledger Record Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-validation",
-      "vc:label": "Metadata Validation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:timestamp-authority",
-      "vc:label": "Timestamp Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signatures",
-      "vc:label": "Digital Signatures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-authentication",
-      "vc:label": "Asset Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-auditing",
-      "vc:label": "Compliance Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-validation",
-      "vc:label": "Ownership Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-establishment",
-      "vc:label": "Trust Establishment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-verification",
-      "vc:label": "Cryptographic Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

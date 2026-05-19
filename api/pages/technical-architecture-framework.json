@@ -3,19 +3,18 @@
   "title": "Technical Architecture Framework",
   "slug": "technical-architecture-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:technical-architecture-framework",
+  "classIri": "urn:ngm:class:technical-architecture-framework",
   "domain": "spatial-computing",
-  "definition": "Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Technical Architecture Framework is a type of Definitions and frameworks for Metaverse in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:definitions-and-frameworks-for-metaverse",
+      "id": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
       "label": "Definitions and frameworks for Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

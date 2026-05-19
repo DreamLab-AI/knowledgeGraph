@@ -3,61 +3,78 @@
   "title": "Non-Fungible Token (NFT)",
   "slug": "non-fungible-token-nft",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:non-fungible-token-nft",
+  "classIri": "urn:ngm:class:non-fungible-token-nft",
   "domain": "spatial-computing",
   "definition": "A digital asset recorded on a distributed ledger that is uniquely identifiable and non-interchangeable, representing ownership or rights to specific digital or physical items.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:token-metadata",
+        "id": "urn:ngm:class:token-metadata",
         "label": "Token Metadata"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:creator-royalties",
+        "id": "urn:ngm:class:creator-royalties",
         "label": "Creator Royalties"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-trading",
+        "id": "urn:ngm:class:asset-trading",
         "label": "Asset Trading"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

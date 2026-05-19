@@ -3,143 +3,247 @@
   "title": "Graphics API",
   "slug": "graphics-api",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:graphics-api",
+  "classIri": "urn:ngm:class:graphics-api",
   "domain": "spatial-computing",
-  "definition": "A Graphics API (Application Programming Interface) is a standardised software interface mediating between application code and Graphics Processing Unit (GPU) hardware, exposing primitives for command submission, shader compilation, resource allocation, synchronisation, and frame presentation across the four canonical API generations (legacy fixed-function era 1992-2003 typified by OpenGL 1.x immediate-mode glBegin/glEnd state machine and DirectX 7 with fixed transform-and-lighting pipelines lacking programmability; programmable shader era 2004-2014 inaugurated by OpenGL 2.0 GLSL vertex/fragment shaders, DirectX 9 HLSL Shader Model 2.0/3.0, and NVIDIA Cg providing first user-authored GPU programs enabling per-pixel lighting, normal mapping, post-processing whilst retaining driver-managed resource state; modern explicit era 2015-present represented by Vulkan 1.4 Khronos Group, DirectX 12 Ultimate Microsoft, and Metal 3 Apple replacing implicit driver state with explicit application-managed memory heaps, command buffer recording, multi-threaded queue submission, descriptor sets, pipeline state objects, and synchronisation barriers yielding 5-10\u00d7 CPU overhead reduction; next-generation",
+  "definition": "A Graphics API (Application Programming Interface) is a standardised software interface mediating between application code and Graphics Processing Unit (GPU) hardware, exposing primitives for command submission, shader compilation, resource allocation, synchronisation, and frame presentation acro...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:application-programming-interface",
+      "id": "urn:ngm:class:application-programming-interface",
       "label": "Application Programming Interface"
     },
     {
-      "id": "urn:visionflow:linked:hardware-abstraction-layer",
+      "id": "urn:ngm:class:hardware-abstraction-layer",
       "label": "Hardware Abstraction Layer"
-    },
-    {
-      "id": "urn:visionflow:linked:hardware-interface",
-      "label": "Hardware Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:command-buffer",
+        "id": "urn:ngm:class:command-buffer",
         "label": "Command Buffer"
       },
       {
-        "id": "urn:visionflow:linked:descriptor-set",
+        "id": "urn:ngm:class:descriptor-set",
         "label": "Descriptor Set"
       },
       {
-        "id": "urn:visionflow:linked:memory-allocator",
+        "id": "urn:ngm:class:memory-allocator",
         "label": "Memory Allocator"
       },
       {
-        "id": "urn:visionflow:linked:pipeline-state-object",
+        "id": "urn:ngm:class:pipeline-state-object",
         "label": "Pipeline State Object"
       },
       {
-        "id": "urn:visionflow:linked:resource-manager",
+        "id": "urn:ngm:class:resource-manager",
         "label": "Resource Manager"
       },
       {
-        "id": "urn:visionflow:linked:shader-compiler",
+        "id": "urn:ngm:class:shader-compiler",
         "label": "Shader Compiler"
       },
       {
-        "id": "urn:visionflow:linked:swap-chain",
+        "id": "urn:ngm:class:swap-chain",
         "label": "Swap Chain"
       },
       {
-        "id": "urn:visionflow:linked:synchronisation-primitive",
+        "id": "urn:ngm:class:synchronisation-primitive",
         "label": "Synchronisation Primitive"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:device-driver",
+        "id": "urn:ngm:class:device-driver",
         "label": "Device Driver"
       },
       {
-        "id": "urn:visionflow:linked:driver-compiler",
+        "id": "urn:ngm:class:driver-compiler",
         "label": "Driver Compiler"
       },
       {
-        "id": "urn:visionflow:linked:gpu-hardware",
+        "id": "urn:ngm:class:gpu-hardware",
         "label": "GPU Hardware"
       },
       {
-        "id": "urn:visionflow:owl:class:operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
       },
       {
-        "id": "urn:visionflow:owl:class:shader-language",
+        "id": "urn:ngm:class:shader-language",
         "label": "Shader Language"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-rendering",
+        "id": "urn:ngm:class:cross-platform-rendering",
         "label": "Cross-Platform Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:gpu-programming",
+        "id": "urn:ngm:class:gpu-programming",
         "label": "GPU Programming"
       },
       {
-        "id": "urn:visionflow:linked:mesh-shading",
+        "id": "urn:ngm:class:mesh-shading",
         "label": "Mesh Shading"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-abstraction",
+        "id": "urn:ngm:class:hardware-abstraction",
         "label": "Hardware Abstraction"
       },
       {
-        "id": "urn:visionflow:owl:class:ray-tracing",
+        "id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:command-submission-pattern",
+        "id": "urn:ngm:class:command-submission-pattern",
         "label": "Command Submission Pattern"
       },
       {
-        "id": "urn:visionflow:linked:frame-presentation-protocol",
+        "id": "urn:ngm:class:frame-presentation-protocol",
         "label": "Frame Presentation Protocol"
       },
       {
-        "id": "urn:visionflow:linked:multi-queue-submission",
+        "id": "urn:ngm:class:multi-queue-submission",
         "label": "Multi-Queue Submission"
       },
       {
-        "id": "urn:visionflow:linked:pipeline-compilation",
+        "id": "urn:ngm:class:pipeline-compilation",
         "label": "Pipeline Compilation"
       },
       {
-        "id": "urn:visionflow:linked:resource-binding-model",
+        "id": "urn:ngm:class:resource-binding-model",
         "label": "Resource Binding Model"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "id": "urn:ngm:class:kernel-mode-driver",
+        "label": "Kernel Mode Driver"
+      },
+      {
+        "id": "urn:ngm:class:msl",
+        "label": "MSL"
+      },
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:vendor-driver",
+        "label": "Vendor Driver"
+      },
+      {
+        "id": "urn:ngm:class:wgsl",
+        "label": "WGSL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:game-engines",
+        "label": "Game Engines"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:professional-visualisation",
+        "label": "Professional Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:web-rendering",
+        "label": "Web Rendering"
+      },
+      {
+        "id": "urn:ngm:class:xr-compositing",
+        "label": "XR Compositing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gpu-for-the-web-working-group",
+        "label": "GPU for the Web Working Group"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:apple",
+        "label": "Apple"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:driver-stack",
+        "label": "Driver Stack"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute-api",
+        "label": "GPU Compute API"
+      },
+      {
+        "id": "urn:ngm:class:window-system-api",
+        "label": "Window System API"
+      },
+      {
+        "id": "urn:ngm:class:xr-runtime-api",
+        "label": "XR Runtime API"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
+    ]
   },
   "wikilinks": [
     {

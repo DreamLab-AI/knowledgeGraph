@@ -168,98 +168,77 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:6-g-network-slice",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:6-g-network-slice",
+  "@type": "Class",
   "label": "6G Network Slice",
+  "definition": "Virtual partition of 6G infrastructure guaranteeing specified quality-of-service levels for immersive workloads through isolated resource allocation.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:69d3ae05f1d4395dcb4c424b9f74acb97db4b62a15f5c8f76854c1bba942c934"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:qo-s-policy",
+        "label": "QoS Policy"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation-unit",
+        "label": "Resource Allocation Unit"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:traffic-classifier",
+        "label": "Traffic Classifier"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:6-g-network-infrastructure",
+        "label": "6G Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing-orchestrator",
+        "label": "Network Slicing Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:sdn-controller",
+        "label": "SDN Controller"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-resource-allocation",
+        "label": "Dynamic Resource Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-service",
+        "label": "Low Latency Service"
+      },
+      {
+        "@id": "urn:ngm:class:workload-isolation",
+        "label": "Workload Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:guaranteed-bandwidth",
+        "label": "Guaranteed Bandwidth"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:69d3ae05f1d4395dcb4c424b9f74acb97db4b62a15f5c8f76854c1bba942c934@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual partition of 6G infrastructure guaranteeing specified quality-of-service levels for immersive workloads through isolated resource allocation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:qo-s-policy",
-      "vc:label": "QoS Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-allocation-unit",
-      "vc:label": "Resource Allocation Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-level-agreement",
-      "vc:label": "Service Level Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:traffic-classifier",
-      "vc:label": "Traffic Classifier"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:6-g-network-infrastructure",
-      "vc:label": "6G Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-slicing-orchestrator",
-      "vc:label": "Network Slicing Orchestrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdn-controller",
-      "vc:label": "SDN Controller"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-resource-allocation",
-      "vc:label": "Dynamic Resource Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-service",
-      "vc:label": "Low Latency Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:workload-isolation",
-      "vc:label": "Workload Isolation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:guaranteed-bandwidth",
-      "vc:label": "Guaranteed Bandwidth"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

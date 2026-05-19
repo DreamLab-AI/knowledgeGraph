@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:category-hierarchies",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:category-hierarchies",
+  "@type": "Class",
   "label": "Category Hierarchies",
+  "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-organization-system",
-      "vc:label": "Knowledge Organization System"
+      "@id": "urn:ngm:class:knowledge-organization-system",
+      "label": "Knowledge Organization System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3e98bdb550113e7d2a154edff1590b8d2c2525f7aff4ad4d364d87ccbc5091cf"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:classification-rules",
+        "label": "Classification Rules"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy-design",
+        "label": "Taxonomy Design"
+      },
+      {
+        "@id": "urn:ngm:class:term-relationships",
+        "label": "Term Relationships"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-classification",
+        "label": "Content Classification"
+      },
+      {
+        "@id": "urn:ngm:class:navigation-structure",
+        "label": "Navigation Structure"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-organization",
+        "label": "Semantic Organization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3e98bdb550113e7d2a154edff1590b8d2c2525f7aff4ad4d364d87ccbc5091cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:classification-rules",
-      "vc:label": "Classification Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:taxonomy-design",
-      "vc:label": "Taxonomy Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:term-relationships",
-      "vc:label": "Term Relationships"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-classification",
-      "vc:label": "Content Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:navigation-structure",
-      "vc:label": "Navigation Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-organization",
-      "vc:label": "Semantic Organization"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

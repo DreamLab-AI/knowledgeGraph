@@ -396,334 +396,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-finance-de-fi",
+  "@type": "Class",
   "label": "Decentralized Finance (DeFi)",
+  "definition": "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally [[ereum]] but increasingly on [[Layer 2 Networks]] (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional finan...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-protocols",
-      "vc:label": "Cryptographic Protocols"
+      "@id": "urn:ngm:class:cryptographic-protocols",
+      "label": "Cryptographic Protocols"
     },
     {
-      "@id": "urn:visionflow:linked:token-economy",
-      "vc:label": "Token Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:financial-technology",
-      "vc:label": "Financial Technology"
+      "@id": "urn:ngm:class:token-economy",
+      "label": "Token Economy"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a2b59d1436509d41c407c773c0dbb321f00bb92eb909ea2db08d0c614d51dab1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loans",
+        "label": "Flash Loans"
+      },
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:rwa-tokenisation",
+        "label": "RWA Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-oracle",
+        "label": "Cryptographic Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fees",
+        "label": "Gas Fees"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-composability",
+        "label": "Atomic Composability"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-lending",
+        "label": "Permissionless Lending"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-trading",
+        "label": "Trustless Trading"
+      },
+      {
+        "@id": "urn:ngm:class:yield-optimisation",
+        "label": "Yield Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan-arbitrage",
+        "label": "Flash Loan Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining-incentives",
+        "label": "Liquidity Mining Incentives"
+      },
+      {
+        "@id": "urn:ngm:class:overcollateralised-lending",
+        "label": "Overcollateralised Lending"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+        "label": "FATF Guidance on Virtual Assets"
+      },
+      {
+        "@id": "urn:ngm:class:iosco-de-fi-report-2023",
+        "label": "IOSCO DeFi Report 2023"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2b59d1436509d41c407c773c0dbb321f00bb92eb909ea2db08d0c614d51dab1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally [[Ethereum]] but increasingly on [[Layer 2 Networks]] (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional financial services (lending, borrowing, trading, derivatives, insurance, asset management) through [[Smart Contracts]] and cryptographic protocols rather than licensed intermediaries such as banks, brokers, or clearinghouses. DeFi's foundational design principle is composability: each protocol exposes a standardised on-chain interface (ABI), enabling downstream protocols to atomically compose operations in a single transaction—a property called \"money legos\" that allows, for example, a flash loan from Aave to collateralise a position on Compound, execute an arbitrage on Uniswap, repay the loan, and return profit, all within one Ethereum block (~12 seconds). The ecosystem encompasses six core primitive categories: (1) Decentralised Exchanges (DEX) executing automated market-maker (AMM) pricing without order books; (2) lending and borrowing protocols issuing overcollateralised on-chain credit; ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-exchange",
-      "vc:label": "Decentralised Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-loans",
-      "vc:label": "Flash Loans"
-    },
-    {
-      "@id": "urn:visionflow:linked:lending-protocol",
-      "vc:label": "Lending Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-mining",
-      "vc:label": "Liquidity Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle",
-      "vc:label": "Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:rwa-tokenisation",
-      "vc:label": "RWA Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-farming",
-      "vc:label": "Yield Farming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:automated-market-maker",
-      "vc:label": "Automated Market Maker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-pool",
-      "vc:label": "Liquidity Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mev",
-      "vc:label": "MEV"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:collateral",
-      "vc:label": "Collateral"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-oracle",
-      "vc:label": "Cryptographic Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:gas-fees",
-      "vc:label": "Gas Fees"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-provider",
-      "vc:label": "Liquidity Provider"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-blockchain",
-      "vc:label": "Public Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:atomic-composability",
-      "vc:label": "Atomic Composability"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-governance",
-      "vc:label": "On-Chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-lending",
-      "vc:label": "Permissionless Lending"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-real-world-assets",
-      "vc:label": "Tokenised Real World Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-trading",
-      "vc:label": "Trustless Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:yield-optimisation",
-      "vc:label": "Yield Optimisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-stablecoin",
-      "vc:label": "Algorithmic Stablecoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:concentrated-liquidity",
-      "vc:label": "Concentrated Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-loan-arbitrage",
-      "vc:label": "Flash Loan Arbitrage"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-mining-incentives",
-      "vc:label": "Liquidity Mining Incentives"
-    },
-    {
-      "@id": "urn:visionflow:linked:overcollateralised-lending",
-      "vc:label": "Overcollateralised Lending"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:automated-market-maker",
-      "vc:label": "Automated Market Maker"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proofs",
-      "vc:label": "Cryptographic Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:gas-fee-mechanisms",
-      "vc:label": "Gas Fee Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-networks",
-      "vc:label": "Layer 2 Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-standards-erc-20",
-      "vc:label": "Token Standards (ERC-20)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-oracle",
-      "vc:label": "Blockchain Oracle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-as-money",
-      "vc:label": "Bitcoin As Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-as-a-service",
-      "vc:label": "Blockchain As A Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:chainlink",
-      "vc:label": "Chainlink"
-    },
-    {
-      "@id": "urn:visionflow:linked:evm",
-      "vc:label": "EVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-trees",
-      "vc:label": "Merkle Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ce-fi",
-      "vc:label": "CeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:central-bank",
-      "vc:label": "Central Bank"
-    },
-    {
-      "@id": "urn:visionflow:linked:commercial-banking",
-      "vc:label": "Commercial Banking"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-finance",
-      "vc:label": "Traditional Finance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:btc-layer-3",
-      "vc:label": "BTC Layer 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdc-frameworks",
-      "vc:label": "CBDC Frameworks"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eip-1559",
-      "vc:label": "EIP-1559"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20-token-standard",
-      "vc:label": "ERC-20 Token Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-guidance-on-virtual-assets",
-      "vc:label": "FATF Guidance on Virtual Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco-de-fi-report-2023",
-      "vc:label": "IOSCO DeFi Report 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-regulation",
-      "vc:label": "MiCA Regulation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

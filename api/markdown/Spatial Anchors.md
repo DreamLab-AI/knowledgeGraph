@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-anchors",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-anchors",
+  "@type": "Class",
   "label": "Spatial Anchors",
+  "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ar-technology",
-      "vc:label": "AR Technology"
+      "@id": "urn:ngm:class:ar-technology",
+      "label": "AR Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:persistent-ar-placement",
+        "label": "Persistent AR Placement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:55ebc0932a62ae15d9040a36fd815a838ad7a2e060497389d6648fbdbd609737@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:persistent-ar-placement",
-      "vc:label": "Persistent AR Placement"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

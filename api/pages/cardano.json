@@ -3,57 +3,74 @@
   "title": "Cardano",
   "slug": "cardano",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cardano",
+  "classIri": "urn:ngm:class:cardano",
   "domain": "blockchain",
-  "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.",
+  "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-protocol",
+      "id": "urn:ngm:class:blockchain-protocol",
       "label": "Blockchain Protocol"
     },
     {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:computation-layer",
+        "id": "urn:ngm:class:computation-layer",
         "label": "Computation Layer"
       },
       {
-        "id": "urn:visionflow:linked:off-chain-infrastructure",
+        "id": "urn:ngm:class:off-chain-infrastructure",
         "label": "Off-Chain Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:settlement-layer",
+        "id": "urn:ngm:class:settlement-layer",
         "label": "Settlement Layer"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:formal-verification",
+        "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "id": "urn:visionflow:linked:scalable-smart-contracts",
+        "id": "urn:ngm:class:scalable-smart-contracts",
         "label": "Scalable Smart Contracts"
       },
       {
-        "id": "urn:visionflow:owl:class:interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haskell",
+        "label": "Haskell"
+      },
+      {
+        "id": "urn:ngm:class:plutus-smart-contract-language",
+        "label": "Plutus Smart Contract Language"
+      },
+      {
+        "id": "urn:ngm:class:ouroboros-consensus",
+        "label": "Ouroboros Consensus"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

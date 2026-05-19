@@ -196,124 +196,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-architecture-stack",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-architecture-stack",
+  "@type": "Class",
   "label": "Metaverse Architecture Stack",
+  "definition": "Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture",
-      "vc:label": "Metaverse Architecture"
+      "@id": "urn:ngm:class:metaverse-architecture",
+      "label": "Metaverse Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:60fc71a03195c5beb0c9158b0abb520b24b958c693b762c90d6a1decb6809104"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:component-definitions",
+        "label": "Component Definitions"
+      },
+      {
+        "@id": "urn:ngm:class:interface-specifications",
+        "label": "Interface Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability-protocols",
+        "label": "Interoperability Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:layering-principles",
+        "label": "Layering Principles"
+      },
+      {
+        "@id": "urn:ngm:class:interface-standards",
+        "label": "Interface Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:component-reusability",
+        "label": "Component Reusability"
+      },
+      {
+        "@id": "urn:ngm:class:multi-vendor-integration",
+        "label": "Multi-vendor Integration"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-architecture",
+        "label": "Scalable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:60fc71a03195c5beb0c9158b0abb520b24b958c693b762c90d6a1decb6809104@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:reference-architecture",
-      "vc:label": "Reference Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:component-definitions",
-      "vc:label": "Component Definitions"
-    },
-    {
-      "@id": "urn:visionflow:linked:interface-specifications",
-      "vc:label": "Interface Specifications"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:application-layer",
-      "vc:label": "Application Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-layer",
-      "vc:label": "Compute Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-layer",
-      "vc:label": "Physical Layer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:interoperability-protocols",
-      "vc:label": "Interoperability Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:layering-principles",
-      "vc:label": "Layering Principles"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interface-standards",
-      "vc:label": "Interface Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:component-reusability",
-      "vc:label": "Component Reusability"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-vendor-integration",
-      "vc:label": "Multi-vendor Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scalable-architecture",
-      "vc:label": "Scalable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-interoperability",
-      "vc:label": "System Interoperability"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:etsi-eni-008",
-      "vc:label": "ETSI ENI 008"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-p2048-1",
-      "vc:label": "IEEE P2048-1"
-    },
-    {
-      "@id": "urn:visionflow:linked:osi-model",
-      "vc:label": "OSI Model"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

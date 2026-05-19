@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-architecture",
+  "@type": "Class",
   "label": "Privacy Architecture",
+  "definition": "A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design modologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f132279e458999de1a846bbf3645cc7420d1fa9a8c7b0c17e2dceda773f0910f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f132279e458999de1a846bbf3645cc7420d1fa9a8c7b0c17e2dceda773f0910f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design methodologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-privacy",
-      "vc:label": "Data Privacy"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

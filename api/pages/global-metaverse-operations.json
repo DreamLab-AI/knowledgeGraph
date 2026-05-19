@@ -3,32 +3,36 @@
   "title": "Global Metaverse Operations",
   "slug": "global-metaverse-operations",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:global-metaverse-operations",
+  "classIri": "urn:ngm:class:global-metaverse-operations",
   "domain": "spatial-computing",
   "definition": "The international coordination and management of metaverse platforms across jurisdictions, encompassing cross-border infrastructure deployment, regulatory compliance, interoperability standards, and unified user experiences that enable seamless virtual world access regardless of geographic location.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-infrastructure",
+      "id": "urn:ngm:class:metaverse-infrastructure",
       "label": "Metaverse Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:unified-virtual-experience",
+        "id": "urn:ngm:class:unified-virtual-experience",
         "label": "Unified Virtual Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

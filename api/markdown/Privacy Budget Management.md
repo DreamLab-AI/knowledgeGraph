@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-budget-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-budget-management",
+  "@type": "Class",
   "label": "Privacy Budget Management",
+  "definition": "Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aea828e82802738ef4b30c9a514075adb68c5c2a7969d3a94cbcb66fe45fa8e3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aea828e82802738ef4b30c9a514075adb68c5c2a7969d3a94cbcb66fe45fa8e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy Budget Management is the systematic allocation, tracking, and enforcement of differential privacy budget (epsilon/delta parameters) across multiple queries or analyses to prevent cumulative privacy loss from exceeding acceptable thresholds over time. This framework recognizes that each differentially private query consumes privacy budget, with total privacy loss accumulated through composition theorems (sequential composition ε_total = Σε_i for independent queries, advanced composition providing tighter bounds √(2k ln(1/δ))ε + kε(e^ε - 1) for k queries each with budget ε), necessitating careful budget allocation to maximize utility while respecting overall privacy constraints. Management strategies include fixed allocation assigning predetermined budgets to anticipated query categories (dashboards, research, reports), adaptive allocation dynamically adjusting budgets based on query importance and remaining capacity, hierarchical budgeting organizing budgets across organizational levels (global, department, project, individual analyst), and renewal policies replenishing budgets periodically (daily, monthly, annually) for ongoing analytics platforms. Implementation components",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

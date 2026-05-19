@@ -3,32 +3,36 @@
   "title": "Search Index",
   "slug": "search-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:search-index",
+  "classIri": "urn:ngm:class:search-index",
   "domain": "spatial-computing",
   "definition": "A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-structure",
+      "id": "urn:ngm:class:data-structure",
       "label": "Data Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fast-query-response",
+        "id": "urn:ngm:class:fast-query-response",
         "label": "Fast Query Response"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

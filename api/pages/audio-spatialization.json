@@ -3,53 +3,57 @@
   "title": "Audio Spatialization",
   "slug": "audio-spatialization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:audio-spatialization",
+  "classIri": "urn:ngm:class:audio-spatialization",
   "domain": "spatial-computing",
-  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.",
+  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive a...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:spatial-audio-technology",
+      "id": "urn:ngm:class:spatial-audio-technology",
       "label": "Spatial Audio Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:binaural-rendering",
+        "id": "urn:ngm:class:binaural-rendering",
         "label": "Binaural Rendering"
       },
       {
-        "id": "urn:visionflow:linked:head-tracking",
+        "id": "urn:ngm:class:head-tracking",
         "label": "Head Tracking"
       },
       {
-        "id": "urn:visionflow:linked:hrtf-filters",
+        "id": "urn:ngm:class:hrtf-filters",
         "label": "HRTF Filters"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-sound-perception",
+        "id": "urn:ngm:class:3-d-sound-perception",
         "label": "3D Sound Perception"
       },
       {
-        "id": "urn:visionflow:linked:immersive-audio",
+        "id": "urn:ngm:class:immersive-audio",
         "label": "Immersive Audio"
       },
       {
-        "id": "urn:visionflow:linked:sound-localization",
+        "id": "urn:ngm:class:sound-localization",
         "label": "Sound Localization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

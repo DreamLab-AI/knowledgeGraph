@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-object-pose",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-object-pose",
+  "@type": "Class",
   "label": "Virtual Object Pose",
+  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
+      "@id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd2fce4338f265d054f385f6e2f7b8a5d16187136488162f3da3711c69d962f2"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd2fce4338f265d054f385f6e2f7b8a5d16187136488162f3da3711c69d962f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

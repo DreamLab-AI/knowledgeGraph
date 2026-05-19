@@ -168,98 +168,71 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-governance",
+  "@type": "Class",
   "label": "Blockchain Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-organization",
-      "vc:label": "Decentralized Organization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0b37e85cf2f59dae0dcfe4ea61c068bbabd8108924fe9bb4feedd91072e04536"
+  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols.",
+  "domain": "blockchain",
+  "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dao-structure",
+        "label": "DAO Structure"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-organization",
+        "label": "Decentralized Organization"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:token-based-representation",
+        "label": "Token-Based Representation"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-alignment",
+        "label": "Community Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-decision-making",
+        "label": "Decentralized Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-evolution",
+        "label": "Protocol Evolution"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0b37e85cf2f59dae0dcfe4ea61c068bbabd8108924fe9bb4feedd91072e04536@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:dao-structure",
-      "vc:label": "DAO Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:on-chain-voting",
-      "vc:label": "On-Chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proposal-system",
-      "vc:label": "Proposal System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:token-based-representation",
-      "vc:label": "Token-Based Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-mechanism",
-      "vc:label": "Voting Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-alignment",
-      "vc:label": "Community Alignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-decision-making",
-      "vc:label": "Decentralized Decision-Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-evolution",
-      "vc:label": "Protocol Evolution"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:collective-intelligence",
-      "vc:label": "Collective Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

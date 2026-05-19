@@ -148,76 +148,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:audio-parameters",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:audio-parameters",
+  "@type": "Class",
   "label": "Audio Parameters",
+  "definition": "Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse app...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:audio-configuration",
-      "vc:label": "Audio Configuration"
+      "@id": "urn:ngm:class:audio-configuration",
+      "label": "Audio Configuration"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:69ddb7ee97e3944de48e6cc910ed428ad78c4654534c66ad4a50464372736ab4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-modeling",
+        "label": "Environmental Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:hrtf-data",
+        "label": "HRTF Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-sound-rendering",
+        "label": "Spatial Sound Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:69ddb7ee97e3944de48e6cc910ed428ad78c4654534c66ad4a50464372736ab4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-engine",
-      "vc:label": "Audio Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-modeling",
-      "vc:label": "Environmental Modeling"
-    },
-    {
-      "@id": "urn:visionflow:linked:hrtf-data",
-      "vc:label": "HRTF Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-audio",
-      "vc:label": "Immersive Audio"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-sound-rendering",
-      "vc:label": "Spatial Sound Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telepresence",
-      "vc:label": "Telepresence"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telepresence",
-      "vc:label": "Telepresence"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -228,114 +228,93 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:communication-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:communication-protocol",
+  "@type": "Class",
   "label": "Communication Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:communication-systems",
-      "vc:label": "Communication Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-architecture",
-      "vc:label": "Information Architecture"
-    }
-  ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fa1321ba559955742ac283d88f118e36f12a219ea86d2e9c7c924d65faccdcb9"
+  "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels.",
+  "domain": "robotics",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:addressing-scheme",
+        "label": "Addressing Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth-constraints",
+        "label": "Bandwidth Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:latency-tolerance",
+        "label": "Latency Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:network-physical-layer",
+        "label": "Network Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:synchronisation-mechanism",
+        "label": "Synchronisation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-control",
+        "label": "Distributed Control"
+      },
+      {
+        "@id": "urn:ngm:class:remote-teleoperation",
+        "label": "Remote Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data-fusion",
+        "label": "Sensor Data Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-coordination",
+        "label": "Swarm Coordination"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:communication-systems",
+        "label": "Communication Systems"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fa1321ba559955742ac283d88f118e36f12a219ea86d2e9c7c924d65faccdcb9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels. Protocols form the foundational layer enabling [[Inter-Robot Communication]], centralised control architectures, sensor data fusion, and multi-robot task coordination.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:addressing-scheme",
-      "vc:label": "Addressing Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:congestion-control",
-      "vc:label": "Congestion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-correction",
-      "vc:label": "Error Correction"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-format",
-      "vc:label": "Message Format"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-constraints",
-      "vc:label": "Bandwidth Constraints"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-serialisation",
-      "vc:label": "Data Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:latency-tolerance",
-      "vc:label": "Latency Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-physical-layer",
-      "vc:label": "Network Physical Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronisation-mechanism",
-      "vc:label": "Synchronisation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-control",
-      "vc:label": "Distributed Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-teleoperation",
-      "vc:label": "Remote Teleoperation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data-fusion",
-      "vc:label": "Sensor Data Fusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:swarm-coordination",
-      "vc:label": "Swarm Coordination"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

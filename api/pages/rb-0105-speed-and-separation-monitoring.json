@@ -3,19 +3,18 @@
   "title": "rb 0105 speed and separation monitoring",
   "slug": "rb-0105-speed-and-separation-monitoring",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0105-speed-and-separation-monitoring",
+  "classIri": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
   "domain": "robotics",
   "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:light-curtain",
+      "id": "urn:ngm:class:light-curtain",
       "label": "Light Curtain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

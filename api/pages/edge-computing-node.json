@@ -3,82 +3,95 @@
   "title": "Edge Computing Node",
   "slug": "edge-computing-node",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-computing-node",
+  "classIri": "urn:ngm:class:edge-computing-node",
   "domain": "spatial-computing",
   "definition": "Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cooling-system",
+        "id": "urn:ngm:class:cooling-system",
         "label": "Cooling System"
       },
       {
-        "id": "urn:visionflow:linked:gpu",
+        "id": "urn:ngm:class:gpu",
         "label": "GPU"
       },
       {
-        "id": "urn:visionflow:linked:memory-module",
+        "id": "urn:ngm:class:memory-module",
         "label": "Memory Module"
       },
       {
-        "id": "urn:visionflow:linked:network-interface",
+        "id": "urn:ngm:class:network-interface",
         "label": "Network Interface"
       },
       {
-        "id": "urn:visionflow:linked:processor",
+        "id": "urn:ngm:class:processor",
         "label": "Processor"
       },
       {
-        "id": "urn:visionflow:linked:storage-unit",
+        "id": "urn:ngm:class:storage-unit",
         "label": "Storage Unit"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:network-connectivity",
+        "id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
       },
       {
-        "id": "urn:visionflow:linked:physical-housing",
+        "id": "urn:ngm:class:physical-housing",
         "label": "Physical Housing"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bandwidth-optimization",
+        "id": "urn:ngm:class:bandwidth-optimization",
         "label": "Bandwidth Optimization"
       },
       {
-        "id": "urn:visionflow:linked:local-data-processing",
+        "id": "urn:ngm:class:local-data-processing",
         "label": "Local Data Processing"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-processing",
+        "id": "urn:ngm:class:low-latency-processing",
         "label": "Low Latency Processing"
       },
       {
-        "id": "urn:visionflow:linked:real-time-analytics",
+        "id": "urn:ngm:class:real-time-analytics",
         "label": "Real-time Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:edge-mesh-network",
+        "label": "Edge Mesh Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-network",
+        "label": "Edge Network"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

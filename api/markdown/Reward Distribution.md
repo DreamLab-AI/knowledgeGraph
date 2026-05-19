@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reward-distribution",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reward-distribution",
+  "@type": "Class",
   "label": "Reward Distribution",
+  "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:tokenomics",
-      "vc:label": "Tokenomics"
+      "@id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7257cbe4aa91da0aeade9f8b3632cdd4534f0db246f30872fe6e827568c71db0"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7257cbe4aa91da0aeade9f8b3632cdd4534f0db246f30872fe6e827568c71db0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:network-participation",
-      "vc:label": "Network Participation"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

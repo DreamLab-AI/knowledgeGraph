@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:analog-to-digital-converter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:analog-to-digital-converter",
+  "@type": "Class",
   "label": "Analog To Digital Converter",
+  "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:signal-processing-hardware",
-      "vc:label": "Signal Processing Hardware"
+      "@id": "urn:ngm:class:signal-processing-hardware",
+      "label": "Signal Processing Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c7b12eb8de5fbd09a39b5ad524aaa50416048be230302b2027a4689d2385031b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:resolution-bits",
+        "label": "Resolution Bits"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-rate",
+        "label": "Sampling Rate"
+      },
+      {
+        "@id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-audio-recording",
+        "label": "Digital Audio Recording"
+      },
+      {
+        "@id": "urn:ngm:class:digital-imaging",
+        "label": "Digital Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data-processing",
+        "label": "Sensor Data Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c7b12eb8de5fbd09a39b5ad524aaa50416048be230302b2027a4689d2385031b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:resolution-bits",
-      "vc:label": "Resolution Bits"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampling-rate",
-      "vc:label": "Sampling Rate"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-conditioning",
-      "vc:label": "Signal Conditioning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-audio-recording",
-      "vc:label": "Digital Audio Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-imaging",
-      "vc:label": "Digital Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data-processing",
-      "vc:label": "Sensor Data Processing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

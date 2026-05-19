@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-society-regulations",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-society-regulations",
+  "@type": "Class",
   "label": "Virtual Society Regulations",
+  "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-governance",
-      "vc:label": "Digital Governance"
+      "@id": "urn:ngm:class:digital-governance",
+      "label": "Digital Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1a20ed9bbd864460886d29a33623bb820e764536a0818058653e8bf1bcc3bffd"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1a20ed9bbd864460886d29a33623bb820e764536a0818058653e8bf1bcc3bffd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

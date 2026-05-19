@@ -3,19 +3,18 @@
   "title": "De Fi Services",
   "slug": "de-fi-services",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:de-fi-services",
+  "classIri": "urn:ngm:class:de-fi-services",
   "domain": "spatial-computing",
-  "definition": "De Fi Services is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "De Fi Services is a type of Digital Asset Ecosystem in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-ecosystem",
+      "id": "urn:ngm:class:digital-asset-ecosystem",
       "label": "Digital Asset Ecosystem"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

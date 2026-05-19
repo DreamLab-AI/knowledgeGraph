@@ -524,382 +524,303 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:on-chain-voting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:on-chain-voting",
+  "@type": "Class",
   "label": "On Chain Voting",
+  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling [[DAO]] participants to cast votes that are immutably recorded on public ledgers and automatically executed through [[Smart Contract|smart contracts]] without human intermediaries—deployed across [[Uniswap]], [[Compou...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
+      "@id": "urn:ngm:class:cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
     },
     {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
+      "@id": "urn:ngm:class:dao",
+      "label": "DAO"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d9ae6d55c6ad6f1230646104bae841505879c3dcdd670835c6b064a674baa531"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-snapshot",
+        "label": "Block Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:delegation-registry",
+        "label": "Delegation Registry"
+      },
+      {
+        "@id": "urn:ngm:class:governor-contract",
+        "label": "Governor Contract"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-threshold",
+        "label": "Proposal Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-mechanism",
+        "label": "Quorum Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-contract",
+        "label": "Timelock Contract"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:voting-period",
+        "label": "Voting Period"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:block-snapshot",
+        "label": "Block Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:erc20-votes-standard",
+        "label": "ERC20Votes Standard"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anti-collusion-voting",
+        "label": "Anti-Collusion Voting"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-governance",
+        "label": "Parameter Governance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrades",
+        "label": "Protocol Upgrades"
+      },
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:compound-governor",
+        "label": "Compound Governor"
+      },
+      {
+        "@id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "@id": "urn:ngm:class:maci-anti-collusion",
+        "label": "MACI Anti-Collusion"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow-model",
+        "label": "Vote Escrow Model"
+      },
+      {
+        "@id": "urn:ngm:class:zk-anonymous-voting",
+        "label": "ZK Anonymous Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:erc20-votes-standard",
+        "label": "ERC20Votes Standard"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-market",
+        "label": "Prediction Market"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aragon-osx-standard",
+        "label": "Aragon OSx Standard"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      },
+      {
+        "@id": "urn:ngm:class:erc20-votes",
+        "label": "ERC20Votes"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor-standard",
+        "label": "OpenZeppelin Governor Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d9ae6d55c6ad6f1230646104bae841505879c3dcdd670835c6b064a674baa531@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling [[DAO]] participants to cast votes that are immutably recorded on public ledgers and automatically executed through [[Smart Contract|smart contracts]] without human intermediaries—deployed across [[Uniswap]], [[Compound]], [[Aave]], [[MakerDAO]], [[ENS]], and 15,000+ additional DAOs governing $80+ billion in combined treasury assets as of 2026—implementing a spectrum of paradigms from token-weighted majority rule (Compound Governor Bravo, first deployed September 2020; OpenZeppelin Governor modular standard, used by 8,000+ protocols) through vote-escrowed long-term alignment (Curve Finance veCRV model, where 1,000 CRV locked 4 years = 1,000 veCRV and 1,000 CRV locked 1 year = 250 veCRV, incentive alignment that spawned the $200M-annually contested Curve Wars where Convex Finance accumulated >50% of all veCRV), conviction voting where each block of tokens staked accumulates conviction_t = conviction_{t-1} × α + tokens_staked × (1-α) making time-commitment rather than instantaneous wealth decisive (Commons Stack, 1Hive Gardens framework, deployed across 80+ DAOs on Gnosis Chain), futarchy where conditiona",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-snapshot",
-      "vc:label": "Block Snapshot"
-    },
-    {
-      "@id": "urn:visionflow:linked:delegation-registry",
-      "vc:label": "Delegation Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:governor-contract",
-      "vc:label": "Governor Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-threshold",
-      "vc:label": "Proposal Threshold"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum-mechanism",
-      "vc:label": "Quorum Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelock-contract",
-      "vc:label": "Timelock Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:vote-escrow",
-      "vc:label": "Vote Escrow"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-period",
-      "vc:label": "Voting Period"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proposal-system",
-      "vc:label": "Proposal System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:block-snapshot",
-      "vc:label": "Block Snapshot"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc20-votes-standard",
-      "vc:label": "ERC20Votes Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anti-collusion-voting",
-      "vc:label": "Anti-Collusion Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-governance",
-      "vc:label": "Cross-Chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:parameter-governance",
-      "vc:label": "Parameter Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-upgrades",
-      "vc:label": "Protocol Upgrades"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-analytics",
-      "vc:label": "DAO Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delegate-democracy",
-      "vc:label": "Delegate Democracy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:compound-governor",
-      "vc:label": "Compound Governor"
-    },
-    {
-      "@id": "urn:visionflow:linked:futarchy",
-      "vc:label": "Futarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:maci-anti-collusion",
-      "vc:label": "MACI Anti-Collusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governor",
-      "vc:label": "OpenZeppelin Governor"
-    },
-    {
-      "@id": "urn:visionflow:linked:vote-escrow-model",
-      "vc:label": "Vote Escrow Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:zk-anonymous-voting",
-      "vc:label": "ZK Anonymous Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-identity",
-      "vc:label": "Distributed Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-exchange",
-      "vc:label": "Decentralised Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-blockchain",
-      "vc:label": "Privacy Preserving Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc20-votes-standard",
-      "vc:label": "ERC20Votes Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:homomorphic-encryption",
-      "vc:label": "Homomorphic Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:prediction-market",
-      "vc:label": "Prediction Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:zk-snark",
-      "vc:label": "ZK-SNARK"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-governance",
-      "vc:label": "Centralised Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:proxy-voting",
-      "vc:label": "Proxy Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-corporate-governance",
-      "vc:label": "Traditional Corporate Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delegate-democracy",
-      "vc:label": "Delegate Democracy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-analytics",
-      "vc:label": "DAO Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-blockchain",
-      "vc:label": "Privacy Preserving Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-coins",
-      "vc:label": "Stable Coins"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:aragon-osx-standard",
-      "vc:label": "Aragon OSx Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:compound-governor-bravo",
-      "vc:label": "Compound Governor Bravo"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-712",
-      "vc:label": "EIP-712"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc20-votes",
-      "vc:label": "ERC20Votes"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governor-standard",
-      "vc:label": "OpenZeppelin Governor Standard"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

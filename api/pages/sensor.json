@@ -3,19 +3,18 @@
   "title": "Sensor",
   "slug": "sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sensor",
+  "classIri": "urn:ngm:class:sensor",
   "domain": "robotics",
-  "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena. In robotics, sensors include LiDAR for spatial mapping, cameras for visual perception, IMUs for motion sensing, force-torque sensors for manipulation, and encoders for position feedback.",
+  "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics-systems",
-      "label": "Robotics Systems"
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

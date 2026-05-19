@@ -184,76 +184,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:localization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:localization",
+  "@type": "Class",
   "label": "Localization",
+  "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
+      "@id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:81be4debf253d6d69b31dd806f0434d062e8a8bd5cfb876f19625ae27809d4d2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:probabilistic-methods",
+        "label": "Probabilistic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "label": "RB-1014-monte-carlo-localization"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1015-kalman-filter",
+        "label": "RB-1015-kalman-filter"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:81be4debf253d6d69b31dd806f0434d062e8a8bd5cfb876f19625ae27809d4d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.97",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:sensor-system",
-      "vc:label": "Sensor System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:rb-1016-path-planning",
-      "vc:label": "RB-1016-path-planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:navigation",
-      "vc:label": "Navigation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:probabilistic-methods",
-      "vc:label": "Probabilistic Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1008-odometry",
-      "vc:label": "RB-1008-odometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1014-monte-carlo-localization",
-      "vc:label": "RB-1014-monte-carlo-localization"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1015-kalman-filter",
-      "vc:label": "RB-1015-kalman-filter"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

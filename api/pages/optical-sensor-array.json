@@ -3,171 +3,323 @@
   "title": "Optical Sensor Array",
   "slug": "optical-sensor-array",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:optical-sensor-array",
+  "classIri": "urn:ngm:class:optical-sensor-array",
   "domain": "robotics",
-  "definition": "A multi-element optical sensing arrangement comprising spatially distributed photodetectors\u2014including CCD (Charge-Coupled Device) arrays, CMOS (Complementary Metal-Oxide-Semiconductor) image sensors, SPAD (Single-Photon Avalanche Diode) arrays, InGaAs infrared arrays, avalanche photodiode (APD) arrays, photodiode arrays, and time-of-flight (ToF) array architectures\u2014that collectively capture, detect, or spatially resolve light across a defined field of view for imaging, depth measurement, spectral analysis, or spatial sensing purposes, implemented as a two-dimensional (or one-dimensional) matrix of photodetector elements on a semiconductor substrate where each element converts incident photons to electrical charge via the photoelectric effect and reads that charge through an associated readout circuit chain.",
+  "definition": "A multi-element optical sensing arrangement comprising spatially distributed photodetectors\u2014including CCD (Charge-Coupled Device) arrays, CMOS (Complementary Metal-Oxide-Semiconductor) image sensors, SPAD (Single-Photon Avalanche Diode) arrays, InGaAs infrared arrays, avalanche photodiode (APD) a...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision-system",
+      "id": "urn:ngm:class:computer-vision-system",
       "label": "Computer Vision System"
     },
     {
-      "id": "urn:visionflow:owl:class:imaging-parameters",
+      "id": "urn:ngm:class:imaging-parameters",
       "label": "Imaging Parameters"
-    },
-    {
-      "id": "urn:visionflow:owl:class:hardware",
-      "label": "Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:camera",
+        "id": "urn:ngm:class:camera",
         "label": "Camera"
       },
       {
-        "id": "urn:visionflow:owl:class:camera-parameters",
+        "id": "urn:ngm:class:camera-parameters",
         "label": "Camera Parameters"
       },
       {
-        "id": "urn:visionflow:owl:class:imaging-parameters",
+        "id": "urn:ngm:class:imaging-parameters",
         "label": "Imaging Parameters"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-camera",
+        "id": "urn:ngm:class:infrared-camera",
         "label": "Infrared Camera"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "id": "urn:ngm:class:infrared-led-illuminator",
         "label": "Infrared Led Illuminator"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Light Source"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-sensor",
+        "id": "urn:ngm:class:infrared-sensor",
         "label": "Infrared Sensor"
       },
       {
-        "id": "urn:visionflow:owl:class:lens-and-camera-calibration",
+        "id": "urn:ngm:class:lens-and-camera-calibration",
         "label": "Lens and Camera Calibration"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:camera-parameters",
+        "id": "urn:ngm:class:camera-parameters",
         "label": "Camera Parameters"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signal-processing",
+        "id": "urn:ngm:class:digital-signal-processing",
         "label": "Digital Signal Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing",
+        "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:fpga",
+        "id": "urn:ngm:class:fpga",
         "label": "FPGA"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-led-illuminator",
+        "id": "urn:ngm:class:infrared-led-illuminator",
         "label": "Infrared Led Illuminator"
       },
       {
-        "id": "urn:visionflow:owl:class:infrared-light-source",
+        "id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Light Source"
       },
       {
-        "id": "urn:visionflow:owl:class:lens-and-camera-calibration",
+        "id": "urn:ngm:class:lens-and-camera-calibration",
         "label": "Lens and Camera Calibration"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:2-d-li-dar",
+        "id": "urn:ngm:class:2-d-li-dar",
         "label": "2D LiDAR"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-li-dar",
+        "id": "urn:ngm:class:3-d-li-dar",
         "label": "3D LiDAR"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:depth-estimation",
+        "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
       },
       {
-        "id": "urn:visionflow:owl:class:depth-sensing",
+        "id": "urn:ngm:class:depth-sensing",
         "label": "Depth Sensing"
       },
       {
-        "id": "urn:visionflow:owl:class:eye-tracking",
+        "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:hand-tracking",
+        "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-tracking-and-slam-capture",
         "label": "Human tracking and SLAM capture"
       },
       {
-        "id": "urn:visionflow:owl:class:point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:computer-vision-task",
+        "id": "urn:ngm:class:computer-vision-task",
         "label": "Computer Vision Task"
       },
       {
-        "id": "urn:visionflow:owl:class:convolutional-neural-network",
+        "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:visionflow:owl:class:depth-estimation",
+        "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
       },
       {
-        "id": "urn:visionflow:owl:class:feature-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
+        "id": "urn:ngm:class:human-tracking-and-slam-capture",
         "label": "Human tracking and SLAM capture"
       },
       {
-        "id": "urn:visionflow:owl:class:image-classification",
+        "id": "urn:ngm:class:image-classification",
         "label": "Image Classification"
       },
       {
-        "id": "urn:visionflow:owl:class:point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "id": "urn:ngm:class:xr-hardware",
+        "label": "XR Hardware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:ar-technology",
+        "label": "AR Technology"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality-mr",
+        "label": "Mixed Reality (MR)"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:self-driving-car",
+        "label": "Self Driving Car"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      },
+      {
+        "id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:imaging-parameters",
+        "label": "Imaging Parameters"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:2-d-li-dar",
+        "label": "2D LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:3-d-li-dar",
+        "label": "3D LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:ar-technology",
+        "label": "AR Technology"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:light-field",
+        "label": "Light field"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

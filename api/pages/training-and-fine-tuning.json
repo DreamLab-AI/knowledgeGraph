@@ -3,159 +3,259 @@
   "title": "Training and fine tuning",
   "slug": "training-and-fine-tuning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-and-fine-tuning",
+  "classIri": "urn:ngm:class:training-and-fine-tuning",
   "domain": "artificial-intelligence",
-  "definition": "**Fine-tuning** is the post-pre-training adaptation of a large neural network \u2014 typically a transformer-based [[Foundation Models]] or [[Large Language Models]] \u2014 to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated datasets (10 K\u20131 M examples), contrasting with the trillion-token self-supervised pre-training covered in [[Model Training]]. Fine-tuning subdivides into four principal tracks: (1) **Supervised Fine-Tuning (SFT)**, also termed *instruction tuning*, presents (instruction, response) pairs to the model under a causal language modelling loss applied exclusively over response tokens, transforming a raw next-token predictor into an instruction-following assistant \u2014 exemplified by InstructGPT (Ouyang et al. 2022), Alpaca (Stanford 2023), FLAN (Wei et al. 2022), and Llama-3.1-Instruct; (2) **Preference Alignment** via Reinforcement Learning from Human Feedback ([[Reinforcement Learning from Human Feedback]]) using Proximal Policy Optimisation (PPO, Schulman et al. 2017) to maximise a learned scalar [[Reward Model]] while penalising KL-divergence from the SFT reference policy J(\u03b8) = E[R_\u03c6(x,y)] \u2212 \u03b2\u00b7KL(",
+  "definition": "Fine-tuning is the post-pre-training adaptation of a large neural network \u2014 typically a transformer-based [[Foundation Models]] or [[Large Language Models]] \u2014 to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated dataset...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-training",
+      "id": "urn:ngm:class:model-training",
       "label": "Model Training"
     },
     {
-      "id": "urn:visionflow:linked:transfer-learning",
+      "id": "urn:ngm:class:transfer-learning",
       "label": "Transfer Learning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:foundation-models",
-      "label": "Foundation Models"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:visionflow:owl:class:direct-preference-optimisation",
+        "id": "urn:ngm:class:direct-preference-optimisation",
         "label": "Direct Preference Optimisation"
       },
       {
-        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
         "label": "LoRA DoRA etc"
       },
       {
-        "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
         "label": "Parameter-Efficient Fine-Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-model",
+        "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
       },
       {
-        "id": "urn:visionflow:owl:class:safety-fine-tuning",
+        "id": "urn:ngm:class:safety-fine-tuning",
         "label": "Safety Fine Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:pre-trained-model",
+        "id": "urn:ngm:class:pre-trained-model",
         "label": "Pre-trained Model"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:gradient-descent",
+        "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:visionflow:owl:class:loss-function",
+        "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenization",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:agents",
+        "id": "urn:ngm:class:agents",
         "label": "Agents"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:medical-ai",
+        "id": "urn:ngm:class:medical-ai",
         "label": "Medical AI"
       },
       {
-        "id": "urn:visionflow:owl:class:multi-task-learning",
+        "id": "urn:ngm:class:multi-task-learning",
         "label": "Multi Task Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:safety-and-alignment",
+        "id": "urn:ngm:class:safety-and-alignment",
         "label": "Safety and alignment"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:causal-language-modelling",
+        "id": "urn:ngm:class:causal-language-modelling",
         "label": "Causal Language Modelling"
       },
       {
-        "id": "urn:visionflow:linked:low-rank-adaptation",
+        "id": "urn:ngm:class:low-rank-adaptation",
         "label": "Low-Rank Adaptation"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       },
       {
-        "id": "urn:visionflow:owl:class:preference-learning",
+        "id": "urn:ngm:class:preference-learning",
         "label": "Preference Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:prefix-tuning",
+        "id": "urn:ngm:class:prefix-tuning",
         "label": "Prefix Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:prompt-tuning",
+        "id": "urn:ngm:class:prompt-tuning",
         "label": "Prompt Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:proximal-policy-optimisation",
+        "id": "urn:ngm:class:proximal-policy-optimisation",
         "label": "Proximal Policy Optimisation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:lla-ma",
+        "label": "LLaMA"
+      },
+      {
+        "id": "urn:ngm:class:llama-3",
+        "label": "Llama 3"
+      },
+      {
+        "id": "urn:ngm:class:mistral-and-mixtral",
+        "label": "Mistral and Mixtral"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "Open AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi-frontier-ai-safety-framework",
+        "label": "AISI Frontier AI Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "Open AI"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ]
   },
   "wikilinks": [
     {

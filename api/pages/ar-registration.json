@@ -3,61 +3,65 @@
   "title": "AR Registration",
   "slug": "ar-registration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-registration",
+  "classIri": "urn:ngm:class:ar-registration",
   "domain": "spatial-computing",
-  "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through [[Computer Vision]], [[Sensor Input]], and tracking algorithms. Successful registration maintains persistent, geometrically accurate overlay of digital objects on physical environments, critical for functional AR applications spanning [[AR Technology]], industrial guidance, and [[3D User Interface]] interaction.",
+  "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through [[Computer Vision]], [[Sensor Input]], and tracking algorithms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-vision",
+      "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     },
     {
-      "id": "urn:visionflow:owl:class:spatial-tracking",
+      "id": "urn:ngm:class:spatial-tracking",
       "label": "Spatial Tracking"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:feature-matching",
+        "id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
       },
       {
-        "id": "urn:visionflow:linked:imu",
+        "id": "urn:ngm:class:imu",
         "label": "IMU"
       },
       {
-        "id": "urn:visionflow:owl:class:pose-estimation",
+        "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:geometric-accuracy",
+        "id": "urn:ngm:class:geometric-accuracy",
         "label": "Geometric Accuracy"
       },
       {
-        "id": "urn:visionflow:linked:interaction-with-physical-objects",
+        "id": "urn:ngm:class:interaction-with-physical-objects",
         "label": "Interaction with Physical Objects"
       },
       {
-        "id": "urn:visionflow:linked:persistent-content-anchoring",
+        "id": "urn:ngm:class:persistent-content-anchoring",
         "label": "Persistent Content Anchoring"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

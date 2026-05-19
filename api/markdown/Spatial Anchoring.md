@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-anchoring",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-anchoring",
+  "@type": "Class",
   "label": "Spatial Anchoring",
+  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3d04187f45b4f9d8663ceed027299bf561c3624a50026cb4e2073ce191e3dee5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:location-based-ar",
+        "label": "Location Based AR"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3d04187f45b4f9d8663ceed027299bf561c3624a50026cb4e2073ce191e3dee5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud-synchronized anchor data.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:location-based-ar",
-      "vc:label": "Location Based AR"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

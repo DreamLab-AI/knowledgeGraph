@@ -3,37 +3,41 @@
   "title": "Layer 3",
   "slug": "layer-3",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:layer-3",
+  "classIri": "urn:ngm:class:layer-3",
   "domain": "blockchain",
-  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.",
+  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:application-specific-blockchain",
+        "id": "urn:ngm:class:application-specific-blockchain",
         "label": "Application-Specific Blockchain"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:custom-execution-environment",
+        "id": "urn:ngm:class:custom-execution-environment",
         "label": "Custom Execution Environment"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -1504,352 +1504,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bitcoin-mining",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bitcoin-mining",
+  "@type": "Class",
   "label": "Bitcoin Mining",
+  "definition": "Bitcoin Mining is the [[proof-of-work]] [[Nakamoto consensus]] process by which the [[Bitcoin]] [[blockchain]] is extended, secured, and monetised through competitive computation of [[SHA-256]] double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-mining",
-      "vc:label": "Cryptographic Mining"
+      "@id": "urn:ngm:class:cryptographic-mining",
+      "label": "Cryptographic Mining"
     },
     {
-      "@id": "urn:visionflow:linked:industrial-process",
-      "vc:label": "Industrial Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof-of-Work"
+      "@id": "urn:ngm:class:industrial-process",
+      "label": "Industrial Process"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0a615394edb05999533fc4a6f35f83bbba4c7517f5fd1d6d5b05e3f3c88cde86"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:nonce-search",
+        "label": "Nonce Search"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256-hashing",
+        "label": "SHA-256 Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-transaction",
+        "label": "Coinbase Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-target",
+        "label": "Difficulty Target"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asic-hardware",
+        "label": "ASIC Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-full-node",
+        "label": "Bitcoin Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      },
+      {
+        "@id": "urn:ngm:class:electricity",
+        "label": "Electricity"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-protocol",
+        "label": "Stratum Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-issuance",
+        "label": "Bitcoin Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response-services",
+        "label": "Demand Response Services"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-settlement",
+        "label": "Permissionless Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:coinbase-reward-distribution",
+        "label": "Coinbase Reward Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment-algorithm",
+        "label": "Difficulty Adjustment Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:halving-schedule",
+        "label": "Halving Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest-Chain Rule"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:double-hashing",
+        "label": "Double Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:hashboards",
+        "label": "Hashboards"
+      },
+      {
+        "@id": "urn:ngm:class:immersion-cooling",
+        "label": "Immersion Cooling"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root-construction",
+        "label": "Merkle Root Construction"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-v1",
+        "label": "Stratum V1"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-v2",
+        "label": "Stratum V2"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-hpc-pivot",
+        "label": "AI HPC Pivot"
+      },
+      {
+        "@id": "urn:ngm:class:asic-manufacturer",
+        "label": "ASIC Manufacturer"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:stranded-gas",
+        "label": "Stranded Gas"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-network-security",
+        "label": "Bitcoin Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "@id": "urn:ngm:class:energy-grid-stability",
+        "label": "Energy Grid Stability"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:stranded-energy-monetisation",
+        "label": "Stranded Energy Monetisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bip-34",
+        "label": "BIP 34"
+      },
+      {
+        "@id": "urn:ngm:class:bip-9",
+        "label": "BIP 9"
+      },
+      {
+        "@id": "urn:ngm:class:bip-91",
+        "label": "BIP 91"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-core-reference-implementation",
+        "label": "Bitcoin Core Reference Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:cbeci-methodology",
+        "label": "CBECI Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-v2-specification",
+        "label": "Stratum V2 Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0a615394edb05999533fc4a6f35f83bbba4c7517f5fd1d6d5b05e3f3c88cde86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Bitcoin Mining** is the [[proof-of-work]] [[Nakamoto consensus]] process by which the [[Bitcoin]] [[blockchain]] is extended, secured, and monetised through competitive computation of [[SHA-256]] double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-adjusted [[difficulty target]] (currently corresponding to ~10^23 to ~10^24 hashes per block), executed by purpose-built [[ASIC]] (Application-Specific Integrated Circuit) hardware operating at industrial scale in geographically-distributed data centres that as of Q1 2026 collectively dissipate ~700-1000 EH/s (exahashes/second, ~10^21 hashes/second), consume approximately 175-200 TWh/year of electricity (CBECI midpoint), and generate roughly 144 new [[block]]s per day each carrying a [[block subsidy]] of **3.125 BTC** (since the fourth [[halving]] on **20 April 2024** at block 840,000, reduced from the prior 6.25 BTC under the geometric series 50 → 25 → 12.5 → 6.25 → 3.125 → ... → 0 BTC scheduled to terminate near block 6,930,000 around 2140) plus cumulative [[transaction fees]] from included [[mempool]] entries (a fee market increasingly material with [[Ordinals]]/[[Inscriptions]]/[[Rune",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asic",
-      "vc:label": "ASIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:nonce-search",
-      "vc:label": "Nonce Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:sha-256-hashing",
-      "vc:label": "SHA-256 Hashing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:block-header",
-      "vc:label": "Block Header"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:coinbase-transaction",
-      "vc:label": "Coinbase Transaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:difficulty-target",
-      "vc:label": "Difficulty Target"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mempool",
-      "vc:label": "Mempool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining-pool",
-      "vc:label": "Mining Pool"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asic-hardware",
-      "vc:label": "ASIC Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-full-node",
-      "vc:label": "Bitcoin Full Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:cooling-system",
-      "vc:label": "Cooling System"
-    },
-    {
-      "@id": "urn:visionflow:linked:electricity",
-      "vc:label": "Electricity"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-protocol",
-      "vc:label": "Stratum Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-issuance",
-      "vc:label": "Bitcoin Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-security",
-      "vc:label": "Blockchain Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-response-services",
-      "vc:label": "Demand Response Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-spend-prevention",
-      "vc:label": "Double-Spend Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-settlement",
-      "vc:label": "Permissionless Settlement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction-confirmation",
-      "vc:label": "Transaction Confirmation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:coinbase-reward-distribution",
-      "vc:label": "Coinbase Reward Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:difficulty-adjustment-algorithm",
-      "vc:label": "Difficulty Adjustment Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:halving-schedule",
-      "vc:label": "Halving Schedule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:longest-chain-rule",
-      "vc:label": "Longest-Chain Rule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nakamoto-consensus",
-      "vc:label": "Nakamoto Consensus"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-protocol",
-      "vc:label": "Bitcoin Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrical-grid",
-      "vc:label": "Electrical Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-purchase-agreement",
-      "vc:label": "Power Purchase Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-fabrication",
-      "vc:label": "Semiconductor Fabrication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:internet-infrastructure",
-      "vc:label": "Internet Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sha-256",
-      "vc:label": "SHA-256"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network-security",
-      "vc:label": "Bitcoin Network Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralisation",
-      "vc:label": "Decentralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-grid-stability",
-      "vc:label": "Energy Grid Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:stranded-energy-monetisation",
-      "vc:label": "Stranded Energy Monetisation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:double-hashing",
-      "vc:label": "Double Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:hashboards",
-      "vc:label": "Hashboards"
-    },
-    {
-      "@id": "urn:visionflow:linked:immersion-cooling",
-      "vc:label": "Immersion Cooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-root-construction",
-      "vc:label": "Merkle Root Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-v1",
-      "vc:label": "Stratum V1"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-v2",
-      "vc:label": "Stratum V2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sha-256",
-      "vc:label": "SHA-256"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cpu-mining",
-      "vc:label": "CPU Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-mining-ethereum",
-      "vc:label": "GPU Mining Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:linked:kaspa-mining",
-      "vc:label": "Kaspa Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:monero-random-x",
-      "vc:label": "Monero RandomX"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-space",
-      "vc:label": "Proof-of-Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-authority",
-      "vc:label": "Proof-of-Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof-of-Stake"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-hpc-pivot",
-      "vc:label": "AI HPC Pivot"
-    },
-    {
-      "@id": "urn:visionflow:linked:asic-manufacturer",
-      "vc:label": "ASIC Manufacturer"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-response",
-      "vc:label": "Demand Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-rate",
-      "vc:label": "Hash Rate"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy",
-      "vc:label": "Renewable Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:stranded-gas",
-      "vc:label": "Stranded Gas"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:halving",
-      "vc:label": "Halving"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining-pool",
-      "vc:label": "Mining Pool"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bip-34",
-      "vc:label": "BIP 34"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-9",
-      "vc:label": "BIP 9"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-91",
-      "vc:label": "BIP 91"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-core-reference-implementation",
-      "vc:label": "Bitcoin Core Reference Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cbeci-methodology",
-      "vc:label": "CBECI Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-v2-specification",
-      "vc:label": "Stratum V2 Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:energy",
-      "vc:label": "Energy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof-of-Work"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

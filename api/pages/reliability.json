@@ -3,32 +3,31 @@
   "title": "Reliability",
   "slug": "reliability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reliability",
+  "classIri": "urn:ngm:class:reliability",
   "domain": "spatial-computing",
   "definition": "The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:monitoring",
+        "id": "urn:ngm:class:monitoring",
         "label": "Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:testing",
+        "id": "urn:ngm:class:testing",
         "label": "Testing"
       },
       {
-        "id": "urn:visionflow:linked:validation-ai-0095",
+        "id": "urn:ngm:class:validation-ai-0095",
         "label": "Validation (AI-0095)"
       }
     ],
@@ -36,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

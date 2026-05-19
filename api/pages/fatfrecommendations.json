@@ -3,19 +3,18 @@
   "title": "FATFRecommendations",
   "slug": "fatfrecommendations",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fatfrecommendations",
+  "classIri": "urn:ngm:class:fatfrecommendations",
   "domain": "blockchain",
-  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)\u2014an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs) covering over 200 jurisdictions globally\u2014for combating money laundering, terrorist financing, and financing of proliferation of weapons of mass destruction, encompassing 40 Recommendations (consolidated from original 40 plus 9 Special Recommendations on terrorist financing through comprehensive 2012 revision) that apply to both money laundering and counter-terrorist financing with requirements for customer due diligence per Recommendation 10 (identifying and verifying customer identity using reliable independent source documents, identifying beneficial owners controlling 25% or greater ownership or exercising control, understanding nature and purpose of business relationship), record-keeping per Recommendation 11 (retaining transaction records and customer identification information for minimum 5 years following transaction completion or relationship termination), suspicious transaction r",
+  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)\u2014an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+      "id": "urn:ngm:class:aml-kyc-compliance",
       "label": "AML KYC Compliance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.91,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

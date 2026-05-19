@@ -3,19 +3,18 @@
   "title": "State Machine Replication",
   "slug": "state-machine-replication",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-machine-replication",
+  "classIri": "urn:ngm:class:state-machine-replication",
   "domain": "blockchain",
-  "definition": "State Machine Replication is a concept within the blockchain domain. Further enrichment pending.",
+  "definition": "State Machine Replication is a type of Blockchain in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

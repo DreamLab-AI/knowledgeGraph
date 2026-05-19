@@ -144,41 +144,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:resilience-metric",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:resilience-metric",
+  "@type": "Class",
   "label": "Resilience Metric",
+  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that de...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:21458daa80a5a1463e0f5eee8a9d1964e090f795e54931c5ac418bf35481b691@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

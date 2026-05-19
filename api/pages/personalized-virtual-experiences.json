@@ -3,32 +3,36 @@
   "title": "Personalized Virtual Experiences",
   "slug": "personalized-virtual-experiences",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:personalized-virtual-experiences",
+  "classIri": "urn:ngm:class:personalized-virtual-experiences",
   "domain": "spatial-computing",
   "definition": "AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-experience",
+      "id": "urn:ngm:class:virtual-experience",
       "label": "Virtual Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-engagement",
+        "id": "urn:ngm:class:user-engagement",
         "label": "User Engagement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

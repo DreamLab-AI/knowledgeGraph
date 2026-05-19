@@ -3,53 +3,57 @@
   "title": "Automated Market Maker",
   "slug": "automated-market-maker",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:automated-market-maker",
+  "classIri": "urn:ngm:class:automated-market-maker",
   "domain": "spatial-computing",
   "definition": "Automated Market Maker (AMM) is a decentralized exchange protocol that uses algorithmic pricing mechanisms and liquidity pools instead of traditional order books, enabling permissionless token swaps where prices adjust automatically based on supply and demand within smart contract-managed reserves.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:liquidity-pools",
+        "id": "urn:ngm:class:liquidity-pools",
         "label": "Liquidity Pools"
       },
       {
-        "id": "urn:visionflow:linked:pricing-algorithms",
+        "id": "urn:ngm:class:pricing-algorithms",
         "label": "Pricing Algorithms"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:permissionless-trading",
+        "id": "urn:ngm:class:permissionless-trading",
         "label": "Permissionless Trading"
       },
       {
-        "id": "urn:visionflow:linked:token-swaps",
+        "id": "urn:ngm:class:token-swaps",
         "label": "Token Swaps"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

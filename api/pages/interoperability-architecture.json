@@ -3,32 +3,36 @@
   "title": "Interoperability Architecture",
   "slug": "interoperability-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interoperability-architecture",
+  "classIri": "urn:ngm:class:interoperability-architecture",
   "domain": "infrastructure",
   "definition": "Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-architecture",
+      "id": "urn:ngm:class:technical-architecture",
       "label": "Technical Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:unified-metaverse",
+        "id": "urn:ngm:class:unified-metaverse",
         "label": "Unified Metaverse"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Healthcare Application Classification",
   "slug": "healthcare-application-classification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:healthcare-application-classification",
+  "classIri": "urn:ngm:class:healthcare-application-classification",
   "domain": "artificial-intelligence",
-  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.",
+  "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic eand deployment of immersive medical technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:healthcare-technology",
+      "id": "urn:ngm:class:healthcare-technology",
       "label": "Healthcare Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:structured-healthcare-innovation",
+        "id": "urn:ngm:class:structured-healthcare-innovation",
         "label": "Structured Healthcare Innovation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

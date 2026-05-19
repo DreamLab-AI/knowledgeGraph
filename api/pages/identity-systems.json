@@ -3,19 +3,18 @@
   "title": "Identity Systems",
   "slug": "identity-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:identity-systems",
+  "classIri": "urn:ngm:class:identity-systems",
   "domain": "infrastructure",
-  "definition": "Identity Systems is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Identity Systems is a type of Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

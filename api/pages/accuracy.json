@@ -3,19 +3,18 @@
   "title": "Accuracy",
   "slug": "accuracy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accuracy",
+  "classIri": "urn:ngm:class:accuracy",
   "domain": "artificial-intelligence",
-  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate measure of overall model correctness but potentially obscuring performance disparities across classes, particularly in datasets with imbalanced class distributions or asymmetric misclassification costs.",
+  "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate mea...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-performance",
-      "label": "Model Performance"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ]
   },
   "wikilinks": [
     {

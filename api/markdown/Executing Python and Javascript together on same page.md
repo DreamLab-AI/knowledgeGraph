@@ -97,46 +97,7 @@ public:: true
 }
 ```
 
-```json-ld
-{
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:executing-python-and-javascript-together-on-same-page",
-  "@type": "OntologyClass",
-  "label": "Executing Python and Javascript together on same page",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:runtime-environment",
-      "vc:label": "Runtime Environment"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1c576f9e7f3652c1740412f5247b50809b5ab5565f14d3a4fafad6d2a152b2af"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1c576f9e7f3652c1740412f5247b50809b5ab5565f14d3a4fafad6d2a152b2af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Executing Python and Javascript together on same page is a technology infrastructure concept and a type of Runtime Environment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
-}
-```
+
 
 ```json-ld
 {

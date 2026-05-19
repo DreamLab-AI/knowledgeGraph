@@ -3,53 +3,57 @@
   "title": "Controlled Vocabulary",
   "slug": "controlled-vocabulary",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:controlled-vocabulary",
+  "classIri": "urn:ngm:class:controlled-vocabulary",
   "domain": "spatial-computing",
   "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:information-architecture",
+      "id": "urn:ngm:class:information-architecture",
       "label": "Information Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:domain-expertise",
+        "id": "urn:ngm:class:domain-expertise",
         "label": "Domain Expertise"
       },
       {
-        "id": "urn:visionflow:linked:maintenance-process",
+        "id": "urn:ngm:class:maintenance-process",
         "label": "Maintenance Process"
       },
       {
-        "id": "urn:visionflow:linked:term-governance",
+        "id": "urn:ngm:class:term-governance",
         "label": "Term Governance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accurate-retrieval",
+        "id": "urn:ngm:class:accurate-retrieval",
         "label": "Accurate Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:content-discovery",
+        "id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
       },
       {
-        "id": "urn:visionflow:linked:data-standardization",
+        "id": "urn:ngm:class:data-standardization",
         "label": "Data Standardization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "copyright",
   "slug": "copyright",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:copyright",
+  "classIri": "urn:ngm:class:copyright",
   "domain": "infrastructure",
   "definition": "copyright is a technology infrastructure concept and a type of Legal Framework.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:legal-framework",
+      "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

@@ -3,131 +3,207 @@
   "title": "Topological Map",
   "slug": "topological-map",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:topological-map",
+  "classIri": "urn:ngm:class:topological-map",
   "domain": "robotics",
-  "definition": "[[Topological Map]] is a graph-structured spatial abstraction used in [[Mobile Robot Navigation]] and [[Autonomous Navigation]], representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coordinates in a [[Metric Map]] or dense [[Occupancy Grid]]. Distinguished from continuous metric representations by its qualitative encoding of connectivity and navigability, a topological map captures the essential relational structure of space \u2014 which places are reachable from which, through which corridors or doorways \u2014 whilst abstracting away precise Euclidean geometry. This graph [[Spatial Representation]] enables polynomial-complexity global [[Path Planning]] via Dijkstra or A* over sparse node sets (10\u201310,000 nodes) compared to exponential search over dense grids, and supports human-interpretable spatial reasoning using [[Semantic Label]] references and sequential directions that align with how humans naturally describe routes. Nodes encode place identity through visual appearance descriptors (HOG features, [[Convolutional Neural Networks|CNN]] embeddings, [[FAB-MAP]] probabilistic vocab",
+  "definition": "[[Topological Map]] is a graph-structured spatial abstraction used in [[Mobile Robot Navigation]] and [[Autonomous Navigation]], representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coord...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cognitive-map",
+      "id": "urn:ngm:class:cognitive-map",
       "label": "Cognitive Map"
     },
     {
-      "id": "urn:visionflow:linked:mobile-robot-navigation",
+      "id": "urn:ngm:class:mobile-robot-navigation",
       "label": "Mobile Robot Navigation"
-    },
-    {
-      "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "label": "Simultaneous Localisation and Mapping"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:graph-optimiser",
+        "id": "urn:ngm:class:graph-optimiser",
         "label": "Graph Optimiser"
       },
       {
-        "id": "urn:visionflow:linked:loop-closure-detection",
+        "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"
       },
       {
-        "id": "urn:visionflow:linked:place-node",
+        "id": "urn:ngm:class:place-node",
         "label": "Place Node"
       },
       {
-        "id": "urn:visionflow:linked:place-recognition-module",
+        "id": "urn:ngm:class:place-recognition-module",
         "label": "Place Recognition Module"
       },
       {
-        "id": "urn:visionflow:linked:pose-graph",
+        "id": "urn:ngm:class:pose-graph",
         "label": "Pose Graph"
       },
       {
-        "id": "urn:visionflow:linked:semantic-label",
+        "id": "urn:ngm:class:semantic-label",
         "label": "Semantic Label"
       },
       {
-        "id": "urn:visionflow:linked:transition-edge",
+        "id": "urn:ngm:class:transition-edge",
         "label": "Transition Edge"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:graph-representation",
+        "id": "urn:ngm:class:graph-representation",
         "label": "Graph Representation"
       },
       {
-        "id": "urn:visionflow:linked:loop-closure-detection",
+        "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"
       },
       {
-        "id": "urn:visionflow:linked:visual-place-recognition",
+        "id": "urn:ngm:class:visual-place-recognition",
         "label": "Visual Place Recognition"
       },
       {
-        "id": "urn:visionflow:owl:class:feature-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
       },
       {
-        "id": "urn:visionflow:owl:class:odometry",
+        "id": "urn:ngm:class:odometry",
         "label": "Odometry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:lifelong-mapping",
+        "id": "urn:ngm:class:lifelong-mapping",
         "label": "Lifelong Mapping"
       },
       {
-        "id": "urn:visionflow:linked:long-range-navigation",
+        "id": "urn:ngm:class:long-range-navigation",
         "label": "Long-Range Navigation"
       },
       {
-        "id": "urn:visionflow:linked:multi-robot-systems",
+        "id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
       },
       {
-        "id": "urn:visionflow:linked:semantic-navigation",
+        "id": "urn:ngm:class:semantic-navigation",
         "label": "Semantic Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:path-planning",
+        "id": "urn:ngm:class:path-planning",
         "label": "Path Planning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:fab-map",
+        "id": "urn:ngm:class:fab-map",
         "label": "FAB-MAP"
       },
       {
-        "id": "urn:visionflow:linked:pose-graph",
+        "id": "urn:ngm:class:pose-graph",
         "label": "Pose Graph"
       },
       {
-        "id": "urn:visionflow:linked:rtab-map",
+        "id": "urn:ngm:class:rtab-map",
         "label": "RTAB-Map"
       },
       {
-        "id": "urn:visionflow:linked:spatial-semantic-hierarchy",
+        "id": "urn:ngm:class:spatial-semantic-hierarchy",
         "label": "Spatial Semantic Hierarchy"
       },
       {
-        "id": "urn:visionflow:linked:visual-place-recognition",
+        "id": "urn:ngm:class:visual-place-recognition",
         "label": "Visual Place Recognition"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bag-of-words-model",
+        "label": "Bag-of-Words Model"
+      },
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      },
+      {
+        "id": "urn:ngm:class:service-robots",
+        "label": "Service Robots"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-ras",
+        "label": "IEEE RAS"
+      },
+      {
+        "id": "urn:ngm:class:open-slam",
+        "label": "OpenSLAM"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-cognition",
+        "label": "Spatial Cognition"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ]
   },
   "wikilinks": [
     {

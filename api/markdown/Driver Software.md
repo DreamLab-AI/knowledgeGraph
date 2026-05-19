@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:driver-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:driver-software",
+  "@type": "Class",
   "label": "Driver Software",
+  "definition": "System-level software components that enable communication between operating systems and extended reality (XR) hardware devices, translating high-level application commands into hardware-specific instructions for VR headsets, AR glasses, haptic controllers, and spatial computing peripherals.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-software",
-      "vc:label": "System Software"
+      "@id": "urn:ngm:class:system-software",
+      "label": "System Software"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0061e220f0577b9f22dce06b395ae4d26efaaea8bc4ae7d6a2a1bc74ecc1dc91"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality Xr"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0061e220f0577b9f22dce06b395ae4d26efaaea8bc4ae7d6a2a1bc74ecc1dc91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System-level software components that enable communication between operating systems and extended reality (XR) hardware devices, translating high-level application commands into hardware-specific instructions for VR headsets, AR glasses, haptic controllers, and spatial computing peripherals.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality Xr"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

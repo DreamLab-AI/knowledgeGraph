@@ -192,114 +192,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-anchor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-anchor",
+  "@type": "Class",
   "label": "Spatial Anchor",
+  "definition": "Coordinate reference that binds a virtual object's pose to a stable location in physical space, enabling persistent AR placement and physical-virtual registration.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ar-scene-graph",
-      "vc:label": "AR Scene Graph"
+      "@id": "urn:ngm:class:ar-scene-graph",
+      "label": "AR Scene Graph"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:254562885341db7cb7377e1c3f07d710d491b2aea245788c1e1328c4ffaf09a3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gps-reference",
+        "label": "GPS Reference"
+      },
+      {
+        "@id": "urn:ngm:class:pose-data",
+        "label": "Pose Data"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-features",
+        "label": "Tracking Features"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:visual-marker",
+        "label": "Visual Marker"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:persistence-layer",
+        "label": "Persistence Layer"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:persistent-ar-placement",
+        "label": "Persistent AR Placement"
+      },
+      {
+        "@id": "urn:ngm:class:physical-virtual-registration",
+        "label": "Physical-Virtual Registration"
+      },
+      {
+        "@id": "urn:ngm:class:shared-ar-experiences",
+        "label": "Shared AR Experiences"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ar-scene-graph",
+        "label": "AR Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-system",
+        "label": "Spatial Computing System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:254562885341db7cb7377e1c3f07d710d491b2aea245788c1e1328c4ffaf09a3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Coordinate reference that binds a virtual object's pose to a stable location in physical space, enabling persistent AR placement and physical-virtual registration.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:owl:class:ar-scene-graph",
-      "vc:label": "AR Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing-system",
-      "vc:label": "Spatial Computing System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:gps-reference",
-      "vc:label": "GPS Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:pose-data",
-      "vc:label": "Pose Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-features",
-      "vc:label": "Tracking Features"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:coordinate-system",
-      "vc:label": "Coordinate System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:visual-marker",
-      "vc:label": "Visual Marker"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:coordinate-transformation",
-      "vc:label": "Coordinate Transformation"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistence-layer",
-      "vc:label": "Persistence Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-system",
-      "vc:label": "Tracking System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:persistent-ar-placement",
-      "vc:label": "Persistent AR Placement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-virtual-registration",
-      "vc:label": "Physical-Virtual Registration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shared-ar-experiences",
-      "vc:label": "Shared AR Experiences"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:visual-odometry",
-      "vc:label": "Visual Odometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-coordinate-frame",
-      "vc:label": "World Coordinate Frame"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
+      "@id": "urn:ngm:class:spatial-anchors",
+      "label": "Spatial Anchors"
     }
   ]
 }

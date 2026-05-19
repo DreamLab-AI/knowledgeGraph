@@ -3,57 +3,61 @@
   "title": "Accessible Experience",
   "slug": "accessible-experience",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accessible-experience",
+  "classIri": "urn:ngm:class:accessible-experience",
   "domain": "spatial-computing",
-  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and [[Accessible Design]] principles. Accessible experiences provide feature parity across visual, auditory, motor, and cognitive modalities, ensuring disabled users participate fully in [[Metaverse]] interactions, entertainment, and professional activities.",
+  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and [[Accessible Design]] principles.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:inclusive-experience",
+      "id": "urn:ngm:class:inclusive-experience",
       "label": "Inclusive Experience"
     },
     {
-      "id": "urn:visionflow:linked:user-experience",
+      "id": "urn:ngm:class:user-experience",
       "label": "User Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:alternative-input-methods",
+        "id": "urn:ngm:class:alternative-input-methods",
         "label": "Alternative Input Methods"
       },
       {
-        "id": "urn:visionflow:linked:assistive-technology-support",
+        "id": "urn:ngm:class:assistive-technology-support",
         "label": "Assistive Technology Support"
       },
       {
-        "id": "urn:visionflow:linked:multimodal-interfaces",
+        "id": "urn:ngm:class:multimodal-interfaces",
         "label": "Multimodal Interfaces"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:equitable-engagement",
+        "id": "urn:ngm:class:equitable-engagement",
         "label": "Equitable Engagement"
       },
       {
-        "id": "urn:visionflow:linked:inclusive-participation",
+        "id": "urn:ngm:class:inclusive-participation",
         "label": "Inclusive Participation"
       },
       {
-        "id": "urn:visionflow:linked:universal-access",
+        "id": "urn:ngm:class:universal-access",
         "label": "Universal Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

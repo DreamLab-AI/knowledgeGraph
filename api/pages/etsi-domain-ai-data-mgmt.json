@@ -3,36 +3,45 @@
   "title": "ETSI Domain AI + Data Mgmt",
   "slug": "etsi-domain-ai-data-mgmt",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
+  "classIri": "urn:ngm:class:etsi-domain-ai-data-mgmt",
   "domain": "artificial-intelligence",
   "definition": "Cross-domain marker for metaverse components combining artificial intelligence with data management capabilities including ML pipelines, intelligent data processing, analytics, and AI-driven data governance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-domain-ai",
+      "id": "urn:ngm:class:etsi-domain-ai",
       "label": "ETSI Domain AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:intelligent-analytics-categorization",
+        "id": "urn:ngm:class:intelligent-analytics-categorization",
         "label": "Intelligent Analytics Categorization"
       },
       {
-        "id": "urn:visionflow:linked:ml-pipeline-classification",
+        "id": "urn:ngm:class:ml-pipeline-classification",
         "label": "ML Pipeline Classification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

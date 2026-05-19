@@ -3,23 +3,22 @@
   "title": "Partition Attack",
   "slug": "partition-attack",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:partition-attack",
+  "classIri": "urn:ngm:class:partition-attack",
   "domain": "blockchain",
   "definition": "Network segmentation attack within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
-      "id": "urn:visionflow:owl:class:network-component",
+      "id": "urn:ngm:class:network-component",
       "label": "NetworkComponent"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -544,362 +544,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:smart-contract",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:smart-contract",
+  "@type": "Class",
   "label": "Smart Contract",
+  "definition": "A [[Smart Contract]] is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted interme...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-agreement",
-      "vc:label": "Digital Agreement"
+      "@id": "urn:ngm:class:digital-agreement",
+      "label": "Digital Agreement"
     },
     {
-      "@id": "urn:visionflow:linked:executable-code",
-      "vc:label": "Executable Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol",
-      "vc:label": "Protocol"
+      "@id": "urn:ngm:class:executable-code",
+      "label": "Executable Code"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:61bb3c6d7761da21f4af0c0e9762122ba5dd95a05d8211a8cc4ecef9c15dfd00"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:abi",
+        "label": "ABI"
+      },
+      {
+        "@id": "urn:ngm:class:constructor",
+        "label": "Constructor"
+      },
+      {
+        "@id": "urn:ngm:class:contract-code",
+        "label": "Contract Code"
+      },
+      {
+        "@id": "urn:ngm:class:event-emission",
+        "label": "Event Emission"
+      },
+      {
+        "@id": "urn:ngm:class:fallback-function",
+        "label": "Fallback Function"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-integration",
+        "label": "Oracle Integration"
+      },
+      {
+        "@id": "urn:ngm:class:proxy-pattern",
+        "label": "Proxy Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:state-variables",
+        "label": "State Variables"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-finance",
+        "label": "Programmable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-transactions",
+        "label": "Tokenised Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eip-2535-diamond",
+        "label": "EIP-2535 Diamond"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1967-proxy",
+        "label": "ERC-1967 Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-standards",
+        "label": "OpenZeppelin Standards"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cairo-language",
+        "label": "Cairo Language"
+      },
+      {
+        "@id": "urn:ngm:class:ink",
+        "label": "Ink!"
+      },
+      {
+        "@id": "urn:ngm:class:move-language",
+        "label": "Move Language"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "@id": "urn:ngm:class:rust",
+        "label": "Rust"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-automation",
+        "label": "Insurance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:voting-systems",
+        "label": "Voting Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eip-process",
+        "label": "EIP Process"
+      },
+      {
+        "@id": "urn:ngm:class:erc-standards",
+        "label": "ERC Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin",
+        "label": "OpenZeppelin"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-spec",
+        "label": "W3C DID Spec"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:61bb3c6d7761da21f4af0c0e9762122ba5dd95a05d8211a8cc4ecef9c15dfd00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A [[Smart Contract]] is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted intermediaries. Execution environments include: the [[Ethereum]] EVM (Solidity/Vyper compiling to 256-bit stack bytecode, gas metering at 30M gas/block); the Move VM on Aptos/Sui (resource-typed modules with linear-type semantics preventing double-spend at the language level, Aptos 160K TPS benchmarks); Cairo on Starknet (STARK-provable algebraic circuits enabling trustless ZK verification, recursive proof aggregation in production since 2023); Rust-based Solana BPF runtime (Berkeley Packet Filter VM with parallel transaction streams, 65K TPS theoretical); Ink! on Polkadot/Substrate (WebAssembly sandbox with XCM cross-parachain messaging); and CosmWasm (deterministic Wasm modules with IBC inter-chain capability). The concept originates with Nick Szabo's 1994/1997 work formalising cryptographically-enforced digital agreements, realised at scale through Vitalik Buterin's 2013 Ethereum whitepaper. To",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:abi",
-      "vc:label": "ABI"
-    },
-    {
-      "@id": "urn:visionflow:linked:constructor",
-      "vc:label": "Constructor"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-code",
-      "vc:label": "Contract Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-emission",
-      "vc:label": "Event Emission"
-    },
-    {
-      "@id": "urn:visionflow:linked:fallback-function",
-      "vc:label": "Fallback Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-integration",
-      "vc:label": "Oracle Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:proxy-pattern",
-      "vc:label": "Proxy Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-variables",
-      "vc:label": "State Variables"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:compiler",
-      "vc:label": "Compiler"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:gas-mechanism",
-      "vc:label": "Gas Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-machine",
-      "vc:label": "Virtual Machine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-finance",
-      "vc:label": "Programmable Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-transactions",
-      "vc:label": "Tokenised Transactions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:account-abstraction",
-      "vc:label": "Account Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:automated-market-maker",
-      "vc:label": "Automated Market Maker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:eip-2535-diamond",
-      "vc:label": "EIP-2535 Diamond"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1967-proxy",
-      "vc:label": "ERC-1967 Proxy"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20",
-      "vc:label": "ERC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-4337",
-      "vc:label": "ERC-4337"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-721",
-      "vc:label": "ERC-721"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-standards",
-      "vc:label": "OpenZeppelin Standards"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "Cryptographic Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecdsa-signature",
-      "vc:label": "ECDSA Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-automation",
-      "vc:label": "Insurance Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:prediction-markets",
-      "vc:label": "Prediction Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cold-chain-monitoring",
-      "vc:label": "Cold Chain Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:voting-systems",
-      "vc:label": "Voting Systems"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cairo-language",
-      "vc:label": "Cairo Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:ink",
-      "vc:label": "Ink!"
-    },
-    {
-      "@id": "urn:visionflow:linked:move-language",
-      "vc:label": "Move Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:vyper",
-      "vc:label": "Vyper"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rust",
-      "vc:label": "Rust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-database",
-      "vc:label": "Centralised Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:custodial-service",
-      "vc:label": "Custodial Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-contract",
-      "vc:label": "Traditional Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-third-party",
-      "vc:label": "Trusted Third Party"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:flash-loan",
-      "vc:label": "Flash Loan"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:account-abstraction",
-      "vc:label": "Account Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mev",
-      "vc:label": "MEV"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token",
-      "vc:label": "Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eip-process",
-      "vc:label": "EIP Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-standards",
-      "vc:label": "ERC Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-foundation",
-      "vc:label": "Ethereum Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin",
-      "vc:label": "OpenZeppelin"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-spec",
-      "vc:label": "W3C DID Spec"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

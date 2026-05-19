@@ -3,53 +3,57 @@
   "title": "Digital Payments",
   "slug": "digital-payments",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-payments",
+  "classIri": "urn:ngm:class:digital-payments",
   "domain": "spatial-computing",
-  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems. bridges-to:: [[Blockchain]]",
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-transactions",
+      "id": "urn:ngm:class:financial-transactions",
       "label": "Financial Transactions"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:payment-processor",
+        "id": "urn:ngm:class:payment-processor",
         "label": "Payment Processor"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-transfer",
+        "id": "urn:ngm:class:cross-border-transfer",
         "label": "Cross-Border Transfer"
       },
       {
-        "id": "urn:visionflow:linked:virtual-purchases",
+        "id": "urn:ngm:class:virtual-purchases",
         "label": "Virtual Purchases"
       },
       {
-        "id": "urn:visionflow:owl:class:e-commerce",
+        "id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

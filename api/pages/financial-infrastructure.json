@@ -3,19 +3,18 @@
   "title": "Financial Infrastructure",
   "slug": "financial-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:financial-infrastructure",
+  "classIri": "urn:ngm:class:financial-infrastructure",
   "domain": "infrastructure",
-  "definition": "Financial Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Financial Infrastructure is a type of Economic Layer in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:economic-layer",
+      "id": "urn:ngm:class:economic-layer",
       "label": "Economic Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

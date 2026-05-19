@@ -3,82 +3,95 @@
   "title": "Cross-Platform Compliance Hub",
   "slug": "cross-platform-compliance-hub",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-platform-compliance-hub",
+  "classIri": "urn:ngm:class:cross-platform-compliance-hub",
   "domain": "artificial-intelligence",
   "definition": "A unified regulatory compliance system that harmonizes and coordinates compliance activities across multiple platforms, jurisdictions, and regulatory frameworks through centralized policy management and audit aggregation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-aggregator",
+        "id": "urn:ngm:class:audit-aggregator",
         "label": "Audit Aggregator"
       },
       {
-        "id": "urn:visionflow:linked:policy-synchronization",
+        "id": "urn:ngm:class:policy-synchronization",
         "label": "Policy Synchronization"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-mapping-engine",
+        "id": "urn:ngm:class:regulatory-mapping-engine",
         "label": "Regulatory Mapping Engine"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-module",
+        "id": "urn:ngm:class:risk-assessment-module",
         "label": "Risk Assessment Module"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-dashboard",
+        "id": "urn:ngm:class:compliance-dashboard",
         "label": "Compliance Dashboard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:multi-jurisdictional-policy-store",
+        "id": "urn:ngm:class:multi-jurisdictional-policy-store",
         "label": "Multi-Jurisdictional Policy Store"
       },
       {
-        "id": "urn:visionflow:linked:reporting-engine",
+        "id": "urn:ngm:class:reporting-engine",
         "label": "Reporting Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-auditing",
+        "id": "urn:ngm:class:cross-platform-auditing",
         "label": "Cross-Platform Auditing"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-harmonization",
+        "id": "urn:ngm:class:regulatory-harmonization",
         "label": "Regulatory Harmonization"
       },
       {
-        "id": "urn:visionflow:linked:unified-compliance-reporting",
+        "id": "urn:ngm:class:unified-compliance-reporting",
         "label": "Unified Compliance Reporting"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-infrastructure",
+        "label": "Governance Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance-framework",
+        "label": "Regulatory Compliance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

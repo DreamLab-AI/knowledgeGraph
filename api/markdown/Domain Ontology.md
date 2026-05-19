@@ -544,344 +544,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:domain-ontology",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:domain-ontology",
+  "@type": "Class",
   "label": "Domain Ontology",
+  "definition": "A Domain Ontology is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), followi...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:conceptual-model",
-      "vc:label": "Conceptual Model"
+      "@id": "urn:ngm:class:conceptual-model",
+      "label": "Conceptual Model"
     },
     {
-      "@id": "urn:visionflow:linked:formal-specification",
-      "vc:label": "Formal Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-representation-artifact",
-      "vc:label": "Knowledge Representation Artifact"
+      "@id": "urn:ngm:class:formal-specification",
+      "label": "Formal Specification"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ace2030e133f2e6874cd2e2291c62921ed9b7b32e032bdec4db823b90de5134d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:annotation-property",
+        "label": "Annotation Property"
+      },
+      {
+        "@id": "urn:ngm:class:axiom-set",
+        "label": "Axiom Set"
+      },
+      {
+        "@id": "urn:ngm:class:class-hierarchy",
+        "label": "Class Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:data-property",
+        "label": "Data Property"
+      },
+      {
+        "@id": "urn:ngm:class:named-individual",
+        "label": "Named Individual"
+      },
+      {
+        "@id": "urn:ngm:class:namespace-iri",
+        "label": "Namespace IRI"
+      },
+      {
+        "@id": "urn:ngm:class:object-property",
+        "label": "Object Property"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-design-pattern",
+        "label": "Ontology Design Pattern"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conceptualisation",
+        "label": "Conceptualisation"
+      },
+      {
+        "@id": "urn:ngm:class:domain-expert",
+        "label": "Domain Expert"
+      },
+      {
+        "@id": "urn:ngm:class:identifier-scheme",
+        "label": "Identifier Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-engineer",
+        "label": "Knowledge Engineer"
+      },
+      {
+        "@id": "urn:ngm:class:logical-formalism",
+        "label": "Logical Formalism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:fair-data-principles",
+        "label": "FAIR Data Principles"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-reuse",
+        "label": "Knowledge Reuse"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-publication",
+        "label": "Linked Data Publication"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:closed-world-negation-as-failure",
+        "label": "Closed-World Negation as Failure"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open-World Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:owl-2-semantics",
+        "label": "OWL 2 Semantics"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      },
+      {
+        "@id": "urn:ngm:class:skos-concept-scheme",
+        "label": "SKOS Concept Scheme"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ontology-design-patterns",
+        "label": "Ontology Design Patterns"
+      },
+      {
+        "@id": "urn:ngm:class:owl-2",
+        "label": "OWL 2"
+      },
+      {
+        "@id": "urn:ngm:class:prot-g",
+        "label": "Protégé"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-rdfs",
+        "label": "RDF/RDFS"
+      },
+      {
+        "@id": "urn:ngm:class:sh-ex",
+        "label": "ShEx"
+      },
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:tableaux-reasoning",
+        "label": "Tableaux Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:application-ontology",
+        "label": "Application Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      },
+      {
+        "@id": "urn:ngm:class:upper-ontology",
+        "label": "Upper Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:linked-open-data",
+        "label": "Linked Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-data-sharing",
+        "label": "Scientific Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-21127-cidoc-crm",
+        "label": "ISO 21127 CIDOC CRM"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-21838-2-bfo",
+        "label": "ISO/IEC 21838-2 BFO"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-24707-common-logic",
+        "label": "ISO/IEC 24707 Common Logic"
+      },
+      {
+        "@id": "urn:ngm:class:obo-foundry",
+        "label": "OBO Foundry"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-owl-2",
+        "label": "W3C OWL 2"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-rdf-1-1",
+        "label": "W3C RDF 1.1"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-skos",
+        "label": "W3C SKOS"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-sparql-1-1",
+        "label": "W3C SPARQL 1.1"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ace2030e133f2e6874cd2e2291c62921ed9b7b32e032bdec4db823b90de5134d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A **Domain Ontology** is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), following Tom Gruber's foundational 1993 definition \"a specification of a conceptualization\" as extended by Studer, Benjamins and Fensel (1998) to \"a formal, explicit specification of a shared conceptualization\", encoded in description-logic-grounded representation languages (W3C OWL 2 with EL/QL/RL/DL profiles, RDF/RDFS, SKOS for concept hierarchies, Common Logic ISO/IEC 24707, KIF Knowledge Interchange Format, Frame Logic F-Logic) and materialising four constituent layers: a **terminological component (TBox)** declaring named classes (rdfs:Class, owl:Class), object properties (owl:ObjectProperty) and data properties (owl:DataProperty) along with axiomatic relationships SubClassOf, EquivalentClasses, DisjointClasses, ObjectSomeValuesFrom, ObjectAllValuesFrom, cardinality restrictions and property characteristics (Transitive, Symmetric, Functional, InverseFunctional, Asymmetric, Reflexive, Irr",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:annotation-property",
-      "vc:label": "Annotation Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:axiom-set",
-      "vc:label": "Axiom Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:class-hierarchy",
-      "vc:label": "Class Hierarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-property",
-      "vc:label": "Data Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:named-individual",
-      "vc:label": "Named Individual"
-    },
-    {
-      "@id": "urn:visionflow:linked:namespace-iri",
-      "vc:label": "Namespace IRI"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-property",
-      "vc:label": "Object Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-design-pattern",
-      "vc:label": "Ontology Design Pattern"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conceptualisation",
-      "vc:label": "Conceptualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-expert",
-      "vc:label": "Domain Expert"
-    },
-    {
-      "@id": "urn:visionflow:linked:identifier-scheme",
-      "vc:label": "Identifier Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-engineer",
-      "vc:label": "Knowledge Engineer"
-    },
-    {
-      "@id": "urn:visionflow:linked:logical-formalism",
-      "vc:label": "Logical Formalism"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-reasoning",
-      "vc:label": "Automated Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-data-principles",
-      "vc:label": "FAIR Data Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-reuse",
-      "vc:label": "Knowledge Reuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data-publication",
-      "vc:label": "Linked Data Publication"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-integration",
-      "vc:label": "Data Integration"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:closed-world-negation-as-failure",
-      "vc:label": "Closed-World Negation as Failure"
-    },
-    {
-      "@id": "urn:visionflow:linked:description-logic",
-      "vc:label": "Description Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-world-assumption",
-      "vc:label": "Open-World Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl-2-semantics",
-      "vc:label": "OWL 2 Semantics"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-schema",
-      "vc:label": "RDF Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:skos-concept-scheme",
-      "vc:label": "SKOS Concept Scheme"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:description-logic",
-      "vc:label": "Description Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:first-order-logic",
-      "vc:label": "First-Order Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-theory",
-      "vc:label": "Model Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:set-theory",
-      "vc:label": "Set Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:linked-open-data",
-      "vc:label": "Linked Open Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-data-sharing",
-      "vc:label": "Scientific Data Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:clinical-decision-support",
-      "vc:label": "Clinical Decision Support"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ontology-design-patterns",
-      "vc:label": "Ontology Design Patterns"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl-2",
-      "vc:label": "OWL 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:prot-g",
-      "vc:label": "Protégé"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-rdfs",
-      "vc:label": "RDF/RDFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:sh-ex",
-      "vc:label": "ShEx"
-    },
-    {
-      "@id": "urn:visionflow:linked:shacl",
-      "vc:label": "SHACL"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:tableaux-reasoning",
-      "vc:label": "Tableaux Reasoning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:document-schema",
-      "vc:label": "Document Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:folksonomy",
-      "vc:label": "Folksonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:natural-language-knowledge-base",
-      "vc:label": "Natural Language Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-graph",
-      "vc:label": "Property Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:relational-schema",
-      "vc:label": "Relational Schema"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:application-ontology",
-      "vc:label": "Application Ontology"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-alignment",
-      "vc:label": "Ontology Alignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-org",
-      "vc:label": "Schema.org"
-    },
-    {
-      "@id": "urn:visionflow:linked:taxonomy",
-      "vc:label": "Taxonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:thesaurus",
-      "vc:label": "Thesaurus"
-    },
-    {
-      "@id": "urn:visionflow:linked:upper-ontology",
-      "vc:label": "Upper Ontology"
-    },
-    {
-      "@id": "urn:visionflow:linked:wikidata",
-      "vc:label": "Wikidata"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iso-21127-cidoc-crm",
-      "vc:label": "ISO 21127 CIDOC CRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-21838-2-bfo",
-      "vc:label": "ISO/IEC 21838-2 BFO"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-24707-common-logic",
-      "vc:label": "ISO/IEC 24707 Common Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:obo-foundry",
-      "vc:label": "OBO Foundry"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-owl-2",
-      "vc:label": "W3C OWL 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-rdf-1-1",
-      "vc:label": "W3C RDF 1.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-skos",
-      "vc:label": "W3C SKOS"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-sparql-1-1",
-      "vc:label": "W3C SPARQL 1.1"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

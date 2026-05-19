@@ -3,78 +3,87 @@
   "title": "Human Interface Device",
   "slug": "human-interface-device",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-interface-device",
+  "classIri": "urn:ngm:class:human-interface-device",
   "domain": "spatial-computing",
   "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:communication-interface",
+        "id": "urn:ngm:class:communication-interface",
         "label": "Communication Interface"
       },
       {
-        "id": "urn:visionflow:linked:input-sensors",
+        "id": "urn:ngm:class:input-sensors",
         "label": "Input Sensors"
       },
       {
-        "id": "urn:visionflow:linked:output-actuators",
+        "id": "urn:ngm:class:output-actuators",
         "label": "Output Actuators"
       },
       {
-        "id": "urn:visionflow:linked:tracking-components",
+        "id": "urn:ngm:class:tracking-components",
         "label": "Tracking Components"
       },
       {
-        "id": "urn:visionflow:owl:class:haptics",
+        "id": "urn:ngm:class:haptics",
         "label": "Haptics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
       {
-        "id": "urn:visionflow:linked:device-drivers",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Drivers"
       },
       {
-        "id": "urn:visionflow:linked:power-management",
+        "id": "urn:ngm:class:power-management",
         "label": "Power Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-input",
+        "id": "urn:ngm:class:user-input",
         "label": "User Input"
       },
       {
-        "id": "urn:visionflow:owl:class:haptic-feedback",
+        "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-tracking",
+        "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "id": "urn:ngm:class:spatial-interaction",
         "label": "Spatial Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interaction-system",
+        "label": "Interaction System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

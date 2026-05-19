@@ -3,19 +3,18 @@
   "title": "Etsi Domain Immersive",
   "slug": "etsi-domain-immersive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-immersive",
+  "classIri": "urn:ngm:class:etsi-domain-immersive",
   "domain": "spatial-computing",
-  "definition": "The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.",
+  "definition": "The ETSI technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:etsi-standards",
+      "id": "urn:ngm:class:etsi-standards",
       "label": "ETSI Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

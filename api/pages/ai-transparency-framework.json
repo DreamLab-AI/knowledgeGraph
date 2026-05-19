@@ -3,53 +3,57 @@
   "title": "Ai Transparency Framework",
   "slug": "ai-transparency-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-transparency-framework",
+  "classIri": "urn:ngm:class:ai-transparency-framework",
   "domain": "artificial-intelligence",
-  "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential impacts.",
+  "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential i...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audit-mechanisms",
+        "id": "urn:ngm:class:audit-mechanisms",
         "label": "Audit Mechanisms"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-communication",
+        "id": "urn:ngm:class:stakeholder-communication",
         "label": "Stakeholder Communication"
       },
       {
-        "id": "urn:visionflow:owl:class:documentation-standards",
+        "id": "urn:ngm:class:documentation-standards",
         "label": "Documentation Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:visionflow:owl:class:explainable-ai",
+        "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -476,390 +476,315 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:kohya-dreambooth-and-similar",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+  "@type": "Class",
   "label": "KOHYA Dreambooth and similar",
+  "definition": "Ecosystem of open-source toolchains, training modologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale [[Diffusion Models]] — principally [[Stable Diffusion]] 1.x/2.x, SDXL, and [[FLUX.1]] — through parameter-efficient adaptation techni...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
+      "@id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
     },
     {
-      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
-      "vc:label": "Parameter-Efficient Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
+      "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c5b70f13bec1f281b5094fff8c7eccaffd5239b646981739be513bcc92f219b0"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accelerate-training-framework",
+        "label": "Accelerate Training Framework"
+      },
+      {
+        "@id": "urn:ngm:class:blip-2-captioner",
+        "label": "BLIP-2 Captioner"
+      },
+      {
+        "@id": "urn:ngm:class:dataset-captioner",
+        "label": "Dataset Captioner"
+      },
+      {
+        "@id": "urn:ngm:class:do-ra",
+        "label": "DoRA"
+      },
+      {
+        "@id": "urn:ngm:class:dreambooth",
+        "label": "Dreambooth"
+      },
+      {
+        "@id": "urn:ngm:class:ly-coris",
+        "label": "LyCORIS"
+      },
+      {
+        "@id": "urn:ngm:class:noise-scheduler",
+        "label": "Noise Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-bucketing",
+        "label": "Resolution Bucketing"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:wd14-tagger",
+        "label": "WD14 Tagger"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:base-model",
+        "label": "Base Model"
+      },
+      {
+        "@id": "urn:ngm:class:caption-files",
+        "label": "Caption Files"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:python-environment",
+        "label": "Python Environment"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-art-generation",
+        "label": "AI Art Generation"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflow-integration",
+        "label": "ComfyUI Workflow Integration"
+      },
+      {
+        "@id": "urn:ngm:class:concept-lo-ra-training",
+        "label": "Concept LoRA Training"
+      },
+      {
+        "@id": "urn:ngm:class:custom-image-generation",
+        "label": "Custom Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:flux-lo-ra",
+        "label": "FLUX LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-marketplace-distribution",
+        "label": "LoRA Marketplace Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:subject-fidelity",
+        "label": "Subject Fidelity"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cached-latent-encoding",
+        "label": "Cached Latent Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:do-ra",
+        "label": "DoRA"
+      },
+      {
+        "@id": "urn:ngm:class:dream-booth-lo-ra",
+        "label": "DreamBooth LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:dreambooth-training",
+        "label": "Dreambooth Training"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low Rank Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:ly-coris",
+        "label": "LyCORIS"
+      },
+      {
+        "@id": "urn:ngm:class:min-snr-gamma-weighting",
+        "label": "Min-SNR Gamma Weighting"
+      },
+      {
+        "@id": "urn:ngm:class:pivotal-tuning",
+        "label": "Pivotal Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-bucketing",
+        "label": "Resolution Bucketing"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adafactor-optimiser",
+        "label": "Adafactor Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:adam-w-optimiser",
+        "label": "AdamW Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:blip-2-captioner",
+        "label": "BLIP-2 Captioner"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "@id": "urn:ngm:class:lla-va",
+        "label": "LLaVA"
+      },
+      {
+        "@id": "urn:ngm:class:prodigy-optimiser",
+        "label": "Prodigy Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors-format",
+        "label": "Safetensors Format"
+      },
+      {
+        "@id": "urn:ngm:class:wd14-tagger",
+        "label": "WD14 Tagger"
+      },
+      {
+        "@id": "urn:ngm:class:x-formers",
+        "label": "xFormers"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:generative-image-models",
+        "label": "Generative Image Models"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "FLUX.1"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:midjourney",
+        "label": "Midjourney"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text to Image"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-art-generation",
+        "label": "AI Art Generation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic1111",
+        "label": "Automatic1111"
+      },
+      {
+        "@id": "urn:ngm:class:civitai",
+        "label": "Civitai"
+      },
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "FLUX.1"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:black-forest-labs-flux-api",
+        "label": "Black Forest Labs FLUX API"
+      },
+      {
+        "@id": "urn:ngm:class:civitai-model-standards",
+        "label": "Civitai Model Standards"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-peft",
+        "label": "Hugging Face PEFT"
+      },
+      {
+        "@id": "urn:ngm:class:kohya-naming-convention",
+        "label": "Kohya Naming Convention"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c5b70f13bec1f281b5094fff8c7eccaffd5239b646981739be513bcc92f219b0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Ecosystem of open-source toolchains, training methodologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale [[Diffusion Models]] — principally [[Stable Diffusion]] 1.x/2.x, SDXL, and [[FLUX.1]] — through parameter-efficient adaptation techniques that adjust billion-parameter base models to bespoke visual subjects, artistic styles, or novel concepts using datasets of 5–200 curated images in 5–40 minutes on consumer GPUs (RTX 3090/4090 24GB, A100 40/80GB). The dominant training toolchain is kohya-ss/sd-scripts (Kohya Shintaro, Japan), a CLI-first Python-and-Accelerate framework covering SD 1.x, SD 2.x, SDXL, and [[FLUX.1]] via discrete training scripts (train_network.py for LoRA, sdxl_train.py for SDXL Dreambooth, flux_train_network.py for FLUX.1 LoRA) configurable via TOML config files; the companion GUI fork bmaltais/kohya_ss (Brad Maltais, Canada) wraps the identical sd-scripts backend in a Gradio web interface with Docker deployment via ashleykza/kohya:latest. Competing alternatives include OneTrainer (Nerogar, Germany) targeting SD/SDXL/FLUX/HiDream with EMA averaging and multi-concept datasets; AI Toolkit / Ostris (Ryan",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accelerate-training-framework",
-      "vc:label": "Accelerate Training Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:blip-2-captioner",
-      "vc:label": "BLIP-2 Captioner"
-    },
-    {
-      "@id": "urn:visionflow:linked:dataset-captioner",
-      "vc:label": "Dataset Captioner"
-    },
-    {
-      "@id": "urn:visionflow:linked:do-ra",
-      "vc:label": "DoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dreambooth",
-      "vc:label": "Dreambooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:ly-coris",
-      "vc:label": "LyCORIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-scheduler",
-      "vc:label": "Noise Scheduler"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-bucketing",
-      "vc:label": "Resolution Bucketing"
-    },
-    {
-      "@id": "urn:visionflow:linked:textual-inversion",
-      "vc:label": "Textual Inversion"
-    },
-    {
-      "@id": "urn:visionflow:linked:wd14-tagger",
-      "vc:label": "WD14 Tagger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:base-model",
-      "vc:label": "Base Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:caption-files",
-      "vc:label": "Caption Files"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-environment",
-      "vc:label": "Python Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-dataset",
-      "vc:label": "Training Dataset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-art-generation",
-      "vc:label": "AI Art Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-workflow-integration",
-      "vc:label": "ComfyUI Workflow Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:concept-lo-ra-training",
-      "vc:label": "Concept LoRA Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:custom-image-generation",
-      "vc:label": "Custom Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:flux-lo-ra",
-      "vc:label": "FLUX LoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-marketplace-distribution",
-      "vc:label": "LoRA Marketplace Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:subject-fidelity",
-      "vc:label": "Subject Fidelity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cached-latent-encoding",
-      "vc:label": "Cached Latent Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:do-ra",
-      "vc:label": "DoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dream-booth-lo-ra",
-      "vc:label": "DreamBooth LoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dreambooth-training",
-      "vc:label": "Dreambooth Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-rank-adaptation",
-      "vc:label": "Low Rank Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ly-coris",
-      "vc:label": "LyCORIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:min-snr-gamma-weighting",
-      "vc:label": "Min-SNR Gamma Weighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:pivotal-tuning",
-      "vc:label": "Pivotal Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-bucketing",
-      "vc:label": "Resolution Bucketing"
-    },
-    {
-      "@id": "urn:visionflow:linked:textual-inversion",
-      "vc:label": "Textual Inversion"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:accelerate",
-      "vc:label": "Accelerate"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitsandbytes",
-      "vc:label": "bitsandbytes"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-diffusers",
-      "vc:label": "Hugging Face Diffusers"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-art-generation",
-      "vc:label": "AI Art Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic1111",
-      "vc:label": "Automatic1111"
-    },
-    {
-      "@id": "urn:visionflow:linked:civitai",
-      "vc:label": "Civitai"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-ai",
-      "vc:label": "Creative AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:invoke-ai",
-      "vc:label": "InvokeAI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "FLUX.1"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adafactor-optimiser",
-      "vc:label": "Adafactor Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:adam-w-optimiser",
-      "vc:label": "AdamW Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:blip-2-captioner",
-      "vc:label": "BLIP-2 Captioner"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "FlashAttention"
-    },
-    {
-      "@id": "urn:visionflow:linked:lla-va",
-      "vc:label": "LLaVA"
-    },
-    {
-      "@id": "urn:visionflow:linked:prodigy-optimiser",
-      "vc:label": "Prodigy Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:safetensors-format",
-      "vc:label": "Safetensors Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:wd14-tagger",
-      "vc:label": "WD14 Tagger"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-formers",
-      "vc:label": "xFormers"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:adapter-layers",
-      "vc:label": "Adapter Layers"
-    },
-    {
-      "@id": "urn:visionflow:linked:full-model-fine-tuning",
-      "vc:label": "Full Model Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:gan-training",
-      "vc:label": "GAN Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:hypernetwork-training",
-      "vc:label": "Hypernetwork Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-tuning",
-      "vc:label": "Prompt Tuning"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:generative-image-models",
-      "vc:label": "Generative Image Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "FLUX.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ip-adapter",
-      "vc:label": "IP Adapter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:midjourney",
-      "vc:label": "Midjourney"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-image",
-      "vc:label": "Text to Image"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:black-forest-labs-flux-api",
-      "vc:label": "Black Forest Labs FLUX API"
-    },
-    {
-      "@id": "urn:visionflow:linked:civitai-model-standards",
-      "vc:label": "Civitai Model Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-peft",
-      "vc:label": "Hugging Face PEFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:kohya-naming-convention",
-      "vc:label": "Kohya Naming Convention"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

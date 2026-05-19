@@ -3,32 +3,36 @@
   "title": "Secondary Market Integration",
   "slug": "secondary-market-integration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:secondary-market-integration",
+  "classIri": "urn:ngm:class:secondary-market-integration",
   "domain": "spatial-computing",
   "definition": "Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-trading",
+      "id": "urn:ngm:class:digital-asset-trading",
       "label": "Digital Asset Trading"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-liquidity",
+        "id": "urn:ngm:class:asset-liquidity",
         "label": "Asset Liquidity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

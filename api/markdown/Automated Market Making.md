@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:automated-market-making",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automated-market-making",
+  "@type": "Class",
   "label": "Automated Market Making",
+  "definition": "Automated Market Making is the practice and modology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation stra...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:de-fi-operations",
-      "vc:label": "DeFi Operations"
+      "@id": "urn:ngm:class:de-fi-operations",
+      "label": "DeFi Operations"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:price-oracle-integration",
+        "label": "Price Oracle Integration"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-deployment",
+        "label": "Smart Contract Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-trading",
+        "label": "Decentralized Trading"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:token-accessibility",
+        "label": "Token Accessibility"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2b6e4dfcce43ed2bed4aaf3e3a8bb6598ae6b34cf8da23084711d15e4a93a2db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:price-oracle-integration",
-      "vc:label": "Price Oracle Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-deployment",
-      "vc:label": "Smart Contract Deployment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-trading",
-      "vc:label": "Decentralized Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-mining",
-      "vc:label": "Liquidity Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-accessibility",
-      "vc:label": "Token Accessibility"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

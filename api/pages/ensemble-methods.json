@@ -3,32 +3,36 @@
   "title": "Ensemble Methods",
   "slug": "ensemble-methods",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ensemble-methods",
+  "classIri": "urn:ngm:class:ensemble-methods",
   "domain": "artificial-intelligence",
-  "definition": "Ensemble Methods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
+  "definition": "Ensemble Mods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:model-combination",
+        "id": "urn:ngm:class:model-combination",
         "label": "Model Combination"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

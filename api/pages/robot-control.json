@@ -3,19 +3,18 @@
   "title": "Robot Control",
   "slug": "robot-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-control",
+  "classIri": "urn:ngm:class:robot-control",
   "domain": "robotics",
-  "definition": "Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
+  "definition": "Robot Control - The systems, algorithms, and modologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics-application",
+      "id": "urn:ngm:class:robotics-application",
       "label": "Robotics Application"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.92,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "corrected",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

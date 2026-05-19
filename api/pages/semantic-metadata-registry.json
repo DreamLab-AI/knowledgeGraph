@@ -3,82 +3,91 @@
   "title": "Semantic Metadata Registry",
   "slug": "semantic-metadata-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:semantic-metadata-registry",
+  "classIri": "urn:ngm:class:semantic-metadata-registry",
   "domain": "infrastructure",
   "definition": "A centralized catalog managing structured metadata schemas, controlled vocabularies, and semantic relationships to enable consistent asset description, cross-platform interoperability, and intelligent discovery.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metadata-registry",
+      "id": "urn:ngm:class:metadata-registry",
       "label": "Metadata Registry"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:metadata-schemas",
+        "id": "urn:ngm:class:metadata-schemas",
         "label": "Metadata Schemas"
       },
       {
-        "id": "urn:visionflow:linked:namespace-management",
+        "id": "urn:ngm:class:namespace-management",
         "label": "Namespace Management"
       },
       {
-        "id": "urn:visionflow:linked:relationship-mappings",
+        "id": "urn:ngm:class:relationship-mappings",
         "label": "Relationship Mappings"
       },
       {
-        "id": "urn:visionflow:linked:schema-versioning",
+        "id": "urn:ngm:class:schema-versioning",
         "label": "Schema Versioning"
       },
       {
-        "id": "urn:visionflow:linked:term-definitions",
+        "id": "urn:ngm:class:term-definitions",
         "label": "Term Definitions"
       },
       {
-        "id": "urn:visionflow:owl:class:controlled-vocabularies",
+        "id": "urn:ngm:class:controlled-vocabularies",
         "label": "Controlled Vocabularies"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:rdf-store",
+        "id": "urn:ngm:class:rdf-store",
         "label": "RDF Store"
       },
       {
-        "id": "urn:visionflow:linked:schema-validator",
+        "id": "urn:ngm:class:schema-validator",
         "label": "Schema Validator"
       },
       {
-        "id": "urn:visionflow:owl:class:vocabulary-services",
+        "id": "urn:ngm:class:vocabulary-services",
         "label": "Vocabulary Services"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-cataloging",
+        "id": "urn:ngm:class:asset-cataloging",
         "label": "Asset Cataloging"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:data-integration",
+        "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-search",
+        "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metadata-management-infrastructure",
+        "label": "Metadata Management Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

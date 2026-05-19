@@ -3,19 +3,18 @@
   "title": "AI Ethics",
   "slug": "ai-ethics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-ethics",
+  "classIri": "urn:ngm:class:ai-ethics",
   "domain": "artificial-intelligence",
-  "definition": "AI Ethics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems. This interdisciplinary field examines issues of fairness, accountability, transparency, privacy, bias mitigation, algorithmic justice, and the societal impact of AI technologies. AI ethics frameworks consider questions of autonomy, consent, human rights, environmental sustainability, and long-term existential risks associated with advanced AI. Practical implementations include ethical AI guidelines, impact assessments, and regulatory compliance mechanisms.",
+  "definition": "AI ics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,86 +3,99 @@
   "title": "Universal Manifest",
   "slug": "universal-manifest",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:universal-manifest",
+  "classIri": "urn:ngm:class:universal-manifest",
   "domain": "spatial-computing",
   "definition": "A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:identity-credentials",
+        "id": "urn:ngm:class:identity-credentials",
         "label": "Identity Credentials"
       },
       {
-        "id": "urn:visionflow:linked:permission-grants",
+        "id": "urn:ngm:class:permission-grants",
         "label": "Permission Grants"
       },
       {
-        "id": "urn:visionflow:linked:provenance-record",
+        "id": "urn:ngm:class:provenance-record",
         "label": "Provenance Record"
       },
       {
-        "id": "urn:visionflow:linked:relationship-graph",
+        "id": "urn:ngm:class:relationship-graph",
         "label": "Relationship Graph"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-registry",
+        "id": "urn:ngm:class:asset-registry",
         "label": "Asset Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:linked:decentralized-identifier",
+        "id": "urn:ngm:class:decentralized-identifier",
         "label": "Decentralized Identifier"
       },
       {
-        "id": "urn:visionflow:linked:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential",
         "label": "Verifiable Credential"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-schema",
+        "id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schema"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-interoperability",
+        "id": "urn:ngm:class:asset-interoperability",
         "label": "Asset Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:decentralized-ownership",
+        "id": "urn:ngm:class:decentralized-ownership",
         "label": "Decentralized Ownership"
       },
       {
-        "id": "urn:visionflow:linked:permissioned-access",
+        "id": "urn:ngm:class:permissioned-access",
         "label": "Permissioned Access"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-portability",
+        "id": "urn:ngm:class:avatar-portability",
         "label": "Avatar Portability"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

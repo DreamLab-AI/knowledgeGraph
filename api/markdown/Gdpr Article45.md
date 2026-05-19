@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gdpr-article45",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gdpr-article45",
+  "@type": "Class",
   "label": "Gdpr Article45",
+  "definition": "The General Data Protection Regulation provision empowering the European Commission to determine wher third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms ope...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-protection-regulation",
-      "vc:label": "Data Protection Regulation"
+      "@id": "urn:ngm:class:data-protection-regulation",
+      "label": "Data Protection Regulation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:df0a5e5a60de8cc93f328a42ea7f7c7a856c77ca319dbe19e207c67bd7013f41"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:df0a5e5a60de8cc93f328a42ea7f7c7a856c77ca319dbe19e207c67bd7013f41@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The General Data Protection Regulation provision empowering the European Commission to determine whether third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms operating across international boundaries.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

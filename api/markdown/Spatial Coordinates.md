@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-coordinates",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-coordinates",
+  "@type": "Class",
   "label": "Spatial Coordinates",
+  "definition": "A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformat...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:coordinate-system",
-      "vc:label": "Coordinate System"
+      "@id": "urn:ngm:class:coordinate-system",
+      "label": "Coordinate System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1f5426818faf47dc9f44e15f5f747acfc95e5f9aaa7e95a65bdf44643dc1fb41"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:object-positioning",
+        "label": "Object Positioning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1f5426818faf47dc9f44e15f5f747acfc95e5f9aaa7e95a65bdf44643dc1fb41@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformation between systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:object-positioning",
-      "vc:label": "Object Positioning"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

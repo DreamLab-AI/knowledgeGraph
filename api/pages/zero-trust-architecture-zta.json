@@ -3,90 +3,103 @@
   "title": "Zero-Trust Architecture (ZTA)",
   "slug": "zero-trust-architecture-zta",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:zero-trust-architecture-zta",
+  "classIri": "urn:ngm:class:zero-trust-architecture-zta",
   "domain": "spatial-computing",
   "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-architecture",
+      "id": "urn:ngm:class:security-architecture",
       "label": "Security Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:continuous-verification",
+        "id": "urn:ngm:class:continuous-verification",
         "label": "Continuous Verification"
       },
       {
-        "id": "urn:visionflow:linked:least-privilege-access-control",
+        "id": "urn:ngm:class:least-privilege-access-control",
         "label": "Least-Privilege Access Control"
       },
       {
-        "id": "urn:visionflow:linked:policy-decision-point",
+        "id": "urn:ngm:class:policy-decision-point",
         "label": "Policy Decision Point"
       },
       {
-        "id": "urn:visionflow:linked:policy-enforcement-point",
+        "id": "urn:ngm:class:policy-enforcement-point",
         "label": "Policy Enforcement Point"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-engine",
+        "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:device-authentication",
+        "id": "urn:ngm:class:device-authentication",
         "label": "Device Authentication"
       },
       {
-        "id": "urn:visionflow:linked:encryption",
+        "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       },
       {
-        "id": "urn:visionflow:linked:logging-and-monitoring",
+        "id": "urn:ngm:class:logging-and-monitoring",
         "label": "Logging and Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:network-segmentation",
+        "id": "urn:ngm:class:network-segmentation",
         "label": "Network Segmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:breach-containment",
+        "id": "urn:ngm:class:breach-containment",
         "label": "Breach Containment"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-access-control",
+        "id": "urn:ngm:class:dynamic-access-control",
         "label": "Dynamic Access Control"
       },
       {
-        "id": "urn:visionflow:linked:insider-threat-mitigation",
+        "id": "urn:ngm:class:insider-threat-mitigation",
         "label": "Insider Threat Mitigation"
       },
       {
-        "id": "urn:visionflow:linked:microsegmentation",
+        "id": "urn:ngm:class:microsegmentation",
         "label": "Microsegmentation"
       },
       {
-        "id": "urn:visionflow:linked:threat-detection",
+        "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
+      },
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

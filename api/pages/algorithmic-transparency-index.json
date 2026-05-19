@@ -3,86 +3,99 @@
   "title": "Algorithmic Transparency Index",
   "slug": "algorithmic-transparency-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:algorithmic-transparency-index",
+  "classIri": "urn:ngm:class:algorithmic-transparency-index",
   "domain": "artificial-intelligence",
   "definition": "A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance-framework",
+      "id": "urn:ngm:class:ai-governance-framework",
       "label": "AI Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bias-detection-metrics",
+        "id": "urn:ngm:class:bias-detection-metrics",
         "label": "Bias Detection Metrics"
       },
       {
-        "id": "urn:visionflow:linked:disclosure-requirements",
+        "id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Requirements"
       },
       {
-        "id": "urn:visionflow:linked:explainability-metrics",
+        "id": "urn:ngm:class:explainability-metrics",
         "label": "Explainability Metrics"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:documentation-standards",
+        "id": "urn:ngm:class:documentation-standards",
         "label": "Documentation Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:performance-metrics",
+        "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audit-mechanism",
+        "id": "urn:ngm:class:audit-mechanism",
         "label": "Audit Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:decision-logging",
+        "id": "urn:ngm:class:decision-logging",
         "label": "Decision Logging"
       },
       {
-        "id": "urn:visionflow:linked:model-documentation",
+        "id": "urn:ngm:class:model-documentation",
         "label": "Model Documentation"
       },
       {
-        "id": "urn:visionflow:owl:class:data-provenance",
+        "id": "urn:ngm:class:data-provenance",
         "label": "Data Provenance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-accountability",
+        "id": "urn:ngm:class:ai-accountability",
         "label": "AI Accountability"
       },
       {
-        "id": "urn:visionflow:linked:algorithmic-auditing",
+        "id": "urn:ngm:class:algorithmic-auditing",
         "label": "Algorithmic Auditing"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-trust",
+        "id": "urn:ngm:class:stakeholder-trust",
         "label": "Stakeholder Trust"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability-system",
+        "label": "Algorithmic Accountability System"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

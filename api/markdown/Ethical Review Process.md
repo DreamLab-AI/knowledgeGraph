@@ -132,52 +132,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ethical-review-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ethical-review-process",
+  "@type": "Class",
   "label": "Ethical Review Process",
+  "definition": "ical Review Process is a structured modology for evaluating AI systems against ical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ically responsible AI development and deployment.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:59127f1a3315446241a9d4024033d7197427f71b16df633f7a042f7e1f7d2fb3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:59127f1a3315446241a9d4024033d7197427f71b16df633f7a042f7e1f7d2fb3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ethically responsible AI development and deployment. This process applies established ethical frameworks (consequentialist, deontological, virtue ethics, care ethics, justice frameworks) to assess AI systems, identifying potential harms, benefits, rights violations, and value conflicts. The review process typically follows defined stages: proposal submission with system description and ethical self-assessment, initial screening to determine review level (exempt, expedited, full review) based on risk classification, expert deliberation by AI ethics board or review committee analyzing ethical implications across fairness, privacy, autonomy, safety, and accountability dimensions, stakeholder consultation soliciting affected community perspectives, ethical decision-making producing approval, conditional approval, deferral, or rejection with documented rationale, and ongoing monitoring of deployed systems with periodic re-review. Review criteria",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

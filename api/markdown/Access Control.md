@@ -136,72 +136,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:access-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:access-control",
+  "@type": "Class",
   "label": "Access Control",
+  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:security-mechanism",
-      "vc:label": "Security Mechanism"
+      "@id": "urn:ngm:class:security-mechanism",
+      "label": "Security Mechanism"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7671efc514c975326ef19499b3ebc0308fdab9c6ec78ee95fc861f030f7332f6"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:system-security",
+        "label": "System Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:permission-management",
+        "label": "Permission Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7671efc514c975326ef19499b3ebc0308fdab9c6ec78ee95fc861f030f7332f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance",
-      "vc:label": "Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-security",
-      "vc:label": "System Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:authorisation",
-      "vc:label": "Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:permission-management",
-      "vc:label": "Permission Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

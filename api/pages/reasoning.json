@@ -3,171 +3,299 @@
   "title": "Reasoning",
   "slug": "reasoning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reasoning",
+  "classIri": "urn:ngm:class:reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context. The field spans the full spectrum from fast, pattern-driven inference (System 1 in dual-process cognitive theory, Stanovich & West 2000; Kahneman 2011) through slow, deliberate, step-by-step logical analysis (System 2). A now-dominant class of test-time compute scaling methods allocates additional compute budget at inference for models to search, verify, and self-correct intermediate steps before emitting a final answer. Modern AI reasoning research covers five interlocking sub-fields: (1) **Prompting-level interventions** \u2014 chain-of-thought (CoT) eliciting intermediate reasoning steps in natural language (Wei et al., Google Brain, NeurIPS 2022) across both few-shot exemplar mode and zero-shot mode (Kojima et al. NeurIPS 2022); self-consistency sampling k independent CoT paths and selecting majority-vote answers (Wang et al., Google Brain, ICLR 2023); Tree-of-Thoughts (ToT) exploring branching deliberation trees with BFS/DFS backtracking (Yao et al., Princeton/DeepMind, N",
+  "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:formal-verification",
+      "id": "urn:ngm:class:formal-verification",
       "label": "Formal Verification"
     },
     {
-      "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+      "id": "urn:ngm:class:artificial-general-intelligence",
       "label": "Artificial General Intelligence"
-    },
-    {
-      "id": "urn:visionflow:owl:class:knowledge-representation",
-      "label": "Knowledge Representation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:beam-search",
+        "id": "urn:ngm:class:beam-search",
         "label": "Beam Search"
       },
       {
-        "id": "urn:visionflow:linked:chain-of-thought-prompting",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "id": "urn:visionflow:linked:extended-thinking",
+        "id": "urn:ngm:class:extended-thinking",
         "label": "Extended Thinking"
       },
       {
-        "id": "urn:visionflow:linked:outcome-reward-model",
+        "id": "urn:ngm:class:outcome-reward-model",
         "label": "Outcome Reward Model"
       },
       {
-        "id": "urn:visionflow:linked:process-reward-model",
+        "id": "urn:ngm:class:process-reward-model",
         "label": "Process Reward Model"
       },
       {
-        "id": "urn:visionflow:linked:re-act",
+        "id": "urn:ngm:class:re-act",
         "label": "ReAct"
       },
       {
-        "id": "urn:visionflow:linked:scratchpad-computation",
+        "id": "urn:ngm:class:scratchpad-computation",
         "label": "Scratchpad Computation"
       },
       {
-        "id": "urn:visionflow:linked:self-consistency",
+        "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
       },
       {
-        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thoughts"
       },
       {
-        "id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+        "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:benchmarks",
+        "id": "urn:ngm:class:benchmarks",
         "label": "Benchmarks"
       },
       {
-        "id": "urn:visionflow:linked:formal-verification",
+        "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-graphs",
+        "id": "urn:ngm:class:knowledge-graphs",
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:transformers",
+        "id": "urn:ngm:class:transformers",
         "label": "Transformers"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:formal-verification",
+        "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "id": "urn:visionflow:linked:mathematical-reasoning",
+        "id": "urn:ngm:class:mathematical-reasoning",
         "label": "Mathematical Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:planning",
+        "id": "urn:ngm:class:planning",
         "label": "Planning"
       },
       {
-        "id": "urn:visionflow:linked:scientific-discovery",
+        "id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Discovery"
       },
       {
-        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:agents",
+        "id": "urn:ngm:class:agents",
         "label": "Agents"
       },
       {
-        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:chain-of-thought-prompting",
+        "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "id": "urn:visionflow:linked:neuro-symbolic-ai",
+        "id": "urn:ngm:class:neuro-symbolic-ai",
         "label": "Neuro-Symbolic AI"
       },
       {
-        "id": "urn:visionflow:linked:re-act",
+        "id": "urn:ngm:class:re-act",
         "label": "ReAct"
       },
       {
-        "id": "urn:visionflow:linked:self-consistency",
+        "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
       },
       {
-        "id": "urn:visionflow:linked:test-time-compute",
+        "id": "urn:ngm:class:test-time-compute",
         "label": "Test-Time Compute"
       },
       {
-        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thoughts"
       },
       {
-        "id": "urn:visionflow:owl:class:monte-carlo-tree-search",
+        "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:lean",
+        "label": "Lean"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aime-benchmark",
+        "label": "AIME Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:arc-agi",
+        "label": "ARC-AGI"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:gpqa-benchmark",
+        "label": "GPQA Benchmark"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
   },
   "wikilinks": [
     {

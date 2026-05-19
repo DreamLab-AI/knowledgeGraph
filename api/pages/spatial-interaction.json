@@ -3,32 +3,36 @@
   "title": "Spatial Interaction",
   "slug": "spatial-interaction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-interaction",
+  "classIri": "urn:ngm:class:spatial-interaction",
   "domain": "spatial-computing",
-  "definition": "The design and implementation of user input methods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
+  "definition": "The design and implementation of user input mods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-user-experience",
+        "id": "urn:ngm:class:immersive-user-experience",
         "label": "Immersive User Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-audio-processor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-audio-processor",
+  "@type": "Class",
   "label": "Spatial Audio Processor",
+  "definition": "Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive au...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:audio-processing-system",
-      "vc:label": "Audio Processing System"
+      "@id": "urn:ngm:class:audio-processing-system",
+      "label": "Audio Processing System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7651aed8fcc8d20a70f1171158c1edd5022537b61fe8390179319e2aa7e7fa7d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-sound-rendering",
+        "label": "3D Sound Rendering"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7651aed8fcc8d20a70f1171158c1edd5022537b61fe8390179319e2aa7e7fa7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive audio experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-sound-rendering",
-      "vc:label": "3D Sound Rendering"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

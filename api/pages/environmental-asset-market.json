@@ -3,32 +3,36 @@
   "title": "Environmental Asset Market",
   "slug": "environmental-asset-market",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:environmental-asset-market",
+  "classIri": "urn:ngm:class:environmental-asset-market",
   "domain": "spatial-computing",
   "definition": "Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-market",
+      "id": "urn:ngm:class:digital-asset-market",
       "label": "Digital Asset Market"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:sustainable-finance",
+        "id": "urn:ngm:class:sustainable-finance",
         "label": "Sustainable Finance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

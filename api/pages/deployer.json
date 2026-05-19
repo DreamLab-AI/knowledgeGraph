@@ -3,19 +3,18 @@
   "title": "Deployer",
   "slug": "deployer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:deployer",
+  "classIri": "urn:ngm:class:deployer",
   "domain": "infrastructure",
-  "definition": "A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity. bridges-to:: [[Autonomous Robot]]",
+  "definition": "Deployer is a type of Digital Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

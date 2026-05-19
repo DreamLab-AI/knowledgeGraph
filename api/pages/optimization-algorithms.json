@@ -3,19 +3,13 @@
   "title": "Optimization Algorithms",
   "slug": "optimization-algorithms",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:optimization-algorithms",
+  "classIri": "urn:ngm:class:optimization-algorithms",
   "domain": "artificial-intelligence",
-  "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based mods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -204,132 +204,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:identity-federation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:identity-federation",
+  "@type": "Class",
   "label": "Identity Federation",
+  "definition": "A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a7913404eaa6548d62f84e0b4cae1580355600be1244a426de3ee6088102c93"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attribute-exchange",
+        "label": "Attribute Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:credential-mapping",
+        "label": "Credential Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:policy-negotiation",
+        "label": "Policy Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:session-propagation",
+        "label": "Session Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:token-translation",
+        "label": "Token Translation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-exchange",
+        "label": "Metadata Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider-id-p",
+        "label": "Identity Provider (IdP)"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:b2-b-collaboration",
+        "label": "B2B Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:cross-domain-sso",
+        "label": "Cross-Domain SSO"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:multi-organization-access",
+        "label": "Multi-Organization Access"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-authentication-architecture",
+        "label": "Distributed Authentication Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a7913404eaa6548d62f84e0b4cae1580355600be1244a426de3ee6088102c93@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A distributed authentication workflow that enables cross-domain identity linking through trust relationships, allowing users to access resources across multiple organizations using a single set of credentials.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:distributed-authentication-architecture",
-      "vc:label": "Distributed Authentication Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attribute-exchange",
-      "vc:label": "Attribute Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-mapping",
-      "vc:label": "Credential Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-negotiation",
-      "vc:label": "Policy Negotiation"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-propagation",
-      "vc:label": "Session Propagation"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-translation",
-      "vc:label": "Token Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-establishment",
-      "vc:label": "Trust Establishment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:federation-protocol",
-      "vc:label": "Federation Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-exchange",
-      "vc:label": "Metadata Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider-id-p",
-      "vc:label": "Identity Provider (IdP)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:b2-b-collaboration",
-      "vc:label": "B2B Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-domain-sso",
-      "vc:label": "Cross-Domain SSO"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-identity",
-      "vc:label": "Decentralized Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-organization-access",
-      "vc:label": "Multi-Organization Access"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:attribute-schema",
-      "vc:label": "Attribute Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:federation-agreement",
-      "vc:label": "Federation Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:pki-infrastructure",
-      "vc:label": "PKI Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-token",
-      "vc:label": "Security Token"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:knowledge-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-sharing",
+  "@type": "Class",
   "label": "Knowledge Sharing",
+  "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:collaborative-technology",
-      "vc:label": "Collaborative Technology"
+      "@id": "urn:ngm:class:collaborative-technology",
+      "label": "Collaborative Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3cc0cf61f3bc2598cff135ff598252277ccd0f61cc7eb9d818850629ddbd93d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3cc0cf61f3bc2598cff135ff598252277ccd0f61cc7eb9d818850629ddbd93d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-team-collaboration",
-      "vc:label": "Distributed Team Collaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,199 +3,347 @@
   "title": "Self Sovereign Identity",
   "slug": "self-sovereign-identity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:self-sovereign-identity",
+  "classIri": "urn:ngm:class:self-sovereign-identity",
   "domain": "blockchain",
-  "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm \u2014 first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) \u2014 where individuals hold and control cryptographically verifiable credentials in their own [[Digital Wallet]] rather than depending on [[Centralised Identity]] providers or [[Federated Identity]] intermediaries such as corporate identity providers, national databases, or single-sign-on brokers. SSI rests on three interdependent W3C open standards: [[Decentralized Identifiers]] (DID Core 1.0 became a W3C Recommendation in July 2022; v1.1 in Working Draft as of 2026), [[Verifiable Credentials]] (VC Data Model v2.0 became a W3C Recommendation in May 2025), and the DIDComm v2 secure messaging protocol maintained by the [[Decentralized Identity Foundation]]; these three layers together enable cryptographic proof of identity claims without requiring centralised databases or online validation calls to the issuing authority. Trust roots are anchored to [[Verifiable Data Registry]] infrastructure spanning permissioned ledgers ([[Hyperledger Indy]] underlying the [[Sovrin Network]]), public blockchains ([[Bit",
+  "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm \u2014 first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) \u2014 where individuals hold and control cryptographically verifiable credentials in their own [[Digital Wallet]] r...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralised-identity",
+      "id": "urn:ngm:class:decentralised-identity",
       "label": "Decentralised Identity"
     },
     {
-      "id": "urn:visionflow:linked:privacy-enhancing-technology",
+      "id": "urn:ngm:class:privacy-enhancing-technology",
       "label": "Privacy-Enhancing Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:user-centric-identity",
-      "label": "User-Centric Identity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:credential-definition",
+        "id": "urn:ngm:class:credential-definition",
         "label": "Credential Definition"
       },
       {
-        "id": "urn:visionflow:linked:credential-schema",
+        "id": "urn:ngm:class:credential-schema",
         "label": "Credential Schema"
       },
       {
-        "id": "urn:visionflow:linked:did-document",
+        "id": "urn:ngm:class:did-document",
         "label": "DID Document"
       },
       {
-        "id": "urn:visionflow:linked:didcomm",
+        "id": "urn:ngm:class:didcomm",
         "label": "DIDComm"
       },
       {
-        "id": "urn:visionflow:linked:link-secret",
+        "id": "urn:ngm:class:link-secret",
         "label": "Link Secret"
       },
       {
-        "id": "urn:visionflow:linked:revocation-registry",
+        "id": "urn:ngm:class:revocation-registry",
         "label": "Revocation Registry"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-identifiers",
+        "id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifiers"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       },
       {
-        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:issuer-agent",
+        "id": "urn:ngm:class:issuer-agent",
         "label": "Issuer Agent"
       },
       {
-        "id": "urn:visionflow:linked:key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:visionflow:linked:verifier-agent",
+        "id": "urn:ngm:class:verifier-agent",
         "label": "Verifier Agent"
       },
       {
-        "id": "urn:visionflow:linked:wallet-software",
+        "id": "urn:ngm:class:wallet-software",
         "label": "Wallet Software"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-identifiers",
+        "id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifiers"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-framework",
+        "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:correlation-resistance",
+        "id": "urn:ngm:class:correlation-resistance",
         "label": "Correlation Resistance"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-identity",
+        "id": "urn:ngm:class:cross-border-identity",
         "label": "Cross-Border Identity"
       },
       {
-        "id": "urn:visionflow:linked:holder-binding",
+        "id": "urn:ngm:class:holder-binding",
         "label": "Holder Binding"
       },
       {
-        "id": "urn:visionflow:linked:offline-verification",
+        "id": "urn:ngm:class:offline-verification",
         "label": "Offline Verification"
       },
       {
-        "id": "urn:visionflow:linked:portable-identity",
+        "id": "urn:ngm:class:portable-identity",
         "label": "Portable Identity"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preserving-kyc",
+        "id": "urn:ngm:class:privacy-preserving-kyc",
         "label": "Privacy-Preserving KYC"
       },
       {
-        "id": "urn:visionflow:linked:reusable-identity-verification",
+        "id": "urn:ngm:class:reusable-identity-verification",
         "label": "Reusable Identity Verification"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:linked:zero-knowledge-predicate-proof",
+        "id": "urn:ngm:class:zero-knowledge-predicate-proof",
         "label": "Zero-Knowledge Predicate Proof"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:anon-creds",
+        "id": "urn:ngm:class:anon-creds",
         "label": "AnonCreds"
       },
       {
-        "id": "urn:visionflow:linked:bbs-signatures",
+        "id": "urn:ngm:class:bbs-signatures",
         "label": "BBS+ Signatures"
       },
       {
-        "id": "urn:visionflow:linked:didcomm-v2",
+        "id": "urn:ngm:class:didcomm-v2",
         "label": "DIDComm v2"
       },
       {
-        "id": "urn:visionflow:linked:iso-18013-5",
+        "id": "urn:ngm:class:iso-18013-5",
         "label": "ISO 18013-5"
       },
       {
-        "id": "urn:visionflow:linked:open-id-for-verifiable-credentials",
+        "id": "urn:ngm:class:open-id-for-verifiable-credentials",
         "label": "OpenID for Verifiable Credentials"
       },
       {
-        "id": "urn:visionflow:linked:sd-jwt",
+        "id": "urn:ngm:class:sd-jwt",
         "label": "SD-JWT"
       },
       {
-        "id": "urn:visionflow:linked:trust-over-ip-stack",
+        "id": "urn:ngm:class:trust-over-ip-stack",
         "label": "Trust Over IP Stack"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:bitstring-status-list",
+        "label": "Bitstring Status List"
+      },
+      {
+        "id": "urn:ngm:class:camenisch-lysyanskaya-signatures",
+        "label": "Camenisch-Lysyanskaya Signatures"
+      },
+      {
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
+      },
+      {
+        "id": "urn:ngm:class:ecdh-1-pu",
+        "label": "ECDH-1PU"
+      },
+      {
+        "id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:sidetree-protocol",
+        "label": "Sidetree Protocol"
+      },
+      {
+        "id": "urn:ngm:class:xchacha20-poly1305",
+        "label": "XChacha20Poly1305"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-government",
+        "label": "Digital Government"
+      },
+      {
+        "id": "urn:ngm:class:e-idas",
+        "label": "eIDAS"
+      },
+      {
+        "id": "urn:ngm:class:educational-credentials",
+        "label": "Educational Credentials"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-identity",
+        "label": "Healthcare Identity"
+      },
+      {
+        "id": "urn:ngm:class:io-t-security",
+        "label": "IoT Security"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
+    ]
   },
   "wikilinks": [
     {

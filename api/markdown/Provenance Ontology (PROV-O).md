@@ -216,136 +216,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:provenance-ontology-prov-o",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:provenance-ontology-prov-o",
+  "@type": "Class",
   "label": "Provenance Ontology (PROV-O)",
+  "definition": "W3C standard ontology for representing and interchanging provenance information, capturing the origin, attribution, derivation, and lifecycle of digital entities through formal Entity-Activity-Agent relationships.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4d8a6a9ae12060358e94eefcbd228a0cc82e3731109134d3f53b01af1b43315b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:activity-model",
+        "label": "Activity Model"
+      },
+      {
+        "@id": "urn:ngm:class:agent-model",
+        "label": "Agent Model"
+      },
+      {
+        "@id": "urn:ngm:class:attribution-model",
+        "label": "Attribution Model"
+      },
+      {
+        "@id": "urn:ngm:class:derivation-chains",
+        "label": "Derivation Chains"
+      },
+      {
+        "@id": "urn:ngm:class:entity-model",
+        "label": "Entity Model"
+      },
+      {
+        "@id": "urn:ngm:class:generation-events",
+        "label": "Generation Events"
+      },
+      {
+        "@id": "urn:ngm:class:influence-patterns",
+        "label": "Influence Patterns"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-relations",
+        "label": "Qualified Relations"
+      },
+      {
+        "@id": "urn:ngm:class:usage-events",
+        "label": "Usage Events"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ontology-reasoner",
+        "label": "Ontology Reasoner"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-store",
+        "label": "RDF Store"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audit-trails",
+        "label": "Audit Trails"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage-tracking",
+        "label": "Data Lineage Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-reproducibility",
+        "label": "Scientific Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:trust-verification",
+        "label": "Trust Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:semantic-web-standards",
+        "label": "Semantic Web Standards"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4d8a6a9ae12060358e94eefcbd228a0cc82e3731109134d3f53b01af1b43315b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "W3C standard ontology for representing and interchanging provenance information, capturing the origin, attribution, derivation, and lifecycle of digital entities through formal Entity-Activity-Agent relationships.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web-standards",
-      "vc:label": "Semantic Web Standards"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:activity-model",
-      "vc:label": "Activity Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-model",
-      "vc:label": "Agent Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:attribution-model",
-      "vc:label": "Attribution Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:derivation-chains",
-      "vc:label": "Derivation Chains"
-    },
-    {
-      "@id": "urn:visionflow:linked:entity-model",
-      "vc:label": "Entity Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:generation-events",
-      "vc:label": "Generation Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:influence-patterns",
-      "vc:label": "Influence Patterns"
-    },
-    {
-      "@id": "urn:visionflow:linked:qualified-relations",
-      "vc:label": "Qualified Relations"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-events",
-      "vc:label": "Usage Events"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ontology-reasoner",
-      "vc:label": "Ontology Reasoner"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-store",
-      "vc:label": "RDF Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparql-endpoint",
-      "vc:label": "SPARQL Endpoint"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:audit-trails",
-      "vc:label": "Audit Trails"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-provenance",
-      "vc:label": "Blockchain Provenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-lineage-tracking",
-      "vc:label": "Data Lineage Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-reproducibility",
-      "vc:label": "Scientific Reproducibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-verification",
-      "vc:label": "Trust Verification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:linked-data-platform",
-      "vc:label": "Linked Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-reasoning-engine",
-      "vc:label": "Semantic Reasoning Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-prov-data-model",
-      "vc:label": "W3C PROV Data Model"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -160,86 +160,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collaborative-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collaborative-robot",
+  "@type": "Class",
   "label": "Collaborative Robot",
+  "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable [[Human-Robot Collaboration]] in shared manufacturing and assembly environments.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:industrial-robot",
-      "vc:label": "Industrial Robot"
+      "@id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:iso-ts-15066-compliance",
+        "label": "ISO/TS 15066 Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:safety-controller",
+        "label": "Safety Controller"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:flexible-assembly",
+        "label": "Flexible Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-deployment",
+        "label": "Rapid Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:reduced-labour-costs",
+        "label": "Reduced Labour Costs"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:collaborative-manufacturing-system",
+        "label": "Collaborative Manufacturing System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Collaborative Robot** (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable [[Human-Robot Collaboration]] in shared manufacturing and assembly environments.",
-  "vc:qualityScore": {
-    "@value": "0.62",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.15",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-manufacturing-system",
-      "vc:label": "Collaborative Manufacturing System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:iso-ts-15066-compliance",
-      "vc:label": "ISO/TS 15066 Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-controller",
-      "vc:label": "Safety Controller"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-torque-sensor",
-      "vc:label": "Force Torque Sensor"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:flexible-assembly",
-      "vc:label": "Flexible Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-deployment",
-      "vc:label": "Rapid Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduced-labour-costs",
-      "vc:label": "Reduced Labour Costs"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

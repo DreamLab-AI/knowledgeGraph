@@ -3,78 +3,82 @@
   "title": "Telecollaboration",
   "slug": "telecollaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:telecollaboration",
+  "classIri": "urn:ngm:class:telecollaboration",
   "domain": "distributed-collaboration",
-  "definition": "\"The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork.\"",
+  "definition": "\"The process of individuals or groups working toger towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:real-time-communication",
+        "id": "urn:ngm:class:real-time-communication",
         "label": "Real-Time Communication"
       },
       {
-        "id": "urn:visionflow:linked:virtual-workspaces",
+        "id": "urn:ngm:class:virtual-workspaces",
         "label": "Virtual Workspaces"
       },
       {
-        "id": "urn:visionflow:owl:class:asynchronous-collaboration",
+        "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
       },
       {
-        "id": "urn:visionflow:owl:class:synchronous-collaboration",
+        "id": "urn:ngm:class:synchronous-collaboration",
         "label": "Synchronous Collaboration"
       },
       {
-        "id": "urn:visionflow:owl:class:telepresence",
+        "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:communication-infrastructure",
+        "id": "urn:ngm:class:communication-infrastructure",
         "label": "Communication Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:coordination-mechanisms",
+        "id": "urn:ngm:class:coordination-mechanisms",
         "label": "CoordinationMechanisms"
       },
       {
-        "id": "urn:visionflow:linked:real-time-protocols",
+        "id": "urn:ngm:class:real-time-protocols",
         "label": "Real-Time Protocols"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-cultural-teamwork",
+        "id": "urn:ngm:class:cross-cultural-teamwork",
         "label": "Cross-Cultural Teamwork"
       },
       {
-        "id": "urn:visionflow:linked:distributed-knowledge-work",
+        "id": "urn:ngm:class:distributed-knowledge-work",
         "label": "Distributed Knowledge Work"
       },
       {
-        "id": "urn:visionflow:linked:global-research-collaboration",
+        "id": "urn:ngm:class:global-research-collaboration",
         "label": "Global Research Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:remote-team-productivity",
+        "id": "urn:ngm:class:remote-team-productivity",
         "label": "Remote Team Productivity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

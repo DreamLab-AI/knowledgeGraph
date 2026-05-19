@@ -132,45 +132,28 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:miner",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:miner",
+  "@type": "Class",
   "label": "Miner",
+  "definition": "Proof-of-work network participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "ConsensusProtocol"
+      "@id": "urn:ngm:class:consensus-protocol",
+      "label": "ConsensusProtocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:360751768c741f47da1606bd09afea4eb3ee4a6bbc5dc257c5a0c8ce4c042fe6"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:360751768c741f47da1606bd09afea4eb3ee4a6bbc5dc257c5a0c8ce4c042fe6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Proof-of-work network participant within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

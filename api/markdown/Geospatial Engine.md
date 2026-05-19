@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:geospatial-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:geospatial-engine",
+  "@type": "Class",
   "label": "Geospatial Engine",
+  "definition": "Software platforms that stream, render, and process large volumes of geographic and 3D spatial data in real-time for metaverse applications, enabling digital twins of real-world locations, location-based experiences, and integration between physical geography and virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:geospatially-accurate-metaverse",
+        "label": "Geospatially-Accurate Metaverse"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software platforms that stream, render, and process large volumes of geographic and 3D spatial data in real-time for metaverse applications, enabling digital twins of real-world locations, location-based experiences, and integration between physical geography and virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:geospatially-accurate-metaverse",
-      "vc:label": "Geospatially-Accurate Metaverse"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

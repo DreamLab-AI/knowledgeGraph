@@ -3,143 +3,243 @@
   "title": "Risk Assessment",
   "slug": "risk-assessment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:risk-assessment",
+  "classIri": "urn:ngm:class:risk-assessment",
   "domain": "infrastructure",
-  "definition": "[[Risk Assessment]] is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader [[Risk Management]] programmes aligned to [[ISO 31000]] (2018), [[NIST AI Risk Management Framework|NIST AI RMF 1.0]] (2023), the [[NIST AI RMF Generative AI Profile]] (July 2024), and [[EU AI Act]] Article 9 conformity obligations. In AI and blockchain contexts, risk assessment integrates quantitative probability modelling with qualitative expert judgement across four canonical phases: risk identification (hazard enumeration using [[FMEA|Failure Mode and Effects Analysis]], [[Bow-Tie Analysis]], [[STPA|Systems-Theoretic Process Analysis]], and AI-specific threat taxonomies from [[MITRE ATLAS]] and [[OWASP LLM Top 10]]); risk analysis (likelihood-consequence matrices, attack-tree probabilistic quantification, [[Fault Tree Analysis]], Bayesian network propagation); risk evaluation (threshold comparison against appetite statements, residual risk calculation after controls, tolerability determination per ALARP principle); and risk treatment ",
+  "definition": "[[Risk Assessment]] is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader [[Risk Management]] programmes aligned to [[ISO 3...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:audit",
+      "id": "urn:ngm:class:audit",
       "label": "Audit"
     },
     {
-      "id": "urn:visionflow:linked:systems-analysis",
+      "id": "urn:ngm:class:systems-analysis",
       "label": "Systems Analysis"
-    },
-    {
-      "id": "urn:visionflow:linked:safety-engineering",
-      "label": "Safety Engineering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:hazard-identification",
+        "id": "urn:ngm:class:hazard-identification",
         "label": "Hazard Identification"
       },
       {
-        "id": "urn:visionflow:linked:impact-modelling",
+        "id": "urn:ngm:class:impact-modelling",
         "label": "Impact Modelling"
       },
       {
-        "id": "urn:visionflow:linked:likelihood-estimation",
+        "id": "urn:ngm:class:likelihood-estimation",
         "label": "Likelihood Estimation"
       },
       {
-        "id": "urn:visionflow:linked:residual-risk-calculation",
+        "id": "urn:ngm:class:residual-risk-calculation",
         "label": "Residual Risk Calculation"
       },
       {
-        "id": "urn:visionflow:linked:risk-evaluation",
+        "id": "urn:ngm:class:risk-evaluation",
         "label": "Risk Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:risk-register",
+        "id": "urn:ngm:class:risk-register",
         "label": "Risk Register"
       },
       {
-        "id": "urn:visionflow:linked:risk-treatment-plan",
+        "id": "urn:ngm:class:risk-treatment-plan",
         "label": "Risk Treatment Plan"
       },
       {
-        "id": "urn:visionflow:linked:vulnerability-analysis",
+        "id": "urn:ngm:class:vulnerability-analysis",
         "label": "Vulnerability Analysis"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:stakeholder-analysis",
+        "id": "urn:ngm:class:stakeholder-analysis",
         "label": "Stakeholder Analysis"
       },
       {
-        "id": "urn:visionflow:linked:threat-model",
+        "id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:control-theory",
+        "id": "urn:ngm:class:control-theory",
         "label": "Control Theory"
       },
       {
-        "id": "urn:visionflow:owl:class:data-governance",
+        "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:incident-response",
+        "id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
       },
       {
-        "id": "urn:visionflow:linked:model-assurance",
+        "id": "urn:ngm:class:model-assurance",
         "label": "Model Assurance"
       },
       {
-        "id": "urn:visionflow:linked:operational-resilience",
+        "id": "urn:ngm:class:operational-resilience",
         "label": "Operational Resilience"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:quality-assurance",
+        "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bow-tie-analysis",
+        "id": "urn:ngm:class:bow-tie-analysis",
         "label": "Bow-Tie Analysis"
       },
       {
-        "id": "urn:visionflow:linked:fault-tree-analysis",
+        "id": "urn:ngm:class:fault-tree-analysis",
         "label": "Fault Tree Analysis"
       },
       {
-        "id": "urn:visionflow:linked:fmea",
+        "id": "urn:ngm:class:fmea",
         "label": "FMEA"
       },
       {
-        "id": "urn:visionflow:linked:iso-31000",
+        "id": "urn:ngm:class:iso-31000",
         "label": "ISO 31000"
       },
       {
-        "id": "urn:visionflow:linked:mitre-atlas",
+        "id": "urn:ngm:class:mitre-atlas",
         "label": "MITRE ATLAS"
       },
       {
-        "id": "urn:visionflow:linked:nist-ai-risk-management-framework",
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "id": "urn:visionflow:linked:owasp-llm-top-10",
+        "id": "urn:ngm:class:owasp-llm-top-10",
         "label": "OWASP LLM Top 10"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-incident-database",
+        "label": "AI Incident Database"
+      },
+      {
+        "id": "urn:ngm:class:attack-trees",
+        "label": "Attack Trees"
+      },
+      {
+        "id": "urn:ngm:class:helm",
+        "label": "HELM"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:de-fi-risk",
+        "label": "DeFi Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-security",
+        "label": "Smart Contract Security"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:fca-ps21-3",
+        "label": "FCA PS21/3"
+      },
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:oracle-risk",
+        "label": "Oracle Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ]
   },
   "wikilinks": [
     {

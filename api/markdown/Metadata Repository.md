@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metadata-repository",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metadata-repository",
+  "@type": "Class",
   "label": "Metadata Repository",
+  "definition": "Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4231e34ac84fff71c727c72439ab83c4e8fefe0395c0b8e2d358269ddc10cf32"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-discovery",
+        "label": "Data Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4231e34ac84fff71c727c72439ab83c4e8fefe0395c0b8e2d358269ddc10cf32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-discovery",
-      "vc:label": "Data Discovery"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

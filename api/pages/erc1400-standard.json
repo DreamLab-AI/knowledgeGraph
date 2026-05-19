@@ -3,27 +3,31 @@
   "title": "ERC1400 Standard",
   "slug": "erc1400-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc1400-standard",
+  "classIri": "urn:ngm:class:erc1400-standard",
   "domain": "blockchain",
   "definition": "Security token standard with compliance controls and transfer restrictions.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

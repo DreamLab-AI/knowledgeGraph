@@ -176,116 +176,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ethics-and-law-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ethics-and-law-layer",
+  "@type": "Class",
   "label": "Ethics & Law Layer",
+  "definition": "Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ical AI governance, and legal frameworks.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef50d42fe326b2f00a9d1887ba3f89c51ab55fd7a68cbc6607ca71b55ad1f6f2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ethical-ai-guidelines",
+        "label": "Ethical AI Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:legal-regulation-schema",
+        "label": "Legal Regulation Schema"
+      },
+      {
+        "@id": "urn:ngm:class:rights-management-system",
+        "label": "Rights Management System"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ethical-governance",
+        "label": "Ethical Governance"
+      },
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-architecture",
+        "label": "Governance Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef50d42fe326b2f00a9d1887ba3f89c51ab55fd7a68cbc6607ca71b55ad1f6f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ethical AI governance, and legal frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:governance-architecture",
-      "vc:label": "Governance Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:middleware-layer",
-      "vc:label": "Middleware Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ethical-ai-guidelines",
-      "vc:label": "Ethical AI Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-regulation-schema",
-      "vc:label": "Legal Regulation Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-management-system",
-      "vc:label": "Rights Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audit-logging",
-      "vc:label": "Audit Logging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ethical-governance",
-      "vc:label": "Ethical Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-compliance",
-      "vc:label": "Legal Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-protection",
-      "vc:label": "Rights Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:responsible-ai",
-      "vc:label": "Responsible AI"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ethics-principles",
-      "vc:label": "Ethics Principles"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-standards",
-      "vc:label": "Regulatory Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

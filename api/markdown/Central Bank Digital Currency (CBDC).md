@@ -216,140 +216,105 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:central-bank-digital-currency-cbdc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+  "@type": "Class",
   "label": "Central Bank Digital Currency (CBDC)",
+  "definition": "Sovereign digital currency issued and backed by a central bank for use in retail or wholesale payment systems, functioning as legal tender in digital form.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef6ef3ee700f8f7c5d9ce378f3c78aced9384e669fd9ef8f133e0bb5f4be117d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:digital-currency-ledger",
+        "label": "Digital Currency Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-protocol",
+        "label": "Payment Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-validator",
+        "label": "Transaction Validator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef6ef3ee700f8f7c5d9ce378f3c78aced9384e669fd9ef8f133e0bb5f4be117d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Sovereign digital currency issued and backed by a central bank for use in retail or wholesale payment systems, functioning as legal tender in digital form.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:payment-infrastructure",
-      "vc:label": "Payment Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:financial-system",
-      "vc:label": "Financial System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monetary-system",
-      "vc:label": "Monetary System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:digital-currency-ledger",
-      "vc:label": "Digital Currency Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-system",
-      "vc:label": "Identity System"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-protocol",
-      "vc:label": "Payment Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-validator",
-      "vc:label": "Transaction Validator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:central-bank",
-      "vc:label": "Central Bank"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-payments",
-      "vc:label": "Digital Payments"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monetary-policy-implementation",
-      "vc:label": "Monetary Policy Implementation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:banking-infrastructure",
-      "vc:label": "Banking Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-system",
-      "vc:label": "Settlement System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "vc:label": "Cryptographic Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

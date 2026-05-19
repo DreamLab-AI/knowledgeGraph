@@ -3,14 +3,13 @@
   "title": "Cyber Physical Systems",
   "slug": "cyber-physical-systems",
   "public": true,
-  "classIri": "urn:visionflow:linked:cyber-physical-systems",
+  "classIri": "urn:ngm:class:cyber-physical-systems",
   "domain": "robotics",
   "definition": "Cyber Physical Systems is a foundational concept in robotics that serves as a classification parent for 4 related concepts in the ontology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

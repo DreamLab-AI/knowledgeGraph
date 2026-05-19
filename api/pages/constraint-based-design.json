@@ -3,19 +3,18 @@
   "title": "Constraint Based Design",
   "slug": "constraint-based-design",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:constraint-based-design",
+  "classIri": "urn:ngm:class:constraint-based-design",
   "domain": "artificial-intelligence",
   "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-system-component",
+      "id": "urn:ngm:class:ai-system-component",
       "label": "AI System Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

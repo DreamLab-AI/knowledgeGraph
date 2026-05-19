@@ -3,86 +3,90 @@
   "title": "Human Factors",
   "slug": "human-factors",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-factors",
+  "classIri": "urn:ngm:class:human-factors",
   "domain": "robotics",
-  "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.",
+  "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:interaction-design",
+      "id": "urn:ngm:class:interaction-design",
       "label": "Interaction Design"
     },
     {
-      "id": "urn:visionflow:linked:systems-engineering",
+      "id": "urn:ngm:class:systems-engineering",
       "label": "Systems Engineering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cognitive-load-analysis",
+        "id": "urn:ngm:class:cognitive-load-analysis",
         "label": "Cognitive Load Analysis"
       },
       {
-        "id": "urn:visionflow:linked:ergonomics",
+        "id": "urn:ngm:class:ergonomics",
         "label": "Ergonomics"
       },
       {
-        "id": "urn:visionflow:linked:safety-assessment",
+        "id": "urn:ngm:class:safety-assessment",
         "label": "Safety Assessment"
       },
       {
-        "id": "urn:visionflow:linked:trust-calibration",
+        "id": "urn:ngm:class:trust-calibration",
         "label": "Trust Calibration"
       },
       {
-        "id": "urn:visionflow:linked:usability-testing",
+        "id": "urn:ngm:class:usability-testing",
         "label": "Usability Testing"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:interface-design",
+        "id": "urn:ngm:class:interface-design",
         "label": "Interface Design"
       },
       {
-        "id": "urn:visionflow:linked:task-analysis",
+        "id": "urn:ngm:class:task-analysis",
         "label": "Task Analysis"
       },
       {
-        "id": "urn:visionflow:owl:class:performance-metrics",
+        "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
       },
       {
-        "id": "urn:visionflow:owl:class:user-research",
+        "id": "urn:ngm:class:user-research",
         "label": "User Research"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:efficient-collaboration",
+        "id": "urn:ngm:class:efficient-collaboration",
         "label": "Efficient Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:intuitive-control",
+        "id": "urn:ngm:class:intuitive-control",
         "label": "Intuitive Control"
       },
       {
-        "id": "urn:visionflow:linked:operator-safety",
+        "id": "urn:ngm:class:operator-safety",
         "label": "Operator Safety"
       },
       {
-        "id": "urn:visionflow:linked:user-acceptance",
+        "id": "urn:ngm:class:user-acceptance",
         "label": "User Acceptance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

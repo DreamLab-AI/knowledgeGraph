@@ -132,66 +132,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:system-interoperability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:system-interoperability",
+  "@type": "Class",
   "label": "System Interoperability",
+  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:system-capability",
-      "vc:label": "System Capability"
+      "@id": "urn:ngm:class:system-capability",
+      "label": "System Capability"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:enterprise-connectivity",
+        "label": "Enterprise Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:common-data-formats",
+        "label": "Common Data Formats"
+      },
+      {
+        "@id": "urn:ngm:class:standard-protocols",
+        "label": "Standard Protocols"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4fd79ea17a54a0cd154299d3b5849ab3a769d53abc51daff97b7aefc9c7ff2b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-connectivity",
-      "vc:label": "Enterprise Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-sharing",
-      "vc:label": "Data Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-integration",
-      "vc:label": "System Integration"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:common-data-formats",
-      "vc:label": "Common Data Formats"
-    },
-    {
-      "@id": "urn:visionflow:linked:standard-protocols",
-      "vc:label": "Standard Protocols"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

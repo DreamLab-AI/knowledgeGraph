@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:scalable-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:scalable-architecture",
+  "@type": "Class",
   "label": "Scalable Architecture",
+  "definition": "System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:145eba3c8f9ce6aef3535a2af9eab43c709e07adaad039bde50b675f804c1a8d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:145eba3c8f9ce6aef3535a2af9eab43c709e07adaad039bde50b675f804c1a8d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-availability",
-      "vc:label": "High Availability"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

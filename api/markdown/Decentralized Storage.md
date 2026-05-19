@@ -216,48 +216,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-storage",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-storage",
+  "@type": "Class",
   "label": "Decentralized Storage",
+  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9ecec67c8da2bf84f51b8336529aea6a1a8e5d61d38d822fa1557c9745645566@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure. [[Decentralised Storage]] networks such as [[IPFS]] and [[Filecoin]] provide [[Censorship Resistance]], [[Data Availability]], and [[User Sovereignty]] guarantees.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,159 +3,259 @@
   "title": "Fooocus",
   "slug": "fooocus",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fooocus",
+  "classIri": "urn:ngm:class:fooocus",
   "domain": "artificial-intelligence",
-  "definition": "Fooocus is an open-source desktop image-generation interface for Stable Diffusion XL released in August 2023 by Lvmin Zhang (GitHub handle lllyasviel, originator of ControlNet, IC-Light, Forge, Paints-Undo, FramePack and OmniControl), conceived as a deliberate philosophical and ergonomic reaction to the perceived over-complexity of AUTOMATIC1111 Stable Diffusion WebUI (form-based, 200+ exposed parameters across a dozen tabs) and ComfyUI (node-based directed-acyclic-graph editor requiring users to wire generation pipelines manually), pursuing instead the stated design principle that \"all the local automatic optimization is enabled, hyperparameter tweaking minimised\" \u2014 i.e. the application opaquely chooses sampler, scheduler, refiner activation, FreeU coefficients, LoRA blending weights, prompt-expansion strategies and image-to-image denoise strengths so that the user is presented with a minimal Midjourney-like surface (a single prompt box, a style picker, an aspect-ratio selector and a Generate button) whilst still running entirely on local consumer hardware (8 GB VRAM minimum for SDXL Base 1.0, 4 GB possible with offloading) and shipping all weights, code and presets under permissi",
+  "definition": "Fooocus is an open-source desktop image-generation interface for Stable Diffusion XL released in August 2023 by Lvmin Zhang (GitHub handle lllyasviel, originator of ControlNet, IC-Light, Forge, Paints-Undo, FramePack and OmniControl), conceived as a deliberate philosophical and ergonomic reaction...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:gradio-application",
+      "id": "urn:ngm:class:gradio-application",
       "label": "Gradio Application"
     },
     {
-      "id": "urn:visionflow:linked:local-image-generation-interface",
+      "id": "urn:ngm:class:local-image-generation-interface",
       "label": "Local Image Generation Interface"
-    },
-    {
-      "id": "urn:visionflow:linked:stable-diffusion-frontend",
-      "label": "Stable Diffusion Frontend"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:automatic-free-u-module",
+        "id": "urn:ngm:class:automatic-free-u-module",
         "label": "Automatic FreeU Module"
       },
       {
-        "id": "urn:visionflow:linked:automatic-refiner-scheduler",
+        "id": "urn:ngm:class:automatic-refiner-scheduler",
         "label": "Automatic Refiner Scheduler"
       },
       {
-        "id": "urn:visionflow:linked:faceswap-module",
+        "id": "urn:ngm:class:faceswap-module",
         "label": "Faceswap Module"
       },
       {
-        "id": "urn:visionflow:linked:gradio-web-ui",
+        "id": "urn:ngm:class:gradio-web-ui",
         "label": "Gradio Web UI"
       },
       {
-        "id": "urn:visionflow:linked:image-prompt-ip-adapter-module",
+        "id": "urn:ngm:class:image-prompt-ip-adapter-module",
         "label": "Image Prompt IP-Adapter Module"
       },
       {
-        "id": "urn:visionflow:linked:inpaint-pipeline",
+        "id": "urn:ngm:class:inpaint-pipeline",
         "label": "Inpaint Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:lo-ra-blending-module",
+        "id": "urn:ngm:class:lo-ra-blending-module",
         "label": "LoRA Blending Module"
       },
       {
-        "id": "urn:visionflow:linked:prompt-expansion-engine",
+        "id": "urn:ngm:class:prompt-expansion-engine",
         "label": "Prompt Expansion Engine"
       },
       {
-        "id": "urn:visionflow:linked:pyra-canny-control-net",
+        "id": "urn:ngm:class:pyra-canny-control-net",
         "label": "PyraCanny ControlNet"
       },
       {
-        "id": "urn:visionflow:linked:style-preset-library",
+        "id": "urn:ngm:class:style-preset-library",
         "label": "Style Preset Library"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cuda-toolkit",
+        "id": "urn:ngm:class:cuda-toolkit",
         "label": "CUDA Toolkit"
       },
       {
-        "id": "urn:visionflow:linked:gpu-with-4-8-gb-vram",
+        "id": "urn:ngm:class:gpu-with-4-8-gb-vram",
         "label": "GPU with 4-8GB VRAM"
       },
       {
-        "id": "urn:visionflow:linked:gradio-framework",
+        "id": "urn:ngm:class:gradio-framework",
         "label": "Gradio Framework"
       },
       {
-        "id": "urn:visionflow:linked:py-torch",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
-        "id": "urn:visionflow:linked:python-runtime",
+        "id": "urn:ngm:class:python-runtime",
         "label": "Python Runtime"
       },
       {
-        "id": "urn:visionflow:linked:stable-diffusion-xl",
+        "id": "urn:ngm:class:stable-diffusion-xl",
         "label": "Stable Diffusion XL"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:faceswap",
+        "id": "urn:ngm:class:faceswap",
         "label": "Faceswap"
       },
       {
-        "id": "urn:visionflow:linked:local-ai-art-creation",
+        "id": "urn:ngm:class:local-ai-art-creation",
         "label": "Local AI Art Creation"
       },
       {
-        "id": "urn:visionflow:linked:outpainting",
+        "id": "urn:ngm:class:outpainting",
         "label": "Outpainting"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preserving-image-generation",
+        "id": "urn:ngm:class:privacy-preserving-image-generation",
         "label": "Privacy-Preserving Image Generation"
       },
       {
-        "id": "urn:visionflow:linked:text-to-image-generation",
+        "id": "urn:ngm:class:text-to-image-generation",
         "label": "Text to Image Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:image-to-image-translation",
+        "id": "urn:ngm:class:image-to-image-translation",
         "label": "Image to Image Translation"
       },
       {
-        "id": "urn:visionflow:owl:class:inpainting",
+        "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
       },
       {
-        "id": "urn:visionflow:owl:class:style-transfer",
+        "id": "urn:ngm:class:style-transfer",
         "label": "Style Transfer"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:control-net-conditioning",
+        "id": "urn:ngm:class:control-net-conditioning",
         "label": "ControlNet Conditioning"
       },
       {
-        "id": "urn:visionflow:linked:free-u-free-lunch-rebalancing",
+        "id": "urn:ngm:class:free-u-free-lunch-rebalancing",
         "label": "FreeU Free-Lunch Rebalancing"
       },
       {
-        "id": "urn:visionflow:linked:ip-adapter-image-conditioning",
+        "id": "urn:ngm:class:ip-adapter-image-conditioning",
         "label": "IP-Adapter Image Conditioning"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion-sampling",
+        "id": "urn:ngm:class:latent-diffusion-sampling",
         "label": "Latent Diffusion Sampling"
       },
       {
-        "id": "urn:visionflow:linked:prompt-expansion",
+        "id": "urn:ngm:class:prompt-expansion",
         "label": "Prompt Expansion"
       },
       {
-        "id": "urn:visionflow:linked:sdxl-refiner-handoff",
+        "id": "urn:ngm:class:sdxl-refiner-handoff",
         "label": "SDXL Refiner Handoff"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip-skip",
+        "label": "CLIP Skip"
+      },
+      {
+        "id": "urn:ngm:class:dpm-plus-plus-2-m-karras-sampler",
+        "label": "DPM Plus Plus 2M Karras Sampler"
+      },
+      {
+        "id": "urn:ngm:class:gpt-2-prompt-expansion",
+        "label": "GPT-2 Prompt Expansion"
+      },
+      {
+        "id": "urn:ngm:class:lcm-sampler",
+        "label": "LCM Sampler"
+      },
+      {
+        "id": "urn:ngm:class:lightning-sampler",
+        "label": "Lightning Sampler"
+      },
+      {
+        "id": "urn:ngm:class:sdxl-vae-fp16-fix",
+        "label": "SDXL VAE FP16 Fix"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:concept-art-workflows",
+        "label": "Concept Art Workflows"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:educational-ai-demonstrations",
+        "label": "Educational AI Demonstrations"
+      },
+      {
+        "id": "urn:ngm:class:indie-game-asset-creation",
+        "label": "Indie Game Asset Creation"
+      },
+      {
+        "id": "urn:ngm:class:local-privacy-workflows",
+        "label": "Local Privacy Workflows"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:creative-ml-open-rail-m-licence",
+        "label": "CreativeML Open RAIL-M Licence"
+      },
+      {
+        "id": "urn:ngm:class:gplv3-licence",
+        "label": "GPLv3 Licence"
+      },
+      {
+        "id": "urn:ngm:class:gradio-specification",
+        "label": "Gradio Specification"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-model-hub",
+        "label": "Hugging Face Model Hub"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:fooocus-mre",
+        "label": "Fooocus-MRE"
+      },
+      {
+        "id": "urn:ngm:class:frame-pack",
+        "label": "FramePack"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:ic-light",
+        "label": "IC-Light"
+      },
+      {
+        "id": "urn:ngm:class:paints-undo",
+        "label": "Paints-Undo"
+      },
+      {
+        "id": "urn:ngm:class:ruined-fooocus",
+        "label": "RuinedFooocus"
+      },
+      {
+        "id": "urn:ngm:class:simple-sdxl2",
+        "label": "SimpleSDXL2"
+      },
+      {
+        "id": "urn:ngm:class:stability-ai",
+        "label": "Stability AI"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Spatial AI Associate",
   "slug": "spatial-ai-associate",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-ai-associate",
+  "classIri": "urn:ngm:class:spatial-ai-associate",
   "domain": "artificial-intelligence",
   "definition": "Spatial AI Associate is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

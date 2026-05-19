@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:animation-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:animation-software",
+  "@type": "Class",
   "label": "Animation Software",
+  "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse cont...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-content-creation-tools",
-      "vc:label": "Digital Content Creation Tools"
+      "@id": "urn:ngm:class:digital-content-creation-tools",
+      "label": "Digital Content Creation Tools"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aeb9b9a87d49b2911ee05a7980bf96f8d9b5297f7f2964097cd61e817ebd3c11"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:rigging-systems",
+        "label": "Rigging Systems"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-character-animation",
+        "label": "3D Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-graphics",
+        "label": "Motion Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aeb9b9a87d49b2911ee05a7980bf96f8d9b5297f7f2964097cd61e817ebd3c11@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Animation Software encompasses digital tools and applications for creating computer-generated moving images through 3D modeling, rigging, motion graphics, rendering, and compositing, supporting the complete animation pipeline from asset creation to final output for games, film, and metaverse content.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-rendering",
-      "vc:label": "GPU Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:rigging-systems",
-      "vc:label": "Rigging Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-character-animation",
-      "vc:label": "3D Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-graphics",
-      "vc:label": "Motion Graphics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:visual-effects",
-      "vc:label": "Visual Effects"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

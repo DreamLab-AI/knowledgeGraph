@@ -488,378 +488,311 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:logistics-optimization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:logistics-optimization",
+  "@type": "Class",
   "label": "Logistics Optimization",
+  "definition": "Logistics optimisation is the application of artificial intelligence, machine learning, and classical operations research to minimise cost, transit time, carbon, and service-failure risk across physical goods movement networks.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-machine-learning",
-      "vc:label": "Applied Machine Learning"
+      "@id": "urn:ngm:class:applied-machine-learning",
+      "label": "Applied Machine Learning"
     },
     {
-      "@id": "urn:visionflow:linked:combinatorial-optimization",
-      "vc:label": "Combinatorial Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-ai",
-      "vc:label": "Industrial AI"
+      "@id": "urn:ngm:class:combinatorial-optimization",
+      "label": "Combinatorial Optimization"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:16d539da3b4bc4ab271239ad660e5e871233a79c1125fbe4554bbcaa12937e31"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:route-optimisation",
+        "label": "Route Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:transport-management-system",
+        "label": "Transport Management System"
+      },
+      {
+        "@id": "urn:ngm:class:vehicle-routing-problem",
+        "label": "Vehicle Routing Problem"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-slotting",
+        "label": "Warehouse Slotting"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-integer-programming",
+        "label": "Mixed Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-streams",
+        "label": "Real-Time Data Streams"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-warehousing",
+        "label": "Autonomous Warehousing"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-reduction",
+        "label": "Carbon Footprint Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-pricing",
+        "label": "Dynamic Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-inventory",
+        "label": "Just-in-Time Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:resilient-supply-chains",
+        "label": "Resilient Supply Chains"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:attention-model",
+        "label": "Attention Model"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-fusion-transformer",
+        "label": "Temporal Fusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-networks",
+        "label": "Transformer Networks"
+      },
+      {
+        "@id": "urn:ngm:class:vrptw-solver",
+        "label": "VRPTW Solver"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:arm-cortex",
+        "label": "ARM Cortex"
+      },
+      {
+        "@id": "urn:ngm:class:google-or-tools",
+        "label": "Google OR-Tools"
+      },
+      {
+        "@id": "urn:ngm:class:gurobi",
+        "label": "Gurobi"
+      },
+      {
+        "@id": "urn:ngm:class:hexaly",
+        "label": "Hexaly"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-jetson",
+        "label": "NVIDIA Jetson"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-integration",
+        "label": "IoT Integration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:e-commerce-fulfilment",
+        "label": "E-Commerce Fulfilment"
+      },
+      {
+        "@id": "urn:ngm:class:intermodal-transport",
+        "label": "Intermodal Transport"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-logistics",
+        "label": "Pharmaceutical Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:port-operations",
+        "label": "Port Operations"
+      },
+      {
+        "@id": "urn:ngm:class:retail-supply-chain",
+        "label": "Retail Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:urban-freight",
+        "label": "Urban Freight"
+      },
+      {
+        "@id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:glec-framework",
+        "label": "GLEC Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gri-supply-chain-standards",
+        "label": "GRI Supply Chain Standards"
+      },
+      {
+        "@id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "@id": "urn:ngm:class:iata",
+        "label": "IATA"
+      },
+      {
+        "@id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      },
+      {
+        "@id": "urn:ngm:class:world-customs-organisation",
+        "label": "World Customs Organisation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:16d539da3b4bc4ab271239ad660e5e871233a79c1125fbe4554bbcaa12937e31@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Logistics optimisation is the application of artificial intelligence, machine learning, and classical operations research to minimise cost, transit time, carbon, and service-failure risk across physical goods movement networks. Core methods include Vehicle Routing Problem with Time Windows (VRPTW) solved by metaheuristics (Adaptive Large Neighbourhood Search, Hybrid Genetic Search) and neural combinatorial optimisers (Attention Model, POMO); last-mile delivery orchestration at Amazon (Sequoia/Proteus robots, DARP solver handling 5B+ packages/year), DPD (7M daily parcels, 15-minute route refresh), and Ocado (Hive robotics at Erith CFC, 65,000 orders/week); warehouse slotting optimised via Quadratic Assignment Problem solvers and AI-driven SKU co-occurrence clustering; robotic fulfilment (Locus Robotics LocusBot, Geek+ pod systems, Amazon Kiva/Drive fleet of 750,000+ units, Boston Dynamics Stretch, Agility Robotics Digit); demand forecasting via Temporal Fusion Transformer, XGBoost ensembles, and Amazon Chronos zero-shot foundation model; transport management systems (Blue Yonder Luminate TMS — Gartner leader 2024/2025; Oracle TMS; SAP TM 4.0); warehouse management systems (Manhattan",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:demand-forecasting",
-      "vc:label": "Demand Forecasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:fleet-management",
-      "vc:label": "Fleet Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:last-mile-delivery",
-      "vc:label": "Last-Mile Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:route-optimisation",
-      "vc:label": "Route Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-visibility",
-      "vc:label": "Supply Chain Visibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:transport-management-system",
-      "vc:label": "Transport Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:vehicle-routing-problem",
-      "vc:label": "Vehicle Routing Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-management-system",
-      "vc:label": "Warehouse Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-slotting",
-      "vc:label": "Warehouse Slotting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:geospatial-data",
-      "vc:label": "Geospatial Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-theory",
-      "vc:label": "Graph Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-integer-programming",
-      "vc:label": "Mixed Integer Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:operations-research",
-      "vc:label": "Operations Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-data-streams",
-      "vc:label": "Real-Time Data Streams"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-warehousing",
-      "vc:label": "Autonomous Warehousing"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-footprint-reduction",
-      "vc:label": "Carbon Footprint Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-experience",
-      "vc:label": "Customer Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-pricing",
-      "vc:label": "Dynamic Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:just-in-time-inventory",
-      "vc:label": "Just-in-Time Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:resilient-supply-chains",
-      "vc:label": "Resilient Supply Chains"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-logistics",
-      "vc:label": "Reverse Logistics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:attention-model",
-      "vc:label": "Attention Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:genetic-algorithm",
-      "vc:label": "Genetic Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:gradient-boosted-trees",
-      "vc:label": "Gradient Boosted Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:simulated-annealing",
-      "vc:label": "Simulated Annealing"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-fusion-transformer",
-      "vc:label": "Temporal Fusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-networks",
-      "vc:label": "Transformer Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:vrptw-solver",
-      "vc:label": "VRPTW Solver"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graph-theory",
-      "vc:label": "Graph Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-integration",
-      "vc:label": "IoT Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-programming",
-      "vc:label": "Linear Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-optimization",
-      "vc:label": "Stochastic Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:e-commerce-fulfilment",
-      "vc:label": "E-Commerce Fulfilment"
-    },
-    {
-      "@id": "urn:visionflow:linked:intermodal-transport",
-      "vc:label": "Intermodal Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:pharmaceutical-logistics",
-      "vc:label": "Pharmaceutical Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:port-operations",
-      "vc:label": "Port Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:retail-supply-chain",
-      "vc:label": "Retail Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-logistics",
-      "vc:label": "Reverse Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:urban-freight",
-      "vc:label": "Urban Freight"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cold-chain-monitoring",
-      "vc:label": "Cold Chain Monitoring"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:apache-kafka",
-      "vc:label": "Apache Kafka"
-    },
-    {
-      "@id": "urn:visionflow:linked:arm-cortex",
-      "vc:label": "ARM Cortex"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-or-tools",
-      "vc:label": "Google OR-Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:gurobi",
-      "vc:label": "Gurobi"
-    },
-    {
-      "@id": "urn:visionflow:linked:hexaly",
-      "vc:label": "Hexaly"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-jetson",
-      "vc:label": "NVIDIA Jetson"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:manual-route-planning",
-      "vc:label": "Manual Route Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:paper-based-freight-management",
-      "vc:label": "Paper-Based Freight Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-dispatch",
-      "vc:label": "Rule-Based Dispatch"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-inventory-positioning",
-      "vc:label": "Static Inventory Positioning"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-integration",
-      "vc:label": "IoT Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cold-chain-monitoring",
-      "vc:label": "Cold Chain Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:glec-framework",
-      "vc:label": "GLEC Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:gri-supply-chain-standards",
-      "vc:label": "GRI Supply Chain Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1",
-      "vc:label": "GS1"
-    },
-    {
-      "@id": "urn:visionflow:linked:iata",
-      "vc:label": "IATA"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-28000",
-      "vc:label": "ISO 28000"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-customs-organisation",
-      "vc:label": "World Customs Organisation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

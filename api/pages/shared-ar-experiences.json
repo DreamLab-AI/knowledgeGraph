@@ -3,32 +3,36 @@
   "title": "Shared Ar Experiences",
   "slug": "shared-ar-experiences",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:shared-ar-experiences",
+  "classIri": "urn:ngm:class:shared-ar-experiences",
   "domain": "spatial-computing",
   "definition": "Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:augmented-reality",
+      "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:social-ar-interaction",
+        "id": "urn:ngm:class:social-ar-interaction",
         "label": "Social AR Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

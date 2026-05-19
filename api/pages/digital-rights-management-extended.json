@@ -3,78 +3,87 @@
   "title": "Digital Rights Management (Extended)",
   "slug": "digital-rights-management-extended",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-rights-management-extended",
+  "classIri": "urn:ngm:class:digital-rights-management-extended",
   "domain": "spatial-computing",
-  "definition": "A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Rights Management (Extended) is a type of Virtual Economy Domain in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy-domain",
+      "id": "urn:ngm:class:virtual-economy-domain",
       "label": "Virtual Economy Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:access-control-module",
+        "id": "urn:ngm:class:access-control-module",
         "label": "Access Control Module"
       },
       {
-        "id": "urn:visionflow:linked:content-encryption-engine",
+        "id": "urn:ngm:class:content-encryption-engine",
         "label": "Content Encryption Engine"
       },
       {
-        "id": "urn:visionflow:linked:license-management-system",
+        "id": "urn:ngm:class:license-management-system",
         "label": "License Management System"
       },
       {
-        "id": "urn:visionflow:linked:usage-tracking-system",
+        "id": "urn:ngm:class:usage-tracking-system",
         "label": "Usage Tracking System"
       },
       {
-        "id": "urn:visionflow:owl:class:watermarking-service",
+        "id": "urn:ngm:class:watermarking-service",
         "label": "Watermarking Service"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:identity-verification-system",
+        "id": "urn:ngm:class:identity-verification-system",
         "label": "Identity Verification System"
       },
       {
-        "id": "urn:visionflow:linked:payment-gateway",
+        "id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-licensing",
+        "id": "urn:ngm:class:content-licensing",
         "label": "Content Licensing"
       },
       {
-        "id": "urn:visionflow:linked:piracy-prevention",
+        "id": "urn:ngm:class:piracy-prevention",
         "label": "Piracy Prevention"
       },
       {
-        "id": "urn:visionflow:linked:usage-rights-enforcement",
+        "id": "urn:ngm:class:usage-rights-enforcement",
         "label": "Usage Rights Enforcement"
       },
       {
-        "id": "urn:visionflow:owl:class:revenue-distribution",
+        "id": "urn:ngm:class:revenue-distribution",
         "label": "Revenue Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-protection-infrastructure",
+        "label": "Content Protection Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

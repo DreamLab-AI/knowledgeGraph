@@ -148,76 +148,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-customization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-customization",
+  "@type": "Class",
   "label": "Avatar Customization",
+  "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-personalization",
-      "vc:label": "Digital Personalization"
+      "@id": "urn:ngm:class:digital-personalization",
+      "label": "Digital Personalization"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cdf2691320b6253fe2c1d9a375de71988b04a832fdca1426b967f3d89834ee38"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-libraries",
+        "label": "Asset Libraries"
+      },
+      {
+        "@id": "urn:ngm:class:customization-tools",
+        "label": "Customization Tools"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-preview",
+        "label": "Real-Time Preview"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:identity-representation",
+        "label": "Identity Representation"
+      },
+      {
+        "@id": "urn:ngm:class:self-expression",
+        "label": "Self-Expression"
+      },
+      {
+        "@id": "urn:ngm:class:social-distinction",
+        "label": "Social Distinction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cdf2691320b6253fe2c1d9a375de71988b04a832fdca1426b967f3d89834ee38@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asset-libraries",
-      "vc:label": "Asset Libraries"
-    },
-    {
-      "@id": "urn:visionflow:linked:customization-tools",
-      "vc:label": "Customization Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-preview",
-      "vc:label": "Real-Time Preview"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:identity-representation",
-      "vc:label": "Identity Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-expression",
-      "vc:label": "Self-Expression"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-distinction",
-      "vc:label": "Social Distinction"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

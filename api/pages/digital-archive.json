@@ -3,53 +3,57 @@
   "title": "Digital Archive",
   "slug": "digital-archive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-archive",
+  "classIri": "urn:ngm:class:digital-archive",
   "domain": "spatial-computing",
-  "definition": "A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems. bridges-to:: [[Blockchain]]",
+  "definition": "A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-preservation",
+      "id": "urn:ngm:class:digital-preservation",
       "label": "Digital Preservation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cultural-heritage-access",
+        "id": "urn:ngm:class:cultural-heritage-access",
         "label": "Cultural Heritage Access"
       },
       {
-        "id": "urn:visionflow:linked:historical-research",
+        "id": "urn:ngm:class:historical-research",
         "label": "Historical Research"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-preservation",
+        "id": "urn:ngm:class:knowledge-preservation",
         "label": "Knowledge Preservation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

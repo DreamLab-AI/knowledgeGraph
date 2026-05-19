@@ -3,95 +3,99 @@
   "title": "Sovereign Mesh",
   "slug": "sovereign-mesh",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sovereign-mesh",
+  "classIri": "urn:ngm:class:sovereign-mesh",
   "domain": "blockchain",
-  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting each agent's sovereignty over its own keys and credentials.",
+  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting ea...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "id": "urn:ngm:class:peer-to-peer-network",
       "label": "Peer-to-Peer Network"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.87,
-  "authorityScore": 0.9,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:agent-beacon",
+        "id": "urn:ngm:class:agent-beacon",
         "label": "Agent Beacon"
       },
       {
-        "id": "urn:visionflow:linked:nostr-relay",
+        "id": "urn:ngm:class:nostr-relay",
         "label": "Nostr Relay"
       },
       {
-        "id": "urn:visionflow:owl:class:did-nostr-identity",
+        "id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-discovery",
+        "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
         "label": "BIP-340 Schnorr Keypair"
       },
       {
-        "id": "urn:visionflow:linked:message-signing",
+        "id": "urn:ngm:class:message-signing",
         "label": "Message Signing"
       },
       {
-        "id": "urn:visionflow:linked:network-connectivity",
+        "id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
       },
       {
-        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-agent-coordination",
+        "id": "urn:ngm:class:decentralised-agent-coordination",
         "label": "Decentralised Agent Coordination"
       },
       {
-        "id": "urn:visionflow:linked:federation",
+        "id": "urn:ngm:class:federation",
         "label": "Federation"
       },
       {
-        "id": "urn:visionflow:linked:trustless-peer-communication",
+        "id": "urn:ngm:class:trustless-peer-communication",
         "label": "Trustless Peer Communication"
       },
       {
-        "id": "urn:visionflow:linked:work-distribution",
+        "id": "urn:ngm:class:work-distribution",
         "label": "Work Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:gossip-consensus",
+        "id": "urn:ngm:class:gossip-consensus",
         "label": "Gossip Consensus"
       },
       {
-        "id": "urn:visionflow:linked:nostr-protocol-nip-01",
+        "id": "urn:ngm:class:nostr-protocol-nip-01",
         "label": "Nostr Protocol (NIP-01)"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

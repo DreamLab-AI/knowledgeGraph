@@ -3,32 +3,36 @@
   "title": "Metaverse Architecture",
   "slug": "metaverse-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-architecture",
+  "classIri": "urn:ngm:class:metaverse-architecture",
   "domain": "spatial-computing",
   "definition": "The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:virtual-world-operation",
+        "id": "urn:ngm:class:virtual-world-operation",
         "label": "Virtual World Operation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

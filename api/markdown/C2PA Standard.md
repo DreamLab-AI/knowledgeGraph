@@ -160,76 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:c2-pa-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:c2-pa-standard",
+  "@type": "Class",
   "label": "C2PA Standard",
+  "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standard",
-      "vc:label": "Technical Standard"
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6226eda5aac6476d3ed5d08a3732716f62f3e781283ec9da0dd1ba075c7a5e80"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-framework",
+        "label": "Metadata Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authenticity-certification",
+        "label": "Authenticity Certification"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:media-verification",
+        "label": "Media Verification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6226eda5aac6476d3ed5d08a3732716f62f3e781283ec9da0dd1ba075c7a5e80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signing",
-      "vc:label": "Cryptographic Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-framework",
-      "vc:label": "Metadata Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-model",
-      "vc:label": "Trust Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:authenticity-certification",
-      "vc:label": "Authenticity Certification"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-provenance",
-      "vc:label": "Content Provenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-verification",
-      "vc:label": "Media Verification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

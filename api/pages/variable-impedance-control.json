@@ -3,19 +3,18 @@
   "title": "Variable Impedance Control",
   "slug": "variable-impedance-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:variable-impedance-control",
+  "classIri": "urn:ngm:class:variable-impedance-control",
   "domain": "robotics",
   "definition": "Variable impedance control modulates robot impedance parameters online based on task requirements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:impedance-control",
+      "id": "urn:ngm:class:impedance-control",
       "label": "Impedance Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

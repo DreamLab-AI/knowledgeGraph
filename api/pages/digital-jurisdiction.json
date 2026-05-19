@@ -3,82 +3,95 @@
   "title": "Digital Jurisdiction",
   "slug": "digital-jurisdiction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-jurisdiction",
+  "classIri": "urn:ngm:class:digital-jurisdiction",
   "domain": "spatial-computing",
-  "definition": "A legally recognized framework defining the boundaries of authority, regulatory control, and legal enforcement within virtual spaces, establishing which laws apply to activities, transactions, and disputes occurring in digital environments. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Jurisdiction is a type of Metaverse governance and safeguarding in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:conflict-resolution-mechanism",
+        "id": "urn:ngm:class:conflict-resolution-mechanism",
         "label": "Conflict Resolution Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:legal-authority",
+        "id": "urn:ngm:class:legal-authority",
         "label": "Legal Authority"
       },
       {
-        "id": "urn:visionflow:linked:sovereignty-model",
+        "id": "urn:ngm:class:sovereignty-model",
         "label": "Sovereignty Model"
       },
       {
-        "id": "urn:visionflow:owl:class:jurisdictional-boundary",
+        "id": "urn:ngm:class:jurisdictional-boundary",
         "label": "Jurisdictional Boundary"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-framework",
+        "id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:dispute-resolution",
+        "id": "urn:ngm:class:dispute-resolution",
         "label": "Dispute Resolution"
       },
       {
-        "id": "urn:visionflow:linked:enforcement-mechanism",
+        "id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:legal-entity",
+        "id": "urn:ngm:class:legal-entity",
         "label": "Legal Entity"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-authority",
+        "id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Authority"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-enforcement",
+        "id": "urn:ngm:class:cross-border-enforcement",
         "label": "Cross-Border Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:multi-jurisdictional-coordination",
+        "id": "urn:ngm:class:multi-jurisdictional-coordination",
         "label": "Multi-Jurisdictional Coordination"
       },
       {
-        "id": "urn:visionflow:owl:class:platform-governance",
+        "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-nation-state",
+        "id": "urn:ngm:class:virtual-nation-state",
         "label": "Virtual Nation State"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:legal-system",
+        "label": "Legal System"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

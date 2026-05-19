@@ -3,82 +3,95 @@
   "title": "Community Governance Model",
   "slug": "community-governance-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:community-governance-model",
+  "classIri": "urn:ngm:class:community-governance-model",
   "domain": "artificial-intelligence",
   "definition": "A participatory decision-making framework that defines rules, voting mechanisms, proposal systems, and dispute resolution processes for virtual communities, enabling democratic and transparent collective governance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance-framework",
+      "id": "urn:ngm:class:ai-governance-framework",
       "label": "AI Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:decision-rules",
+        "id": "urn:ngm:class:decision-rules",
         "label": "Decision Rules"
       },
       {
-        "id": "urn:visionflow:linked:dispute-resolution-process",
+        "id": "urn:ngm:class:dispute-resolution-process",
         "label": "Dispute Resolution Process"
       },
       {
-        "id": "urn:visionflow:linked:membership-criteria",
+        "id": "urn:ngm:class:membership-criteria",
         "label": "Membership Criteria"
       },
       {
-        "id": "urn:visionflow:linked:proposal-mechanism",
+        "id": "urn:ngm:class:proposal-mechanism",
         "label": "Proposal Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:voting-system",
+        "id": "urn:ngm:class:voting-system",
         "label": "Voting System"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-token",
+        "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collective-action",
+        "id": "urn:ngm:class:collective-action",
         "label": "Collective Action"
       },
       {
-        "id": "urn:visionflow:linked:community-decision-making",
+        "id": "urn:ngm:class:community-decision-making",
         "label": "Community Decision Making"
       },
       {
-        "id": "urn:visionflow:owl:class:democratic-participation",
+        "id": "urn:ngm:class:democratic-participation",
         "label": "Democratic Participation"
       },
       {
-        "id": "urn:visionflow:owl:class:transparent-governance",
+        "id": "urn:ngm:class:transparent-governance",
         "label": "Transparent Governance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

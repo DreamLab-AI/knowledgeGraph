@@ -272,168 +272,121 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-context-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-context-protocol",
+  "@type": "Class",
   "label": "Model Context Protocol",
+  "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, an...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agent-communication-protocol",
-      "vc:label": "Agent Communication Protocol"
+      "@id": "urn:ngm:class:agent-communication-protocol",
+      "label": "Agent Communication Protocol"
     },
     {
-      "@id": "urn:visionflow:linked:json-rpc-protocol",
-      "vc:label": "JSON-RPC Protocol"
+      "@id": "urn:ngm:class:json-rpc-protocol",
+      "label": "JSON-RPC Protocol"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8f03a4278069bdc6e0c517b83f2627fd3dc8704ab8d22ea981dc3ca9053219c4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mcp-client",
+        "label": "MCP Client"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-prompt",
+        "label": "MCP Prompt"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-resource",
+        "label": "MCP Resource"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-server",
+        "label": "MCP Server"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-tool",
+        "label": "MCP Tool"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-transport-layer",
+        "label": "MCP Transport Layer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:stdio-transport",
+        "label": "STDIO Transport"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agent-tool-use",
+        "label": "Agent Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:context-injection",
+        "label": "Context Injection"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-capability-discovery",
+        "label": "Sandboxed Capability Discovery"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:anthropic-mcp-specification-v0-1",
+        "label": "Anthropic MCP Specification v0.1"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0-resource-server",
+        "label": "OAuth 2.0 Resource Server"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:claude-agent-sdk",
+        "label": "Claude Agent SDK"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain-agent-framework",
+        "label": "LangChain Agent Framework"
+      },
+      {
+        "@id": "urn:ngm:class:vision-claw-agentic-container",
+        "label": "VisionClaw Agentic Container"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8f03a4278069bdc6e0c517b83f2627fd3dc8704ab8d22ea981dc3ca9053219c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, and prompts in a uniform interface that allows any compliant LLM application to discover and invoke heterogeneous external services — databases, file systems, APIs, agent memory stores — without bespoke integration code, forming the primary tool-surface interface within [[VisionClaw Agentic Container]] for agent-to-environment interaction.",
-  "vc:qualityScore": {
-    "@value": "0.70",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.85",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:claude-agent-sdk",
-      "vc:label": "Claude Agent SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-agent-framework",
-      "vc:label": "LangChain Agent Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
-      "vc:label": "VisionClaw Agentic Container"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:mcp-client",
-      "vc:label": "MCP Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-prompt",
-      "vc:label": "MCP Prompt"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-resource",
-      "vc:label": "MCP Resource"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-server",
-      "vc:label": "MCP Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-tool",
-      "vc:label": "MCP Tool"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-transport-layer",
-      "vc:label": "MCP Transport Layer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:http-protocol",
-      "vc:label": "HTTP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc-2-0",
-      "vc:label": "JSON-RPC 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:stdio-transport",
-      "vc:label": "STDIO Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-protocol",
-      "vc:label": "WebSocket Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agent-tool-use",
-      "vc:label": "Agent Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:context-injection",
-      "vc:label": "Context Injection"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-orchestration",
-      "vc:label": "Multi-Agent Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandboxed-capability-discovery",
-      "vc:label": "Sandboxed Capability Discovery"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:anthropic-mcp-specification-v0-1",
-      "vc:label": "Anthropic MCP Specification v0.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0-resource-server",
-      "vc:label": "OAuth 2.0 Resource Server"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:json-schema-validator",
-      "vc:label": "JSON Schema Validator"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-mcp-sdk",
-      "vc:label": "Python MCP SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-script-sdk",
-      "vc:label": "TypeScript SDK"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid-pod",
-      "vc:label": "Solid Pod"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ]
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

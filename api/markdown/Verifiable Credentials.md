@@ -356,290 +356,227 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:verifiable-credentials",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:verifiable-credentials",
+  "@type": "Class",
   "label": "Verifiable Credentials",
+  "definition": "Cryptographically secured, tamper-evident digital credentials standardised by the W3C Verifiable Credentials Data Model v2.0 (May 2025 REC) that encode machine-verifiable claims about subjects — enabling a holder/issuer/verifier triangle in which issuers sign claims with DIDs, holders selectively...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "Cryptographic Proof"
+      "@id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
     },
     {
-      "@id": "urn:visionflow:linked:w3-c-standard",
-      "vc:label": "W3C Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
+      "@id": "urn:ngm:class:w3-c-standard",
+      "label": "W3C Standard"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:665deba8ea625deaad35d260bc44b45fe37daaec5ea2b4e969cf498337b87697"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "@id": "urn:ngm:class:credential-status",
+        "label": "Credential Status"
+      },
+      {
+        "@id": "urn:ngm:class:credential-subject",
+        "label": "Credential Subject"
+      },
+      {
+        "@id": "urn:ngm:class:proof-method",
+        "label": "Proof Method"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-presentation",
+        "label": "Verifiable Presentation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-identity-recognition",
+        "label": "Cross-Border Identity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:offline-verification",
+        "label": "Offline Verification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bbs-signature",
+        "label": "BBS+ Signature"
+      },
+      {
+        "@id": "urn:ngm:class:bitstring-status-list",
+        "label": "Bitstring Status List"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:m-dl-iso-18013-5",
+        "label": "mDL ISO 18013-5"
+      },
+      {
+        "@id": "urn:ngm:class:open-id4-vc",
+        "label": "OpenID4VC"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "@id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:open-id4-vci",
+        "label": "OpenID4VCI"
+      },
+      {
+        "@id": "urn:ngm:class:open-id4-vp",
+        "label": "OpenID4VP"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:eudi-wallet",
+        "label": "EUDI Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:gov-uk-one-login",
+        "label": "GOV.UK One Login"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-data-interoperability",
+        "label": "Healthcare Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:european-commission-e-idas",
+        "label": "European Commission eIDAS"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:665deba8ea625deaad35d260bc44b45fe37daaec5ea2b4e969cf498337b87697@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cryptographically secured, tamper-evident digital credentials standardised by the W3C Verifiable Credentials Data Model v2.0 (May 2025 REC) that encode machine-verifiable claims about subjects — enabling a holder/issuer/verifier triangle in which issuers sign claims with DIDs, holders selectively disclose attributes using BBS+ or SD-JWT techniques, and verifiers confirm authenticity offline without contacting the issuer. The ecosystem encompasses JSON-LD and JWT/SD-JWT serialisations, revocation via Bitstring Status List v1.0, mobile driving licences under ISO 18013-5/7, the EU Digital Identity (EUDI) Wallet Architecture Reference Framework (ARF 1.4, 2024–2026), and OpenID4VCI/OpenID4VP presentation protocols — collectively displacing paper and siloed digital credentials across government identity, healthcare, education, and supply-chain provenance domains.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:credential-schema",
-      "vc:label": "Credential Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-status",
-      "vc:label": "Credential Status"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-subject",
-      "vc:label": "Credential Subject"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-method",
-      "vc:label": "Proof Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-credential",
-      "vc:label": "Verifiable Credential"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-presentation",
-      "vc:label": "Verifiable Presentation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifiers",
-      "vc:label": "Decentralised Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:linked:did-document",
-      "vc:label": "DID Document"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-identity-recognition",
-      "vc:label": "Cross-Border Identity Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-verification",
-      "vc:label": "Offline Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-identity",
-      "vc:label": "Privacy-Preserving Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bbs-signature",
-      "vc:label": "BBS+ Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitstring-status-list",
-      "vc:label": "Bitstring Status List"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-web-token",
-      "vc:label": "JSON Web Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:m-dl-iso-18013-5",
-      "vc:label": "mDL ISO 18013-5"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id4-vc",
-      "vc:label": "OpenID4VC"
-    },
-    {
-      "@id": "urn:visionflow:linked:sd-jwt",
-      "vc:label": "SD-JWT"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cbor",
-      "vc:label": "CBOR"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifiers",
-      "vc:label": "Decentralised Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-data-integrity",
-      "vc:label": "W3C Data Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:eudi-wallet",
-      "vc:label": "EUDI Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:gov-uk-one-login",
-      "vc:label": "GOV.UK One Login"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-data-interoperability",
-      "vc:label": "Healthcare Data Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:didcomm",
-      "vc:label": "DIDComm"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed-dsa",
-      "vc:label": "EdDSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id4-vci",
-      "vc:label": "OpenID4VCI"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id4-vp",
-      "vc:label": "OpenID4VP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecdsa",
-      "vc:label": "ECDSA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-identity-provider",
-      "vc:label": "Centralised Identity Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-identity",
-      "vc:label": "Federated Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth2-token",
-      "vc:label": "OAuth2 Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:saml-assertion",
-      "vc:label": "SAML Assertion"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-509-certificate",
-      "vc:label": "X.509 Certificate"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:european-commission-e-idas",
-      "vc:label": "European Commission eIDAS"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso",
-      "vc:label": "ISO"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-foundation",
-      "vc:label": "OpenID Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

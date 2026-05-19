@@ -3,19 +3,18 @@
   "title": "Power-Efficient AI",
   "slug": "power-efficient-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:power-efficient-ai",
+  "classIri": "urn:ngm:class:power-efficient-ai",
   "domain": "artificial-intelligence",
-  "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes. Power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. Techniques include dynamic voltage and frequency scaling (DVFS) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. Energy efficiency measured in TOPS/Watt (tera-operations per watt) quantifies inference throughput per unit power. Model-level optimizations employ low-precision arithmetic (INT8, FP16 instead of FP32), reducing both computation and memory energy. Hardware accelerators like specialized AI chips achieve 10-50x energy efficiency versus general-purpose processors through reduced dat",
+  "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

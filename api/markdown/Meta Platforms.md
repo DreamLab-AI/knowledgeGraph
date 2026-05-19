@@ -636,440 +636,335 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:meta-platforms",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:meta-platforms",
+  "@type": "Class",
   "label": "Meta Platforms",
+  "definition": "Meta Platforms Inc is a Menlo Park-headquartered American multinational technology conglomerate founded 4 February 2004 in a Harvard University dormitory by Mark Zuckerberg with co-founders Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes as TheFacebook.com — initially a Harvar...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:foundation-model-developer",
-      "vc:label": "Foundation Model Developer"
+      "@id": "urn:ngm:class:foundation-model-developer",
+      "label": "Foundation Model Developer"
     },
     {
-      "@id": "urn:visionflow:linked:hyperscaler",
-      "vc:label": "Hyperscaler"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-media-platform-operator",
-      "vc:label": "Social Media Platform Operator"
+      "@id": "urn:ngm:class:hyperscaler",
+      "label": "Hyperscaler"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:763625a0cd1045a28cfbb0c92c7fb3ba0d516b97c2f98bd4ddba64bbb287754b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:facebook-product",
+        "label": "Facebook Product"
+      },
+      {
+        "@id": "urn:ngm:class:fair",
+        "label": "FAIR"
+      },
+      {
+        "@id": "urn:ngm:class:horizon-worlds",
+        "label": "Horizon Worlds"
+      },
+      {
+        "@id": "urn:ngm:class:instagram",
+        "label": "Instagram"
+      },
+      {
+        "@id": "urn:ngm:class:llama",
+        "label": "Llama"
+      },
+      {
+        "@id": "urn:ngm:class:messenger",
+        "label": "Messenger"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai-assistant",
+        "label": "Meta AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:meta-hyperion",
+        "label": "Meta Hyperion"
+      },
+      {
+        "@id": "urn:ngm:class:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "@id": "urn:ngm:class:mtia",
+        "label": "MTIA"
+      },
+      {
+        "@id": "urn:ngm:class:project-orion",
+        "label": "Project Orion"
+      },
+      {
+        "@id": "urn:ngm:class:ray-ban-meta",
+        "label": "Ray-Ban Meta"
+      },
+      {
+        "@id": "urn:ngm:class:reality-labs",
+        "label": "Reality Labs"
+      },
+      {
+        "@id": "urn:ngm:class:threads",
+        "label": "Threads"
+      },
+      {
+        "@id": "urn:ngm:class:whats-app",
+        "label": "WhatsApp"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:advertising-network",
+        "label": "Advertising Network"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets-access",
+        "label": "Capital Markets Access"
+      },
+      {
+        "@id": "urn:ngm:class:datacentre",
+        "label": "Datacentre"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-operating-system",
+        "label": "Mobile Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:sec-reporting",
+        "label": "SEC Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consumer-ai-assistants",
+        "label": "Consumer AI Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-messaging",
+        "label": "Cross-Platform Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:federated-microblogging",
+        "label": "Federated Microblogging"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-computing",
+        "label": "Mixed Reality Computing"
+      },
+      {
+        "@id": "urn:ngm:class:open-weight-ai-research",
+        "label": "Open-Weight AI Research"
+      },
+      {
+        "@id": "urn:ngm:class:social-networking",
+        "label": "Social Networking"
+      },
+      {
+        "@id": "urn:ngm:class:targeted-advertising",
+        "label": "Targeted Advertising"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:activity-pub-federation",
+        "label": "ActivityPub Federation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-newsfeed-ranking",
+        "label": "Algorithmic Newsfeed Ranking"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-advertising",
+        "label": "Behavioural Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:community-notes-moderation",
+        "label": "Community Notes Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture of Experts Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:open-weight-model-release",
+        "label": "Open-Weight Model Release"
+      },
+      {
+        "@id": "urn:ngm:class:pass-through-mixed-reality",
+        "label": "Pass-Through Mixed Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:pancake-lens",
+        "label": "Pancake Lens"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bluesky",
+        "label": "Bluesky"
+      },
+      {
+        "@id": "urn:ngm:class:cambridge-analytica",
+        "label": "Cambridge Analytica"
+      },
+      {
+        "@id": "urn:ngm:class:frances-haugen",
+        "label": "Frances Haugen"
+      },
+      {
+        "@id": "urn:ngm:class:mark-zuckerberg",
+        "label": "Mark Zuckerberg"
+      },
+      {
+        "@id": "urn:ngm:class:mastodon",
+        "label": "Mastodon"
+      },
+      {
+        "@id": "urn:ngm:class:oculus-vr",
+        "label": "Oculus VR"
+      },
+      {
+        "@id": "urn:ngm:class:onavo",
+        "label": "Onavo"
+      },
+      {
+        "@id": "urn:ngm:class:yann-le-cun",
+        "label": "Yann LeCun"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:activity-pub-federation",
+        "label": "ActivityPub Federation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:llama-ecosystem",
+        "label": "Llama Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai-research-community",
+        "label": "Meta AI Research Community"
+      },
+      {
+        "@id": "urn:ngm:class:open-compute-project",
+        "label": "Open Compute Project"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:react",
+        "label": "React"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:activity-pub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:dma",
+        "label": "DMA"
+      },
+      {
+        "@id": "urn:ngm:class:dsa",
+        "label": "DSA"
+      },
+      {
+        "@id": "urn:ngm:class:fasb",
+        "label": "FASB"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:nasdaq-listing-rules",
+        "label": "Nasdaq Listing Rules"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:sec-form-10-k",
+        "label": "SEC Form 10-K"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:763625a0cd1045a28cfbb0c92c7fb3ba0d516b97c2f98bd4ddba64bbb287754b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Meta Platforms Inc** (NASDAQ: META, formerly Facebook Inc 2004-2021) is a Menlo Park-headquartered American multinational technology conglomerate founded 4 February 2004 in a Harvard University dormitory by Mark Zuckerberg with co-founders Eduardo Saverin, Andrew McCollum, Dustin Moskovitz and Chris Hughes as TheFacebook.com — initially a Harvard-only student social directory expanding to Ivy League campuses then US universities (2005), the public internet (September 2006), mobile platforms (Facebook for iPhone 2008, native Android 2010), and ultimately a global communications stack — rebranded to **Meta Platforms** on 28 October 2021 (Facebook Connect keynote, Zuckerberg \"Founder's Letter\") to signal a strategic pivot toward the **metaverse** (immersive 3D social computing) and decouple the corporate identity from the increasingly contested Facebook product brand following the **Frances Haugen whistleblower disclosures** (September-October 2021 Wall Street Journal \"Facebook Files\" series and US Senate testimony exposing internal research on Instagram teen mental health, XCheck VIP moderation tier, Civic Integrity team dissolution, algorithmic amplification of divisive content), ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:facebook-product",
-      "vc:label": "Facebook Product"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair",
-      "vc:label": "FAIR"
-    },
-    {
-      "@id": "urn:visionflow:linked:horizon-worlds",
-      "vc:label": "Horizon Worlds"
-    },
-    {
-      "@id": "urn:visionflow:linked:instagram",
-      "vc:label": "Instagram"
-    },
-    {
-      "@id": "urn:visionflow:linked:llama",
-      "vc:label": "Llama"
-    },
-    {
-      "@id": "urn:visionflow:linked:messenger",
-      "vc:label": "Messenger"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-ai-assistant",
-      "vc:label": "Meta AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-hyperion",
-      "vc:label": "Meta Hyperion"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-quest",
-      "vc:label": "Meta Quest"
-    },
-    {
-      "@id": "urn:visionflow:linked:mtia",
-      "vc:label": "MTIA"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-orion",
-      "vc:label": "Project Orion"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-ban-meta",
-      "vc:label": "Ray-Ban Meta"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-labs",
-      "vc:label": "Reality Labs"
-    },
-    {
-      "@id": "urn:visionflow:linked:threads",
-      "vc:label": "Threads"
-    },
-    {
-      "@id": "urn:visionflow:linked:whats-app",
-      "vc:label": "WhatsApp"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:advertising-network",
-      "vc:label": "Advertising Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-markets-access",
-      "vc:label": "Capital Markets Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:datacentre",
-      "vc:label": "Datacentre"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-cluster",
-      "vc:label": "GPU Cluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-operating-system",
-      "vc:label": "Mobile Operating System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-reporting",
-      "vc:label": "SEC Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consumer-ai-assistants",
-      "vc:label": "Consumer AI Assistants"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-messaging",
-      "vc:label": "Cross-Platform Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-microblogging",
-      "vc:label": "Federated Microblogging"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-reality-computing",
-      "vc:label": "Mixed Reality Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-weight-ai-research",
-      "vc:label": "Open-Weight AI Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-networking",
-      "vc:label": "Social Networking"
-    },
-    {
-      "@id": "urn:visionflow:linked:targeted-advertising",
-      "vc:label": "Targeted Advertising"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:activity-pub-federation",
-      "vc:label": "ActivityPub Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:algorithmic-newsfeed-ranking",
-      "vc:label": "Algorithmic Newsfeed Ranking"
-    },
-    {
-      "@id": "urn:visionflow:linked:behavioural-advertising",
-      "vc:label": "Behavioural Advertising"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-notes-moderation",
-      "vc:label": "Community Notes Moderation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixture-of-experts-architecture",
-      "vc:label": "Mixture of Experts Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-weight-model-release",
-      "vc:label": "Open-Weight Model Release"
-    },
-    {
-      "@id": "urn:visionflow:linked:pass-through-mixed-reality",
-      "vc:label": "Pass-Through Mixed Reality"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:advertising-ecosystem",
-      "vc:label": "Advertising Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:electric-grid",
-      "vc:label": "Electric Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-backbone",
-      "vc:label": "Internet Backbone"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-gpu-supply",
-      "vc:label": "NVIDIA GPU Supply"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ecosystem",
-      "vc:label": "Open Source Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:smartphone-ecosystem",
-      "vc:label": "Smartphone Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:subsea-cable-infrastructure",
-      "vc:label": "Subsea Cable Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:activity-pub-federation",
-      "vc:label": "ActivityPub Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-ql",
-      "vc:label": "GraphQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:llama-ecosystem",
-      "vc:label": "Llama Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-ai-research-community",
-      "vc:label": "Meta AI Research Community"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-compute-project",
-      "vc:label": "Open Compute Project"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:react",
-      "vc:label": "React"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:inside-out-tracking",
-      "vc:label": "Inside-Out Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:pancake-lens",
-      "vc:label": "Pancake Lens"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:direct-preference-optimization",
-      "vc:label": "Direct Preference Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:anthropic",
-      "vc:label": "Anthropic"
-    },
-    {
-      "@id": "urn:visionflow:linked:byte-dance",
-      "vc:label": "ByteDance"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-alphabet",
-      "vc:label": "Google Alphabet"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft",
-      "vc:label": "Microsoft"
-    },
-    {
-      "@id": "urn:visionflow:linked:snap-inc",
-      "vc:label": "Snap Inc"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-twitter",
-      "vc:label": "X Twitter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:apple",
-      "vc:label": "Apple"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai",
-      "vc:label": "OpenAI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bluesky",
-      "vc:label": "Bluesky"
-    },
-    {
-      "@id": "urn:visionflow:linked:cambridge-analytica",
-      "vc:label": "Cambridge Analytica"
-    },
-    {
-      "@id": "urn:visionflow:linked:frances-haugen",
-      "vc:label": "Frances Haugen"
-    },
-    {
-      "@id": "urn:visionflow:linked:mark-zuckerberg",
-      "vc:label": "Mark Zuckerberg"
-    },
-    {
-      "@id": "urn:visionflow:linked:mastodon",
-      "vc:label": "Mastodon"
-    },
-    {
-      "@id": "urn:visionflow:linked:oculus-vr",
-      "vc:label": "Oculus VR"
-    },
-    {
-      "@id": "urn:visionflow:linked:onavo",
-      "vc:label": "Onavo"
-    },
-    {
-      "@id": "urn:visionflow:linked:yann-le-cun",
-      "vc:label": "Yann LeCun"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:activity-pub",
-      "vc:label": "ActivityPub"
-    },
-    {
-      "@id": "urn:visionflow:linked:dma",
-      "vc:label": "DMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dsa",
-      "vc:label": "DSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fasb",
-      "vc:label": "FASB"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:nasdaq-listing-rules",
-      "vc:label": "Nasdaq Listing Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-act-2023",
-      "vc:label": "Online Safety Act 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-form-10-k",
-      "vc:label": "SEC Form 10-K"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:llama",
-      "vc:label": "Llama"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-labs",
-      "vc:label": "Reality Labs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-media",
-      "vc:label": "Social Media"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

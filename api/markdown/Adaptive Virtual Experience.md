@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:adaptive-virtual-experience",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adaptive-virtual-experience",
+  "@type": "Class",
   "label": "Adaptive Virtual Experience",
+  "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality exp...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:virtual-reality-experience",
-      "vc:label": "Virtual Reality Experience"
+      "@id": "urn:ngm:class:virtual-reality-experience",
+      "label": "Virtual Reality Experience"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d19b57add8c30575641ab3c4eefb27c2282d87b463cb19ae3a60c887c0bdeb8d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:user-behavior-tracking",
+        "label": "User Behavior Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-gaming",
+        "label": "Dynamic Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-learning",
+        "label": "Personalized Learning"
+      },
+      {
+        "@id": "urn:ngm:class:therapeutic-vr",
+        "label": "Therapeutic VR"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d19b57add8c30575641ab3c4eefb27c2282d87b463cb19ae3a60c887c0bdeb8d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:real-time-analytics",
-      "vc:label": "Real-Time Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-behavior-tracking",
-      "vc:label": "User Behavior Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-gaming",
-      "vc:label": "Dynamic Gaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-learning",
-      "vc:label": "Personalized Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:therapeutic-vr",
-      "vc:label": "Therapeutic VR"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -556,360 +556,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cyber-security-and-military",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cyber-security-and-military",
+  "@type": "Class",
   "label": "Cyber Security and Military",
+  "definition": "Cyber Security and Military denotes the doctrinal, organisational, technical and operational fusion of cyberspace as a recognised warfighting domain alongside land, sea, air and space — codified by NATO at the 2016 Warsaw Summit declaration that cyberspace is \"a domain of operations in which NATO...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cyber-operations",
-      "vc:label": "Cyber Operations"
+      "@id": "urn:ngm:class:cyber-operations",
+      "label": "Cyber Operations"
     },
     {
-      "@id": "urn:visionflow:linked:defence-capability",
-      "vc:label": "Defence Capability"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-security-capability",
-      "vc:label": "National Security Capability"
+      "@id": "urn:ngm:class:defence-capability",
+      "label": "Defence Capability"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:62876666b2d4b0ffd4475b1bc1cbc6eb2f8a86538c4a0cf68ad57b899e6083be"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:computer-network-exploitation",
+        "label": "Computer Network Exploitation"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-intelligence",
+        "label": "Cyber Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-mission-force",
+        "label": "Cyber Mission Force"
+      },
+      {
+        "@id": "urn:ngm:class:defensive-cyber-operations",
+        "label": "Defensive Cyber Operations"
+      },
+      {
+        "@id": "urn:ngm:class:electromagnetic-spectrum-operations",
+        "label": "Electromagnetic Spectrum Operations"
+      },
+      {
+        "@id": "urn:ngm:class:information-operations",
+        "label": "Information Operations"
+      },
+      {
+        "@id": "urn:ngm:class:national-cyber-force",
+        "label": "National Cyber Force"
+      },
+      {
+        "@id": "urn:ngm:class:offensive-cyber-operations",
+        "label": "Offensive Cyber Operations"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:attribution-capability",
+        "label": "Attribution Capability"
+      },
+      {
+        "@id": "urn:ngm:class:classified-compute-infrastructure",
+        "label": "Classified Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-doctrine",
+        "label": "Cyber Doctrine"
+      },
+      {
+        "@id": "urn:ngm:class:signals-intelligence",
+        "label": "Signals Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-authority",
+        "label": "Sovereign Authority"
+      },
+      {
+        "@id": "urn:ngm:class:trained-cyber-operators",
+        "label": "Trained Cyber Operators"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-research",
+        "label": "Vulnerability Research"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adversary-intelligence-collection",
+        "label": "Adversary Intelligence Collection"
+      },
+      {
+        "@id": "urn:ngm:class:battle-damage-assessment",
+        "label": "Battle Damage Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:critical-infrastructure-disruption",
+        "label": "Critical Infrastructure Disruption"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-deterrence",
+        "label": "Cyber Deterrence"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-warfare",
+        "label": "Hybrid Warfare"
+      },
+      {
+        "@id": "urn:ngm:class:joint-all-domain-operations",
+        "label": "Joint All-Domain Operations"
+      },
+      {
+        "@id": "urn:ngm:class:strategic-coercion",
+        "label": "Strategic Coercion"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:computer-network-operations-doctrine",
+        "label": "Computer Network Operations Doctrine"
+      },
+      {
+        "@id": "urn:ngm:class:defend-forward",
+        "label": "Defend Forward"
+      },
+      {
+        "@id": "urn:ngm:class:f3-ead-targeting",
+        "label": "F3EAD Targeting"
+      },
+      {
+        "@id": "urn:ngm:class:joint-targeting-cycle",
+        "label": "Joint Targeting Cycle"
+      },
+      {
+        "@id": "urn:ngm:class:law-of-armed-conflict",
+        "label": "Law of Armed Conflict"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-engagement",
+        "label": "Persistent Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:tallinn-manual-rules",
+        "label": "Tallinn Manual Rules"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:command-and-control-infrastructure",
+        "label": "Command and Control Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:implants",
+        "label": "Implants"
+      },
+      {
+        "@id": "urn:ngm:class:initial-access-brokers",
+        "label": "Initial Access Brokers"
+      },
+      {
+        "@id": "urn:ngm:class:living-off-the-land-techniques",
+        "label": "Living-Off-The-Land Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:malware",
+        "label": "Malware"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-compromise",
+        "label": "Supply Chain Compromise"
+      },
+      {
+        "@id": "urn:ngm:class:wiper-malware",
+        "label": "Wiper Malware"
+      },
+      {
+        "@id": "urn:ngm:class:zero-day-exploits",
+        "label": "Zero-Day Exploits"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:counter-intelligence",
+        "label": "Counter-Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:drone-warfare",
+        "label": "Drone Warfare"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-warfare",
+        "label": "Electronic Warfare"
+      },
+      {
+        "@id": "urn:ngm:class:information-warfare",
+        "label": "Information Warfare"
+      },
+      {
+        "@id": "urn:ngm:class:space-operations",
+        "label": "Space Operations"
+      },
+      {
+        "@id": "urn:ngm:class:strategic-communication",
+        "label": "Strategic Communication"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:allied-coalition-operations",
+        "label": "Allied Coalition Operations"
+      },
+      {
+        "@id": "urn:ngm:class:counter-proliferation",
+        "label": "Counter-Proliferation"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorism",
+        "label": "Counter-Terrorism"
+      },
+      {
+        "@id": "urn:ngm:class:five-eyes-intelligence",
+        "label": "Five Eyes Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:national-defence",
+        "label": "National Defence"
+      },
+      {
+        "@id": "urn:ngm:class:nato-article-5",
+        "label": "NATO Article 5"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:mitre-att-and-ck",
+        "label": "MITRE ATT&CK"
+      },
+      {
+        "@id": "urn:ngm:class:nato-ccdcoe",
+        "label": "NATO CCDCOE"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:stix-taxii",
+        "label": "STIX/TAXII"
+      },
+      {
+        "@id": "urn:ngm:class:tallinn-manual",
+        "label": "Tallinn Manual"
+      },
+      {
+        "@id": "urn:ngm:class:un-gge",
+        "label": "UN GGE"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:62876666b2d4b0ffd4475b1bc1cbc6eb2f8a86538c4a0cf68ad57b899e6083be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cyber Security and Military denotes the doctrinal, organisational, technical and operational fusion of cyberspace as a recognised warfighting domain alongside land, sea, air and space — codified by NATO at the 2016 Warsaw Summit declaration that cyberspace is \"a domain of operations in which NATO must defend itself as effectively as it does in the air, on land, and at sea\" and reaffirmed by the 2022 Strategic Concept and 2023 Vilnius Communiqué endorsement of the Virtual Cyber Incident Support Capability (VCISC) — encompassing the spectrum of state-level activities (defensive cyberspace operations DCO, offensive cyberspace operations OCO, intelligence preparation of the cyber environment, computer network exploitation CNE, information operations IO, electromagnetic spectrum operations) conducted by uniformed military commands (US Cyber Command USCYBERCOM elevated to unified combatant command 2018 with 133-team Cyber Mission Force CMF reaching full operational capability 2018 and authorised end strength ~6,200 personnel growing to 14,000 by 2028 under CYBERCOM 2.0; UK National Cyber Force NCF stood up 2020 as a partnership between GCHQ/MOD/SIS/Dstl with permanent HQ at Samlesbury La",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:computer-network-exploitation",
-      "vc:label": "Computer Network Exploitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-intelligence",
-      "vc:label": "Cyber Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-mission-force",
-      "vc:label": "Cyber Mission Force"
-    },
-    {
-      "@id": "urn:visionflow:linked:defensive-cyber-operations",
-      "vc:label": "Defensive Cyber Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:electromagnetic-spectrum-operations",
-      "vc:label": "Electromagnetic Spectrum Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-operations",
-      "vc:label": "Information Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-cyber-force",
-      "vc:label": "National Cyber Force"
-    },
-    {
-      "@id": "urn:visionflow:linked:offensive-cyber-operations",
-      "vc:label": "Offensive Cyber Operations"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:attribution-capability",
-      "vc:label": "Attribution Capability"
-    },
-    {
-      "@id": "urn:visionflow:linked:classified-compute-infrastructure",
-      "vc:label": "Classified Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-doctrine",
-      "vc:label": "Cyber Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:signals-intelligence",
-      "vc:label": "Signals Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-authority",
-      "vc:label": "Sovereign Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:trained-cyber-operators",
-      "vc:label": "Trained Cyber Operators"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerability-research",
-      "vc:label": "Vulnerability Research"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adversary-intelligence-collection",
-      "vc:label": "Adversary Intelligence Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:battle-damage-assessment",
-      "vc:label": "Battle Damage Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:critical-infrastructure-disruption",
-      "vc:label": "Critical Infrastructure Disruption"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyber-deterrence",
-      "vc:label": "Cyber Deterrence"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-warfare",
-      "vc:label": "Hybrid Warfare"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-all-domain-operations",
-      "vc:label": "Joint All-Domain Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:strategic-coercion",
-      "vc:label": "Strategic Coercion"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:computer-network-operations-doctrine",
-      "vc:label": "Computer Network Operations Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:defend-forward",
-      "vc:label": "Defend Forward"
-    },
-    {
-      "@id": "urn:visionflow:linked:f3-ead-targeting",
-      "vc:label": "F3EAD Targeting"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-targeting-cycle",
-      "vc:label": "Joint Targeting Cycle"
-    },
-    {
-      "@id": "urn:visionflow:linked:law-of-armed-conflict",
-      "vc:label": "Law of Armed Conflict"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-engagement",
-      "vc:label": "Persistent Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:tallinn-manual-rules",
-      "vc:label": "Tallinn Manual Rules"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:computer-networks",
-      "vc:label": "Computer Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:critical-infrastructure",
-      "vc:label": "Critical Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:signals-intelligence",
-      "vc:label": "Signals Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-intelligence",
-      "vc:label": "Threat Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerability-research",
-      "vc:label": "Vulnerability Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-day-exploits",
-      "vc:label": "Zero-Day Exploits"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:allied-coalition-operations",
-      "vc:label": "Allied Coalition Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:counter-proliferation",
-      "vc:label": "Counter-Proliferation"
-    },
-    {
-      "@id": "urn:visionflow:linked:counter-terrorism",
-      "vc:label": "Counter-Terrorism"
-    },
-    {
-      "@id": "urn:visionflow:linked:five-eyes-intelligence",
-      "vc:label": "Five Eyes Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-defence",
-      "vc:label": "National Defence"
-    },
-    {
-      "@id": "urn:visionflow:linked:nato-article-5",
-      "vc:label": "NATO Article 5"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-enforcement",
-      "vc:label": "Sanctions Enforcement"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:command-and-control-infrastructure",
-      "vc:label": "Command and Control Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:implants",
-      "vc:label": "Implants"
-    },
-    {
-      "@id": "urn:visionflow:linked:initial-access-brokers",
-      "vc:label": "Initial Access Brokers"
-    },
-    {
-      "@id": "urn:visionflow:linked:living-off-the-land-techniques",
-      "vc:label": "Living-Off-The-Land Techniques"
-    },
-    {
-      "@id": "urn:visionflow:linked:malware",
-      "vc:label": "Malware"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-compromise",
-      "vc:label": "Supply Chain Compromise"
-    },
-    {
-      "@id": "urn:visionflow:linked:wiper-malware",
-      "vc:label": "Wiper Malware"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-day-exploits",
-      "vc:label": "Zero-Day Exploits"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:civilian-cybersecurity",
-      "vc:label": "Civilian Cybersecurity"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-information-security",
-      "vc:label": "Corporate Information Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:cybercrime",
-      "vc:label": "Cybercrime"
-    },
-    {
-      "@id": "urn:visionflow:linked:hacktivism",
-      "vc:label": "Hacktivism"
-    },
-    {
-      "@id": "urn:visionflow:linked:law-enforcement-cyber",
-      "vc:label": "Law Enforcement Cyber"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:counter-intelligence",
-      "vc:label": "Counter-Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:drone-warfare",
-      "vc:label": "Drone Warfare"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-warfare",
-      "vc:label": "Electronic Warfare"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-warfare",
-      "vc:label": "Information Warfare"
-    },
-    {
-      "@id": "urn:visionflow:linked:space-operations",
-      "vc:label": "Space Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:strategic-communication",
-      "vc:label": "Strategic Communication"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iso-27001",
-      "vc:label": "ISO 27001"
-    },
-    {
-      "@id": "urn:visionflow:linked:mitre-att-and-ck",
-      "vc:label": "MITRE ATT&CK"
-    },
-    {
-      "@id": "urn:visionflow:linked:nato-ccdcoe",
-      "vc:label": "NATO CCDCOE"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-cybersecurity-framework",
-      "vc:label": "NIST Cybersecurity Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:stix-taxii",
-      "vc:label": "STIX/TAXII"
-    },
-    {
-      "@id": "urn:visionflow:linked:tallinn-manual",
-      "vc:label": "Tallinn Manual"
-    },
-    {
-      "@id": "urn:visionflow:linked:un-gge",
-      "vc:label": "UN GGE"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:critical-infrastructure",
-      "vc:label": "Critical Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

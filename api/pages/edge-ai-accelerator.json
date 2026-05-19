@@ -3,19 +3,18 @@
   "title": "Edge AI Accelerator",
   "slug": "edge-ai-accelerator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-ai-accelerator",
+  "classIri": "urn:ngm:class:edge-ai-accelerator",
   "domain": "artificial-intelligence",
   "definition": "Specialized hardware designed to run AI inference workloads locally on edge devices, optimized for low power consumption and real-time performance without cloud connectivity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-hardware",
+      "id": "urn:ngm:class:ai-hardware",
       "label": "AI Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

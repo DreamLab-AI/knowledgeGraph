@@ -3,19 +3,18 @@
   "title": "Notified Body",
   "slug": "notified-body",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:notified-body",
+  "classIri": "urn:ngm:class:notified-body",
   "domain": "infrastructure",
   "definition": "A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:regulatory-framework",
+      "id": "urn:ngm:class:regulatory-framework",
       "label": "Regulatory Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

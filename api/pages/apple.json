@@ -3,167 +3,242 @@
   "title": "Apple",
   "slug": "apple",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:apple",
+  "classIri": "urn:ngm:individual:apple",
   "domain": "infrastructure",
-  "definition": "**Apple Inc.** (NASDAQ: AAPL, founded 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne in Cupertino, California; reincorporated 1977; UK engineering headquarters at Battersea Power Station, London since 2021) is the world's highest-market-capitalisation technology corporation (~$3.0-3.5T USD through 2024-2026) and a pivotal multi-dimensional actor in the AI/XR/agentic ontology by virtue of five interlocking strategic capabilities that collectively distinguish it from both pure-software AI laboratories and cloud-only competitors: (1) **Apple Silicon** \u2014 a vertically integrated system-on-chip stack spanning the M-series (Mac/iPad/Vision Pro) and A-series (iPhone/iPad) lineage, designed in-house as ARM architectural licensees and manufactured at TSMC 3nm nodes, embedding Neural Engine cores delivering 11-38+ TOPS of dedicated AI inference per chip generation alongside CPU performance cores with built-in ML accelerators and a GPU unified-memory architecture optimised for large-model KV-cache access patterns, enabling transformer-based language models with 3B-13B parameters to run entirely on-device without server dependency across 2024-2026 hardware generations; (2) **Apple Intellig",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:hardware-manufacturer",
-      "label": "Hardware Manufacturer"
-    },
-    {
-      "id": "urn:visionflow:linked:mobile-ecosystem",
-      "label": "Mobile Ecosystem"
-    },
-    {
-      "id": "urn:visionflow:linked:platform-gatekeeper",
-      "label": "Platform Gatekeeper"
-    }
-  ],
+  "definition": "Multinational technology corporation that designs consumer electronics, software, and services including iPhone, Mac, and the iOS and macOS platforms, alongside spatial computing hardware such as Apple Vision Pro.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:app-store",
+        "id": "urn:ngm:class:app-store",
         "label": "App Store"
       },
       {
-        "id": "urn:visionflow:linked:apple-intelligence",
+        "id": "urn:ngm:class:apple-intelligence",
         "label": "Apple Intelligence"
       },
       {
-        "id": "urn:visionflow:linked:apple-silicon",
+        "id": "urn:ngm:class:apple-silicon",
         "label": "Apple Silicon"
       },
       {
-        "id": "urn:visionflow:linked:core-ml",
+        "id": "urn:ngm:class:core-ml",
         "label": "CoreML"
       },
       {
-        "id": "urn:visionflow:linked:i-cloud",
+        "id": "urn:ngm:class:i-cloud",
         "label": "iCloud"
       },
       {
-        "id": "urn:visionflow:linked:i-os",
+        "id": "urn:ngm:class:i-os",
         "label": "iOS"
       },
       {
-        "id": "urn:visionflow:linked:mac-os",
+        "id": "urn:ngm:class:mac-os",
         "label": "macOS"
       },
       {
-        "id": "urn:visionflow:linked:mlx",
+        "id": "urn:ngm:class:mlx",
         "label": "MLX"
       },
       {
-        "id": "urn:visionflow:linked:private-cloud-compute",
+        "id": "urn:ngm:class:private-cloud-compute",
         "label": "Private Cloud Compute"
       },
       {
-        "id": "urn:visionflow:linked:siri",
+        "id": "urn:ngm:class:siri",
         "label": "Siri"
       },
       {
-        "id": "urn:visionflow:linked:vision-os",
+        "id": "urn:ngm:class:vision-os",
         "label": "visionOS"
       },
       {
-        "id": "urn:visionflow:linked:xcode",
+        "id": "urn:ngm:class:xcode",
         "label": "Xcode"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:vision-pro",
+        "id": "urn:ngm:class:vision-pro",
         "label": "Vision Pro"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:arm-architecture",
+        "id": "urn:ngm:class:arm-architecture",
         "label": "ARM Architecture"
       },
       {
-        "id": "urn:visionflow:linked:neural-engine",
+        "id": "urn:ngm:class:neural-engine",
         "label": "Neural Engine"
       },
       {
-        "id": "urn:visionflow:linked:on-device-inference",
+        "id": "urn:ngm:class:on-device-inference",
         "label": "On-Device Inference"
       },
       {
-        "id": "urn:visionflow:linked:secure-enclave",
+        "id": "urn:ngm:class:secure-enclave",
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:visionflow:linked:tsmc-fabrication",
+        "id": "urn:ngm:class:tsmc-fabrication",
         "label": "TSMC Fabrication"
       },
       {
-        "id": "urn:visionflow:linked:unified-memory-architecture",
+        "id": "urn:ngm:class:unified-memory-architecture",
         "label": "Unified Memory Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:agent-frameworks",
+        "id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-adoption",
+        "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-frame",
+        "id": "urn:ngm:class:ar-frame",
         "label": "AR Frame"
       },
       {
-        "id": "urn:visionflow:owl:class:brain-computer-interfaces",
+        "id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain Computer Interfaces"
       },
       {
-        "id": "urn:visionflow:owl:class:gaussian-splatting",
+        "id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-and-edge",
+        "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:core-ml",
+        "id": "urn:ngm:class:core-ml",
         "label": "CoreML"
       },
       {
-        "id": "urn:visionflow:linked:private-cloud-compute",
+        "id": "urn:ngm:class:private-cloud-compute",
         "label": "Private Cloud Compute"
       },
       {
-        "id": "urn:visionflow:linked:speculative-decoding",
+        "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:core-ml",
+        "label": "CoreML"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:app-store-guidelines",
+        "label": "App Store Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:eu-digital-markets-act",
+        "label": "EU Digital Markets Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
   "wikilinks": [
     {

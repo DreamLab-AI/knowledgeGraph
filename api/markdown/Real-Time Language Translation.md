@@ -136,54 +136,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-language-translation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-language-translation",
+  "@type": "Class",
   "label": "Real-Time Language Translation",
+  "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machin...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:89b6019e2ede8cbcbffe81d201c413202957c428bd34936c868609280c417ff9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:neural-machine-translation",
+        "label": "NeuralMachineTranslation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-lingual-collaboration",
+        "label": "CrossLingualCollaboration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:89b6019e2ede8cbcbffe81d201c413202957c428bd34936c868609280c417ff9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machine translation, speech recognition, and text-to-speech synthesis.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:neural-machine-translation",
-      "vc:label": "NeuralMachineTranslation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-lingual-collaboration",
-      "vc:label": "CrossLingualCollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

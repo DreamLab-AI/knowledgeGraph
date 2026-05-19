@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ieee7000-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ieee7000-standard",
+  "@type": "Class",
   "label": "Ieee7000 Standard",
+  "definition": "IEEE Standard Model Process for Addressing ical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ethical-design-standard",
-      "vc:label": "Ethical Design Standard"
+      "@id": "urn:ngm:class:ethical-design-standard",
+      "label": "Ethical Design Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b87f27cdf19885db9ad8461222fdc0108361fe61166e6fa53a1b132a0fc1e150"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ethical-technology-development",
+        "label": "Ethical Technology Development"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b87f27cdf19885db9ad8461222fdc0108361fe61166e6fa53a1b132a0fc1e150@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "IEEE Standard Model Process for Addressing Ethical Concerns during System Design (IEEE 7000-2021), establishing systematic processes for incorporating ethical values such as transparency, sustainability, privacy, fairness, and accountability into technology development from concept exploration through implementation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ethical-technology-development",
-      "vc:label": "Ethical Technology Development"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

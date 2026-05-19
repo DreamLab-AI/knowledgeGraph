@@ -280,168 +280,117 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:open-xr",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-xr",
+  "@type": "Class",
   "label": "OpenXR",
+  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware — encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices — that defines a unified application-to-runtime interface, elimina...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:extended-reality-api",
-      "vc:label": "Extended Reality API"
+      "@id": "urn:ngm:class:extended-reality-api",
+      "label": "Extended Reality API"
     },
     {
-      "@id": "urn:visionflow:linked:khronos-group-standard",
-      "vc:label": "Khronos Group Standard"
+      "@id": "urn:ngm:class:khronos-group-standard",
+      "label": "Khronos Group Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:open-xr-action-system",
+        "label": "OpenXR Action System"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-extension",
+        "label": "OpenXR Extension"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-loader",
+        "label": "OpenXR Loader"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-session",
+        "label": "OpenXR Session"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-space",
+        "label": "OpenXR Space"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-swapchain",
+        "label": "OpenXR Swapchain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:open-gl-es",
+        "label": "OpenGL ES"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan-api",
+        "label": "Vulkan API"
+      },
+      {
+        "@id": "urn:ngm:class:xr-hardware-device",
+        "label": "XR Hardware Device"
+      },
+      {
+        "@id": "urn:ngm:class:xr-runtime",
+        "label": "XR Runtime"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hardware-agnostic-xr-development",
+        "label": "Hardware-Agnostic XR Development"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-ar",
+        "label": "Passthrough AR"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:khronos-open-xr-1-0-specification",
+        "label": "Khronos OpenXR 1.0 Specification"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-extension-registry",
+        "label": "OpenXR Extension Registry"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:xr-technology-stack",
+        "label": "XR Technology Stack"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware — encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices — that defines a unified application-to-runtime interface, eliminating the fragmentation previously imposed by proprietary vendor SDKs (Oculus SDK, SteamVR, Windows Mixed Reality), so that an XR application written against OpenXR runs on any conformant runtime without source code changes, and enabling [[VisionClaw Agentic Container]] agents to interact with spatial computing environments through a standardised sensory and actuation surface.",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.78",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:xr-technology-stack",
-      "vc:label": "XR Technology Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
-      "vc:label": "Metaverse Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:open-xr-action-system",
-      "vc:label": "OpenXR Action System"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-extension",
-      "vc:label": "OpenXR Extension"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-loader",
-      "vc:label": "OpenXR Loader"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-session",
-      "vc:label": "OpenXR Session"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-space",
-      "vc:label": "OpenXR Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-swapchain",
-      "vc:label": "OpenXR Swapchain"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:open-gl-es",
-      "vc:label": "OpenGL ES"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulkan-api",
-      "vc:label": "Vulkan API"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-hardware-device",
-      "vc:label": "XR Hardware Device"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-runtime",
-      "vc:label": "XR Runtime"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hardware-agnostic-xr-development",
-      "vc:label": "Hardware-Agnostic XR Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:passthrough-ar",
-      "vc:label": "Passthrough AR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
-      "vc:label": "Khronos OpenXR 1.0 Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-extension-registry",
-      "vc:label": "OpenXR Extension Registry"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:android-platform",
-      "vc:label": "Android Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-gl-es",
-      "vc:label": "OpenGL ES"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulkan-graphics-api",
-      "vc:label": "Vulkan Graphics API"
-    },
-    {
-      "@id": "urn:visionflow:linked:windows-mixed-reality-runtime",
-      "vc:label": "Windows Mixed Reality Runtime"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:gazebo-simulator",
-      "vc:label": "Gazebo Simulator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

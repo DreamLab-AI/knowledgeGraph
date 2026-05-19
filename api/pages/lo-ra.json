@@ -3,19 +3,18 @@
   "title": "Lo RA",
   "slug": "lo-ra",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lo-ra",
+  "classIri": "urn:ngm:class:lo-ra",
   "domain": "artificial-intelligence",
-  "definition": "A parameter-efficient fine-tuning method that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance. LoRA represents weight updates as the product of two low-rank matrices.",
+  "definition": "A parameter-efficient fine-tuning mod that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
       "label": "Parameter Efficient Fine-Tuning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

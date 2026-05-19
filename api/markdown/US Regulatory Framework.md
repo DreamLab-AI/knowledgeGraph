@@ -248,41 +248,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:us-regulatory-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:us-regulatory-framework",
+  "@type": "Class",
   "label": "US Regulatory Framework",
+  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d3570ba58111c95a5d219ed097b2ef4e518919b8c5e0159fdd2d6b6542b90300@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[OCC|Office of the Comptroller of Currency]] addresses banking relationships, and the [[CFTC|Commodity Futures Trading Commission]] regulates cryptocurrency derivatives. This jurisdictional overlap creates compliance complexity, with inconsistent agency positions leading to regulatory uncertainty regarding token classification and exchange registration requirements, prompting Congressional proposals for comprehensive legislation establishing tailored digital asset frameworks. State-level [[MoneyTransmitterLicenses|money transmitter licenses]], banking charters, and inconsistent interpretations of existing laws further fragment the regulatory landscape, with major protocols and exchanges navigating dozens of jurisdiction-specific compliance requirements.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

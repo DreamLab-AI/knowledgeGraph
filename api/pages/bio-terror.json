@@ -3,131 +3,243 @@
   "title": "Bio Terror",
   "slug": "bio-terror",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bio-terror",
+  "classIri": "urn:ngm:class:bio-terror",
   "domain": "infrastructure",
-  "definition": "Bioterrorism (biological terrorism) is the deliberate use, threat, or weaponisation of pathogenic microorganisms (bacteria, viruses, fungi, prions), biological toxins, or genetically engineered agents by state or non-state actors to cause mass casualties, generate fear, coerce governments, or destabilise critical infrastructure, operating at the intersection of biosecurity governance, dual-use life science research, international arms control law, pandemic preparedness, and \u2014 increasingly \u2014 AI-enabled biotechnology risk. The threat spectrum ranges from Category A agents (Bacillus anthracis anthrax spores, variola smallpox virus, Yersinia pestis plague, botulinum toxin, Ebola and Marburg haemorrhagic fevers, Francisella tularensis tularaemia \u2014 classified by CDC as highest-priority due to ease of dissemination, high mortality, and mass casualty potential) through Category B agents (Brucella species, Coxiella burnetii Q-fever, Ricin toxin, Staphylococcal enterotoxin B, Salmonella and Shigella food-borne threats achieving 751 casualties in the 1984 Rajneeshee Oregon attack \u2014 the first confirmed US bioterrorism incident) to Category C emerging threats including engineered pandemic influ",
+  "definition": "Bioterrorism (biological terrorism) is the deliberate use, threat, or weaponisation of pathogenic microorganisms (bacteria, viruses, fungi, prions), biological toxins, or genetically engineered agents by state or non-state actors to cause mass casualties, generate fear, coerce governments, or des...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:biosecurity",
+      "id": "urn:ngm:class:biosecurity",
       "label": "Biosecurity"
     },
     {
-      "id": "urn:visionflow:linked:dual-use-research",
+      "id": "urn:ngm:class:dual-use-research",
       "label": "Dual-Use Research"
-    },
-    {
-      "id": "urn:visionflow:linked:global-catastrophic-risk",
-      "label": "Global Catastrophic Risk"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:agroterrorism",
+        "id": "urn:ngm:class:agroterrorism",
         "label": "Agroterrorism"
       },
       {
-        "id": "urn:visionflow:linked:biological-toxin",
+        "id": "urn:ngm:class:biological-toxin",
         "label": "Biological Toxin"
       },
       {
-        "id": "urn:visionflow:linked:bioweapon-delivery-system",
+        "id": "urn:ngm:class:bioweapon-delivery-system",
         "label": "Bioweapon Delivery System"
       },
       {
-        "id": "urn:visionflow:linked:information-hazard",
+        "id": "urn:ngm:class:information-hazard",
         "label": "Information Hazard"
       },
       {
-        "id": "urn:visionflow:linked:pathogen-weaponisation",
+        "id": "urn:ngm:class:pathogen-weaponisation",
         "label": "Pathogen Weaponisation"
       },
       {
-        "id": "urn:visionflow:linked:select-agent",
+        "id": "urn:ngm:class:select-agent",
         "label": "Select Agent"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-biology-threat",
+        "id": "urn:ngm:class:synthetic-biology-threat",
         "label": "Synthetic Biology Threat"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:aerosol-dispersal-mechanism",
+        "id": "urn:ngm:class:aerosol-dispersal-mechanism",
         "label": "Aerosol Dispersal Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:biosafety-level-laboratory",
+        "id": "urn:ngm:class:biosafety-level-laboratory",
         "label": "Biosafety Level Laboratory"
       },
       {
-        "id": "urn:visionflow:linked:dual-use-equipment",
+        "id": "urn:ngm:class:dual-use-equipment",
         "label": "Dual-Use Equipment"
       },
       {
-        "id": "urn:visionflow:linked:financing",
+        "id": "urn:ngm:class:financing",
         "label": "Financing"
       },
       {
-        "id": "urn:visionflow:linked:pathogen-access",
+        "id": "urn:ngm:class:pathogen-access",
         "label": "Pathogen Access"
       },
       {
-        "id": "urn:visionflow:linked:technical-expertise",
+        "id": "urn:ngm:class:technical-expertise",
         "label": "Technical Expertise"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:coercive-statecraft",
+        "id": "urn:ngm:class:coercive-statecraft",
         "label": "Coercive Statecraft"
       },
       {
-        "id": "urn:visionflow:linked:critical-infrastructure-attack",
+        "id": "urn:ngm:class:critical-infrastructure-attack",
         "label": "Critical Infrastructure Attack"
       },
       {
-        "id": "urn:visionflow:linked:mass-casualty-event",
+        "id": "urn:ngm:class:mass-casualty-event",
         "label": "Mass Casualty Event"
       },
       {
-        "id": "urn:visionflow:linked:pandemic-amplification",
+        "id": "urn:ngm:class:pandemic-amplification",
         "label": "Pandemic Amplification"
       },
       {
-        "id": "urn:visionflow:linked:societal-disruption",
+        "id": "urn:ngm:class:societal-disruption",
         "label": "Societal Disruption"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:barda-medical-countermeasures",
+        "id": "urn:ngm:class:barda-medical-countermeasures",
         "label": "BARDA Medical Countermeasures"
       },
       {
-        "id": "urn:visionflow:linked:biodefence-stockpiling",
+        "id": "urn:ngm:class:biodefence-stockpiling",
         "label": "Biodefence Stockpiling"
       },
       {
-        "id": "urn:visionflow:linked:biosafety-level-bsl-1-4-framework",
+        "id": "urn:ngm:class:biosafety-level-bsl-1-4-framework",
         "label": "Biosafety Level BSL-1-4 Framework"
       },
       {
-        "id": "urn:visionflow:linked:cdc-category-a-b-c-agent-classification",
+        "id": "urn:ngm:class:cdc-category-a-b-c-agent-classification",
         "label": "CDC Category A B C Agent Classification"
       },
       {
-        "id": "urn:visionflow:linked:select-agent-programme",
+        "id": "urn:ngm:class:select-agent-programme",
         "label": "Select Agent Programme"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-protein-design",
+        "label": "AI Protein Design"
+      },
+      {
+        "id": "urn:ngm:class:automated-biofoundry",
+        "label": "Automated Biofoundry"
+      },
+      {
+        "id": "urn:ngm:class:crispr-gene-editing",
+        "label": "CRISPR Gene Editing"
+      },
+      {
+        "id": "urn:ngm:class:gain-of-function-research",
+        "label": "Gain-of-Function Research"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-biology",
+        "label": "Synthetic Biology"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biodefence-research",
+        "label": "Biodefence Research"
+      },
+      {
+        "id": "urn:ngm:class:intelligence-surveillance-reconnaissance",
+        "label": "Intelligence Surveillance Reconnaissance"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-preparedness",
+        "label": "Pandemic Preparedness"
+      },
+      {
+        "id": "urn:ngm:class:public-health-surveillance",
+        "label": "Public Health Surveillance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:australia-group-export-controls",
+        "label": "Australia Group Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:biological-weapons-convention-bwc-1972",
+        "label": "Biological Weapons Convention BWC 1972"
+      },
+      {
+        "id": "urn:ngm:class:cartagena-protocol-on-biosafety",
+        "label": "Cartagena Protocol on Biosafety"
+      },
+      {
+        "id": "urn:ngm:class:cdc-select-agent-regulations",
+        "label": "CDC Select Agent Regulations"
+      },
+      {
+        "id": "urn:ngm:class:nsabb-durc-policy",
+        "label": "NSABB DURC Policy"
+      },
+      {
+        "id": "urn:ngm:class:un-security-council-resolution-1540",
+        "label": "UN Security Council Resolution 1540"
+      },
+      {
+        "id": "urn:ngm:class:who-biosafety-guidelines",
+        "label": "WHO Biosafety Guidelines"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ]
   },
   "wikilinks": [
     {

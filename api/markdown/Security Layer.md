@@ -99,41 +99,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:security-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:security-layer",
+  "@type": "Class",
   "label": "Security Layer",
+  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality ...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f0bf88d0d05992c7e6bf4277ce3b52829562f7a5062b31696f5ef4e96bb6e334@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The SecurityLayer represents the abstraction level of security-focused implementations, cryptographic mechanisms, threat models, security protocols, and defensive systems that protect blockchain and distributed systems from attacks, ensure data integrity and authenticity, provide confidentiality and privacy, and maintain system security properties. This layer encompasses cryptographic primitives as implemented security mechanisms (hash functions providing integrity, digital signatures providing authentication, encryption providing confidentiality), security protocols (key exchange, secure communication, authentication protocols), threat models and attack vectors (51% attacks, Sybil attacks, eclipse attacks, smart contract vulnerabilities), security analysis and verification (formal verification, security auditing, penetration testing), defensive mechanisms (access control, authorization, sandboxing, rate limiting), and security properties as realized through specific implementations (immutability through hash linking, non-repudiation through digital signatures, privacy through zero-knowledge proofs). Unlike ConceptualLayer which addresses abstract security properties, SecurityLayer",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

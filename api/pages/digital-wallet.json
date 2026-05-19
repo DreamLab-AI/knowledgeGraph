@@ -3,48 +3,57 @@
   "title": "Digital Wallet",
   "slug": "digital-wallet",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-wallet",
+  "classIri": "urn:ngm:class:digital-wallet",
   "domain": "blockchain",
   "definition": "A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-core",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-security",
+        "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
       },
       {
-        "id": "urn:visionflow:owl:class:private-key",
+        "id": "urn:ngm:class:private-key",
         "label": "Private Key"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:de-fi-access",
+        "id": "urn:ngm:class:de-fi-access",
         "label": "DeFi Access"
       },
       {
-        "id": "urn:visionflow:linked:transaction-signing",
+        "id": "urn:ngm:class:transaction-signing",
         "label": "Transaction Signing"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

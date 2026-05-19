@@ -3,179 +3,287 @@
   "title": "Meta AR engine",
   "slug": "meta-ar-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:meta-ar-engine",
+  "classIri": "urn:ngm:class:meta-ar-engine",
   "domain": "spatial-computing",
-  "definition": "Meta AR engine is the integrated stack of hardware, operating system, runtime APIs, developer SDKs, and AI services produced by Meta Reality Labs that enables augmented reality, mixed reality, and extended reality experiences across the Meta device family \u2014 spanning Meta Quest headsets (Quest 2, Quest 3, Quest 3S), Ray-Ban Meta smart glasses (2023\u20132026 generations), the Orion prototype AR glasses (September 2024 Connect reveal), and third-party devices running Horizon OS \u2014 constituting a vertically integrated spatial-computing platform combining inside-out six-degrees-of-freedom (6DoF) tracking using Qualcomm Snapdragon XR2 Gen 1 and XR2 Gen 2 SoCs, Presence Platform (spatial understanding, hand tracking, face tracking, body tracking, voice SDK, Scene API, Passthrough API), Movement SDK (full-body avatar animation and inverse kinematics), Spatial SDK (mixed reality app framework for Unity and Unreal Engine 5), Building Blocks (prefabricated Unity components for locomotion, interaction, UI), Meta Spatial SDK for Android (announced May 2024 for Horizon panel app migration), Meta AI (on-device and cloud LLM assistant integrated into Ray-Ban Meta glasses and Quest headsets from 2024), ",
+  "definition": "Meta AR engine is the integrated stack of hardware, operating system, runtime APIs, developer SDKs, and AI services produced by Meta Reality Labs that enables augmented reality, mixed reality, and extended reality experiences across the Meta device family \u2014 spanning Meta Quest headsets (Quest 2, ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:augmented-reality",
+      "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:building-blocks",
+        "id": "urn:ngm:class:building-blocks",
         "label": "Building Blocks"
       },
       {
-        "id": "urn:visionflow:linked:horizon-os",
+        "id": "urn:ngm:class:horizon-os",
         "label": "Horizon OS"
       },
       {
-        "id": "urn:visionflow:linked:meta-ai",
+        "id": "urn:ngm:class:meta-ai",
         "label": "Meta AI"
       },
       {
-        "id": "urn:visionflow:linked:meta-quest",
+        "id": "urn:ngm:class:meta-quest",
         "label": "Meta Quest"
       },
       {
-        "id": "urn:visionflow:linked:movement-sdk",
+        "id": "urn:ngm:class:movement-sdk",
         "label": "Movement SDK"
       },
       {
-        "id": "urn:visionflow:linked:mtia",
+        "id": "urn:ngm:class:mtia",
         "label": "MTIA"
       },
       {
-        "id": "urn:visionflow:linked:orion-ar-glasses",
+        "id": "urn:ngm:class:orion-ar-glasses",
         "label": "Orion AR Glasses"
       },
       {
-        "id": "urn:visionflow:linked:passthrough-api",
+        "id": "urn:ngm:class:passthrough-api",
         "label": "Passthrough API"
       },
       {
-        "id": "urn:visionflow:linked:presence-platform",
+        "id": "urn:ngm:class:presence-platform",
         "label": "Presence Platform"
       },
       {
-        "id": "urn:visionflow:linked:ray-ban-meta",
+        "id": "urn:ngm:class:ray-ban-meta",
         "label": "Ray-Ban Meta"
       },
       {
-        "id": "urn:visionflow:linked:scene-api",
+        "id": "urn:ngm:class:scene-api",
         "label": "Scene API"
       },
       {
-        "id": "urn:visionflow:linked:spatial-sdk",
+        "id": "urn:ngm:class:spatial-sdk",
         "label": "Spatial SDK"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:inside-out-tracking",
+        "id": "urn:ngm:class:inside-out-tracking",
         "label": "Inside-Out Tracking"
       },
       {
-        "id": "urn:visionflow:linked:qualcomm-snapdragon-xr",
+        "id": "urn:ngm:class:qualcomm-snapdragon-xr",
         "label": "Qualcomm Snapdragon XR"
       },
       {
-        "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
       },
       {
-        "id": "urn:visionflow:linked:waveguide-optics",
+        "id": "urn:ngm:class:waveguide-optics",
         "label": "Waveguide Optics"
       },
       {
-        "id": "urn:visionflow:owl:class:open-xr",
+        "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-anchors",
+        "id": "urn:ngm:class:spatial-anchors",
         "label": "Spatial Anchors"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-assistants-in-xr",
+        "id": "urn:ngm:class:ai-assistants-in-xr",
         "label": "AI Assistants in XR"
       },
       {
-        "id": "urn:visionflow:linked:body-tracking",
+        "id": "urn:ngm:class:body-tracking",
         "label": "Body Tracking"
       },
       {
-        "id": "urn:visionflow:linked:codec-avatars",
+        "id": "urn:ngm:class:codec-avatars",
         "label": "Codec Avatars"
       },
       {
-        "id": "urn:visionflow:linked:enterprise-xr",
+        "id": "urn:ngm:class:enterprise-xr",
         "label": "Enterprise XR"
       },
       {
-        "id": "urn:visionflow:linked:face-tracking",
+        "id": "urn:ngm:class:face-tracking",
         "label": "Face Tracking"
       },
       {
-        "id": "urn:visionflow:linked:mixed-reality-applications",
+        "id": "urn:ngm:class:mixed-reality-applications",
         "label": "Mixed Reality Applications"
       },
       {
-        "id": "urn:visionflow:linked:passthrough-ar",
+        "id": "urn:ngm:class:passthrough-ar",
         "label": "Passthrough AR"
       },
       {
-        "id": "urn:visionflow:owl:class:hand-tracking",
+        "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-rendering",
+        "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:social-vr",
+        "id": "urn:ngm:class:social-vr",
         "label": "Social VR"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-anchoring",
+        "id": "urn:ngm:class:spatial-anchoring",
         "label": "Spatial Anchoring"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:electromyography-input",
+        "id": "urn:ngm:class:electromyography-input",
         "label": "Electromyography Input"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-standard",
+        "id": "urn:ngm:class:open-xr-standard",
         "label": "OpenXR Standard"
       },
       {
-        "id": "urn:visionflow:linked:slam-tracking",
+        "id": "urn:ngm:class:slam-tracking",
         "label": "SLAM Tracking"
       },
       {
-        "id": "urn:visionflow:linked:web-xr",
+        "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       },
       {
-        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-radiance-fields",
+        "id": "urn:ngm:class:neural-radiance-fields",
         "label": "Neural Radiance Fields"
       },
       {
-        "id": "urn:visionflow:owl:class:scene-understanding",
+        "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      },
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-vr",
+        "label": "IEEE VR"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:open-xr-working-group",
+        "label": "OpenXR Working Group"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-web-xr-device-api",
+        "label": "W3C WebXR Device API"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -184,92 +184,49 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-energy-consumption",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-energy-consumption",
+  "@type": "Class",
   "label": "Blockchain Energy Consumption",
+  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, global electricity) to en...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:blockchain-performance",
-      "vc:label": "BlockchainPerformance"
+      "@id": "urn:ngm:class:blockchain-performance",
+      "label": "BlockchainPerformance"
     },
     {
-      "@id": "urn:visionflow:linked:environmental-impact",
-      "vc:label": "EnvironmentalImpact"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainability",
-      "vc:label": "Sustainability"
+      "@id": "urn:ngm:class:environmental-impact",
+      "label": "EnvironmentalImpact"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c80824b76ab26f9139925c6278823dcc63da7f344fcf9dc4e9aa170047813ed2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-emissions",
+        "label": "CarbonEmissions"
+      },
+      {
+        "@id": "urn:ngm:class:computational-power",
+        "label": "ComputationalPower"
+      },
+      {
+        "@id": "urn:ngm:class:electricity-consumption",
+        "label": "ElectricityConsumption"
+      },
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "HashRate"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c80824b76ab26f9139925c6278823dcc63da7f344fcf9dc4e9aa170047813ed2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, 0.65% global electricity) to energy-efficient Proof-of-Stake (Ethereum post-Merge: 99.95% reduction), with ongoing research into sustainable consensus algorithms, renewable energy mining, carbon credit tokenization, and environmental impact measurement frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:carbon-emissions",
-      "vc:label": "CarbonEmissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:computational-power",
-      "vc:label": "ComputationalPower"
-    },
-    {
-      "@id": "urn:visionflow:linked:electricity-consumption",
-      "vc:label": "ElectricityConsumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-rate",
-      "vc:label": "HashRate"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:energy-source",
-      "vc:label": "EnergySource"
-    },
-    {
-      "@id": "urn:visionflow:linked:mining-hardware",
-      "vc:label": "MiningHardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-size",
-      "vc:label": "NetworkSize"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "ConsensusMechanism"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

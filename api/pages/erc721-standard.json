@@ -3,27 +3,31 @@
   "title": "ERC721 Standard",
   "slug": "erc721-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc721-standard",
+  "classIri": "urn:ngm:class:erc721-standard",
   "domain": "blockchain",
-  "definition": "Technical standard for non-fungible tokens on Ethereum, defining unique token identification and ownership tracking.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "definition": "Technical standard for non-fungible tokens on ereum, defining unique token identification and ownership tracking.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

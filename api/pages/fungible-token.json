@@ -3,19 +3,18 @@
   "title": "Fungible Token",
   "slug": "fungible-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fungible-token",
+  "classIri": "urn:ngm:class:fungible-token",
   "domain": "blockchain",
   "definition": "A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:token",
+      "id": "urn:ngm:class:token",
       "label": "Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

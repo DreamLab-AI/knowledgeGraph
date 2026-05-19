@@ -3,53 +3,57 @@
   "title": "Compliance Standards",
   "slug": "compliance-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compliance-standards",
+  "classIri": "urn:ngm:class:compliance-standards",
   "domain": "artificial-intelligence",
-  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:regulatory-framework",
-      "label": "Regulatory Framework"
-    }
-  ],
+  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in ...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:legal-expertise",
+        "id": "urn:ngm:class:legal-expertise",
         "label": "Legal Expertise"
       },
       {
-        "id": "urn:visionflow:linked:monitoring-systems",
+        "id": "urn:ngm:class:monitoring-systems",
         "label": "Monitoring Systems"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-guidance",
+        "id": "urn:ngm:class:regulatory-guidance",
         "label": "Regulatory Guidance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consumer-safety",
+        "id": "urn:ngm:class:consumer-safety",
         "label": "Consumer Safety"
       },
       {
-        "id": "urn:visionflow:linked:legal-compliance",
+        "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:data-protection",
+        "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

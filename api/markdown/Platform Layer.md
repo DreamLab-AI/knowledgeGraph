@@ -200,122 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:platform-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:platform-layer",
+  "@type": "Class",
   "label": "Platform Layer",
+  "definition": "Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7336ad70872209718797cf005a7b6d350c1aff8cd87346f3107279643b481e28"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-service",
+        "label": "Asset Service"
+      },
+      {
+        "@id": "urn:ngm:class:identity-service",
+        "label": "Identity Service"
+      },
+      {
+        "@id": "urn:ngm:class:persistence-service",
+        "label": "Persistence Service"
+      },
+      {
+        "@id": "urn:ngm:class:world-state-service",
+        "label": "World State Service"
+      },
+      {
+        "@id": "urn:ngm:class:platform-middleware",
+        "label": "Platform Middleware"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:networking-layer",
+        "label": "Networking Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      },
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-world-interoperability",
+        "label": "Cross-World Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:user-identity-management",
+        "label": "User Identity Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7336ad70872209718797cf005a7b6d350c1aff8cd87346f3107279643b481e28@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-architecture",
-      "vc:label": "Infrastructure Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-service",
-      "vc:label": "Asset Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-service",
-      "vc:label": "Identity Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistence-service",
-      "vc:label": "Persistence Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-state-service",
-      "vc:label": "World State Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:platform-middleware",
-      "vc:label": "Platform Middleware"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication-system",
-      "vc:label": "Authentication System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:networking-layer",
-      "vc:label": "Networking Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:application-development",
-      "vc:label": "Application Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-portability",
-      "vc:label": "Asset Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-world-interoperability",
-      "vc:label": "Cross-World Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-identity-management",
-      "vc:label": "User Identity Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:service-oriented-architecture",
-      "vc:label": "Service-Oriented Architecture"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

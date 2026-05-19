@@ -196,124 +196,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-production-volume",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-production-volume",
+  "@type": "Class",
   "label": "Virtual Production Volume",
+  "definition": "Large-scale physical LED wall or projection stage environment that merges live-action footage with real-time rendered 3D backgrounds, including LED panels, tracking systems, camera infrastructure, and stage hardware.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-production-pipeline",
-      "vc:label": "Virtual Production Pipeline"
+      "@id": "urn:ngm:class:virtual-production-pipeline",
+      "label": "Virtual Production Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:43f991ee426d55c10d36f4dde29fb8b1d30f2c60500250d159afd4fa4407cf19"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-tracking-system",
+        "label": "Camera Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:display-processor",
+        "label": "Display Processor"
+      },
+      {
+        "@id": "urn:ngm:class:led-wall",
+        "label": "LED Wall"
+      },
+      {
+        "@id": "urn:ngm:class:lighting-rig",
+        "label": "Lighting Rig"
+      },
+      {
+        "@id": "urn:ngm:class:physical-stage",
+        "label": "Physical Stage"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-cluster",
+        "label": "Rendering Cluster"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-tracking",
+        "label": "Camera Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:color-management-system",
+        "label": "Color Management System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-engine",
+        "label": "Real-time Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:in-camera-vfx",
+        "label": "In-Camera VFX"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-filmmaking",
+        "label": "Interactive Filmmaking"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-background-rendering",
+        "label": "Real-time Background Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-location",
+        "label": "Virtual Location"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:film-production-studio",
+        "label": "Film Production Studio"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:43f991ee426d55c10d36f4dde29fb8b1d30f2c60500250d159afd4fa4407cf19@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Large-scale physical LED wall or projection stage environment that merges live-action footage with real-time rendered 3D backgrounds, including LED panels, tracking systems, camera infrastructure, and stage hardware.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:film-production-studio",
-      "vc:label": "Film Production Studio"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-pipeline",
-      "vc:label": "Virtual Production Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-tracking-system",
-      "vc:label": "Camera Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:display-processor",
-      "vc:label": "Display Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:led-wall",
-      "vc:label": "LED Wall"
-    },
-    {
-      "@id": "urn:visionflow:linked:lighting-rig",
-      "vc:label": "Lighting Rig"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-stage",
-      "vc:label": "Physical Stage"
-    },
-    {
-      "@id": "urn:visionflow:linked:rendering-cluster",
-      "vc:label": "Rendering Cluster"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-tracking",
-      "vc:label": "Camera Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:color-management-system",
-      "vc:label": "Color Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-rendering-engine",
-      "vc:label": "Real-time Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:in-camera-vfx",
-      "vc:label": "In-Camera VFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-filmmaking",
-      "vc:label": "Interactive Filmmaking"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-background-rendering",
-      "vc:label": "Real-time Background Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-location",
-      "vc:label": "Virtual Location"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:iso-iec-23090-3",
-      "vc:label": "ISO/IEC 23090-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:smpte-st-2117",
-      "vc:label": "SMPTE ST 2117"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

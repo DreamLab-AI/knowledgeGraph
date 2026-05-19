@@ -3,36 +3,45 @@
   "title": "ETSI Domain AI + Governance",
   "slug": "etsi-domain-ai-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-governance",
+  "classIri": "urn:ngm:class:etsi-domain-ai-governance",
   "domain": "artificial-intelligence",
-  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-ethics-classification",
+        "id": "urn:ngm:class:ai-ethics-classification",
         "label": "AI Ethics Classification"
       },
       {
-        "id": "urn:visionflow:linked:explainability-categorization",
+        "id": "urn:ngm:class:explainability-categorization",
         "label": "Explainability Categorization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,70 +3,74 @@
   "title": "Authoring Tool",
   "slug": "authoring-tool",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:authoring-tool",
+  "classIri": "urn:ngm:class:authoring-tool",
   "domain": "spatial-computing",
   "definition": "Software application for creating or editing immersive content, including 3D models, environments, interactions, and multimedia assets for metaverse experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-content-creation",
+      "id": "urn:ngm:class:digital-content-creation",
       "label": "Digital Content Creation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-pipeline",
+        "id": "urn:ngm:class:asset-pipeline",
         "label": "Asset Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:editor-interface",
+        "id": "urn:ngm:class:editor-interface",
         "label": "Editor Interface"
       },
       {
-        "id": "urn:visionflow:linked:preview-system",
+        "id": "urn:ngm:class:preview-system",
         "label": "Preview System"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-design-tool",
+        "id": "urn:ngm:class:generative-design-tool",
         "label": "Generative Design Tool"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:graphics-api",
+        "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-creation",
+        "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
       },
       {
-        "id": "urn:visionflow:linked:interactive-experience-development",
+        "id": "urn:ngm:class:interactive-experience-development",
         "label": "Interactive Experience Development"
       },
       {
-        "id": "urn:visionflow:linked:scene-design",
+        "id": "urn:ngm:class:scene-design",
         "label": "Scene Design"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

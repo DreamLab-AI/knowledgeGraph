@@ -516,296 +516,227 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bayes-filter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bayes-filter",
+  "@type": "Class",
   "label": "Bayes Filter",
+  "definition": "BayesFilter denotes the canonical recursive probabilistic framework for sequential state estimation in partially-observable stochastic dynamical systems, computing at each timestep the posterior belief bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the latent system state x_t conditioned on the full h...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:probabilistic-filter",
-      "vc:label": "Probabilistic Filter"
+      "@id": "urn:ngm:class:probabilistic-filter",
+      "label": "Probabilistic Filter"
     },
     {
-      "@id": "urn:visionflow:linked:recursive-estimator",
-      "vc:label": "Recursive Estimator"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequential-monte-carlo",
-      "vc:label": "Sequential Monte Carlo"
+      "@id": "urn:ngm:class:recursive-estimator",
+      "label": "Recursive Estimator"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1529739f2d7b3b69e00398df438525fe00b61c4d5c59fede2f7253fc4a58246d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:belief-state",
+        "label": "Belief State"
+      },
+      {
+        "@id": "urn:ngm:class:measurement-update-step",
+        "label": "Measurement Update Step"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:normalisation-constant",
+        "label": "Normalisation Constant"
+      },
+      {
+        "@id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-step",
+        "label": "Prediction Step"
+      },
+      {
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-inputs",
+        "label": "Control Inputs"
+      },
+      {
+        "@id": "urn:ngm:class:initial-belief",
+        "label": "Initial Belief"
+      },
+      {
+        "@id": "urn:ngm:class:markov-assumption",
+        "label": "Markov Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-motion-model",
+        "label": "Probabilistic Motion Model"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-observation-model",
+        "label": "Probabilistic Observation Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-measurements",
+        "label": "Sensor Measurements"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:active-perception",
+        "label": "Active Perception"
+      },
+      {
+        "@id": "urn:ngm:class:belief-space-planning",
+        "label": "Belief-Space Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:target-tracking",
+        "label": "Target Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bayes-rule",
+        "label": "Bayes Rule"
+      },
+      {
+        "@id": "urn:ngm:class:chapman-kolmogorov-equation",
+        "label": "Chapman-Kolmogorov Equation"
+      },
+      {
+        "@id": "urn:ngm:class:recursive-state-estimation",
+        "label": "Recursive State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:sequential-bayesian-updating",
+        "label": "Sequential Bayesian Updating"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:linearisation",
+        "label": "Linearisation"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "@id": "urn:ngm:class:resampling",
+        "label": "Resampling"
+      },
+      {
+        "@id": "urn:ngm:class:sigma-point-sampling",
+        "label": "Sigma-Point Sampling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "@id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
+      },
+      {
+        "@id": "urn:ngm:class:pomdp",
+        "label": "POMDP"
+      },
+      {
+        "@id": "urn:ngm:class:smoothing-and-mapping",
+        "label": "Smoothing And Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aerospace-guidance-navigation-control",
+        "label": "Aerospace Guidance Navigation Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:drone-autonomy",
+        "label": "Drone Autonomy"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-robotics-textbook",
+        "label": "Probabilistic Robotics Textbook"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1529739f2d7b3b69e00398df438525fe00b61c4d5c59fede2f7253fc4a58246d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "BayesFilter denotes the canonical recursive probabilistic framework for sequential state estimation in partially-observable stochastic dynamical systems, computing at each timestep the posterior belief bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the latent system state x_t conditioned on the full history of observations z_{1:t} and control inputs u_{1:t}, decomposed via the Markov assumption into a two-stage recursion comprising the **prediction step** bel(x_t) = ∫ p(x_t | u_t, x_{t-1}) bel(x_{t-1}) dx_{t-1} (Chapman-Kolmogorov propagation of the prior belief forward through the motion model p(x_t | u_t, x_{t-1})) and the **measurement update step** bel(x_t) = η p(z_t | x_t) bel(x_t) (Bayes-rule incorporation of the new sensor observation z_t weighted by the observation likelihood p(z_t | x_t) and normalised by η to integrate to unity), constituting the theoretical substrate of [[Probabilistic Robotics]] (Thrun, Burgard & Fox 2005, MIT Press, 16,000+ citations) and the algorithmic backbone of essentially all modern robotic localisation, [[SLAM]] (Simultaneous Localisation and Mapping), target-tracking, sensor-fusion, navigation and autonomy stacks deployed across an estimated 12 mill",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:belief-state",
-      "vc:label": "Belief State"
-    },
-    {
-      "@id": "urn:visionflow:linked:measurement-update-step",
-      "vc:label": "Measurement Update Step"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-model",
-      "vc:label": "Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:normalisation-constant",
-      "vc:label": "Normalisation Constant"
-    },
-    {
-      "@id": "urn:visionflow:linked:observation-model",
-      "vc:label": "Observation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:posterior-distribution",
-      "vc:label": "Posterior Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:prediction-step",
-      "vc:label": "Prediction Step"
-    },
-    {
-      "@id": "urn:visionflow:linked:prior-distribution",
-      "vc:label": "Prior Distribution"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:control-inputs",
-      "vc:label": "Control Inputs"
-    },
-    {
-      "@id": "urn:visionflow:linked:initial-belief",
-      "vc:label": "Initial Belief"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-assumption",
-      "vc:label": "Markov Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-motion-model",
-      "vc:label": "Probabilistic Motion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-observation-model",
-      "vc:label": "Probabilistic Observation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-measurements",
-      "vc:label": "Sensor Measurements"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:active-perception",
-      "vc:label": "Active Perception"
-    },
-    {
-      "@id": "urn:visionflow:linked:belief-space-planning",
-      "vc:label": "Belief-Space Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-localisation",
-      "vc:label": "Robot Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-tracking",
-      "vc:label": "Target Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:uncertainty-quantification",
-      "vc:label": "Uncertainty Quantification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bayes-rule",
-      "vc:label": "Bayes Rule"
-    },
-    {
-      "@id": "urn:visionflow:linked:chapman-kolmogorov-equation",
-      "vc:label": "Chapman-Kolmogorov Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:recursive-state-estimation",
-      "vc:label": "Recursive State Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sequential-bayesian-updating",
-      "vc:label": "Sequential Bayesian Updating"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-bayesian-networks",
-      "vc:label": "Dynamic Bayesian Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:hidden-markov-models",
-      "vc:label": "Hidden Markov Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:measure-theory",
-      "vc:label": "Measure Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-processes",
-      "vc:label": "Stochastic Processes"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:aerospace-guidance-navigation-control",
-      "vc:label": "Aerospace Guidance Navigation Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-driving",
-      "vc:label": "Autonomous Driving"
-    },
-    {
-      "@id": "urn:visionflow:linked:drone-autonomy",
-      "vc:label": "Drone Autonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-robotics",
-      "vc:label": "Mobile Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gaussian-distribution",
-      "vc:label": "Gaussian Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:importance-sampling",
-      "vc:label": "Importance Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:linearisation",
-      "vc:label": "Linearisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:monte-carlo-integration",
-      "vc:label": "Monte Carlo Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampling",
-      "vc:label": "Resampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:sigma-point-sampling",
-      "vc:label": "Sigma-Point Sampling"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:batch-optimisation",
-      "vc:label": "Batch Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-observer",
-      "vc:label": "Deterministic Observer"
-    },
-    {
-      "@id": "urn:visionflow:linked:least-squares-estimation",
-      "vc:label": "Least Squares Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pose-graph-optimisation",
-      "vc:label": "Pose Graph Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-neural-state-estimation",
-      "vc:label": "Pure Neural State Estimation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:expectation-maximisation",
-      "vc:label": "Expectation Maximisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:factor-graph",
-      "vc:label": "Factor Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:pomdp",
-      "vc:label": "POMDP"
-    },
-    {
-      "@id": "urn:visionflow:linked:smoothing-and-mapping",
-      "vc:label": "Smoothing And Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-robotics-and-automation-society",
-      "vc:label": "IEEE Robotics And Automation Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-robotics-textbook",
-      "vc:label": "Probabilistic Robotics Textbook"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-navigation-stack",
-      "vc:label": "ROS Navigation Stack"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

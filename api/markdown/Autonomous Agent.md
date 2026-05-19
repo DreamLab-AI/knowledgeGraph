@@ -216,134 +216,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:autonomous-agent",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:autonomous-agent",
+  "@type": "Class",
   "label": "Autonomous Agent",
+  "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-executor",
+        "label": "Action Executor"
+      },
+      {
+        "@id": "urn:ngm:class:decision-engine",
+        "label": "Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:goal-system",
+        "label": "Goal System"
+      },
+      {
+        "@id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "@id": "urn:ngm:class:learning-component",
+        "label": "Learning Component"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-resources",
+        "label": "Computational Resources"
+      },
+      {
+        "@id": "urn:ngm:class:goal-specification",
+        "label": "Goal Specification"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-behavior",
+        "label": "Autonomous Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-system",
+        "label": "AI System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-environment",
+        "label": "Intelligent Environment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:63e57902b8276a285b53d801a7503b411873db814765c0e3ce2941bd32cbaad8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-system",
-      "vc:label": "AI System"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
-    },
-    {
-      "@id": "urn:visionflow:linked:intelligent-environment",
-      "vc:label": "Intelligent Environment"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:action-executor",
-      "vc:label": "Action Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-engine",
-      "vc:label": "Decision Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-system",
-      "vc:label": "Goal System"
-    },
-    {
-      "@id": "urn:visionflow:linked:perception-module",
-      "vc:label": "Perception Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-component",
-      "vc:label": "Learning Component"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-resources",
-      "vc:label": "Computational Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-specification",
-      "vc:label": "Goal Specification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:runtime-environment",
-      "vc:label": "Runtime Environment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-behavior",
-      "vc:label": "Autonomous Behavior"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-support",
-      "vc:label": "Decision Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:process-automation",
-      "vc:label": "Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:npc-interaction",
-      "vc:label": "NPC Interaction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-source",
-      "vc:label": "Data Source"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-base",
-      "vc:label": "Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-framework",
-      "vc:label": "AI Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

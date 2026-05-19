@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-scouting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-scouting",
+  "@type": "Class",
   "label": "Virtual Scouting",
+  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisi...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:pre-production",
-      "vc:label": "Pre-Production"
+      "@id": "urn:ngm:class:pre-production",
+      "label": "Pre-Production"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6a58d0661bbdb9729bd73dbb2da427a93777b2494f01404e1fed32ec87167a1d"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6a58d0661bbdb9729bd73dbb2da427a93777b2494f01404e1fed32ec87167a1d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisions without physical travel.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

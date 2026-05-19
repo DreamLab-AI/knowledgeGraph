@@ -3,19 +3,18 @@
   "title": "rb 0100 safety integrity level",
   "slug": "rb-0100-safety-integrity-level",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0100-safety-integrity-level",
+  "classIri": "urn:ngm:class:rb-0100-safety-integrity-level",
   "domain": "robotics",
   "definition": "safety integrity level is a robotics and autonomous systems concept and a type of Cobot Safety Levels.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cobot-safety-levels",
+      "id": "urn:ngm:class:cobot-safety-levels",
       "label": "Cobot Safety Levels"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

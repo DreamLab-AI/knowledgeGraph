@@ -3,19 +3,13 @@
   "title": "Software Development Process",
   "slug": "software-development-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:software-development-process",
+  "classIri": "urn:ngm:class:software-development-process",
   "domain": "artificial-intelligence",
-  "definition": "Software Development Process for AI encompasses methodologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices. Key activities span problem formulation, data collection and labeling, exploratory data analysis, model prototyping, hyperparameter tuning, production deployment, monitoring, and continuous improvement. Modern processes emphasize cross-functional collaboration, reproducibility, version control (code, data, models), and ethical considerations.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Software Development Process for AI encompasses modologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

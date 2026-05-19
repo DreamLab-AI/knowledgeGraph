@@ -3,19 +3,18 @@
   "title": "Blockchain Oracle",
   "slug": "blockchain-oracle",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-oracle",
+  "classIri": "urn:ngm:class:blockchain-oracle",
   "domain": "blockchain",
   "definition": "A decentralized service that bridges blockchain smart contracts with external real-world data, enabling smart contracts to access off-chain information, execute based on real-world events, and interact with traditional systems while maintaining trustless verification and data integrity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

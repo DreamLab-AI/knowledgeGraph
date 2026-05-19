@@ -3,32 +3,36 @@
   "title": "Learning Component",
   "slug": "learning-component",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-component",
+  "classIri": "urn:ngm:class:learning-component",
   "domain": "spatial-computing",
   "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:customised-training",
+        "id": "urn:ngm:class:customised-training",
         "label": "Customised Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

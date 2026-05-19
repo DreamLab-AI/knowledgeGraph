@@ -3,32 +3,36 @@
   "title": "Platform Middleware",
   "slug": "platform-middleware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:platform-middleware",
+  "classIri": "urn:ngm:class:platform-middleware",
   "domain": "spatial-computing",
   "definition": "A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-infrastructure",
+      "id": "urn:ngm:class:software-infrastructure",
       "label": "Software Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:system-interoperability",
+        "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

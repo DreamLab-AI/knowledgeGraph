@@ -3,19 +3,18 @@
   "title": "Parallel Robot",
   "slug": "parallel-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:parallel-robot",
+  "classIri": "urn:ngm:class:parallel-robot",
   "domain": "robotics",
   "definition": "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:manipulator-robot",
+      "id": "urn:ngm:class:manipulator-robot",
       "label": "Manipulator Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

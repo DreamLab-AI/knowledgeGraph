@@ -3,103 +3,116 @@
   "title": "AutoML",
   "slug": "auto-ml",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:auto-ml",
+  "classIri": "urn:ngm:class:auto-ml",
   "domain": "artificial-intelligence",
-  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems \u2014 encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyperparameter optimisation (HPO), and ensemble construction \u2014 enabling practitioners without deep ML expertise to produce competitive models whilst simultaneously accelerating expert workflows, with modern systems such as Google AutoML, Auto-Sklearn, and NAS-based tools (DARTS, EffNet) achieving state-of-the-art performance on standard benchmarks through efficient search strategies including Bayesian optimisation, evolutionary algorithms, and differentiable architecture search.",
+  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems \u2014 encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyp...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:automated-optimisation-system",
+      "id": "urn:ngm:class:automated-optimisation-system",
       "label": "Automated Optimisation System"
     },
     {
-      "id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "id": "urn:ngm:class:machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.72,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:algorithm-selection",
+        "id": "urn:ngm:class:algorithm-selection",
         "label": "Algorithm Selection"
       },
       {
-        "id": "urn:visionflow:linked:feature-engineering-automation",
+        "id": "urn:ngm:class:feature-engineering-automation",
         "label": "Feature Engineering Automation"
       },
       {
-        "id": "urn:visionflow:linked:hyperparameter-optimisation",
+        "id": "urn:ngm:class:hyperparameter-optimisation",
         "label": "Hyperparameter Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:meta-learning",
+        "id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learning"
       },
       {
-        "id": "urn:visionflow:linked:neural-architecture-search",
+        "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
       },
       {
-        "id": "urn:visionflow:linked:pipeline-optimisation",
+        "id": "urn:ngm:class:pipeline-optimisation",
         "label": "Pipeline Optimisation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-budget",
+        "id": "urn:ngm:class:computational-budget",
         "label": "Computational Budget"
       },
       {
-        "id": "urn:visionflow:linked:evaluation-metric",
+        "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:visionflow:linked:search-space-definition",
+        "id": "urn:ngm:class:search-space-definition",
         "label": "Search Space Definition"
       },
       {
-        "id": "urn:visionflow:linked:training-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Training Dataset"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:democratised-ml-development",
+        "id": "urn:ngm:class:democratised-ml-development",
         "label": "Democratised ML Development"
       },
       {
-        "id": "urn:visionflow:linked:rapid-model-iteration",
+        "id": "urn:ngm:class:rapid-model-iteration",
         "label": "Rapid Model Iteration"
       },
       {
-        "id": "urn:visionflow:linked:reproducible-experiments",
+        "id": "urn:ngm:class:reproducible-experiments",
         "label": "Reproducible Experiments"
       },
       {
-        "id": "urn:visionflow:linked:resource-efficient-training",
+        "id": "urn:ngm:class:resource-efficient-training",
         "label": "Resource-Efficient Training"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bayesian-optimisation",
+        "id": "urn:ngm:class:bayesian-optimisation",
         "label": "Bayesian Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:darts-differentiable-nas",
+        "id": "urn:ngm:class:darts-differentiable-nas",
         "label": "DARTS Differentiable NAS"
       },
       {
-        "id": "urn:visionflow:linked:evolutionary-neural-architecture-search",
+        "id": "urn:ngm:class:evolutionary-neural-architecture-search",
         "label": "Evolutionary Neural Architecture Search"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-development-lifecycle",
+        "label": "AI Development Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:mlops-platform",
+        "label": "MLOps Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

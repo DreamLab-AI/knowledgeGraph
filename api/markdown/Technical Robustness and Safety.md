@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:technical-robustness-and-safety",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:technical-robustness-and-safety",
+  "@type": "Class",
   "label": "Technical Robustness and Safety",
+  "definition": "Technical Robustness and Safety is a trustworthiness dimension ensuring AI systems perform reliably under varied conditions, resist adversarial attacks, implement fallback mechanisms for graceful degradation, and maintain safety throughout their operational lifecycle.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-trustworthiness-dimensions",
-      "vc:label": "AI Trustworthiness Dimensions"
+      "@id": "urn:ngm:class:ai-trustworthiness-dimensions",
+      "label": "AI Trustworthiness Dimensions"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cb76e75faabd10424cbab73c1c86adcfe64a8f8f63c0eaba9e671493f5ee0845"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb76e75faabd10424cbab73c1c86adcfe64a8f8f63c0eaba9e671493f5ee0845@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical Robustness and Safety is a trustworthiness dimension ensuring AI systems perform reliably under varied conditions, resist adversarial attacks, implement fallback mechanisms for graceful degradation, and maintain safety throughout their operational lifecycle. This dimension encompasses four core components: resilience to attack (protecting against adversarial examples designed to cause misclassification, data poisoning attempts to corrupt training data, model extraction attacks stealing intellectual property, and implementing comprehensive cybersecurity measures), fallback plan and safety mechanisms (providing fallback procedures when primary systems fail, enabling graceful degradation rather than catastrophic failure, implementing emergency stop capabilities for immediate deactivation, and establishing safe default behaviors), accuracy and reliability (meeting appropriate accuracy thresholds relative to deployment context, demonstrating reproducibility of results across trials, quantifying and communicating uncertainty in predictions, and handling distribution shift when deployment data differs from training data), and general safety (conducting comprehensive risk assessm",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

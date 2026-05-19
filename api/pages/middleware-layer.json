@@ -3,19 +3,18 @@
   "title": "Middleware Layer",
   "slug": "middleware-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:middleware-layer",
+  "classIri": "urn:ngm:class:middleware-layer",
   "domain": "infrastructure",
-  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems. This layer encompasses components that sit \"in the middle\" of system architectures, providing services that enable interoperability, abstract complexity, coordinate across boundaries, or integrate heterogeneous systems. Middleware includes blockchain client APIs (JSON-RPC interfaces, GraphQL endpoints, REST APIs providing programmatic blockchain access), integration frameworks (Web3.js, ethers.js, blockchain SDKs), oracle systems (Chainlink, Band Protocol bridging on-chain and off-chain data), cross-chain bridges (enabling asset transfer between blockchains), indexing and query services (The Graph, blockchain explorers providing structured data access), wallet infrastructure (wallet connect protocols, key management services), abstraction layers (account abstraction, meta-transactions hiding blockchain complexity), and orchestration services (transaction batching, gas management, nonce management). Unlike lowe",
+  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

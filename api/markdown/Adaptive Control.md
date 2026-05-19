@@ -172,78 +172,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:adaptive-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adaptive-control",
+  "@type": "Class",
   "label": "Adaptive Control",
+  "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:rb-1002-closed-loop-control",
-      "vc:label": "RB-1002-closed-loop-control"
+      "@id": "urn:ngm:class:rb-1002-closed-loop-control",
+      "label": "RB-1002-closed-loop-control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:61e41fe4e081c8ae25981b2c6421bd2c71a7f5e8c49020940ca9ea2250ba7331"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:parameter-adaptation-mechanism",
+        "label": "Parameter Adaptation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:self-tuning-systems",
+        "label": "Self-Tuning Systems"
+      },
+      {
+        "@id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:parameter-estimation",
+        "label": "Parameter Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:61e41fe4e081c8ae25981b2c6421bd2c71a7f5e8c49020940ca9ea2250ba7331@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:parameter-adaptation-mechanism",
-      "vc:label": "Parameter Adaptation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-identification",
-      "vc:label": "System Identification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:self-tuning-systems",
-      "vc:label": "Self-Tuning Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robust-control",
-      "vc:label": "Robust Control"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:parameter-estimation",
-      "vc:label": "Parameter Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-identification",
-      "vc:label": "System Identification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

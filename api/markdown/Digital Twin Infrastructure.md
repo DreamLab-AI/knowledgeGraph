@@ -140,70 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-infrastructure",
+  "@type": "Class",
   "label": "Digital Twin Infrastructure",
+  "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual count...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-infrastructure",
-      "vc:label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7daa677f54b38f55898539c634b373ac50bcfab6aa6fb8fc349e5868cf1a0aea"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:edge-analytics",
+        "label": "Edge Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-deployment",
+        "label": "Scalable Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7daa677f54b38f55898539c634b373ac50bcfab6aa6fb8fc349e5868cf1a0aea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts. bridges-to:: [[Sensor Input]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:5-g-connectivity",
-      "vc:label": "5G Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-platform",
-      "vc:label": "Cloud Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:edge-analytics",
-      "vc:label": "Edge Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-deployment",
-      "vc:label": "Scalable Deployment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-Time Processing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

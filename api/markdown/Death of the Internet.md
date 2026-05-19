@@ -520,366 +520,291 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:death-of-the-internet",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:death-of-the-internet",
+  "@type": "Class",
   "label": "Death of the Internet",
+  "definition": "Death of the Internet is a concept cluster in the ics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:information-integrity",
-      "vc:label": "Information Integrity"
+      "@id": "urn:ngm:class:information-integrity",
+      "label": "Information Integrity"
     },
     {
-      "@id": "urn:visionflow:linked:platform-decay",
-      "vc:label": "Platform Decay"
-    },
-    {
-      "@id": "urn:visionflow:linked:surveillance-capitalism",
-      "vc:label": "Surveillance Capitalism"
+      "@id": "urn:ngm:class:platform-decay",
+      "label": "Platform Decay"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:da3bf63061b3d098e9664dd802e55874729aa618925e445ee848173a34c93f7a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:algorithmic-capture",
+        "label": "Algorithmic Capture"
+      },
+      {
+        "@id": "urn:ngm:class:background-tokens",
+        "label": "Background Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:bot-traffic",
+        "label": "Bot Traffic"
+      },
+      {
+        "@id": "urn:ngm:class:dark-forest-theory",
+        "label": "Dark Forest Theory"
+      },
+      {
+        "@id": "urn:ngm:class:dead-internet-theory",
+        "label": "Dead Internet Theory"
+      },
+      {
+        "@id": "urn:ngm:class:enshittification",
+        "label": "Enshittification"
+      },
+      {
+        "@id": "urn:ngm:class:filter-bubble",
+        "label": "Filter Bubble"
+      },
+      {
+        "@id": "urn:ngm:class:habsburg-ai",
+        "label": "Habsburg AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-content-saturation",
+        "label": "Synthetic Content Saturation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentic-content",
+        "label": "Authentic Content"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:epistemic-infrastructure",
+        "label": "Epistemic Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:human-authorship",
+        "label": "Human Authorship"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-access",
+        "label": "Open API Access"
+      },
+      {
+        "@id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithmic-capture",
+        "label": "Algorithmic Capture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-manipulation",
+        "label": "Attention Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "@id": "urn:ngm:class:disinformation-ecosystem",
+        "label": "Disinformation Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:epistemic-degradation",
+        "label": "Epistemic Degradation"
+      },
+      {
+        "@id": "urn:ngm:class:model-collapse",
+        "label": "Model Collapse"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:api-rate-limiting",
+        "label": "API Rate Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:content-credentials",
+        "label": "Content Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:robots-txt-enforcement",
+        "label": "Robots.txt Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-algorithms",
+        "label": "Social Media Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "@id": "urn:ngm:class:human-vs-ai",
+        "label": "Human vs AI"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:legacy-media",
+        "label": "Legacy Media"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:activity-pub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-attestation",
+        "label": "Blockchain Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:dsa",
+        "label": "DSA"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:da3bf63061b3d098e9664dd802e55874729aa618925e445ee848173a34c93f7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Death of the Internet** is a concept cluster in the ethics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse. The cluster synthesises four interlocking phenomena operating on different timescales and through different causal mechanisms, yet mutually reinforcing in their combined effect on [[Information Integrity]] and [[Digital Society Surveillance]]: **(1) The Dead Internet Theory** — originally a 2021 fringe hypothesis posted anonymously on Agora Road forum, now substantially corroborated empirically, proposing that the majority of online activity is driven by bots, automated content systems, algorithmic feeds, and state and corporate manipulation rather than genuine human-to-human interaction. The theory predicts that organic, serendipitous human discourse has been displaced by choreographed, commercially or politically motivated automated activity that mimics the appearance of human engagement whilst serving radically different incentive structures. By 2024, empirical measurement had validated the core claim: Imperva's Bad Bot Report 2024",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-capture",
-      "vc:label": "Algorithmic Capture"
-    },
-    {
-      "@id": "urn:visionflow:linked:background-tokens",
-      "vc:label": "Background Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:bot-traffic",
-      "vc:label": "Bot Traffic"
-    },
-    {
-      "@id": "urn:visionflow:linked:dark-forest-theory",
-      "vc:label": "Dark Forest Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:dead-internet-theory",
-      "vc:label": "Dead Internet Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:enshittification",
-      "vc:label": "Enshittification"
-    },
-    {
-      "@id": "urn:visionflow:linked:filter-bubble",
-      "vc:label": "Filter Bubble"
-    },
-    {
-      "@id": "urn:visionflow:linked:habsburg-ai",
-      "vc:label": "Habsburg AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-content-saturation",
-      "vc:label": "Synthetic Content Saturation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentic-content",
-      "vc:label": "Authentic Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-provenance",
-      "vc:label": "Content Provenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:epistemic-infrastructure",
-      "vc:label": "Epistemic Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-authorship",
-      "vc:label": "Human Authorship"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-access",
-      "vc:label": "Open API Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-accountability",
-      "vc:label": "Platform Accountability"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-capture",
-      "vc:label": "Algorithmic Capture"
-    },
-    {
-      "@id": "urn:visionflow:linked:attention-manipulation",
-      "vc:label": "Attention Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-divide",
-      "vc:label": "Digital Divide"
-    },
-    {
-      "@id": "urn:visionflow:linked:disinformation-ecosystem",
-      "vc:label": "Disinformation Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:epistemic-degradation",
-      "vc:label": "Epistemic Degradation"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-collapse",
-      "vc:label": "Model Collapse"
-    },
-    {
-      "@id": "urn:visionflow:linked:surveillance-capitalism",
-      "vc:label": "Surveillance Capitalism"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:age-verification",
-      "vc:label": "Age Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:api-rate-limiting",
-      "vc:label": "API Rate Limiting"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-credentials",
-      "vc:label": "Content Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-act-2023",
-      "vc:label": "Online Safety Act 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:robots-txt-enforcement",
-      "vc:label": "Robots.txt Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:c2-pa-standard",
-      "vc:label": "C2PA Standard"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:advertising-economics",
-      "vc:label": "Advertising Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-training-data",
-      "vc:label": "AI Training Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:background-tokens",
-      "vc:label": "Background Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-effects",
-      "vc:label": "Network Effects"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-monopoly",
-      "vc:label": "Platform Monopoly"
-    },
-    {
-      "@id": "urn:visionflow:linked:search-economics",
-      "vc:label": "Search Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:switching-costs",
-      "vc:label": "Switching Costs"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:activity-pub",
-      "vc:label": "ActivityPub"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-attestation",
-      "vc:label": "Blockchain Attestation"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-social-networks",
-      "vc:label": "Federated Social Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open Source AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralised-web",
-      "vc:label": "Decentralised Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid",
-      "vc:label": "Solid"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:programmatic-advertising",
-      "vc:label": "Programmatic Advertising"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-systems",
-      "vc:label": "Recommendation Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-media-algorithms",
-      "vc:label": "Social Media Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-scrapers",
-      "vc:label": "AI Scrapers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:authentic-internet",
-      "vc:label": "Authentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-social-networks",
-      "vc:label": "Federated Social Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-authored-content",
-      "vc:label": "Human-Authored Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:indie-web-movement",
-      "vc:label": "IndieWeb Movement"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-web",
-      "vc:label": "Open Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid",
-      "vc:label": "Solid"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-inequality",
-      "vc:label": "Global Inequality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-vs-ai",
-      "vc:label": "Human vs AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latent-space",
-      "vc:label": "Latent Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legacy-media",
-      "vc:label": "Legacy Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-and-safety",
-      "vc:label": "Trust and Safety"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa",
-      "vc:label": "C2PA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dsa",
-      "vc:label": "DSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom",
-      "vc:label": "Ofcom"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-online-safety-act",
-      "vc:label": "UK Online Safety Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

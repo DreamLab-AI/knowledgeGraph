@@ -13,27 +13,20 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:foundation-model-provider",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:foundation-model-provider",
+  "@type": "Individual",
   "label": "Foundation Model Provider",
-  "vc:sourceDomain": "artificial-intelligence",
-  "definition": "Foundation Model Provider is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "definition": "Organisation or entity that trains, maintains, and distributes large-scale foundation models as products or APIs for downstream application developers and enterprise users.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.3,
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:ai-company",
+      "label": "AI Company"
+    }
+  ]
 }
 ```
 

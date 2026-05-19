@@ -3,32 +3,36 @@
   "title": "Etsi Metaverse Domain Taxonomy",
   "slug": "etsi-metaverse-domain-taxonomy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+  "classIri": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
   "domain": "spatial-computing",
-  "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology industries.",
+  "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology ind...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:taxonomy",
+      "id": "urn:ngm:class:taxonomy",
       "label": "Taxonomy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:standards-interoperability",
+        "id": "urn:ngm:class:standards-interoperability",
         "label": "Standards Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

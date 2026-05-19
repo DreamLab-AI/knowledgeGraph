@@ -3,19 +3,18 @@
   "title": "Virtual Object Pose",
   "slug": "virtual-object-pose",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-object-pose",
+  "classIri": "urn:ngm:class:virtual-object-pose",
   "domain": "spatial-computing",
   "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:physics-simulation",
+      "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

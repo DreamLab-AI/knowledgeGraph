@@ -3,53 +3,57 @@
   "title": "Ar Display Device",
   "slug": "ar-display-device",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-display-device",
+  "classIri": "urn:ngm:class:ar-display-device",
   "domain": "spatial-computing",
   "definition": "AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:display-hardware",
+      "id": "urn:ngm:class:display-hardware",
       "label": "Display Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:display-technology",
+        "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
       },
       {
-        "id": "urn:visionflow:linked:optical-systems",
+        "id": "urn:ngm:class:optical-systems",
         "label": "Optical Systems"
       },
       {
-        "id": "urn:visionflow:linked:pose-tracking",
+        "id": "urn:ngm:class:pose-tracking",
         "label": "Pose Tracking"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:augmented-reality-experiences",
+        "id": "urn:ngm:class:augmented-reality-experiences",
         "label": "Augmented Reality Experiences"
       },
       {
-        "id": "urn:visionflow:linked:mixed-reality-interaction",
+        "id": "urn:ngm:class:mixed-reality-interaction",
         "label": "Mixed Reality Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

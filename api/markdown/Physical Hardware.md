@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:physical-hardware",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:physical-hardware",
+  "@type": "Class",
   "label": "Physical Hardware",
+  "definition": "The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:hardware",
-      "vc:label": "Hardware"
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ed18e54bd18a4fca19443e61f5012396b3d0633a4d3e71afe6dec682bdf2d7f4"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ed18e54bd18a4fca19443e61f5012396b3d0633a4d3e71afe6dec682bdf2d7f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Virtual Economy Domain",
   "slug": "virtual-economy-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-economy-domain",
+  "classIri": "urn:ngm:class:virtual-economy-domain",
   "domain": "spatial-computing",
-  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership and smart contract automation.",
+  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-economy",
+      "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

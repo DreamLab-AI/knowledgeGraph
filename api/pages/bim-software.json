@@ -3,53 +3,57 @@
   "title": "BIM Software",
   "slug": "bim-software",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bim-software",
+  "classIri": "urn:ngm:class:bim-software",
   "domain": "spatial-computing",
-  "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.",
+  "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to ope...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:design-software",
+      "id": "urn:ngm:class:design-software",
       "label": "Design Software"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cad-capabilities",
+        "id": "urn:ngm:class:cad-capabilities",
         "label": "CAD Capabilities"
       },
       {
-        "id": "urn:visionflow:linked:collaboration-tools",
+        "id": "urn:ngm:class:collaboration-tools",
         "label": "Collaboration Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:construction-coordination",
+        "id": "urn:ngm:class:construction-coordination",
         "label": "Construction Coordination"
       },
       {
-        "id": "urn:visionflow:linked:facility-management",
+        "id": "urn:ngm:class:facility-management",
         "label": "Facility Management"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

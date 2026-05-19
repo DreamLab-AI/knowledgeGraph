@@ -148,74 +148,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-application-education",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-application-education",
+  "@type": "Class",
   "label": "ETSI Domain Application + Education",
+  "definition": "Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c2559803479cd9ecf6cfd28d6a5a7c7d7a81572c9013cf1d90fefe88646875b1"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:education-application-classification",
+        "label": "Education Application Classification"
+      },
+      {
+        "@id": "urn:ngm:class:learning-platform-categorization",
+        "label": "Learning Platform Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c2559803479cd9ecf6cfd28d6a5a7c7d7a81572c9013cf1d90fefe88646875b1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:education-application-classification",
-      "vc:label": "Education Application Classification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-platform-categorization",
-      "vc:label": "Learning Platform Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
-      "vc:label": "VirtualSocietyDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

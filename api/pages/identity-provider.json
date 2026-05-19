@@ -3,159 +3,263 @@
   "title": "Identity Provider",
   "slug": "identity-provider",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:identity-provider",
+  "classIri": "urn:ngm:class:identity-provider",
   "domain": "infrastructure",
-  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals \u2014 humans, service accounts, devices, and workloads \u2014 and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, operating within trust frameworks governed by open federation protocols ([[SAML]] 2.0, [[OAuth]] 2.0, [[OpenID Connect]] 1.0/FAPI 2.0, [[SCIM]] 2.0) and implementing credential lifecycle management (registration, provisioning, [[Multi-Factor Authentication|multi-factor authentication]], session management, credential rotation, revocation) across B2E (business-to-employee) workforce environments, B2C (business-to-consumer) customer-facing deployments, B2B federation spanning organisational boundaries, and M2M (machine-to-machine) workload identity. The commercial IdP market is dominated by Okta (22,000+ customers, $2.25B FY2026 revenue), Microsoft Entra ID (formerly Azure Active Directory, 700M+ tenants, 1.3B monthly active users), Auth0 (acquired by Okta 2021, $6.5B, developer-focused), Ping Identity (acquired by Thales 2023, $2.8B, enterprise), ForgeRock (acquired by Ping Identity/Thales 2023,",
+  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals \u2014 humans, service accounts, devices, and workloads \u2014 and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, oper...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:security-infrastructure",
+      "id": "urn:ngm:class:security-infrastructure",
       "label": "Security Infrastructure"
     },
     {
-      "id": "urn:visionflow:linked:trust-service",
+      "id": "urn:ngm:class:trust-service",
       "label": "Trust Service"
-    },
-    {
-      "id": "urn:visionflow:owl:class:authentication-service",
-      "label": "Authentication Service"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-log",
+        "id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
       },
       {
-        "id": "urn:visionflow:linked:authentication-engine",
+        "id": "urn:ngm:class:authentication-engine",
         "label": "Authentication Engine"
       },
       {
-        "id": "urn:visionflow:linked:credential-store",
+        "id": "urn:ngm:class:credential-store",
         "label": "Credential Store"
       },
       {
-        "id": "urn:visionflow:linked:federation-gateway",
+        "id": "urn:ngm:class:federation-gateway",
         "label": "Federation Gateway"
       },
       {
-        "id": "urn:visionflow:linked:mfa-module",
+        "id": "urn:ngm:class:mfa-module",
         "label": "MFA Module"
       },
       {
-        "id": "urn:visionflow:linked:risk-engine",
+        "id": "urn:ngm:class:risk-engine",
         "label": "Risk Engine"
       },
       {
-        "id": "urn:visionflow:linked:session-manager",
+        "id": "urn:ngm:class:session-manager",
         "label": "Session Manager"
       },
       {
-        "id": "urn:visionflow:linked:token-issuance-service",
+        "id": "urn:ngm:class:token-issuance-service",
         "label": "Token Issuance Service"
       },
       {
-        "id": "urn:visionflow:linked:user-directory",
+        "id": "urn:ngm:class:user-directory",
         "label": "User Directory"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:directory-service",
+        "id": "urn:ngm:class:directory-service",
         "label": "Directory Service"
       },
       {
-        "id": "urn:visionflow:linked:hardware-security-module",
+        "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
       },
       {
-        "id": "urn:visionflow:linked:network-security",
+        "id": "urn:ngm:class:network-security",
         "label": "Network Security"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-key-management",
+        "id": "urn:ngm:class:cryptographic-key-management",
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:continuous-authentication",
+        "id": "urn:ngm:class:continuous-authentication",
         "label": "Continuous Authentication"
       },
       {
-        "id": "urn:visionflow:linked:delegated-authorization",
+        "id": "urn:ngm:class:delegated-authorization",
         "label": "Delegated Authorization"
       },
       {
-        "id": "urn:visionflow:linked:federated-identity",
+        "id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
       },
       {
-        "id": "urn:visionflow:linked:identity-governance",
+        "id": "urn:ngm:class:identity-governance",
         "label": "Identity Governance"
       },
       {
-        "id": "urn:visionflow:linked:passkey-authentication",
+        "id": "urn:ngm:class:passkey-authentication",
         "label": "Passkey Authentication"
       },
       {
-        "id": "urn:visionflow:linked:privileged-access-management",
+        "id": "urn:ngm:class:privileged-access-management",
         "label": "Privileged Access Management"
       },
       {
-        "id": "urn:visionflow:linked:single-sign-on",
+        "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
       },
       {
-        "id": "urn:visionflow:linked:zero-trust-architecture",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:fido2",
+        "id": "urn:ngm:class:fido2",
         "label": "FIDO2"
       },
       {
-        "id": "urn:visionflow:linked:kerberos",
+        "id": "urn:ngm:class:kerberos",
         "label": "Kerberos"
       },
       {
-        "id": "urn:visionflow:linked:ldap",
+        "id": "urn:ngm:class:ldap",
         "label": "LDAP"
       },
       {
-        "id": "urn:visionflow:linked:oauth",
+        "id": "urn:ngm:class:oauth",
         "label": "OAuth"
       },
       {
-        "id": "urn:visionflow:linked:open-id-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
-        "id": "urn:visionflow:linked:saml",
+        "id": "urn:ngm:class:saml",
         "label": "SAML"
       },
       {
-        "id": "urn:visionflow:linked:scim",
+        "id": "urn:ngm:class:scim",
         "label": "SCIM"
       },
       {
-        "id": "urn:visionflow:linked:web-authn",
+        "id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      },
+      {
+        "id": "urn:ngm:class:push-notification",
+        "label": "Push Notification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:b2-c-identity",
+        "label": "B2C Identity"
+      },
+      {
+        "id": "urn:ngm:class:b2-e-identity",
+        "label": "B2E Identity"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-authentication",
+        "label": "Risk-Based Authentication"
+      },
+      {
+        "id": "urn:ngm:class:social-login",
+        "label": "Social Login"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-framework",
+        "label": "Digital Identity Framework"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
   },
   "wikilinks": [
     {

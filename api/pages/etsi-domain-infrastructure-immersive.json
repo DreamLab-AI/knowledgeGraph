@@ -3,94 +3,98 @@
   "title": "ETSI_Domain_Infrastructure___Immersive",
   "slug": "etsi-domain-infrastructure-immersive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-immersive",
+  "classIri": "urn:ngm:class:etsi-domain-infrastructure-immersive",
   "domain": "infrastructure",
-  "definition": "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended reality (XR), spatial computing, and metaverse environments, comprising rendering infrastructure (game engines such as Unity with 2.8 million developers globally achieving 50-120 frames per second stereoscopic rendering at 1440\u00d71600 pixels per eye for VR headsets, Unreal Engine with nanite virtualized geometry rendering 10+ billion triangles/scene, Godot supporting cross-platform deployment across 9 platforms), network infrastructure (5G Stand-Alone (SA) architecture with network slicing providing ultra-reliable low-latency communication URLLC <1ms radio latency, multi-access edge computing MEC nodes positioned <10km from users reducing round-trip time RTT to 5-15ms enabling real-time synchronization of shared virtual environments with 100-1000+ concurrent users, fiber-to-premises FTTP deployments achieving symmetric 1Gbps-10Gbps supporting 8K 360\u00b0 video streaming at 100-200 Mbps), edge computi",
+  "definition": "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:content-delivery-network",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "ContentDeliveryNetwork"
       },
       {
-        "id": "urn:visionflow:linked:distributed-storage",
+        "id": "urn:ngm:class:distributed-storage",
         "label": "DistributedStorage"
       },
       {
-        "id": "urn:visionflow:linked:network-slicing",
+        "id": "urn:ngm:class:network-slicing",
         "label": "NetworkSlicing"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "id": "urn:ngm:class:edge-computing-node",
         "label": "EdgeComputingNode"
       },
       {
-        "id": "urn:visionflow:owl:class:game-engine",
+        "id": "urn:ngm:class:game-engine",
         "label": "GameEngine"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "id": "urn:ngm:class:rendering-pipeline",
         "label": "RenderingPipeline"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:5-gstand-alone-architecture",
+        "id": "urn:ngm:class:5-gstand-alone-architecture",
         "label": "5GStandAloneArchitecture"
       },
       {
-        "id": "urn:visionflow:linked:distributed-caching",
+        "id": "urn:ngm:class:distributed-caching",
         "label": "DistributedCaching"
       },
       {
-        "id": "urn:visionflow:linked:fiber-optics-infrastructure",
+        "id": "urn:ngm:class:fiber-optics-infrastructure",
         "label": "FiberOpticsInfrastructure"
       },
       {
-        "id": "urn:visionflow:linked:gpucompute-infrastructure",
+        "id": "urn:ngm:class:gpucompute-infrastructure",
         "label": "GPUComputeInfrastructure"
       },
       {
-        "id": "urn:visionflow:linked:multi-access-edge-computing",
+        "id": "urn:ngm:class:multi-access-edge-computing",
         "label": "MultiAccessEdgeComputing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:extended-reality",
+        "id": "urn:ngm:class:extended-reality",
         "label": "ExtendedReality"
       },
       {
-        "id": "urn:visionflow:linked:metaverse-environment",
+        "id": "urn:ngm:class:metaverse-environment",
         "label": "MetaverseEnvironment"
       },
       {
-        "id": "urn:visionflow:linked:realtime-synchronization",
+        "id": "urn:ngm:class:realtime-synchronization",
         "label": "RealtimeSynchronization"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experience",
+        "id": "urn:ngm:class:immersive-experience",
         "label": "ImmersiveExperience"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "SpatialComputing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

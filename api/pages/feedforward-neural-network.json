@@ -3,19 +3,18 @@
   "title": "Feedforward Neural Network",
   "slug": "feedforward-neural-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feedforward-neural-network",
+  "classIri": "urn:ngm:class:feedforward-neural-network",
   "domain": "artificial-intelligence",
   "definition": "Feedforward Neural Network is a artificial intelligence concept and a type of Network Architecture.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-architecture",
+      "id": "urn:ngm:class:network-architecture",
       "label": "Network Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

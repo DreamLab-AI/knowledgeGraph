@@ -116,46 +116,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:machine-learning-models",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:machine-learning-models",
+  "@type": "Class",
   "label": "Machine Learning Models",
+  "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ed7eb5a28dac39d58d20f25a53e3f152a63f473b3d5198aa676945044f6411a7"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision Making"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ed7eb5a28dac39d58d20f25a53e3f152a63f473b3d5198aa676945044f6411a7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:linked:automated-decision-making",
-      "vc:label": "Automated Decision Making"
+      "@id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model"
     }
   ]
 }

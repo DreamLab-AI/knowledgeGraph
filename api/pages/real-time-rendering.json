@@ -3,44 +3,48 @@
   "title": "Real-Time Rendering",
   "slug": "real-time-rendering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-rendering",
+  "classIri": "urn:ngm:class:real-time-rendering",
   "domain": "infrastructure",
-  "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.",
+  "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:three-dimensional-graphics",
+      "id": "urn:ngm:class:three-dimensional-graphics",
       "label": "Three Dimensional Graphics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:interactive-visualization",
+        "id": "urn:ngm:class:interactive-visualization",
         "label": "Interactive Visualization"
       },
       {
-        "id": "urn:visionflow:linked:video-games",
+        "id": "urn:ngm:class:video-games",
         "label": "Video Games"
       },
       {
-        "id": "urn:visionflow:owl:class:augmented-reality",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-reality",
+        "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

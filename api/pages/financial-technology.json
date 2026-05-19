@@ -3,19 +3,18 @@
   "title": "Financial Technology",
   "slug": "financial-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:financial-technology",
+  "classIri": "urn:ngm:class:financial-technology",
   "domain": "blockchain",
-  "definition": "Financial Technology is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Financial Technology is a type of Crypto Token in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:crypto-token",
+      "id": "urn:ngm:class:crypto-token",
       "label": "Crypto Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

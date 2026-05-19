@@ -3,32 +3,36 @@
   "title": "Machine Learning Model",
   "slug": "machine-learning-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-model",
+  "classIri": "urn:ngm:class:machine-learning-model",
   "domain": "artificial-intelligence",
   "definition": "Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:intelligent-metaverse-systems",
+        "id": "urn:ngm:class:intelligent-metaverse-systems",
         "label": "Intelligent Metaverse Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

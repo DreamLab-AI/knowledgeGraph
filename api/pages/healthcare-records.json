@@ -3,19 +3,18 @@
   "title": "Healthcare Records",
   "slug": "healthcare-records",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:healthcare-records",
+  "classIri": "urn:ngm:class:healthcare-records",
   "domain": "blockchain",
-  "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures.",
+  "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintain...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.9,
   "maturity": "draft",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

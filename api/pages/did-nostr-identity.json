@@ -3,95 +3,99 @@
   "title": "DID Nostr Identity",
   "slug": "did-nostr-identity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:did-nostr-identity",
+  "classIri": "urn:ngm:class:did-nostr-identity",
   "domain": "blockchain",
-  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a central identity provider or certificate authority.",
+  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-identity",
+      "id": "urn:ngm:class:distributed-identity",
       "label": "Distributed Identity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.88,
-  "authorityScore": 0.92,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
         "label": "BIP-340 Schnorr Keypair"
       },
       {
-        "id": "urn:visionflow:linked:did-resolution",
+        "id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution"
       },
       {
-        "id": "urn:visionflow:owl:class:private-key",
+        "id": "urn:ngm:class:private-key",
         "label": "Private Key"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bip-340-cryptography",
+        "id": "urn:ngm:class:bip-340-cryptography",
         "label": "BIP-340 Cryptography"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-method",
+        "id": "urn:ngm:class:w3-c-did-method",
         "label": "W3C DID Method"
       },
       {
-        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:credential-issuance",
+        "id": "urn:ngm:class:credential-issuance",
         "label": "Credential Issuance"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-identity",
+        "id": "urn:ngm:class:cryptographic-identity",
         "label": "Cryptographic Identity"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-trust",
+        "id": "urn:ngm:class:decentralised-trust",
         "label": "Decentralised Trust"
       },
       {
-        "id": "urn:visionflow:linked:message-signing",
+        "id": "urn:ngm:class:message-signing",
         "label": "Message Signing"
       },
       {
-        "id": "urn:visionflow:linked:self-sovereign-key-management",
+        "id": "urn:ngm:class:self-sovereign-key-management",
         "label": "Self-Sovereign Key Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bip-340",
+        "id": "urn:ngm:class:bip-340",
         "label": "BIP-340"
       },
       {
-        "id": "urn:visionflow:linked:nostr-nip-01",
+        "id": "urn:ngm:class:nostr-nip-01",
         "label": "Nostr NIP-01"
       },
       {
-        "id": "urn:visionflow:linked:schnorr-signatures",
+        "id": "urn:ngm:class:schnorr-signatures",
         "label": "Schnorr Signatures"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

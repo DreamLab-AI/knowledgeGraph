@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-ecosystem",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-ecosystem",
+  "@type": "Class",
   "label": "Digital Twin Ecosystem",
+  "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working toger to create, maintain, and derive value from virtual replicas of p...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technology-ecosystem",
-      "vc:label": "Technology Ecosystem"
+      "@id": "urn:ngm:class:technology-ecosystem",
+      "label": "Technology Ecosystem"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:35e772f5431ce439f1e6dd93fa53550a386b412644cd5ef0758bbb0527e54a82"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-analytics",
+        "label": "Cross-Platform Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-digital-twins",
+        "label": "Enterprise Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:35e772f5431ce439f1e6dd93fa53550a386b412644cd5ef0758bbb0527e54a82@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cloud-platform",
-      "vc:label": "Cloud Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-infrastructure",
-      "vc:label": "IoT Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-standards",
-      "vc:label": "Data Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-analytics",
-      "vc:label": "Cross-Platform Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-digital-twins",
-      "vc:label": "Enterprise Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-integration",
-      "vc:label": "System Integration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

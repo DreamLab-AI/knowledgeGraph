@@ -108,41 +108,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nft-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nft-standards",
+  "@type": "Class",
   "label": "NFT Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d302db0cec0523d897b5356299126284e573f718b8872f9f4ddda75aac25a5e7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d302db0cec0523d897b5356299126284e573f718b8872f9f4ddda75aac25a5e7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "NFT Standards is a blockchain and distributed systems concept and a type of blockchain.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

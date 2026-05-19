@@ -3,82 +3,91 @@
   "title": "Data Storage Layer",
   "slug": "data-storage-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-storage-layer",
+  "classIri": "urn:ngm:class:data-storage-layer",
   "domain": "infrastructure",
   "definition": "Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-layer",
+      "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:blockchain-storage",
+        "id": "urn:ngm:class:blockchain-storage",
         "label": "Blockchain Storage"
       },
       {
-        "id": "urn:visionflow:linked:cache-layer",
+        "id": "urn:ngm:class:cache-layer",
         "label": "Cache Layer"
       },
       {
-        "id": "urn:visionflow:linked:cdn-storage",
+        "id": "urn:ngm:class:cdn-storage",
         "label": "CDN Storage"
       },
       {
-        "id": "urn:visionflow:linked:object-storage-service",
+        "id": "urn:ngm:class:object-storage-service",
         "label": "Object Storage Service"
       },
       {
-        "id": "urn:visionflow:owl:class:database-system",
+        "id": "urn:ngm:class:database-system",
         "label": "Database System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:backup-systems",
+        "id": "urn:ngm:class:backup-systems",
         "label": "Backup Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-hardware",
+        "id": "urn:ngm:class:storage-hardware",
         "label": "Storage Hardware"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-persistence",
+        "id": "urn:ngm:class:asset-persistence",
         "label": "Asset Persistence"
       },
       {
-        "id": "urn:visionflow:linked:content-distribution",
+        "id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution"
       },
       {
-        "id": "urn:visionflow:linked:user-profile-storage",
+        "id": "urn:ngm:class:user-profile-storage",
         "label": "User Profile Storage"
       },
       {
-        "id": "urn:visionflow:linked:world-state-management",
+        "id": "urn:ngm:class:world-state-management",
         "label": "World State Management"
       },
       {
-        "id": "urn:visionflow:owl:class:data-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Reality Applications",
   "slug": "virtual-reality-applications",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-reality-applications",
+  "classIri": "urn:ngm:class:virtual-reality-applications",
   "domain": "spatial-computing",
-  "definition": "Virtual Reality Applications is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Virtual Reality Applications is a type of Virtual Reality in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-reality",
+      "id": "urn:ngm:class:virtual-reality",
       "label": "Virtual Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

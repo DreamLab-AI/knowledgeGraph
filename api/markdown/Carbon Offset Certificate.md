@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-offset-certificate",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-offset-certificate",
+  "@type": "Class",
   "label": "Carbon Offset Certificate",
+  "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-certificate",
-      "vc:label": "Environmental Certificate"
+      "@id": "urn:ngm:class:environmental-certificate",
+      "label": "Environmental Certificate"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:21c3bc462095579d3e9e1feb7d1093cbfc23ac4dea58c7e0faab3bb7da294833"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:project-verification",
+        "label": "Project Verification"
+      },
+      {
+        "@id": "urn:ngm:class:registry-issuance",
+        "label": "Registry Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-validation",
+        "label": "Third Party Validation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:climate-investment",
+        "label": "Climate Investment"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-compensation",
+        "label": "Emissions Compensation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:21c3bc462095579d3e9e1feb7d1093cbfc23ac4dea58c7e0faab3bb7da294833@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:project-verification",
-      "vc:label": "Project Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:registry-issuance",
-      "vc:label": "Registry Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:third-party-validation",
-      "vc:label": "Third Party Validation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:carbon-neutrality",
-      "vc:label": "Carbon Neutrality"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-investment",
-      "vc:label": "Climate Investment"
-    },
-    {
-      "@id": "urn:visionflow:linked:emissions-compensation",
-      "vc:label": "Emissions Compensation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

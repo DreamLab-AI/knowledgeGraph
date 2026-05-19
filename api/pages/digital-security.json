@@ -3,19 +3,18 @@
   "title": "Digital Security",
   "slug": "digital-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-security",
+  "classIri": "urn:ngm:class:digital-security",
   "domain": "spatial-computing",
-  "definition": "Digital Security is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Security is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

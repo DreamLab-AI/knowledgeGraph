@@ -204,41 +204,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-in-automation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-in-automation",
+  "@type": "Class",
   "label": "Trust in Automation",
+  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:human-factors",
-      "vc:label": "Human Factors"
+      "@id": "urn:ngm:class:human-factors",
+      "label": "Human Factors"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2de43065c6969d0e30f800a85f43c370dec5d61cc25b8ee4e492eac704f8a399"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2de43065c6969d0e30f800a85f43c370dec5d61cc25b8ee4e492eac704f8a399@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences. It represents the user's confidence in the system's reliability, competence, and integrity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

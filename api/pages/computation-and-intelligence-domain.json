@@ -3,19 +3,18 @@
   "title": "Computation And Intelligence Domain",
   "slug": "computation-and-intelligence-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:computation-and-intelligence-domain",
+  "classIri": "urn:ngm:class:computation-and-intelligence-domain",
   "domain": "artificial-intelligence",
-  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems.",
+  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial syst...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

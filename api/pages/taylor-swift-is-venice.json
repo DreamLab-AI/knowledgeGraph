@@ -3,19 +3,18 @@
   "title": "Taylor Swift is Venice",
   "slug": "taylor-swift-is-venice",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:taylor-swift-is-venice",
+  "classIri": "urn:ngm:class:taylor-swift-is-venice",
   "domain": "infrastructure",
   "definition": "Taylor Swift is Venice is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

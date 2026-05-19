@@ -212,138 +212,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-transparency-index",
+  "@type": "Class",
   "label": "Algorithmic Transparency Index",
+  "definition": "A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0547110ca23ee07f9ca6cb7731e44854169b2b1d578431af88e13adf3f9b2c1c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bias-detection-metrics",
+        "label": "Bias Detection Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:explainability-metrics",
+        "label": "Explainability Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decision-logging",
+        "label": "Decision Logging"
+      },
+      {
+        "@id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability-system",
+        "label": "Algorithmic Accountability System"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0547110ca23ee07f9ca6cb7731e44854169b2b1d578431af88e13adf3f9b2c1c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-accountability-system",
-      "vc:label": "Algorithmic Accountability System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bias-detection-metrics",
-      "vc:label": "Bias Detection Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosure-requirements",
-      "vc:label": "Disclosure Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:explainability-metrics",
-      "vc:label": "Explainability Metrics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:documentation-standards",
-      "vc:label": "Documentation Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-metrics",
-      "vc:label": "Performance Metrics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audit-mechanism",
-      "vc:label": "Audit Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-logging",
-      "vc:label": "Decision Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-documentation",
-      "vc:label": "Model Documentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-provenance",
-      "vc:label": "Data Provenance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-accountability",
-      "vc:label": "AI Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:algorithmic-auditing",
-      "vc:label": "Algorithmic Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-trust",
-      "vc:label": "Stakeholder Trust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:automated-decision-system",
-      "vc:label": "Automated Decision System"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-moderation-system",
-      "vc:label": "Content Moderation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-system",
-      "vc:label": "Recommendation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-model",
-      "vc:label": "Machine Learning Model"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

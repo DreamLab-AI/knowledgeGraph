@@ -3,19 +3,18 @@
   "title": "Royalty Distribution",
   "slug": "royalty-distribution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:royalty-distribution",
+  "classIri": "urn:ngm:class:royalty-distribution",
   "domain": "blockchain",
   "definition": "Automated royalty payments via smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

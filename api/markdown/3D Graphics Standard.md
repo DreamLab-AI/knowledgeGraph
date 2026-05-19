@@ -176,84 +176,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-graphics-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-graphics-standard",
+  "@type": "Class",
   "label": "3D Graphics Standard",
+  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:rendering-standard",
-      "vc:label": "Rendering Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-specification",
-      "vc:label": "Technical Specification"
+      "@id": "urn:ngm:class:rendering-standard",
+      "label": "Rendering Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:driver-implementation",
+        "label": "Driver Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-support",
+        "label": "GPU Support"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-time Rendering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:technical-specification",
+        "label": "Technical Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:21be090f4909a2c3e087912c1529535588f73bd718459334d02ac92d33bb0a78@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:driver-implementation",
-      "vc:label": "Driver Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-support",
-      "vc:label": "GPU Support"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-compatibility",
-      "vc:label": "Cross-Platform Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-acceleration",
-      "vc:label": "Hardware Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-time Rendering"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:gpu-architecture",
-      "vc:label": "GPU Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shader-language",
-      "vc:label": "Shader Language"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

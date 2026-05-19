@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-payments",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-payments",
+  "@type": "Class",
   "label": "Digital Payments",
+  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:financial-transactions",
-      "vc:label": "Financial Transactions"
+      "@id": "urn:ngm:class:financial-transactions",
+      "label": "Financial Transactions"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-transfer",
+        "label": "Cross-Border Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-purchases",
+        "label": "Virtual Purchases"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5ac681ce5a2667bf986c9404f1bc277263dc61a9b92d27bb56325ec1fcb1adc0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:payment-processor",
-      "vc:label": "Payment Processor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-transfer",
-      "vc:label": "Cross-Border Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-purchases",
-      "vc:label": "Virtual Purchases"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:e-commerce",
-      "vc:label": "E-Commerce"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

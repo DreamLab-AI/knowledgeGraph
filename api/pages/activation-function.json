@@ -3,19 +3,18 @@
   "title": "Activation Function",
   "slug": "activation-function",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:activation-function",
+  "classIri": "urn:ngm:class:activation-function",
   "domain": "artificial-intelligence",
   "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:neural-network-component",
+      "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

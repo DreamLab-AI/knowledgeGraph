@@ -160,102 +160,67 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-infrastructure",
+  "@type": "Class",
   "label": "Trust Infrastructure",
+  "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "Infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:23e75bd8dfb0444f82e3251a682f4bbfc8af175633298726c4292dc82405cea1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:encryption-service",
+        "label": "Encryption Service"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:23e75bd8dfb0444f82e3251a682f4bbfc8af175633298726c4292dc82405cea1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption-service",
-      "vc:label": "Encryption Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management",
-      "vc:label": "Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:authorisation",
-      "vc:label": "Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-confidentiality",
-      "vc:label": "Data Confidentiality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-layer",
-      "vc:label": "Physical Layer"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

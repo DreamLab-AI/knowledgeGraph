@@ -3,82 +3,86 @@
   "title": "Gaze Control",
   "slug": "gaze-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gaze-control",
+  "classIri": "urn:ngm:class:gaze-control",
   "domain": "robotics",
-  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]]. Gaze serves both functional roles\u2014directing perception toward task-relevant features\u2014and social functions\u2014signalling attentiveness and promoting human comprehension of robot behaviour.",
+  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:attention-control",
+      "id": "urn:ngm:class:attention-control",
       "label": "Attention Control"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:eye-movement-controller",
+        "id": "urn:ngm:class:eye-movement-controller",
         "label": "Eye Movement Controller"
       },
       {
-        "id": "urn:visionflow:linked:gaze-target-estimator",
+        "id": "urn:ngm:class:gaze-target-estimator",
         "label": "Gaze Target Estimator"
       },
       {
-        "id": "urn:visionflow:linked:head-movement-mechanism",
+        "id": "urn:ngm:class:head-movement-mechanism",
         "label": "Head Movement Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:visual-attention-model",
+        "id": "urn:ngm:class:visual-attention-model",
         "label": "Visual Attention Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-actuators",
+        "id": "urn:ngm:class:camera-actuators",
         "label": "Camera Actuators"
       },
       {
-        "id": "urn:visionflow:linked:social-understanding",
+        "id": "urn:ngm:class:social-understanding",
         "label": "Social Understanding"
       },
       {
-        "id": "urn:visionflow:linked:target-tracking",
+        "id": "urn:ngm:class:target-tracking",
         "label": "Target Tracking"
       },
       {
-        "id": "urn:visionflow:linked:visual-perception",
+        "id": "urn:ngm:class:visual-perception",
         "label": "Visual Perception"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:attention-redirection",
+        "id": "urn:ngm:class:attention-redirection",
         "label": "Attention Redirection"
       },
       {
-        "id": "urn:visionflow:linked:joint-attention",
+        "id": "urn:ngm:class:joint-attention",
         "label": "Joint Attention"
       },
       {
-        "id": "urn:visionflow:linked:natural-interaction",
+        "id": "urn:ngm:class:natural-interaction",
         "label": "Natural Interaction"
       },
       {
-        "id": "urn:visionflow:linked:social-signal-transmission",
+        "id": "urn:ngm:class:social-signal-transmission",
         "label": "Social Signal Transmission"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

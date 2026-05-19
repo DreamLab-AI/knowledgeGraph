@@ -3,94 +3,107 @@
   "title": "Real-Time Rendering Pipeline",
   "slug": "real-time-rendering-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+  "classIri": "urn:ngm:class:real-time-rendering-pipeline",
   "domain": "spatial-computing",
   "definition": "Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:render-pipeline",
+      "id": "urn:ngm:class:render-pipeline",
       "label": "Render Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:fragment-shading",
+        "id": "urn:ngm:class:fragment-shading",
         "label": "Fragment Shading"
       },
       {
-        "id": "urn:visionflow:linked:frame-buffer-operations",
+        "id": "urn:ngm:class:frame-buffer-operations",
         "label": "Frame Buffer Operations"
       },
       {
-        "id": "urn:visionflow:linked:geometry-processing",
+        "id": "urn:ngm:class:geometry-processing",
         "label": "Geometry Processing"
       },
       {
-        "id": "urn:visionflow:linked:vertex-processing",
+        "id": "urn:ngm:class:vertex-processing",
         "label": "Vertex Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-based-animation",
+        "id": "urn:ngm:class:physics-based-animation",
         "label": "Physics-Based Animation"
       },
       {
-        "id": "urn:visionflow:owl:class:post-processing",
+        "id": "urn:ngm:class:post-processing",
         "label": "Post-Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:rasterization",
+        "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-models",
+        "id": "urn:ngm:class:3-d-models",
         "label": "3D Models"
       },
       {
-        "id": "urn:visionflow:linked:graphics-processing-unit",
+        "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
       },
       {
-        "id": "urn:visionflow:linked:shaders",
+        "id": "urn:ngm:class:shaders",
         "label": "Shaders"
       },
       {
-        "id": "urn:visionflow:linked:textures",
+        "id": "urn:ngm:class:textures",
         "label": "Textures"
       },
       {
-        "id": "urn:visionflow:owl:class:scene-graph",
+        "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-lighting",
+        "id": "urn:ngm:class:dynamic-lighting",
         "label": "Dynamic Lighting"
       },
       {
-        "id": "urn:visionflow:linked:interactive-3-d-graphics",
+        "id": "urn:ngm:class:interactive-3-d-graphics",
         "label": "Interactive 3D Graphics"
       },
       {
-        "id": "urn:visionflow:linked:real-time-visualization",
+        "id": "urn:ngm:class:real-time-visualization",
         "label": "Real-Time Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-rendering-system",
+        "label": "Graphics Rendering System"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

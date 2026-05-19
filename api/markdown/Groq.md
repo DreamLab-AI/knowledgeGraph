@@ -596,342 +596,241 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:groq",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:groq",
+  "@type": "Individual",
   "label": "Groq",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-inference-hardware",
-      "vc:label": "AI Inference Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-inference-provider",
-      "vc:label": "Cloud Inference Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-specific-architecture",
-      "vc:label": "Domain-Specific Architecture"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e0a80f34b8c6e4ca3007bb76217a6c436f5148d64144d2891702177f6d192927"
+  "definition": "Semiconductor company that designs the Language Processing Unit (LPU), a deterministic, compiler-driven inference accelerator optimised for high-throughput, low-latency large language model serving.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:groq-chip-gc1",
+        "label": "GroqChip GC1"
+      },
+      {
+        "@id": "urn:ngm:class:groq-cloud",
+        "label": "GroqCloud"
+      },
+      {
+        "@id": "urn:ngm:class:groq-rack",
+        "label": "GroqRack"
+      },
+      {
+        "@id": "urn:ngm:class:groq-ware-sdk",
+        "label": "GroqWare SDK"
+      },
+      {
+        "@id": "urn:ngm:class:language-processing-unit",
+        "label": "Language Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:software-scheduled-pipeline",
+        "label": "Software-Scheduled Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:sram-memory-hierarchy",
+        "label": "SRAM Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-streaming-processor",
+        "label": "Tensor Streaming Processor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ahead-of-time-compilation",
+        "label": "Ahead-of-Time Compilation"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre-power",
+        "label": "Data Centre Power"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-scheduling",
+        "label": "Deterministic Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:high-speed-interconnect",
+        "label": "High-Speed Interconnect"
+      },
+      {
+        "@id": "urn:ngm:class:on-chip-sram",
+        "label": "On-Chip SRAM"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-streaming",
+        "label": "Tensor Streaming"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-workflows",
+        "label": "Agentic Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:edge-llm-deployment",
+        "label": "Edge LLM Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:high-throughput-batch-inference",
+        "label": "High-Throughput Batch Inference"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-inference",
+        "label": "Low-Latency Inference"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-conversational-ai",
+        "label": "Real-Time Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-rag",
+        "label": "Streaming RAG"
+      },
+      {
+        "@id": "urn:ngm:class:voice-agents",
+        "label": "Voice Agents"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:batch-of-one-inference",
+        "label": "Batch-of-One Inference"
+      },
+      {
+        "@id": "urn:ngm:class:single-instruction-multiple-data",
+        "label": "Single Instruction Multiple Data"
+      },
+      {
+        "@id": "urn:ngm:class:static-dataflow",
+        "label": "Static Dataflow"
+      },
+      {
+        "@id": "urn:ngm:class:token-streaming-protocol",
+        "label": "Token Streaming Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:vliw-scheduling",
+        "label": "VLIW Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:compile-time-optimisation",
+        "label": "Compile-Time Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "@id": "urn:ngm:class:fp16-arithmetic",
+        "label": "FP16 Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:int8-arithmetic",
+        "label": "INT8 Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:sram",
+        "label": "SRAM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-model-serving",
+        "label": "Foundation Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:saudi-aramco-digital",
+        "label": "Saudi Aramco Digital"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:duck-duck-go",
+        "label": "DuckDuckGo"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-models",
+        "label": "Open-Source Models"
+      },
+      {
+        "@id": "urn:ngm:class:replit",
+        "label": "Replit"
+      },
+      {
+        "@id": "urn:ngm:class:together-ai",
+        "label": "Together AI"
+      },
+      {
+        "@id": "urn:ngm:class:vercel-ai-sdk",
+        "label": "Vercel AI SDK"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:mlperf-inference",
+        "label": "MLPerf Inference"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-api-specification",
+        "label": "OpenAI API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch-compile-standard",
+        "label": "PyTorch Compile Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e0a80f34b8c6e4ca3007bb76217a6c436f5148d64144d2891702177f6d192927@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Groq Inc is an American semiconductor and artificial intelligence inference company founded in 2016 in Mountain View, California by Jonathan Ross (former Google engineer who co-invented the Tensor Processing Unit during a Google 20% project in 2013) and Doug Wightman, that designs and deploys the Language Processing Unit (LPU)—a deterministic, software-scheduled, single-thread-per-chip Tensor Streaming Processor (TSP) architecture optimised exclusively for low-latency, batch-of-one large language model inference, in contrast to the general-purpose GPU + High Bandwidth Memory (HBM) paradigm dominated by [[NVIDIA]] (H100/H200/B200 with HBM3/HBM3e), [[AMD]] (MI300X with HBM3), and the wafer-scale alternative from [[Cerebras]] (CS-3); the LPU architecture eschews HBM entirely in favour of 230 MB on-chip SRAM per GroqChip GC1 die (yielding deterministic ~80 TB/s on-die memory bandwidth versus HBM3e's ~5 TB/s off-chip), employs a single instruction multiple data (SIMD) streaming processor with compile-time-scheduled instruction issue eliminating runtime arbitration and dynamic scheduling overhead, and delivers measured inference throughput of 750-1,000+ tokens/second on Meta Llama 3 70B ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:groq-chip-gc1",
-      "vc:label": "GroqChip GC1"
-    },
-    {
-      "@id": "urn:visionflow:linked:groq-cloud",
-      "vc:label": "GroqCloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:groq-rack",
-      "vc:label": "GroqRack"
-    },
-    {
-      "@id": "urn:visionflow:linked:groq-ware-sdk",
-      "vc:label": "GroqWare SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-processing-unit",
-      "vc:label": "Language Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-scheduled-pipeline",
-      "vc:label": "Software-Scheduled Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:sram-memory-hierarchy",
-      "vc:label": "SRAM Memory Hierarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-streaming-processor",
-      "vc:label": "Tensor Streaming Processor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ahead-of-time-compilation",
-      "vc:label": "Ahead-of-Time Compilation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-centre-power",
-      "vc:label": "Data Centre Power"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-scheduling",
-      "vc:label": "Deterministic Scheduling"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-speed-interconnect",
-      "vc:label": "High-Speed Interconnect"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chip-sram",
-      "vc:label": "On-Chip SRAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-streaming",
-      "vc:label": "Tensor Streaming"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-workflows",
-      "vc:label": "Agentic Workflows"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-llm-deployment",
-      "vc:label": "Edge LLM Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-throughput-batch-inference",
-      "vc:label": "High-Throughput Batch Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-inference",
-      "vc:label": "Low-Latency Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-conversational-ai",
-      "vc:label": "Real-Time Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-rag",
-      "vc:label": "Streaming RAG"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-agents",
-      "vc:label": "Voice Agents"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:batch-of-one-inference",
-      "vc:label": "Batch-of-One Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-instruction-multiple-data",
-      "vc:label": "Single Instruction Multiple Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-dataflow",
-      "vc:label": "Static Dataflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-streaming-protocol",
-      "vc:label": "Token Streaming Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:vliw-scheduling",
-      "vc:label": "VLIW Scheduling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cmos-process-technology",
-      "vc:label": "CMOS Process Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:llama",
-      "vc:label": "Llama"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx",
-      "vc:label": "ONNX"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:tsmc-fabrication",
-      "vc:label": "TSMC Fabrication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixtral",
-      "vc:label": "Mixtral"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:duck-duck-go",
-      "vc:label": "DuckDuckGo"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face",
-      "vc:label": "Hugging Face"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-models",
-      "vc:label": "Open-Source Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:replit",
-      "vc:label": "Replit"
-    },
-    {
-      "@id": "urn:visionflow:linked:together-ai",
-      "vc:label": "Together AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:vercel-ai-sdk",
-      "vc:label": "Vercel AI SDK"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:compile-time-optimisation",
-      "vc:label": "Compile-Time Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-batching",
-      "vc:label": "Continuous Batching"
-    },
-    {
-      "@id": "urn:visionflow:linked:fp16-arithmetic",
-      "vc:label": "FP16 Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:int8-arithmetic",
-      "vc:label": "INT8 Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speculative-decoding",
-      "vc:label": "Speculative Decoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:sram",
-      "vc:label": "SRAM"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:amd-mi300-x",
-      "vc:label": "AMD MI300X"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-neural-engine",
-      "vc:label": "Apple Neural Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:aws-inferentia",
-      "vc:label": "AWS Inferentia"
-    },
-    {
-      "@id": "urn:visionflow:linked:cerebras-cs-3",
-      "vc:label": "Cerebras CS-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-b200",
-      "vc:label": "NVIDIA B200"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-h100",
-      "vc:label": "NVIDIA H100"
-    },
-    {
-      "@id": "urn:visionflow:linked:samba-nova-sn40-l",
-      "vc:label": "SambaNova SN40L"
-    },
-    {
-      "@id": "urn:visionflow:linked:tenstorrent-wormhole",
-      "vc:label": "Tenstorrent Wormhole"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:grok",
-      "vc:label": "Grok"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:foundation-model-serving",
-      "vc:label": "Foundation Model Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-optimisation",
-      "vc:label": "Inference Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:saudi-aramco-digital",
-      "vc:label": "Saudi Aramco Digital"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-infrastructure",
-      "vc:label": "AI Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "Token Economics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:mlperf-inference",
-      "vc:label": "MLPerf Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-standard",
-      "vc:label": "ONNX Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-api-specification",
-      "vc:label": "OpenAI API Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch-compile-standard",
-      "vc:label": "PyTorch Compile Standard"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-inference-hardware",
-      "vc:label": "AI Inference Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model-serving",
-      "vc:label": "Large Language Model Serving"
+      "@id": "urn:ngm:class:technology-company",
+      "label": "Technology Company"
     }
   ]
 }

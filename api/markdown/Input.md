@@ -132,45 +132,28 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:input",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:input",
+  "@type": "Class",
   "label": "Input",
+  "definition": "Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     },
     {
-      "@id": "urn:visionflow:owl:class:distributed-data-structure",
-      "vc:label": "DistributedDataStructure"
+      "@id": "urn:ngm:class:distributed-data-structure",
+      "label": "DistributedDataStructure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d3585822115560999f5df938fae3347a117fac784344f343d21a38b0f75eecf2"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d3585822115560999f5df938fae3347a117fac784344f343d21a38b0f75eecf2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Transaction funding source within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

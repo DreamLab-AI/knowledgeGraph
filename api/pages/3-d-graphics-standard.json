@@ -3,53 +3,58 @@
   "title": "3D Graphics Standard",
   "slug": "3-d-graphics-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-graphics-standard",
+  "classIri": "urn:ngm:class:3-d-graphics-standard",
   "domain": "spatial-computing",
-  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.",
+  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:rendering-standard",
+      "id": "urn:ngm:class:rendering-standard",
       "label": "Rendering Standard"
-    },
-    {
-      "id": "urn:visionflow:linked:technical-specification",
-      "label": "Technical Specification"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:driver-implementation",
+        "id": "urn:ngm:class:driver-implementation",
         "label": "Driver Implementation"
       },
       {
-        "id": "urn:visionflow:linked:gpu-support",
+        "id": "urn:ngm:class:gpu-support",
         "label": "GPU Support"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-compatibility",
+        "id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-acceleration",
+        "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-time Rendering"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:technical-specification",
+        "label": "Technical Specification"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

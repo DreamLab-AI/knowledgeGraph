@@ -3,49 +3,53 @@
   "title": "Access Control",
   "slug": "access-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:access-control",
+  "classIri": "urn:ngm:class:access-control",
   "domain": "infrastructure",
-  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.",
+  "definition": "Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:security-mechanism",
+      "id": "urn:ngm:class:security-mechanism",
       "label": "Security Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance"
       },
       {
-        "id": "urn:visionflow:linked:system-security",
+        "id": "urn:ngm:class:system-security",
         "label": "System Security"
       },
       {
-        "id": "urn:visionflow:owl:class:data-protection",
+        "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:authorisation",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
       },
       {
-        "id": "urn:visionflow:linked:permission-management",
+        "id": "urn:ngm:class:permission-management",
         "label": "Permission Management"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

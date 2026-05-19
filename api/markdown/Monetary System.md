@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:monetary-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:monetary-system",
+  "@type": "Class",
   "label": "Monetary System",
+  "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:financial-system",
-      "vc:label": "Financial System"
+      "@id": "urn:ngm:class:financial-system",
+      "label": "Financial System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:37e96ced371d2c295791a9808fb3a373ab1d149a03d03ecd2c2ef668959c9c37"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:economic-exchange",
+        "label": "Economic Exchange"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:37e96ced371d2c295791a9808fb3a373ab1d149a03d03ecd2c2ef668959c9c37@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:economic-exchange",
-      "vc:label": "Economic Exchange"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

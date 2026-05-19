@@ -3,91 +3,104 @@
   "title": "WebAssembly",
   "slug": "web-assembly",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:web-assembly",
+  "classIri": "urn:ngm:class:web-assembly",
   "domain": "infrastructure",
-  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side runtimes such as [[WASI]] (WebAssembly System Interface). It is the primary runtime substrate for [[VisionClaw Agentic Container]] agent modules, allowing deterministic, sandboxed, language-agnostic execution of untrusted code across heterogeneous deployment environments including edge nodes, browsers, and embedded hardware.",
+  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side ru...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:binary-instruction-format",
+      "id": "urn:ngm:class:binary-instruction-format",
       "label": "Binary Instruction Format"
     },
     {
-      "id": "urn:visionflow:linked:portable-execution-environment",
+      "id": "urn:ngm:class:portable-execution-environment",
       "label": "Portable Execution Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.7,
-  "authorityScore": 0.82,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:wasi-interface",
+        "id": "urn:ngm:class:wasi-interface",
         "label": "WASI Interface"
       },
       {
-        "id": "urn:visionflow:linked:wasm-import-object",
+        "id": "urn:ngm:class:wasm-import-object",
         "label": "Wasm Import Object"
       },
       {
-        "id": "urn:visionflow:linked:wasm-linear-memory",
+        "id": "urn:ngm:class:wasm-linear-memory",
         "label": "Wasm Linear Memory"
       },
       {
-        "id": "urn:visionflow:linked:wasm-module",
+        "id": "urn:ngm:class:wasm-module",
         "label": "Wasm Module"
       },
       {
-        "id": "urn:visionflow:linked:wasm-table",
+        "id": "urn:ngm:class:wasm-table",
         "label": "Wasm Table"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:binary-encoding-standard",
+        "id": "urn:ngm:class:binary-encoding-standard",
         "label": "Binary Encoding Standard"
       },
       {
-        "id": "urn:visionflow:linked:host-runtime",
+        "id": "urn:ngm:class:host-runtime",
         "label": "Host Runtime"
       },
       {
-        "id": "urn:visionflow:linked:stack-based-virtual-machine",
+        "id": "urn:ngm:class:stack-based-virtual-machine",
         "label": "Stack-Based Virtual Machine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-language-interoperability",
+        "id": "urn:ngm:class:cross-language-interoperability",
         "label": "Cross-Language Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:deterministic-replay",
+        "id": "urn:ngm:class:deterministic-replay",
         "label": "Deterministic Replay"
       },
       {
-        "id": "urn:visionflow:linked:edge-inference",
+        "id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference"
       },
       {
-        "id": "urn:visionflow:linked:sandboxed-agent-execution",
+        "id": "urn:ngm:class:sandboxed-agent-execution",
         "label": "Sandboxed Agent Execution"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:w3-c-web-assembly-specification",
+        "id": "urn:ngm:class:w3-c-web-assembly-specification",
         "label": "W3C WebAssembly Specification"
       },
       {
-        "id": "urn:visionflow:linked:wasi-standard",
+        "id": "urn:ngm:class:wasi-standard",
         "label": "WASI Standard"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:edge-computing-stack",
+        "label": "Edge Computing Stack"
+      },
+      {
+        "id": "urn:ngm:class:vision-claw-agentic-container",
+        "label": "VisionClaw Agentic Container"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

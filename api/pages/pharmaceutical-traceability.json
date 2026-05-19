@@ -3,19 +3,18 @@
   "title": "Pharmaceutical Traceability",
   "slug": "pharmaceutical-traceability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pharmaceutical-traceability",
+  "classIri": "urn:ngm:class:pharmaceutical-traceability",
   "domain": "blockchain",
-  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the \u00a3200 billion counterfeit medicine market causing over 1 million deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network's 150+ million verification transactions (Pfizer, McKesson, AmerisourceBergen), and delivering 40-60% verification cost reductions whilst providing cold chain monitoring, clinical trial supply management, and controlled substance tracking.",
+  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the \u00a3200 counterfeit medicine market causing over 1 deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.92,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

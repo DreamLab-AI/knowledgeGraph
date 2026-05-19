@@ -132,60 +132,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-rendering",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-rendering",
+  "@type": "Class",
   "label": "Real-Time Rendering",
+  "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:three-dimensional-graphics",
-      "vc:label": "Three Dimensional Graphics"
+      "@id": "urn:ngm:class:three-dimensional-graphics",
+      "label": "Three Dimensional Graphics"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5eb12dfdc9a66690a31b2e67e54e53d11d7e78ababf808930a75b2944dadedab"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interactive-visualization",
+        "label": "Interactive Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:video-games",
+        "label": "Video Games"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5eb12dfdc9a66690a31b2e67e54e53d11d7e78ababf808930a75b2944dadedab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:interactive-visualization",
-      "vc:label": "Interactive Visualization"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-games",
-      "vc:label": "Video Games"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Gdpr Article45",
   "slug": "gdpr-article45",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gdpr-article45",
+  "classIri": "urn:ngm:class:gdpr-article45",
   "domain": "spatial-computing",
-  "definition": "The General Data Protection Regulation provision empowering the European Commission to determine whether third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms operating across international boundaries.",
+  "definition": "The General Data Protection Regulation provision empowering the European Commission to determine wher third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms ope...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-protection-regulation",
+      "id": "urn:ngm:class:data-protection-regulation",
       "label": "Data Protection Regulation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

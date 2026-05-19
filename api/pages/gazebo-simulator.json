@@ -3,103 +3,116 @@
   "title": "Gazebo Simulator",
   "slug": "gazebo-simulator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gazebo-simulator",
+  "classIri": "urn:ngm:class:gazebo-simulator",
   "domain": "robotics",
-  "definition": "Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom actuators and environments, enabling hardware-in-the-loop (HIL) development, [[Robot Operating System]] integration testing, and reinforcement learning training environments without requiring physical hardware, making it the de facto simulation substrate for [[Robot Operating System]] development pipelines and a key component in sim-to-real transfer workflows.",
+  "definition": "Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:physics-simulator",
+      "id": "urn:ngm:class:physics-simulator",
       "label": "Physics Simulator"
     },
     {
-      "id": "urn:visionflow:linked:robotics-development-tool",
+      "id": "urn:ngm:class:robotics-development-tool",
       "label": "Robotics Development Tool"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.55,
-  "authorityScore": 0.7,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:gazebo-plugin-api",
+        "id": "urn:ngm:class:gazebo-plugin-api",
         "label": "Gazebo Plugin API"
       },
       {
-        "id": "urn:visionflow:linked:gz-physics-plugin",
+        "id": "urn:ngm:class:gz-physics-plugin",
         "label": "Gz Physics Plugin"
       },
       {
-        "id": "urn:visionflow:linked:gz-rendering",
+        "id": "urn:ngm:class:gz-rendering",
         "label": "Gz Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gz-sensors",
+        "id": "urn:ngm:class:gz-sensors",
         "label": "Gz Sensors"
       },
       {
-        "id": "urn:visionflow:linked:gz-transport",
+        "id": "urn:ngm:class:gz-transport",
         "label": "Gz Transport"
       },
       {
-        "id": "urn:visionflow:linked:sdf-world-model",
+        "id": "urn:ngm:class:sdf-world-model",
         "label": "SDF World Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:sdf-robot-description",
+        "id": "urn:ngm:class:sdf-robot-description",
         "label": "SDF Robot Description"
       },
       {
-        "id": "urn:visionflow:linked:urdf-robot-model",
+        "id": "urn:ngm:class:urdf-robot-model",
         "label": "URDF Robot Model"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-engine",
+        "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hardware-in-the-loop-testing",
+        "id": "urn:ngm:class:hardware-in-the-loop-testing",
         "label": "Hardware-in-the-Loop Testing"
       },
       {
-        "id": "urn:visionflow:linked:multi-robot-simulation",
+        "id": "urn:ngm:class:multi-robot-simulation",
         "label": "Multi-Robot Simulation"
       },
       {
-        "id": "urn:visionflow:linked:reinforcement-learning-training",
+        "id": "urn:ngm:class:reinforcement-learning-training",
         "label": "Reinforcement Learning Training"
       },
       {
-        "id": "urn:visionflow:linked:sensor-simulation",
+        "id": "urn:ngm:class:sensor-simulation",
         "label": "Sensor Simulation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:gz-transport-message-protocol",
+        "id": "urn:ngm:class:gz-transport-message-protocol",
         "label": "gz-transport Message Protocol"
       },
       {
-        "id": "urn:visionflow:linked:ros2-control-hardware-interface",
+        "id": "urn:ngm:class:ros2-control-hardware-interface",
         "label": "ros2_control Hardware Interface"
       },
       {
-        "id": "urn:visionflow:linked:sdformat-specification",
+        "id": "urn:ngm:class:sdformat-specification",
         "label": "SDFormat Specification"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sim-to-real-transfer-workflow",
+        "label": "Sim-to-Real Transfer Workflow"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

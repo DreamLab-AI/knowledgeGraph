@@ -544,344 +544,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:force-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:force-control",
+  "@type": "Class",
   "label": "Force Control",
+  "definition": "Force Control is the family of robotic control paradigms that regulate the contact force and/or torque exerted by a manipulator, end-effector, joint or whole-body system on its environment rather than (or in addition to) regulating Cartesian or joint position, formalised through a closed-loop rel...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cyber-physical-control",
-      "vc:label": "Cyber-Physical Control"
+      "@id": "urn:ngm:class:cyber-physical-control",
+      "label": "Cyber-Physical Control"
     },
     {
-      "@id": "urn:visionflow:linked:robotic-control",
-      "vc:label": "Robotic Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:closed-loop-control",
-      "vc:label": "Closed Loop Control"
+      "@id": "urn:ngm:class:robotic-control",
+      "label": "Robotic Control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0f48ef132b5280982a589dd84a1e39fb60eb048ff0f2ae08aa18dc25ece4c40c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-frame",
+        "label": "Compliance Frame"
+      },
+      {
+        "@id": "urn:ngm:class:control-law",
+        "label": "Control Law"
+      },
+      {
+        "@id": "urn:ngm:class:joint-torque-sensor",
+        "label": "Joint Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-jacobian",
+        "label": "Manipulator Jacobian"
+      },
+      {
+        "@id": "urn:ngm:class:reference-wrench",
+        "label": "Reference Wrench"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:anti-windup",
+        "label": "Anti-Windup"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:force-measurement",
+        "label": "Force Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computation",
+        "label": "Real-time Computation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics-model",
+        "label": "Robot Dynamics Model"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bipedal-balance",
+        "label": "Bipedal Balance"
+      },
+      {
+        "@id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:deburring",
+        "label": "Deburring"
+      },
+      {
+        "@id": "urn:ngm:class:peg-in-hole-assembly",
+        "label": "Peg-in-Hole Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:polishing",
+        "label": "Polishing"
+      },
+      {
+        "@id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-suturing",
+        "label": "Surgical Suturing"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-exploration",
+        "label": "Tactile Exploration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:computed-torque-control",
+        "label": "Computed Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:explicit-force-control",
+        "label": "Explicit Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-position-force-control",
+        "label": "Hybrid Position-Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-force-control",
+        "label": "Implicit Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:operational-space-control",
+        "label": "Operational Space Control"
+      },
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:differential-dynamic-programming",
+        "label": "Differential Dynamic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:remote-centre-of-compliance",
+        "label": "Remote Centre of Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:six-axis-force-torque-sensor",
+        "label": "Six-Axis Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-controller",
+        "label": "Whole-Body Controller"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-locomotion",
+        "label": "Humanoid Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-assembly",
+        "label": "Industrial Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-polishing",
+        "label": "Robotic Polishing"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:telerobotics",
+        "label": "Telerobotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:humanoids-conference",
+        "label": "Humanoids Conference"
+      },
+      {
+        "@id": "urn:ngm:class:icra",
+        "label": "ICRA"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-ras",
+        "label": "IEEE RAS"
+      },
+      {
+        "@id": "urn:ngm:class:iros",
+        "label": "IROS"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:rss",
+        "label": "RSS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0f48ef132b5280982a589dd84a1e39fb60eb048ff0f2ae08aa18dc25ece4c40c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Force Control** is the family of robotic control paradigms that regulate the contact force and/or torque exerted by a manipulator, end-effector, joint or whole-body system on its environment rather than (or in addition to) regulating Cartesian or joint position, formalised through a closed-loop relationship between a desired wrench reference F_d ∈ ℝ⁶ (three forces F_x, F_y, F_z and three moments τ_x, τ_y, τ_z resolved in a task frame) and either a measured wrench F_m obtained from a six-axis force/torque sensor (ATI Mini40/Gamma/Theta, Robotiq FT-300, OnRobot HEX, Bota Systems Rokubi, ME-Systeme K6D) mounted at the wrist or tool tip, an estimated wrench reconstructed from joint torque sensors integrated in collaborative arms (ABB IRB14000 YuMi, KUKA LBR iiwa/Med, Franka Emika Panda/FR3, Universal Robots e-Series, Kinova Gen3) via the manipulator Jacobian J(q) under τ = Jᵀ(q) F_ext, or a virtual force derived from motor current/elastic deflection in Series Elastic Actuators (Pratt & Williamson 1995 MIT Leg Lab; Boston Dynamics Atlas hydraulic-then-electric SEA; NASA Robonaut 2; Open Source Leg) and Variable Stiffness Actuators (Vanderborght et al. 2013 IEEE RAM survey; DLR David h",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-frame",
-      "vc:label": "Compliance Frame"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-law",
-      "vc:label": "Control Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-torque-sensor",
-      "vc:label": "Joint Torque Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:manipulator-jacobian",
-      "vc:label": "Manipulator Jacobian"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-wrench",
-      "vc:label": "Reference Wrench"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:end-effector",
-      "vc:label": "End Effector"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-torque-sensor",
-      "vc:label": "Force Torque Sensor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:anti-windup",
-      "vc:label": "Anti-Windup"
-    },
-    {
-      "@id": "urn:visionflow:linked:coordinate-transformation",
-      "vc:label": "Coordinate Transformation"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-measurement",
-      "vc:label": "Force Measurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-computation",
-      "vc:label": "Real-time Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-dynamics-model",
-      "vc:label": "Robot Dynamics Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bipedal-balance",
-      "vc:label": "Bipedal Balance"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliant-manipulation",
-      "vc:label": "Compliant Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:deburring",
-      "vc:label": "Deburring"
-    },
-    {
-      "@id": "urn:visionflow:linked:peg-in-hole-assembly",
-      "vc:label": "Peg-in-Hole Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:polishing",
-      "vc:label": "Polishing"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-human-robot-interaction",
-      "vc:label": "Safe Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-suturing",
-      "vc:label": "Surgical Suturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-exploration",
-      "vc:label": "Tactile Exploration"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:computed-torque-control",
-      "vc:label": "Computed Torque Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:explicit-force-control",
-      "vc:label": "Explicit Force Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-position-force-control",
-      "vc:label": "Hybrid Position-Force Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:implicit-force-control",
-      "vc:label": "Implicit Force Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-space-control",
-      "vc:label": "Operational Space Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:admittance-control",
-      "vc:label": "Admittance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:lagrangian-mechanics",
-      "vc:label": "Lagrangian Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:newton-euler-recursion",
-      "vc:label": "Newton-Euler Recursion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimal-control",
-      "vc:label": "Optimal Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "vc:label": "Rigid Body Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-robotics",
-      "vc:label": "Collaborative Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-locomotion",
-      "vc:label": "Humanoid Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-assembly",
-      "vc:label": "Industrial Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:rehabilitation-robotics",
-      "vc:label": "Rehabilitation Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-polishing",
-      "vc:label": "Robotic Polishing"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:telerobotics",
-      "vc:label": "Telerobotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:differential-dynamic-programming",
-      "vc:label": "Differential Dynamic Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:quadratic-programming",
-      "vc:label": "Quadratic Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-centre-of-compliance",
-      "vc:label": "Remote Centre of Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuator",
-      "vc:label": "Series Elastic Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:six-axis-force-torque-sensor",
-      "vc:label": "Six-Axis Force Torque Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:variable-stiffness-actuator",
-      "vc:label": "Variable Stiffness Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:whole-body-controller",
-      "vc:label": "Whole-Body Controller"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:open-loop-trajectory-execution",
-      "vc:label": "Open Loop Trajectory Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-position-control",
-      "vc:label": "Pure Position Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:torque-only-control",
-      "vc:label": "Torque-Only Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:velocity-control",
-      "vc:label": "VelocityControl"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:reinforcement-learning-for-robotics",
-      "vc:label": "Reinforcement Learning for Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-sensing",
-      "vc:label": "Tactile Sensing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:humanoids-conference",
-      "vc:label": "Humanoids Conference"
-    },
-    {
-      "@id": "urn:visionflow:linked:icra",
-      "vc:label": "ICRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-ras",
-      "vc:label": "IEEE RAS"
-    },
-    {
-      "@id": "urn:visionflow:linked:iros",
-      "vc:label": "IROS"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-10218",
-      "vc:label": "ISO 10218"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-ts-15066",
-      "vc:label": "ISO TS 15066"
-    },
-    {
-      "@id": "urn:visionflow:linked:rss",
-      "vc:label": "RSS"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:human-robot-collaboration",
-      "vc:label": "Human-Robot Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-sensing",
-      "vc:label": "Tactile Sensing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

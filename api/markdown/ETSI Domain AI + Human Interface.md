@@ -140,74 +140,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ai-human-interface",
+  "@type": "Class",
   "label": "ETSI Domain AI + Human Interface",
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:685b0907b0977c4b94716b0da2100a80f73f7244fcd2075ef99ebd715162b27f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:conversational-ai-classification",
+        "label": "Conversational AI Classification"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-ux-categorization",
+        "label": "Intelligent UX Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:685b0907b0977c4b94716b0da2100a80f73f7244fcd2075ef99ebd715162b27f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:conversational-ai-classification",
-      "vc:label": "Conversational AI Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:intelligent-ux-categorization",
-      "vc:label": "Intelligent UX Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-      "vc:label": "ETSI Domain AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
-      "vc:label": "InteractionDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -376,316 +376,235 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stable-diffusion-training",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stable-diffusion-training",
+  "@type": "Class",
   "label": "Stable Diffusion Training",
+  "definition": "Stable Diffusion Training encompasses the corpus of mods for adapting pre-trained latent diffusion models—primarily the Stable Diffusion (SD 1.x, SDXL, SD3, FLUX.1) family—to new subjects, styles, concepts, or task domains through fine-tuning, parameter-efficient adaptation, and embedding optimis...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
+      "@id": "urn:ngm:class:fine-tuning",
+      "label": "Fine Tuning"
     },
     {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
-      "vc:label": "Parameter Efficient Fine-Tuning"
+      "@id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d5fde4e02a5a7c15dffec26554bc5f361cf5a867877fb1d3734eed9d46ddd4ba"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:caption-dataset",
+        "label": "Caption Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoint-merging",
+        "label": "Checkpoint Merging"
+      },
+      {
+        "@id": "urn:ngm:class:dream-booth",
+        "label": "DreamBooth"
+      },
+      {
+        "@id": "urn:ngm:class:prior-preservation-loss",
+        "label": "Prior Preservation Loss"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation-images",
+        "label": "Regularisation Images"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-bucketing",
+        "label": "Resolution Bucketing"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:pre-trained-diffusion-model",
+        "label": "Pre-Trained Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:text-image-caption-pairs",
+        "label": "Text-Image Caption Pairs"
+      },
+      {
+        "@id": "urn:ngm:class:training-images",
+        "label": "Training Images"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:checkpoint-merging",
+        "label": "Checkpoint Merging"
+      },
+      {
+        "@id": "urn:ngm:class:concept-binding",
+        "label": "Concept Binding"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:model-specialisation",
+        "label": "Model Specialisation"
+      },
+      {
+        "@id": "urn:ngm:class:nsfw-content-filtering",
+        "label": "NSFW Content Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:subject-personalisation",
+        "label": "Subject Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:adaptive-optimisation",
+        "label": "Adaptive Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:cosine-annealing",
+        "label": "Cosine Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:noise-prediction-loss",
+        "label": "Noise Prediction Loss"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ada-factor",
+        "label": "AdaFactor"
+      },
+      {
+        "@id": "urn:ngm:class:adam-w-optimiser",
+        "label": "AdamW Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:blip-2-captioning",
+        "label": "BLIP-2 Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:prodigy-optimiser",
+        "label": "Prodigy Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:wd14-tagger",
+        "label": "WD14 Tagger"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:civitai",
+        "label": "Civitai"
+      },
+      {
+        "@id": "urn:ngm:class:flux",
+        "label": "FLUX"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      },
+      {
+        "@id": "urn:ngm:class:kohya-ss",
+        "label": "kohya_ss"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:art-style-replication",
+        "label": "Art Style Replication"
+      },
+      {
+        "@id": "urn:ngm:class:character-consistency",
+        "label": "Character Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:portrait-synthesis",
+        "label": "Portrait Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:product-visualisation",
+        "label": "Product Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers-api",
+        "label": "HuggingFace Diffusers API"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d5fde4e02a5a7c15dffec26554bc5f361cf5a867877fb1d3734eed9d46ddd4ba@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Stable Diffusion Training encompasses the corpus of methods for adapting pre-trained latent diffusion models—primarily the Stable Diffusion (SD 1.x, SDXL, SD3, FLUX.1) family—to new subjects, styles, concepts, or task domains through fine-tuning, parameter-efficient adaptation, and embedding optimisation, deploying three canonical paradigms: (1) DreamBooth (Ruiz et al. 2023, CVPR), which performs full or partial UNet fine-tuning on 3-30 subject images using a rare-token binding strategy and prior preservation loss L_prior = E[‖ε̂(x_t, P*) − ε̂(x_t, P)‖²] that backpropagates through class-image regularisation batches to prevent language drift and catastrophic forgetting of the base model's prior distribution, achieving personalised synthesis at the cost of 8-20GB VRAM and 30-90 minutes training on A100 hardware per subject; (2) Textual Inversion (Gal et al. 2022, ICLR 2023), which freezes all UNet and CLIP text-encoder weights and exclusively optimises a new pseudo-word embedding vector v* ∈ ℝ^768 (SD 1.x) or ℝ^1280 (SDXL/FLUX) in the text-encoder token space by minimising the standard diffusion denoising objective E_{t,x,ε}[‖ε − ε_θ(x_t, τ(v*,P))‖²] over 3,000-10,000 gradient steps",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:caption-dataset",
-      "vc:label": "Caption Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:checkpoint-merging",
-      "vc:label": "Checkpoint Merging"
-    },
-    {
-      "@id": "urn:visionflow:linked:dream-booth",
-      "vc:label": "DreamBooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:prior-preservation-loss",
-      "vc:label": "Prior Preservation Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:regularisation-images",
-      "vc:label": "Regularisation Images"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-bucketing",
-      "vc:label": "Resolution Bucketing"
-    },
-    {
-      "@id": "urn:visionflow:linked:textual-inversion",
-      "vc:label": "Textual Inversion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimiser",
-      "vc:label": "Optimiser"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clip-text-encoder",
-      "vc:label": "CLIP Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:pre-trained-diffusion-model",
-      "vc:label": "Pre-Trained Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-image-caption-pairs",
-      "vc:label": "Text-Image Caption Pairs"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-images",
-      "vc:label": "Training Images"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:checkpoint-merging",
-      "vc:label": "Checkpoint Merging"
-    },
-    {
-      "@id": "urn:visionflow:linked:concept-binding",
-      "vc:label": "Concept Binding"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-adaptation",
-      "vc:label": "Domain Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-specialisation",
-      "vc:label": "Model Specialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:nsfw-content-filtering",
-      "vc:label": "NSFW Content Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:subject-personalisation",
-      "vc:label": "Subject Personalisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-optimisation",
-      "vc:label": "Adaptive Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosine-annealing",
-      "vc:label": "Cosine Annealing"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-rank-decomposition",
-      "vc:label": "Low-Rank Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-prediction-loss",
-      "vc:label": "Noise Prediction Loss"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:unet-architecture",
-      "vc:label": "UNet Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latent-space",
-      "vc:label": "Latent Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:art-style-replication",
-      "vc:label": "Art Style Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:character-consistency",
-      "vc:label": "Character Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:portrait-synthesis",
-      "vc:label": "Portrait Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-visualisation",
-      "vc:label": "Product Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ada-factor",
-      "vc:label": "AdaFactor"
-    },
-    {
-      "@id": "urn:visionflow:linked:adam-w-optimiser",
-      "vc:label": "AdamW Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:blip-2-captioning",
-      "vc:label": "BLIP-2 Captioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:prodigy-optimiser",
-      "vc:label": "Prodigy Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:wd14-tagger",
-      "vc:label": "WD14 Tagger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:control-net-training",
-      "vc:label": "ControlNet Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:full-model-pre-training",
-      "vc:label": "Full Model Pre-Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:hypernetworks",
-      "vc:label": "Hypernetworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:textual-inversion",
-      "vc:label": "Textual Inversion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:civitai",
-      "vc:label": "Civitai"
-    },
-    {
-      "@id": "urn:visionflow:linked:flux",
-      "vc:label": "FLUX"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "HuggingFace Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:kohya-ss",
-      "vc:label": "kohya_ss"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-diffusers-api",
-      "vc:label": "HuggingFace Diffusers API"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

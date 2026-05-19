@@ -160,84 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-file-format",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-file-format",
+  "@type": "Class",
   "label": "3D File Format",
+  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-format-standard",
-      "vc:label": "Data Format Standard"
+      "@id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:animation-keyframes",
+        "label": "Animation Keyframes"
+      },
+      {
+        "@id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-asset-exchange",
+        "label": "Cross-Platform Asset Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a177c110d5656c1775cea5fe0dc71cb4872f3b28ffe36bb528a206ae64b5aa43@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata. Common formats include [[glTF]] (GL Transmission Format), FBX, OBJ, and USD, each optimised for specific use cases such as real-time rendering, interoperability, or archival preservation in spatial computing environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:animation-keyframes",
-      "vc:label": "Animation Keyframes"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-definition",
-      "vc:label": "Material Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-data",
-      "vc:label": "Mesh Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-rendering",
-      "vc:label": "3D Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-asset-exchange",
-      "vc:label": "Cross-Platform Asset Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:asset-pipeline",
-      "vc:label": "Asset Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-model",
-      "vc:label": "3D Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

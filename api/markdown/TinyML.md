@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tiny-ml",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tiny-ml",
+  "@type": "Class",
   "label": "TinyML",
+  "definition": "TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M c...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:63014bad06fc1d20de062f00dc7c3f48c26b66595288524b1b2100ab58537ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M cores), enabling intelligent inference at the extreme edge in battery-powered IoT devices, wearables, and embedded sensors. This paradigm enables always-on intelligent sensing at ultra-low power enabling applications infeasible with cloud connectivity including keyword spotting wake-word detection consuming under 1mW enabling multi-year battery life, gesture recognition processing accelerometer data locally for responsive interaction, anomaly detection in industrial sensors identifying equipment failures without connectivity, audio event classification recognizing sounds like glass breaking or baby crying for home automation, and predictive maintenance on rotating machinery analyzing vibration patterns to predict bearing failures. Implementation requires aggressive model optimization through INT8 quantization representing weights and activations in 8-bit integers (4x compression versus FP32)",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

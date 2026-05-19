@@ -192,106 +192,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cylindrical-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cylindrical-robot",
+  "@type": "Class",
   "label": "Cylindrical Robot",
+  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:coordinate-robots",
-      "vc:label": "Coordinate Robots"
+      "@id": "urn:ngm:class:coordinate-robots",
+      "label": "Coordinate Robots"
     },
     {
-      "@id": "urn:visionflow:linked:fixed-base-manipulator",
-      "vc:label": "Fixed-Base Manipulator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:industrial-robot",
-      "vc:label": "Industrial Robot"
+      "@id": "urn:ngm:class:fixed-base-manipulator",
+      "label": "Fixed-Base Manipulator"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:azimuth-drive",
+        "label": "Azimuth Drive"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector-mount",
+        "label": "End-Effector Mount"
+      },
+      {
+        "@id": "urn:ngm:class:radial-actuator",
+        "label": "Radial Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:vertical-actuator",
+        "label": "Vertical Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:base-support",
+        "label": "Base Support"
+      },
+      {
+        "@id": "urn:ngm:class:prismatic-actuators",
+        "label": "Prismatic Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-joint",
+        "label": "Rotary Joint"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:component-assembly",
+        "label": "Component Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:depalletising",
+        "label": "Depalletising"
+      },
+      {
+        "@id": "urn:ngm:class:palletising",
+        "label": "Palletising"
+      },
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9aa6232952c4f2b0f54d6c613dcd9eaa21b3087e51fe3a7baa96d92e450123aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes. This architecture, simpler and more affordable than six-axis articulated robots, has historically dominated [[Assembly Automation]] and [[Material Handling]] applications where reach and vertical lift are primary requirements.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:azimuth-drive",
-      "vc:label": "Azimuth Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:end-effector-mount",
-      "vc:label": "End-Effector Mount"
-    },
-    {
-      "@id": "urn:visionflow:linked:radial-actuator",
-      "vc:label": "Radial Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:vertical-actuator",
-      "vc:label": "Vertical Actuator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:base-support",
-      "vc:label": "Base Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:prismatic-actuators",
-      "vc:label": "Prismatic Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-joint",
-      "vc:label": "Rotary Joint"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:component-assembly",
-      "vc:label": "Component Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:depalletising",
-      "vc:label": "Depalletising"
-    },
-    {
-      "@id": "urn:visionflow:linked:palletising",
-      "vc:label": "Palletising"
-    },
-    {
-      "@id": "urn:visionflow:linked:pick-and-place",
-      "vc:label": "Pick and Place"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -300,41 +300,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fatfrecommendations",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fatfrecommendations",
+  "@type": "Class",
   "label": "FATFRecommendations",
+  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)—an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
+      "@id": "urn:ngm:class:aml-kyc-compliance",
+      "label": "AML KYC Compliance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f92fe61d6dfdaab0351e02d6bb8379e633da5cea8b918dcf0dcabc4e40e22b8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)—an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs) covering over 200 jurisdictions globally—for combating money laundering, terrorist financing, and financing of proliferation of weapons of mass destruction, encompassing 40 Recommendations (consolidated from original 40 plus 9 Special Recommendations on terrorist financing through comprehensive 2012 revision) that apply to both money laundering and counter-terrorist financing with requirements for customer due diligence per Recommendation 10 (identifying and verifying customer identity using reliable independent source documents, identifying beneficial owners controlling 25% or greater ownership or exercising control, understanding nature and purpose of business relationship), record-keeping per Recommendation 11 (retaining transaction records and customer identification information for minimum 5 years following transaction completion or relationship termination), suspicious transaction r",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

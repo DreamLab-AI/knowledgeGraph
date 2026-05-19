@@ -3,94 +3,98 @@
   "title": "Compatibility Process",
   "slug": "compatibility-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compatibility-process",
+  "classIri": "urn:ngm:class:compatibility-process",
   "domain": "spatial-computing",
   "definition": "Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:compatibility-standards",
+      "id": "urn:ngm:class:compatibility-standards",
       "label": "Compatibility Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cross-platform-testing",
+        "id": "urn:ngm:class:cross-platform-testing",
         "label": "Cross-Platform Testing"
       },
       {
-        "id": "urn:visionflow:linked:format-validation",
+        "id": "urn:ngm:class:format-validation",
         "label": "Format Validation"
       },
       {
-        "id": "urn:visionflow:linked:integration-testing",
+        "id": "urn:ngm:class:integration-testing",
         "label": "Integration Testing"
       },
       {
-        "id": "urn:visionflow:linked:interoperability-verification",
+        "id": "urn:ngm:class:interoperability-verification",
         "label": "Interoperability Verification"
       },
       {
-        "id": "urn:visionflow:linked:protocol-compatibility-checks",
+        "id": "urn:ngm:class:protocol-compatibility-checks",
         "label": "Protocol Compatibility Checks"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Standards Conformance Testing"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:conformance-criteria",
+        "id": "urn:ngm:class:conformance-criteria",
         "label": "Conformance Criteria"
       },
       {
-        "id": "urn:visionflow:linked:reference-implementations",
+        "id": "urn:ngm:class:reference-implementations",
         "label": "Reference Implementations"
       },
       {
-        "id": "urn:visionflow:linked:test-specifications",
+        "id": "urn:ngm:class:test-specifications",
         "label": "Test Specifications"
       },
       {
-        "id": "urn:visionflow:linked:validation-tools",
+        "id": "urn:ngm:class:validation-tools",
         "label": "Validation Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:compatibility-standards",
+        "id": "urn:ngm:class:compatibility-standards",
         "label": "Compatibility Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-portability",
+        "id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
       },
       {
-        "id": "urn:visionflow:linked:ecosystem-connectivity",
+        "id": "urn:ngm:class:ecosystem-connectivity",
         "label": "Ecosystem Connectivity"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-compliance",
+        "id": "urn:ngm:class:standards-compliance",
         "label": "Standards Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:system-integration",
+        "id": "urn:ngm:class:system-integration",
         "label": "System Integration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

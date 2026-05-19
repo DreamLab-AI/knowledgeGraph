@@ -3,37 +3,46 @@
   "title": "Relayer",
   "slug": "relayer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:relayer",
+  "classIri": "urn:ngm:class:relayer",
   "domain": "blockchain",
-  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.",
+  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-interoperability",
+      "id": "urn:ngm:class:blockchain-interoperability",
       "label": "Blockchain Interoperability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:message-passing",
+        "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

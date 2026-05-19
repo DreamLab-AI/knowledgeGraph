@@ -3,19 +3,18 @@
   "title": "Constitutional AI",
   "slug": "constitutional-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:constitutional-ai",
+  "classIri": "urn:ngm:class:constitutional-ai",
   "domain": "artificial-intelligence",
-  "definition": "A method for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).",
+  "definition": "A mod for training AI assistants to be harmless through self-improvement, using a set of principles or \"constitution\" to guide behaviour without human labels for harmful outputs. Constitutional AI combines supervised learning for self-critiques and revisions with RL from AI Feedback (RLAIF).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

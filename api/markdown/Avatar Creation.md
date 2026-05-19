@@ -148,76 +148,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-creation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-creation",
+  "@type": "Class",
   "label": "Avatar Creation",
+  "definition": "Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-identity-creation",
-      "vc:label": "Digital Identity Creation"
+      "@id": "urn:ngm:class:digital-identity-creation",
+      "label": "Digital Identity Creation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-modeling-tools",
+        "label": "3D Modeling Tools"
+      },
+      {
+        "@id": "urn:ngm:class:ai-generation-systems",
+        "label": "AI Generation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:customization-interfaces",
+        "label": "Customization Interfaces"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-persona-management",
+        "label": "Digital Persona Management"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-participation",
+        "label": "Metaverse Participation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-self-expression",
+        "label": "Virtual Self-Expression"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fac81e459d7ea061ab40718bc5a6c7346334c76edb733de008599921e47b9468@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-modeling-tools",
-      "vc:label": "3D Modeling Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-generation-systems",
-      "vc:label": "AI Generation Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:customization-interfaces",
-      "vc:label": "Customization Interfaces"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-persona-management",
-      "vc:label": "Digital Persona Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:metaverse-participation",
-      "vc:label": "Metaverse Participation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-self-expression",
-      "vc:label": "Virtual Self-Expression"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

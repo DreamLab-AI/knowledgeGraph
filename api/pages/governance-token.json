@@ -3,167 +3,294 @@
   "title": "Governance Token",
   "slug": "governance-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:governance-token",
+  "classIri": "urn:ngm:class:governance-token",
   "domain": "blockchain",
-  "definition": "**Governance Token** is a class of ERC-20 (or equivalent chain-native) fungible cryptographic asset that confers programmable voting rights and protocol decision-making authority over a [[Decentralised Autonomous Organisation]] or smart-contract protocol, unbundling political control (one-token-one-vote, or vote-weighted-by-lock-duration) from cash-flow rights and operational management in a manner structurally distinct from conventional corporate equity, with the canonical lineage running from [[MakerDAO]]'s MKR token (pre-existing 2017 governance-only design administering DAI stability fees and collateral parameters), through [[Compound]]'s **COMP distribution on 15 June 2020** (which catalysed \"DeFi Summer\" by pairing governance issuance with liquidity-mining yield farming at ~2,880 COMP/day allocated proportionally to borrowers and suppliers), to [[Uniswap]]'s **UNI retroactive airdrop of 17 September 2020** (distributing 400 UNI \u2248 $1,200 at launch to every of the ~250,000 historical pre-1-September-2020 protocol users plus 49M UNI to liquidity providers, the largest single airdrop event in crypto history at the time), establishing the template of (i) **fixed or capped supply**",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:coordination-primitive",
-      "label": "Coordination Primitive"
-    },
-    {
-      "id": "urn:visionflow:linked:crypto-asset",
-      "label": "Crypto-Asset"
-    },
-    {
-      "id": "urn:visionflow:linked:erc-20-token",
-      "label": "ERC-20 Token"
-    }
-  ],
+  "definition": "Governance Token is a class of ERC-20 (or equivalent chain-native) fungible cryptographic asset that confers programmable voting rights and protocol decision-making authority over a [[Decentralised Autonomous Organisation]] or smart-contract protocol, unbundling political control (one-token-one-v...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:checkpoint-mapping",
+        "id": "urn:ngm:class:checkpoint-mapping",
         "label": "Checkpoint Mapping"
       },
       {
-        "id": "urn:visionflow:linked:delegation-mechanism",
+        "id": "urn:ngm:class:delegation-mechanism",
         "label": "Delegation Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:quorum-threshold",
+        "id": "urn:ngm:class:quorum-threshold",
         "label": "Quorum Threshold"
       },
       {
-        "id": "urn:visionflow:linked:snapshot-block",
+        "id": "urn:ngm:class:snapshot-block",
         "label": "Snapshot Block"
       },
       {
-        "id": "urn:visionflow:linked:timelock-controller",
+        "id": "urn:ngm:class:timelock-controller",
         "label": "Timelock Controller"
       },
       {
-        "id": "urn:visionflow:linked:token-treasury",
+        "id": "urn:ngm:class:token-treasury",
         "label": "Token Treasury"
       },
       {
-        "id": "urn:visionflow:linked:vesting-schedule",
+        "id": "urn:ngm:class:vesting-schedule",
         "label": "Vesting Schedule"
       },
       {
-        "id": "urn:visionflow:linked:voting-power",
+        "id": "urn:ngm:class:voting-power",
         "label": "Voting Power"
       },
       {
-        "id": "urn:visionflow:owl:class:proposal-system",
+        "id": "urn:ngm:class:proposal-system",
         "label": "Proposal System"
+      },
+      {
+        "id": "urn:ngm:class:coordination-primitive",
+        "label": "Coordination Primitive"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset",
+        "label": "Crypto-Asset"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token",
+        "label": "ERC-20 Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:block-number-reference",
+        "id": "urn:ngm:class:block-number-reference",
         "label": "Block Number Reference"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       },
       {
-        "id": "urn:visionflow:owl:class:wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-governance",
+        "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
-        "id": "urn:visionflow:linked:gauge-weight-allocation",
+        "id": "urn:ngm:class:gauge-weight-allocation",
         "label": "Gauge Weight Allocation"
       },
       {
-        "id": "urn:visionflow:linked:liquid-democracy",
+        "id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy"
       },
       {
-        "id": "urn:visionflow:linked:protocol-parameter-control",
+        "id": "urn:ngm:class:protocol-parameter-control",
         "label": "Protocol Parameter Control"
       },
       {
-        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       },
       {
-        "id": "urn:visionflow:linked:vote-delegation",
+        "id": "urn:ngm:class:vote-delegation",
         "label": "Vote Delegation"
       },
       {
-        "id": "urn:visionflow:owl:class:on-chain-voting",
+        "id": "urn:ngm:class:on-chain-voting",
         "label": "On-Chain Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:treasury-management",
+        "id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:compound-governor-bravo",
+        "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor Bravo"
       },
       {
-        "id": "urn:visionflow:linked:erc20-votes-standard",
+        "id": "urn:ngm:class:erc20-votes-standard",
         "label": "ERC20Votes Standard"
       },
       {
-        "id": "urn:visionflow:linked:holographic-consensus",
+        "id": "urn:ngm:class:holographic-consensus",
         "label": "Holographic Consensus"
       },
       {
-        "id": "urn:visionflow:linked:open-zeppelin-governor",
+        "id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor"
       },
       {
-        "id": "urn:visionflow:linked:optimistic-governance",
+        "id": "urn:ngm:class:optimistic-governance",
         "label": "Optimistic Governance"
       },
       {
-        "id": "urn:visionflow:linked:vote-escrow-model",
+        "id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrow Model"
       },
       {
-        "id": "urn:visionflow:owl:class:conviction-voting",
+        "id": "urn:ngm:class:conviction-voting",
         "label": "Conviction Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:eip-712-typed-signatures",
+        "label": "EIP-712 Typed Signatures"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:vesting-contract",
+        "label": "Vesting Contract"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-treasury",
+        "label": "DAO Treasury"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:meta-governance",
+        "label": "Meta-Governance"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-airdrops",
+        "label": "Retroactive Airdrops"
+      },
+      {
+        "id": "urn:ngm:class:de-fi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:compound-governor-bravo-interface",
+        "label": "Compound Governor Bravo Interface"
+      },
+      {
+        "id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-2612-permit",
+        "label": "ERC-2612 Permit"
+      },
+      {
+        "id": "urn:ngm:class:erc-5805-voting-token",
+        "label": "ERC-5805 Voting Token"
+      },
+      {
+        "id": "urn:ngm:class:erc20-votes",
+        "label": "ERC20Votes"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor-contracts",
+        "label": "OpenZeppelin Governor Contracts"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:curve-wars",
+        "label": "Curve Wars"
+      },
+      {
+        "id": "urn:ngm:class:de-fi-summer",
+        "label": "DeFi Summer"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-airdrop",
+        "label": "Retroactive Airdrop"
+      },
+      {
+        "id": "urn:ngm:class:vote-bribing",
+        "label": "Vote Bribing"
+      },
+      {
+        "id": "urn:ngm:class:whale-plutocracy",
+        "label": "Whale Plutocracy"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ]
   },
   "wikilinks": [
     {

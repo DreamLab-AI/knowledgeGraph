@@ -128,48 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bias-mitigation-techniques",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bias-mitigation-techniques",
+  "@type": "Class",
   "label": "Bias Mitigation Techniques",
+  "definition": "Bias Mitigation Techniques are mods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0c1126d0248cd5722320d63a95026916ff3dd44bd739ab4e2738df8c1700995c"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0c1126d0248cd5722320d63a95026916ff3dd44bd739ab4e2738df8c1700995c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Bias Mitigation Techniques are methods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline. These techniques are categorized into pre-processing methods (data transformation before training, including reweighting samples, resampling underrepresented groups, SMOTE for synthetic minority oversampling, and feature modification), in-processing methods (fairness constraints during model training, including regularization penalties, adversarial debiasing that trains models to be invariant to protected attributes, and constrained optimization), and post-processing methods (prediction adjustment after training, including threshold optimization for different groups and calibration techniques). Each approach involves tradeoffs between fairness improvement and predictive accuracy, with pre-processing methods typically preserving model flexibility but potentially discarding useful data, in-processing methods directly optimizing fairness-accuracy frontiers but requiring specialized algorithms, and post-processing methods being model-agnostic but potentially violating calibration. The ",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

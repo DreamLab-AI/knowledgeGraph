@@ -3,103 +3,116 @@
   "title": "OpenXR",
   "slug": "open-xr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-xr",
+  "classIri": "urn:ngm:class:open-xr",
   "domain": "spatial-computing",
-  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware \u2014 encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices \u2014 that defines a unified application-to-runtime interface, eliminating the fragmentation previously imposed by proprietary vendor SDKs (Oculus SDK, SteamVR, Windows Mixed Reality), so that an XR application written against OpenXR runs on any conformant runtime without source code changes, and enabling [[VisionClaw Agentic Container]] agents to interact with spatial computing environments through a standardised sensory and actuation surface.",
+  "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware \u2014 encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices \u2014 that defines a unified application-to-runtime interface, elimina...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:extended-reality-api",
+      "id": "urn:ngm:class:extended-reality-api",
       "label": "Extended Reality API"
     },
     {
-      "id": "urn:visionflow:linked:khronos-group-standard",
+      "id": "urn:ngm:class:khronos-group-standard",
       "label": "Khronos Group Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.78,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:open-xr-action-system",
+        "id": "urn:ngm:class:open-xr-action-system",
         "label": "OpenXR Action System"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-extension",
+        "id": "urn:ngm:class:open-xr-extension",
         "label": "OpenXR Extension"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-loader",
+        "id": "urn:ngm:class:open-xr-loader",
         "label": "OpenXR Loader"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-session",
+        "id": "urn:ngm:class:open-xr-session",
         "label": "OpenXR Session"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-space",
+        "id": "urn:ngm:class:open-xr-space",
         "label": "OpenXR Space"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-swapchain",
+        "id": "urn:ngm:class:open-xr-swapchain",
         "label": "OpenXR Swapchain"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:open-gl-es",
+        "id": "urn:ngm:class:open-gl-es",
         "label": "OpenGL ES"
       },
       {
-        "id": "urn:visionflow:linked:vulkan-api",
+        "id": "urn:ngm:class:vulkan-api",
         "label": "Vulkan API"
       },
       {
-        "id": "urn:visionflow:linked:xr-hardware-device",
+        "id": "urn:ngm:class:xr-hardware-device",
         "label": "XR Hardware Device"
       },
       {
-        "id": "urn:visionflow:linked:xr-runtime",
+        "id": "urn:ngm:class:xr-runtime",
         "label": "XR Runtime"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hardware-agnostic-xr-development",
+        "id": "urn:ngm:class:hardware-agnostic-xr-development",
         "label": "Hardware-Agnostic XR Development"
       },
       {
-        "id": "urn:visionflow:linked:passthrough-ar",
+        "id": "urn:ngm:class:passthrough-ar",
         "label": "Passthrough AR"
       },
       {
-        "id": "urn:visionflow:owl:class:eye-tracking",
+        "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:hand-tracking",
+        "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:khronos-open-xr-1-0-specification",
+        "id": "urn:ngm:class:khronos-open-xr-1-0-specification",
         "label": "Khronos OpenXR 1.0 Specification"
       },
       {
-        "id": "urn:visionflow:linked:open-xr-extension-registry",
+        "id": "urn:ngm:class:open-xr-extension-registry",
         "label": "OpenXR Extension Registry"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:xr-technology-stack",
+        "label": "XR Technology Stack"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-concerts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-concerts",
+  "@type": "Class",
   "label": "Virtual Concerts",
+  "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-event",
-      "vc:label": "Virtual Event"
+      "@id": "urn:ngm:class:virtual-event",
+      "label": "Virtual Event"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eac76cd937fb247f28a457fcd1b2412aace9d90320c27e263066dfd4b68b4b9a"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eac76cd937fb247f28a457fcd1b2412aace9d90320c27e263066dfd4b68b4b9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -144,41 +144,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:summary",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:summary",
+  "@type": "Class",
   "label": "SUMMARY",
+  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0c1ece31bec0ee49bb085e8e23fefede434767b3817a836ac9278b84096c648e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and social collaboration. This digital infrastructure integrates [[BlockchainTechnology|blockchain-based assets]], [[SmartContracts|smart contracts]], and [[DecentralizedIdentity|decentralised identity]] systems to support genuine digital ownership, interoperability, and governance across platforms. Contemporary metaverse implementations span gaming worlds, social platforms, professional collaboration environments, and virtual economies representing hundreds of billions in user-generated value.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

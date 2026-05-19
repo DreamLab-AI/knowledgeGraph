@@ -3,19 +3,18 @@
   "title": "rb 0065 visual servoing",
   "slug": "rb-0065-visual-servoing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0065-visual-servoing",
+  "classIri": "urn:ngm:class:rb-0065-visual-servoing",
   "domain": "robotics",
   "definition": "visual servoing is a robotics and autonomous systems concept and a type of Feedback Control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:feedback-control",
+      "id": "urn:ngm:class:feedback-control",
       "label": "Feedback Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

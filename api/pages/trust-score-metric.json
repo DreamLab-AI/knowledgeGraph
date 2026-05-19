@@ -3,78 +3,87 @@
   "title": "Trust Score Metric",
   "slug": "trust-score-metric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trust-score-metric",
+  "classIri": "urn:ngm:class:trust-score-metric",
   "domain": "spatial-computing",
   "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:trust-infrastructure",
+      "id": "urn:ngm:class:trust-infrastructure",
       "label": "Trust Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:calculation-timestamp",
+        "id": "urn:ngm:class:calculation-timestamp",
         "label": "Calculation Timestamp"
       },
       {
-        "id": "urn:visionflow:linked:confidence-interval",
+        "id": "urn:ngm:class:confidence-interval",
         "label": "Confidence Interval"
       },
       {
-        "id": "urn:visionflow:linked:score-value",
+        "id": "urn:ngm:class:score-value",
         "label": "Score Value"
       },
       {
-        "id": "urn:visionflow:linked:scoring-methodology-reference",
+        "id": "urn:ngm:class:scoring-methodology-reference",
         "label": "Scoring Methodology Reference"
       },
       {
-        "id": "urn:visionflow:linked:validity-period",
+        "id": "urn:ngm:class:validity-period",
         "label": "Validity Period"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:behavioral-data",
+        "id": "urn:ngm:class:behavioral-data",
         "label": "Behavioral Data"
       },
       {
-        "id": "urn:visionflow:owl:class:calculation-parameters",
+        "id": "urn:ngm:class:calculation-parameters",
         "label": "Calculation Parameters"
       },
       {
-        "id": "urn:visionflow:owl:class:reputation-scoring-model",
+        "id": "urn:ngm:class:reputation-scoring-model",
         "label": "Reputation Scoring Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:access-control-decisions",
+        "id": "urn:ngm:class:access-control-decisions",
         "label": "Access Control Decisions"
       },
       {
-        "id": "urn:visionflow:linked:transaction-approval",
+        "id": "urn:ngm:class:transaction-approval",
         "label": "Transaction Approval"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

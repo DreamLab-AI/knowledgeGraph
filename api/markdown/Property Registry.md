@@ -132,41 +132,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:property-registry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:property-registry",
+  "@type": "Class",
   "label": "Property Registry",
+  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title ...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:real-estate-tokenization",
-      "vc:label": "Real Estate Tokenization"
+      "@id": "urn:ngm:class:real-estate-tokenization",
+      "label": "Real Estate Tokenization"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0e9a051a9a5905419468e8a8806d4f598863f95f11b2db01034bbcb0bdc8848a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0e9a051a9a5905419468e8a8806d4f598863f95f11b2db01034bbcb0bdc8848a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title verification whilst addressing the global challenge where 70% of the world's population lacks access to formal land registration.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

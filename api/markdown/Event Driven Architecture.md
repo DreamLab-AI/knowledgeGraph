@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:event-driven-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:event-driven-architecture",
+  "@type": "Class",
   "label": "Event Driven Architecture",
+  "definition": "A software architecture pattern for metaverse systems built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems for immersive virtual experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f927d0a4447e377181ced1e14ff2e690378667a52b5a18a98dcfd518c44e66fe"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalable-metaverse-infrastructure",
+        "label": "Scalable Metaverse Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f927d0a4447e377181ced1e14ff2e690378667a52b5a18a98dcfd518c44e66fe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A software architecture pattern for metaverse systems built from decoupled services that publish, consume, and route events representing state changes, enabling real-time responsiveness, independent scaling, and resilient distributed systems for immersive virtual experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scalable-metaverse-infrastructure",
-      "vc:label": "Scalable Metaverse Infrastructure"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

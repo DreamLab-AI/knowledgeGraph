@@ -3,19 +3,18 @@
   "title": "Proof of History",
   "slug": "proof-of-history",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proof-of-history",
+  "classIri": "urn:ngm:class:proof-of-history",
   "domain": "blockchain",
   "definition": "A cryptographic mechanism that timestamps transactions to establish a historical record, enabling validators to process transactions in parallel for high throughput. Creates verifiable passage of time between events without requiring nodes to trust each other.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:proof-based-consensus",
+      "id": "urn:ngm:class:proof-based-consensus",
       "label": "Proof-Based Consensus"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

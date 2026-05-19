@@ -140,74 +140,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ai-governance",
+  "@type": "Class",
   "label": "ETSI Domain AI + Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:63876bec8579e23f367a455eba5cb9b70c6a16f500c43f0adbbbe012ba3b64ad"
+  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-ethics-classification",
+        "label": "AI Ethics Classification"
+      },
+      {
+        "@id": "urn:ngm:class:explainability-categorization",
+        "label": "Explainability Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:63876bec8579e23f367a455eba5cb9b70c6a16f500c43f0adbbbe012ba3b64ad@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse components combining artificial intelligence with governance frameworks including AI ethics, explainability, bias detection, regulatory compliance, and responsible AI systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-ethics-classification",
-      "vc:label": "AI Ethics Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:explainability-categorization",
-      "vc:label": "Explainability Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-      "vc:label": "ETSI Domain AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-and-governance-domain",
-      "vc:label": "TrustAndGovernanceDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

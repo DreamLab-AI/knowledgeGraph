@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:learning-resources",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:learning-resources",
+  "@type": "Class",
   "label": "Learning Resources",
+  "definition": "Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:educational-technology",
-      "vc:label": "Educational Technology"
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8fa616b1c7adc42a261350b172514a6241ccc5b6dedd9d31f11b71eb54bb7bb2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-education",
+        "label": "Immersive Education"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8fa616b1c7adc42a261350b172514a6241ccc5b6dedd9d31f11b71eb54bb7bb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-education",
-      "vc:label": "Immersive Education"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -136,72 +136,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-storage",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-storage",
+  "@type": "Class",
   "label": "Data Storage",
+  "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-component",
-      "vc:label": "Infrastructure Component"
+      "@id": "urn:ngm:class:infrastructure-component",
+      "label": "Infrastructure Component"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8b1d08a9237792138ac13435652682dfc07b6ea113f4c67edc0b20accff5ec7f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-redundancy",
+        "label": "Data Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:storage-architecture",
+        "label": "Storage Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b1d08a9237792138ac13435652682dfc07b6ea113f4c67edc0b20accff5ec7f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use. It includes various storage types such as file, block, and object storage, along with the hardware and software infrastructure that ensures data persistence, accessibility, availability, and protection against loss or corruption.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:backup-and-recovery",
-      "vc:label": "Backup and Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-persistence",
-      "vc:label": "Data Persistence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-retrieval",
-      "vc:label": "Information Retrieval"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:data-redundancy",
-      "vc:label": "Data Redundancy"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-architecture",
-      "vc:label": "Storage Architecture"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

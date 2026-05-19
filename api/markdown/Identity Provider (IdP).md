@@ -200,128 +200,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:identity-provider-id-p",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:identity-provider-id-p",
+  "@type": "Class",
   "label": "Identity Provider (IdP)",
+  "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authentication-server",
+        "label": "Authentication Server"
+      },
+      {
+        "@id": "urn:ngm:class:credential-store",
+        "label": "Credential Store"
+      },
+      {
+        "@id": "urn:ngm:class:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "@id": "urn:ngm:class:token-issuer",
+        "label": "Token Issuer"
+      },
+      {
+        "@id": "urn:ngm:class:user-directory",
+        "label": "User Directory"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-store",
+        "label": "Cryptographic Key Store"
+      },
+      {
+        "@id": "urn:ngm:class:user-database",
+        "label": "User Database"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on-sso",
+        "label": "Single Sign-On (SSO)"
+      },
+      {
+        "@id": "urn:ngm:class:user-provisioning",
+        "label": "User Provisioning"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:federation-infrastructure",
+        "label": "Federation Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:50ad647d1d1e2add97b9f831fa70a63c2a44598a7b06c951f178f4c73b176d87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:federation-infrastructure",
-      "vc:label": "Federation Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authentication-server",
-      "vc:label": "Authentication Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-store",
-      "vc:label": "Credential Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-manager",
-      "vc:label": "Session Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-issuer",
-      "vc:label": "Token Issuer"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-directory",
-      "vc:label": "User Directory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication-protocol",
-      "vc:label": "Authentication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-key-store",
-      "vc:label": "Cryptographic Key Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-database",
-      "vc:label": "User Database"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:multi-factor-authentication",
-      "vc:label": "Multi-Factor Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-sign-on-sso",
-      "vc:label": "Single Sign-On (SSO)"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-provisioning",
-      "vc:label": "User Provisioning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-federation",
-      "vc:label": "Identity Federation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:credential-schema",
-      "vc:label": "Credential Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:directory-service",
-      "vc:label": "Directory Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:pki-infrastructure",
-      "vc:label": "PKI Infrastructure"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

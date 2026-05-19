@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:awareness",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:awareness",
+  "@type": "Class",
   "label": "Awareness",
+  "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, aud...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:social-computing",
-      "vc:label": "Social Computing"
+      "@id": "urn:ngm:class:social-computing",
+      "label": "Social Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ffb0fc274f5f793ade199103c771752cad2a6424062dee25de4b2ed77cf72353"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:notification-systems",
+        "label": "Notification Systems"
+      },
+      {
+        "@id": "urn:ngm:class:presence-detection",
+        "label": "Presence Detection"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-presence",
+        "label": "Collaborative Presence"
+      },
+      {
+        "@id": "urn:ngm:class:situational-understanding",
+        "label": "Situational Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ffb0fc274f5f793ade199103c771752cad2a6424062dee25de4b2ed77cf72353@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:notification-systems",
-      "vc:label": "Notification Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence-detection",
-      "vc:label": "Presence Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-synchronization",
-      "vc:label": "State Synchronization"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-presence",
-      "vc:label": "Collaborative Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:situational-understanding",
-      "vc:label": "Situational Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction",
-      "vc:label": "Social Interaction"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

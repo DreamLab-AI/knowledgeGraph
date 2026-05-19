@@ -3,28 +3,6 @@
   "title": "Execution Log",
   "slug": "execution-log",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:execution-log",
-  "domain": "infrastructure",
-  "definition": "Execution Log is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

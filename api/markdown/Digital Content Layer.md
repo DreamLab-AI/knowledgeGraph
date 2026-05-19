@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-content-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-content-layer",
+  "@type": "Class",
   "label": "Digital Content Layer",
+  "definition": "An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture",
-      "vc:label": "Metaverse Architecture"
+      "@id": "urn:ngm:class:metaverse-architecture",
+      "label": "Metaverse Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:139893b4577fdfdcfe7f3bc140413bc5ac92dc17e26b8dec217ae2d0dc24602d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-composition",
+        "label": "Content Composition"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-rendering",
+        "label": "Dynamic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:layer-management",
+        "label": "Layer Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:139893b4577fdfdcfe7f3bc140413bc5ac92dc17e26b8dec217ae2d0dc24602d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-mapping",
-      "vc:label": "Spatial Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-composition",
-      "vc:label": "Content Composition"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-rendering",
-      "vc:label": "Dynamic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-management",
-      "vc:label": "Layer Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

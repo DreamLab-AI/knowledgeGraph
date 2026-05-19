@@ -3,90 +3,103 @@
   "title": "Quantum Network Node",
   "slug": "quantum-network-node",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:quantum-network-node",
+  "classIri": "urn:ngm:class:quantum-network-node",
   "domain": "spatial-computing",
   "definition": "Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:classical-communication-interface",
+        "id": "urn:ngm:class:classical-communication-interface",
         "label": "Classical Communication Interface"
       },
       {
-        "id": "urn:visionflow:linked:environmental-isolation-chamber",
+        "id": "urn:ngm:class:environmental-isolation-chamber",
         "label": "Environmental Isolation Chamber"
       },
       {
-        "id": "urn:visionflow:linked:optical-switch",
+        "id": "urn:ngm:class:optical-switch",
         "label": "Optical Switch"
       },
       {
-        "id": "urn:visionflow:linked:quantum-light-source",
+        "id": "urn:ngm:class:quantum-light-source",
         "label": "Quantum Light Source"
       },
       {
-        "id": "urn:visionflow:linked:quantum-memory-unit",
+        "id": "urn:ngm:class:quantum-memory-unit",
         "label": "Quantum Memory Unit"
       },
       {
-        "id": "urn:visionflow:linked:single-photon-detector",
+        "id": "urn:ngm:class:single-photon-detector",
         "label": "Single Photon Detector"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryogenic-cooling",
+        "id": "urn:ngm:class:cryogenic-cooling",
         "label": "Cryogenic Cooling"
       },
       {
-        "id": "urn:visionflow:linked:optical-fiber-connection",
+        "id": "urn:ngm:class:optical-fiber-connection",
         "label": "Optical Fiber Connection"
       },
       {
-        "id": "urn:visionflow:linked:vibration-isolation",
+        "id": "urn:ngm:class:vibration-isolation",
         "label": "Vibration Isolation"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:entanglement-distribution",
+        "id": "urn:ngm:class:entanglement-distribution",
         "label": "Entanglement Distribution"
       },
       {
-        "id": "urn:visionflow:linked:post-quantum-security",
+        "id": "urn:ngm:class:post-quantum-security",
         "label": "Post-Quantum Security"
       },
       {
-        "id": "urn:visionflow:linked:quantum-cryptography",
+        "id": "urn:ngm:class:quantum-cryptography",
         "label": "Quantum Cryptography"
       },
       {
-        "id": "urn:visionflow:linked:quantum-key-distribution",
+        "id": "urn:ngm:class:quantum-key-distribution",
         "label": "Quantum Key Distribution"
       },
       {
-        "id": "urn:visionflow:linked:ultra-secure-communication",
+        "id": "urn:ngm:class:ultra-secure-communication",
         "label": "Ultra-Secure Communication"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quantum-communication-network",
+        "label": "Quantum Communication Network"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

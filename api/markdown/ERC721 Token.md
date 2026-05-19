@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:erc721-token",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:erc721-token",
+  "@type": "Class",
   "label": "ERC721 Token",
+  "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on ereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:non-fungible-token",
-      "vc:label": "Non Fungible Token"
+      "@id": "urn:ngm:class:non-fungible-token",
+      "label": "Non Fungible Token"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2780a532b4dc920b658dbcd520d4ef1f3f5290b1a9603747dce6d8492e0d2da8"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2780a532b4dc920b658dbcd520d4ef1f3f5290b1a9603747dce6d8492e0d2da8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

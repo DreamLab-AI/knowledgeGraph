@@ -3,19 +3,18 @@
   "title": "Virtual Tourism",
   "slug": "virtual-tourism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-tourism",
+  "classIri": "urn:ngm:class:virtual-tourism",
   "domain": "spatial-computing",
   "definition": "The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tourism-industry",
+      "id": "urn:ngm:class:tourism-industry",
       "label": "Tourism Industry"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

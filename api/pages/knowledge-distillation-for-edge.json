@@ -3,19 +3,18 @@
   "title": "Knowledge Distillation for Edge",
   "slug": "knowledge-distillation-for-edge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
+  "classIri": "urn:ngm:class:knowledge-distillation-for-edge",
   "domain": "artificial-intelligence",
-  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining 97%+ of accuracy. Knowledge distillation addresses the mismatch between expensive training (requiring large models and substantial compute) and deployment constraints (limited memory, power, latency). A large teacher model trained on expansive datasets learns rich feature representations; the student model learns to mimic teacher predictions and intermediate representations through soft targets (probability distributions over classes) rather than hard labels. Temperature scaling softens teacher probabilities, revealing knowledge about class confusion and similarity that hard labels omit. Dark knowledge captures patterns learned through large-scale training that transfer to compact students. Typical teacher-student compression ratios reach 20x: a 500MB teacher network compresses to 25MB student while retaining accuracy. Layer-wise knowledge distillation transfers intermediate representations, not just final predictions, improving student generalization. Multi-task distillat",
+  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining + of accuracy.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

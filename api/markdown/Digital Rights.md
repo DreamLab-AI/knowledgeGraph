@@ -168,70 +168,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-rights",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-rights",
+  "@type": "Class",
   "label": "Digital Rights",
+  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and nati...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:human-rights",
-      "vc:label": "Human Rights"
+      "@id": "urn:ngm:class:human-rights",
+      "label": "Human Rights"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ed43f9be32cf7a4e5dcc00050d7148583a21534b550b1c6d96060c95892e4e9b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:enforcement-mechanisms",
+        "label": "Enforcement Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:technical-safeguards",
+        "label": "Technical Safeguards"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:digital-freedom",
+        "label": "Digital Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ed43f9be32cf7a4e5dcc00050d7148583a21534b550b1c6d96060c95892e4e9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:enforcement-mechanisms",
-      "vc:label": "Enforcement Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-safeguards",
-      "vc:label": "Technical Safeguards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-freedom",
-      "vc:label": "Digital Freedom"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-protection",
-      "vc:label": "Privacy Protection"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

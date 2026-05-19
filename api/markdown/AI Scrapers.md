@@ -396,308 +396,231 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-scrapers",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-scrapers",
+  "@type": "Class",
   "label": "AI Scrapers",
+  "definition": "AI Scrapers are automated software agents (web crawlers, retrieval bots, and content-fetching pipelines) operated by foundation-model laboratories, AI search vendors, retrieval-augmented-generation services, dataset aggregators, and synthetic-media producers for the purpose of harvesting publicly...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automated-agent",
-      "vc:label": "Automated Agent"
+      "@id": "urn:ngm:class:automated-agent",
+      "label": "Automated Agent"
     },
     {
-      "@id": "urn:visionflow:linked:data-acquisition-pipeline",
-      "vc:label": "Data Acquisition Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-bot",
-      "vc:label": "Internet Bot"
+      "@id": "urn:ngm:class:data-acquisition-pipeline",
+      "label": "Data Acquisition Pipeline"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a948be4e7b84e22df46896c0bbe36359dd2f6dd190949e1f30f7652bd5ce34b2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-extraction-pipeline",
+        "label": "Content Extraction Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:crawl-frontier",
+        "label": "Crawl Frontier"
+      },
+      {
+        "@id": "urn:ngm:class:deduplication-filter",
+        "label": "Deduplication Filter"
+      },
+      {
+        "@id": "urn:ngm:class:ip-range-manifest",
+        "label": "IP Range Manifest"
+      },
+      {
+        "@id": "urn:ngm:class:politeness-policy",
+        "label": "Politeness Policy"
+      },
+      {
+        "@id": "urn:ngm:class:robots-txt-parser",
+        "label": "robots.txt Parser"
+      },
+      {
+        "@id": "urn:ngm:class:user-agent-string",
+        "label": "User-Agent String"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:http-client",
+        "label": "HTTP Client"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provenance",
+        "label": "Identity Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:public-web-content",
+        "label": "Public Web Content"
+      },
+      {
+        "@id": "urn:ngm:class:storage-pipeline",
+        "label": "Storage Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fine-tuning-dataset-assembly",
+        "label": "Fine-Tuning Dataset Assembly"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model-pre-training",
+        "label": "Foundation Model Pre-Training"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-extraction",
+        "label": "Knowledge Graph Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:search-index-construction",
+        "label": "Search Index Construction"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-curation",
+        "label": "Synthetic Data Curation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:content-type-negotiation",
+        "label": "Content Type Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:de-duplication-hashing",
+        "label": "De-Duplication Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:politeness-throttling",
+        "label": "Politeness Throttling"
+      },
+      {
+        "@id": "urn:ngm:class:robots-exclusion-protocol",
+        "label": "Robots Exclusion Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      },
+      {
+        "@id": "urn:ngm:class:headless-browser",
+        "label": "Headless Browser"
+      },
+      {
+        "@id": "urn:ngm:class:http-library",
+        "label": "HTTP Library"
+      },
+      {
+        "@id": "urn:ngm:class:playwright",
+        "label": "Playwright"
+      },
+      {
+        "@id": "urn:ngm:class:selenium",
+        "label": "Selenium"
+      },
+      {
+        "@id": "urn:ngm:class:sitemaps-xml",
+        "label": "Sitemaps XML"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bot-management",
+        "label": "Bot Management"
+      },
+      {
+        "@id": "urn:ngm:class:content-licensing",
+        "label": "Content Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:copyright-law",
+        "label": "Copyright Law"
+      },
+      {
+        "@id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-model-training",
+        "label": "Multimodal Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:rag-pipelines",
+        "label": "RAG Pipelines"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-53",
+        "label": "EU AI Act Article 53"
+      },
+      {
+        "@id": "urn:ngm:class:gpai-code-of-practice",
+        "label": "GPAI Code of Practice"
+      },
+      {
+        "@id": "urn:ngm:class:iab-tech-lab",
+        "label": "IAB Tech Lab"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-aipref-working-group",
+        "label": "IETF AIPREF Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-9309",
+        "label": "IETF RFC 9309"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a948be4e7b84e22df46896c0bbe36359dd2f6dd190949e1f30f7652bd5ce34b2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Scrapers are automated software agents (web crawlers, retrieval bots, and content-fetching pipelines) operated by foundation-model laboratories, AI search vendors, retrieval-augmented-generation services, dataset aggregators, and synthetic-media producers for the purpose of harvesting publicly accessible web content at scale to construct pre-training corpora, fine-tuning datasets, retrieval indexes, real-time grounding caches, and reinforcement-learning-from-human-feedback raw material, distinguished from classic search-engine crawlers (Googlebot, Bingbot) by the downstream use of harvested content as **training input to generative models** rather than indexing for link-based retrieval, comprising a well-documented census of named user-agents (OpenAI GPTBot, OAI-SearchBot, ChatGPT-User; Anthropic ClaudeBot, Claude-User, Claude-SearchBot; Google-Extended pseudo-token gating Gemini/Vertex training; Common Crawl CCBot underpinning GPT-3/LLaMA-1/Falcon/Mistral; Meta facebookexternalhit and meta-externalagent; ByteDance Bytespider feeding Doubao; Amazonbot feeding Alexa+/Olympus; Applebot-Extended gating Apple Intelligence training introduced June 2024; Diffbot commercial knowledge-g",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-extraction-pipeline",
-      "vc:label": "Content Extraction Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:crawl-frontier",
-      "vc:label": "Crawl Frontier"
-    },
-    {
-      "@id": "urn:visionflow:linked:deduplication-filter",
-      "vc:label": "Deduplication Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:ip-range-manifest",
-      "vc:label": "IP Range Manifest"
-    },
-    {
-      "@id": "urn:visionflow:linked:politeness-policy",
-      "vc:label": "Politeness Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:robots-txt-parser",
-      "vc:label": "robots.txt Parser"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-agent-string",
-      "vc:label": "User-Agent String"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:http-client",
-      "vc:label": "HTTP Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-provenance",
-      "vc:label": "Identity Provenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-web-content",
-      "vc:label": "Public Web Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-pipeline",
-      "vc:label": "Storage Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fine-tuning-dataset-assembly",
-      "vc:label": "Fine-Tuning Dataset Assembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model-pre-training",
-      "vc:label": "Foundation Model Pre-Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-graph-extraction",
-      "vc:label": "Knowledge Graph Extraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:search-index-construction",
-      "vc:label": "Search Index Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-data-curation",
-      "vc:label": "Synthetic Data Curation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:content-type-negotiation",
-      "vc:label": "Content Type Negotiation"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-duplication-hashing",
-      "vc:label": "De-Duplication Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-protocol",
-      "vc:label": "HTTP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:politeness-throttling",
-      "vc:label": "Politeness Throttling"
-    },
-    {
-      "@id": "urn:visionflow:linked:robots-exclusion-protocol",
-      "vc:label": "Robots Exclusion Protocol"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cdn-layer",
-      "vc:label": "CDN Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-crawl",
-      "vc:label": "Common Crawl"
-    },
-    {
-      "@id": "urn:visionflow:linked:dns",
-      "vc:label": "DNS"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-web-architecture",
-      "vc:label": "Public Web Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:internet-infrastructure",
-      "vc:label": "Internet Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:large-language-model-training",
-      "vc:label": "Large Language Model Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-model-training",
-      "vc:label": "Multimodal Model Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:rag-pipelines",
-      "vc:label": "RAG Pipelines"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bloom-filter",
-      "vc:label": "Bloom Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:headless-browser",
-      "vc:label": "Headless Browser"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-library",
-      "vc:label": "HTTP Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:playwright",
-      "vc:label": "Playwright"
-    },
-    {
-      "@id": "urn:visionflow:linked:selenium",
-      "vc:label": "Selenium"
-    },
-    {
-      "@id": "urn:visionflow:linked:sitemaps-xml",
-      "vc:label": "Sitemaps XML"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:academic-crawler",
-      "vc:label": "Academic Crawler"
-    },
-    {
-      "@id": "urn:visionflow:linked:classic-search-crawler",
-      "vc:label": "Classic Search Crawler"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-web-scraper",
-      "vc:label": "Personal Web Scraper"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-archive-crawler",
-      "vc:label": "Web Archive Crawler"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bot-management",
-      "vc:label": "Bot Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-licensing",
-      "vc:label": "Content Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:copyright-law",
-      "vc:label": "Copyright Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-scraping",
-      "vc:label": "Web Scraping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-53",
-      "vc:label": "EU AI Act Article 53"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpai-code-of-practice",
-      "vc:label": "GPAI Code of Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:iab-tech-lab",
-      "vc:label": "IAB Tech Lab"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-aipref-working-group",
-      "vc:label": "IETF AIPREF Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-9309",
-      "vc:label": "IETF RFC 9309"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:bot-management",
-      "vc:label": "Bot Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:copyright",
-      "vc:label": "Copyright"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

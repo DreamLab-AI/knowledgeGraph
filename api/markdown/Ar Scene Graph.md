@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-scene-graph",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-scene-graph",
+  "@type": "Class",
   "label": "Ar Scene Graph",
+  "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital cont...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-data-structure",
-      "vc:label": "Spatial Data Structure"
+      "@id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:023fc23e68bf22213412cf1e0b9b96d5d69526caedc06442d091e17ed167e679"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-relationships",
+        "label": "Spatial Relationships"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:context-aware-ar",
+        "label": "Context-Aware AR"
+      },
+      {
+        "@id": "urn:ngm:class:retargetable-ar-experiences",
+        "label": "Retargetable AR Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-scene-understanding",
+        "label": "Semantic Scene Understanding"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:023fc23e68bf22213412cf1e0b9b96d5d69526caedc06442d091e17ed167e679@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital content and physical environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scene-reconstruction",
-      "vc:label": "3D Scene Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-relationships",
-      "vc:label": "Spatial Relationships"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "Object Detection"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:context-aware-ar",
-      "vc:label": "Context-Aware AR"
-    },
-    {
-      "@id": "urn:visionflow:linked:retargetable-ar-experiences",
-      "vc:label": "Retargetable AR Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-scene-understanding",
-      "vc:label": "Semantic Scene Understanding"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,24 +3,23 @@
   "title": "Open-Loop Control",
   "slug": "open-loop-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-loop-control",
+  "classIri": "urn:ngm:class:open-loop-control",
   "domain": "robotics",
   "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-system",
+      "id": "urn:ngm:class:control-system",
       "label": "Control System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       }
     ],
@@ -28,7 +27,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

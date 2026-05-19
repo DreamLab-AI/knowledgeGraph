@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:character-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:character-model",
+  "@type": "Class",
   "label": "Character Model",
+  "definition": "A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7784458def1b42e0ee3e2e3b5100c6552353a1e04f7c9548fa38b8953db83719"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-modeling-software",
+        "label": "3D Modeling Software"
+      },
+      {
+        "@id": "urn:ngm:class:topology-design",
+        "label": "Topology Design"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:game-characters",
+        "label": "Game Characters"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-avatars",
+        "label": "Virtual Avatars"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7784458def1b42e0ee3e2e3b5100c6552353a1e04f7c9548fa38b8953db83719@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-modeling-software",
-      "vc:label": "3D Modeling Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:topology-design",
-      "vc:label": "Topology Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:texture-mapping",
-      "vc:label": "Texture Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:character-animation",
-      "vc:label": "Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-characters",
-      "vc:label": "Game Characters"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-avatars",
-      "vc:label": "Virtual Avatars"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

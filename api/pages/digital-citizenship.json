@@ -3,82 +3,99 @@
   "title": "Digital Citizenship",
   "slug": "digital-citizenship",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-citizenship",
+  "classIri": "urn:ngm:class:digital-citizenship",
   "domain": "spatial-computing",
-  "definition": "A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces. bridges-to:: [[Telecollaboration]]",
+  "definition": "Digital Citizenship is a type of Virtual Society in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-society",
+      "id": "urn:ngm:class:virtual-society",
       "label": "Virtual Society"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:access-controls",
+        "id": "urn:ngm:class:access-controls",
         "label": "Access Controls"
       },
       {
-        "id": "urn:visionflow:linked:civic-duties",
+        "id": "urn:ngm:class:civic-duties",
         "label": "Civic Duties"
       },
       {
-        "id": "urn:visionflow:linked:community-membership",
+        "id": "urn:ngm:class:community-membership",
         "label": "Community Membership"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-rights",
+        "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:participation-framework",
+        "id": "urn:ngm:class:participation-framework",
         "label": "Participation Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:governance-token",
+        "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:reputation-system",
+        "id": "urn:ngm:class:reputation-system",
         "label": "Reputation System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:access-to-services",
+        "id": "urn:ngm:class:access-to-services",
         "label": "Access to Services"
       },
       {
-        "id": "urn:visionflow:linked:community-voting",
+        "id": "urn:ngm:class:community-voting",
         "label": "Community Voting"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction",
+        "id": "urn:ngm:class:social-interaction",
         "label": "Social Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:civic-participation",
+        "id": "urn:ngm:class:civic-participation",
         "label": "Civic Participation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-constitution",
+        "label": "Digital Constitution"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

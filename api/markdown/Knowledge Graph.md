@@ -220,132 +220,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:knowledge-graph",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-graph",
+  "@type": "Class",
   "label": "Knowledge Graph",
+  "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:entity-node",
+        "label": "Entity Node"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-schema",
+        "label": "Ontology Schema"
+      },
+      {
+        "@id": "urn:ngm:class:relationship-edge",
+        "label": "Relationship Edge"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-property",
+        "label": "Semantic Property"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-reasoning",
+        "label": "AI Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:semantic-web-infrastructure",
+        "label": "Semantic Web Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:54944bc35e10df3e1dc9d6d7f3d59f6b20dadfe29b0af0692cc4b732fa6685ce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:semantic-web-infrastructure",
-      "vc:label": "Semantic Web Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management-system",
-      "vc:label": "Knowledge Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:entity-node",
-      "vc:label": "Entity Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-engine",
-      "vc:label": "Inference Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-schema",
-      "vc:label": "Ontology Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:relationship-edge",
-      "vc:label": "Relationship Edge"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-property",
-      "vc:label": "Semantic Property"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ontology",
-      "vc:label": "Ontology"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-definition",
-      "vc:label": "Schema Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:triple-store",
-      "vc:label": "Triple Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-database",
-      "vc:label": "Graph Database"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-reasoning",
-      "vc:label": "AI Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-discovery",
-      "vc:label": "Knowledge Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-system",
-      "vc:label": "Recommendation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:question-answering",
-      "vc:label": "Question Answering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-search",
-      "vc:label": "Semantic Search"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:entity-resolution",
-      "vc:label": "Entity Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-framework",
-      "vc:label": "RDF Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasoning-service",
-      "vc:label": "Reasoning Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparql-query-engine",
-      "vc:label": "SPARQL Query Engine"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

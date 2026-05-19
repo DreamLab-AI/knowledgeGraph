@@ -3,19 +3,18 @@
   "title": "ERC20 Token",
   "slug": "erc20-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc20-token",
+  "classIri": "urn:ngm:class:erc20-token",
   "domain": "blockchain",
-  "definition": "A fungible token implementing the ERC-20 standard on Ethereum blockchain. The most widely used Ethereum token standard providing uniform API for token operations within smart contracts.",
+  "definition": "A fungible token implementing the ERC-20 standard on ereum blockchain. The most widely used ereum token standard providing uniform API for token operations within smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:fungible-token",
+      "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

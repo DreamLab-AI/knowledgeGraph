@@ -3,19 +3,18 @@
   "title": "Early Stopping",
   "slug": "early-stopping",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:early-stopping",
+  "classIri": "urn:ngm:class:early-stopping",
   "domain": "spatial-computing",
   "definition": "A regularisation technique that terminates training when validation performance stops improving, preventing overfitting by avoiding overtraining on the training set. Early stopping balances training progress against generalisation to unseen data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:shared-knowledge-base",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shared-knowledge-base",
+  "@type": "Class",
   "label": "Shared Knowledge Base",
+  "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-management-system",
-      "vc:label": "Knowledge Management System"
+      "@id": "urn:ngm:class:knowledge-management-system",
+      "label": "Knowledge Management System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f210535ab4af7262b4778baf05f3a6a9e32ba3c0e8b1cfb5ce99f1cd60eb4bd5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-knowledge-discovery",
+        "label": "Collaborative Knowledge Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f210535ab4af7262b4778baf05f3a6a9e32ba3c0e8b1cfb5ce99f1cd60eb4bd5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-knowledge-discovery",
-      "vc:label": "Collaborative Knowledge Discovery"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -144,48 +144,27 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-governance-society",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-governance-society",
+  "@type": "Class",
   "label": "ETSI_Domain_Governance___Society",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe"
+  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:77ce26f17b96eef1c05b615c7090204eb18891fdb6e40118efef1067ae90ebfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure. This domain ensures [[Social Equity]], [[Community Participation]], [[Accessibility Standards]], and [[Cultural Respect]] in technology governance.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

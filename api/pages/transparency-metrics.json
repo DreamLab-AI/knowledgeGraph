@@ -3,19 +3,18 @@
   "title": "Transparency Metrics",
   "slug": "transparency-metrics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparency-metrics",
+  "classIri": "urn:ngm:class:transparency-metrics",
   "domain": "artificial-intelligence",
   "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance",
+      "id": "urn:ngm:class:governance",
       "label": "Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

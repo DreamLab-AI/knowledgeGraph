@@ -3,19 +3,18 @@
   "title": "Food Safety Blockchain",
   "slug": "food-safety-blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:food-safety-blockchain",
+  "classIri": "urn:ngm:class:food-safety-blockchain",
   "domain": "blockchain",
-  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers. Major implementations including IBM Food Trust (500+ participants including Walmart, Carrefour, Dole, Nestl\u00e9) and VeChain's Walmart China deployment demonstrate transformative impact on the \u00a355 billion annual foodborne illness problem affecting 48 million Americans, with 50-70% reductions in trace-back time and 30% sales increases for blockchain-tracked products through enhanced consumer trust.",
+  "definition": "Blockchain applications addressing critical food safety challenges through immutable farm-to-fork audit trails, enabling rapid contamination source identification (2.2 seconds vs 6+ days traditional trace-back) and surgical recalls that reduce food waste whilst protecting consumers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.91,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

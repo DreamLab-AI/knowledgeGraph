@@ -3,32 +3,36 @@
   "title": "Marketplace Integration",
   "slug": "marketplace-integration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:marketplace-integration",
+  "classIri": "urn:ngm:class:marketplace-integration",
   "domain": "spatial-computing",
   "definition": "Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-commerce",
+      "id": "urn:ngm:class:digital-commerce",
       "label": "Digital Commerce"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:metaverse-commerce",
+        "id": "urn:ngm:class:metaverse-commerce",
         "label": "Metaverse Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

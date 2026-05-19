@@ -128,48 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:algorithmic-bias",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-bias",
+  "@type": "Class",
   "label": "Algorithmic Bias",
+  "definition": "Algorithmic Bias refers to systematic and repeatable errors in AI systems that create unfair outcomes favoring or discriminating against particular groups or individuals.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd2b99a03f735872899a2eb101f502a1ad44eece3140edeed4f16c9e8e631871@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Algorithmic Bias refers to systematic and repeatable errors in AI systems that create unfair outcomes favoring or discriminating against particular groups or individuals. This bias manifests through multiple pathways including historical bias (reflecting past societal inequalities in training data), representation bias (unrepresentative or incomplete data samples), measurement bias (flawed proxy variables), aggregation bias (combining heterogeneous groups inappropriately), and feedback loops (where system outputs influence future inputs, amplifying initial biases). Algorithmic bias affects protected groups based on attributes such as race, gender, age, disability, or socioeconomic status, potentially resulting in discriminatory decisions in critical domains like hiring, lending, criminal justice, and healthcare. Detection requires statistical analysis, fairness auditing, and counterfactual testing, while mitigation involves pre-processing data corrections, in-processing fairness constraints, and post-processing prediction adjustments. The severity and legal implications of algorithmic bias are governed by anti-discrimination frameworks including the EU Anti-Discrimination Directive",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

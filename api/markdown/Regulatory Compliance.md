@@ -168,41 +168,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:regulatory-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:regulatory-compliance",
+  "@type": "Class",
   "label": "Regulatory Compliance",
+  "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-governance-principle",
-      "vc:label": "AI Governance Principle"
+      "@id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8965f5c762974b4bba8d4b30e329a8923c5b3817f1006c340bde90274531ee3d"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8965f5c762974b4bba8d4b30e329a8923c5b3817f1006c340bde90274531ee3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors. As AI systems increasingly influence consequential decisions and autonomous operations, governments and regulatory bodies worldwide have established frameworks requiring organizations to demonstrate compliance with requirements addressing transparency, fairness, privacy, safety, and accountability. Regulatory compliance for AI encompasses horizontal regulations applying across sectors (such as GDPR for data protection, EU AI Act for high-risk AI systems), vertical sector-specific requirements (such as medical device regulations for healthcare AI, financial services regulations for algorithmic trading), and emerging AI-specific frameworks establishing risk-based obligations. Compliance requires organizations to implement governance structures, conduct impact assessments, maintain documentation and audit trails, provide transparency to users, establish human oversight mechanisms, and demonstrate ongoing monitoring for regulato",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -3,19 +3,18 @@
   "title": "Robotic System",
   "slug": "robotic-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotic-system",
+  "classIri": "urn:ngm:class:robotic-system",
   "domain": "distributed-collaboration",
-  "definition": "Robotic System is a concept within the telecollaboration domain. Further enrichment pending.",
+  "definition": "Robotic System is a type of Distributed Collaboration in the distributed collaboration domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "2D LiDAR",
   "slug": "2-d-li-dar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:2-d-li-dar",
+  "classIri": "urn:ngm:class:2-d-li-dar",
   "domain": "robotics",
   "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:lidar",
+      "id": "urn:ngm:class:lidar",
       "label": "Lidar"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

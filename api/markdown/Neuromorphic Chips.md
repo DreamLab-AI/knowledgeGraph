@@ -112,48 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:neuromorphic-chips",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:neuromorphic-chips",
+  "@type": "Class",
   "label": "Neuromorphic Chips",
+  "definition": "Neuromorphic Chips is a artificial intelligence concept and a type of Inference Hardware. that enables Ultra-Low-Power AI.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:inference-hardware",
-      "vc:label": "Inference Hardware"
+      "@id": "urn:ngm:class:inference-hardware",
+      "label": "Inference Hardware"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd827af45218f978eeb6c5dd694445314da645bbca54f7282e1d8c3b09de61f9"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ultra-low-power-ai",
+        "label": "Ultra-Low-Power AI"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd827af45218f978eeb6c5dd694445314da645bbca54f7282e1d8c3b09de61f9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Neuromorphic Chips is a artificial intelligence concept and a type of Inference Hardware. that enables Ultra-Low-Power AI.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ultra-low-power-ai",
-      "vc:label": "Ultra-Low-Power AI"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -13,27 +13,14 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:systems-engineering",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:systems-engineering",
+  "@type": "Class",
   "label": "Systems Engineering",
-  "vc:sourceDomain": "infrastructure",
   "definition": "Systems Engineering is a foundational concept in infrastructure that serves as a classification parent for 4 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "domain": "infrastructure",
+  "maturity": "draft",
+  "quality": 0.3
 }
 ```
 

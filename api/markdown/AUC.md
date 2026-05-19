@@ -156,48 +156,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:auc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:auc",
+  "@type": "Class",
   "label": "AUC",
+  "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly c...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:662e6afb5a58c0423505509dd3d6c3b05dd50a82ed594960a0f458da958ef9bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly chosen negative instance, providing threshold-independent assessment of a classifier's discriminative ability with values ranging from 0 to 1, where 0.5 indicates random guessing, 1.0 represents perfect classification, and values above 0.5 indicate better-than-random performance.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
+  }
 }
 ```
 

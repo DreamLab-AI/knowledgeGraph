@@ -3,53 +3,71 @@
   "title": "Gyroscope",
   "slug": "gyroscope",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gyroscope",
+  "classIri": "urn:ngm:class:gyroscope",
   "domain": "robotics",
-  "definition": "**Gyroscope** - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
+  "definition": "Gyroscope - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:inertial-sensor",
+      "id": "urn:ngm:class:inertial-sensor",
       "label": "Inertial Sensor"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.56,
-  "authorityScore": 0.11,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bias-compensation",
+        "id": "urn:ngm:class:bias-compensation",
         "label": "Bias Compensation"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:balance-control",
+        "id": "urn:ngm:class:balance-control",
         "label": "Balance Control"
       },
       {
-        "id": "urn:visionflow:linked:drone-stabilisation",
+        "id": "urn:ngm:class:drone-stabilisation",
         "label": "Drone Stabilisation"
       },
       {
-        "id": "urn:visionflow:linked:orientation-reference",
+        "id": "urn:ngm:class:orientation-reference",
         "label": "Orientation Reference"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:attitude-determination",
+        "label": "Attitude Determination"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

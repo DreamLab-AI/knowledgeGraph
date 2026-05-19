@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:parameter-modulation-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:parameter-modulation-system",
+  "@type": "Class",
   "label": "Parameter Modulation System",
+  "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:audio-system",
-      "vc:label": "Audio System"
+      "@id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3c83cb93313a850532965b59dc0bd0fed5a1aff2e0753e42477d26b80a3c0119"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-sound-design",
+        "label": "Dynamic Sound Design"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3c83cb93313a850532965b59dc0bd0fed5a1aff2e0753e42477d26b80a3c0119@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-sound-design",
-      "vc:label": "Dynamic Sound Design"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

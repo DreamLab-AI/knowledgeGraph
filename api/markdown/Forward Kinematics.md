@@ -164,82 +164,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:forward-kinematics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:forward-kinematics",
+  "@type": "Class",
   "label": "Forward Kinematics",
+  "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
+      "@id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:89e9123bbea5508cd472dd2a5289f3e4c28368141bea5b2050d46c0fe0bdabd8"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:joint-parameters",
+        "label": "Joint Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:motion-visualization",
+        "label": "Motion Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:homogeneous-coordinates",
+        "label": "Homogeneous Coordinates"
+      },
+      {
+        "@id": "urn:ngm:class:transformation-matrix",
+        "label": "Transformation Matrix"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:89e9123bbea5508cd472dd2a5289f3e4c28368141bea5b2050d46c0fe0bdabd8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:joint-parameters",
-      "vc:label": "Joint Parameters"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-model",
-      "vc:label": "Kinematic Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:motion-visualization",
-      "vc:label": "Motion Visualization"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-simulation",
-      "vc:label": "Robot Simulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:denavit-hartenberg-parameters",
-      "vc:label": "Denavit-Hartenberg Parameters"
-    },
-    {
-      "@id": "urn:visionflow:linked:homogeneous-coordinates",
-      "vc:label": "Homogeneous Coordinates"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformation-matrix",
-      "vc:label": "Transformation Matrix"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

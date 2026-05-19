@@ -384,306 +384,243 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:lo-ra-do-ra-etc",
+  "@type": "Class",
   "label": "LoRA DoRA etc",
+  "definition": "Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly [[Large Language Models]] and diffusion models — to downstream tasks by updating only a small fraction (0.01–) of total model parameters rather...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:model-adaptation",
-      "vc:label": "Model Adaptation"
+      "@id": "urn:ngm:class:model-adaptation",
+      "label": "Model Adaptation"
     },
     {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
+      "@id": "urn:ngm:class:neural-networks",
+      "label": "Neural Networks"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a4f29c9929fa794210f3d5ea9cfc713e60ec1a6b971e118b7ee233776278ae60"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:do-ra",
+        "label": "DoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ga-lore",
+        "label": "GaLore"
+      },
+      {
+        "@id": "urn:ngm:class:ia3",
+        "label": "IA3"
+      },
+      {
+        "@id": "urn:ngm:class:long-lo-ra",
+        "label": "LongLoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ly-coris",
+        "label": "LyCORIS"
+      },
+      {
+        "@id": "urn:ngm:class:re-lo-ra",
+        "label": "ReLoRA"
+      },
+      {
+        "@id": "urn:ngm:class:ve-ra",
+        "label": "VeRA"
+      },
+      {
+        "@id": "urn:ngm:class:x-lo-ra",
+        "label": "X-LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:qlo-ra",
+        "label": "QLoRA"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-dataset",
+        "label": "Task-Specific Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:diffusion-model-customisation",
+        "label": "Diffusion Model Customisation"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:llm-fine-tuning",
+        "label": "LLM Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:memory-efficient-training",
+        "label": "Memory-Efficient Training"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-training",
+        "label": "On-Device Training"
+      },
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi Task Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-sharing",
+        "label": "Parameter Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:rank-decomposition",
+        "label": "Rank Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:llama",
+        "label": "Llama"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai-research",
+        "label": "Meta AI Research"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-research",
+        "label": "Microsoft Research"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia",
+        "label": "NVIDIA"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a4f29c9929fa794210f3d5ea9cfc713e60ec1a6b971e118b7ee233776278ae60@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Parameter-Efficient Fine-Tuning (PEFT)** is a family of machine learning techniques enabling adaptation of large pre-trained neural networks — particularly [[Large Language Models]] and diffusion models — to downstream tasks by updating only a small fraction (0.01–10%) of total model parameters rather than performing full fine-tuning across all weights, achieving task-specific performance comparable to or exceeding full fine-tuning whilst reducing GPU memory requirements by 4–100× and training time by 2–20×. The motivation is decisive: adapting a 175B-parameter GPT-3 model through full fine-tuning requires ~2.8 TB of GPU memory at fp32 (parameters + gradients + Adam optimiser states), placing task-specific adaptation entirely beyond academic labs, startups, and individuals; PEFT democratises this by exploiting the **intrinsic dimensionality hypothesis** — empirically demonstrated by Aghajanyan et al. (2020) — that fine-tuning objectives occupy low-dimensional submanifolds (d* = 200 for BERT-base, d* ≈ 1,000 for GPT-2) within the full parameter space.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adapter-tuning",
-      "vc:label": "Adapter Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:do-ra",
-      "vc:label": "DoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ga-lore",
-      "vc:label": "GaLore"
-    },
-    {
-      "@id": "urn:visionflow:linked:ia3",
-      "vc:label": "IA3"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-lo-ra",
-      "vc:label": "LongLoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ly-coris",
-      "vc:label": "LyCORIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-lo-ra",
-      "vc:label": "ReLoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ve-ra",
-      "vc:label": "VeRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-lo-ra",
-      "vc:label": "X-LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prefix-tuning",
-      "vc:label": "Prefix Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-tuning",
-      "vc:label": "Prompt Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:qlo-ra",
-      "vc:label": "QLoRA"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:low-rank-decomposition",
-      "vc:label": "Low-Rank Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:linked:pre-trained-model",
-      "vc:label": "Pre-trained Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-specific-dataset",
-      "vc:label": "Task-Specific Dataset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model-customisation",
-      "vc:label": "Diffusion Model Customisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-adaptation",
-      "vc:label": "Domain Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-fine-tuning",
-      "vc:label": "LLM Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-efficient-training",
-      "vc:label": "Memory-Efficient Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-device-training",
-      "vc:label": "On-Device Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-task-learning",
-      "vc:label": "Multi Task Learning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:matrix-factorisation",
-      "vc:label": "Matrix Factorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:singular-value-decomposition",
-      "vc:label": "Singular Value Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-distillation",
-      "vc:label": "Knowledge Distillation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-peft",
-      "vc:label": "Hugging Face PEFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:llama",
-      "vc:label": "Llama"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gradient-checkpointing",
-      "vc:label": "Gradient Checkpointing"
-    },
-    {
-      "@id": "urn:visionflow:linked:parameter-sharing",
-      "vc:label": "Parameter Sharing"
-    },
-    {
-      "@id": "urn:visionflow:linked:rank-decomposition",
-      "vc:label": "Rank Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:in-context-learning",
-      "vc:label": "In-Context Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feature-extraction",
-      "vc:label": "Feature Extraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:full-fine-tuning",
-      "vc:label": "Full Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:hugging-face",
-      "vc:label": "Hugging Face"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-ai-research",
-      "vc:label": "Meta AI Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-research",
-      "vc:label": "Microsoft Research"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nvidia",
-      "vc:label": "NVIDIA"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

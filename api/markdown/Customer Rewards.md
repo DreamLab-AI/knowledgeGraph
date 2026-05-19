@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:customer-rewards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:customer-rewards",
+  "@type": "Class",
   "label": "Customer Rewards",
+  "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:loyalty-programs",
-      "vc:label": "Loyalty Programs"
+      "@id": "urn:ngm:class:loyalty-programs",
+      "label": "Loyalty Programs"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7cf088535ca93ef161913fe37bf56ed23f8f4c58f1cb939f9e39d3d1a939d92a"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-rewards",
+        "label": "Cross-Platform Rewards"
+      },
+      {
+        "@id": "urn:ngm:class:customer-retention",
+        "label": "Customer Retention"
+      },
+      {
+        "@id": "urn:ngm:class:token-trading",
+        "label": "Token Trading"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7cf088535ca93ef161913fe37bf56ed23f8f4c58f1cb939f9e39d3d1a939d92a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-rewards",
-      "vc:label": "Cross-Platform Rewards"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-retention",
-      "vc:label": "Customer Retention"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-trading",
-      "vc:label": "Token Trading"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

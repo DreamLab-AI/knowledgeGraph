@@ -3,32 +3,36 @@
   "title": "Grammar System",
   "slug": "grammar-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:grammar-system",
+  "classIri": "urn:ngm:class:grammar-system",
   "domain": "spatial-computing",
-  "definition": "Natural language processing components within metaverse platforms that interpret, process, and generate human language for user interactions, enabling AI-powered conversations with virtual avatars, real-time language translation, grammar correction, and adaptive dialogue systems that respond to user proficiency levels.",
+  "definition": "Natural language processing components within metaverse platforms that interpret, process, and generate human language for user interactions, enabling AI-powered conversations with virtual avatars, real-time language translation, grammar correction, and adaptive dialogue systems that respond to u...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:multilingual-metaverse-experience",
+        "id": "urn:ngm:class:multilingual-metaverse-experience",
         "label": "Multilingual Metaverse Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

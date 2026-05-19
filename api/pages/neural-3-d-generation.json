@@ -3,103 +3,107 @@
   "title": "Neural 3D Generation",
   "slug": "neural-3-d-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:neural-3-d-generation",
+  "classIri": "urn:ngm:class:neural-3-d-generation",
   "domain": "artificial-intelligence",
   "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.9,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-representation",
+        "id": "urn:ngm:class:3-d-representation",
         "label": "3D Representation"
       },
       {
-        "id": "urn:visionflow:linked:training-pipeline",
+        "id": "urn:ngm:class:training-pipeline",
         "label": "Training Pipeline"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-model",
+        "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-network",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-asset-dataset",
+        "id": "urn:ngm:class:3-d-asset-dataset",
         "label": "3D Asset Dataset"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:owl:class:camera-parameters",
+        "id": "urn:ngm:class:camera-parameters",
         "label": "Camera Parameters"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-3-d-modeling",
+        "id": "urn:ngm:class:automated-3-d-modeling",
         "label": "Automated 3D Modeling"
       },
       {
-        "id": "urn:visionflow:linked:rapid-prototyping",
+        "id": "urn:ngm:class:rapid-prototyping",
         "label": "Rapid Prototyping"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin-generation",
+        "id": "urn:ngm:class:digital-twin-generation",
         "label": "Digital Twin Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-environment-creation",
+        "id": "urn:ngm:class:virtual-environment-creation",
         "label": "Virtual Environment Creation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:diffusion-model",
+        "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:visionflow:linked:gan",
+        "id": "urn:ngm:class:gan",
         "label": "GAN"
       },
       {
-        "id": "urn:visionflow:linked:vae",
+        "id": "urn:ngm:class:vae",
         "label": "VAE"
       },
       {
-        "id": "urn:visionflow:owl:class:gaussian-splatting",
+        "id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-radiance-field",
+        "id": "urn:ngm:class:neural-radiance-field",
         "label": "Neural Radiance Field"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

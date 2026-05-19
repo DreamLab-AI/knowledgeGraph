@@ -3,53 +3,57 @@
   "title": "Ar Overlay",
   "slug": "ar-overlay",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-overlay",
+  "classIri": "urn:ngm:class:ar-overlay",
   "domain": "spatial-computing",
   "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-display-layer",
+      "id": "urn:ngm:class:digital-display-layer",
       "label": "Digital Display Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:environmental-understanding",
+        "id": "urn:ngm:class:environmental-understanding",
         "label": "Environmental Understanding"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-anchoring",
+        "id": "urn:ngm:class:spatial-anchoring",
         "label": "Spatial Anchoring"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:information-augmentation",
+        "id": "urn:ngm:class:information-augmentation",
         "label": "Information Augmentation"
       },
       {
-        "id": "urn:visionflow:linked:spatial-annotation",
+        "id": "urn:ngm:class:spatial-annotation",
         "label": "Spatial Annotation"
       },
       {
-        "id": "urn:visionflow:linked:virtual-object-placement",
+        "id": "urn:ngm:class:virtual-object-placement",
         "label": "Virtual Object Placement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

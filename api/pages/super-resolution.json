@@ -3,19 +3,18 @@
   "title": "Super Resolution",
   "slug": "super-resolution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:super-resolution",
+  "classIri": "urn:ngm:class:super-resolution",
   "domain": "spatial-computing",
-  "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models. Single image super-resolution (SISR) networks (SRCNN, ESRGAN, Real-ESRGAN) reconstruct plausible high-resolution images from degraded inputs, enabling applications in medical imaging enhancement, satellite imagery analysis, and consumer photo enhancement.",
+  "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:image-generation",
+      "id": "urn:ngm:class:image-generation",
       "label": "Image Generation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

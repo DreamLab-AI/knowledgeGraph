@@ -160,70 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-framework",
+  "@type": "Class",
   "label": "Digital Twin Framework",
+  "definition": "The architectural blueprint and standards-based modology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse pla...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:enterprise-architecture",
-      "vc:label": "Enterprise Architecture"
+      "@id": "urn:ngm:class:enterprise-architecture",
+      "label": "Enterprise Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd0ddb61343e3c0ca7253c2f9e320cd9705e37d939f02478f852b439e1cfc5f7"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-models",
+        "label": "Data Models"
+      },
+      {
+        "@id": "urn:ngm:class:integration-standards",
+        "label": "Integration Standards"
+      },
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalable-deployment",
+        "label": "Scalable Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd0ddb61343e3c0ca7253c2f9e320cd9705e37d939f02478f852b439e1cfc5f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The architectural blueprint and standards-based methodology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse platforms. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-models",
-      "vc:label": "Data Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:integration-standards",
-      "vc:label": "Integration Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reference-architecture",
-      "vc:label": "Reference Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scalable-deployment",
-      "vc:label": "Scalable Deployment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-compliance",
-      "vc:label": "Standards Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-interoperability",
-      "vc:label": "System Interoperability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

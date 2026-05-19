@@ -3,19 +3,18 @@
   "title": "Solana",
   "slug": "solana",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:solana",
+  "classIri": "urn:ngm:class:solana",
   "domain": "blockchain",
-  "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding 65,000 TPS. Uses single-layer architecture where all transactions process on the base layer, prioritizing speed, throughput, and low latency.",
+  "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding TPS.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

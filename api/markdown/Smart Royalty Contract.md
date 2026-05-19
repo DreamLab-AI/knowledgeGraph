@@ -200,124 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:smart-royalty-contract",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:smart-royalty-contract",
+  "@type": "Class",
   "label": "Smart Royalty Contract",
+  "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:royalty-mechanism",
-      "vc:label": "Royalty Mechanism"
+      "@id": "urn:ngm:class:royalty-mechanism",
+      "label": "Royalty Mechanism"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1388aff77d19dda377b21fe101df243f94bd5915c50274c1d8b0a48b924e91bb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:enforcement-module",
+        "label": "Enforcement Module"
+      },
+      {
+        "@id": "urn:ngm:class:event-emitter",
+        "label": "Event Emitter"
+      },
+      {
+        "@id": "urn:ngm:class:payment-splitter",
+        "label": "Payment Splitter"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-logic",
+        "label": "Royalty Logic"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-registry",
+        "label": "Royalty Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:oracle-service",
+        "label": "Oracle Service"
+      },
+      {
+        "@id": "urn:ngm:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-payment-enforcement",
+        "label": "Automated Payment Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:multi-recipient-distribution",
+        "label": "Multi-Recipient Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:perpetual-creator-royalties",
+        "label": "Perpetual Creator Royalties"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-verification",
+        "label": "Royalty Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:nft-standard-implementation",
+        "label": "NFT Standard Implementation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1388aff77d19dda377b21fe101df243f94bd5915c50274c1d8b0a48b924e91bb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:nft-standard-implementation",
-      "vc:label": "NFT Standard Implementation"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:enforcement-module",
-      "vc:label": "Enforcement Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-emitter",
-      "vc:label": "Event Emitter"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-splitter",
-      "vc:label": "Payment Splitter"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-logic",
-      "vc:label": "Royalty Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-registry",
-      "vc:label": "Royalty Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:oracle-service",
-      "vc:label": "Oracle Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:payment-token",
-      "vc:label": "Payment Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-payment-enforcement",
-      "vc:label": "Automated Payment Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-recipient-distribution",
-      "vc:label": "Multi-Recipient Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:perpetual-creator-royalties",
-      "vc:label": "Perpetual Creator Royalties"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-verification",
-      "vc:label": "Royalty Verification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:metadata-storage",
-      "vc:label": "Metadata Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:wallet-infrastructure",
-      "vc:label": "Wallet Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gas-fee-market",
-      "vc:label": "Gas Fee Market"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5"
+  }
 }
 ```
 

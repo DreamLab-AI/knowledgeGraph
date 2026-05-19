@@ -3,19 +3,18 @@
   "title": "Economic Parameters",
   "slug": "economic-parameters",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:economic-parameters",
+  "classIri": "urn:ngm:class:economic-parameters",
   "domain": "spatial-computing",
   "definition": "The configurable variables and constraints that govern virtual economy behaviour in metaverse environments, including token supply mechanisms, transaction fees, inflation rates, and reward structures that shape economic interactions between users and digital assets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

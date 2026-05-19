@@ -3,19 +3,18 @@
   "title": "Democratic Values",
   "slug": "democratic-values",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:democratic-values",
+  "classIri": "urn:ngm:class:democratic-values",
   "domain": "infrastructure",
-  "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine. bridges-to:: [[Telecollaboration]]",
+  "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:policy-enforcement",
+      "id": "urn:ngm:class:policy-enforcement",
       "label": "Policy Enforcement"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

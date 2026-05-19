@@ -216,134 +216,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cultural-provenance-record",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cultural-provenance-record",
+  "@type": "Class",
   "label": "Cultural Provenance Record",
+  "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authentication-record",
+        "label": "Authentication Record"
+      },
+      {
+        "@id": "urn:ngm:class:condition-report",
+        "label": "Condition Report"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-context",
+        "label": "Cultural Context"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-chain",
+        "label": "Ownership Chain"
+      },
+      {
+        "@id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:conservation-database",
+        "label": "Conservation Database"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authenticity-certification",
+        "label": "Authenticity Certification"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-tracking",
+        "label": "Cultural Heritage Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage-management-system",
+        "label": "Cultural Heritage Management System"
+      },
+      {
+        "@id": "urn:ngm:class:museum-information-system",
+        "label": "Museum Information System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5319a3142ae60cff3315a2e33cfd0ae5612e1cb7d7ec066c5473757cfe236209@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-management-system",
-      "vc:label": "Cultural Heritage Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:museum-information-system",
-      "vc:label": "Museum Information System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authentication-record",
-      "vc:label": "Authentication Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:condition-report",
-      "vc:label": "Condition Report"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-context",
-      "vc:label": "Cultural Context"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-chain",
-      "vc:label": "Ownership Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artifact-metadata",
-      "vc:label": "Artifact Metadata"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-ledger",
-      "vc:label": "Blockchain Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:conservation-database",
-      "vc:label": "Conservation Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-schema",
-      "vc:label": "Metadata Schema"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:authenticity-certification",
-      "vc:label": "Authenticity Certification"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-tracking",
-      "vc:label": "Cultural Heritage Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-transfer",
-      "vc:label": "Ownership Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-verification",
-      "vc:label": "Provenance Verification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:heritage-registry",
-      "vc:label": "Heritage Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:museum-collection-system",
-      "vc:label": "Museum Collection System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-archive",
-      "vc:label": "Digital Archive"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Causal Attention",
   "slug": "causal-attention",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:causal-attention",
+  "classIri": "urn:ngm:class:causal-attention",
   "domain": "artificial-intelligence",
   "definition": "An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Regulatory Framework",
   "slug": "regulatory-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:regulatory-framework",
+  "classIri": "urn:ngm:class:regulatory-framework",
   "domain": "infrastructure",
-  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.",
+  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:legal-framework",
+      "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:market-integrity",
+        "id": "urn:ngm:class:market-integrity",
         "label": "Market Integrity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

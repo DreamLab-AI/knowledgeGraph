@@ -3,32 +3,36 @@
   "title": "Fuzzy Logic",
   "slug": "fuzzy-logic",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fuzzy-logic",
+  "classIri": "urn:ngm:class:fuzzy-logic",
   "domain": "artificial-intelligence",
   "definition": "Fuzzy Logic is a artificial intelligence concept and a type of Artificial Intelligence. that enables Control Systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:control-systems",
+        "id": "urn:ngm:class:control-systems",
         "label": "Control Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

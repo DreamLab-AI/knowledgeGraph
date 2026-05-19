@@ -3,19 +3,18 @@
   "title": "Coding support",
   "slug": "coding-support",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:coding-support",
+  "classIri": "urn:ngm:class:coding-support",
   "domain": "infrastructure",
   "definition": "Coding support is a technology infrastructure concept and a type of Software Engineering.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

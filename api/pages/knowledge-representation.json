@@ -3,19 +3,13 @@
   "title": "Knowledge Representation",
   "slug": "knowledge-representation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowledge-representation",
+  "classIri": "urn:ngm:class:knowledge-representation",
   "domain": "artificial-intelligence",
-  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making. Approaches include symbolic systems (first-order logic, description logics, semantic networks), graph-based representations (knowledge graphs, ontologies), probabilistic models (Bayesian networks, Markov logic networks), and distributed representations (embeddings, neural symbolic integration). Modern knowledge representation combines symbolic and subsymbolic methods, enabling systems to perform logical reasoning while learning from data.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

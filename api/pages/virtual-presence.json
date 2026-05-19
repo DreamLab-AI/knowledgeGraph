@@ -3,19 +3,18 @@
   "title": "Virtual Presence",
   "slug": "virtual-presence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-presence",
+  "classIri": "urn:ngm:class:virtual-presence",
   "domain": "spatial-computing",
   "definition": "The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:telepresence",
+      "id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

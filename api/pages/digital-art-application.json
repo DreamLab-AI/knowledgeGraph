@@ -3,53 +3,57 @@
   "title": "Digital Art Application",
   "slug": "digital-art-application",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-art-application",
+  "classIri": "urn:ngm:class:digital-art-application",
   "domain": "spatial-computing",
-  "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments. bridges-to:: [[Computer Vision]]",
+  "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:creative-software",
+      "id": "urn:ngm:class:creative-software",
       "label": "Creative Software"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:graphics-processing",
+        "id": "urn:ngm:class:graphics-processing",
         "label": "Graphics Processing"
       },
       {
-        "id": "urn:visionflow:linked:storage-systems",
+        "id": "urn:ngm:class:storage-systems",
         "label": "Storage Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:user-interface",
+        "id": "urn:ngm:class:user-interface",
         "label": "User Interface"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:digital-art-creation",
+        "id": "urn:ngm:class:digital-art-creation",
         "label": "Digital Art Creation"
       },
       {
-        "id": "urn:visionflow:linked:virtual-exhibitions",
+        "id": "urn:ngm:class:virtual-exhibitions",
         "label": "Virtual Exhibitions"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-minting",
+        "id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

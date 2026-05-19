@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collective-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collective-learning",
+  "@type": "Class",
   "label": "Collective Learning",
+  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work toger to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR ...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:educational-methodology",
-      "vc:label": "Educational Methodology"
+      "@id": "urn:ngm:class:educational-methodology",
+      "label": "Educational Methodology"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:communication-tools",
+        "label": "Communication Tools"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:global-collaboration",
+        "label": "Global Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-co-construction",
+        "label": "Knowledge Co-Construction"
+      },
+      {
+        "@id": "urn:ngm:class:peer-learning",
+        "label": "Peer Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:564db393d2251c4f7d0c9c2fde4f4f94ee40a127723956ca1bfbd64403c5fc65@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:communication-tools",
-      "vc:label": "Communication Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-management-system",
-      "vc:label": "Learning Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-environment",
-      "vc:label": "Virtual Environment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:global-collaboration",
-      "vc:label": "Global Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-co-construction",
-      "vc:label": "Knowledge Co-Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-learning",
-      "vc:label": "Peer Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

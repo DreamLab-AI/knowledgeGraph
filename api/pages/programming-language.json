@@ -3,19 +3,13 @@
   "title": "Programming Language",
   "slug": "programming-language",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:programming-language",
+  "classIri": "urn:ngm:class:programming-language",
   "domain": "artificial-intelligence",
-  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications. Popular languages include Python (dominant in ML/DL ecosystems), Julia (high-performance numerical computing), R (statistical analysis), and domain-specific languages like TensorFlow's graph definition language. Key features include support for tensor operations, automatic differentiation, GPU acceleration, functional programming paradigms, and integration with ML frameworks. Modern AI languages emphasize readability, expressiveness, performance, and ecosystem richness.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

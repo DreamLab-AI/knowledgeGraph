@@ -172,86 +172,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:current-sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:current-sensor",
+  "@type": "Class",
   "label": "Current Sensor",
+  "definition": "Current Sensor - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:efficiency-monitoring",
+        "label": "Efficiency Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:overload-protection",
+        "label": "Overload Protection"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:motor-control-system",
+        "label": "Motor Control System"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cd958beb71248b3f29621dc6ca7f4b76c54febc40e9f9d04a8ed66f299492dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Current Sensor** - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling [[Motor Torque Estimation]], [[Fault Detection]], and [[Energy Monitoring]] in autonomous robots.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.09",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:motor-control-system",
-      "vc:label": "Motor Control System"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:analogue-to-digital-conversion",
-      "vc:label": "Analogue-to-Digital Conversion"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-conditioning",
-      "vc:label": "Signal Conditioning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:efficiency-monitoring",
-      "vc:label": "Efficiency Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:overload-protection",
-      "vc:label": "Overload Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

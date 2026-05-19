@@ -3,19 +3,18 @@
   "title": "3DAnimation",
   "slug": "3-danimation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-danimation",
+  "classIri": "urn:ngm:class:3-danimation",
   "domain": "spatial-computing",
   "definition": "3DAnimation is a spatial computing concept and a type of Animation Technique.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:animation-technique",
+      "id": "urn:ngm:class:animation-technique",
       "label": "Animation Technique"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

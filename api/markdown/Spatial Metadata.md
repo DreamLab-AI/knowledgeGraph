@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-metadata",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-metadata",
+  "@type": "Class",
   "label": "Spatial Metadata",
+  "definition": "Descriptive information about geospatial and 3D content documenting location, coordinate system, projection, quality, lineage, and distribution attributes, following standards such as ISO 19115 and FGDC CSDGM to enable discovery, eand interoperability of spatial data resources.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:geospatial-information",
-      "vc:label": "Geospatial Information"
+      "@id": "urn:ngm:class:geospatial-information",
+      "label": "Geospatial Information"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cd38f36950f19705f6a59c4763393b41ae9d6e60c812369de574814252d05e45"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-data-discovery",
+        "label": "Spatial Data Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cd38f36950f19705f6a59c4763393b41ae9d6e60c812369de574814252d05e45@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Descriptive information about geospatial and 3D content documenting location, coordinate system, projection, quality, lineage, and distribution attributes, following standards such as ISO 19115 and FGDC CSDGM to enable discovery, evaluation, and interoperability of spatial data resources.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:spatial-data-discovery",
-      "vc:label": "Spatial Data Discovery"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

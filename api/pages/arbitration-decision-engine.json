@@ -3,53 +3,57 @@
   "title": "Arbitration Decision Engine",
   "slug": "arbitration-decision-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:arbitration-decision-engine",
+  "classIri": "urn:ngm:class:arbitration-decision-engine",
   "domain": "spatial-computing",
-  "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.",
+  "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbit...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:automated-dispute-resolution",
+      "id": "urn:ngm:class:automated-dispute-resolution",
       "label": "Automated Dispute Resolution"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-integration",
+        "id": "urn:ngm:class:blockchain-integration",
         "label": "Blockchain Integration"
       },
       {
-        "id": "urn:visionflow:linked:evidence-authentication",
+        "id": "urn:ngm:class:evidence-authentication",
         "label": "Evidence Authentication"
       },
       {
-        "id": "urn:visionflow:linked:rule-encoding",
+        "id": "urn:ngm:class:rule-encoding",
         "label": "Rule Encoding"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-arbitration",
+        "id": "urn:ngm:class:decentralized-arbitration",
         "label": "Decentralized Arbitration"
       },
       {
-        "id": "urn:visionflow:linked:self-enforcing-awards",
+        "id": "urn:ngm:class:self-enforcing-awards",
         "label": "Self-Enforcing Awards"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-resolution",
+        "id": "urn:ngm:class:smart-contract-resolution",
         "label": "Smart Contract Resolution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

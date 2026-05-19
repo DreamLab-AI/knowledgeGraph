@@ -3,78 +3,82 @@
   "title": "Decentralized Swarm Control",
   "slug": "decentralized-swarm-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decentralized-swarm-control",
+  "classIri": "urn:ngm:class:decentralized-swarm-control",
   "domain": "robotics",
-  "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents. This architecture inherently tolerates individual robot failures, scales to arbitrarily large swarms, and enables emergence of collective behaviours from simple local rules, contrasting with [[Centralized Swarm Control]].",
+  "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:swarm-robotics",
+      "id": "urn:ngm:class:swarm-robotics",
       "label": "Swarm Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:agent-autonomy",
+        "id": "urn:ngm:class:agent-autonomy",
         "label": "Agent Autonomy"
       },
       {
-        "id": "urn:visionflow:linked:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behaviour",
         "label": "Emergent Behaviour"
       },
       {
-        "id": "urn:visionflow:linked:local-decision-logic",
+        "id": "urn:ngm:class:local-decision-logic",
         "label": "Local Decision Logic"
       },
       {
-        "id": "urn:visionflow:linked:neighbourhood-communication",
+        "id": "urn:ngm:class:neighbourhood-communication",
         "label": "Neighbourhood Communication"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:asynchronous-coordination",
+        "id": "urn:ngm:class:asynchronous-coordination",
         "label": "Asynchronous Coordination"
       },
       {
-        "id": "urn:visionflow:linked:distributed-algorithm",
+        "id": "urn:ngm:class:distributed-algorithm",
         "label": "Distributed Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:inter-agent-communication",
+        "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
       },
       {
-        "id": "urn:visionflow:linked:local-sensing",
+        "id": "urn:ngm:class:local-sensing",
         "label": "Local Sensing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-swarm-behaviour",
+        "id": "urn:ngm:class:adaptive-swarm-behaviour",
         "label": "Adaptive Swarm Behaviour"
       },
       {
-        "id": "urn:visionflow:linked:emergent-task-performance",
+        "id": "urn:ngm:class:emergent-task-performance",
         "label": "Emergent Task Performance"
       },
       {
-        "id": "urn:visionflow:linked:scalability",
+        "id": "urn:ngm:class:scalability",
         "label": "Scalability"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

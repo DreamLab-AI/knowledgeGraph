@@ -176,100 +176,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nft-wrapping",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nft-wrapping",
+  "@type": "Class",
   "label": "NFT Wrapping",
+  "definition": "Process of encapsulating digital assets within a new token structure to modify usage or ownership rules.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:asset-tokenization",
-      "vc:label": "Asset Tokenization"
+      "@id": "urn:ngm:class:asset-tokenization",
+      "label": "Asset Tokenization"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7f7391ea2c7c9df7f77fe13246a93145c26d15ca3c010d81bdd1e5702ec01c80"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata-mapping",
+        "label": "Metadata Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross-Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:enhanced-token-functionality",
+        "label": "Enhanced Token Functionality"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7f7391ea2c7c9df7f77fe13246a93145c26d15ca3c010d81bdd1e5702ec01c80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Process of encapsulating digital assets within a new token structure to modify usage or ownership rules.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-tokenization",
-      "vc:label": "Asset Tokenization"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:metadata-mapping",
-      "vc:label": "Metadata Mapping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standard",
-      "vc:label": "NFT Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-interoperability",
-      "vc:label": "Asset Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-asset-transfer",
-      "vc:label": "Cross-Chain Asset Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:enhanced-token-functionality",
-      "vc:label": "Enhanced Token Functionality"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:token-registry",
-      "vc:label": "Token Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

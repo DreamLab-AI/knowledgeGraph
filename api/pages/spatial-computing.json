@@ -3,19 +3,13 @@
   "title": "Spatial Computing",
   "slug": "spatial-computing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-computing",
+  "classIri": "urn:ngm:class:spatial-computing",
   "domain": "spatial-computing",
   "definition": "Spatial Computing is a spatial computing concept and a type of owl:Thing.",
-  "subClassOf": [
-    {
-      "id": "owl:Thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

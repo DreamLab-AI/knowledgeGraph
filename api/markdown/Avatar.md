@@ -156,80 +156,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar",
+  "@type": "Class",
   "label": "Avatar",
+  "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
+      "@id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:53ad95c3c89aaacea76e1b303729877048febad65bd8f70a919c3dafec8e6389"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      },
+      {
+        "@id": "urn:ngm:class:visual-mesh",
+        "label": "Visual Mesh"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-embodiment",
+        "label": "User Embodiment"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:53ad95c3c89aaacea76e1b303729877048febad65bd8f70a919c3dafec8e6389@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:animation-rig",
-      "vc:label": "Animation Rig"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-mesh",
-      "vc:label": "Visual Mesh"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-embodiment",
-      "vc:label": "User Embodiment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-presence",
-      "vc:label": "Social Presence"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -296,156 +296,115 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:generative-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:generative-ai",
+  "@type": "Class",
   "label": "Generative AI",
+  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gan",
+        "label": "GAN"
+      },
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-art",
+        "label": "AI Art"
+      },
+      {
+        "@id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ca2eb7f3f43d781563d0b34a04514b993032a0a6f2dbb900b8df3f64614c7f07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets. These systems use [[Deep Learning]] architectures like [[Transformer]]s, [[Diffusion Models]], [[Generative Adversarial Networks]], and [[VAEs]] to learn data distributions and generate novel, coherent outputs. Generative AI represents a paradigm shift from discriminative models, enabling creative applications in [[Content Creation]], [[Design]], [[Art]], [[Music Generation]], and [[Code Synthesis]].",
-  "vc:qualityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.93",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:gan",
-      "vc:label": "GAN"
-    },
-    {
-      "@id": "urn:visionflow:linked:vae",
-      "vc:label": "VAE"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-scale-datasets",
-      "vc:label": "Large-Scale Datasets"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-network-training",
-      "vc:label": "Neural Network Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-architecture",
-      "vc:label": "Model Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-art",
-      "vc:label": "AI Art"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-design",
-      "vc:label": "Automated Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-creation",
-      "vc:label": "Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-ai",
-      "vc:label": "Creative AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:audio-generation",
-      "vc:label": "Audio Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-generation",
-      "vc:label": "Text Generation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-storage",
-      "vc:label": "Decentralized Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.9,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

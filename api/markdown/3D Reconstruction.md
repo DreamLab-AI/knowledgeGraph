@@ -160,84 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-reconstruction",
+  "@type": "Class",
   "label": "3D Reconstruction",
+  "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM).",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45c99e53e3a503b2c170936a5b97d46f4c73c5007d0b6eb74d4a0e7a7513bd86"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-mapping",
+        "label": "Environmental Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-digitisation",
+        "label": "Real-world Digitisation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45c99e53e3a503b2c170936a5b97d46f4c73c5007d0b6eb74d4a0e7a7513bd86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM). This technology enables digital capture of real-world objects and environments for [[Digital Twin]] creation and immersive environment mapping.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "Camera Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-matching",
-      "vc:label": "Feature Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-processing",
-      "vc:label": "Image Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:environmental-mapping",
-      "vc:label": "Environmental Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-generation",
-      "vc:label": "Point Cloud Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-digitisation",
-      "vc:label": "Real-world Digitisation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

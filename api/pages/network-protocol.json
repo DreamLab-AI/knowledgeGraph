@@ -3,40 +3,44 @@
   "title": "Network Protocol",
   "slug": "network-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-protocol",
+  "classIri": "urn:ngm:class:network-protocol",
   "domain": "distributed-collaboration",
-  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
-      "label": "distributed-collaboration"
-    }
-  ],
+  "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-transmission",
+        "id": "urn:ngm:class:data-transmission",
         "label": "Data Transmission"
       },
       {
-        "id": "urn:visionflow:linked:network-communication",
+        "id": "urn:ngm:class:network-communication",
         "label": "Network Communication"
       },
       {
-        "id": "urn:visionflow:owl:class:interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "distributed-collaboration"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

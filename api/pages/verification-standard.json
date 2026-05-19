@@ -3,19 +3,18 @@
   "title": "Verification Standard",
   "slug": "verification-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:verification-standard",
+  "classIri": "urn:ngm:class:verification-standard",
   "domain": "spatial-computing",
   "definition": "Specifications and protocols that define how digital identities, credentials, and claims are validated and authenticated in metaverse environments, ensuring trust and security through cryptographic proofs and standardized verification processes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

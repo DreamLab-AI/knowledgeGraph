@@ -3,28 +3,6 @@
   "title": "Run Another Page Function Test",
   "slug": "run-another-page-function-test",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:run-another-page-function-test",
-  "domain": "infrastructure",
-  "definition": "Run Another Page Function Test is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

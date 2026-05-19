@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:standard-format-support",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:standard-format-support",
+  "@type": "Class",
   "label": "Standard Format Support",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-interoperability",
-      "vc:label": "Data Interoperability"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a50de7139514401b51f19fe90eb79968c2de474f62edba42191534352b2f1d91"
+  "definition": "Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse sy...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-asset-exchange",
+        "label": "Cross Platform Asset Exchange"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a50de7139514401b51f19fe90eb79968c2de474f62edba42191534352b2f1d91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description (USD), and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-asset-exchange",
-      "vc:label": "Cross Platform Asset Exchange"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

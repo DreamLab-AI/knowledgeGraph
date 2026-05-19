@@ -3,203 +3,343 @@
   "title": "NVIDIA Omniverse",
   "slug": "nvidia-omniverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nvidia-omniverse",
+  "classIri": "urn:ngm:class:nvidia-omniverse",
   "domain": "spatial-computing",
-  "definition": "NVIDIA Omniverse is a [[USD]]-centric, physically accurate [[simulation]] and [[digital twin]] platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and deploy physically accurate 3D environments, [[robotic AI]] systems, and industrial digital twins at production scale. Announced in beta 2018, commercialised through Omniverse Enterprise 2021, [[Omniverse Cloud APIs]] on [[Microsoft Azure]] (GTC March 2024), and modular Omniverse Libraries (2025), the platform is architecturally unified by [[OpenUSD]] (Universal Scene Description) as its universal 3D data interchange layer \u2014 allowing scene data from over 50 different [[CAD]], PLM, [[BIM]], and [[DCC]] applications to compose into a single coherent scene graph without proprietary conversion. Core technical components: the Omniverse [[Kit SDK]] (modular C++/Python application framework where every capability is a hot-reloadable extension, built on the Carbonite plugin ABI); the [[RTX Renderer]] (multi-mode Hydra render delegate \u2014 RTX-Interactive for real-time viewport, RTX-PathTracer for ph",
+  "definition": "NVIDIA Omniverse is a [[]]-centric, physically accurate [[simulation]] and [[digital twin]] platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:3-d-platform",
+      "id": "urn:ngm:class:3-d-platform",
       "label": "3D Platform"
     },
     {
-      "id": "urn:visionflow:linked:physical-ai",
+      "id": "urn:ngm:class:physical-ai",
       "label": "Physical AI"
-    },
-    {
-      "id": "urn:visionflow:linked:simulation-platform",
-      "label": "Simulation Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:gr00-t-foundation-model",
+        "id": "urn:ngm:class:gr00-t-foundation-model",
         "label": "GR00T Foundation Model"
       },
       {
-        "id": "urn:visionflow:linked:hydra",
+        "id": "urn:ngm:class:hydra",
         "label": "Hydra"
       },
       {
-        "id": "urn:visionflow:linked:isaac-lab",
+        "id": "urn:ngm:class:isaac-lab",
         "label": "Isaac Lab"
       },
       {
-        "id": "urn:visionflow:linked:isaac-sim",
+        "id": "urn:ngm:class:isaac-sim",
         "label": "Isaac Sim"
       },
       {
-        "id": "urn:visionflow:linked:kit-sdk",
+        "id": "urn:ngm:class:kit-sdk",
         "label": "Kit SDK"
       },
       {
-        "id": "urn:visionflow:linked:nim-microservices",
+        "id": "urn:ngm:class:nim-microservices",
         "label": "NIM Microservices"
       },
       {
-        "id": "urn:visionflow:linked:nucleus-server",
+        "id": "urn:ngm:class:nucleus-server",
         "label": "Nucleus Server"
       },
       {
-        "id": "urn:visionflow:linked:omniverse-cloud-apis",
+        "id": "urn:ngm:class:omniverse-cloud-apis",
         "label": "Omniverse Cloud APIs"
       },
       {
-        "id": "urn:visionflow:linked:omniverse-connector",
+        "id": "urn:ngm:class:omniverse-connector",
         "label": "Omniverse Connector"
       },
       {
-        "id": "urn:visionflow:linked:open-usd",
+        "id": "urn:ngm:class:open-usd",
         "label": "OpenUSD"
       },
       {
-        "id": "urn:visionflow:linked:ovx-server",
+        "id": "urn:ngm:class:ovx-server",
         "label": "OVX Server"
       },
       {
-        "id": "urn:visionflow:linked:phys-x-5",
+        "id": "urn:ngm:class:phys-x-5",
         "label": "PhysX 5"
       },
       {
-        "id": "urn:visionflow:linked:rtx-renderer",
+        "id": "urn:ngm:class:rtx-renderer",
         "label": "RTX Renderer"
       },
       {
-        "id": "urn:visionflow:linked:usd-composer",
+        "id": "urn:ngm:class:usd-composer",
         "label": "USD Composer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cuda",
+        "id": "urn:ngm:class:cuda",
         "label": "CUDA"
       },
       {
-        "id": "urn:visionflow:linked:nvidia-drivers",
+        "id": "urn:ngm:class:nvidia-drivers",
         "label": "NVIDIA Drivers"
       },
       {
-        "id": "urn:visionflow:linked:nvidia-rtx-gpu",
+        "id": "urn:ngm:class:nvidia-rtx-gpu",
         "label": "NVIDIA RTX GPU"
       },
       {
-        "id": "urn:visionflow:linked:open-usd",
+        "id": "urn:ngm:class:open-usd",
         "label": "OpenUSD"
       },
       {
-        "id": "urn:visionflow:linked:phys-x-sdk",
+        "id": "urn:ngm:class:phys-x-sdk",
         "label": "PhysX SDK"
       },
       {
-        "id": "urn:visionflow:linked:vulkan",
+        "id": "urn:ngm:class:vulkan",
         "label": "Vulkan"
       },
       {
-        "id": "urn:visionflow:owl:class:universal-scene-description",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:embodied-ai",
+        "id": "urn:ngm:class:embodied-ai",
         "label": "Embodied AI"
       },
       {
-        "id": "urn:visionflow:linked:factory-simulation",
+        "id": "urn:ngm:class:factory-simulation",
         "label": "Factory Simulation"
       },
       {
-        "id": "urn:visionflow:linked:physical-ai",
+        "id": "urn:ngm:class:physical-ai",
         "label": "Physical AI"
       },
       {
-        "id": "urn:visionflow:linked:physically-accurate-rendering",
+        "id": "urn:ngm:class:physically-accurate-rendering",
         "label": "Physically Accurate Rendering"
       },
       {
-        "id": "urn:visionflow:linked:real-time-collaboration",
+        "id": "urn:ngm:class:real-time-collaboration",
         "label": "Real-Time Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:robot-policy-training",
+        "id": "urn:ngm:class:robot-policy-training",
         "label": "Robot Policy Training"
       },
       {
-        "id": "urn:visionflow:linked:sim-to-real-transfer",
+        "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:visionflow:owl:class:industrial-metaverse",
+        "id": "urn:ngm:class:industrial-metaverse",
         "label": "Industrial Metaverse"
       },
       {
-        "id": "urn:visionflow:owl:class:synthetic-data-generation",
+        "id": "urn:ngm:class:synthetic-data-generation",
         "label": "Synthetic Data Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:flare-alignment",
+        "id": "urn:ngm:class:flare-alignment",
         "label": "FLARE Alignment"
       },
       {
-        "id": "urn:visionflow:linked:gr00-t-n1",
+        "id": "urn:ngm:class:gr00-t-n1",
         "label": "GR00T N1"
       },
       {
-        "id": "urn:visionflow:linked:hydra-render-delegate",
+        "id": "urn:ngm:class:hydra-render-delegate",
         "label": "Hydra Render Delegate"
       },
       {
-        "id": "urn:visionflow:linked:kit-extension-framework",
+        "id": "urn:ngm:class:kit-extension-framework",
         "label": "Kit Extension Framework"
       },
       {
-        "id": "urn:visionflow:linked:open-usd",
+        "id": "urn:ngm:class:open-usd",
         "label": "OpenUSD"
       },
       {
-        "id": "urn:visionflow:linked:phys-x-5",
+        "id": "urn:ngm:class:phys-x-5",
         "label": "PhysX 5"
       },
       {
-        "id": "urn:visionflow:linked:rtx-ray-tracing",
+        "id": "urn:ngm:class:rtx-ray-tracing",
         "label": "RTX Ray Tracing"
       },
       {
-        "id": "urn:visionflow:linked:usd-fabric",
+        "id": "urn:ngm:class:usd-fabric",
         "label": "USD Fabric"
       },
       {
-        "id": "urn:visionflow:linked:usd-schema",
+        "id": "urn:ngm:class:usd-schema",
         "label": "USD Schema"
       },
       {
-        "id": "urn:visionflow:linked:vision-language-action-models",
+        "id": "urn:ngm:class:vision-language-action-models",
         "label": "Vision-Language-Action Models"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:eagle-2-5-vlm",
+        "label": "Eagle 2.5 VLM"
+      },
+      {
+        "id": "urn:ngm:class:jetson-thor",
+        "label": "Jetson Thor"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-a100",
+        "label": "NVIDIA A100"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-blackwell",
+        "label": "NVIDIA Blackwell"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-dlss",
+        "label": "NVIDIA DLSS"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-nim",
+        "label": "NVIDIA NIM"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-ovx-systems",
+        "label": "NVIDIA OVX Systems"
+      },
+      {
+        "id": "urn:ngm:class:opti-x",
+        "label": "OptiX"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aec-digital-twins",
+        "label": "AEC Digital Twins"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-simulation",
+        "label": "Autonomous Vehicle Simulation"
+      },
+      {
+        "id": "urn:ngm:class:bmw-virtual-factory",
+        "label": "BMW Virtual Factory"
+      },
+      {
+        "id": "urn:ngm:class:mercedes-benz-digital-twin",
+        "label": "Mercedes-Benz Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:pepsi-co",
+        "label": "PepsiCo"
+      },
+      {
+        "id": "urn:ngm:class:robotics-training",
+        "label": "Robotics Training"
+      },
+      {
+        "id": "urn:ngm:class:rockwell-automation",
+        "label": "Rockwell Automation"
+      },
+      {
+        "id": "urn:ngm:class:siemens-xcelerator",
+        "label": "Siemens Xcelerator"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alliance-for-open-usd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:material-x-standard",
+        "label": "MaterialX Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-usd-alliance",
+        "label": "OpenUSD Alliance"
+      },
+      {
+        "id": "urn:ngm:class:usd-working-group",
+        "label": "USD Working Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alliance-for-open-usd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "id": "urn:ngm:class:digital-thread",
+        "label": "Digital Thread"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

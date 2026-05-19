@@ -3,37 +3,46 @@
   "title": "Random Number Generation",
   "slug": "random-number-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:random-number-generation",
+  "classIri": "urn:ngm:class:random-number-generation",
   "domain": "blockchain",
-  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from deterministic algorithms seeded with entropy.",
+  "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from d...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:asymmetric-encryption",
+        "id": "urn:ngm:class:asymmetric-encryption",
         "label": "Asymmetric Encryption"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:verifiable-random-function",
+        "id": "urn:ngm:class:verifiable-random-function",
         "label": "Verifiable Random Function"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

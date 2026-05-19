@@ -3,19 +3,18 @@
   "title": "Psychological Phenomenon",
   "slug": "psychological-phenomenon",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:psychological-phenomenon",
+  "classIri": "urn:ngm:class:psychological-phenomenon",
   "domain": "infrastructure",
-  "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars , Character.",
+  "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars Character.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:humans-avatars-character",
+      "id": "urn:ngm:class:humans-avatars-character",
       "label": "Humans, Avatars , Character"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

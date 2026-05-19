@@ -568,380 +568,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-identity-wallet",
+  "@type": "Class",
   "label": "Digital Identity Wallet",
+  "definition": "A Digital Identity Wallet is a software application — typically running on a smartphone, secure element, or cloud-hosted enclave — that stores, manages, and selectively presents cryptographically signed digital credentials (verifiable credentials, mobile driving licences, electronic identity atte...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-key-container",
-      "vc:label": "Cryptographic Key Container"
+      "@id": "urn:ngm:class:cryptographic-key-container",
+      "label": "Cryptographic Key Container"
     },
     {
-      "@id": "urn:visionflow:linked:mobile-application",
-      "vc:label": "Mobile Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-sovereign-identity-component",
-      "vc:label": "Self-Sovereign Identity Component"
+      "@id": "urn:ngm:class:mobile-application",
+      "label": "Mobile Application"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:036e7ecdcc67cac12a2e9ddf9b74fed704b6366a5a28e825ac3b9fc89cb86eb4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication-subsystem",
+        "label": "Biometric Authentication Subsystem"
+      },
+      {
+        "@id": "urn:ngm:class:credential-schema-registry",
+        "label": "Credential Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-definition-engine",
+        "label": "Presentation Definition Engine"
+      },
+      {
+        "@id": "urn:ngm:class:private-key-store",
+        "label": "Private Key Store"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-status-cache",
+        "label": "Revocation Status Cache"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework-configuration",
+        "label": "Trust Framework Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-library",
+        "label": "Cryptographic Library"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-operating-system",
+        "label": "Mobile Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor-list",
+        "label": "Trust Anchor List"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:credential-portability",
+        "label": "Credential Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-identity-verification",
+        "label": "Cross-Border Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-reuse",
+        "label": "KYC Reuse"
+      },
+      {
+        "@id": "urn:ngm:class:offline-authentication",
+        "label": "Offline Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymous-authentication",
+        "label": "Pseudonymous Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "ISO/IEC 18013-5 mDL"
+      },
+      {
+        "@id": "urn:ngm:class:mdoc-cbor",
+        "label": "mdoc-cbor"
+      },
+      {
+        "@id": "urn:ngm:class:open-id4-vci",
+        "label": "OpenID4VCI"
+      },
+      {
+        "@id": "urn:ngm:class:open-id4-vp",
+        "label": "OpenID4VP"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt-vc",
+        "label": "SD-JWT VC"
+      },
+      {
+        "@id": "urn:ngm:class:siopv2",
+        "label": "SIOPv2"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bbs-signature",
+        "label": "BBS+ Signature"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:deep-linking",
+        "label": "Deep Linking"
+      },
+      {
+        "@id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:near-field-communication",
+        "label": "Near Field Communication"
+      },
+      {
+        "@id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "@id": "urn:ngm:class:salted-hash",
+        "label": "Salted Hash"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:government-digital-identity",
+        "label": "Government Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-driving-licence",
+        "label": "Mobile Driving Licence"
+      },
+      {
+        "@id": "urn:ngm:class:open-badges",
+        "label": "Open Badges"
+      },
+      {
+        "@id": "urn:ngm:class:payment-wallet",
+        "label": "Payment Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:nist-800-63",
+        "label": "NIST 800-63"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:psd2-strong-customer-authentication",
+        "label": "PSD2 Strong Customer Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:uk-diatf",
+        "label": "UK DIATF"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission-eudi-arf",
+        "label": "European Commission EUDI ARF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1-sc-17",
+        "label": "ISO/IEC JTC 1/SC 17"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:036e7ecdcc67cac12a2e9ddf9b74fed704b6366a5a28e825ac3b9fc89cb86eb4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Digital Identity Wallet is a software application — typically running on a smartphone, secure element, or cloud-hosted enclave — that stores, manages, and selectively presents cryptographically signed digital credentials (verifiable credentials, mobile driving licences, electronic identity attestations, payment cards, government-issued identity documents, education and professional certifications) on behalf of a holder, implementing the holder role within the three-party [[W3C]] Verifiable Credentials trust triangle (issuer → holder → verifier) and providing cryptographic proof of credential possession, integrity, and authenticity through digital signatures, [[Selective Disclosure]] mechanisms (BBS+ Block Signatures, SD-JWT VC selective disclosure JSON Web Tokens RFC 9449 family, ISO/IEC 18013-5 mdoc-cbor mobile document encoding with element-level salted hashes), and increasingly [[Zero-Knowledge Proofs]] (BBS+ proofs of knowledge, Idemix anonymous credentials, Anonymous Credentials Lite). The reference regulatory anchor is the European Union's eIDAS 2.0 Regulation (EU) 2024/1183 entered into force 20 May 2024 mandating all 27 EU member states to provide certified European Digit",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:biometric-authentication-subsystem",
-      "vc:label": "Biometric Authentication Subsystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-schema-registry",
-      "vc:label": "Credential Schema Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:presentation-definition-engine",
-      "vc:label": "Presentation Definition Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:private-key-store",
-      "vc:label": "Private Key Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:revocation-status-cache",
-      "vc:label": "Revocation Status Cache"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-enclave",
-      "vc:label": "Secure Enclave"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-framework-configuration",
-      "vc:label": "Trust Framework Configuration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identifiers",
-      "vc:label": "Decentralized Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-library",
-      "vc:label": "Cryptographic Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-operating-system",
-      "vc:label": "Mobile Operating System"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-element",
-      "vc:label": "Secure Element"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-anchor-list",
-      "vc:label": "Trust Anchor List"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-execution-environment",
-      "vc:label": "Trusted Execution Environment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:age-verification",
-      "vc:label": "Age Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-portability",
-      "vc:label": "Credential Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-identity-verification",
-      "vc:label": "Cross-Border Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc-reuse",
-      "vc:label": "KYC Reuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-authentication",
-      "vc:label": "Offline Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-authentication",
-      "vc:label": "Privacy-Preserving Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:pseudonymous-authentication",
-      "vc:label": "Pseudonymous Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:didcomm",
-      "vc:label": "DIDComm"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-18013-5-m-dl",
-      "vc:label": "ISO/IEC 18013-5 mDL"
-    },
-    {
-      "@id": "urn:visionflow:linked:mdoc-cbor",
-      "vc:label": "mdoc-cbor"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id4-vci",
-      "vc:label": "OpenID4VCI"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id4-vp",
-      "vc:label": "OpenID4VP"
-    },
-    {
-      "@id": "urn:visionflow:linked:sd-jwt-vc",
-      "vc:label": "SD-JWT VC"
-    },
-    {
-      "@id": "urn:visionflow:linked:siopv2",
-      "vc:label": "SIOPv2"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-verifiable-credentials-data-model",
-      "vc:label": "W3C Verifiable Credentials Data Model"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biometric-authentication",
-      "vc:label": "Biometric Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-frameworks",
-      "vc:label": "Trust Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identifiers",
-      "vc:label": "Decentralized Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:e-idas-2-0",
-      "vc:label": "eIDAS 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-travel-rule",
-      "vc:label": "FATF Travel Rule"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-800-63",
-      "vc:label": "NIST 800-63"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-act-2023",
-      "vc:label": "Online Safety Act 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:psd2-strong-customer-authentication",
-      "vc:label": "PSD2 Strong Customer Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-diatf",
-      "vc:label": "UK DIATF"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bbs-signature",
-      "vc:label": "BBS+ Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:bluetooth-low-energy",
-      "vc:label": "Bluetooth Low Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-linking",
-      "vc:label": "Deep Linking"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed-dsa",
-      "vc:label": "EdDSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:near-field-communication",
-      "vc:label": "Near Field Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:qr-code",
-      "vc:label": "QR Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:salted-hash",
-      "vc:label": "Salted Hash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecdsa",
-      "vc:label": "ECDSA"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralized-identity-provider",
-      "vc:label": "Centralized Identity Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-single-sign-on",
-      "vc:label": "Enterprise Single Sign-On"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-identity",
-      "vc:label": "Federated Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:paper-credential",
-      "vc:label": "Paper Credential"
-    },
-    {
-      "@id": "urn:visionflow:linked:password-manager",
-      "vc:label": "Password Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:username-password-authentication",
-      "vc:label": "Username Password Authentication"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:government-digital-identity",
-      "vc:label": "Government Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-driving-licence",
-      "vc:label": "Mobile Driving Licence"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-badges",
-      "vc:label": "Open Badges"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-wallet",
-      "vc:label": "Payment Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-over-ip-foundation",
-      "vc:label": "Trust Over IP Foundation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-identity-foundation",
-      "vc:label": "Decentralized Identity Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-commission-eudi-arf",
-      "vc:label": "European Commission EUDI ARF"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-jtc-1-sc-17",
-      "vc:label": "ISO/IEC JTC 1/SC 17"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-foundation",
-      "vc:label": "OpenID Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-over-ip-foundation",
-      "vc:label": "Trust Over IP Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

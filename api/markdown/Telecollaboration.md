@@ -244,110 +244,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:telecollaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:telecollaboration",
+  "@type": "Class",
   "label": "Telecollaboration",
+  "definition": "\"The process of individuals or groups working toger towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-workspaces",
+        "label": "Virtual Workspaces"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "CoordinationMechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-protocols",
+        "label": "Real-Time Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-cultural-teamwork",
+        "label": "Cross-Cultural Teamwork"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-knowledge-work",
+        "label": "Distributed Knowledge Work"
+      },
+      {
+        "@id": "urn:ngm:class:global-research-collaboration",
+        "label": "Global Research Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-team-productivity",
+        "label": "Remote Team Productivity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:32c33a70f3a7c408def389eb37f2bbe257219be764b413457f76d289c1dc8824@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The process of individuals or groups working together towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-located teamwork.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:real-time-communication",
-      "vc:label": "Real-Time Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-workspaces",
-      "vc:label": "Virtual Workspaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "vc:label": "Asynchronous Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synchronous-collaboration",
-      "vc:label": "Synchronous Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telepresence",
-      "vc:label": "Telepresence"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:communication-infrastructure",
-      "vc:label": "Communication Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:coordination-mechanisms",
-      "vc:label": "CoordinationMechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-protocols",
-      "vc:label": "Real-Time Protocols"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-cultural-teamwork",
-      "vc:label": "Cross-Cultural Teamwork"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-knowledge-work",
-      "vc:label": "Distributed Knowledge Work"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-research-collaboration",
-      "vc:label": "Global Research Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-team-productivity",
-      "vc:label": "Remote Team Productivity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

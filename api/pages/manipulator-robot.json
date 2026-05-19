@@ -3,19 +3,18 @@
   "title": "Manipulator Robot",
   "slug": "manipulator-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:manipulator-robot",
+  "classIri": "urn:ngm:class:manipulator-robot",
   "domain": "robotics",
   "definition": "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot",
+      "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

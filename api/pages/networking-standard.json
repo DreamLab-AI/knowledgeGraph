@@ -3,27 +3,31 @@
   "title": "Networking Standard",
   "slug": "networking-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:networking-standard",
+  "classIri": "urn:ngm:class:networking-standard",
   "domain": "infrastructure",
   "definition": "Networking Standard is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

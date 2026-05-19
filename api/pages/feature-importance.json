@@ -3,19 +3,18 @@
   "title": "Feature Importance",
   "slug": "feature-importance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feature-importance",
+  "classIri": "urn:ngm:class:feature-importance",
   "domain": "artificial-intelligence",
   "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:explainability",
+      "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

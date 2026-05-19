@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:power-efficient-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:power-efficient-ai",
+  "@type": "Class",
   "label": "Power-Efficient AI",
+  "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a52d52edb73796285246c0650b0db1dd7a9ab9011f334ff2514997669bbd6968"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a52d52edb73796285246c0650b0db1dd7a9ab9011f334ff2514997669bbd6968@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes. Power-efficient designs target both computational energy (processor operations consuming 50-80% of power budget) and memory access energy (data movement between caches and main memory consuming 20-40%), recognizing that modern systems dissipate more energy moving data than computing. Techniques include dynamic voltage and frequency scaling (DVFS) that adjust processor frequency based on inference demands, power gating that completely deactivates unused hardware components, and event-driven inference that only activates computation when sensor data indicates significant events. Energy efficiency measured in TOPS/Watt (tera-operations per watt) quantifies inference throughput per unit power. Model-level optimizations employ low-precision arithmetic (INT8, FP16 instead of FP32), reducing both computation and memory energy. Hardware accelerators like specialized AI chips achieve 10-50x energy efficiency versus general-purpose processors through reduced dat",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

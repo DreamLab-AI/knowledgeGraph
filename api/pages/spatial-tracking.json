@@ -3,32 +3,36 @@
   "title": "Spatial Tracking",
   "slug": "spatial-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-tracking",
+  "classIri": "urn:ngm:class:spatial-tracking",
   "domain": "spatial-computing",
   "definition": "Technology that determines the position and orientation of objects in three-dimensional space using six degrees of freedom (6DoF), enabling precise tracking of headsets, controllers, and body movements through inside-out or outside-in sensor configurations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-tracking",
+      "id": "urn:ngm:class:motion-tracking",
       "label": "Motion Tracking"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-vr",
+        "id": "urn:ngm:class:immersive-vr",
         "label": "Immersive VR"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

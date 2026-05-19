@@ -3,37 +3,41 @@
   "title": "Layer 0",
   "slug": "layer-0",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:layer-0",
+  "classIri": "urn:ngm:class:layer-0",
   "domain": "blockchain",
-  "definition": "Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains. Layer 0 networks like Polkadot and Cosmos serve as the meta-layer coordinating heterogeneous blockchain ecosystems.",
+  "definition": "Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

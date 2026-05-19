@@ -3,19 +3,18 @@
   "title": "Tuesday 11th of June FRAME reporting",
   "slug": "tuesday-11th-of-june-frame-reporting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tuesday-11th-of-june-frame-reporting",
+  "classIri": "urn:ngm:class:tuesday-11th-of-june-frame-reporting",
   "domain": "infrastructure",
   "definition": "Tuesday 11th of June FRAME reporting is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

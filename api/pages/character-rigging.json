@@ -3,53 +3,57 @@
   "title": "Character Rigging",
   "slug": "character-rigging",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:character-rigging",
+  "classIri": "urn:ngm:class:character-rigging",
   "domain": "spatial-computing",
   "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:animation-technique",
+      "id": "urn:ngm:class:animation-technique",
       "label": "Animation Technique"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:skinning",
+        "id": "urn:ngm:class:skinning",
         "label": "Skinning"
       },
       {
-        "id": "urn:visionflow:linked:weight-painting",
+        "id": "urn:ngm:class:weight-painting",
         "label": "Weight Painting"
       },
       {
-        "id": "urn:visionflow:owl:class:character-model",
+        "id": "urn:ngm:class:character-model",
         "label": "Character Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:character-animation",
+        "id": "urn:ngm:class:character-animation",
         "label": "Character Animation"
       },
       {
-        "id": "urn:visionflow:linked:motion-capture-retargeting",
+        "id": "urn:ngm:class:motion-capture-retargeting",
         "label": "Motion Capture Retargeting"
       },
       {
-        "id": "urn:visionflow:linked:skeletal-animation",
+        "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

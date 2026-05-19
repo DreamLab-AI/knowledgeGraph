@@ -180,41 +180,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-domain",
+  "@type": "Class",
   "label": "Metaverse Domain",
+  "definition": "The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
+      "@id": "urn:ngm:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:46eb2ab69e33c4328aa9798d07f88f06f4bcefd49957a3c3b6ba71502e2cfd93"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:46eb2ab69e33c4328aa9798d07f88f06f4bcefd49957a3c3b6ba71502e2cfd93@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Metaverse Domain provides an ontological framework for interconnected digital platforms leveraging augmented, extended, and virtual realities to create immersive user experiences through multidimensional interactions. It encompasses virtual environments, avatar embodiment, spatial computing, digital economies, and the convergence of physical and virtual worlds where millions can simultaneously inhabit and interact in real-time regardless of physical distance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,187 +3,291 @@
   "title": "Learning Algorithm",
   "slug": "learning-algorithm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-algorithm",
+  "classIri": "urn:ngm:class:learning-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms \u2014 supervised learning (mapping labelled inputs to outputs via empirical risk minimisation over a hypothesis class, training neural networks, support vector machines, decision trees and gradient-boosted ensembles from labelled examples), unsupervised learning (discovering latent structure in unlabelled data via clustering, dimensionality reduction, and density estimation without supervisory signal), semi-supervised learning (combining sparse labelled examples with abundant unlabelled data through graph-based label propagation, pseudo-labelling, consistency regularisation, and MixMatch/FixMatch), self-supervised learning (constructing supervisory signals from data structure \u2014 masked language modelling for BERT, autoregressive next-token prediction for GPT, masked image modelling for MAE), reinforcement learning (optimising sequential decision-making via Bellman equations and reward signals within Markov Decision Processes), meta-learning (adapting rapidly across task distributions fr",
+  "definition": "LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms \u2014 supervised learning unsupervised learning (discovering latent structure in unlabelled data ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:computational-intelligence",
+      "id": "urn:ngm:class:computational-intelligence",
       "label": "Computational Intelligence"
     },
     {
-      "id": "urn:visionflow:linked:optimisation",
+      "id": "urn:ngm:class:optimisation",
       "label": "Optimisation"
-    },
-    {
-      "id": "urn:visionflow:linked:statistical-learning-theory",
-      "label": "Statistical Learning Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:actor-network",
+        "id": "urn:ngm:class:actor-network",
         "label": "Actor Network"
       },
       {
-        "id": "urn:visionflow:linked:continual-learner",
+        "id": "urn:ngm:class:continual-learner",
         "label": "Continual Learner"
       },
       {
-        "id": "urn:visionflow:linked:critic-network",
+        "id": "urn:ngm:class:critic-network",
         "label": "Critic Network"
       },
       {
-        "id": "urn:visionflow:linked:meta-learner",
+        "id": "urn:ngm:class:meta-learner",
         "label": "Meta-Learner"
       },
       {
-        "id": "urn:visionflow:linked:policy-gradient",
+        "id": "urn:ngm:class:policy-gradient",
         "label": "Policy Gradient"
       },
       {
-        "id": "urn:visionflow:linked:query-strategy",
+        "id": "urn:ngm:class:query-strategy",
         "label": "Query Strategy"
       },
       {
-        "id": "urn:visionflow:linked:replay-buffer",
+        "id": "urn:ngm:class:replay-buffer",
         "label": "Replay Buffer"
       },
       {
-        "id": "urn:visionflow:linked:value-function",
+        "id": "urn:ngm:class:value-function",
         "label": "Value Function"
       },
       {
-        "id": "urn:visionflow:owl:class:gradient-descent",
+        "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:visionflow:owl:class:loss-function",
+        "id": "urn:ngm:class:loss-function",
         "label": "Loss Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:evaluation-metric",
+        "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:visionflow:linked:hyperparameter-tuning",
+        "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:visionflow:linked:objective-function",
+        "id": "urn:ngm:class:objective-function",
         "label": "Objective Function"
       },
       {
-        "id": "urn:visionflow:owl:class:model-architecture",
+        "id": "urn:ngm:class:model-architecture",
         "label": "Model Architecture"
       },
       {
-        "id": "urn:visionflow:owl:class:optimiser",
+        "id": "urn:ngm:class:optimiser",
         "label": "Optimiser"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agents",
         "label": "Autonomous Agents"
       },
       {
-        "id": "urn:visionflow:linked:few-shot-learning",
+        "id": "urn:ngm:class:few-shot-learning",
         "label": "Few-Shot Learning"
       },
       {
-        "id": "urn:visionflow:linked:policy-optimisation",
+        "id": "urn:ngm:class:policy-optimisation",
         "label": "Policy Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:representation-learning",
+        "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
       },
       {
-        "id": "urn:visionflow:linked:robotic-control",
+        "id": "urn:ngm:class:robotic-control",
         "label": "Robotic Control"
       },
       {
-        "id": "urn:visionflow:linked:transfer-learning",
+        "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:model-training",
+        "id": "urn:ngm:class:model-training",
         "label": "Model Training"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adam-optimiser",
+        "id": "urn:ngm:class:adam-optimiser",
         "label": "Adam Optimiser"
       },
       {
-        "id": "urn:visionflow:linked:byol",
+        "id": "urn:ngm:class:byol",
         "label": "BYOL"
       },
       {
-        "id": "urn:visionflow:linked:dino",
+        "id": "urn:ngm:class:dino",
         "label": "DINO"
       },
       {
-        "id": "urn:visionflow:linked:dqn",
+        "id": "urn:ngm:class:dqn",
         "label": "DQN"
       },
       {
-        "id": "urn:visionflow:linked:ewc",
+        "id": "urn:ngm:class:ewc",
         "label": "EWC"
       },
       {
-        "id": "urn:visionflow:linked:maml",
+        "id": "urn:ngm:class:maml",
         "label": "MAML"
       },
       {
-        "id": "urn:visionflow:linked:mu-zero",
+        "id": "urn:ngm:class:mu-zero",
         "label": "MuZero"
       },
       {
-        "id": "urn:visionflow:linked:ppo",
+        "id": "urn:ngm:class:ppo",
         "label": "PPO"
       },
       {
-        "id": "urn:visionflow:linked:sac",
+        "id": "urn:ngm:class:sac",
         "label": "SAC"
       },
       {
-        "id": "urn:visionflow:owl:class:curriculum-learning",
+        "id": "urn:ngm:class:curriculum-learning",
         "label": "Curriculum Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:federated-learning",
+        "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:sim-clr",
+        "id": "urn:ngm:class:sim-clr",
         "label": "SimCLR"
       },
       {
-        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-loss",
+        "label": "Contrastive Loss"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-processes",
+        "label": "Markov Decision Processes"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:ieee-transactions-on-neural-networks",
+        "label": "IEEE Transactions on Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Journal of Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

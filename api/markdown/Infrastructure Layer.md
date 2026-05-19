@@ -176,114 +176,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:infrastructure-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:infrastructure-layer",
+  "@type": "Class",
   "label": "Infrastructure Layer",
+  "definition": "Foundational base layer providing computing, storage, and network capabilities that enable metaverse applications and services to operate at scale.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9b6d043b65c2cb5b11f477ca5c98a4a6faa2334f0bb970c2a945473dd625eacd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "@id": "urn:ngm:class:data-centers",
+        "label": "Data Centers"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-layer",
+        "label": "Spatial Computing Layer"
+      },
+      {
+        "@id": "urn:ngm:class:storage-layer",
+        "label": "Storage Layer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:physical-hardware",
+        "label": "Physical Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-domain",
+        "label": "InfrastructureDomain"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9b6d043b65c2cb5b11f477ca5c98a4a6faa2334f0bb970c2a945473dd625eacd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Foundational base layer providing computing, storage, and network capabilities that enable metaverse applications and services to operate at scale.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:5-g-network",
-      "vc:label": "5G Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:cdn",
-      "vc:label": "CDN"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-centers",
-      "vc:label": "Data Centers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
-      "vc:label": "Hardware Abstraction Layer (HAL)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing-layer",
-      "vc:label": "Spatial Computing Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-layer",
-      "vc:label": "Storage Layer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:power-systems",
-      "vc:label": "Power Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physical-hardware",
-      "vc:label": "Physical Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-availability",
-      "vc:label": "High Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency",
-      "vc:label": "Low Latency"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalability",
-      "vc:label": "Scalability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

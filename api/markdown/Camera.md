@@ -176,92 +176,71 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:camera",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:camera",
+  "@type": "Class",
   "label": "Camera",
+  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologie...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:visual-perception",
-      "vc:label": "VisualPerception"
+      "@id": "urn:ngm:class:visual-perception",
+      "label": "VisualPerception"
     },
     {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "CameraCalibration"
+      },
+      {
+        "@id": "urn:ngm:class:image-sensor",
+        "label": "ImageSensor"
+      },
+      {
+        "@id": "urn:ngm:class:lens",
+        "label": "Lens"
+      },
+      {
+        "@id": "urn:ngm:class:processing-unit",
+        "label": "ProcessingUnit"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:visual-servoing",
+        "label": "VisualServoing"
+      },
+      {
+        "@id": "urn:ngm:class:3-dreconstruction",
+        "label": "3DReconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "ObjectDetection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "SemanticSegmentation"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ceb738ffeeece81e0ce5c220bee1f99b0f1623cb0cc209ec624ef13e6a390f0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologies (CCD, CMOS, ToF, structured light).",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "CameraCalibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-sensor",
-      "vc:label": "ImageSensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:lens",
-      "vc:label": "Lens"
-    },
-    {
-      "@id": "urn:visionflow:linked:processing-unit",
-      "vc:label": "ProcessingUnit"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:visual-servoing",
-      "vc:label": "VisualServoing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-dreconstruction",
-      "vc:label": "3DReconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "ObjectDetection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-segmentation",
-      "vc:label": "SemanticSegmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

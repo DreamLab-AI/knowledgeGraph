@@ -3,175 +3,287 @@
   "title": "Customs Trade Facilitation",
   "slug": "customs-trade-facilitation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:customs-trade-facilitation",
+  "classIri": "urn:ngm:class:customs-trade-facilitation",
   "domain": "blockchain",
-  "definition": "The systematic application of digital infrastructure \u2014 blockchain distributed ledgers, AI-driven risk engines, smart contracts, and interoperable single-window platforms \u2014 to reduce friction in cross-border trade whilst maintaining regulatory compliance for customs authorities and economic operators. Customs Trade Facilitation encompasses pre-arrival clearance, harmonised classification standards, certificate-of-origin verification, automated duty calculation, coordinated border management, and trusted-trader programme administration across the full lifecycle of an international shipment from manufacture to delivery. The domain integrates advanced cryptographic techniques including zero-knowledge proofs and public-key infrastructure with established trade documentation standards (UN/CEFACT, EDIFACT, GS1), regulatory frameworks (WTO TFA, WCO SAFE Framework, EU Union Customs Code), and operational processes spanning port authorities, customs administrations, banks, freight forwarders, and economic operators. Anchoring frameworks include the [[WTO Trade Facilitation Agreement]] (TFA, entered into force February 2017), the [[WCO SAFE Framework of Standards]] (revised editions 2021 and ",
+  "definition": "The systematic application of digital infrastructure \u2014 blockchain distributed ledgers, AI-driven risk engines, smart contracts, and interoperable single-window platforms \u2014 to reduce friction in cross-border trade whilst maintaining regulatory compliance for customs authorities and economic operat...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-customs",
+      "id": "urn:ngm:class:digital-customs",
       "label": "Digital Customs"
     },
     {
-      "id": "urn:visionflow:linked:trade-finance",
+      "id": "urn:ngm:class:trade-finance",
       "label": "Trade Finance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:supply-chain-traceability",
-      "label": "Supply Chain Traceability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:advance-cargo-information-system",
+        "id": "urn:ngm:class:advance-cargo-information-system",
         "label": "Advance Cargo Information System"
       },
       {
-        "id": "urn:visionflow:linked:authorised-economic-operator",
+        "id": "urn:ngm:class:authorised-economic-operator",
         "label": "Authorised Economic Operator"
       },
       {
-        "id": "urn:visionflow:linked:certificate-of-origin",
+        "id": "urn:ngm:class:certificate-of-origin",
         "label": "Certificate of Origin"
       },
       {
-        "id": "urn:visionflow:linked:customs-declaration",
+        "id": "urn:ngm:class:customs-declaration",
         "label": "Customs Declaration"
       },
       {
-        "id": "urn:visionflow:linked:electronic-bill-of-lading",
+        "id": "urn:ngm:class:electronic-bill-of-lading",
         "label": "Electronic Bill of Lading"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-engine",
+        "id": "urn:ngm:class:risk-assessment-engine",
         "label": "Risk Assessment Engine"
       },
       {
-        "id": "urn:visionflow:linked:single-window-system",
+        "id": "urn:ngm:class:single-window-system",
         "label": "Single Window System"
       },
       {
-        "id": "urn:visionflow:linked:tariff-classification-system",
+        "id": "urn:ngm:class:tariff-classification-system",
         "label": "Tariff Classification System"
       },
       {
-        "id": "urn:visionflow:linked:trade-finance-instrument",
+        "id": "urn:ngm:class:trade-finance-instrument",
         "label": "Trade Finance Instrument"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-functions",
+        "id": "urn:ngm:class:cryptographic-hash-functions",
         "label": "Cryptographic Hash Functions"
       },
       {
-        "id": "urn:visionflow:linked:data-governance-framework",
+        "id": "urn:ngm:class:data-governance-framework",
         "label": "Data Governance Framework"
       },
       {
-        "id": "urn:visionflow:linked:distributed-ledger-technology",
+        "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:visionflow:linked:electronic-signature",
+        "id": "urn:ngm:class:electronic-signature",
         "label": "Electronic Signature"
       },
       {
-        "id": "urn:visionflow:linked:interoperability-standards",
+        "id": "urn:ngm:class:interoperability-standards",
         "label": "Interoperability Standards"
       },
       {
-        "id": "urn:visionflow:linked:risk-scoring-algorithm",
+        "id": "urn:ngm:class:risk-scoring-algorithm",
         "label": "Risk Scoring Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:anti-fraud-verification",
+        "id": "urn:ngm:class:anti-fraud-verification",
         "label": "Anti-Fraud Verification"
       },
       {
-        "id": "urn:visionflow:linked:automated-duty-calculation",
+        "id": "urn:ngm:class:automated-duty-calculation",
         "label": "Automated Duty Calculation"
       },
       {
-        "id": "urn:visionflow:linked:carbon-border-adjustment",
+        "id": "urn:ngm:class:carbon-border-adjustment",
         "label": "Carbon Border Adjustment"
       },
       {
-        "id": "urn:visionflow:linked:coordinated-border-management",
+        "id": "urn:ngm:class:coordinated-border-management",
         "label": "Coordinated Border Management"
       },
       {
-        "id": "urn:visionflow:linked:paperless-trade",
+        "id": "urn:ngm:class:paperless-trade",
         "label": "Paperless Trade"
       },
       {
-        "id": "urn:visionflow:linked:pre-arrival-clearance",
+        "id": "urn:ngm:class:pre-arrival-clearance",
         "label": "Pre-Arrival Clearance"
       },
       {
-        "id": "urn:visionflow:linked:sme-trade-finance-access",
+        "id": "urn:ngm:class:sme-trade-finance-access",
         "label": "SME Trade Finance Access"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-traceability",
+        "id": "urn:ngm:class:sustainability-traceability",
         "label": "Sustainability Traceability"
       },
       {
-        "id": "urn:visionflow:linked:trade-finance-automation",
+        "id": "urn:ngm:class:trade-finance-automation",
         "label": "Trade Finance Automation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:eu-union-customs-code",
+        "id": "urn:ngm:class:eu-union-customs-code",
         "label": "EU Union Customs Code"
       },
       {
-        "id": "urn:visionflow:linked:gs1-epcis-standards",
+        "id": "urn:ngm:class:gs1-epcis-standards",
         "label": "GS1 EPCIS Standards"
       },
       {
-        "id": "urn:visionflow:linked:hmrc-cds",
+        "id": "urn:ngm:class:hmrc-cds",
         "label": "HMRC CDS"
       },
       {
-        "id": "urn:visionflow:linked:un-cefact-trade-data-standards",
+        "id": "urn:ngm:class:un-cefact-trade-data-standards",
         "label": "UN/CEFACT Trade Data Standards"
       },
       {
-        "id": "urn:visionflow:linked:uncitral-model-law-on-electronic-transferable-records",
+        "id": "urn:ngm:class:uncitral-model-law-on-electronic-transferable-records",
         "label": "UNCITRAL Model Law on Electronic Transferable Records"
       },
       {
-        "id": "urn:visionflow:linked:wco-safe-framework",
+        "id": "urn:ngm:class:wco-safe-framework",
         "label": "WCO SAFE Framework"
       },
       {
-        "id": "urn:visionflow:linked:wto-trade-facilitation-agreement",
+        "id": "urn:ngm:class:wto-trade-facilitation-agreement",
         "label": "WTO Trade Facilitation Agreement"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-functions",
+        "label": "Cryptographic Hash Functions"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-union-customs-code",
+        "label": "EU Union Customs Code"
+      },
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "id": "urn:ngm:class:icc-uniform-customs-and-practice",
+        "label": "ICC Uniform Customs and Practice"
+      },
+      {
+        "id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      },
+      {
+        "id": "urn:ngm:class:un-cefact",
+        "label": "UN/CEFACT"
+      },
+      {
+        "id": "urn:ngm:class:uncitral",
+        "label": "UNCITRAL"
+      },
+      {
+        "id": "urn:ngm:class:wco-safe-framework",
+        "label": "WCO SAFE Framework"
+      },
+      {
+        "id": "urn:ngm:class:wto-trade-facilitation-agreement",
+        "label": "WTO Trade Facilitation Agreement"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gsbn",
+        "label": "GSBN"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "id": "urn:ngm:class:cold-chain-monitoring",
+        "label": "Cold Chain Monitoring"
+      }
+    ]
   },
   "wikilinks": [
     {

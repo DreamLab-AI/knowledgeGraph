@@ -3,32 +3,36 @@
   "title": "Interoperability Standard",
   "slug": "interoperability-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interoperability-standard",
+  "classIri": "urn:ngm:class:interoperability-standard",
   "domain": "infrastructure",
-  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.",
+  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate toger seamlessly, including OpenXR, glTF, and emerging standards from the Metaverse Standards Forum.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-compatibility",
+        "id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

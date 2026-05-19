@@ -172,86 +172,71 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:xr-accessibility-guideline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:xr-accessibility-guideline",
+  "@type": "Class",
   "label": "XR Accessibility Guideline",
+  "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:accessibility-standard",
-      "vc:label": "Accessibility Standard"
+      "@id": "urn:ngm:class:accessibility-standard",
+      "label": "Accessibility Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2c2e592fb3fc0602faf9e8f047f7772ae8fa46892b683b5d70ee156eb01f7fc3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:best-practice",
+        "label": "Best Practice"
+      },
+      {
+        "@id": "urn:ngm:class:design-recommendation",
+        "label": "Design Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:implementation-example",
+        "label": "Implementation Example"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accessibility-testing",
+        "label": "Accessibility Testing"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "@id": "urn:ngm:class:universal-access",
+        "label": "Universal Access"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive XR Design"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2c2e592fb3fc0602faf9e8f047f7772ae8fa46892b683b5d70ee156eb01f7fc3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:accessibility-standard",
-      "vc:label": "Accessibility Standard"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:best-practice",
-      "vc:label": "Best Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-recommendation",
-      "vc:label": "Design Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:linked:implementation-example",
-      "vc:label": "Implementation Example"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-testing",
-      "vc:label": "Accessibility Testing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-research",
-      "vc:label": "User Research"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:assistive-technology-integration",
-      "vc:label": "Assistive Technology Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-access",
-      "vc:label": "Universal Access"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inclusive-xr-design",
-      "vc:label": "Inclusive XR Design"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

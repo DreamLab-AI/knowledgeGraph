@@ -3,36 +3,40 @@
   "title": "Search Algorithms",
   "slug": "search-algorithms",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:search-algorithms",
+  "classIri": "urn:ngm:class:search-algorithms",
   "domain": "artificial-intelligence",
   "definition": "Search Algorithms is a artificial intelligence concept and a type of Artificial Intelligence. that enables Pathfinding, Planning and Scheduling.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:pathfinding",
+        "id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding"
       },
       {
-        "id": "urn:visionflow:owl:class:planning-and-scheduling",
+        "id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

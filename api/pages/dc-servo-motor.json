@@ -3,82 +3,86 @@
   "title": "DC Servo Motor",
   "slug": "dc-servo-motor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dc-servo-motor",
+  "classIri": "urn:ngm:class:dc-servo-motor",
   "domain": "robotics",
-  "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation. The servo loop continuously adjusts motor current based on sensor feedback, enabling rapid response to disturbances and accurate tracking of command trajectories for [[Robotic Manipulation]] and [[Motion Control]] applications.",
+  "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:electric-motor",
+      "id": "urn:ngm:class:electric-motor",
       "label": "Electric Motor"
     },
     {
-      "id": "urn:visionflow:owl:class:servo-motor",
+      "id": "urn:ngm:class:servo-motor",
       "label": "Servo Motor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:control-electronics",
+        "id": "urn:ngm:class:control-electronics",
         "label": "Control Electronics"
       },
       {
-        "id": "urn:visionflow:linked:current-driver",
+        "id": "urn:ngm:class:current-driver",
         "label": "Current Driver"
       },
       {
-        "id": "urn:visionflow:linked:dc-motor",
+        "id": "urn:ngm:class:dc-motor",
         "label": "DC Motor"
       },
       {
-        "id": "urn:visionflow:linked:position-encoder",
+        "id": "urn:ngm:class:position-encoder",
         "label": "Position Encoder"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:dc-power-supply",
+        "id": "urn:ngm:class:dc-power-supply",
         "label": "DC Power Supply"
       },
       {
-        "id": "urn:visionflow:linked:feedback-sensor",
+        "id": "urn:ngm:class:feedback-sensor",
         "label": "Feedback Sensor"
       },
       {
-        "id": "urn:visionflow:linked:mechanical-load",
+        "id": "urn:ngm:class:mechanical-load",
         "label": "Mechanical Load"
       },
       {
-        "id": "urn:visionflow:linked:servo-amplifier",
+        "id": "urn:ngm:class:servo-amplifier",
         "label": "Servo Amplifier"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-control",
+        "id": "urn:ngm:class:dynamic-control",
         "label": "Dynamic Control"
       },
       {
-        "id": "urn:visionflow:linked:load-adaptation",
+        "id": "urn:ngm:class:load-adaptation",
         "label": "Load Adaptation"
       },
       {
-        "id": "urn:visionflow:linked:precise-positioning",
+        "id": "urn:ngm:class:precise-positioning",
         "label": "Precise Positioning"
       },
       {
-        "id": "urn:visionflow:linked:trajectory-tracking",
+        "id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

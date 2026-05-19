@@ -3,90 +3,103 @@
   "title": "Distributed Architecture",
   "slug": "distributed-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-architecture",
+  "classIri": "urn:ngm:class:distributed-architecture",
   "domain": "spatial-computing",
   "definition": "Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:distributed-nodes",
+        "id": "urn:ngm:class:distributed-nodes",
         "label": "Distributed Nodes"
       },
       {
-        "id": "urn:visionflow:linked:load-balancing",
+        "id": "urn:ngm:class:load-balancing",
         "label": "Load Balancing"
       },
       {
-        "id": "urn:visionflow:linked:replication-strategy",
+        "id": "urn:ngm:class:replication-strategy",
         "label": "Replication Strategy"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:network-topology",
+        "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       },
       {
-        "id": "urn:visionflow:owl:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronization",
         "label": "State Synchronization"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:distributed-consensus",
+        "id": "urn:ngm:class:distributed-consensus",
         "label": "Distributed Consensus"
       },
       {
-        "id": "urn:visionflow:linked:synchronization-protocols",
+        "id": "urn:ngm:class:synchronization-protocols",
         "label": "Synchronization Protocols"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:geographic-distribution",
+        "id": "urn:ngm:class:geographic-distribution",
         "label": "Geographic Distribution"
       },
       {
-        "id": "urn:visionflow:linked:high-availability",
+        "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
       },
       {
-        "id": "urn:visionflow:linked:scalability",
+        "id": "urn:ngm:class:scalability",
         "label": "Scalability"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralization",
+        "id": "urn:ngm:class:decentralization",
         "label": "Decentralization"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

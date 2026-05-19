@@ -160,76 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-format-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-format-standard",
+  "@type": "Class",
   "label": "Data Format Standard",
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description for complex scene composition and collaboration.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:implementation-libraries",
+        "label": "Implementation Libraries"
+      },
+      {
+        "@id": "urn:ngm:class:validation-tools",
+        "label": "Validation Tools"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-asset-interoperability",
+        "label": "3D Asset Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:content-portability",
+        "label": "Content Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-exchange",
+        "label": "Cross-Platform Exchange"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7c88be9331a1f32da49a25b91d5c65d95e42070a5b3154ec256c6e24ed6291be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:implementation-libraries",
-      "vc:label": "Implementation Libraries"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-tools",
-      "vc:label": "Validation Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-body",
-      "vc:label": "Standards Body"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-asset-interoperability",
-      "vc:label": "3D Asset Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-portability",
-      "vc:label": "Content Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-exchange",
-      "vc:label": "Cross-Platform Exchange"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -204,126 +204,93 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin",
+  "@type": "Class",
   "label": "Digital Twin",
+  "definition": "Digital Twin is a spatial computing concept and a type of Digital Twin Technology. that enables Collaborative Design, Process Optimisation. comprising Control Interface, IoT Sensor Data.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin-technology",
-      "vc:label": "Digital Twin Technology"
+      "@id": "urn:ngm:class:digital-twin-technology",
+      "label": "Digital Twin Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:control-interface",
+        "label": "Control Interface"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-replica",
+        "label": "Virtual Replica"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-visualisation",
+        "label": "3D Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "@id": "urn:ngm:class:process-optimisation",
+        "label": "Process Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:remote-monitoring",
+        "label": "Remote Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-commissioning",
+        "label": "Virtual Commissioning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:99257548e742e8f4ebe0c34b5953ec588bff9401ff4c51a8823a893486bd4804@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital Twin is a spatial computing concept and a type of Digital Twin Technology. that enables Collaborative Design, Process Optimisation. comprising Control Interface, IoT Sensor Data.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:control-interface",
-      "vc:label": "Control Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-sensor-data",
-      "vc:label": "IoT Sensor Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-synchronisation",
-      "vc:label": "Real-Time Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-model",
-      "vc:label": "3D Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:simulation-engine",
-      "vc:label": "Simulation Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-replica",
-      "vc:label": "Virtual Replica"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-visualisation",
-      "vc:label": "3D Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-aggregation",
-      "vc:label": "Data Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-infrastructure",
-      "vc:label": "IoT Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-design",
-      "vc:label": "Collaborative Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:process-optimisation",
-      "vc:label": "Process Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-monitoring",
-      "vc:label": "Remote Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-commissioning",
-      "vc:label": "Virtual Commissioning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,115 +3,187 @@
   "title": "Open Webui and Pipelines",
   "slug": "open-webui-and-pipelines",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-webui-and-pipelines",
+  "classIri": "urn:ngm:class:open-webui-and-pipelines",
   "domain": "artificial-intelligence",
-  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, 50,000+ GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] backends for on-device inference alongside any OpenAI-compatible REST API (OpenAI GPT-4o, Anthropic Claude 3.x, Mistral, Groq, Together AI, Replicate, and arbitrary custom endpoints), providing document-grounded [[Retrieval Augmented Generation - RAG]] via ChromaDB vector storage with configurable chunking (default 1,500-token chunks, 100-token overlap) and BM25/dense-embedding hybrid retrieval (sentence-transformers or OpenAI text-embedding-3-small/large), built-in web search integration (SearXNG, Google PSE, Brave Search, DuckDuckGo, Tavily, Jina AI, Bing), JSON-schema tool calling and Python [[Function Calling]] execution (native Functions editor with Valve parameter configuration, event emitter streaming, shared library dependencies), image generation via [[Stable Diffusion]] ComfyUI/AUTOMATIC1111/Replicate backends, speech-to-text (OpenAI Whisper and Faster-Whisper local) and tex",
+  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, + GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:chatbots",
+      "id": "urn:ngm:class:chatbots",
       "label": "Chatbots"
     },
     {
-      "id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+      "id": "urn:ngm:class:retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "id": "urn:visionflow:owl:class:web-dev-and-consumer-tooling",
-      "label": "WebDev and Consumer Tooling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
         "label": "Model Control Protocols like MCP"
       },
       {
-        "id": "urn:visionflow:owl:class:ollama",
+        "id": "urn:ngm:class:ollama",
         "label": "Ollama"
       },
       {
-        "id": "urn:visionflow:owl:class:open-ai-whisper",
+        "id": "urn:ngm:class:open-ai-whisper",
         "label": "Open AI Whisper"
       },
       {
-        "id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
         "label": "Retrieval Augmented Generation - RAG"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:docker",
+        "id": "urn:ngm:class:docker",
         "label": "Docker"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:ollama",
+        "id": "urn:ngm:class:ollama",
         "label": "Ollama"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-graphing",
+        "id": "urn:ngm:class:knowledge-graphing",
         "label": "Knowledge Graphing"
       },
       {
-        "id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation and Performance"
       },
       {
-        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:visionflow:owl:class:reasoning",
+        "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
         "label": "Model Control Protocols like MCP"
       },
       {
-        "id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
+        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
         "label": "Retrieval Augmented Generation - RAG"
       },
       {
-        "id": "urn:visionflow:owl:class:speech-and-voice",
+        "id": "urn:ngm:class:speech-and-voice",
         "label": "Speech and Voice"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:ollama",
+        "label": "Ollama"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-whisper",
+        "label": "Open AI Whisper"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:llama-3",
+        "label": "Llama 3"
+      },
+      {
+        "id": "urn:ngm:class:mistral-and-mixtral",
+        "label": "Mistral and Mixtral"
+      }
+    ]
   },
   "wikilinks": [
     {

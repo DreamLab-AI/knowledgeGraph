@@ -172,110 +172,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-data-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-data-management",
+  "@type": "Class",
   "label": "ETSI Domain: Data Management",
+  "definition": "Domain marker for ETSI metaverse categorisation covering data storage, processing, synchronisation, and lifecycle management for distributed virtual environments.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a85f6c583fa404cf1a3f5b338897af102076a0355c158404f288e12cbe7baf36"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-lifecycle",
+        "label": "Data Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:data-synchronization",
+        "label": "Data Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:caching-infrastructure",
+        "label": "Caching Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      },
+      {
+        "@id": "urn:ngm:class:replication-mechanisms",
+        "label": "Replication Mechanisms"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-synchronization",
+        "label": "Cross-Platform Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:state-persistence",
+        "label": "State Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a85f6c583fa404cf1a3f5b338897af102076a0355c158404f288e12cbe7baf36@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain marker for ETSI metaverse categorisation covering data storage, processing, synchronisation, and lifecycle management for distributed virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-lifecycle",
-      "vc:label": "Data Lifecycle"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-synchronization",
-      "vc:label": "Data Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:caching-infrastructure",
-      "vc:label": "Caching Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-systems",
-      "vc:label": "Database Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-mechanisms",
-      "vc:label": "Replication Mechanisms"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-synchronization",
-      "vc:label": "Cross-Platform Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-persistence",
-      "vc:label": "State Persistence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:consistency-protocols",
-      "vc:label": "Consistency Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

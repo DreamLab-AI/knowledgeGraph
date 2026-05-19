@@ -3,74 +3,87 @@
   "title": "Middleware",
   "slug": "middleware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:middleware",
+  "classIri": "urn:ngm:class:middleware",
   "domain": "infrastructure",
   "definition": "Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:message-queue",
+        "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       },
       {
-        "id": "urn:visionflow:linked:service-registry",
+        "id": "urn:ngm:class:service-registry",
         "label": "Service Registry"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:communication-protocol",
+        "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:distributed-communication",
+        "id": "urn:ngm:class:distributed-communication",
         "label": "Distributed Communication"
       },
       {
-        "id": "urn:visionflow:linked:resource-abstraction",
+        "id": "urn:ngm:class:resource-abstraction",
         "label": "Resource Abstraction"
       },
       {
-        "id": "urn:visionflow:linked:service-integration",
+        "id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

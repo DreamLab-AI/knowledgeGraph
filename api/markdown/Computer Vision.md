@@ -220,132 +220,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:computer-vision",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computer-vision",
+  "@type": "Class",
   "label": "Computer Vision",
+  "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:vision-processing",
-      "vc:label": "Vision Processing"
+      "@id": "urn:ngm:class:vision-processing",
+      "label": "Vision Processing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-navigation",
+        "label": "Autonomous Vehicle Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c404002aeffc75e2f07ac7b20fd771a37fac554cba89700c37cc9b5878efe4a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities. Computer vision encompasses image classification, object detection, segmentation, tracking, 3D reconstruction, and visual reasoning using deep learning architectures, particularly convolutional neural networks, to extract meaningful information from digital images and video.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-classification",
-      "vc:label": "Image Classification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "Object Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-segmentation",
-      "vc:label": "Semantic Segmentation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:image-processing",
-      "vc:label": "Image Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feature-extraction",
-      "vc:label": "Feature Extraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicle-navigation",
-      "vc:label": "Autonomous Vehicle Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-control",
-      "vc:label": "Quality Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-perception",
-      "vc:label": "Robotics Perception"
-    },
-    {
-      "@id": "urn:visionflow:linked:surveillance-systems",
-      "vc:label": "Surveillance Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:medical-imaging-ai",
-      "vc:label": "Medical Imaging AI"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

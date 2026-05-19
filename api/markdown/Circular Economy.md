@@ -408,396 +408,307 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:circular-economy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:circular-economy",
+  "@type": "Class",
   "label": "Circular Economy",
+  "definition": "Systemic economic model that eliminates waste and keeps materials, components, and products in use at their highest value for as long as possible through restorative and regenerative design, distinguished from the linear \"take-make-dispose\" paradigm by organising economic activity around three fo...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:economic-model",
-      "vc:label": "Economic Model"
+      "@id": "urn:ngm:class:economic-model",
+      "label": "Economic Model"
     },
     {
-      "@id": "urn:visionflow:linked:environmental-policy",
-      "vc:label": "Environmental Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-ecology",
-      "vc:label": "Industrial Ecology"
+      "@id": "urn:ngm:class:environmental-policy",
+      "label": "Environmental Policy"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c8ea788218f1bfaba2b06eb6cc0eb27134a999bbc0e659e87464d40b7237c3fd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cradle-to-cradle-design",
+        "label": "Cradle-to-Cradle Design"
+      },
+      {
+        "@id": "urn:ngm:class:deposit-return-scheme",
+        "label": "Deposit Return Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:product-as-a-service",
+        "label": "Product-as-a-Service"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-logistics",
+        "label": "Reverse Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:waste-hierarchy",
+        "label": "Waste Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:material-traceability",
+        "label": "Material Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-collaboration",
+        "label": "Stakeholder Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:green-growth",
+        "label": "Green Growth"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      },
+      {
+        "@id": "urn:ngm:class:resource-security",
+        "label": "Resource Security"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-manufacturing",
+        "label": "Sustainable Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cradle-to-cradle-design",
+        "label": "Cradle-to-Cradle Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
+        "label": "Ecodesign for Sustainable Products Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ellen-mac-arthur-foundation",
+        "label": "Ellen MacArthur Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:eu-green-deal",
+        "label": "EU Green Deal"
+      },
+      {
+        "@id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "@id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ve-chain",
+        "label": "VeChain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:eu-green-deal",
+        "label": "EU Green Deal"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-symbiosis",
+        "label": "Industrial Symbiosis"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:sdgs",
+        "label": "SDGs"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
+        "label": "Ecodesign for Sustainable Products Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:epcis",
+        "label": "EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:eu-battery-regulation",
+        "label": "EU Battery Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14040",
+        "label": "ISO 14040"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14044",
+        "label": "ISO 14044"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14072",
+        "label": "ISO 14072"
+      },
+      {
+        "@id": "urn:ngm:class:iso-59004",
+        "label": "ISO 59004"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c8ea788218f1bfaba2b06eb6cc0eb27134a999bbc0e659e87464d40b7237c3fd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systemic economic model that eliminates waste and keeps materials, components, and products in use at their highest value for as long as possible through restorative and regenerative design, distinguished from the linear \"take-make-dispose\" paradigm by organising economic activity around three foundational principles—designing out waste and pollution at the product design stage, keeping products and materials in use through cascading reuse-repair-remanufacture-recycle value hierarchies, and regenerating natural systems by safely returning biological nutrients to biospheres—formalised by the [[Ellen MacArthur Foundation]] (2013) drawing from Walter Stahel's Performance Economy (1976), Michael Braungart and William McDonough's [[Cradle-to-Cradle Design]] (2002) distinguishing biological and technical nutrient loops, and Robert Frosch and Nicholas Gallopoulos' industrial ecology metabolic analogy (1989), operationalised across the global economy via regulatory mandates (EU [[Ecodesign for Sustainable Products Regulation]] in force July 2024 establishing [[Digital Product Passport]] infrastructure with central EU registry operational July 2026; EU Battery Regulation requiring battery p",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cradle-to-cradle-design",
-      "vc:label": "Cradle-to-Cradle Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:deposit-return-scheme",
-      "vc:label": "Deposit Return Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-producer-responsibility",
-      "vc:label": "Extended Producer Responsibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-symbiosis",
-      "vc:label": "Industrial Symbiosis"
-    },
-    {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "Life Cycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-flow-analysis",
-      "vc:label": "Material Flow Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-as-a-service",
-      "vc:label": "Product-as-a-Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-logistics",
-      "vc:label": "Reverse Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:waste-hierarchy",
-      "vc:label": "Waste Hierarchy"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "Life Cycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-traceability",
-      "vc:label": "Material Traceability"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-collaboration",
-      "vc:label": "Stakeholder Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:product-design",
-      "vc:label": "Product Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:waste-management",
-      "vc:label": "Waste Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-finance",
-      "vc:label": "Green Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-growth",
-      "vc:label": "Green Growth"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-symbiosis",
-      "vc:label": "Industrial Symbiosis"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-security",
-      "vc:label": "Resource Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-manufacturing",
-      "vc:label": "Sustainable Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cradle-to-cradle-design",
-      "vc:label": "Cradle-to-Cradle Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecodesign-for-sustainable-products-regulation",
-      "vc:label": "Ecodesign for Sustainable Products Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ellen-mac-arthur-foundation",
-      "vc:label": "Ellen MacArthur Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-green-deal",
-      "vc:label": "EU Green Deal"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-producer-responsibility",
-      "vc:label": "Extended Producer Responsibility"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1",
-      "vc:label": "GS1"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t",
-      "vc:label": "IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-science",
-      "vc:label": "Material Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:product-design",
-      "vc:label": "Product Design"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-change-mitigation",
-      "vc:label": "Climate Change Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-finance",
-      "vc:label": "Green Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdgs",
-      "vc:label": "SDGs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainable-development",
-      "vc:label": "Sustainable Development"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1",
-      "vc:label": "GS1"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t",
-      "vc:label": "IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "Life Cycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:ve-chain",
-      "vc:label": "VeChain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:fast-fashion",
-      "vc:label": "Fast Fashion"
-    },
-    {
-      "@id": "urn:visionflow:linked:landfill-disposal",
-      "vc:label": "Landfill Disposal"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-economy",
-      "vc:label": "Linear Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:planned-obsolescence",
-      "vc:label": "Planned Obsolescence"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-use-products",
-      "vc:label": "Single-Use Products"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:carbon-credits",
-      "vc:label": "Carbon Credits"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-green-deal",
-      "vc:label": "EU Green Deal"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-symbiosis",
-      "vc:label": "Industrial Symbiosis"
-    },
-    {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "Life Cycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:product-design",
-      "vc:label": "Product Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:waste-management",
-      "vc:label": "Waste Management"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ecodesign-for-sustainable-products-regulation",
-      "vc:label": "Ecodesign for Sustainable Products Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:epcis",
-      "vc:label": "EPCIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-battery-regulation",
-      "vc:label": "EU Battery Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1-digital-link",
-      "vc:label": "GS1 Digital Link"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14040",
-      "vc:label": "ISO 14040"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14044",
-      "vc:label": "ISO 14044"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14072",
-      "vc:label": "ISO 14072"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-59004",
-      "vc:label": "ISO 59004"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:digital-product-passport",
-      "vc:label": "Digital Product Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -164,84 +164,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accessible-design",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accessible-design",
+  "@type": "Class",
   "label": "Accessible Design",
+  "definition": "Accessible Design is the practice of creating virtual environments and interactions usable by people with diverse disabilities, incorporating universal design principles from conception through implementation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
+      "@id": "urn:ngm:class:inclusive-design",
+      "label": "Inclusive Design"
     },
     {
-      "@id": "urn:visionflow:linked:universal-design",
-      "vc:label": "Universal Design"
+      "@id": "urn:ngm:class:universal-design",
+      "label": "Universal Design"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ae9313b803159ac31f6cbf65175c36aeab1b2b56847f0713621a111457c5b069"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "@id": "urn:ngm:class:user-research-with-disabled-participants",
+        "label": "User Research with Disabled Participants"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:broader-user-base",
+        "label": "Broader User Base"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ae9313b803159ac31f6cbf65175c36aeab1b2b56847f0713621a111457c5b069@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Accessible Design is the practice of creating virtual environments and interactions usable by people with diverse disabilities, incorporating universal design principles from conception through implementation. It integrates [[Accessibility Standard]]s, [[Accessible Experience]] philosophy, and inclusive [[3D User Interface]] design ensuring equitable [[Metaverse]] participation across visual, auditory, motor, and cognitive access dimensions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:assistive-technology-integration",
-      "vc:label": "Assistive Technology Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-research-with-disabled-participants",
-      "vc:label": "User Research with Disabled Participants"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:broader-user-base",
-      "vc:label": "Broader User Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:inclusive-participation",
-      "vc:label": "Inclusive Participation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-user-interface",
-      "vc:label": "3D User Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility-standard",
-      "vc:label": "Accessibility Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

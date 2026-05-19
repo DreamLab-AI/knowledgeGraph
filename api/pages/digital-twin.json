@@ -3,90 +3,94 @@
   "title": "Digital Twin",
   "slug": "digital-twin",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin",
+  "classIri": "urn:ngm:class:digital-twin",
   "domain": "spatial-computing",
   "definition": "Digital Twin is a spatial computing concept and a type of Digital Twin Technology. that enables Collaborative Design, Process Optimisation. comprising Control Interface, IoT Sensor Data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin-technology",
+      "id": "urn:ngm:class:digital-twin-technology",
       "label": "Digital Twin Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:control-interface",
+        "id": "urn:ngm:class:control-interface",
         "label": "Control Interface"
       },
       {
-        "id": "urn:visionflow:linked:io-t-sensor-data",
+        "id": "urn:ngm:class:io-t-sensor-data",
         "label": "IoT Sensor Data"
       },
       {
-        "id": "urn:visionflow:linked:real-time-synchronisation",
+        "id": "urn:ngm:class:real-time-synchronisation",
         "label": "Real-Time Synchronisation"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-model",
+        "id": "urn:ngm:class:3-d-model",
         "label": "3D Model"
       },
       {
-        "id": "urn:visionflow:owl:class:simulation-engine",
+        "id": "urn:ngm:class:simulation-engine",
         "label": "Simulation Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-replica",
+        "id": "urn:ngm:class:virtual-replica",
         "label": "Virtual Replica"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-visualisation",
+        "id": "urn:ngm:class:3-d-visualisation",
         "label": "3D Visualisation"
       },
       {
-        "id": "urn:visionflow:linked:data-aggregation",
+        "id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation"
       },
       {
-        "id": "urn:visionflow:linked:io-t-infrastructure",
+        "id": "urn:ngm:class:io-t-infrastructure",
         "label": "IoT Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-design",
+        "id": "urn:ngm:class:collaborative-design",
         "label": "Collaborative Design"
       },
       {
-        "id": "urn:visionflow:linked:process-optimisation",
+        "id": "urn:ngm:class:process-optimisation",
         "label": "Process Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:remote-monitoring",
+        "id": "urn:ngm:class:remote-monitoring",
         "label": "Remote Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commissioning",
+        "id": "urn:ngm:class:virtual-commissioning",
         "label": "Virtual Commissioning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

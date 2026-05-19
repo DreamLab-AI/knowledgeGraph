@@ -156,90 +156,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:end-effector",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:end-effector",
+  "@type": "Class",
   "label": "End Effector",
+  "definition": "End Effector - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:mechanical-component",
-      "vc:label": "Mechanical Component"
+      "@id": "urn:ngm:class:mechanical-component",
+      "label": "Mechanical Component"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-interface",
+        "label": "Control Interface"
+      },
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-interface",
+        "label": "Mechanical Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:assembly-operations",
+        "label": "Assembly Operations"
+      },
+      {
+        "@id": "urn:ngm:class:material-handling",
+        "label": "Material Handling"
+      },
+      {
+        "@id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:manipulation-system",
+        "label": "Manipulation System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-arm",
+        "label": "Robot Arm"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:12415df091c1ba22d2643cd9d180e402221953a96fabe8317351df5885d8ecf4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**End Effector** - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
-  "vc:qualityScore": {
-    "@value": "0.59",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.13",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:manipulation-system",
-      "vc:label": "Manipulation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-arm",
-      "vc:label": "Robot Arm"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:control-interface",
-      "vc:label": "Control Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-feedback",
-      "vc:label": "Force Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanical-interface",
-      "vc:label": "Mechanical Interface"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:assembly-operations",
-      "vc:label": "Assembly Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-handling",
-      "vc:label": "Material Handling"
-    },
-    {
-      "@id": "urn:visionflow:linked:precision-manufacturing",
-      "vc:label": "Precision Manufacturing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.59,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

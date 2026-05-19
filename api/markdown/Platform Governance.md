@@ -112,48 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:platform-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:platform-governance",
+  "@type": "Class",
   "label": "Platform Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4"
+  "definition": "Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0b33afac44368d6232221994db194b02c5ccaa8b941cf5e2fb5b812e3b6d51a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-decision-making",
-      "vc:label": "Decentralised Decision-Making"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

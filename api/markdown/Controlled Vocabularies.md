@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:controlled-vocabularies",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:controlled-vocabularies",
+  "@type": "Class",
   "label": "Controlled Vocabularies",
+  "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-organization",
-      "vc:label": "Knowledge Organization"
+      "@id": "urn:ngm:class:knowledge-organization",
+      "label": "Knowledge Organization"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1a3aa00ebb89fd0092dd6583838215a743f7ce8af2b355cd6dd65571019a4388"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-process",
+        "label": "Governance Process"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy-development",
+        "label": "Taxonomy Development"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consistent-indexing",
+        "label": "Consistent Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1a3aa00ebb89fd0092dd6583838215a743f7ce8af2b355cd6dd65571019a4388@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:governance-process",
-      "vc:label": "Governance Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:taxonomy-development",
-      "vc:label": "Taxonomy Development"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consistent-indexing",
-      "vc:label": "Consistent Indexing"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-retrieval",
-      "vc:label": "Information Retrieval"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

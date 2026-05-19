@@ -3,41 +3,58 @@
   "title": "Optimal Control",
   "slug": "optimal-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:optimal-control",
+  "classIri": "urn:ngm:class:optimal-control",
   "domain": "robotics",
   "definition": "A control strategy that determines control inputs to minimize or maximize a performance criterion (cost function) while satisfying system constraints. It seeks the best possible control policy according to specified objectives.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:rb-1002-closed-loop-control",
+      "id": "urn:ngm:class:rb-1002-closed-loop-control",
       "label": "RB-1002-closed-loop-control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.96,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cost-function",
+        "id": "urn:ngm:class:cost-function",
         "label": "Cost Function"
       },
       {
-        "id": "urn:visionflow:linked:system-dynamics-model",
+        "id": "urn:ngm:class:system-dynamics-model",
         "label": "System Dynamics Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:rb-1007-trajectory-generation",
+        "id": "urn:ngm:class:rb-1007-trajectory-generation",
         "label": "RB-1007-trajectory-generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

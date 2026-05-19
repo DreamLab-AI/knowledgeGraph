@@ -216,132 +216,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-property-right",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-property-right",
+  "@type": "Class",
   "label": "Virtual Property Right",
+  "definition": "A legally recognized claim to ownership, use, transfer, or exclusion rights over digital assets, virtual goods, or intangible resources within virtual environments, enforced through technical mechanisms, platform policies, or legal frameworks.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c2580748dd25e5f68db64b0d5751504ef17eaf9b59c5bc465543b4efac9c1f7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:enforcement-system",
+        "label": "Enforcement System"
+      },
+      {
+        "@id": "urn:ngm:class:exclusion-right",
+        "label": "Exclusion Right"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-claim",
+        "label": "Ownership Claim"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-mechanism",
+        "label": "Transfer Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:usage-permission",
+        "label": "Usage Permission"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:legal-recognition",
+        "label": "Legal Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ip-protection",
+        "label": "IP Protection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset-trading",
+        "label": "Virtual Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-land-rights",
+        "label": "Virtual Land Rights"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:legal-system",
+        "label": "Legal System"
+      },
+      {
+        "@id": "urn:ngm:class:property-law-framework",
+        "label": "Property Law Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c2580748dd25e5f68db64b0d5751504ef17eaf9b59c5bc465543b4efac9c1f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A legally recognized claim to ownership, use, transfer, or exclusion rights over digital assets, virtual goods, or intangible resources within virtual environments, enforced through technical mechanisms, platform policies, or legal frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:legal-system",
-      "vc:label": "Legal System"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-law-framework",
-      "vc:label": "Property Law Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:enforcement-system",
-      "vc:label": "Enforcement System"
-    },
-    {
-      "@id": "urn:visionflow:linked:exclusion-right",
-      "vc:label": "Exclusion Right"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-claim",
-      "vc:label": "Ownership Claim"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-mechanism",
-      "vc:label": "Transfer Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-permission",
-      "vc:label": "Usage Permission"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication-mechanism",
-      "vc:label": "Authentication Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-recognition",
-      "vc:label": "Legal Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ip-protection",
-      "vc:label": "IP Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-ownership",
-      "vc:label": "Digital Ownership"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-asset-trading",
-      "vc:label": "Virtual Asset Trading"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-land-rights",
-      "vc:label": "Virtual Land Rights"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:legal-entity",
-      "vc:label": "Legal Entity"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

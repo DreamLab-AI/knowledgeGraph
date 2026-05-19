@@ -3,53 +3,57 @@
   "title": "Avatar System",
   "slug": "avatar-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-system",
+  "classIri": "urn:ngm:class:avatar-system",
   "domain": "spatial-computing",
   "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:virtual-character-system",
+      "id": "urn:ngm:class:virtual-character-system",
       "label": "Virtual Character System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:animation-controller",
+        "id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
       },
       {
-        "id": "urn:visionflow:linked:input-processing",
+        "id": "urn:ngm:class:input-processing",
         "label": "Input Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:embodied-presence",
+        "id": "urn:ngm:class:embodied-presence",
         "label": "Embodied Presence"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction",
+        "id": "urn:ngm:class:social-interaction",
         "label": "Social Interaction"
       },
       {
-        "id": "urn:visionflow:linked:user-representation",
+        "id": "urn:ngm:class:user-representation",
         "label": "User Representation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

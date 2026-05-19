@@ -3,19 +3,18 @@
   "title": "Value Vector",
   "slug": "value-vector",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:value-vector",
+  "classIri": "urn:ngm:class:value-vector",
   "domain": "artificial-intelligence",
   "definition": "Value Vector is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

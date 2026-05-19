@@ -684,380 +684,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:consensus-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consensus-mechanism",
+  "@type": "Class",
   "label": "Consensus Mechanism",
+  "definition": "A [[Consensus Mechanism]] is a [[Distributed Algorithm]] enabling a population of independent, potentially adversarial nodes communicating over an unreliable network to agree on a single, totally-ordered sequence of state transitions (a replicated log) such that all honest participants eventually...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:atomic-broadcast",
-      "vc:label": "Atomic Broadcast"
+      "@id": "urn:ngm:class:atomic-broadcast",
+      "label": "Atomic Broadcast"
     },
     {
-      "@id": "urn:visionflow:linked:coordination-protocol",
-      "vc:label": "Coordination Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-algorithm",
-      "vc:label": "Distributed Algorithm"
+      "@id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a52c481103c8d5f7aedd02f1bbad34763c132b2e628f91594dac8e991cb78df0"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-certificate",
+        "label": "Quorum Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:view-change",
+        "label": "View Change"
+      },
+      {
+        "@id": "urn:ngm:class:voting-round",
+        "label": "Voting Round"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:economic-incentive",
+        "label": "Economic Incentive"
+      },
+      {
+        "@id": "urn:ngm:class:synchronised-clock",
+        "label": "Synchronised Clock"
+      },
+      {
+        "@id": "urn:ngm:class:validator-registry",
+        "label": "Validator Registry"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      },
+      {
+        "@id": "urn:ngm:class:hashgraph",
+        "label": "Hashgraph"
+      },
+      {
+        "@id": "urn:ngm:class:hot-stuff",
+        "label": "HotStuff"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof-of-Authority"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-history",
+        "label": "Proof-of-History"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof-of-Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-intersection",
+        "label": "Quorum Intersection"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "@id": "urn:ngm:class:throughput-scalability",
+        "label": "Throughput Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:validator-economics",
+        "label": "Validator Economics"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridges",
+        "label": "Cross-Chain Bridges"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-rollups",
+        "label": "Layer 2 Rollups"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-bips",
+        "label": "Bitcoin BIPs"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-ics-standards",
+        "label": "Cosmos ICS Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-eips",
+        "label": "Ethereum EIPs"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-7574-bit-torrent-like-gossip",
+        "label": "IETF RFC 7574 BitTorrent-like Gossip"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307-blockchain",
+        "label": "ISO TC 307 Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:nist-fips-204-post-quantum",
+        "label": "NIST FIPS 204 Post-Quantum"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a52c481103c8d5f7aedd02f1bbad34763c132b2e628f91594dac8e991cb78df0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A [[Consensus Mechanism]] is a [[Distributed Algorithm]] enabling a population of independent, potentially adversarial nodes communicating over an unreliable network to agree on a single, totally-ordered sequence of state transitions (a replicated log) such that all honest participants eventually converge on the same value (agreement / safety), every honest proposal is eventually decided (termination / liveness), and the decided value was proposed by at least one participant (validity / integrity), formalised within the Fischer-Lynch-Paterson (FLP) impossibility result establishing that no deterministic asynchronous protocol can guarantee all three properties simultaneously with even one faulty process, navigated in practice by relaxing one assumption — partial synchrony (Dwork-Lynch-Stockmeyer 1988) used by [[PBFT]] (Castro-Liskov 1999), [[Tendermint]] (Buchman 2016), [[HotStuff]] (Yin et al. 2018), [[Narwhal]]-[[Bullshark]] (Spiegelman et al. 2022) and [[Mysticeti]] (Sui 2024); randomisation under asynchrony used by [[Algorand]] (Chen-Micali 2016) verifiable random function (VRF) committee lottery and [[Avalanche]] (Rocket et al. 2018) repeated subsampling; or eventual probabilis",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-proposal",
-      "vc:label": "Block Proposal"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:finality-gadget",
-      "vc:label": "Finality Gadget"
-    },
-    {
-      "@id": "urn:visionflow:linked:leader-election",
-      "vc:label": "Leader Election"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum-certificate",
-      "vc:label": "Quorum Certificate"
-    },
-    {
-      "@id": "urn:visionflow:linked:slashing-condition",
-      "vc:label": "Slashing Condition"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-set",
-      "vc:label": "Validator Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:view-change",
-      "vc:label": "View Change"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-round",
-      "vc:label": "Voting Round"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fork-choice-rule",
-      "vc:label": "Fork Choice Rule"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:economic-incentive",
-      "vc:label": "Economic Incentive"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronised-clock",
-      "vc:label": "Synchronised Clock"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-registry",
-      "vc:label": "Validator Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-hash",
-      "vc:label": "Cryptographic Hash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-security",
-      "vc:label": "Blockchain Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-spend-prevention",
-      "vc:label": "Double-Spend Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-participation",
-      "vc:label": "Permissionless Participation"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-synchronisation",
-      "vc:label": "State Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sybil-resistance",
-      "vc:label": "Sybil Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-settlement",
-      "vc:label": "Trustless Settlement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:avalanche",
-      "vc:label": "Avalanche"
-    },
-    {
-      "@id": "urn:visionflow:linked:hashgraph",
-      "vc:label": "Hashgraph"
-    },
-    {
-      "@id": "urn:visionflow:linked:hot-stuff",
-      "vc:label": "HotStuff"
-    },
-    {
-      "@id": "urn:visionflow:linked:paxos",
-      "vc:label": "Paxos"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft",
-      "vc:label": "Raft"
-    },
-    {
-      "@id": "urn:visionflow:linked:tendermint",
-      "vc:label": "Tendermint"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nakamoto-consensus",
-      "vc:label": "Nakamoto Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
-      "vc:label": "Practical Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-authority",
-      "vc:label": "Proof-of-Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-history",
-      "vc:label": "Proof-of-History"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof-of-Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof-of-Work"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cap-theorem",
-      "vc:label": "CAP Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:flp-impossibility",
-      "vc:label": "FLP Impossibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-synchrony-model",
-      "vc:label": "Network Synchrony Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-signature",
-      "vc:label": "Threshold Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-random-function",
-      "vc:label": "Verifiable Random Function"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cross-chain-bridges",
-      "vc:label": "Cross-Chain Bridges"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-availability",
-      "vc:label": "Data Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-rollups",
-      "vc:label": "Layer 2 Rollups"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-execution",
-      "vc:label": "Smart Contract Execution"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bls-signature",
-      "vc:label": "BLS Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:erasure-coding",
-      "vc:label": "Erasure Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum-intersection",
-      "vc:label": "Quorum Intersection"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-cryptography",
-      "vc:label": "Threshold Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-random-function",
-      "vc:label": "Verifiable Random Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:byzantine-quorum-without-total-order",
-      "vc:label": "Byzantine Quorum Without Total Order"
-    },
-    {
-      "@id": "urn:visionflow:linked:centralised-consensus",
-      "vc:label": "Centralised Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:coordinator-based-tangle",
-      "vc:label": "Coordinator-Based Tangle"
-    },
-    {
-      "@id": "urn:visionflow:linked:eventually-consistent-system",
-      "vc:label": "Eventually Consistent System"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-source-of-truth-database",
-      "vc:label": "Single-Source-of-Truth Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:crdt",
-      "vc:label": "CRDT"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralisation",
-      "vc:label": "Decentralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:throughput-scalability",
-      "vc:label": "Throughput Scalability"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-economics",
-      "vc:label": "Validator Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-protocol",
-      "vc:label": "Blockchain Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:finality",
-      "vc:label": "Finality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mev",
-      "vc:label": "MEV"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-bips",
-      "vc:label": "Bitcoin BIPs"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosmos-ics-standards",
-      "vc:label": "Cosmos ICS Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-eips",
-      "vc:label": "Ethereum EIPs"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-7574-bit-torrent-like-gossip",
-      "vc:label": "IETF RFC 7574 BitTorrent-like Gossip"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc-307-blockchain",
-      "vc:label": "ISO TC 307 Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-fips-204-post-quantum",
-      "vc:label": "NIST FIPS 204 Post-Quantum"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:distributed-systems-theory",
-      "vc:label": "Distributed Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

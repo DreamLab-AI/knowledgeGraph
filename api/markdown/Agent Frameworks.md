@@ -524,348 +524,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:agent-frameworks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:agent-frameworks",
+  "@type": "Class",
   "label": "Agent Frameworks",
+  "definition": "Agent Frameworks are software libraries, runtimes, and orchestration platforms that compose large language models (LLMs) with tool-use, memory, planning, and inter-agent communication into autonomous or semi-autonomous systems capable of multi-step goal pursuit, encompassing single-agent harnesse...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:llm-orchestration",
-      "vc:label": "LLM Orchestration"
+      "@id": "urn:ngm:class:llm-orchestration",
+      "label": "LLM Orchestration"
     },
     {
-      "@id": "urn:visionflow:linked:workflow-engine",
-      "vc:label": "Workflow Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-framework",
-      "vc:label": "Software Framework"
+      "@id": "urn:ngm:class:workflow-engine",
+      "label": "Workflow Engine"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7f0123fce071966f70bdcc22c2e15772a1cf6c0e894b965ba06f60d6aea6c0d2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:evaluator-module",
+        "label": "Evaluator Module"
+      },
+      {
+        "@id": "urn:ngm:class:executor-module",
+        "label": "Executor Module"
+      },
+      {
+        "@id": "urn:ngm:class:hook-system",
+        "label": "Hook System"
+      },
+      {
+        "@id": "urn:ngm:class:memory-store",
+        "label": "Memory Store"
+      },
+      {
+        "@id": "urn:ngm:class:planner-module",
+        "label": "Planner Module"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "@id": "urn:ngm:class:state-graph",
+        "label": "State Graph"
+      },
+      {
+        "@id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "@id": "urn:ngm:class:trace-logger",
+        "label": "Trace Logger"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:inference-endpoint",
+        "label": "Inference Endpoint"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:observability-stack",
+        "label": "Observability Stack"
+      },
+      {
+        "@id": "urn:ngm:class:persistence-layer",
+        "label": "Persistence Layer"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-collaboration",
+        "label": "Multi-Agent Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-topology",
+        "label": "Hierarchical Topology"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-topology",
+        "label": "Mesh Topology"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:reflexion-pattern",
+        "label": "Reflexion Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:toolformer-pattern",
+        "label": "Toolformer Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:a2-a-protocol",
+        "label": "A2A Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:acp-protocol",
+        "label": "ACP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-protocol",
+        "label": "MCP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:open-api",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:llm-evaluation",
+        "label": "LLM Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:coding-assistant",
+        "label": "Coding Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:customer-service-agent",
+        "label": "Customer Service Agent"
+      },
+      {
+        "@id": "urn:ngm:class:data-analysis-agent",
+        "label": "Data Analysis Agent"
+      },
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:research-assistant",
+        "label": "Research Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:agntcy-collective",
+        "label": "AGNTCY Collective"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7f0123fce071966f70bdcc22c2e15772a1cf6c0e894b965ba06f60d6aea6c0d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Agent Frameworks are software libraries, runtimes, and orchestration platforms that compose large language models (LLMs) with tool-use, memory, planning, and inter-agent communication into autonomous or semi-autonomous systems capable of multi-step goal pursuit, encompassing single-agent harnesses (LangChain 97K+ GitHub stars 50K+ production apps, LlamaIndex 38K+ stars document/knowledge agents, Pydantic-AI type-safe Python framework May 2024, Vercel AI SDK streaming UI generation, BAML prompts-as-typed-functions DSL), graph-state runtimes (LangGraph 12.8K+ stars adopted by LinkedIn/Uber/Replit/Klarna/400+ enterprises, Gartner-cited in 34% of agent-framework production architecture documents at 1000+ employee companies, state-machine with conditional routing/checkpointing/human-in-the-loop), multi-agent orchestrators (AutoGen Microsoft Research 42K+ stars v0.4 January 2025 reorganised into autogen-core/autogen-agentchat/autogen-ext, CrewAI 45.9K+ stars $18M Series A powering 60% of Fortune 500 agents via role-playing crews, OpenAI Swarm October 2024 superseded by OpenAI Agents SDK March 2025 with Responses API, Google ADK April 2025 Vertex AI integration, claude-agent-sdk September",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:agent-runtime",
-      "vc:label": "Agent Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:evaluator-module",
-      "vc:label": "Evaluator Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:executor-module",
-      "vc:label": "Executor Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:hook-system",
-      "vc:label": "Hook System"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-store",
-      "vc:label": "Memory Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:planner-module",
-      "vc:label": "Planner Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-template",
-      "vc:label": "Prompt Template"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-graph",
-      "vc:label": "State Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-registry",
-      "vc:label": "Tool Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:trace-logger",
-      "vc:label": "Trace Logger"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:inference-endpoint",
-      "vc:label": "Inference Endpoint"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:observability-stack",
-      "vc:label": "Observability Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistence-layer",
-      "vc:label": "Persistence Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-window",
-      "vc:label": "Context Window"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-coding",
-      "vc:label": "Autonomous Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-automation",
-      "vc:label": "Browser Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-use",
-      "vc:label": "Computer Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-collaboration",
-      "vc:label": "Multi-Agent Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-discovery",
-      "vc:label": "Scientific Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-augmented-reasoning",
-      "vc:label": "Tool-Augmented Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought",
-      "vc:label": "Chain-of-Thought"
-    },
-    {
-      "@id": "urn:visionflow:linked:hierarchical-topology",
-      "vc:label": "Hierarchical Topology"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-topology",
-      "vc:label": "Mesh Topology"
-    },
-    {
-      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
-      "vc:label": "Plan-and-Execute Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act-pattern",
-      "vc:label": "ReAct Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:reflexion-pattern",
-      "vc:label": "Reflexion Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-consistency",
-      "vc:label": "Self-Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:toolformer-pattern",
-      "vc:label": "Toolformer Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:tree-of-thoughts",
-      "vc:label": "Tree of Thoughts"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:embedding-model",
-      "vc:label": "Embedding Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-inference",
-      "vc:label": "LLM Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-output",
-      "vc:label": "Structured Output"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-calling-api",
-      "vc:label": "Tool Calling API"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:coding-assistant",
-      "vc:label": "Coding Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-service-agent",
-      "vc:label": "Customer Service Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-analysis-agent",
-      "vc:label": "Data Analysis Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:rag-pipeline",
-      "vc:label": "RAG Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-assistant",
-      "vc:label": "Research Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:a2-a-protocol",
-      "vc:label": "A2A Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:acp-protocol",
-      "vc:label": "ACP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc",
-      "vc:label": "JSON-RPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-protocol",
-      "vc:label": "MCP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api",
-      "vc:label": "OpenAPI"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bpmn-orchestration",
-      "vc:label": "BPMN Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:classical-workflow-engine",
-      "vc:label": "Classical Workflow Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-dag-pipeline",
-      "vc:label": "Deterministic DAG Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-expert-system",
-      "vc:label": "Rule-Based Expert System"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:agentic-ai",
-      "vc:label": "Agentic AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-evaluation",
-      "vc:label": "LLM Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:agent-communication-protocol",
-      "vc:label": "Agent Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
-      "vc:label": "Agent-to-Agent Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:agntcy-collective",
-      "vc:label": "AGNTCY Collective"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

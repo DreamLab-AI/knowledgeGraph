@@ -3,94 +3,107 @@
   "title": "Data Fabric Architecture",
   "slug": "data-fabric-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-fabric-architecture",
+  "classIri": "urn:ngm:class:data-fabric-architecture",
   "domain": "infrastructure",
   "definition": "An integrated data-management architecture that provides unified access, governance, security, and orchestration across distributed and heterogeneous data sources through active metadata management, automated data integration, and policy-driven controls.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:access-control-layer",
+        "id": "urn:ngm:class:access-control-layer",
         "label": "Access Control Layer"
       },
       {
-        "id": "urn:visionflow:linked:data-catalog",
+        "id": "urn:ngm:class:data-catalog",
         "label": "Data Catalog"
       },
       {
-        "id": "urn:visionflow:linked:data-integration-service",
+        "id": "urn:ngm:class:data-integration-service",
         "label": "Data Integration Service"
       },
       {
-        "id": "urn:visionflow:owl:class:data-virtualization",
+        "id": "urn:ngm:class:data-virtualization",
         "label": "Data Virtualization"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-management",
+        "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-schema",
+        "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
       },
       {
-        "id": "urn:visionflow:linked:distributed-storage",
+        "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-repository",
+        "id": "urn:ngm:class:metadata-repository",
         "label": "Metadata Repository"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-domain-governance",
+        "id": "urn:ngm:class:cross-domain-governance",
         "label": "Cross-Domain Governance"
       },
       {
-        "id": "urn:visionflow:linked:data-lineage-tracking",
+        "id": "urn:ngm:class:data-lineage-tracking",
         "label": "Data Lineage Tracking"
       },
       {
-        "id": "urn:visionflow:linked:federated-queries",
+        "id": "urn:ngm:class:federated-queries",
         "label": "Federated Queries"
       },
       {
-        "id": "urn:visionflow:linked:self-service-analytics",
+        "id": "urn:ngm:class:self-service-analytics",
         "label": "Self-Service Analytics"
       },
       {
-        "id": "urn:visionflow:linked:unified-data-access",
+        "id": "urn:ngm:class:unified-data-access",
         "label": "Unified Data Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

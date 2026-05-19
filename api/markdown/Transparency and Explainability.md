@@ -128,41 +128,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transparency-and-explainability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transparency-and-explainability",
+  "@type": "Class",
   "label": "Transparency and Explainability",
+  "definition": "Transparency and Explainability is a trustworthiness dimension ensuring AI systems provide sufficient information about their operation, decision logic, capabilities, and limitations to enable appropriate understanding, interpretation, use, and oversight by relevant stakeholders.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a0b2362dcdb12e5837d3ba05ca52ba81fb4dad489a30880ccc4d8ba56d5e1cd7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a0b2362dcdb12e5837d3ba05ca52ba81fb4dad489a30880ccc4d8ba56d5e1cd7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Transparency and Explainability is a trustworthiness dimension ensuring AI systems provide sufficient information about their operation, decision logic, capabilities, and limitations to enable appropriate understanding, interpretation, use, and oversight by relevant stakeholders. This dimension encompasses three core components: traceability (documenting dataset provenance including sources, collection methods, and known biases, maintaining comprehensive process documentation covering development methodology and design choices, preserving audit trails enabling reconstruction of decisions and system evolution, and enabling reproducible research through complete documentation of experimental conditions), explainability (providing decision explanations appropriate to stakeholder type and context, implementing explanation methods including global explanations of overall system behavior, local explanations of specific predictions, and counterfactual explanations showing minimal changes required for different outcomes, and tailoring explanation complexity and format to audience including executive summaries for non-technical stakeholders, feature importance visualizations for domain expe",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

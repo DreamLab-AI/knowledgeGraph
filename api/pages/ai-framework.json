@@ -3,19 +3,13 @@
   "title": "AI Framework",
   "slug": "ai-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-framework",
+  "classIri": "urn:ngm:class:ai-framework",
   "domain": "artificial-intelligence",
-  "definition": "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications. These frameworks abstract low-level computational details, offering high-level interfaces for model construction, training, and inference. Popular frameworks include TensorFlow, PyTorch, scikit-learn, Keras, and JAX, each optimized for different use cases ranging from research prototyping to production deployment. Modern AI frameworks support automatic differentiation, distributed training, model serving, and integration with cloud infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

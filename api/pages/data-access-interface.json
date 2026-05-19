@@ -3,19 +3,18 @@
   "title": "Data Access Interface",
   "slug": "data-access-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-access-interface",
+  "classIri": "urn:ngm:class:data-access-interface",
   "domain": "infrastructure",
-  "definition": "Data Access Interface is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Data Access Interface is a type of Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

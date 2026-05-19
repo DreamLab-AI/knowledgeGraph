@@ -3,32 +3,36 @@
   "title": "Shared Ownership Model",
   "slug": "shared-ownership-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:shared-ownership-model",
+  "classIri": "urn:ngm:class:shared-ownership-model",
   "domain": "spatial-computing",
   "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:asset-tokenization",
+      "id": "urn:ngm:class:asset-tokenization",
       "label": "Asset Tokenization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:democratized-investment",
+        "id": "urn:ngm:class:democratized-investment",
         "label": "Democratized Investment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

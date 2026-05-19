@@ -3,90 +3,103 @@
   "title": "Deepfakes",
   "slug": "deepfakes",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:deepfakes",
+  "classIri": "urn:ngm:class:deepfakes",
   "domain": "artificial-intelligence",
   "definition": "AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audio-manipulation",
+        "id": "urn:ngm:class:audio-manipulation",
         "label": "Audio Manipulation"
       },
       {
-        "id": "urn:visionflow:linked:face-swapping",
+        "id": "urn:ngm:class:face-swapping",
         "label": "Face Swapping"
       },
       {
-        "id": "urn:visionflow:linked:gesture-synthesis",
+        "id": "urn:ngm:class:gesture-synthesis",
         "label": "Gesture Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-video-generation",
+        "id": "urn:ngm:class:synthetic-video-generation",
         "label": "Synthetic Video Generation"
       },
       {
-        "id": "urn:visionflow:linked:voice-cloning",
+        "id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-infrastructure",
+        "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:training-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Training Dataset"
       },
       {
-        "id": "urn:visionflow:owl:class:deep-learning",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-adversarial-network",
+        "id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-network",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-creation",
+        "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
       },
       {
-        "id": "urn:visionflow:linked:entertainment-production",
+        "id": "urn:ngm:class:entertainment-production",
         "label": "Entertainment Production"
       },
       {
-        "id": "urn:visionflow:linked:identity-deception",
+        "id": "urn:ngm:class:identity-deception",
         "label": "Identity Deception"
       },
       {
-        "id": "urn:visionflow:linked:media-manipulation",
+        "id": "urn:ngm:class:media-manipulation",
         "label": "Media Manipulation"
       },
       {
-        "id": "urn:visionflow:linked:misinformation",
+        "id": "urn:ngm:class:misinformation",
         "label": "Misinformation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-generated-content",
+        "label": "AI-Generated Content"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

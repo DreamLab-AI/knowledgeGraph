@@ -3,19 +3,18 @@
   "title": "Hydraulic Motor",
   "slug": "hydraulic-motor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hydraulic-motor",
+  "classIri": "urn:ngm:class:hydraulic-motor",
   "domain": "robotics",
   "definition": "Hydraulic motor converts hydraulic pressure to rotational torque.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hydraulic-actuator",
+      "id": "urn:ngm:class:hydraulic-actuator",
       "label": "Hydraulic Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

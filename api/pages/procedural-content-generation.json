@@ -3,78 +3,87 @@
   "title": "Procedural Content Generation",
   "slug": "procedural-content-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:procedural-content-generation",
+  "classIri": "urn:ngm:class:procedural-content-generation",
   "domain": "spatial-computing",
   "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-model-inference-engine",
+        "id": "urn:ngm:class:ai-model-inference-engine",
         "label": "AI Model Inference Engine"
       },
       {
-        "id": "urn:visionflow:linked:asset-synthesizer",
+        "id": "urn:ngm:class:asset-synthesizer",
         "label": "Asset Synthesizer"
       },
       {
-        "id": "urn:visionflow:linked:rule-based-generator",
+        "id": "urn:ngm:class:rule-based-generator",
         "label": "Rule-Based Generator"
       },
       {
-        "id": "urn:visionflow:owl:class:grammar-system",
+        "id": "urn:ngm:class:grammar-system",
         "label": "Grammar System"
       },
       {
-        "id": "urn:visionflow:owl:class:noise-function-library",
+        "id": "urn:ngm:class:noise-function-library",
         "label": "Noise Function Library"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-modeling-api",
+        "id": "urn:ngm:class:3-d-modeling-api",
         "label": "3D Modeling API"
       },
       {
-        "id": "urn:visionflow:linked:texture-generation-system",
+        "id": "urn:ngm:class:texture-generation-system",
         "label": "Texture Generation System"
       },
       {
-        "id": "urn:visionflow:owl:class:algorithmic-framework",
+        "id": "urn:ngm:class:algorithmic-framework",
         "label": "Algorithmic Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-asset-creation",
+        "id": "urn:ngm:class:automated-asset-creation",
         "label": "Automated Asset Creation"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-environments",
+        "id": "urn:ngm:class:dynamic-environments",
         "label": "Dynamic Environments"
       },
       {
-        "id": "urn:visionflow:linked:infinite-world-generation",
+        "id": "urn:ngm:class:infinite-world-generation",
         "label": "Infinite World Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:unique-content-variation",
+        "id": "urn:ngm:class:unique-content-variation",
         "label": "Unique Content Variation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

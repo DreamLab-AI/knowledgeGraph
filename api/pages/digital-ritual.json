@@ -3,98 +3,111 @@
   "title": "Digital Ritual",
   "slug": "digital-ritual",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-ritual",
+  "classIri": "urn:ngm:class:digital-ritual",
   "domain": "spatial-computing",
-  "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful participant interactions. bridges-to:: [[Telecollaboration]]",
+  "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful p...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-community-practice",
+      "id": "urn:ngm:class:virtual-community-practice",
       "label": "Virtual Community Practice"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ceremonial-space",
+        "id": "urn:ngm:class:ceremonial-space",
         "label": "Ceremonial Space"
       },
       {
-        "id": "urn:visionflow:linked:community-bonding",
+        "id": "urn:ngm:class:community-bonding",
         "label": "Community Bonding"
       },
       {
-        "id": "urn:visionflow:linked:ritual-design",
+        "id": "urn:ngm:class:ritual-design",
         "label": "Ritual Design"
       },
       {
-        "id": "urn:visionflow:linked:symbolic-enactment",
+        "id": "urn:ngm:class:symbolic-enactment",
         "label": "Symbolic Enactment"
       },
       {
-        "id": "urn:visionflow:owl:class:participant-coordination",
+        "id": "urn:ngm:class:participant-coordination",
         "label": "Participant Coordination"
       },
       {
-        "id": "urn:visionflow:owl:class:ritual-artifact",
+        "id": "urn:ngm:class:ritual-artifact",
         "label": "Ritual Artifact"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-visual-environment",
+        "id": "urn:ngm:class:audio-visual-environment",
         "label": "Audio-Visual Environment"
       },
       {
-        "id": "urn:visionflow:linked:synchronization-protocol",
+        "id": "urn:ngm:class:synchronization-protocol",
         "label": "Synchronization Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-system",
+        "id": "urn:ngm:class:avatar-system",
         "label": "Avatar System"
       },
       {
-        "id": "urn:visionflow:owl:class:symbolic-object-library",
+        "id": "urn:ngm:class:symbolic-object-library",
         "label": "Symbolic Object Library"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-world-platform",
+        "id": "urn:ngm:class:virtual-world-platform",
         "label": "Virtual World Platform"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:commemoration-event",
+        "id": "urn:ngm:class:commemoration-event",
         "label": "Commemoration Event"
       },
       {
-        "id": "urn:visionflow:linked:cultural-festival",
+        "id": "urn:ngm:class:cultural-festival",
         "label": "Cultural Festival"
       },
       {
-        "id": "urn:visionflow:linked:initiation-rite",
+        "id": "urn:ngm:class:initiation-rite",
         "label": "Initiation Rite"
       },
       {
-        "id": "urn:visionflow:linked:memorial-service",
+        "id": "urn:ngm:class:memorial-service",
         "label": "Memorial Service"
       },
       {
-        "id": "urn:visionflow:linked:religious-ceremony",
+        "id": "urn:ngm:class:religious-ceremony",
         "label": "Religious Ceremony"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-wedding",
+        "id": "urn:ngm:class:virtual-wedding",
         "label": "Virtual Wedding"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cultural-expression-system",
+        "label": "Cultural Expression System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-community-practice",
+        "label": "Virtual Community Practice"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

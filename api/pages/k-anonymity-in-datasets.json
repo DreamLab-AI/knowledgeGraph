@@ -3,19 +3,18 @@
   "title": "k-Anonymity in Datasets",
   "slug": "k-anonymity-in-datasets",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:k-anonymity-in-datasets",
+  "classIri": "urn:ngm:class:k-anonymity-in-datasets",
   "domain": "artificial-intelligence",
-  "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing re-identification attacks by guaranteeing anonymity sets of at least size k. This technique achieves anonymization through generalization (replacing specific values with broader categories, such as exact age \u2192 age range [30-40], 5-digit zip code \u2192 3-digit prefix) and suppression (removing or masking particularly identifying attribute values when generalization insufficient), producing equivalence classes where all records within a class share identical quasi-identifier values. The privacy guarantee states that for any record in the dataset, an adversary with knowledge of quasi-identifiers cannot distinguish the target individual from k-1 others, formalized as minimum group size \u2265 k for all equivalence classes partitioned by quasi-identifiers. However, limitations include vulnerability to homogeneity attacks when sensitive attributes lack diversity within equivalence classes (all k individua",
+  "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+      "id": "urn:ngm:class:privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

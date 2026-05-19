@@ -204,114 +204,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-entity",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-entity",
+  "@type": "Class",
   "label": "Blockchain Entity",
+  "definition": "A Blockchain Entity is the foundational abstract conceptual class representing any distinct component, construct, or participant within a blockchain ecosystem.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e88854f896e438443f31ff4a0435535dc1a1c7473a99420f6f06738b8bae6c54"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-participation",
+        "label": "Network Participation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-protocol",
+        "label": "Distributed Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-governance",
+        "label": "Autonomous Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-coordination",
+        "label": "Decentralised Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-audit-trails",
+        "label": "Transparent Audit Trails"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e88854f896e438443f31ff4a0435535dc1a1c7473a99420f6f06738b8bae6c54@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Blockchain Entity is the foundational abstract conceptual class representing any distinct component, construct, or participant within a blockchain ecosystem. It encompasses all tangible and intangible elements that constitute or interact with blockchain systems, including data structures, cryptographic primitives, network participants, protocols, transactions, and governance mechanisms. This root class provides the taxonomic foundation for the entire blockchain ontology, establishing common properties and relationships inherited by all blockchain-related concepts. Blockchain entities share core characteristics of distributed operation, cryptographic security, and decentralized coordination, distinguishing them from traditional centralized computing constructs. The concept encompasses both technical artifacts (blocks, transactions, smart contracts) and organizational elements (nodes, validators, governance bodies), unified by their participation in blockchain-based trust and coordination mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-key",
-      "vc:label": "Cryptographic Key"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:block",
-      "vc:label": "Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:node",
-      "vc:label": "Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction",
-      "vc:label": "Transaction"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:network-participation",
-      "vc:label": "Network Participation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-security",
-      "vc:label": "Cryptographic Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-protocol",
-      "vc:label": "Distributed Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-governance",
-      "vc:label": "Autonomous Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-coordination",
-      "vc:label": "Decentralised Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-trust",
-      "vc:label": "Distributed Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:transparent-audit-trails",
-      "vc:label": "Transparent Audit Trails"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

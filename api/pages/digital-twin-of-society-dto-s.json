@@ -3,82 +3,95 @@
   "title": "Digital Twin of Society (DToS)",
   "slug": "digital-twin-of-society-dto-s",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-of-society-dto-s",
+  "classIri": "urn:ngm:class:digital-twin-of-society-dto-s",
   "domain": "spatial-computing",
-  "definition": "A large-scale simulation of social, economic, and behavioural systems integrating city infrastructure, population dynamics, and environmental data to model and optimise societal outcomes. bridges-to:: [[Autonomous Robot]]",
+  "definition": "Digital Twin of Society (DToS) is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:city-infrastructure-twin",
+        "id": "urn:ngm:class:city-infrastructure-twin",
         "label": "City Infrastructure Twin"
       },
       {
-        "id": "urn:visionflow:linked:economic-model",
+        "id": "urn:ngm:class:economic-model",
         "label": "Economic Model"
       },
       {
-        "id": "urn:visionflow:linked:environmental-sensor-network",
+        "id": "urn:ngm:class:environmental-sensor-network",
         "label": "Environmental Sensor Network"
       },
       {
-        "id": "urn:visionflow:linked:population-simulation",
+        "id": "urn:ngm:class:population-simulation",
         "label": "Population Simulation"
       },
       {
-        "id": "urn:visionflow:linked:traffic-management-system",
+        "id": "urn:ngm:class:traffic-management-system",
         "label": "Traffic Management System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:agent-based-simulation",
+        "id": "urn:ngm:class:agent-based-simulation",
         "label": "Agent-Based Simulation"
       },
       {
-        "id": "urn:visionflow:linked:real-time-city-data",
+        "id": "urn:ngm:class:real-time-city-data",
         "label": "Real-time City Data"
       },
       {
-        "id": "urn:visionflow:linked:urban-data-platform",
+        "id": "urn:ngm:class:urban-data-platform",
         "label": "Urban Data Platform"
       },
       {
-        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:crisis-management",
+        "id": "urn:ngm:class:crisis-management",
         "label": "Crisis Management"
       },
       {
-        "id": "urn:visionflow:linked:policy-simulation",
+        "id": "urn:ngm:class:policy-simulation",
         "label": "Policy Simulation"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-optimization",
+        "id": "urn:ngm:class:sustainability-optimization",
         "label": "Sustainability Optimization"
       },
       {
-        "id": "urn:visionflow:linked:urban-planning",
+        "id": "urn:ngm:class:urban-planning",
         "label": "Urban Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-city-ecosystem",
+        "label": "Smart City Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

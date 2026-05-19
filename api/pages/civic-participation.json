@@ -3,53 +3,57 @@
   "title": "Civic Participation",
   "slug": "civic-participation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:civic-participation",
+  "classIri": "urn:ngm:class:civic-participation",
   "domain": "spatial-computing",
   "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:democratic-engagement",
+      "id": "urn:ngm:class:democratic-engagement",
       "label": "Democratic Engagement"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:accessibility",
+        "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-platform",
+        "id": "urn:ngm:class:digital-platform",
         "label": "Digital Platform"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "id": "urn:ngm:class:trust-infrastructure",
         "label": "Trust Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collective-governance",
+        "id": "urn:ngm:class:collective-governance",
         "label": "Collective Governance"
       },
       {
-        "id": "urn:visionflow:linked:digital-democracy",
+        "id": "urn:ngm:class:digital-democracy",
         "label": "Digital Democracy"
       },
       {
-        "id": "urn:visionflow:linked:public-deliberation",
+        "id": "urn:ngm:class:public-deliberation",
         "label": "Public Deliberation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

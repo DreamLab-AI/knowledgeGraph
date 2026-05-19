@@ -3,19 +3,13 @@
   "title": "Machine Learning Pipeline",
   "slug": "machine-learning-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-pipeline",
+  "classIri": "urn:ngm:class:machine-learning-pipeline",
   "domain": "artificial-intelligence",
-  "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, edeployment, and continuous monitoring.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

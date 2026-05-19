@@ -3,19 +3,18 @@
   "title": "Digital Asset Risks",
   "slug": "digital-asset-risks",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-risks",
+  "classIri": "urn:ngm:class:digital-asset-risks",
   "domain": "blockchain",
   "definition": "Comprehensive analysis of risks associated with digital assets, particularly [[Bitcoin]], encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "Active, Evolving (2025)",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

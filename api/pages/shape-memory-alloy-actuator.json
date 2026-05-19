@@ -3,19 +3,18 @@
   "title": "Shape Memory Alloy Actuator",
   "slug": "shape-memory-alloy-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:shape-memory-alloy-actuator",
+  "classIri": "urn:ngm:class:shape-memory-alloy-actuator",
   "domain": "robotics",
   "definition": "Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

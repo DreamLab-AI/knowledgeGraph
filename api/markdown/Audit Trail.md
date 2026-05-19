@@ -224,150 +224,111 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:audit-trail",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:audit-trail",
+  "@type": "Class",
   "label": "Audit Trail",
+  "definition": "A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-logs",
+        "label": "Access Logs"
+      },
+      {
+        "@id": "urn:ngm:class:event-logs",
+        "label": "Event Logs"
+      },
+      {
+        "@id": "urn:ngm:class:system-state-snapshots",
+        "label": "System State Snapshots"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-records",
+        "label": "Timestamp Records"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-records",
+        "label": "Transaction Records"
+      },
+      {
+        "@id": "urn:ngm:class:user-activity-logs",
+        "label": "User Activity Logs"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-integrity-protection",
+        "label": "Cryptographic Integrity Protection"
+      },
+      {
+        "@id": "urn:ngm:class:logging-infrastructure",
+        "label": "Logging Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:secure-storage",
+        "label": "Secure Storage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:incident-investigation",
+        "label": "Incident Investigation"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-system",
+        "label": "Governance System"
+      },
+      {
+        "@id": "urn:ngm:class:security-infrastructure",
+        "label": "Security Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:11654608d380d0d63565b77d4b0be2c40c77246ebf33f75bc784c5bd1f49b008@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:governance-system",
-      "vc:label": "Governance System"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-infrastructure",
-      "vc:label": "Security Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
-      "vc:label": "Algorithmic Transparency Index"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-provenance",
-      "vc:label": "Data Provenance"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:access-logs",
-      "vc:label": "Access Logs"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-logs",
-      "vc:label": "Event Logs"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-state-snapshots",
-      "vc:label": "System State Snapshots"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-records",
-      "vc:label": "Timestamp Records"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-records",
-      "vc:label": "Transaction Records"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-activity-logs",
-      "vc:label": "User Activity Logs"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clock-synchronization",
-      "vc:label": "Clock Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-integrity-protection",
-      "vc:label": "Cryptographic Integrity Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:logging-infrastructure",
-      "vc:label": "Logging Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-storage",
-      "vc:label": "Secure Storage"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:forensic-analysis",
-      "vc:label": "Forensic Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:incident-investigation",
-      "vc:label": "Incident Investigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:event-schema",
-      "vc:label": "Event Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:logging-protocol",
-      "vc:label": "Logging Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-synchronization-service",
-      "vc:label": "Time Synchronization Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-standard",
-      "vc:label": "Provenance Standard"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

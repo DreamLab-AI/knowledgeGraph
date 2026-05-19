@@ -216,130 +216,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:validation-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:validation-process",
+  "@type": "Class",
   "label": "Validation Process",
+  "definition": "Activity of systematically checking wher systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3d6787f16572dccc1ca8f2d17e738f44ceef7d172cd69a13ffb77d2d0b358738"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-testing",
+        "label": "Compliance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance-workflows",
+        "label": "Quality Assurance Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:requirement-verification",
+        "label": "Requirement Verification"
+      },
+      {
+        "@id": "urn:ngm:class:results-analysis",
+        "label": "Results Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:test-execution",
+        "label": "Test Execution"
+      },
+      {
+        "@id": "urn:ngm:class:standards-validation",
+        "label": "Standards Validation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:quality-metrics",
+        "label": "Quality Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:test-framework",
+        "label": "Test Framework"
+      },
+      {
+        "@id": "urn:ngm:class:testing-tools",
+        "label": "Testing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:validation-criteria",
+        "label": "Validation Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quality-certification",
+        "label": "Quality Certification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      },
+      {
+        "@id": "urn:ngm:class:system-acceptance",
+        "label": "System Acceptance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Standards Conformance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3d6787f16572dccc1ca8f2d17e738f44ceef7d172cd69a13ffb77d2d0b358738@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Activity of systematically checking whether systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-testing",
-      "vc:label": "Compliance Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-assurance-workflows",
-      "vc:label": "Quality Assurance Workflows"
-    },
-    {
-      "@id": "urn:visionflow:linked:requirement-verification",
-      "vc:label": "Requirement Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:results-analysis",
-      "vc:label": "Results Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-execution",
-      "vc:label": "Test Execution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-validation",
-      "vc:label": "Standards Validation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:quality-metrics",
-      "vc:label": "Quality Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-framework",
-      "vc:label": "Test Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:testing-tools",
-      "vc:label": "Testing Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-criteria",
-      "vc:label": "Validation Criteria"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-standards",
-      "vc:label": "Compliance Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:quality-certification",
-      "vc:label": "Quality Certification"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-approval",
-      "vc:label": "Regulatory Approval"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-acceptance",
-      "vc:label": "System Acceptance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-conformance",
-      "vc:label": "Standards Conformance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:requirements-specification",
-      "vc:label": "Requirements Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-data",
-      "vc:label": "Test Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-rules",
-      "vc:label": "Validation Rules"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-documentation",
-      "vc:label": "Standards Documentation"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

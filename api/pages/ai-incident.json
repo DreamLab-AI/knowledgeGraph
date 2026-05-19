@@ -3,19 +3,18 @@
   "title": "AI Incident",
   "slug": "ai-incident",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-incident",
+  "classIri": "urn:ngm:class:ai-incident",
   "domain": "artificial-intelligence",
   "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-risk",
+      "id": "urn:ngm:class:ai-risk",
       "label": "AI Risk"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

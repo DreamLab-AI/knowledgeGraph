@@ -116,41 +116,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-data",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-infrastructure-data",
+  "@type": "Class",
   "label": "ETSI_Domain_Infrastructure_Data",
+  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:867bd0e1376c6065925e22faf1d37b9326efe676112e0924a22c90e86657c60c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

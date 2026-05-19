@@ -376,314 +376,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hardware-and-edge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-and-edge",
+  "@type": "Class",
   "label": "Hardware and Edge",
+  "definition": "Hardware and Edge refers to the integrated class of specialised silicon architectures, embedded compute platforms, and distributed inference runtimes designed to execute artificial intelligence workloads at or near the point of data generation, without mandatory dependence on centralised cloud da...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:neural-processing-unit",
-      "vc:label": "Neural Processing Unit"
+      "@id": "urn:ngm:class:neural-processing-unit",
+      "label": "Neural Processing Unit"
     },
     {
-      "@id": "urn:visionflow:linked:ai-accelerator",
-      "vc:label": "AI Accelerator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
+      "@id": "urn:ngm:class:ai-accelerator",
+      "label": "AI Accelerator"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d10e928e97f3f82dcaea6e78b753d43d3adc09169626dd6588e72e92195ec332"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:apple-neural-engine",
+        "label": "Apple Neural Engine"
+      },
+      {
+        "@id": "urn:ngm:class:arm-ethos-npu",
+        "label": "ARM Ethos NPU"
+      },
+      {
+        "@id": "urn:ngm:class:google-coral-edge-tpu",
+        "label": "Google Coral Edge TPU"
+      },
+      {
+        "@id": "urn:ngm:class:hailo-accelerator",
+        "label": "Hailo Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:intel-movidius",
+        "label": "Intel Movidius"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-jetson",
+        "label": "NVIDIA Jetson"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:qualcomm-ai-engine",
+        "label": "Qualcomm AI Engine"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow-lite",
+        "label": "TensorFlow Lite"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:model-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-design-power",
+        "label": "Thermal Design Power"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ml",
+        "label": "Privacy-Preserving ML"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-ai",
+        "label": "Wearable AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:apache-tvm",
+        "label": "Apache TVM"
+      },
+      {
+        "@id": "urn:ngm:class:execu-torch",
+        "label": "ExecuTorch"
+      },
+      {
+        "@id": "urn:ngm:class:mlir",
+        "label": "MLIR"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:open-vino",
+        "label": "OpenVINO"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow-lite",
+        "label": "TensorFlow Lite"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:model-pruning",
+        "label": "Model Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation-aware-training",
+        "label": "Quantisation Aware Training"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-decomposition",
+        "label": "Tensor Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-large-language-models",
+        "label": "Proprietary Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-p2941",
+        "label": "IEEE P2941"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-open-cl",
+        "label": "Khronos OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:mlcommons-mlperf",
+        "label": "MLCommons MLPerf"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d10e928e97f3f82dcaea6e78b753d43d3adc09169626dd6588e72e92195ec332@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hardware and Edge refers to the integrated class of specialised silicon architectures, embedded compute platforms, and distributed inference runtimes designed to execute artificial intelligence workloads at or near the point of data generation, without mandatory dependence on centralised cloud data centres. The concept spans dedicated neural processing units (NPUs) fabricated in high-volume consumer silicon (smartphones, laptops, wearables), purpose-built edge AI accelerators for industrial and robotics applications (NVIDIA Jetson Orin/Thor, Google Coral Edge TPU, Hailo-8/10, Qualcomm Cloud AI 100), the runtime ecosystems that compile, quantise, and deploy models to heterogeneous endpoints (ONNX Runtime, TensorFlow Lite, Apache TVM, ExecuTorch), and the federated learning frameworks that allow multiple edge nodes to jointly improve model quality without centralising raw data.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:apple-neural-engine",
-      "vc:label": "Apple Neural Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:arm-ethos-npu",
-      "vc:label": "ARM Ethos NPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-coral-edge-tpu",
-      "vc:label": "Google Coral Edge TPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:hailo-accelerator",
-      "vc:label": "Hailo Accelerator"
-    },
-    {
-      "@id": "urn:visionflow:linked:intel-movidius",
-      "vc:label": "Intel Movidius"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-processing-unit",
-      "vc:label": "Neural Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-jetson",
-      "vc:label": "NVIDIA Jetson"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-runtime",
-      "vc:label": "ONNX Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:qualcomm-ai-engine",
-      "vc:label": "Qualcomm AI Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow-lite",
-      "vc:label": "TensorFlow Lite"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:hardware-abstraction-layer",
-      "vc:label": "Hardware Abstraction Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-bandwidth",
-      "vc:label": "Memory Bandwidth"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-quantisation",
-      "vc:label": "Model Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:thermal-design-power",
-      "vc:label": "Thermal Design Power"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-automation",
-      "vc:label": "Industrial Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-device-inference",
-      "vc:label": "On-Device Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-ml",
-      "vc:label": "Privacy-Preserving ML"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-ai",
-      "vc:label": "Real-Time AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:wearable-ai",
-      "vc:label": "Wearable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:apache-tvm",
-      "vc:label": "Apache TVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:execu-torch",
-      "vc:label": "ExecuTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlir",
-      "vc:label": "MLIR"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-runtime",
-      "vc:label": "ONNX Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-vino",
-      "vc:label": "OpenVINO"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow-lite",
-      "vc:label": "TensorFlow Lite"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:arm-architecture",
-      "vc:label": "ARM Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:risc-v",
-      "vc:label": "RISC-V"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-fabrication",
-      "vc:label": "Semiconductor Fabrication"
-    },
-    {
-      "@id": "urn:visionflow:linked:tsmc-n3-e-process",
-      "vc:label": "TSMC N3E Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:model-pruning",
-      "vc:label": "Model Pruning"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-architecture-search",
-      "vc:label": "Neural Architecture Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation-aware-training",
-      "vc:label": "Quantisation Aware Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-decomposition",
-      "vc:label": "Tensor Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-distillation",
-      "vc:label": "Knowledge Distillation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-inference",
-      "vc:label": "Centralised Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:cpu-only-inference",
-      "vc:label": "CPU-Only Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-centre-gpu",
-      "vc:label": "Data Centre GPU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "vc:label": "Proprietary Large Language Models"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:etsi-mec",
-      "vc:label": "ETSI MEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-p2941",
-      "vc:label": "IEEE P2941"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-open-cl",
-      "vc:label": "Khronos OpenCL"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlcommons-mlperf",
-      "vc:label": "MLCommons MLPerf"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-standard",
-      "vc:label": "ONNX Standard"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

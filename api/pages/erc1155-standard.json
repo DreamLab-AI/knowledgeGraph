@@ -3,27 +3,31 @@
   "title": "ERC1155 Standard",
   "slug": "erc1155-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc1155-standard",
+  "classIri": "urn:ngm:class:erc1155-standard",
   "domain": "blockchain",
   "definition": "Multi-token standard supporting both fungible and non-fungible tokens in a single contract.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Identity",
   "slug": "virtual-identity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-identity",
+  "classIri": "urn:ngm:class:virtual-identity",
   "domain": "infrastructure",
   "definition": "A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-identity",
+      "id": "urn:ngm:class:digital-identity",
       "label": "Digital Identity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

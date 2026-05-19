@@ -3,32 +3,41 @@
   "title": "Layer2Scaling",
   "slug": "layer2-scaling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:layer2-scaling",
+  "classIri": "urn:ngm:class:layer2-scaling",
   "domain": "blockchain",
-  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (Ethereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]]. Layer 2 solutions address blockchain congestion and high fees by moving computation off-chain\u2014[[Optimism]] and [[Arbitrum]] use [[OptimisticRollup|optimistic rollups]] (assume validity, prove fraud), [[zkSync]] and [[Polygon]] use [[ZeroKnowledgeProof|zero-knowledge rollups]] (prove correctness)\u2014enabling metaverse transactions at near-free costs and sub-second settlement. Bridges enable [[InteroperabilityProtocol|cross-layer asset transfers]] supporting multi-chain applications.",
+  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (ereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-scalability",
+      "id": "urn:ngm:class:blockchain-scalability",
       "label": "Blockchain Scalability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:high-throughput-transaction",
+        "id": "urn:ngm:class:high-throughput-transaction",
         "label": "HighThroughputTransaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "CryptographicProof"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

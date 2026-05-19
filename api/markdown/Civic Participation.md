@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:civic-participation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:civic-participation",
+  "@type": "Class",
   "label": "Civic Participation",
+  "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:democratic-engagement",
-      "vc:label": "Democratic Engagement"
+      "@id": "urn:ngm:class:democratic-engagement",
+      "label": "Democratic Engagement"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dc187a19e10d1bf7958a25b79ecbb27c639254e59780103bba44ccad8bcbda71"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-democracy",
+        "label": "Digital Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:public-deliberation",
+        "label": "Public Deliberation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dc187a19e10d1bf7958a25b79ecbb27c639254e59780103bba44ccad8bcbda71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-platform",
-      "vc:label": "Digital Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collective-governance",
-      "vc:label": "Collective Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-democracy",
-      "vc:label": "Digital Democracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-deliberation",
-      "vc:label": "Public Deliberation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,163 +3,271 @@
   "title": "Lightning Network",
   "slug": "lightning-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lightning-network",
+  "classIri": "urn:ngm:class:lightning-network",
   "domain": "blockchain",
-  "definition": "The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer. Conceptualised by Joseph Poon and Thaddeus Dryja in drafts circulated from 2015 and formalised in their 2016 white paper \"The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments,\" the protocol allows two counterparties to lock funds into a 2-of-2 multisignature on-chain output, exchange an unlimited series of signed off-chain commitment transactions updating their respective balances, and broadcast only a final settlement transaction when the channel closes. Multi-hop routing via [[Hash Time-Locked Contracts]] (HTLCs) chains these bilateral channels into a globe-spanning payment graph capable of processing millions of transactions per second at sub-cent fees, routing trustlessly through intermediary nodes without requiring pre-trust between sender and recipient. The Basis of Lightning Technology ([[BOLT Specifications]]) (BOLT 0\u201312) defines every layer of the interoperability stack across three major implementations: L",
+  "definition": "The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:layer-2-scaling",
+      "id": "urn:ngm:class:layer-2-scaling",
       "label": "Layer 2 Scaling"
     },
     {
-      "id": "urn:visionflow:linked:payment-channel-network",
+      "id": "urn:ngm:class:payment-channel-network",
       "label": "Payment Channel Network"
-    },
-    {
-      "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "label": "Bitcoin Technical Overview"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bolt-specifications",
+        "id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specifications"
       },
       {
-        "id": "urn:visionflow:linked:bolt12-offers",
+        "id": "urn:ngm:class:bolt12-offers",
         "label": "BOLT12 Offers"
       },
       {
-        "id": "urn:visionflow:linked:channel-factory",
+        "id": "urn:ngm:class:channel-factory",
         "label": "Channel Factory"
       },
       {
-        "id": "urn:visionflow:linked:hash-time-locked-contracts",
+        "id": "urn:ngm:class:hash-time-locked-contracts",
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "id": "urn:visionflow:linked:lightning-service-providers",
+        "id": "urn:ngm:class:lightning-service-providers",
         "label": "Lightning Service Providers"
       },
       {
-        "id": "urn:visionflow:linked:onion-routing",
+        "id": "urn:ngm:class:onion-routing",
         "label": "Onion Routing"
       },
       {
-        "id": "urn:visionflow:linked:payment-channel",
+        "id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
       },
       {
-        "id": "urn:visionflow:linked:routing-algorithm",
+        "id": "urn:ngm:class:routing-algorithm",
         "label": "Routing Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:watchtower",
+        "id": "urn:ngm:class:watchtower",
         "label": "Watchtower"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:multisignature",
+        "id": "urn:ngm:class:multisignature",
         "label": "Multisignature"
       },
       {
-        "id": "urn:visionflow:linked:timelock",
+        "id": "urn:ngm:class:timelock",
         "label": "Timelock"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-commitment",
+        "id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitment"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:instant-transactions",
+        "id": "urn:ngm:class:instant-transactions",
         "label": "Instant Transactions"
       },
       {
-        "id": "urn:visionflow:linked:machine-payments",
+        "id": "urn:ngm:class:machine-payments",
         "label": "Machine Payments"
       },
       {
-        "id": "urn:visionflow:linked:streaming-payments",
+        "id": "urn:ngm:class:streaming-payments",
         "label": "Streaming Payments"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-border-compliance",
+        "id": "urn:ngm:class:cross-border-compliance",
         "label": "Cross Border Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:financial-infrastructure",
+        "id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-coins",
+        "id": "urn:ngm:class:stable-coins",
         "label": "Stable Coins"
       },
       {
-        "id": "urn:visionflow:owl:class:taproot-assets",
+        "id": "urn:ngm:class:taproot-assets",
         "label": "Taproot Assets"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bolt-specifications",
+        "id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specifications"
       },
       {
-        "id": "urn:visionflow:linked:bolt12-offers",
+        "id": "urn:ngm:class:bolt12-offers",
         "label": "BOLT12 Offers"
       },
       {
-        "id": "urn:visionflow:linked:channel-factory",
+        "id": "urn:ngm:class:channel-factory",
         "label": "Channel Factory"
       },
       {
-        "id": "urn:visionflow:linked:hash-time-locked-contracts",
+        "id": "urn:ngm:class:hash-time-locked-contracts",
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "id": "urn:visionflow:linked:lnurl-protocol",
+        "id": "urn:ngm:class:lnurl-protocol",
         "label": "LNURL Protocol"
       },
       {
-        "id": "urn:visionflow:linked:multi-path-payments",
+        "id": "urn:ngm:class:multi-path-payments",
         "label": "Multi-Path Payments"
       },
       {
-        "id": "urn:visionflow:linked:onion-routing",
+        "id": "urn:ngm:class:onion-routing",
         "label": "Onion Routing"
       },
       {
-        "id": "urn:visionflow:linked:splicing",
+        "id": "urn:ngm:class:splicing",
         "label": "Splicing"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mu-sig2",
+        "label": "MuSig2"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:sphinx-protocol",
+        "label": "Sphinx Protocol"
+      },
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "id": "urn:ngm:class:stable-coins",
+        "label": "Stable Coins"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:acinq",
+        "label": "ACINQ"
+      },
+      {
+        "id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      },
+      {
+        "id": "urn:ngm:class:bolt-specifications",
+        "label": "BOLT Specifications"
+      },
+      {
+        "id": "urn:ngm:class:lightning-labs",
+        "label": "Lightning Labs"
+      },
+      {
+        "id": "urn:ngm:class:spiral",
+        "label": "Spiral"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

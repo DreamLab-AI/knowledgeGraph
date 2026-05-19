@@ -3,82 +3,95 @@
   "title": "Mixed Reality (MR)",
   "slug": "mixed-reality-mr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mixed-reality-mr",
+  "classIri": "urn:ngm:class:mixed-reality-mr",
   "domain": "spatial-computing",
   "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:depth-camera",
+        "id": "urn:ngm:class:depth-camera",
         "label": "Depth Camera"
       },
       {
-        "id": "urn:visionflow:linked:lighting-estimation",
+        "id": "urn:ngm:class:lighting-estimation",
         "label": "Lighting Estimation"
       },
       {
-        "id": "urn:visionflow:linked:occlusion-rendering",
+        "id": "urn:ngm:class:occlusion-rendering",
         "label": "Occlusion Rendering"
       },
       {
-        "id": "urn:visionflow:linked:physics-simulation-engine",
+        "id": "urn:ngm:class:physics-simulation-engine",
         "label": "Physics Simulation Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-mesh",
+        "id": "urn:ngm:class:spatial-mesh",
         "label": "Spatial Mesh"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:environmental-lighting",
+        "id": "urn:ngm:class:environmental-lighting",
         "label": "Environmental Lighting"
       },
       {
-        "id": "urn:visionflow:linked:object-tracking",
+        "id": "urn:ngm:class:object-tracking",
         "label": "Object Tracking"
       },
       {
-        "id": "urn:visionflow:linked:real-time-3-d-reconstruction",
+        "id": "urn:ngm:class:real-time-3-d-reconstruction",
         "label": "Real-Time 3D Reconstruction"
       },
       {
-        "id": "urn:visionflow:owl:class:hand-tracking",
+        "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bidirectional-interaction",
+        "id": "urn:ngm:class:bidirectional-interaction",
         "label": "Bidirectional Interaction"
       },
       {
-        "id": "urn:visionflow:linked:realistic-occlusion",
+        "id": "urn:ngm:class:realistic-occlusion",
         "label": "Realistic Occlusion"
       },
       {
-        "id": "urn:visionflow:owl:class:shared-spatial-anchors",
+        "id": "urn:ngm:class:shared-spatial-anchors",
         "label": "Shared Spatial Anchors"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-physical-collision",
+        "id": "urn:ngm:class:virtual-physical-collision",
         "label": "Virtual-Physical Collision"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

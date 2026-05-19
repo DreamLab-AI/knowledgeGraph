@@ -3,90 +3,107 @@
   "title": "Spatial Audio Scene Description",
   "slug": "spatial-audio-scene-description",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-audio-scene-description",
+  "classIri": "urn:ngm:class:spatial-audio-scene-description",
   "domain": "spatial-computing",
   "definition": "A data model for encoding sound sources, listener positions, acoustic environments, and spatial audio metadata in three-dimensional space to enable immersive and realistic audio experiences in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acoustic-properties",
+        "id": "urn:ngm:class:acoustic-properties",
         "label": "Acoustic Properties"
       },
       {
-        "id": "urn:visionflow:linked:ambisonics-representation",
+        "id": "urn:ngm:class:ambisonics-representation",
         "label": "Ambisonics Representation"
       },
       {
-        "id": "urn:visionflow:linked:audio-object",
+        "id": "urn:ngm:class:audio-object",
         "label": "Audio Object"
       },
       {
-        "id": "urn:visionflow:linked:listener-position",
+        "id": "urn:ngm:class:listener-position",
         "label": "Listener Position"
       },
       {
-        "id": "urn:visionflow:linked:sound-source-position",
+        "id": "urn:ngm:class:sound-source-position",
         "label": "Sound Source Position"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-metadata",
+        "id": "urn:ngm:class:spatial-metadata",
         "label": "Spatial Metadata"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-coordinate-system",
+        "id": "urn:ngm:class:3-d-coordinate-system",
         "label": "3D Coordinate System"
       },
       {
-        "id": "urn:visionflow:linked:audio-codec",
+        "id": "urn:ngm:class:audio-codec",
         "label": "Audio Codec"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio-processor",
+        "id": "urn:ngm:class:spatial-audio-processor",
         "label": "Spatial Audio Processor"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:acoustic-realism",
+        "id": "urn:ngm:class:acoustic-realism",
         "label": "Acoustic Realism"
       },
       {
-        "id": "urn:visionflow:linked:ambisonics-playback",
+        "id": "urn:ngm:class:ambisonics-playback",
         "label": "Ambisonics Playback"
       },
       {
-        "id": "urn:visionflow:linked:binaural-rendering",
+        "id": "urn:ngm:class:binaural-rendering",
         "label": "Binaural Rendering"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-audio-mixing",
+        "id": "urn:ngm:class:dynamic-audio-mixing",
         "label": "Dynamic Audio Mixing"
       },
       {
-        "id": "urn:visionflow:linked:object-based-audio",
+        "id": "urn:ngm:class:object-based-audio",
         "label": "Object-Based Audio"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-scene-graph",
+        "label": "3D Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment-specification",
+        "label": "Virtual Environment Specification"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

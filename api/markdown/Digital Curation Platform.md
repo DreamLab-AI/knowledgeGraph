@@ -212,112 +212,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-curation-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-curation-platform",
+  "@type": "Class",
   "label": "Digital Curation Platform",
+  "definition": "Digital Curation Platform is a type of Digital Asset Management in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
+      "@id": "urn:ngm:class:digital-asset-management",
+      "label": "Digital Asset Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:438e4fa10dbf8630bd5c5ed5d2dfe3567508ac7d50311286004486befb794987"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-repository",
+        "label": "Content Repository"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-manager",
+        "label": "Metadata Manager"
+      },
+      {
+        "@id": "urn:ngm:class:preservation-engine",
+        "label": "Preservation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:versioning-system",
+        "label": "Versioning System"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:search-interface",
+        "label": "Search Interface"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:preservation-policy",
+        "label": "Preservation Policy"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collection-management",
+        "label": "Collection Management"
+      },
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:public-access",
+        "label": "Public Access"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-archival",
+        "label": "Long-Term Archival"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:438e4fa10dbf8630bd5c5ed5d2dfe3567508ac7d50311286004486befb794987@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Integrated system for organising, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-repository",
-      "vc:label": "Content Repository"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-manager",
-      "vc:label": "Metadata Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:preservation-engine",
-      "vc:label": "Preservation Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:versioning-system",
-      "vc:label": "Versioning System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:search-interface",
-      "vc:label": "Search Interface"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:preservation-policy",
-      "vc:label": "Preservation Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collection-management",
-      "vc:label": "Collection Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-discovery",
-      "vc:label": "Content Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-preservation",
-      "vc:label": "Cultural Heritage Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-access",
-      "vc:label": "Public Access"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:long-term-archival",
-      "vc:label": "Long-Term Archival"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

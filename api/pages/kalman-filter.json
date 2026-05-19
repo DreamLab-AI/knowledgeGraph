@@ -3,32 +3,31 @@
   "title": "Kalman Filter",
   "slug": "kalman-filter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:kalman-filter",
+  "classIri": "urn:ngm:class:kalman-filter",
   "domain": "robotics",
   "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:bayes-filter",
+      "id": "urn:ngm:class:bayes-filter",
       "label": "Bayes Filter"
     },
     {
-      "id": "urn:visionflow:owl:class:state-estimation",
+      "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.98,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gaussian-noise-assumption",
+        "id": "urn:ngm:class:gaussian-noise-assumption",
         "label": "Gaussian Noise Assumption"
       },
       {
-        "id": "urn:visionflow:linked:linear-system-model",
+        "id": "urn:ngm:class:linear-system-model",
         "label": "Linear System Model"
       }
     ],
@@ -36,7 +35,21 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

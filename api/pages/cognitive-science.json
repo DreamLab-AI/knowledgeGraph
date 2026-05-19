@@ -3,14 +3,13 @@
   "title": "Cognitive Science",
   "slug": "cognitive-science",
   "public": true,
-  "classIri": "urn:visionflow:linked:cognitive-science",
+  "classIri": "urn:ngm:class:cognitive-science",
   "domain": "infrastructure",
   "definition": "Cognitive Science is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

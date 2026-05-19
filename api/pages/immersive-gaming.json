@@ -3,32 +3,36 @@
   "title": "Immersive Gaming",
   "slug": "immersive-gaming",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-gaming",
+  "classIri": "urn:ngm:class:immersive-gaming",
   "domain": "spatial-computing",
   "definition": "Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-gaming",
+      "id": "urn:ngm:class:digital-gaming",
       "label": "Digital Gaming"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:vr-gaming-experience",
+        "id": "urn:ngm:class:vr-gaming-experience",
         "label": "VR Gaming Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

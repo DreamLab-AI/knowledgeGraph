@@ -168,106 +168,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-governance-and-ethics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-governance-and-ethics",
+  "@type": "Class",
   "label": "ETSI Domain: Governance & Ethics",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c7d2d5c3b0daa6076457b740d139914e9dfa168ee9e2cd0d68311837d12726dc"
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing ical governance frameworks, responsible decision-making processes, and value-aligned organisational structures.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ethics-committee",
+        "label": "Ethics Committee"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:value-framework",
+        "label": "Value Framework"
+      },
+      {
+        "@id": "urn:ngm:class:governance-board",
+        "label": "Governance Board"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ethics-and-law",
+        "label": "Ethics & Law"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ethical-decision-making",
+        "label": "Ethical Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-accountability",
+        "label": "Stakeholder Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c7d2d5c3b0daa6076457b740d139914e9dfa168ee9e2cd0d68311837d12726dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing ethical governance frameworks, responsible decision-making processes, and value-aligned organisational structures.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ethics-committee",
-      "vc:label": "Ethics Committee"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-engagement",
-      "vc:label": "Stakeholder Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-framework",
-      "vc:label": "Value Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-board",
-      "vc:label": "Governance Board"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ethics-and-law",
-      "vc:label": "Ethics & Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance",
-      "vc:label": "Governance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ethical-decision-making",
-      "vc:label": "Ethical Decision-Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-accountability",
-      "vc:label": "Stakeholder Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:value-alignment",
-      "vc:label": "Value Alignment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ethical-principles",
-      "vc:label": "Ethical Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-models",
-      "vc:label": "Governance Models"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Multi-Head Attention",
   "slug": "multi-head-attention",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:multi-head-attention",
+  "classIri": "urn:ngm:class:multi-head-attention",
   "domain": "artificial-intelligence",
   "definition": "An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

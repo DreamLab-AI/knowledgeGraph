@@ -3,19 +3,18 @@
   "title": "Query Vector",
   "slug": "query-vector",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:query-vector",
+  "classIri": "urn:ngm:class:query-vector",
   "domain": "artificial-intelligence",
   "definition": "Query Vector is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

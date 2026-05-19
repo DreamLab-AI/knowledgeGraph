@@ -180,104 +180,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:royalty-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:royalty-mechanism",
+  "@type": "Class",
   "label": "Royalty Mechanism",
+  "definition": "Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-rights-management",
-      "vc:label": "Digital Rights Management"
+      "@id": "urn:ngm:class:digital-rights-management",
+      "label": "Digital Rights Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:773757e1e96f1f33a348a6fa0e6df7c51dfacb82b102ee3b56a0d971a7e1b9ad"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:payment-distribution",
+        "label": "Payment Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:rights-registry",
+        "label": "Rights Registry"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-calculation",
+        "label": "Royalty Calculation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:creator-wallet",
+        "label": "Creator Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:nft-standard",
+        "label": "NFT Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creator-compensation",
+        "label": "Creator Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:perpetual-revenue",
+        "label": "Perpetual Revenue"
+      },
+      {
+        "@id": "urn:ngm:class:rights-enforcement",
+        "label": "Rights Enforcement"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:773757e1e96f1f33a348a6fa0e6df7c51dfacb82b102ee3b56a0d971a7e1b9ad@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-rights-management",
-      "vc:label": "Digital Rights Management"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:payment-distribution",
-      "vc:label": "Payment Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-registry",
-      "vc:label": "Rights Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-calculation",
-      "vc:label": "Royalty Calculation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:creator-wallet",
-      "vc:label": "Creator Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standard",
-      "vc:label": "NFT Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creator-compensation",
-      "vc:label": "Creator Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:perpetual-revenue",
-      "vc:label": "Perpetual Revenue"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-enforcement",
-      "vc:label": "Rights Enforcement"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:transaction-tracking",
-      "vc:label": "Transaction Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marketplace-integration",
-      "vc:label": "Marketplace Integration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

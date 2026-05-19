@@ -740,396 +740,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:flux-1",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:flux-1",
+  "@type": "Class",
   "label": "Flux.1",
+  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Ro...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:multimodal-diffusion-transformer",
-      "vc:label": "Multimodal Diffusion Transformer"
+      "@id": "urn:ngm:class:multimodal-diffusion-transformer",
+      "label": "Multimodal Diffusion Transformer"
     },
     {
-      "@id": "urn:visionflow:linked:rectified-flow-model",
-      "vc:label": "Rectified Flow Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-model",
-      "vc:label": "Latent Diffusion Model"
+      "@id": "urn:ngm:class:rectified-flow-model",
+      "label": "Rectified Flow Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1baf3cc1aab2c0865f4839071dfff49c758b4ab5b6d4bb7d6cc9569c9b24019a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:clip-l-encoder",
+        "label": "CLIP-L Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:distilled-classifier-free-guidance",
+        "label": "Distilled Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching-objective",
+        "label": "Flow Matching Objective"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-diffusion-transformer",
+        "label": "Multimodal Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:t5-xxl",
+        "label": "T5-XXL"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:canny-conditioned-generation",
+        "label": "Canny-Conditioned Generation"
+      },
+      {
+        "@id": "urn:ngm:class:depth-conditioned-generation",
+        "label": "Depth-Conditioned Generation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-preserving-generation",
+        "label": "Identity-Preserving Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:image-variation",
+        "label": "Image Variation"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-synthesis",
+        "label": "Text-to-Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:adversarial-diffusion-distillation",
+        "label": "Adversarial Diffusion Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:guidance-distillation",
+        "label": "Guidance Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "@id": "urn:ngm:class:timestep-distillation",
+        "label": "Timestep Distillation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:clip-l-encoder",
+        "label": "CLIP-L Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:dpm-sampler",
+        "label": "DPM++ Sampler"
+      },
+      {
+        "@id": "urn:ngm:class:euler-sampler",
+        "label": "Euler Sampler"
+      },
+      {
+        "@id": "urn:ngm:class:fp8-quantisation",
+        "label": "fp8 Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:gguf-quantisation",
+        "label": "GGUF Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision",
+        "label": "Mixed Precision"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-diffusion-transformer",
+        "label": "Multimodal Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:nf4-quantisation",
+        "label": "NF4 Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:t5-xxl",
+        "label": "T5-XXL"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:black-forest-labs",
+        "label": "Black Forest Labs"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:stability-ai",
+        "label": "Stability AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:x-ai-grok",
+        "label": "xAI Grok"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:fal-ai",
+        "label": "fal.ai"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "@id": "urn:ngm:class:instant-id",
+        "label": "InstantID"
+      },
+      {
+        "@id": "urn:ngm:class:pu-lid-flux",
+        "label": "PuLID-FLUX"
+      },
+      {
+        "@id": "urn:ngm:class:replicate",
+        "label": "Replicate"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-forge",
+        "label": "Stable Diffusion Forge"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-ui",
+        "label": "SwarmUI"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-model-card-spec",
+        "label": "Hugging Face Model Card Spec"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1baf3cc1aab2c0865f4839071dfff49c758b4ab5b6d4bb7d6cc9569c9b24019a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Flux.1** (stylised **FLUX.1**) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Robin Rombach, Andreas Blattmann, Patrick Esser, Dominik Lorenz, Tim Dockhorn, Sumith Kulal and colleagues, most departing [[Stability AI]] in mid-2024 to establish BFL in Freiburg im Breisgau, Germany), comprising a tiered model lineup distinguished by licence and intended deployment surface—**FLUX.1 [pro]** (closed-weights flagship accessed solely through the BFL API and partner endpoints fal.ai/Replicate/Together AI/AWS Bedrock with the highest measured quality), **FLUX.1 [dev]** (12-billion-parameter open-weights variant distributed under the bespoke FLUX.1 [dev] Non-Commercial Licence permitting research/personal/non-revenue use whilst requiring a separate commercial licence agreement for monetisation, distilled from pro via guidance distillation, accumulating 2M+ Hugging Face downloads within thirty days of release establishing it as the dominant open-weights image baseline by Q",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:clip-l-encoder",
-      "vc:label": "CLIP-L Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:distilled-classifier-free-guidance",
-      "vc:label": "Distilled Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching-objective",
-      "vc:label": "Flow Matching Objective"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-diffusion-transformer",
-      "vc:label": "Multimodal Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-position-embedding",
-      "vc:label": "Rotary Position Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:t5-xxl",
-      "vc:label": "T5-XXL"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latent-space",
-      "vc:label": "Latent Space"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:differentiable-architecture",
-      "vc:label": "Differentiable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-encoder",
-      "vc:label": "Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-distribution",
-      "vc:label": "Training Data Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:canny-conditioned-generation",
-      "vc:label": "Canny-Conditioned Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-conditioned-generation",
-      "vc:label": "Depth-Conditioned Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-preserving-generation",
-      "vc:label": "Identity-Preserving Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-editing",
-      "vc:label": "Image Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-variation",
-      "vc:label": "Image Variation"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-fine-tuning",
-      "vc:label": "LoRA Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:outpainting",
-      "vc:label": "Outpainting"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-synthesis",
-      "vc:label": "Text-to-Image Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:adversarial-diffusion-distillation",
-      "vc:label": "Adversarial Diffusion Distillation"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching",
-      "vc:label": "Flow Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:guidance-distillation",
-      "vc:label": "Guidance Distillation"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:rectified-flow",
-      "vc:label": "Rectified Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestep-distillation",
-      "vc:label": "Timestep Distillation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-transformer",
-      "vc:label": "Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-model",
-      "vc:label": "Latent Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-position-embedding",
-      "vc:label": "Rotary Position Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-3",
-      "vc:label": "Stable Diffusion 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:t5-language-model",
-      "vc:label": "T5 Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:fal-ai",
-      "vc:label": "fal.ai"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-diffusers",
-      "vc:label": "Hugging Face Diffusers"
-    },
-    {
-      "@id": "urn:visionflow:linked:instant-id",
-      "vc:label": "InstantID"
-    },
-    {
-      "@id": "urn:visionflow:linked:pu-lid-flux",
-      "vc:label": "PuLID-FLUX"
-    },
-    {
-      "@id": "urn:visionflow:linked:replicate",
-      "vc:label": "Replicate"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-forge",
-      "vc:label": "Stable Diffusion Forge"
-    },
-    {
-      "@id": "urn:visionflow:linked:swarm-ui",
-      "vc:label": "SwarmUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ip-adapter",
-      "vc:label": "IP-Adapter"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:clip-l-encoder",
-      "vc:label": "CLIP-L Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:dpm-sampler",
-      "vc:label": "DPM++ Sampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:euler-sampler",
-      "vc:label": "Euler Sampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:fp8-quantisation",
-      "vc:label": "fp8 Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf-quantisation",
-      "vc:label": "GGUF Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-precision",
-      "vc:label": "Mixed Precision"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-diffusion-transformer",
-      "vc:label": "Multimodal Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:nf4-quantisation",
-      "vc:label": "NF4 Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:t5-xxl",
-      "vc:label": "T5-XXL"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:adobe-firefly",
-      "vc:label": "Adobe Firefly"
-    },
-    {
-      "@id": "urn:visionflow:linked:dall-e-3",
-      "vc:label": "DALL-E 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:ideogram",
-      "vc:label": "Ideogram"
-    },
-    {
-      "@id": "urn:visionflow:linked:imagen-3",
-      "vc:label": "Imagen 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-3",
-      "vc:label": "Stable Diffusion 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-xl",
-      "vc:label": "Stable Diffusion XL"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:midjourney",
-      "vc:label": "Midjourney"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:black-forest-labs",
-      "vc:label": "Black Forest Labs"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:stability-ai",
-      "vc:label": "Stability AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai-grok",
-      "vc:label": "xAI Grok"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa",
-      "vc:label": "C2PA"
-    },
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-model-card-spec",
-      "vc:label": "Hugging Face Model Card Spec"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

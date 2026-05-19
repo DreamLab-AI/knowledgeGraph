@@ -3,41 +3,45 @@
   "title": "AI Deployment",
   "slug": "ai-deployment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-deployment",
+  "classIri": "urn:ngm:class:ai-deployment",
   "domain": "artificial-intelligence",
-  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.",
+  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-lifecycle",
+      "id": "urn:ngm:class:ai-lifecycle",
       "label": "AI Lifecycle"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:deployment-infrastructure",
+        "id": "urn:ngm:class:deployment-infrastructure",
         "label": "Deployment infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:operational-procedures",
+        "id": "urn:ngm:class:operational-procedures",
         "label": "operational procedures"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
+        "id": "urn:ngm:class:ai-system-use-by-ai-users-and-ai-operators",
         "label": "AI system use by AI Users and AI Operators"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

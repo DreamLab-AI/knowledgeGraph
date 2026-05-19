@@ -3,19 +3,18 @@
   "title": "Resilience Metric",
   "slug": "resilience-metric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:resilience-metric",
+  "classIri": "urn:ngm:class:resilience-metric",
   "domain": "spatial-computing",
-  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that determine operational continuity. These metrics enable proactive [[IncidentResponse|incident management]] and [[SLAVerification|SLA compliance verification]] across [[CloudInfrastructure|cloud platforms]], [[MetaversePlatforms|metaverse services]], and [[BlockchainNetworks|blockchain networks]]. Effective resilience measurement combines real-time monitoring, predictive analytics, and automated remediation to maintain service quality during adverse conditions.",
+  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that de...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-systems",
+      "id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

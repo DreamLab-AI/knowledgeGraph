@@ -576,424 +576,319 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:anthropic-claude",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:anthropic-claude",
+  "@type": "Class",
   "label": "Anthropic Claude",
+  "definition": "Anthropic is an American artificial-intelligence safety and research company incorporated in Delaware as a Public Benefit Corporation (PBC) and headquartered in San Francisco, founded by Dario Amodei (CEO, former VP of Research at OpenAI), his sister Daniela Amodei (President), and seven addition...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-safety-organization",
-      "vc:label": "AI Safety Organization"
+      "@id": "urn:ngm:class:ai-safety-organization",
+      "label": "AI Safety Organization"
     },
     {
-      "@id": "urn:visionflow:linked:frontier-ai-lab",
-      "vc:label": "Frontier AI Lab"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model-family",
-      "vc:label": "Large Language Model Family"
+      "@id": "urn:ngm:class:frontier-ai-lab",
+      "label": "Frontier AI Lab"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:241aa7fd5446cab16bdebc2e5530a0ffb4b8feaf3d0fd1c3540c7342c96e3b66"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anthropic-api",
+        "label": "Anthropic API"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-circuits-team",
+        "label": "Anthropic Circuits Team"
+      },
+      {
+        "@id": "urn:ngm:class:claude-3-5-sonnet",
+        "label": "Claude 3.5 Sonnet"
+      },
+      {
+        "@id": "urn:ngm:class:claude-3-7-sonnet",
+        "label": "Claude 3.7 Sonnet"
+      },
+      {
+        "@id": "urn:ngm:class:claude-3-family",
+        "label": "Claude 3 Family"
+      },
+      {
+        "@id": "urn:ngm:class:claude-4-family",
+        "label": "Claude 4 Family"
+      },
+      {
+        "@id": "urn:ngm:class:claude-agent-sdk",
+        "label": "claude-agent-sdk"
+      },
+      {
+        "@id": "urn:ngm:class:claude-code",
+        "label": "Claude Code"
+      },
+      {
+        "@id": "urn:ngm:class:claude-desktop",
+        "label": "Claude Desktop"
+      },
+      {
+        "@id": "urn:ngm:class:claude-opus-4-5",
+        "label": "Claude Opus 4.5"
+      },
+      {
+        "@id": "urn:ngm:class:claude-opus-4-7",
+        "label": "Claude Opus 4.7"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-benefit-trust",
+        "label": "Long-Term Benefit Trust"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:capital-markets-access",
+        "label": "Capital Markets Access"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training",
+        "label": "Constitutional AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-gpu-cluster",
+        "label": "Large-Scale GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:pretraining-corpus",
+        "label": "Pretraining Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:safety-evaluation-infrastructure",
+        "label": "Safety Evaluation Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:trainium-cluster",
+        "label": "Trainium Cluster"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-coding",
+        "label": "Agentic Coding"
+      },
+      {
+        "@id": "urn:ngm:class:ai-augmented-research",
+        "label": "AI-Augmented Research"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai-deployment",
+        "label": "Enterprise AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:extended-thinking",
+        "label": "Extended Thinking"
+      },
+      {
+        "@id": "urn:ngm:class:long-context-reasoning",
+        "label": "Long-Context Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:frontier-risk-evaluation",
+        "label": "Frontier Risk Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:helpful-honest-harmless-framework",
+        "label": "Helpful Honest Harmless Framework"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability-research-programme",
+        "label": "Mechanistic Interpretability Research Programme"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:rlaif",
+        "label": "RLAIF"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:batch-api",
+        "label": "Batch API"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-method",
+        "label": "Constitutional AI Method"
+      },
+      {
+        "@id": "urn:ngm:class:extended-thinking-mode",
+        "label": "Extended Thinking Mode"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-caching",
+        "label": "Prompt Caching"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoders"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use-api",
+        "label": "Tool Use API"
+      },
+      {
+        "@id": "urn:ngm:class:vision-capability",
+        "label": "Vision Capability"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aws-bedrock",
+        "label": "AWS Bedrock"
+      },
+      {
+        "@id": "urn:ngm:class:claude-code",
+        "label": "Claude Code"
+      },
+      {
+        "@id": "urn:ngm:class:deep-mind",
+        "label": "DeepMind"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:gcp-vertex-ai",
+        "label": "GCP Vertex AI"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-benefit-trust",
+        "label": "Long-Term Benefit Trust"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability-research",
+        "label": "Interpretability Research"
+      },
+      {
+        "@id": "urn:ngm:class:seoul-ai-summit",
+        "label": "Seoul AI Summit"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:us-ai-safety-institute",
+        "label": "US AI Safety Institute"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-general-purpose-ai-code-of-practice",
+        "label": "EU AI Act General-Purpose AI Code of Practice"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001-aims",
+        "label": "ISO/IEC 42001 AIMS"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:seoul-frontier-ai-safety-commitments",
+        "label": "Seoul Frontier AI Safety Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:uk-aisi-pre-deployment-testing-mou",
+        "label": "UK AISI Pre-Deployment Testing MOU"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:241aa7fd5446cab16bdebc2e5530a0ffb4b8feaf3d0fd1c3540c7342c96e3b66@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Anthropic** is an American artificial-intelligence safety and research company incorporated in Delaware as a **Public Benefit Corporation (PBC)** and headquartered in San Francisco, founded in **2021** by **Dario Amodei** (CEO, former VP of Research at OpenAI), his sister **Daniela Amodei** (President), and seven additional ex-OpenAI researchers (Tom Brown, Sam McCandlish, Jared Kaplan, Jack Clark, Jaspher Sastry, Chris Olah, Catherine Olsson, Tom Henighan) who departed OpenAI together in late 2020 over disagreements regarding the commercial direction of the GPT-3 era and the relative weight placed on AI-safety research versus product velocity. **Claude** is Anthropic's flagship family of large language models, named in honour of **Claude Shannon** (the founder of information theory), encompassing a rapidly-evolving model lineage that includes **Claude 1** (closed beta 2022, public March 2023), **Claude Instant** (lightweight tier 2023), **Claude 2** (July 2023, 100K-token context), **Claude 2.1** (November 2023, 200K-token context), the **Claude 3 family** (Haiku, Sonnet, Opus, March 2024), **Claude 3.5 Sonnet** (June 2024, Computer Use beta October 2024), **Claude 3.5 Haiku** (",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:anthropic-api",
-      "vc:label": "Anthropic API"
-    },
-    {
-      "@id": "urn:visionflow:linked:anthropic-circuits-team",
-      "vc:label": "Anthropic Circuits Team"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-3-5-sonnet",
-      "vc:label": "Claude 3.5 Sonnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-3-7-sonnet",
-      "vc:label": "Claude 3.7 Sonnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-3-family",
-      "vc:label": "Claude 3 Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-4-family",
-      "vc:label": "Claude 4 Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-agent-sdk",
-      "vc:label": "claude-agent-sdk"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-code",
-      "vc:label": "Claude Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-desktop",
-      "vc:label": "Claude Desktop"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-opus-4-5",
-      "vc:label": "Claude Opus 4.5"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-opus-4-7",
-      "vc:label": "Claude Opus 4.7"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-benefit-trust",
-      "vc:label": "Long-Term Benefit Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling-policy",
-      "vc:label": "Responsible Scaling Policy"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:capital-markets-access",
-      "vc:label": "Capital Markets Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:constitutional-ai-training",
-      "vc:label": "Constitutional AI Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-scale-gpu-cluster",
-      "vc:label": "Large-Scale GPU Cluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:pretraining-corpus",
-      "vc:label": "Pretraining Corpus"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf-pipeline",
-      "vc:label": "RLHF Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-evaluation-infrastructure",
-      "vc:label": "Safety Evaluation Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:trainium-cluster",
-      "vc:label": "Trainium Cluster"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-coding",
-      "vc:label": "Agentic Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-augmented-research",
-      "vc:label": "AI-Augmented Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-use",
-      "vc:label": "Computer Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-ai-deployment",
-      "vc:label": "Enterprise AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-thinking",
-      "vc:label": "Extended Thinking"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-context-reasoning",
-      "vc:label": "Long-Context Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:frontier-risk-evaluation",
-      "vc:label": "Frontier Risk Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:helpful-honest-harmless-framework",
-      "vc:label": "Helpful Honest Harmless Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanistic-interpretability-research-programme",
-      "vc:label": "Mechanistic Interpretability Research Programme"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling-policy",
-      "vc:label": "Responsible Scaling Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlaif",
-      "vc:label": "RLAIF"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:aws-trainium",
-      "vc:label": "AWS Trainium"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-tpu",
-      "vc:label": "Google TPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-cluster-compute",
-      "vc:label": "GPU Cluster Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:pretraining-data",
-      "vc:label": "Pretraining Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-research-methodology",
-      "vc:label": "Safety Research Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:scaling-laws",
-      "vc:label": "Scaling Laws"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-safety-research",
-      "vc:label": "AI Safety Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:bletchley-declaration",
-      "vc:label": "Bletchley Declaration"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:interpretability-research",
-      "vc:label": "Interpretability Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:seoul-ai-summit",
-      "vc:label": "Seoul AI Summit"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ai-safety-institute",
-      "vc:label": "UK AI Safety Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-ai-safety-institute",
-      "vc:label": "US AI Safety Institute"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:batch-api",
-      "vc:label": "Batch API"
-    },
-    {
-      "@id": "urn:visionflow:linked:constitutional-ai-method",
-      "vc:label": "Constitutional AI Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-thinking-mode",
-      "vc:label": "Extended Thinking Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-caching",
-      "vc:label": "Prompt Caching"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparse-autoencoders",
-      "vc:label": "Sparse Autoencoders"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use-api",
-      "vc:label": "Tool Use API"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-capability",
-      "vc:label": "Vision Capability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cohere",
-      "vc:label": "Cohere"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-seek",
-      "vc:label": "DeepSeek"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-gemini",
-      "vc:label": "Google Gemini"
-    },
-    {
-      "@id": "urn:visionflow:linked:inflection-ai",
-      "vc:label": "Inflection AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-llama",
-      "vc:label": "Meta Llama"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-ai",
-      "vc:label": "Mistral AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-gpt",
-      "vc:label": "OpenAI GPT"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai-grok",
-      "vc:label": "xAI Grok"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:aws-bedrock",
-      "vc:label": "AWS Bedrock"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-code",
-      "vc:label": "Claude Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-mind",
-      "vc:label": "DeepMind"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:gcp-vertex-ai",
-      "vc:label": "GCP Vertex AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-benefit-trust",
-      "vc:label": "Long-Term Benefit Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanistic-interpretability",
-      "vc:label": "Mechanistic Interpretability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai",
-      "vc:label": "OpenAI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bletchley-declaration",
-      "vc:label": "Bletchley Declaration"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-general-purpose-ai-code-of-practice",
-      "vc:label": "EU AI Act General-Purpose AI Code of Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-42001-aims",
-      "vc:label": "ISO/IEC 42001 AIMS"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling-policy",
-      "vc:label": "Responsible Scaling Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:seoul-frontier-ai-safety-commitments",
-      "vc:label": "Seoul Frontier AI Safety Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-aisi-pre-deployment-testing-mou",
-      "vc:label": "UK AISI Pre-Deployment Testing MOU"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:frontier-ai-lab",
-      "vc:label": "Frontier AI Lab"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

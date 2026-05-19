@@ -208,118 +208,93 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-environmental-impact-assessment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-environmental-impact-assessment",
+  "@type": "Class",
   "label": "Blockchain Environmental Impact Assessment",
+  "definition": "A systematic emodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO₂e from electricity generati...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "LifeCycleAssessment"
+      "@id": "urn:ngm:class:life-cycle-assessment",
+      "label": "LifeCycleAssessment"
     },
     {
-      "@id": "urn:visionflow:linked:sustainability-metric",
-      "vc:label": "SustainabilityMetric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:environmental-assessment",
-      "vc:label": "EnvironmentalAssessment"
+      "@id": "urn:ngm:class:sustainability-metric",
+      "label": "SustainabilityMetric"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1d996f1366c0426554501b4d5b5e04674fe6bf61925193ec091257e49f1a850d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:carbon-emissions-calculation",
+        "label": "CarbonEmissionsCalculation"
+      },
+      {
+        "@id": "urn:ngm:class:energy-consumption-measurement",
+        "label": "EnergyConsumptionMeasurement"
+      },
+      {
+        "@id": "urn:ngm:class:ewaste-analysis",
+        "label": "EWasteAnalysis"
+      },
+      {
+        "@id": "urn:ngm:class:scope-definition",
+        "label": "ScopeDefinition"
+      },
+      {
+        "@id": "urn:ngm:class:water-usage-tracking",
+        "label": "WaterUsageTracking"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-center-metrics",
+        "label": "DataCenterMetrics"
+      },
+      {
+        "@id": "urn:ngm:class:energy-mix",
+        "label": "EnergyMix"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-inventory",
+        "label": "HardwareInventory"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "ConsensusAlgorithm"
+      },
+      {
+        "@id": "urn:ngm:class:network-hash-rate",
+        "label": "NetworkHashRate"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:investor-disclosure",
+        "label": "InvestorDisclosure"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "CarbonAccounting"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "RegulatoryCompliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1d996f1366c0426554501b4d5b5e04674fe6bf61925193ec091257e49f1a850d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A systematic evaluation methodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO₂e from electricity generation mix), e-waste generation (hardware lifecycle and disposal), water consumption (data center cooling), and broader ecological impacts, with standardized frameworks including Life Cycle Assessment (ISO 14040/14044), Cambridge Centre for Alternative Finance methodologies, and blockchain-specific metrics for comparing consensus mechanisms (Proof-of-Work vs Proof-of-Stake environmental profiles).",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:carbon-emissions-calculation",
-      "vc:label": "CarbonEmissionsCalculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-consumption-measurement",
-      "vc:label": "EnergyConsumptionMeasurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:ewaste-analysis",
-      "vc:label": "EWasteAnalysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-definition",
-      "vc:label": "ScopeDefinition"
-    },
-    {
-      "@id": "urn:visionflow:linked:water-usage-tracking",
-      "vc:label": "WaterUsageTracking"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-center-metrics",
-      "vc:label": "DataCenterMetrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-mix",
-      "vc:label": "EnergyMix"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-inventory",
-      "vc:label": "HardwareInventory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "ConsensusAlgorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-hash-rate",
-      "vc:label": "NetworkHashRate"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:investor-disclosure",
-      "vc:label": "InvestorDisclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "SustainabilityReporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-accounting",
-      "vc:label": "CarbonAccounting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "RegulatoryCompliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

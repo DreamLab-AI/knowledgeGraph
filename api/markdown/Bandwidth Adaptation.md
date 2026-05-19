@@ -428,356 +428,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bandwidth-adaptation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bandwidth-adaptation",
+  "@type": "Class",
   "label": "Bandwidth Adaptation",
+  "definition": "Bandwidth adaptation is the real-time, algorithmic process by which a media transmission system continuously measures available network capacity and dynamically adjusts encoding parameters — bitrate, resolution, frame rate, codec profile, and layer selection — to maintain the highest achievable [...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:adaptive-bitrate-streaming",
-      "vc:label": "Adaptive Bitrate Streaming"
+      "@id": "urn:ngm:class:adaptive-bitrate-streaming",
+      "label": "Adaptive Bitrate Streaming"
     },
     {
-      "@id": "urn:visionflow:linked:congestion-control",
-      "vc:label": "Congestion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-quality-of-service",
-      "vc:label": "Network Quality-of-Service"
+      "@id": "urn:ngm:class:congestion-control",
+      "label": "Congestion Control"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a721dea184f1c977d3d60457556dc5cf267d42706697d9f127f7622c9f62fb14"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:abr-algorithm",
+        "label": "ABR Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-estimator",
+        "label": "Bandwidth Estimator"
+      },
+      {
+        "@id": "urn:ngm:class:bitrate-ladder",
+        "label": "Bitrate Ladder"
+      },
+      {
+        "@id": "urn:ngm:class:buffer-manager",
+        "label": "Buffer Manager"
+      },
+      {
+        "@id": "urn:ngm:class:codec-parameter-controller",
+        "label": "Codec Parameter Controller"
+      },
+      {
+        "@id": "urn:ngm:class:network-capacity-probing",
+        "label": "Network Capacity Probing"
+      },
+      {
+        "@id": "urn:ngm:class:rate-distortion-optimisation",
+        "label": "Rate-Distortion Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:rtcp-feedback",
+        "label": "RTCP Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:segment-scheduler",
+        "label": "Segment Scheduler"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:congestion-signal",
+        "label": "Congestion Signal"
+      },
+      {
+        "@id": "urn:ngm:class:multi-bitrate-encoding",
+        "label": "Multi-bitrate Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:network-measurement",
+        "label": "Network Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:playback-buffer",
+        "label": "Playback Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:rtcp-feedback",
+        "label": "RTCP Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:throughput-estimation",
+        "label": "Throughput Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:emerging-market-accessibility",
+        "label": "Emerging Market Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:global-participation-across-networks",
+        "label": "Global Participation Across Networks"
+      },
+      {
+        "@id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-collaboration",
+        "label": "Mobile Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:resilient-video-streaming",
+        "label": "Resilient Video Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-streaming",
+        "label": "Spatial Computing Streaming"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bbr-congestion-control",
+        "label": "BBR Congestion Control"
+      },
+      {
+        "@id": "urn:ngm:class:bola-algorithm",
+        "label": "BOLA Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:dash-adaptive-streaming",
+        "label": "DASH Adaptive Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:hls-adaptive-bitrate",
+        "label": "HLS Adaptive Bitrate"
+      },
+      {
+        "@id": "urn:ngm:class:mpc-algorithm",
+        "label": "MPC Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:pensieve-rl-policy",
+        "label": "Pensieve RL Policy"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-video-coding",
+        "label": "Scalable Video Coding"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc-simulcast",
+        "label": "WebRTC Simulcast"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lyapunov-optimisation",
+        "label": "Lyapunov Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:psnr-metric",
+        "label": "PSNR Metric"
+      },
+      {
+        "@id": "urn:ngm:class:ssim-metric",
+        "label": "SSIM Metric"
+      },
+      {
+        "@id": "urn:ngm:class:vmaf-metric",
+        "label": "VMAF Metric"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:latency-optimisation",
+        "label": "Latency Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "@id": "urn:ngm:class:packet-loss-recovery",
+        "label": "Packet Loss Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ar-vr-streaming",
+        "label": "AR VR Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work-infrastructure",
+        "label": "Remote Work Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3-gpp-5-g-standards",
+        "label": "3GPP 5G Standards"
+      },
+      {
+        "@id": "urn:ngm:class:apple-hls-rfc-8216",
+        "label": "Apple HLS RFC 8216"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-9000-quic",
+        "label": "IETF RFC 9000 QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t-h-264-h-265",
+        "label": "ITU-T H.264 H.265"
+      },
+      {
+        "@id": "urn:ngm:class:mpeg-dash-iso-23009",
+        "label": "MPEG DASH ISO 23009"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc-w3-c-standard",
+        "label": "WebRTC W3C Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a721dea184f1c977d3d60457556dc5cf267d42706697d9f127f7622c9f62fb14@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Bandwidth adaptation is the real-time, algorithmic process by which a media transmission system continuously measures available network capacity and dynamically adjusts encoding parameters — bitrate, resolution, frame rate, codec profile, and layer selection — to maintain the highest achievable [[Quality of Experience]] (QoE) without exhausting the network path. The process operates at the intersection of [[Congestion Control]], [[Adaptive Bitrate Streaming]] (ABR), and [[Rate-Distortion Optimisation]], closing a feedback loop that spans from physical-layer throughput estimation through codec parameter negotiation to perceptual quality metrics visible to the end user. Bandwidth adaptation is the mechanism that makes [[Video Conferencing]] platforms (Zoom, Google Meet, Microsoft Teams, Jitsi), live-streaming services (Twitch, YouTube Live), and on-demand delivery (Netflix, Disney+, BBC iPlayer) resilient to the highly variable network conditions encountered in real-world deployments — 3G cellular, rural broadband, congested enterprise Wi-Fi, intercontinental satellite links, and 5G millimetre-wave with intermittent coverage.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:abr-algorithm",
-      "vc:label": "ABR Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:bandwidth-estimator",
-      "vc:label": "Bandwidth Estimator"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitrate-ladder",
-      "vc:label": "Bitrate Ladder"
-    },
-    {
-      "@id": "urn:visionflow:linked:buffer-manager",
-      "vc:label": "Buffer Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:codec-parameter-controller",
-      "vc:label": "Codec Parameter Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-capacity-probing",
-      "vc:label": "Network Capacity Probing"
-    },
-    {
-      "@id": "urn:visionflow:linked:rate-distortion-optimisation",
-      "vc:label": "Rate-Distortion Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rtcp-feedback",
-      "vc:label": "RTCP Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:segment-scheduler",
-      "vc:label": "Segment Scheduler"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:congestion-signal",
-      "vc:label": "Congestion Signal"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-bitrate-encoding",
-      "vc:label": "Multi-bitrate Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-measurement",
-      "vc:label": "Network Measurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:playback-buffer",
-      "vc:label": "Playback Buffer"
-    },
-    {
-      "@id": "urn:visionflow:linked:rtcp-feedback",
-      "vc:label": "RTCP Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:throughput-estimation",
-      "vc:label": "Throughput Estimation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cloud-gaming",
-      "vc:label": "Cloud Gaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:emerging-market-accessibility",
-      "vc:label": "Emerging Market Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-participation-across-networks",
-      "vc:label": "Global Participation Across Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:graceful-degradation",
-      "vc:label": "Graceful Degradation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-collaboration",
-      "vc:label": "Mobile Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:resilient-video-streaming",
-      "vc:label": "Resilient Video Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-computing-streaming",
-      "vc:label": "Spatial Computing Streaming"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bbr-congestion-control",
-      "vc:label": "BBR Congestion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:bola-algorithm",
-      "vc:label": "BOLA Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:dash-adaptive-streaming",
-      "vc:label": "DASH Adaptive Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:hls-adaptive-bitrate",
-      "vc:label": "HLS Adaptive Bitrate"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpc-algorithm",
-      "vc:label": "MPC Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:pensieve-rl-policy",
-      "vc:label": "Pensieve RL Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-video-coding",
-      "vc:label": "Scalable Video Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-rtc-simulcast",
-      "vc:label": "WebRTC Simulcast"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:5-g-networks",
-      "vc:label": "5G Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:cdn-infrastructure",
-      "vc:label": "CDN Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:codec-ecosystem",
-      "vc:label": "Codec Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:http3",
-      "vc:label": "HTTP3"
-    },
-    {
-      "@id": "urn:visionflow:linked:quic-protocol",
-      "vc:label": "QUIC Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:rtp-protocol",
-      "vc:label": "RTP Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ar-vr-streaming",
-      "vc:label": "AR VR Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-gaming",
-      "vc:label": "Cloud Gaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:live-streaming",
-      "vc:label": "Live Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-work-infrastructure",
-      "vc:label": "Remote Work Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:telemedicine",
-      "vc:label": "Telemedicine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:screen-sharing",
-      "vc:label": "Screen Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:video-conferencing",
-      "vc:label": "Video Conferencing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:lyapunov-optimisation",
-      "vc:label": "Lyapunov Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:psnr-metric",
-      "vc:label": "PSNR Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:ssim-metric",
-      "vc:label": "SSIM Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:vmaf-metric",
-      "vc:label": "VMAF Metric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:buffering-only-adaptation",
-      "vc:label": "Buffering-Only Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:circuit-switching",
-      "vc:label": "Circuit Switching"
-    },
-    {
-      "@id": "urn:visionflow:linked:constant-bitrate-encoding",
-      "vc:label": "Constant Bitrate Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:fixed-bitrate-streaming",
-      "vc:label": "Fixed Bitrate Streaming"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:forward-error-correction",
-      "vc:label": "Forward Error Correction"
-    },
-    {
-      "@id": "urn:visionflow:linked:latency-optimisation",
-      "vc:label": "Latency Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-slicing",
-      "vc:label": "Network Slicing"
-    },
-    {
-      "@id": "urn:visionflow:linked:packet-loss-recovery",
-      "vc:label": "Packet Loss Recovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:3-gpp-5-g-standards",
-      "vc:label": "3GPP 5G Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-hls-rfc-8216",
-      "vc:label": "Apple HLS RFC 8216"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-9000-quic",
-      "vc:label": "IETF RFC 9000 QUIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t-h-264-h-265",
-      "vc:label": "ITU-T H.264 H.265"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpeg-dash-iso-23009",
-      "vc:label": "MPEG DASH ISO 23009"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-rtc-w3-c-standard",
-      "vc:label": "WebRTC W3C Standard"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:network-quality-of-service",
-      "vc:label": "Network Quality-of-Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:video-conferencing",
-      "vc:label": "Video Conferencing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

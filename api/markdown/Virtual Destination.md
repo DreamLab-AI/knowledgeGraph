@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-destination",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-destination",
+  "@type": "Class",
   "label": "Virtual Destination",
+  "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-environment",
-      "vc:label": "Virtual Environment"
+      "@id": "urn:ngm:class:virtual-environment",
+      "label": "Virtual Environment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:55214cb6b9b758cc0ddc2b54259dac898cd206f41d7e7d71be9156e3b383297f"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:55214cb6b9b758cc0ddc2b54259dac898cd206f41d7e7d71be9156e3b383297f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

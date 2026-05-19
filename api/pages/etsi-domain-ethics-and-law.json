@@ -3,66 +3,75 @@
   "title": "ETSI Domain: Ethics & Law",
   "slug": "etsi-domain-ethics-and-law",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-ethics-and-law",
+  "classIri": "urn:ngm:class:etsi-domain-ethics-and-law",
   "domain": "artificial-intelligence",
-  "definition": "Domain marker for ETSI metaverse categorisation covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
+  "definition": "Domain marker for ETSI metaverse categorisation covering ical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ethical-frameworks",
+        "id": "urn:ngm:class:ethical-frameworks",
         "label": "Ethical Frameworks"
       },
       {
-        "id": "urn:visionflow:linked:legal-compliance",
+        "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-systems",
+        "id": "urn:ngm:class:regulatory-systems",
         "label": "Regulatory Systems"
       },
       {
-        "id": "urn:visionflow:linked:rights-management",
+        "id": "urn:ngm:class:rights-management",
         "label": "Rights Management"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:legal-accountability",
+        "id": "urn:ngm:class:legal-accountability",
         "label": "Legal Accountability"
       },
       {
-        "id": "urn:visionflow:linked:user-protection",
+        "id": "urn:ngm:class:user-protection",
         "label": "User Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:responsible-ai",
+        "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

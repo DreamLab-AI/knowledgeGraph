@@ -768,428 +768,339 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-as-a-service",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-as-a-service",
+  "@type": "Class",
   "label": "Blockchain As A Service",
+  "definition": "Blockchain as a Service (BaaS) is a managed cloud delivery model in which a third-party provider provisions, operates, and maintains the distributed ledger infrastructure, consensus-node orchestration, cryptographic identity services, smart contract deployment pipelines, and monitoring tooling re...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cloud-service-model",
-      "vc:label": "Cloud Service Model"
+      "@id": "urn:ngm:class:cloud-service-model",
+      "label": "Cloud Service Model"
     },
     {
-      "@id": "urn:visionflow:linked:enterprise-software-platform",
-      "vc:label": "Enterprise Software Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:managed-service",
-      "vc:label": "Managed Service"
+      "@id": "urn:ngm:class:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9607e69fecde7c4f608c0c8edefb1759a2fa6cd13f877fa419f79c0a81d50850"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blockchain-api-gateway",
+        "label": "Blockchain API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority-service",
+        "label": "Certificate Authority Service"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-service",
+        "label": "Consensus Service"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-integration",
+        "label": "Identity Management Integration"
+      },
+      {
+        "@id": "urn:ngm:class:ledger-storage",
+        "label": "Ledger Storage"
+      },
+      {
+        "@id": "urn:ngm:class:managed-node-hosting",
+        "label": "Managed Node Hosting"
+      },
+      {
+        "@id": "urn:ngm:class:network-provisioning-templates",
+        "label": "Network Provisioning Templates"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-deployment-pipeline",
+        "label": "Smart Contract Deployment Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:consortium-governance",
+        "label": "Consortium Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain-network",
+        "label": "Permissioned Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:fisco-bcos",
+        "label": "FISCO BCOS"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:smart-bft",
+        "label": "SmartBFT"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aws-iam",
+        "label": "AWS IAM"
+      },
+      {
+        "@id": "urn:ngm:class:azure-active-directory",
+        "label": "Azure Active Directory"
+      },
+      {
+        "@id": "urn:ngm:class:couch-db",
+        "label": "CouchDB"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:level-db",
+        "label": "LevelDB"
+      },
+      {
+        "@id": "urn:ngm:class:postgre-sql",
+        "label": "PostgreSQL"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc",
+        "label": "CBDC"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:dev-ops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:digital-assets",
+        "label": "Digital Assets"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-services-compliance",
+        "label": "Financial Services Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa-compliance",
+        "label": "HIPAA Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-cloud-deployment",
+        "label": "Multi-Cloud Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-cloud",
+        "label": "Sovereign Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-satp",
+        "label": "IETF SATP"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "@id": "urn:ngm:class:lf-decentralized-trust",
+        "label": "LF Decentralized Trust"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-235",
+        "label": "NIST SP 800-235"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9607e69fecde7c4f608c0c8edefb1759a2fa6cd13f877fa419f79c0a81d50850@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain as a Service (BaaS) is a managed cloud delivery model in which a third-party provider provisions, operates, and maintains the distributed ledger infrastructure, consensus-node orchestration, cryptographic identity services, smart contract deployment pipelines, and monitoring tooling required to run enterprise blockchain networks—enabling organisations to consume permissioned or public blockchain capabilities through API calls and configuration interfaces without recruiting specialist distributed-systems engineers, purchasing dedicated hardware, or navigating the complex multi-stakeholder governance required to establish consortium blockchain infrastructure from first principles. The model extends the layered cloud service taxonomy—[[Infrastructure as a Service]] abstracting physical compute and network, [[Platform as a Service]] abstracting runtime environment and middleware, [[Software as a Service]] abstracting full application stacks—by adding a fourth abstraction layer: the correctness, liveness, and security of a replicated state machine governed by a Byzantine fault-tolerant or crash fault-tolerant consensus algorithm operating across geographically distributed nod",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-api-gateway",
-      "vc:label": "Blockchain API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:certificate-authority-service",
-      "vc:label": "Certificate Authority Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:consensus-service",
-      "vc:label": "Consensus Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-management-integration",
-      "vc:label": "Identity Management Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:ledger-storage",
-      "vc:label": "Ledger Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:managed-node-hosting",
-      "vc:label": "Managed Node Hosting"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-provisioning-templates",
-      "vc:label": "Network Provisioning Templates"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-deployment-pipeline",
-      "vc:label": "Smart Contract Deployment Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monitoring-dashboard",
-      "vc:label": "Monitoring Dashboard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:container-orchestration",
-      "vc:label": "Container Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls-encryption",
-      "vc:label": "TLS Encryption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-protocol",
-      "vc:label": "Blockchain Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
-      "vc:label": "Cryptographic Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-tokenisation",
-      "vc:label": "Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cbdc-infrastructure",
-      "vc:label": "CBDC Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:consortium-governance",
-      "vc:label": "Consortium Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-payments",
-      "vc:label": "Cross-Border Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-identity-verification",
-      "vc:label": "Digital Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-blockchain-network",
-      "vc:label": "Permissioned Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-execution",
-      "vc:label": "Smart Contract Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance-automation",
-      "vc:label": "Trade Finance Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supply-chain-traceability",
-      "vc:label": "Supply Chain Traceability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:crash-fault-tolerance",
-      "vc:label": "Crash Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:linked:fisco-bcos",
-      "vc:label": "FISCO BCOS"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum",
-      "vc:label": "Quorum"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-bft",
-      "vc:label": "SmartBFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:r3-corda",
-      "vc:label": "R3 Corda"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:container-orchestration",
-      "vc:label": "Container Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:dev-ops",
-      "vc:label": "DevOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:microservices",
-      "vc:label": "Microservices"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:financial-services-compliance",
-      "vc:label": "Financial Services Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:hipaa-compliance",
-      "vc:label": "HIPAA Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-cloud-deployment",
-      "vc:label": "Multi-Cloud Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-cloud",
-      "vc:label": "Sovereign Cloud"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supply-chain-management",
-      "vc:label": "Supply Chain Management"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:aws-iam",
-      "vc:label": "AWS IAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:azure-active-directory",
-      "vc:label": "Azure Active Directory"
-    },
-    {
-      "@id": "urn:visionflow:linked:couch-db",
-      "vc:label": "CouchDB"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-rpc",
-      "vc:label": "gRPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc",
-      "vc:label": "JSON-RPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:linked:level-db",
-      "vc:label": "LevelDB"
-    },
-    {
-      "@id": "urn:visionflow:linked:postgre-sql",
-      "vc:label": "PostgreSQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-blockchain",
-      "vc:label": "Permissionless Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-cloud-blockchain",
-      "vc:label": "Public Cloud Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-hosted-blockchain-infrastructure",
-      "vc:label": "Self-Hosted Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-blockchain",
-      "vc:label": "Public Blockchain"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:api-management",
-      "vc:label": "API Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:cbdc",
-      "vc:label": "CBDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identity",
-      "vc:label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:dev-ops",
-      "vc:label": "DevOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-assets",
-      "vc:label": "Digital Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:confidential-computing",
-      "vc:label": "Confidential Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance",
-      "vc:label": "Enterprise Ethereum Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-foundation",
-      "vc:label": "Hyperledger Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-satp",
-      "vc:label": "IETF SATP"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc-307",
-      "vc:label": "ISO TC 307"
-    },
-    {
-      "@id": "urn:visionflow:linked:lf-decentralized-trust",
-      "vc:label": "LF Decentralized Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-235",
-      "vc:label": "NIST SP 800-235"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-specification",
-      "vc:label": "W3C DID Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

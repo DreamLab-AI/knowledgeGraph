@@ -208,124 +208,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-factors",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-factors",
+  "@type": "Class",
   "label": "Human Factors",
+  "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:interaction-design",
-      "vc:label": "Interaction Design"
+      "@id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
     },
     {
-      "@id": "urn:visionflow:linked:systems-engineering",
-      "vc:label": "Systems Engineering"
+      "@id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:690966d77ee33acad37ddf63e5f59e2bb7eb16a22fa96025ed2ad5d29766b508"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cognitive-load-analysis",
+        "label": "Cognitive Load Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "@id": "urn:ngm:class:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:trust-calibration",
+        "label": "Trust Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interface-design",
+        "label": "Interface Design"
+      },
+      {
+        "@id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:efficient-collaboration",
+        "label": "Efficient Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:intuitive-control",
+        "label": "Intuitive Control"
+      },
+      {
+        "@id": "urn:ngm:class:operator-safety",
+        "label": "Operator Safety"
+      },
+      {
+        "@id": "urn:ngm:class:user-acceptance",
+        "label": "User Acceptance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:690966d77ee33acad37ddf63e5f59e2bb7eb16a22fa96025ed2ad5d29766b508@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-load-analysis",
-      "vc:label": "Cognitive Load Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:ergonomics",
-      "vc:label": "Ergonomics"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-assessment",
-      "vc:label": "Safety Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-calibration",
-      "vc:label": "Trust Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:usability-testing",
-      "vc:label": "Usability Testing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:interface-design",
-      "vc:label": "Interface Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-analysis",
-      "vc:label": "Task Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-metrics",
-      "vc:label": "Performance Metrics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-research",
-      "vc:label": "User Research"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:efficient-collaboration",
-      "vc:label": "Efficient Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:intuitive-control",
-      "vc:label": "Intuitive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:operator-safety",
-      "vc:label": "Operator Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-acceptance",
-      "vc:label": "User Acceptance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biomechanics",
-      "vc:label": "Biomechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:psychology",
-      "vc:label": "Psychology"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

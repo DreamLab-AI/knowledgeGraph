@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-audio-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-audio-system",
+  "@type": "Class",
   "label": "Immersive Audio System",
+  "definition": "Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse appli...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:audio-technology",
-      "vc:label": "Audio Technology"
+      "@id": "urn:ngm:class:audio-technology",
+      "label": "Audio Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:182606c6ce239a6e52c230214eb77c6976180071ad0800df0128b19986419f0d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:182606c6ce239a6e52c230214eb77c6976180071ad0800df0128b19986419f0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-presence",
-      "vc:label": "Spatial Presence"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

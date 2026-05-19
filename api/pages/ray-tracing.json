@@ -3,179 +3,299 @@
   "title": "Ray Tracing",
   "slug": "ray-tracing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ray-tracing",
+  "classIri": "urn:ngm:class:ray-tracing",
   "domain": "spatial-computing",
-  "definition": "Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surface shading at hit points, and secondary-ray spawning for mirror reflections, refractions through transmissive materials, hard and soft shadows, indirect diffuse bounces, and complex global-illumination phenomena such as caustics and participating-media scattering; the technique is grounded mathematically in the rendering equation introduced by James T. Kajiya (SIGGRAPH 1986): L\u2092(x,\u03c9) = L\u2091(x,\u03c9) + \u222b_\u03a9 f_r(x,\u03c9\u1d62,\u03c9) L\u1d62(x,\u03c9\u1d62) (\u03c9\u1d62\u00b7n\u0302) d\u03c9\u1d62, where L\u2092 is outgoing radiance at surface point x in direction \u03c9, L\u2091 is emitted radiance, f_r the bidirectional reflectance distribution function (BRDF) encoding material appearance, the hemisphere integral \u222b_\u03a9 accumulates incoming radiance L\u1d62 from all directions \u03c9\u1d62 weighted by the BRDF and cosine foreshortening factor (\u03c9\u1d62\u00b7n\u0302), and L\u1d62 is itself the outgoing radiance of whatever surface or medium the incoming ray intersects, making the equation recursive; in prac",
+  "definition": "Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:light-transport",
+      "id": "urn:ngm:class:light-transport",
       "label": "Light Transport"
     },
     {
-      "id": "urn:visionflow:linked:monte-carlo-methods",
+      "id": "urn:ngm:class:monte-carlo-methods",
       "label": "Monte Carlo Methods"
-    },
-    {
-      "id": "urn:visionflow:linked:rendering",
-      "label": "Rendering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acceleration-structure",
+        "id": "urn:ngm:class:acceleration-structure",
         "label": "Acceleration Structure"
       },
       {
-        "id": "urn:visionflow:linked:brdf",
+        "id": "urn:ngm:class:brdf",
         "label": "BRDF"
       },
       {
-        "id": "urn:visionflow:linked:bvh-acceleration-structure",
+        "id": "urn:ngm:class:bvh-acceleration-structure",
         "label": "BVH Acceleration Structure"
       },
       {
-        "id": "urn:visionflow:linked:denoiser",
+        "id": "urn:ngm:class:denoiser",
         "label": "Denoiser"
       },
       {
-        "id": "urn:visionflow:linked:intersection-test",
+        "id": "urn:ngm:class:intersection-test",
         "label": "Intersection Test"
       },
       {
-        "id": "urn:visionflow:linked:primary-ray",
+        "id": "urn:ngm:class:primary-ray",
         "label": "Primary Ray"
       },
       {
-        "id": "urn:visionflow:linked:reservoir-sampling",
+        "id": "urn:ngm:class:reservoir-sampling",
         "label": "Reservoir Sampling"
       },
       {
-        "id": "urn:visionflow:linked:rt-core",
+        "id": "urn:ngm:class:rt-core",
         "label": "RT Core"
       },
       {
-        "id": "urn:visionflow:linked:secondary-ray",
+        "id": "urn:ngm:class:secondary-ray",
         "label": "Secondary Ray"
       },
       {
-        "id": "urn:visionflow:linked:shading-model",
+        "id": "urn:ngm:class:shading-model",
         "label": "Shading Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bvh-acceleration-structure",
+        "id": "urn:ngm:class:bvh-acceleration-structure",
         "label": "BVH Acceleration Structure"
       },
       {
-        "id": "urn:visionflow:linked:camera-model",
+        "id": "urn:ngm:class:camera-model",
         "label": "Camera Model"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:light-sources",
+        "id": "urn:ngm:class:light-sources",
         "label": "Light Sources"
       },
       {
-        "id": "urn:visionflow:linked:material-model",
+        "id": "urn:ngm:class:material-model",
         "label": "Material Model"
       },
       {
-        "id": "urn:visionflow:linked:monte-carlo-integration",
+        "id": "urn:ngm:class:monte-carlo-integration",
         "label": "Monte Carlo Integration"
       },
       {
-        "id": "urn:visionflow:linked:rendering-equation",
+        "id": "urn:ngm:class:rendering-equation",
         "label": "Rendering Equation"
       },
       {
-        "id": "urn:visionflow:linked:scene-geometry",
+        "id": "urn:ngm:class:scene-geometry",
         "label": "Scene Geometry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ambient-occlusion",
+        "id": "urn:ngm:class:ambient-occlusion",
         "label": "Ambient Occlusion"
       },
       {
-        "id": "urn:visionflow:linked:caustics",
+        "id": "urn:ngm:class:caustics",
         "label": "Caustics"
       },
       {
-        "id": "urn:visionflow:linked:participating-media-rendering",
+        "id": "urn:ngm:class:participating-media-rendering",
         "label": "Participating Media Rendering"
       },
       {
-        "id": "urn:visionflow:linked:real-time-path-tracing",
+        "id": "urn:ngm:class:real-time-path-tracing",
         "label": "Real-Time Path Tracing"
       },
       {
-        "id": "urn:visionflow:linked:reflections",
+        "id": "urn:ngm:class:reflections",
         "label": "Reflections"
       },
       {
-        "id": "urn:visionflow:linked:soft-shadows",
+        "id": "urn:ngm:class:soft-shadows",
         "label": "Soft Shadows"
       },
       {
-        "id": "urn:visionflow:linked:subsurface-scattering",
+        "id": "urn:ngm:class:subsurface-scattering",
         "label": "Subsurface Scattering"
       },
       {
-        "id": "urn:visionflow:owl:class:global-illumination",
+        "id": "urn:ngm:class:global-illumination",
         "label": "Global Illumination"
       },
       {
-        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "id": "urn:ngm:class:photorealistic-rendering",
         "label": "Photorealistic Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bidirectional-path-tracing",
+        "id": "urn:ngm:class:bidirectional-path-tracing",
         "label": "Bidirectional Path Tracing"
       },
       {
-        "id": "urn:visionflow:linked:metropolis-light-transport",
+        "id": "urn:ngm:class:metropolis-light-transport",
         "label": "Metropolis Light Transport"
       },
       {
-        "id": "urn:visionflow:linked:multiple-importance-sampling",
+        "id": "urn:ngm:class:multiple-importance-sampling",
         "label": "Multiple Importance Sampling"
       },
       {
-        "id": "urn:visionflow:linked:path-tracing",
+        "id": "urn:ngm:class:path-tracing",
         "label": "Path Tracing"
       },
       {
-        "id": "urn:visionflow:linked:photon-mapping",
+        "id": "urn:ngm:class:photon-mapping",
         "label": "Photon Mapping"
       },
       {
-        "id": "urn:visionflow:linked:re-stir",
+        "id": "urn:ngm:class:re-stir",
         "label": "ReSTIR"
       },
       {
-        "id": "urn:visionflow:linked:volumetric-rendering",
+        "id": "urn:ngm:class:volumetric-rendering",
         "label": "Volumetric Rendering"
       },
       {
-        "id": "urn:visionflow:linked:whitted-ray-tracing",
+        "id": "urn:ngm:class:whitted-ray-tracing",
         "label": "Whitted Ray Tracing"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-upscaling",
+        "label": "AI Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "id": "urn:ngm:class:dlss",
+        "label": "DLSS"
+      },
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:neural-denoising",
+        "label": "Neural Denoising"
+      },
+      {
+        "id": "urn:ngm:class:reservoir-based-resampling",
+        "label": "Reservoir-Based Resampling"
+      },
+      {
+        "id": "urn:ngm:class:russian-roulette-termination",
+        "label": "Russian Roulette Termination"
+      },
+      {
+        "id": "urn:ngm:class:spatiotemporal-filtering",
+        "label": "Spatiotemporal Filtering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      },
+      {
+        "id": "urn:ngm:class:game-rendering",
+        "label": "Game Rendering"
+      },
+      {
+        "id": "urn:ngm:class:product-visualisation",
+        "label": "Product Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:direct-x-raytracing",
+        "label": "DirectX Raytracing"
+      },
+      {
+        "id": "urn:ngm:class:khronos-vulkan-khr-ray-tracing",
+        "label": "Khronos Vulkan KHR_ray_tracing"
+      },
+      {
+        "id": "urn:ngm:class:open-rl",
+        "label": "OpenRL"
+      },
+      {
+        "id": "urn:ngm:class:opti-x-sdk",
+        "label": "OptiX SDK"
+      },
+      {
+        "id": "urn:ngm:class:pbrt-standard",
+        "label": "PBRT Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:denoising",
+        "label": "Denoising"
+      },
+      {
+        "id": "urn:ngm:class:direct-x",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:dlss",
+        "label": "DLSS"
+      },
+      {
+        "id": "urn:ngm:class:lumen",
+        "label": "Lumen"
+      },
+      {
+        "id": "urn:ngm:class:opti-x",
+        "label": "OptiX"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically-Based Rendering"
+      }
+    ]
   },
   "wikilinks": [
     {

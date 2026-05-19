@@ -412,324 +412,243 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mobile-robot-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mobile-robot-platform",
+  "@type": "Class",
   "label": "Mobile Robot Platform",
+  "definition": "A Mobile Robot Platform is an integrated mechatronic base that provides locomotion, power, computing, and sensor-mounting infrastructure upon which higher-level autonomy stacks—perception, planning, and control—are deployed.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cyber-physical-system",
-      "vc:label": "Cyber Physical System"
+      "@id": "urn:ngm:class:cyber-physical-system",
+      "label": "Cyber Physical System"
     },
     {
-      "@id": "urn:visionflow:linked:embodied-ai",
-      "vc:label": "Embodied AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:unmanned-ground-vehicle",
-      "vc:label": "Unmanned Ground Vehicle"
+      "@id": "urn:ngm:class:embodied-ai",
+      "label": "Embodied AI"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d390b2d6494bff4cbb5707033bfa4f9b5fd6d69f7c951d423d49bd3455e2e09a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:chassis-frame",
+        "label": "Chassis Frame"
+      },
+      {
+        "@id": "urn:ngm:class:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "@id": "urn:ngm:class:locomotion-system",
+        "label": "Locomotion System"
+      },
+      {
+        "@id": "urn:ngm:class:motor-controller",
+        "label": "Motor Controller"
+      },
+      {
+        "@id": "urn:ngm:class:onboard-computer",
+        "label": "Onboard Computer"
+      },
+      {
+        "@id": "urn:ngm:class:payload-bay",
+        "label": "Payload Bay"
+      },
+      {
+        "@id": "urn:ngm:class:power-system",
+        "label": "Power System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-suite",
+        "label": "Sensor Suite"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "@id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:inspection-robotics",
+        "label": "Inspection Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:behaviour-tree-control",
+        "label": "Behaviour Tree Control"
+      },
+      {
+        "@id": "urn:ngm:class:differential-drive-kinematics",
+        "label": "Differential Drive Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:fast-dds",
+        "label": "FastDDS"
+      },
+      {
+        "@id": "urn:ngm:class:move-it-2",
+        "label": "MoveIt 2"
+      },
+      {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-library",
+        "label": "PointCloud Library"
+      },
+      {
+        "@id": "urn:ngm:class:slam-toolbox",
+        "label": "SLAM Toolbox"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "@id": "urn:ngm:class:sim2-real-transfer",
+        "label": "Sim2Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "@id": "urn:ngm:class:rep-103",
+        "label": "REP 103"
+      },
+      {
+        "@id": "urn:ngm:class:rep-105",
+        "label": "REP 105"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2-humble",
+        "label": "ROS 2 Humble"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2-iron",
+        "label": "ROS 2 Iron"
+      },
+      {
+        "@id": "urn:ngm:class:roscon",
+        "label": "ROSCon"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d390b2d6494bff4cbb5707033bfa4f9b5fd6d69f7c951d423d49bd3455e2e09a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Mobile Robot Platform is an integrated mechatronic base that provides locomotion, power, computing, and sensor-mounting infrastructure upon which higher-level autonomy stacks—perception, planning, and control—are deployed. Platforms are classified by locomotion modality: differential-drive wheeled bases (TurtleBot 4, Clearpath Jackal) achieving 1-2 m/s on smooth floors with <1 cm heading error under wheel-odometry plus IMU fusion; skid-steer all-terrain wheeled bases (Clearpath Husky, Boxer) operating across gravel, grass, and mud at 1 m/s with 150 kg payload; tracked bases for extreme terrain (Clearpath Grizzly, QinetiQ Titan); quadrupedal legged platforms (Boston Dynamics Spot v3 at 1.6 m/s, 14 kg payload, 90-minute endurance; Unitree Go2 Air at 3.5 m/s, 5 kg payload, 4 kg mass with $1,600 USD commercial price 2024; Unitree B2 industrial quad at 20 kg payload, 5 h endurance, IP67, launched Q2 2024; MIT Mini Cheetah open-source 3-DOF per leg at 3 m/s running); humanoid bipedal platforms (Unitree H1 humanoid 1.8 m, 47 kg, 1.5 m/s walking, up to 10 kg manipulated load, launched Q4 2024; Unitree G1 bipedal 127 cm, 35 kg, dexterous seven-DOF arms, launched Q2 2025); wheeled-legged h",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:chassis-frame",
-      "vc:label": "Chassis Frame"
-    },
-    {
-      "@id": "urn:visionflow:linked:communication-interface",
-      "vc:label": "Communication Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:locomotion-system",
-      "vc:label": "Locomotion System"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-controller",
-      "vc:label": "Motor Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboard-computer",
-      "vc:label": "Onboard Computer"
-    },
-    {
-      "@id": "urn:visionflow:linked:payload-bay",
-      "vc:label": "Payload Bay"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-system",
-      "vc:label": "Power System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-suite",
-      "vc:label": "Sensor Suite"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:battery-management-system",
-      "vc:label": "Battery Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:dds-middleware",
-      "vc:label": "DDS Middleware"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver",
-      "vc:label": "Motor Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:nav2",
-      "vc:label": "Nav2"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2",
-      "vc:label": "ROS 2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agricultural-robotics",
-      "vc:label": "Agricultural Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:environment-mapping",
-      "vc:label": "Environment Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:inspection-robotics",
-      "vc:label": "Inspection Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:logistics-automation",
-      "vc:label": "Logistics Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-manipulation",
-      "vc:label": "Mobile Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-tree-control",
-      "vc:label": "Behaviour Tree Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:differential-drive-kinematics",
-      "vc:label": "Differential Drive Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:linked:legged-locomotion",
-      "vc:label": "Legged Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:path-planning",
-      "vc:label": "Path Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:depth-camera",
-      "vc:label": "Depth Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:gazebo",
-      "vc:label": "Gazebo"
-    },
-    {
-      "@id": "urn:visionflow:linked:imu",
-      "vc:label": "IMU"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-isaac-sim",
-      "vc:label": "NVIDIA Isaac Sim"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-jetson",
-      "vc:label": "NVIDIA Jetson"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2",
-      "vc:label": "ROS 2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "LIDAR"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:fleet-management",
-      "vc:label": "Fleet Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-robot-systems",
-      "vc:label": "Multi-Robot Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:sim2-real-transfer",
-      "vc:label": "Sim2Real Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human-Robot Interaction"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-tree",
-      "vc:label": "Behaviour Tree"
-    },
-    {
-      "@id": "urn:visionflow:linked:fast-dds",
-      "vc:label": "FastDDS"
-    },
-    {
-      "@id": "urn:visionflow:linked:move-it-2",
-      "vc:label": "MoveIt 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:nav2",
-      "vc:label": "Nav2"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-library",
-      "vc:label": "PointCloud Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:slam-toolbox",
-      "vc:label": "SLAM Toolbox"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:fixed-robot-manipulator",
-      "vc:label": "Fixed Robot Manipulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:stationary-automation-platform",
-      "vc:label": "Stationary Automation Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aerial-robot",
-      "vc:label": "Aerial Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marine-robot",
-      "vc:label": "Marine Robot"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:edge-ai",
-      "vc:label": "Edge AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:swarm-robotics",
-      "vc:label": "Swarm Robotics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iso-13482",
-      "vc:label": "ISO 13482"
-    },
-    {
-      "@id": "urn:visionflow:linked:rep-103",
-      "vc:label": "REP 103"
-    },
-    {
-      "@id": "urn:visionflow:linked:rep-105",
-      "vc:label": "REP 105"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2-humble",
-      "vc:label": "ROS 2 Humble"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2-iron",
-      "vc:label": "ROS 2 Iron"
-    },
-    {
-      "@id": "urn:visionflow:linked:roscon",
-      "vc:label": "ROSCon"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2",
-      "vc:label": "ROS 2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

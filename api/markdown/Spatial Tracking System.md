@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-tracking-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-tracking-system",
+  "@type": "Class",
   "label": "Spatial Tracking System",
+  "definition": "Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
+      "@id": "urn:ngm:class:motion-tracking",
+      "label": "Motion Tracking"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9c3b6b426c76b847b0c7f30e3b7a5a8c03d52d426e160a3ce0e0dc76597bdd66"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:precise-spatial-positioning",
+        "label": "Precise Spatial Positioning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9c3b6b426c76b847b0c7f30e3b7a5a8c03d52d426e160a3ce0e0dc76597bdd66@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:precise-spatial-positioning",
-      "vc:label": "Precise Spatial Positioning"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

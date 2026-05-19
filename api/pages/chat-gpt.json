@@ -3,179 +3,303 @@
   "title": "ChatGPT",
   "slug": "chat-gpt",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:chat-gpt",
+  "classIri": "urn:ngm:class:chat-gpt",
   "domain": "artificial-intelligence",
-  "definition": "ChatGPT is a conversational AI assistant developed by [[OpenAI]] and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned [[Large Language Models]] accessible to general consumers via a web interface, achieving 100 million monthly active users within 60 days \u2014 the fastest product adoption in technology history at that time \u2014 and reaching 200 million weekly active users by August 2024 and over 900 million weekly active users by early 2026, built on a lineage of successively more capable [[Generative Pre-trained Transformers]] (GPT-3.5-turbo at launch, [[GPT 4]] in March 2023, GPT-4 Turbo in November 2023, GPT-4o in May 2024, o1 reasoning model in September 2024, GPT-5 in August 2025), trained using [[Reinforcement Learning from Human Feedback]] ([[RLHF]]) via a three-phase pipeline: (1) supervised fine-tuning (SFT) on human-written demonstration data, (2) reward model (RM) training from comparative human preference rankings, and (3) proximal policy optimisation (PPO) maximising the reward signal subject to a KL divergence penalty preventing excessive drift from the SFT policy \u2014 transforming a base completion model into an agent ca",
+  "definition": "ChatGPT is a conversational AI assistant developed by [[OpenAI]] and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned [[Large Language Models]] accessible to general consumers via a web interface, achieving 100 monthly active users within 6...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-assistants",
+      "id": "urn:ngm:class:ai-assistants",
       "label": "AI Assistants"
     },
     {
-      "id": "urn:visionflow:linked:natural-language-generation",
+      "id": "urn:ngm:class:natural-language-generation",
       "label": "Natural Language Generation"
-    },
-    {
-      "id": "urn:visionflow:linked:instruction-following",
-      "label": "Instruction Following"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:advanced-voice-mode",
+        "id": "urn:ngm:class:advanced-voice-mode",
         "label": "Advanced Voice Mode"
       },
       {
-        "id": "urn:visionflow:linked:canvas",
+        "id": "urn:ngm:class:canvas",
         "label": "Canvas"
       },
       {
-        "id": "urn:visionflow:linked:chat-gpt-plugins",
+        "id": "urn:ngm:class:chat-gpt-plugins",
         "label": "ChatGPT Plugins"
       },
       {
-        "id": "urn:visionflow:linked:code-interpreter",
+        "id": "urn:ngm:class:code-interpreter",
         "label": "Code Interpreter"
       },
       {
-        "id": "urn:visionflow:linked:custom-gpts",
+        "id": "urn:ngm:class:custom-gpts",
         "label": "Custom GPTs"
       },
       {
-        "id": "urn:visionflow:linked:gpt-store",
+        "id": "urn:ngm:class:gpt-store",
         "label": "GPT Store"
       },
       {
-        "id": "urn:visionflow:linked:memory",
+        "id": "urn:ngm:class:memory",
         "label": "Memory"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:system-prompts",
+        "id": "urn:ngm:class:system-prompts",
         "label": "System Prompts"
       },
       {
-        "id": "urn:visionflow:owl:class:dall-e",
+        "id": "urn:ngm:class:dall-e",
         "label": "DALL-E"
       },
       {
-        "id": "urn:visionflow:owl:class:gpt-4",
+        "id": "urn:ngm:class:gpt-4",
         "label": "GPT 4"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-model",
+        "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:instruction-following",
+        "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:visionflow:owl:class:human-feedback",
+        "id": "urn:ngm:class:human-feedback",
         "label": "Human Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:proximal-policy-optimisation",
+        "id": "urn:ngm:class:proximal-policy-optimisation",
         "label": "Proximal Policy Optimisation"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-model",
+        "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
       },
       {
-        "id": "urn:visionflow:owl:class:supervised-fine-tuning",
+        "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-agents",
+        "id": "urn:ngm:class:ai-agents",
         "label": "AI Agents"
       },
       {
-        "id": "urn:visionflow:linked:ai-assisted-writing",
+        "id": "urn:ngm:class:ai-assisted-writing",
         "label": "AI-Assisted Writing"
       },
       {
-        "id": "urn:visionflow:linked:automated-reasoning",
+        "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:enterprise-ai",
+        "id": "urn:ngm:class:enterprise-ai",
         "label": "Enterprise AI"
       },
       {
-        "id": "urn:visionflow:linked:natural-language-generation",
+        "id": "urn:ngm:class:natural-language-generation",
         "label": "Natural Language Generation"
       },
       {
-        "id": "urn:visionflow:linked:scientific-discovery",
+        "id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Discovery"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai",
         "label": "Multimodal AI"
       },
       {
-        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
         "label": "Chain-of-Thought Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:linked:tool-use",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       },
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:temperature-sampling",
+        "label": "Temperature Sampling"
+      },
+      {
+        "id": "urn:ngm:class:vector-embeddings",
+        "label": "Vector Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-ai",
+        "label": "Customer Service AI"
+      },
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:chat-completions-api",
+        "label": "Chat Completions API"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-usage-policies",
+        "label": "OpenAI Usage Policies"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chat-bots",
+        "label": "ChatBots"
+      },
+      {
+        "id": "urn:ngm:class:generative-pre-trained-transformers",
+        "label": "Generative Pre-trained Transformers"
+      },
+      {
+        "id": "urn:ngm:class:instruct-gpt",
+        "label": "InstructGPT"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

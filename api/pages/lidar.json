@@ -3,19 +3,18 @@
   "title": "Lidar",
   "slug": "lidar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lidar",
+  "classIri": "urn:ngm:class:lidar",
   "domain": "robotics",
-  "definition": "Lidar is a concept within the robotics domain. Further enrichment pending.",
+  "definition": "Lidar is a type of Sensor in the robotics domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "robotics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

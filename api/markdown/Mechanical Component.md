@@ -752,406 +752,331 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:mechanical-component",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:mechanical-component",
+  "@type": "Class",
   "label": "Mechanical Component",
+  "definition": "MechanicalComponent is the ontological superclass for all physical structural, kinematic, and power-transmission elements constituting robotic hardware systems.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:kinematic-chain",
-      "vc:label": "Kinematic Chain"
+      "@id": "urn:ngm:class:kinematic-chain",
+      "label": "Kinematic Chain"
     },
     {
-      "@id": "urn:visionflow:linked:manufacturing-product",
-      "vc:label": "Manufacturing Product"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechatronic-system",
-      "vc:label": "Mechatronic System"
+      "@id": "urn:ngm:class:manufacturing-product",
+      "label": "Manufacturing Product"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ab43625bf6a8f57cc3b124160e2f0efe984b678905c715c501fd490c669919c5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:ball-screw",
+        "label": "Ball Screw"
+      },
+      {
+        "@id": "urn:ngm:class:bearing",
+        "label": "Bearing"
+      },
+      {
+        "@id": "urn:ngm:class:cable-drive",
+        "label": "Cable Drive"
+      },
+      {
+        "@id": "urn:ngm:class:coupling",
+        "label": "Coupling"
+      },
+      {
+        "@id": "urn:ngm:class:cycloidal-drive",
+        "label": "Cycloidal Drive"
+      },
+      {
+        "@id": "urn:ngm:class:flexure",
+        "label": "Flexure"
+      },
+      {
+        "@id": "urn:ngm:class:harmonic-drive",
+        "label": "Harmonic Drive"
+      },
+      {
+        "@id": "urn:ngm:class:mounting-interface",
+        "label": "Mounting Interface"
+      },
+      {
+        "@id": "urn:ngm:class:planetary-gearbox",
+        "label": "Planetary Gearbox"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-housing",
+        "label": "Sensor Housing"
+      },
+      {
+        "@id": "urn:ngm:class:structural-frame",
+        "label": "Structural Frame"
+      },
+      {
+        "@id": "urn:ngm:class:transmission",
+        "label": "Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:fatigue-analysis",
+        "label": "Fatigue Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:lubrication",
+        "label": "Lubrication"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "@id": "urn:ngm:class:material-science",
+        "label": "Material Science"
+      },
+      {
+        "@id": "urn:ngm:class:surface-finishing",
+        "label": "Surface Finishing"
+      },
+      {
+        "@id": "urn:ngm:class:tolerance-stack-analysis",
+        "label": "Tolerance Stack Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:tribology",
+        "label": "Tribology"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backdrivability",
+        "label": "Backdrivability"
+      },
+      {
+        "@id": "urn:ngm:class:payload-capacity",
+        "label": "Payload Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:positional-accuracy",
+        "label": "Positional Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:quasi-direct-drive",
+        "label": "Quasi-Direct Drive"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ball-screw-mechanism",
+        "label": "Ball Screw Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cable-drive",
+        "label": "Cable Drive"
+      },
+      {
+        "@id": "urn:ngm:class:cycloidal-drive",
+        "label": "Cycloidal Drive"
+      },
+      {
+        "@id": "urn:ngm:class:harmonic-drive",
+        "label": "Harmonic Drive"
+      },
+      {
+        "@id": "urn:ngm:class:planetary-gearbox",
+        "label": "Planetary Gearbox"
+      },
+      {
+        "@id": "urn:ngm:class:quasi-direct-drive",
+        "label": "Quasi-Direct Drive"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:strain-wave-gearing",
+        "label": "Strain-Wave Gearing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:aluminium-alloy",
+        "label": "Aluminium Alloy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-fibre-composite",
+        "label": "Carbon Fibre Composite"
+      },
+      {
+        "@id": "urn:ngm:class:cfrp-laminate",
+        "label": "CFRP Laminate"
+      },
+      {
+        "@id": "urn:ngm:class:elastomer",
+        "label": "Elastomer"
+      },
+      {
+        "@id": "urn:ngm:class:piezoelectric-material",
+        "label": "Piezoelectric Material"
+      },
+      {
+        "@id": "urn:ngm:class:shape-memory-alloy",
+        "label": "Shape Memory Alloy"
+      },
+      {
+        "@id": "urn:ngm:class:steel-alloy",
+        "label": "Steel Alloy"
+      },
+      {
+        "@id": "urn:ngm:class:titanium-alloy",
+        "label": "Titanium Alloy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:force-sensing",
+        "label": "Force Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensing",
+        "label": "Proprioceptive Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:robot-design",
+        "label": "Robot Design"
+      },
+      {
+        "@id": "urn:ngm:class:topology-optimisation",
+        "label": "Topology Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaborative-robots",
+        "label": "Collaborative Robots"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robots",
+        "label": "Humanoid Robots"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-manipulators",
+        "label": "Industrial Manipulators"
+      },
+      {
+        "@id": "urn:ngm:class:legged-robotics",
+        "label": "Legged Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      },
+      {
+        "@id": "urn:ngm:class:space-robotics",
+        "label": "Space Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:delta-robot",
+        "label": "Delta Robot"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:din-3960-gear-standards",
+        "label": "DIN 3960 Gear Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-robotics-standards",
+        "label": "IEEE Robotics Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-281-bearing-life",
+        "label": "ISO 281 Bearing Life"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ab43625bf6a8f57cc3b124160e2f0efe984b678905c715c501fd490c669919c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "MechanicalComponent is the ontological superclass for all physical structural, kinematic, and power-transmission elements constituting robotic hardware systems. Encompassing [[Actuator|actuators]], [[Transmission|transmissions]], [[Bearing|bearings]], [[Structural Frame|frames]], [[Coupling|couplings]], [[End-Effector|end-effectors]], sensor housings, and [[Compliant Mechanism|compliant mechanisms]], this class captures the physical layer upon which [[Robot Kinematics]], [[Robot Dynamics]], payload capacity, stiffness, backlash, and contact mechanics are predicated. Mechanical components exist within a multi-material, multi-scale design space spanning nanometre surface finishes on bearing raceways through metre-scale [[Carbon Fibre Composite|carbon-fibre]] structural tubes, and their selection, sizing, and integration determines the fundamental performance envelope — speed, torque, positioning accuracy, fatigue life, thermal budget — of any robotic system from precision [[Surgical Robotics|surgical instruments]] to heavy [[Industrial Manipulators|industrial manipulators]]. Unlike the [[Software Component|software]], [[Sensor|sensing]], or computation layers, mechanical components a",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:ball-screw",
-      "vc:label": "Ball Screw"
-    },
-    {
-      "@id": "urn:visionflow:linked:bearing",
-      "vc:label": "Bearing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cable-drive",
-      "vc:label": "Cable Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:coupling",
-      "vc:label": "Coupling"
-    },
-    {
-      "@id": "urn:visionflow:linked:cycloidal-drive",
-      "vc:label": "Cycloidal Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:flexure",
-      "vc:label": "Flexure"
-    },
-    {
-      "@id": "urn:visionflow:linked:harmonic-drive",
-      "vc:label": "Harmonic Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:mounting-interface",
-      "vc:label": "Mounting Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:planetary-gearbox",
-      "vc:label": "Planetary Gearbox"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-housing",
-      "vc:label": "Sensor Housing"
-    },
-    {
-      "@id": "urn:visionflow:linked:structural-frame",
-      "vc:label": "Structural Frame"
-    },
-    {
-      "@id": "urn:visionflow:linked:transmission",
-      "vc:label": "Transmission"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:end-effector",
-      "vc:label": "End-Effector"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:fatigue-analysis",
-      "vc:label": "Fatigue Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:finite-element-analysis",
-      "vc:label": "Finite Element Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:lubrication",
-      "vc:label": "Lubrication"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-process",
-      "vc:label": "Manufacturing Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-science",
-      "vc:label": "Material Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:surface-finishing",
-      "vc:label": "Surface Finishing"
-    },
-    {
-      "@id": "urn:visionflow:linked:tolerance-stack-analysis",
-      "vc:label": "Tolerance Stack Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:tribology",
-      "vc:label": "Tribology"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:backdrivability",
-      "vc:label": "Backdrivability"
-    },
-    {
-      "@id": "urn:visionflow:linked:payload-capacity",
-      "vc:label": "Payload Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:positional-accuracy",
-      "vc:label": "Positional Accuracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:quasi-direct-drive",
-      "vc:label": "Quasi-Direct Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuation",
-      "vc:label": "Series Elastic Actuation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-control",
-      "vc:label": "Force Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-dynamics",
-      "vc:label": "Robot Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-kinematics",
-      "vc:label": "Robot Kinematics"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ball-screw-mechanism",
-      "vc:label": "Ball Screw Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:cable-drive",
-      "vc:label": "Cable Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:cycloidal-drive",
-      "vc:label": "Cycloidal Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:harmonic-drive",
-      "vc:label": "Harmonic Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:planetary-gearbox",
-      "vc:label": "Planetary Gearbox"
-    },
-    {
-      "@id": "urn:visionflow:linked:quasi-direct-drive",
-      "vc:label": "Quasi-Direct Drive"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuation",
-      "vc:label": "Series Elastic Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:strain-wave-gearing",
-      "vc:label": "Strain-Wave Gearing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:finite-element-analysis",
-      "vc:label": "Finite Element Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:lubrication",
-      "vc:label": "Lubrication"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-process",
-      "vc:label": "Manufacturing Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-science",
-      "vc:label": "Material Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanical-engineering",
-      "vc:label": "Mechanical Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:thermal-management",
-      "vc:label": "Thermal Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:tribology",
-      "vc:label": "Tribology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-robots",
-      "vc:label": "Collaborative Robots"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-robots",
-      "vc:label": "Humanoid Robots"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-manipulators",
-      "vc:label": "Industrial Manipulators"
-    },
-    {
-      "@id": "urn:visionflow:linked:legged-robotics",
-      "vc:label": "Legged Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:prosthetics",
-      "vc:label": "Prosthetics"
-    },
-    {
-      "@id": "urn:visionflow:linked:space-robotics",
-      "vc:label": "Space Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delta-robot",
-      "vc:label": "Delta Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:additive-manufacturing",
-      "vc:label": "Additive Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:aluminium-alloy",
-      "vc:label": "Aluminium Alloy"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-fibre-composite",
-      "vc:label": "Carbon Fibre Composite"
-    },
-    {
-      "@id": "urn:visionflow:linked:cfrp-laminate",
-      "vc:label": "CFRP Laminate"
-    },
-    {
-      "@id": "urn:visionflow:linked:elastomer",
-      "vc:label": "Elastomer"
-    },
-    {
-      "@id": "urn:visionflow:linked:piezoelectric-material",
-      "vc:label": "Piezoelectric Material"
-    },
-    {
-      "@id": "urn:visionflow:linked:shape-memory-alloy",
-      "vc:label": "Shape Memory Alloy"
-    },
-    {
-      "@id": "urn:visionflow:linked:steel-alloy",
-      "vc:label": "Steel Alloy"
-    },
-    {
-      "@id": "urn:visionflow:linked:titanium-alloy",
-      "vc:label": "Titanium Alloy"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:computation-hardware",
-      "vc:label": "Computation Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-component",
-      "vc:label": "Electronic Component"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-component",
-      "vc:label": "Software Component"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hydraulic-actuator",
-      "vc:label": "Hydraulic Actuator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor",
-      "vc:label": "Sensor"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:additive-manufacturing",
-      "vc:label": "Additive Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-sensing",
-      "vc:label": "Force Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:proprioceptive-sensing",
-      "vc:label": "Proprioceptive Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-design",
-      "vc:label": "Robot Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:topology-optimisation",
-      "vc:label": "Topology Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:din-3960-gear-standards",
-      "vc:label": "DIN 3960 Gear Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-robotics-standards",
-      "vc:label": "IEEE Robotics Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-10218",
-      "vc:label": "ISO 10218"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-281-bearing-life",
-      "vc:label": "ISO 281 Bearing Life"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-9283",
-      "vc:label": "ISO 9283"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-ts-15066",
-      "vc:label": "ISO TS 15066"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

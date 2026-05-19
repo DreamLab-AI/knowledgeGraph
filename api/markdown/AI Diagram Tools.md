@@ -532,340 +532,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-diagram-tools",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-diagram-tools",
+  "@type": "Class",
   "label": "AI Diagram Tools",
+  "definition": "AI Diagram Tools are a class of generative AI applications that translate natural-language descriptions, source code, screenshots, or structured specifications into machine-renderable diagram artefacts (flowcharts, sequence diagrams, entity-relationship models, class diagrams, mind maps, architec...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diagram-as-code",
-      "vc:label": "Diagram-as-Code"
+      "@id": "urn:ngm:class:diagram-as-code",
+      "label": "Diagram-as-Code"
     },
     {
-      "@id": "urn:visionflow:linked:knowledge-visualisation",
-      "vc:label": "Knowledge Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-powered-tool",
-      "vc:label": "LLM-Powered Tool"
+      "@id": "urn:ngm:class:knowledge-visualisation",
+      "label": "Knowledge Visualisation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:abde9df19b9c1be84471dfd5dd7abb2f22ea8e32f4c86b7fd91712dcc653557b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:diagram-grammar-compiler",
+        "label": "Diagram Grammar Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:editor-surface",
+        "label": "Editor Surface"
+      },
+      {
+        "@id": "urn:ngm:class:export-pipeline",
+        "label": "Export Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:layout-algorithm",
+        "label": "Layout Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:llm-backend",
+        "label": "LLM Backend"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:browser-runtime",
+        "label": "Browser Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:diagram-specification-language",
+        "label": "Diagram Specification Language"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:layout-engine",
+        "label": "Layout Engine"
+      },
+      {
+        "@id": "urn:ngm:class:mermaid-syntax",
+        "label": "Mermaid Syntax"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adr-generation",
+        "label": "ADR Generation"
+      },
+      {
+        "@id": "urn:ngm:class:architecture-documentation",
+        "label": "Architecture Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:onboarding-diagram-production",
+        "label": "Onboarding Diagram Production"
+      },
+      {
+        "@id": "urn:ngm:class:prd-visualisation",
+        "label": "PRD Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-diagramming",
+        "label": "Rapid Diagramming"
+      },
+      {
+        "@id": "urn:ngm:class:system-design-communication",
+        "label": "System Design Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:code-to-diagram-reverse-engineering",
+        "label": "Code-to-Diagram Reverse Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:screenshot-to-diagram-conversion",
+        "label": "Screenshot-to-Diagram Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:sugiyama-hierarchical-layout",
+        "label": "Sugiyama Hierarchical Layout"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-dot-generation",
+        "label": "Text-to-DOT Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-mermaid-generation",
+        "label": "Text-to-Mermaid Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-plant-uml-generation",
+        "label": "Text-to-PlantUML Generation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:force-directed-layout",
+        "label": "Force-Directed Layout"
+      },
+      {
+        "@id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "@id": "urn:ngm:class:svg-rendering",
+        "label": "SVG Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:tree-sitter-parsing",
+        "label": "Tree Sitter Parsing"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:c4-model",
+        "label": "C4 Model"
+      },
+      {
+        "@id": "urn:ngm:class:claude-artifacts",
+        "label": "Claude Artifacts"
+      },
+      {
+        "@id": "urn:ngm:class:eraser-diagram-gpt",
+        "label": "Eraser DiagramGPT"
+      },
+      {
+        "@id": "urn:ngm:class:excalidraw",
+        "label": "Excalidraw"
+      },
+      {
+        "@id": "urn:ngm:class:lucidchart-ai",
+        "label": "Lucidchart AI"
+      },
+      {
+        "@id": "urn:ngm:class:mermaid-chart",
+        "label": "Mermaid Chart"
+      },
+      {
+        "@id": "urn:ngm:class:miro-ai",
+        "label": "Miro AI"
+      },
+      {
+        "@id": "urn:ngm:class:napkin-ai",
+        "label": "Napkin AI"
+      },
+      {
+        "@id": "urn:ngm:class:structurizr-dsl",
+        "label": "Structurizr DSL"
+      },
+      {
+        "@id": "urn:ngm:class:whimsical-ai",
+        "label": "Whimsical AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:diagram-driven-development",
+        "label": "Diagram-Driven Development"
+      },
+      {
+        "@id": "urn:ngm:class:product-management",
+        "label": "Product Management"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture-documentation",
+        "label": "Software Architecture Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:system-design-interview-prep",
+        "label": "System Design Interview Prep"
+      },
+      {
+        "@id": "urn:ngm:class:technical-writing",
+        "label": "Technical Writing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c4-model-convention",
+        "label": "C4 Model Convention"
+      },
+      {
+        "@id": "urn:ngm:class:mermaid-specification",
+        "label": "Mermaid Specification"
+      },
+      {
+        "@id": "urn:ngm:class:omg-uml-2-5",
+        "label": "OMG UML 2.5"
+      },
+      {
+        "@id": "urn:ngm:class:plant-uml-standard",
+        "label": "PlantUML Standard"
+      },
+      {
+        "@id": "urn:ngm:class:structurizr-dsl-specification",
+        "label": "Structurizr DSL Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:abde9df19b9c1be84471dfd5dd7abb2f22ea8e32f4c86b7fd91712dcc653557b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Diagram Tools are a class of generative AI applications that translate natural-language descriptions, source code, screenshots, or structured specifications into machine-renderable diagram artefacts (flowcharts, sequence diagrams, entity-relationship models, class diagrams, mind maps, architecture diagrams, Gantt charts, deployment topologies, network maps, user journey maps), bridging the long-standing gap between informal whiteboard thinking and the formal diagram-as-code ecosystems (Mermaid, PlantUML, Graphviz DOT, D2 by Terrastruct, Structurizr DSL, ELK, draw.io XML) by using large language models (GPT-4/Claude 3.5/Gemini 1.5/Llama 3) as the intermediate compiler from prose to declarative diagram grammars, then handing the resulting source to deterministic layout algorithms (Sugiyama hierarchical layering Eclipse Layout Kernel ELK 4-phase pipeline cycle-breaking/layer-assignment/crossing-minimisation/coordinate-assignment, force-directed Fruchterman-Reingold, orthogonal routing, Kamada-Kawai energy minimisation, dagre.js port of GraphViz dot for browser execution) and rendering engines (SVG via D3/dagre-d3/Mermaid renderer, Canvas via Konva, HTML/CSS via tldraw, native PNG v",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:diagram-grammar-compiler",
-      "vc:label": "Diagram Grammar Compiler"
-    },
-    {
-      "@id": "urn:visionflow:linked:editor-surface",
-      "vc:label": "Editor Surface"
-    },
-    {
-      "@id": "urn:visionflow:linked:export-pipeline",
-      "vc:label": "Export Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:layout-algorithm",
-      "vc:label": "Layout Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-backend",
-      "vc:label": "LLM Backend"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-template",
-      "vc:label": "Prompt Template"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:browser-runtime",
-      "vc:label": "Browser Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:diagram-specification-language",
-      "vc:label": "Diagram Specification Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:layout-engine",
-      "vc:label": "Layout Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:mermaid-syntax",
-      "vc:label": "Mermaid Syntax"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adr-generation",
-      "vc:label": "ADR Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:architecture-documentation",
-      "vc:label": "Architecture Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboarding-diagram-production",
-      "vc:label": "Onboarding Diagram Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:prd-visualisation",
-      "vc:label": "PRD Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-diagramming",
-      "vc:label": "Rapid Diagramming"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-design-communication",
-      "vc:label": "System Design Communication"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:code-to-diagram-reverse-engineering",
-      "vc:label": "Code-to-Diagram Reverse Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:screenshot-to-diagram-conversion",
-      "vc:label": "Screenshot-to-Diagram Conversion"
-    },
-    {
-      "@id": "urn:visionflow:linked:sugiyama-hierarchical-layout",
-      "vc:label": "Sugiyama Hierarchical Layout"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-dot-generation",
-      "vc:label": "Text-to-DOT Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-mermaid-generation",
-      "vc:label": "Text-to-Mermaid Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-plant-uml-generation",
-      "vc:label": "Text-to-PlantUML Generation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:claude-3-5",
-      "vc:label": "Claude 3.5"
-    },
-    {
-      "@id": "urn:visionflow:linked:d2-diagram-language",
-      "vc:label": "D2 Diagram Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:eclipse-layout-kernel",
-      "vc:label": "Eclipse Layout Kernel"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphviz",
-      "vc:label": "Graphviz"
-    },
-    {
-      "@id": "urn:visionflow:linked:mermaid-js",
-      "vc:label": "Mermaid.js"
-    },
-    {
-      "@id": "urn:visionflow:linked:plant-uml",
-      "vc:label": "PlantUML"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt-4",
-      "vc:label": "GPT 4"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:diagram-driven-development",
-      "vc:label": "Diagram-Driven Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-management",
-      "vc:label": "Product Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-architecture-documentation",
-      "vc:label": "Software Architecture Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-design-interview-prep",
-      "vc:label": "System Design Interview Prep"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-writing",
-      "vc:label": "Technical Writing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph-construction",
-      "vc:label": "Knowledge Graph Construction"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:few-shot-prompting",
-      "vc:label": "Few-Shot Prompting"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-directed-layout",
-      "vc:label": "Force-Directed Layout"
-    },
-    {
-      "@id": "urn:visionflow:linked:markdown",
-      "vc:label": "Markdown"
-    },
-    {
-      "@id": "urn:visionflow:linked:svg-rendering",
-      "vc:label": "SVG Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:tree-sitter-parsing",
-      "vc:label": "Tree Sitter Parsing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:generative-image-model",
-      "vc:label": "Generative Image Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:hand-drawn-whiteboard",
-      "vc:label": "Hand-Drawn Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:linked:omni-graffle",
-      "vc:label": "OmniGraffle"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-diagram-file",
-      "vc:label": "Static Diagram File"
-    },
-    {
-      "@id": "urn:visionflow:linked:visio",
-      "vc:label": "Visio"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:midjourney",
-      "vc:label": "Midjourney"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:c4-model",
-      "vc:label": "C4 Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:claude-artifacts",
-      "vc:label": "Claude Artifacts"
-    },
-    {
-      "@id": "urn:visionflow:linked:eraser-diagram-gpt",
-      "vc:label": "Eraser DiagramGPT"
-    },
-    {
-      "@id": "urn:visionflow:linked:excalidraw",
-      "vc:label": "Excalidraw"
-    },
-    {
-      "@id": "urn:visionflow:linked:lucidchart-ai",
-      "vc:label": "Lucidchart AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:mermaid-chart",
-      "vc:label": "Mermaid Chart"
-    },
-    {
-      "@id": "urn:visionflow:linked:miro-ai",
-      "vc:label": "Miro AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:napkin-ai",
-      "vc:label": "Napkin AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:structurizr-dsl",
-      "vc:label": "Structurizr DSL"
-    },
-    {
-      "@id": "urn:visionflow:linked:whimsical-ai",
-      "vc:label": "Whimsical AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c4-model-convention",
-      "vc:label": "C4 Model Convention"
-    },
-    {
-      "@id": "urn:visionflow:linked:mermaid-specification",
-      "vc:label": "Mermaid Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:omg-uml-2-5",
-      "vc:label": "OMG UML 2.5"
-    },
-    {
-      "@id": "urn:visionflow:linked:plant-uml-standard",
-      "vc:label": "PlantUML Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:structurizr-dsl-specification",
-      "vc:label": "Structurizr DSL Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

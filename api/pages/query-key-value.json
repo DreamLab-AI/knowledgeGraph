@@ -3,19 +3,18 @@
   "title": "Query Key Value",
   "slug": "query-key-value",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:query-key-value",
+  "classIri": "urn:ngm:class:query-key-value",
   "domain": "artificial-intelligence",
   "definition": "The three fundamental components in attention mechanisms: queries determine what information to seek, keys determine what information is available, and values contain the actual information to be retrieved.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:attention-mechanism",
+      "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

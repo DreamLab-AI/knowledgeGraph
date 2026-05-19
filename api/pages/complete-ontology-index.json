@@ -3,19 +3,18 @@
   "title": "COMPLETE ONTOLOGY INDEX",
   "slug": "complete-ontology-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:complete-ontology-index",
+  "classIri": "urn:ngm:class:complete-ontology-index",
   "domain": "spatial-computing",
   "definition": "A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-ontology",
+      "id": "urn:ngm:class:metaverse-ontology",
       "label": "Metaverse Ontology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

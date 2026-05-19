@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gpt-4",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:gpt-4",
+  "@type": "Individual",
   "label": "GPT 4",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:large-language-model",
-      "vc:label": "Large Language Model"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f9493f5ff5fe12c96ba68bc3d9d808628da2518a880a08cea3be6a52d9922f09"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f9493f5ff5fe12c96ba68bc3d9d808628da2518a880a08cea3be6a52d9922f09@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A large-scale, multimodal transformer-based model that accepts image and text inputs and produces text outputs, exhibiting human-level performance on various professional and academic benchmarks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
 }
 ```
 

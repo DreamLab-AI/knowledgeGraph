@@ -3,19 +3,18 @@
   "title": "Robot Dynamics",
   "slug": "robot-dynamics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-dynamics",
+  "classIri": "urn:ngm:class:robot-dynamics",
   "domain": "robotics",
-  "definition": "- maturity:: draft",
+  "definition": "Robot Dynamics is a type of Robot Mechanics in the robotics domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:robot-mechanics",
+      "id": "urn:ngm:class:robot-mechanics",
       "label": "RobotMechanics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

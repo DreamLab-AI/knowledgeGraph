@@ -3,90 +3,99 @@
   "title": "Narrative Design Ontology",
   "slug": "narrative-design-ontology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:narrative-design-ontology",
+  "classIri": "urn:ngm:class:narrative-design-ontology",
   "domain": "spatial-computing",
   "definition": "Formal ontology for modeling structured storytelling frameworks, interactive narratives, story graphs, character relationships, and branching narrative paths in digital and interactive media.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:branching-path",
+        "id": "urn:ngm:class:branching-path",
         "label": "Branching Path"
       },
       {
-        "id": "urn:visionflow:linked:plot-structure",
+        "id": "urn:ngm:class:plot-structure",
         "label": "Plot Structure"
       },
       {
-        "id": "urn:visionflow:linked:story-event",
+        "id": "urn:ngm:class:story-event",
         "label": "Story Event"
       },
       {
-        "id": "urn:visionflow:linked:story-node",
+        "id": "urn:ngm:class:story-node",
         "label": "Story Node"
       },
       {
-        "id": "urn:visionflow:owl:class:character-relationship-graph",
+        "id": "urn:ngm:class:character-relationship-graph",
         "label": "Character Relationship Graph"
       },
       {
-        "id": "urn:visionflow:owl:class:narrative-arc",
+        "id": "urn:ngm:class:narrative-arc",
         "label": "Narrative Arc"
       },
       {
-        "id": "urn:visionflow:owl:class:narrative-theme",
+        "id": "urn:ngm:class:narrative-theme",
         "label": "Narrative Theme"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:event-sequencing",
+        "id": "urn:ngm:class:event-sequencing",
         "label": "Event Sequencing"
       },
       {
-        "id": "urn:visionflow:linked:plot-graph-database",
+        "id": "urn:ngm:class:plot-graph-database",
         "label": "Plot Graph Database"
       },
       {
-        "id": "urn:visionflow:owl:class:character-model",
+        "id": "urn:ngm:class:character-model",
         "label": "Character Model"
       },
       {
-        "id": "urn:visionflow:owl:class:dialogue-system",
+        "id": "urn:ngm:class:dialogue-system",
         "label": "Dialogue System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:interactive-fiction",
+        "id": "urn:ngm:class:interactive-fiction",
         "label": "Interactive Fiction"
       },
       {
-        "id": "urn:visionflow:linked:procedural-story-generation",
+        "id": "urn:ngm:class:procedural-story-generation",
         "label": "Procedural Story Generation"
       },
       {
-        "id": "urn:visionflow:linked:transmedia-storytelling",
+        "id": "urn:ngm:class:transmedia-storytelling",
         "label": "Transmedia Storytelling"
       },
       {
-        "id": "urn:visionflow:owl:class:game-narratives",
+        "id": "urn:ngm:class:game-narratives",
         "label": "Game Narratives"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interactive-storytelling-system",
+        "label": "Interactive Storytelling System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

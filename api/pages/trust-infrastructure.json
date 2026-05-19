@@ -3,65 +3,69 @@
   "title": "Trust Infrastructure",
   "slug": "trust-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trust-infrastructure",
+  "classIri": "urn:ngm:class:trust-infrastructure",
   "domain": "infrastructure",
   "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:certificate-authority",
+        "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:visionflow:linked:encryption-service",
+        "id": "urn:ngm:class:encryption-service",
         "label": "Encryption Service"
       },
       {
-        "id": "urn:visionflow:linked:key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-provider",
+        "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:visionflow:linked:authorisation",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
       },
       {
-        "id": "urn:visionflow:linked:data-confidentiality",
+        "id": "urn:ngm:class:data-confidentiality",
         "label": "Data Confidentiality"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

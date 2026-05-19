@@ -3,131 +3,215 @@
   "title": "Industrial Robot",
   "slug": "industrial-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:industrial-robot",
+  "classIri": "urn:ngm:class:industrial-robot",
   "domain": "robotics",
-  "definition": "Industrial Robot is a reprogrammable, automatically controlled manipulator programmable in three or more axes, fixed in place or mobile, for use in industrial automation applications as defined by ISO 8373:2012. Industrial robots are electromechanical systems integrating articulated kinematic chains, servo-driven joints, and real-time motion controllers to perform high-precision manufacturing tasks \u2014 welding, assembly, material handling, painting, palletising, machining, inspection \u2014 with cycle repeatabilities of \u00b10.01\u2013\u00b10.05 mm at throughputs unattainable by human labour. Major kinematic families span six-axis articulated arms (KUKA KR series, ABB IRB series, FANUC M-series, Yaskawa Motoman GP/MA, St\u00e4ubli RX/TX), four-axis SCARA robots (Epson T-series, ABB IRB 910SC, Yamaha YK-XG) for high-speed horizontal assembly at \u22640.006 mm repeatability, Delta/parallel robots (FANUC M-1iA, ABB IRB 360 FlexPicker) for pick-and-place at 150+ picks/minute in food and pharmaceutical lines, Cartesian gantry systems for CNC machine loading and large-panel handling, and the rapidly growing collaborative robot (cobot) segment (Universal Robots UR3e/UR5e/UR10e/UR20, Doosan A-series, Techman TM12S, FANU",
+  "definition": "Industrial Robot is a reprogrammable, automatically controlled manipulator programmable in three or more axes, fixed in place or mobile, for use in industrial automation applications as defined by ISO 8373:2012.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:manufacturing-automation",
+      "id": "urn:ngm:class:manufacturing-automation",
       "label": "Manufacturing Automation"
     },
     {
-      "id": "urn:visionflow:linked:programmable-logic-controller",
+      "id": "urn:ngm:class:programmable-logic-controller",
       "label": "Programmable Logic Controller"
-    },
-    {
-      "id": "urn:visionflow:linked:electromechanical-systems",
-      "label": "Electromechanical Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:joint-encoder",
+        "id": "urn:ngm:class:joint-encoder",
         "label": "Joint Encoder"
       },
       {
-        "id": "urn:visionflow:linked:kinematic-chain",
+        "id": "urn:ngm:class:kinematic-chain",
         "label": "Kinematic Chain"
       },
       {
-        "id": "urn:visionflow:linked:robot-controller",
+        "id": "urn:ngm:class:robot-controller",
         "label": "Robot Controller"
       },
       {
-        "id": "urn:visionflow:linked:safety-system",
+        "id": "urn:ngm:class:safety-system",
         "label": "Safety System"
       },
       {
-        "id": "urn:visionflow:linked:servo-drive",
+        "id": "urn:ngm:class:servo-drive",
         "label": "Servo Drive"
       },
       {
-        "id": "urn:visionflow:linked:teach-pendant",
+        "id": "urn:ngm:class:teach-pendant",
         "label": "Teach Pendant"
       },
       {
-        "id": "urn:visionflow:owl:class:end-effector",
+        "id": "urn:ngm:class:end-effector",
         "label": "End Effector"
       },
       {
-        "id": "urn:visionflow:owl:class:force-torque-sensor",
+        "id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensor"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:calibration-system",
+        "id": "urn:ngm:class:calibration-system",
         "label": "Calibration System"
       },
       {
-        "id": "urn:visionflow:linked:industrial-network",
+        "id": "urn:ngm:class:industrial-network",
         "label": "Industrial Network"
       },
       {
-        "id": "urn:visionflow:linked:safety-standards",
+        "id": "urn:ngm:class:safety-standards",
         "label": "Safety Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:robot-operating-system",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "Robot Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-automation",
+        "id": "urn:ngm:class:collaborative-automation",
         "label": "Collaborative Automation"
       },
       {
-        "id": "urn:visionflow:linked:flexible-manufacturing",
+        "id": "urn:ngm:class:flexible-manufacturing",
         "label": "Flexible Manufacturing"
       },
       {
-        "id": "urn:visionflow:linked:high-speed-assembly",
+        "id": "urn:ngm:class:high-speed-assembly",
         "label": "High Speed Assembly"
       },
       {
-        "id": "urn:visionflow:linked:mass-customisation",
+        "id": "urn:ngm:class:mass-customisation",
         "label": "Mass Customisation"
       },
       {
-        "id": "urn:visionflow:linked:quality-inspection",
+        "id": "urn:ngm:class:quality-inspection",
         "label": "Quality Inspection"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:force-control",
+        "id": "urn:ngm:class:force-control",
         "label": "Force Control"
       },
       {
-        "id": "urn:visionflow:owl:class:forward-kinematics",
+        "id": "urn:ngm:class:forward-kinematics",
         "label": "Forward Kinematics"
       },
       {
-        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
       },
       {
-        "id": "urn:visionflow:owl:class:trajectory-planning",
+        "id": "urn:ngm:class:trajectory-planning",
         "label": "Trajectory Planning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "id": "urn:ngm:class:mqtt-protocol",
+        "label": "MQTT Protocol"
+      },
+      {
+        "id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "id": "urn:ngm:class:ros-industrial",
+        "label": "ROS Industrial"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automotive-manufacturing",
+        "label": "Automotive Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:electronics-assembly",
+        "label": "Electronics Assembly"
+      },
+      {
+        "id": "urn:ngm:class:food-processing-automation",
+        "label": "Food Processing Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "id": "urn:ngm:class:pharmaceutical-manufacturing",
+        "label": "Pharmaceutical Manufacturing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:en-60204",
+        "label": "EN 60204"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-numerical-control",
+        "label": "Computer Numerical Control"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation-systems",
+        "label": "Teleoperation Systems"
+      }
+    ]
   },
   "wikilinks": [
     {

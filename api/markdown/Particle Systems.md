@@ -128,46 +128,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:particle-systems",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:particle-systems",
+  "@type": "Class",
   "label": "Particle Systems",
+  "definition": "The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:vfx-tools",
-      "vc:label": "VFX Tools"
+      "@id": "urn:ngm:class:vfx-tools",
+      "label": "VFX Tools"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:69a22fc7923c8a5e2de5752a70cf941c6723f77b4f7fee86696f907f895c2aa5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-vfx",
+        "label": "Real Time VFX"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:69a22fc7923c8a5e2de5752a70cf941c6723f77b4f7fee86696f907f895c2aa5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:linked:real-time-vfx",
-      "vc:label": "Real Time VFX"
+      "@id": "urn:ngm:class:particle-system",
+      "label": "Particle System"
     }
   ]
 }

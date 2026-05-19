@@ -3,19 +3,18 @@
   "title": "Standards Conformance",
   "slug": "standards-conformance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:standards-conformance",
+  "classIri": "urn:ngm:class:standards-conformance",
   "domain": "spatial-computing",
   "definition": "The state or process of meeting the requirements specified in a technical standard, specification, or guideline, ensuring that a product, process, or system aligns with internal or industry-specific standards for interoperability, quality, and compatibility.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

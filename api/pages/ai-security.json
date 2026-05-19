@@ -3,32 +3,36 @@
   "title": "AI Security",
   "slug": "ai-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-security",
+  "classIri": "urn:ngm:class:ai-security",
   "domain": "artificial-intelligence",
-  "definition": "AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended. It encompasses defending AI models, algorithms, training data, and infrastructure from manipulation, misuse, and exploitation throughout the AI lifecycle.",
+  "definition": "AI Security is the field of protecting artificial intelligence systems and their components from security threats and vulnerabilities, including adversarial attacks, data poisoning, model theft, and unauthorized access to ensure systems perform as intended.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cybersecurity",
+      "id": "urn:ngm:class:cybersecurity",
       "label": "Cybersecurity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:secure-ai-deployment",
+        "id": "urn:ngm:class:secure-ai-deployment",
         "label": "Secure AI Deployment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

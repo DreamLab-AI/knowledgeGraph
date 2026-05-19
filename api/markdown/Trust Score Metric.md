@@ -192,116 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-score-metric",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-score-metric",
+  "@type": "Class",
   "label": "Trust Score Metric",
+  "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
+      "@id": "urn:ngm:class:trust-infrastructure",
+      "label": "Trust Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:calculation-timestamp",
+        "label": "Calculation Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:confidence-interval",
+        "label": "Confidence Interval"
+      },
+      {
+        "@id": "urn:ngm:class:score-value",
+        "label": "Score Value"
+      },
+      {
+        "@id": "urn:ngm:class:scoring-methodology-reference",
+        "label": "Scoring Methodology Reference"
+      },
+      {
+        "@id": "urn:ngm:class:validity-period",
+        "label": "Validity Period"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:behavioral-data",
+        "label": "Behavioral Data"
+      },
+      {
+        "@id": "urn:ngm:class:calculation-parameters",
+        "label": "Calculation Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-scoring-model",
+        "label": "Reputation Scoring Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-control-decisions",
+        "label": "Access Control Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-approval",
+        "label": "Transaction Approval"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:98466af371d9ce52f5973a1feafb7ed387f11c31760cbaa77d2b7277617af2d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:calculation-timestamp",
-      "vc:label": "Calculation Timestamp"
-    },
-    {
-      "@id": "urn:visionflow:linked:confidence-interval",
-      "vc:label": "Confidence Interval"
-    },
-    {
-      "@id": "urn:visionflow:linked:score-value",
-      "vc:label": "Score Value"
-    },
-    {
-      "@id": "urn:visionflow:linked:scoring-methodology-reference",
-      "vc:label": "Scoring Methodology Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:validity-period",
-      "vc:label": "Validity Period"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-data",
-      "vc:label": "Behavioral Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:calculation-parameters",
-      "vc:label": "Calculation Parameters"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-scoring-model",
-      "vc:label": "Reputation Scoring Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:access-control-decisions",
-      "vc:label": "Access Control Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-approval",
-      "vc:label": "Transaction Approval"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-quality-metrics",
-      "vc:label": "Data Quality Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-models",
-      "vc:label": "Statistical Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-rules",
-      "vc:label": "Validation Rules"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

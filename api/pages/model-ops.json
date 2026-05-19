@@ -3,19 +3,18 @@
   "title": "ModelOps",
   "slug": "model-ops",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-ops",
+  "classIri": "urn:ngm:class:model-ops",
   "domain": "artificial-intelligence",
   "definition": "End-to-end governance and lifecycle management of AI models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:gartner-prediction",
+      "id": "urn:ngm:class:gartner-prediction",
       "label": "Gartner Prediction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

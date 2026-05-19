@@ -296,148 +296,105 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:web-assembly",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:web-assembly",
+  "@type": "Class",
   "label": "WebAssembly",
+  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side ru...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:binary-instruction-format",
-      "vc:label": "Binary Instruction Format"
+      "@id": "urn:ngm:class:binary-instruction-format",
+      "label": "Binary Instruction Format"
     },
     {
-      "@id": "urn:visionflow:linked:portable-execution-environment",
-      "vc:label": "Portable Execution Environment"
+      "@id": "urn:ngm:class:portable-execution-environment",
+      "label": "Portable Execution Environment"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:wasi-interface",
+        "label": "WASI Interface"
+      },
+      {
+        "@id": "urn:ngm:class:wasm-import-object",
+        "label": "Wasm Import Object"
+      },
+      {
+        "@id": "urn:ngm:class:wasm-linear-memory",
+        "label": "Wasm Linear Memory"
+      },
+      {
+        "@id": "urn:ngm:class:wasm-module",
+        "label": "Wasm Module"
+      },
+      {
+        "@id": "urn:ngm:class:wasm-table",
+        "label": "Wasm Table"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:binary-encoding-standard",
+        "label": "Binary Encoding Standard"
+      },
+      {
+        "@id": "urn:ngm:class:host-runtime",
+        "label": "Host Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:stack-based-virtual-machine",
+        "label": "Stack-Based Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-language-interoperability",
+        "label": "Cross-Language Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-replay",
+        "label": "Deterministic Replay"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-agent-execution",
+        "label": "Sandboxed Agent Execution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3-c-web-assembly-specification",
+        "label": "W3C WebAssembly Specification"
+      },
+      {
+        "@id": "urn:ngm:class:wasi-standard",
+        "label": "WASI Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:edge-computing-stack",
+        "label": "Edge Computing Stack"
+      },
+      {
+        "@id": "urn:ngm:class:vision-claw-agentic-container",
+        "label": "VisionClaw Agentic Container"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3636d5af0d07b74ca742c7e6c03012db77f2172fceacc3fb7e605b17e3696350@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side runtimes such as [[WASI]] (WebAssembly System Interface). It is the primary runtime substrate for [[VisionClaw Agentic Container]] agent modules, allowing deterministic, sandboxed, language-agnostic execution of untrusted code across heterogeneous deployment environments including edge nodes, browsers, and embedded hardware.",
-  "vc:qualityScore": {
-    "@value": "0.70",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.82",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:edge-computing-stack",
-      "vc:label": "Edge Computing Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
-      "vc:label": "VisionClaw Agentic Container"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:wasi-interface",
-      "vc:label": "WASI Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm-import-object",
-      "vc:label": "Wasm Import Object"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm-linear-memory",
-      "vc:label": "Wasm Linear Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm-module",
-      "vc:label": "Wasm Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasm-table",
-      "vc:label": "Wasm Table"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:binary-encoding-standard",
-      "vc:label": "Binary Encoding Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:host-runtime",
-      "vc:label": "Host Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:stack-based-virtual-machine",
-      "vc:label": "Stack-Based Virtual Machine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-language-interoperability",
-      "vc:label": "Cross-Language Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-replay",
-      "vc:label": "Deterministic Replay"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-inference",
-      "vc:label": "Edge Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandboxed-agent-execution",
-      "vc:label": "Sandboxed Agent Execution"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-assembly-specification",
-      "vc:label": "W3C WebAssembly Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasi-standard",
-      "vc:label": "WASI Standard"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:llvm-compiler-toolchain",
-      "vc:label": "LLVM Compiler Toolchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasmer-runtime",
-      "vc:label": "Wasmer Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasmtime-runtime",
-      "vc:label": "Wasmtime Runtime"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-xr",
-      "vc:label": "OpenXR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    }
-  ]
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

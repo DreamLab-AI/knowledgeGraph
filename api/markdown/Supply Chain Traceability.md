@@ -156,41 +156,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:supply-chain-traceability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:supply-chain-traceability",
+  "@type": "Class",
   "label": "Supply Chain Traceability",
+  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-application",
-      "vc:label": "Blockchain Application"
+      "@id": "urn:ngm:class:blockchain-application",
+      "label": "Blockchain Application"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f2e33a4d5748253b3f1b43e7535db0885e1998c147c6abdcd42861acfea67e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications, providing consumers and businesses with cryptographic proof of authenticity and preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives where blockchain records enable product take-back, refurbishment, and responsible resource recovery.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

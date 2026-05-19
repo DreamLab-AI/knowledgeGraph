@@ -3,82 +3,95 @@
   "title": "Construction Digital Twin",
   "slug": "construction-digital-twin",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:construction-digital-twin",
+  "classIri": "urn:ngm:class:construction-digital-twin",
   "domain": "spatial-computing",
   "definition": "An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin",
+      "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-database",
+        "id": "urn:ngm:class:asset-database",
         "label": "Asset Database"
       },
       {
-        "id": "urn:visionflow:linked:bim-model",
+        "id": "urn:ngm:class:bim-model",
         "label": "BIM Model"
       },
       {
-        "id": "urn:visionflow:linked:energy-management-system",
+        "id": "urn:ngm:class:energy-management-system",
         "label": "Energy Management System"
       },
       {
-        "id": "urn:visionflow:linked:maintenance-schedule",
+        "id": "urn:ngm:class:maintenance-schedule",
         "label": "Maintenance Schedule"
       },
       {
-        "id": "urn:visionflow:owl:class:io-t-sensor-network",
+        "id": "urn:ngm:class:io-t-sensor-network",
         "label": "IoT Sensor Network"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cloud-platform",
+        "id": "urn:ngm:class:cloud-platform",
         "label": "Cloud Platform"
       },
       {
-        "id": "urn:visionflow:linked:io-t-infrastructure",
+        "id": "urn:ngm:class:io-t-infrastructure",
         "label": "IoT Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronization",
         "label": "Real-time Synchronization"
       },
       {
-        "id": "urn:visionflow:owl:class:bim-software",
+        "id": "urn:ngm:class:bim-software",
         "label": "BIM Software"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:energy-optimization",
+        "id": "urn:ngm:class:energy-optimization",
         "label": "Energy Optimization"
       },
       {
-        "id": "urn:visionflow:linked:lifecycle-management",
+        "id": "urn:ngm:class:lifecycle-management",
         "label": "Lifecycle Management"
       },
       {
-        "id": "urn:visionflow:linked:space-planning",
+        "id": "urn:ngm:class:space-planning",
         "label": "Space Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-building-ecosystem",
+        "label": "Smart Building Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -732,376 +732,287 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cryptocurrency",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptocurrency",
+  "@type": "Class",
   "label": "Cryptocurrency",
+  "definition": "Cryptocurrency is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by [[Public-Key Cryptography]] and a permissionless [[Consensus Mechanism]] operated by a [[Peer-to-Peer Network]] of independent nodes, such that no centr...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptoasset",
-      "vc:label": "Cryptoasset"
+      "@id": "urn:ngm:class:cryptoasset",
+      "label": "Cryptoasset"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-ledger-native-token",
-      "vc:label": "Distributed Ledger Native Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-asset",
-      "vc:label": "Permissionless Asset"
+      "@id": "urn:ngm:class:distributed-ledger-native-token",
+      "label": "Distributed Ledger Native Token"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5a32f2ea878545769399e9406db78ca140ae4619c3acb1121e9cd9d33f7443d9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:24-7-settlement",
+        "label": "24/7 Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-transfer",
+        "label": "Cross-Border Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-payment",
+        "label": "Peer-to-Peer Payment"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-innovation",
+        "label": "Permissionless Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-ownership",
+        "label": "Cryptographic Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending-prevention",
+        "label": "Double-Spending Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:hard-money-property",
+        "label": "Hard Money Property"
+      },
+      {
+        "@id": "urn:ngm:class:predictable-issuance-schedule",
+        "label": "Predictable Issuance Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bip-32-hd-wallet",
+        "label": "BIP-32 HD Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:bip-39-mnemonic",
+        "label": "BIP-39 Mnemonic"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset",
+        "label": "Real-World Asset"
+      },
+      {
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:de-pin",
+        "label": "DePIN"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-request-for-comments",
+        "label": "Ethereum Request for Comments"
+      },
+      {
+        "@id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:fca-cryptoasset-promotions-regime-ps23-6",
+        "label": "FCA Cryptoasset Promotions Regime PS23-6"
+      },
+      {
+        "@id": "urn:ngm:class:iso-24165-digital-token-identifier",
+        "label": "ISO 24165 Digital Token Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5a32f2ea878545769399e9406db78ca140ae4619c3acb1121e9cd9d33f7443d9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Cryptocurrency** is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by [[Public-Key Cryptography]] and a permissionless [[Consensus Mechanism]] operated by a [[Peer-to-Peer Network]] of independent nodes, such that no central monetary authority is required to mint units, settle transfers, freeze balances, or arbitrate disputes — the canonical instance being [[Bitcoin]] (Satoshi Nakamoto, whitepaper 31 October 2008, Genesis Block 3 January 2009) which fused four pre-existing primitives (Adam Back's 1997 [[Hashcash]] proof-of-work spam-prevention scheme, Wei Dai's 1998 b-money proposal for distributed electronic cash, Nick Szabo's 1998-2005 bit gold chained-PoW registry, Hal Finney's 2004 Reusable Proof of Work RPOW transferable PoW tokens) into the first practical [[Double-Spending|double-spend]]-resistant electronic cash by combining a [[UTXO|Unspent Transaction Output]] ledger, SHA-256 [[Proof of Work]] securing block ordering via the heaviest-chain rule, an asymptotic 21M unit supply cap with quadrennial issuance halvings (50→25 BTC November 2012, 25→12.5 BTC July 2016, 12.5→6.25 BTC May 2020, 6.25→3.12",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:block-header",
-      "vc:label": "Block Header"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mempool",
-      "vc:label": "Mempool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public-Key Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction",
-      "vc:label": "Transaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:wallet",
-      "vc:label": "Wallet"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:sybil-resistance",
-      "vc:label": "Sybil Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:24-7-settlement",
-      "vc:label": "24/7 Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-transfer",
-      "vc:label": "Cross-Border Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-payment",
-      "vc:label": "Peer-to-Peer Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-innovation",
-      "vc:label": "Permissionless Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money",
-      "vc:label": "Programmable Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self-Custody"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-ownership",
-      "vc:label": "Cryptographic Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-spending-prevention",
-      "vc:label": "Double-Spending Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:hard-money-property",
-      "vc:label": "Hard Money Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictable-issuance-schedule",
-      "vc:label": "Predictable Issuance Schedule"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-settlement",
-      "vc:label": "Trustless Settlement"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet",
-      "vc:label": "Internet"
-    },
-    {
-      "@id": "urn:visionflow:linked:mining-hardware",
-      "vc:label": "Mining Hardware"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-operator",
-      "vc:label": "Node Operator"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-stake",
-      "vc:label": "Validator Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public-Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:de-pin",
-      "vc:label": "DePIN"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-fungible-token",
-      "vc:label": "Non-Fungible Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web3",
-      "vc:label": "Web3"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bip-32-hd-wallet",
-      "vc:label": "BIP-32 HD Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-39-mnemonic",
-      "vc:label": "BIP-39 Mnemonic"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed25519",
-      "vc:label": "Ed25519"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecdsa",
-      "vc:label": "ECDSA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:keccak-256",
-      "vc:label": "Keccak-256"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schnorr-signature",
-      "vc:label": "Schnorr Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sha-256",
-      "vc:label": "SHA-256"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bank-deposit",
-      "vc:label": "Bank Deposit"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-money",
-      "vc:label": "Electronic Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:fiat-currency",
-      "vc:label": "Fiat Currency"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-deposit",
-      "vc:label": "Tokenised Deposit"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-security",
-      "vc:label": "Traditional Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:centralised-exchange",
-      "vc:label": "Centralised Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-exchange",
-      "vc:label": "Decentralised Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-asset",
-      "vc:label": "Real-World Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
-      "vc:label": "Spot Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micro-strategy",
-      "vc:label": "MicroStrategy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-improvement-proposal",
-      "vc:label": "Bitcoin Improvement Proposal"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-request-for-comments",
-      "vc:label": "Ethereum Request for Comments"
-    },
-    {
-      "@id": "urn:visionflow:linked:fasb-asu-2023-08",
-      "vc:label": "FASB ASU 2023-08"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-travel-rule",
-      "vc:label": "FATF Travel Rule"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-cryptoasset-promotions-regime-ps23-6",
-      "vc:label": "FCA Cryptoasset Promotions Regime PS23-6"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-24165-digital-token-identifier",
-      "vc:label": "ISO 24165 Digital Token Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-regulation",
-      "vc:label": "MiCA Regulation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:capital-markets",
-      "vc:label": "Capital Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-systems",
-      "vc:label": "Monetary Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,70 +3,83 @@
   "title": "Metaverse Safety Protocol",
   "slug": "metaverse-safety-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-safety-protocol",
+  "classIri": "urn:ngm:class:metaverse-safety-protocol",
   "domain": "spatial-computing",
   "definition": "Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "label": "Metaverse governance and safeguarding"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:incident-response-protocol",
+        "id": "urn:ngm:class:incident-response-protocol",
         "label": "Incident Response Protocol"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-procedure",
+        "id": "urn:ngm:class:risk-assessment-procedure",
         "label": "Risk Assessment Procedure"
       },
       {
-        "id": "urn:visionflow:linked:safety-guideline",
+        "id": "urn:ngm:class:safety-guideline",
         "label": "Safety Guideline"
       },
       {
-        "id": "urn:visionflow:linked:user-protection-measure",
+        "id": "urn:ngm:class:user-protection-measure",
         "label": "User Protection Measure"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:safety-assessment",
+        "id": "urn:ngm:class:safety-assessment",
         "label": "Safety Assessment"
       },
       {
-        "id": "urn:visionflow:linked:user-monitoring",
+        "id": "urn:ngm:class:user-monitoring",
         "label": "User Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:content-moderation",
+        "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-well-being",
+        "id": "urn:ngm:class:user-well-being",
         "label": "User Well-being"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       },
       {
-        "id": "urn:visionflow:owl:class:safe-immersive-experience",
+        "id": "urn:ngm:class:safe-immersive-experience",
         "label": "Safe Immersive Experience"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse governance and safeguarding"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

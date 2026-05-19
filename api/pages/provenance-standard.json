@@ -3,32 +3,36 @@
   "title": "Provenance Standard",
   "slug": "provenance-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:provenance-standard",
+  "classIri": "urn:ngm:class:provenance-standard",
   "domain": "spatial-computing",
   "definition": "Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-standards",
+      "id": "urn:ngm:class:digital-asset-standards",
       "label": "Digital Asset Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-authenticity",
+        "id": "urn:ngm:class:asset-authenticity",
         "label": "Asset Authenticity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Digital Rights Management",
   "slug": "digital-rights-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-rights-management",
+  "classIri": "urn:ngm:class:digital-rights-management",
   "domain": "spatial-computing",
-  "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution. bridges-to:: [[Blockchain]]",
+  "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:content-protection",
+      "id": "urn:ngm:class:content-protection",
       "label": "Content Protection"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:encryption",
+        "id": "urn:ngm:class:encryption",
         "label": "Encryption"
       },
       {
-        "id": "urn:visionflow:linked:license-management",
+        "id": "urn:ngm:class:license-management",
         "label": "License Management"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:piracy-prevention",
+        "id": "urn:ngm:class:piracy-prevention",
         "label": "Piracy Prevention"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:royalty-distribution",
+        "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

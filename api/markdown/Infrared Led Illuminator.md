@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:infrared-led-illuminator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:infrared-led-illuminator",
+  "@type": "Class",
   "label": "Infrared Led Illuminator",
+  "definition": "LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrared-illuminator",
-      "vc:label": "Infrared Illuminator"
+      "@id": "urn:ngm:class:infrared-illuminator",
+      "label": "Infrared Illuminator"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:017c7f1c76ec1e3c3c686b0a14e5a39cb472f5cb0e118c5561b1b7954f95b79f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hand-tracking-enhancement",
+        "label": "Hand Tracking Enhancement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:017c7f1c76ec1e3c3c686b0a14e5a39cb472f5cb0e118c5561b1b7954f95b79f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hand-tracking-enhancement",
-      "vc:label": "Hand Tracking Enhancement"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

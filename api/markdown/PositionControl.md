@@ -212,116 +212,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:position-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:position-control",
+  "@type": "Class",
   "label": "PositionControl",
+  "definition": "A closed-loop feedback control modology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), c...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:servo-system",
-      "vc:label": "ServoSystem"
+      "@id": "urn:ngm:class:servo-system",
+      "label": "ServoSystem"
     },
     {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "ControlAlgorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-control",
-      "vc:label": "FeedbackControl"
+      "@id": "urn:ngm:class:control-algorithm",
+      "label": "ControlAlgorithm"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:934f1323231d57fa3b7a8ebce731c61066086a5d2775f88de03fa9323b28e73c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator-command",
+        "label": "ActuatorCommand"
+      },
+      {
+        "@id": "urn:ngm:class:control-law",
+        "label": "ControlLaw"
+      },
+      {
+        "@id": "urn:ngm:class:error-calculation",
+        "label": "ErrorCalculation"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-compensation",
+        "label": "FeedforwardCompensation"
+      },
+      {
+        "@id": "urn:ngm:class:position-sensor",
+        "label": "PositionSensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-model",
+        "label": "KinematicModel"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver",
+        "label": "MotorDriver"
+      },
+      {
+        "@id": "urn:ngm:class:position-feedback",
+        "label": "PositionFeedback"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "PowerSupply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:homing",
+        "label": "Homing"
+      },
+      {
+        "@id": "urn:ngm:class:path-following",
+        "label": "PathFollowing"
+      },
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "PickAndPlace"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization",
+        "label": "Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "TrajectoryTracking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:934f1323231d57fa3b7a8ebce731c61066086a5d2775f88de03fa9323b28e73c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A closed-loop feedback control methodology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), computing the position error (setpoint minus measured position), and generating corrective control signals through algorithms such as proportional-integral-derivative (PID) control, state-space controllers, or model-based feedforward compensation, with applications spanning industrial robotic arms executing pick-and-place operations with ±0.05 mm repeatability, CNC machine tools achieving ±2 μm contouring accuracy, collaborative robots maintaining safe position constraints for human proximity (ISO/TS 15066 compliant force-limited operation), delta robots performing high-speed sorting at 300 picks/minute, and autonomous mobile robots following waypoint trajectories with <10 cm path deviation, characterized by performance metrics including steady-state error (typical <0.1% of travel range for servo drives), settling time (milliseconds to seconds depending on inertia and control bandwidth), ",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:actuator-command",
-      "vc:label": "ActuatorCommand"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-law",
-      "vc:label": "ControlLaw"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-calculation",
-      "vc:label": "ErrorCalculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedforward-compensation",
-      "vc:label": "FeedforwardCompensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:position-sensor",
-      "vc:label": "PositionSensor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:calibration",
-      "vc:label": "Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-model",
-      "vc:label": "KinematicModel"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver",
-      "vc:label": "MotorDriver"
-    },
-    {
-      "@id": "urn:visionflow:linked:position-feedback",
-      "vc:label": "PositionFeedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "PowerSupply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:homing",
-      "vc:label": "Homing"
-    },
-    {
-      "@id": "urn:visionflow:linked:path-following",
-      "vc:label": "PathFollowing"
-    },
-    {
-      "@id": "urn:visionflow:linked:pick-and-place",
-      "vc:label": "PickAndPlace"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronization",
-      "vc:label": "Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:linked:trajectory-tracking",
-      "vc:label": "TrajectoryTracking"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

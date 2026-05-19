@@ -3,86 +3,90 @@
   "title": "Differential Drive Robot",
   "slug": "differential-drive-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:differential-drive-robot",
+  "classIri": "urn:ngm:class:differential-drive-robot",
   "domain": "robotics",
-  "definition": "Differential drive robot uses two independently controlled wheels on opposite sides to enable both forward/backward locomotion and in-place rotation, forming the most widely deployed [[Mobile Robot]] architecture. By differentially controlling wheel velocities, the robot achieves holonomic-like manoeuvring from non-holonomic kinematics, making differential drives ubiquitous in research platforms, [[Autonomous Vehicles]], and [[Mobile Manipulation]] systems.",
+  "definition": "Differential drive robot uses two independently controlled wheels on opposite sides to enable both forward/backward locomotion and in-place rotation, forming the most widely deployed [[Mobile Robot]] architecture.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:nonholonomic-robot",
+      "id": "urn:ngm:class:nonholonomic-robot",
       "label": "Nonholonomic Robot"
     },
     {
-      "id": "urn:visionflow:owl:class:wheeled-robot",
+      "id": "urn:ngm:class:wheeled-robot",
       "label": "Wheeled Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:caster-wheel",
+        "id": "urn:ngm:class:caster-wheel",
         "label": "Caster Wheel"
       },
       {
-        "id": "urn:visionflow:linked:differential-drive-controller",
+        "id": "urn:ngm:class:differential-drive-controller",
         "label": "Differential Drive Controller"
       },
       {
-        "id": "urn:visionflow:linked:left-drive-motor",
+        "id": "urn:ngm:class:left-drive-motor",
         "label": "Left Drive Motor"
       },
       {
-        "id": "urn:visionflow:linked:right-drive-motor",
+        "id": "urn:ngm:class:right-drive-motor",
         "label": "Right Drive Motor"
       },
       {
-        "id": "urn:visionflow:linked:wheel",
+        "id": "urn:ngm:class:wheel",
         "label": "Wheel"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:independent-wheel-motors",
+        "id": "urn:ngm:class:independent-wheel-motors",
         "label": "Independent Wheel Motors"
       },
       {
-        "id": "urn:visionflow:linked:motor-drivers",
+        "id": "urn:ngm:class:motor-drivers",
         "label": "Motor Drivers"
       },
       {
-        "id": "urn:visionflow:linked:odometry-sensors",
+        "id": "urn:ngm:class:odometry-sensors",
         "label": "Odometry Sensors"
       },
       {
-        "id": "urn:visionflow:linked:power-battery",
+        "id": "urn:ngm:class:power-battery",
         "label": "Power Battery"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:arc-trajectory-following",
+        "id": "urn:ngm:class:arc-trajectory-following",
         "label": "Arc Trajectory Following"
       },
       {
-        "id": "urn:visionflow:linked:forward-locomotion",
+        "id": "urn:ngm:class:forward-locomotion",
         "label": "Forward Locomotion"
       },
       {
-        "id": "urn:visionflow:linked:in-place-rotation",
+        "id": "urn:ngm:class:in-place-rotation",
         "label": "In-Place Rotation"
       },
       {
-        "id": "urn:visionflow:linked:point-turning",
+        "id": "urn:ngm:class:point-turning",
         "label": "Point Turning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

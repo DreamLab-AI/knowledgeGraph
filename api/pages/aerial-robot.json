@@ -3,61 +3,74 @@
   "title": "Aerial Robot",
   "slug": "aerial-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:aerial-robot",
+  "classIri": "urn:ngm:class:aerial-robot",
   "domain": "robotics",
-  "definition": "**Aerial Robot** - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
+  "definition": "Aerial Robot - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
+      "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.14,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:flight-control-system",
+        "id": "urn:ngm:class:flight-control-system",
         "label": "Flight Control System"
       },
       {
-        "id": "urn:visionflow:linked:gps-navigation",
+        "id": "urn:ngm:class:gps-navigation",
         "label": "GPS Navigation"
       },
       {
-        "id": "urn:visionflow:linked:power-management",
+        "id": "urn:ngm:class:power-management",
         "label": "Power Management"
       },
       {
-        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-delivery",
+        "id": "urn:ngm:class:automated-delivery",
         "label": "Automated Delivery"
       },
       {
-        "id": "urn:visionflow:linked:environmental-monitoring",
+        "id": "urn:ngm:class:environmental-monitoring",
         "label": "Environmental Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:infrastructure-inspection",
+        "id": "urn:ngm:class:infrastructure-inspection",
         "label": "Infrastructure Inspection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:aerial-vehicle",
+        "label": "Aerial Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

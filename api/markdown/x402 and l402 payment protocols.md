@@ -1984,41 +1984,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:x402-and-l402-payment-protocols",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:x402-and-l402-payment-protocols",
+  "@type": "Class",
   "label": "x402 and l402 payment protocols",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:28a58dcdd8c903b2e9025f146faefe67606b7e085159797a2e14f6b21f0500c7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:28a58dcdd8c903b2e9025f146faefe67606b7e085159797a2e14f6b21f0500c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "x402 and l402 payment protocols is a blockchain and distributed systems concept and a type of blockchain.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
+  "domain": "blockchain",
+  "maturity": "draft",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

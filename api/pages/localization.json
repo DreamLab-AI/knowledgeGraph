@@ -3,41 +3,62 @@
   "title": "Localization",
   "slug": "localization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:localization",
+  "classIri": "urn:ngm:class:localization",
   "domain": "robotics",
   "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:state-estimation",
+      "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.97,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:sensor-system",
+        "id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "id": "urn:ngm:class:rb-1016-path-planning",
         "label": "RB-1016-path-planning"
       },
       {
-        "id": "urn:visionflow:owl:class:navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probabilistic-methods",
+        "label": "Probabilistic Methods"
+      },
+      {
+        "id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "label": "RB-1014-monte-carlo-localization"
+      },
+      {
+        "id": "urn:ngm:class:rb-1015-kalman-filter",
+        "label": "RB-1015-kalman-filter"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

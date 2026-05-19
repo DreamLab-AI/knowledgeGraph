@@ -3,78 +3,82 @@
   "title": "Avatar Interoperability",
   "slug": "avatar-interoperability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-interoperability",
+  "classIri": "urn:ngm:class:avatar-interoperability",
   "domain": "infrastructure",
   "definition": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavior-mapping",
+        "id": "urn:ngm:class:behavior-mapping",
         "label": "Behavior Mapping"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-authentication",
+        "id": "urn:ngm:class:cross-platform-authentication",
         "label": "Cross-Platform Authentication"
       },
       {
-        "id": "urn:visionflow:linked:identity-portability",
+        "id": "urn:ngm:class:identity-portability",
         "label": "Identity Portability"
       },
       {
-        "id": "urn:visionflow:owl:class:appearance-translation",
+        "id": "urn:ngm:class:appearance-translation",
         "label": "Appearance Translation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-serialization",
+        "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialization"
       },
       {
-        "id": "urn:visionflow:linked:identity-protocol",
+        "id": "urn:ngm:class:identity-protocol",
         "label": "Identity Protocol"
       },
       {
-        "id": "urn:visionflow:linked:platform-api",
+        "id": "urn:ngm:class:platform-api",
         "label": "Platform API"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-standard",
+        "id": "urn:ngm:class:avatar-standard",
         "label": "Avatar Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-presence",
+        "id": "urn:ngm:class:cross-platform-presence",
         "label": "Cross-Platform Presence"
       },
       {
-        "id": "urn:visionflow:linked:persistent-identity",
+        "id": "urn:ngm:class:persistent-identity",
         "label": "Persistent Identity"
       },
       {
-        "id": "urn:visionflow:linked:seamless-migration",
+        "id": "urn:ngm:class:seamless-migration",
         "label": "Seamless Migration"
       },
       {
-        "id": "urn:visionflow:owl:class:universal-avatar",
+        "id": "urn:ngm:class:universal-avatar",
         "label": "Universal Avatar"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

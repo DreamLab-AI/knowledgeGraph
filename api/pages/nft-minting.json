@@ -3,163 +3,283 @@
   "title": "NFT Minting",
   "slug": "nft-minting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nft-minting",
+  "classIri": "urn:ngm:class:nft-minting",
   "domain": "blockchain",
-  "definition": "**NFT Minting** is the on-chain or deferred off-chain process by which a unique, indivisible, and cryptographically authenticated digital token\u2014a non-fungible token\u2014is created and permanently recorded on a distributed ledger, establishing irrevocable provenance, ownership, and transferability for a linked digital or physical asset through the invocation of a [[Smart Contract]] function that assigns a unique token identifier, records ownership in contract storage, emits a standardised Transfer event from the zero address, and optionally anchors a content-addressed metadata URI to an immutable storage layer such as [[IPFS]] or [[Arweave]]. The minting process realises the conceptual distinction between fungibility\u2014where any unit is interchangeable with any other, as with Ether or [[ERC-20 Token]]s\u2014and non-fungibility, where each token carries a globally unique `tokenId` that no other token in any contract on any chain can replicate, enabling the representation of ownership stakes in artwork, collectibles, in-game items, music rights, real-world assets, event tickets, identity credentials, and domain names as programmable, composable, and tradeable on-chain objects.",
+  "definition": "NFT Minting is the on-chain or deferred off-chain process by which a unique, indivisible, and cryptographically authenticated digital token\u2014a non-fungible token\u2014is created and permanently recorded on a distributed ledger, establishing irrevocable provenance, ownership, and transferability for a l...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-asset-creation",
+      "id": "urn:ngm:class:digital-asset-creation",
       "label": "Digital Asset Creation"
     },
     {
-      "id": "urn:visionflow:linked:provenance-recording",
+      "id": "urn:ngm:class:provenance-recording",
       "label": "Provenance Recording"
-    },
-    {
-      "id": "urn:visionflow:linked:smart-contract-operation",
-      "label": "Smart Contract Operation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:arweave",
+        "id": "urn:ngm:class:arweave",
         "label": "Arweave"
       },
       {
-        "id": "urn:visionflow:linked:creator-royalty",
+        "id": "urn:ngm:class:creator-royalty",
         "label": "Creator Royalty"
       },
       {
-        "id": "urn:visionflow:linked:erc-1155-standard",
+        "id": "urn:ngm:class:erc-1155-standard",
         "label": "ERC-1155 Standard"
       },
       {
-        "id": "urn:visionflow:linked:erc-721-standard",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721 Standard"
       },
       {
-        "id": "urn:visionflow:linked:ipfs",
+        "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:visionflow:linked:mint-function",
+        "id": "urn:ngm:class:mint-function",
         "label": "Mint Function"
       },
       {
-        "id": "urn:visionflow:linked:token-metadata",
+        "id": "urn:ngm:class:token-metadata",
         "label": "Token Metadata"
       },
       {
-        "id": "urn:visionflow:linked:token-uri",
+        "id": "urn:ngm:class:token-uri",
         "label": "Token URI"
       },
       {
-        "id": "urn:visionflow:linked:transfer-event",
+        "id": "urn:ngm:class:transfer-event",
         "label": "Transfer Event"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gas-fee",
+        "id": "urn:ngm:class:gas-fee",
         "label": "Gas Fee"
       },
       {
-        "id": "urn:visionflow:linked:wallet-address",
+        "id": "urn:ngm:class:wallet-address",
         "label": "Wallet Address"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-schema",
+        "id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schema"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:gaming-asset-ownership",
+        "id": "urn:ngm:class:gaming-asset-ownership",
         "label": "Gaming Asset Ownership"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-identity",
+        "id": "urn:ngm:class:on-chain-identity",
         "label": "On-Chain Identity"
       },
       {
-        "id": "urn:visionflow:linked:real-world-asset-tokenisation",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real World Asset Tokenisation"
       },
       {
-        "id": "urn:visionflow:linked:soulbound-token",
+        "id": "urn:ngm:class:soulbound-token",
         "label": "Soulbound Token"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-marketplace",
+        "id": "urn:ngm:class:nft-marketplace",
         "label": "NFT Marketplace"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:batch-minting",
+        "id": "urn:ngm:class:batch-minting",
         "label": "Batch Minting"
       },
       {
-        "id": "urn:visionflow:linked:eip-2981-royalty-standard",
+        "id": "urn:ngm:class:eip-2981-royalty-standard",
         "label": "EIP-2981 Royalty Standard"
       },
       {
-        "id": "urn:visionflow:linked:eip-5192-locking-standard",
+        "id": "urn:ngm:class:eip-5192-locking-standard",
         "label": "EIP-5192 Locking Standard"
       },
       {
-        "id": "urn:visionflow:linked:eip-712-typed-signing",
+        "id": "urn:ngm:class:eip-712-typed-signing",
         "label": "EIP-712 Typed Signing"
       },
       {
-        "id": "urn:visionflow:linked:erc-1155-standard",
+        "id": "urn:ngm:class:erc-1155-standard",
         "label": "ERC-1155 Standard"
       },
       {
-        "id": "urn:visionflow:linked:erc-721-standard",
+        "id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721 Standard"
       },
       {
-        "id": "urn:visionflow:linked:lazy-minting",
+        "id": "urn:ngm:class:lazy-minting",
         "label": "Lazy Minting"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:eip-712-signatures",
+        "label": "EIP-712 Signatures"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-contracts",
+        "label": "OpenZeppelin Contracts"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin-ordinals",
+        "label": "Bitcoin Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:brand-loyalty-nfts",
+        "label": "Brand Loyalty NFTs"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-art-market",
+        "label": "Digital Art Market"
+      },
+      {
+        "id": "urn:ngm:class:gaming-nfts",
+        "label": "Gaming NFTs"
+      },
+      {
+        "id": "urn:ngm:class:music-nfts",
+        "label": "Music NFTs"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenisation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:eip-2981",
+        "label": "EIP-2981"
+      },
+      {
+        "id": "urn:ngm:class:eip-5192",
+        "label": "EIP-5192"
+      },
+      {
+        "id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      },
+      {
+        "id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-token-standards",
+        "label": "OpenZeppelin Token Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:gaming-assets",
+        "label": "Gaming Assets"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ]
   },
   "wikilinks": [
     {

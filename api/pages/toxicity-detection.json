@@ -3,19 +3,18 @@
   "title": "Toxicity Detection",
   "slug": "toxicity-detection",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:toxicity-detection",
+  "classIri": "urn:ngm:class:toxicity-detection",
   "domain": "artificial-intelligence",
   "definition": "Toxicity Detection is a artificial intelligence concept and a type of Content Moderation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:content-moderation",
+      "id": "urn:ngm:class:content-moderation",
       "label": "Content Moderation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,13 @@
   "title": "Human Computer Interaction",
   "slug": "human-computer-interaction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-computer-interaction",
+  "classIri": "urn:ngm:class:human-computer-interaction",
   "domain": "artificial-intelligence",
-  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, evaluation, and implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces. Key areas include conversational AI (chatbots, voice assistants), explainable AI interfaces, mixed-initiative systems, and adaptive user interfaces that personalize based on user behavior. HCI for AI emphasizes transparency, user control, trust calibration, and the ethical implications of algorithmic decision-making on human users.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, eand implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

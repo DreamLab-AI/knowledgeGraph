@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-centred-values",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-centred-values",
+  "@type": "Class",
   "label": "Human Centred Values",
+  "definition": "AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness an...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c1442a3d911da32f3f1f9d14d8e06153c54fd66e0242ad8bfe5e29286f5ccc9e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c1442a3d911da32f3f1f9d14d8e06153c54fd66e0242ad8bfe5e29286f5ccc9e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI systems should be designed and operated in ways that respect the rule of law, human rights, democratic values and diversity, with appropriate safeguards to ensure human determination and control over consequential decisions (human agency), whilst incorporating mechanisms to protect fairness and human dignity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

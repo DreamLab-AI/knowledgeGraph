@@ -3,40 +3,44 @@
   "title": "Event",
   "slug": "event",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:event",
+  "classIri": "urn:ngm:class:event",
   "domain": "infrastructure",
-  "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components. Events are fundamental building blocks of temporal and reactive systems, enabling loose coupling and asynchronous communication through immutable, self-contained records of happenings.",
+  "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:temporal-entity",
+      "id": "urn:ngm:class:temporal-entity",
       "label": "Temporal Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:complex-event-processing",
+        "id": "urn:ngm:class:complex-event-processing",
         "label": "Complex Event Processing"
       },
       {
-        "id": "urn:visionflow:linked:event-sourcing",
+        "id": "urn:ngm:class:event-sourcing",
         "label": "Event Sourcing"
       },
       {
-        "id": "urn:visionflow:linked:reactive-systems",
+        "id": "urn:ngm:class:reactive-systems",
         "label": "Reactive Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

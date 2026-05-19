@@ -3,32 +3,36 @@
   "title": "Parameter Set",
   "slug": "parameter-set",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:parameter-set",
+  "classIri": "urn:ngm:class:parameter-set",
   "domain": "spatial-computing",
   "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:configuration",
+      "id": "urn:ngm:class:configuration",
       "label": "Configuration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:reproducibility",
+        "id": "urn:ngm:class:reproducibility",
         "label": "Reproducibility"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Avatar Wearable",
   "slug": "avatar-wearable",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-wearable",
+  "classIri": "urn:ngm:class:avatar-wearable",
   "domain": "spatial-computing",
   "definition": "Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

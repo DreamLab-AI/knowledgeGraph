@@ -3,19 +3,18 @@
   "title": "Convolutional Neural Network",
   "slug": "convolutional-neural-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:convolutional-neural-network",
+  "classIri": "urn:ngm:class:convolutional-neural-network",
   "domain": "artificial-intelligence",
   "definition": "Convolutional Neural Network is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

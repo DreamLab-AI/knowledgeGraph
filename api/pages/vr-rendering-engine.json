@@ -3,19 +3,18 @@
   "title": "VR Rendering Engine",
   "slug": "vr-rendering-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vr-rendering-engine",
+  "classIri": "urn:ngm:class:vr-rendering-engine",
   "domain": "spatial-computing",
   "definition": "Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:game-engine",
+      "id": "urn:ngm:class:game-engine",
       "label": "Game Engine"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

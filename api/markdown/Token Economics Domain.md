@@ -412,41 +412,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:token-economics-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:token-economics-domain",
+  "@type": "Class",
   "label": "Token Economics Domain",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7c40fec1f0cd087d7a077ce12fc30fdcaba1379969a632ce10cc828fdf3077f3"
+  "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems.",
+  "domain": "blockchain",
+  "maturity": "draft",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7c40fec1f0cd087d7a077ce12fc30fdcaba1379969a632ce10cc828fdf3077f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems. This domain includes cryptocurrency design and properties, token standards and specifications (ERC-20, ERC-721, ERC-1155), tokenomics models (supply schedules, inflation, burning mechanisms, vesting), incentive alignment mechanisms (staking rewards, transaction fees, block rewards, penalty mechanisms), economic security models (cost of attack, validator economics, fee markets), decentralized finance (DeFi) economic primitives (automated market makers, lending protocols, yield farming), non-fungible token (NFT) economics, governance token mechanisms, utility token design, and economic game theory as applied to blockchain systems. Token economics bridges computer science, cryptography, and economic theory, applying mechanism design, game theory, and monetary economics to create self-sustaining decentralized systems. The domain addresses critical challenges including aligning participant incentives with network security and health, designing sustainable token supply mo",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -3,32 +3,36 @@
   "title": "Gltf Standard",
   "slug": "gltf-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gltf-standard",
+  "classIri": "urn:ngm:class:gltf-standard",
   "domain": "spatial-computing",
-  "definition": "Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interoperability.",
+  "definition": "Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interopera...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:3-d-asset-standard",
+      "id": "urn:ngm:class:3-d-asset-standard",
       "label": "3D Asset Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-3-d-content",
+        "id": "urn:ngm:class:cross-platform-3-d-content",
         "label": "Cross-Platform 3D Content"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,66 +3,75 @@
   "title": "NFT Wrapping",
   "slug": "nft-wrapping",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nft-wrapping",
+  "classIri": "urn:ngm:class:nft-wrapping",
   "domain": "spatial-computing",
   "definition": "Process of encapsulating digital assets within a new token structure to modify usage or ownership rules.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:asset-tokenization",
+      "id": "urn:ngm:class:asset-tokenization",
       "label": "Asset Tokenization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:metadata-mapping",
+        "id": "urn:ngm:class:metadata-mapping",
         "label": "Metadata Mapping"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-standard",
+        "id": "urn:ngm:class:nft-standard",
         "label": "NFT Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-interoperability",
+        "id": "urn:ngm:class:asset-interoperability",
         "label": "Asset Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-asset-transfer",
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross-Chain Asset Transfer"
       },
       {
-        "id": "urn:visionflow:linked:enhanced-token-functionality",
+        "id": "urn:ngm:class:enhanced-token-functionality",
         "label": "Enhanced Token Functionality"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

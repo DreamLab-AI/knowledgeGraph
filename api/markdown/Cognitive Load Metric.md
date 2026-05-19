@@ -168,88 +168,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cognitive-load-metric",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cognitive-load-metric",
+  "@type": "Class",
   "label": "Cognitive Load Metric",
+  "definition": "Quantitative measure of mental effort required during virtual interaction tasks, typically assessed using standardized scales like NASA-TLX.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c67f13e449fec2ca87a9d3f685c1d3fff66b9b609bfa869e25a7460280fde2df"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:measurement-framework",
+        "label": "Measurement Framework"
+      },
+      {
+        "@id": "urn:ngm:class:psychometric-scale",
+        "label": "Psychometric Scale"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interface-design-validation",
+        "label": "Interface Design Validation"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-assessment",
+        "label": "User Experience Assessment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c67f13e449fec2ca87a9d3f685c1d3fff66b9b609bfa869e25a7460280fde2df@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Quantitative measure of mental effort required during virtual interaction tasks, typically assessed using standardized scales like NASA-TLX.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:usability-testing",
-      "vc:label": "Usability Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience-assessment",
-      "vc:label": "User Experience Assessment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:measurement-framework",
-      "vc:label": "Measurement Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:psychometric-scale",
-      "vc:label": "Psychometric Scale"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:interface-design-validation",
-      "vc:label": "Interface Design Validation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-optimization",
-      "vc:label": "Performance Optimization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:task-complexity-analysis",
-      "vc:label": "Task Complexity Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-feedback",
-      "vc:label": "User Feedback"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

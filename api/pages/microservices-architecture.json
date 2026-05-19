@@ -3,32 +3,36 @@
   "title": "Microservices Architecture",
   "slug": "microservices-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:microservices-architecture",
+  "classIri": "urn:ngm:class:microservices-architecture",
   "domain": "infrastructure",
   "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalable-applications",
+        "id": "urn:ngm:class:scalable-applications",
         "label": "Scalable Applications"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

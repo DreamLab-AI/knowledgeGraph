@@ -3,45 +3,62 @@
   "title": "Forward Kinematics",
   "slug": "forward-kinematics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:forward-kinematics",
+  "classIri": "urn:ngm:class:forward-kinematics",
   "domain": "robotics",
   "definition": "The process of determining the position and orientation of a robot's end-effector in Cartesian space given the joint parameters (angles or displacements). It maps from joint space to task space using geometric and trigonometric relationships.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:kinematics",
+      "id": "urn:ngm:class:kinematics",
       "label": "Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.98,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:joint-parameters",
+        "id": "urn:ngm:class:joint-parameters",
         "label": "Joint Parameters"
       },
       {
-        "id": "urn:visionflow:linked:kinematic-model",
+        "id": "urn:ngm:class:kinematic-model",
         "label": "Kinematic Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:motion-visualization",
+        "id": "urn:ngm:class:motion-visualization",
         "label": "Motion Visualization"
       },
       {
-        "id": "urn:visionflow:linked:robot-simulation",
+        "id": "urn:ngm:class:robot-simulation",
         "label": "Robot Simulation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "id": "urn:ngm:class:homogeneous-coordinates",
+        "label": "Homogeneous Coordinates"
+      },
+      {
+        "id": "urn:ngm:class:transformation-matrix",
+        "label": "Transformation Matrix"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

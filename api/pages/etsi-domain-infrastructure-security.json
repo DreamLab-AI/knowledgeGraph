@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Infrastructure___Security",
   "slug": "etsi-domain-infrastructure-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-security",
+  "classIri": "urn:ngm:class:etsi-domain-infrastructure-security",
   "domain": "infrastructure",
-  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications. Infrastructure security integrates NFV architectural frameworks (ETSI NFV v6.1.1), cross-domain authentication standards (ETSI GS PDL 027) promoting multi-party trust models, and decentralised identity systems addressing ultra-edge and terminal-edge deployment requirements. Coordination with 3GPP and ITU-T ensures alignment on metaverse infrastructure security requirements whilst addressing challenges in standardising interoperability across platforms, automating security lifecycle management, and balancing decentralised identity privacy with regulatory compliance under UK and EU data protection frameworks.",
+  "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

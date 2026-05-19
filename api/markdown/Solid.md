@@ -404,424 +404,331 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:solid",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:solid",
+  "@type": "Class",
   "label": "Solid",
+  "definition": "Solid (Social Linked Data) is an open-source, W3C-specification-grounded decentralised web architecture conceived by Sir Tim Berners-Lee at MIT CSAIL (Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory) commercialised through the startup Inrupt and steer...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
+      "@id": "urn:ngm:class:data-sovereignty",
+      "label": "Data Sovereignty"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-protocol",
-      "vc:label": "Decentralised Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-web",
-      "vc:label": "Decentralized Web"
+      "@id": "urn:ngm:class:decentralised-protocol",
+      "label": "Decentralised Protocol"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:38d5c68c9d15d1a600a3df3b4128e5ca0e614e4286ffb60fdb5104e3cac377e5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:pod",
+        "label": "Pod"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:solid-oidc",
+        "label": "Solid-OIDC"
+      },
+      {
+        "@id": "urn:ngm:class:solid-protocol-specification",
+        "label": "Solid Protocol Specification"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:web-access-control",
+        "label": "Web Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:web-id",
+        "label": "WebID"
+      },
+      {
+        "@id": "urn:ngm:class:web-id-profile",
+        "label": "WebID Profile"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "@id": "urn:ngm:class:web-id",
+        "label": "WebID"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:dpo-p-authentication",
+        "label": "DPoP Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:ldp-container",
+        "label": "LDP Container"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:solid-oidc",
+        "label": "Solid-OIDC"
+      },
+      {
+        "@id": "urn:ngm:class:web-access-control",
+        "label": "Web Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:web-id-profile",
+        "label": "WebID Profile"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dpo-p-token",
+        "label": "DPoP Token"
+      },
+      {
+        "@id": "urn:ngm:class:http-rest",
+        "label": "HTTP REST"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:web-sockets",
+        "label": "WebSockets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foaf",
+        "label": "FOAF"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:sh-ex",
+        "label": "ShEx"
+      },
+      {
+        "@id": "urn:ngm:class:shape-trees",
+        "label": "Shape Trees"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-data-portability",
+        "label": "Financial Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:government-open-data",
+        "label": "Government Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:health-data-management",
+        "label": "Health Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:nhs-data-strategy",
+        "label": "NHS Data Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data-management",
+        "label": "Personal Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:smart-data-schemes",
+        "label": "Smart Data Schemes"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:linked-web-storage-working-group",
+        "label": "Linked Web Storage Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-data-institute",
+        "label": "Open Data Institute"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-solid-community-group",
+        "label": "W3C Solid Community Group"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:38d5c68c9d15d1a600a3df3b4128e5ca0e614e4286ffb60fdb5104e3cac377e5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Solid (Social Linked Data) is an open-source, W3C-specification-grounded decentralised web architecture conceived by Sir Tim Berners-Lee at MIT CSAIL (Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory) in 2015, commercialised through the startup Inrupt (co-founded 2018 by Berners-Lee and John Bruce), and steered from October 2024 by the Open Data Institute (ODI) as an open-standard ecosystem initiative. The protocol inverts the dominant application-centric model of the web—in which user data is captured and silo'd within application provider databases (Meta, Google, Amazon, healthcare records systems)—by mandating that data sovereignty resides with the user. Each person, organisation, or automated agent is assigned one or more **Pods** (Personal Online Data Stores): tamper-evident, standards-compliant storage vaults that can be hosted anywhere on the web (self-hosted, third-party provider, enterprise deployment) while remaining interoperable with any Solid-compliant application. Applications access Pod data through fine-grained, consent-driven permissions rather than owning data outright, enabling a person to simultaneously share health r",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:access-control-policy",
-      "vc:label": "Access Control Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data-platform",
-      "vc:label": "Linked Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:pod",
-      "vc:label": "Pod"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:solid-oidc",
-      "vc:label": "Solid-OIDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:solid-protocol-specification",
-      "vc:label": "Solid Protocol Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:turtle",
-      "vc:label": "Turtle"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-access-control",
-      "vc:label": "Web Access Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id",
-      "vc:label": "WebID"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id-profile",
-      "vc:label": "WebID Profile"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:http",
-      "vc:label": "HTTP"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:turtle",
-      "vc:label": "Turtle"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri",
-      "vc:label": "URI"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id",
-      "vc:label": "WebID"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-portability",
-      "vc:label": "Data Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-identity",
-      "vc:label": "Decentralized Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-data",
-      "vc:label": "Open Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consent-management",
-      "vc:label": "Consent Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-by-design",
-      "vc:label": "Privacy by Design"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:access-control-policy",
-      "vc:label": "Access Control Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:dpo-p-authentication",
-      "vc:label": "DPoP Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:ldp-container",
-      "vc:label": "LDP Container"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data-platform",
-      "vc:label": "Linked Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:solid-oidc",
-      "vc:label": "Solid-OIDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-access-control",
-      "vc:label": "Web Access Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-id-profile",
-      "vc:label": "WebID Profile"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:linked-data-principles",
-      "vc:label": "Linked Data Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-data-model",
-      "vc:label": "RDF Data Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-architecture",
-      "vc:label": "REST Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-standards",
-      "vc:label": "W3C Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:financial-data-portability",
-      "vc:label": "Financial Data Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:government-open-data",
-      "vc:label": "Government Open Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:health-data-management",
-      "vc:label": "Health Data Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:nhs-data-strategy",
-      "vc:label": "NHS Data Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-data-management",
-      "vc:label": "Personal Data Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-data-schemes",
-      "vc:label": "Smart Data Schemes"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:dpo-p-token",
-      "vc:label": "DPoP Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-rest",
-      "vc:label": "HTTP REST"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:n-triples",
-      "vc:label": "N-Triples"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:turtle",
-      "vc:label": "Turtle"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-sockets",
-      "vc:label": "WebSockets"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:activity-pub",
-      "vc:label": "ActivityPub"
-    },
-    {
-      "@id": "urn:visionflow:linked:at-protocol",
-      "vc:label": "AT Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-storage",
-      "vc:label": "Blockchain Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:centralised-data-silo",
-      "vc:label": "Centralised Data Silo"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-data-sharing",
-      "vc:label": "OAuth Data Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identifiers",
-      "vc:label": "Decentralized Identifiers"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:foaf",
-      "vc:label": "FOAF"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-data",
-      "vc:label": "Open Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:sh-ex",
-      "vc:label": "ShEx"
-    },
-    {
-      "@id": "urn:visionflow:linked:shape-trees",
-      "vc:label": "Shape Trees"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identifiers",
-      "vc:label": "Decentralized Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-web-storage-working-group",
-      "vc:label": "Linked Web Storage Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-data-institute",
-      "vc:label": "Open Data Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-solid-community-group",
-      "vc:label": "W3C Solid Community Group"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-web",
-      "vc:label": "Decentralized Web"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

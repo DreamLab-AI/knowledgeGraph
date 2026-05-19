@@ -184,68 +184,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cobot-safety-levels",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cobot-safety-levels",
+  "@type": "Class",
   "label": "Cobot Safety Levels",
+  "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:safety-standard",
-      "vc:label": "Safety Standard"
+      "@id": "urn:ngm:class:safety-standard",
+      "label": "Safety Standard"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6603acf7264abd1764968d5e6ea00f22f1b91dcb3a5d39180ba9eb54b3e063c5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:safety-certification",
+        "label": "Safety Certification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:force-limiting",
+        "label": "Force Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:speed-monitoring",
+        "label": "Speed Monitoring"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6603acf7264abd1764968d5e6ea00f22f1b91dcb3a5d39180ba9eb54b3e063c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:safety-certification",
-      "vc:label": "Safety Certification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:force-limiting",
-      "vc:label": "Force Limiting"
-    },
-    {
-      "@id": "urn:visionflow:linked:speed-monitoring",
-      "vc:label": "Speed Monitoring"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

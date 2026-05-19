@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:educational-technology",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:educational-technology",
+  "@type": "Class",
   "label": "Educational Technology",
+  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and modologies for delivering learning experiences in immersive virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-technology",
-      "vc:label": "Metaverse Technology"
+      "@id": "urn:ngm:class:metaverse-technology",
+      "label": "Metaverse Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:59c461be980389af45e1f4a4c28a9a1e047474b9882f9a0b76f705c7408a77f1"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:59c461be980389af45e1f4a4c28a9a1e047474b9882f9a0b76f705c7408a77f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and methodologies for delivering learning experiences in immersive virtual environments. This includes virtual classrooms, simulation-based training, immersive learning experiences, and collaborative educational spaces that leverage spatial computing for enhanced knowledge transfer.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

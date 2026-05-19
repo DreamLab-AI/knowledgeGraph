@@ -3,53 +3,57 @@
   "title": "Digital Signal Processing",
   "slug": "digital-signal-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-signal-processing",
+  "classIri": "urn:ngm:class:digital-signal-processing",
   "domain": "spatial-computing",
-  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences. bridges-to:: [[Sensor Input]]",
+  "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:signal-processing",
+      "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:algorithms",
+        "id": "urn:ngm:class:algorithms",
         "label": "Algorithms"
       },
       {
-        "id": "urn:visionflow:linked:dsp-hardware",
+        "id": "urn:ngm:class:dsp-hardware",
         "label": "DSP Hardware"
       },
       {
-        "id": "urn:visionflow:linked:sensors",
+        "id": "urn:ngm:class:sensors",
         "label": "Sensors"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:audio-enhancement",
+        "id": "urn:ngm:class:audio-enhancement",
         "label": "Audio Enhancement"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio",
+        "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:visionflow:owl:class:video-processing",
+        "id": "urn:ngm:class:video-processing",
         "label": "Video Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

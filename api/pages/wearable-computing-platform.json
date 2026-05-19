@@ -3,19 +3,18 @@
   "title": "Wearable Computing Platform",
   "slug": "wearable-computing-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:wearable-computing-platform",
+  "classIri": "urn:ngm:class:wearable-computing-platform",
   "domain": "infrastructure",
   "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-platform",
+      "id": "urn:ngm:class:computing-platform",
       "label": "Computing Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

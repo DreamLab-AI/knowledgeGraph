@@ -3,19 +3,18 @@
   "title": "Pseudonymisation",
   "slug": "pseudonymisation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pseudonymisation",
+  "classIri": "urn:ngm:class:pseudonymisation",
   "domain": "artificial-intelligence",
-  "definition": "Pseudonymisation is a data protection technique defined in GDPR Article 4(5) as processing personal data such that it can no longer be attributed to a specific data subject without additional information, which is kept separately under technical and organizational measures preventing re-identification. This approach replaces direct identifiers (names, email addresses, national identification numbers) with pseudonyms (aliases, tokens, or encrypted identifiers) while maintaining data utility for analysis, creating reversible anonymization that reduces but does not eliminate re-identification risk unlike full anonymization which irreversibly severs links between data and individuals. Implementation techniques include cryptographic hashing applying one-way hash functions (SHA-256, HMAC) with secret keys converting identifiers to fixed-length pseudonyms deterministically enabling consistent linkage across datasets while preventing reverse lookup without keys, tokenization replacing sensitive identifiers with randomly generated tokens stored in secure mapping tables enabling authorized re-identification when necessary, encryption-based pseudonymisation using symmetric or asymmetric encry",
+  "definition": "Pseudonymisation is a data protection technique defined in GDPR Article 4(5) as processing personal data such that it can no longer be attributed to a specific data subject without additional information, which is kept separately under technical and organizational measures preventing re-identific...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

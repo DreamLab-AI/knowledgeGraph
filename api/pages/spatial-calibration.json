@@ -3,32 +3,36 @@
   "title": "Spatial Calibration",
   "slug": "spatial-calibration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-calibration",
+  "classIri": "urn:ngm:class:spatial-calibration",
   "domain": "spatial-computing",
   "definition": "The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ar-registration",
+      "id": "urn:ngm:class:ar-registration",
       "label": "AR Registration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accurate-ar-alignment",
+        "id": "urn:ngm:class:accurate-ar-alignment",
         "label": "Accurate AR Alignment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

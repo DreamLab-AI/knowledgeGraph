@@ -3,19 +3,18 @@
   "title": "Cryptocurrency Remuneration",
   "slug": "cryptocurrency-remuneration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptocurrency-remuneration",
+  "classIri": "urn:ngm:class:cryptocurrency-remuneration",
   "domain": "distributed-collaboration",
-  "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, Ethereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unbanked populations and facilitating blockchain-based collaboration.\"",
+  "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, ereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unban...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Pathology AI",
   "slug": "pathology-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pathology-ai",
+  "classIri": "urn:ngm:class:pathology-ai",
   "domain": "artificial-intelligence",
-  "definition": "Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images. These systems perform tasks including cancer detection, grading, biomarker quantification, and morphological analysis using whole slide imaging and deep learning architectures tailored for gigapixel pathology images.",
+  "definition": "Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:medical-imaging-ai",
+      "id": "urn:ngm:class:medical-imaging-ai",
       "label": "Medical Imaging AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

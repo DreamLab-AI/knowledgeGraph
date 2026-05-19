@@ -3,78 +3,91 @@
   "title": "Augmented Reality (AR)",
   "slug": "augmented-reality-ar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:augmented-reality-ar",
+  "classIri": "urn:ngm:class:augmented-reality-ar",
   "domain": "spatial-computing",
   "definition": "Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:extended-reality-xr",
+      "id": "urn:ngm:class:extended-reality-xr",
       "label": "Extended Reality (XR)"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:environmental-sensor",
+        "id": "urn:ngm:class:environmental-sensor",
         "label": "Environmental Sensor"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-display-device",
+        "id": "urn:ngm:class:ar-display-device",
         "label": "AR Display Device"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-content-overlay",
+        "id": "urn:ngm:class:digital-content-overlay",
         "label": "Digital Content Overlay"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-tracking-system",
+        "id": "urn:ngm:class:spatial-tracking-system",
         "label": "Spatial Tracking System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:device-camera",
+        "id": "urn:ngm:class:device-camera",
         "label": "Device Camera"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:contextual-information-overlay",
+        "id": "urn:ngm:class:contextual-information-overlay",
         "label": "Contextual Information Overlay"
       },
       {
-        "id": "urn:visionflow:linked:interactive-holograms",
+        "id": "urn:ngm:class:interactive-holograms",
         "label": "Interactive Holograms"
       },
       {
-        "id": "urn:visionflow:linked:object-recognition",
+        "id": "urn:ngm:class:object-recognition",
         "label": "Object Recognition"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-anchoring",
+        "id": "urn:ngm:class:spatial-anchoring",
         "label": "Spatial Anchoring"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

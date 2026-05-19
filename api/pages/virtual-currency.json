@@ -3,19 +3,18 @@
   "title": "Virtual Currency",
   "slug": "virtual-currency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-currency",
+  "classIri": "urn:ngm:class:virtual-currency",
   "domain": "spatial-computing",
   "definition": "A digital representation of value that is typically unregulated, issued and controlled by its developers, used and accepted electronically among members of a specific virtual community, including in-game currencies, platform tokens, and convertible digital currencies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

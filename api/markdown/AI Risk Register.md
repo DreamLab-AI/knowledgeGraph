@@ -128,48 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-risk-register",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-risk-register",
+  "@type": "Class",
   "label": "AI Risk Register",
+  "definition": "AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood es, assigned ownership, mitigation strategies, and current status to...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-risk-management",
-      "vc:label": "AI Risk Management"
+      "@id": "urn:ngm:class:ai-risk-management",
+      "label": "AI Risk Management"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:31e94f647b29938388a199e0c7d7d647f86577da08b1f97065058713335cb4c6"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31e94f647b29938388a199e0c7d7d647f86577da08b1f97065058713335cb4c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood evaluations, assigned ownership, mitigation strategies, and current status to support risk governance and decision-making. This register captures diverse risk categories including technical risks (model performance failures, robustness issues, adversarial vulnerabilities), ethical risks (fairness violations, discrimination, bias amplification), legal and compliance risks (regulatory violations, liability exposure, contractual breaches), operational risks (system availability, integration failures, resource constraints), security and privacy risks (data breaches, privacy violations, adversarial attacks), reputational risks (public backlash, stakeholder concerns, brand damage), and societal risks (unintended consequences, systemic impacts, dual-use concerns). Each risk entry typically documents risk identifier and title, detailed description of the risk scenario, affected systems and stakeholders, likelihood rating (rare, unlikely, possible, likely, almost ce",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

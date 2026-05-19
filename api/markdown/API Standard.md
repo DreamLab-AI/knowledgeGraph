@@ -156,78 +156,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:api-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:api-standard",
+  "@type": "Class",
   "label": "API Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:80b2334c7b9eba9543d7210b7fdacd668bb2283ed7c0d98a4e8df33095caac55"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:80b2334c7b9eba9543d7210b7fdacd668bb2283ed7c0d98a4e8df33095caac55@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "infrastructure",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authentication-schema",
+        "label": "Authentication Schema"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-specification",
+        "label": "Data Format Specification"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:technical-specification-document",
+        "label": "Technical Specification Document"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:component-integration",
+        "label": "Component Integration"
+      },
+      {
+        "@id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authentication-schema",
-      "vc:label": "Authentication Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-format-specification",
-      "vc:label": "Data Format Specification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:technical-specification-document",
-      "vc:label": "Technical Specification Document"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:component-integration",
-      "vc:label": "Component Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-interoperability",
-      "vc:label": "System Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

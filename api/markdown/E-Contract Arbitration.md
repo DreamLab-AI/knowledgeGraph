@@ -196,122 +196,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:e-contract-arbitration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:e-contract-arbitration",
+  "@type": "Class",
   "label": "E-Contract Arbitration",
+  "definition": "Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ad03551fa209da4c057a30bf8db24eb7ca80dee36b5a12df201f13b606586457"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:code-interpretation-service",
+        "label": "Code Interpretation Service"
+      },
+      {
+        "@id": "urn:ngm:class:contract-analysis-process",
+        "label": "Contract Analysis Process"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-evidence-verification",
+        "label": "On-Chain Evidence Verification"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-transaction-log",
+        "label": "Blockchain Transaction Log"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-code",
+        "label": "Smart Contract Code"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrator-expertise",
+        "label": "Arbitrator Expertise"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-dispute-resolution",
+        "label": "Automated Dispute Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:contract-enforcement",
+        "label": "Contract Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:fair-adjudication",
+        "label": "Fair Adjudication"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-reversal",
+        "label": "Transaction Reversal"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:smart-contract-governance",
+        "label": "Smart Contract Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dispute-resolution-mechanism",
+        "label": "Dispute Resolution Mechanism"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ad03551fa209da4c057a30bf8db24eb7ca80dee36b5a12df201f13b606586457@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:smart-contract-governance",
-      "vc:label": "Smart Contract Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dispute-resolution-mechanism",
-      "vc:label": "Dispute Resolution Mechanism"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:code-interpretation-service",
-      "vc:label": "Code Interpretation Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-analysis-process",
-      "vc:label": "Contract Analysis Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-evidence-verification",
-      "vc:label": "On-Chain Evidence Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:arbitration-decision-engine",
-      "vc:label": "Arbitration Decision Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-transaction-log",
-      "vc:label": "Blockchain Transaction Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-code",
-      "vc:label": "Smart Contract Code"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:arbitrator-expertise",
-      "vc:label": "Arbitrator Expertise"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-dispute-resolution",
-      "vc:label": "Automated Dispute Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-enforcement",
-      "vc:label": "Contract Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-adjudication",
-      "vc:label": "Fair Adjudication"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-reversal",
-      "vc:label": "Transaction Reversal"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:smart-contract-standards",
-      "vc:label": "Smart Contract Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

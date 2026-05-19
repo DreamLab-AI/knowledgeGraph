@@ -3,35 +3,44 @@
   "title": "Token Economics",
   "slug": "token-economics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:token-economics",
+  "classIri": "urn:ngm:class:token-economics",
   "domain": "blockchain",
-  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
-  "subClassOf": [],
+  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable eco...",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-core",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-governance",
+        "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
       },
       {
-        "id": "urn:visionflow:linked:network-incentives",
+        "id": "urn:ngm:class:network-incentives",
         "label": "Network Incentives"
       },
       {
-        "id": "urn:visionflow:linked:value-capture",
+        "id": "urn:ngm:class:value-capture",
         "label": "Value Capture"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

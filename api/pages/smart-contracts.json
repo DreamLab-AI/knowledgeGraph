@@ -3,44 +3,66 @@
   "title": "Smart Contracts",
   "slug": "smart-contracts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:smart-contracts",
+  "classIri": "urn:ngm:class:smart-contracts",
   "domain": "blockchain",
-  "definition": "Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation. Smart contracts encode business logic in deterministic code that runs identically across all network nodes, ensuring consensus on execution outcomes.",
+  "definition": "Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-computing",
+      "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-application",
+        "id": "urn:ngm:class:decentralized-application",
         "label": "Decentralized Application"
       },
       {
-        "id": "urn:visionflow:owl:class:automated-market-maker",
+        "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenization",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ]
   },
   "wikilinks": [
     {

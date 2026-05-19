@@ -3,19 +3,18 @@
   "title": "Transaction Parameter",
   "slug": "transaction-parameter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transaction-parameter",
+  "classIri": "urn:ngm:class:transaction-parameter",
   "domain": "blockchain",
   "definition": "Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-transaction",
+      "id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

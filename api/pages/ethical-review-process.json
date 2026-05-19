@@ -3,19 +3,18 @@
   "title": "Ethical Review Process",
   "slug": "ethical-review-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ethical-review-process",
+  "classIri": "urn:ngm:class:ethical-review-process",
   "domain": "artificial-intelligence",
-  "definition": "Ethical Review Process is a structured methodology for evaluating AI systems against ethical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ethically responsible AI development and deployment. This process applies established ethical frameworks (consequentialist, deontological, virtue ethics, care ethics, justice frameworks) to assess AI systems, identifying potential harms, benefits, rights violations, and value conflicts. The review process typically follows defined stages: proposal submission with system description and ethical self-assessment, initial screening to determine review level (exempt, expedited, full review) based on risk classification, expert deliberation by AI ethics board or review committee analyzing ethical implications across fairness, privacy, autonomy, safety, and accountability dimensions, stakeholder consultation soliciting affected community perspectives, ethical decision-making producing approval, conditional approval, deferral, or rejection with documented rationale, and ongoing monitoring of deployed systems with periodic re-review. Review criteria",
+  "definition": "ical Review Process is a structured modology for evaluating AI systems against ical frameworks, organizational values, and societal norms, involving expert deliberation, stakeholder consultation, and documented decision-making to ensure ically responsible AI development and deployment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

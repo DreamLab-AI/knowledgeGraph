@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:monetary-policy-implementation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:monetary-policy-implementation",
+  "@type": "Class",
   "label": "Monetary Policy Implementation",
+  "definition": "A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:economic-mechanism",
-      "vc:label": "Economic Mechanism"
+      "@id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "complete",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ad2b1e57f680423cc2577cb33bbe2bb65af966a121fcd1b6f29b864575e72a9"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ad2b1e57f680423cc2577cb33bbe2bb65af966a121fcd1b6f29b864575e72a9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A monetary policy implementation component in the Metaverse domain that enables CentralBankDigitalCurrencyCbdc.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

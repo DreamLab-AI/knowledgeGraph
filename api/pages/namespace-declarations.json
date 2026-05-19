@@ -3,32 +3,36 @@
   "title": "Namespace Declarations",
   "slug": "namespace-declarations",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:namespace-declarations",
+  "classIri": "urn:ngm:class:namespace-declarations",
   "domain": "spatial-computing",
   "definition": "XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:semantic-web-standards",
+      "id": "urn:ngm:class:semantic-web-standards",
       "label": "Semantic Web Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ontology-interoperability",
+        "id": "urn:ngm:class:ontology-interoperability",
         "label": "Ontology Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-asset-trading",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-asset-trading",
+  "@type": "Class",
   "label": "Digital Asset Trading",
+  "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:financial-trading",
-      "vc:label": "Financial Trading"
+      "@id": "urn:ngm:class:financial-trading",
+      "label": "Financial Trading"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:925cd02c0fd0cad0a646b68e66d739f628a80d13c8911a9996ed464de60848ac"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:exchange-platform",
+        "label": "Exchange Platform"
+      },
+      {
+        "@id": "urn:ngm:class:order-matching",
+        "label": "Order Matching"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-systems",
+        "label": "Settlement Systems"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:925cd02c0fd0cad0a646b68e66d739f628a80d13c8911a9996ed464de60848ac@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:exchange-platform",
-      "vc:label": "Exchange Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:order-matching",
-      "vc:label": "Order Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-systems",
-      "vc:label": "Settlement Systems"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:market-making",
-      "vc:label": "Market Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-provision",
-      "vc:label": "Liquidity Provision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

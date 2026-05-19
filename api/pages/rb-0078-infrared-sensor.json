@@ -3,19 +3,18 @@
   "title": "rb 0078 infrared sensor",
   "slug": "rb-0078-infrared-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0078-infrared-sensor",
+  "classIri": "urn:ngm:class:rb-0078-infrared-sensor",
   "domain": "robotics",
   "definition": "infrared sensor is a robotics and autonomous systems concept and a type of Sensor.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:sensor",
+      "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

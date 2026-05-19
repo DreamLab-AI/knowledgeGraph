@@ -168,41 +168,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:redress-procedure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:redress-procedure",
+  "@type": "Class",
   "label": "Redress Procedure",
+  "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-governance-principle",
-      "vc:label": "AI Governance Principle"
+      "@id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:41f6a7b2cfbecd3cf65618c4f56c8353cda8ff1e9cfa38b75cddf7e833839238"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:41f6a7b2cfbecd3cf65618c4f56c8353cda8ff1e9cfa38b75cddf7e833839238@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes. Redress procedures address a fundamental accountability requirement: when AI systems make consequential decisions affecting employment, credit, housing, criminal justice, or other significant life opportunities, affected individuals must have meaningful avenues to contest erroneous or unfair outcomes. These procedures encompass complaint submission mechanisms (accessible interfaces for lodging grievances), investigation processes (systematic review of contested decisions), human oversight interventions (qualified personnel examining AI outputs and overriding when appropriate), explanation provision (meaningful information about decision factors), and remedy implementation (corrective actions ranging from decision reversal to compensation for damages). Effective redress requires balancing competing concerns: accessibility (procedures must be understandable and available to all affected parties including those with limited ",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

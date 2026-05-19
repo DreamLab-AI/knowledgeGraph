@@ -3,101 +3,119 @@
   "title": "Virtual World",
   "slug": "virtual-world",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-world",
+  "classIri": "urn:ngm:class:virtual-world",
   "domain": "spatial-computing",
   "definition": "A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing-core",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:economic-system",
+        "id": "urn:ngm:class:economic-system",
         "label": "Economic System"
       },
       {
-        "id": "urn:visionflow:linked:object-persistence",
+        "id": "urn:ngm:class:object-persistence",
         "label": "Object Persistence"
       },
       {
-        "id": "urn:visionflow:linked:social-system",
+        "id": "urn:ngm:class:social-system",
         "label": "Social System"
       },
       {
-        "id": "urn:visionflow:linked:user-representation",
+        "id": "urn:ngm:class:user-representation",
         "label": "User Representation"
       },
       {
-        "id": "urn:visionflow:linked:world-space",
+        "id": "urn:ngm:class:world-space",
         "label": "World Space"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-real-estate",
+        "id": "urn:ngm:class:digital-real-estate",
         "label": "Digital Real Estate"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-engine",
+        "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:scene-graph",
+        "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       },
       {
-        "id": "urn:visionflow:owl:class:tourism-metaverse",
+        "id": "urn:ngm:class:tourism-metaverse",
         "label": "Tourism Metaverse"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       },
       {
-        "id": "urn:visionflow:owl:class:authentication-service",
+        "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
       {
-        "id": "urn:visionflow:owl:class:database-system",
+        "id": "urn:ngm:class:database-system",
         "label": "Database System"
       },
       {
-        "id": "urn:visionflow:owl:class:network-protocol",
+        "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-work",
+        "id": "urn:ngm:class:collaborative-work",
         "label": "Collaborative Work"
       },
       {
-        "id": "urn:visionflow:linked:creative-expression",
+        "id": "urn:ngm:class:creative-expression",
         "label": "Creative Expression"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction",
+        "id": "urn:ngm:class:social-interaction",
         "label": "Social Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-economy",
+        "id": "urn:ngm:class:digital-economy",
         "label": "Digital Economy"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-society",
+        "id": "urn:ngm:class:virtual-society",
         "label": "Virtual Society"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

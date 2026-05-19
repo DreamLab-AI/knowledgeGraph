@@ -3,19 +3,18 @@
   "title": "STRIPS",
   "slug": "strips",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:strips",
+  "classIri": "urn:ngm:class:strips",
   "domain": "artificial-intelligence",
   "definition": "STRIPS is a artificial intelligence concept and a type of Knowledge Representation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

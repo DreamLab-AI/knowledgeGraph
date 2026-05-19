@@ -3,74 +3,83 @@
   "title": "Physics-Based Animation",
   "slug": "physics-based-animation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:physics-based-animation",
+  "classIri": "urn:ngm:class:physics-based-animation",
   "domain": "spatial-computing",
   "definition": "Animation technique that computes object motion through real-time simulation of physical forces, gravity, collisions, and dynamics to create realistic movement and interactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:real-time-rendering",
+      "id": "urn:ngm:class:real-time-rendering",
       "label": "Real Time Rendering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:collision-detection-system",
+        "id": "urn:ngm:class:collision-detection-system",
         "label": "Collision Detection System"
       },
       {
-        "id": "urn:visionflow:linked:constraint-solver",
+        "id": "urn:ngm:class:constraint-solver",
         "label": "Constraint Solver"
       },
       {
-        "id": "urn:visionflow:linked:force-integrator",
+        "id": "urn:ngm:class:force-integrator",
         "label": "Force Integrator"
       },
       {
-        "id": "urn:visionflow:linked:physics-simulation-engine",
+        "id": "urn:ngm:class:physics-simulation-engine",
         "label": "Physics Simulation Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-transform-system",
+        "id": "urn:ngm:class:3-d-transform-system",
         "label": "3D Transform System"
       },
       {
-        "id": "urn:visionflow:linked:animation-controller",
+        "id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
       },
       {
-        "id": "urn:visionflow:owl:class:physics-engine",
+        "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cloth-simulation",
+        "id": "urn:ngm:class:cloth-simulation",
         "label": "Cloth Simulation"
       },
       {
-        "id": "urn:visionflow:linked:ragdoll-physics",
+        "id": "urn:ngm:class:ragdoll-physics",
         "label": "Ragdoll Physics"
       },
       {
-        "id": "urn:visionflow:owl:class:dynamic-character-animation",
+        "id": "urn:ngm:class:dynamic-character-animation",
         "label": "Dynamic Character Animation"
       },
       {
-        "id": "urn:visionflow:owl:class:particle-systems",
+        "id": "urn:ngm:class:particle-systems",
         "label": "Particle Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,98 +3,115 @@
   "title": "Threat Surface Map",
   "slug": "threat-surface-map",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:threat-surface-map",
+  "classIri": "urn:ngm:class:threat-surface-map",
   "domain": "spatial-computing",
   "definition": "A comprehensive security visualization and inventory framework that identifies, catalogs, and models all potential attack vectors, vulnerability exposure points, and threat entry paths across network, application, data, identity, and infrastructure layers of a system.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
+      "id": "urn:ngm:class:metaverse-and-spatial-risks",
       "label": "Metaverse and Spatial Risks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:attack-vector-inventory",
+        "id": "urn:ngm:class:attack-vector-inventory",
         "label": "Attack Vector Inventory"
       },
       {
-        "id": "urn:visionflow:linked:exposure-point-catalog",
+        "id": "urn:ngm:class:exposure-point-catalog",
         "label": "Exposure Point Catalog"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-matrix",
+        "id": "urn:ngm:class:risk-assessment-matrix",
         "label": "Risk Assessment Matrix"
       },
       {
-        "id": "urn:visionflow:linked:security-control-mapping",
+        "id": "urn:ngm:class:security-control-mapping",
         "label": "Security Control Mapping"
       },
       {
-        "id": "urn:visionflow:linked:threat-model",
+        "id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
       },
       {
-        "id": "urn:visionflow:linked:vulnerability-surface",
+        "id": "urn:ngm:class:vulnerability-surface",
         "label": "Vulnerability Surface"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:asset-inventory",
+        "id": "urn:ngm:class:asset-inventory",
         "label": "Asset Inventory"
       },
       {
-        "id": "urn:visionflow:linked:penetration-testing-tools",
+        "id": "urn:ngm:class:penetration-testing-tools",
         "label": "Penetration Testing Tools"
       },
       {
-        "id": "urn:visionflow:linked:security-monitoring",
+        "id": "urn:ngm:class:security-monitoring",
         "label": "Security Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:vulnerability-scanner",
+        "id": "urn:ngm:class:vulnerability-scanner",
         "label": "Vulnerability Scanner"
       },
       {
-        "id": "urn:visionflow:owl:class:network-topology",
+        "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:incident-response",
+        "id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
       },
       {
-        "id": "urn:visionflow:linked:penetration-testing",
+        "id": "urn:ngm:class:penetration-testing",
         "label": "Penetration Testing"
       },
       {
-        "id": "urn:visionflow:linked:security-audit",
+        "id": "urn:ngm:class:security-audit",
         "label": "Security Audit"
       },
       {
-        "id": "urn:visionflow:linked:security-posture-management",
+        "id": "urn:ngm:class:security-posture-management",
         "label": "Security Posture Management"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management-framework",
+        "label": "Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence-platform",
+        "label": "Threat Intelligence Platform"
+      },
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "State Change",
   "slug": "state-change",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-change",
+  "classIri": "urn:ngm:class:state-change",
   "domain": "artificial-intelligence",
-  "definition": "A transition from one defined state to another within a system, component, or entity, representing how systems evolve through discrete or continuous modifications to their properties. In blockchain contexts, state changes encompass account balance updates, smart contract storage modifications, and validator set transitions recorded in the global state trie.",
+  "definition": "A transition from one defined state to another within a system, component, or entity, representing how systems evolve through discrete or continuous modifications to their properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,111 +3,115 @@
   "title": "VelocityControl",
   "slug": "velocity-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:velocity-control",
+  "classIri": "urn:ngm:class:velocity-control",
   "domain": "robotics",
-  "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity \u03c9 in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (\u00b10.1% full-scale accuracy), optical encoders differentiated numerically (1000-10,000 pulses per revolution providing 0.006-0.06 \u00b0/pulse resolution), or inertial measurement units (IMUs with \u00b12% velocity estimation error), computing velocity error (commanded minus measured), and adjusting motor current or voltage through proportional-integral (PI) controllers (C(s) = K_p + K_i/s with typical gains K_p = 0.5-5 A/(rad/s), K_i = 10-100 A/(rad\u00b7s)), velocity feedforward compensation (u_ff = J\u00b7\u03c9\u0307_cmd + B\u00b7\u03c9_cmd accounting for inertia J and damping B), or state observers (Luenberger observers reconstructing velocity from position measurements when direct velocity sensing unavailable), with applications including CNC machine tool spindle speed regulation (maintaining 6,000-24,000 RPM \u00b10.5% for precision milling), conveyor belt speed synchronization (coordinating multiple belts at 0.5-5 m/s \u00b12% for packaging lines), ",
+  "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity \u03c9 in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (\u00b1full-scale accu...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.9,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:error-calculation",
+        "id": "urn:ngm:class:error-calculation",
         "label": "ErrorCalculation"
       },
       {
-        "id": "urn:visionflow:linked:feedforward-compensation",
+        "id": "urn:ngm:class:feedforward-compensation",
         "label": "FeedforwardCompensation"
       },
       {
-        "id": "urn:visionflow:linked:picontroller",
+        "id": "urn:ngm:class:picontroller",
         "label": "PIController"
       },
       {
-        "id": "urn:visionflow:linked:state-observer",
+        "id": "urn:ngm:class:state-observer",
         "label": "StateObserver"
       },
       {
-        "id": "urn:visionflow:linked:velocity-measurement",
+        "id": "urn:ngm:class:velocity-measurement",
         "label": "VelocityMeasurement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bandwidth-design",
+        "id": "urn:ngm:class:bandwidth-design",
         "label": "BandwidthDesign"
       },
       {
-        "id": "urn:visionflow:linked:controller-tuning",
+        "id": "urn:ngm:class:controller-tuning",
         "label": "ControllerTuning"
       },
       {
-        "id": "urn:visionflow:linked:noise-filtering",
+        "id": "urn:ngm:class:noise-filtering",
         "label": "NoiseFiltering"
       },
       {
-        "id": "urn:visionflow:linked:stability-analysis",
+        "id": "urn:ngm:class:stability-analysis",
         "label": "StabilityAnalysis"
       },
       {
-        "id": "urn:visionflow:linked:velocity-estimation",
+        "id": "urn:ngm:class:velocity-estimation",
         "label": "VelocityEstimation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:constant-throughput",
+        "id": "urn:ngm:class:constant-throughput",
         "label": "ConstantThroughput"
       },
       {
-        "id": "urn:visionflow:linked:energy-efficiency",
+        "id": "urn:ngm:class:energy-efficiency",
         "label": "EnergyEfficiency"
       },
       {
-        "id": "urn:visionflow:linked:speed-regulation",
+        "id": "urn:ngm:class:speed-regulation",
         "label": "SpeedRegulation"
       },
       {
-        "id": "urn:visionflow:linked:synchronized-motion",
+        "id": "urn:ngm:class:synchronized-motion",
         "label": "SynchronizedMotion"
       },
       {
-        "id": "urn:visionflow:linked:velocity-profiling",
+        "id": "urn:ngm:class:velocity-profiling",
         "label": "VelocityProfiling"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:cascade-control",
+        "id": "urn:ngm:class:cascade-control",
         "label": "CascadeControl"
       },
       {
-        "id": "urn:visionflow:linked:feedforward-control",
+        "id": "urn:ngm:class:feedforward-control",
         "label": "FeedforwardControl"
       },
       {
-        "id": "urn:visionflow:linked:observer-design",
+        "id": "urn:ngm:class:observer-design",
         "label": "ObserverDesign"
       },
       {
-        "id": "urn:visionflow:linked:picontrol",
+        "id": "urn:ngm:class:picontrol",
         "label": "PIControl"
       },
       {
-        "id": "urn:visionflow:owl:class:adaptive-control",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "AdaptiveControl"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

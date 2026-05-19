@@ -3,49 +3,58 @@
   "title": "ETSI Domain Immersive + Reality Capture Crossover",
   "slug": "etsi-domain-immersive-reality-capture-crossover",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-immersive-reality-capture-crossover",
+  "classIri": "urn:ngm:class:etsi-domain-immersive-reality-capture-crossover",
   "domain": "spatial-computing",
   "definition": "Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
+      "id": "urn:ngm:class:etsi-metaverse-domain-model",
       "label": "Etsi Metaverse Domain Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-immersive",
+        "id": "urn:ngm:class:etsi-domain-immersive",
         "label": "ETSI Domain Immersive"
       },
       {
-        "id": "urn:visionflow:owl:class:etsi-domain-reality-capture",
+        "id": "urn:ngm:class:etsi-domain-reality-capture",
         "label": "ETSI Domain Reality Capture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:photorealistic-immersion",
+        "id": "urn:ngm:class:photorealistic-immersion",
         "label": "Photorealistic Immersion"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "id": "urn:ngm:class:spatial-interaction",
         "label": "Spatial Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:volumetric-capture",
+        "id": "urn:ngm:class:volumetric-capture",
         "label": "Volumetric Capture"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "ETSI Metaverse Domain Model"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

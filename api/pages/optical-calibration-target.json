@@ -3,32 +3,36 @@
   "title": "Optical Calibration Target",
   "slug": "optical-calibration-target",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:optical-calibration-target",
+  "classIri": "urn:ngm:class:optical-calibration-target",
   "domain": "spatial-computing",
   "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:calibration-equipment",
+      "id": "urn:ngm:class:calibration-equipment",
       "label": "Calibration Equipment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:optical-system-accuracy",
+        "id": "urn:ngm:class:optical-system-accuracy",
         "label": "Optical System Accuracy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

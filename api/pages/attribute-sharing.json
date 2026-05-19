@@ -3,53 +3,57 @@
   "title": "Attribute Sharing",
   "slug": "attribute-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:attribute-sharing",
+  "classIri": "urn:ngm:class:attribute-sharing",
   "domain": "spatial-computing",
-  "definition": "Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control while enabling verification without centralized authorities.",
+  "definition": "Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control whi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:identity-management",
+      "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-anchoring",
+        "id": "urn:ngm:class:blockchain-anchoring",
         "label": "Blockchain Anchoring"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-identifiers",
+        "id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifiers"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:credential-verification",
+        "id": "urn:ngm:class:credential-verification",
         "label": "Credential Verification"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

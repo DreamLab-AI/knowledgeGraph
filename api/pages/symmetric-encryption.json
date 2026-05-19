@@ -3,37 +3,46 @@
   "title": "Symmetric Encryption",
   "slug": "symmetric-encryption",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:symmetric-encryption",
+  "classIri": "urn:ngm:class:symmetric-encryption",
   "domain": "blockchain",
-  "definition": "A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.",
+  "definition": "A cryptographic mod using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "id": "urn:ngm:class:cryptographic-primitive",
       "label": "Cryptographic Primitive"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:key-derivation-function",
+        "id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:confidential-transactions",
+        "id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transactions"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

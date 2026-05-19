@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-asset-ecosystem",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-asset-ecosystem",
+  "@type": "Class",
   "label": "Digital Asset Ecosystem",
+  "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralize...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-economy",
-      "vc:label": "Digital Economy"
+      "@id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:82fcc4e5f4fb5aac912c8c8084df38bb4f0488edb555fd6077f725c7bafb9696"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:exchange-platforms",
+        "label": "Exchange Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-infrastructure",
+        "label": "Wallet Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-services",
+        "label": "DeFi Services"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:82fcc4e5f4fb5aac912c8c8084df38bb4f0488edb555fd6077f725c7bafb9696@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:exchange-platforms",
-      "vc:label": "Exchange Platforms"
-    },
-    {
-      "@id": "urn:visionflow:linked:wallet-infrastructure",
-      "vc:label": "Wallet Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-tokenization",
-      "vc:label": "Asset Tokenization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:de-fi-services",
-      "vc:label": "DeFi Services"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-ownership",
-      "vc:label": "Digital Ownership"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

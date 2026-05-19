@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-entertainment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-entertainment",
+  "@type": "Class",
   "label": "Immersive Entertainment",
+  "definition": "Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-entertainment",
-      "vc:label": "Digital Entertainment"
+      "@id": "urn:ngm:class:digital-entertainment",
+      "label": "Digital Entertainment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:04fa85370a2cbff9176a5ed15ce27d68b6a06e0909480caf4c5f292dc4241f89"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interactive-storytelling",
+        "label": "Interactive Storytelling"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:04fa85370a2cbff9176a5ed15ce27d68b6a06e0909480caf4c5f292dc4241f89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:interactive-storytelling",
-      "vc:label": "Interactive Storytelling"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

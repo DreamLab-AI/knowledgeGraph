@@ -3,32 +3,36 @@
   "title": "Shared Knowledge Base",
   "slug": "shared-knowledge-base",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:shared-knowledge-base",
+  "classIri": "urn:ngm:class:shared-knowledge-base",
   "domain": "spatial-computing",
   "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-management-system",
+      "id": "urn:ngm:class:knowledge-management-system",
       "label": "Knowledge Management System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-knowledge-discovery",
+        "id": "urn:ngm:class:collaborative-knowledge-discovery",
         "label": "Collaborative Knowledge Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

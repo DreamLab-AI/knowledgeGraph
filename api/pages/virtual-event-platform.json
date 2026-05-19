@@ -3,19 +3,18 @@
   "title": "Virtual Event Platform",
   "slug": "virtual-event-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-event-platform",
+  "classIri": "urn:ngm:class:virtual-event-platform",
   "domain": "spatial-computing",
   "definition": "Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

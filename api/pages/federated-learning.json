@@ -3,19 +3,18 @@
   "title": "Federated Learning",
   "slug": "federated-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:federated-learning",
+  "classIri": "urn:ngm:class:federated-learning",
   "domain": "infrastructure",
-  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information. Model updates are aggregated from local computations whilst raw data remains on-device, preserving [[PrivacyPreservingML]] and enabling [[CollaborativeLearning]] across organizations. Bridges [[DistributedLearning]] with [[SecureAggregation]] mechanisms and [[BlockchainNetwork]] coordination.",
+  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-computing",
+      "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

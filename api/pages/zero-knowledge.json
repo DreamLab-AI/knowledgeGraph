@@ -3,19 +3,18 @@
   "title": "Zero Knowledge",
   "slug": "zero-knowledge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:zero-knowledge",
+  "classIri": "urn:ngm:class:zero-knowledge",
   "domain": "spatial-computing",
-  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactive proofs]]. [[ZKProofSystems|ZK proof systems]] like [[zkSNARK|zk-SNARKs]] and [[zkSTARK|zk-STARKs]] enable privacy-preserving authentication, [[PrivacyCoin|confidential transactions]], and [[ZKRollup|zkRollups]] that compress on-chain computation whilst maintaining verifiable correctness, critical for balancing transparency requirements against user privacy. Practical applications span [[BlockchainScalability|blockchain scalability]], [[VerifiableComputation|verifiable computation]], and [[SelectiveDisclosure|selective disclosure]] systems enabling users to prove attributes (age, creditworthiness, citizenship) without revealing underlying personal data.",
+  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactiv...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
+      "id": "urn:ngm:class:privacy-enhancing-computation-pec",
       "label": "Privacy-Enhancing Computation (PEC)"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

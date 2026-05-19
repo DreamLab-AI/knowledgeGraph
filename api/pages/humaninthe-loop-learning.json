@@ -3,19 +3,13 @@
   "title": "Humaninthe Loop Learning",
   "slug": "humaninthe-loop-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:humaninthe-loop-learning",
+  "classIri": "urn:ngm:class:humaninthe-loop-learning",
   "domain": "artificial-intelligence",
   "definition": "A concept in artificial intelligence related to Humaninthe Loop Learning.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

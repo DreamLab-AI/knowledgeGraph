@@ -3,37 +3,41 @@
   "title": "Robotics-Telepresence Bridge",
   "slug": "robotics-telepresence-bridge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotics-telepresence-bridge",
+  "classIri": "urn:ngm:class:robotics-telepresence-bridge",
   "domain": "distributed-collaboration",
-  "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social presence and immersive interfaces to enable embodied remote interaction with physical environments.\"",
+  "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
+        "id": "urn:ngm:class:tele-203-haptic-feedback-telepresence",
         "label": "TELE-203-haptic-feedback-telepresence"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hazardous-environment-access",
+        "id": "urn:ngm:class:hazardous-environment-access",
         "label": "HazardousEnvironmentAccess"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

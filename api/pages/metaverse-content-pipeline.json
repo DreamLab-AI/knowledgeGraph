@@ -3,110 +3,123 @@
   "title": "Metaverse Content Pipeline",
   "slug": "metaverse-content-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-content-pipeline",
+  "classIri": "urn:ngm:class:metaverse-content-pipeline",
   "domain": "spatial-computing",
   "definition": "End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:content-production-workflow",
+      "id": "urn:ngm:class:content-production-workflow",
       "label": "Content Production Workflow"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-creation",
+        "id": "urn:ngm:class:asset-creation",
         "label": "Asset Creation"
       },
       {
-        "id": "urn:visionflow:linked:asset-optimization",
+        "id": "urn:ngm:class:asset-optimization",
         "label": "Asset Optimization"
       },
       {
-        "id": "urn:visionflow:linked:cdn-distribution",
+        "id": "urn:ngm:class:cdn-distribution",
         "label": "CDN Distribution"
       },
       {
-        "id": "urn:visionflow:linked:content-storage",
+        "id": "urn:ngm:class:content-storage",
         "label": "Content Storage"
       },
       {
-        "id": "urn:visionflow:linked:lod-generation",
+        "id": "urn:ngm:class:lod-generation",
         "label": "LOD Generation"
       },
       {
-        "id": "urn:visionflow:linked:runtime-loading",
+        "id": "urn:ngm:class:runtime-loading",
         "label": "Runtime Loading"
       },
       {
-        "id": "urn:visionflow:linked:texture-baking",
+        "id": "urn:ngm:class:texture-baking",
         "label": "Texture Baking"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
       {
-        "id": "urn:visionflow:owl:class:render-pipeline",
+        "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-authoring-tools",
+        "id": "urn:ngm:class:3-d-authoring-tools",
         "label": "3D Authoring Tools"
       },
       {
-        "id": "urn:visionflow:linked:asset-compression",
+        "id": "urn:ngm:class:asset-compression",
         "label": "Asset Compression"
       },
       {
-        "id": "urn:visionflow:linked:asset-management-system",
+        "id": "urn:ngm:class:asset-management-system",
         "label": "Asset Management System"
       },
       {
-        "id": "urn:visionflow:linked:content-delivery-network",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
-        "id": "urn:visionflow:linked:format-conversion",
+        "id": "urn:ngm:class:format-conversion",
         "label": "Format Conversion"
       },
       {
-        "id": "urn:visionflow:linked:real-time-rendering-engine",
+        "id": "urn:ngm:class:real-time-rendering-engine",
         "label": "Real-Time Rendering Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-interoperability",
+        "id": "urn:ngm:class:content-interoperability",
         "label": "Content Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-content",
+        "id": "urn:ngm:class:cross-platform-content",
         "label": "Cross-Platform Content"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-asset-loading",
+        "id": "urn:ngm:class:dynamic-asset-loading",
         "label": "Dynamic Asset Loading"
       },
       {
-        "id": "urn:visionflow:linked:user-generated-content",
+        "id": "urn:ngm:class:user-generated-content",
         "label": "User-Generated Content"
       },
       {
-        "id": "urn:visionflow:owl:class:procedural-generation",
+        "id": "urn:ngm:class:procedural-generation",
         "label": "Procedural Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "XR Testing Infrastructure",
   "slug": "xr-testing-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-testing-infrastructure",
+  "classIri": "urn:ngm:class:xr-testing-infrastructure",
   "domain": "infrastructure",
-  "definition": "The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
+  "definition": "The hardware, software, and modological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:testing-infrastructure",
+      "id": "urn:ngm:class:testing-infrastructure",
       "label": "Testing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

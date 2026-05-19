@@ -3,143 +3,255 @@
   "title": "Emergence",
   "slug": "emergence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:emergence",
+  "classIri": "urn:ngm:class:emergence",
   "domain": "infrastructure",
-  "definition": "**Emergence** is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level features are neither directly designed into the components, nor straightforwardly predictable from the component rules in isolation, nor easily reducible to a mere aggregation or summation of micro-level facts\u2014a notion whose modern philosophical articulation was crystallised by George Henry Lewes coining the term \"emergent\" in *Problems of Life and Mind* (Vol. 2, 1875) to distinguish causally non-additive resultants from additive ones (building on John Stuart Mill's earlier separation of heteropathic from homopathic laws in *A System of Logic*, 1843), elaborated by C. Lloyd Morgan in the Gifford Lectures published as *Emergent Evolution* (1923), reignited in physics by Philip W. Anderson's manifesto *More is Different* (*Science* 177:393-396, August 1972) arguing that broken symmetry and renormalisation-group flow at each scale produce genuinely autonomous laws (superconductivity, magne",
+  "definition": "Emergence is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:collective-behaviour",
+      "id": "urn:ngm:class:collective-behaviour",
       "label": "Collective Behaviour"
     },
     {
-      "id": "urn:visionflow:linked:complex-systems-concept",
+      "id": "urn:ngm:class:complex-systems-concept",
       "label": "Complex Systems Concept"
-    },
-    {
-      "id": "urn:visionflow:linked:cross-scale-phenomenon",
-      "label": "Cross-Scale Phenomenon"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cross-scale-mapping",
+        "id": "urn:ngm:class:cross-scale-mapping",
         "label": "Cross-Scale Mapping"
       },
       {
-        "id": "urn:visionflow:linked:local-interaction-rules",
+        "id": "urn:ngm:class:local-interaction-rules",
         "label": "Local Interaction Rules"
       },
       {
-        "id": "urn:visionflow:linked:lower-level-components",
+        "id": "urn:ngm:class:lower-level-components",
         "label": "Lower-Level Components"
       },
       {
-        "id": "urn:visionflow:linked:macro-level-pattern",
+        "id": "urn:ngm:class:macro-level-pattern",
         "label": "Macro-Level Pattern"
       },
       {
-        "id": "urn:visionflow:linked:order-parameter",
+        "id": "urn:ngm:class:order-parameter",
         "label": "Order Parameter"
       },
       {
-        "id": "urn:visionflow:linked:symmetry-breaking",
+        "id": "urn:ngm:class:symmetry-breaking",
         "label": "Symmetry Breaking"
       },
       {
-        "id": "urn:visionflow:owl:class:feedback-loop",
+        "id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:critical-threshold",
+        "id": "urn:ngm:class:critical-threshold",
         "label": "Critical Threshold"
       },
       {
-        "id": "urn:visionflow:linked:energy-or-information-flow",
+        "id": "urn:ngm:class:energy-or-information-flow",
         "label": "Energy or Information Flow"
       },
       {
-        "id": "urn:visionflow:linked:local-coupling",
+        "id": "urn:ngm:class:local-coupling",
         "label": "Local Coupling"
       },
       {
-        "id": "urn:visionflow:linked:many-body-system",
+        "id": "urn:ngm:class:many-body-system",
         "label": "Many-Body System"
       },
       {
-        "id": "urn:visionflow:linked:non-linear-interaction",
+        "id": "urn:ngm:class:non-linear-interaction",
         "label": "Non-Linear Interaction"
       },
       {
-        "id": "urn:visionflow:linked:sufficient-composition",
+        "id": "urn:ngm:class:sufficient-composition",
         "label": "Sufficient Composition"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-behaviour",
+        "id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Behaviour"
       },
       {
-        "id": "urn:visionflow:linked:collective-intelligence",
+        "id": "urn:ngm:class:collective-intelligence",
         "label": "Collective Intelligence"
       },
       {
-        "id": "urn:visionflow:linked:computational-universality",
+        "id": "urn:ngm:class:computational-universality",
         "label": "Computational Universality"
       },
       {
-        "id": "urn:visionflow:linked:pattern-formation",
+        "id": "urn:ngm:class:pattern-formation",
         "label": "Pattern Formation"
       },
       {
-        "id": "urn:visionflow:linked:phase-transition",
+        "id": "urn:ngm:class:phase-transition",
         "label": "Phase Transition"
       },
       {
-        "id": "urn:visionflow:linked:self-organisation",
+        "id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       },
       {
-        "id": "urn:visionflow:linked:universality",
+        "id": "urn:ngm:class:universality",
         "label": "Universality"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:mean-field-approximation",
+        "id": "urn:ngm:class:mean-field-approximation",
         "label": "Mean-Field Approximation"
       },
       {
-        "id": "urn:visionflow:linked:preferential-attachment",
+        "id": "urn:ngm:class:preferential-attachment",
         "label": "Preferential Attachment"
       },
       {
-        "id": "urn:visionflow:linked:renormalisation-group-flow",
+        "id": "urn:ngm:class:renormalisation-group-flow",
         "label": "Renormalisation Group Flow"
       },
       {
-        "id": "urn:visionflow:linked:self-organised-criticality",
+        "id": "urn:ngm:class:self-organised-criticality",
         "label": "Self-Organised Criticality"
       },
       {
-        "id": "urn:visionflow:linked:variational-free-energy-minimisation",
+        "id": "urn:ngm:class:variational-free-energy-minimisation",
         "label": "Variational Free-Energy Minimisation"
       },
       {
-        "id": "urn:visionflow:owl:class:stigmergy",
+        "id": "urn:ngm:class:stigmergy",
         "label": "Stigmergy"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:order-parameters",
+        "label": "Order Parameters"
+      },
+      {
+        "id": "urn:ngm:class:phase-diagrams",
+        "label": "Phase Diagrams"
+      },
+      {
+        "id": "urn:ngm:class:power-law-distributions",
+        "label": "Power-Law Distributions"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:ai-capability-forecasting",
+        "label": "AI Capability Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:consciousness-studies",
+        "label": "Consciousness Studies"
+      },
+      {
+        "id": "urn:ngm:class:epidemiology",
+        "label": "Epidemiology"
+      },
+      {
+        "id": "urn:ngm:class:multi-scale-simulation",
+        "label": "Multi-Scale Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:complex-systems-society",
+        "label": "Complex Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:imperial-centre-for-complexity-science",
+        "label": "Imperial Centre for Complexity Science"
+      },
+      {
+        "id": "urn:ngm:class:net-sci-conference-series",
+        "label": "NetSci Conference Series"
+      },
+      {
+        "id": "urn:ngm:class:royal-society-theo-murphy-meetings",
+        "label": "Royal Society Theo Murphy meetings"
+      },
+      {
+        "id": "urn:ngm:class:santa-fe-institute",
+        "label": "Santa Fe Institute"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      },
+      {
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "id": "urn:ngm:class:downward-causation",
+        "label": "Downward Causation"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:supervenience",
+        "label": "Supervenience"
+      },
+      {
+        "id": "urn:ngm:class:synergetics",
+        "label": "Synergetics"
+      },
+      {
+        "id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      }
+    ]
   },
   "wikilinks": [
     {

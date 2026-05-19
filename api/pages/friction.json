@@ -3,53 +3,66 @@
   "title": "Friction",
   "slug": "friction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:friction",
+  "classIri": "urn:ngm:class:friction",
   "domain": "robotics",
-  "definition": "**Friction** - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in robotic systems.",
+  "definition": "Friction - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in roboti...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:physics-modelling",
+      "id": "urn:ngm:class:physics-modelling",
       "label": "Physics Modelling"
     },
     {
-      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "id": "urn:ngm:class:robot-dynamics",
       "label": "Robot Dynamics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.54,
-  "authorityScore": 0.1,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:friction-coefficient-estimation",
+        "id": "urn:ngm:class:friction-coefficient-estimation",
         "label": "Friction Coefficient Estimation"
       },
       {
-        "id": "urn:visionflow:linked:lubrication-management",
+        "id": "urn:ngm:class:lubrication-management",
         "label": "Lubrication Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:energy-efficiency-calculation",
+        "id": "urn:ngm:class:energy-efficiency-calculation",
         "label": "Energy Efficiency Calculation"
       },
       {
-        "id": "urn:visionflow:linked:wear-prediction",
+        "id": "urn:ngm:class:wear-prediction",
         "label": "Wear Prediction"
       },
       {
-        "id": "urn:visionflow:owl:class:model-based-control",
+        "id": "urn:ngm:class:model-based-control",
         "label": "Model-based Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:energy-dissipation",
+        "label": "Energy Dissipation"
+      },
+      {
+        "id": "urn:ngm:class:joint-mechanics",
+        "label": "Joint Mechanics"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

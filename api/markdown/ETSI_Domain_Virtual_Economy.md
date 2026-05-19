@@ -300,41 +300,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-virtual-economy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-virtual-economy",
+  "@type": "Class",
   "label": "ETSI_Domain_Virtual_Economy",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1706cba0f698ab95f60e9628454030a6803768a04dc93bed1ed3c23a3e262e4b"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1706cba0f698ab95f60e9628454030a6803768a04dc93bed1ed3c23a3e262e4b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets]] including [[DigitalGoods]], [[NFT|NFTs]], and [[VirtualAsset|virtual assets]]. Virtual economy infrastructure coordinates [[DecentralizedExchange|decentralised exchanges]], [[CreatorEconomy|creator economy]] mechanisms enabling direct creator-audience relationships, [[CreatorRoyaltyToken|creator royalty tokens]] automating compensation, and emerging [[CarbonCreditToken|carbon credit tokenisation]] for environmental accounting. Standards development addresses [[VirtualEconomy|virtual economy]] integration with traditional finance, regulatory compliance for tokenised assets, taxation frameworks for cross-border virtual transactions, and mechanisms ensuring sustainable economic value creation within persistent virtual worlds.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

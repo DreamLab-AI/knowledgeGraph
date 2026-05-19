@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Human_Interface",
   "slug": "etsi-domain-human-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-human-interface",
+  "classIri": "urn:ngm:class:etsi-domain-human-interface",
   "domain": "spatial-computing",
-  "definition": "An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]]. This domain encompasses [[UserExperience]], [[AccessibilityStandards]], [[InteractionDesign]], and [[InclusiveDesign]] to ensure metaverse platforms prioritise usable, accessible experiences for diverse user populations.",
+  "definition": "An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

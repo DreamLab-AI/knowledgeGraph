@@ -3,19 +3,13 @@
   "title": "AI Development Tools",
   "slug": "ai-development-tools",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-development-tools",
+  "classIri": "urn:ngm:class:ai-development-tools",
   "domain": "artificial-intelligence",
-  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems. These tools include deep learning frameworks (TensorFlow, PyTorch, JAX), AutoML platforms, model optimization toolkits, MLOps infrastructure, and specialized IDEs with AI-assisted coding capabilities. Modern AI development tools emphasize reproducibility, scalability, and accessibility, enabling both researchers and practitioners to build sophisticated AI applications efficiently.",
-  "subClassOf": [
-    {
-      "id": "owl:Thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

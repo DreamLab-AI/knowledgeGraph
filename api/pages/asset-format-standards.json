@@ -3,53 +3,57 @@
   "title": "Asset Format Standards",
   "slug": "asset-format-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asset-format-standards",
+  "classIri": "urn:ngm:class:asset-format-standards",
   "domain": "spatial-computing",
-  "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like glTF, USD, and FBX.",
+  "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:conversion-tools",
+        "id": "urn:ngm:class:conversion-tools",
         "label": "Conversion Tools"
       },
       {
-        "id": "urn:visionflow:linked:format-compliance",
+        "id": "urn:ngm:class:format-compliance",
         "label": "Format Compliance"
       },
       {
-        "id": "urn:visionflow:linked:validation-systems",
+        "id": "urn:ngm:class:validation-systems",
         "label": "Validation Systems"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-portability",
+        "id": "urn:ngm:class:content-portability",
         "label": "Content Portability"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-assets",
+        "id": "urn:ngm:class:cross-platform-assets",
         "label": "Cross-Platform Assets"
       },
       {
-        "id": "urn:visionflow:linked:tool-interoperability",
+        "id": "urn:ngm:class:tool-interoperability",
         "label": "Tool Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

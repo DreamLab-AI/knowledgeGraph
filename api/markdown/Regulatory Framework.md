@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:regulatory-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:regulatory-framework",
+  "@type": "Class",
   "label": "Regulatory Framework",
+  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
+      "@id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:39ac5cb7d080793b0655477a4d7aa53ab38557a55a01d96bceb20500851a7dd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A regulatory framework for blockchain and cryptoassets comprises the laws, regulations, guidelines, and supervisory structures established by governmental authorities to govern the issuance, trading, and custody of digital assets. These frameworks address consumer protection, market integrity, anti-money laundering (AML) compliance, and financial stability whilst balancing innovation enablement with risk mitigation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:market-integrity",
-      "vc:label": "Market Integrity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

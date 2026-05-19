@@ -3,19 +3,13 @@
   "title": "Mistral",
   "slug": "mistral",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mistral",
+  "classIri": "urn:ngm:individual:mistral",
   "domain": "artificial-intelligence",
   "definition": "A 7.3B parameter language model that uses grouped-query attention and sliding window attention to achieve strong performance with efficient inference, outperforming larger models on various benchmarks.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

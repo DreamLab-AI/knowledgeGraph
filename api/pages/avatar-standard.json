@@ -3,53 +3,57 @@
   "title": "Avatar Standard",
   "slug": "avatar-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar-standard",
+  "classIri": "urn:ngm:class:avatar-standard",
   "domain": "spatial-computing",
   "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:format-compliance",
+        "id": "urn:ngm:class:format-compliance",
         "label": "Format Compliance"
       },
       {
-        "id": "urn:visionflow:linked:metadata-specification",
+        "id": "urn:ngm:class:metadata-specification",
         "label": "Metadata Specification"
       },
       {
-        "id": "urn:visionflow:linked:skeleton-configuration",
+        "id": "urn:ngm:class:skeleton-configuration",
         "label": "Skeleton Configuration"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:platform-independent-identities",
+        "id": "urn:ngm:class:platform-independent-identities",
         "label": "Platform-Independent Identities"
       },
       {
-        "id": "urn:visionflow:linked:standardized-rigging",
+        "id": "urn:ngm:class:standardized-rigging",
         "label": "Standardized Rigging"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-interoperability",
+        "id": "urn:ngm:class:avatar-interoperability",
         "label": "Avatar Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -160,86 +160,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:friction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:friction",
+  "@type": "Class",
   "label": "Friction",
+  "definition": "Friction - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in roboti...",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:physics-modelling",
-      "vc:label": "Physics Modelling"
+      "@id": "urn:ngm:class:physics-modelling",
+      "label": "Physics Modelling"
     },
     {
-      "@id": "urn:visionflow:owl:class:robot-dynamics",
-      "vc:label": "Robot Dynamics"
+      "@id": "urn:ngm:class:robot-dynamics",
+      "label": "Robot Dynamics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:friction-coefficient-estimation",
+        "label": "Friction Coefficient Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:lubrication-management",
+        "label": "Lubrication Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:energy-efficiency-calculation",
+        "label": "Energy Efficiency Calculation"
+      },
+      {
+        "@id": "urn:ngm:class:wear-prediction",
+        "label": "Wear Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:model-based-control",
+        "label": "Model-based Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:energy-dissipation",
+        "label": "Energy Dissipation"
+      },
+      {
+        "@id": "urn:ngm:class:joint-mechanics",
+        "label": "Joint Mechanics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:234c35d21e74b3b5d07084286216838b4f5e03e035fd2eaa8c1e60cad003511c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Friction** - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in robotic systems.",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.10",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:energy-dissipation",
-      "vc:label": "Energy Dissipation"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-mechanics",
-      "vc:label": "Joint Mechanics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:friction-coefficient-estimation",
-      "vc:label": "Friction Coefficient Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:lubrication-management",
-      "vc:label": "Lubrication Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:energy-efficiency-calculation",
-      "vc:label": "Energy Efficiency Calculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wear-prediction",
-      "vc:label": "Wear Prediction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-based-control",
-      "vc:label": "Model-based Control"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

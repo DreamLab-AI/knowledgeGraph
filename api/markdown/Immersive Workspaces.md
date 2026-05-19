@@ -120,41 +120,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-workspaces",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-workspaces",
+  "@type": "Class",
   "label": "Immersive Workspaces",
+  "definition": "Immersive Workspaces is a type of Metaverse and Telecollaboration in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
-      "vc:label": "Metaverse and Telecollaboration"
+      "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9e1a07e32f3fece8e6b64b5de0e702c8d9f6aaafa2554d29a0cf40d76f66d6da"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9e1a07e32f3fece8e6b64b5de0e702c8d9f6aaafa2554d29a0cf40d76f66d6da@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[Generated from Gartner emerging tech analysis]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

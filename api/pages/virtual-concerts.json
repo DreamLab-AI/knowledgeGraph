@@ -3,19 +3,18 @@
   "title": "Virtual Concerts",
   "slug": "virtual-concerts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-concerts",
+  "classIri": "urn:ngm:class:virtual-concerts",
   "domain": "spatial-computing",
   "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-event",
+      "id": "urn:ngm:class:virtual-event",
       "label": "Virtual Event"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

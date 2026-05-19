@@ -3,57 +3,61 @@
   "title": "3D Modeling",
   "slug": "3-d-modeling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-modeling",
+  "classIri": "urn:ngm:class:3-d-modeling",
   "domain": "spatial-computing",
-  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools. It encompasses organic modelling (characters, creatures), hard-surface modelling (architecture, vehicles), texture development, and material definition, producing [[3D Model]]s suitable for animation, rendering, and real-time applications in games and immersive environments.",
+  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-art",
+      "id": "urn:ngm:class:digital-art",
       "label": "Digital Art"
     },
     {
-      "id": "urn:visionflow:owl:class:3-d-development",
+      "id": "urn:ngm:class:3-d-development",
       "label": "3D Development"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:anatomical-knowledge",
+        "id": "urn:ngm:class:anatomical-knowledge",
         "label": "Anatomical Knowledge"
       },
       {
-        "id": "urn:visionflow:linked:material-understanding",
+        "id": "urn:ngm:class:material-understanding",
         "label": "Material Understanding"
       },
       {
-        "id": "urn:visionflow:linked:modelling-software",
+        "id": "urn:ngm:class:modelling-software",
         "label": "Modelling Software"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-creation",
+        "id": "urn:ngm:class:asset-creation",
         "label": "Asset Creation"
       },
       {
-        "id": "urn:visionflow:linked:character-animation",
+        "id": "urn:ngm:class:character-animation",
         "label": "Character Animation"
       },
       {
-        "id": "urn:visionflow:linked:virtual-environment-design",
+        "id": "urn:ngm:class:virtual-environment-design",
         "label": "Virtual Environment Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

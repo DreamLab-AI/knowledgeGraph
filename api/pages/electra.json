@@ -3,19 +3,18 @@
   "title": "ELECTRA",
   "slug": "electra",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:electra",
+  "classIri": "urn:ngm:class:electra",
   "domain": "spatial-computing",
   "definition": "Efficiently Learning an Encoder that Classifies Token Replacements Accurately: a pre-training approach that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, improving sample efficiency.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

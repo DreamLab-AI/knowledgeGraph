@@ -3,36 +3,45 @@
   "title": "ETSI Domain AI + Human Interface",
   "slug": "etsi-domain-ai-human-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
+  "classIri": "urn:ngm:class:etsi-domain-ai-human-interface",
   "domain": "artificial-intelligence",
   "definition": "Cross-domain marker for metaverse components combining artificial intelligence with human interaction systems including conversational AI, gesture recognition, emotion detection, and intelligent user experience adaptation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:conversational-ai-classification",
+        "id": "urn:ngm:class:conversational-ai-classification",
         "label": "Conversational AI Classification"
       },
       {
-        "id": "urn:visionflow:linked:intelligent-ux-categorization",
+        "id": "urn:ngm:class:intelligent-ux-categorization",
         "label": "Intelligent UX Categorization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

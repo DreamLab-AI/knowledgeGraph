@@ -3,163 +3,271 @@
   "title": "Proprietary Image Generation",
   "slug": "proprietary-image-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proprietary-image-generation",
+  "classIri": "urn:ngm:class:proprietary-image-generation",
   "domain": "artificial-intelligence",
-  "definition": "Proprietary Image Generation refers to the class of closed-source, commercially operated text-to-image and multimodal-to-image generative AI systems whose model weights, training data, and inference pipelines are withheld from public release, typically delivered as API endpoints or subscription interfaces, encompassing the dominant frontier platforms as of 2024-2026: Midjourney V6/V6.1/V7 alpha (Midjourney Inc., San Francisco, 2022-2026) operating via Discord and a dedicated web interface with approximately 20 million registered users and $200M ARR, utilising proprietary diffusion-transformer hybrid architectures that achieve photorealistic coherence, character consistency via character reference tokens, style locking via sref seeds, and pan/zoom outpainting; DALL-E 3 (OpenAI, September 2023) powered by a large-scale latent diffusion backbone with a T5-derived text encoder, distinguished by instruction-following fidelity exceeding DALL-E 2 by 40+ points on DrawBench and natively integrated into ChatGPT Plus/Team/Enterprise, DALL-E 3 generating approximately 2 billion images/month via ChatGPT as of Q1 2025; GPT-4o native image generation (OpenAI, March 2025) representing a paradigm ",
+  "definition": "Proprietary Image Generation refers to the class of closed-source, commercially operated text-to-image and multimodal-to-image generative AI systems whose model weights, training data, and inference pipelines are withheld from public release, typically delivered as API endpoints or subscription i...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:commercial-ai-systems",
+      "id": "urn:ngm:class:commercial-ai-systems",
       "label": "Commercial AI Systems"
     },
     {
-      "id": "urn:visionflow:linked:text-to-image-generation",
+      "id": "urn:ngm:class:text-to-image-generation",
       "label": "Text-to-Image Generation"
-    },
-    {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:adobe-firefly",
+        "id": "urn:ngm:class:adobe-firefly",
         "label": "Adobe Firefly"
       },
       {
-        "id": "urn:visionflow:linked:dall-e-3",
+        "id": "urn:ngm:class:dall-e-3",
         "label": "DALL-E 3"
       },
       {
-        "id": "urn:visionflow:linked:gpt-4o",
+        "id": "urn:ngm:class:gpt-4o",
         "label": "GPT-4o"
       },
       {
-        "id": "urn:visionflow:linked:ideogram",
+        "id": "urn:ngm:class:ideogram",
         "label": "Ideogram"
       },
       {
-        "id": "urn:visionflow:linked:imagen-3",
+        "id": "urn:ngm:class:imagen-3",
         "label": "Imagen 3"
       },
       {
-        "id": "urn:visionflow:linked:krea-ai",
+        "id": "urn:ngm:class:krea-ai",
         "label": "Krea AI"
       },
       {
-        "id": "urn:visionflow:linked:recraft-v3",
+        "id": "urn:ngm:class:recraft-v3",
         "label": "Recraft V3"
       },
       {
-        "id": "urn:visionflow:linked:safety-filter",
+        "id": "urn:ngm:class:safety-filter",
         "label": "Safety Filter"
       },
       {
-        "id": "urn:visionflow:linked:style-reference-system",
+        "id": "urn:ngm:class:style-reference-system",
         "label": "Style Reference System"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:midjourney",
+        "id": "urn:ngm:class:midjourney",
         "label": "Midjourney"
       },
       {
-        "id": "urn:visionflow:owl:class:prompt-engineering",
+        "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:human-feedback-pipeline",
+        "id": "urn:ngm:class:human-feedback-pipeline",
         "label": "Human Feedback Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:large-scale-compute",
+        "id": "urn:ngm:class:large-scale-compute",
         "label": "Large Scale Compute"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion-architecture",
+        "id": "urn:ngm:class:latent-diffusion-architecture",
         "label": "Latent Diffusion Architecture"
       },
       {
-        "id": "urn:visionflow:linked:proprietary-training-dataset",
+        "id": "urn:ngm:class:proprietary-training-dataset",
         "label": "Proprietary Training Dataset"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:owl:class:content-moderation",
+        "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:brand-asset-generation",
+        "id": "urn:ngm:class:brand-asset-generation",
         "label": "Brand Asset Generation"
       },
       {
-        "id": "urn:visionflow:linked:concept-art",
+        "id": "urn:ngm:class:concept-art",
         "label": "Concept Art"
       },
       {
-        "id": "urn:visionflow:linked:creative-content-generation",
+        "id": "urn:ngm:class:creative-content-generation",
         "label": "Creative Content Generation"
       },
       {
-        "id": "urn:visionflow:linked:marketing-asset-production",
+        "id": "urn:ngm:class:marketing-asset-production",
         "label": "Marketing Asset Production"
       },
       {
-        "id": "urn:visionflow:linked:multimodal-editing",
+        "id": "urn:ngm:class:multimodal-editing",
         "label": "Multimodal Editing"
       },
       {
-        "id": "urn:visionflow:linked:photorealistic-synthesis",
+        "id": "urn:ngm:class:photorealistic-synthesis",
         "label": "Photorealistic Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:typography-in-images",
+        "id": "urn:ngm:class:typography-in-images",
         "label": "Typography in Images"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:autoregressive-image-decoding",
+        "id": "urn:ngm:class:autoregressive-image-decoding",
         "label": "Autoregressive Image Decoding"
       },
       {
-        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "id": "urn:ngm:class:classifier-free-guidance",
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:visionflow:linked:clip-text-conditioning",
+        "id": "urn:ngm:class:clip-text-conditioning",
         "label": "CLIP Text Conditioning"
       },
       {
-        "id": "urn:visionflow:linked:control-net",
+        "id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {
-        "id": "urn:visionflow:linked:rectified-flow",
+        "id": "urn:ngm:class:rectified-flow",
         "label": "Rectified Flow"
       },
       {
-        "id": "urn:visionflow:linked:synth-id-watermarking",
+        "id": "urn:ngm:class:synth-id-watermarking",
         "label": "SynthID Watermarking"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adobe-creative-cloud",
+        "label": "Adobe Creative Cloud"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt-integration",
+        "label": "ChatGPT Integration"
+      },
+      {
+        "id": "urn:ngm:class:discord-api",
+        "label": "Discord API"
+      },
+      {
+        "id": "urn:ngm:class:gemini-api",
+        "label": "Gemini API"
+      },
+      {
+        "id": "urn:ngm:class:photoshop-integration",
+        "label": "Photoshop Integration"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:web-interface",
+        "label": "Web Interface"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:advertising-production",
+        "label": "Advertising Production"
+      },
+      {
+        "id": "urn:ngm:class:educational-content",
+        "label": "Educational Content"
+      },
+      {
+        "id": "urn:ngm:class:fashion-design",
+        "label": "Fashion Design"
+      },
+      {
+        "id": "urn:ngm:class:film-pre-production",
+        "label": "Film Pre-Production"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "id": "urn:ngm:class:medical-illustration",
+        "label": "Medical Illustration"
+      },
+      {
+        "id": "urn:ngm:class:social-media-content",
+        "label": "Social Media Content"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:adobe-content-authenticity-initiative",
+        "label": "Adobe Content Authenticity Initiative"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-content-provenance-standards",
+        "label": "C2PA Content Provenance Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC1 SC42"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ]
   },
   "wikilinks": [
     {

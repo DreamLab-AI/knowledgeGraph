@@ -3,53 +3,57 @@
   "title": "Compliance Dashboard",
   "slug": "compliance-dashboard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compliance-dashboard",
+  "classIri": "urn:ngm:class:compliance-dashboard",
   "domain": "artificial-intelligence",
-  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.",
+  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compli...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:regulatory-technology",
+      "id": "urn:ngm:class:regulatory-technology",
       "label": "Regulatory Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:analytics-engine",
+        "id": "urn:ngm:class:analytics-engine",
         "label": "Analytics Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:data-integration",
+        "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:real-time-monitoring",
+        "id": "urn:ngm:class:real-time-monitoring",
         "label": "Real-Time Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:risk-visualization",
+        "id": "urn:ngm:class:risk-visualization",
         "label": "Risk Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

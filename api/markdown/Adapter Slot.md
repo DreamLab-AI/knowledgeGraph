@@ -244,124 +244,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:adapter-slot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adapter-slot",
+  "@type": "Class",
   "label": "Adapter Slot",
+  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Ev...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bead-adapter",
+        "label": "Bead Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:event-adapter",
+        "label": "Event Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:memory-adapter",
+        "label": "Memory Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:orchestrator-adapter",
+        "label": "Orchestrator Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:pod-adapter",
+        "label": "Pod Adapter"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interface-specification",
+        "label": "Interface Specification"
+      },
+      {
+        "@id": "urn:ngm:class:manifest-declaration",
+        "label": "Manifest Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-initialization",
+        "label": "Runtime Initialization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deployment-flexibility",
+        "label": "Deployment Flexibility"
+      },
+      {
+        "@id": "urn:ngm:class:pluggable-memory",
+        "label": "Pluggable Memory"
+      },
+      {
+        "@id": "urn:ngm:class:pluggable-storage",
+        "label": "Pluggable Storage"
+      },
+      {
+        "@id": "urn:ngm:class:pluggable-telemetry",
+        "label": "Pluggable Telemetry"
+      },
+      {
+        "@id": "urn:ngm:class:pluggable-work-distribution",
+        "label": "Pluggable Work Distribution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:adapter-pattern",
+        "label": "Adapter Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:dependency-injection",
+        "label": "Dependency Injection"
+      },
+      {
+        "@id": "urn:ngm:class:strategy-pattern",
+        "label": "Strategy Pattern"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0636c55ad35778262f590bac16b8467643c8c3510731d91cfde2d8bcf4b2a4a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.",
-  "vc:qualityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bead-adapter",
-      "vc:label": "Bead Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-adapter",
-      "vc:label": "Event Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-adapter",
-      "vc:label": "Memory Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:orchestrator-adapter",
-      "vc:label": "Orchestrator Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:pod-adapter",
-      "vc:label": "Pod Adapter"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:interface-specification",
-      "vc:label": "Interface Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:manifest-declaration",
-      "vc:label": "Manifest Declaration"
-    },
-    {
-      "@id": "urn:visionflow:linked:runtime-initialization",
-      "vc:label": "Runtime Initialization"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:deployment-flexibility",
-      "vc:label": "Deployment Flexibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:pluggable-memory",
-      "vc:label": "Pluggable Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:pluggable-storage",
-      "vc:label": "Pluggable Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:pluggable-telemetry",
-      "vc:label": "Pluggable Telemetry"
-    },
-    {
-      "@id": "urn:visionflow:linked:pluggable-work-distribution",
-      "vc:label": "Pluggable Work Distribution"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:adapter-pattern",
-      "vc:label": "Adapter Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:dependency-injection",
-      "vc:label": "Dependency Injection"
-    },
-    {
-      "@id": "urn:visionflow:linked:strategy-pattern",
-      "vc:label": "Strategy Pattern"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:containerisation",
-      "vc:label": "Containerisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:microservices-architecture",
-      "vc:label": "Microservices Architecture"
-    }
-  ]
+  "quality": 0.89,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

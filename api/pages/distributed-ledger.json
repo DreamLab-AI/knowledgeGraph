@@ -3,151 +3,275 @@
   "title": "Distributed Ledger",
   "slug": "distributed-ledger",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-ledger",
+  "classIri": "urn:ngm:class:distributed-ledger",
   "domain": "blockchain",
-  "definition": "A **Distributed Ledger** (or **Distributed Ledger Technology**, **DLT**) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic [[Consensus Mechanism]] without recourse to a single central authority, encompassing the full superset of architectures from chain-of-blocks designs ([[Bitcoin]], [[Ethereum]] proof-of-work and proof-of-stake) through directed acyclic graph (DAG) topologies ([[IOTA]] Tangle, [[Hashgraph]] Hedera gossip-about-gossip, [[Avalanche]] subnets with metastable consensus), agent-centric replicated event chains ([[Holochain]] without global consensus), permissioned channel architectures ([[Hyperledger Fabric]] with per-channel ledgers and pluggable Kafka/Raft ordering), UTXO-style transaction-finality systems with selective broadcast ([[R3 Corda]] notary-mediated finality without global broadcast), and Ethereum Virtual Machine permissioned forks ([[Quorum]], Besu, Polygon Edge), formally defined by **ISO 22739:2024 *Blockchain and distributed ledger technologies \u2014 Vocabulary*** (the canonic",
+  "definition": "A Distributed Ledger (or Distributed Ledger Technology, DLT) is a cryptographically-secured, append-only data structure replicated across a set of independently-operated nodes that collectively reach agreement on the canonical sequence and validity of state transitions through a deterministic [[C...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:append-only-log",
+      "id": "urn:ngm:class:append-only-log",
       "label": "Append-Only Log"
     },
     {
-      "id": "urn:visionflow:linked:multi-party-database",
+      "id": "urn:ngm:class:multi-party-database",
       "label": "Multi-Party Database"
-    },
-    {
-      "id": "urn:visionflow:linked:replicated-state-machine",
-      "label": "Replicated State Machine"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:notary-service",
+        "id": "urn:ngm:class:notary-service",
         "label": "Notary Service"
       },
       {
-        "id": "urn:visionflow:linked:state-transition-function",
+        "id": "urn:ngm:class:state-transition-function",
         "label": "State Transition Function"
       },
       {
-        "id": "urn:visionflow:linked:validator-set",
+        "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:visionflow:owl:class:transaction-pool",
+        "id": "urn:ngm:class:transaction-pool",
         "label": "Transaction Pool"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-primitives",
+        "id": "urn:ngm:class:cryptographic-primitives",
         "label": "Cryptographic Primitives"
       },
       {
-        "id": "urn:visionflow:linked:node-software",
+        "id": "urn:ngm:class:node-software",
         "label": "Node Software"
       },
       {
-        "id": "urn:visionflow:linked:time-ordering",
+        "id": "urn:ngm:class:time-ordering",
         "label": "Time Ordering"
       },
       {
-        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signatures",
+        "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:visionflow:owl:class:network-layer",
+        "id": "urn:ngm:class:network-layer",
         "label": "Network Layer"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:atomic-settlement",
+        "id": "urn:ngm:class:atomic-settlement",
         "label": "Atomic Settlement"
       },
       {
-        "id": "urn:visionflow:linked:cbdc",
+        "id": "urn:ngm:class:cbdc",
         "label": "CBDC"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-payments",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
       },
       {
-        "id": "urn:visionflow:linked:immutable-record",
+        "id": "urn:ngm:class:immutable-record",
         "label": "Immutable Record"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:linked:real-time-gross-settlement",
+        "id": "urn:ngm:class:real-time-gross-settlement",
         "label": "Real-Time Gross Settlement"
       },
       {
-        "id": "urn:visionflow:linked:state-synchronisation",
+        "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronisation"
       },
       {
-        "id": "urn:visionflow:linked:transaction-history",
+        "id": "urn:ngm:class:transaction-history",
         "label": "Transaction History"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenisation",
+        "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:channel-isolation-pattern",
+        "id": "urn:ngm:class:channel-isolation-pattern",
         "label": "Channel Isolation Pattern"
       },
       {
-        "id": "urn:visionflow:linked:merkle-tree-structure",
+        "id": "urn:ngm:class:merkle-tree-structure",
         "label": "Merkle Tree Structure"
       },
       {
-        "id": "urn:visionflow:linked:notary-validation-pattern",
+        "id": "urn:ngm:class:notary-validation-pattern",
         "label": "Notary Validation Pattern"
       },
       {
-        "id": "urn:visionflow:linked:state-replication-protocol",
+        "id": "urn:ngm:class:state-replication-protocol",
         "label": "State Replication Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-commitment",
+        "id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitment"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-pointers",
+        "label": "Hash Pointers"
+      },
+      {
+        "id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:retail-cbdc",
+        "label": "Retail CBDC"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-deposits",
+        "label": "Tokenised Deposits"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real-World Assets"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-dlt-pilot-regime",
+        "label": "EU DLT Pilot Regime"
+      },
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418",
+        "label": "IEEE P2418"
+      },
+      {
+        "id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23244",
+        "label": "ISO TR 23244"
+      },
+      {
+        "id": "urn:ngm:class:iso-ts-23258",
+        "label": "ISO TS 23258"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdc",
+        "label": "CBDC"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
   },
   "wikilinks": [
     {

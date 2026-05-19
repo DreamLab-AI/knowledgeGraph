@@ -160,70 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-identity-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-identity-standards",
+  "@type": "Class",
   "label": "Digital Identity Standards",
+  "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentral...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a61ee2886ff9c6660185c5bab417d2be1d24b4311658eb6784800fad15ba5b5b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-specifications",
+        "label": "Protocol Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:standards-bodies",
+        "label": "Standards Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:identity-interoperability",
+        "label": "Identity Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:trust-frameworks",
+        "label": "Trust Frameworks"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a61ee2886ff9c6660185c5bab417d2be1d24b4311658eb6784800fad15ba5b5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentralized systems. bridges-to:: [[DID Nostr Identity]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conformance-testing",
-      "vc:label": "Conformance Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-specifications",
-      "vc:label": "Protocol Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:standards-bodies",
-      "vc:label": "Standards Bodies"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-exchange",
-      "vc:label": "Credential Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-interoperability",
-      "vc:label": "Identity Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-frameworks",
-      "vc:label": "Trust Frameworks"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

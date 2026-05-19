@@ -192,116 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:voice-interaction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:voice-interaction",
+  "@type": "Class",
   "label": "Voice Interaction",
+  "definition": "Communication mod enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
-      "vc:label": "Interaction Domain"
+      "@id": "urn:ngm:class:interaction-domain",
+      "label": "Interaction Domain"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6d51ef904b264b4bd2ca9467205370e8a72b122eb225a3cd4ea339ddfd58dec6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:voice-commands",
+        "label": "Voice Commands"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:microphone",
+        "label": "Microphone"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hands-free-control",
+        "label": "Hands-Free Control"
+      },
+      {
+        "@id": "urn:ngm:class:natural-communication",
+        "label": "Natural Communication"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6d51ef904b264b4bd2ca9467205370e8a72b122eb225a3cd4ea339ddfd58dec6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Communication method enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:multimodal-interaction",
-      "vc:label": "Multimodal Interaction"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:natural-language-understanding",
-      "vc:label": "Natural Language Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-commands",
-      "vc:label": "Voice Commands"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-processing",
-      "vc:label": "Audio Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-model",
-      "vc:label": "Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:microphone",
-      "vc:label": "Microphone"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-synthesis",
-      "vc:label": "Speech Synthesis"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hands-free-control",
-      "vc:label": "Hands-Free Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:natural-communication",
-      "vc:label": "Natural Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-assistant",
-      "vc:label": "Voice Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:acoustic-environment",
-      "vc:label": "Acoustic Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-support",
-      "vc:label": "Language Support"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-latency",
-      "vc:label": "Network Latency"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

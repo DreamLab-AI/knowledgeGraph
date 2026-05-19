@@ -120,56 +120,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transparency-oecd",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transparency-oecd",
+  "@type": "Class",
   "label": "Transparency (OECD)",
+  "definition": "AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:contestability",
+        "label": "contestability"
+      },
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "trust"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3dfe0e008b7138a04ec001f558962891adabb1b5ab4a72483c4b1ab6a573d992@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI actors should commit to transparency and responsible disclosure regarding AI systems, providing sufficient information to enable people to understand AI outcomes, challenge decisions and participate meaningfully in AI-influenced processes.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:contestability",
-      "vc:label": "contestability"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-decision-making",
-      "vc:label": "Informed decision-making"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust",
-      "vc:label": "trust"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

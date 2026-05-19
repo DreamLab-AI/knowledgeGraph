@@ -3,70 +3,79 @@
   "title": "Micropayment",
   "slug": "micropayment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:micropayment",
+  "classIri": "urn:ngm:class:micropayment",
   "domain": "blockchain",
   "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-wallet",
+      "id": "urn:ngm:class:digital-wallet",
       "label": "Digital Wallet"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:fee-calculation",
+        "id": "urn:ngm:class:fee-calculation",
         "label": "Fee Calculation"
       },
       {
-        "id": "urn:visionflow:linked:payment-protocol",
+        "id": "urn:ngm:class:payment-protocol",
         "label": "Payment Protocol"
       },
       {
-        "id": "urn:visionflow:linked:settlement-mechanism",
+        "id": "urn:ngm:class:settlement-mechanism",
         "label": "Settlement Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:transaction-validation",
+        "id": "urn:ngm:class:transaction-validation",
         "label": "Transaction Validation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-authentication",
+        "id": "urn:ngm:class:cryptographic-authentication",
         "label": "Cryptographic Authentication"
       },
       {
-        "id": "urn:visionflow:linked:payment-network",
+        "id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:instant-settlements",
+        "id": "urn:ngm:class:instant-settlements",
         "label": "Instant Settlements"
       },
       {
-        "id": "urn:visionflow:linked:microtransactions",
+        "id": "urn:ngm:class:microtransactions",
         "label": "Microtransactions"
       },
       {
-        "id": "urn:visionflow:linked:pay-per-use-models",
+        "id": "urn:ngm:class:pay-per-use-models",
         "label": "Pay-Per-Use Models"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

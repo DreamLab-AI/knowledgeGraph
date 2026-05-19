@@ -3,57 +3,70 @@
   "title": "Loyalty Token",
   "slug": "loyalty-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:loyalty-token",
+  "classIri": "urn:ngm:class:loyalty-token",
   "domain": "spatial-computing",
   "definition": "A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:loyalty-programs",
+      "id": "urn:ngm:class:loyalty-programs",
       "label": "Loyalty Programs"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:brand-engagement",
+        "id": "urn:ngm:class:brand-engagement",
         "label": "Brand Engagement"
       },
       {
-        "id": "urn:visionflow:linked:incentive-mechanism",
+        "id": "urn:ngm:class:incentive-mechanism",
         "label": "Incentive Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:membership-program",
+        "id": "urn:ngm:class:membership-program",
         "label": "Membership Program"
       },
       {
-        "id": "urn:visionflow:owl:class:customer-rewards",
+        "id": "urn:ngm:class:customer-rewards",
         "label": "Customer Rewards"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

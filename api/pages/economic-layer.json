@@ -3,19 +3,18 @@
   "title": "Economic Layer",
   "slug": "economic-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:economic-layer",
+  "classIri": "urn:ngm:class:economic-layer",
   "domain": "infrastructure",
-  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems. This layer encompasses concrete economic implementations including token emission schedules (Bitcoin's halving schedule, Ethereum's changing issuance policy), fee market implementations (EIP-1559's base fee adjustment mechanism, priority fee auctions), incentive mechanism implementations (mining reward distribution, staking yield calculations, validator reward formulas), penalty mechanisms (slashing implementations specifying exact penalty amounts and conditions), market mechanism implementations (automated market maker formulas, bonding curves, liquidity pool mechanics), resource pricing mechanisms (gas price mechanisms, storage rent, computation pricing), economic security implementations (cost-of-attack calculations, security budget allocations), and game-theoretic mechanism implementations (auction mechanisms, voting systems, coordination games). Unlike ConceptualLayer which addresses abstract economic principles and theorie",
+  "definition": "The EconomicLayer represents the abstraction level of implemented economic mechanisms, incentive structures, market designs, resource allocation systems, and game-theoretic implementations that govern economic behavior in blockchain and distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

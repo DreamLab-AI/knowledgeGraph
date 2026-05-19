@@ -3,86 +3,90 @@
   "title": "Robotics",
   "slug": "robotics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotics",
+  "classIri": "urn:ngm:class:robotics",
   "domain": "robotics",
-  "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems. Modern robotics integrates artificial intelligence, machine vision, advanced sensors, IoT connectivity, and digital twins to create adaptive, flexible, and increasingly autonomous systems capable of operating in unstructured environments alongside humans.",
+  "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:automation",
+      "id": "urn:ngm:class:automation",
       "label": "Automation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:robotic-arm",
+        "id": "urn:ngm:class:robotic-arm",
         "label": "Robotic Arm"
       },
       {
-        "id": "urn:visionflow:linked:sensor-system",
+        "id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-control",
+        "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:actuators",
+        "id": "urn:ngm:class:actuators",
         "label": "Actuators"
       },
       {
-        "id": "urn:visionflow:linked:control-systems",
+        "id": "urn:ngm:class:control-systems",
         "label": "Control Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:kinematics",
+        "id": "urn:ngm:class:kinematics",
         "label": "Kinematics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-manufacturing",
+        "id": "urn:ngm:class:autonomous-manufacturing",
         "label": "Autonomous Manufacturing"
       },
       {
-        "id": "urn:visionflow:linked:humanoid-robotics",
+        "id": "urn:ngm:class:humanoid-robotics",
         "label": "Humanoid Robotics"
       },
       {
-        "id": "urn:visionflow:linked:industrial-automation",
+        "id": "urn:ngm:class:industrial-automation",
         "label": "Industrial Automation"
       },
       {
-        "id": "urn:visionflow:linked:precision-engineering",
+        "id": "urn:ngm:class:precision-engineering",
         "label": "Precision Engineering"
       },
       {
-        "id": "urn:visionflow:linked:smart-manufacturing",
+        "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
       },
       {
-        "id": "urn:visionflow:linked:warehouse-automation",
+        "id": "urn:ngm:class:warehouse-automation",
         "label": "Warehouse Automation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

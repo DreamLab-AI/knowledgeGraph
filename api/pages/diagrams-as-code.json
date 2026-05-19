@@ -3,159 +3,283 @@
   "title": "Diagrams as Code",
   "slug": "diagrams-as-code",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:diagrams-as-code",
+  "classIri": "urn:ngm:class:diagrams-as-code",
   "domain": "infrastructure",
-  "definition": "Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar rather than drawn in a graphical [[WYSIWYG]] editor, are stored alongside application code in [[Version Control]] systems such as [[Git]] under the same review and CI workflows ([[Pull Request|pull-request]] diffs, blame history, branch protection, automated linting via [[Pre-commit Hooks]]), and are rendered to images (SVG, PNG, PDF) at build time, in the browser, or by a server (Kroki, Mermaid Live Editor, PlantUML server) so the rendered artefact is treated as a derived output rather than the source of truth; the canonical grammars include [[Mermaid]] (created by Knut Sveidqvist 2014 at Qlik Sweden, 70K+ GitHub stars January 2026, 12.5M weekly npm downloads, governed by the Mermaid Open-Source Project, native rendering in [[GitHub]] Markdown since February 2022 and [[GitLab]] Markdown 2020, also rendered natively by [[ChatGPT]] canvas and [[Anthropic Claude]] artifacts since 2024), [[Pla",
+  "definition": "Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:declarative-specification",
+      "id": "urn:ngm:class:declarative-specification",
       "label": "Declarative Specification"
     },
     {
-      "id": "urn:visionflow:linked:documentation-as-code",
+      "id": "urn:ngm:class:documentation-as-code",
       "label": "Documentation as Code"
-    },
-    {
-      "id": "urn:visionflow:linked:domain-specific-language",
-      "label": "Domain-Specific Language"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:build-pipeline",
+        "id": "urn:ngm:class:build-pipeline",
         "label": "Build Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:diagram-grammar",
+        "id": "urn:ngm:class:diagram-grammar",
         "label": "Diagram Grammar"
       },
       {
-        "id": "urn:visionflow:linked:icon-library",
+        "id": "urn:ngm:class:icon-library",
         "label": "Icon Library"
       },
       {
-        "id": "urn:visionflow:linked:layout-engine",
+        "id": "urn:ngm:class:layout-engine",
         "label": "Layout Engine"
       },
       {
-        "id": "urn:visionflow:linked:preview-plugin",
+        "id": "urn:ngm:class:preview-plugin",
         "label": "Preview Plugin"
       },
       {
-        "id": "urn:visionflow:linked:renderer",
+        "id": "urn:ngm:class:renderer",
         "label": "Renderer"
       },
       {
-        "id": "urn:visionflow:linked:source-file",
+        "id": "urn:ngm:class:source-file",
         "label": "Source File"
       },
       {
-        "id": "urn:visionflow:linked:theme",
+        "id": "urn:ngm:class:theme",
         "label": "Theme"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:layout-algorithm",
+        "id": "urn:ngm:class:layout-algorithm",
         "label": "Layout Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:markdown",
+        "id": "urn:ngm:class:markdown",
         "label": "Markdown"
       },
       {
-        "id": "urn:visionflow:linked:render-toolchain",
+        "id": "urn:ngm:class:render-toolchain",
         "label": "Render Toolchain"
       },
       {
-        "id": "urn:visionflow:linked:text-editor",
+        "id": "urn:ngm:class:text-editor",
         "label": "Text Editor"
       },
       {
-        "id": "urn:visionflow:linked:version-control",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:architectural-decision-records",
+        "id": "urn:ngm:class:architectural-decision-records",
         "label": "Architectural Decision Records"
       },
       {
-        "id": "urn:visionflow:linked:c4-model",
+        "id": "urn:ngm:class:c4-model",
         "label": "C4 Model"
       },
       {
-        "id": "urn:visionflow:linked:continuous-integration",
+        "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
       },
       {
-        "id": "urn:visionflow:linked:living-documentation",
+        "id": "urn:ngm:class:living-documentation",
         "label": "Living Documentation"
       },
       {
-        "id": "urn:visionflow:linked:pull-request-review",
+        "id": "urn:ngm:class:pull-request-review",
         "label": "Pull Request Review"
       },
       {
-        "id": "urn:visionflow:linked:refactor-time-consistency",
+        "id": "urn:ngm:class:refactor-time-consistency",
         "label": "Refactor-Time Consistency"
       },
       {
-        "id": "urn:visionflow:linked:runbook",
+        "id": "urn:ngm:class:runbook",
         "label": "Runbook"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:d2",
+        "id": "urn:ngm:class:d2",
         "label": "D2"
       },
       {
-        "id": "urn:visionflow:linked:graphviz-dot",
+        "id": "urn:ngm:class:graphviz-dot",
         "label": "Graphviz DOT"
       },
       {
-        "id": "urn:visionflow:linked:penrose",
+        "id": "urn:ngm:class:penrose",
         "label": "Penrose"
       },
       {
-        "id": "urn:visionflow:linked:pikchr",
+        "id": "urn:ngm:class:pikchr",
         "label": "Pikchr"
       },
       {
-        "id": "urn:visionflow:linked:plant-uml",
+        "id": "urn:ngm:class:plant-uml",
         "label": "PlantUML"
       },
       {
-        "id": "urn:visionflow:linked:structurizr-dsl",
+        "id": "urn:ngm:class:structurizr-dsl",
         "label": "Structurizr DSL"
       },
       {
-        "id": "urn:visionflow:linked:tik-z",
+        "id": "urn:ngm:class:tik-z",
         "label": "TikZ"
       },
       {
-        "id": "urn:visionflow:linked:vega-lite",
+        "id": "urn:ngm:class:vega-lite",
         "label": "Vega-Lite"
       },
       {
-        "id": "urn:visionflow:linked:wavedrom",
+        "id": "urn:ngm:class:wavedrom",
         "label": "Wavedrom"
       },
       {
-        "id": "urn:visionflow:owl:class:mermaid",
+        "id": "urn:ngm:class:mermaid",
         "label": "Mermaid"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:markdown-code-fence",
+        "label": "Markdown Code Fence"
+      },
+      {
+        "id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "id": "urn:ngm:class:web-components",
+        "label": "Web Components"
+      },
+      {
+        "id": "urn:ngm:class:yaml-frontmatter",
+        "label": "YAML Frontmatter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:class-diagram",
+        "label": "Class Diagram"
+      },
+      {
+        "id": "urn:ngm:class:deployment-diagram",
+        "label": "Deployment Diagram"
+      },
+      {
+        "id": "urn:ngm:class:entity-relationship-diagram",
+        "label": "Entity-Relationship Diagram"
+      },
+      {
+        "id": "urn:ngm:class:flowchart",
+        "label": "Flowchart"
+      },
+      {
+        "id": "urn:ngm:class:gantt-chart",
+        "label": "Gantt Chart"
+      },
+      {
+        "id": "urn:ngm:class:mind-map",
+        "label": "Mind Map"
+      },
+      {
+        "id": "urn:ngm:class:sequence-diagram",
+        "label": "Sequence Diagram"
+      },
+      {
+        "id": "urn:ngm:class:state-diagram",
+        "label": "State Diagram"
+      },
+      {
+        "id": "urn:ngm:class:timing-diagram",
+        "label": "Timing Diagram"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:mermaid-open-source-project",
+        "label": "Mermaid Open-Source Project"
+      },
+      {
+        "id": "urn:ngm:class:object-management-group",
+        "label": "Object Management Group"
+      },
+      {
+        "id": "urn:ngm:class:omg",
+        "label": "OMG"
+      },
+      {
+        "id": "urn:ngm:class:thought-works-tech-radar",
+        "label": "ThoughtWorks Tech Radar"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adr",
+        "label": "ADR"
+      },
+      {
+        "id": "urn:ngm:class:c4-model",
+        "label": "C4 Model"
+      },
+      {
+        "id": "urn:ngm:class:diagrams-py",
+        "label": "Diagrams.py"
+      },
+      {
+        "id": "urn:ngm:class:documentation-as-code",
+        "label": "Documentation as Code"
+      },
+      {
+        "id": "urn:ngm:class:excalidraw",
+        "label": "Excalidraw"
+      },
+      {
+        "id": "urn:ngm:class:kroki",
+        "label": "Kroki"
+      },
+      {
+        "id": "urn:ngm:class:notion",
+        "label": "Notion"
+      },
+      {
+        "id": "urn:ngm:class:static-site-generator",
+        "label": "Static Site Generator"
+      },
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:logseq",
+        "label": "Logseq"
+      }
+    ]
   },
   "wikilinks": [
     {

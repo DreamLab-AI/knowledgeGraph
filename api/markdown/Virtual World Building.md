@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-world-building",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-world-building",
+  "@type": "Class",
   "label": "Virtual World Building",
+  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-design",
-      "vc:label": "3D Design"
+      "@id": "urn:ngm:class:3-d-design",
+      "label": "3D Design"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:caff895e1b4e5a67179144fae616e7fe17f065a9ee02d082d85705128f406ae0"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:caff895e1b4e5a67179144fae616e7fe17f065a9ee02d082d85705128f406ae0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

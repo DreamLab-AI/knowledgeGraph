@@ -3,32 +3,36 @@
   "title": "Governance Board",
   "slug": "governance-board",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:governance-board",
+  "classIri": "urn:ngm:class:governance-board",
   "domain": "artificial-intelligence",
-  "definition": "An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.",
+  "definition": "An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance-architecture",
+      "id": "urn:ngm:class:governance-architecture",
       "label": "Governance Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collective-decision-making",
+        "id": "urn:ngm:class:collective-decision-making",
         "label": "Collective Decision Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

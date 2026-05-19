@@ -168,106 +168,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-governance-and-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-governance-and-compliance",
+  "@type": "Class",
   "label": "ETSI Domain: Governance & Compliance",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing organisational governance structures, compliance verification systems, and regulatory adherence mechanisms.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bf1f457a2e4207c1ba4971498eec8c65b631d6bbc40436fbf942ffc0f18d7052"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-systems",
+        "label": "Audit Systems"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-tools",
+        "label": "Reporting Tools"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-frameworks",
+        "label": "Governance Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-standards",
+        "label": "Regulatory Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audit-trails",
+        "label": "Audit Trails"
+      },
+      {
+        "@id": "urn:ngm:class:automated-compliance",
+        "label": "Automated Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bf1f457a2e4207c1ba4971498eec8c65b631d6bbc40436fbf942ffc0f18d7052@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing organisational governance structures, compliance verification systems, and regulatory adherence mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-systems",
-      "vc:label": "Audit Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-tools",
-      "vc:label": "Reporting Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:governance-frameworks",
-      "vc:label": "Governance Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-standards",
-      "vc:label": "Regulatory Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:audit-trails",
-      "vc:label": "Audit Trails"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-compliance",
-      "vc:label": "Automated Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:industry-regulations",
-      "vc:label": "Industry Regulations"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:iso-standards",
-      "vc:label": "ISO Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

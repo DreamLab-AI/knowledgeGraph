@@ -3,70 +3,74 @@
   "title": "Byzantine Fault Tolerance",
   "slug": "byzantine-fault-tolerance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+  "classIri": "urn:ngm:class:byzantine-fault-tolerance",
   "domain": "blockchain",
   "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:distributed-agreement",
+      "id": "urn:ngm:class:distributed-agreement",
       "label": "Distributed Agreement"
     },
     {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "id": "urn:ngm:class:consensus-mechanism",
       "label": "Consensus Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:finality-gadget",
+        "id": "urn:ngm:class:finality-gadget",
         "label": "Finality Gadget"
       },
       {
-        "id": "urn:visionflow:linked:leader-election",
+        "id": "urn:ngm:class:leader-election",
         "label": "Leader Election"
       },
       {
-        "id": "urn:visionflow:linked:voting-round",
+        "id": "urn:ngm:class:voting-round",
         "label": "Voting Round"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:linked:message-authentication",
+        "id": "urn:ngm:class:message-authentication",
         "label": "Message Authentication"
       },
       {
-        "id": "urn:visionflow:linked:quorum",
+        "id": "urn:ngm:class:quorum",
         "label": "Quorum"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consensus-safety",
+        "id": "urn:ngm:class:consensus-safety",
         "label": "Consensus Safety"
       },
       {
-        "id": "urn:visionflow:linked:malicious-node-handling",
+        "id": "urn:ngm:class:malicious-node-handling",
         "label": "Malicious Node Handling"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

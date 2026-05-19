@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:media-library",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:media-library",
+  "@type": "Class",
   "label": "Media Library",
+  "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
+      "@id": "urn:ngm:class:digital-asset-management",
+      "label": "Digital Asset Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:153347d40c95409f3255961c09da98df43600d651ba1db82336129d3a0e659bc"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-organisation",
+        "label": "Content Organisation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:153347d40c95409f3255961c09da98df43600d651ba1db82336129d3a0e659bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-organisation",
-      "vc:label": "Content Organisation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

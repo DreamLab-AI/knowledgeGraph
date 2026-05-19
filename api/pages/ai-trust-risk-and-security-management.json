@@ -3,19 +3,18 @@
   "title": "AI Trust Risk and Security Management",
   "slug": "ai-trust-risk-and-security-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-trust-risk-and-security-management",
+  "classIri": "urn:ngm:class:ai-trust-risk-and-security-management",
   "domain": "artificial-intelligence",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "AI Trust Risk and Security Management is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

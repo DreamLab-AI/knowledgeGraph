@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-ownership",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-ownership",
+  "@type": "Class",
   "label": "Digital Ownership",
+  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaver...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:property-rights",
-      "vc:label": "Property Rights"
+      "@id": "urn:ngm:class:property-rights",
+      "label": "Property Rights"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-transfer",
+        "label": "Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:creator-royalties",
+        "label": "Creator Royalties"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ddca9d9e42e09c3eba23d06f8f421fef7dc53426c365e81fabefee34454a0cfe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-transfer",
-      "vc:label": "Asset Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:creator-royalties",
-      "vc:label": "Creator Royalties"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

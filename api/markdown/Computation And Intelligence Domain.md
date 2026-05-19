@@ -128,56 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computation-and-intelligence-domain",
+  "@type": "Class",
   "label": "Computation And Intelligence Domain",
+  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial syst...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:52a7f216ba47ad6b37cf8e59387b88cd19a2e0f6a3d079c26afbc12bf17dad3f"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:52a7f216ba47ad6b37cf8e59387b88cd19a2e0f6a3d079c26afbc12bf17dad3f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:philosophy-of-mind",
-      "vc:label": "Philosophy of Mind"
-    },
-    {
-      "@id": "urn:visionflow:linked:theoretical-computer-science",
-      "vc:label": "Theoretical Computer Science"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

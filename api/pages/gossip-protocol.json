@@ -3,31 +3,35 @@
   "title": "Gossip Protocol",
   "slug": "gossip-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gossip-protocol",
+  "classIri": "urn:ngm:class:gossip-protocol",
   "domain": "blockchain",
-  "definition": "Information propagation method within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:visionflow:owl:class:network-component",
-      "label": "NetworkComponent"
-    }
-  ],
+  "definition": "Information propagation mod within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      },
+      {
+        "id": "urn:ngm:class:network-component",
+        "label": "NetworkComponent"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -340,298 +340,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-and-safety",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-and-safety",
+  "@type": "Class",
   "label": "Trust and Safety",
+  "definition": "Trust and Safety (T&S) is the professional discipline, operational infrastructure, and regulatory framework that governs the detection, review, enforcement, and remediation of harmful content and abusive behaviour across digital platforms, encompassing the full spectrum from child sexual abuse ma...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:online-safety",
-      "vc:label": "Online Safety"
+      "@id": "urn:ngm:class:online-safety",
+      "label": "Online Safety"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-society-harms",
-      "vc:label": "Digital Society Harms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
+      "@id": "urn:ngm:class:digital-society-harms",
+      "label": "Digital Society Harms"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e992320cd2ecb7359afc95b0151f9dbee398b2ce40703a3e775c0c44a39481de"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classifier-model",
+        "label": "Classifier Model"
+      },
+      {
+        "@id": "urn:ngm:class:csam-detection",
+        "label": "CSAM Detection"
+      },
+      {
+        "@id": "urn:ngm:class:hash-matching",
+        "label": "Hash Matching"
+      },
+      {
+        "@id": "urn:ngm:class:human-review-pipeline",
+        "label": "Human Review Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:platform-integrity",
+        "label": "Platform Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-identity",
+        "label": "Distributed Identity"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "large language models"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "@id": "urn:ngm:class:jailbreaking",
+        "label": "Jailbreaking"
+      },
+      {
+        "@id": "urn:ngm:class:meta-platforms",
+        "label": "Meta Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:asia-pacific-regulation",
+        "label": "Asia Pacific Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e992320cd2ecb7359afc95b0151f9dbee398b2ce40703a3e775c0c44a39481de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Trust and Safety (T&S) is the professional discipline, operational infrastructure, and regulatory framework that governs the detection, review, enforcement, and remediation of harmful content and abusive behaviour across digital platforms, encompassing the full spectrum from child sexual abuse material (CSAM) detection and terrorist content removal through election integrity protection, hate speech moderation, fraud prevention, and platform integrity operations, implemented through a layered architecture combining automated classifiers (PhotoDNA perceptual hashing for known CSAM matching generating robust 1152-bit signatures that survive image transformations via DCT-based processing, Hive Moderation VLM detecting 40+ policy violation classes through Moderation 11B fine-tuned on Llama 3.2 11B Vision, Sightengine covering 110+ moderation classes with 99.2% F1 on specific categories, large platform proprietary transformer-based classifiers, and LLM-based moderation emerging as the next-generation paradigm surpassing traditional NLP on nuanced policy violations per Springer 2025 review), human review pipelines (outsourced moderation operations in Philippines, Kenya, Colombia, and Indi",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:classifier-model",
-      "vc:label": "Classifier Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:csam-detection",
-      "vc:label": "CSAM Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-matching",
-      "vc:label": "Hash Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-review-pipeline",
-      "vc:label": "Human Review Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:incident-response",
-      "vc:label": "Incident Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-integrity",
-      "vc:label": "Platform Integrity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-blockchain",
-      "vc:label": "Privacy Preserving Blockchain"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "vc:label": "Digital Society Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
-      "vc:label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-inequality",
-      "vc:label": "Global Inequality"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-identity",
-      "vc:label": "Distributed Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "large language models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self Sovereign Identity"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:death-of-the-internet",
-      "vc:label": "Death of the Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralised-web",
-      "vc:label": "Decentralised Web"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "vc:label": "Digital Society Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:jailbreaking",
-      "vc:label": "Jailbreaking"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-scrapers",
-      "vc:label": "AI Scrapers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:california-ai-bill",
-      "vc:label": "California AI bill"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-harms",
-      "vc:label": "Digital Society Harms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:jailbreaking",
-      "vc:label": "Jailbreaking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meta-platforms",
-      "vc:label": "Meta Platforms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:asia-pacific-regulation",
-      "vc:label": "Asia Pacific Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:california-ai-bill",
-      "vc:label": "California AI bill"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-border-compliance",
-      "vc:label": "Cross Border Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

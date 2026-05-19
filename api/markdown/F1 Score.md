@@ -160,41 +160,32 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:f1-score",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:f1-score",
+  "@type": "Class",
   "label": "F1 Score",
+  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst pena...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:50de845878c1b7ef94ae20214f998cea2e0845f98d72a11f73e53fb64af0b0a5"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:50de845878c1b7ef94ae20214f998cea2e0845f98d72a11f73e53fb64af0b0a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst penalising extreme imbalances, particularly useful for comparing models or setting decision thresholds when both prediction reliability and completeness are important and when class distributions are imbalanced.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ]
   }
 }
 ```

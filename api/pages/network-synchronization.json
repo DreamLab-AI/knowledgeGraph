@@ -3,23 +3,22 @@
   "title": "Network Synchronization",
   "slug": "network-synchronization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-synchronization",
+  "classIri": "urn:ngm:class:network-synchronization",
   "domain": "blockchain",
   "definition": "Node state alignment within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
-      "id": "urn:visionflow:owl:class:consensus-protocol",
+      "id": "urn:ngm:class:consensus-protocol",
       "label": "ConsensusProtocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

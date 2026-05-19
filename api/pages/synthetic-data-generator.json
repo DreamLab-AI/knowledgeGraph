@@ -3,78 +3,91 @@
   "title": "Synthetic Data Generator",
   "slug": "synthetic-data-generator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:synthetic-data-generator",
+  "classIri": "urn:ngm:class:synthetic-data-generator",
   "domain": "spatial-computing",
   "definition": "AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-anonymization-pipeline",
+      "id": "urn:ngm:class:data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-simulator",
+        "id": "urn:ngm:class:data-simulator",
         "label": "Data Simulator"
       },
       {
-        "id": "urn:visionflow:linked:privacy-validator",
+        "id": "urn:ngm:class:privacy-validator",
         "label": "Privacy Validator"
       },
       {
-        "id": "urn:visionflow:linked:statistical-analyzer",
+        "id": "urn:ngm:class:statistical-analyzer",
         "label": "Statistical Analyzer"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-model",
+        "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:privacy-metrics",
+        "id": "urn:ngm:class:privacy-metrics",
         "label": "Privacy Metrics"
       },
       {
-        "id": "urn:visionflow:linked:statistical-models",
+        "id": "urn:ngm:class:statistical-models",
         "label": "Statistical Models"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-framework",
         "label": "Machine Learning Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-augmentation",
+        "id": "urn:ngm:class:data-augmentation",
         "label": "Data Augmentation"
       },
       {
-        "id": "urn:visionflow:linked:testing-dataset-creation",
+        "id": "urn:ngm:class:testing-dataset-creation",
         "label": "Testing Dataset Creation"
       },
       {
-        "id": "urn:visionflow:owl:class:model-training",
+        "id": "urn:ngm:class:model-training",
         "label": "Model Training"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
+        "id": "urn:ngm:class:privacy-preserving-data-sharing",
         "label": "Privacy-Preserving Data Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-pipeline",
+        "label": "AI Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-management-platform",
+        "label": "Data Management Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

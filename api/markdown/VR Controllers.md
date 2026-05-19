@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:vr-controllers",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:vr-controllers",
+  "@type": "Class",
   "label": "VR Controllers",
+  "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:xr-hardware",
-      "vc:label": "XR Hardware"
+      "@id": "urn:ngm:class:xr-hardware",
+      "label": "XR Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:51056b54ea67e58a4688b75c32c182d0a29984589c26c660114748c5a301ce05"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:51056b54ea67e58a4688b75c32c182d0a29984589c26c660114748c5a301ce05@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

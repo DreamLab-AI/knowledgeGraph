@@ -3,53 +3,57 @@
   "title": "Digital Money",
   "slug": "digital-money",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-money",
+  "classIri": "urn:ngm:class:digital-money",
   "domain": "spatial-computing",
-  "definition": "Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems. bridges-to:: [[Blockchain]]",
+  "definition": "Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-instruments",
+      "id": "urn:ngm:class:financial-instruments",
       "label": "Financial Instruments"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:payment-network",
+        "id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
       },
       {
-        "id": "urn:visionflow:linked:security-infrastructure",
+        "id": "urn:ngm:class:security-infrastructure",
         "label": "Security Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:electronic-payments",
+        "id": "urn:ngm:class:electronic-payments",
         "label": "Electronic Payments"
       },
       {
-        "id": "urn:visionflow:linked:instant-settlement",
+        "id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlement"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

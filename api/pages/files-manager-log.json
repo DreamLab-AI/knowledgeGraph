@@ -3,28 +3,6 @@
   "title": "files-manager-log",
   "slug": "files-manager-log",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:files-manager-log",
-  "domain": "infrastructure",
-  "definition": "files-manager-log is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [
     {
       "slug": "files-manager",

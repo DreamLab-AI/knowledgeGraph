@@ -3,19 +3,18 @@
   "title": "Virtual Production Pipeline",
   "slug": "virtual-production-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-production-pipeline",
+  "classIri": "urn:ngm:class:virtual-production-pipeline",
   "domain": "spatial-computing",
   "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-production",
+      "id": "urn:ngm:class:virtual-production",
       "label": "Virtual Production"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

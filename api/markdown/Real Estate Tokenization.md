@@ -136,41 +136,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-estate-tokenization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-estate-tokenization",
+  "@type": "Class",
   "label": "Real Estate Tokenization",
+  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creati...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:22c5e1a155bafa83867ff09178f783fb9a724524e45e4813bfe2318924fdb157@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to £50, and creating 24/7 tradeable markets projected to grow from £2.6-3.5 billion (2024) to £4 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

@@ -512,326 +512,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:navigation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:navigation",
+  "@type": "Class",
   "label": "Navigation",
+  "definition": "[[Navigation]] is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents — ground robots, aerial vehicles, autonomous cars, and embodied AI systems — to move reliably from a start configuration to a goal state throu...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:path-planning",
-      "vc:label": "Path Planning"
+      "@id": "urn:ngm:class:path-planning",
+      "label": "Path Planning"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
+      "@id": "urn:ngm:class:autonomous-systems",
+      "label": "Autonomous Systems"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:59d6b2f4b1783e1b840de8a0ab9c631b038e2ac665a7bd9d7d62445974f8b27a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "@id": "urn:ngm:class:costmap",
+        "label": "Costmap"
+      },
+      {
+        "@id": "urn:ngm:class:global-planner",
+        "label": "Global Planner"
+      },
+      {
+        "@id": "urn:ngm:class:local-planner",
+        "label": "Local Planner"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-optimisation",
+        "label": "Trajectory Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:planetary-exploration",
+        "label": "Planetary Exploration"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:behaviour-trees",
+        "label": "Behaviour Trees"
+      },
+      {
+        "@id": "urn:ngm:class:d-star-lite",
+        "label": "D Star Lite"
+      },
+      {
+        "@id": "urn:ngm:class:dwa",
+        "label": "DWA"
+      },
+      {
+        "@id": "urn:ngm:class:mpc",
+        "label": "MPC"
+      },
+      {
+        "@id": "urn:ngm:class:mppi",
+        "label": "MPPI"
+      },
+      {
+        "@id": "urn:ngm:class:prm",
+        "label": "PRM"
+      },
+      {
+        "@id": "urn:ngm:class:rrt",
+        "label": "RRT"
+      },
+      {
+        "@id": "urn:ngm:class:rrt-star",
+        "label": "RRT Star"
+      },
+      {
+        "@id": "urn:ngm:class:teb-planner",
+        "label": "TEB Planner"
+      },
+      {
+        "@id": "urn:ngm:class:a-star-algorithm",
+        "label": "A Star Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-d-cameras",
+        "label": "RGB-D Cameras"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LIDAR"
+      },
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:visual-language-navigation",
+        "label": "Visual Language Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-environments",
+        "label": "Simulation Environments"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1872-ontology-for-robotics",
+        "label": "IEEE 1872 Ontology for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2-nav2",
+        "label": "ROS 2 Nav2"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:59d6b2f4b1783e1b840de8a0ab9c631b038e2ac665a7bd9d7d62445974f8b27a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Navigation]] is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents — ground robots, aerial vehicles, autonomous cars, and embodied AI systems — to move reliably from a start configuration to a goal state through structured or unstructured environments while avoiding obstacles, respecting kinodynamic constraints, and satisfying user-specified cost objectives. Navigation spans a hierarchy of planning granularities: global route planning over metric or topological maps, local trajectory optimisation within a receding prediction horizon, and reactive reflexive control for immediate obstacle avoidance, each layer exchanging state and command signals at rates from 1 Hz (global replan) to 1 kHz (torque control). The field is formalised as search and optimisation over configuration spaces C ⊆ ℝⁿ (for n-DOF systems), where Cₒbₛ denotes obstacle configurations and Cₓfree = C \\ Cₒbₛ is the reachable free space, and the planner must return a continuous, kinematically feasible path γ: [0,1] → Cₓfree connecting γ(0) = qₛₜₐᵣₜ to γ(1) = qgoₐₗ. Classical deterministic planners — Dijkstra (1959), A* (Hart et al. ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-trees",
-      "vc:label": "Behaviour Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:costmap",
-      "vc:label": "Costmap"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-planner",
-      "vc:label": "Global Planner"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-planner",
-      "vc:label": "Local Planner"
-    },
-    {
-      "@id": "urn:visionflow:linked:localisation",
-      "vc:label": "Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mapping",
-      "vc:label": "Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:trajectory-optimisation",
-      "vc:label": "Trajectory Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-avoidance",
-      "vc:label": "Collision Avoidance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:path-planning",
-      "vc:label": "Path Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:occupancy-grid",
-      "vc:label": "Occupancy Grid"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-detection",
-      "vc:label": "Collision Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:drone-navigation",
-      "vc:label": "Drone Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-robotics",
-      "vc:label": "Mobile Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:planetary-exploration",
-      "vc:label": "Planetary Exploration"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-automation",
-      "vc:label": "Warehouse Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-robotics",
-      "vc:label": "Social Robotics"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-trees",
-      "vc:label": "Behaviour Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:d-star-lite",
-      "vc:label": "D Star Lite"
-    },
-    {
-      "@id": "urn:visionflow:linked:dwa",
-      "vc:label": "DWA"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpc",
-      "vc:label": "MPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:mppi",
-      "vc:label": "MPPI"
-    },
-    {
-      "@id": "urn:visionflow:linked:prm",
-      "vc:label": "PRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:rrt",
-      "vc:label": "RRT"
-    },
-    {
-      "@id": "urn:visionflow:linked:rrt-star",
-      "vc:label": "RRT Star"
-    },
-    {
-      "@id": "urn:visionflow:linked:teb-planner",
-      "vc:label": "TEB Planner"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:a-star-algorithm",
-      "vc:label": "A Star Algorithm"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gaussian-processes",
-      "vc:label": "Gaussian Processes"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-processing",
-      "vc:label": "Point Cloud Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-search",
-      "vc:label": "Graph Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:simulation-environments",
-      "vc:label": "Simulation Environments"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:swarm-robotics",
-      "vc:label": "Swarm Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:imu",
-      "vc:label": "IMU"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-d-cameras",
-      "vc:label": "RGB-D Cameras"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-odometry",
-      "vc:label": "Visual Odometry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gps",
-      "vc:label": "GPS"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "LIDAR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:scripted-motion",
-      "vc:label": "Scripted Motion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-loop-control",
-      "vc:label": "Open Loop Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-language-navigation",
-      "vc:label": "Visual Language Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "Object Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-understanding",
-      "vc:label": "Scene Understanding"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iec-62443",
-      "vc:label": "IEC 62443"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1872-ontology-for-robotics",
-      "vc:label": "IEEE 1872 Ontology for Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-13482",
-      "vc:label": "ISO 13482"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2-nav2",
-      "vc:label": "ROS 2 Nav2"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

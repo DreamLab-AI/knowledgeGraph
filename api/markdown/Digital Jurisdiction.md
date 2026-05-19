@@ -208,128 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-jurisdiction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-jurisdiction",
+  "@type": "Class",
   "label": "Digital Jurisdiction",
+  "definition": "Digital Jurisdiction is a type of Metaverse governance and safeguarding in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b310ef2e4a028c93cceee2a2a853e2fe1ce74778f9480f5642b7a61b8903e032"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution-mechanism",
+        "label": "Conflict Resolution Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:legal-authority",
+        "label": "Legal Authority"
+      },
+      {
+        "@id": "urn:ngm:class:sovereignty-model",
+        "label": "Sovereignty Model"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdictional-boundary",
+        "label": "Jurisdictional Boundary"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:legal-entity",
+        "label": "Legal Entity"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-enforcement",
+        "label": "Cross-Border Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:multi-jurisdictional-coordination",
+        "label": "Multi-Jurisdictional Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-nation-state",
+        "label": "Virtual Nation State"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:legal-system",
+        "label": "Legal System"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b310ef2e4a028c93cceee2a2a853e2fe1ce74778f9480f5642b7a61b8903e032@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A legally recognized framework defining the boundaries of authority, regulatory control, and legal enforcement within virtual spaces, establishing which laws apply to activities, transactions, and disputes occurring in digital environments. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:legal-system",
-      "vc:label": "Legal System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution-mechanism",
-      "vc:label": "Conflict Resolution Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-authority",
-      "vc:label": "Legal Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereignty-model",
-      "vc:label": "Sovereignty Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:jurisdictional-boundary",
-      "vc:label": "Jurisdictional Boundary"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dispute-resolution",
-      "vc:label": "Dispute Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-mechanism",
-      "vc:label": "Enforcement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-entity",
-      "vc:label": "Legal Entity"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-authority",
-      "vc:label": "Regulatory Authority"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-enforcement",
-      "vc:label": "Cross-Border Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-jurisdictional-coordination",
-      "vc:label": "Multi-Jurisdictional Coordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-nation-state",
-      "vc:label": "Virtual Nation State"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

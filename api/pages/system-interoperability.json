@@ -3,49 +3,53 @@
   "title": "System Interoperability",
   "slug": "system-interoperability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:system-interoperability",
+  "classIri": "urn:ngm:class:system-interoperability",
   "domain": "infrastructure",
-  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.",
+  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:system-capability",
+      "id": "urn:ngm:class:system-capability",
       "label": "System Capability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:enterprise-connectivity",
+        "id": "urn:ngm:class:enterprise-connectivity",
         "label": "Enterprise Connectivity"
       },
       {
-        "id": "urn:visionflow:owl:class:data-sharing",
+        "id": "urn:ngm:class:data-sharing",
         "label": "Data Sharing"
       },
       {
-        "id": "urn:visionflow:owl:class:system-integration",
+        "id": "urn:ngm:class:system-integration",
         "label": "System Integration"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:common-data-formats",
+        "id": "urn:ngm:class:common-data-formats",
         "label": "Common Data Formats"
       },
       {
-        "id": "urn:visionflow:linked:standard-protocols",
+        "id": "urn:ngm:class:standard-protocols",
         "label": "Standard Protocols"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

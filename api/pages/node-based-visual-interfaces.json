@@ -3,19 +3,18 @@
   "title": "Node based visual interfaces",
   "slug": "node-based-visual-interfaces",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:node-based-visual-interfaces",
+  "classIri": "urn:ngm:class:node-based-visual-interfaces",
   "domain": "infrastructure",
   "definition": "Node based visual interfaces is a technology infrastructure concept and a type of User Interface.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:user-interface",
+      "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

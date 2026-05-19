@@ -3,19 +3,18 @@
   "title": "Data Format",
   "slug": "data-format",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-format",
+  "classIri": "urn:ngm:class:data-format",
   "domain": "infrastructure",
-  "definition": "Data Format is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Data Format is a type of Data Standards in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-standards",
+      "id": "urn:ngm:class:data-standards",
       "label": "Data Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

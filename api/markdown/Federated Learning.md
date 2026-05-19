@@ -188,48 +188,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:federated-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:federated-learning",
+  "@type": "Class",
   "label": "Federated Learning",
+  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:97c1bcb7d1c78e6afc55860cd3f1062e174174525dd9d133946d68ff4f7ec8b3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information. Model updates are aggregated from local computations whilst raw data remains on-device, preserving [[PrivacyPreservingML]] and enabling [[CollaborativeLearning]] across organizations. Bridges [[DistributedLearning]] with [[SecureAggregation]] mechanisms and [[BlockchainNetwork]] coordination.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

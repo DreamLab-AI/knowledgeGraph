@@ -156,62 +156,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:responsible-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:responsible-ai",
+  "@type": "Class",
   "label": "Responsible AI",
+  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management-processes",
+        "label": "risk management processes"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-licence-for-ai",
+        "label": "social licence for AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b1dad3d18b43325213a51bf14bcc65f34e78f7da54e2ca507176b1169d85279c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:risk-management-processes",
-      "vc:label": "risk management processes"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-impact-assessment",
-      "vc:label": "AI Impact Assessment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:social-licence-for-ai",
-      "vc:label": "social licence for AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustworthy-ai",
-      "vc:label": "Trustworthy AI"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

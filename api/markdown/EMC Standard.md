@@ -204,116 +204,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:emc-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emc-standard",
+  "@type": "Class",
   "label": "EMC Standard",
+  "definition": "EMC standard ensures robots neither emit electromagnetic interference that disrupts other equipment nor experience susceptibility to external electromagnetic noise that degrades performance.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:electromagnetic-compatibility",
-      "vc:label": "Electromagnetic Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-standard",
-      "vc:label": "Robot Standard"
+      "@id": "urn:ngm:class:robot-standard",
+      "label": "Robot Standard"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bbf389691576cdd3333cdf8aebd78cac872dc0cdf38f27dfefc4a02cb11dffa8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-criteria",
+        "label": "Compliance Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-limit",
+        "label": "Emissions Limit"
+      },
+      {
+        "@id": "urn:ngm:class:immunity-requirement",
+        "label": "Immunity Requirement"
+      },
+      {
+        "@id": "urn:ngm:class:test-procedure",
+        "label": "Test Procedure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:filter-implementation",
+        "label": "Filter Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:grounding-practice",
+        "label": "Grounding Practice"
+      },
+      {
+        "@id": "urn:ngm:class:shielding-design",
+        "label": "Shielding Design"
+      },
+      {
+        "@id": "urn:ngm:class:test-facility",
+        "label": "Test Facility"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:electrical-safety",
+        "label": "Electrical Safety"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-deployment",
+        "label": "Industrial Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:reliable-operation",
+        "label": "Reliable Operation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:electromagnetic-compatibility",
+        "label": "Electromagnetic Compatibility"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bbf389691576cdd3333cdf8aebd78cac872dc0cdf38f27dfefc4a02cb11dffa8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "EMC standard ensures robots neither emit electromagnetic interference that disrupts other equipment nor experience susceptibility to external electromagnetic noise that degrades performance. These standards, including [[IEC 61000]] series and equivalents, define measurement procedures and immunity limits enabling robots to operate reliably alongside other industrial equipment.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-criteria",
-      "vc:label": "Compliance Criteria"
-    },
-    {
-      "@id": "urn:visionflow:linked:emissions-limit",
-      "vc:label": "Emissions Limit"
-    },
-    {
-      "@id": "urn:visionflow:linked:immunity-requirement",
-      "vc:label": "Immunity Requirement"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-procedure",
-      "vc:label": "Test Procedure"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:filter-implementation",
-      "vc:label": "Filter Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:grounding-practice",
-      "vc:label": "Grounding Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:shielding-design",
-      "vc:label": "Shielding Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-facility",
-      "vc:label": "Test Facility"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:electrical-safety",
-      "vc:label": "Electrical Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-deployment",
-      "vc:label": "Industrial Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:reliable-operation",
-      "vc:label": "Reliable Operation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:electromagnetic-theory",
-      "vc:label": "Electromagnetic Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:measurement-equipment",
-      "vc:label": "Measurement Equipment"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

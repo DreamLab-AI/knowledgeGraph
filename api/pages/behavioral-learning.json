@@ -3,53 +3,57 @@
   "title": "Behavioral Learning",
   "slug": "behavioral-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:behavioral-learning",
+  "classIri": "urn:ngm:class:behavioral-learning",
   "domain": "spatial-computing",
   "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Data Collection"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning-models",
+        "id": "urn:ngm:class:machine-learning-models",
         "label": "Machine Learning Models"
       },
       {
-        "id": "urn:visionflow:owl:class:pattern-recognition",
+        "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:personalization",
+        "id": "urn:ngm:class:personalization",
         "label": "Personalization"
       },
       {
-        "id": "urn:visionflow:linked:user-experience-optimization",
+        "id": "urn:ngm:class:user-experience-optimization",
         "label": "User Experience Optimization"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

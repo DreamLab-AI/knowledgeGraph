@@ -192,130 +192,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collective-intelligence-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collective-intelligence-system",
+  "@type": "Class",
   "label": "Collective Intelligence System",
+  "definition": "Mechanism enabling groups of humans and agents to solve problems collaboratively using shared data through swarm intelligence and emergent decision-making.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:11eef309133009a5ff77033b25bf34289b4e1f3ab2939fcdf2e213a383b822de"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:distributed-decision-network",
+        "label": "Distributed Decision Network"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-pattern-detector",
+        "label": "Emergent Pattern Detector"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-interface",
+        "label": "Human-AI Interface"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-aggregation-module",
+        "label": "Knowledge Aggregation Module"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-coordination-engine",
+        "label": "Swarm Coordination Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-synchronization",
+        "label": "Data Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:shared-knowledge-base",
+        "label": "Shared Knowledge Base"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-decision-making",
+        "label": "Collaborative Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-problem-solving",
+        "label": "Emergent Problem-Solving"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:collective-learning",
+        "label": "Collective Learning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:collaborative-ai-platform",
+        "label": "Collaborative AI Platform"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:11eef309133009a5ff77033b25bf34289b4e1f3ab2939fcdf2e213a383b822de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mechanism enabling groups of humans and agents to solve problems collaboratively using shared data through swarm intelligence and emergent decision-making.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-ai-platform",
-      "vc:label": "Collaborative AI Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-system",
-      "vc:label": "Multi-Agent System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:distributed-decision-network",
-      "vc:label": "Distributed Decision Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergent-pattern-detector",
-      "vc:label": "Emergent Pattern Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-ai-interface",
-      "vc:label": "Human-AI Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-aggregation-module",
-      "vc:label": "Knowledge Aggregation Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:swarm-coordination-engine",
-      "vc:label": "Swarm Coordination Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-synchronization",
-      "vc:label": "Data Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shared-knowledge-base",
-      "vc:label": "Shared Knowledge Base"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-decision-making",
-      "vc:label": "Collaborative Decision-Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergent-problem-solving",
-      "vc:label": "Emergent Problem-Solving"
-    },
-    {
-      "@id": "urn:visionflow:linked:swarm-intelligence",
-      "vc:label": "Swarm Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collective-learning",
-      "vc:label": "Collective Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

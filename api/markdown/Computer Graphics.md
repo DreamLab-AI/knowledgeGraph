@@ -13,27 +13,14 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:computer-graphics",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computer-graphics",
+  "@type": "Class",
   "label": "Computer Graphics",
-  "vc:sourceDomain": "spatial-computing",
   "definition": "Computer Graphics is a foundational concept in spatial computing that serves as a classification parent for 5 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "quality": 0.3
 }
 ```
 

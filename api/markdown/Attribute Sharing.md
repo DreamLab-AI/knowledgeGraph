@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:attribute-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:attribute-sharing",
+  "@type": "Class",
   "label": "Attribute Sharing",
+  "definition": "Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control whi...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ab3d0119d165ca6a2b30f33ce2fc56f8df4f38d4ab67d3dada8e4aaea4b3c4a4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-anchoring",
+        "label": "Blockchain Anchoring"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ab3d0119d165ca6a2b30f33ce2fc56f8df4f38d4ab67d3dada8e4aaea4b3c4a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control while enabling verification without centralized authorities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-anchoring",
-      "vc:label": "Blockchain Anchoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identifiers",
-      "vc:label": "Decentralized Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-verification",
-      "vc:label": "Credential Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

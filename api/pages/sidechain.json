@@ -3,19 +3,18 @@
   "title": "Sidechain",
   "slug": "sidechain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sidechain",
+  "classIri": "urn:ngm:class:sidechain",
   "domain": "blockchain",
   "definition": "Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,12 +22,22 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:two-way-peg",
+        "id": "urn:ngm:class:two-way-peg",
         "label": "Two-Way Peg"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

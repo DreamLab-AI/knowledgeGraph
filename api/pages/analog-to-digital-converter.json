@@ -3,53 +3,57 @@
   "title": "Analog To Digital Converter",
   "slug": "analog-to-digital-converter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:analog-to-digital-converter",
+  "classIri": "urn:ngm:class:analog-to-digital-converter",
   "domain": "spatial-computing",
-  "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.",
+  "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:signal-processing-hardware",
+      "id": "urn:ngm:class:signal-processing-hardware",
       "label": "Signal Processing Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:resolution-bits",
+        "id": "urn:ngm:class:resolution-bits",
         "label": "Resolution Bits"
       },
       {
-        "id": "urn:visionflow:linked:sampling-rate",
+        "id": "urn:ngm:class:sampling-rate",
         "label": "Sampling Rate"
       },
       {
-        "id": "urn:visionflow:linked:signal-conditioning",
+        "id": "urn:ngm:class:signal-conditioning",
         "label": "Signal Conditioning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:digital-audio-recording",
+        "id": "urn:ngm:class:digital-audio-recording",
         "label": "Digital Audio Recording"
       },
       {
-        "id": "urn:visionflow:linked:digital-imaging",
+        "id": "urn:ngm:class:digital-imaging",
         "label": "Digital Imaging"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data-processing",
+        "id": "urn:ngm:class:sensor-data-processing",
         "label": "Sensor Data Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,90 +3,99 @@
   "title": "Industrial Metaverse",
   "slug": "industrial-metaverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:industrial-metaverse",
+  "classIri": "urn:ngm:class:industrial-metaverse",
   "domain": "spatial-computing",
   "definition": "A virtual platform integrating digital twin technology, simulation environments, and collaborative workspaces for manufacturing operations, supply chain management, remote equipment control, and industrial training across geographically distributed facilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-application-platform",
+      "id": "urn:ngm:class:metaverse-application-platform",
       "label": "Metaverse Application Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:remote-control-interface",
+        "id": "urn:ngm:class:remote-control-interface",
         "label": "Remote Control Interface"
       },
       {
-        "id": "urn:visionflow:linked:supply-chain-visualization",
+        "id": "urn:ngm:class:supply-chain-visualization",
         "label": "Supply Chain Visualization"
       },
       {
-        "id": "urn:visionflow:linked:training-simulation",
+        "id": "urn:ngm:class:training-simulation",
         "label": "Training Simulation"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-factory",
+        "id": "urn:ngm:class:virtual-factory",
         "label": "Virtual Factory"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-cad-integration",
+        "id": "urn:ngm:class:3-d-cad-integration",
         "label": "3D CAD Integration"
       },
       {
-        "id": "urn:visionflow:linked:industrial-protocol-gateway",
+        "id": "urn:ngm:class:industrial-protocol-gateway",
         "label": "Industrial Protocol Gateway"
       },
       {
-        "id": "urn:visionflow:linked:real-time-data-synchronization",
+        "id": "urn:ngm:class:real-time-data-synchronization",
         "label": "Real-Time Data Synchronization"
       },
       {
-        "id": "urn:visionflow:owl:class:io-t-sensor-network",
+        "id": "urn:ngm:class:io-t-sensor-network",
         "label": "IoT Sensor Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-design",
+        "id": "urn:ngm:class:collaborative-design",
         "label": "Collaborative Design"
       },
       {
-        "id": "urn:visionflow:linked:remote-operations",
+        "id": "urn:ngm:class:remote-operations",
         "label": "Remote Operations"
       },
       {
-        "id": "urn:visionflow:linked:smart-manufacturing",
+        "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commissioning",
+        "id": "urn:ngm:class:virtual-commissioning",
         "label": "Virtual Commissioning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

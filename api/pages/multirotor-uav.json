@@ -3,19 +3,18 @@
   "title": "Multirotor UAV",
   "slug": "multirotor-uav",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:multirotor-uav",
+  "classIri": "urn:ngm:class:multirotor-uav",
   "domain": "robotics",
   "definition": "Multirotor UAV achieves lift through multiple propellers driven by motors.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:aerial-robot",
+      "id": "urn:ngm:class:aerial-robot",
       "label": "Aerial Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

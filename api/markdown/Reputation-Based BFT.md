@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reputation-based-bft",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reputation-based-bft",
+  "@type": "Class",
   "label": "Reputation-Based BFT",
+  "definition": "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
+      "@id": "urn:ngm:class:byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5118a6bb28a6145486f3403f11b37d9843569596e66f067de3e26cbe1c250c13"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5118a6bb28a6145486f3403f11b37d9843569596e66f067de3e26cbe1c250c13@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

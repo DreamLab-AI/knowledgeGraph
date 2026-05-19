@@ -196,116 +196,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:behavioural-feedback-loop",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:behavioural-feedback-loop",
+  "@type": "Class",
   "label": "Behavioural Feedback Loop",
+  "definition": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:07ffea1a14900ad6c0299d9ecd1b126b1ec1f8726cd64ce72dc2c84174c83742"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-detection",
+        "label": "Action Detection"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-reinforcement",
+        "label": "Adaptive Reinforcement"
+      },
+      {
+        "@id": "urn:ngm:class:environment-response",
+        "label": "Environment Response"
+      },
+      {
+        "@id": "urn:ngm:class:behavior-analysis",
+        "label": "Behavior Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:user-tracking",
+        "label": "User Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-experience",
+        "label": "Adaptive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-adjustment",
+        "label": "Dynamic Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-interaction",
+        "label": "Personalized Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-learning",
+        "label": "Behavioral Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:07ffea1a14900ad6c0299d9ecd1b126b1ec1f8726cd64ce72dc2c84174c83742@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:action-detection",
-      "vc:label": "Action Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:adaptive-reinforcement",
-      "vc:label": "Adaptive Reinforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:environment-response",
-      "vc:label": "Environment Response"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:behavior-analysis",
-      "vc:label": "Behavior Analysis"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-model",
-      "vc:label": "AI Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-management",
-      "vc:label": "State Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-tracking",
-      "vc:label": "User Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-time Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-experience",
-      "vc:label": "Adaptive Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-adjustment",
-      "vc:label": "Dynamic Adjustment"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-interaction",
-      "vc:label": "Personalized Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:behavioral-learning",
-      "vc:label": "Behavioral Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing",
-      "vc:label": "Affective Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-modeling",
-      "vc:label": "User Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Infrared Light Source",
   "slug": "infrared-light-source",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrared-light-source",
+  "classIri": "urn:ngm:class:infrared-light-source",
   "domain": "spatial-computing",
   "definition": "Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "id": "urn:ngm:class:tracking-hardware",
       "label": "Tracking Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:foveated-rendering",
+        "id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

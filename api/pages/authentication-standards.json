@@ -3,53 +3,57 @@
   "title": "Authentication Standards",
   "slug": "authentication-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:authentication-standards",
+  "classIri": "urn:ngm:class:authentication-standards",
   "domain": "infrastructure",
-  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to metaverse platforms and blockchain applications.",
+  "definition": "Authentication Standards encompass protocols and specifications for verifying user identity in digital systems, particularly FIDO2 and WebAuthn standards that enable passwordless, phishing-resistant authentication using public key cryptography and hardware authenticators for secure access to meta...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:security-standards",
+      "id": "urn:ngm:class:security-standards",
       "label": "Security Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:client-implementation",
+        "id": "urn:ngm:class:client-implementation",
         "label": "Client Implementation"
       },
       {
-        "id": "urn:visionflow:linked:hardware-authenticators",
+        "id": "urn:ngm:class:hardware-authenticators",
         "label": "Hardware Authenticators"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:passwordless-authentication",
+        "id": "urn:ngm:class:passwordless-authentication",
         "label": "Passwordless Authentication"
       },
       {
-        "id": "urn:visionflow:linked:phishing-resistance",
+        "id": "urn:ngm:class:phishing-resistance",
         "label": "Phishing Resistance"
       },
       {
-        "id": "urn:visionflow:linked:secure-platform-access",
+        "id": "urn:ngm:class:secure-platform-access",
         "label": "Secure Platform Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

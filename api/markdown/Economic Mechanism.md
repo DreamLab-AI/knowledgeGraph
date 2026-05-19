@@ -160,41 +160,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:economic-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:economic-mechanism",
+  "@type": "Class",
   "label": "Economic Mechanism",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c"
+  "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d1b8ed79c2d5d94e306e4eb25471ab692306b781d595029a52e14d1e0799606c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems. Drawing from mechanism design theory in economics, blockchain economic mechanisms create game-theoretic environments where rational self-interested actors produce collectively beneficial outcomes without central coordination. These mechanisms encompass token economics (tokenomics) including supply schedules, distribution models, and utility functions; transaction fee markets that allocate limited block space to highest-value transactions; mining or staking rewards that incentivize honest participation in consensus; slashing penalties that discourage malicious behavior; and automated market makers that enable decentralized exchange. Effective economic mechanisms must balance multiple objectives: incentive compatibility (honest behavior should be profitable), budget balance (rewards don't exceed available resources), individual rationality (participants benefit from participation), and resistance to collusion or Sybil attacks. The design space includes considerations of inflation vs. deflati",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

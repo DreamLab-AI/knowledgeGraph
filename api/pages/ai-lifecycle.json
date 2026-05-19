@@ -3,28 +3,27 @@
   "title": "AI Lifecycle",
   "slug": "ai-lifecycle",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-lifecycle",
+  "classIri": "urn:ngm:class:ai-lifecycle",
   "domain": "artificial-intelligence",
-  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specific activities, stakeholder roles, documentation requirements, and governance controls to ensure responsible and effective AI system management.",
+  "definition": "The series of distinct phases through which an artificial intelligence system progresses from initial conception to eventual decommissioning, encompassing planning, design, development, verification, deployment, operation, monitoring, maintenance, and retirement, with each phase involving specifi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:stakeholder-engagement-throughout",
+        "id": "urn:ngm:class:stakeholder-engagement-throughout",
         "label": "Stakeholder engagement throughout"
       },
       {
-        "id": "urn:visionflow:owl:class:human-oversight",
+        "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
       }
     ],
@@ -32,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

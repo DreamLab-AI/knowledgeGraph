@@ -208,76 +208,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-monitoring",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-monitoring",
+  "@type": "Class",
   "label": "AI Monitoring",
+  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended ...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-lifecycle",
-      "vc:label": "AI Lifecycle"
+      "@id": "urn:ngm:class:ai-lifecycle",
+      "label": "AI Lifecycle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:alert-thresholds",
+        "label": "alert thresholds"
+      },
+      {
+        "@id": "urn:ngm:class:baseline-metrics",
+        "label": "baseline metrics"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-infrastructure",
+        "label": "Monitoring infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-maintenance",
+        "label": "AI Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "@id": "urn:ngm:class:model-updating",
+        "label": "model updating"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d1890017bc5ce9c25c4e0dc429ea168b59bbb549025303d4df3adf59f7da1779@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:alert-thresholds",
-      "vc:label": "alert thresholds"
-    },
-    {
-      "@id": "urn:visionflow:linked:baseline-metrics",
-      "vc:label": "baseline metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-infrastructure",
-      "vc:label": "Monitoring infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-maintenance",
-      "vc:label": "AI Maintenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-improvement",
-      "vc:label": "continuous improvement"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-updating",
-      "vc:label": "model updating"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

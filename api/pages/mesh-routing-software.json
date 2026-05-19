@@ -3,32 +3,36 @@
   "title": "Mesh Routing Software",
   "slug": "mesh-routing-software",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mesh-routing-software",
+  "classIri": "urn:ngm:class:mesh-routing-software",
   "domain": "spatial-computing",
   "definition": "Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-networks",
+        "id": "urn:ngm:class:decentralised-networks",
         "label": "Decentralised Networks"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

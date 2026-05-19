@@ -3,19 +3,18 @@
   "title": "Trust in Automation",
   "slug": "trust-in-automation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trust-in-automation",
+  "classIri": "urn:ngm:class:trust-in-automation",
   "domain": "robotics",
-  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences. It represents the user's confidence in the system's reliability, competence, and integrity.",
+  "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:human-factors",
+      "id": "urn:ngm:class:human-factors",
       "label": "Human Factors"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

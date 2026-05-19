@@ -832,396 +832,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:btc-layer-3",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:btc-layer-3",
+  "@type": "Class",
   "label": "BTC Layer 3",
+  "definition": "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the [[Lightning Network]] and emerging [[ro...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:application-layer-protocol",
-      "vc:label": "Application Layer Protocol"
+      "@id": "urn:ngm:class:application-layer-protocol",
+      "label": "Application Layer Protocol"
     },
     {
-      "@id": "urn:visionflow:linked:bitcoin-protocol-stack",
-      "vc:label": "Bitcoin Protocol Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-scalability-solution",
-      "vc:label": "Blockchain Scalability Solution"
+      "@id": "urn:ngm:class:bitcoin-protocol-stack",
+      "label": "Bitcoin Protocol Stack"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:82a8dcc2b98513fe83c2fb3e48b8fc38ee669868af676757938acdeeae2c35a7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:babylon-protocol",
+        "label": "Babylon Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bit-vm",
+        "label": "BitVM"
+      },
+      {
+        "@id": "urn:ngm:class:bob-protocol",
+        "label": "BOB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:brc-20",
+        "label": "BRC-20"
+      },
+      {
+        "@id": "urn:ngm:class:citrea",
+        "label": "Citrea"
+      },
+      {
+        "@id": "urn:ngm:class:discreet-log-contracts",
+        "label": "Discreet Log Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:merlin-chain",
+        "label": "Merlin Chain"
+      },
+      {
+        "@id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rootstock",
+        "label": "Rootstock"
+      },
+      {
+        "@id": "urn:ngm:class:runes-protocol",
+        "label": "Runes Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:stacks",
+        "label": "Stacks"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitments",
+        "label": "Cryptographic Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:seg-wit",
+        "label": "SegWit"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-agent-smart-contracts",
+        "label": "AI Agent Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swaps",
+        "label": "Atomic Swaps"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-de-fi",
+        "label": "Bitcoin DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-tokens",
+        "label": "Non-Fungible Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts-on-bitcoin",
+        "label": "Smart Contracts on Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoins-on-bitcoin",
+        "label": "Stablecoins on Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-bridges",
+        "label": "Trustless Bridges"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proofs",
+        "label": "Fraud Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:merged-mining",
+        "label": "Merged Mining"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:ordinal-theory",
+        "label": "Ordinal Theory"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-transfer",
+        "label": "Proof of Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero-Knowledge Rollup"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:alu-vm",
+        "label": "AluVM"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proofs",
+        "label": "Merkle Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:point-time-locked-contracts",
+        "label": "Point Time-Locked Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-witnesses",
+        "label": "Taproot Witnesses"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-commitments",
+        "label": "UTXO Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-protocols",
+        "label": "DeFi Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-solutions",
+        "label": "Scaling Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:state-channels",
+        "label": "State Channels"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-risks",
+        "label": "Digital Asset Risks"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-de-fi",
+        "label": "Bitcoin DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-nfts",
+        "label": "Bitcoin NFTs"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-scalability",
+        "label": "Bitcoin Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-finance",
+        "label": "Programmable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-issuance",
+        "label": "Stablecoin Issuance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bip-341-taproot",
+        "label": "BIP-341 Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:bip-342-tapscript",
+        "label": "BIP-342 Tapscript"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network-specification",
+        "label": "Lightning Network Specification"
+      },
+      {
+        "@id": "urn:ngm:class:lnp-bp-standards-association",
+        "label": "LNP/BP Standards Association"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:82a8dcc2b98513fe83c2fb3e48b8fc38ee669868af676757938acdeeae2c35a7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**BTC Layer 3** (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack — a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the [[Lightning Network]] and emerging [[rollup]] systems) that provide [[smart contracts]], [[token issuance]], [[DeFi]] primitives, [[NFTs]], and complex financial instruments on Bitcoin without requiring any modification to Bitcoin's base-layer consensus rules. This layered approach preserves the foundational properties of [[censorship resistance]], [[immutability]], and [[decentralization]] that make Bitcoin valuable as a settlement layer whilst dramatically extending its programmable surface area for application developers, achieving a separation of concerns analogous to the Internet's OSI model wherein higher-layer application protocols exploit lower-layer transport without changing the physical layer.",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:babylon-protocol",
-      "vc:label": "Babylon Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:bit-vm",
-      "vc:label": "BitVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:bob-protocol",
-      "vc:label": "BOB Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:brc-20",
-      "vc:label": "BRC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:citrea",
-      "vc:label": "Citrea"
-    },
-    {
-      "@id": "urn:visionflow:linked:discreet-log-contracts",
-      "vc:label": "Discreet Log Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:merlin-chain",
-      "vc:label": "Merlin Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:ordinals",
-      "vc:label": "Ordinals"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-protocol",
-      "vc:label": "RGB Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:rootstock",
-      "vc:label": "Rootstock"
-    },
-    {
-      "@id": "urn:visionflow:linked:runes-protocol",
-      "vc:label": "Runes Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:stacks",
-      "vc:label": "Stacks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:taproot-assets",
-      "vc:label": "Taproot Assets"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-script",
-      "vc:label": "Bitcoin Script"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-commitments",
-      "vc:label": "Cryptographic Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:seg-wit",
-      "vc:label": "SegWit"
-    },
-    {
-      "@id": "urn:visionflow:linked:taproot",
-      "vc:label": "Taproot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-smart-contracts",
-      "vc:label": "AI Agent Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:atomic-swaps",
-      "vc:label": "Atomic Swaps"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-de-fi",
-      "vc:label": "Bitcoin DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-fungible-tokens",
-      "vc:label": "Non-Fungible Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contracts-on-bitcoin",
-      "vc:label": "Smart Contracts on Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoins-on-bitcoin",
-      "vc:label": "Stablecoins on Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-issuance",
-      "vc:label": "Token Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-bridges",
-      "vc:label": "Trustless Bridges"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:client-side-validation",
-      "vc:label": "Client-Side Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-proofs",
-      "vc:label": "Fraud Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:merged-mining",
-      "vc:label": "Merged Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimistic-rollup",
-      "vc:label": "Optimistic Rollup"
-    },
-    {
-      "@id": "urn:visionflow:linked:ordinal-theory",
-      "vc:label": "Ordinal Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-transfer",
-      "vc:label": "Proof of Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-rollup",
-      "vc:label": "Zero-Knowledge Rollup"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-script",
-      "vc:label": "Bitcoin Script"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-functions",
-      "vc:label": "Cryptographic Hash Functions"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:seg-wit",
-      "vc:label": "SegWit"
-    },
-    {
-      "@id": "urn:visionflow:linked:taproot-upgrade",
-      "vc:label": "Taproot Upgrade"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-de-fi",
-      "vc:label": "Bitcoin DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-nfts",
-      "vc:label": "Bitcoin NFTs"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-scalability",
-      "vc:label": "Bitcoin Scalability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-interoperability",
-      "vc:label": "Cross-Chain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-privacy",
-      "vc:label": "Financial Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-finance",
-      "vc:label": "Programmable Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoin-issuance",
-      "vc:label": "Stablecoin Issuance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:alu-vm",
-      "vc:label": "AluVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-time-locked-contracts",
-      "vc:label": "Hash Time-Locked Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-proofs",
-      "vc:label": "Merkle Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-time-locked-contracts",
-      "vc:label": "Point Time-Locked Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:taproot-witnesses",
-      "vc:label": "Taproot Witnesses"
-    },
-    {
-      "@id": "urn:visionflow:linked:utxo-commitments",
-      "vc:label": "UTXO Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cardano-smart-contracts",
-      "vc:label": "Cardano Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-layer-2",
-      "vc:label": "Ethereum Layer 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-smart-contracts",
-      "vc:label": "Ethereum Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:solana-programs",
-      "vc:label": "Solana Programs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cosmos-ibc",
-      "vc:label": "Cosmos IBC"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:polkadot-parachains",
-      "vc:label": "Polkadot Parachains"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-standard",
-      "vc:label": "Bitcoin Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-protocols",
-      "vc:label": "DeFi Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-solutions",
-      "vc:label": "Layer 2 Solutions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scaling-solutions",
-      "vc:label": "Scaling Solutions"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-channels",
-      "vc:label": "State Channels"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-risks",
-      "vc:label": "Digital Asset Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bip-341-taproot",
-      "vc:label": "BIP-341 Taproot"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-342-tapscript",
-      "vc:label": "BIP-342 Tapscript"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-improvement-proposals",
-      "vc:label": "Bitcoin Improvement Proposals"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-specification",
-      "vc:label": "Lightning Network Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:lnp-bp-standards-association",
-      "vc:label": "LNP/BP Standards Association"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

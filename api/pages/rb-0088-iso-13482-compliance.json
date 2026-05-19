@@ -3,19 +3,18 @@
   "title": "rb 0088 iso 13482 compliance",
   "slug": "rb-0088-iso-13482-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0088-iso-13482-compliance",
+  "classIri": "urn:ngm:class:rb-0088-iso-13482-compliance",
   "domain": "robotics",
   "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:functional-safety",
+      "id": "urn:ngm:class:functional-safety",
       "label": "Functional Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

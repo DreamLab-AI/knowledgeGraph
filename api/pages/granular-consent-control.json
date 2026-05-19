@@ -3,32 +3,36 @@
   "title": "Granular Consent Control",
   "slug": "granular-consent-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:granular-consent-control",
+  "classIri": "urn:ngm:class:granular-consent-control",
   "domain": "spatial-computing",
-  "definition": "Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and user autonomy over personal information.",
+  "definition": "Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and use...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-framework",
+      "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-data-autonomy",
+        "id": "urn:ngm:class:user-data-autonomy",
         "label": "User Data Autonomy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

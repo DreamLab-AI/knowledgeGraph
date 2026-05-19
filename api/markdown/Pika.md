@@ -532,336 +532,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pika",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pika",
+  "@type": "Class",
   "label": "Pika",
+  "definition": "Pika (operated by Pika Labs Inc.) is a San Francisco-based generative artificial intelligence company founded in April 2023 by Stanford computer-science PhD candidates Demi Guo (CEO, formerly Harvard mathematics, Stanford CS, alumna of Facebook AI Research, Google Brain, Microsoft Bing, Quora and...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:creative-ai-tool",
-      "vc:label": "Creative AI Tool"
+      "@id": "urn:ngm:class:creative-ai-tool",
+      "label": "Creative AI Tool"
     },
     {
-      "@id": "urn:visionflow:linked:generative-ai-product",
-      "vc:label": "Generative AI Product"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-system",
-      "vc:label": "Latent Diffusion System"
+      "@id": "urn:ngm:class:generative-ai-product",
+      "label": "Generative AI Product"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9d48b9296f1df7d825c9edb311db9423cd1383fdb25cbabc8cdb726d459dddff"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:discord-bot-interface",
+        "label": "Discord Bot Interface"
+      },
+      {
+        "@id": "urn:ngm:class:image-conditioning-adapter",
+        "label": "Image Conditioning Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-scheduler",
+        "label": "Sampling Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-attention",
+        "label": "Temporal Attention"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:video-diffusion-u-net",
+        "label": "Video Diffusion U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:web-frontend",
+        "label": "Web Frontend"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clip-text-encoder",
+        "label": "CLIP Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-inference-infrastructure",
+        "label": "Cloud Inference Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion-backbone",
+        "label": "Latent Diffusion Backbone"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation-solver",
+        "label": "Stochastic Differential Equation Solver"
+      },
+      {
+        "@id": "urn:ngm:class:video-text-training-data",
+        "label": "Video-Text Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:advertising-creative",
+        "label": "Advertising Creative"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-video-animation",
+        "label": "Image-to-Video Animation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-interpolation",
+        "label": "Keyframe Interpolation"
+      },
+      {
+        "@id": "urn:ngm:class:object-replacement",
+        "label": "Object Replacement"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-content-creation",
+        "label": "Social Media Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video-synthesis",
+        "label": "Text-to-Video Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:video-editing",
+        "label": "Video Editing"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects-generation",
+        "label": "Visual Effects Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:denoising-diffusion-implicit-models",
+        "label": "Denoising Diffusion Implicit Models"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-transformer-architecture",
+        "label": "Diffusion Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:score-based-generative-modelling",
+        "label": "Score-Based Generative Modelling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:distillation",
+        "label": "Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:educational-animation",
+        "label": "Educational Animation"
+      },
+      {
+        "@id": "urn:ngm:class:influencer-marketing",
+        "label": "Influencer Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:memetic-content",
+        "label": "Memetic Content"
+      },
+      {
+        "@id": "urn:ngm:class:music-video-generation",
+        "label": "Music Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:pitch-reel-production",
+        "label": "Pitch Reel Production"
+      },
+      {
+        "@id": "urn:ngm:class:storyboarding",
+        "label": "Storyboarding"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "label": "EU AI Act Article 50"
+      },
+      {
+        "@id": "urn:ngm:class:ico-synthetic-media-guidance",
+        "label": "ICO Synthetic Media Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act-2023",
+        "label": "UK Online Safety Act 2023"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9d48b9296f1df7d825c9edb311db9423cd1383fdb25cbabc8cdb726d459dddff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Pika** (operated by **Pika Labs Inc.**) is a San Francisco-based generative artificial intelligence company founded in April 2023 by Stanford computer-science PhD candidates **Demi Guo** (CEO, formerly Harvard mathematics, Stanford CS, alumna of Facebook AI Research, Google Brain, Microsoft Bing, Quora and Hudson River Trading) and **Chenlin Meng** (CTO, Stanford CS PhD, co-author of foundational diffusion-model papers including *Denoising Diffusion Implicit Models* (Song, Meng & Ermon, ICLR 2021) and *Score-Based Generative Modeling through Stochastic Differential Equations* (Song et al., ICLR 2021)), developing a consumer- and prosumer-facing **text-to-video, image-to-video and video-to-video generative platform** built on a proprietary latent video-diffusion architecture (presumed diffusion-transformer / DiT backbone in the 2024+ generations, exact details undisclosed as Pika has published no formal arXiv paper) trained on internet-scale video-text corpora and exposing the model through a Discord-first beta (June-November 2023), a public web app at pika.art (December 2023 onwards), native iOS and Android applications (2024), an Adobe Firefly third-party model integration (Sept",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:discord-bot-interface",
-      "vc:label": "Discord Bot Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-conditioning-adapter",
-      "vc:label": "Image Conditioning Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampling-scheduler",
-      "vc:label": "Sampling Scheduler"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-attention",
-      "vc:label": "Temporal Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-encoder",
-      "vc:label": "Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-diffusion-u-net",
-      "vc:label": "Video Diffusion U-Net"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-frontend",
-      "vc:label": "Web Frontend"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clip-text-encoder",
-      "vc:label": "CLIP Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-inference-infrastructure",
-      "vc:label": "Cloud Inference Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-backbone",
-      "vc:label": "Latent Diffusion Backbone"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-differential-equation-solver",
-      "vc:label": "Stochastic Differential Equation Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-text-training-data",
-      "vc:label": "Video-Text Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:advertising-creative",
-      "vc:label": "Advertising Creative"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-to-video-animation",
-      "vc:label": "Image-to-Video Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyframe-interpolation",
-      "vc:label": "Keyframe Interpolation"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-replacement",
-      "vc:label": "Object Replacement"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-media-content-creation",
-      "vc:label": "Social Media Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-video-synthesis",
-      "vc:label": "Text-to-Video Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-editing",
-      "vc:label": "Video Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-effects-generation",
-      "vc:label": "Visual Effects Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:denoising-diffusion-implicit-models",
-      "vc:label": "Denoising Diffusion Implicit Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-transformer-architecture",
-      "vc:label": "Diffusion Transformer Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:score-based-generative-modelling",
-      "vc:label": "Score-Based Generative Modelling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimal-transport",
-      "vc:label": "Optimal Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-representation-learning",
-      "vc:label": "Video Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:educational-animation",
-      "vc:label": "Educational Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:influencer-marketing",
-      "vc:label": "Influencer Marketing"
-    },
-    {
-      "@id": "urn:visionflow:linked:memetic-content",
-      "vc:label": "Memetic Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:music-video-generation",
-      "vc:label": "Music Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pitch-reel-production",
-      "vc:label": "Pitch Reel Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:storyboarding",
-      "vc:label": "Storyboarding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net-conditioning",
-      "vc:label": "ControlNet Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:distillation",
-      "vc:label": "Distillation"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "Flash Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-fine-tuning",
-      "vc:label": "LoRA Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:kling",
-      "vc:label": "Kling"
-    },
-    {
-      "@id": "urn:visionflow:linked:luma-dream-machine",
-      "vc:label": "Luma Dream Machine"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-movie-gen",
-      "vc:label": "Meta Movie Gen"
-    },
-    {
-      "@id": "urn:visionflow:linked:runway-gen-3",
-      "vc:label": "Runway Gen-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:sora",
-      "vc:label": "Sora"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-video-diffusion",
-      "vc:label": "Stable Video Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:veo-3",
-      "vc:label": "Veo 3"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:adobe-firefly",
-      "vc:label": "Adobe Firefly"
-    },
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake",
-      "vc:label": "Deepfake"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-generation",
-      "vc:label": "Text-to-Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa-content-credentials",
-      "vc:label": "C2PA Content Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-50",
-      "vc:label": "EU AI Act Article 50"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-synthetic-media-guidance",
-      "vc:label": "ICO Synthetic Media Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-online-safety-act-2023",
-      "vc:label": "UK Online Safety Act 2023"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "User Context Awareness",
   "slug": "user-context-awareness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-context-awareness",
+  "classIri": "urn:ngm:class:user-context-awareness",
   "domain": "spatial-computing",
   "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:context-aware-computing",
+      "id": "urn:ngm:class:context-aware-computing",
       "label": "Context-Aware Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Training",
   "slug": "virtual-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-training",
+  "classIri": "urn:ngm:class:virtual-training",
   "domain": "artificial-intelligence",
   "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:workforce-development",
+      "id": "urn:ngm:class:workforce-development",
       "label": "Workforce Development"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,74 +3,91 @@
   "title": "Reputation Data",
   "slug": "reputation-data",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reputation-data",
+  "classIri": "urn:ngm:class:reputation-data",
   "domain": "spatial-computing",
   "definition": "A structured dataset containing historical records of user behavior, transaction outcomes, peer feedback, and trust metrics used to calculate reputation scores in peer-to-peer systems and virtual communities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:reputation-system",
+      "id": "urn:ngm:class:reputation-system",
       "label": "Reputation System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavioral-pattern",
+        "id": "urn:ngm:class:behavioral-pattern",
         "label": "Behavioral Pattern"
       },
       {
-        "id": "urn:visionflow:linked:feedback-score",
+        "id": "urn:ngm:class:feedback-score",
         "label": "Feedback Score"
       },
       {
-        "id": "urn:visionflow:linked:transaction-history",
+        "id": "urn:ngm:class:transaction-history",
         "label": "Transaction History"
       },
       {
-        "id": "urn:visionflow:linked:trust-indicator",
+        "id": "urn:ngm:class:trust-indicator",
         "label": "Trust Indicator"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:timestamp-service",
+        "id": "urn:ngm:class:timestamp-service",
         "label": "Timestamp Service"
       },
       {
-        "id": "urn:visionflow:owl:class:data-storage",
+        "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-provider",
+        "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-moderation",
+        "id": "urn:ngm:class:community-moderation",
         "label": "Community Moderation"
       },
       {
-        "id": "urn:visionflow:linked:fraud-detection",
+        "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
       },
       {
-        "id": "urn:visionflow:linked:trust-scoring",
+        "id": "urn:ngm:class:trust-scoring",
         "label": "Trust Scoring"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:social-graph",
+        "label": "Social Graph"
+      },
+      {
+        "id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,37 +3,41 @@
   "title": "Social Presence Theory",
   "slug": "social-presence-theory",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:social-presence-theory",
+  "classIri": "urn:ngm:class:social-presence-theory",
   "domain": "distributed-collaboration",
-  "definition": "\"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and engaged in interpersonal exchange.\"",
+  "definition": "\"A theoretical framework explaining how communication media vary in their capacity to convey social cues (facial expressions, vocal intonation, body language, interpersonal warmth), thereby influencing the degree to which communicators perceive each other as psychologically present, real, and eng...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:nonverbal-communication",
+        "id": "urn:ngm:class:nonverbal-communication",
         "label": "NonverbalCommunication"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:tele-002-telecollaboration",
+        "id": "urn:ngm:class:tele-002-telecollaboration",
         "label": "TELE-002-telecollaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

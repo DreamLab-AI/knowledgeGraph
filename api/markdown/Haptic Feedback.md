@@ -208,54 +208,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:haptic-feedback",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:haptic-feedback",
+  "@type": "Class",
   "label": "Haptic Feedback",
+  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33"
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tactile-actuator",
+        "label": "TactileActuator"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b64d95a5cd4380c45dcb40240564af70cc6b01e5ade06ea2b82dd9a2415efd33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:tactile-actuator",
-      "vc:label": "TactileActuator"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:haptics",
-      "vc:label": "Haptics"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

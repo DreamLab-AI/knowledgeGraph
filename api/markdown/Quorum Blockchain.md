@@ -544,344 +544,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:quorum-blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quorum-blockchain",
+  "@type": "Class",
   "label": "Quorum Blockchain",
+  "definition": "An enterprise-grade permissioned [[ereum]] fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence and open-sourced under Apache 2.0 that extends the ereum protocol with private transaction envelopes managed by the [[Tessera]] privacy manager (successor to Constellation, implemented v...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:consortium-blockchain",
-      "vc:label": "Consortium Blockchain"
+      "@id": "urn:ngm:class:consortium-blockchain",
+      "label": "Consortium Blockchain"
     },
     {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
+      "@id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:274ee9351bc4b8722165f476a5ce2117cb80004febcbe211e10f0a9066369cd3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:clique-consensus",
+        "label": "Clique Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:go-quorum",
+        "label": "GoQuorum"
+      },
+      {
+        "@id": "urn:ngm:class:ibft-consensus",
+        "label": "IBFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:permissioning-framework",
+        "label": "Permissioning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:private-transaction-manager",
+        "label": "Private Transaction Manager"
+      },
+      {
+        "@id": "urn:ngm:class:qbft-consensus",
+        "label": "QBFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:tessera",
+        "label": "Tessera"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:enterprise-identity-management",
+        "label": "Enterprise Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-settlement",
+        "label": "Institutional Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:private-transactions",
+        "label": "Private Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-assets",
+        "label": "Tokenised Assets"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-repo",
+        "label": "Tokenised Repo"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance-specification",
+        "label": "Enterprise Ethereum Alliance Specification"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721-standard",
+        "label": "ERC-721 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:istanbul-bft",
+        "label": "Istanbul BFT"
+      },
+      {
+        "@id": "urn:ngm:class:qbft-protocol",
+        "label": "QBFT Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:eth-signer",
+        "label": "EthSigner"
+      },
+      {
+        "@id": "urn:ngm:class:hardhat",
+        "label": "Hardhat"
+      },
+      {
+        "@id": "urn:ngm:class:infura",
+        "label": "Infura"
+      },
+      {
+        "@id": "urn:ngm:class:tessera-privacy-manager",
+        "label": "Tessera Privacy Manager"
+      },
+      {
+        "@id": "urn:ngm:class:truffle-framework",
+        "label": "Truffle Framework"
+      },
+      {
+        "@id": "urn:ngm:class:web3j",
+        "label": "Web3j"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:consen-sys",
+        "label": "ConsenSys"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:jpmorgan-chase",
+        "label": "JPMorgan Chase"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-as-a-service",
+        "label": "Blockchain As A Service"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:alastria-network",
+        "label": "Alastria Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-securities-settlement",
+        "label": "Digital Securities Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:jpm-coin",
+        "label": "JPM Coin"
+      },
+      {
+        "@id": "urn:ngm:class:kinexys-platform",
+        "label": "Kinexys Platform"
+      },
+      {
+        "@id": "urn:ngm:class:komgo-trade-finance",
+        "label": "Komgo Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:onyx-digital-assets",
+        "label": "Onyx Digital Assets"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apache-license-2-0",
+        "label": "Apache License 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:eip-225-clique",
+        "label": "EIP-225 Clique"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance-specification",
+        "label": "Enterprise Ethereum Alliance Specification"
+      },
+      {
+        "@id": "urn:ngm:class:ibft-2-0-specification",
+        "label": "IBFT 2.0 Specification"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did",
+        "label": "W3C DID"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:274ee9351bc4b8722165f476a5ce2117cb80004febcbe211e10f0a9066369cd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An enterprise-grade permissioned [[Ethereum]] fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence in 2016 and open-sourced under Apache 2.0 in 2017, that extends the Ethereum protocol with private transaction envelopes managed by the [[Tessera]] privacy manager (successor to Constellation, implemented via a `privateFor` parameter routing encrypted payloads peer-to-peer only to designated participants whilst the public chain records only a SHA-3 hash pointer), pluggable [[Byzantine Fault Tolerance]] consensus algorithms replacing [[Proof of Work]] — notably IBFT/QBFT (Istanbul/Quorum BFT, providing deterministic finality with supermajority-vote rounds and 3f+1 validator safety) and Raft (crash-fault-tolerant, leader-election log replication, sub-second block times in trusted consortia) — and a comprehensive permissioning framework governing node, account, and organisation access at three distinct layers. Acquired by ConsenSys in August 2020, Quorum now ships in two open-source stacks: **GoQuorum** (Go-based, forked from go-ethereum Geth, hosted at github.com/ConsenSys/quorum) and **[[Hyperledger Besu]]** (Java-based, hosted under the Linux Foundation Hyperledger umbr",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:clique-consensus",
-      "vc:label": "Clique Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:evm",
-      "vc:label": "EVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:go-quorum",
-      "vc:label": "GoQuorum"
-    },
-    {
-      "@id": "urn:visionflow:linked:ibft-consensus",
-      "vc:label": "IBFT Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioning-framework",
-      "vc:label": "Permissioning Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:private-transaction-manager",
-      "vc:label": "Private Transaction Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:qbft-consensus",
-      "vc:label": "QBFT Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:tessera",
-      "vc:label": "Tessera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-identity-management",
-      "vc:label": "Enterprise Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-virtual-machine",
-      "vc:label": "Ethereum Virtual Machine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cbdc-infrastructure",
-      "vc:label": "CBDC Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-payments",
-      "vc:label": "Cross-Border Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-settlement",
-      "vc:label": "Institutional Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:private-transactions",
-      "vc:label": "Private Transactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-assets",
-      "vc:label": "Tokenised Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-repo",
-      "vc:label": "Tokenised Repo"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance-automation",
-      "vc:label": "Trade Finance Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wholesale-cbdc",
-      "vc:label": "Wholesale CBDC"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance-specification",
-      "vc:label": "Enterprise Ethereum Alliance Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20-standard",
-      "vc:label": "ERC-20 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-721-standard",
-      "vc:label": "ERC-721 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:istanbul-bft",
-      "vc:label": "Istanbul BFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:qbft-protocol",
-      "vc:label": "QBFT Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ethereum-protocol",
-      "vc:label": "Ethereum Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:go-ethereum",
-      "vc:label": "go-ethereum"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc-api",
-      "vc:label": "JSON-RPC API"
-    },
-    {
-      "@id": "urn:visionflow:linked:p2-p-networking",
-      "vc:label": "P2P Networking"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:alastria-network",
-      "vc:label": "Alastria Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-securities-settlement",
-      "vc:label": "Digital Securities Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:jpm-coin",
-      "vc:label": "JPM Coin"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinexys-platform",
-      "vc:label": "Kinexys Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:komgo-trade-finance",
-      "vc:label": "Komgo Trade Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:onyx-digital-assets",
-      "vc:label": "Onyx Digital Assets"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:eth-signer",
-      "vc:label": "EthSigner"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardhat",
-      "vc:label": "Hardhat"
-    },
-    {
-      "@id": "urn:visionflow:linked:infura",
-      "vc:label": "Infura"
-    },
-    {
-      "@id": "urn:visionflow:linked:tessera-privacy-manager",
-      "vc:label": "Tessera Privacy Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:truffle-framework",
-      "vc:label": "Truffle Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3j",
-      "vc:label": "Web3j"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:daml-ledger",
-      "vc:label": "Daml Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-ledger",
-      "vc:label": "Permissioned Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-ethereum",
-      "vc:label": "Public Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:r3-corda",
-      "vc:label": "R3 Corda"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:consen-sys",
-      "vc:label": "ConsenSys"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance",
-      "vc:label": "Enterprise Ethereum Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:jpmorgan-chase",
-      "vc:label": "JPMorgan Chase"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-as-a-service",
-      "vc:label": "Blockchain As A Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apache-license-2-0",
-      "vc:label": "Apache License 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-225-clique",
-      "vc:label": "EIP-225 Clique"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance-specification",
-      "vc:label": "Enterprise Ethereum Alliance Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:ibft-2-0-specification",
-      "vc:label": "IBFT 2.0 Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did",
-      "vc:label": "W3C DID"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

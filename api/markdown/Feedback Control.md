@@ -164,90 +164,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:feedback-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:feedback-control",
+  "@type": "Class",
   "label": "Feedback Control",
+  "definition": "Feedback Control - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator-response",
+        "label": "Actuator Response"
+      },
+      {
+        "@id": "urn:ngm:class:error-measurement",
+        "label": "Error Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "@id": "urn:ngm:class:robust-operation",
+        "label": "Robust Operation"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:motion-control-system",
+        "label": "Motion Control System"
+      },
+      {
+        "@id": "urn:ngm:class:stabilisation-architecture",
+        "label": "Stabilisation Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
-  "vc:qualityScore": {
-    "@value": "0.61",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.16",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:motion-control-system",
-      "vc:label": "Motion Control System"
-    },
-    {
-      "@id": "urn:visionflow:linked:stabilisation-architecture",
-      "vc:label": "Stabilisation Architecture"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator-response",
-      "vc:label": "Actuator Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-measurement",
-      "vc:label": "Error Measurement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:disturbance-rejection",
-      "vc:label": "Disturbance Rejection"
-    },
-    {
-      "@id": "urn:visionflow:linked:robust-operation",
-      "vc:label": "Robust Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trajectory-tracking",
-      "vc:label": "Trajectory Tracking"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.61,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

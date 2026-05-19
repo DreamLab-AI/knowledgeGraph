@@ -3,32 +3,36 @@
   "title": "Participant Protection",
   "slug": "participant-protection",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:participant-protection",
+  "classIri": "urn:ngm:class:participant-protection",
   "domain": "spatial-computing",
   "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-safety",
+      "id": "urn:ngm:class:digital-safety",
       "label": "Digital Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:trust-in-digital-platforms",
+        "id": "urn:ngm:class:trust-in-digital-platforms",
         "label": "Trust in Digital Platforms"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

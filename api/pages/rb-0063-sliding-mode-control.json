@@ -3,19 +3,18 @@
   "title": "rb 0063 sliding mode control",
   "slug": "rb-0063-sliding-mode-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0063-sliding-mode-control",
+  "classIri": "urn:ngm:class:rb-0063-sliding-mode-control",
   "domain": "robotics",
   "definition": "sliding mode control is a robotics and autonomous systems concept and a type of Control Theory.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-theory",
+      "id": "urn:ngm:class:control-theory",
       "label": "Control Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

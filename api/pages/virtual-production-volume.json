@@ -3,86 +3,99 @@
   "title": "Virtual Production Volume",
   "slug": "virtual-production-volume",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-production-volume",
+  "classIri": "urn:ngm:class:virtual-production-volume",
   "domain": "spatial-computing",
   "definition": "Large-scale physical LED wall or projection stage environment that merges live-action footage with real-time rendered 3D backgrounds, including LED panels, tracking systems, camera infrastructure, and stage hardware.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-production-pipeline",
+      "id": "urn:ngm:class:virtual-production-pipeline",
       "label": "Virtual Production Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-tracking-system",
+        "id": "urn:ngm:class:camera-tracking-system",
         "label": "Camera Tracking System"
       },
       {
-        "id": "urn:visionflow:linked:display-processor",
+        "id": "urn:ngm:class:display-processor",
         "label": "Display Processor"
       },
       {
-        "id": "urn:visionflow:linked:led-wall",
+        "id": "urn:ngm:class:led-wall",
         "label": "LED Wall"
       },
       {
-        "id": "urn:visionflow:linked:lighting-rig",
+        "id": "urn:ngm:class:lighting-rig",
         "label": "Lighting Rig"
       },
       {
-        "id": "urn:visionflow:linked:physical-stage",
+        "id": "urn:ngm:class:physical-stage",
         "label": "Physical Stage"
       },
       {
-        "id": "urn:visionflow:linked:rendering-cluster",
+        "id": "urn:ngm:class:rendering-cluster",
         "label": "Rendering Cluster"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-tracking",
+        "id": "urn:ngm:class:camera-tracking",
         "label": "Camera Tracking"
       },
       {
-        "id": "urn:visionflow:linked:color-management-system",
+        "id": "urn:ngm:class:color-management-system",
         "label": "Color Management System"
       },
       {
-        "id": "urn:visionflow:linked:real-time-rendering-engine",
+        "id": "urn:ngm:class:real-time-rendering-engine",
         "label": "Real-time Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:in-camera-vfx",
+        "id": "urn:ngm:class:in-camera-vfx",
         "label": "In-Camera VFX"
       },
       {
-        "id": "urn:visionflow:linked:interactive-filmmaking",
+        "id": "urn:ngm:class:interactive-filmmaking",
         "label": "Interactive Filmmaking"
       },
       {
-        "id": "urn:visionflow:linked:real-time-background-rendering",
+        "id": "urn:ngm:class:real-time-background-rendering",
         "label": "Real-time Background Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-location",
+        "id": "urn:ngm:class:virtual-location",
         "label": "Virtual Location"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:film-production-studio",
+        "label": "Film Production Studio"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-pipeline",
+        "label": "Virtual Production Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

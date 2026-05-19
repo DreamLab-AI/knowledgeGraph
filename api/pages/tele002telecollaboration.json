@@ -3,19 +3,18 @@
   "title": "TELE002telecollaboration",
   "slug": "tele002telecollaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tele002telecollaboration",
+  "classIri": "urn:ngm:class:tele002telecollaboration",
   "domain": "infrastructure",
   "definition": "TELE002telecollaboration is a technology infrastructure concept and a type of Realtime Collaboration.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:realtime-collaboration",
+      "id": "urn:ngm:class:realtime-collaboration",
       "label": "Realtime Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

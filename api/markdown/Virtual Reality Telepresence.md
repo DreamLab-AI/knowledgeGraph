@@ -156,54 +156,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-reality-telepresence",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-reality-telepresence",
+  "@type": "Class",
   "label": "Virtual Reality Telepresence",
+  "definition": "\"The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separati...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
-      "vc:label": "TELE-001-telepresence"
+      "@id": "urn:ngm:class:tele-001-telepresence",
+      "label": "TELE-001-telepresence"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tele-110-spatial-audio-processing",
+        "label": "TELE-110-spatial-audio-processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:remote-design-review",
+        "label": "RemoteDesignReview"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1be6ef5716f2a6ce11559ec4187d13ce2570d5fa4aa07626d738e8e7508b5251@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separation.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tele-110-spatial-audio-processing",
-      "vc:label": "TELE-110-spatial-audio-processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:remote-design-review",
-      "vc:label": "RemoteDesignReview"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

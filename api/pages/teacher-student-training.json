@@ -3,19 +3,18 @@
   "title": "Teacher Student Training",
   "slug": "teacher-student-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:teacher-student-training",
+  "classIri": "urn:ngm:class:teacher-student-training",
   "domain": "artificial-intelligence",
   "definition": "A training paradigm where a larger, more capable \"teacher\" model guides the training of a smaller \"student\" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:training-method",
+      "id": "urn:ngm:class:training-method",
       "label": "Training Method"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

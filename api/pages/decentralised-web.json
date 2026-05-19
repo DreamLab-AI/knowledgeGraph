@@ -3,187 +3,311 @@
   "title": "Decentralised Web",
   "slug": "decentralised-web",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decentralised-web",
+  "classIri": "urn:ngm:class:decentralised-web",
   "domain": "infrastructure",
-  "definition": "**Decentralised Web** (dWeb) is the architectural counter-movement to platform-consolidated Web 2.0, comprising the family of protocols, data models, identity primitives and economic mechanisms that re-establish the original distributed character of the internet by replacing location-addressed client-server requests (`https://server.example/path`) with content-addressed peer-to-peer exchange (`ipfs://bafy...`, `at://did:plc:...`, `nostr:nevent1...`), user-held cryptographic identity (W3C DIDs, Bitcoin-style keypairs, Solid WebIDs) and portable data stores under user rather than platform control; operationally instantiated through a 2014-2026 protocol stack including content-addressed storage and transport ([[IPFS]] introduced by Juan Benet at [[Protocol Labs]] July 2014 via arXiv:1407.3561 with CIDv1 self-describing identifiers binding multihash+multicodec+multibase, reference Kubo implementation in Go and Helia in JavaScript, >300K public nodes in 2024 telemetry, public gateways from Cloudflare/Brave/Pinata/Filebase/4EVERLAND/web3.storage; [[Filecoin]] mainnet launched 15 October 2020 after $257M July 2017 ICO providing the incentive layer over IPFS via Proof-of-Replication and Pr",
+  "definition": "Decentralised Web (dWeb) is the architectural counter-movement to platform-consolidated Web 2.0, comprising the family of protocols, data models, identity primitives and economic mechanisms that re-establish the original distributed character of the internet by replacing location-addressed client...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:open-protocol",
+      "id": "urn:ngm:class:open-protocol",
       "label": "Open Protocol"
     },
     {
-      "id": "urn:visionflow:linked:sociotechnical-system",
+      "id": "urn:ngm:class:sociotechnical-system",
       "label": "Sociotechnical System"
-    },
-    {
-      "id": "urn:visionflow:linked:web-architecture",
-      "label": "Web Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:activity-pub",
+        "id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {
-        "id": "urn:visionflow:linked:arweave",
+        "id": "urn:ngm:class:arweave",
         "label": "Arweave"
       },
       {
-        "id": "urn:visionflow:linked:at-protocol",
+        "id": "urn:ngm:class:at-protocol",
         "label": "AT Protocol"
       },
       {
-        "id": "urn:visionflow:linked:ceramic",
+        "id": "urn:ngm:class:ceramic",
         "label": "Ceramic"
       },
       {
-        "id": "urn:visionflow:linked:ens",
+        "id": "urn:ngm:class:ens",
         "label": "ENS"
       },
       {
-        "id": "urn:visionflow:linked:farcaster",
+        "id": "urn:ngm:class:farcaster",
         "label": "Farcaster"
       },
       {
-        "id": "urn:visionflow:linked:filecoin",
+        "id": "urn:ngm:class:filecoin",
         "label": "Filecoin"
       },
       {
-        "id": "urn:visionflow:linked:hypercore-protocol",
+        "id": "urn:ngm:class:hypercore-protocol",
         "label": "Hypercore Protocol"
       },
       {
-        "id": "urn:visionflow:linked:ipfs",
+        "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:visionflow:linked:ipld",
+        "id": "urn:ngm:class:ipld",
         "label": "IPLD"
       },
       {
-        "id": "urn:visionflow:linked:lens-protocol",
+        "id": "urn:ngm:class:lens-protocol",
         "label": "Lens Protocol"
       },
       {
-        "id": "urn:visionflow:linked:libp2p",
+        "id": "urn:ngm:class:libp2p",
         "label": "libp2p"
       },
       {
-        "id": "urn:visionflow:linked:orbit-db",
+        "id": "urn:ngm:class:orbit-db",
         "label": "OrbitDB"
       },
       {
-        "id": "urn:visionflow:owl:class:nostr-protocol",
+        "id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:solid",
+        "id": "urn:ngm:class:solid",
         "label": "Solid"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:linked:distributed-hash-table",
+        "id": "urn:ngm:class:distributed-hash-table",
         "label": "Distributed Hash Table"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-discovery",
+        "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self-Sovereign Identity"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:archive-permanence",
+        "id": "urn:ngm:class:archive-permanence",
         "label": "Archive Permanence"
       },
       {
-        "id": "urn:visionflow:linked:data-portability",
+        "id": "urn:ngm:class:data-portability",
         "label": "Data Portability"
       },
       {
-        "id": "urn:visionflow:linked:disintermediation",
+        "id": "urn:ngm:class:disintermediation",
         "label": "Disintermediation"
       },
       {
-        "id": "urn:visionflow:linked:offline-first-applications",
+        "id": "urn:ngm:class:offline-first-applications",
         "label": "Offline-First Applications"
       },
       {
-        "id": "urn:visionflow:linked:permissionless-innovation",
+        "id": "urn:ngm:class:permissionless-innovation",
         "label": "Permissionless Innovation"
       },
       {
-        "id": "urn:visionflow:linked:trust-minimisation",
+        "id": "urn:ngm:class:trust-minimisation",
         "label": "Trust Minimisation"
       },
       {
-        "id": "urn:visionflow:linked:user-sovereignty",
+        "id": "urn:ngm:class:user-sovereignty",
         "label": "User Sovereignty"
       },
       {
-        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:account-portability",
+        "id": "urn:ngm:class:account-portability",
         "label": "Account Portability"
       },
       {
-        "id": "urn:visionflow:linked:crdt-synchronisation",
+        "id": "urn:ngm:class:crdt-synchronisation",
         "label": "CRDT Synchronisation"
       },
       {
-        "id": "urn:visionflow:linked:federation-protocol",
+        "id": "urn:ngm:class:federation-protocol",
         "label": "Federation Protocol"
       },
       {
-        "id": "urn:visionflow:linked:kademlia-dht",
+        "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia DHT"
       },
       {
-        "id": "urn:visionflow:linked:merkle-dag",
+        "id": "urn:ngm:class:merkle-dag",
         "label": "Merkle DAG"
       },
       {
-        "id": "urn:visionflow:owl:class:content-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       },
       {
-        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-lightning-network",
+        "label": "Bitcoin Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:cid",
+        "label": "CID"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-social-media",
+        "label": "Decentralised Social Media"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "id": "urn:ngm:class:open-knowledge-graphs",
+        "label": "Open Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-messaging",
+        "label": "Peer-to-Peer Messaging"
+      },
+      {
+        "id": "urn:ngm:class:permanent-archives",
+        "label": "Permanent Archives"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-economics",
+        "label": "Tokenised Economics"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bluesky-pbc",
+        "label": "Bluesky PBC"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:internet-archive",
+        "label": "Internet Archive"
+      },
+      {
+        "id": "urn:ngm:class:open-sats",
+        "label": "OpenSats"
+      },
+      {
+        "id": "urn:ngm:class:protocol-labs",
+        "label": "Protocol Labs"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crypto-anarchism",
+        "label": "Crypto Anarchism"
+      },
+      {
+        "id": "urn:ngm:class:cypherpunk-movement",
+        "label": "Cypherpunk Movement"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-agents",
+        "label": "Internet of Agents"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
   },
   "wikilinks": [
     {

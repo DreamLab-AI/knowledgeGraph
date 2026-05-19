@@ -188,112 +188,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:social-token-economy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-token-economy",
+  "@type": "Class",
   "label": "Social Token Economy",
+  "definition": "Economic model where communities issue tokens representing reputation, participation value, or creator-fan relationships, enabling decentralized governance and value distribution.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-domain",
-      "vc:label": "Virtual Economy Domain"
+      "@id": "urn:ngm:class:virtual-economy-domain",
+      "label": "Virtual Economy Domain"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b593a994701ace5efad1b480b72bed09c502e154d3f54462ae80638095ed4c87"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:community-token",
+        "label": "Community Token"
+      },
+      {
+        "@id": "urn:ngm:class:creator-token",
+        "label": "Creator Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-rights",
+        "label": "Governance Rights"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:fan-engagement",
+        "label": "Fan Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:value-distribution",
+        "label": "Value Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b593a994701ace5efad1b480b72bed09c502e154d3f54462ae80638095ed4c87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Economic model where communities issue tokens representing reputation, participation value, or creator-fan relationships, enabling decentralized governance and value distribution.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:token-economy",
-      "vc:label": "Token Economy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:community-token",
-      "vc:label": "Community Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:creator-token",
-      "vc:label": "Creator Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-rights",
-      "vc:label": "Governance Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creator-monetization",
-      "vc:label": "Creator Monetization"
-    },
-    {
-      "@id": "urn:visionflow:linked:fan-engagement",
-      "vc:label": "Fan Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-distribution",
-      "vc:label": "Value Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance",
-      "vc:label": "Community Governance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:community-platform",
-      "vc:label": "Community Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

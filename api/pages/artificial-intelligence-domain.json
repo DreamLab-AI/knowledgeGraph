@@ -3,19 +3,18 @@
   "title": "Artificial Intelligence Domain",
   "slug": "artificial-intelligence-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:artificial-intelligence-domain",
+  "classIri": "urn:ngm:class:artificial-intelligence-domain",
   "domain": "artificial-intelligence",
-  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research methodologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
+  "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research modologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-domain",
+      "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

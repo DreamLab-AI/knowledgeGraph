@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-audio",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-audio",
+  "@type": "Class",
   "label": "Spatial Audio",
+  "definition": "Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:audio-technology",
-      "vc:label": "Audio Technology"
+      "@id": "urn:ngm:class:audio-technology",
+      "label": "Audio Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd2e5ef1f1bb719b2f158bc8267a21bb5f471765f9c1d7fe7cbe905664ef8c72"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd2e5ef1f1bb719b2f158bc8267a21bb5f471765f9c1d7fe7cbe905664ef8c72@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Three-dimensional sound technology that uses head-related transfer functions (HRTF) and object-based mixing to position audio sources in 3D space around the listener, creating immersive auditory experiences that replicate natural sound perception.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

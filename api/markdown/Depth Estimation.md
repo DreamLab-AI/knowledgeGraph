@@ -560,368 +560,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:depth-estimation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:depth-estimation",
+  "@type": "Class",
   "label": "Depth Estimation",
+  "definition": "Depth Estimation is the computer vision task of recovering per-pixel distance from a camera (or a virtual viewpoint) to the surfaces of a 3D scene, producing a depth map D(u,v) ∈ ℝ⁺ aligned to an image I(u,v) that encodes scene geometry needed for 3D reconstruction, robotic perception, augmented-...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-perception",
-      "vc:label": "3D Perception"
+      "@id": "urn:ngm:class:3-d-perception",
+      "label": "3D Perception"
     },
     {
-      "@id": "urn:visionflow:linked:geometric-vision",
-      "vc:label": "Geometric Vision"
-    },
-    {
-      "@id": "urn:visionflow:linked:dense-prediction",
-      "vc:label": "Dense Prediction"
+      "@id": "urn:ngm:class:geometric-vision",
+      "label": "Geometric Vision"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7b4570bd6a2ca28b7516f8ef2b442af7fcb1c74127a9cfce7e261f4cf7e20d53"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:camera-extrinsics",
+        "label": "Camera Extrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:cost-volume",
+        "label": "Cost Volume"
+      },
+      {
+        "@id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "@id": "urn:ngm:class:disparity-map",
+        "label": "Disparity Map"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:photometric-loss",
+        "label": "Photometric Loss"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:image-pair",
+        "label": "Image Pair"
+      },
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:bokeh-rendering",
+        "label": "Bokeh Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:free-space-estimation",
+        "label": "Free-Space Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:block-matching",
+        "label": "Block Matching"
+      },
+      {
+        "@id": "urn:ngm:class:depth-anything",
+        "label": "Depth Anything"
+      },
+      {
+        "@id": "urn:ngm:class:dpt",
+        "label": "DPT"
+      },
+      {
+        "@id": "urn:ngm:class:marigold",
+        "label": "Marigold"
+      },
+      {
+        "@id": "urn:ngm:class:mi-da-s",
+        "label": "MiDaS"
+      },
+      {
+        "@id": "urn:ngm:class:mono-depth",
+        "label": "MonoDepth"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:psmnet",
+        "label": "PSMNet"
+      },
+      {
+        "@id": "urn:ngm:class:raft-stereo",
+        "label": "RAFT-Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:semi-global-matching",
+        "label": "Semi-Global Matching"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:zoe-depth",
+        "label": "ZoeDepth"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:kinect",
+        "label": "Kinect"
+      },
+      {
+        "@id": "urn:ngm:class:li-dar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:real-sense",
+        "label": "RealSense"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Camera"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight-camera",
+        "label": "Time-of-Flight Camera"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:depth-completion",
+        "label": "Depth Completion"
+      },
+      {
+        "@id": "urn:ngm:class:monocular-3-d-object-detection",
+        "label": "Monocular 3D Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "@id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:arcore",
+        "label": "ARCore"
+      },
+      {
+        "@id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:da-2-k",
+        "label": "DA-2K"
+      },
+      {
+        "@id": "urn:ngm:class:eth3-d",
+        "label": "ETH3D"
+      },
+      {
+        "@id": "urn:ngm:class:kitti-benchmark",
+        "label": "KITTI Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:middlebury-stereo",
+        "label": "Middlebury Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:nyu-depth-v2",
+        "label": "NYU Depth v2"
+      },
+      {
+        "@id": "urn:ngm:class:scan-net",
+        "label": "ScanNet"
+      },
+      {
+        "@id": "urn:ngm:class:sintel",
+        "label": "Sintel"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7b4570bd6a2ca28b7516f8ef2b442af7fcb1c74127a9cfce7e261f4cf7e20d53@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Depth Estimation is the computer vision task of recovering per-pixel distance from a camera (or a virtual viewpoint) to the surfaces of a 3D scene, producing a depth map D(u,v) ∈ ℝ⁺ aligned to an image I(u,v) that encodes scene geometry needed for 3D reconstruction, robotic perception, augmented-reality occlusion, autonomous-vehicle obstacle avoidance, and view synthesis, addressed through three classical paradigms — passive multi-view stereo correspondence solving the disparity inverse-depth relation d = fB/Z under epipolar geometry (block matching, Semi-Global Matching SGM via Hirschmüller 2005-2008 still dominant in embedded ADAS, learned PSMNet/AANet/RAFT-Stereo end-to-end disparity networks achieving sub-pixel D1-all error <2% on KITTI 2015), structure-from-motion (SfM) bundle adjustment recovering sparse 3D points and camera poses from feature tracks (COLMAP de-facto open-source pipeline, OpenMVG, Bundler, Theia powering Google Street View, photogrammetry, Apple Object Capture), and monocular depth estimation learning a single-image depth prior from data — split between supervised regression on RGB-D ground truth (Eigen 2014 first CNN multi-scale, DORN ordinal regression CVPR",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:camera-extrinsics",
-      "vc:label": "Camera Extrinsics"
-    },
-    {
-      "@id": "urn:visionflow:linked:camera-intrinsics",
-      "vc:label": "Camera Intrinsics"
-    },
-    {
-      "@id": "urn:visionflow:linked:cost-volume",
-      "vc:label": "Cost Volume"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-map",
-      "vc:label": "Depth Map"
-    },
-    {
-      "@id": "urn:visionflow:linked:disparity-map",
-      "vc:label": "Disparity Map"
-    },
-    {
-      "@id": "urn:visionflow:linked:epipolar-geometry",
-      "vc:label": "Epipolar Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:photometric-loss",
-      "vc:label": "Photometric Loss"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:point-cloud",
-      "vc:label": "Point Cloud"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "Camera Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-matching",
-      "vc:label": "Feature Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-pair",
-      "vc:label": "Image Pair"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimization",
-      "vc:label": "Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:loss-function",
-      "vc:label": "Loss Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ar-occlusion",
-      "vc:label": "AR Occlusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:bokeh-rendering",
-      "vc:label": "Bokeh Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:free-space-estimation",
-      "vc:label": "Free-Space Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:grasp-planning",
-      "vc:label": "Grasp Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:novel-view-synthesis",
-      "vc:label": "Novel View Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-slam",
-      "vc:label": "Visual SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:obstacle-avoidance",
-      "vc:label": "Obstacle Avoidance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:block-matching",
-      "vc:label": "Block Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-anything",
-      "vc:label": "Depth Anything"
-    },
-    {
-      "@id": "urn:visionflow:linked:dpt",
-      "vc:label": "DPT"
-    },
-    {
-      "@id": "urn:visionflow:linked:marigold",
-      "vc:label": "Marigold"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-da-s",
-      "vc:label": "MiDaS"
-    },
-    {
-      "@id": "urn:visionflow:linked:mono-depth",
-      "vc:label": "MonoDepth"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-view-stereo",
-      "vc:label": "Multi-View Stereo"
-    },
-    {
-      "@id": "urn:visionflow:linked:psmnet",
-      "vc:label": "PSMNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-stereo",
-      "vc:label": "RAFT-Stereo"
-    },
-    {
-      "@id": "urn:visionflow:linked:semi-global-matching",
-      "vc:label": "Semi-Global Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:structure-from-motion",
-      "vc:label": "Structure-from-Motion"
-    },
-    {
-      "@id": "urn:visionflow:linked:zoe-depth",
-      "vc:label": "ZoeDepth"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bundle-adjustment",
-      "vc:label": "Bundle Adjustment"
-    },
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:epipolar-geometry",
-      "vc:label": "Epipolar Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:photometric-consistency",
-      "vc:label": "Photometric Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-transformers",
-      "vc:label": "Vision Transformers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:arcore",
-      "vc:label": "ARCore"
-    },
-    {
-      "@id": "urn:visionflow:linked:arkit",
-      "vc:label": "ARKit"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-driving",
-      "vc:label": "Autonomous Driving"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-manipulation",
-      "vc:label": "Robotic Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-odometry",
-      "vc:label": "Visual Odometry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telepresence",
-      "vc:label": "Telepresence"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:kinect",
-      "vc:label": "Kinect"
-    },
-    {
-      "@id": "urn:visionflow:linked:li-dar",
-      "vc:label": "LiDAR"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-sense",
-      "vc:label": "RealSense"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-d-camera",
-      "vc:label": "RGB-D Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-light",
-      "vc:label": "Structured Light"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-of-flight-camera",
-      "vc:label": "Time-of-Flight Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stereo-camera",
-      "vc:label": "Stereo Camera"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:optical-flow",
-      "vc:label": "Optical Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:surface-normal-estimation",
-      "vc:label": "Surface Normal Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pose-estimation",
-      "vc:label": "Pose Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-segmentation",
-      "vc:label": "Semantic Segmentation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:depth-completion",
-      "vc:label": "Depth Completion"
-    },
-    {
-      "@id": "urn:visionflow:linked:monocular-3-d-object-detection",
-      "vc:label": "Monocular 3D Object Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:ne-rf",
-      "vc:label": "NeRF"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-slam",
-      "vc:label": "Visual SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
-      "vc:label": "3D Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:da-2-k",
-      "vc:label": "DA-2K"
-    },
-    {
-      "@id": "urn:visionflow:linked:eth3-d",
-      "vc:label": "ETH3D"
-    },
-    {
-      "@id": "urn:visionflow:linked:kitti-benchmark",
-      "vc:label": "KITTI Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:middlebury-stereo",
-      "vc:label": "Middlebury Stereo"
-    },
-    {
-      "@id": "urn:visionflow:linked:nyu-depth-v2",
-      "vc:label": "NYU Depth v2"
-    },
-    {
-      "@id": "urn:visionflow:linked:scan-net",
-      "vc:label": "ScanNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:sintel",
-      "vc:label": "Sintel"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

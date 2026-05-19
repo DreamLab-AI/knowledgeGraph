@@ -216,130 +216,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:conversion-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:conversion-pipeline",
+  "@type": "Class",
   "label": "Conversion Pipeline",
+  "definition": "An automated workflow process that transforms digital data or assets from one format, schema, or representation to another, enabling interoperability and compatibility across heterogeneous systems and platforms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
+      "@id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8b41fd0f8dda313bf61ba63344f6c4b29245b9f621a29a3140cd9a1e47fb4818"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:error-handler",
+        "label": "Error Handler"
+      },
+      {
+        "@id": "urn:ngm:class:output-generator",
+        "label": "Output Generator"
+      },
+      {
+        "@id": "urn:ngm:class:transformation-engine",
+        "label": "Transformation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:validation-module",
+        "label": "Validation Module"
+      },
+      {
+        "@id": "urn:ngm:class:format-parser",
+        "label": "Format Parser"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-metadata",
+        "label": "Asset Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:conversion-rules",
+        "label": "Conversion Rules"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:format-specification",
+        "label": "Format Specification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-optimization",
+        "label": "Asset Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:data-harmonization",
+        "label": "Data Harmonization"
+      },
+      {
+        "@id": "urn:ngm:class:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b41fd0f8dda313bf61ba63344f6c4b29245b9f621a29a3140cd9a1e47fb4818@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An automated workflow process that transforms digital data or assets from one format, schema, or representation to another, enabling interoperability and compatibility across heterogeneous systems and platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:asset-pipeline",
-      "vc:label": "Asset Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:error-handler",
-      "vc:label": "Error Handler"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-generator",
-      "vc:label": "Output Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformation-engine",
-      "vc:label": "Transformation Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-module",
-      "vc:label": "Validation Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:format-parser",
-      "vc:label": "Format Parser"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asset-metadata",
-      "vc:label": "Asset Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversion-rules",
-      "vc:label": "Conversion Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-schema",
-      "vc:label": "Data Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-specification",
-      "vc:label": "Format Specification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-optimization",
-      "vc:label": "Asset Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-harmonization",
-      "vc:label": "Data Harmonization"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-migration",
-      "vc:label": "Format Migration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-validation",
-      "vc:label": "Data Validation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:schema-registry",
-      "vc:label": "Schema Registry"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

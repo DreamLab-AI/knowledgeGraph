@@ -3,32 +3,36 @@
   "title": "Proximity Search",
   "slug": "proximity-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proximity-search",
+  "classIri": "urn:ngm:class:proximity-search",
   "domain": "spatial-computing",
-  "definition": "Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing methods such as geohashing and quadtree structures for efficient location-based service applications.",
+  "definition": "Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing mods such as geohashing and quadtree structures for efficient location-based service applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:geospatial-technology",
+      "id": "urn:ngm:class:geospatial-technology",
       "label": "Geospatial Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:nearby-discovery",
+        "id": "urn:ngm:class:nearby-discovery",
         "label": "Nearby Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

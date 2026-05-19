@@ -3,78 +3,82 @@
   "title": "Edge Mesh Network",
   "slug": "edge-mesh-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-mesh-network",
+  "classIri": "urn:ngm:class:edge-mesh-network",
   "domain": "spatial-computing",
   "definition": "Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:failover-mechanism",
+        "id": "urn:ngm:class:failover-mechanism",
         "label": "Failover Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:load-balancer",
+        "id": "urn:ngm:class:load-balancer",
         "label": "Load Balancer"
       },
       {
-        "id": "urn:visionflow:linked:mesh-router",
+        "id": "urn:ngm:class:mesh-router",
         "label": "Mesh Router"
       },
       {
-        "id": "urn:visionflow:linked:routing-protocol",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing-node",
+        "id": "urn:ngm:class:edge-computing-node",
         "label": "Edge Computing Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:distributed-coordination-protocol",
+        "id": "urn:ngm:class:distributed-coordination-protocol",
         "label": "Distributed Coordination Protocol"
       },
       {
-        "id": "urn:visionflow:linked:network-connectivity",
+        "id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
       },
       {
-        "id": "urn:visionflow:linked:service-discovery",
+        "id": "urn:ngm:class:service-discovery",
         "label": "Service Discovery"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-computation",
+        "id": "urn:ngm:class:decentralized-computation",
         "label": "Decentralized Computation"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-load-balancing",
+        "id": "urn:ngm:class:dynamic-load-balancing",
         "label": "Dynamic Load Balancing"
       },
       {
-        "id": "urn:visionflow:linked:redundant-processing",
+        "id": "urn:ngm:class:redundant-processing",
         "label": "Redundant Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,36 +3,40 @@
   "title": "Io T Sensors",
   "slug": "io-t-sensors",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:io-t-sensors",
+  "classIri": "urn:ngm:class:io-t-sensors",
   "domain": "robotics",
-  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.",
+  "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:internet-of-things",
+      "id": "urn:ngm:class:internet-of-things",
       "label": "Internet of Things"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:smart-manufacturing",
+        "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

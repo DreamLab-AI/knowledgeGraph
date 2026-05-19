@@ -3,19 +3,18 @@
   "title": "ETL Pipeline",
   "slug": "etl-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etl-pipeline",
+  "classIri": "urn:ngm:class:etl-pipeline",
   "domain": "artificial-intelligence",
   "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

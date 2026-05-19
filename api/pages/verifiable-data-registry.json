@@ -3,19 +3,18 @@
   "title": "Verifiable Data Registry",
   "slug": "verifiable-data-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:verifiable-data-registry",
+  "classIri": "urn:ngm:class:verifiable-data-registry",
   "domain": "infrastructure",
   "definition": "A system that mediates the creation, verification, and resolution of decentralized identifiers and verifiable credentials, typically implemented as a blockchain, distributed ledger, or decentralized network for storing public key and revocation information.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-registry",
+      "id": "urn:ngm:class:data-registry",
       "label": "Data Registry"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,155 +3,259 @@
   "title": "Training Data",
   "slug": "training-data",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-data",
+  "classIri": "urn:ngm:class:training-data",
   "domain": "artificial-intelligence",
-  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples \u2014 text, images, audio, video, structured records, code, and synthetic artefacts \u2014 ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-descent or equivalent procedures. The quality, scale, diversity, and legal provenance of training data constitutes the single largest determinant of downstream model capability, safety alignment, and societal impact, making training data curation the most consequential engineering decision in modern [[Artificial Intelligence]]. Web-scale corpora now dominate language model training: [[CommonCrawl]] (operating since 2008, petabyte-scale monthly snapshots, backbone of nearly every major LLM) is transformed by specialised derivatives including FineWeb (HuggingFace 2024, 15T token English web corpus outperforming DCLM-Baseline on standard benchmarks per Penedo et al. 2024), FineWeb-Edu (1.3T tokens filtered for educational content via LLM-based classifier scoring using Llama-3-70B with 78% human-judge agreement), Dolma (AI2 Allen Institute, 3T token open-access corpus spanning web, scientific, ",
+  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples \u2014 text, images, audio, video, structured records, code, and synthetic artefacts \u2014 ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:dataset",
+      "id": "urn:ngm:class:dataset",
       "label": "Dataset"
     },
     {
-      "id": "urn:visionflow:owl:class:data-governance",
+      "id": "urn:ngm:class:data-governance",
       "label": "Data Governance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:knowledge-representation",
-      "label": "Knowledge Representation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:annotation",
+        "id": "urn:ngm:class:annotation",
         "label": "Annotation"
       },
       {
-        "id": "urn:visionflow:linked:code-corpus",
+        "id": "urn:ngm:class:code-corpus",
         "label": "Code Corpus"
       },
       {
-        "id": "urn:visionflow:linked:data-cards",
+        "id": "urn:ngm:class:data-cards",
         "label": "Data Cards"
       },
       {
-        "id": "urn:visionflow:linked:data-splits",
+        "id": "urn:ngm:class:data-splits",
         "label": "Data Splits"
       },
       {
-        "id": "urn:visionflow:linked:features",
+        "id": "urn:ngm:class:features",
         "label": "Features"
       },
       {
-        "id": "urn:visionflow:linked:image-dataset",
+        "id": "urn:ngm:class:image-dataset",
         "label": "Image Dataset"
       },
       {
-        "id": "urn:visionflow:linked:labels",
+        "id": "urn:ngm:class:labels",
         "label": "Labels"
       },
       {
-        "id": "urn:visionflow:linked:quality-signals",
+        "id": "urn:ngm:class:quality-signals",
         "label": "Quality Signals"
       },
       {
-        "id": "urn:visionflow:linked:text-corpus",
+        "id": "urn:ngm:class:text-corpus",
         "label": "Text Corpus"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:annotation-standards",
+        "id": "urn:ngm:class:annotation-standards",
         "label": "Annotation Standards"
       },
       {
-        "id": "urn:visionflow:linked:data-deduplication",
+        "id": "urn:ngm:class:data-deduplication",
         "label": "Data Deduplication"
       },
       {
-        "id": "urn:visionflow:linked:data-quality-assurance",
+        "id": "urn:ngm:class:data-quality-assurance",
         "label": "Data Quality Assurance"
       },
       {
-        "id": "urn:visionflow:linked:licensing",
+        "id": "urn:ngm:class:licensing",
         "label": "Licensing"
       },
       {
-        "id": "urn:visionflow:linked:web-scraping",
+        "id": "urn:ngm:class:web-scraping",
         "label": "Web Scraping"
       },
       {
-        "id": "urn:visionflow:owl:class:data-governance",
+        "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:transfer-learning",
+        "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:fine-tuning",
+        "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:instruction-tuning",
+        "id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:model-training",
+        "id": "urn:ngm:class:model-training",
         "label": "Model Training"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:language-identification",
+        "id": "urn:ngm:class:language-identification",
         "label": "Language Identification"
       },
       {
-        "id": "urn:visionflow:linked:locality-sensitive-hashing",
+        "id": "urn:ngm:class:locality-sensitive-hashing",
         "label": "Locality Sensitive Hashing"
       },
       {
-        "id": "urn:visionflow:linked:min-hash",
+        "id": "urn:ngm:class:min-hash",
         "label": "MinHash"
       },
       {
-        "id": "urn:visionflow:linked:near-duplicate-removal",
+        "id": "urn:ngm:class:near-duplicate-removal",
         "label": "Near Duplicate Removal"
       },
       {
-        "id": "urn:visionflow:linked:quality-filtering",
+        "id": "urn:ngm:class:quality-filtering",
         "label": "Quality Filtering"
       },
       {
-        "id": "urn:visionflow:linked:sem-de-dup",
+        "id": "urn:ngm:class:sem-de-dup",
         "label": "SemDeDup"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cdla",
+        "label": "CDLA"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:open-rail",
+        "label": "OpenRAIL"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cdla",
+        "label": "CDLA"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:open-rail",
+        "label": "OpenRAIL"
+      },
+      {
+        "id": "urn:ngm:class:uk-ipo",
+        "label": "UK IPO"
+      },
+      {
+        "id": "urn:ngm:class:us-copyright-office",
+        "label": "US Copyright Office"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

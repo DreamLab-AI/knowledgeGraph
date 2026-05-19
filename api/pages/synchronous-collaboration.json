@@ -3,37 +3,41 @@
   "title": "Synchronous Collaboration",
   "slug": "synchronous-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:synchronous-collaboration",
+  "classIri": "urn:ngm:class:synchronous-collaboration",
   "domain": "distributed-collaboration",
   "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
+      "id": "urn:ngm:class:tc-0001-telecollaboration-domain",
       "label": "TC-0001-telecollaboration-domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.55,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:tc-0040-communication-protocols",
+        "id": "urn:ngm:class:tc-0040-communication-protocols",
         "label": "TC-0040-Communication-Protocols"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:social-presence",
+        "id": "urn:ngm:class:social-presence",
         "label": "Social Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -952,440 +952,343 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rgb-and-client-side-validation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rgb-and-client-side-validation",
+  "@type": "Class",
   "label": "RGB and Client Side Validation",
+  "definition": "RGB and Client-Side Validation (CSV) is a [[Bitcoin]]-native [[Layer 3]] smart contract system and cryptographic architecture invented by Dr. Peter Todd (foundational [[client-side validation]] theory, 2016–2019) and brought to production implementation by Dr.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:client-side-validation-theory",
-      "vc:label": "Client-Side Validation Theory"
+      "@id": "urn:ngm:class:client-side-validation-theory",
+      "label": "Client-Side Validation Theory"
     },
     {
-      "@id": "urn:visionflow:linked:off-chain-protocol",
-      "vc:label": "Off-Chain Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:layer-3",
-      "vc:label": "Layer 3"
+      "@id": "urn:ngm:class:off-chain-protocol",
+      "label": "Off-Chain Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bfb4b3df596ba59987d6199be20eb25c7b1c15fa9c9d033c1e4ad5cebed7c215"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:alu-vm",
+        "label": "AluVM"
+      },
+      {
+        "@id": "urn:ngm:class:bifrost-protocol",
+        "label": "Bifrost Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consignment",
+        "label": "Consignment"
+      },
+      {
+        "@id": "urn:ngm:class:contract-schema",
+        "label": "Contract Schema"
+      },
+      {
+        "@id": "urn:ngm:class:contractum-language",
+        "label": "Contractum Language"
+      },
+      {
+        "@id": "urn:ngm:class:global-state",
+        "label": "Global State"
+      },
+      {
+        "@id": "urn:ngm:class:op-ret-commitment",
+        "label": "OpRet Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:owned-state",
+        "label": "Owned State"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-stash",
+        "label": "RGB Stash"
+      },
+      {
+        "@id": "urn:ngm:class:rgb20",
+        "label": "RGB20"
+      },
+      {
+        "@id": "urn:ngm:class:rgb21",
+        "label": "RGB21"
+      },
+      {
+        "@id": "urn:ngm:class:rgb25",
+        "label": "RGB25"
+      },
+      {
+        "@id": "urn:ngm:class:rgb30",
+        "label": "RGB30"
+      },
+      {
+        "@id": "urn:ngm:class:rgb32",
+        "label": "RGB32"
+      },
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single-Use Seals"
+      },
+      {
+        "@id": "urn:ngm:class:strict-types",
+        "label": "Strict Types"
+      },
+      {
+        "@id": "urn:ngm:class:tapret-commitment",
+        "label": "Tapret Commitment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-commitment-scheme",
+        "label": "Deterministic Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-state-storage",
+        "label": "Off-Chain State Storage"
+      },
+      {
+        "@id": "urn:ngm:class:single-use-seal-primitive",
+        "label": "Single-Use Seal Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:strict-encoding",
+        "label": "Strict Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-agent-asset-ownership",
+        "label": "AI Agent Asset Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swaps",
+        "label": "Atomic Swaps"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-native-de-fi",
+        "label": "Bitcoin-Native DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-smart-contracts",
+        "label": "Confidential Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token-issuance",
+        "label": "Fungible Token Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:layer-3-scalability",
+        "label": "Layer 3 Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:nft-issuance",
+        "label": "NFT Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-on-bitcoin",
+        "label": "Stablecoin on Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:alu-vm-validation",
+        "label": "AluVM Validation"
+      },
+      {
+        "@id": "urn:ngm:class:client-side-validation-theory",
+        "label": "Client-Side Validation Theory"
+      },
+      {
+        "@id": "urn:ngm:class:consignment-protocol",
+        "label": "Consignment Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-bitcoin-commitment",
+        "label": "Deterministic Bitcoin Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:schema-1-standard",
+        "label": "Schema 1 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:strict-encoding",
+        "label": "Strict Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-seal-mechanism",
+        "label": "UTXO Seal Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:alu-vm",
+        "label": "AluVM"
+      },
+      {
+        "@id": "urn:ngm:class:bifrost-protocol",
+        "label": "Bifrost Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:contractum-language",
+        "label": "Contractum Language"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:op-ret",
+        "label": "OpRet"
+      },
+      {
+        "@id": "urn:ngm:class:pedersen-commitments",
+        "label": "Pedersen Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:stark-proofs",
+        "label": "STARK Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:strict-types",
+        "label": "Strict Types"
+      },
+      {
+        "@id": "urn:ngm:class:tapret",
+        "label": "Tapret"
+      },
+      {
+        "@id": "urn:ngm:class:zk-alu-vm",
+        "label": "zk-AluVM"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bi-tmask",
+        "label": "BiTMASK"
+      },
+      {
+        "@id": "urn:ngm:class:bitmask-wallet",
+        "label": "Bitmask Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:diba-inc",
+        "label": "DIBA Inc"
+      },
+      {
+        "@id": "urn:ngm:class:kaleidoswap",
+        "label": "Kaleidoswap"
+      },
+      {
+        "@id": "urn:ngm:class:lnp-bp-standards-association",
+        "label": "LNP/BP Standards Association"
+      },
+      {
+        "@id": "urn:ngm:class:maxim-orlovsky",
+        "label": "Maxim Orlovsky"
+      },
+      {
+        "@id": "urn:ngm:class:my-citadel-wallet",
+        "label": "MyCitadel Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:peter-todd",
+        "label": "Peter Todd"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-working-group",
+        "label": "RGB Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:tether-usdt",
+        "label": "Tether USDT"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-layer-3-ecosystem",
+        "label": "Bitcoin Layer 3 Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment-infrastructure",
+        "label": "Micropayment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-transactions",
+        "label": "Privacy-Preserving Transactions"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:alu-vm-specification",
+        "label": "AluVM Specification"
+      },
+      {
+        "@id": "urn:ngm:class:iacr-e-print-2025-1400",
+        "label": "IACR ePrint 2025/1400"
+      },
+      {
+        "@id": "urn:ngm:class:lnp-bp-standards",
+        "label": "LNP/BP Standards"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-blackpaper",
+        "label": "RGB Blackpaper"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-specification",
+        "label": "RGB Specification"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-wg-git-hub",
+        "label": "RGB-WG GitHub"
+      },
+      {
+        "@id": "urn:ngm:class:strict-types-specification",
+        "label": "Strict Types Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bfb4b3df596ba59987d6199be20eb25c7b1c15fa9c9d033c1e4ad5cebed7c215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**RGB and Client-Side Validation (CSV)** is a [[Bitcoin]]-native [[Layer 3]] smart contract system and cryptographic architecture invented by Dr. **Peter Todd** (foundational [[client-side validation]] theory, 2016–2019) and brought to production implementation by **Dr. Maxim Orlovsky** under the **[[LNP/BP Standards Association]]**, establishing a paradigm for off-chain programmable state machines anchored to [[Bitcoin]]'s [[UTXO]] model through [[single-use seals]], wherein all [[contract state]], validation logic, and [[digital asset]] history are maintained exclusively by the parties involved in a transaction rather than replicated globally across a [[blockchain]] consensus network, fundamentally inverting the trust assumptions of account-based [[smart contract]] platforms ([[Ethereum]], [[Solana]]) where every node must validate every contract state transition and store the entire state history publicly on-chain. The core theoretical contribution is the **[[single-use seal]]** primitive: a cryptographic commitment bound to a specific [[Bitcoin]] [[UTXO]] that can be \"opened\" exactly once by spending that [[UTXO]], creating a [[blockchain]]-anchored proof of publication without",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:alu-vm",
-      "vc:label": "AluVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:bifrost-protocol",
-      "vc:label": "Bifrost Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:consignment",
-      "vc:label": "Consignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-schema",
-      "vc:label": "Contract Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:contractum-language",
-      "vc:label": "Contractum Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-state",
-      "vc:label": "Global State"
-    },
-    {
-      "@id": "urn:visionflow:linked:op-ret-commitment",
-      "vc:label": "OpRet Commitment"
-    },
-    {
-      "@id": "urn:visionflow:linked:owned-state",
-      "vc:label": "Owned State"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-stash",
-      "vc:label": "RGB Stash"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb20",
-      "vc:label": "RGB20"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb21",
-      "vc:label": "RGB21"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb25",
-      "vc:label": "RGB25"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb30",
-      "vc:label": "RGB30"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb32",
-      "vc:label": "RGB32"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-use-seals",
-      "vc:label": "Single-Use Seals"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-types",
-      "vc:label": "Strict Types"
-    },
-    {
-      "@id": "urn:visionflow:linked:tapret-commitment",
-      "vc:label": "Tapret Commitment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network",
-      "vc:label": "Bitcoin Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-commitment-scheme",
-      "vc:label": "Deterministic Commitment Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-state-storage",
-      "vc:label": "Off-Chain State Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-use-seal-primitive",
-      "vc:label": "Single-Use Seal Primitive"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-encoding",
-      "vc:label": "Strict Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-asset-ownership",
-      "vc:label": "AI Agent Asset Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:atomic-swaps",
-      "vc:label": "Atomic Swaps"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-native-de-fi",
-      "vc:label": "Bitcoin-Native DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:confidential-smart-contracts",
-      "vc:label": "Confidential Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identity",
-      "vc:label": "Decentralised Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:fungible-token-issuance",
-      "vc:label": "Fungible Token Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-3-scalability",
-      "vc:label": "Layer 3 Scalability"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft-issuance",
-      "vc:label": "NFT Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoin-on-bitcoin",
-      "vc:label": "Stablecoin on Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:alu-vm-validation",
-      "vc:label": "AluVM Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:client-side-validation-theory",
-      "vc:label": "Client-Side Validation Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:consignment-protocol",
-      "vc:label": "Consignment Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-bitcoin-commitment",
-      "vc:label": "Deterministic Bitcoin Commitment"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-1-standard",
-      "vc:label": "Schema 1 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-encoding",
-      "vc:label": "Strict Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:utxo-seal-mechanism",
-      "vc:label": "UTXO Seal Mechanism"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-functions",
-      "vc:label": "Cryptographic Hash Functions"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-tree-commitments",
-      "vc:label": "Merkle Tree Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:taproot",
-      "vc:label": "Taproot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-coordination",
-      "vc:label": "AI Agent Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-interoperability",
-      "vc:label": "Asset Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-layer-3-ecosystem",
-      "vc:label": "Bitcoin Layer 3 Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-exchange",
-      "vc:label": "Decentralised Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:micropayment-infrastructure",
-      "vc:label": "Micropayment Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-transactions",
-      "vc:label": "Privacy-Preserving Transactions"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:alu-vm",
-      "vc:label": "AluVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:bifrost-protocol",
-      "vc:label": "Bifrost Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:contractum-language",
-      "vc:label": "Contractum Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-time-locked-contracts",
-      "vc:label": "Hash Time-Locked Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:op-ret",
-      "vc:label": "OpRet"
-    },
-    {
-      "@id": "urn:visionflow:linked:pedersen-commitments",
-      "vc:label": "Pedersen Commitments"
-    },
-    {
-      "@id": "urn:visionflow:linked:stark-proofs",
-      "vc:label": "STARK Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-types",
-      "vc:label": "Strict Types"
-    },
-    {
-      "@id": "urn:visionflow:linked:tapret",
-      "vc:label": "Tapret"
-    },
-    {
-      "@id": "urn:visionflow:linked:zk-alu-vm",
-      "vc:label": "zk-AluVM"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:colored-coins",
-      "vc:label": "Colored Coins"
-    },
-    {
-      "@id": "urn:visionflow:linked:counterparty-protocol",
-      "vc:label": "Counterparty Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-smart-contracts",
-      "vc:label": "Ethereum Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:evm",
-      "vc:label": "EVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-network",
-      "vc:label": "Liquid Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:rootstock",
-      "vc:label": "Rootstock"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:taproot-assets",
-      "vc:label": "Taproot Assets"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bi-tmask",
-      "vc:label": "BiTMASK"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitmask-wallet",
-      "vc:label": "Bitmask Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:diba-inc",
-      "vc:label": "DIBA Inc"
-    },
-    {
-      "@id": "urn:visionflow:linked:kaleidoswap",
-      "vc:label": "Kaleidoswap"
-    },
-    {
-      "@id": "urn:visionflow:linked:lnp-bp-standards-association",
-      "vc:label": "LNP/BP Standards Association"
-    },
-    {
-      "@id": "urn:visionflow:linked:maxim-orlovsky",
-      "vc:label": "Maxim Orlovsky"
-    },
-    {
-      "@id": "urn:visionflow:linked:my-citadel-wallet",
-      "vc:label": "MyCitadel Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:peter-todd",
-      "vc:label": "Peter Todd"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-working-group",
-      "vc:label": "RGB Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:tether-usdt",
-      "vc:label": "Tether USDT"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:alu-vm-specification",
-      "vc:label": "AluVM Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:iacr-e-print-2025-1400",
-      "vc:label": "IACR ePrint 2025/1400"
-    },
-    {
-      "@id": "urn:visionflow:linked:lnp-bp-standards",
-      "vc:label": "LNP/BP Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-blackpaper",
-      "vc:label": "RGB Blackpaper"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-specification",
-      "vc:label": "RGB Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-wg-git-hub",
-      "vc:label": "RGB-WG GitHub"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-types-specification",
-      "vc:label": "Strict Types Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

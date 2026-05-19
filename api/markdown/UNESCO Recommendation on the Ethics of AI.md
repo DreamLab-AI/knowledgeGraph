@@ -116,41 +116,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:unesco-recommendation-on-the-ethics-of-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:unesco-recommendation-on-the-ethics-of-ai",
+  "@type": "Class",
   "label": "UNESCO Recommendation on the Ethics of AI",
+  "definition": "The UNESCO Recommendation on the ics of Artificial Intelligence is the first global normative framework establishing ical principles and policy actions for responsible AI development and deployment, adopted by UNESCO's 193 Member States in November 2021.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:311e0e36507571093bc8d0a8e8bab19b28ccc4b194f5384e8061d96fbec54535"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:311e0e36507571093bc8d0a8e8bab19b28ccc4b194f5384e8061d96fbec54535@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The UNESCO Recommendation on the Ethics of Artificial Intelligence is the first global normative framework establishing ethical principles and policy actions for responsible AI development and deployment, adopted by UNESCO's 193 Member States in November 2021. This comprehensive instrument provides shared values, principles, and actionable policy recommendations to ensure AI technologies respect human rights, protect human dignity, promote diversity and inclusion, and contribute to peaceful and just societies living in harmony with the environment. The Recommendation establishes four core values (human rights and dignity, living in peaceful just and interconnected societies, ensuring diversity and inclusiveness, environment and ecosystem flourishing) and ten foundational principles including proportionality, safety and security, fairness and non-discrimination, sustainability, right to privacy and data protection, human oversight and determination, transparency and explainability, responsibility and accountability, awareness and literacy, and multi-stakeholder and adaptive governance. Unlike legally binding treaties, UNESCO Recommendations establish normative standards that guide n",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

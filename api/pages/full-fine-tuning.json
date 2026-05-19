@@ -3,19 +3,18 @@
   "title": "Full Fine Tuning",
   "slug": "full-fine-tuning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:full-fine-tuning",
+  "classIri": "urn:ngm:class:full-fine-tuning",
   "domain": "artificial-intelligence",
   "definition": "A fine-tuning approach that updates all parameters of a pre-trained model during adaptation to a downstream task. Full fine-tuning provides maximum flexibility and performance potential but requires substantial computational resources and memory.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:fine-tuning",
+      "id": "urn:ngm:class:fine-tuning",
       "label": "Fine-Tuning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

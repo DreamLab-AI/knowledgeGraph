@@ -228,41 +228,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-infrastructure",
+  "@type": "Class",
   "label": "ETSI_Domain_Infrastructure",
+  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:718bc4fbf92cebcdff9af35bb272f02464056d74ad7e2443df516fb669ef8d6d"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:718bc4fbf92cebcdff9af35bb272f02464056d74ad7e2443df516fb669ef8d6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale. This domain encompasses [[NetworkInfrastructure]], [[CloudComputing]], [[EdgeComputing]], [[DataCenter|data centers]], [[NetworkSecurity]], and [[SystemResilience]] to provide reliable, performant, secure technical foundations. owl-class:: infrastructure:ETSI_Domain_Infrastructure owl-role:: Concept belongs-to-domain:: [[MetaverseDomain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

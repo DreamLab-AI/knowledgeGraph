@@ -3,19 +3,18 @@
   "title": "AIDomain",
   "slug": "aidomain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:aidomain",
+  "classIri": "urn:ngm:class:aidomain",
   "domain": "artificial-intelligence",
-  "definition": "The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including methods, systems, applications, and governance frameworks within the knowledge graph.",
+  "definition": "The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including mods, systems, applications, and governance frameworks within the knowledge graph.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-domain",
+      "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

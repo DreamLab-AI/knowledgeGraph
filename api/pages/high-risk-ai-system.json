@@ -3,28 +3,27 @@
   "title": "High Risk AI System",
   "slug": "high-risk-ai-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:high-risk-ai-system",
+  "classIri": "urn:ngm:class:high-risk-ai-system",
   "domain": "artificial-intelligence",
-  "definition": "An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar frameworks.",
+  "definition": "An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar f...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:conformity-assessment-ai-0103",
+        "id": "urn:ngm:class:conformity-assessment-ai-0103",
         "label": "Conformity Assessment (AI-0103)"
       },
       {
-        "id": "urn:visionflow:linked:human-oversight-ai-0041",
+        "id": "urn:ngm:class:human-oversight-ai-0041",
         "label": "Human Oversight (AI-0041)"
       }
     ],
@@ -32,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

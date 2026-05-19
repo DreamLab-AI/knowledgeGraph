@@ -200,134 +200,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-provenance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-provenance",
+  "@type": "Class",
   "label": "Data Provenance",
+  "definition": "A continuous process of recording and tracking the origin, lineage, and transformation history of data objects, enabling traceability, validation of data quality, and verification of authenticity throughout the data lifecycle.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4fee0d81ad86f0e01d5d57b9d1d2915585a3c059eb7af724ee001b51fa757c63"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lineage-tracker",
+        "label": "Lineage Tracker"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-recorder",
+        "label": "Provenance Recorder"
+      },
+      {
+        "@id": "urn:ngm:class:signature-validator",
+        "label": "Signature Validator"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-service",
+        "label": "Timestamp Service"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:attribution",
+        "label": "Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit",
+        "label": "Compliance Audit"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-assessment",
+        "label": "Data Quality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4fee0d81ad86f0e01d5d57b9d1d2915585a3c059eb7af724ee001b51fa757c63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A continuous process of recording and tracking the origin, lineage, and transformation history of data objects, enabling traceability, validation of data quality, and verification of authenticity throughout the data lifecycle.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:lineage-tracker",
-      "vc:label": "Lineage Tracker"
-    },
-    {
-      "@id": "urn:visionflow:linked:provenance-recorder",
-      "vc:label": "Provenance Recorder"
-    },
-    {
-      "@id": "urn:visionflow:linked:signature-validator",
-      "vc:label": "Signature Validator"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-service",
-      "vc:label": "Timestamp Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:metadata",
-      "vc:label": "Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-authority",
-      "vc:label": "Timestamp Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:attribution",
-      "vc:label": "Attribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-audit",
-      "vc:label": "Compliance Audit"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-quality-assessment",
-      "vc:label": "Data Quality Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:reproducibility",
-      "vc:label": "Reproducibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-verification",
-      "vc:label": "Provenance Verification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:event-logging",
-      "vc:label": "Event Logging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

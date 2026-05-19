@@ -3,151 +3,263 @@
   "title": "Open AI Whisper",
   "slug": "open-ai-whisper",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-ai-whisper",
+  "classIri": "urn:ngm:class:open-ai-whisper",
   "domain": "artificial-intelligence",
-  "definition": "OpenAI Whisper is a large-scale, weakly-supervised, encoder-decoder Transformer architecture for automatic speech recognition (ASR) and speech translation, introduced by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever at OpenAI in September 2022 in the paper \"Robust Speech Recognition via Large-Scale Weak Supervision,\" trained on a heterogeneous corpus of 680,000 hours of audio paired with text transcripts scraped from the internet across 99 languages, the scale and diversity of which is the primary source of Whisper's zero-shot generalisation robustness rather than any novel algorithmic advance, avoiding the supervised pre-training/fine-tuning paradigm that characterised prior ASR systems such as wav2vec 2.0 (Baevski et al. 2020, WER 1.8% LibriSpeech clean after 960h fine-tuning), HuBERT (Hsu et al. 2021, WER 2.1% fine-tuned), and Conformer (Gulati et al. 2020) in favour of a single multitask, multilingual sequence-to-sequence formulation in which the model simultaneously handles transcription in source language, translation to English, spoken language identification across 99 languages, and voice-activity detection via special tokens pre",
+  "definition": "OpenAI Whisper is a large-scale, weakly-supervised, encoder-decoder Transformer architecture for automatic speech recognition (ASR) and speech translation, introduced by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever at OpenAI in September 2022 in the p...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:automatic-speech-recognition",
+      "id": "urn:ngm:class:automatic-speech-recognition",
       "label": "Automatic Speech Recognition"
     },
     {
-      "id": "urn:visionflow:linked:multilingual-model",
+      "id": "urn:ngm:class:multilingual-model",
       "label": "Multilingual Model"
-    },
-    {
-      "id": "urn:visionflow:linked:sequence-to-sequence-model",
-      "label": "Sequence to Sequence Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:beam-search-decoder",
+        "id": "urn:ngm:class:beam-search-decoder",
         "label": "Beam Search Decoder"
       },
       {
-        "id": "urn:visionflow:linked:convolutional-feature-extractor",
+        "id": "urn:ngm:class:convolutional-feature-extractor",
         "label": "Convolutional Feature Extractor"
       },
       {
-        "id": "urn:visionflow:linked:language-identifier",
+        "id": "urn:ngm:class:language-identifier",
         "label": "Language Identifier"
       },
       {
-        "id": "urn:visionflow:linked:log-mel-spectrogram",
+        "id": "urn:ngm:class:log-mel-spectrogram",
         "label": "Log-Mel Spectrogram"
       },
       {
-        "id": "urn:visionflow:linked:special-token",
+        "id": "urn:ngm:class:special-token",
         "label": "Special Token"
       },
       {
-        "id": "urn:visionflow:owl:class:decoder",
+        "id": "urn:ngm:class:decoder",
         "label": "Decoder"
       },
       {
-        "id": "urn:visionflow:owl:class:encoder",
+        "id": "urn:ngm:class:encoder",
         "label": "Encoder"
       },
       {
-        "id": "urn:visionflow:owl:class:multi-head-attention",
+        "id": "urn:ngm:class:multi-head-attention",
         "label": "Multi-Head Attention"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-input",
+        "id": "urn:ngm:class:audio-input",
         "label": "Audio Input"
       },
       {
-        "id": "urn:visionflow:linked:autoregressive-decoding",
+        "id": "urn:ngm:class:autoregressive-decoding",
         "label": "Autoregressive Decoding"
       },
       {
-        "id": "urn:visionflow:linked:byte-pair-encoding-tokeniser",
+        "id": "urn:ngm:class:byte-pair-encoding-tokeniser",
         "label": "Byte Pair Encoding Tokeniser"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:log-mel-feature-extraction",
+        "id": "urn:ngm:class:log-mel-feature-extraction",
         "label": "Log-Mel Feature Extraction"
       },
       {
-        "id": "urn:visionflow:linked:transformer-attention",
+        "id": "urn:ngm:class:transformer-attention",
         "label": "Transformer Attention"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:language-identification",
+        "id": "urn:ngm:class:language-identification",
         "label": "Language Identification"
       },
       {
-        "id": "urn:visionflow:linked:medical-transcription",
+        "id": "urn:ngm:class:medical-transcription",
         "label": "Medical Transcription"
       },
       {
-        "id": "urn:visionflow:linked:speaker-diarisation",
+        "id": "urn:ngm:class:speaker-diarisation",
         "label": "Speaker Diarisation"
       },
       {
-        "id": "urn:visionflow:linked:speech-transcription",
+        "id": "urn:ngm:class:speech-transcription",
         "label": "Speech Transcription"
       },
       {
-        "id": "urn:visionflow:linked:speech-translation",
+        "id": "urn:ngm:class:speech-translation",
         "label": "Speech Translation"
       },
       {
-        "id": "urn:visionflow:linked:subtitle-generation",
+        "id": "urn:ngm:class:subtitle-generation",
         "label": "Subtitle Generation"
       },
       {
-        "id": "urn:visionflow:linked:voice-activity-detection",
+        "id": "urn:ngm:class:voice-activity-detection",
         "label": "Voice Activity Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:meeting-transcription",
+        "id": "urn:ngm:class:meeting-transcription",
         "label": "Meeting Transcription"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:beam-search-decoding",
+        "id": "urn:ngm:class:beam-search-decoding",
         "label": "Beam Search Decoding"
       },
       {
-        "id": "urn:visionflow:linked:multitask-learning",
+        "id": "urn:ngm:class:multitask-learning",
         "label": "Multitask Learning"
       },
       {
-        "id": "urn:visionflow:linked:sequence-to-sequence-learning",
+        "id": "urn:ngm:class:sequence-to-sequence-learning",
         "label": "Sequence to Sequence Learning"
       },
       {
-        "id": "urn:visionflow:linked:temperature-fallback",
+        "id": "urn:ngm:class:temperature-fallback",
         "label": "Temperature Fallback"
       },
       {
-        "id": "urn:visionflow:linked:weak-supervision",
+        "id": "urn:ngm:class:weak-supervision",
         "label": "Weak Supervision"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-distillation",
+        "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apple-neural-engine",
+        "label": "Apple Neural Engine"
+      },
+      {
+        "id": "urn:ngm:class:core-ml",
+        "label": "Core ML"
+      },
+      {
+        "id": "urn:ngm:class:ctranslate2",
+        "label": "CTranslate2"
+      },
+      {
+        "id": "urn:ngm:class:metal-gpu",
+        "label": "Metal GPU"
+      },
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:pyannote-audio",
+        "label": "Pyannote Audio"
+      },
+      {
+        "id": "urn:ngm:class:silero-vad",
+        "label": "Silero VAD"
+      },
+      {
+        "id": "urn:ngm:class:wav2-vec2",
+        "label": "Wav2Vec2"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      },
+      {
+        "id": "urn:ngm:class:broadcast-monitoring",
+        "label": "Broadcast Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:court-transcription",
+        "label": "Court Transcription"
+      },
+      {
+        "id": "urn:ngm:class:language-documentation",
+        "label": "Language Documentation"
+      },
+      {
+        "id": "urn:ngm:class:medical-transcription",
+        "label": "Medical Transcription"
+      },
+      {
+        "id": "urn:ngm:class:podcast-transcription",
+        "label": "Podcast Transcription"
+      },
+      {
+        "id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:common-voice-benchmark",
+        "label": "CommonVoice Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:fleurs-benchmark",
+        "label": "FLEURS Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-open-asr-leaderboard",
+        "label": "Hugging Face Open ASR Leaderboard"
+      },
+      {
+        "id": "urn:ngm:class:icassp",
+        "label": "ICASSP"
+      },
+      {
+        "id": "urn:ngm:class:interspeech",
+        "label": "INTERSPEECH"
+      },
+      {
+        "id": "urn:ngm:class:libri-speech-benchmark",
+        "label": "LibriSpeech Benchmark"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:automatic-subtitling",
+        "label": "Automatic Subtitling"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-models",
+        "label": "Multimodal Models"
+      },
+      {
+        "id": "urn:ngm:class:speech-technology",
+        "label": "Speech Technology"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -700,344 +700,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cashu",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cashu",
+  "@type": "Class",
   "label": "Cashu",
+  "definition": "Cashu is a free and open-source Chaumian ecash protocol designed for Bitcoin and the [[Lightning Network]], first released in October 2022 by the pseudonymous developer Calle (alias @calle), a PhD physicist and Bitcoin developer.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bitcoin-layer-2",
-      "vc:label": "Bitcoin Layer 2"
+      "@id": "urn:ngm:class:bitcoin-layer-2",
+      "label": "Bitcoin Layer 2"
     },
     {
-      "@id": "urn:visionflow:linked:chaumian-ecash",
-      "vc:label": "Chaumian Ecash"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-cash",
-      "vc:label": "Digital Cash"
+      "@id": "urn:ngm:class:chaumian-ecash",
+      "label": "Chaumian Ecash"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bc27c5774a5d87c2cfb8f97399239cf244c51d1feee84f4dfb06b95efcd6ca33"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blind-signatures",
+        "label": "Blind Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:cashu-mint",
+        "label": "Cashu Mint"
+      },
+      {
+        "@id": "urn:ngm:class:cashu-nut-specifications",
+        "label": "Cashu NUT Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:ecash-token",
+        "label": "Ecash Token"
+      },
+      {
+        "@id": "urn:ngm:class:keyset",
+        "label": "Keyset"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-invoice",
+        "label": "Lightning Invoice"
+      },
+      {
+        "@id": "urn:ngm:class:proof",
+        "label": "Proof"
+      },
+      {
+        "@id": "urn:ngm:class:spent-token-registry",
+        "label": "Spent Token Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blind-signature-scheme",
+        "label": "Blind Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:hash-functions",
+        "label": "Hash Functions"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anonymous-payments",
+        "label": "Anonymous Payments"
+      },
+      {
+        "@id": "urn:ngm:class:bearer-token-transfer",
+        "label": "Bearer Token Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:multi-mint-payments",
+        "label": "Multi-Mint Payments"
+      },
+      {
+        "@id": "urn:ngm:class:offline-transactions",
+        "label": "Offline Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bearer-token-model",
+        "label": "Bearer Token Model"
+      },
+      {
+        "@id": "urn:ngm:class:chaumian-blind-signature-scheme",
+        "label": "Chaumian Blind Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:dleq-proofs",
+        "label": "DLEQ Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:nut-protocol-specifications",
+        "label": "NUT Protocol Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-pubkey-spending-conditions",
+        "label": "Pay-To-Pubkey Spending Conditions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blind-signatures",
+        "label": "Blind Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:bolt11",
+        "label": "BOLT11"
+      },
+      {
+        "@id": "urn:ngm:class:bolt12",
+        "label": "BOLT12"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-invoices",
+        "label": "Lightning Invoices"
+      },
+      {
+        "@id": "urn:ngm:class:nfc-payments",
+        "label": "NFC Payments"
+      },
+      {
+        "@id": "urn:ngm:class:qr-codes",
+        "label": "QR Codes"
+      },
+      {
+        "@id": "urn:ngm:class:web-sockets",
+        "label": "WebSockets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:btcpay-server",
+        "label": "BTCPayServer"
+      },
+      {
+        "@id": "urn:ngm:class:cashu-development-kit",
+        "label": "Cashu Development Kit"
+      },
+      {
+        "@id": "urn:ngm:class:david-chaum",
+        "label": "David Chaum"
+      },
+      {
+        "@id": "urn:ngm:class:digi-cash",
+        "label": "DigiCash"
+      },
+      {
+        "@id": "urn:ngm:class:e-nuts",
+        "label": "eNuts"
+      },
+      {
+        "@id": "urn:ngm:class:minibits",
+        "label": "Minibits"
+      },
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:nutshell",
+        "label": "Nutshell"
+      },
+      {
+        "@id": "urn:ngm:class:ecash",
+        "label": "Ecash"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-agent-payments",
+        "label": "AI Agent Payments"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:merchant-payments",
+        "label": "Merchant Payments"
+      },
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nut-00-cryptography-and-models",
+        "label": "NUT-00 Cryptography and Models"
+      },
+      {
+        "@id": "urn:ngm:class:nut-01-mint-public-keys",
+        "label": "NUT-01 Mint Public Keys"
+      },
+      {
+        "@id": "urn:ngm:class:nut-02-keysets-and-fees",
+        "label": "NUT-02 Keysets and Fees"
+      },
+      {
+        "@id": "urn:ngm:class:nut-03-swapping-tokens",
+        "label": "NUT-03 Swapping Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:nut-04-minting-tokens",
+        "label": "NUT-04 Minting Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:nut-05-melting-tokens",
+        "label": "NUT-05 Melting Tokens"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bc27c5774a5d87c2cfb8f97399239cf244c51d1feee84f4dfb06b95efcd6ca33@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Cashu** is a free and open-source Chaumian ecash protocol designed for Bitcoin and the [[Lightning Network]], first released in October 2022 by the pseudonymous developer Calle (alias @callebtc), a PhD physicist and Bitcoin developer. Cashu implements [[David Chaum]]'s 1982 blind signature scheme — originally operationalised through [[DigiCash]] in the 1990s — to provide instant, near-free, and completely anonymous bearer instrument transactions denominated in satoshis. The protocol is defined through a numbered family of specifications called NUTs (Notation, Usage, and Terminology), which govern cryptographic primitives, mint APIs, token serialisation, optional extensions (payment conditions, offline payments, authentication), and inter-operability requirements for wallets and mints. Unlike [[Fedimint]], which federates multiple guardians into a consensus-managed custody arrangement, Cashu operates through single-operator mints: any individual or service may deploy a Cashu mint, accept Lightning deposits, issue ecash tokens, and redeem them — acting as a non-bank bearer-instrument issuer. The [[Mint]] operator cannot link the act of issuing a token to the later act of redeeming ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:blind-signatures",
-      "vc:label": "Blind Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:cashu-mint",
-      "vc:label": "Cashu Mint"
-    },
-    {
-      "@id": "urn:visionflow:linked:cashu-nut-specifications",
-      "vc:label": "Cashu NUT Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecash-token",
-      "vc:label": "Ecash Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyset",
-      "vc:label": "Keyset"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-invoice",
-      "vc:label": "Lightning Invoice"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof",
-      "vc:label": "Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:spent-token-registry",
-      "vc:label": "Spent Token Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blind-signature-scheme",
-      "vc:label": "Blind Signature Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-functions",
-      "vc:label": "Hash Functions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anonymous-payments",
-      "vc:label": "Anonymous Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:bearer-token-transfer",
-      "vc:label": "Bearer Token Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-privacy",
-      "vc:label": "Financial Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-mint-payments",
-      "vc:label": "Multi-Mint Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:offline-transactions",
-      "vc:label": "Offline Transactions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bearer-token-model",
-      "vc:label": "Bearer Token Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:chaumian-blind-signature-scheme",
-      "vc:label": "Chaumian Blind Signature Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:dleq-proofs",
-      "vc:label": "DLEQ Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-protocol-specifications",
-      "vc:label": "NUT Protocol Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:pay-to-pubkey-spending-conditions",
-      "vc:label": "Pay-To-Pubkey Spending Conditions"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:open-sats",
-      "vc:label": "OpenSats"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1",
-      "vc:label": "Secp256k1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-payments",
-      "vc:label": "AI Agent Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-privacy",
-      "vc:label": "Financial Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:merchant-payments",
-      "vc:label": "Merchant Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr",
-      "vc:label": "Nostr"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self-Custody"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:blind-signatures",
-      "vc:label": "Blind Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:bolt11",
-      "vc:label": "BOLT11"
-    },
-    {
-      "@id": "urn:visionflow:linked:bolt12",
-      "vc:label": "BOLT12"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-invoices",
-      "vc:label": "Lightning Invoices"
-    },
-    {
-      "@id": "urn:visionflow:linked:nfc-payments",
-      "vc:label": "NFC Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:qr-codes",
-      "vc:label": "QR Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-sockets",
-      "vc:label": "WebSockets"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ark-protocol",
-      "vc:label": "Ark Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:fedimint",
-      "vc:label": "Fedimint"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-privacy",
-      "vc:label": "Lightning Network Privacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:monero",
-      "vc:label": "Monero"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-bitcoin",
-      "vc:label": "On-Chain Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:linked:zcash",
-      "vc:label": "Zcash"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:btcpay-server",
-      "vc:label": "BTCPayServer"
-    },
-    {
-      "@id": "urn:visionflow:linked:cashu-development-kit",
-      "vc:label": "Cashu Development Kit"
-    },
-    {
-      "@id": "urn:visionflow:linked:david-chaum",
-      "vc:label": "David Chaum"
-    },
-    {
-      "@id": "urn:visionflow:linked:digi-cash",
-      "vc:label": "DigiCash"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-nuts",
-      "vc:label": "eNuts"
-    },
-    {
-      "@id": "urn:visionflow:linked:minibits",
-      "vc:label": "Minibits"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr",
-      "vc:label": "Nostr"
-    },
-    {
-      "@id": "urn:visionflow:linked:nutshell",
-      "vc:label": "Nutshell"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecash",
-      "vc:label": "Ecash"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:nut-00-cryptography-and-models",
-      "vc:label": "NUT-00 Cryptography and Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-01-mint-public-keys",
-      "vc:label": "NUT-01 Mint Public Keys"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-02-keysets-and-fees",
-      "vc:label": "NUT-02 Keysets and Fees"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-03-swapping-tokens",
-      "vc:label": "NUT-03 Swapping Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-04-minting-tokens",
-      "vc:label": "NUT-04 Minting Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:nut-05-melting-tokens",
-      "vc:label": "NUT-05 Melting Tokens"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blind-signatures",
-      "vc:label": "Blind Signatures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecash",
-      "vc:label": "Ecash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

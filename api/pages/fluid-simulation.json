@@ -3,19 +3,18 @@
   "title": "Fluid Simulation",
   "slug": "fluid-simulation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fluid-simulation",
+  "classIri": "urn:ngm:class:fluid-simulation",
   "domain": "spatial-computing",
   "definition": "Physics simulation of liquid and gas dynamics using computational fluid dynamics (CFD) techniques to model realistic water, smoke, and atmospheric effects in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

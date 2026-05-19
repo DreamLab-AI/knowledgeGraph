@@ -3,19 +3,18 @@
   "title": "Neural Network Layer",
   "slug": "neural-network-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:neural-network-layer",
+  "classIri": "urn:ngm:class:neural-network-layer",
   "domain": "artificial-intelligence",
-  "definition": "Neural Network Layer is a concept within the ai domain. Further enrichment pending.",
+  "definition": "Neural Network Layer is a type of Neural Network Component in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:neural-network-component",
+      "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

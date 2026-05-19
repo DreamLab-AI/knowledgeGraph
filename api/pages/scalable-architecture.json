@@ -3,32 +3,36 @@
   "title": "Scalable Architecture",
   "slug": "scalable-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:scalable-architecture",
+  "classIri": "urn:ngm:class:scalable-architecture",
   "domain": "spatial-computing",
   "definition": "System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:high-availability",
+        "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

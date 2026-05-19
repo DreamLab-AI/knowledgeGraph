@@ -3,19 +3,18 @@
   "title": "Hyperledger Fabric",
   "slug": "hyperledger-fabric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hyperledger-fabric",
+  "classIri": "urn:ngm:class:hyperledger-fabric",
   "domain": "blockchain",
-  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential systems through [[PrivateChannels]], [[SmartContract|chaincode]], and pluggable consensus mechanisms. Fabric implements execute-order-validate architecture enabling [[PrivateChannels]] where subsets of members conduct transactions invisibly to others, and supports multiple consensus options\u2014{{Raft}}, [[PracticalByzantineFaultTolerance|PBFT]], custom implementations\u2014adapted to consortium requirements. Unlike [[PublicBlockchain|public blockchains]], Fabric uses member certificate authorities for identity validation and [[AccessControl]] policies governing permission boundaries.",
+  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential systems through [[PrivateChannels]], [[SmartContract|chaincode]], and pluggable consensus mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:private-channels",
+        "label": "PrivateChannels"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

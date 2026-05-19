@@ -3,19 +3,18 @@
   "title": "Robotics Systems",
   "slug": "robotics-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robotics-systems",
+  "classIri": "urn:ngm:class:robotics-systems",
   "domain": "robotics",
-  "definition": "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, and action for physical world interaction.",
+  "definition": "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, an...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-domain",
+      "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -572,348 +572,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+  "@type": "Class",
   "label": "Deepfakes and fraudulent content",
+  "definition": "Deepfakes and fraudulent content denote synthetic audio, image, video and text artefacts produced by deep generative models (notably GAN-based face-swap pipelines DeepFaceLab/Faceswap/StyleGAN3, diffusion-based face-conditioning ReActor/Roop/InstantID/PhotoMaker/IP-Adapter-Face, lip-sync video ge...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:generative-ai-misuse",
-      "vc:label": "Generative AI Misuse"
+      "@id": "urn:ngm:class:generative-ai-misuse",
+      "label": "Generative AI Misuse"
     },
     {
-      "@id": "urn:visionflow:linked:identity-fraud",
-      "vc:label": "Identity Fraud"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-integrity-threat",
-      "vc:label": "Information Integrity Threat"
+      "@id": "urn:ngm:class:identity-fraud",
+      "label": "Identity Fraud"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c6fbd0ee8bd4ed73f9184f79e3df2286898ace51451d92d335ca849765207616"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lip-sync-generation",
+        "label": "Lip Sync Generation"
+      },
+      {
+        "@id": "urn:ngm:class:non-consensual-intimate-imagery",
+        "label": "Non-Consensual Intimate Imagery"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-avatar",
+        "label": "Real-Time Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-disinformation",
+        "label": "Synthetic Disinformation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-identity-document",
+        "label": "Synthetic Identity Document"
+      },
+      {
+        "@id": "urn:ngm:class:voice-clone",
+        "label": "Voice Clone"
+      },
+      {
+        "@id": "urn:ngm:class:face-swap",
+        "label": "Face Swap"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distribution-platform",
+        "label": "Distribution Platform"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:target-identity-reference",
+        "label": "Target Identity Reference"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:business-email-compromise",
+        "label": "Business Email Compromise"
+      },
+      {
+        "@id": "urn:ngm:class:election-interference",
+        "label": "Election Interference"
+      },
+      {
+        "@id": "urn:ngm:class:image-based-sexual-abuse",
+        "label": "Image-Based Sexual Abuse"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-bypass",
+        "label": "KYC Bypass"
+      },
+      {
+        "@id": "urn:ngm:class:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-attack",
+        "label": "Reputation Attack"
+      },
+      {
+        "@id": "urn:ngm:class:romance-fraud",
+        "label": "Romance Fraud"
+      },
+      {
+        "@id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:audiovisual-forgery",
+        "label": "Audiovisual Forgery"
+      },
+      {
+        "@id": "urn:ngm:class:identity-impersonation",
+        "label": "Identity Impersonation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-puppetry",
+        "label": "Real-Time Puppetry"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning-attack",
+        "label": "Voice Cloning Attack"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:d-id",
+        "label": "D-ID"
+      },
+      {
+        "@id": "urn:ngm:class:deep-face-lab",
+        "label": "DeepFaceLab"
+      },
+      {
+        "@id": "urn:ngm:class:eleven-labs",
+        "label": "ElevenLabs"
+      },
+      {
+        "@id": "urn:ngm:class:hey-gen",
+        "label": "HeyGen"
+      },
+      {
+        "@id": "urn:ngm:class:instant-id",
+        "label": "InstantID"
+      },
+      {
+        "@id": "urn:ngm:class:re-actor",
+        "label": "ReActor"
+      },
+      {
+        "@id": "urn:ngm:class:synthesia",
+        "label": "Synthesia"
+      },
+      {
+        "@id": "urn:ngm:class:wav2-lip",
+        "label": "Wav2Lip"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:face-swap",
+        "label": "FaceSwap"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:election-integrity",
+        "label": "Election Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:media-forensics",
+        "label": "Media Forensics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:disinformation-campaign",
+        "label": "Disinformation Campaign"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-ecosystem",
+        "label": "Fraud Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:influence-operation",
+        "label": "Influence Operation"
+      },
+      {
+        "@id": "urn:ngm:class:pig-butchering-scam",
+        "label": "Pig-Butchering Scam"
+      },
+      {
+        "@id": "urn:ngm:class:sextortion",
+        "label": "Sextortion"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:cai-coalition-for-content-provenance-and-authenticity",
+        "label": "CAI Coalition for Content Provenance and Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:china-deep-synthesis-provisions",
+        "label": "China Deep Synthesis Provisions"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "label": "EU AI Act Article 50"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22144",
+        "label": "ISO 22144"
+      },
+      {
+        "@id": "urn:ngm:class:take-it-down-act",
+        "label": "TAKE IT DOWN Act"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c6fbd0ee8bd4ed73f9184f79e3df2286898ace51451d92d335ca849765207616@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Deepfakes and fraudulent content** denote synthetic audio, image, video and text artefacts produced by deep generative models (notably GAN-based face-swap pipelines DeepFaceLab/Faceswap/StyleGAN3, diffusion-based face-conditioning ReActor/Roop/InstantID/PhotoMaker/IP-Adapter-Face, lip-sync video generators Wav2Lip/MuseTalk/LatentSync/KEEP/HeyGen-EMO real-time avatars, voice cloning systems ElevenLabs/Resemble AI/PlayHT/OpenAI Voice Engine/Cartesia Sonic/Meta Voicebox, and full-body avatar platforms DeepMotion/Synthesia/HeyGen/D-ID/Hour One) deployed without consent or disclosure to impersonate real persons, fabricate non-consensual intimate imagery (NCII), execute social-engineering attacks against enterprises and consumers, manipulate elections, and produce fraudulent identity documents — emerging as a distinct socio-technical threat category in late 2017 when the r/deepfakes subreddit (banned February 2018) demonstrated that autoencoder face-swap pipelines previously confined to VFX studios could be replicated on consumer GPUs, accelerated through the 2018-2022 release of open-source pipelines DeepFaceLab (sf-editor1) and FaceSwap (deepfakes/faceswap) trained on celebrity datas",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:lip-sync-generation",
-      "vc:label": "Lip Sync Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-consensual-intimate-imagery",
-      "vc:label": "Non-Consensual Intimate Imagery"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-avatar",
-      "vc:label": "Real-Time Avatar"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-disinformation",
-      "vc:label": "Synthetic Disinformation"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-identity-document",
-      "vc:label": "Synthetic Identity Document"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-clone",
-      "vc:label": "Voice Clone"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:face-swap",
-      "vc:label": "Face Swap"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:distribution-platform",
-      "vc:label": "Distribution Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-identity-reference",
-      "vc:label": "Target Identity Reference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:business-email-compromise",
-      "vc:label": "Business Email Compromise"
-    },
-    {
-      "@id": "urn:visionflow:linked:election-interference",
-      "vc:label": "Election Interference"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-based-sexual-abuse",
-      "vc:label": "Image-Based Sexual Abuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc-bypass",
-      "vc:label": "KYC Bypass"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-manipulation",
-      "vc:label": "Market Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:reputation-attack",
-      "vc:label": "Reputation Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:romance-fraud",
-      "vc:label": "Romance Fraud"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-engineering",
-      "vc:label": "Social Engineering"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:audiovisual-forgery",
-      "vc:label": "Audiovisual Forgery"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-impersonation",
-      "vc:label": "Identity Impersonation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-puppetry",
-      "vc:label": "Real-Time Puppetry"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning-attack",
-      "vc:label": "Voice Cloning Attack"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:face-recognition",
-      "vc:label": "Face Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-synthesis",
-      "vc:label": "Speech Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:wav2-lip",
-      "vc:label": "Wav2Lip"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autoencoder",
-      "vc:label": "Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:disinformation-campaign",
-      "vc:label": "Disinformation Campaign"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-ecosystem",
-      "vc:label": "Fraud Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:influence-operation",
-      "vc:label": "Influence Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pig-butchering-scam",
-      "vc:label": "Pig-Butchering Scam"
-    },
-    {
-      "@id": "urn:visionflow:linked:sextortion",
-      "vc:label": "Sextortion"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:d-id",
-      "vc:label": "D-ID"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-face-lab",
-      "vc:label": "DeepFaceLab"
-    },
-    {
-      "@id": "urn:visionflow:linked:eleven-labs",
-      "vc:label": "ElevenLabs"
-    },
-    {
-      "@id": "urn:visionflow:linked:hey-gen",
-      "vc:label": "HeyGen"
-    },
-    {
-      "@id": "urn:visionflow:linked:instant-id",
-      "vc:label": "InstantID"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-actor",
-      "vc:label": "ReActor"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthesia",
-      "vc:label": "Synthesia"
-    },
-    {
-      "@id": "urn:visionflow:linked:wav2-lip",
-      "vc:label": "Wav2Lip"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:face-swap",
-      "vc:label": "FaceSwap"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:authentic-ugc",
-      "vc:label": "Authentic UGC"
-    },
-    {
-      "@id": "urn:visionflow:linked:cgi-vfx",
-      "vc:label": "CGI VFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:consensual-avatar",
-      "vc:label": "Consensual Avatar"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosed-synthetic-media",
-      "vc:label": "Disclosed Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:shallowfake",
-      "vc:label": "Shallowfake"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:content-authenticity",
-      "vc:label": "Content Authenticity"
-    },
-    {
-      "@id": "urn:visionflow:linked:election-integrity",
-      "vc:label": "Election Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-forensics",
-      "vc:label": "Media Forensics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cyber-security-and-cryptography",
-      "vc:label": "Cyber Security and Cryptography"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa",
-      "vc:label": "C2PA"
-    },
-    {
-      "@id": "urn:visionflow:linked:cai-coalition-for-content-provenance-and-authenticity",
-      "vc:label": "CAI Coalition for Content Provenance and Authenticity"
-    },
-    {
-      "@id": "urn:visionflow:linked:china-deep-synthesis-provisions",
-      "vc:label": "China Deep Synthesis Provisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-50",
-      "vc:label": "EU AI Act Article 50"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22144",
-      "vc:label": "ISO 22144"
-    },
-    {
-      "@id": "urn:visionflow:linked:take-it-down-act",
-      "vc:label": "TAKE IT DOWN Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-online-safety-act",
-      "vc:label": "UK Online Safety Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:content-authenticity",
-      "vc:label": "Content Authenticity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cyber-security-and-cryptography",
-      "vc:label": "Cyber Security and Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

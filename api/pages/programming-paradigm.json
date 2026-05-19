@@ -3,19 +3,13 @@
   "title": "Programming Paradigm",
   "slug": "programming-paradigm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:programming-paradigm",
+  "classIri": "urn:ngm:class:programming-paradigm",
   "domain": "artificial-intelligence",
-  "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming. Functional programming (Haskell, Lisp) emphasizes immutability and higher-order functions, suited for mathematical ML algorithms. Differentiable programming treats entire programs as differentiable functions, enabling end-to-end gradient-based optimization. Modern AI development combines paradigms: object-oriented for software engineering, functional for mathematical rigor, and differentiable for learning.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

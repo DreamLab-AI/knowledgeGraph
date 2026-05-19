@@ -3,32 +3,36 @@
   "title": "Narrative Arc",
   "slug": "narrative-arc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:narrative-arc",
+  "classIri": "urn:ngm:class:narrative-arc",
   "domain": "spatial-computing",
   "definition": "The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:storytelling-structure",
+      "id": "urn:ngm:class:storytelling-structure",
       "label": "Storytelling Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:non-linear-narrative",
+        "id": "urn:ngm:class:non-linear-narrative",
         "label": "Non Linear Narrative"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

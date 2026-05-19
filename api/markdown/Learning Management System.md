@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:learning-management-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:learning-management-system",
+  "@type": "Class",
   "label": "Learning Management System",
+  "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:educational-technology",
-      "vc:label": "Educational Technology"
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ba31f0b4148ebe1356d74151a7d824a01f0e6a7eb99bfdaad4f3614b685980f7"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:vr-training-delivery",
+        "label": "VR Training Delivery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ba31f0b4148ebe1356d74151a7d824a01f0e6a7eb99bfdaad4f3614b685980f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:vr-training-delivery",
-      "vc:label": "VR Training Delivery"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "ERC721 Token",
   "slug": "erc721-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc721-token",
+  "classIri": "urn:ngm:class:erc721-token",
   "domain": "blockchain",
-  "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on Ethereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
+  "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on ereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:non-fungible-token",
+      "id": "urn:ngm:class:non-fungible-token",
       "label": "Non Fungible Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

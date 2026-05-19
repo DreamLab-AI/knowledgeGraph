@@ -368,364 +368,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gaussian-splatting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gaussian-splatting",
+  "@type": "Class",
   "label": "Gaussian Splatting",
+  "definition": "Novel view synthesis and 3D scene representation technique introduced by Kerbl, Kopanas, Leimkühler and Drettakis at SIGGRAPH 2023 (INRIA Sophia Antlis), representing scenes as explicit collections of s of anisotropic 3D Gaussian primitives — each defined by a 3D mean position μ ∈ ℝ³, a 3×3 covar...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-scene-reconstruction",
-      "vc:label": "3D Scene Reconstruction"
+      "@id": "urn:ngm:class:3-d-scene-reconstruction",
+      "label": "3D Scene Reconstruction"
     },
     {
-      "@id": "urn:visionflow:linked:differentiable-rendering",
-      "vc:label": "Differentiable Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:novel-view-synthesis",
-      "vc:label": "Novel View Synthesis"
+      "@id": "urn:ngm:class:differentiable-rendering",
+      "label": "Differentiable Rendering"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:74df3bf514976ff652742ef4cda63e2e350d637b343dd0cb6cfae4927bf4338d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adaptive-densification",
+        "label": "Adaptive Densification"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-compositing",
+        "label": "Alpha Compositing"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sorting",
+        "label": "Depth Sorting"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rasterizer",
+        "label": "Differentiable Rasterizer"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-primitive",
+        "label": "Gaussian Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:sf-m-point-cloud",
+        "label": "SfM Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "@id": "urn:ngm:class:tile-based-renderer",
+        "label": "Tile-Based Renderer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:colmap",
+        "label": "COLMAP"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-photography",
+        "label": "Multi-View Photography"
+      },
+      {
+        "@id": "urn:ngm:class:ssim-loss",
+        "label": "SSIM Loss"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:alpha-blending",
+        "label": "Alpha Blending"
+      },
+      {
+        "@id": "urn:ngm:class:covariance-decomposition",
+        "label": "Covariance Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ewa-splatting",
+        "label": "EWA Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "@id": "urn:ngm:class:tile-rasterisation",
+        "label": "Tile Rasterisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:colmap",
+        "label": "COLMAP"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:ar-technology",
+        "label": "AR Technology"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-creation",
+        "label": "Avatar Creation"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-system",
+        "label": "Spatial Computing System"
+      },
+      {
+        "@id": "urn:ngm:class:vision-pro",
+        "label": "Vision Pro"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:acm-siggraph",
+        "label": "ACM SIGGRAPH"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-cvpr",
+        "label": "IEEE CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-iccv",
+        "label": "IEEE ICCV"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:74df3bf514976ff652742ef4cda63e2e350d637b343dd0cb6cfae4927bf4338d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Novel view synthesis and 3D scene representation technique introduced by Kerbl, Kopanas, Leimkühler and Drettakis at SIGGRAPH 2023 (INRIA Sophia Antipolis), representing scenes as explicit collections of millions of anisotropic 3D Gaussian primitives — each defined by a 3D mean position μ ∈ ℝ³, a 3×3 covariance matrix Σ encoding ellipsoidal shape and orientation, a set of spherical harmonic coefficients for view-dependent colour (up to degree 3, 48 coefficients per Gaussian), and a learned opacity α ∈ [0,1] — which are rendered onto an image plane through differentiable rasterisation (\"splatting\": projecting each 3D Gaussian to a 2D Gaussian footprint, depth-sorting, and alpha-compositing front-to-back via GPU tile-based rasteriser), trained by gradient descent from 50–200 calibrated photographs initialised from a sparse Structure-from-Motion (SfM / COLMAP) point cloud using an adaptive densification strategy that splits under-reconstructed regions (gradient magnitude threshold) and prunes transparent or oversized Gaussians, achieving photorealistic quality (PSNR 30–35 dB on standard benchmarks: Tanks and Temples, Mip-NeRF 360, Deep Blending) at rendering speeds of 100–300 FPS at 1",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-densification",
-      "vc:label": "Adaptive Densification"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-compositing",
-      "vc:label": "Alpha Compositing"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-sorting",
-      "vc:label": "Depth Sorting"
-    },
-    {
-      "@id": "urn:visionflow:linked:differentiable-rasterizer",
-      "vc:label": "Differentiable Rasterizer"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaussian-primitive",
-      "vc:label": "Gaussian Primitive"
-    },
-    {
-      "@id": "urn:visionflow:linked:sf-m-point-cloud",
-      "vc:label": "SfM Point Cloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:spherical-harmonics",
-      "vc:label": "Spherical Harmonics"
-    },
-    {
-      "@id": "urn:visionflow:linked:tile-based-renderer",
-      "vc:label": "Tile-Based Renderer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "Camera Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:colmap",
-      "vc:label": "COLMAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-view-photography",
-      "vc:label": "Multi-View Photography"
-    },
-    {
-      "@id": "urn:visionflow:linked:ssim-loss",
-      "vc:label": "SSIM Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:structure-from-motion",
-      "vc:label": "Structure from Motion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:novel-view-synthesis",
-      "vc:label": "Novel View Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality-ar",
-      "vc:label": "Augmented Reality (AR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photorealistic-rendering",
-      "vc:label": "Photorealistic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:volumetric-capture",
-      "vc:label": "Volumetric Capture"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:alpha-blending",
-      "vc:label": "Alpha Blending"
-    },
-    {
-      "@id": "urn:visionflow:linked:covariance-decomposition",
-      "vc:label": "Covariance Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:linked:differentiable-rendering",
-      "vc:label": "Differentiable Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:ewa-splatting",
-      "vc:label": "EWA Splatting"
-    },
-    {
-      "@id": "urn:visionflow:linked:spherical-harmonics",
-      "vc:label": "Spherical Harmonics"
-    },
-    {
-      "@id": "urn:visionflow:linked:tile-rasterisation",
-      "vc:label": "Tile Rasterisation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gaussian-distribution",
-      "vc:label": "Gaussian Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:point-cloud",
-      "vc:label": "Point Cloud"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rasterization",
-      "vc:label": "Rasterization"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-content-generation",
-      "vc:label": "3D Content Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-technology",
-      "vc:label": "AR Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-creation",
-      "vc:label": "Avatar Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing-system",
-      "vc:label": "Spatial Computing System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vision-pro",
-      "vc:label": "Vision Pro"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:colmap",
-      "vc:label": "COLMAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:spherical-harmonics",
-      "vc:label": "Spherical Harmonics"
-    },
-    {
-      "@id": "urn:visionflow:linked:structure-from-motion",
-      "vc:label": "Structure from Motion"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:mesh-based-rendering",
-      "vc:label": "Mesh-Based Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:voxel-grid-representation",
-      "vc:label": "Voxel Grid Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-field",
-      "vc:label": "Neural Radiance Field"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
-      "vc:label": "Neural Radiance Fields"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physically-based-rendering",
-      "vc:label": "Physically Based Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ray-tracing",
-      "vc:label": "Ray Tracing"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
-      "vc:label": "3D Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-frame",
-      "vc:label": "AR Frame"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-rendering",
-      "vc:label": "Neural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:point-cloud",
-      "vc:label": "Point Cloud"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:volumetric-capture",
-      "vc:label": "Volumetric Capture"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:acm-siggraph",
-      "vc:label": "ACM SIGGRAPH"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-cvpr",
-      "vc:label": "IEEE CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-iccv",
-      "vc:label": "IEEE ICCV"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-gaussian-splatting",
-      "vc:label": "3D Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-field",
-      "vc:label": "Neural Radiance Field"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

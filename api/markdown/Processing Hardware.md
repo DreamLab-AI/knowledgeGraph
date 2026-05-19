@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:processing-hardware",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:processing-hardware",
+  "@type": "Class",
   "label": "Processing Hardware",
+  "definition": "Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:physical-hardware",
-      "vc:label": "Physical Hardware"
+      "@id": "urn:ngm:class:physical-hardware",
+      "label": "Physical Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eb1613395675b182d867cc522517d6c1efa0f82a30293698556a5f4e3e559f89"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eb1613395675b182d867cc522517d6c1efa0f82a30293698556a5f4e3e559f89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-performance-computing",
-      "vc:label": "High Performance Computing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

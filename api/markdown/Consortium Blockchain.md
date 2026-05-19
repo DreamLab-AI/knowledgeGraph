@@ -604,412 +604,311 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:consortium-blockchain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consortium-blockchain",
+  "@type": "Class",
   "label": "Consortium Blockchain",
+  "definition": "Consortium Blockchain is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix — occupying a deliberate middle position in th...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:federated-system",
-      "vc:label": "Federated System"
+      "@id": "urn:ngm:class:federated-system",
+      "label": "Federated System"
     },
     {
-      "@id": "urn:visionflow:linked:multi-organisation-database",
-      "vc:label": "Multi-Organisation Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-network",
-      "vc:label": "Permissioned Network"
+      "@id": "urn:ngm:class:multi-organisation-database",
+      "label": "Multi-Organisation Database"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a7d2757b58ed348bf05fd2563d696ade198ad6c25c9be43234e600a43f84e243"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:chaincode-container",
+        "label": "Chaincode Container"
+      },
+      {
+        "@id": "urn:ngm:class:channels-and-private-data-collections",
+        "label": "Channels and Private Data Collections"
+      },
+      {
+        "@id": "urn:ngm:class:endorsement-policy",
+        "label": "Endorsement Policy"
+      },
+      {
+        "@id": "urn:ngm:class:membership-service-provider",
+        "label": "Membership Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-data-store",
+        "label": "Off-Chain Data Store"
+      },
+      {
+        "@id": "urn:ngm:class:ordering-service",
+        "label": "Ordering Service"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:multi-party-governance",
+        "label": "Multi-Party Governance"
+      },
+      {
+        "@id": "urn:ngm:class:network-membership-agreement",
+        "label": "Network Membership Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-dv-p-settlement",
+        "label": "Atomic DvP Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting-automation",
+        "label": "Regulatory Reporting Automation"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-deposit",
+        "label": "Tokenised Deposit"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-asset",
+        "label": "Tokenised Real-World Asset"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance-digitisation",
+        "label": "Trade Finance Digitisation"
+      },
+      {
+        "@id": "urn:ngm:class:wholesale-cbdc",
+        "label": "Wholesale CBDC"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerant-ordering",
+        "label": "Crash Fault Tolerant Ordering"
+      },
+      {
+        "@id": "urn:ngm:class:ibft",
+        "label": "IBFT"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:qbft",
+        "label": "QBFT"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:smart-bft",
+        "label": "Smart BFT"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:azure-confidential-consortium-framework",
+        "label": "Azure Confidential Consortium Framework"
+      },
+      {
+        "@id": "urn:ngm:class:go-quorum",
+        "label": "GoQuorum"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      },
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cbdc",
+        "label": "CBDC"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:citi-token-services",
+        "label": "Citi Token Services"
+      },
+      {
+        "@id": "urn:ngm:class:ebsi",
+        "label": "EBSI"
+      },
+      {
+        "@id": "urn:ngm:class:hsbc-orion",
+        "label": "HSBC Orion"
+      },
+      {
+        "@id": "urn:ngm:class:ibm-food-trust",
+        "label": "IBM Food Trust"
+      },
+      {
+        "@id": "urn:ngm:class:jpmorgan-onyx",
+        "label": "JPMorgan Onyx"
+      },
+      {
+        "@id": "urn:ngm:class:kinexys",
+        "label": "Kinexys"
+      },
+      {
+        "@id": "urn:ngm:class:medi-ledger",
+        "label": "MediLedger"
+      },
+      {
+        "@id": "urn:ngm:class:project-agor",
+        "label": "Project Agorá"
+      },
+      {
+        "@id": "urn:ngm:class:project-m-bridge",
+        "label": "Project mBridge"
+      },
+      {
+        "@id": "urn:ngm:class:project-rosalind",
+        "label": "Project Rosalind"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:eth-trust-security-levels",
+        "label": "EthTrust Security Levels"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:inter-work-alliance-token-taxonomy",
+        "label": "InterWork Alliance Token Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "@id": "urn:ngm:class:iso-23257",
+        "label": "ISO 23257"
+      },
+      {
+        "@id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tr-23455",
+        "label": "ISO/TR 23455"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation-decentralized-trust",
+        "label": "Linux Foundation Decentralized Trust"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a7d2757b58ed348bf05fd2563d696ade198ad6c25c9be43234e600a43f84e243@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Consortium Blockchain** is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix — occupying a deliberate middle position in the trust spectrum between fully public permissionless blockchains ([[Bitcoin]], [[Ethereum]] mainnet, [[Solana]]) where any party may validate and read all state, and fully private internal blockchains operated by a single organisation. The defining structural property is **multi-organisation governance under a hybrid trust model**: validators are known and contractually accountable rather than anonymous, the consensus assumption reduces to an M-of-N honest-majority among a finite committee (typically 4-21 validating organisations) rather than to a probabilistic cryptoeconomic majority among an open validator set, and access policies (transaction submission, channel membership, oracle attestation, smart-contract endorsement) are explicitly negotiated between members rather than enforced by open economic incentives. The four-decade lineage extends from **Practical Byzantine Fault Toleranc",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:chaincode-container",
-      "vc:label": "Chaincode Container"
-    },
-    {
-      "@id": "urn:visionflow:linked:channels-and-private-data-collections",
-      "vc:label": "Channels and Private Data Collections"
-    },
-    {
-      "@id": "urn:visionflow:linked:endorsement-policy",
-      "vc:label": "Endorsement Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:membership-service-provider",
-      "vc:label": "Membership Service Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:notary-service",
-      "vc:label": "Notary Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-data-store",
-      "vc:label": "Off-Chain Data Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:ordering-service",
-      "vc:label": "Ordering Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:validator-node",
-      "vc:label": "Validator Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:multi-party-governance",
-      "vc:label": "Multi-Party Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-membership-agreement",
-      "vc:label": "Network Membership Agreement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:atomic-dv-p-settlement",
-      "vc:label": "Atomic DvP Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-reporting-automation",
-      "vc:label": "Regulatory Reporting Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-provenance",
-      "vc:label": "Supply Chain Provenance"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-deposit",
-      "vc:label": "Tokenised Deposit"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-real-world-asset",
-      "vc:label": "Tokenised Real-World Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance-digitisation",
-      "vc:label": "Trade Finance Digitisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wholesale-cbdc",
-      "vc:label": "Wholesale CBDC"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:crash-fault-tolerant-ordering",
-      "vc:label": "Crash Fault Tolerant Ordering"
-    },
-    {
-      "@id": "urn:visionflow:linked:ibft",
-      "vc:label": "IBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:pbft",
-      "vc:label": "PBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:qbft",
-      "vc:label": "QBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-bft",
-      "vc:label": "Smart BFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-authority",
-      "vc:label": "Proof of Authority"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:consortium-governance-framework",
-      "vc:label": "Consortium Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-agreement",
-      "vc:label": "Legal Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-cryptography",
-      "vc:label": "Threshold Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-509-certificate",
-      "vc:label": "X.509 Certificate"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:citi-token-services",
-      "vc:label": "Citi Token Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:ebsi",
-      "vc:label": "EBSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:hsbc-orion",
-      "vc:label": "HSBC Orion"
-    },
-    {
-      "@id": "urn:visionflow:linked:ibm-food-trust",
-      "vc:label": "IBM Food Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:jpmorgan-onyx",
-      "vc:label": "JPMorgan Onyx"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinexys",
-      "vc:label": "Kinexys"
-    },
-    {
-      "@id": "urn:visionflow:linked:medi-ledger",
-      "vc:label": "MediLedger"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-agor",
-      "vc:label": "Project Agorá"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-m-bridge",
-      "vc:label": "Project mBridge"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-rosalind",
-      "vc:label": "Project Rosalind"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:azure-confidential-consortium-framework",
-      "vc:label": "Azure Confidential Consortium Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:go-quorum",
-      "vc:label": "GoQuorum"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum",
-      "vc:label": "Quorum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-iroha",
-      "vc:label": "Hyperledger Iroha"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:r3-corda",
-      "vc:label": "R3 Corda"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ethereum-mainnet",
-      "vc:label": "Ethereum Mainnet"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-blockchain",
-      "vc:label": "Permissionless Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:swift-messaging",
-      "vc:label": "SWIFT Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-edi",
-      "vc:label": "Traditional EDI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-blockchain",
-      "vc:label": "Private Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-blockchain",
-      "vc:label": "Public Blockchain"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cbdc",
-      "vc:label": "CBDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance",
-      "vc:label": "Trade Finance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supply-chain-management",
-      "vc:label": "Supply Chain Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance",
-      "vc:label": "Enterprise Ethereum Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:eth-trust-security-levels",
-      "vc:label": "EthTrust Security Levels"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-foundation",
-      "vc:label": "Hyperledger Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-work-alliance-token-taxonomy",
-      "vc:label": "InterWork Alliance Token Taxonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22739",
-      "vc:label": "ISO 22739"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-23257",
-      "vc:label": "ISO 23257"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-24165",
-      "vc:label": "ISO 24165"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tr-23455",
-      "vc:label": "ISO/TR 23455"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation-decentralized-trust",
-      "vc:label": "Linux Foundation Decentralized Trust"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:cbdc",
-      "vc:label": "CBDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance",
-      "vc:label": "Trade Finance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

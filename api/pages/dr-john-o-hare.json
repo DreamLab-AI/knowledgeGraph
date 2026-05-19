@@ -3,19 +3,18 @@
   "title": "Dr John O'Hare",
   "slug": "dr-john-o-hare",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dr-john-o-hare",
+  "classIri": "urn:ngm:class:dr-john-o-hare",
   "domain": "infrastructure",
   "definition": "Dr John O'Hare is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

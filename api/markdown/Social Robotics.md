@@ -188,76 +188,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:social-robotics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-robotics",
+  "@type": "Class",
   "label": "Social Robotics",
+  "definition": "A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.",
+  "domain": "robotics",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human-Robot Interaction"
+      "@id": "urn:ngm:class:human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:509177e676bd09f8ae568ef667d89424f50a7f9b84136a6747492a09d9135013"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:communication-capabilities",
+        "label": "Communication Capabilities"
+      },
+      {
+        "@id": "urn:ngm:class:social-intelligence",
+        "label": "Social Intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:509177e676bd09f8ae568ef667d89424f50a7f9b84136a6747492a09d9135013@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:communication-capabilities",
-      "vc:label": "Communication Capabilities"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-intelligence",
-      "vc:label": "Social Intelligence"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:assistive-robotics",
-      "vc:label": "Assistive Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-robot-collaboration",
-      "vc:label": "Human-Robot Collaboration"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing",
-      "vc:label": "Affective Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,37 +3,46 @@
   "title": "Atomic Swap",
   "slug": "atomic-swap",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:atomic-swap",
+  "classIri": "urn:ngm:class:atomic-swap",
   "domain": "blockchain",
   "definition": "Trustless peer-to-peer cryptocurrency exchange mechanism across different blockchains using Hash Time-Locked Contracts (HTLCs) that guarantees atomic execution where the swap either completes fully or not at all, eliminating counterparty risk without requiring centralized intermediaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-protocol",
+      "id": "urn:ngm:class:blockchain-protocol",
       "label": "Blockchain Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-chain-interoperability",
+        "id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:hash-time-locked-contract",
+        "id": "urn:ngm:class:hash-time-locked-contract",
         "label": "Hash Time-Locked Contract"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

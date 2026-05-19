@@ -180,76 +180,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:inverse-kinematics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inverse-kinematics",
+  "@type": "Class",
   "label": "Inverse Kinematics",
+  "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
+      "@id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:87e94a87e9a65f7dd844e9523698a3bcd963ac744b4725274f8b42fc0cf244be"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
+      },
+      {
+        "@id": "urn:ngm:class:target-pose",
+        "label": "Target Pose"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:analytical-methods",
+        "label": "Analytical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:87e94a87e9a65f7dd844e9523698a3bcd963ac744b4725274f8b42fc0cf244be@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.97",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:kinematic-model",
-      "vc:label": "Kinematic Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-pose",
-      "vc:label": "Target Pose"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:rb-1016-path-planning",
-      "vc:label": "RB-1016-path-planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-control",
-      "vc:label": "Robot Control"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:analytical-methods",
-      "vc:label": "Analytical Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:jacobian-matrix",
-      "vc:label": "Jacobian Matrix"
-    },
-    {
-      "@id": "urn:visionflow:linked:numerical-methods",
-      "vc:label": "Numerical Methods"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

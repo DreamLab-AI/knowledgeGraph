@@ -1324,424 +1324,339 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:enterprise-token-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:enterprise-token-standards",
+  "@type": "Class",
   "label": "Enterprise Token Standards",
+  "definition": "Enterprise Token Standards are the family of blockchain token specifications engineered to represent regulated financial instruments — equities, bonds, money-market fund units, real estate, private-equity interests, structured products, regulated stablecoins and central-bank-backed deposit tokens...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-asset-standard",
-      "vc:label": "Digital Asset Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulated-financial-instrument",
-      "vc:label": "Regulated Financial Instrument"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-representation-format",
-      "vc:label": "Securities Representation Format"
+      "@id": "urn:ngm:class:digital-asset-standard",
+      "label": "Digital Asset Standard"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1be4246eced5177a9b421f0598c4ab633d9ac66beefdd17ccedd3d4a57b69cf9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:claim-topic-registry",
+        "label": "Claim Topic Registry"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-module",
+        "label": "Compliance Module"
+      },
+      {
+        "@id": "urn:ngm:class:controller-operations",
+        "label": "Controller Operations"
+      },
+      {
+        "@id": "urn:ngm:class:document-registry",
+        "label": "Document Registry"
+      },
+      {
+        "@id": "urn:ngm:class:identity-registry",
+        "label": "Identity Registry"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-identity-onchainid",
+        "label": "On-Chain Identity ONCHAINID"
+      },
+      {
+        "@id": "urn:ngm:class:partition-manager",
+        "label": "Partition Manager"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-restriction",
+        "label": "Transfer Restriction"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-issuer-registry",
+        "label": "Trusted Issuer Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:custody-infrastructure",
+        "label": "Custody Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:legal-wrapper",
+        "label": "Legal Wrapper"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-authorisation",
+        "label": "Regulatory Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:token-issuer-agent",
+        "label": "Token Issuer Agent"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:24-7-securities-settlement",
+        "label": "24-7 Securities Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-delivery-versus-payment",
+        "label": "Atomic Delivery Versus Payment"
+      },
+      {
+        "@id": "urn:ngm:class:automated-corporate-actions",
+        "label": "Automated Corporate Actions"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-asset-distribution",
+        "label": "Cross-Border Asset Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-compliance",
+        "label": "Programmable Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:investor-accreditation-verification",
+        "label": "Investor Accreditation Verification"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-restriction-logic",
+        "label": "Transfer Restriction Logic"
+      },
+      {
+        "@id": "urn:ngm:class:whitelist-permissioning",
+        "label": "Whitelist Permissioning"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulated-financial-instrument",
+        "label": "Regulated Financial Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:securities-representation-format",
+        "label": "Securities Representation Format"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-725",
+        "label": "ERC-725"
+      },
+      {
+        "@id": "urn:ngm:class:erc-735",
+        "label": "ERC-735"
+      },
+      {
+        "@id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "@id": "urn:ngm:class:hardhat",
+        "label": "Hardhat"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-libraries",
+        "label": "OpenZeppelin Libraries"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorand-standard-asset",
+        "label": "Algorand Standard Asset"
+      },
+      {
+        "@id": "urn:ngm:class:black-rock-buidl",
+        "label": "BlackRock BUIDL"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3525",
+        "label": "ERC-3525"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "@id": "urn:ngm:class:erc-4626",
+        "label": "ERC-4626"
+      },
+      {
+        "@id": "urn:ngm:class:erc-7540",
+        "label": "ERC-7540"
+      },
+      {
+        "@id": "urn:ngm:class:franklin-templeton-fobxx",
+        "label": "Franklin Templeton FOBXX"
+      },
+      {
+        "@id": "urn:ngm:class:hedera-token-service",
+        "label": "Hedera Token Service"
+      },
+      {
+        "@id": "urn:ngm:class:hsbc-orion",
+        "label": "HSBC Orion"
+      },
+      {
+        "@id": "urn:ngm:class:jp-morgan-onyx",
+        "label": "JP Morgan Onyx"
+      },
+      {
+        "@id": "urn:ngm:class:ondo-finance",
+        "label": "Ondo Finance"
+      },
+      {
+        "@id": "urn:ngm:class:polymath",
+        "label": "Polymath"
+      },
+      {
+        "@id": "urn:ngm:class:polymesh",
+        "label": "Polymesh"
+      },
+      {
+        "@id": "urn:ngm:class:securitize",
+        "label": "Securitize"
+      },
+      {
+        "@id": "urn:ngm:class:solana-token-2022",
+        "label": "Solana Token 2022"
+      },
+      {
+        "@id": "urn:ngm:class:tokeny",
+        "label": "Tokeny"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:institutional-de-fi",
+        "label": "Institutional DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-de-fi",
+        "label": "Permissioned DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-bond",
+        "label": "Tokenised Bond"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-money-market-fund",
+        "label": "Tokenised Money Market Fund"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-private-equity",
+        "label": "Tokenised Private Equity"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-estate",
+        "label": "Tokenised Real Estate"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:capital-markets-and-technology-association-cmtat",
+        "label": "Capital Markets and Technology Association CMTAT"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal-process",
+        "label": "Ethereum Improvement Proposal Process"
+      },
+      {
+        "@id": "urn:ngm:class:fca-asset-tokenisation-implementation-group",
+        "label": "FCA Asset Tokenisation Implementation Group"
+      },
+      {
+        "@id": "urn:ngm:class:finos",
+        "label": "FINOS"
+      },
+      {
+        "@id": "urn:ngm:class:global-digital-finance",
+        "label": "Global Digital Finance"
+      },
+      {
+        "@id": "urn:ngm:class:hm-treasury-digital-securities-sandbox",
+        "label": "HM Treasury Digital Securities Sandbox"
+      },
+      {
+        "@id": "urn:ngm:class:inter-work-alliance-token-taxonomy-framework",
+        "label": "InterWork Alliance Token Taxonomy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "@id": "urn:ngm:class:itsa",
+        "label": "ITSA"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1be4246eced5177a9b421f0598c4ab633d9ac66beefdd17ccedd3d4a57b69cf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Enterprise Token Standards** are the family of blockchain token specifications engineered to represent regulated financial instruments — equities, bonds, money-market fund units, real estate, private-equity interests, structured products, regulated stablecoins and central-bank-backed deposit tokens — under compliance, identity and transfer-restriction constraints that distinguish them from permissionless utility/payment tokens such as [[ERC-20]], [[ERC-721]] or [[ERC-1155]], encompassing on Ethereum the security-token lineage [[ERC-1400]] (Polymath/Securitize 2018 partitioned security-token suite with sub-standards [[ERC-1410]] partially-fungible partitions, [[ERC-1594]] core security token, [[ERC-1643]] document attachment, [[ERC-1644]] controller/forced-transfer operations), [[ERC-3643]] T-REX (Tokeny \"Tokenised Regulated Assets eXperts\" v4.x ratified as final Ethereum Improvement Proposal in 2023 after ERCS-1404 transfer-restriction lineage, integrated with [[ONCHAINID]] [[ERC-734]]/[[ERC-735]] identity registry and modular compliance module pattern, now powering Polygon Securities, Iznes, RealT, Bitbond, Mata Capital and 30+ tokenisation platforms), [[ERC-1404]] (transfer-res",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:claim-topic-registry",
-      "vc:label": "Claim Topic Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-module",
-      "vc:label": "Compliance Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller-operations",
-      "vc:label": "Controller Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-registry",
-      "vc:label": "Document Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-registry",
-      "vc:label": "Identity Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-identity-onchainid",
-      "vc:label": "On-Chain Identity ONCHAINID"
-    },
-    {
-      "@id": "urn:visionflow:linked:partition-manager",
-      "vc:label": "Partition Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-restriction",
-      "vc:label": "Transfer Restriction"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-issuer-registry",
-      "vc:label": "Trusted Issuer Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:custody-infrastructure",
-      "vc:label": "Custody Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-identity-verification",
-      "vc:label": "Digital Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-wrapper",
-      "vc:label": "Legal Wrapper"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-authorisation",
-      "vc:label": "Regulatory Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-issuer-agent",
-      "vc:label": "Token Issuer Agent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:24-7-securities-settlement",
-      "vc:label": "24-7 Securities Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-tokenisation",
-      "vc:label": "Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:atomic-delivery-versus-payment",
-      "vc:label": "Atomic Delivery Versus Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-corporate-actions",
-      "vc:label": "Automated Corporate Actions"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-asset-distribution",
-      "vc:label": "Cross-Border Asset Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:fractional-ownership",
-      "vc:label": "Fractional Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-compliance",
-      "vc:label": "Programmable Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:investor-accreditation-verification",
-      "vc:label": "Investor Accreditation Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc-aml-compliance",
-      "vc:label": "KYC AML Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-restriction-logic",
-      "vc:label": "Transfer Restriction Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:whitelist-permissioning",
-      "vc:label": "Whitelist Permissioning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:securities-regulation",
-      "vc:label": "Securities Regulation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-identity",
-      "vc:label": "Cryptographic Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:custodian-network",
-      "vc:label": "Custodian Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-enforceability",
-      "vc:label": "Legal Enforceability"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-network",
-      "vc:label": "Oracle Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:institutional-de-fi",
-      "vc:label": "Institutional DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-de-fi",
-      "vc:label": "Permissioned DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-asset-tokenisation",
-      "vc:label": "Real-World Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-bond",
-      "vc:label": "Tokenised Bond"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-money-market-fund",
-      "vc:label": "Tokenised Money Market Fund"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-private-equity",
-      "vc:label": "Tokenised Private Equity"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-real-estate",
-      "vc:label": "Tokenised Real Estate"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:erc-1155",
-      "vc:label": "ERC-1155"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20",
-      "vc:label": "ERC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-721",
-      "vc:label": "ERC-721"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-725",
-      "vc:label": "ERC-725"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-735",
-      "vc:label": "ERC-735"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundry",
-      "vc:label": "Foundry"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardhat",
-      "vc:label": "Hardhat"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-libraries",
-      "vc:label": "OpenZeppelin Libraries"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:central-securities-depository",
-      "vc:label": "Central Securities Depository"
-    },
-    {
-      "@id": "urn:visionflow:linked:dematerialised-book-entry",
-      "vc:label": "Dematerialised Book Entry"
-    },
-    {
-      "@id": "urn:visionflow:linked:meme-coin",
-      "vc:label": "Meme Coin"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-token",
-      "vc:label": "Permissionless Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-utility-token",
-      "vc:label": "Pure Utility Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-transfer-agent-model",
-      "vc:label": "Traditional Transfer Agent Model"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:algorand-standard-asset",
-      "vc:label": "Algorand Standard Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:black-rock-buidl",
-      "vc:label": "BlackRock BUIDL"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1400",
-      "vc:label": "ERC-1400"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3525",
-      "vc:label": "ERC-3525"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3643",
-      "vc:label": "ERC-3643"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-4626",
-      "vc:label": "ERC-4626"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-7540",
-      "vc:label": "ERC-7540"
-    },
-    {
-      "@id": "urn:visionflow:linked:franklin-templeton-fobxx",
-      "vc:label": "Franklin Templeton FOBXX"
-    },
-    {
-      "@id": "urn:visionflow:linked:hedera-token-service",
-      "vc:label": "Hedera Token Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:hsbc-orion",
-      "vc:label": "HSBC Orion"
-    },
-    {
-      "@id": "urn:visionflow:linked:jp-morgan-onyx",
-      "vc:label": "JP Morgan Onyx"
-    },
-    {
-      "@id": "urn:visionflow:linked:ondo-finance",
-      "vc:label": "Ondo Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:polymath",
-      "vc:label": "Polymath"
-    },
-    {
-      "@id": "urn:visionflow:linked:polymesh",
-      "vc:label": "Polymesh"
-    },
-    {
-      "@id": "urn:visionflow:linked:securitize",
-      "vc:label": "Securitize"
-    },
-    {
-      "@id": "urn:visionflow:linked:solana-token-2022",
-      "vc:label": "Solana Token 2022"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokeny",
-      "vc:label": "Tokeny"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:capital-markets-and-technology-association-cmtat",
-      "vc:label": "Capital Markets and Technology Association CMTAT"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-improvement-proposal-process",
-      "vc:label": "Ethereum Improvement Proposal Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-asset-tokenisation-implementation-group",
-      "vc:label": "FCA Asset Tokenisation Implementation Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:finos",
-      "vc:label": "FINOS"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-digital-finance",
-      "vc:label": "Global Digital Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:hm-treasury-digital-securities-sandbox",
-      "vc:label": "HM Treasury Digital Securities Sandbox"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-work-alliance-token-taxonomy-framework",
-      "vc:label": "InterWork Alliance Token Taxonomy Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:isda-cdm",
-      "vc:label": "ISDA CDM"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc-307",
-      "vc:label": "ISO TC 307"
-    },
-    {
-      "@id": "urn:visionflow:linked:itsa",
-      "vc:label": "ITSA"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:real-world-asset",
-      "vc:label": "Real-World Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-law",
-      "vc:label": "Securities Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

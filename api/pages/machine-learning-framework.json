@@ -3,32 +3,36 @@
   "title": "Machine Learning Framework",
   "slug": "machine-learning-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-framework",
+  "classIri": "urn:ngm:class:machine-learning-framework",
   "domain": "artificial-intelligence",
   "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-development-tools",
+      "id": "urn:ngm:class:ai-development-tools",
       "label": "AI Development Tools"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-model-development",
+        "id": "urn:ngm:class:ai-model-development",
         "label": "AI Model Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

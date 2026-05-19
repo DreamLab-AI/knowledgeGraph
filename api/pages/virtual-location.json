@@ -3,19 +3,18 @@
   "title": "Virtual Location",
   "slug": "virtual-location",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-location",
+  "classIri": "urn:ngm:class:virtual-location",
   "domain": "spatial-computing",
   "definition": "A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-environment",
+      "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

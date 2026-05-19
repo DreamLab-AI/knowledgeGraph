@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0019-exoskeleton-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0019-exoskeleton-robot",
+  "@type": "Class",
   "label": "rb 0019 exoskeleton robot",
+  "definition": "exoskeleton robot is a robotics and autonomous systems concept and a type of Exoskeleton Robot.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:exoskeleton-robot",
-      "vc:label": "Exoskeleton Robot"
+      "@id": "urn:ngm:class:exoskeleton-robot",
+      "label": "Exoskeleton Robot"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f5cdb92ae46ce9d19f0a2b2e73ab84c6a8251b008533546780f6c689462bf55f"
-  },
-  "vc:inferenceRule": "R2ExplicitInBody",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f5cdb92ae46ce9d19f0a2b2e73ab84c6a8251b008533546780f6c689462bf55f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "exoskeleton robot is a robotics and autonomous systems concept and a type of Exoskeleton Robot."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2ExplicitInBody"
+  }
 }
 ```
 

@@ -192,120 +192,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dc-servo-motor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dc-servo-motor",
+  "@type": "Class",
   "label": "DC Servo Motor",
+  "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:electric-motor",
-      "vc:label": "Electric Motor"
+      "@id": "urn:ngm:class:electric-motor",
+      "label": "Electric Motor"
     },
     {
-      "@id": "urn:visionflow:owl:class:servo-motor",
-      "vc:label": "Servo Motor"
+      "@id": "urn:ngm:class:servo-motor",
+      "label": "Servo Motor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8cd039d8f31a665376d532a0e5460739e7640a51c0272fb54b1862176289ac9a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:control-electronics",
+        "label": "Control Electronics"
+      },
+      {
+        "@id": "urn:ngm:class:current-driver",
+        "label": "Current Driver"
+      },
+      {
+        "@id": "urn:ngm:class:dc-motor",
+        "label": "DC Motor"
+      },
+      {
+        "@id": "urn:ngm:class:position-encoder",
+        "label": "Position Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dc-power-supply",
+        "label": "DC Power Supply"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-sensor",
+        "label": "Feedback Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-load",
+        "label": "Mechanical Load"
+      },
+      {
+        "@id": "urn:ngm:class:servo-amplifier",
+        "label": "Servo Amplifier"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-control",
+        "label": "Dynamic Control"
+      },
+      {
+        "@id": "urn:ngm:class:load-adaptation",
+        "label": "Load Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:precise-positioning",
+        "label": "Precise Positioning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8cd039d8f31a665376d532a0e5460739e7640a51c0272fb54b1862176289ac9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation. The servo loop continuously adjusts motor current based on sensor feedback, enabling rapid response to disturbances and accurate tracking of command trajectories for [[Robotic Manipulation]] and [[Motion Control]] applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:control-electronics",
-      "vc:label": "Control Electronics"
-    },
-    {
-      "@id": "urn:visionflow:linked:current-driver",
-      "vc:label": "Current Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:dc-motor",
-      "vc:label": "DC Motor"
-    },
-    {
-      "@id": "urn:visionflow:linked:position-encoder",
-      "vc:label": "Position Encoder"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dc-power-supply",
-      "vc:label": "DC Power Supply"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedback-sensor",
-      "vc:label": "Feedback Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanical-load",
-      "vc:label": "Mechanical Load"
-    },
-    {
-      "@id": "urn:visionflow:linked:servo-amplifier",
-      "vc:label": "Servo Amplifier"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-control",
-      "vc:label": "Dynamic Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-adaptation",
-      "vc:label": "Load Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:precise-positioning",
-      "vc:label": "Precise Positioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:trajectory-tracking",
-      "vc:label": "Trajectory Tracking"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bearings",
-      "vc:label": "Bearings"
-    },
-    {
-      "@id": "urn:visionflow:linked:cooling-system",
-      "vc:label": "Cooling System"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-shaft",
-      "vc:label": "Motor Shaft"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

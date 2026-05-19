@@ -3,45 +3,49 @@
   "title": "Accessibility Standards",
   "slug": "accessibility-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accessibility-standards",
+  "classIri": "urn:ngm:class:accessibility-standards",
   "domain": "spatial-computing",
-  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.",
+  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:design-standards",
+      "id": "urn:ngm:class:design-standards",
       "label": "Design Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:assistive-technology-integration",
+        "id": "urn:ngm:class:assistive-technology-integration",
         "label": "Assistive Technology Integration"
       },
       {
-        "id": "urn:visionflow:linked:multi-modal-interfaces",
+        "id": "urn:ngm:class:multi-modal-interfaces",
         "label": "Multi-Modal Interfaces"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:inclusive-virtual-experiences",
+        "id": "urn:ngm:class:inclusive-virtual-experiences",
         "label": "Inclusive Virtual Experiences"
       },
       {
-        "id": "urn:visionflow:linked:universal-design",
+        "id": "urn:ngm:class:universal-design",
         "label": "Universal Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

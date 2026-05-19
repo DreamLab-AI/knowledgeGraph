@@ -208,54 +208,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:proposal-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proposal-system",
+  "@type": "Class",
   "label": "Proposal System",
+  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain exe...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "OnChainVoting"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6fcc612283e4493936a4632425efbdb7fdd511f35b7fb1613e475fb5feec91c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain execution]] via [[SmartContract|smart contracts]]. Proposal systems implement thresholds—[[GovernanceToken]] requirements for initiation, quorum thresholds for binding, timelocks before execution—creating barriers preventing spam whilst enabling broad participation. Systems balance bottom-up permissionless initiation with governance efficiency, facing challenges around proposal spam, voter fatigue (5-15% typical participation), and professionalization concentrating power amongst technical elites.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:snapshot",
-      "vc:label": "Snapshot"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:on-chain-voting",
-      "vc:label": "OnChainVoting"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

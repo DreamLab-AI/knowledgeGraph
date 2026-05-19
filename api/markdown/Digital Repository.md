@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-repository",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-repository",
+  "@type": "Class",
   "label": "Digital Repository",
+  "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bb44e53a0e5d16baee743b5ebed43a3dffb7b2cc2d67864870e7239a02e5a24f"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:access-controls",
+        "label": "Access Controls"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-access",
+        "label": "Content Access"
+      },
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bb44e53a0e5d16baee743b5ebed43a3dffb7b2cc2d67864870e7239a02e5a24f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:access-controls",
-      "vc:label": "Access Controls"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-access",
-      "vc:label": "Content Access"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-preservation",
-      "vc:label": "Digital Preservation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

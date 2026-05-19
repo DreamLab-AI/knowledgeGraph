@@ -3,53 +3,57 @@
   "title": "Ar Experiences",
   "slug": "ar-experiences",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-experiences",
+  "classIri": "urn:ngm:class:ar-experiences",
   "domain": "spatial-computing",
-  "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.",
+  "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:immersive-technology-applications",
+      "id": "urn:ngm:class:immersive-technology-applications",
       "label": "Immersive Technology Applications"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ar-display-devices",
+        "id": "urn:ngm:class:ar-display-devices",
         "label": "AR Display Devices"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:contextual-information",
+        "id": "urn:ngm:class:contextual-information",
         "label": "Contextual Information"
       },
       {
-        "id": "urn:visionflow:linked:enhanced-visualization",
+        "id": "urn:ngm:class:enhanced-visualization",
         "label": "Enhanced Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:interactive-learning",
+        "id": "urn:ngm:class:interactive-learning",
         "label": "Interactive Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

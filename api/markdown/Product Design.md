@@ -436,394 +436,319 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:product-design",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:product-design",
+  "@type": "Class",
   "label": "Product Design",
+  "definition": "Product Design is the multidisciplinary creative and engineering practice of conceiving, planning, and producing goods, digital interfaces, and services that satisfy user needs, business objectives, and manufacturing or deployment constraints — integrating human-centred research mods, aesthetic j...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:creative-practice",
-      "vc:label": "Creative Practice"
+      "@id": "urn:ngm:class:creative-practice",
+      "label": "Creative Practice"
     },
     {
-      "@id": "urn:visionflow:linked:design-thinking",
-      "vc:label": "Design Thinking"
-    },
-    {
-      "@id": "urn:visionflow:linked:engineering-design",
-      "vc:label": "Engineering Design"
+      "@id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3563dc5c564fb228a7ccbf90823d4b7fb4038a89db8b350de8f68f681c1902b2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:design-ops",
+        "label": "DesignOps"
+      },
+      {
+        "@id": "urn:ngm:class:design-systems",
+        "label": "Design Systems"
+      },
+      {
+        "@id": "urn:ngm:class:design-tokens",
+        "label": "Design Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:service-blueprint",
+        "label": "Service Blueprint"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:brand-guidelines",
+        "label": "Brand Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:competitive-analysis",
+        "label": "Competitive Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:design-systems",
+        "label": "Design Systems"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-constraints",
+        "label": "Manufacturing Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping-tools",
+        "label": "Prototyping Tools"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "@id": "urn:ngm:class:customer-satisfaction",
+        "label": "Customer Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:product-development",
+        "label": "Product Development"
+      },
+      {
+        "@id": "urn:ngm:class:product-market-fit",
+        "label": "Product-Market Fit"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-design",
+        "label": "Sustainable Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:agile-design",
+        "label": "Agile Design"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-discovery",
+        "label": "Continuous Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:design-sprints",
+        "label": "Design Sprints"
+      },
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "@id": "urn:ngm:class:double-diamond-process",
+        "label": "Double Diamond Process"
+      },
+      {
+        "@id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:jobs-to-be-done-framework",
+        "label": "Jobs-to-be-Done Framework"
+      },
+      {
+        "@id": "urn:ngm:class:lean-ux",
+        "label": "Lean UX"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adobe-creative-cloud",
+        "label": "Adobe Creative Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:autodesk-fusion-360",
+        "label": "Autodesk Fusion 360"
+      },
+      {
+        "@id": "urn:ngm:class:fig-jam",
+        "label": "FigJam"
+      },
+      {
+        "@id": "urn:ngm:class:figma",
+        "label": "Figma"
+      },
+      {
+        "@id": "urn:ngm:class:in-vision",
+        "label": "InVision"
+      },
+      {
+        "@id": "urn:ngm:class:miro",
+        "label": "Miro"
+      },
+      {
+        "@id": "urn:ngm:class:principle",
+        "label": "Principle"
+      },
+      {
+        "@id": "urn:ngm:class:proto-pie",
+        "label": "ProtoPie"
+      },
+      {
+        "@id": "urn:ngm:class:sketch",
+        "label": "Sketch"
+      },
+      {
+        "@id": "urn:ngm:class:v0-dev",
+        "label": "V0.dev"
+      },
+      {
+        "@id": "urn:ngm:class:zeplin",
+        "label": "Zeplin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:cad",
+        "label": "CAD"
+      },
+      {
+        "@id": "urn:ngm:class:design-operations",
+        "label": "Design Operations"
+      },
+      {
+        "@id": "urn:ngm:class:design-research",
+        "label": "Design Research"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-design",
+        "label": "Industrial Design"
+      },
+      {
+        "@id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      },
+      {
+        "@id": "urn:ngm:class:ui-design",
+        "label": "UI Design"
+      },
+      {
+        "@id": "urn:ngm:class:ux-design",
+        "label": "UX Design"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:brand-management",
+        "label": "Brand Management"
+      },
+      {
+        "@id": "urn:ngm:class:business-strategy",
+        "label": "Business Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:marketing",
+        "label": "Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:product-management",
+        "label": "Product Management"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bs-en-iso-9241-210",
+        "label": "BS EN ISO 9241-210"
+      },
+      {
+        "@id": "urn:ngm:class:bsi-design-standards",
+        "label": "BSI Design Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-13407",
+        "label": "ISO 13407"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9241-ergonomics",
+        "label": "ISO 9241 Ergonomics"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-design-tokens-community-group",
+        "label": "W3C Design Tokens Community Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-wcag",
+        "label": "W3C WCAG"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3563dc5c564fb228a7ccbf90823d4b7fb4038a89db8b350de8f68f681c1902b2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Product Design is the multidisciplinary creative and engineering practice of conceiving, planning, and producing goods, digital interfaces, and services that satisfy user needs, business objectives, and manufacturing or deployment constraints — integrating human-centred research methods, aesthetic judgement, functional specification, materials selection, and iterative prototyping across the entire lifecycle from ideation through to market launch and post-launch refinement. In the AI era (2024–2026) the discipline has been substantially transformed by generative AI tools that automate or accelerate rote creative tasks: text-to-UI systems (Vercel V0, Galileo AI, Uizard) generate functional interface scaffolding from natural-language prompts; topology-optimisation and generative design engines (Autodesk Fusion 360 Generative Design, nTopology) explore structural solution spaces orders of magnitude larger than human designers can manually survey; large multimodal models produce concept sketches, design variants, and manufacturing simulations on demand; and design-system toolchains (Figma AI, Material Design 3, IBM Carbon 11, Shopify Polaris 12) propagate design tokens, component specif",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:design-ops",
-      "vc:label": "DesignOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-systems",
-      "vc:label": "Design Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-tokens",
-      "vc:label": "Design Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:generative-design",
-      "vc:label": "Generative Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:interaction-design",
-      "vc:label": "Interaction Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:prototyping",
-      "vc:label": "Prototyping"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-blueprint",
-      "vc:label": "Service Blueprint"
-    },
-    {
-      "@id": "urn:visionflow:linked:usability-testing",
-      "vc:label": "Usability Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-design",
-      "vc:label": "Visual Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-architecture",
-      "vc:label": "Information Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-research",
-      "vc:label": "User Research"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:brand-guidelines",
-      "vc:label": "Brand Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:competitive-analysis",
-      "vc:label": "Competitive Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-systems",
-      "vc:label": "Design Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-constraints",
-      "vc:label": "Manufacturing Constraints"
-    },
-    {
-      "@id": "urn:visionflow:linked:prototyping-tools",
-      "vc:label": "Prototyping Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-analysis",
-      "vc:label": "Stakeholder Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility-standards",
-      "vc:label": "Accessibility Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-research",
-      "vc:label": "User Research"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:brand-identity",
-      "vc:label": "Brand Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-satisfaction",
-      "vc:label": "Customer Satisfaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-development",
-      "vc:label": "Product Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-market-fit",
-      "vc:label": "Product-Market Fit"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-design",
-      "vc:label": "Sustainable Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience",
-      "vc:label": "User Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:agile-design",
-      "vc:label": "Agile Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-discovery",
-      "vc:label": "Continuous Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-sprints",
-      "vc:label": "Design Sprints"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-thinking",
-      "vc:label": "Design Thinking"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-diamond-process",
-      "vc:label": "Double Diamond Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-centred-design",
-      "vc:label": "Human-Centred Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:jobs-to-be-done-framework",
-      "vc:label": "Jobs-to-be-Done Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:lean-ux",
-      "vc:label": "Lean UX"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-psychology",
-      "vc:label": "Cognitive Psychology"
-    },
-    {
-      "@id": "urn:visionflow:linked:ergonomics",
-      "vc:label": "Ergonomics"
-    },
-    {
-      "@id": "urn:visionflow:linked:interaction-design",
-      "vc:label": "Interaction Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-processes",
-      "vc:label": "Manufacturing Processes"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-science",
-      "vc:label": "Material Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-design",
-      "vc:label": "Visual Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:information-architecture",
-      "vc:label": "Information Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-research",
-      "vc:label": "User Research"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:brand-management",
-      "vc:label": "Brand Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:business-strategy",
-      "vc:label": "Business Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:marketing",
-      "vc:label": "Marketing"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-management",
-      "vc:label": "Product Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:software-engineering",
-      "vc:label": "Software Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sustainability",
-      "vc:label": "Sustainability"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adobe-creative-cloud",
-      "vc:label": "Adobe Creative Cloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:autodesk-fusion-360",
-      "vc:label": "Autodesk Fusion 360"
-    },
-    {
-      "@id": "urn:visionflow:linked:fig-jam",
-      "vc:label": "FigJam"
-    },
-    {
-      "@id": "urn:visionflow:linked:figma",
-      "vc:label": "Figma"
-    },
-    {
-      "@id": "urn:visionflow:linked:in-vision",
-      "vc:label": "InVision"
-    },
-    {
-      "@id": "urn:visionflow:linked:miro",
-      "vc:label": "Miro"
-    },
-    {
-      "@id": "urn:visionflow:linked:principle",
-      "vc:label": "Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:proto-pie",
-      "vc:label": "ProtoPie"
-    },
-    {
-      "@id": "urn:visionflow:linked:sketch",
-      "vc:label": "Sketch"
-    },
-    {
-      "@id": "urn:visionflow:linked:v0-dev",
-      "vc:label": "V0.dev"
-    },
-    {
-      "@id": "urn:visionflow:linked:zeplin",
-      "vc:label": "Zeplin"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:engineering-led-design",
-      "vc:label": "Engineering-Led Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-led-development",
-      "vc:label": "Feature-Led Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:tech-push-innovation",
-      "vc:label": "Tech-Push Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-first-design",
-      "vc:label": "Technology-First Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:waterfall-product-development",
-      "vc:label": "Waterfall Product Development"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:additive-manufacturing",
-      "vc:label": "Additive Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cad",
-      "vc:label": "CAD"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-operations",
-      "vc:label": "Design Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-research",
-      "vc:label": "Design Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-design",
-      "vc:label": "Industrial Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-design",
-      "vc:label": "Service Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:ui-design",
-      "vc:label": "UI Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:ux-design",
-      "vc:label": "UX Design"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bs-en-iso-9241-210",
-      "vc:label": "BS EN ISO 9241-210"
-    },
-    {
-      "@id": "urn:visionflow:linked:bsi-design-standards",
-      "vc:label": "BSI Design Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-13407",
-      "vc:label": "ISO 13407"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-9241-ergonomics",
-      "vc:label": "ISO 9241 Ergonomics"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-design-tokens-community-group",
-      "vc:label": "W3C Design Tokens Community Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-wcag",
-      "vc:label": "W3C WCAG"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

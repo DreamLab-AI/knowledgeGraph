@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:participant-authentication",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:participant-authentication",
+  "@type": "Class",
   "label": "Participant Authentication",
+  "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through mods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ff0e9e52489a87056096086f40a23a716da920c596f5cdda085b061696794eb"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:secure-virtual-events",
+        "label": "Secure Virtual Events"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ff0e9e52489a87056096086f40a23a716da920c596f5cdda085b061696794eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through methods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:secure-virtual-events",
-      "vc:label": "Secure Virtual Events"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

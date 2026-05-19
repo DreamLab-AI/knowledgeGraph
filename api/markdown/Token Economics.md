@@ -148,51 +148,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:token-economics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:token-economics",
+  "@type": "Class",
   "label": "Token Economics",
-  "subClassOf": [],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:94baf3dec48a02510bf13c04db7abd17ea8ec83cd0fbd4e6fe40968f820eff00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
+  "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable eco...",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:decentralised-governance",
-      "vc:label": "Decentralised Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-incentives",
-      "vc:label": "Network Incentives"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-capture",
-      "vc:label": "Value Capture"
+      "@id": "urn:ngm:class:blockchain-core",
+      "label": "Blockchain"
     }
-  ]
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:network-incentives",
+        "label": "Network Incentives"
+      },
+      {
+        "@id": "urn:ngm:class:value-capture",
+        "label": "Value Capture"
+      }
+    ]
+  },
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-audio-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-audio-system",
+  "@type": "Class",
   "label": "Spatial Audio System",
+  "definition": "An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-audio-technology",
-      "vc:label": "Immersive Audio Technology"
+      "@id": "urn:ngm:class:immersive-audio-technology",
+      "label": "Immersive Audio Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:017495bcfb64eb742fa06bc1c7c3f6a3168a2e60a23e8fc83a030ce6f85946f4"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-sound-experience",
+        "label": "Immersive Sound Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:017495bcfb64eb742fa06bc1c7c3f6a3168a2e60a23e8fc83a030ce6f85946f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-sound-experience",
-      "vc:label": "Immersive Sound Experience"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

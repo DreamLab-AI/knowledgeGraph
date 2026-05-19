@@ -588,376 +588,291 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:meta-ar-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:meta-ar-engine",
+  "@type": "Class",
   "label": "Meta AR engine",
+  "definition": "Meta AR engine is the integrated stack of hardware, operating system, runtime APIs, developer SDKs, and AI services produced by Meta Reality Labs that enables augmented reality, mixed reality, and extended reality experiences across the Meta device family — spanning Meta Quest headsets (Quest 2, ...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
+      "@id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:84d48194fdafbd953442d5ff4e32dc7fc1b512eb9230e05bffacc0c1ba3dadfb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:building-blocks",
+        "label": "Building Blocks"
+      },
+      {
+        "@id": "urn:ngm:class:horizon-os",
+        "label": "Horizon OS"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "@id": "urn:ngm:class:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "@id": "urn:ngm:class:movement-sdk",
+        "label": "Movement SDK"
+      },
+      {
+        "@id": "urn:ngm:class:mtia",
+        "label": "MTIA"
+      },
+      {
+        "@id": "urn:ngm:class:orion-ar-glasses",
+        "label": "Orion AR Glasses"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-api",
+        "label": "Passthrough API"
+      },
+      {
+        "@id": "urn:ngm:class:presence-platform",
+        "label": "Presence Platform"
+      },
+      {
+        "@id": "urn:ngm:class:ray-ban-meta",
+        "label": "Ray-Ban Meta"
+      },
+      {
+        "@id": "urn:ngm:class:scene-api",
+        "label": "Scene API"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-sdk",
+        "label": "Spatial SDK"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:qualcomm-snapdragon-xr",
+        "label": "Qualcomm Snapdragon XR"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:waveguide-optics",
+        "label": "Waveguide Optics"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-assistants-in-xr",
+        "label": "AI Assistants in XR"
+      },
+      {
+        "@id": "urn:ngm:class:body-tracking",
+        "label": "Body Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:codec-avatars",
+        "label": "Codec Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-xr",
+        "label": "Enterprise XR"
+      },
+      {
+        "@id": "urn:ngm:class:face-tracking",
+        "label": "Face Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-applications",
+        "label": "Mixed Reality Applications"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-ar",
+        "label": "Passthrough AR"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:electromyography-input",
+        "label": "Electromyography Input"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-standard",
+        "label": "OpenXR Standard"
+      },
+      {
+        "@id": "urn:ngm:class:slam-tracking",
+        "label": "SLAM Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-vr",
+        "label": "IEEE VR"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-working-group",
+        "label": "OpenXR Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-xr-device-api",
+        "label": "W3C WebXR Device API"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:84d48194fdafbd953442d5ff4e32dc7fc1b512eb9230e05bffacc0c1ba3dadfb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Meta AR engine is the integrated stack of hardware, operating system, runtime APIs, developer SDKs, and AI services produced by Meta Reality Labs that enables augmented reality, mixed reality, and extended reality experiences across the Meta device family — spanning Meta Quest headsets (Quest 2, Quest 3, Quest 3S), Ray-Ban Meta smart glasses (2023–2026 generations), the Orion prototype AR glasses (September 2024 Connect reveal), and third-party devices running Horizon OS — constituting a vertically integrated spatial-computing platform combining inside-out six-degrees-of-freedom (6DoF) tracking using Qualcomm Snapdragon XR2 Gen 1 and XR2 Gen 2 SoCs, Presence Platform (spatial understanding, hand tracking, face tracking, body tracking, voice SDK, Scene API, Passthrough API), Movement SDK (full-body avatar animation and inverse kinematics), Spatial SDK (mixed reality app framework for Unity and Unreal Engine 5), Building Blocks (prefabricated Unity components for locomotion, interaction, UI), Meta Spatial SDK for Android (announced May 2024 for Horizon panel app migration), Meta AI (on-device and cloud LLM assistant integrated into Ray-Ban Meta glasses and Quest headsets from 2024), ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:building-blocks",
-      "vc:label": "Building Blocks"
-    },
-    {
-      "@id": "urn:visionflow:linked:horizon-os",
-      "vc:label": "Horizon OS"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-ai",
-      "vc:label": "Meta AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-quest",
-      "vc:label": "Meta Quest"
-    },
-    {
-      "@id": "urn:visionflow:linked:movement-sdk",
-      "vc:label": "Movement SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:mtia",
-      "vc:label": "MTIA"
-    },
-    {
-      "@id": "urn:visionflow:linked:orion-ar-glasses",
-      "vc:label": "Orion AR Glasses"
-    },
-    {
-      "@id": "urn:visionflow:linked:passthrough-api",
-      "vc:label": "Passthrough API"
-    },
-    {
-      "@id": "urn:visionflow:linked:presence-platform",
-      "vc:label": "Presence Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-ban-meta",
-      "vc:label": "Ray-Ban Meta"
-    },
-    {
-      "@id": "urn:visionflow:linked:scene-api",
-      "vc:label": "Scene API"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-sdk",
-      "vc:label": "Spatial SDK"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:inside-out-tracking",
-      "vc:label": "Inside-Out Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:qualcomm-snapdragon-xr",
-      "vc:label": "Qualcomm Snapdragon XR"
-    },
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:waveguide-optics",
-      "vc:label": "Waveguide Optics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-xr",
-      "vc:label": "OpenXR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-anchors",
-      "vc:label": "Spatial Anchors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-assistants-in-xr",
-      "vc:label": "AI Assistants in XR"
-    },
-    {
-      "@id": "urn:visionflow:linked:body-tracking",
-      "vc:label": "Body Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:codec-avatars",
-      "vc:label": "Codec Avatars"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-xr",
-      "vc:label": "Enterprise XR"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-tracking",
-      "vc:label": "Face Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-reality-applications",
-      "vc:label": "Mixed Reality Applications"
-    },
-    {
-      "@id": "urn:visionflow:linked:passthrough-ar",
-      "vc:label": "Passthrough AR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-rendering",
-      "vc:label": "Neural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-vr",
-      "vc:label": "Social VR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-anchoring",
-      "vc:label": "Spatial Anchoring"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:electromyography-input",
-      "vc:label": "Electromyography Input"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-standard",
-      "vc:label": "OpenXR Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:slam-tracking",
-      "vc:label": "SLAM Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-xr",
-      "vc:label": "WebXR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
-      "vc:label": "Neural Radiance Fields"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-understanding",
-      "vc:label": "Scene Understanding"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:qualcomm-snapdragon-xr",
-      "vc:label": "Qualcomm Snapdragon XR"
-    },
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-in-games",
-      "vc:label": "AI in Games"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:call-centres",
-      "vc:label": "Call Centres"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:education-and-ai",
-      "vc:label": "Education and AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:embodied-minds",
-      "vc:label": "Embodied Minds"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-detection",
-      "vc:label": "Collision Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:holo-lens",
-      "vc:label": "HoloLens"
-    },
-    {
-      "@id": "urn:visionflow:linked:samsung-galaxy-xr",
-      "vc:label": "Samsung Galaxy XR"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-xr-browser-stack",
-      "vc:label": "WebXR Browser Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:apple",
-      "vc:label": "Apple"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:google",
-      "vc:label": "Google"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-xr",
-      "vc:label": "OpenXR"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companions",
-      "vc:label": "AI companions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convergence",
-      "vc:label": "Convergence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-and-edge",
-      "vc:label": "Hardware and Edge"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-vr",
-      "vc:label": "IEEE VR"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-group",
-      "vc:label": "Khronos Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-working-group",
-      "vc:label": "OpenXR Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-xr-device-api",
-      "vc:label": "W3C WebXR Device API"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ar-frame",
-      "vc:label": "AR Frame"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

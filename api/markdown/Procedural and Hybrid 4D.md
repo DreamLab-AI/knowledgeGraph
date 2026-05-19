@@ -432,338 +432,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:procedural-and-hybrid-4-d",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+  "@type": "Class",
   "label": "Procedural and Hybrid 4D",
+  "definition": "Procedural and Hybrid 4D is a compound domain in graphics and creative tooling that unifies two convergent paradigms: (1) procedural generation — the algorithmic, rule-driven construction of geometry, materials, animation, simulation, and environment data using mathematical operations rather than...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-modelling",
-      "vc:label": "3D Modelling"
+      "@id": "urn:ngm:class:3-d-modelling",
+      "label": "3D Modelling"
     },
     {
-      "@id": "urn:visionflow:owl:class:simulation",
-      "vc:label": "Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:visual-effects",
-      "vc:label": "Visual Effects"
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:84f034a55b86bd622c58144f5c3b58919f471042beb0129d90c38dd7b477251f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:4-d-gaussian-splatting",
+        "label": "4D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:blender-geometry-nodes",
+        "label": "Blender Geometry Nodes"
+      },
+      {
+        "@id": "urn:ngm:class:cascadeur",
+        "label": "Cascadeur"
+      },
+      {
+        "@id": "urn:ngm:class:ember-gen",
+        "label": "EmberGen"
+      },
+      {
+        "@id": "urn:ngm:class:houdini-side-fx",
+        "label": "Houdini SideFX"
+      },
+      {
+        "@id": "urn:ngm:class:infinigen",
+        "label": "Infinigen"
+      },
+      {
+        "@id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      },
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:sdf-hybrid-models",
+        "label": "SDF Hybrid Models"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-pcg",
+        "label": "Unreal PCG"
+      },
+      {
+        "@id": "urn:ngm:class:wonder-studio",
+        "label": "Wonder Studio"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:physics-solver",
+        "label": "Physics Solver"
+      },
+      {
+        "@id": "urn:ngm:class:shader-pipeline",
+        "label": "Shader Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-sampling",
+        "label": "Temporal Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:4-d-content-creation",
+        "label": "4D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-animation",
+        "label": "AI Animation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-scene-reconstruction",
+        "label": "Dynamic Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-synthesis",
+        "label": "Photorealistic Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-world-building",
+        "label": "Procedural World Building"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-vfx",
+        "label": "Real-Time VFX"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:deformation-field",
+        "label": "Deformation Field"
+      },
+      {
+        "@id": "urn:ngm:class:flip-solver",
+        "label": "FLIP Solver"
+      },
+      {
+        "@id": "urn:ngm:class:hydra-rendering",
+        "label": "Hydra Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:karman-vortex-simulation",
+        "label": "Karman Vortex Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:material-point-method",
+        "label": "Material Point Method"
+      },
+      {
+        "@id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-nodes-graph",
+        "label": "Geometry Nodes Graph"
+      },
+      {
+        "@id": "urn:ngm:class:neural-mlp",
+        "label": "Neural MLP"
+      },
+      {
+        "@id": "urn:ngm:class:pcg-graph",
+        "label": "PCG Graph"
+      },
+      {
+        "@id": "urn:ngm:class:usd-pipeline",
+        "label": "USD Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-vision-training-data",
+        "label": "Computer Vision Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:film-vfx-production",
+        "label": "Film VFX Production"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-simulation",
+        "label": "Robotics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-content",
+        "label": "XR Content"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-usd-alliance",
+        "label": "OpenUSD Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:84f034a55b86bd622c58144f5c3b58919f471042beb0129d90c38dd7b477251f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Procedural and Hybrid 4D is a compound domain in graphics and creative tooling that unifies two convergent paradigms: (1) procedural generation — the algorithmic, rule-driven construction of geometry, materials, animation, simulation, and environment data using mathematical operations rather than hand-crafted assets; and (2) the fourth-dimensional extension of 3D representations into the temporal axis, producing time-varying volumetric content (4D = 3D spatial + 1D time) applicable to dynamic scene reconstruction, physics simulation, generative animation, and real-time interactive worlds. In practice these paradigms are inseparable: modern production pipelines (Houdini SideFX with Mantra/Karma/Solaris USD, Blender Geometry Nodes, Unreal Engine PCG, Unity Muse) apply procedural rules that inherently encode temporal variation — cloth simulations, fluid solvers, crowd systems, and growing botanical structures are all procedural functions of time. The field spans commercial DCC tools (digital content creation), open-source research frameworks (Infinigen, instant-ngp, OpenUSD), academic neural representations (NeRF, 3D Gaussian Splatting, 4DGS, SDF hybrid models), and AI-driven hybrid p",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:4-d-gaussian-splatting",
-      "vc:label": "4D Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:linked:blender-geometry-nodes",
-      "vc:label": "Blender Geometry Nodes"
-    },
-    {
-      "@id": "urn:visionflow:linked:cascadeur",
-      "vc:label": "Cascadeur"
-    },
-    {
-      "@id": "urn:visionflow:linked:ember-gen",
-      "vc:label": "EmberGen"
-    },
-    {
-      "@id": "urn:visionflow:linked:houdini-side-fx",
-      "vc:label": "Houdini SideFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:infinigen",
-      "vc:label": "Infinigen"
-    },
-    {
-      "@id": "urn:visionflow:linked:ne-rf",
-      "vc:label": "NeRF"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-usd",
-      "vc:label": "OpenUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdf-hybrid-models",
-      "vc:label": "SDF Hybrid Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:unreal-pcg",
-      "vc:label": "Unreal PCG"
-    },
-    {
-      "@id": "urn:visionflow:linked:wonder-studio",
-      "vc:label": "Wonder Studio"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:differentiable-rendering",
-      "vc:label": "Differentiable Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:physics-solver",
-      "vc:label": "Physics Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-pipeline",
-      "vc:label": "Shader Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-sampling",
-      "vc:label": "Temporal Sampling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:4-d-content-creation",
-      "vc:label": "4D Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-animation",
-      "vc:label": "AI Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-scene-reconstruction",
-      "vc:label": "Dynamic Scene Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:linked:photorealistic-synthesis",
-      "vc:label": "Photorealistic Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:procedural-world-building",
-      "vc:label": "Procedural World Building"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-vfx",
-      "vc:label": "Real-Time VFX"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synthetic-data-generation",
-      "vc:label": "Synthetic Data Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:deformation-field",
-      "vc:label": "Deformation Field"
-    },
-    {
-      "@id": "urn:visionflow:linked:flip-solver",
-      "vc:label": "FLIP Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:hydra-rendering",
-      "vc:label": "Hydra Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:karman-vortex-simulation",
-      "vc:label": "Karman Vortex Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-point-method",
-      "vc:label": "Material Point Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:signed-distance-function",
-      "vc:label": "Signed Distance Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-field",
-      "vc:label": "Neural Radiance Field"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:metal",
-      "vc:label": "Metal"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-usd",
-      "vc:label": "OpenUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:vex-scripting",
-      "vc:label": "VEX Scripting"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulkan",
-      "vc:label": "Vulkan"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:computer-vision-training-data",
-      "vc:label": "Computer Vision Training Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-vfx-production",
-      "vc:label": "Film VFX Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-simulation",
-      "vc:label": "Robotics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-content",
-      "vc:label": "XR Content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometry-nodes-graph",
-      "vc:label": "Geometry Nodes Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-mlp",
-      "vc:label": "Neural MLP"
-    },
-    {
-      "@id": "urn:visionflow:linked:pcg-graph",
-      "vc:label": "PCG Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-pipeline",
-      "vc:label": "USD Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:manual-keyframe-animation",
-      "vc:label": "Manual Keyframe Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:scan-based-assets",
-      "vc:label": "Scan-based Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-rasterisation",
-      "vc:label": "Traditional Rasterisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-data",
-      "vc:label": "Synthetic Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:academy-software-foundation",
-      "vc:label": "Academy Software Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-group",
-      "vc:label": "Khronos Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-usd-alliance",
-      "vc:label": "OpenUSD Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:siggraph",
-      "vc:label": "SIGGRAPH"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

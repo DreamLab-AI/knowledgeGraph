@@ -3,143 +3,267 @@
   "title": "AI Video",
   "slug": "ai-video",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-video",
+  "classIri": "urn:ngm:class:ai-video",
   "domain": "artificial-intelligence",
-  "definition": "AI Video, alternatively termed generative video, neural video synthesis, text-to-video (T2V), and image-to-video (I2V), denotes the class of deep generative models and engineering systems that synthesise temporally-coherent moving imagery conditioned on natural-language prompts, reference images, video clips, audio waveforms, or structured controls (depth maps, optical flow, pose skeletons, camera trajectories, scribbles), distinct from rule-based procedural animation, classical computer graphics pipelines, and rotoscoped or motion-captured human-driven workflows in that the visual content itself is produced by sampling from a learnt joint distribution over space-time pixel arrays rather than rendered from explicit geometric/material representations, originating in the Video Diffusion Models work of Ho et al. (NeurIPS 2022) extending Denoising Diffusion Probabilistic Models from 2D images to a 3D space-time tensor through a 3D U-Net with factorised space-time attention, advancing rapidly through Meta's Make-A-Video (Singer et al. 2022) demonstrating text-to-video without paired video-text training, Google's Imagen Video (Ho et al. 2022) achieving 1280\u00d7768 cascaded diffusion, Google",
+  "definition": "AI Video, alternatively termed generative video, neural video synthesis, text-to-video (T2V), and image-to-video (I2V), denotes the class of deep generative models and engineering systems that synthesise temporally-coherent moving imagery conditioned on natural-language prompts, reference images,...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:deep-generative-model",
+      "id": "urn:ngm:class:deep-generative-model",
       "label": "Deep Generative Model"
     },
     {
-      "id": "urn:visionflow:linked:synthetic-media",
+      "id": "urn:ngm:class:synthetic-media",
       "label": "Synthetic Media"
-    },
-    {
-      "id": "urn:visionflow:linked:foundation-model",
-      "label": "Foundation Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "id": "urn:ngm:class:classifier-free-guidance",
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:visionflow:linked:diffusion-transformer",
+        "id": "urn:ngm:class:diffusion-transformer",
         "label": "Diffusion Transformer"
       },
       {
-        "id": "urn:visionflow:linked:sampling-scheduler",
+        "id": "urn:ngm:class:sampling-scheduler",
         "label": "Sampling Scheduler"
       },
       {
-        "id": "urn:visionflow:linked:spatiotemporal-autoencoder",
+        "id": "urn:ngm:class:spatiotemporal-autoencoder",
         "label": "Spatiotemporal Autoencoder"
       },
       {
-        "id": "urn:visionflow:linked:temporal-attention-module",
+        "id": "urn:ngm:class:temporal-attention-module",
         "label": "Temporal Attention Module"
       },
       {
-        "id": "urn:visionflow:linked:text-encoder",
+        "id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
       },
       {
-        "id": "urn:visionflow:linked:video-tokeniser",
+        "id": "urn:ngm:class:video-tokeniser",
         "label": "Video Tokeniser"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:captioning-pipeline",
+        "id": "urn:ngm:class:captioning-pipeline",
         "label": "Captioning Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:large-scale-pretraining",
+        "id": "urn:ngm:class:large-scale-pretraining",
         "label": "Large-Scale Pretraining"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:video-text-training-corpus",
+        "id": "urn:ngm:class:video-text-training-corpus",
         "label": "Video-Text Training Corpus"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-avatar-synthesis",
+        "id": "urn:ngm:class:ai-avatar-synthesis",
         "label": "AI Avatar Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:deepfake",
+        "id": "urn:ngm:class:deepfake",
         "label": "Deepfake"
       },
       {
-        "id": "urn:visionflow:linked:image-to-video-generation",
+        "id": "urn:ngm:class:image-to-video-generation",
         "label": "Image-to-Video Generation"
       },
       {
-        "id": "urn:visionflow:linked:performance-capture",
+        "id": "urn:ngm:class:performance-capture",
         "label": "Performance Capture"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-advertising",
+        "id": "urn:ngm:class:synthetic-advertising",
         "label": "Synthetic Advertising"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-pre-visualisation",
+        "id": "urn:ngm:class:synthetic-pre-visualisation",
         "label": "Synthetic Pre-visualisation"
       },
       {
-        "id": "urn:visionflow:linked:text-to-video-generation",
+        "id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video Generation"
       },
       {
-        "id": "urn:visionflow:linked:video-to-video-translation",
+        "id": "urn:ngm:class:video-to-video-translation",
         "label": "Video-to-Video Translation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "id": "urn:ngm:class:classifier-free-guidance",
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:visionflow:linked:latent-video-diffusion",
+        "id": "urn:ngm:class:latent-video-diffusion",
         "label": "Latent Video Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:rectified-flow-training",
+        "id": "urn:ngm:class:rectified-flow-training",
         "label": "Rectified Flow Training"
       },
       {
-        "id": "urn:visionflow:linked:score-based-generative-modelling",
+        "id": "urn:ngm:class:score-based-generative-modelling",
         "label": "Score-Based Generative Modelling"
       },
       {
-        "id": "urn:visionflow:linked:spacetime-patch-tokenisation",
+        "id": "urn:ngm:class:spacetime-patch-tokenisation",
         "label": "Spacetime Patch Tokenisation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-causal-vae",
+        "label": "3D Causal VAE"
+      },
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-adapter",
+        "label": "LoRA Adapter"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "id": "urn:ngm:class:corporate-training-video",
+        "label": "Corporate Training Video"
+      },
+      {
+        "id": "urn:ngm:class:film-pre-visualisation",
+        "label": "Film Pre-visualisation"
+      },
+      {
+        "id": "urn:ngm:class:social-media-short-form",
+        "label": "Social Media Short-form"
+      },
+      {
+        "id": "urn:ngm:class:video-dubbing",
+        "label": "Video Dubbing"
+      },
+      {
+        "id": "urn:ngm:class:video-game-cinematic",
+        "label": "Video Game Cinematic"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bbc-generative-ai-principles",
+        "label": "BBC Generative AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:fvd",
+        "label": "FVD"
+      },
+      {
+        "id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "id": "urn:ngm:class:sag-aftra-tv-theatrical-contract",
+        "label": "SAG-AFTRA TV-Theatrical Contract"
+      },
+      {
+        "id": "urn:ngm:class:vbench",
+        "label": "VBench"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ]
   },
   "wikilinks": [
     {

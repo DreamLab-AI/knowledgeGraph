@@ -3,19 +3,18 @@
   "title": "Language Translation",
   "slug": "language-translation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:language-translation",
+  "classIri": "urn:ngm:class:language-translation",
   "domain": "distributed-collaboration",
-  "definition": "Language Translation is a concept within the telecollaboration domain. Further enrichment pending.",
+  "definition": "Language Translation is a type of Distributed Collaboration in the distributed collaboration domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

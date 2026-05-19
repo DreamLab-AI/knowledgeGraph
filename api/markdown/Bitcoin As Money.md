@@ -644,376 +644,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bitcoin-as-money",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bitcoin-as-money",
+  "@type": "Class",
   "label": "Bitcoin As Money",
+  "definition": "Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher [[Bitcoin]] — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by [[Satoshi Nakamoto]] — satisfies the classical three functions of money: medium of exchang...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:austrian-economics",
-      "vc:label": "Austrian Economics"
+      "@id": "urn:ngm:class:austrian-economics",
+      "label": "Austrian Economics"
     },
     {
-      "@id": "urn:visionflow:linked:cryptocurrency-economics",
-      "vc:label": "Cryptocurrency Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-asset-economics",
-      "vc:label": "Digital Asset Economics"
+      "@id": "urn:ngm:class:cryptocurrency-economics",
+      "label": "Cryptocurrency Economics"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6477c1d4adc31580b816fcf02d46cc991cf1c4b28201c432a4bce772b743d5bf"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:greshams-law-application",
+        "label": "Greshams Law Application"
+      },
+      {
+        "@id": "urn:ngm:class:layered-bitcoin-architecture",
+        "label": "Layered Bitcoin Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:medium-of-exchange",
+        "label": "Medium of Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "@id": "urn:ngm:class:unit-of-account",
+        "label": "Unit of Account"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-of-money-analysis",
+        "label": "Velocity of Money Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:merchant-adoption",
+        "label": "Merchant Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-consensus",
+        "label": "Monetary Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:price-stability-analysis",
+        "label": "Price Stability Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-agent-payments",
+        "label": "AI Agent Payments"
+      },
+      {
+        "@id": "urn:ngm:class:borderless-payments",
+        "label": "Borderless Payments"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistant-payments",
+        "label": "Censorship Resistant Payments"
+      },
+      {
+        "@id": "urn:ngm:class:circular-bitcoin-economy",
+        "label": "Circular Bitcoin Economy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:machine-commerce",
+        "label": "Machine Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-reserve-asset",
+        "label": "Sovereign Reserve Asset"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:austrian-hard-money-theory",
+        "label": "Austrian Hard Money Theory"
+      },
+      {
+        "@id": "urn:ngm:class:commodity-money-model",
+        "label": "Commodity Money Model"
+      },
+      {
+        "@id": "urn:ngm:class:fixed-supply-monetary-policy",
+        "label": "Fixed Supply Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money-paradigm",
+        "label": "Programmable Money Paradigm"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money-principles",
+        "label": "Sound Money Principles"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chivo-wallet",
+        "label": "Chivo Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      },
+      {
+        "@id": "urn:ngm:class:l402-protocol",
+        "label": "L402 Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:stablesats",
+        "label": "Stablesats"
+      },
+      {
+        "@id": "urn:ngm:class:strike-payment-infrastructure",
+        "label": "Strike Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-gold",
+        "label": "Digital Gold"
+      },
+      {
+        "@id": "urn:ngm:class:el-salvador",
+        "label": "El Salvador"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:remittances",
+        "label": "Remittances"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-treasury-strategy",
+        "label": "Bitcoin Treasury Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:hyperbitcoinization",
+        "label": "Hyperbitcoinization"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self Custody"
+      },
+      {
+        "@id": "urn:ngm:class:separation-of-money-and-state",
+        "label": "Separation of Money and State"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bip32-hd-wallets",
+        "label": "BIP32 HD Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "@id": "urn:ngm:class:imf-crypto-asset-classification-framework",
+        "label": "IMF Crypto Asset Classification Framework"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network-bolt-specifications",
+        "label": "Lightning Network BOLT Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-2008-whitepaper",
+        "label": "Nakamoto 2008 Whitepaper"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6477c1d4adc31580b816fcf02d46cc991cf1c4b28201c432a4bce772b743d5bf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Bitcoin As Money** is the analytical framework within monetary economics and philosophy that interrogates whether [[Bitcoin]] — the fixed-supply, decentralised, proof-of-work-secured digital commodity created by [[Satoshi Nakamoto]] in 2008 — satisfies the classical three functions of money: **medium of exchange** (MOE), **store of value** (SOV), and **unit of account** (UOA). The concept draws simultaneously on [[Austrian Economics]] (Mises, Hayek, Rothbard on hard-money theory and the regression theorem), mainstream [[Monetary Theory]] (Keynes, Friedman on money supply and velocity), and empirical institutional observation, producing a rich and contested body of analysis that has grown substantially as Bitcoin's market capitalisation crossed $1 trillion in 2021, $2 trillion in 2024, and its price exceeded $100,000 per coin during 2024-2025.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-standard",
-      "vc:label": "Bitcoin Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:greshams-law-application",
-      "vc:label": "Greshams Law Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:layered-bitcoin-architecture",
-      "vc:label": "Layered Bitcoin Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:medium-of-exchange",
-      "vc:label": "Medium of Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:store-of-value",
-      "vc:label": "Store of Value"
-    },
-    {
-      "@id": "urn:visionflow:linked:unit-of-account",
-      "vc:label": "Unit of Account"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-of-money-analysis",
-      "vc:label": "Velocity of Money Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network",
-      "vc:label": "Bitcoin Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:merchant-adoption",
-      "vc:label": "Merchant Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-consensus",
-      "vc:label": "Monetary Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-stability-analysis",
-      "vc:label": "Price Stability Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-payments",
-      "vc:label": "AI Agent Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:borderless-payments",
-      "vc:label": "Borderless Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:censorship-resistant-payments",
-      "vc:label": "Censorship Resistant Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:circular-bitcoin-economy",
-      "vc:label": "Circular Bitcoin Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:machine-commerce",
-      "vc:label": "Machine Commerce"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-reserve-asset",
-      "vc:label": "Sovereign Reserve Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:austrian-hard-money-theory",
-      "vc:label": "Austrian Hard Money Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:commodity-money-model",
-      "vc:label": "Commodity Money Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:fixed-supply-monetary-policy",
-      "vc:label": "Fixed Supply Monetary Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmable-money-paradigm",
-      "vc:label": "Programmable Money Paradigm"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money-principles",
-      "vc:label": "Sound Money Principles"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:merchant-adoption",
-      "vc:label": "Merchant Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-effect",
-      "vc:label": "Network Effect"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-stability",
-      "vc:label": "Price Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-clarity",
-      "vc:label": "Regulatory Clarity"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-consensus",
-      "vc:label": "Social Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-standard",
-      "vc:label": "Bitcoin Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-treasury-strategy",
-      "vc:label": "Bitcoin Treasury Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-sovereignty",
-      "vc:label": "Financial Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperbitcoinization",
-      "vc:label": "Hyperbitcoinization"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:separation-of-money-and-state",
-      "vc:label": "Separation of Money and State"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:chivo-wallet",
-      "vc:label": "Chivo Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:fedimint",
-      "vc:label": "Fedimint"
-    },
-    {
-      "@id": "urn:visionflow:linked:l402-protocol",
-      "vc:label": "L402 Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-protocol",
-      "vc:label": "RGB Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablesats",
-      "vc:label": "Stablesats"
-    },
-    {
-      "@id": "urn:visionflow:linked:strike-payment-infrastructure",
-      "vc:label": "Strike Payment Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cashu",
-      "vc:label": "Cashu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:fiat-money",
-      "vc:label": "Fiat Money"
-    },
-    {
-      "@id": "urn:visionflow:linked:gold-standard",
-      "vc:label": "Gold Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:keynesian-economics",
-      "vc:label": "Keynesian Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-banking",
-      "vc:label": "Traditional Banking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:austrian-economics",
-      "vc:label": "Austrian Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-gold",
-      "vc:label": "Digital Gold"
-    },
-    {
-      "@id": "urn:visionflow:linked:el-salvador",
-      "vc:label": "El Salvador"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-inclusion",
-      "vc:label": "Financial Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperbitcoinization",
-      "vc:label": "Hyperbitcoinization"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-policy",
-      "vc:label": "Monetary Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:remittances",
-      "vc:label": "Remittances"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micro-strategy",
-      "vc:label": "MicroStrategy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bip32-hd-wallets",
-      "vc:label": "BIP32 HD Wallets"
-    },
-    {
-      "@id": "urn:visionflow:linked:fasb-asu-2023-08",
-      "vc:label": "FASB ASU 2023-08"
-    },
-    {
-      "@id": "urn:visionflow:linked:imf-crypto-asset-classification-framework",
-      "vc:label": "IMF Crypto Asset Classification Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-bolt-specifications",
-      "vc:label": "Lightning Network BOLT Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:nakamoto-2008-whitepaper",
-      "vc:label": "Nakamoto 2008 Whitepaper"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:austrian-economics",
-      "vc:label": "Austrian Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-theory",
-      "vc:label": "Monetary Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-money",
-      "vc:label": "Sound Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

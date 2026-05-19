@@ -464,352 +464,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sustainable-consensus",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sustainable-consensus",
+  "@type": "Class",
   "label": "Sustainable Consensus",
+  "definition": "Sustainable consensus mechanisms are distributed agreement protocols designed for [[Blockchain Network|blockchain]] and distributed ledger systems that achieve Byzantine fault-tolerant finality whilst minimising energy consumption, carbon emissions, and physical resource expenditure—contrasting s...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:climate-technology",
-      "vc:label": "Climate Technology"
+      "@id": "urn:ngm:class:climate-technology",
+      "label": "Climate Technology"
     },
     {
-      "@id": "urn:visionflow:linked:energy-efficient-computing",
-      "vc:label": "Energy Efficient Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-systems-protocol",
-      "vc:label": "Distributed Systems Protocol"
+      "@id": "urn:ngm:class:energy-efficient-computing",
+      "label": "Energy Efficient Computing"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3c8967d38364a26b60d6a595ba598ef18536668f294b0df33f25da8530bced99"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:algorand-pure-proof-of-stake",
+        "label": "Algorand Pure Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche-snow-consensus",
+        "label": "Avalanche Snow Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:block-proposer-selection",
+        "label": "Block Proposer Selection"
+      },
+      {
+        "@id": "urn:ngm:class:hot-stuff-bft",
+        "label": "HotStuff BFT"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-space",
+        "label": "Proof of Space"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-space-time",
+        "label": "Proof of Space-Time"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:tezos-liquid-proof-of-stake",
+        "label": "Tezos Liquid Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-authority",
+        "label": "Proof of Authority"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-sortition",
+        "label": "Cryptographic Sortition"
+      },
+      {
+        "@id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "@id": "urn:ngm:class:stake-locking",
+        "label": "Stake Locking"
+      },
+      {
+        "@id": "urn:ngm:class:validator-economics",
+        "label": "Validator Economics"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:esg-compliant-blockchain",
+        "label": "ESG Compliant Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:green-bond-settlement",
+        "label": "Green Bond Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-de-fi-adoption",
+        "label": "Institutional DeFi Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:low-cost-transaction-processing",
+        "label": "Low-Cost Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-dlt-infrastructure",
+        "label": "Scalable DLT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:delegated-staking",
+        "label": "Delegated Staking"
+      },
+      {
+        "@id": "urn:ngm:class:economic-slashing",
+        "label": "Economic Slashing"
+      },
+      {
+        "@id": "urn:ngm:class:instant-finality-bft",
+        "label": "Instant Finality BFT"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-style-probabilistic-finality",
+        "label": "Nakamoto-Style Probabilistic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:randomised-leader-election",
+        "label": "Randomised Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bls-signature-aggregation",
+        "label": "BLS Signature Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-trees",
+        "label": "Merkle Trees"
+      },
+      {
+        "@id": "urn:ngm:class:storage-proofs",
+        "label": "Storage Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platforms",
+        "label": "Smart Contract Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bis-green-finance-standards",
+        "label": "BIS Green Finance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ccri-energy-benchmarks",
+        "label": "CCRI Energy Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-ibc-specification",
+        "label": "Cosmos IBC Specification"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "@id": "urn:ngm:class:eip-3675-ethereum-po-s",
+        "label": "EIP-3675 Ethereum PoS"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14064-ghg-protocol",
+        "label": "ISO 14064 GHG Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3c8967d38364a26b60d6a595ba598ef18536668f294b0df33f25da8530bced99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Sustainable consensus mechanisms are distributed agreement protocols designed for [[Blockchain Network|blockchain]] and distributed ledger systems that achieve Byzantine fault-tolerant finality whilst minimising energy consumption, carbon emissions, and physical resource expenditure—contrasting sharply with energy-intensive [[Proof of Work]] mining which consumed approximately 148 TWh/year at peak (Cambridge Centre for Alternative Finance, CCAF Bitcoin Electricity Consumption Index 2024). The field encompasses a heterogeneous family of mechanisms united by the objective of replacing computational waste with economic stake, storage utility, or delegated trust: [[Proof of Stake]] (PoS), in which validators lock capital as security bonds and are selected proportional to stake; [[Proof of History]] (PoH) developed by Solana Labs, which generates a cryptographic timestamping sequence enabling high-throughput ordering without energy-intensive work; [[Proof of Space]] and [[Proof of Space-Time]] (PoST), used by [[Chia Network]] and [[Filecoin]] respectively, which leverage commodity hard-drive storage rather than GPU compute as the scarce resource; [[Proof of Authority]] (PoA), which subs",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:algorand-pure-proof-of-stake",
-      "vc:label": "Algorand Pure Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:linked:avalanche-snow-consensus",
-      "vc:label": "Avalanche Snow Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:block-proposer-selection",
-      "vc:label": "Block Proposer Selection"
-    },
-    {
-      "@id": "urn:visionflow:linked:hot-stuff-bft",
-      "vc:label": "HotStuff BFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-space",
-      "vc:label": "Proof of Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-space-time",
-      "vc:label": "Proof of Space-Time"
-    },
-    {
-      "@id": "urn:visionflow:linked:slashing-condition",
-      "vc:label": "Slashing Condition"
-    },
-    {
-      "@id": "urn:visionflow:linked:tendermint",
-      "vc:label": "Tendermint"
-    },
-    {
-      "@id": "urn:visionflow:linked:tezos-liquid-proof-of-stake",
-      "vc:label": "Tezos Liquid Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-set",
-      "vc:label": "Validator Set"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-authority",
-      "vc:label": "Proof of Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-history",
-      "vc:label": "Proof of History"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-sortition",
-      "vc:label": "Cryptographic Sortition"
-    },
-    {
-      "@id": "urn:visionflow:linked:finality-gadget",
-      "vc:label": "Finality Gadget"
-    },
-    {
-      "@id": "urn:visionflow:linked:stake-locking",
-      "vc:label": "Stake Locking"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator-economics",
-      "vc:label": "Validator Economics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fork-choice-rule",
-      "vc:label": "Fork Choice Rule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:esg-compliant-blockchain",
-      "vc:label": "ESG Compliant Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-bond-settlement",
-      "vc:label": "Green Bond Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-de-fi-adoption",
-      "vc:label": "Institutional DeFi Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-cost-transaction-processing",
-      "vc:label": "Low-Cost Transaction Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-dlt-infrastructure",
-      "vc:label": "Scalable DLT Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:delegated-staking",
-      "vc:label": "Delegated Staking"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-slashing",
-      "vc:label": "Economic Slashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:instant-finality-bft",
-      "vc:label": "Instant Finality BFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:nakamoto-style-probabilistic-finality",
-      "vc:label": "Nakamoto-Style Probabilistic Finality"
-    },
-    {
-      "@id": "urn:visionflow:linked:randomised-leader-election",
-      "vc:label": "Randomised Leader Election"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-functions",
-      "vc:label": "Cryptographic Hash Functions"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-gossip-protocol",
-      "vc:label": "Peer-to-Peer Gossip Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenomics-design",
-      "vc:label": "Tokenomics Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-random-functions",
-      "vc:label": "Verifiable Random Functions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:crypto-climate-accord",
-      "vc:label": "Crypto Climate Accord"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-finance",
-      "vc:label": "Green Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-platforms",
-      "vc:label": "Smart Contract Platforms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bls-signature-aggregation",
-      "vc:label": "BLS Signature Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-trees",
-      "vc:label": "Merkle Trees"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-proofs",
-      "vc:label": "Storage Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-cryptography",
-      "vc:label": "Threshold Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-random-function",
-      "vc:label": "Verifiable Random Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:asic-mining",
-      "vc:label": "ASIC Mining"
-    },
-    {
-      "@id": "urn:visionflow:linked:centralised-database",
-      "vc:label": "Centralised Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-intensive-computing",
-      "vc:label": "Energy Intensive Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-mining",
-      "vc:label": "GPU Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-mining",
-      "vc:label": "Bitcoin Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-investing",
-      "vc:label": "ESG Investing"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-scaling",
-      "vc:label": "Layer 2 Scaling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-environmental-issues",
-      "vc:label": "Bitcoin Environmental Issues"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-footprint-measurement",
-      "vc:label": "Carbon Footprint Measurement"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bis-green-finance-standards",
-      "vc:label": "BIS Green Finance Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ccri-energy-benchmarks",
-      "vc:label": "CCRI Energy Benchmarks"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosmos-ibc-specification",
-      "vc:label": "Cosmos IBC Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-climate-accord",
-      "vc:label": "Crypto Climate Accord"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-3675-ethereum-po-s",
-      "vc:label": "EIP-3675 Ethereum PoS"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14064-ghg-protocol",
-      "vc:label": "ISO 14064 GHG Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-environmental-issues",
-      "vc:label": "Bitcoin Environmental Issues"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

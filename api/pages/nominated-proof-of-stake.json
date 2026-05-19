@@ -3,19 +3,18 @@
   "title": "Nominated Proof of Stake",
   "slug": "nominated-proof-of-stake",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nominated-proof-of-stake",
+  "classIri": "urn:ngm:class:nominated-proof-of-stake",
   "domain": "blockchain",
   "definition": "A PoS variant where token holders nominate validators for block creation, with elected validators producing blocks while nominators share rewards and slashing risks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:proof-of-stake",
+      "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

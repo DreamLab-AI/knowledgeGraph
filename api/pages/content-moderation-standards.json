@@ -3,53 +3,57 @@
   "title": "Content Moderation Standards",
   "slug": "content-moderation-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:content-moderation-standards",
+  "classIri": "urn:ngm:class:content-moderation-standards",
   "domain": "spatial-computing",
-  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:platform-governance",
-      "label": "Platform Governance"
-    }
-  ],
+  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both tradit...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-detection-systems",
+        "id": "urn:ngm:class:ai-detection-systems",
         "label": "AI Detection Systems"
       },
       {
-        "id": "urn:visionflow:linked:human-moderators",
+        "id": "urn:ngm:class:human-moderators",
         "label": "Human Moderators"
       },
       {
-        "id": "urn:visionflow:linked:moderation-tools",
+        "id": "urn:ngm:class:moderation-tools",
         "label": "Moderation Tools"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-trust",
+        "id": "urn:ngm:class:community-trust",
         "label": "Community Trust"
       },
       {
-        "id": "urn:visionflow:linked:harassment-prevention",
+        "id": "urn:ngm:class:harassment-prevention",
         "label": "Harassment Prevention"
       },
       {
-        "id": "urn:visionflow:owl:class:user-safety",
+        "id": "urn:ngm:class:user-safety",
         "label": "User Safety"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

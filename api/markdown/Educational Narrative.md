@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:educational-narrative",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:educational-narrative",
+  "@type": "Class",
   "label": "Educational Narrative",
+  "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-learning",
-      "vc:label": "Immersive Learning"
+      "@id": "urn:ngm:class:immersive-learning",
+      "label": "Immersive Learning"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:023adf4150ba9f4d7171f92459466fd9c95e0fc9a6443b3eb331a9af1d62530a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:023adf4150ba9f4d7171f92459466fd9c95e0fc9a6443b3eb331a9af1d62530a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:personalised-learning",
-      "vc:label": "Personalised Learning"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

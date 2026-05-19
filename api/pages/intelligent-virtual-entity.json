@@ -3,90 +3,107 @@
   "title": "Intelligent Virtual Entity",
   "slug": "intelligent-virtual-entity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:intelligent-virtual-entity",
+  "classIri": "urn:ngm:class:intelligent-virtual-entity",
   "domain": "spatial-computing",
   "definition": "AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavior-controller",
+        "id": "urn:ngm:class:behavior-controller",
         "label": "Behavior Controller"
       },
       {
-        "id": "urn:visionflow:linked:interaction-manager",
+        "id": "urn:ngm:class:interaction-manager",
         "label": "Interaction Manager"
       },
       {
-        "id": "urn:visionflow:linked:reasoning-engine",
+        "id": "urn:ngm:class:reasoning-engine",
         "label": "Reasoning Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-module",
+        "id": "urn:ngm:class:learning-module",
         "label": "Learning Module"
       },
       {
-        "id": "urn:visionflow:owl:class:perception-system",
+        "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-resources",
+        "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
       },
       {
-        "id": "urn:visionflow:linked:sensor-input",
+        "id": "urn:ngm:class:sensor-input",
         "label": "Sensor Input"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-framework",
+        "id": "urn:ngm:class:ai-framework",
         "label": "AI Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-interaction",
+        "id": "urn:ngm:class:adaptive-interaction",
         "label": "Adaptive Interaction"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-storytelling",
+        "id": "urn:ngm:class:dynamic-storytelling",
         "label": "Dynamic Storytelling"
       },
       {
-        "id": "urn:visionflow:linked:intelligent-assistance",
+        "id": "urn:ngm:class:intelligent-assistance",
         "label": "Intelligent Assistance"
       },
       {
-        "id": "urn:visionflow:linked:personalized-experience",
+        "id": "urn:ngm:class:personalized-experience",
         "label": "Personalized Experience"
       },
       {
-        "id": "urn:visionflow:owl:class:context-aware-response",
+        "id": "urn:ngm:class:context-aware-response",
         "label": "Context-Aware Response"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-environment",
+        "label": "Intelligent Environment"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-virtual-world",
+        "label": "Adaptive Virtual World"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

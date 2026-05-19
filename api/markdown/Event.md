@@ -124,56 +124,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:event",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:event",
+  "@type": "Class",
   "label": "Event",
+  "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:temporal-entity",
-      "vc:label": "Temporal Entity"
+      "@id": "urn:ngm:class:temporal-entity",
+      "label": "Temporal Entity"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6117892bf43804e65dd20ecdcdc6c7cae6419e71d1cb24b13fafcb7635716316"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:complex-event-processing",
+        "label": "Complex Event Processing"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:reactive-systems",
+        "label": "Reactive Systems"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6117892bf43804e65dd20ecdcdc6c7cae6419e71d1cb24b13fafcb7635716316@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components. Events are fundamental building blocks of temporal and reactive systems, enabling loose coupling and asynchronous communication through immutable, self-contained records of happenings.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:complex-event-processing",
-      "vc:label": "Complex Event Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-sourcing",
-      "vc:label": "Event Sourcing"
-    },
-    {
-      "@id": "urn:visionflow:linked:reactive-systems",
-      "vc:label": "Reactive Systems"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

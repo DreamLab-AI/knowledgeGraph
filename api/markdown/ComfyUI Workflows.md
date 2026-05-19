@@ -540,392 +540,307 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:comfy-ui-workflows",
+  "@type": "Class",
   "label": "ComfyUI Workflows",
+  "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion]] and broader generative AI inference, implemented within the [[ComfyUI]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diffusion-model-interface",
-      "vc:label": "Diffusion Model Interface"
+      "@id": "urn:ngm:class:diffusion-model-interface",
+      "label": "Diffusion Model Interface"
     },
     {
-      "@id": "urn:visionflow:linked:generative-ai-pipeline",
-      "vc:label": "Generative AI Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-orchestration-system",
-      "vc:label": "Inference Orchestration System"
+      "@id": "urn:ngm:class:generative-ai-pipeline",
+      "label": "Generative AI Pipeline"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4cf003fa25ed3e248fa7ea7e7e600d5dd9e534ecca54d388710673bdc6ee4493"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:checkpoint-loader",
+        "label": "CheckpointLoader"
+      },
+      {
+        "@id": "urn:ngm:class:cliptext-encode",
+        "label": "CLIPTextEncode"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-node",
+        "label": "ControlNet Node"
+      },
+      {
+        "@id": "urn:ngm:class:ksampler",
+        "label": "KSampler"
+      },
+      {
+        "@id": "urn:ngm:class:latent-tensor",
+        "label": "Latent Tensor"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-loader",
+        "label": "LoRA Loader"
+      },
+      {
+        "@id": "urn:ngm:class:node-link",
+        "label": "Node Link"
+      },
+      {
+        "@id": "urn:ngm:class:vaedecode",
+        "label": "VAEDecode"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-json-format",
+        "label": "Workflow JSON Format"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-node",
+        "label": "Workflow Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:model-checkpoint",
+        "label": "Model Checkpoint"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:batch-image-processing",
+        "label": "Batch Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:face-restoration",
+        "label": "Face Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image-generation",
+        "label": "Image-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
+      },
+      {
+        "@id": "urn:ngm:class:latent-upscaling",
+        "label": "Latent Upscaling"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-stacking",
+        "label": "LoRA Stacking"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:api-server-protocol",
+        "label": "API Server Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model-inference",
+        "label": "Diffusion Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion-pipeline",
+        "label": "Latent Diffusion Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-serialisation",
+        "label": "Workflow Serialisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:comfy-ui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:json-serialisation",
+        "label": "JSON Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:png-metadata-embedding",
+        "label": "PNG Metadata Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sdxl",
+        "label": "SDXL"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:esrgan-upscaling",
+        "label": "ESRGAN Upscaling"
+      },
+      {
+        "@id": "urn:ngm:class:gfpgan-face-restoration",
+        "label": "GFPGAN Face Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:wan2-1-video",
+        "label": "Wan2.1 Video"
+      },
+      {
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:civitai-workflow-sharing",
+        "label": "Civitai Workflow Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-org-git-hub-organisation",
+        "label": "Comfy-Org GitHub Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-api-specification",
+        "label": "ComfyUI API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:open-art-workflow-registry",
+        "label": "OpenArt Workflow Registry"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4cf003fa25ed3e248fa7ea7e7e600d5dd9e534ecca54d388710673bdc6ee4493@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion]] and broader generative AI inference, implemented within the [[ComfyUI]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations—model loading, conditioning, sampling, decoding, upscaling, face restoration, video frame generation, and more—are represented as typed nodes whose outputs are connected to inputs of downstream nodes via explicit wire edges, the full pipeline serialised as a JSON object mapping node IDs to node definitions and link arrays that together form an executable, reproducible, and shareable specification of an entire [[Image Generation]] or [[Video Generation]] computation. Each workflow JSON encodes `version`, `nodes` (array of typed node objects with `id`, `type`, `inputs`, `outputs`, `pos`, and `size` fields), `links` (array of `[link_id, source_node_id, source_slot, target_node_id, target_slot, type]` tuples), and optional `groups` for visual organisation—making the format both machine-executable by the ComfyUI backend server and human-readable for inspection and modification. The minimal [[St",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:checkpoint-loader",
-      "vc:label": "CheckpointLoader"
-    },
-    {
-      "@id": "urn:visionflow:linked:cliptext-encode",
-      "vc:label": "CLIPTextEncode"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-manager",
-      "vc:label": "ComfyUI Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net-node",
-      "vc:label": "ControlNet Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:ksampler",
-      "vc:label": "KSampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-tensor",
-      "vc:label": "Latent Tensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-loader",
-      "vc:label": "LoRA Loader"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-link",
-      "vc:label": "Node Link"
-    },
-    {
-      "@id": "urn:visionflow:linked:vaedecode",
-      "vc:label": "VAEDecode"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-json-format",
-      "vc:label": "Workflow JSON Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-node",
-      "vc:label": "Workflow Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-checkpoint",
-      "vc:label": "Model Checkpoint"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-runtime",
-      "vc:label": "Python Runtime"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:batch-image-processing",
-      "vc:label": "Batch Image Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net-conditioning",
-      "vc:label": "ControlNet Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-restoration",
-      "vc:label": "Face Restoration"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-to-image-generation",
-      "vc:label": "Image-to-Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-upscaling",
-      "vc:label": "Image Upscaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-upscaling",
-      "vc:label": "Latent Upscaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-stacking",
-      "vc:label": "LoRA Stacking"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-generation",
-      "vc:label": "Text-to-Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:api-server-protocol",
-      "vc:label": "API Server Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model-inference",
-      "vc:label": "Diffusion Model Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:directed-acyclic-graph-execution",
-      "vc:label": "Directed Acyclic Graph Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-pipeline",
-      "vc:label": "Latent Diffusion Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-serialisation",
-      "vc:label": "Workflow Serialisation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdxl",
-      "vc:label": "SDXL"
-    },
-    {
-      "@id": "urn:visionflow:linked:vae-encoder",
-      "vc:label": "VAE Encoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latent-space",
-      "vc:label": "Latent Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:esrgan-upscaling",
-      "vc:label": "ESRGAN Upscaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:gfpgan-face-restoration",
-      "vc:label": "GFPGAN Face Restoration"
-    },
-    {
-      "@id": "urn:visionflow:linked:wan2-1-video",
-      "vc:label": "Wan2.1 Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
-      "vc:label": "AI Upscaling and Super-Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ip-adapter",
-      "vc:label": "IP-Adapter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-manager",
-      "vc:label": "ComfyUI Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-serialisation",
-      "vc:label": "JSON Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:png-metadata-embedding",
-      "vc:label": "PNG Metadata Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-protocol",
-      "vc:label": "WebSocket Protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:automatic1111-web-ui",
-      "vc:label": "AUTOMATIC1111 WebUI"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusers-library",
-      "vc:label": "Diffusers Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:draw-things",
-      "vc:label": "Draw Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:invoke-ai",
-      "vc:label": "InvokeAI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fooocus",
-      "vc:label": "Fooocus"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:sdxl",
-      "vc:label": "SDXL"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-upscaling-and-super-resolution",
-      "vc:label": "AI Upscaling and Super-Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
-      "vc:label": "ControlNet and Similar Spatial Conditioning Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ip-adapter",
-      "vc:label": "IP-Adapter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:civitai-workflow-sharing",
-      "vc:label": "Civitai Workflow Sharing"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-org-git-hub-organisation",
-      "vc:label": "Comfy-Org GitHub Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-api-specification",
-      "vc:label": "ComfyUI API Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-art-workflow-registry",
-      "vc:label": "OpenArt Workflow Registry"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

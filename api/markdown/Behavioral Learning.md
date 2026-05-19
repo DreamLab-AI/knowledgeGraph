@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:behavioral-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:behavioral-learning",
+  "@type": "Class",
   "label": "Behavioral Learning",
+  "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e6bcf27c688e16b6d9ad502905433d020416890323e407d5de9e328fdeb042fc"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-models",
+        "label": "Machine Learning Models"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:personalization",
+        "label": "Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-optimization",
+        "label": "User Experience Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e6bcf27c688e16b6d9ad502905433d020416890323e407d5de9e328fdeb042fc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-collection",
-      "vc:label": "Data Collection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-models",
-      "vc:label": "Machine Learning Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pattern-recognition",
-      "vc:label": "Pattern Recognition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:personalization",
-      "vc:label": "Personalization"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience-optimization",
-      "vc:label": "User Experience Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-analytics",
-      "vc:label": "Predictive Analytics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

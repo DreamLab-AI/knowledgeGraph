@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-reality-capture-creative",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-reality-capture-creative",
+  "@type": "Class",
   "label": "ETSI_Domain_Reality_Capture___Creative",
+  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-performance-capture",
-      "vc:label": "Digital Performance Capture"
+      "@id": "urn:ngm:class:digital-performance-capture",
+      "label": "Digital Performance Capture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:599f1ef5ac4c3d70d947fd0eed995a204fd8c274353ccf47f1e4d96ce9fb15c9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences. Reality capture creative systems integrate motion capture technologies, facial expression tracking, gesture recognition, and AI-enhanced animation synthesis transforming physical performances into high-fidelity digital representations suitable for virtual worlds. Applications span virtual performance events, digital actor creation, interactive entertainment, and remote collaboration with emphasis on maintaining creative authenticity and performer expressivity through sophisticated sensor systems and real-time processing pipelines.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

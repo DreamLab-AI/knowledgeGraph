@@ -172,110 +172,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ethics-and-law",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ethics-and-law",
+  "@type": "Class",
   "label": "ETSI Domain: Ethics & Law",
+  "definition": "Domain marker for ETSI metaverse categorisation covering ical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:19e366f2158f03e1e0ef446b52b5fd51872b21871f09edc121ea319b428e7237"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ethical-frameworks",
+        "label": "Ethical Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-systems",
+        "label": "Regulatory Systems"
+      },
+      {
+        "@id": "urn:ngm:class:rights-management",
+        "label": "Rights Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:legal-accountability",
+        "label": "Legal Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:user-protection",
+        "label": "User Protection"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:19e366f2158f03e1e0ef446b52b5fd51872b21871f09edc121ea319b428e7237@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain marker for ETSI metaverse categorisation covering ethical frameworks, legal compliance, regulatory requirements, and responsible governance structures for virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ethical-frameworks",
-      "vc:label": "Ethical Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-compliance",
-      "vc:label": "Legal Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-systems",
-      "vc:label": "Regulatory Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-management",
-      "vc:label": "Rights Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:legal-accountability",
-      "vc:label": "Legal Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-protection",
-      "vc:label": "User Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:responsible-ai",
-      "vc:label": "Responsible AI"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation-standards",
-      "vc:label": "Content Moderation Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-services-act",
-      "vc:label": "Digital Services Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

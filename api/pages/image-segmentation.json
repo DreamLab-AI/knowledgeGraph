@@ -3,131 +3,215 @@
   "title": "Image Segmentation",
   "slug": "image-segmentation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:image-segmentation",
+  "classIri": "urn:ngm:class:image-segmentation",
   "domain": "artificial-intelligence",
-  "definition": "Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to reason about the spatial structure and composition of visual scenes at pixel granularity rather than merely bounding-box or image-level resolution. Unlike object detection\u2014which produces coarse bounding rectangles\u2014and image classification\u2014which assigns a single label to an entire image\u2014segmentation delivers dense per-pixel predictions that precisely delineate object boundaries, capture irregular shapes, and distinguish overlapping or touching objects of the same class, making it indispensable for applications requiring spatial understanding: surgical robots that must avoid cutting blood vessels, autonomous vehicles that must distinguish drivable road surface from pedestrian crossings, and augmented reality pipelines that must cleanly separate foreground subjects from backgrounds in real time.",
+  "definition": "Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:structured-prediction",
+      "id": "urn:ngm:class:structured-prediction",
       "label": "Structured Prediction"
     },
     {
-      "id": "urn:visionflow:linked:dense-prediction",
+      "id": "urn:ngm:class:dense-prediction",
       "label": "Dense Prediction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:scene-understanding",
-      "label": "Scene Understanding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:atrous-convolution",
+        "id": "urn:ngm:class:atrous-convolution",
         "label": "Atrous Convolution"
       },
       {
-        "id": "urn:visionflow:linked:feature-pyramid-network",
+        "id": "urn:ngm:class:feature-pyramid-network",
         "label": "Feature Pyramid Network"
       },
       {
-        "id": "urn:visionflow:linked:mask-head",
+        "id": "urn:ngm:class:mask-head",
         "label": "Mask Head"
       },
       {
-        "id": "urn:visionflow:linked:pixel-classifier",
+        "id": "urn:ngm:class:pixel-classifier",
         "label": "Pixel Classifier"
       },
       {
-        "id": "urn:visionflow:linked:skip-connections",
+        "id": "urn:ngm:class:skip-connections",
         "label": "Skip Connections"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:encoder-decoder-architecture",
+        "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder Decoder Architecture"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "id": "urn:ngm:class:convolutional-neural-networks",
         "label": "Convolutional Neural Networks"
       },
       {
-        "id": "urn:visionflow:linked:evaluation-metrics",
+        "id": "urn:ngm:class:evaluation-metrics",
         "label": "Evaluation Metrics"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:labelled-training-data",
+        "id": "urn:ngm:class:labelled-training-data",
         "label": "Labelled Training Data"
       },
       {
-        "id": "urn:visionflow:linked:loss-functions",
+        "id": "urn:ngm:class:loss-functions",
         "label": "Loss Functions"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicles",
         "label": "Autonomous Vehicles"
       },
       {
-        "id": "urn:visionflow:linked:medical-imaging",
+        "id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging"
       },
       {
-        "id": "urn:visionflow:linked:satellite-imagery-analysis",
+        "id": "urn:ngm:class:satellite-imagery-analysis",
         "label": "Satellite Imagery Analysis"
       },
       {
-        "id": "urn:visionflow:linked:video-object-segmentation",
+        "id": "urn:ngm:class:video-object-segmentation",
         "label": "Video Object Segmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:augmented-reality",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:robotics",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:interactive-segmentation",
+        "id": "urn:ngm:class:interactive-segmentation",
         "label": "Interactive Segmentation"
       },
       {
-        "id": "urn:visionflow:linked:zero-shot-segmentation",
+        "id": "urn:ngm:class:zero-shot-segmentation",
         "label": "Zero-Shot Segmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:instance-segmentation",
+        "id": "urn:ngm:class:instance-segmentation",
         "label": "Instance Segmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:panoptic-segmentation",
+        "id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic Segmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:average-precision",
+        "label": "Average Precision"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross Entropy Loss"
+      },
+      {
+        "id": "urn:ngm:class:dice-coefficient",
+        "label": "Dice Coefficient"
+      },
+      {
+        "id": "urn:ngm:class:mean-intersection-over-union",
+        "label": "Mean Intersection over Union"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-quality",
+        "label": "Panoptic Quality"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:background-removal",
+        "label": "Background Removal"
+      },
+      {
+        "id": "urn:ngm:class:cancer-detection",
+        "label": "Cancer Detection"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ade20-k",
+        "label": "ADE20K"
+      },
+      {
+        "id": "urn:ngm:class:cityscapes-dataset",
+        "label": "Cityscapes Dataset"
+      },
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "id": "urn:ngm:class:image-net",
+        "label": "ImageNet"
+      },
+      {
+        "id": "urn:ngm:class:pascal-voc",
+        "label": "PASCAL VOC"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "id": "urn:ngm:class:multi-modal-learning",
+        "label": "Multi-Modal Learning"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ]
   },
   "wikilinks": [
     {

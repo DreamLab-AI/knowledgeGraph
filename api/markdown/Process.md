@@ -124,56 +124,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:process",
+  "@type": "Class",
   "label": "Process",
+  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:temporal-entity",
-      "vc:label": "Temporal Entity"
+      "@id": "urn:ngm:class:temporal-entity",
+      "label": "Temporal Entity"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "@id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aad336bdabc6f9c11ca9bc6ed93dca8380707617015bd8d11e83226b5ebf9be7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automation",
-      "vc:label": "Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:business-process-management",
-      "vc:label": "Business Process Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:orchestration",
-      "vc:label": "Orchestration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

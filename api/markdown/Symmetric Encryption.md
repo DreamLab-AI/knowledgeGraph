@@ -140,66 +140,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:symmetric-encryption",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:symmetric-encryption",
+  "@type": "Class",
   "label": "Symmetric Encryption",
+  "definition": "A cryptographic mod using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptographic-primitive",
-      "vc:label": "Cryptographic Primitive"
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:998446a457ecc60641d2158b4286e2c6b04a45d2a2dcd7544dc9f3f4af4f2a67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cryptographic method using a single shared secret key for both encryption and decryption, requiring secure key exchange between parties before communication. Symmetric encryption provides confidentiality for data at rest and in transit with high computational efficiency, making it suitable for bulk data encryption in blockchain and general security applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:key-derivation-function",
-      "vc:label": "Key Derivation Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:confidential-transactions",
-      "vc:label": "Confidential Transactions"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:random-number-generation",
-      "vc:label": "Random Number Generation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:asymmetric-encryption",
-      "vc:label": "Asymmetric Encryption"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

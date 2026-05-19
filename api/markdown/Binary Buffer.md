@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:binary-buffer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:binary-buffer",
+  "@type": "Class",
   "label": "Binary Buffer",
+  "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-structure",
-      "vc:label": "Data Structure"
+      "@id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d7fb671a874e3042b3de9332edb5aff9b0518f8cac47a5d0ea0a2d37e9501775"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:buffer-management",
+        "label": "Buffer Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-formatting",
+        "label": "Data Formatting"
+      },
+      {
+        "@id": "urn:ngm:class:memory-allocation",
+        "label": "Memory Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-transfer",
+        "label": "Data Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-rendering",
+        "label": "Graphics Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d7fb671a874e3042b3de9332edb5aff9b0518f8cac47a5d0ea0a2d37e9501775@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:buffer-management",
-      "vc:label": "Buffer Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-formatting",
-      "vc:label": "Data Formatting"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-allocation",
-      "vc:label": "Memory Allocation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-transfer",
-      "vc:label": "Data Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphics-rendering",
-      "vc:label": "Graphics Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:stream-processing",
-      "vc:label": "Stream Processing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

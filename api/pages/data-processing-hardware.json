@@ -3,53 +3,57 @@
   "title": "Data Processing Hardware",
   "slug": "data-processing-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-processing-hardware",
+  "classIri": "urn:ngm:class:data-processing-hardware",
   "domain": "infrastructure",
-  "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.",
+  "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cooling-systems",
+        "id": "urn:ngm:class:cooling-systems",
         "label": "Cooling Systems"
       },
       {
-        "id": "urn:visionflow:linked:high-bandwidth-memory",
+        "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High-Bandwidth Memory"
       },
       {
-        "id": "urn:visionflow:linked:power-infrastructure",
+        "id": "urn:ngm:class:power-infrastructure",
         "label": "Power Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-processing",
+        "id": "urn:ngm:class:ai-processing",
         "label": "AI Processing"
       },
       {
-        "id": "urn:visionflow:linked:immersive-computing",
+        "id": "urn:ngm:class:immersive-computing",
         "label": "Immersive Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

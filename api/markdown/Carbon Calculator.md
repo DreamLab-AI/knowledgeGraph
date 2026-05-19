@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-calculator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-calculator",
+  "@type": "Class",
   "label": "Carbon Calculator",
+  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:sustainability-tool",
-      "vc:label": "Sustainability Tool"
+      "@id": "urn:ngm:class:sustainability-tool",
+      "label": "Sustainability Tool"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      },
+      {
+        "@id": "urn:ngm:class:calculation-methodology",
+        "label": "Calculation Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:emissions-estimation",
+        "label": "Emissions Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:footprint-awareness",
+        "label": "Footprint Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:reduction-planning",
+        "label": "Reduction Planning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a68df46774c1a872c41e8dbb15680e6f64e548ff93037b4eeb70bc3d6f1d341e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:activity-data",
-      "vc:label": "Activity Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:calculation-methodology",
-      "vc:label": "Calculation Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factors",
-      "vc:label": "Emission Factors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:emissions-estimation",
-      "vc:label": "Emissions Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:footprint-awareness",
-      "vc:label": "Footprint Awareness"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduction-planning",
-      "vc:label": "Reduction Planning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

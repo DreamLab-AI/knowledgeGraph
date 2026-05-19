@@ -3,37 +3,41 @@
   "title": "3D Gaussian Splatting",
   "slug": "3-d-gaussian-splatting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-gaussian-splatting",
+  "classIri": "urn:ngm:class:3-d-gaussian-splatting",
   "domain": "distributed-collaboration",
-  "definition": "\"A neural rendering technique that represents 3D scenes as collections of millions of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepresence and immersive collaboration with unprecedented visual fidelity.\"",
+  "definition": "\"A neural rendering technique that represents 3D scenes as collections of s of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepre...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:tele-050-neural-rendering-telepresence",
+      "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
       "label": "TELE-050-neural-rendering-telepresence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:differentiable-rendering",
+        "id": "urn:ngm:class:differentiable-rendering",
         "label": "DifferentiableRendering"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:photorealistic-telepresence",
+        "id": "urn:ngm:class:photorealistic-telepresence",
         "label": "PhotorealisticTelepresence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

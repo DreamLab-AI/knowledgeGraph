@@ -3,32 +3,36 @@
   "title": "Cryptographic Keys",
   "slug": "cryptographic-keys",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-keys",
+  "classIri": "urn:ngm:class:cryptographic-keys",
   "domain": "blockchain",
-  "definition": "Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.",
+  "definition": "Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptography",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

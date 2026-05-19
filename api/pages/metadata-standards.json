@@ -3,32 +3,36 @@
   "title": "Metadata Standards",
   "slug": "metadata-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-standards",
+  "classIri": "urn:ngm:class:metadata-standards",
   "domain": "spatial-computing",
   "definition": "Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-standards",
+      "id": "urn:ngm:class:data-standards",
       "label": "Data Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-system-data-exchange",
+        "id": "urn:ngm:class:cross-system-data-exchange",
         "label": "Cross-System Data Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

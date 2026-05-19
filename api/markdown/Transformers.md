@@ -496,334 +496,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transformers",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transformers",
+  "@type": "Class",
   "label": "Transformers",
+  "definition": "Neural network architecture introduced by Vaswani et al.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:sequence-modelling",
-      "vc:label": "Sequence Modelling"
+      "@id": "urn:ngm:class:sequence-modelling",
+      "label": "Sequence Modelling"
     },
     {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
+      "@id": "urn:ngm:class:attention-mechanism",
+      "label": "Attention Mechanism"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:029281f23e5fa581ae488c94dec3228740012f53ffb85e767f533d9af35ac7a1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalization",
+        "label": "Layer Normalization"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:rmsnorm",
+        "label": "RMSNorm"
+      },
+      {
+        "@id": "urn:ngm:class:ro-pe",
+        "label": "RoPE"
+      },
+      {
+        "@id": "urn:ngm:class:swi-glu",
+        "label": "SwiGLU"
+      },
+      {
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adam-optimizer",
+        "label": "Adam Optimizer"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalization",
+        "label": "Layer Normalization"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:alpha-fold",
+        "label": "AlphaFold"
+      },
+      {
+        "@id": "urn:ngm:class:vi-t",
+        "label": "ViT"
+      },
+      {
+        "@id": "urn:ngm:class:whisper",
+        "label": "Whisper"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:lla-ma",
+        "label": "LLaMA"
+      },
+      {
+        "@id": "urn:ngm:class:mistral",
+        "label": "Mistral"
+      },
+      {
+        "@id": "urn:ngm:class:t5",
+        "label": "T5"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hugging-face-transformers",
+        "label": "Hugging Face Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:029281f23e5fa581ae488c94dec3228740012f53ffb85e767f533d9af35ac7a1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Neural network architecture introduced by Vaswani et al. in \"Attention Is All You Need\" (NeurIPS 2017) that replaces recurrent and convolutional layers with stacked multi-head scaled dot-product self-attention and position-wise feed-forward networks, enabling fully parallel sequence processing and direct O(1)-path modelling of arbitrary-distance token dependencies; the architecture consists of encoder and/or decoder stacks, each comprising multi-head attention sub-layers, FFN sub-layers, residual connections, and layer normalisation, parameterised by model dimension d_model, number of heads h, and FFN expansion ratio (typically 4×), with sinusoidal or learned positional encodings injecting sequential order information; modern variants extend the baseline through rotary position embedding (RoPE, Su et al. 2021) eliminating absolute position tables, attention with linear biases (ALiBi, Press et al. 2021) biasing attention scores by distance, YaRN (Peng et al. 2023) and LongRoPE dynamically extending context beyond training length, grouped-query attention (GQA, Ainslie et al. 2023) sharing key-value heads across query groups to reduce KV-cache memory by up to 8×, multi-query attention",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:kv-cache",
-      "vc:label": "KV Cache"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-normalization",
-      "vc:label": "Layer Normalization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feed-forward-network",
-      "vc:label": "Feed-Forward Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-head-attention",
-      "vc:label": "Multi-Head Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:positional-encoding",
-      "vc:label": "Positional Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:residual-connection",
-      "vc:label": "Residual Connection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-attention",
-      "vc:label": "Self Attention"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:embedding-layer",
-      "vc:label": "Embedding Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenization",
-      "vc:label": "Tokenization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-learning",
-      "vc:label": "Multimodal Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:protein-structure-prediction",
-      "vc:label": "Protein Structure Prediction"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-transformer",
-      "vc:label": "Vision Transformer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-translation",
-      "vc:label": "Machine Translation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-generation",
-      "vc:label": "Text Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "Flash Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:grouped-query-attention",
-      "vc:label": "Grouped Query Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:rmsnorm",
-      "vc:label": "RMSNorm"
-    },
-    {
-      "@id": "urn:visionflow:linked:ro-pe",
-      "vc:label": "RoPE"
-    },
-    {
-      "@id": "urn:visionflow:linked:swi-glu",
-      "vc:label": "SwiGLU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scaled-dot-product-attention",
-      "vc:label": "Scaled Dot Product Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparse-mixture-of-experts",
-      "vc:label": "Sparse Mixture of Experts"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:softmax",
-      "vc:label": "Softmax"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-training-infrastructure",
-      "vc:label": "Transformer Training Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:audio-processing",
-      "vc:label": "Audio Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimizer",
-      "vc:label": "Adam Optimizer"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-normalization",
-      "vc:label": "Layer Normalization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dropout",
-      "vc:label": "Dropout"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:lstm",
-      "vc:label": "LSTM"
-    },
-    {
-      "@id": "urn:visionflow:linked:mamba",
-      "vc:label": "Mamba"
-    },
-    {
-      "@id": "urn:visionflow:linked:rwkv",
-      "vc:label": "RWKV"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space-models",
-      "vc:label": "State Space Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
-      "vc:label": "Recurrent Neural Network"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:alpha-fold",
-      "vc:label": "AlphaFold"
-    },
-    {
-      "@id": "urn:visionflow:linked:vi-t",
-      "vc:label": "ViT"
-    },
-    {
-      "@id": "urn:visionflow:linked:whisper",
-      "vc:label": "Whisper"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bert",
-      "vc:label": "BERT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:claude",
-      "vc:label": "Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gemini",
-      "vc:label": "Gemini"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt",
-      "vc:label": "GPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lla-ma",
-      "vc:label": "LLaMA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mistral",
-      "vc:label": "Mistral"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:t5",
-      "vc:label": "T5"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:hugging-face-transformers",
-      "vc:label": "Hugging Face Transformers"
-    },
-    {
-      "@id": "urn:visionflow:linked:jax",
-      "vc:label": "JAX"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx",
-      "vc:label": "ONNX"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

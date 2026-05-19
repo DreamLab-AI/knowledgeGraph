@@ -3,135 +3,235 @@
   "title": "Artificial General Intelligence",
   "slug": "artificial-general-intelligence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:artificial-general-intelligence",
+  "classIri": "urn:ngm:class:artificial-general-intelligence",
   "domain": "artificial-intelligence",
-  "definition": "Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow \u2014 capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than excelling only on a single domain \u2014 encompassing definitions ranging from Goertzel & Wang's (2007 *Artificial General Intelligence* Springer volume) operational characterisation of an agent that \"generalises its learning across multiple domains under insufficient knowledge and resources\" (Wang's NARS framework), through OpenAI's Charter (2018) formulation as \"highly autonomous systems that outperform humans at most economically valuable work\", DeepMind's (Morris et al. 2024 arXiv:2311.02462) ordered six-level *Levels of AGI* matrix (Level 0 No AI / Level 1 Emerging matching or somewhat better than an unskilled adult / Level 2 Competent \u226550th percentile of skilled adults / Level 3 Expert \u226590th percentile / Level 4 Virtuoso \u226599th percentile / Level 5 Superhuman outperforming 100% of humans) crossed orthogonally with a Narrow \u2194 General axis and qualified by Autonomy levels 0-5 from no-AI through ",
+  "definition": "Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow \u2014 capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:foundation-model-capability",
+      "id": "urn:ngm:class:foundation-model-capability",
       "label": "Foundation Model Capability"
     },
     {
-      "id": "urn:visionflow:linked:frontier-ai",
+      "id": "urn:ngm:class:frontier-ai",
       "label": "Frontier AI"
-    },
-    {
-      "id": "urn:visionflow:linked:general-intelligence",
-      "label": "General Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:autonomous-reasoning",
+        "id": "urn:ngm:class:autonomous-reasoning",
         "label": "Autonomous Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:cross-domain-transfer",
+        "id": "urn:ngm:class:cross-domain-transfer",
         "label": "Cross-Domain Transfer"
       },
       {
-        "id": "urn:visionflow:linked:generalisation-capability",
+        "id": "urn:ngm:class:generalisation-capability",
         "label": "Generalisation Capability"
       },
       {
-        "id": "urn:visionflow:linked:long-horizon-planning",
+        "id": "urn:ngm:class:long-horizon-planning",
         "label": "Long-Horizon Planning"
       },
       {
-        "id": "urn:visionflow:linked:open-ended-learning",
+        "id": "urn:ngm:class:open-ended-learning",
         "label": "Open-Ended Learning"
       },
       {
-        "id": "urn:visionflow:linked:tool-use-capability",
+        "id": "urn:ngm:class:tool-use-capability",
         "label": "Tool Use Capability"
       },
       {
-        "id": "urn:visionflow:linked:world-model",
+        "id": "urn:ngm:class:world-model",
         "label": "World Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:alignment-techniques",
+        "id": "urn:ngm:class:alignment-techniques",
         "label": "Alignment Techniques"
       },
       {
-        "id": "urn:visionflow:linked:evaluation-infrastructure",
+        "id": "urn:ngm:class:evaluation-infrastructure",
         "label": "Evaluation Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:frontier-training-data",
+        "id": "urn:ngm:class:frontier-training-data",
         "label": "Frontier Training Data"
       },
       {
-        "id": "urn:visionflow:linked:large-scale-compute",
+        "id": "urn:ngm:class:large-scale-compute",
         "label": "Large-Scale Compute"
       },
       {
-        "id": "urn:visionflow:linked:scaling-laws",
+        "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agents",
         "label": "Autonomous Agents"
       },
       {
-        "id": "urn:visionflow:linked:economic-automation",
+        "id": "urn:ngm:class:economic-automation",
         "label": "Economic Automation"
       },
       {
-        "id": "urn:visionflow:linked:recursive-self-improvement",
+        "id": "urn:ngm:class:recursive-self-improvement",
         "label": "Recursive Self-Improvement"
       },
       {
-        "id": "urn:visionflow:linked:scientific-discovery-acceleration",
+        "id": "urn:ngm:class:scientific-discovery-acceleration",
         "label": "Scientific Discovery Acceleration"
       },
       {
-        "id": "urn:visionflow:linked:transformative-ai",
+        "id": "urn:ngm:class:transformative-ai",
         "label": "Transformative AI"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
         "label": "Chain-of-Thought Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:inference-time-compute",
+        "id": "urn:ngm:class:inference-time-compute",
         "label": "Inference-Time Compute"
       },
       {
-        "id": "urn:visionflow:linked:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-learning",
         "label": "Multimodal Learning"
       },
       {
-        "id": "urn:visionflow:linked:scaling-hypothesis",
+        "id": "urn:ngm:class:scaling-hypothesis",
         "label": "Scaling Hypothesis"
       },
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:visionflow:owl:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts",
         "label": "Mixture of Experts"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arc-agi",
+        "label": "ARC-AGI"
+      },
+      {
+        "id": "urn:ngm:class:frontier-math",
+        "label": "FrontierMath"
+      },
+      {
+        "id": "urn:ngm:class:gpqa",
+        "label": "GPQA"
+      },
+      {
+        "id": "urn:ngm:class:humanity-s-last-exam",
+        "label": "Humanity's Last Exam"
+      },
+      {
+        "id": "urn:ngm:class:metr-evaluations",
+        "label": "METR Evaluations"
+      },
+      {
+        "id": "urn:ngm:class:mmlu",
+        "label": "MMLU"
+      },
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk-studies",
+        "label": "Existential Risk Studies"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:deep-mind-levels-of-agi-framework",
+        "label": "DeepMind Levels of AGI Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-charter",
+        "label": "OpenAI Charter"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:recursive-self-improvement",
+        "label": "Recursive Self-Improvement"
+      },
+      {
+        "id": "urn:ngm:class:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "id": "urn:ngm:class:transformative-ai",
+        "label": "Transformative AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Speech Recognition",
   "slug": "speech-recognition",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:speech-recognition",
+  "classIri": "urn:ngm:class:speech-recognition",
   "domain": "artificial-intelligence",
-  "definition": "Speech Recognition is a concept within the ai domain. Further enrichment pending.",
+  "definition": "Speech Recognition is a type of Natural Language Processing in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

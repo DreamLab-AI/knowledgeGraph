@@ -348,298 +348,235 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:meeting-recording",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:meeting-recording",
+  "@type": "Class",
   "label": "Meeting Recording",
+  "definition": "Persistent capture and archival of synchronous virtual or physical meetings—comprising video, audio, screen share, and transcript streams—stored in cloud platforms or on-premises repositories for asynchronous playback, compliance audit, onboarding, and AI-mediated analysis.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:meeting-documentation",
-      "vc:label": "Meeting Documentation"
+      "@id": "urn:ngm:class:meeting-documentation",
+      "label": "Meeting Documentation"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-workplace-platform",
-      "vc:label": "Digital Workplace Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
+      "@id": "urn:ngm:class:digital-workplace-platform",
+      "label": "Digital Workplace Platform"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:88715f5388a8210ba534cb7813aa2308693792e18cb47b5e4c5b3232decc80e9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:automatic-transcription",
+        "label": "Automatic Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:chapter-detection",
+        "label": "Chapter Detection"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage-infrastructure",
+        "label": "Cloud Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:full-text-search-index",
+        "label": "Full-text Search Index"
+      },
+      {
+        "@id": "urn:ngm:class:participant-consent",
+        "label": "Participant Consent"
+      },
+      {
+        "@id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-attribution",
+        "label": "Speaker Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:video-encoding",
+        "label": "Video Encoding"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage-infrastructure",
+        "label": "Cloud Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:participant-consent",
+        "label": "Participant Consent"
+      },
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-learning-archive",
+        "label": "Distributed Learning Archive"
+      },
+      {
+        "@id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mp4-encoding",
+        "label": "MP4 Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:retention-policy",
+        "label": "Retention Policy"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:web-m-encoding",
+        "label": "WebM Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:whisper-asr",
+        "label": "Whisper ASR"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:screen-recording",
+        "label": "Screen Recording"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-whisper",
+        "label": "Open AI Whisper"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:asynchronous-video",
+        "label": "Asynchronous Video"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fca-sysc-10-a",
+        "label": "FCA SYSC 10A"
+      },
+      {
+        "@id": "urn:ngm:class:finra-rule-17a-4",
+        "label": "FINRA Rule 17a-4"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-article-6",
+        "label": "GDPR Article 6"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ico-guidance",
+        "label": "UK ICO Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:us-state-wiretapping-laws",
+        "label": "US State Wiretapping Laws"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:88715f5388a8210ba534cb7813aa2308693792e18cb47b5e4c5b3232decc80e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Persistent capture and archival of synchronous virtual or physical meetings—comprising video, audio, screen share, and transcript streams—stored in cloud platforms or on-premises repositories for asynchronous playback, compliance audit, onboarding, and AI-mediated analysis. Meeting recording bridges synchronous real-time participation and asynchronous access by preserving full session context (video/audio encoded typically as MP4 or WebM, auto-generated transcripts via automatic speech recognition, participant metadata, chat logs, shared artefacts) across enterprise platforms including Zoom cloud recording, Microsoft Teams recording stored to OneDrive/SharePoint, Google Meet recording to Google Drive, Loom screen-capture video, and Otter.ai transcription services. Legal validity of recordings is jurisdiction-dependent: the UK operates under a one-party consent model with ICO guidance requiring participant notification under GDPR Article 6 lawful basis; EU GDPR Articles 5–6 impose data minimisation, purpose limitation, and right-to-erasure obligations; US federal wiretapping law (18 U.S.C. § 2511) permits one-party consent whereas twelve US states (including California, Florida, Ill",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:automatic-transcription",
-      "vc:label": "Automatic Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:chapter-detection",
-      "vc:label": "Chapter Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-storage-infrastructure",
-      "vc:label": "Cloud Storage Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:full-text-search-index",
-      "vc:label": "Full-text Search Index"
-    },
-    {
-      "@id": "urn:visionflow:linked:participant-consent",
-      "vc:label": "Participant Consent"
-    },
-    {
-      "@id": "urn:visionflow:linked:screen-recording",
-      "vc:label": "Screen Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-attribution",
-      "vc:label": "Speaker Attribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-encoding",
-      "vc:label": "Video Encoding"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-storage-infrastructure",
-      "vc:label": "Cloud Storage Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-bandwidth",
-      "vc:label": "Network Bandwidth"
-    },
-    {
-      "@id": "urn:visionflow:linked:participant-consent",
-      "vc:label": "Participant Consent"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-compression",
-      "vc:label": "Video Compression"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-learning-archive",
-      "vc:label": "Distributed Learning Archive"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboarding",
-      "vc:label": "Onboarding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-video",
-      "vc:label": "Asynchronous Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-audit-trail",
-      "vc:label": "Compliance Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-      "vc:label": "Meeting AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-search",
-      "vc:label": "Semantic Search"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:mp4-encoding",
-      "vc:label": "MP4 Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:retention-policy",
-      "vc:label": "Retention Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-diarisation",
-      "vc:label": "Speaker Diarisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-m-encoding",
-      "vc:label": "WebM Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:whisper-asr",
-      "vc:label": "Whisper ASR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-storage-infrastructure",
-      "vc:label": "Cloud Storage Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-compression",
-      "vc:label": "Video Compression"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-video",
-      "vc:label": "Asynchronous Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-workplace-platform",
-      "vc:label": "Digital Workplace Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-computing",
-      "vc:label": "Distributed Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:education-and-ai",
-      "vc:label": "Education and AI"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:screen-recording",
-      "vc:label": "Screen Recording"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai-whisper",
-      "vc:label": "Open AI Whisper"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-search",
-      "vc:label": "Semantic Search"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-video",
-      "vc:label": "Asynchronous Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collaborative-whiteboard",
-      "vc:label": "Collaborative Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:screen-sharing",
-      "vc:label": "Screen Sharing"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-video",
-      "vc:label": "Asynchronous Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:breakout-room",
-      "vc:label": "Breakout Room"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "vc:label": "Digital Society Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-      "vc:label": "Meeting AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-analytics",
-      "vc:label": "Privacy Preserving Analytics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:fca-sysc-10-a",
-      "vc:label": "FCA SYSC 10A"
-    },
-    {
-      "@id": "urn:visionflow:linked:finra-rule-17a-4",
-      "vc:label": "FINRA Rule 17a-4"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-article-6",
-      "vc:label": "GDPR Article 6"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ico-guidance",
-      "vc:label": "UK ICO Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-state-wiretapping-laws",
-      "vc:label": "US State Wiretapping Laws"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Immersive Entertainment",
   "slug": "immersive-entertainment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-entertainment",
+  "classIri": "urn:ngm:class:immersive-entertainment",
   "domain": "spatial-computing",
   "definition": "Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-entertainment",
+      "id": "urn:ngm:class:digital-entertainment",
       "label": "Digital Entertainment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:interactive-storytelling",
+        "id": "urn:ngm:class:interactive-storytelling",
         "label": "Interactive Storytelling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

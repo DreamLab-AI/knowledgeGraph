@@ -3,19 +3,18 @@
   "title": "Social Impact",
   "slug": "social-impact",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:social-impact",
+  "classIri": "urn:ngm:class:social-impact",
   "domain": "spatial-computing",
   "definition": "The effects\u2014positive and negative, intended and unintended\u2014that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

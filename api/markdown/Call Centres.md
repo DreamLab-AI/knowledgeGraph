@@ -420,456 +420,367 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:call-centres",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:call-centres",
+  "@type": "Class",
   "label": "Call Centres",
+  "definition": "Call Centres (contact centres — the operationally preferred modern term reflecting multichannel reality) are coordinated operational environments in which human agents and increasingly autonomous [[AI Agents]] handle inbound and outbound customer communications across voice, chat, email, social m...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:customer-service-automation",
-      "vc:label": "Customer Service Automation"
+      "@id": "urn:ngm:class:customer-service-automation",
+      "label": "Customer Service Automation"
     },
     {
-      "@id": "urn:visionflow:linked:enterprise-ai",
-      "vc:label": "Enterprise AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-ai",
-      "vc:label": "Operational AI"
+      "@id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise AI"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0e704d4477abe9391afc5975ab4cca67c3afad58f8632a0044a7358756411b84"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:agent-assist",
+        "label": "Agent Assist"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-call-distribution",
+        "label": "Automatic Call Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:contact-centre-as-a-service",
+        "label": "Contact Centre as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:crm-integration",
+        "label": "CRM Integration"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-voice-response",
+        "label": "Interactive Voice Response"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:customer-identity-verification",
+        "label": "Customer Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:telephony-infrastructure",
+        "label": "Telephony Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:24-7-customer-service",
+        "label": "24/7 Customer Service"
+      },
+      {
+        "@id": "urn:ngm:class:agent-productivity-augmentation",
+        "label": "Agent Productivity Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-quality-monitoring",
+        "label": "Automated Quality Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-customer-support",
+        "label": "Multilingual Customer Support"
+      },
+      {
+        "@id": "urn:ngm:class:proactive-customer-outreach",
+        "label": "Proactive Customer Outreach"
+      },
+      {
+        "@id": "urn:ngm:class:tier-1-contact-deflection",
+        "label": "Tier-1 Contact Deflection"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-scheduling-optimisation",
+        "label": "Workforce Scheduling Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel-routing",
+        "label": "Omnichannel Routing"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:contact-centre-as-a-service",
+        "label": "Contact Centre as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agent-wellbeing",
+        "label": "Agent Wellbeing"
+      },
+      {
+        "@id": "urn:ngm:class:average-handle-time-reduction",
+        "label": "Average Handle Time Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:csat-improvement",
+        "label": "CSAT Improvement"
+      },
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      },
+      {
+        "@id": "urn:ngm:class:first-contact-resolution",
+        "label": "First Contact Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fca-consumer-duty",
+        "label": "FCA Consumer Duty"
+      },
+      {
+        "@id": "urn:ngm:class:fca-sysc-rules",
+        "label": "FCA SYSC Rules"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ico-workplace-monitoring-guidance",
+        "label": "ICO Workplace Monitoring Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:iso-18295-contact-centre-standard",
+        "label": "ISO 18295 Contact Centre Standard"
+      },
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "@id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0e704d4477abe9391afc5975ab4cca67c3afad58f8632a0044a7358756411b84@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Call Centres** (contact centres — the operationally preferred modern term reflecting multichannel reality) are coordinated operational environments in which human agents and increasingly autonomous [[AI Agents]] handle inbound and outbound customer communications across voice, chat, email, social media, and asynchronous messaging channels. The sector is undergoing the most rapid AI-driven structural transformation of any customer-facing industry: by mid-2025 an estimated 67% of enterprise contact centres had deployed AI-driven chatbots or [[Conversational AI]] virtual agents automating 31% of all customer interactions (CCaaS Statistics 2025), while a further 64% of CCaaS users operated AI-powered self-service tooling and 57% had extended to [[Omnichannel]] routing since 2023. The global CCaaS market was valued at USD 7.25 billion in 2025 and is projected to reach USD 29.53–30.15 billion by 2033–2034 at a compound annual growth rate of 17–19%, reflecting both migration from on-premises private branch exchange infrastructure and rapid integration of [[Large Language Models]] into every operational layer from [[Interactive Voice Response]] front-ends to real-time [[Agent Assist]] ov",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:agent-assist",
-      "vc:label": "Agent Assist"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-call-distribution",
-      "vc:label": "Automatic Call Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:contact-centre-as-a-service",
-      "vc:label": "Contact Centre as a Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:crm-integration",
-      "vc:label": "CRM Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:intent-classification",
-      "vc:label": "Intent Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-voice-response",
-      "vc:label": "Interactive Voice Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-base",
-      "vc:label": "Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:omnichannel",
-      "vc:label": "Omnichannel"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transcription",
-      "vc:label": "Real-time Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-management",
-      "vc:label": "Workforce Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:customer-identity-verification",
-      "vc:label": "Customer Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:intent-classification",
-      "vc:label": "Intent Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transcription",
-      "vc:label": "Real-time Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:telephony-infrastructure",
-      "vc:label": "Telephony Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:24-7-customer-service",
-      "vc:label": "24/7 Customer Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:agent-productivity-augmentation",
-      "vc:label": "Agent Productivity Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-quality-monitoring",
-      "vc:label": "Automated Quality Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:multilingual-customer-support",
-      "vc:label": "Multilingual Customer Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:proactive-customer-outreach",
-      "vc:label": "Proactive Customer Outreach"
-    },
-    {
-      "@id": "urn:visionflow:linked:tier-1-contact-deflection",
-      "vc:label": "Tier-1 Contact Deflection"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-scheduling-optimisation",
-      "vc:label": "Workforce Scheduling Optimisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ai-agents",
-      "vc:label": "AI Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:crm",
-      "vc:label": "CRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:omnichannel-routing",
-      "vc:label": "Omnichannel Routing"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-management",
-      "vc:label": "Workforce Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dialogue-state-tracking",
-      "vc:label": "Dialogue State Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:intent-classification",
-      "vc:label": "Intent Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:telephony-infrastructure",
-      "vc:label": "Telephony Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:agent-wellbeing",
-      "vc:label": "Agent Wellbeing"
-    },
-    {
-      "@id": "urn:visionflow:linked:average-handle-time-reduction",
-      "vc:label": "Average Handle Time Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:csat-improvement",
-      "vc:label": "CSAT Improvement"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-experience",
-      "vc:label": "Customer Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:first-contact-resolution",
-      "vc:label": "First Contact Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ai-agents",
-      "vc:label": "AI Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:biometric-authentication",
-      "vc:label": "Biometric Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:crm",
-      "vc:label": "CRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-base",
-      "vc:label": "Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:omnichannel",
-      "vc:label": "Omnichannel"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transcription",
-      "vc:label": "Real-time Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-management",
-      "vc:label": "Workforce Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:manual-quality-assurance",
-      "vc:label": "Manual Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-premises-pbx",
-      "vc:label": "On-Premises PBX"
-    },
-    {
-      "@id": "urn:visionflow:linked:outsourcing",
-      "vc:label": "Outsourcing"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-call-sampling",
-      "vc:label": "Random Call Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-ivr",
-      "vc:label": "Traditional IVR"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-agents",
-      "vc:label": "AI Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:contact-centre-as-a-service",
-      "vc:label": "Contact Centre as a Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:crm",
-      "vc:label": "CRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-service-automation",
-      "vc:label": "Customer Service Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:omnichannel",
-      "vc:label": "Omnichannel"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transcription",
-      "vc:label": "Real-time Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-management",
-      "vc:label": "Workforce Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-transformation",
-      "vc:label": "Digital Transformation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-analytics",
-      "vc:label": "Predictive Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:fca-consumer-duty",
-      "vc:label": "FCA Consumer Duty"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-sysc-rules",
-      "vc:label": "FCA SYSC Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-workplace-monitoring-guidance",
-      "vc:label": "ICO Workplace Monitoring Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-18295-contact-centre-standard",
-      "vc:label": "ISO 18295 Contact Centre Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:pci-dss",
-      "vc:label": "PCI DSS"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-gdpr",
-      "vc:label": "UK GDPR"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:crm",
-      "vc:label": "CRM"
-    },
-    {
-      "@id": "urn:visionflow:linked:workforce-management",
-      "vc:label": "Workforce Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

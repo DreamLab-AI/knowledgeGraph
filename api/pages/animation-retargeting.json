@@ -3,53 +3,57 @@
   "title": "Animation Retargeting",
   "slug": "animation-retargeting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:animation-retargeting",
+  "classIri": "urn:ngm:class:animation-retargeting",
   "domain": "spatial-computing",
-  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environments.",
+  "definition": "Animation Retargeting is the process of transferring motion capture or animation data from one character skeleton to another with different proportions, joint configurations, or bone structures, enabling reuse of animation assets across diverse character models in games, film, and virtual environ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:animation-technology",
+      "id": "urn:ngm:class:animation-technology",
       "label": "Animation Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:pose-matching",
+        "id": "urn:ngm:class:pose-matching",
         "label": "Pose Matching"
       },
       {
-        "id": "urn:visionflow:linked:skeleton-mapping",
+        "id": "urn:ngm:class:skeleton-mapping",
         "label": "Skeleton Mapping"
       },
       {
-        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:avatar-animation",
+        "id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation"
       },
       {
-        "id": "urn:visionflow:linked:character-animation-reuse",
+        "id": "urn:ngm:class:character-animation-reuse",
         "label": "Character Animation Reuse"
       },
       {
-        "id": "urn:visionflow:linked:motion-capture-workflows",
+        "id": "urn:ngm:class:motion-capture-workflows",
         "label": "Motion Capture Workflows"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

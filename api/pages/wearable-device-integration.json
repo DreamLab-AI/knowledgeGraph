@@ -3,19 +3,18 @@
   "title": "Wearable Device Integration",
   "slug": "wearable-device-integration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:wearable-device-integration",
+  "classIri": "urn:ngm:class:wearable-device-integration",
   "domain": "spatial-computing",
   "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronization, and coordinated multi-device experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-integration",
+      "id": "urn:ngm:class:system-integration",
       "label": "System Integration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

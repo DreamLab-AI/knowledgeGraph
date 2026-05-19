@@ -3,19 +3,18 @@
   "title": "rb 0048 pid controller",
   "slug": "rb-0048-pid-controller",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0048-pid-controller",
+  "classIri": "urn:ngm:class:rb-0048-pid-controller",
   "domain": "robotics",
   "definition": "pid controller is a robotics and autonomous systems concept and a type of Control System.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-system",
+      "id": "urn:ngm:class:control-system",
       "label": "Control System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

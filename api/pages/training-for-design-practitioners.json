@@ -3,19 +3,18 @@
   "title": "Training for Design Practitioners",
   "slug": "training-for-design-practitioners",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-for-design-practitioners",
+  "classIri": "urn:ngm:class:training-for-design-practitioners",
   "domain": "infrastructure",
   "definition": "Training for Design Practitioners is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

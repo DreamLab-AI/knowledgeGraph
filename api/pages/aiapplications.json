@@ -3,19 +3,18 @@
   "title": "AIApplications",
   "slug": "aiapplications",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:aiapplications",
+  "classIri": "urn:ngm:class:aiapplications",
   "domain": "artificial-intelligence",
   "definition": "A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,12 +22,17 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ai-capability",
+        "id": "urn:ngm:class:ai-capability",
         "label": "AI Capability"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

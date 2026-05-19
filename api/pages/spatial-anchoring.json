@@ -3,32 +3,36 @@
   "title": "Spatial Anchoring",
   "slug": "spatial-anchoring",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-anchoring",
+  "classIri": "urn:ngm:class:spatial-anchoring",
   "domain": "spatial-computing",
-  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud-synchronized anchor data.",
+  "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:location-based-ar",
+        "id": "urn:ngm:class:location-based-ar",
         "label": "Location Based AR"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

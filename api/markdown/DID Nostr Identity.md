@@ -224,124 +224,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:did-nostr-identity",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:did-nostr-identity",
+  "@type": "Class",
   "label": "DID Nostr Identity",
+  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a c...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-identity",
-      "vc:label": "Distributed Identity"
+      "@id": "urn:ngm:class:distributed-identity",
+      "label": "Distributed Identity"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:957135bea9c4cb2bcf1fe9809e9792ed2361fe3db21c4a9c0671d19d003b1038"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bip-340-cryptography",
+        "label": "BIP-340 Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-method",
+        "label": "W3C DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-identity",
+        "label": "Cryptographic Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-trust",
+        "label": "Decentralised Trust"
+      },
+      {
+        "@id": "urn:ngm:class:message-signing",
+        "label": "Message Signing"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-key-management",
+        "label": "Self-Sovereign Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-nip-01",
+        "label": "Nostr NIP-01"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:957135bea9c4cb2bcf1fe9809e9792ed2361fe3db21c4a9c0671d19d003b1038@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a central identity provider or certificate authority.",
-  "vc:qualityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
-      "vc:label": "BIP-340 Schnorr Keypair"
-    },
-    {
-      "@id": "urn:visionflow:linked:did-resolution",
-      "vc:label": "DID Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-key",
-      "vc:label": "Private Key"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key",
-      "vc:label": "Public Key"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bip-340-cryptography",
-      "vc:label": "BIP-340 Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-method",
-      "vc:label": "W3C DID Method"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credential-issuance",
-      "vc:label": "Credential Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-identity",
-      "vc:label": "Cryptographic Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-trust",
-      "vc:label": "Decentralised Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-signing",
-      "vc:label": "Message Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-sovereign-key-management",
-      "vc:label": "Self-Sovereign Key Management"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bip-340",
-      "vc:label": "BIP-340"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-nip-01",
-      "vc:label": "Nostr NIP-01"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-core",
-      "vc:label": "W3C DID Core"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-identity",
-      "vc:label": "Blockchain Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-verification",
-      "vc:label": "Smart Contract Verification"
-    }
-  ]
+  "quality": 0.88,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Tax Treatment Crypto",
   "slug": "tax-treatment-crypto",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tax-treatment-crypto",
+  "classIri": "urn:ngm:class:tax-treatment-crypto",
   "domain": "blockchain",
-  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation (wherein cryptocurrency dispositions generate capital gains or losses calculated as fair market value at disposition minus cost basis, with long-term holdings exceeding 12 months taxed at preferential rates 0-20% in the United States compared to ordinary income rates up to 37% for short-term holdings), income taxation (treating cryptocurrency received through mining as ordinary income at fair market value when successfully mined with miners potentially subject to self-employment tax at 15.3%, staking rewards as income when received, airdrops as ordinary income when dominion and control is established per IRS Revenue Ruling 2019-24, and payment for services as compensation), value-added tax and goods-and-services tax treatment (with the European Court of Justice in Skatteverket v. David Hedqvist C-264/14 2015 establishing VAT exemption for cryptocurrency-to-fiat exchanges as exempt financial services under Council Directive 2006/112/EC Article 135(1)(e), whilst purchases of goods usi",
+  "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation income taxation value-added tax and goods-and-services tax treatment (e), whilst purchases of ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-compliance",
+      "id": "urn:ngm:class:blockchain-compliance",
       "label": "Blockchain Compliance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.89,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

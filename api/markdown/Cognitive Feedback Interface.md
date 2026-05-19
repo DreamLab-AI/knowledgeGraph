@@ -192,116 +192,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cognitive-feedback-interface",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cognitive-feedback-interface",
+  "@type": "Class",
   "label": "Cognitive Feedback Interface",
+  "definition": "Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:753c9e6a8e1e472b3f5d5e703ace42e563109bf81e7bf9e3524ad9782d098f5f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adaptive-ui-controller",
+        "label": "Adaptive UI Controller"
+      },
+      {
+        "@id": "urn:ngm:class:attention-tracker",
+        "label": "Attention Tracker"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-state-monitor",
+        "label": "Cognitive State Monitor"
+      },
+      {
+        "@id": "urn:ngm:class:workload-analyzer",
+        "label": "Workload Analyzer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain-Computer Interface"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-model",
+        "label": "Cognitive Model"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-information-display",
+        "label": "Adaptive Information Display"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-load-management",
+        "label": "Cognitive Load Management"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-ux",
+        "label": "Personalized UX"
+      },
+      {
+        "@id": "urn:ngm:class:attention-aware-interaction",
+        "label": "Attention-Aware Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:753c9e6a8e1e472b3f5d5e703ace42e563109bf81e7bf9e3524ad9782d098f5f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-ui-controller",
-      "vc:label": "Adaptive UI Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:attention-tracker",
-      "vc:label": "Attention Tracker"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-state-monitor",
-      "vc:label": "Cognitive State Monitor"
-    },
-    {
-      "@id": "urn:visionflow:linked:workload-analyzer",
-      "vc:label": "Workload Analyzer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:brain-computer-interface",
-      "vc:label": "Brain-Computer Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-model",
-      "vc:label": "Cognitive Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-information-display",
-      "vc:label": "Adaptive Information Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-load-management",
-      "vc:label": "Cognitive Load Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-ux",
-      "vc:label": "Personalized UX"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-aware-interaction",
-      "vc:label": "Attention-Aware Interaction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biometric-sensors",
-      "vc:label": "Biometric Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:neurofeedback-system",
-      "vc:label": "Neurofeedback System"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-analytics",
-      "vc:label": "Real-time Analytics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "On-Device Learning",
   "slug": "on-device-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:on-device-learning",
+  "classIri": "urn:ngm:class:on-device-learning",
   "domain": "artificial-intelligence",
-  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functionality while addressing challenges of limited computational resources and energy constraints. This approach implements training paradigms including transfer learning where pre-trained base models are fine-tuned on device-specific data adapting final layers to local patterns, few-shot learning enabling rapid adaptation from handful of examples crucial for personalized applications, meta-learning (learning to learn) where models trained to quickly adapt to new tasks with minimal data and computation, and incremental learning continuously updating models as new data arrives without catastrophic forgetting of previous knowledge. Privacy benefits include data localization ensuring sensitive information (health metrics, personal communications, financial transactions) never leaves device eliminating transmission and storage risks, user control maintaining sovereignty over personal data and model ad",
+  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functiona...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,143 +3,251 @@
   "title": "Particle Filter",
   "slug": "particle-filter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:particle-filter",
+  "classIri": "urn:ngm:class:particle-filter",
   "domain": "artificial-intelligence",
-  "definition": "ParticleFilter denotes a class of [[Sequential Monte Carlo]] (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i=1..N} of N discrete particles (hypotheses) drawn from the state space, realising exact nonlinear non-Gaussian [[Bayes Filter]] recursion without the Gaussian or linearity assumptions required by the [[Kalman Filter]] family, at the cost of O(N) per-step computation where N typically ranges from 100 to 100,000 depending on state-space dimensionality and required precision. The canonical bootstrap filter (Gordon, Salmond & Smith 1993) executes a three-phase recursion per timestep: (1) **prediction** \u2014 draw N candidate particles x_t^(i) \u223c p(x_t | u_t, x_{t-1}^(i)) by propagating each prior particle through the [[Motion Model]] with additive process noise, dispersing the particle cloud according to dynamic uncertainty; (2) **weight update** \u2014 assign importance weight w_t^(i) = p(z_t | x_t^(i)) evaluating each particle's consistency with the current sensor observation z_t under the observation ",
+  "definition": "ParticleFilter denotes a class of [[Sequential Monte Carlo]] (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:monte-carlo-method",
+      "id": "urn:ngm:class:monte-carlo-method",
       "label": "Monte Carlo Method"
     },
     {
-      "id": "urn:visionflow:linked:nonparametric-filter",
+      "id": "urn:ngm:class:nonparametric-filter",
       "label": "Nonparametric Filter"
-    },
-    {
-      "id": "urn:visionflow:linked:recursive-bayesian-estimator",
-      "label": "Recursive Bayesian Estimator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:effective-sample-size",
+        "id": "urn:ngm:class:effective-sample-size",
         "label": "Effective Sample Size"
       },
       {
-        "id": "urn:visionflow:linked:importance-weight",
+        "id": "urn:ngm:class:importance-weight",
         "label": "Importance Weight"
       },
       {
-        "id": "urn:visionflow:linked:motion-model",
+        "id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
       },
       {
-        "id": "urn:visionflow:linked:observation-model",
+        "id": "urn:ngm:class:observation-model",
         "label": "Observation Model"
       },
       {
-        "id": "urn:visionflow:linked:particle-set",
+        "id": "urn:ngm:class:particle-set",
         "label": "Particle Set"
       },
       {
-        "id": "urn:visionflow:linked:proposal-distribution",
+        "id": "urn:ngm:class:proposal-distribution",
         "label": "Proposal Distribution"
       },
       {
-        "id": "urn:visionflow:linked:resampling-scheme",
+        "id": "urn:ngm:class:resampling-scheme",
         "label": "Resampling Scheme"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:likelihood-function",
+        "id": "urn:ngm:class:likelihood-function",
         "label": "Likelihood Function"
       },
       {
-        "id": "urn:visionflow:linked:motion-model",
+        "id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
       },
       {
-        "id": "urn:visionflow:linked:random-number-generator",
+        "id": "urn:ngm:class:random-number-generator",
         "label": "Random Number Generator"
       },
       {
-        "id": "urn:visionflow:linked:resampling-algorithm",
+        "id": "urn:ngm:class:resampling-algorithm",
         "label": "Resampling Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:state-space-model",
+        "id": "urn:ngm:class:state-space-model",
         "label": "State Space Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fast-slam",
+        "id": "urn:ngm:class:fast-slam",
         "label": "FastSLAM"
       },
       {
-        "id": "urn:visionflow:linked:global-localisation",
+        "id": "urn:ngm:class:global-localisation",
         "label": "Global Localisation"
       },
       {
-        "id": "urn:visionflow:linked:kidnapped-robot-recovery",
+        "id": "urn:ngm:class:kidnapped-robot-recovery",
         "label": "Kidnapped Robot Recovery"
       },
       {
-        "id": "urn:visionflow:linked:multi-target-tracking",
+        "id": "urn:ngm:class:multi-target-tracking",
         "label": "Multi-Target Tracking"
       },
       {
-        "id": "urn:visionflow:linked:robot-localisation",
+        "id": "urn:ngm:class:robot-localisation",
         "label": "Robot Localisation"
       },
       {
-        "id": "urn:visionflow:linked:target-tracking",
+        "id": "urn:ngm:class:target-tracking",
         "label": "Target Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:monte-carlo-localization",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Monte Carlo Localization"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:auxiliary-variable-method",
+        "id": "urn:ngm:class:auxiliary-variable-method",
         "label": "Auxiliary Variable Method"
       },
       {
-        "id": "urn:visionflow:linked:kld-sampling",
+        "id": "urn:ngm:class:kld-sampling",
         "label": "KLD-Sampling"
       },
       {
-        "id": "urn:visionflow:linked:mcmc-move-step",
+        "id": "urn:ngm:class:mcmc-move-step",
         "label": "MCMC Move Step"
       },
       {
-        "id": "urn:visionflow:linked:rao-blackwellisation",
+        "id": "urn:ngm:class:rao-blackwellisation",
         "label": "Rao-Blackwellisation"
       },
       {
-        "id": "urn:visionflow:linked:sampling-importance-resampling",
+        "id": "urn:ngm:class:sampling-importance-resampling",
         "label": "Sampling Importance Resampling"
       },
       {
-        "id": "urn:visionflow:linked:sequential-importance-sampling",
+        "id": "urn:ngm:class:sequential-importance-sampling",
         "label": "Sequential Importance Sampling"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      },
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:wheeled-robot",
+        "label": "Wheeled Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:icra",
+        "label": "ICRA"
+      },
+      {
+        "id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      },
+      {
+        "id": "urn:ngm:class:iros",
+        "label": "IROS"
+      },
+      {
+        "id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "id": "urn:ngm:class:rss-conference",
+        "label": "RSS Conference"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:hidden-state",
+        "label": "Hidden State"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

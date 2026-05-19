@@ -3,19 +3,18 @@
   "title": "Knowledge Distillation",
   "slug": "knowledge-distillation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowledge-distillation",
+  "classIri": "urn:ngm:class:knowledge-distillation",
   "domain": "artificial-intelligence",
-  "definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets. Knowledge distillation enables simple student networks with few parameters to achieve comparable performance to deep teacher networks.",
+  "definition": "A model compression technique where a smaller \"student\" model is trained to mimic the behaviour of a larger \"teacher\" model, transferring knowledge through soft targets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

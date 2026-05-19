@@ -132,62 +132,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:database-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:database-system",
+  "@type": "Class",
   "label": "Database System",
+  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f657c37aac4d058ae68fa62a8c511a8fbd831bc3b187491474e4902770549960"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-management",
+        "label": "Transaction Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f657c37aac4d058ae68fa62a8c511a8fbd831bc3b187491474e4902770549960@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-persistence",
-      "vc:label": "Data Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-processing",
-      "vc:label": "Query Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-management",
-      "vc:label": "Transaction Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

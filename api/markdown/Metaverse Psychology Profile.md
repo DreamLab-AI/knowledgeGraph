@@ -220,136 +220,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-psychology-profile",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-psychology-profile",
+  "@type": "Class",
   "label": "Metaverse Psychology Profile",
+  "definition": "Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:psychological-research",
-      "vc:label": "Psychological Research"
+      "@id": "urn:ngm:class:psychological-research",
+      "label": "Psychological Research"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:044dab9c352ab95ed2d1ed7e6228e574b71fd6798e462789d6f709b6a1cb3787"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:affective-response-logs",
+        "label": "Affective Response Logs"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-pattern-data",
+        "label": "Behavioral Pattern Data"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-trait-indicators",
+        "label": "Cognitive Trait Indicators"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-state-metrics",
+        "label": "Emotional State Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:preference-mapping",
+        "label": "Preference Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction-analytics",
+        "label": "Social Interaction Analytics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:behavioral-tracking-system",
+        "label": "Behavioral Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics-engine",
+        "label": "Data Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:user-consent-management",
+        "label": "User Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-content-delivery",
+        "label": "Adaptive Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:social-compatibility-matching",
+        "label": "Social Compatibility Matching"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:psychological-research",
+        "label": "Psychological Research"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:personalization-framework",
+        "label": "Personalization Framework"
+      },
+      {
+        "@id": "urn:ngm:class:user-profile-system",
+        "label": "User Profile System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:044dab9c352ab95ed2d1ed7e6228e574b71fd6798e462789d6f709b6a1cb3787@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:personalization-framework",
-      "vc:label": "Personalization Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-profile-system",
-      "vc:label": "User Profile System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:affective-response-logs",
-      "vc:label": "Affective Response Logs"
-    },
-    {
-      "@id": "urn:visionflow:linked:behavioral-pattern-data",
-      "vc:label": "Behavioral Pattern Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-trait-indicators",
-      "vc:label": "Cognitive Trait Indicators"
-    },
-    {
-      "@id": "urn:visionflow:linked:emotional-state-metrics",
-      "vc:label": "Emotional State Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:preference-mapping",
-      "vc:label": "Preference Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction-analytics",
-      "vc:label": "Social Interaction Analytics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-tracking-system",
-      "vc:label": "Behavioral Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-analytics-engine",
-      "vc:label": "Data Analytics Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-consent-management",
-      "vc:label": "User Consent Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-framework",
-      "vc:label": "Privacy Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-content-delivery",
-      "vc:label": "Adaptive Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:mental-health-monitoring",
-      "vc:label": "Mental Health Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-compatibility-matching",
-      "vc:label": "Social Compatibility Matching"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:personalized-virtual-experiences",
-      "vc:label": "Personalized Virtual Experiences"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:psychological-research",
-      "vc:label": "Psychological Research"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ethical-data-governance",
-      "vc:label": "Ethical Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:psychometric-assessment-tools",
-      "vc:label": "Psychometric Assessment Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-interaction-logging",
-      "vc:label": "Virtual Interaction Logging"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

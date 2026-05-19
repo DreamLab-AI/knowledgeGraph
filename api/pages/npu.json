@@ -3,19 +3,18 @@
   "title": "NPU",
   "slug": "npu",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:npu",
+  "classIri": "urn:ngm:class:npu",
   "domain": "artificial-intelligence",
   "definition": "Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-hardware",
+      "id": "urn:ngm:class:ai-hardware",
       "label": "AI Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

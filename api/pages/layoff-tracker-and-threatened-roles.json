@@ -3,19 +3,18 @@
   "title": "Layoff tracker and threatened roles",
   "slug": "layoff-tracker-and-threatened-roles",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:layoff-tracker-and-threatened-roles",
+  "classIri": "urn:ngm:class:layoff-tracker-and-threatened-roles",
   "domain": "infrastructure",
   "definition": "Layoff tracker and threatened roles is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

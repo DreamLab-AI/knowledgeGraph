@@ -144,41 +144,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:portability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:portability",
+  "@type": "Class",
   "label": "Portability",
+  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats metadata schemas, and blockchain bridges—enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemp...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:31ef4014be14247fcbb59f7f1df7f0dd4af6da43a774484d3462f0fdc1dac112"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31ef4014be14247fcbb59f7f1df7f0dd4af6da43a774484d3462f0fdc1dac112@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges—enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemplified by [[Ready Player Me]] cross-platform avatars and [[Decentraland]] NFT portability.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

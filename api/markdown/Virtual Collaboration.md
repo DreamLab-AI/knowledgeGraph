@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-collaboration",
+  "@type": "Class",
   "label": "Virtual Collaboration",
+  "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
+      "@id": "urn:ngm:class:virtual-workspace",
+      "label": "Virtual Workspace"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b7115e0858b6fba51989623f4279e1a1ae1e65722fd91950de6eb6f4d936961c"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b7115e0858b6fba51989623f4279e1a1ae1e65722fd91950de6eb6f4d936961c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -3,19 +3,18 @@
   "title": "IoT AI Integration",
   "slug": "io-t-ai-integration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:io-t-ai-integration",
+  "classIri": "urn:ngm:class:io-t-ai-integration",
   "domain": "artificial-intelligence",
-  "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing. IoT devices continuously generate multi-modal sensor data from accelerometers, temperature sensors, light sensors, and microphones; AI models analyze this streaming data locally for anomaly detection, pattern recognition, and real-time control actions. The integration addresses IoT challenges including network latency, bandwidth limitations, power constraints, and privacy concerns by moving inference onto resource-constrained edge devices. IoT sensors typically operate with extreme power budgets (milliwatts), making efficient inference critical for battery-powered deployments. AI models deployed on IoT devices employ quantization and pruning to fit within 128KB-1MB memory constraints while maintaining sufficient accuracy for task-specific applications. Communication protocols like MQTT, CoAP, and LoRaWAN support integration with backend systems while minimizing network traffic through selective event-driven transmission. IoT AI systems handle diverse use cases: smart b",
+  "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

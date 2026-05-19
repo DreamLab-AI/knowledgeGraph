@@ -3,19 +3,18 @@
   "title": "Platform Engineering",
   "slug": "platform-engineering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:platform-engineering",
+  "classIri": "urn:ngm:class:platform-engineering",
   "domain": "spatial-computing",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Platform Engineering is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,82 +3,103 @@
   "title": "State Synchronization",
   "slug": "state-synchronization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-synchronization",
+  "classIri": "urn:ngm:class:state-synchronization",
   "domain": "spatial-computing",
   "definition": "The process of maintaining consistent, coherent representations of virtual world state across distributed clients, servers, and edge nodes through continuous replication, conflict resolution, and consistency protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-system-architecture",
+      "id": "urn:ngm:class:distributed-system-architecture",
       "label": "Distributed System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:conflict-resolution-engine",
+        "id": "urn:ngm:class:conflict-resolution-engine",
         "label": "Conflict Resolution Engine"
       },
       {
-        "id": "urn:visionflow:linked:consistency-protocol",
+        "id": "urn:ngm:class:consistency-protocol",
         "label": "Consistency Protocol"
       },
       {
-        "id": "urn:visionflow:linked:delta-compression",
+        "id": "urn:ngm:class:delta-compression",
         "label": "Delta Compression"
       },
       {
-        "id": "urn:visionflow:linked:state-replication",
+        "id": "urn:ngm:class:state-replication",
         "label": "State Replication"
       },
       {
-        "id": "urn:visionflow:linked:timestamp-ordering",
+        "id": "urn:ngm:class:timestamp-ordering",
         "label": "Timestamp Ordering"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:clock-synchronization",
+        "id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronization"
       },
       {
-        "id": "urn:visionflow:linked:network-transport",
+        "id": "urn:ngm:class:network-transport",
         "label": "Network Transport"
       },
       {
-        "id": "urn:visionflow:linked:state-representation",
+        "id": "urn:ngm:class:state-representation",
         "label": "State Representation"
       },
       {
-        "id": "urn:visionflow:linked:synchronization-protocol",
+        "id": "urn:ngm:class:synchronization-protocol",
         "label": "Synchronization Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consistent-user-experience",
+        "id": "urn:ngm:class:consistent-user-experience",
         "label": "Consistent User Experience"
       },
       {
-        "id": "urn:visionflow:linked:distributed-collaboration",
+        "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:multiplayer-interaction",
+        "id": "urn:ngm:class:multiplayer-interaction",
         "label": "Multiplayer Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:shared-virtual-world",
+        "id": "urn:ngm:class:shared-virtual-world",
         "label": "Shared Virtual World"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multiplayer-infrastructure",
+        "label": "Multiplayer Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

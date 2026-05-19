@@ -3,53 +3,57 @@
   "title": "AI Monitoring",
   "slug": "ai-monitoring",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-monitoring",
+  "classIri": "urn:ngm:class:ai-monitoring",
   "domain": "artificial-intelligence",
-  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended consequences, enabling timely intervention, maintenance, and continuous improvement whilst ensuring accountability and compliance with governance requirements.",
+  "definition": "The systematic and ongoing observation, measurement, and analysis of an artificial intelligence system's behaviour, performance, inputs, outputs, and impacts during operational use, employing automated tools and human oversight to detect degradation, anomalies, bias, safety issues, or unintended ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-lifecycle",
+      "id": "urn:ngm:class:ai-lifecycle",
       "label": "AI Lifecycle"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:alert-thresholds",
+        "id": "urn:ngm:class:alert-thresholds",
         "label": "alert thresholds"
       },
       {
-        "id": "urn:visionflow:linked:baseline-metrics",
+        "id": "urn:ngm:class:baseline-metrics",
         "label": "baseline metrics"
       },
       {
-        "id": "urn:visionflow:linked:monitoring-infrastructure",
+        "id": "urn:ngm:class:monitoring-infrastructure",
         "label": "Monitoring infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-maintenance",
+        "id": "urn:ngm:class:ai-maintenance",
         "label": "AI Maintenance"
       },
       {
-        "id": "urn:visionflow:linked:continuous-improvement",
+        "id": "urn:ngm:class:continuous-improvement",
         "label": "continuous improvement"
       },
       {
-        "id": "urn:visionflow:linked:model-updating",
+        "id": "urn:ngm:class:model-updating",
         "label": "model updating"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

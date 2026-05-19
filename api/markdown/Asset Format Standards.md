@@ -180,76 +180,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asset-format-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asset-format-standards",
+  "@type": "Class",
   "label": "Asset Format Standards",
+  "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f695055c925f918e17c644feececdf1515f6d56fab29472d6225b1a47af0bff1"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conversion-tools",
+        "label": "Conversion Tools"
+      },
+      {
+        "@id": "urn:ngm:class:format-compliance",
+        "label": "Format Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:validation-systems",
+        "label": "Validation Systems"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-portability",
+        "label": "Content Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-assets",
+        "label": "Cross-Platform Assets"
+      },
+      {
+        "@id": "urn:ngm:class:tool-interoperability",
+        "label": "Tool Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f695055c925f918e17c644feececdf1515f6d56fab29472d6225b1a47af0bff1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Asset Format Standards are technical specifications defining file formats, data structures, and interchange protocols for 3D models, textures, animations, and scene descriptions, enabling interoperability between content creation tools, game engines, and metaverse platforms through standards like glTF, USD, and FBX.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conversion-tools",
-      "vc:label": "Conversion Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-compliance",
-      "vc:label": "Format Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-systems",
-      "vc:label": "Validation Systems"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-portability",
-      "vc:label": "Content Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-assets",
-      "vc:label": "Cross-Platform Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-interoperability",
-      "vc:label": "Tool Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

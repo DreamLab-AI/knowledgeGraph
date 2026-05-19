@@ -3,19 +3,18 @@
   "title": "Virtual Environment Creation",
   "slug": "virtual-environment-creation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-environment-creation",
+  "classIri": "urn:ngm:class:virtual-environment-creation",
   "domain": "spatial-computing",
   "definition": "The process of designing, building, and deploying immersive 3D virtual worlds using game engines, modeling software, and AI-powered tools, encompassing static and dynamic assets, physics simulation, and interactive experiences for metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

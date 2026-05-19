@@ -212,54 +212,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-robot-interaction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-robot-interaction",
+  "@type": "Class",
   "label": "Human Robot Interaction",
+  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:safety-metrics",
+        "label": "SafetyMetrics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "ArtificialIntelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef4accafcba4f0dd6174e10b55d8f6acc72661b5529f6b20719b87a645a09c87@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces. HRI combines [[RoboticsEngineering|robotics]], [[ArtificialIntelligence|AI]], human factors engineering, and psychology to design robots with natural interaction modalities—gesture recognition, [[NaturalLanguageProcessing]], [[HapticFeedback]]—enabling intuitive collaboration. Applications span [[ManipulatorArm|collaborative manipulation]], [[SafetyMetrics|safety-assured]] workspaces, healthcare assistance, and social robotics.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:safety-metrics",
-      "vc:label": "SafetyMetrics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "ArtificialIntelligence"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

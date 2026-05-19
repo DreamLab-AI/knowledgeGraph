@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Human_Interface___UX",
   "slug": "etsi-domain-human-interface-ux",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-human-interface-ux",
+  "classIri": "urn:ngm:class:etsi-domain-human-interface-ux",
   "domain": "spatial-computing",
-  "definition": "An [[ETSI]] subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in [[VirtualEnvironment|immersive digital environments]]. This specialisation covers [[DesignPrinciples]], [[UsabilityTesting]], [[AccessibilityCompliance]], and [[InclusiveUXDesign]] ensuring equitable digital participation.",
+  "definition": "An [[ETSI]] subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in [[VirtualEnvironment|immersive digital environments]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

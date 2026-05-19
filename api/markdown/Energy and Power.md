@@ -392,366 +392,303 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:energy-and-power",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:energy-and-power",
+  "@type": "Class",
   "label": "Energy and Power",
+  "definition": "Energy and Power, within the [[Infrastructure]] domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to [[AI Data Centres]], [[Bitcoin Mining]] operations, and the bro...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:critical-infrastructure",
-      "vc:label": "Critical Infrastructure"
+      "@id": "urn:ngm:class:critical-infrastructure",
+      "label": "Critical Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:grid-infrastructure",
-      "vc:label": "Grid Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-footprint-measurement",
-      "vc:label": "Carbon Footprint Measurement"
+      "@id": "urn:ngm:class:grid-infrastructure",
+      "label": "Grid Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0171d0113de45dec632f68274870bdd22a154fda629a3fbf00a45d3757f77a92"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:battery-storage",
+        "label": "Battery Storage"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-intensity",
+        "label": "Carbon Intensity"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "@id": "urn:ngm:class:grid-connection",
+        "label": "Grid Connection"
+      },
+      {
+        "@id": "urn:ngm:class:nuclear-energy",
+        "label": "Nuclear Energy"
+      },
+      {
+        "@id": "urn:ngm:class:power-purchase-agreement",
+        "label": "Power Purchase Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:transmission-network",
+        "label": "Transmission Network"
+      },
+      {
+        "@id": "urn:ngm:class:water-cooling",
+        "label": "Water Cooling"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:balancing-services",
+        "label": "Balancing Services"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-market",
+        "label": "Capacity Market"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:generation-capacity",
+        "label": "Generation Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:grid-connection-queue",
+        "label": "Grid Connection Queue"
+      },
+      {
+        "@id": "urn:ngm:class:grid-infrastructure",
+        "label": "Grid Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:transmission-network",
+        "label": "Transmission Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-data-centres",
+        "label": "AI Data Centres"
+      },
+      {
+        "@id": "urn:ngm:class:electrification",
+        "label": "Electrification"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscaler-operations",
+        "label": "Hyperscaler Operations"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:behind-the-meter-generation",
+        "label": "Behind-the-Meter Generation"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-markets",
+        "label": "Capacity Markets"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "@id": "urn:ngm:class:power-purchase-agreements",
+        "label": "Power Purchase Agreements"
+      },
+      {
+        "@id": "urn:ngm:class:small-modular-reactors",
+        "label": "Small Modular Reactors"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:battery-energy-storage",
+        "label": "Battery Energy Storage"
+      },
+      {
+        "@id": "urn:ngm:class:green-hydrogen",
+        "label": "Green Hydrogen"
+      },
+      {
+        "@id": "urn:ngm:class:nuclear-energy",
+        "label": "Nuclear Energy"
+      },
+      {
+        "@id": "urn:ngm:class:offshore-wind",
+        "label": "Offshore Wind"
+      },
+      {
+        "@id": "urn:ngm:class:pumped-hydro-storage",
+        "label": "Pumped Hydro Storage"
+      },
+      {
+        "@id": "urn:ngm:class:small-modular-reactors",
+        "label": "Small Modular Reactors"
+      },
+      {
+        "@id": "urn:ngm:class:solar-pv",
+        "label": "Solar PV"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:epri-standards",
+        "label": "EPRI Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ferc-regulations",
+        "label": "FERC Regulations"
+      },
+      {
+        "@id": "urn:ngm:class:iea-electricity-reports",
+        "label": "IEA Electricity Reports"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-power-standards",
+        "label": "IEEE Power Standards"
+      },
+      {
+        "@id": "urn:ngm:class:national-grid-eso",
+        "label": "National Grid ESO"
+      },
+      {
+        "@id": "urn:ngm:class:ofgem",
+        "label": "Ofgem"
+      },
+      {
+        "@id": "urn:ngm:class:sbti-net-zero-standard",
+        "label": "SBTi Net-Zero Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0171d0113de45dec632f68274870bdd22a154fda629a3fbf00a45d3757f77a92@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Energy and Power, within the [[Infrastructure]] domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to [[AI Data Centres]], [[Bitcoin Mining]] operations, and the broader [[Digital Economy]]. The concept encompasses the physical [[Grid Infrastructure]] (transmission substations, high-voltage interconnects, distribution feeders, reactive power compensation), demand-side actors (hyperscale data centres, Bitcoin mining farms, GPU clusters, edge inference nodes), supply-side actors (utility-scale renewables, gas peakers, baseload nuclear, pumped-hydro storage, battery energy storage systems), and the contractual and regulatory mechanisms — [[Power Purchase Agreement]]s (PPAs), capacity markets, balancing services, grid connection queues — that mediate between them.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:battery-storage",
-      "vc:label": "Battery Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-intensity",
-      "vc:label": "Carbon Intensity"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-centre",
-      "vc:label": "Data Centre"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-response",
-      "vc:label": "Demand Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:grid-connection",
-      "vc:label": "Grid Connection"
-    },
-    {
-      "@id": "urn:visionflow:linked:nuclear-energy",
-      "vc:label": "Nuclear Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-purchase-agreement",
-      "vc:label": "Power Purchase Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy",
-      "vc:label": "Renewable Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-grid",
-      "vc:label": "Smart Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:transmission-network",
-      "vc:label": "Transmission Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:water-cooling",
-      "vc:label": "Water Cooling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-mining",
-      "vc:label": "Bitcoin Mining"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:balancing-services",
-      "vc:label": "Balancing Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:capacity-market",
-      "vc:label": "Capacity Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-forecasting",
-      "vc:label": "Demand Forecasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:generation-capacity",
-      "vc:label": "Generation Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:grid-connection-queue",
-      "vc:label": "Grid Connection Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:grid-infrastructure",
-      "vc:label": "Grid Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:transmission-network",
-      "vc:label": "Transmission Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-data-centres",
-      "vc:label": "AI Data Centres"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrification",
-      "vc:label": "Electrification"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperscaler-operations",
-      "vc:label": "Hyperscaler Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-targets",
-      "vc:label": "Net Zero Targets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-mining",
-      "vc:label": "Bitcoin Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-economy",
-      "vc:label": "Digital Economy"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:behind-the-meter-generation",
-      "vc:label": "Behind-the-Meter Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:capacity-markets",
-      "vc:label": "Capacity Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-offsetting",
-      "vc:label": "Carbon Offsetting"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-response",
-      "vc:label": "Demand Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-purchase-agreements",
-      "vc:label": "Power Purchase Agreements"
-    },
-    {
-      "@id": "urn:visionflow:linked:small-modular-reactors",
-      "vc:label": "Small Modular Reactors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:renewable-energy-certificates",
-      "vc:label": "Renewable Energy Certificates"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:climate-policy",
-      "vc:label": "Climate Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-storage",
-      "vc:label": "Energy Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:transmission-infrastructure",
-      "vc:label": "Transmission Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-neutral-blockchain",
-      "vc:label": "Carbon Neutral Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:circular-economy",
-      "vc:label": "Circular Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:battery-energy-storage",
-      "vc:label": "Battery Energy Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-hydrogen",
-      "vc:label": "Green Hydrogen"
-    },
-    {
-      "@id": "urn:visionflow:linked:nuclear-energy",
-      "vc:label": "Nuclear Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:offshore-wind",
-      "vc:label": "Offshore Wind"
-    },
-    {
-      "@id": "urn:visionflow:linked:pumped-hydro-storage",
-      "vc:label": "Pumped Hydro Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:small-modular-reactors",
-      "vc:label": "Small Modular Reactors"
-    },
-    {
-      "@id": "urn:visionflow:linked:solar-pv",
-      "vc:label": "Solar PV"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-environmental-issues",
-      "vc:label": "Bitcoin Environmental Issues"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-footprint-measurement",
-      "vc:label": "Carbon Footprint Measurement"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:data-centre",
-      "vc:label": "Data Centre"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-mining",
-      "vc:label": "Bitcoin Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:epri-standards",
-      "vc:label": "EPRI Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ferc-regulations",
-      "vc:label": "FERC Regulations"
-    },
-    {
-      "@id": "urn:visionflow:linked:iea-electricity-reports",
-      "vc:label": "IEA Electricity Reports"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-power-standards",
-      "vc:label": "IEEE Power Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-grid-eso",
-      "vc:label": "National Grid ESO"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofgem",
-      "vc:label": "Ofgem"
-    },
-    {
-      "@id": "urn:visionflow:linked:sbti-net-zero-standard",
-      "vc:label": "SBTi Net-Zero Standard"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

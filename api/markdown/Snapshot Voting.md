@@ -584,378 +584,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:snapshot-voting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:snapshot-voting",
+  "@type": "Class",
   "label": "Snapshot Voting",
+  "definition": "Snapshot Voting is the dominant off-chain gasless governance infrastructure operated by Snapshot Labs that enables [[DecentralizedAutonomousOrganization|decentralised autonomous organisations]] and [[DeFi]] protocols to conduct binding-or-advisory governance polls without spending [[GasFees|gas]]...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cryptographic-signalling",
-      "vc:label": "Cryptographic Signalling"
+      "@id": "urn:ngm:class:cryptographic-signalling",
+      "label": "Cryptographic Signalling"
     },
     {
-      "@id": "urn:visionflow:linked:decentralised-voting",
-      "vc:label": "Decentralised Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:gasless-governance",
-      "vc:label": "Gasless Governance"
+      "@id": "urn:ngm:class:decentralised-voting",
+      "label": "Decentralised Voting"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3fe089f99148ff56b6169d4e20ec90d52c1613b62f144ed62e1cc5b9b7dc6a54"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:delegation-registry",
+        "label": "Delegation Registry"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql-api",
+        "label": "GraphQL API"
+      },
+      {
+        "@id": "urn:ngm:class:hub-relayer",
+        "label": "Hub Relayer"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs-vote-record",
+        "label": "IPFS Vote Record"
+      },
+      {
+        "@id": "urn:ngm:class:reality-eth-oracle-integration",
+        "label": "Reality.eth Oracle Integration"
+      },
+      {
+        "@id": "urn:ngm:class:safe-snap-module",
+        "label": "SafeSnap Module"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-block",
+        "label": "Snapshot Block"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-hub",
+        "label": "Snapshot Hub"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-space",
+        "label": "Snapshot Space"
+      },
+      {
+        "@id": "urn:ngm:class:voting-strategy",
+        "label": "Voting Strategy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ecdsa-cryptography",
+        "label": "ECDSA Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:eip-712-signature",
+        "label": "EIP-712 Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ens-name",
+        "label": "ENS Name"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-rpc-node",
+        "label": "Ethereum RPC Node"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256-hashing",
+        "label": "Keccak-256 Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-hub",
+        "label": "Snapshot Hub"
+      },
+      {
+        "@id": "urn:ngm:class:voting-strategy-plugin",
+        "label": "Voting Strategy Plugin"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-voting-aggregation",
+        "label": "Cross-Chain Voting Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:gasless-dao-participation",
+        "label": "Gasless DAO Participation"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy-delegation",
+        "label": "Liquid Democracy Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:nft-gated-governance",
+        "label": "NFT-Gated Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-execution-via-safe-snap",
+        "label": "On-Chain Execution via SafeSnap"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-weighted-voting",
+        "label": "Reputation-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-governance",
+        "label": "Token-Weighted Governance"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ecdsa-signature-verification",
+        "label": "ECDSA Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:eip-712-typed-structured-data",
+        "label": "EIP-712 Typed Structured Data"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:reality-eth-oracle",
+        "label": "Reality.eth Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-block-mechanism",
+        "label": "Snapshot Block Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:strategy-plugin-pattern",
+        "label": "Strategy Plugin Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:zodiac-module-standard",
+        "label": "Zodiac Module Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ecdsa-cryptography",
+        "label": "ECDSA Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256-hashing",
+        "label": "Keccak-256 Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:multicall-contract",
+        "label": "Multicall Contract"
+      },
+      {
+        "@id": "urn:ngm:class:pinata-ipfs-pinning",
+        "label": "Pinata IPFS Pinning"
+      },
+      {
+        "@id": "urn:ngm:class:reality-eth",
+        "label": "Reality.eth"
+      },
+      {
+        "@id": "urn:ngm:class:stark-net-cairo",
+        "label": "StarkNet Cairo"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:boardroom",
+        "label": "Boardroom"
+      },
+      {
+        "@id": "urn:ngm:class:deep-dao",
+        "label": "DeepDAO"
+      },
+      {
+        "@id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
+      },
+      {
+        "@id": "urn:ngm:class:karma-delegate-scoring",
+        "label": "Karma Delegate Scoring"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:token-engineering",
+        "label": "Token Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:dao-legal-structures",
+        "label": "DAO Legal Structures"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aave-governance",
+        "label": "Aave Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ape-coin-dao",
+        "label": "ApeCoin DAO"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum-dao",
+        "label": "Arbitrum DAO"
+      },
+      {
+        "@id": "urn:ngm:class:ens-dao",
+        "label": "ENS DAO"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-dao",
+        "label": "Gitcoin DAO"
+      },
+      {
+        "@id": "urn:ngm:class:lido-dao",
+        "label": "Lido DAO"
+      },
+      {
+        "@id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "@id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap-governance",
+        "label": "Uniswap Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-votes-delegation-standard",
+        "label": "ERC-20Votes Delegation Standard"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs-specification",
+        "label": "IPFS Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3fe089f99148ff56b6169d4e20ec90d52c1613b62f144ed62e1cc5b9b7dc6a54@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Snapshot Voting is the dominant off-chain gasless governance infrastructure operated by Snapshot Labs (Paris/distributed, founded 2020) that enables [[DecentralizedAutonomousOrganization|decentralised autonomous organisations]] and [[DeFi]] protocols to conduct binding-or-advisory governance polls without spending [[GasFees|gas]] on each ballot, replacing on-chain transactions with [[EIP-712]] typed structured-data signatures that any Ethereum-compatible wallet produces at zero marginal cost, fundamentally resolving the prohibitive participation barrier of early DAO governance where on-chain votes cost $50–$500 per transaction during Ethereum congestion. The platform's cryptographic core uses ECDSA signatures over EIP-712 domain-separated structs encoding proposal ID, space identifier, choice index, voter address, and timestamp; anyone can verify authenticity via `ecrecover(hash, v, r, s) == voter_address` without trusting Snapshot's infrastructure, while vote records are pinned to [[IPFS|IPFS]] for tamper-proof archival through content-addressed hashing — any data modification produces a different CID, making retroactive falsification detectable by any observer.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:delegation-registry",
-      "vc:label": "Delegation Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-ql-api",
-      "vc:label": "GraphQL API"
-    },
-    {
-      "@id": "urn:visionflow:linked:hub-relayer",
-      "vc:label": "Hub Relayer"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs-vote-record",
-      "vc:label": "IPFS Vote Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-eth-oracle-integration",
-      "vc:label": "Reality.eth Oracle Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-snap-module",
-      "vc:label": "SafeSnap Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-block",
-      "vc:label": "Snapshot Block"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-hub",
-      "vc:label": "Snapshot Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-space",
-      "vc:label": "Snapshot Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-strategy",
-      "vc:label": "Voting Strategy"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ecdsa-cryptography",
-      "vc:label": "ECDSA Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-712-signature",
-      "vc:label": "EIP-712 Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:ens-name",
-      "vc:label": "ENS Name"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-rpc-node",
-      "vc:label": "Ethereum RPC Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:keccak-256-hashing",
-      "vc:label": "Keccak-256 Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-hub",
-      "vc:label": "Snapshot Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-strategy-plugin",
-      "vc:label": "Voting Strategy Plugin"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-chain-voting-aggregation",
-      "vc:label": "Cross-Chain Voting Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gasless-dao-participation",
-      "vc:label": "Gasless DAO Participation"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-democracy-delegation",
-      "vc:label": "Liquid Democracy Delegation"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft-gated-governance",
-      "vc:label": "NFT-Gated Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-execution-via-safe-snap",
-      "vc:label": "On-Chain Execution via SafeSnap"
-    },
-    {
-      "@id": "urn:visionflow:linked:reputation-weighted-voting",
-      "vc:label": "Reputation-Weighted Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-governance",
-      "vc:label": "Token-Weighted Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ecdsa-signature-verification",
-      "vc:label": "ECDSA Signature Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-712-typed-structured-data",
-      "vc:label": "EIP-712 Typed Structured Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs-content-addressing",
-      "vc:label": "IPFS Content Addressing"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-eth-oracle",
-      "vc:label": "Reality.eth Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-block-mechanism",
-      "vc:label": "Snapshot Block Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:strategy-plugin-pattern",
-      "vc:label": "Strategy Plugin Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:zodiac-module-standard",
-      "vc:label": "Zodiac Module Standard"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bright-id",
-      "vc:label": "BrightID"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-712",
-      "vc:label": "EIP-712"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-name-service",
-      "vc:label": "Ethereum Name Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin-passport",
-      "vc:label": "Gitcoin Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:rpc-infrastructure",
-      "vc:label": "RPC Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:starknet",
-      "vc:label": "Starknet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:aave-governance",
-      "vc:label": "Aave Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:ape-coin-dao",
-      "vc:label": "ApeCoin DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:arbitrum-dao",
-      "vc:label": "Arbitrum DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:ens-dao",
-      "vc:label": "ENS DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin-dao",
-      "vc:label": "Gitcoin DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:lido-dao",
-      "vc:label": "Lido DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:maker-dao",
-      "vc:label": "MakerDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimism-collective",
-      "vc:label": "Optimism Collective"
-    },
-    {
-      "@id": "urn:visionflow:linked:uniswap-governance",
-      "vc:label": "Uniswap Governance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ecdsa-cryptography",
-      "vc:label": "ECDSA Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:gnosis-safe",
-      "vc:label": "Gnosis Safe"
-    },
-    {
-      "@id": "urn:visionflow:linked:keccak-256-hashing",
-      "vc:label": "Keccak-256 Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:multicall-contract",
-      "vc:label": "Multicall Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:pinata-ipfs-pinning",
-      "vc:label": "Pinata IPFS Pinning"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-eth",
-      "vc:label": "Reality.eth"
-    },
-    {
-      "@id": "urn:visionflow:linked:stark-net-cairo",
-      "vc:label": "StarkNet Cairo"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:aragon-governance",
-      "vc:label": "Aragon Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:boardroom",
-      "vc:label": "Boardroom"
-    },
-    {
-      "@id": "urn:visionflow:linked:colony-governance",
-      "vc:label": "Colony Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:compound-governor-bravo",
-      "vc:label": "Compound Governor Bravo"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governor",
-      "vc:label": "OpenZeppelin Governor"
-    },
-    {
-      "@id": "urn:visionflow:linked:tally-on-chain-governance",
-      "vc:label": "Tally On-Chain Governance"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:boardroom",
-      "vc:label": "Boardroom"
-    },
-    {
-      "@id": "urn:visionflow:linked:deep-dao",
-      "vc:label": "DeepDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-attack",
-      "vc:label": "Governance Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:karma-delegate-scoring",
-      "vc:label": "Karma Delegate Scoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-democracy",
-      "vc:label": "Liquid Democracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-engineering",
-      "vc:label": "Token Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-legal-structures",
-      "vc:label": "DAO Legal Structures"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eip-712",
-      "vc:label": "EIP-712"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1155",
-      "vc:label": "ERC-1155"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20",
-      "vc:label": "ERC-20"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20-votes-delegation-standard",
-      "vc:label": "ERC-20Votes Delegation Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-721",
-      "vc:label": "ERC-721"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs-specification",
-      "vc:label": "IPFS Specification"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

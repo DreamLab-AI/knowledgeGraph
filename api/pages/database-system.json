@@ -3,40 +3,44 @@
   "title": "Database System",
   "slug": "database-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:database-system",
+  "classIri": "urn:ngm:class:database-system",
   "domain": "infrastructure",
-  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.",
+  "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-persistence",
+        "id": "urn:ngm:class:data-persistence",
         "label": "Data Persistence"
       },
       {
-        "id": "urn:visionflow:linked:query-processing",
+        "id": "urn:ngm:class:query-processing",
         "label": "Query Processing"
       },
       {
-        "id": "urn:visionflow:linked:transaction-management",
+        "id": "urn:ngm:class:transaction-management",
         "label": "Transaction Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

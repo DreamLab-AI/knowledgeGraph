@@ -228,144 +228,111 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-ritual",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-ritual",
+  "@type": "Class",
   "label": "Digital Ritual",
+  "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful p...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-community-practice",
-      "vc:label": "Virtual Community Practice"
+      "@id": "urn:ngm:class:virtual-community-practice",
+      "label": "Virtual Community Practice"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0d0cc52e62a45e7a4bbc4129cffdf9e075b473bb0a8d4168ea5a5a6763192d89"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ceremonial-space",
+        "label": "Ceremonial Space"
+      },
+      {
+        "@id": "urn:ngm:class:community-bonding",
+        "label": "Community Bonding"
+      },
+      {
+        "@id": "urn:ngm:class:ritual-design",
+        "label": "Ritual Design"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-enactment",
+        "label": "Symbolic Enactment"
+      },
+      {
+        "@id": "urn:ngm:class:participant-coordination",
+        "label": "Participant Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:ritual-artifact",
+        "label": "Ritual Artifact"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-visual-environment",
+        "label": "Audio-Visual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-object-library",
+        "label": "Symbolic Object Library"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-platform",
+        "label": "Virtual World Platform"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:commemoration-event",
+        "label": "Commemoration Event"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-festival",
+        "label": "Cultural Festival"
+      },
+      {
+        "@id": "urn:ngm:class:initiation-rite",
+        "label": "Initiation Rite"
+      },
+      {
+        "@id": "urn:ngm:class:memorial-service",
+        "label": "Memorial Service"
+      },
+      {
+        "@id": "urn:ngm:class:religious-ceremony",
+        "label": "Religious Ceremony"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-wedding",
+        "label": "Virtual Wedding"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cultural-expression-system",
+        "label": "Cultural Expression System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-community-practice",
+        "label": "Virtual Community Practice"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0d0cc52e62a45e7a4bbc4129cffdf9e075b473bb0a8d4168ea5a5a6763192d89@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful participant interactions. bridges-to:: [[Telecollaboration]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:cultural-expression-system",
-      "vc:label": "Cultural Expression System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-community-practice",
-      "vc:label": "Virtual Community Practice"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ceremonial-space",
-      "vc:label": "Ceremonial Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-bonding",
-      "vc:label": "Community Bonding"
-    },
-    {
-      "@id": "urn:visionflow:linked:ritual-design",
-      "vc:label": "Ritual Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:symbolic-enactment",
-      "vc:label": "Symbolic Enactment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participant-coordination",
-      "vc:label": "Participant Coordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ritual-artifact",
-      "vc:label": "Ritual Artifact"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-visual-environment",
-      "vc:label": "Audio-Visual Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronization-protocol",
-      "vc:label": "Synchronization Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-system",
-      "vc:label": "Avatar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symbolic-object-library",
-      "vc:label": "Symbolic Object Library"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world-platform",
-      "vc:label": "Virtual World Platform"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:commemoration-event",
-      "vc:label": "Commemoration Event"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-festival",
-      "vc:label": "Cultural Festival"
-    },
-    {
-      "@id": "urn:visionflow:linked:initiation-rite",
-      "vc:label": "Initiation Rite"
-    },
-    {
-      "@id": "urn:visionflow:linked:memorial-service",
-      "vc:label": "Memorial Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:religious-ceremony",
-      "vc:label": "Religious Ceremony"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-wedding",
-      "vc:label": "Virtual Wedding"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cultural-protocol",
-      "vc:label": "Cultural Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-orchestration",
-      "vc:label": "Event Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance",
-      "vc:label": "Community Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participant-authentication",
-      "vc:label": "Participant Authentication"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

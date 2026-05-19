@@ -136,41 +136,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:synchronous-execution",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:synchronous-execution",
+  "@type": "Class",
   "label": "Synchronous Execution",
+  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:execution-model",
-      "vc:label": "Execution Model"
+      "@id": "urn:ngm:class:execution-model",
+      "label": "Execution Model"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6cbf98099a1e2770f1811579fc8af228b4dd08f5d42cae0ceeebbc969babf249@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins. The caller waits for the result before proceeding, establishing a direct temporal dependency between operations and enabling predictable, deterministic execution flow.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

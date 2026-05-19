@@ -3,32 +3,36 @@
   "title": "Psychological Research",
   "slug": "psychological-research",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:psychological-research",
+  "classIri": "urn:ngm:class:psychological-research",
   "domain": "spatial-computing",
   "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:research-methods",
+      "id": "urn:ngm:class:research-methods",
       "label": "Research Methods"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:evidence-based-vr-treatment",
+        "id": "urn:ngm:class:evidence-based-vr-treatment",
         "label": "Evidence Based VR Treatment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

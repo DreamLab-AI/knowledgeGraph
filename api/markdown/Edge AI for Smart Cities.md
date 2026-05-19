@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-ai-for-smart-cities",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-ai-for-smart-cities",
+  "@type": "Class",
   "label": "Edge AI for Smart Cities",
+  "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure—smart cameras, IoT sensors, edge gateways—enabling real-time autonomous city systems without centralized cloud processing.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:142c856928bfa11a9db99c02736ce6a54cd41b6f13babd2a68cbb7e7d7d4fe6e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:142c856928bfa11a9db99c02736ce6a54cd41b6f13babd2a68cbb7e7d7d4fe6e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure—smart cameras, IoT sensors, edge gateways—enabling real-time autonomous city systems without centralized cloud processing. Smart city applications span traffic management, public safety, environmental monitoring, and energy optimization, each requiring sub-second response times infeasible with cloud latency. Intelligent traffic management systems deploy AI-enabled cameras at intersections for real-time congestion detection, automated signal timing, and incident response, reducing commute times and emissions through local inference. Computer vision models identify pedestrians, cyclists, vehicles, and traffic conditions milliseconds after capture, enabling immediate signal adjustments. Public safety monitoring through smart cameras detects unusual activities (loitering, crowd anomalies, abandoned objects) locally, alerting authorities within seconds rather than hours of manual review. Environmental monitoring networks analyze air quality, noise levels, and pollution patterns across neighborhoods, supporting real-time alerts and policy decisions. Energy optimization systems balance p",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

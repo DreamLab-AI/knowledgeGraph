@@ -172,106 +172,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cosmos-ibc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cosmos-ibc",
+  "@type": "Class",
   "label": "Cosmos IBC",
+  "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cross-chain-communication",
-      "vc:label": "Cross-Chain Communication"
+      "@id": "urn:ngm:class:cross-chain-communication",
+      "label": "Cross-Chain Communication"
     },
     {
-      "@id": "urn:visionflow:linked:interoperability-protocol",
-      "vc:label": "Interoperability Protocol"
+      "@id": "urn:ngm:class:interoperability-protocol",
+      "label": "Interoperability Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:435914ce4ca0faa7d55c001959613cd5cc5cf929108fd61f4bcd2fe9e7a1e801"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:channel-protocol",
+        "label": "Channel Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:connection-protocol",
+        "label": "Connection Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:packet-system",
+        "label": "Packet System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-light-client",
+        "label": "Blockchain Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:packet-authentication",
+        "label": "Packet Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cosmos-ecosystem",
+        "label": "Cosmos Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-contracts",
+        "label": "Cross-Chain Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:inter-chain-value-transfer",
+        "label": "Inter-Chain Value Transfer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:435914ce4ca0faa7d55c001959613cd5cc5cf929108fd61f4bcd2fe9e7a1e801@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:channel-protocol",
-      "vc:label": "Channel Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:connection-protocol",
-      "vc:label": "Connection Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:packet-system",
-      "vc:label": "Packet System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-light-client",
-      "vc:label": "Blockchain Light Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:packet-authentication",
-      "vc:label": "Packet Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-proof",
-      "vc:label": "Merkle Proof"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cosmos-ecosystem",
-      "vc:label": "Cosmos Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-contracts",
-      "vc:label": "Cross-Chain Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-chain-value-transfer",
-      "vc:label": "Inter-Chain Value Transfer"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:layer-2-interop",
-      "vc:label": "Layer 2 Interop"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkadot-xcm",
-      "vc:label": "Polkadot XCM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,13 @@
   "title": "Jesse Wright",
   "slug": "jesse-wright",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:jesse-wright",
+  "classIri": "urn:ngm:individual:jesse-wright",
   "domain": "infrastructure",
-  "definition": "Jesse Wright is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
+  "definition": "Software engineer and open-source contributor with expertise in decentralised infrastructure, Linked Data technologies, and interoperable identity systems.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

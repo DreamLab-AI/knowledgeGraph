@@ -204,41 +204,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-core-concepts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-core-concepts",
+  "@type": "Class",
   "label": "metaverse core concepts",
+  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:27b445551bc08aa0a17e186546eaade2b392316f12da0f6131ea8e439dcc8bb0"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:27b445551bc08aa0a17e186546eaade2b392316f12da0f6131ea8e439dcc8bb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

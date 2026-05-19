@@ -180,106 +180,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-creative-media",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-creative-media",
+  "@type": "Class",
   "label": "ETSI Domain: Creative Media",
+  "definition": "Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
+      "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+      "label": "ETSI Metaverse Domain Taxonomy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7406c7e648a5c68ee3132b7914015a88a4dc746dd785d11f3a4bb0d71413c9c2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:multimedia-authoring",
+        "label": "Multimedia Authoring"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scene-design",
+        "label": "Scene Design"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-customization",
+        "label": "Avatar Customization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-building",
+        "label": "Virtual World Building"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7406c7e648a5c68ee3132b7914015a88a4dc746dd785d11f3a4bb0d71413c9c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-      "vc:label": "ETSI Metaverse Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-content-creation",
-      "vc:label": "3D Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimedia-authoring",
-      "vc:label": "Multimedia Authoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-pipeline",
-      "vc:label": "Content Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-tools",
-      "vc:label": "Creative Tools"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scene-design",
-      "vc:label": "Scene Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-customization",
-      "vc:label": "Avatar Customization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world-building",
-      "vc:label": "Virtual World Building"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing",
-      "vc:label": "Graphics Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-format-standards",
-      "vc:label": "Asset Format Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

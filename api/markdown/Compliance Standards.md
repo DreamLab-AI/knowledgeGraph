@@ -160,76 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compliance-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-standards",
+  "@type": "Class",
   "label": "Compliance Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2cfb494a0817775a391884421f7bd366ced7e7cc9f8dec7b625f34ab810ef4b6"
+  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in ...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:legal-expertise",
+        "label": "Legal Expertise"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-systems",
+        "label": "Monitoring Systems"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-guidance",
+        "label": "Regulatory Guidance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consumer-safety",
+        "label": "Consumer Safety"
+      },
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2cfb494a0817775a391884421f7bd366ced7e7cc9f8dec7b625f34ab810ef4b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:legal-expertise",
-      "vc:label": "Legal Expertise"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-systems",
-      "vc:label": "Monitoring Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-guidance",
-      "vc:label": "Regulatory Guidance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consumer-safety",
-      "vc:label": "Consumer Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-compliance",
-      "vc:label": "Legal Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

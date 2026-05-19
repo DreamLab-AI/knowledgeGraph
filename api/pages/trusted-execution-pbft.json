@@ -3,19 +3,18 @@
   "title": "Trusted Execution PBFT",
   "slug": "trusted-execution-pbft",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trusted-execution-pbft",
+  "classIri": "urn:ngm:class:trusted-execution-pbft",
   "domain": "blockchain",
   "definition": "A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
+      "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
       "label": "Practical Byzantine Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Data Format Standard",
   "slug": "data-format-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-format-standard",
+  "classIri": "urn:ngm:class:data-format-standard",
   "domain": "infrastructure",
-  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description (USD) for complex scene composition and collaboration.",
+  "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description for complex scene composition and collaboration.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:implementation-libraries",
+        "id": "urn:ngm:class:implementation-libraries",
         "label": "Implementation Libraries"
       },
       {
-        "id": "urn:visionflow:linked:validation-tools",
+        "id": "urn:ngm:class:validation-tools",
         "label": "Validation Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-body",
+        "id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-asset-interoperability",
+        "id": "urn:ngm:class:3-d-asset-interoperability",
         "label": "3D Asset Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:content-portability",
+        "id": "urn:ngm:class:content-portability",
         "label": "Content Portability"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-exchange",
+        "id": "urn:ngm:class:cross-platform-exchange",
         "label": "Cross-Platform Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

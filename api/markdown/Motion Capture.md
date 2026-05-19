@@ -420,294 +420,231 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:motion-capture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-capture",
+  "@type": "Class",
   "label": "Motion Capture",
+  "definition": "Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:animation",
-      "vc:label": "Animation"
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
     },
     {
-      "@id": "urn:visionflow:linked:biomechanics",
-      "vc:label": "Biomechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-capture",
-      "vc:label": "Performance Capture"
+      "@id": "urn:ngm:class:biomechanics",
+      "label": "Biomechanics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2922b8452583ba0cb6b4b3c51521cd87070a3a436cb8c6e2ef96b6d439087054"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blendshape-rig",
+        "label": "Blendshape Rig"
+      },
+      {
+        "@id": "urn:ngm:class:facial-capture-system",
+        "label": "Facial Capture System"
+      },
+      {
+        "@id": "urn:ngm:class:imu-suit",
+        "label": "IMU Suit"
+      },
+      {
+        "@id": "urn:ngm:class:optical-tracking-system",
+        "label": "Optical Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:retargeting-solver",
+        "label": "Retargeting Solver"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:body-rig",
+        "label": "Body Rig"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:camera-array",
+        "label": "Camera Array"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-lighting",
+        "label": "Infrared Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-filtering",
+        "label": "Temporal Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-human",
+        "label": "Digital Human"
+      },
+      {
+        "@id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      },
+      {
+        "@id": "urn:ngm:class:games",
+        "label": "Games"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-animation",
+        "label": "Real-Time Animation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-training-data",
+        "label": "Robotics Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:sports-analytics",
+        "label": "Sports Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:action-unit-encoding",
+        "label": "Action Unit Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:smpl-body-model",
+        "label": "SMPL Body Model"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:imu-sensor-fusion",
+        "label": "IMU Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloth-simulation",
+        "label": "Cloth Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cinematics",
+        "label": "Cinematics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:medical-simulation",
+        "label": "Medical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bvh-format",
+        "label": "BVH Format"
+      },
+      {
+        "@id": "urn:ngm:class:c3-d-format",
+        "label": "C3D Format"
+      },
+      {
+        "@id": "urn:ngm:class:fbx-format",
+        "label": "FBX Format"
+      },
+      {
+        "@id": "urn:ngm:class:usd-pipeline",
+        "label": "USD Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2922b8452583ba0cb6b4b3c51521cd87070a3a436cb8c6e2ef96b6d439087054@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data into digital skeletal or surface representations that animate characters, avatars, [[Digital Human]] entities, and objects in film, television, [[Games]], virtual reality, biomechanical research, sports science, and robotics. The field spans four primary capture modalities: optical marker-based systems ([[OptiTrack]], [[Vicon]], [[Qualisys]]) deploying retroreflective markers tracked by infrared camera arrays at 100–2,000 frames per second achieving sub-millimetre positional accuracy; markerless video-based systems ([[DeepLabCut]], [[MediaPipe]], Move.ai, Plask) applying deep convolutional neural networks and multi-view geometry to extract pose estimates from ordinary RGB footage without physical markers; inertial measurement unit (IMU) suits ([[Xsens]] MVN Animate, [[Rokoko]] Smartsuit Pro II, Movella) embedding accelerometers, gyroscopes, and magnetometers directly on the performer's body ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:blendshape-rig",
-      "vc:label": "Blendshape Rig"
-    },
-    {
-      "@id": "urn:visionflow:linked:facial-capture-system",
-      "vc:label": "Facial Capture System"
-    },
-    {
-      "@id": "urn:visionflow:linked:imu-suit",
-      "vc:label": "IMU Suit"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-tracking-system",
-      "vc:label": "Optical Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:retargeting-solver",
-      "vc:label": "Retargeting Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:skeletal-animation",
-      "vc:label": "Skeletal Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:volumetric-capture",
-      "vc:label": "Volumetric Capture"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:body-rig",
-      "vc:label": "Body Rig"
-    },
-    {
-      "@id": "urn:visionflow:linked:calibration",
-      "vc:label": "Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:camera-array",
-      "vc:label": "Camera Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:infrared-lighting",
-      "vc:label": "Infrared Lighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-filtering",
-      "vc:label": "Temporal Filtering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "vc:label": "3D Reconstruction"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-human",
-      "vc:label": "Digital Human"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-vfx",
-      "vc:label": "Film VFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:games",
-      "vc:label": "Games"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-animation",
-      "vc:label": "Real-Time Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-training-data",
-      "vc:label": "Robotics Training Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:sports-analytics",
-      "vc:label": "Sports Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:action-unit-encoding",
-      "vc:label": "Action Unit Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:bundle-adjustment",
-      "vc:label": "Bundle Adjustment"
-    },
-    {
-      "@id": "urn:visionflow:linked:smpl-body-model",
-      "vc:label": "SMPL Body Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pose-estimation",
-      "vc:label": "Pose Estimation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:geometric-algebra",
-      "vc:label": "Geometric Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:unity",
-      "vc:label": "Unity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unreal-engine",
-      "vc:label": "Unreal Engine"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cinematics",
-      "vc:label": "Cinematics"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-simulation",
-      "vc:label": "Medical Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:imu-sensor-fusion",
-      "vc:label": "IMU Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-flow",
-      "vc:label": "Optical Flow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-neural-network",
-      "vc:label": "Graph Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ai-body-pose-estimation",
-      "vc:label": "AI Body Pose Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyframe-animation",
-      "vc:label": "Keyframe Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-rotoscoping",
-      "vc:label": "Video Rotoscoping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-animation",
-      "vc:label": "Procedural Animation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cloth-simulation",
-      "vc:label": "Cloth Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:facial-animation",
-      "vc:label": "Facial Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bvh-format",
-      "vc:label": "BVH Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:c3-d-format",
-      "vc:label": "C3D Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:fbx-format",
-      "vc:label": "FBX Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-pipeline",
-      "vc:label": "USD Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-xr",
-      "vc:label": "OpenXR"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

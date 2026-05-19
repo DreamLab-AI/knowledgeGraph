@@ -3,40 +3,44 @@
   "title": "Model Extraction",
   "slug": "model-extraction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-extraction",
+  "classIri": "urn:ngm:class:model-extraction",
   "domain": "artificial-intelligence",
   "definition": "An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:adversarial-attacks",
+      "id": "urn:ngm:class:adversarial-attacks",
       "label": "Adversarial Attacks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:adversarial-attacks",
+        "id": "urn:ngm:class:adversarial-attacks",
         "label": "Adversarial Attacks"
       },
       {
-        "id": "urn:visionflow:owl:class:membership-inference",
+        "id": "urn:ngm:class:membership-inference",
         "label": "Membership Inference"
       },
       {
-        "id": "urn:visionflow:owl:class:model-inversion",
+        "id": "urn:ngm:class:model-inversion",
         "label": "Model Inversion"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

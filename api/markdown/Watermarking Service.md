@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:watermarking-service",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:watermarking-service",
+  "@type": "Class",
   "label": "Watermarking Service",
+  "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:content-authentication",
-      "vc:label": "Content Authentication"
+      "@id": "urn:ngm:class:content-authentication",
+      "label": "Content Authentication"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:10c7f9373938c2f02722e28963e6bf990d0c2d81f5e8ab25e682275758d51bda"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:10c7f9373938c2f02722e28963e6bf990d0c2d81f5e8ab25e682275758d51bda@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

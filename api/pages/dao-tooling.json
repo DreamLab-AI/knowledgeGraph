@@ -3,175 +3,283 @@
   "title": "DAO Tooling",
   "slug": "dao-tooling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dao-tooling",
+  "classIri": "urn:ngm:class:dao-tooling",
   "domain": "blockchain",
-  "definition": "DAO Tooling is the integrated software stack of governance platforms, treasury custodians, execution oracles, deliberation forums, identity primitives, analytics layers, and compensation rails that operationalises decentralised autonomous organisations as functioning socio-technical institutions managing capital, coordinating contributors, and binding off-chain deliberation to on-chain execution. The stack comprises governance front-ends ([[Snapshot]] gasless off-chain voting across 20,000+ spaces and 22M+ votes by 2025, [[Tally]] on-chain Governor UI for 100+ protocols, [[Aragon]] OSx modular plugin framework, [[DAOhaus]] Moloch deployments, [[Boardroom]] aggregating governance across 200+ protocols, [[Commonwealth]] discussion+vote unified surface), treasury custody dominated by [[Safe]] (formerly [[Gnosis Safe]]) securing approximately $100B+ of digital assets across 250,000+ deployments and >50% of all DAO treasuries by value circa 2024-2025, with operational layers from [[Den]] (formerly [[Multis]]), [[Coinshift]], [[Karpatkey]] (\u20ac500M+ AUM across [[Gnosis DAO]], [[Balancer]], [[ENS]], [[CoW DAO]]), [[Llama]] / [[LlamaRisk]] (~$1B+ advised across [[Aave]], [[Gitcoin]], [[PoolT",
+  "definition": "DAO Tooling is the integrated software stack of governance platforms, treasury custodians, execution oracles, deliberation forums, identity primitives, analytics layers, and compensation rails that operationalises decentralised autonomous organisations as functioning socio-technical institutions ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:coordination-technology",
+      "id": "urn:ngm:class:coordination-technology",
       "label": "Coordination Technology"
     },
     {
-      "id": "urn:visionflow:linked:governance-infrastructure",
+      "id": "urn:ngm:class:governance-infrastructure",
       "label": "Governance Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:linked:organisational-software",
-      "label": "Organisational Software"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:analytics-dashboard",
+        "id": "urn:ngm:class:analytics-dashboard",
         "label": "Analytics Dashboard"
       },
       {
-        "id": "urn:visionflow:linked:compensation-system",
+        "id": "urn:ngm:class:compensation-system",
         "label": "Compensation System"
       },
       {
-        "id": "urn:visionflow:linked:deliberation-forum",
+        "id": "urn:ngm:class:deliberation-forum",
         "label": "Deliberation Forum"
       },
       {
-        "id": "urn:visionflow:linked:execution-oracle",
+        "id": "urn:ngm:class:execution-oracle",
         "label": "Execution Oracle"
       },
       {
-        "id": "urn:visionflow:linked:funding-platform",
+        "id": "urn:ngm:class:funding-platform",
         "label": "Funding Platform"
       },
       {
-        "id": "urn:visionflow:linked:governance-platform",
+        "id": "urn:ngm:class:governance-platform",
         "label": "Governance Platform"
       },
       {
-        "id": "urn:visionflow:linked:identity-primitive",
+        "id": "urn:ngm:class:identity-primitive",
         "label": "Identity Primitive"
       },
       {
-        "id": "urn:visionflow:linked:legal-wrapper",
+        "id": "urn:ngm:class:legal-wrapper",
         "label": "Legal Wrapper"
       },
       {
-        "id": "urn:visionflow:linked:treasury-management-system",
+        "id": "urn:ngm:class:treasury-management-system",
         "label": "Treasury Management System"
       },
       {
-        "id": "urn:visionflow:linked:voting-mechanism",
+        "id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-storage",
+        "id": "urn:ngm:class:decentralised-storage",
         "label": "Decentralised Storage"
       },
       {
-        "id": "urn:visionflow:linked:multi-signature-wallet",
+        "id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallet"
       },
       {
-        "id": "urn:visionflow:linked:oracle-network",
+        "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-governance",
+        "id": "urn:ngm:class:on-chain-governance",
         "label": "On-Chain Governance"
       },
       {
-        "id": "urn:visionflow:linked:optimistic-execution",
+        "id": "urn:ngm:class:optimistic-execution",
         "label": "Optimistic Execution"
       },
       {
-        "id": "urn:visionflow:linked:permissionless-coordination",
+        "id": "urn:ngm:class:permissionless-coordination",
         "label": "Permissionless Coordination"
       },
       {
-        "id": "urn:visionflow:linked:programmable-treasury",
+        "id": "urn:ngm:class:programmable-treasury",
         "label": "Programmable Treasury"
       },
       {
-        "id": "urn:visionflow:linked:quadratic-funding",
+        "id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
       },
       {
-        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       },
       {
-        "id": "urn:visionflow:linked:token-weighted-voting",
+        "id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Weighted Voting"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:erc-20-votes",
+        "id": "urn:ngm:class:erc-20-votes",
         "label": "ERC-20 Votes"
       },
       {
-        "id": "urn:visionflow:linked:futarchy",
+        "id": "urn:ngm:class:futarchy",
         "label": "Futarchy"
       },
       {
-        "id": "urn:visionflow:linked:governor-bravo",
+        "id": "urn:ngm:class:governor-bravo",
         "label": "Governor Bravo"
       },
       {
-        "id": "urn:visionflow:linked:open-zeppelin-governor",
+        "id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor"
       },
       {
-        "id": "urn:visionflow:linked:reality-eth-oracle",
+        "id": "urn:ngm:class:reality-eth-oracle",
         "label": "Reality.eth Oracle"
       },
       {
-        "id": "urn:visionflow:linked:safe-multi-sig",
+        "id": "urn:ngm:class:safe-multi-sig",
         "label": "Safe Multi-Sig"
       },
       {
-        "id": "urn:visionflow:linked:snapshot-off-chain-voting",
+        "id": "urn:ngm:class:snapshot-off-chain-voting",
         "label": "Snapshot Off-Chain Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:conviction-voting",
+        "id": "urn:ngm:class:conviction-voting",
         "label": "Conviction Voting"
       },
       {
-        "id": "urn:visionflow:owl:class:quadratic-voting",
+        "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:delegated-voting",
+        "label": "Delegated Voting"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-approval",
+        "label": "Multi-Signature Approval"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-oracle",
+        "label": "Optimistic Oracle"
+      },
+      {
+        "id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:contributor-compensation",
+        "label": "Contributor Compensation"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:grant-distribution",
+        "label": "Grant Distribution"
+      },
+      {
+        "id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      },
+      {
+        "id": "urn:ngm:class:sub-dao-coordination",
+        "label": "Sub-DAO Coordination"
+      },
+      {
+        "id": "urn:ngm:class:treasury-diversification",
+        "label": "Treasury Diversification"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-4824",
+        "label": "EIP-4824"
+      },
+      {
+        "id": "urn:ngm:class:eip-5805",
+        "label": "EIP-5805"
+      },
+      {
+        "id": "urn:ngm:class:eip-6372",
+        "label": "EIP-6372"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20Votes"
+      },
+      {
+        "id": "urn:ngm:class:erc-721-votes",
+        "label": "ERC-721Votes"
+      },
+      {
+        "id": "urn:ngm:class:erc-7390",
+        "label": "ERC-7390"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-contracts",
+        "label": "OpenZeppelin Contracts"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:network-state",
+        "label": "Network State"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:web3-identity",
+        "label": "Web3 Identity"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ]
   },
   "wikilinks": [
     {

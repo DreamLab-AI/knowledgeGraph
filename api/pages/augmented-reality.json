@@ -3,40 +3,44 @@
   "title": "Augmented Reality",
   "slug": "augmented-reality",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:augmented-reality",
+  "classIri": "urn:ngm:class:augmented-reality",
   "domain": "spatial-computing",
-  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems operate on three essentialities: coupling of real and virtual environments, real-time interaction, and precise 3D visualisation of virtual objects aligned with physical space.",
+  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:extended-reality",
+      "id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:contextual-information-display",
+        "id": "urn:ngm:class:contextual-information-display",
         "label": "Contextual Information Display"
       },
       {
-        "id": "urn:visionflow:linked:remote-assistance",
+        "id": "urn:ngm:class:remote-assistance",
         "label": "Remote Assistance"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

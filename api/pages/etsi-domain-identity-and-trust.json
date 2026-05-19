@@ -3,19 +3,18 @@
   "title": "ETSI Domain Identity and Trust",
   "slug": "etsi-domain-identity-and-trust",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-identity-and-trust",
+  "classIri": "urn:ngm:class:etsi-domain-identity-and-trust",
   "domain": "infrastructure",
-  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]]. This domain integrates [[DigitalIdentity]], [[VerifiableCredentials]], [[ZeroTrustArchitecture]], [[BiometricAuthentication]], and [[DecentralisedIdentity]] to enable secure, privacy-respecting identity assurance across distributed metaverse platforms.",
+  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

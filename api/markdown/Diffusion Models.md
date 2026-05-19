@@ -508,316 +508,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:diffusion-models",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:diffusion-models",
+  "@type": "Class",
   "label": "Diffusion Models",
+  "definition": "Diffusion Models are a class of deep generative models that learn the data distribution p_data(x) by reversing a fixed forward Markov noising process q(x_t | x_{t-1}) that progressively corrupts data x_0 with Gaussian noise across T timesteps until x_T ≈ N(0,I), then training a neural denoiser ε_...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:latent-variable-model",
-      "vc:label": "Latent Variable Model"
+      "@id": "urn:ngm:class:latent-variable-model",
+      "label": "Latent Variable Model"
     },
     {
-      "@id": "urn:visionflow:linked:markov-chain-model",
-      "vc:label": "Markov Chain Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:score-based-model",
-      "vc:label": "Score-Based Model"
+      "@id": "urn:ngm:class:markov-chain-model",
+      "label": "Markov Chain Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8aa0f12996379ea27dd838c5a344717720027c0e1b91350822e56e626c7d372f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:forward-noising-process",
+        "label": "Forward Noising Process"
+      },
+      {
+        "@id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-denoising-process",
+        "label": "Reverse Denoising Process"
+      },
+      {
+        "@id": "urn:ngm:class:sampler",
+        "label": "Sampler"
+      },
+      {
+        "@id": "urn:ngm:class:score-network",
+        "label": "Score Network"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:variational-lower-bound",
+        "label": "Variational Lower Bound"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:variational-lower-bound-maximisation",
+        "label": "Variational Lower Bound Maximisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:t5-encoder",
+        "label": "T5 Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video",
+        "label": "Text-to-Video"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-synthesis",
+        "label": "Medical Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:world-models",
+        "label": "World Models"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:fid-benchmark-protocol",
+        "label": "FID Benchmark Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8aa0f12996379ea27dd838c5a344717720027c0e1b91350822e56e626c7d372f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Diffusion Models are a class of deep generative models that learn the data distribution p_data(x) by reversing a fixed forward Markov noising process q(x_t | x_{t-1}) that progressively corrupts data x_0 with Gaussian noise across T timesteps until x_T ≈ N(0,I), then training a neural denoiser ε_θ(x_t, t) (or equivalently a score network s_θ(x_t, t) ≈ ∇_{x_t} log p_t(x_t)) to predict the noise (or score) at each level so that ancestral sampling from x_T back to x_0 produces samples from p_data — introduced in nascent form by Sohl-Dickstein, Weiss, Maheswaranathan and Ganguli at Stanford and Janelia in their 2015 ICML paper \"Deep Unsupervised Learning using Nonequilibrium Thermodynamics\" connecting variational inference with non-equilibrium statistical physics, made practically viable for high-fidelity image synthesis by Ho, Jain and Abbeel (UC Berkeley) in their 2020 NeurIPS paper \"Denoising Diffusion Probabilistic Models\" (DDPM) which simplified the variational training objective to a weighted noise-prediction MSE L_simple = E_{t,x_0,ε}[‖ε − ε_θ(√(ᾱ_t)x_0 + √(1−ᾱ_t)ε, t)‖²] under a cosine or linear β-schedule with T=1000 steps, paralleled by Song and Ermon (Stanford) whose 2019 Ne",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:forward-noising-process",
-      "vc:label": "Forward Noising Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-schedule",
-      "vc:label": "Noise Schedule"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-denoising-process",
-      "vc:label": "Reverse Denoising Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampler",
-      "vc:label": "Sampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:score-network",
-      "vc:label": "Score Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-encoder",
-      "vc:label": "Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-lower-bound",
-      "vc:label": "Variational Lower Bound"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:differentiable-architecture",
-      "vc:label": "Differentiable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-distribution",
-      "vc:label": "Training Data Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-generation",
-      "vc:label": "3D Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:audio-synthesis",
-      "vc:label": "Audio Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-editing",
-      "vc:label": "Image Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-synthesis",
-      "vc:label": "Image Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-synthesis",
-      "vc:label": "Video Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:super-resolution",
-      "vc:label": "Super Resolution"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:denoising-score-matching",
-      "vc:label": "Denoising Score Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching",
-      "vc:label": "Flow Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:rectified-flow",
-      "vc:label": "Rectified Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-differential-equation",
-      "vc:label": "Stochastic Differential Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-lower-bound-maximisation",
-      "vc:label": "Variational Lower Bound Maximisation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:nonequilibrium-thermodynamics",
-      "vc:label": "Nonequilibrium Thermodynamics"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-calculus",
-      "vc:label": "Stochastic Calculus"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:creative-tools",
-      "vc:label": "Creative Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-asset-generation",
-      "vc:label": "Game Asset Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-image-synthesis",
-      "vc:label": "Medical Image Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-models",
-      "vc:label": "World Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synthetic-data-generation",
-      "vc:label": "Synthetic Data Generation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:clip-encoder",
-      "vc:label": "CLIP Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-transformer",
-      "vc:label": "Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:t5-encoder",
-      "vc:label": "T5 Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:u-net",
-      "vc:label": "U-Net"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-attention",
-      "vc:label": "Cross Attention"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:autoregressive-model",
-      "vc:label": "Autoregressive Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-based-model",
-      "vc:label": "Energy-Based Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:normalising-flow",
-      "vc:label": "Normalising Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:representation-learning",
-      "vc:label": "Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-video",
-      "vc:label": "Text-to-Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-image",
-      "vc:label": "Text-to-Image"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:fid-benchmark-protocol",
-      "vc:label": "FID Benchmark Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

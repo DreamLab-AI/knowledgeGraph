@@ -3,19 +3,18 @@
   "title": "Lower Limb Exoskeleton",
   "slug": "lower-limb-exoskeleton",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lower-limb-exoskeleton",
+  "classIri": "urn:ngm:class:lower-limb-exoskeleton",
   "domain": "robotics",
   "definition": "Lower limb exoskeleton assists or augments walking and leg movements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:exoskeleton-robot",
+      "id": "urn:ngm:class:exoskeleton-robot",
       "label": "Exoskeleton Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:secure-data-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:secure-data-sharing",
+  "@type": "Class",
   "label": "Secure Data Sharing",
+  "definition": "Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-security",
-      "vc:label": "Data Security"
+      "@id": "urn:ngm:class:data-security",
+      "label": "Data Security"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d384c9bf313d068005e16a67deb5ae4f6baadc7b2db5b1063fc019033489a89a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:confidential-collaboration",
+        "label": "Confidential Collaboration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d384c9bf313d068005e16a67deb5ae4f6baadc7b2db5b1063fc019033489a89a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:confidential-collaboration",
-      "vc:label": "Confidential Collaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

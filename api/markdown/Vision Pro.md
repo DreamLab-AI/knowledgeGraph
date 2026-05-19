@@ -476,388 +476,305 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:vision-pro",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:vision-pro",
+  "@type": "Individual",
   "label": "Vision Pro",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:wearable-computing",
-      "vc:label": "Wearable Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality",
-      "vc:label": "Mixed Reality"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-mounted-display",
-      "vc:label": "Head-Mounted Display"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0d8ca1135f0d7415b411e88c381146cfb775a982c161896e855185479c84d8c2"
+  "definition": "Mixed reality headset by Apple combining augmented and virtual reality with spatial computing capabilities, driven by the M2 and R1 chips and controlled via eye tracking, hand gestures, and voice.",
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:apple-immersive-video",
+        "label": "Apple Immersive Video"
+      },
+      {
+        "@id": "urn:ngm:class:apple-silicon",
+        "label": "Apple Silicon"
+      },
+      {
+        "@id": "urn:ngm:class:eye-sight",
+        "label": "EyeSight"
+      },
+      {
+        "@id": "urn:ngm:class:li-dar-scanner",
+        "label": "LiDAR Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:neural-engine",
+        "label": "Neural Engine"
+      },
+      {
+        "@id": "urn:ngm:class:optic-id",
+        "label": "Optic ID"
+      },
+      {
+        "@id": "urn:ngm:class:persona-avatar",
+        "label": "Persona Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:vision-os",
+        "label": "visionOS"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      },
+      {
+        "@id": "urn:ngm:class:reality-kit",
+        "label": "RealityKit"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality-applications",
+        "label": "Extended Reality Applications"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-video-playback",
+        "label": "Immersive Video Playback"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:remote-surgical-planning",
+        "label": "Remote Surgical Planning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-collaboration",
+        "label": "Spatial Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-communication",
+        "label": "Volumetric Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:eye-gaze-interaction",
+        "label": "Eye Gaze Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:hand-gesture-recognition",
+        "label": "Hand Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-video",
+        "label": "Passthrough Video"
+      },
+      {
+        "@id": "urn:ngm:class:videoconferencing",
+        "label": "Videoconferencing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:arkit",
+        "label": "ARKit"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth",
+        "label": "Bluetooth"
+      },
+      {
+        "@id": "urn:ngm:class:li-dar-scanner",
+        "label": "LiDAR Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      },
+      {
+        "@id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:mv-hevc",
+        "label": "MV-HEVC"
+      },
+      {
+        "@id": "urn:ngm:class:neural-engine",
+        "label": "Neural Engine"
+      },
+      {
+        "@id": "urn:ngm:class:reality-kit",
+        "label": "RealityKit"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi-6-e",
+        "label": "Wi-Fi 6E"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-applications",
+        "label": "Enterprise Applications"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-training",
+        "label": "Industrial Training"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-training",
+        "label": "Surgical Training"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-entertainment",
+        "label": "Immersive Entertainment"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apple-developer-programme",
+        "label": "Apple Developer Programme"
+      },
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "@id": "urn:ngm:class:mv-hevc",
+        "label": "MV-HEVC"
+      },
+      {
+        "@id": "urn:ngm:class:reality-kit-framework",
+        "label": "RealityKit Framework"
+      },
+      {
+        "@id": "urn:ngm:class:vision-os-sdk",
+        "label": "visionOS SDK"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0d8ca1135f0d7415b411e88c381146cfb775a982c161896e855185479c84d8c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Apple Vision Pro is a [[Spatial Computing]] head-mounted display manufactured by Apple Inc., released in the United States on 2 February 2024 at USD 3,499 (256 GB base configuration), and internationally — United Kingdom, Canada, Australia, France, Germany, Japan, South Korea, Singapore, and China — from July 2024, representing Apple's first entirely new product category since the [[Apple Watch]] (2015) and the highest-specification commercially available [[Mixed Reality]] device at its launch. The device integrates a dual-chip silicon architecture comprising the Apple M2 [[System-on-Chip]] for general-purpose compute (8-core CPU, 10-core GPU, 16-core [[Neural Engine]], 16 GB unified memory, TSMC 5 nm fabrication) and a dedicated Apple R1 co-processor that processes inputs from twelve cameras, five sensors, and six microphones through a real-time operating system with glass-to-photon display latency of 12 milliseconds — below the 20 ms human perception threshold for motion-to-photon lag. The display system consists of two custom Sony-manufactured micro-[[OLED]] panels delivering approximately 23 million total pixels at 92 pixels per degree — more pixels per eye than a 4K television",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:apple-immersive-video",
-      "vc:label": "Apple Immersive Video"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-silicon",
-      "vc:label": "Apple Silicon"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-sight",
-      "vc:label": "EyeSight"
-    },
-    {
-      "@id": "urn:visionflow:linked:li-dar-scanner",
-      "vc:label": "LiDAR Scanner"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-oled-display",
-      "vc:label": "Micro-OLED Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-engine",
-      "vc:label": "Neural Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:optic-id",
-      "vc:label": "Optic ID"
-    },
-    {
-      "@id": "urn:visionflow:linked:persona-avatar",
-      "vc:label": "Persona Avatar"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-enclave",
-      "vc:label": "Secure Enclave"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-os",
-      "vc:label": "visionOS"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hand-tracking",
-      "vc:label": "Hand Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:arkit",
-      "vc:label": "ARKit"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-kit",
-      "vc:label": "RealityKit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-reality-applications",
-      "vc:label": "Extended Reality Applications"
-    },
-    {
-      "@id": "urn:visionflow:linked:immersive-computing",
-      "vc:label": "Immersive Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:immersive-video-playback",
-      "vc:label": "Immersive Video Playback"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging",
-      "vc:label": "Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-surgical-planning",
-      "vc:label": "Remote Surgical Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-collaboration",
-      "vc:label": "Spatial Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:volumetric-communication",
-      "vc:label": "Volumetric Communication"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:biometric-authentication",
-      "vc:label": "Biometric Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-gaze-interaction",
-      "vc:label": "Eye Gaze Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:hand-gesture-recognition",
-      "vc:label": "Hand Gesture Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:iris-recognition",
-      "vc:label": "Iris Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:passthrough-video",
-      "vc:label": "Passthrough Video"
-    },
-    {
-      "@id": "urn:visionflow:linked:videoconferencing",
-      "vc:label": "Videoconferencing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality",
-      "vc:label": "Mixed Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:apple-silicon",
-      "vc:label": "Apple Silicon"
-    },
-    {
-      "@id": "urn:visionflow:linked:metal-api",
-      "vc:label": "Metal API"
-    },
-    {
-      "@id": "urn:visionflow:linked:swift-ui",
-      "vc:label": "SwiftUI"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-os",
-      "vc:label": "visionOS"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-applications",
-      "vc:label": "Enterprise Applications"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-training",
-      "vc:label": "Industrial Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging",
-      "vc:label": "Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-training",
-      "vc:label": "Surgical Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-entertainment",
-      "vc:label": "Immersive Entertainment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:remote-collaboration",
-      "vc:label": "Remote Collaboration"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:arkit",
-      "vc:label": "ARKit"
-    },
-    {
-      "@id": "urn:visionflow:linked:bluetooth",
-      "vc:label": "Bluetooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:li-dar-scanner",
-      "vc:label": "LiDAR Scanner"
-    },
-    {
-      "@id": "urn:visionflow:linked:metal-api",
-      "vc:label": "Metal API"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-oled-display",
-      "vc:label": "Micro-OLED Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:mv-hevc",
-      "vc:label": "MV-HEVC"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-engine",
-      "vc:label": "Neural Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-kit",
-      "vc:label": "RealityKit"
-    },
-    {
-      "@id": "urn:visionflow:linked:wi-fi-6-e",
-      "vc:label": "Wi-Fi 6E"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:holo-lens-2",
-      "vc:label": "HoloLens 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:magic-leap-2",
-      "vc:label": "Magic Leap 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-quest-3",
-      "vc:label": "Meta Quest 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-quest-pro",
-      "vc:label": "Meta Quest Pro"
-    },
-    {
-      "@id": "urn:visionflow:linked:samsung-galaxy-xr",
-      "vc:label": "Samsung Galaxy XR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-frame",
-      "vc:label": "AR Frame"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companions",
-      "vc:label": "AI companions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apple-developer-programme",
-      "vc:label": "Apple Developer Programme"
-    },
-    {
-      "@id": "urn:visionflow:linked:dicom",
-      "vc:label": "DICOM"
-    },
-    {
-      "@id": "urn:visionflow:linked:mv-hevc",
-      "vc:label": "MV-HEVC"
-    },
-    {
-      "@id": "urn:visionflow:linked:reality-kit-framework",
-      "vc:label": "RealityKit Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-os-sdk",
-      "vc:label": "visionOS SDK"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ]
 }

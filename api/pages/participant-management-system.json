@@ -3,32 +3,36 @@
   "title": "Participant Management System",
   "slug": "participant-management-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:participant-management-system",
+  "classIri": "urn:ngm:class:participant-management-system",
   "domain": "spatial-computing",
   "definition": "A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:event-management",
+      "id": "urn:ngm:class:event-management",
       "label": "Event Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:event-analytics",
+        "id": "urn:ngm:class:event-analytics",
         "label": "Event Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

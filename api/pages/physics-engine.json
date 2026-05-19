@@ -3,74 +3,95 @@
   "title": "Physics Engine",
   "slug": "physics-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:physics-engine",
+  "classIri": "urn:ngm:class:physics-engine",
   "domain": "spatial-computing",
   "definition": "Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:collision-detection-system",
+        "id": "urn:ngm:class:collision-detection-system",
         "label": "Collision Detection System"
       },
       {
-        "id": "urn:visionflow:linked:constraint-solver",
+        "id": "urn:ngm:class:constraint-solver",
         "label": "Constraint Solver"
       },
       {
-        "id": "urn:visionflow:owl:class:particle-system",
+        "id": "urn:ngm:class:particle-system",
         "label": "Particle System"
       },
       {
-        "id": "urn:visionflow:owl:class:rigid-body-dynamics",
+        "id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Dynamics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:graphics-api",
+        "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       },
       {
-        "id": "urn:visionflow:owl:class:math-library",
+        "id": "urn:ngm:class:math-library",
         "label": "Math Library"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collision-response",
+        "id": "urn:ngm:class:collision-response",
         "label": "Collision Response"
       },
       {
-        "id": "urn:visionflow:linked:kinematic-animation",
+        "id": "urn:ngm:class:kinematic-animation",
         "label": "Kinematic Animation"
       },
       {
-        "id": "urn:visionflow:linked:physical-simulation",
+        "id": "urn:ngm:class:physical-simulation",
         "label": "Physical Simulation"
       },
       {
-        "id": "urn:visionflow:linked:realistic-interaction",
+        "id": "urn:ngm:class:realistic-interaction",
         "label": "Realistic Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

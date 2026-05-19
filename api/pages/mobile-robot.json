@@ -3,27 +3,36 @@
   "title": "Mobile Robot",
   "slug": "mobile-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mobile-robot",
+  "classIri": "urn:ngm:class:mobile-robot",
   "domain": "robotics",
   "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "robotics"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.98,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "robotics"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-rb-0001",
+        "label": "Robot (RB-0001)"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

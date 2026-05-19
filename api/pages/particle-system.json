@@ -3,32 +3,36 @@
   "title": "Particle System",
   "slug": "particle-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:particle-system",
+  "classIri": "urn:ngm:class:particle-system",
   "domain": "spatial-computing",
-  "definition": "A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical effects.",
+  "definition": "A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical e...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:visual-effects",
+      "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-visual-effects",
+        "id": "urn:ngm:class:dynamic-visual-effects",
         "label": "Dynamic Visual Effects"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

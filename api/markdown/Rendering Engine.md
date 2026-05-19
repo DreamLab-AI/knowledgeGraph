@@ -148,41 +148,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rendering-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rendering-engine",
+  "@type": "Class",
   "label": "Rendering Engine",
+  "definition": "A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computer-graphics",
-      "vc:label": "Computer Graphics"
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3b310543e9ac79f3f4908eb8a8da164cd0035216e97981c3c7105522e6bb4ca"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3b310543e9ac79f3f4908eb8a8da164cd0035216e97981c3c7105522e6bb4ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches. Modern real-time engines like Unreal Engine 5 and Unity employ advanced techniques including global illumination (Lumen), virtualised geometry (Nanite), neural rendering with RTX Tensor Cores, and DLSS upscaling to achieve cinematic-quality visuals at interactive frame rates.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

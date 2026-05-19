@@ -3,32 +3,36 @@
   "title": "Revenue Sharing",
   "slug": "revenue-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:revenue-sharing",
+  "classIri": "urn:ngm:class:revenue-sharing",
   "domain": "spatial-computing",
   "definition": "Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:creator-economy",
+      "id": "urn:ngm:class:creator-economy",
       "label": "Creator Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:creator-monetization",
+        "id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

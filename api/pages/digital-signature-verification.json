@@ -3,53 +3,57 @@
   "title": "Digital Signature Verification",
   "slug": "digital-signature-verification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-signature-verification",
+  "classIri": "urn:ngm:class:digital-signature-verification",
   "domain": "spatial-computing",
-  "definition": "The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was created by the corresponding private key and that the signed content has not been modified. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Signature Verification is a type of Cryptographic Verification in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptographic-verification",
+      "id": "urn:ngm:class:cryptographic-verification",
       "label": "Cryptographic Verification"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:hash-algorithm",
+        "id": "urn:ngm:class:hash-algorithm",
         "label": "Hash Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:signature-algorithm",
+        "id": "urn:ngm:class:signature-algorithm",
         "label": "Signature Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:document-integrity",
+        "id": "urn:ngm:class:document-integrity",
         "label": "Document Integrity"
       },
       {
-        "id": "urn:visionflow:linked:transaction-authentication",
+        "id": "urn:ngm:class:transaction-authentication",
         "label": "Transaction Authentication"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

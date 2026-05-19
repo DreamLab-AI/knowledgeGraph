@@ -3,74 +3,87 @@
   "title": "Token Bonding Curve",
   "slug": "token-bonding-curve",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:token-bonding-curve",
+  "classIri": "urn:ngm:class:token-bonding-curve",
   "domain": "spatial-computing",
   "definition": "Algorithmic pricing mechanism that defines token value as a mathematical function of circulating supply and reserve balance, providing continuous liquidity through automated market making.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:liquidity-mechanism",
+        "id": "urn:ngm:class:liquidity-mechanism",
         "label": "Liquidity Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:pricing-formula",
+        "id": "urn:ngm:class:pricing-formula",
         "label": "Pricing Formula"
       },
       {
-        "id": "urn:visionflow:linked:reserve-pool",
+        "id": "urn:ngm:class:reserve-pool",
         "label": "Reserve Pool"
       },
       {
-        "id": "urn:visionflow:linked:supply-function",
+        "id": "urn:ngm:class:supply-function",
         "label": "Supply Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:price-oracle",
+        "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
       },
       {
-        "id": "urn:visionflow:linked:reserve-token",
+        "id": "urn:ngm:class:reserve-token",
         "label": "Reserve Token"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-trading",
+        "id": "urn:ngm:class:automated-trading",
         "label": "Automated Trading"
       },
       {
-        "id": "urn:visionflow:linked:continuous-liquidity",
+        "id": "urn:ngm:class:continuous-liquidity",
         "label": "Continuous Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:predictable-pricing",
+        "id": "urn:ngm:class:predictable-pricing",
         "label": "Predictable Pricing"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

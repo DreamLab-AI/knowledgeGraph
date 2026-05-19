@@ -3,19 +3,18 @@
   "title": "Third Party Auditor",
   "slug": "third-party-auditor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:third-party-auditor",
+  "classIri": "urn:ngm:class:third-party-auditor",
   "domain": "spatial-computing",
   "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-services",
+      "id": "urn:ngm:class:security-services",
       "label": "Security Services"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

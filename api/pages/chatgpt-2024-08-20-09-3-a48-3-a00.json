@@ -3,28 +3,6 @@
   "title": "ChatGPT (August 2024 Release)",
   "slug": "chatgpt-2024-08-20-09-3-a48-3-a00",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:chatgpt-2024-08-20-09-3-a48-3-a00",
-  "domain": "infrastructure",
-  "definition": "chatgpt__2024-08-20 09%3A48%3A00 is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

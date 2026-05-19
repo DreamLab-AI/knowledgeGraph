@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-neutrality-planning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-neutrality-planning",
+  "@type": "Class",
   "label": "Carbon Neutrality Planning",
+  "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:strategic-planning",
-      "vc:label": "Strategic Planning"
+      "@id": "urn:ngm:class:strategic-planning",
+      "label": "Strategic Planning"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:275f8246a3677c4b5e873d7f675254f59ddc9de43e034b4607e384bdeb732610"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ghg-baseline",
+        "label": "GHG Baseline"
+      },
+      {
+        "@id": "urn:ngm:class:implementation-strategy",
+        "label": "Implementation Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:reduction-targets",
+        "label": "Reduction Targets"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "@id": "urn:ngm:class:decarbonization",
+        "label": "Decarbonization"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-achievement",
+        "label": "Net Zero Achievement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:275f8246a3677c4b5e873d7f675254f59ddc9de43e034b4607e384bdeb732610@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ghg-baseline",
-      "vc:label": "GHG Baseline"
-    },
-    {
-      "@id": "urn:visionflow:linked:implementation-strategy",
-      "vc:label": "Implementation Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:reduction-targets",
-      "vc:label": "Reduction Targets"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:climate-action",
-      "vc:label": "Climate Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:decarbonization",
-      "vc:label": "Decarbonization"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-achievement",
-      "vc:label": "Net Zero Achievement"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

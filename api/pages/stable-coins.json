@@ -3,135 +3,231 @@
   "title": "Stable Coins",
   "slug": "stable-coins",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:stable-coins",
+  "classIri": "urn:ngm:class:stable-coins",
   "domain": "blockchain",
-  "definition": "**Stable Coins** (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset \u2014 most commonly the US dollar at 1:1 parity \u2014 through one of four primary stabilisation mechanisms: (i) **fiat-collateralised custody**, where off-chain reserves of cash, short-dated US Treasury bills, money-market funds, or other approved high-quality liquid assets held by regulated custodians underwrite each token (USDT, USDC, PYUSD, FDUSD, GUSD, USDP); (ii) **crypto-overcollateralisation**, where smart-contract-enforced vault positions in on-chain assets \u2014 primarily [[Ethereum]], wrapped [[Bitcoin Technical Overview|Bitcoin]], and liquid staking tokens \u2014 back stablecoin issuance at collateral ratios of typically 150-200%, with automated liquidation bots triggering when ratios fall below minimum thresholds (DAI/USDS from MakerDAO/Sky Protocol, Liquity LUSD, Aave GHO, Curve crvUSD); (iii) **algorithmic or seigniorage-share stabilisation**, where a dual-token arbitrage mechanism attempts to hold the dollar peg without direct collateral backing \u2014 a model comprehensively discredited in May 2022 when TerraUSD depegged and approximately $50 bil",
+  "definition": "Stable Coins (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset \u2014 most commonly the US dollar at 1:1 parity \u2014 through one of four primary stabilisation mechanisms: (i) fiat-collateralised custody, where off-chain reserves...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:financial-instrument",
+      "id": "urn:ngm:class:financial-instrument",
       "label": "Financial Instrument"
     },
     {
-      "id": "urn:visionflow:linked:payments-infrastructure",
+      "id": "urn:ngm:class:payments-infrastructure",
       "label": "Payments Infrastructure"
-    },
-    {
-      "id": "urn:visionflow:linked:tokenised-asset",
-      "label": "Tokenised Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:attestation-report",
+        "id": "urn:ngm:class:attestation-report",
         "label": "Attestation Report"
       },
       {
-        "id": "urn:visionflow:linked:liquidation-engine",
+        "id": "urn:ngm:class:liquidation-engine",
         "label": "Liquidation Engine"
       },
       {
-        "id": "urn:visionflow:linked:mint-burn-mechanism",
+        "id": "urn:ngm:class:mint-burn-mechanism",
         "label": "Mint Burn Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:oracle-network",
+        "id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
       },
       {
-        "id": "urn:visionflow:linked:reserve-assets",
+        "id": "urn:ngm:class:reserve-assets",
         "label": "Reserve Assets"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-vault",
+        "id": "urn:ngm:class:smart-contract-vault",
         "label": "Smart Contract Vault"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-token",
+        "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:custodian",
+        "id": "urn:ngm:class:custodian",
         "label": "Custodian"
       },
       {
-        "id": "urn:visionflow:linked:price-oracle",
+        "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-licence",
+        "id": "urn:ngm:class:regulatory-licence",
         "label": "Regulatory Licence"
       },
       {
-        "id": "urn:visionflow:linked:reserve-audit",
+        "id": "urn:ngm:class:reserve-audit",
         "label": "Reserve Audit"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-infrastructure",
+        "id": "urn:ngm:class:smart-contract-infrastructure",
         "label": "Smart Contract Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:corporate-treasury-management",
+        "id": "urn:ngm:class:corporate-treasury-management",
         "label": "Corporate Treasury Management"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-remittances",
+        "id": "urn:ngm:class:cross-border-remittances",
         "label": "Cross-Border Remittances"
       },
       {
-        "id": "urn:visionflow:linked:de-fi",
+        "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-settlement",
+        "id": "urn:ngm:class:on-chain-settlement",
         "label": "On-Chain Settlement"
       },
       {
-        "id": "urn:visionflow:linked:payments-infrastructure",
+        "id": "urn:ngm:class:payments-infrastructure",
         "label": "Payments Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:yield-generation",
+        "id": "urn:ngm:class:yield-generation",
         "label": "Yield Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:algorithmic-stabilisation",
+        "id": "urn:ngm:class:algorithmic-stabilisation",
         "label": "Algorithmic Stabilisation"
       },
       {
-        "id": "urn:visionflow:linked:dollar-peg-mechanism",
+        "id": "urn:ngm:class:dollar-peg-mechanism",
         "label": "Dollar Peg Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:fractional-reserve-model",
+        "id": "urn:ngm:class:fractional-reserve-model",
         "label": "Fractional Reserve Model"
       },
       {
-        "id": "urn:visionflow:linked:overcollateralisation",
+        "id": "urn:ngm:class:overcollateralisation",
         "label": "Overcollateralisation"
       },
       {
-        "id": "urn:visionflow:linked:real-world-asset-tokenisation",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenisation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      },
+      {
+        "id": "urn:ngm:class:base-network",
+        "label": "Base Network"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-computation-custody",
+        "label": "Multi-Party Computation Custody"
+      },
+      {
+        "id": "urn:ngm:class:tron-network",
+        "label": "Tron Network"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-border-remittances",
+        "label": "Cross-Border Remittances"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:emerging-market-finance",
+        "label": "Emerging Market Finance"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-payments",
+        "label": "Metaverse Payments"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii-crypto-exposure-rules",
+        "label": "Basel III Crypto Exposure Rules"
+      },
+      {
+        "id": "urn:ngm:class:fasb-asc-350-60",
+        "label": "FASB ASC 350-60"
+      },
+      {
+        "id": "urn:ngm:class:fca-stablecoin-rules",
+        "label": "FCA Stablecoin Rules"
+      },
+      {
+        "id": "urn:ngm:class:genius-act-2025",
+        "label": "GENIUS Act 2025"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eurodollar",
+        "label": "Eurodollar"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      }
+    ]
   },
   "wikilinks": [
     {

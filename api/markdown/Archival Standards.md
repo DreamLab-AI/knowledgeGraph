@@ -160,76 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:archival-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:archival-standards",
+  "@type": "Class",
   "label": "Archival Standards",
+  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across techno...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:preservation-standards",
-      "vc:label": "Preservation Standards"
+      "@id": "urn:ngm:class:preservation-standards",
+      "label": "Preservation Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:453bdde3c693d050d96037de140059377b626591b53506f4b57217672cfed9c0"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:preservation-planning",
+        "label": "Preservation Planning"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-preservation",
+        "label": "Long-Term Preservation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:453bdde3c693d050d96037de140059377b626591b53506f4b57217672cfed9c0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:preservation-planning",
-      "vc:label": "Preservation Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-authenticity",
-      "vc:label": "Content Authenticity"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-migration",
-      "vc:label": "Format Migration"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-preservation",
-      "vc:label": "Long-Term Preservation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

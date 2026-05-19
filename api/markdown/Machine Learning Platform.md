@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:machine-learning-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:machine-learning-platform",
+  "@type": "Class",
   "label": "Machine Learning Platform",
+  "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
+      "@id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b41fc0c7924f15cd4160647e7e4ae8e689ef20ce02a7b14220d819f219fd39df"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b41fc0c7924f15cd4160647e7e4ae8e689ef20ce02a7b14220d819f219fd39df@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-ai-adoption",
-      "vc:label": "Enterprise AI Adoption"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

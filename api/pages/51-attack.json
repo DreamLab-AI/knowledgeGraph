@@ -3,19 +3,18 @@
   "title": "51% Attack",
   "slug": "51-attack",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:51-attack",
+  "classIri": "urn:ngm:class:51-attack",
   "domain": "blockchain",
-  "definition": "51% Attack is a blockchain and distributed systems concept and a type of blockchain.",
+  "definition": "Attack is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

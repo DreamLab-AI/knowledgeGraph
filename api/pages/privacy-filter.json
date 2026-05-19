@@ -3,99 +3,103 @@
   "title": "Privacy Filter",
   "slug": "privacy-filter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-filter",
+  "classIri": "urn:ngm:class:privacy-filter",
   "domain": "infrastructure",
-  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and leaving a tamper-evident audit trail of redactions.",
+  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and le...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-layer",
+      "id": "urn:ngm:class:security-layer",
       "label": "Security Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.87,
-  "authorityScore": 0.9,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:pattern-matching",
+        "id": "urn:ngm:class:pattern-matching",
         "label": "Pattern Matching"
       },
       {
-        "id": "urn:visionflow:linked:pii-detection",
+        "id": "urn:ngm:class:pii-detection",
         "label": "PII Detection"
       },
       {
-        "id": "urn:visionflow:linked:redaction-engine",
+        "id": "urn:ngm:class:redaction-engine",
         "label": "Redaction Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:classification-rules",
+        "id": "urn:ngm:class:classification-rules",
         "label": "Classification Rules"
       },
       {
-        "id": "urn:visionflow:linked:machine-learning-optional",
+        "id": "urn:ngm:class:machine-learning-optional",
         "label": "Machine Learning (optional)"
       },
       {
-        "id": "urn:visionflow:linked:privacy-policy",
+        "id": "urn:ngm:class:privacy-policy",
         "label": "Privacy Policy"
       },
       {
-        "id": "urn:visionflow:linked:regular-expressions",
+        "id": "urn:ngm:class:regular-expressions",
         "label": "Regular Expressions"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance-with-ccpa",
+        "id": "urn:ngm:class:compliance-with-ccpa",
         "label": "Compliance with CCPA"
       },
       {
-        "id": "urn:visionflow:linked:compliance-with-gdpr",
+        "id": "urn:ngm:class:compliance-with-gdpr",
         "label": "Compliance with GDPR"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preservation",
+        "id": "urn:ngm:class:privacy-preservation",
         "label": "Privacy Preservation"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:data-minimisation",
+        "id": "urn:ngm:class:data-minimisation",
         "label": "Data Minimisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:data-anonymisation",
+        "id": "urn:ngm:class:data-anonymisation",
         "label": "Data Anonymisation"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preserving-data-emission",
+        "id": "urn:ngm:class:privacy-preserving-data-emission",
         "label": "Privacy-Preserving Data Emission"
       },
       {
-        "id": "urn:visionflow:linked:redaction-policies",
+        "id": "urn:ngm:class:redaction-policies",
         "label": "Redaction Policies"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

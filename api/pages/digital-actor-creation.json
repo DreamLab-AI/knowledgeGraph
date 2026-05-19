@@ -3,53 +3,57 @@
   "title": "Digital Actor Creation",
   "slug": "digital-actor-creation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-actor-creation",
+  "classIri": "urn:ngm:class:digital-actor-creation",
   "domain": "artificial-intelligence",
-  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications. bridges-to:: [[DID Nostr Identity]]",
+  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-human-technology",
+      "id": "urn:ngm:class:digital-human-technology",
       "label": "Digital Human Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-synthesis",
+        "id": "urn:ngm:class:ai-synthesis",
         "label": "AI Synthesis"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-capture",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:digital-twins",
+        "id": "urn:ngm:class:digital-twins",
         "label": "Digital Twins"
       },
       {
-        "id": "urn:visionflow:linked:synthetic-media",
+        "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
       },
       {
-        "id": "urn:visionflow:linked:virtual-performances",
+        "id": "urn:ngm:class:virtual-performances",
         "label": "Virtual Performances"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

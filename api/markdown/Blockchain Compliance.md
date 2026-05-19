@@ -196,80 +196,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-compliance",
+  "@type": "Class",
   "label": "Blockchain Compliance",
+  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency an...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5361c28d19b269f818b8262c5e5a0a4a7f6750be4b6d102e87cc50fda0c7dafa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:institutional-adoption",
-      "vc:label": "Institutional Adoption"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-analytics",
-      "vc:label": "Blockchain Analytics"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti-Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:know-your-customer",
-      "vc:label": "Know Your Customer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

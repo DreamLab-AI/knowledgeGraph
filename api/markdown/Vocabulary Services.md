@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:vocabulary-services",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:vocabulary-services",
+  "@type": "Class",
   "label": "Vocabulary Services",
+  "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
+      "@id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ff9294ba42b477a913fa2bddc3bf551954f91adc0fe33a8b717fbff910fa3db5"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ff9294ba42b477a913fa2bddc3bf551954f91adc0fe33a8b717fbff910fa3db5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

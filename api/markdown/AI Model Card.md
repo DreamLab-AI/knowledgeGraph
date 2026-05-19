@@ -292,178 +292,135 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-model-card",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-model-card",
+  "@type": "Class",
   "label": "AI Model Card",
+  "definition": "A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[ical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]].",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2c9f3d34f1d5cde640d2296f3abd08877c58d29f5e8841bf227829845a44cdce"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bias-analysis",
+        "label": "Bias Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-considerations",
+        "label": "Ethical Considerations"
+      },
+      {
+        "@id": "urn:ngm:class:limitations-section",
+        "label": "Limitations Section"
+      },
+      {
+        "@id": "urn:ngm:class:model-details",
+        "label": "Model Details"
+      },
+      {
+        "@id": "urn:ngm:class:security-considerations",
+        "label": "Security Considerations"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-information",
+        "label": "Training Data Information"
+      },
+      {
+        "@id": "urn:ngm:class:use-case-descriptions",
+        "label": "Use Case Descriptions"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:demographic-performance-analysis",
+        "label": "Demographic Performance Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:safety-testing-results",
+        "label": "Safety Testing Results"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset-metadata",
+        "label": "Training Dataset Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:procurement-due-diligence",
+        "label": "Procurement Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-deployment",
+        "label": "Responsible AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-documentation-framework",
+        "label": "AI Documentation Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-documentation",
+        "label": "Compliance Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance-system",
+        "label": "Model Governance System"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2c9f3d34f1d5cde640d2296f3abd08877c58d29f5e8841bf227829845a44cdce@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[Ethical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]]. In 2025, model cards are required by [[EU AI Act]] for high-risk systems and recommended by [[OECD]] for all AI applications, including [[Bitcoin Trading Bot|trading systems]], [[Blockchain Analytics]], and [[Smart Contract Auditing]].",
-  "vc:qualityScore": {
-    "@value": "0.91",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-documentation-framework",
-      "vc:label": "AI Documentation Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-documentation",
-      "vc:label": "Compliance Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-governance-system",
-      "vc:label": "Model Governance System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risk-management",
-      "vc:label": "AI Risk Management"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bias-analysis",
-      "vc:label": "Bias Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethical-considerations",
-      "vc:label": "Ethical Considerations"
-    },
-    {
-      "@id": "urn:visionflow:linked:limitations-section",
-      "vc:label": "Limitations Section"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-details",
-      "vc:label": "Model Details"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-considerations",
-      "vc:label": "Security Considerations"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-information",
-      "vc:label": "Training Data Information"
-    },
-    {
-      "@id": "urn:visionflow:linked:use-case-descriptions",
-      "vc:label": "Use Case Descriptions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fairness-metrics",
-      "vc:label": "Fairness Metrics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-metrics",
-      "vc:label": "Performance Metrics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:demographic-performance-analysis",
-      "vc:label": "Demographic Performance Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-testing-results",
-      "vc:label": "Safety Testing Results"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-evaluation-results",
-      "vc:label": "Model Evaluation Results"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-benchmarks",
-      "vc:label": "Performance Benchmarks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-dataset-metadata",
-      "vc:label": "Training Dataset Metadata"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-accountability",
-      "vc:label": "AI Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-decision-making",
-      "vc:label": "Informed Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:procurement-due-diligence",
-      "vc:label": "Procurement Due Diligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-ai-deployment",
-      "vc:label": "Responsible AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:third-party-auditing",
-      "vc:label": "Third-Party Auditing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-transparency",
-      "vc:label": "Model Transparency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ai-ethics-guidelines",
-      "vc:label": "AI Ethics Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:industry-best-practices",
-      "vc:label": "Industry Best Practices"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-testing-protocols",
-      "vc:label": "Model Testing Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-requirements",
-      "vc:label": "Regulatory Requirements"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:documentation-standards",
-      "vc:label": "Documentation Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.91,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

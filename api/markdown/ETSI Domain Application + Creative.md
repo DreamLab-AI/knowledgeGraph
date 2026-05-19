@@ -148,74 +148,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-application-creative",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-application-creative",
+  "@type": "Class",
   "label": "ETSI Domain Application + Creative",
+  "definition": "Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aedb340408d0de2f16effda9f5556ed2c788df220ba0aaca1e99c2c51e2c3870"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaboration-tool-categorization",
+        "label": "Collaboration Tool Categorization"
+      },
+      {
+        "@id": "urn:ngm:class:creative-application-classification",
+        "label": "Creative Application Classification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aedb340408d0de2f16effda9f5556ed2c788df220ba0aaca1e99c2c51e2c3870@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse application components focused on creative industries including digital art, music production, animation, film, design tools, and creative collaboration platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaboration-tool-categorization",
-      "vc:label": "Collaboration Tool Categorization"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-application-classification",
-      "vc:label": "Creative Application Classification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
-      "vc:label": "CreativeMediaDomain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

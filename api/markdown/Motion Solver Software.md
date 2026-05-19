@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:motion-solver-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-solver-software",
+  "@type": "Class",
   "label": "Motion Solver Software",
+  "definition": "Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:simulation-software",
-      "vc:label": "Simulation Software"
+      "@id": "urn:ngm:class:simulation-software",
+      "label": "Simulation Software"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e55b16bc6ea326fb2bf3421ee389e37bb2e593f6ef889d0ab8aa1508fa3b961f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e55b16bc6ea326fb2bf3421ee389e37bb2e593f6ef889d0ab8aa1508fa3b961f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:real-time-character-animation",
-      "vc:label": "Real Time Character Animation"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

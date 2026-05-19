@@ -180,104 +180,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:presence",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:presence",
+  "@type": "Class",
   "label": "Presence",
+  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-experience",
-      "vc:label": "Immersive Experience"
+      "@id": "urn:ngm:class:immersive-experience",
+      "label": "Immersive Experience"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:78a3525a34bc522ad9b8a9a09d0b98538fbf4240ea0975dbc8cd0125d7c78984"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:self-presence",
+        "label": "Self Presence"
+      },
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:haptic-device",
+        "label": "Haptic Device"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-feedback",
+        "label": "Sensory Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:visual-display",
+        "label": "Visual Display"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:embodiment",
+        "label": "Embodiment"
+      },
+      {
+        "@id": "urn:ngm:class:engagement",
+        "label": "Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:social-connection",
+        "label": "Social Connection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:78a3525a34bc522ad9b8a9a09d0b98538fbf4240ea0975dbc8cd0125d7c78984@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experience",
-      "vc:label": "Immersive Experience"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:self-presence",
-      "vc:label": "Self Presence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:social-presence",
-      "vc:label": "Social Presence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-presence",
-      "vc:label": "Spatial Presence"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:haptic-device",
-      "vc:label": "Haptic Device"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-feedback",
-      "vc:label": "Sensory Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-display",
-      "vc:label": "Visual Display"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:embodiment",
-      "vc:label": "Embodiment"
-    },
-    {
-      "@id": "urn:visionflow:linked:engagement",
-      "vc:label": "Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-connection",
-      "vc:label": "Social Connection"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:field-of-view",
-      "vc:label": "Field of View"
-    },
-    {
-      "@id": "urn:visionflow:linked:frame-rate",
-      "vc:label": "Frame Rate"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latency",
-      "vc:label": "Latency"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

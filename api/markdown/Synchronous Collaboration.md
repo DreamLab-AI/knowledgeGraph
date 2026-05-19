@@ -160,54 +160,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:synchronous-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:synchronous-collaboration",
+  "@type": "Class",
   "label": "Synchronous Collaboration",
+  "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
-      "vc:label": "TC-0001-telecollaboration-domain"
+      "@id": "urn:ngm:class:tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tc-0040-communication-protocols",
+        "label": "TC-0040-Communication-Protocols"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:13991d41b446ecc2a4b9d5d68c1a728f36e868cc7856eeabfaa6fdf34675ccff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
-  "vc:qualityScore": {
-    "@value": "0.55",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tc-0040-communication-protocols",
-      "vc:label": "TC-0040-Communication-Protocols"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:social-presence",
-      "vc:label": "Social Presence"
-    }
-  ]
+  "quality": 0.55,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

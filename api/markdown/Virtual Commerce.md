@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-commerce",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-commerce",
+  "@type": "Class",
   "label": "Virtual Commerce",
+  "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:19a34000dfa458546dcd75c61f42ac431defcca28f13708e0d7132d3da4b76d5"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:19a34000dfa458546dcd75c61f42ac431defcca28f13708e0d7132d3da4b76d5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

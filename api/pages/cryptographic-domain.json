@@ -3,19 +3,18 @@
   "title": "Cryptographic Domain",
   "slug": "cryptographic-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-domain",
+  "classIri": "urn:ngm:class:cryptographic-domain",
   "domain": "blockchain",
-  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems. This domain includes cryptographic hash functions (SHA-256, Keccak-256, RIPEMD-160), digital signature schemes (ECDSA, EdDSA, Schnorr signatures), public-key cryptography, Merkle tree structures, cryptographic accumulators, commitment schemes, zero-knowledge proof systems (zk-SNARKs, zk-STARKs, Bulletproofs), threshold cryptography, multi-signature schemes, and other cryptographic building blocks that provide security, integrity, and verifiability in blockchain systems. These cryptographic mechanisms enable fundamental blockchain properties including immutability (through hash linking), authenticity (through digital signatures), privacy (through encryption and zero-knowledge proofs), and verifiability (through Merkle proofs and cryptographic commitments). The domain focuses specifically on cryptographic techniques as applied in blockchain contexts, distinguishing it from general cryptography by emphasizing distributed system requirements, performance considerations for decentralized",
+  "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

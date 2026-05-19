@@ -108,41 +108,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tele-050-neuralrenderingtelepresence",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tele-050-neuralrenderingtelepresence",
+  "@type": "Class",
   "label": "TELE 050 neuralrenderingtelepresence",
+  "definition": "TELE 050 neuralrenderingtelepresence is a type of TELE 001 telepresence in the distributed collaboration domain.",
+  "domain": "distributed-collaboration",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:tele-001-telepresence",
-      "vc:label": "TELE 001 telepresence"
+      "@id": "urn:ngm:class:tele-001-telepresence",
+      "label": "TELE 001 telepresence"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5114be99912c63cd006da3635fb6c7c94f18a2b37fe632cfddc0e6dc23b8e11e"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5114be99912c63cd006da3635fb6c7c94f18a2b37fe632cfddc0e6dc23b8e11e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "T E L E 050 neuralrenderingtelepresence is a concept within the telecollaboration domain. Further enrichment pending.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

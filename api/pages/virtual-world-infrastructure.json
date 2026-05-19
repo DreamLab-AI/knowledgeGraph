@@ -3,19 +3,18 @@
   "title": "Virtual World Infrastructure",
   "slug": "virtual-world-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-world-infrastructure",
+  "classIri": "urn:ngm:class:virtual-world-infrastructure",
   "domain": "infrastructure",
-  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
+  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that toger enable persistent, scalable virtual environments wi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-infrastructure",
+      "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

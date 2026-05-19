@@ -168,56 +168,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-oversight",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-oversight",
+  "@type": "Class",
   "label": "Human Oversight",
+  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "error correction"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45dad03a51013e526f1180abc617ed3f5b06e2a514c9b2d8ff71ef085dde2aea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human values, ethical principles, legal requirements, and intended purposes, with particular emphasis on preventing, detecting, and correcting harmful or inappropriate AI behaviours through informed human decision-making authority.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:continuous-improvement",
-      "vc:label": "continuous improvement"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-correction",
-      "vc:label": "error correction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

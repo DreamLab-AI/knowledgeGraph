@@ -3,19 +3,18 @@
   "title": "VFX Tools",
   "slug": "vfx-tools",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vfx-tools",
+  "classIri": "urn:ngm:class:vfx-tools",
   "domain": "spatial-computing",
-  "definition": "V F X Tools is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "VFX Tools is a type of Visual Effects in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:visual-effects",
+      "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

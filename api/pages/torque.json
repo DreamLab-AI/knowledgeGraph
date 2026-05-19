@@ -3,19 +3,18 @@
   "title": "Torque",
   "slug": "torque",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:torque",
+  "classIri": "urn:ngm:class:torque",
   "domain": "robotics",
-  "definition": "**Torque** - Rotational force about an axis",
+  "definition": "Torque - Rotational force about an axis",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "id": "urn:ngm:class:robot-dynamics",
       "label": "Robot Dynamics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

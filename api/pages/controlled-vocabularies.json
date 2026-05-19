@@ -3,53 +3,57 @@
   "title": "Controlled Vocabularies",
   "slug": "controlled-vocabularies",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:controlled-vocabularies",
+  "classIri": "urn:ngm:class:controlled-vocabularies",
   "domain": "spatial-computing",
   "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-organization",
+      "id": "urn:ngm:class:knowledge-organization",
       "label": "Knowledge Organization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:governance-process",
+        "id": "urn:ngm:class:governance-process",
         "label": "Governance Process"
       },
       {
-        "id": "urn:visionflow:linked:taxonomy-development",
+        "id": "urn:ngm:class:taxonomy-development",
         "label": "Taxonomy Development"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consistent-indexing",
+        "id": "urn:ngm:class:consistent-indexing",
         "label": "Consistent Indexing"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:information-retrieval",
+        "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

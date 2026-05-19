@@ -148,76 +148,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-system",
+  "@type": "Class",
   "label": "Avatar System",
+  "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:virtual-character-system",
-      "vc:label": "Virtual Character System"
+      "@id": "urn:ngm:class:virtual-character-system",
+      "label": "Virtual Character System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:087ef4a9334471dc730502af4210868687b8f887ec144814440ff993f66e32db"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "@id": "urn:ngm:class:input-processing",
+        "label": "Input Processing"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:embodied-presence",
+        "label": "Embodied Presence"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-representation",
+        "label": "User Representation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:087ef4a9334471dc730502af4210868687b8f887ec144814440ff993f66e32db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:animation-controller",
-      "vc:label": "Animation Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-processing",
-      "vc:label": "Input Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:embodied-presence",
-      "vc:label": "Embodied Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction",
-      "vc:label": "Social Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-representation",
-      "vc:label": "User Representation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

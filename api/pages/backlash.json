@@ -3,45 +3,58 @@
   "title": "Backlash",
   "slug": "backlash",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:backlash",
+  "classIri": "urn:ngm:class:backlash",
   "domain": "robotics",
-  "definition": "**Backlash** - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
+  "definition": "Backlash - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-dynamics",
+      "id": "urn:ngm:class:robot-dynamics",
       "label": "Robot Dynamics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.48,
-  "authorityScore": 0.08,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:control-algorithm-tuning",
+        "id": "urn:ngm:class:control-algorithm-tuning",
         "label": "Control Algorithm Tuning"
       },
       {
-        "id": "urn:visionflow:linked:mechanical-compensation",
+        "id": "urn:ngm:class:mechanical-compensation",
         "label": "Mechanical Compensation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:backlash-measurement",
+        "id": "urn:ngm:class:backlash-measurement",
         "label": "Backlash Measurement"
       },
       {
-        "id": "urn:visionflow:linked:performance-degradation-detection",
+        "id": "urn:ngm:class:performance-degradation-detection",
         "label": "Performance Degradation Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:joint-mechanics",
+        "label": "Joint Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

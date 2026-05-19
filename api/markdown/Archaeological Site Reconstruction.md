@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:archaeological-site-reconstruction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:archaeological-site-reconstruction",
+  "@type": "Class",
   "label": "Archaeological Site Reconstruction",
+  "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-heritage",
-      "vc:label": "Digital Heritage"
+      "@id": "urn:ngm:class:digital-heritage",
+      "label": "Digital Heritage"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1520231202e0c3f48d783ec863d8d0dc04ad8683b0bde895f29677ca9c79a280"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:historical-research",
+        "label": "Historical Research"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:educational-experiences",
+        "label": "Educational Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:heritage-preservation",
+        "label": "Heritage Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1520231202e0c3f48d783ec863d8d0dc04ad8683b0bde895f29677ca9c79a280@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:historical-research",
-      "vc:label": "Historical Research"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:educational-experiences",
-      "vc:label": "Educational Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:heritage-preservation",
-      "vc:label": "Heritage Preservation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-tourism",
-      "vc:label": "Virtual Tourism"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

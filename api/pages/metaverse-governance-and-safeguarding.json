@@ -3,27 +3,31 @@
   "title": "Metaverse governance and safeguarding",
   "slug": "metaverse-governance-and-safeguarding",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+  "classIri": "urn:ngm:class:metaverse-governance-and-safeguarding",
   "domain": "spatial-computing",
   "definition": "Metaverse governance and safeguarding is a spatial computing concept and a type of Metaverse.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:metaverse",
-      "label": "Metaverse"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

@@ -220,138 +220,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-anonymization-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-anonymization-pipeline",
+  "@type": "Class",
   "label": "Data Anonymization Pipeline",
+  "definition": "An automated, multi-stage process that systematically removes, masks, or generalizes personally identifiable information (PII) from datasets to protect individual privacy while preserving data utility for analysis.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
+      "@id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fbd93a694b6d79dc140cc07d546a2ec3962002008ce1528a7976299fbc40e565"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:de-identification-module",
+        "label": "De-identification Module"
+      },
+      {
+        "@id": "urn:ngm:class:generalization-engine",
+        "label": "Generalization Engine"
+      },
+      {
+        "@id": "urn:ngm:class:perturbation-function",
+        "label": "Perturbation Function"
+      },
+      {
+        "@id": "urn:ngm:class:pii-detector",
+        "label": "PII Detector"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessor",
+        "label": "Risk Assessor"
+      },
+      {
+        "@id": "urn:ngm:class:suppression-filter",
+        "label": "Suppression Filter"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fbd93a694b6d79dc140cc07d546a2ec3962002008ce1528a7976299fbc40e565@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An automated, multi-stage process that systematically removes, masks, or generalizes personally identifiable information (PII) from datasets to protect individual privacy while preserving data utility for analysis.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:privacy-engineering",
-      "vc:label": "Privacy Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:de-identification-module",
-      "vc:label": "De-identification Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:generalization-engine",
-      "vc:label": "Generalization Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:perturbation-function",
-      "vc:label": "Perturbation Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:pii-detector",
-      "vc:label": "PII Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-assessor",
-      "vc:label": "Risk Assessor"
-    },
-    {
-      "@id": "urn:visionflow:linked:suppression-filter",
-      "vc:label": "Suppression Filter"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-classification",
-      "vc:label": "Data Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy",
-      "vc:label": "Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-analytics",
-      "vc:label": "Privacy-Preserving Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-data-sharing",
-      "vc:label": "Secure Data Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:pii-detection",
-      "vc:label": "PII Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

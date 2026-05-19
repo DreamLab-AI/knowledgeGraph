@@ -3,19 +3,18 @@
   "title": "Federated Edge Learning",
   "slug": "federated-edge-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:federated-edge-learning",
+  "classIri": "urn:ngm:class:federated-edge-learning",
   "domain": "artificial-intelligence",
-  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device. This paradigm addresses privacy concerns by transmitting only model updates (gradients) rather than raw sensitive data to aggregation servers. Participants train local models on their devices using private datasets, then securely aggregate updates into a global model that improves collectively. Federated Edge Learning maintains data sovereignty, allowing healthcare systems, financial institutions, and autonomous fleets to benefit from collaborative intelligence without compromising individual privacy. The architecture comprises edge clients performing local training with limited computational resources, aggregation servers coordinating model updates, and secure aggregation protocols ensuring gradient confidentiality. Communication efficiency is critical; techniques like gradient compression, selective client participation, and quantization reduce network overhead by 10x or more. The approach supports differential privacy mechanisms, adding calibrated noise to gradients for formal pri",
+  "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

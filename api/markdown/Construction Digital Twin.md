@@ -216,130 +216,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:construction-digital-twin",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:construction-digital-twin",
+  "@type": "Class",
   "label": "Construction Digital Twin",
+  "definition": "An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a04e88f0a6c5216e53b9d503aac690f292f382f6a94a0df1483a8ca3b0078b21"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-database",
+        "label": "Asset Database"
+      },
+      {
+        "@id": "urn:ngm:class:bim-model",
+        "label": "BIM Model"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management-system",
+        "label": "Energy Management System"
+      },
+      {
+        "@id": "urn:ngm:class:maintenance-schedule",
+        "label": "Maintenance Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronization",
+        "label": "Real-time Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:bim-software",
+        "label": "BIM Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:energy-optimization",
+        "label": "Energy Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:space-planning",
+        "label": "Space Planning"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:smart-building-ecosystem",
+        "label": "Smart Building Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a04e88f0a6c5216e53b9d503aac690f292f382f6a94a0df1483a8ca3b0078b21@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:smart-building-ecosystem",
-      "vc:label": "Smart Building Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-database",
-      "vc:label": "Asset Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:bim-model",
-      "vc:label": "BIM Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-management-system",
-      "vc:label": "Energy Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:maintenance-schedule",
-      "vc:label": "Maintenance Schedule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensor-network",
-      "vc:label": "IoT Sensor Network"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cloud-platform",
-      "vc:label": "Cloud Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-t-infrastructure",
-      "vc:label": "IoT Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-synchronization",
-      "vc:label": "Real-time Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bim-software",
-      "vc:label": "BIM Software"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:energy-optimization",
-      "vc:label": "Energy Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:lifecycle-management",
-      "vc:label": "Lifecycle Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:space-planning",
-      "vc:label": "Space Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:building-information-modeling",
-      "vc:label": "Building Information Modeling"
-    },
-    {
-      "@id": "urn:visionflow:linked:construction-data",
-      "vc:label": "Construction Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:facility-management-system",
-      "vc:label": "Facility Management System"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

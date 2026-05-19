@@ -3,78 +3,87 @@
   "title": "Reputation Scoring Model",
   "slug": "reputation-scoring-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reputation-scoring-model",
+  "classIri": "urn:ngm:class:reputation-scoring-model",
   "domain": "spatial-computing",
   "definition": "An algorithmic process that computes quantitative reputation scores by aggregating behavioral data, applying weighted scoring functions, implementing temporal decay, and evaluating threshold conditions to generate trust indicators for entities in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavioral-data-aggregator",
+        "id": "urn:ngm:class:behavioral-data-aggregator",
         "label": "Behavioral Data Aggregator"
       },
       {
-        "id": "urn:visionflow:linked:temporal-decay-engine",
+        "id": "urn:ngm:class:temporal-decay-engine",
         "label": "Temporal Decay Engine"
       },
       {
-        "id": "urn:visionflow:linked:threshold-evaluator",
+        "id": "urn:ngm:class:threshold-evaluator",
         "label": "Threshold Evaluator"
       },
       {
-        "id": "urn:visionflow:linked:weighted-scoring-function",
+        "id": "urn:ngm:class:weighted-scoring-function",
         "label": "Weighted Scoring Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:behavioral-models",
+        "id": "urn:ngm:class:behavioral-models",
         "label": "Behavioral Models"
       },
       {
-        "id": "urn:visionflow:linked:scoring-algorithms",
+        "id": "urn:ngm:class:scoring-algorithms",
         "label": "Scoring Algorithms"
       },
       {
-        "id": "urn:visionflow:linked:validation-rules",
+        "id": "urn:ngm:class:validation-rules",
         "label": "Validation Rules"
       },
       {
-        "id": "urn:visionflow:owl:class:reputation-data",
+        "id": "urn:ngm:class:reputation-data",
         "label": "Reputation Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:access-control-decisions",
+        "id": "urn:ngm:class:access-control-decisions",
         "label": "Access Control Decisions"
       },
       {
-        "id": "urn:visionflow:linked:governance-voting-weight",
+        "id": "urn:ngm:class:governance-voting-weight",
         "label": "Governance Voting Weight"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-score-metric",
+        "id": "urn:ngm:class:trust-score-metric",
         "label": "Trust Score Metric"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

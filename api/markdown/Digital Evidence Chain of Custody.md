@@ -204,120 +204,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-evidence-chain-of-custody",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-evidence-chain-of-custody",
+  "@type": "Class",
   "label": "Digital Evidence Chain of Custody",
+  "definition": "Digital Evidence Chain of Custody is a type of Legal Framework in the infrastructure domain.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
+      "@id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e48aaaddfe1c680a77e8c61a11a66b37436016a9d310e7390ef0f920233c3be4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:secure-storage",
+        "label": "Secure Storage"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:evidence-integrity-verification",
+        "label": "Evidence Integrity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      },
+      {
+        "@id": "urn:ngm:class:legal-admissibility",
+        "label": "Legal Admissibility"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e48aaaddfe1c680a77e8c61a11a66b37436016a9d310e7390ef0f920233c3be4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Forensic procedure preserving integrity and authenticity of digital evidence through cryptographic sealing and immutable logging from capture to legal presentation. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-forensics-framework",
-      "vc:label": "Digital Forensics Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-log",
-      "vc:label": "Audit Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-authority",
-      "vc:label": "Timestamp Authority"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-hash",
-      "vc:label": "Cryptographic Hash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-ledger",
-      "vc:label": "Blockchain Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-storage",
-      "vc:label": "Secure Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:tamper-detection",
-      "vc:label": "Tamper Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:evidence-integrity-verification",
-      "vc:label": "Evidence Integrity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:forensic-investigation",
-      "vc:label": "Forensic Investigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-admissibility",
-      "vc:label": "Legal Admissibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:evidence-collection-protocol",
-      "vc:label": "Evidence Collection Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

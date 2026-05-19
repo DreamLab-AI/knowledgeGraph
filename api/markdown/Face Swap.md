@@ -584,368 +584,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:face-swap",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:face-swap",
+  "@type": "Class",
   "label": "Face Swap",
+  "definition": "Face Swap is the family of computer vision techniques that transfers the identity of a source face onto a target image, video frame, or live stream while preserving the target's pose, expression, illumination, occlusions, and surrounding scene context, formalised as the conditional generation pro...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:face-manipulation",
-      "vc:label": "Face Manipulation"
+      "@id": "urn:ngm:class:face-manipulation",
+      "label": "Face Manipulation"
     },
     {
-      "@id": "urn:visionflow:linked:identity-transfer",
-      "vc:label": "Identity Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:conditional-image-synthesis",
-      "vc:label": "Conditional Image Synthesis"
+      "@id": "urn:ngm:class:identity-transfer",
+      "label": "Identity Transfer"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a20b70b500be08772a04d4cdc279adf28423a03b0141855429e6d33709ce2bcb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attribute-encoder",
+        "label": "Attribute Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:blending-module",
+        "label": "Blending Module"
+      },
+      {
+        "@id": "urn:ngm:class:face-aligner",
+        "label": "Face Aligner"
+      },
+      {
+        "@id": "urn:ngm:class:face-detector",
+        "label": "Face Detector"
+      },
+      {
+        "@id": "urn:ngm:class:face-restoration-model",
+        "label": "Face Restoration Model"
+      },
+      {
+        "@id": "urn:ngm:class:face-segmentation-mask",
+        "label": "Face Segmentation Mask"
+      },
+      {
+        "@id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      },
+      {
+        "@id": "urn:ngm:class:identity-encoder",
+        "label": "Identity Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:arc-face-embedding",
+        "label": "ArcFace Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition-model",
+        "label": "Face Recognition Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:landmark-detector",
+        "label": "Landmark Detector"
+      },
+      {
+        "@id": "urn:ngm:class:source-image",
+        "label": "Source Image"
+      },
+      {
+        "@id": "urn:ngm:class:target-image",
+        "label": "Target Image"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-generation",
+        "label": "Avatar Generation"
+      },
+      {
+        "@id": "urn:ngm:class:de-aging",
+        "label": "De-aging"
+      },
+      {
+        "@id": "urn:ngm:class:digital-double",
+        "label": "Digital Double"
+      },
+      {
+        "@id": "urn:ngm:class:entertainment-content",
+        "label": "Entertainment Content"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-dataset-generation",
+        "label": "Synthetic Dataset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:talking-head-synthesis",
+        "label": "Talking Head Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects-production",
+        "label": "Visual Effects Production"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:attribute-preservation",
+        "label": "Attribute Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention-conditioning",
+        "label": "Cross-Attention Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:identity-disentanglement",
+        "label": "Identity Disentanglement"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space-manipulation",
+        "label": "Latent Space Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adaptive-instance-normalisation",
+        "label": "Adaptive Instance Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:arc-face",
+        "label": "ArcFace"
+      },
+      {
+        "@id": "urn:ngm:class:code-former",
+        "label": "CodeFormer"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:cos-face",
+        "label": "CosFace"
+      },
+      {
+        "@id": "urn:ngm:class:gfpgan",
+        "label": "GFPGAN"
+      },
+      {
+        "@id": "urn:ngm:class:style-gan2",
+        "label": "StyleGAN2"
+      },
+      {
+        "@id": "urn:ngm:class:xseg",
+        "label": "XSeg"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lip-sync",
+        "label": "Lip Sync"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-identity",
+        "label": "Synthetic Identity"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-avatars",
+        "label": "AI Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:educational-reenactment",
+        "label": "Educational Reenactment"
+      },
+      {
+        "@id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-reconstruction",
+        "label": "Forensic Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-avatars",
+        "label": "Personalised Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-anonymisation",
+        "label": "Privacy Anonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:celeb-df-benchmark",
+        "label": "Celeb-DF Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:dfdc-benchmark",
+        "label": "DFDC Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "label": "EU AI Act Article 50"
+      },
+      {
+        "@id": "urn:ngm:class:face-forensics",
+        "label": "FaceForensics++"
+      },
+      {
+        "@id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "@id": "urn:ngm:class:synth-id",
+        "label": "SynthID"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a20b70b500be08772a04d4cdc279adf28423a03b0141855429e6d33709ce2bcb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Face Swap** is the family of computer vision techniques that transfers the identity of a source face onto a target image, video frame, or live stream while preserving the target's pose, expression, illumination, occlusions, and surrounding scene context, formalised as the conditional generation problem of producing an output image y' = f(x_target, x_source) such that the identity embedding ID(y') ≈ ID(x_source) under a face recognition encoder (typically ArcFace Deng et al. 2019 or CosFace Wang et al. 2018) whilst non-identity attributes A(y') ≈ A(x_target) measured by pose estimators (HopeNet, 6DRepNet), expression encoders (3DMM/FLAME blendshape coefficients), and perceptual reconstruction losses (LPIPS Zhang et al. 2018, VGG-19 feature matching). The lineage begins with the Reddit user **u/deepfakes** posting celebrity face-swap pornography in late 2017 using a paired autoencoder architecture—one shared encoder and two identity-specific decoders trained on thousands of frames per identity—precipitating the **r/deepfakes subreddit ban on 7 February 2018** followed within fourteen days by Pornhub, Twitter and Discord prohibitions; the codebase forked into two dominant open-sourc",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attribute-encoder",
-      "vc:label": "Attribute Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:blending-module",
-      "vc:label": "Blending Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-aligner",
-      "vc:label": "Face Aligner"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-detector",
-      "vc:label": "Face Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-restoration-model",
-      "vc:label": "Face Restoration Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-segmentation-mask",
-      "vc:label": "Face Segmentation Mask"
-    },
-    {
-      "@id": "urn:visionflow:linked:generator-network",
-      "vc:label": "Generator Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-encoder",
-      "vc:label": "Identity Encoder"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:arc-face-embedding",
-      "vc:label": "ArcFace Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-recognition-model",
-      "vc:label": "Face Recognition Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:landmark-detector",
-      "vc:label": "Landmark Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:source-image",
-      "vc:label": "Source Image"
-    },
-    {
-      "@id": "urn:visionflow:linked:target-image",
-      "vc:label": "Target Image"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anonymisation",
-      "vc:label": "Anonymisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:avatar-generation",
-      "vc:label": "Avatar Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-aging",
-      "vc:label": "De-aging"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-double",
-      "vc:label": "Digital Double"
-    },
-    {
-      "@id": "urn:visionflow:linked:entertainment-content",
-      "vc:label": "Entertainment Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-dataset-generation",
-      "vc:label": "Synthetic Dataset Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:talking-head-synthesis",
-      "vc:label": "Talking Head Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-effects-production",
-      "vc:label": "Visual Effects Production"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:attribute-preservation",
-      "vc:label": "Attribute Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-attention-conditioning",
-      "vc:label": "Cross-Attention Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-disentanglement",
-      "vc:label": "Identity Disentanglement"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-space-manipulation",
-      "vc:label": "Latent Space Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:encoder-decoder-architecture",
-      "vc:label": "Encoder Decoder Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:u-net",
-      "vc:label": "U-Net"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autoencoder",
-      "vc:label": "Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer",
-      "vc:label": "Transformer"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:educational-reenactment",
-      "vc:label": "Educational Reenactment"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-vfx",
-      "vc:label": "Film VFX"
-    },
-    {
-      "@id": "urn:visionflow:linked:forensic-reconstruction",
-      "vc:label": "Forensic Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalised-avatars",
-      "vc:label": "Personalised Avatars"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-anonymisation",
-      "vc:label": "Privacy Anonymisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-instance-normalisation",
-      "vc:label": "Adaptive Instance Normalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:arc-face",
-      "vc:label": "ArcFace"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-former",
-      "vc:label": "CodeFormer"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:cos-face",
-      "vc:label": "CosFace"
-    },
-    {
-      "@id": "urn:visionflow:linked:gfpgan",
-      "vc:label": "GFPGAN"
-    },
-    {
-      "@id": "urn:visionflow:linked:style-gan2",
-      "vc:label": "StyleGAN2"
-    },
-    {
-      "@id": "urn:visionflow:linked:xseg",
-      "vc:label": "XSeg"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ip-adapter",
-      "vc:label": "IP-Adapter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:face-detection",
-      "vc:label": "Face Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-recognition",
-      "vc:label": "Face Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-reenactment",
-      "vc:label": "Face Reenactment"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-vfx-rotoscoping",
-      "vc:label": "Traditional VFX Rotoscoping"
-    },
-    {
-      "@id": "urn:visionflow:linked:unconditional-portrait-synthesis",
-      "vc:label": "Unconditional Portrait Synthesis"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:lip-sync",
-      "vc:label": "Lip Sync"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-identity",
-      "vc:label": "Synthetic Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning",
-      "vc:label": "Voice Cloning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-avatars",
-      "vc:label": "AI Avatars"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa-content-credentials",
-      "vc:label": "C2PA Content Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:celeb-df-benchmark",
-      "vc:label": "Celeb-DF Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:dfdc-benchmark",
-      "vc:label": "DFDC Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-50",
-      "vc:label": "EU AI Act Article 50"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-forensics",
-      "vc:label": "FaceForensics++"
-    },
-    {
-      "@id": "urn:visionflow:linked:iccv",
-      "vc:label": "ICCV"
-    },
-    {
-      "@id": "urn:visionflow:linked:synth-id",
-      "vc:label": "SynthID"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-avatars",
-      "vc:label": "AI Avatars"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

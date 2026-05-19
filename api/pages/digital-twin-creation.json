@@ -3,53 +3,57 @@
   "title": "Digital Twin Creation",
   "slug": "digital-twin-creation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-creation",
+  "classIri": "urn:ngm:class:digital-twin-creation",
   "domain": "spatial-computing",
-  "definition": "The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning. bridges-to:: [[Computer Vision]]",
+  "definition": "Digital Twin Creation is a type of Digital Modeling in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-modeling",
+      "id": "urn:ngm:class:digital-modeling",
       "label": "Digital Modeling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:io-t-integration",
+        "id": "urn:ngm:class:io-t-integration",
         "label": "IoT Integration"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data",
+        "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:lifecycle-management",
+        "id": "urn:ngm:class:lifecycle-management",
         "label": "Lifecycle Management"
       },
       {
-        "id": "urn:visionflow:linked:real-time-monitoring",
+        "id": "urn:ngm:class:real-time-monitoring",
         "label": "Real-Time Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

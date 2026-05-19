@@ -592,374 +592,311 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fault-tolerance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fault-tolerance",
+  "@type": "Class",
   "label": "Fault Tolerance",
+  "definition": "System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:dependability",
-      "vc:label": "Dependability"
+      "@id": "urn:ngm:class:dependability",
+      "label": "Dependability"
     },
     {
-      "@id": "urn:visionflow:linked:reliability-engineering",
-      "vc:label": "Reliability Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-property",
-      "vc:label": "System Property"
+      "@id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:616c58cd73d424a65afa23eed43afab75ae60d1be8e1e4f0ac79373c5c66bbc6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:failure-detector",
+        "label": "Failure Detector"
+      },
+      {
+        "@id": "urn:ngm:class:health-monitoring",
+        "label": "Health Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:heartbeat",
+        "label": "Heartbeat"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:recovery-procedure",
+        "label": "Recovery Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-log",
+        "label": "Write Ahead Log"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:failure-model",
+        "label": "Failure Model"
+      },
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automatic-recovery",
+        "label": "Automatic Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:continued-operation",
+        "label": "Continued Operation"
+      },
+      {
+        "@id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:durability",
+        "label": "Durability"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:zero-downtime-deployment",
+        "label": "Zero Downtime Deployment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:chain-replication",
+        "label": "Chain Replication"
+      },
+      {
+        "@id": "urn:ngm:class:hot-stuff",
+        "label": "HotStuff"
+      },
+      {
+        "@id": "urn:ngm:class:n-version-programming",
+        "label": "N-Version Programming"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:phi-accrual-detector",
+        "label": "Phi Accrual Detector"
+      },
+      {
+        "@id": "urn:ngm:class:primary-backup",
+        "label": "Primary-Backup"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:recovery-blocks",
+        "label": "Recovery Blocks"
+      },
+      {
+        "@id": "urn:ngm:class:sagas",
+        "label": "Sagas"
+      },
+      {
+        "@id": "urn:ngm:class:swim",
+        "label": "SWIM"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:triple-modular-redundancy",
+        "label": "Triple Modular Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:hamming-codes",
+        "label": "Hamming Codes"
+      },
+      {
+        "@id": "urn:ngm:class:heartbeat-protocol",
+        "label": "Heartbeat Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:lamport-clocks",
+        "label": "Lamport Clocks"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-coding",
+        "label": "Reed-Solomon Coding"
+      },
+      {
+        "@id": "urn:ngm:class:vector-clocks",
+        "label": "Vector Clocks"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:flp-impossibility",
+        "label": "FLP Impossibility"
+      },
+      {
+        "@id": "urn:ngm:class:linearisability",
+        "label": "Linearisability"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aerospace-avionics",
+        "label": "Aerospace Avionics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:financial-trading-systems",
+        "label": "Financial Trading Systems"
+      },
+      {
+        "@id": "urn:ngm:class:medical-devices",
+        "label": "Medical Devices"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "@id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1633",
+        "label": "IEEE 1633"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-160",
+        "label": "NIST SP 800-160"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:616c58cd73d424a65afa23eed43afab75ae60d1be8e1e4f0ac79373c5c66bbc6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbitrary-behaviour), the redundancy-and-replication primitives engineered to mask or recover from such failures (hardware redundancy via Triple Modular Redundancy TMR and N-Modular Redundancy NMR with majority voting (von Neumann 1956), Error-Correcting Code ECC memory with single-bit-correct double-bit-detect Hamming codes, Redundant Array of Independent Disks RAID 1/5/6/10 disk redundancy levels, software redundancy via N-version programming (Avizienis 1985) and recovery blocks (Randell 1975), micro-reboots and crash-only software (Candea & Fox 2003) achieving sub-second recovery), the distributed-consensus algorithms that maintain agreement under partial failures (Paxos (Lamport 1998) with proposer/acceptor/learner roles guaranteeing safety under asynchrony and liveness under partial synchrony, Raft (Ongaro & Ousterhout 2014) decomposing consensus into leader-election/log-replication/safety",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:checkpointing",
-      "vc:label": "Checkpointing"
-    },
-    {
-      "@id": "urn:visionflow:linked:failure-detector",
-      "vc:label": "Failure Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:health-monitoring",
-      "vc:label": "Health Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:heartbeat",
-      "vc:label": "Heartbeat"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum",
-      "vc:label": "Quorum"
-    },
-    {
-      "@id": "urn:visionflow:linked:recovery-procedure",
-      "vc:label": "Recovery Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:redundancy",
-      "vc:label": "Redundancy"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication",
-      "vc:label": "Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:write-ahead-log",
-      "vc:label": "Write Ahead Log"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:failure-model",
-      "vc:label": "Failure Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:idempotency",
-      "vc:label": "Idempotency"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-system",
-      "vc:label": "Monitoring System"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-synchronisation",
-      "vc:label": "Time Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automatic-recovery",
-      "vc:label": "Automatic Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:continued-operation",
-      "vc:label": "Continued Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-consistency",
-      "vc:label": "Data Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:disaster-recovery",
-      "vc:label": "Disaster Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:durability",
-      "vc:label": "Durability"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-availability",
-      "vc:label": "High Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-downtime-deployment",
-      "vc:label": "Zero Downtime Deployment"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:chain-replication",
-      "vc:label": "Chain Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:hot-stuff",
-      "vc:label": "HotStuff"
-    },
-    {
-      "@id": "urn:visionflow:linked:n-version-programming",
-      "vc:label": "N-Version Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:paxos",
-      "vc:label": "Paxos"
-    },
-    {
-      "@id": "urn:visionflow:linked:pbft",
-      "vc:label": "PBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:phi-accrual-detector",
-      "vc:label": "Phi Accrual Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:primary-backup",
-      "vc:label": "Primary-Backup"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft",
-      "vc:label": "Raft"
-    },
-    {
-      "@id": "urn:visionflow:linked:recovery-blocks",
-      "vc:label": "Recovery Blocks"
-    },
-    {
-      "@id": "urn:visionflow:linked:sagas",
-      "vc:label": "Sagas"
-    },
-    {
-      "@id": "urn:visionflow:linked:swim",
-      "vc:label": "SWIM"
-    },
-    {
-      "@id": "urn:visionflow:linked:tendermint",
-      "vc:label": "Tendermint"
-    },
-    {
-      "@id": "urn:visionflow:linked:triple-modular-redundancy",
-      "vc:label": "Triple Modular Redundancy"
-    },
-    {
-      "@id": "urn:visionflow:linked:two-phase-commit",
-      "vc:label": "Two-Phase Commit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine-replication",
-      "vc:label": "State Machine Replication"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-systems-theory",
-      "vc:label": "Distributed Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-correcting-codes",
-      "vc:label": "Error Correcting Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-protocols",
-      "vc:label": "Network Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:aerospace-avionics",
-      "vc:label": "Aerospace Avionics"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-trading-systems",
-      "vc:label": "Financial Trading Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-devices",
-      "vc:label": "Medical Devices"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:erasure-coding",
-      "vc:label": "Erasure Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:hamming-codes",
-      "vc:label": "Hamming Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:heartbeat-protocol",
-      "vc:label": "Heartbeat Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:lamport-clocks",
-      "vc:label": "Lamport Clocks"
-    },
-    {
-      "@id": "urn:visionflow:linked:reed-solomon-coding",
-      "vc:label": "Reed-Solomon Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-clocks",
-      "vc:label": "Vector Clocks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:best-effort-retry",
-      "vc:label": "Best-Effort Retry"
-    },
-    {
-      "@id": "urn:visionflow:linked:crash-only-recovery-without-consensus",
-      "vc:label": "Crash-Only Recovery without consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-availability-without-byzantine-resilience",
-      "vc:label": "High Availability without Byzantine resilience"
-    },
-    {
-      "@id": "urn:visionflow:linked:simple-replication",
-      "vc:label": "Simple Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-point-of-failure",
-      "vc:label": "Single Point of Failure"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:byzantine-generals-problem",
-      "vc:label": "Byzantine Generals Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:cap-theorem",
-      "vc:label": "CAP Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:chaos-engineering",
-      "vc:label": "Chaos Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-consensus",
-      "vc:label": "Distributed Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:eventual-consistency",
-      "vc:label": "Eventual Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:flp-impossibility",
-      "vc:label": "FLP Impossibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:linearisability",
-      "vc:label": "Linearisability"
-    },
-    {
-      "@id": "urn:visionflow:linked:site-reliability-engineering",
-      "vc:label": "Site Reliability Engineering"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:arp4754-a",
-      "vc:label": "ARP4754A"
-    },
-    {
-      "@id": "urn:visionflow:linked:do-178-c",
-      "vc:label": "DO-178C"
-    },
-    {
-      "@id": "urn:visionflow:linked:iec-61508",
-      "vc:label": "IEC 61508"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1633",
-      "vc:label": "IEEE 1633"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-26262",
-      "vc:label": "ISO 26262"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-160",
-      "vc:label": "NIST SP 800-160"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

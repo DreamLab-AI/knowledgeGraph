@@ -504,326 +504,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:function-calling",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:function-calling",
+  "@type": "Class",
   "label": "Function Calling",
+  "definition": "Function Calling (also termed tool use or tool invocation) is the capability of large language models to emit structured requests selecting and parameterising external functions described to them via JSON-Schema tool definitions, with the application layer executing the selected tools and returni...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agentic-capability",
-      "vc:label": "Agentic Capability"
+      "@id": "urn:ngm:class:agentic-capability",
+      "label": "Agentic Capability"
     },
     {
-      "@id": "urn:visionflow:linked:language-model-augmentation",
-      "vc:label": "Language Model Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-capability",
-      "vc:label": "LLM Capability"
+      "@id": "urn:ngm:class:language-model-augmentation",
+      "label": "Language Model Augmentation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e5028bdaec825468a7a0a441f74082d95db50d80d7f6d830fa1cff4040c85b7e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:argument-validator",
+        "label": "Argument Validator"
+      },
+      {
+        "@id": "urn:ngm:class:conversation-loop",
+        "label": "Conversation Loop"
+      },
+      {
+        "@id": "urn:ngm:class:function-registry",
+        "label": "Function Registry"
+      },
+      {
+        "@id": "urn:ngm:class:tool-choice-parameter",
+        "label": "Tool Choice Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "@id": "urn:ngm:class:tool-executor",
+        "label": "Tool Executor"
+      },
+      {
+        "@id": "urn:ngm:class:tool-result-block",
+        "label": "Tool Result Block"
+      },
+      {
+        "@id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use-block",
+        "label": "Tool Use Block"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:application-runtime",
+        "label": "Application Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:argument-parser",
+        "label": "Argument Parser"
+      },
+      {
+        "@id": "urn:ngm:class:conversation-context",
+        "label": "Conversation Context"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:tool-implementation",
+        "label": "Tool Implementation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:browser-automation-by-llms",
+        "label": "Browser Automation by LLMs"
+      },
+      {
+        "@id": "urn:ngm:class:code-execution-by-llms",
+        "label": "Code Execution by LLMs"
+      },
+      {
+        "@id": "urn:ngm:class:computer-use-agents",
+        "label": "Computer Use Agents"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:parallel-tool-calls",
+        "label": "Parallel Tool Calls"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-tool-calls",
+        "label": "Streaming Tool Calls"
+      },
+      {
+        "@id": "urn:ngm:class:structured-outputs-strict-mode",
+        "label": "Structured Outputs Strict Mode"
+      },
+      {
+        "@id": "urn:ngm:class:toolformer-paradigm",
+        "label": "Toolformer Paradigm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:pydantic-models",
+        "label": "Pydantic Models"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:special-tokens",
+        "label": "Special Tokens"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:code-interpreter",
+        "label": "Code Interpreter"
+      },
+      {
+        "@id": "urn:ngm:class:llama-index",
+        "label": "LlamaIndex"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:code-generation-agents",
+        "label": "Code Generation Agents"
+      },
+      {
+        "@id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "@id": "urn:ngm:class:data-analysis-agents",
+        "label": "Data Analysis Agents"
+      },
+      {
+        "@id": "urn:ngm:class:personal-ai-assistants",
+        "label": "Personal AI Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-discovery-agents",
+        "label": "Scientific Discovery Agents"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:anthropic-tool-use-api",
+        "label": "Anthropic Tool Use API"
+      },
+      {
+        "@id": "urn:ngm:class:google-gemini-function-declarations",
+        "label": "Google Gemini Function Declarations"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema-draft-2020-12",
+        "label": "JSON Schema Draft 2020-12"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-function-calling-api",
+        "label": "OpenAI Function Calling API"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-3-1",
+        "label": "OpenAPI 3.1"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e5028bdaec825468a7a0a441f74082d95db50d80d7f6d830fa1cff4040c85b7e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Function Calling (also termed tool use or tool invocation) is the capability of large language models to emit structured requests selecting and parameterising external functions described to them via JSON-Schema tool definitions, with the application layer executing the selected tools and returning results that the model incorporates into subsequent reasoning steps, transforming LLMs from pure text generators into agents that bridge natural language to deterministic computation (databases, REST APIs, code execution sandboxes, retrieval indices, web browsers, filesystems, vector stores), introduced commercially through OpenAI ChatGPT Plugins (March 2023 closed alpha), formalised as a first-class API capability with gpt-3.5-turbo-0613 and gpt-4-0613 (13 June 2023 release introducing the `functions` parameter and `function_call` response field), extended by Anthropic to the Claude 3 family (Opus, Sonnet, Haiku) with tool-use general availability May 2024 returning `tool_use` content blocks within message stop reasons, adopted by Google Gemini (function calling December 2023 in Gemini Pro 1.0 with declarative `FunctionDeclaration` schemas), Mistral (tool use September 2023 in Mistral 7",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:argument-validator",
-      "vc:label": "Argument Validator"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversation-loop",
-      "vc:label": "Conversation Loop"
-    },
-    {
-      "@id": "urn:visionflow:linked:function-registry",
-      "vc:label": "Function Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-choice-parameter",
-      "vc:label": "Tool Choice Parameter"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-definition",
-      "vc:label": "Tool Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-executor",
-      "vc:label": "Tool Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-result-block",
-      "vc:label": "Tool Result Block"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-schema",
-      "vc:label": "Tool Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use-block",
-      "vc:label": "Tool Use Block"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:application-runtime",
-      "vc:label": "Application Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:argument-parser",
-      "vc:label": "Argument Parser"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversation-context",
-      "vc:label": "Conversation Context"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-implementation",
-      "vc:label": "Tool Implementation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-ai",
-      "vc:label": "Agentic AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:browser-automation-by-llms",
-      "vc:label": "Browser Automation by LLMs"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-execution-by-llms",
-      "vc:label": "Code Execution by LLMs"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-use-agents",
-      "vc:label": "Computer Use Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-step-reasoning",
-      "vc:label": "Multi-Step Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-augmented-reasoning",
-      "vc:label": "Tool-Augmented Reasoning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:parallel-tool-calls",
-      "vc:label": "Parallel Tool Calls"
-    },
-    {
-      "@id": "urn:visionflow:linked:plan-and-execute-pattern",
-      "vc:label": "Plan-and-Execute Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act-pattern",
-      "vc:label": "ReAct Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-tool-calls",
-      "vc:label": "Streaming Tool Calls"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-outputs-strict-mode",
-      "vc:label": "Structured Outputs Strict Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:toolformer-paradigm",
-      "vc:label": "Toolformer Paradigm"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:constrained-decoding",
-      "vc:label": "Constrained Decoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema-specification",
-      "vc:label": "JSON Schema Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenizer-special-tokens",
-      "vc:label": "Tokenizer Special Tokens"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:instruction-tuning",
-      "vc:label": "Instruction Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:code-generation-agents",
-      "vc:label": "Code Generation Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-support-automation",
-      "vc:label": "Customer Support Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-analysis-agents",
-      "vc:label": "Data Analysis Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:personal-ai-assistants",
-      "vc:label": "Personal AI Assistants"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-discovery-agents",
-      "vc:label": "Scientific Discovery Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-orchestration",
-      "vc:label": "Workflow Orchestration"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:json-rpc-2-0",
-      "vc:label": "JSON-RPC 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-specification",
-      "vc:label": "OpenAPI Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:pydantic-models",
-      "vc:label": "Pydantic Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:special-tokens",
-      "vc:label": "Special Tokens"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:direct-api-integration",
-      "vc:label": "Direct API Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:hard-coded-workflow-automation",
-      "vc:label": "Hard-Coded Workflow Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-text-completion",
-      "vc:label": "Pure Text Completion"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-output-generation",
-      "vc:label": "Structured Output Generation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:agent-to-agent-protocol",
-      "vc:label": "Agent-to-Agent Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought-prompting",
-      "vc:label": "Chain-of-Thought Prompting"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-interpreter",
-      "vc:label": "Code Interpreter"
-    },
-    {
-      "@id": "urn:visionflow:linked:llama-index",
-      "vc:label": "LlamaIndex"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lang-chain",
-      "vc:label": "LangChain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:anthropic-tool-use-api",
-      "vc:label": "Anthropic Tool Use API"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-gemini-function-declarations",
-      "vc:label": "Google Gemini Function Declarations"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema-draft-2020-12",
-      "vc:label": "JSON Schema Draft 2020-12"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-function-calling-api",
-      "vc:label": "OpenAI Function Calling API"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-3-1",
-      "vc:label": "OpenAPI 3.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "ETSI Domain Security and Privacy",
   "slug": "etsi-domain-security-and-privacy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-security-and-privacy",
+  "classIri": "urn:ngm:class:etsi-domain-security-and-privacy",
   "domain": "spatial-computing",
-  "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures. Security domains address threat surface mapping, [[Post-Quantum Cryptography]] for long-term resilience, [[Privacy-Enhancing Computation]] enabling computation on encrypted data, and [[Digital Evidence Chain of Custody]] ensuring forensic integrity for virtual-world incidents. Privacy controls include [[Privacy Impact Assessment]] methodologies, cross-border data transfer restrictions aligned with [[GDPR]], token custody security preventing unauthorised access to digital assets, and psychological profiling safeguards protecting user behaviour data from exploitation in immersive environments with heightened vulnerability concerns.",
+  "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

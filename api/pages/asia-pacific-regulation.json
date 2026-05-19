@@ -3,163 +3,275 @@
   "title": "Asia Pacific Regulation",
   "slug": "asia-pacific-regulation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asia-pacific-regulation",
+  "classIri": "urn:ngm:class:asia-pacific-regulation",
   "domain": "artificial-intelligence",
-  "definition": "**Asia Pacific Regulation** denotes the polycentric, jurisdictionally heterogeneous body of AI, generative-AI, algorithmic, and digital-technology law operating across the Asia-Pacific region between 2023 and 2026, comprising statutory regimes, administrative measures, soft-law guidance, supervisory standards, export controls, and bilateral / multilateral instruments that collectively govern the development, deployment, and cross-border movement of artificial-intelligence systems, foundation models, training data, AI-generated content, semiconductor compute, and personal information across [[China]], [[Japan]], [[South Korea]], [[Singapore]], [[Australia]], [[India]], [[Hong Kong]], [[Taiwan]], the [[ASEAN]] member states, and the [[Asia-Pacific Economic Cooperation]] forum, instantiated by lead instruments including China's [[Interim Measures for Generative AI Services]] (August 2023, jointly issued by [[Cyberspace Administration of China]] with six agencies, 24 articles requiring algorithm filing, security assessments, content labelling, and training-data legality), the [[Provisions on Deep Synthesis of Internet Information Services]] (January 2023) and the [[Measures for Labelli",
+  "definition": "Asia Pacific Regulation denotes the polycentric, jurisdictionally heterogeneous body of AI, generative-AI, algorithmic, and digital-technology law operating across the Asia-Pacific region between 2023 and 2026, comprising statutory regimes, administrative measures, soft-law guidance, supervisory ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cross-border-ai-law",
+      "id": "urn:ngm:class:cross-border-ai-law",
       "label": "Cross-Border AI Law"
     },
     {
-      "id": "urn:visionflow:linked:digital-technology-policy",
+      "id": "urn:ngm:class:digital-technology-policy",
       "label": "Digital Technology Policy"
-    },
-    {
-      "id": "urn:visionflow:linked:regional-ai-regulation",
-      "label": "Regional AI Regulation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-framework-act",
+        "id": "urn:ngm:class:ai-framework-act",
         "label": "AI Framework Act"
       },
       {
-        "id": "urn:visionflow:linked:ai-verify",
+        "id": "urn:ngm:class:ai-verify",
         "label": "AI Verify"
       },
       {
-        "id": "urn:visionflow:linked:asean-ai-governance-guide",
+        "id": "urn:ngm:class:asean-ai-governance-guide",
         "label": "ASEAN AI Governance Guide"
       },
       {
-        "id": "urn:visionflow:linked:digital-personal-data-protection-act-2023",
+        "id": "urn:ngm:class:digital-personal-data-protection-act-2023",
         "label": "Digital Personal Data Protection Act 2023"
       },
       {
-        "id": "urn:visionflow:linked:india-ai-mission",
+        "id": "urn:ngm:class:india-ai-mission",
         "label": "IndiaAI Mission"
       },
       {
-        "id": "urn:visionflow:linked:interim-measures-for-generative-ai-services",
+        "id": "urn:ngm:class:interim-measures-for-generative-ai-services",
         "label": "Interim Measures for Generative AI Services"
       },
       {
-        "id": "urn:visionflow:linked:meti-ai-guidelines-for-business",
+        "id": "urn:ngm:class:meti-ai-guidelines-for-business",
         "label": "METI AI Guidelines for Business"
       },
       {
-        "id": "urn:visionflow:linked:model-ai-governance-framework",
+        "id": "urn:ngm:class:model-ai-governance-framework",
         "label": "Model AI Governance Framework"
       },
       {
-        "id": "urn:visionflow:linked:pcpd-ai-model-personal-data-protection-framework",
+        "id": "urn:ngm:class:pcpd-ai-model-personal-data-protection-framework",
         "label": "PCPD AI Model Personal Data Protection Framework"
       },
       {
-        "id": "urn:visionflow:linked:voluntary-ai-safety-standard",
+        "id": "urn:ngm:class:voluntary-ai-safety-standard",
         "label": "Voluntary AI Safety Standard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:algorithm-filing",
+        "id": "urn:ngm:class:algorithm-filing",
         "label": "Algorithm Filing"
       },
       {
-        "id": "urn:visionflow:linked:content-labelling",
+        "id": "urn:ngm:class:content-labelling",
         "label": "Content Labelling"
       },
       {
-        "id": "urn:visionflow:linked:data-localisation",
+        "id": "urn:ngm:class:data-localisation",
         "label": "Data Localisation"
       },
       {
-        "id": "urn:visionflow:linked:personal-information-protection-law",
+        "id": "urn:ngm:class:personal-information-protection-law",
         "label": "Personal Information Protection Law"
       },
       {
-        "id": "urn:visionflow:linked:security-assessment",
+        "id": "urn:ngm:class:security-assessment",
         "label": "Security Assessment"
       },
       {
-        "id": "urn:visionflow:linked:transparency-obligation",
+        "id": "urn:ngm:class:transparency-obligation",
         "label": "Transparency Obligation"
       },
       {
-        "id": "urn:visionflow:owl:class:human-oversight",
+        "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-compliance",
+        "id": "urn:ngm:class:ai-compliance",
         "label": "AI Compliance"
       },
       {
-        "id": "urn:visionflow:linked:ai-risk-mitigation",
+        "id": "urn:ngm:class:ai-risk-mitigation",
         "label": "AI Risk Mitigation"
       },
       {
-        "id": "urn:visionflow:linked:ai-safety-testing",
+        "id": "urn:ngm:class:ai-safety-testing",
         "label": "AI Safety Testing"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-ai-cooperation",
+        "id": "urn:ngm:class:cross-border-ai-cooperation",
         "label": "Cross-Border AI Cooperation"
       },
       {
-        "id": "urn:visionflow:linked:frontier-model-evaluation",
+        "id": "urn:ngm:class:frontier-model-evaluation",
         "label": "Frontier Model Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:generative-ai-labelling",
+        "id": "urn:ngm:class:generative-ai-labelling",
         "label": "Generative AI Labelling"
       },
       {
-        "id": "urn:visionflow:owl:class:algorithmic-accountability",
+        "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bletchley-declaration",
+        "id": "urn:ngm:class:bletchley-declaration",
         "label": "Bletchley Declaration"
       },
       {
-        "id": "urn:visionflow:linked:frontier-ai-safety-commitments",
+        "id": "urn:ngm:class:frontier-ai-safety-commitments",
         "label": "Frontier AI Safety Commitments"
       },
       {
-        "id": "urn:visionflow:linked:g20-ai-principles",
+        "id": "urn:ngm:class:g20-ai-principles",
         "label": "G20 AI Principles"
       },
       {
-        "id": "urn:visionflow:linked:hiroshima-ai-code-of-conduct",
+        "id": "urn:ngm:class:hiroshima-ai-code-of-conduct",
         "label": "Hiroshima AI Code of Conduct"
       },
       {
-        "id": "urn:visionflow:linked:oecd-ai-principles",
+        "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
       },
       {
-        "id": "urn:visionflow:linked:seoul-declaration",
+        "id": "urn:ngm:class:seoul-declaration",
         "label": "Seoul Declaration"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithm-registry",
+        "label": "Algorithm Registry"
+      },
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:self-regulatory-organisation",
+        "label": "Self-Regulatory Organisation"
+      },
+      {
+        "id": "urn:ngm:class:standard-contract-clauses",
+        "label": "Standard Contract Clauses"
+      },
+      {
+        "id": "urn:ngm:class:watermarking",
+        "label": "Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety-summit",
+        "label": "AI Safety Summit"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model-governance",
+        "label": "Foundation Model Governance"
+      },
+      {
+        "id": "urn:ngm:class:hiroshima-ai-process",
+        "label": "Hiroshima AI Process"
+      },
+      {
+        "id": "urn:ngm:class:international-ai-safety-report",
+        "label": "International AI Safety Report"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-verify-foundation",
+        "label": "AI Verify Foundation"
+      },
+      {
+        "id": "urn:ngm:class:asean-digital-ministers-meeting",
+        "label": "ASEAN Digital Ministers Meeting"
+      },
+      {
+        "id": "urn:ngm:class:cyberspace-administration-of-china",
+        "label": "Cyberspace Administration of China"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:meti",
+        "label": "METI"
+      },
+      {
+        "id": "urn:ngm:class:national-science-and-technology-council-taiwan",
+        "label": "National Science and Technology Council Taiwan"
+      },
+      {
+        "id": "urn:ngm:class:personal-information-protection-commission",
+        "label": "Personal Information Protection Commission"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-safety-institute-network",
+        "label": "AI Safety Institute Network"
+      },
+      {
+        "id": "urn:ngm:class:bis-export-controls",
+        "label": "BIS Export Controls"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:data-security-law",
+        "label": "Data Security Law"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:hiroshima-ai-process",
+        "label": "Hiroshima AI Process"
+      },
+      {
+        "id": "urn:ngm:class:personal-information-protection-law",
+        "label": "Personal Information Protection Law"
+      }
+    ]
   },
   "wikilinks": [
     {

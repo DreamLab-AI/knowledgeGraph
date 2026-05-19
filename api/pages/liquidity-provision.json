@@ -3,135 +3,255 @@
   "title": "Liquidity Provision",
   "slug": "liquidity-provision",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:liquidity-provision",
+  "classIri": "urn:ngm:class:liquidity-provision",
   "domain": "blockchain",
-  "definition": "**Liquidity Provision** is the decentralised financial mechanism whereby cryptocurrency holders deposit paired or single-asset collateral into [[Automated Market Maker]] smart-contract pools to enable continuous permissionless [[Token Swap]] without traditional counterparties or order books, earning transaction fee revenue proportional to pool share in exchange for bearing [[Impermanent Loss]] risk arising from price divergence between held assets. The practice encompasses a spectrum of algorithmic pricing architectures beginning with Uniswap V2's constant-product invariant x\u00b7y = k (where x and y denote pool reserves of two [[ERC-20 Token]]s, the product k remains constant absent fee accrual, and marginal price equals -y/x\u00b2), advancing through Uniswap V3 concentrated liquidity (Adams, Zinsmeister et al. 2021) enabling providers to specify tick-bounded price ranges [p_a, p_b] and contribute virtual reserves x_virtual = L/\u221ap_b \u2212 L/\u221ap and y_virtual = L(\u221ap \u2212 \u221ap_a) where L denotes liquidity depth, achieving up to 4,000\u00d7 capital efficiency on stable pairs versus V2, and culminating in [[Uniswap]] V4 launched January 2025 introducing singleton architecture with programmable hooks (arbitra",
+  "definition": "Liquidity Provision is the decentralised financial mechanism whereby cryptocurrency holders deposit paired or single-asset collateral into [[Automated Market Maker]] smart-contract pools to enable continuous permissionless [[Token Swap]] without traditional counterparties or order books, earning ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:capital-deployment",
+      "id": "urn:ngm:class:capital-deployment",
       "label": "Capital Deployment"
     },
     {
-      "id": "urn:visionflow:linked:financial-mechanism",
+      "id": "urn:ngm:class:financial-mechanism",
       "label": "Financial Mechanism"
-    },
-    {
-      "id": "urn:visionflow:linked:market-making",
-      "label": "Market Making"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:fee-tier",
+        "id": "urn:ngm:class:fee-tier",
         "label": "Fee Tier"
       },
       {
-        "id": "urn:visionflow:linked:gauge-weight",
+        "id": "urn:ngm:class:gauge-weight",
         "label": "Gauge Weight"
       },
       {
-        "id": "urn:visionflow:linked:impermanent-loss",
+        "id": "urn:ngm:class:impermanent-loss",
         "label": "Impermanent Loss"
       },
       {
-        "id": "urn:visionflow:linked:liquidity-mining-reward",
+        "id": "urn:ngm:class:liquidity-mining-reward",
         "label": "Liquidity Mining Reward"
       },
       {
-        "id": "urn:visionflow:linked:lp-token",
+        "id": "urn:ngm:class:lp-token",
         "label": "LP Token"
       },
       {
-        "id": "urn:visionflow:linked:price-range",
+        "id": "urn:ngm:class:price-range",
         "label": "Price Range"
       },
       {
-        "id": "urn:visionflow:linked:tick",
+        "id": "urn:ngm:class:tick",
         "label": "Tick"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:erc-20-token",
+        "id": "urn:ngm:class:erc-20-token",
         "label": "ERC-20 Token"
       },
       {
-        "id": "urn:visionflow:linked:price-oracle",
+        "id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:capital-efficiency",
+        "id": "urn:ngm:class:capital-efficiency",
         "label": "Capital Efficiency"
       },
       {
-        "id": "urn:visionflow:linked:mev-extraction",
+        "id": "urn:ngm:class:mev-extraction",
         "label": "MEV Extraction"
       },
       {
-        "id": "urn:visionflow:linked:permissionless-trading",
+        "id": "urn:ngm:class:permissionless-trading",
         "label": "Permissionless Trading"
       },
       {
-        "id": "urn:visionflow:linked:protocol-revenue",
+        "id": "urn:ngm:class:protocol-revenue",
         "label": "Protocol Revenue"
       },
       {
-        "id": "urn:visionflow:linked:token-swap",
+        "id": "urn:ngm:class:token-swap",
         "label": "Token Swap"
       },
       {
-        "id": "urn:visionflow:linked:yield-farming",
+        "id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:concentrated-liquidity",
+        "id": "urn:ngm:class:concentrated-liquidity",
         "label": "Concentrated Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:constant-product-formula",
+        "id": "urn:ngm:class:constant-product-formula",
         "label": "Constant Product Formula"
       },
       {
-        "id": "urn:visionflow:linked:hooks-architecture",
+        "id": "urn:ngm:class:hooks-architecture",
         "label": "Hooks Architecture"
       },
       {
-        "id": "urn:visionflow:linked:stable-swap-invariant",
+        "id": "urn:ngm:class:stable-swap-invariant",
         "label": "StableSwap Invariant"
       },
       {
-        "id": "urn:visionflow:linked:weighted-pool-invariant",
+        "id": "urn:ngm:class:weighted-pool-invariant",
         "label": "Weighted Pool Invariant"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "id": "urn:ngm:class:jit-liquidity",
+        "label": "JIT Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrowed-token",
+        "label": "Vote-Escrowed Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-lending",
+        "label": "Decentralised Lending"
+      },
+      {
+        "id": "urn:ngm:class:perpetual-dex",
+        "label": "Perpetual DEX"
+      },
+      {
+        "id": "urn:ngm:class:protocol-treasury",
+        "label": "Protocol Treasury"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin-peg",
+        "label": "Stablecoin Peg"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:fatf-de-fi-guidance",
+        "label": "FATF DeFi Guidance"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:uniswap-v3-core-whitepaper",
+        "label": "Uniswap V3 Core Whitepaper"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "id": "urn:ngm:class:balancer",
+        "label": "Balancer"
+      },
+      {
+        "id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "id": "urn:ngm:class:d-yd-x",
+        "label": "dYdX"
+      },
+      {
+        "id": "urn:ngm:class:gmx",
+        "label": "GMX"
+      },
+      {
+        "id": "urn:ngm:class:gsr",
+        "label": "GSR"
+      },
+      {
+        "id": "urn:ngm:class:hyperliquid",
+        "label": "Hyperliquid"
+      },
+      {
+        "id": "urn:ngm:class:jump-crypto",
+        "label": "Jump Crypto"
+      },
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:wintermute",
+        "label": "Wintermute"
+      }
+    ]
   },
   "wikilinks": [
     {

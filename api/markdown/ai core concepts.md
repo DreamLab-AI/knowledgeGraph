@@ -212,41 +212,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-core-concepts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-core-concepts",
+  "@type": "Class",
   "label": "ai core concepts",
+  "definition": "Core artificial intelligence concepts encompass foundational frameworks and modologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architect...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4f0f04a26e83f1d1f6fe700af20b476f0c1ca56ac3f1795f5ba09b0126b3eac7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4f0f04a26e83f1d1f6fe700af20b476f0c1ca56ac3f1795f5ba09b0126b3eac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Core artificial intelligence concepts encompass foundational frameworks and methodologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architectures ([[NeuralNetwork|neural networks]], [[TransformerModel|transformers]], [[ConvolutionalNeuralNetwork|CNNs]]), and classical symbolic reasoning. Integration with metaverse applications includes [[LLM|large language models]] for [[NPCInteraction|NPC dialogue]], [[ComputerVision|computer vision]] for [[EnvironmentPerception|environment perception]], and [[GenerativeAI|generative AI]] for [[ContentGeneration|procedural content generation]], with ethics considerations addressing [[AIBias|bias mitigation]], [[Explainability|interpretability]], and [[TransparencyRequirements|transparency]] standards.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

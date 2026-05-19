@@ -3,40 +3,49 @@
   "title": "Confusion Matrix",
   "slug": "confusion-matrix",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:confusion-matrix",
+  "classIri": "urn:ngm:class:confusion-matrix",
   "domain": "spatial-computing",
-  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), enabling systematic analysis of where a model succeeds and fails, calculation of various performance metrics, and identification of specific confusion patterns between classes.",
+  "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), e...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:error-analysis",
+        "id": "urn:ngm:class:error-analysis",
         "label": "Error analysis"
       },
       {
-        "id": "urn:visionflow:linked:fairness-assessment",
+        "id": "urn:ngm:class:fairness-assessment",
         "label": "fairness assessment"
       },
       {
-        "id": "urn:visionflow:linked:model-debugging",
+        "id": "urn:ngm:class:model-debugging",
         "label": "model debugging"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ]
   },
   "wikilinks": [
     {

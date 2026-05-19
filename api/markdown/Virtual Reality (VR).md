@@ -208,124 +208,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-reality-vr",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-reality-vr",
+  "@type": "Class",
   "label": "Virtual Reality (VR)",
+  "definition": "Immersive technology system that combines physical head-mounted display hardware with virtual computer-generated 3D environments to create fully encompassing sensory experiences that replace user perception of the physical world.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5230b4265c60c0d9a70ad295fda0dd684e5456380d71b70fb441e2b7fae00fe7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-sensors",
+        "label": "Tracking Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:vr-controllers",
+        "label": "VR Controllers"
+      },
+      {
+        "@id": "urn:ngm:class:vr-rendering-engine",
+        "label": "VR Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:6-do-f-tracking",
+        "label": "6DoF Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-display",
+        "label": "Low-Latency Display"
+      },
+      {
+        "@id": "urn:ngm:class:stereoscopic-rendering",
+        "label": "Stereoscopic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-gaming",
+        "label": "Immersive Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-training",
+        "label": "Virtual Training"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5230b4265c60c0d9a70ad295fda0dd684e5456380d71b70fb441e2b7fae00fe7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Immersive technology system that combines physical head-mounted display hardware with virtual computer-generated 3D environments to create fully encompassing sensory experiences that replace user perception of the physical world.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:head-mounted-display",
-      "vc:label": "Head-Mounted Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-sensors",
-      "vc:label": "Tracking Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio-system",
-      "vc:label": "Spatial Audio System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vr-controllers",
-      "vc:label": "VR Controllers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vr-rendering-engine",
-      "vc:label": "VR Rendering Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:6-do-f-tracking",
-      "vc:label": "6DoF Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-display",
-      "vc:label": "Low-Latency Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:stereoscopic-rendering",
-      "vc:label": "Stereoscopic Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:immersive-gaming",
-      "vc:label": "Immersive Gaming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-presence",
-      "vc:label": "Virtual Presence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-tourism",
-      "vc:label": "Virtual Tourism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-training",
-      "vc:label": "Virtual Training"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gpu",
-      "vc:label": "GPU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-time Rendering"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

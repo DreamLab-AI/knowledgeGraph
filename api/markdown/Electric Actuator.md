@@ -252,120 +252,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:electric-actuator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:electric-actuator",
+  "@type": "Class",
   "label": "Electric Actuator",
+  "definition": "Electric actuator converts electrical energy into controlled mechanical motion through electromagnetic forces, providing the primary means of actuation in modern robots.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:electromechanical-systems",
-      "vc:label": "Electromechanical Systems"
+      "@id": "urn:ngm:class:electromechanical-systems",
+      "label": "Electromechanical Systems"
     },
     {
-      "@id": "urn:visionflow:owl:class:robot-actuator",
-      "vc:label": "Robot Actuator"
+      "@id": "urn:ngm:class:robot-actuator",
+      "label": "Robot Actuator"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:22af670678133bad8a67f6d7094000e749c7e33534ba3cf5f2e6e6b56fe38efe"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mechanical-interface",
+        "label": "Mechanical Interface"
+      },
+      {
+        "@id": "urn:ngm:class:motor-winding",
+        "label": "Motor Winding"
+      },
+      {
+        "@id": "urn:ngm:class:output-transmission",
+        "label": "Output Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-signal",
+        "label": "Control Signal"
+      },
+      {
+        "@id": "urn:ngm:class:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "@id": "urn:ngm:class:load-support",
+        "label": "Load Support"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-dissipation",
+        "label": "Thermal Dissipation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-responsiveness",
+        "label": "Dynamic Responsiveness"
+      },
+      {
+        "@id": "urn:ngm:class:force-exertion",
+        "label": "Force Exertion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-generation",
+        "label": "Motion Generation"
+      },
+      {
+        "@id": "urn:ngm:class:precise-control",
+        "label": "Precise Control"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:22af670678133bad8a67f6d7094000e749c7e33534ba3cf5f2e6e6b56fe38efe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Electric actuator converts electrical energy into controlled mechanical motion through electromagnetic forces, providing the primary means of actuation in modern robots. Electric actuators encompass [[Electric Motor]], [[Linear Servo]], and [[Shape Memory Alloy]] devices, offering precise control, efficient energy conversion, and clean operation compared to pneumatic or hydraulic alternatives.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:mechanical-interface",
-      "vc:label": "Mechanical Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-winding",
-      "vc:label": "Motor Winding"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-transmission",
-      "vc:label": "Output Transmission"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-electronics",
-      "vc:label": "Power Electronics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:control-signal",
-      "vc:label": "Control Signal"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrical-power",
-      "vc:label": "Electrical Power"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-support",
-      "vc:label": "Load Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:thermal-dissipation",
-      "vc:label": "Thermal Dissipation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-responsiveness",
-      "vc:label": "Dynamic Responsiveness"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-exertion",
-      "vc:label": "Force Exertion"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-generation",
-      "vc:label": "Motion Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:precise-control",
-      "vc:label": "Precise Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:mechanical-coupling",
-      "vc:label": "Mechanical Coupling"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver",
-      "vc:label": "Motor Driver"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

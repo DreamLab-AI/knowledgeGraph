@@ -3,183 +3,295 @@
   "title": "Prime Intellect",
   "slug": "prime-intellect",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:prime-intellect",
+  "classIri": "urn:ngm:class:prime-intellect",
   "domain": "artificial-intelligence",
-  "definition": "Prime Intellect is an open-source decentralised AI research organisation and GPU compute marketplace founded in 2023 by Vincent Weisser (CEO, formerly co-founder of VitaDAO and AI lead at Molecule biopharma) and Johannes Hagemann (CTO, formerly scaling distributed training at Aleph Alpha, NeurIPS 2023 Best Paper recipient), headquartered in San Francisco, operating on $70.4M total funding across three rounds\u2014$5.5M seed April 2024 (CoinFund, Distributed Global, former OpenAI founding-member angels), $15M Series A January 2025 (Founders Fund/Peter Thiel, Menlo Ventures), and subsequent undisclosed capital\u2014whose technical mission is to demonstrate that frontier-scale foundation model training can be executed across geographically distributed, heterogeneous, internet-connected compute nodes contributed by independent parties without requiring physical GPU co-location or a single controlling infrastructure owner.",
+  "definition": "Prime Intellect is an open-source decentralised AI research organisation and GPU compute marketplace founded by Vincent Weisser (CEO, formerly co-founder of VitaDAO and AI lead at Molecule biopharma) and Johannes Hagemann headquartered in San Francisco, operating on 4M total funding across three ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralised-ai",
+      "id": "urn:ngm:class:decentralised-ai",
       "label": "Decentralised AI"
     },
     {
-      "id": "urn:visionflow:owl:class:federated-learning",
+      "id": "urn:ngm:class:federated-learning",
       "label": "Federated Learning"
-    },
-    {
-      "id": "urn:visionflow:linked:open-source-ai",
-      "label": "Open Source AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compute-exchange",
+        "id": "urn:ngm:class:compute-exchange",
         "label": "Compute Exchange"
       },
       {
-        "id": "urn:visionflow:linked:di-lo-co",
+        "id": "urn:ngm:class:di-lo-co",
         "label": "DiLoCo"
       },
       {
-        "id": "urn:visionflow:linked:elastic-device-mesh",
+        "id": "urn:ngm:class:elastic-device-mesh",
         "label": "ElasticDeviceMesh"
       },
       {
-        "id": "urn:visionflow:linked:gpu-marketplace",
+        "id": "urn:ngm:class:gpu-marketplace",
         "label": "GPU Marketplace"
       },
       {
-        "id": "urn:visionflow:linked:intellect-1",
+        "id": "urn:ngm:class:intellect-1",
         "label": "INTELLECT-1"
       },
       {
-        "id": "urn:visionflow:linked:intellect-2",
+        "id": "urn:ngm:class:intellect-2",
         "label": "INTELLECT-2"
       },
       {
-        "id": "urn:visionflow:linked:intellect-3",
+        "id": "urn:ngm:class:intellect-3",
         "label": "INTELLECT-3"
       },
       {
-        "id": "urn:visionflow:linked:metagene-1",
+        "id": "urn:ngm:class:metagene-1",
         "label": "METAGENE-1"
       },
       {
-        "id": "urn:visionflow:linked:open-di-lo-co",
+        "id": "urn:ngm:class:open-di-lo-co",
         "label": "OpenDiLoCo"
       },
       {
-        "id": "urn:visionflow:linked:prime-framework",
+        "id": "urn:ngm:class:prime-framework",
         "label": "PRIME Framework"
       },
       {
-        "id": "urn:visionflow:linked:prime-rl",
+        "id": "urn:ngm:class:prime-rl",
         "label": "PRIME-RL"
       },
       {
-        "id": "urn:visionflow:linked:shardcast",
+        "id": "urn:ngm:class:shardcast",
         "label": "SHARDCAST"
       },
       {
-        "id": "urn:visionflow:linked:toploc",
+        "id": "urn:ngm:class:toploc",
         "label": "TOPLOC"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:checkpoint-recovery",
+        "id": "urn:ngm:class:checkpoint-recovery",
         "label": "Checkpoint Recovery"
       },
       {
-        "id": "urn:visionflow:linked:distributed-training",
+        "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
       },
       {
-        "id": "urn:visionflow:linked:gpu-cluster",
+        "id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
       },
       {
-        "id": "urn:visionflow:linked:gradient-synchronisation",
+        "id": "urn:ngm:class:gradient-synchronisation",
         "label": "Gradient Synchronisation"
       },
       {
-        "id": "urn:visionflow:linked:low-bandwidth-networking",
+        "id": "urn:ngm:class:low-bandwidth-networking",
         "label": "Low-Bandwidth Networking"
       },
       {
-        "id": "urn:visionflow:linked:verifiable-inference",
+        "id": "urn:ngm:class:verifiable-inference",
         "label": "Verifiable Inference"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-discovery",
+        "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-model-ownership",
+        "id": "urn:ngm:class:collaborative-model-ownership",
         "label": "Collaborative Model Ownership"
       },
       {
-        "id": "urn:visionflow:linked:compute-democratisation",
+        "id": "urn:ngm:class:compute-democratisation",
         "label": "Compute Democratisation"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-foundation-model-training",
+        "id": "urn:ngm:class:decentralised-foundation-model-training",
         "label": "Decentralised Foundation Model Training"
       },
       {
-        "id": "urn:visionflow:linked:globally-distributed-reinforcement-learning",
+        "id": "urn:ngm:class:globally-distributed-reinforcement-learning",
         "label": "Globally Distributed Reinforcement Learning"
       },
       {
-        "id": "urn:visionflow:linked:open-science-ai",
+        "id": "urn:ngm:class:open-science-ai",
         "label": "Open Science AI"
       },
       {
-        "id": "urn:visionflow:linked:pandemic-preparedness-ai",
+        "id": "urn:ngm:class:pandemic-preparedness-ai",
         "label": "Pandemic Preparedness AI"
       },
       {
-        "id": "urn:visionflow:linked:permissionless-compute-contribution",
+        "id": "urn:ngm:class:permissionless-compute-contribution",
         "label": "Permissionless Compute Contribution"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:asynchronous-rl",
+        "id": "urn:ngm:class:asynchronous-rl",
         "label": "Asynchronous RL"
       },
       {
-        "id": "urn:visionflow:linked:di-lo-co",
+        "id": "urn:ngm:class:di-lo-co",
         "label": "DiLoCo"
       },
       {
-        "id": "urn:visionflow:linked:fsdp2",
+        "id": "urn:ngm:class:fsdp2",
         "label": "FSDP2"
       },
       {
-        "id": "urn:visionflow:linked:grpo",
+        "id": "urn:ngm:class:grpo",
         "label": "GRPO"
       },
       {
-        "id": "urn:visionflow:linked:int8-all-reduce",
+        "id": "urn:ngm:class:int8-all-reduce",
         "label": "Int8 All-Reduce"
       },
       {
-        "id": "urn:visionflow:linked:locality-sensitive-hashing",
+        "id": "urn:ngm:class:locality-sensitive-hashing",
         "label": "Locality-Sensitive Hashing"
       },
       {
-        "id": "urn:visionflow:linked:verifiable-inference",
+        "id": "urn:ngm:class:verifiable-inference",
         "label": "Verifiable Inference"
       },
       {
-        "id": "urn:visionflow:linked:ze-ro-3-sharding",
+        "id": "urn:ngm:class:ze-ro-3-sharding",
         "label": "ZeRO-3 Sharding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:akash-network",
+        "label": "Akash Network"
+      },
+      {
+        "id": "urn:ngm:class:fine-web-edu-dataset",
+        "label": "FineWeb-Edu Dataset"
+      },
+      {
+        "id": "urn:ngm:class:glm-4-5-air",
+        "label": "GLM-4.5-Air"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:llama-architecture",
+        "label": "Llama Architecture"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-h200",
+        "label": "NVIDIA H200"
+      },
+      {
+        "id": "urn:ngm:class:qw-q-32-b",
+        "label": "QwQ-32B"
+      },
+      {
+        "id": "urn:ngm:class:ray-distributed-computing",
+        "label": "Ray Distributed Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:metagenomic-ai",
+        "label": "Metagenomic AI"
+      },
+      {
+        "id": "urn:ngm:class:pandemic-monitoring",
+        "label": "Pandemic Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:reasoning-models",
+        "label": "Reasoning Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture-of-Experts"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-2-0-open-source-licence",
+        "label": "Apache 2.0 Open Source Licence"
+      },
+      {
+        "id": "urn:ngm:class:ar-xiv-preprint-standards",
+        "label": "arXiv Preprint Standards"
+      },
+      {
+        "id": "urn:ngm:class:py-torch-fsdp-api",
+        "label": "PyTorch FSDP API"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-science",
+        "label": "Decentralised Science"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutral-blockchain",
+        "label": "Carbon Neutral Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
   },
   "wikilinks": [
     {

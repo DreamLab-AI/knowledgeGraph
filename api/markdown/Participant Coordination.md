@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:participant-coordination",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:participant-coordination",
+  "@type": "Class",
   "label": "Participant Coordination",
+  "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:multi-user-systems",
-      "vc:label": "Multi-User Systems"
+      "@id": "urn:ngm:class:multi-user-systems",
+      "label": "Multi-User Systems"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3a61ea5efdfc21417027f58264d549497396c16436c4f23b2dd0de8978453216"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:shared-virtual-experiences",
+        "label": "Shared Virtual Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3a61ea5efdfc21417027f58264d549497396c16436c4f23b2dd0de8978453216@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:shared-virtual-experiences",
-      "vc:label": "Shared Virtual Experiences"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

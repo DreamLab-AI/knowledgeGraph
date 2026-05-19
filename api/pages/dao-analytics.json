@@ -3,223 +3,379 @@
   "title": "DAO Analytics",
   "slug": "dao-analytics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dao-analytics",
+  "classIri": "urn:ngm:class:dao-analytics",
   "domain": "blockchain",
-  "definition": "Specialised data analysis and business intelligence infrastructure providing quantitative insight into [[Decentralised Autonomous Organisation]] performance across governance participation, treasury health, delegate accountability, proposal lifecycle dynamics, sybil resistance, and ecosystem-wide coordination patterns. DAO analytics platforms ingest heterogeneous on-chain event streams (EVM logs, Solana account deltas, Cosmos governance messages, multi-sig execution receipts), off-chain signalling records from [[Snapshot]] (IPFS-pinned vote bundles, cryptographically verified against signing addresses), and social-layer discourse (governance forum posts, [[Discord]] channel activity, delegate rationale publications, on-chain attestations), integrating them into unified data models exposing standardised metrics across five critical dimensions.",
+  "definition": "Specialised data analysis and business intelligence infrastructure providing quantitative insight into [[Decentralised Autonomous Organisation]] performance across governance participation, treasury health, delegate accountability, proposal lifecycle dynamics, sybil resistance, and ecosystem-wide...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:analytics-platforms",
+      "id": "urn:ngm:class:analytics-platforms",
       "label": "Analytics Platforms"
     },
     {
-      "id": "urn:visionflow:linked:blockchain-analytics",
+      "id": "urn:ngm:class:blockchain-analytics",
       "label": "Blockchain Analytics"
-    },
-    {
-      "id": "urn:visionflow:linked:data-driven-governance",
-      "label": "Data-Driven Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:boardroom",
+        "id": "urn:ngm:class:boardroom",
         "label": "Boardroom"
       },
       {
-        "id": "urn:visionflow:linked:cross-dao-benchmarking",
+        "id": "urn:ngm:class:cross-dao-benchmarking",
         "label": "Cross-DAO Benchmarking"
       },
       {
-        "id": "urn:visionflow:linked:deep-dao",
+        "id": "urn:ngm:class:deep-dao",
         "label": "DeepDAO"
       },
       {
-        "id": "urn:visionflow:linked:delegate-performance-tracker",
+        "id": "urn:ngm:class:delegate-performance-tracker",
         "label": "Delegate Performance Tracker"
       },
       {
-        "id": "urn:visionflow:linked:dune-analytics",
+        "id": "urn:ngm:class:dune-analytics",
         "label": "Dune Analytics"
       },
       {
-        "id": "urn:visionflow:linked:governance-alert-system",
+        "id": "urn:ngm:class:governance-alert-system",
         "label": "Governance Alert System"
       },
       {
-        "id": "urn:visionflow:linked:governance-dashboard",
+        "id": "urn:ngm:class:governance-dashboard",
         "label": "Governance Dashboard"
       },
       {
-        "id": "urn:visionflow:linked:grant-analytics",
+        "id": "urn:ngm:class:grant-analytics",
         "label": "Grant Analytics"
       },
       {
-        "id": "urn:visionflow:linked:messari",
+        "id": "urn:ngm:class:messari",
         "label": "Messari"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-data-indexing",
+        "id": "urn:ngm:class:on-chain-data-indexing",
         "label": "On-Chain Data Indexing"
       },
       {
-        "id": "urn:visionflow:linked:proposal-lifecycle-analysis",
+        "id": "urn:ngm:class:proposal-lifecycle-analysis",
         "label": "Proposal Lifecycle Analysis"
       },
       {
-        "id": "urn:visionflow:linked:sybil-resistance-metrics",
+        "id": "urn:ngm:class:sybil-resistance-metrics",
         "label": "Sybil Resistance Metrics"
       },
       {
-        "id": "urn:visionflow:linked:tally",
+        "id": "urn:ngm:class:tally",
         "label": "Tally"
       },
       {
-        "id": "urn:visionflow:linked:treasury-analytics",
+        "id": "urn:ngm:class:treasury-analytics",
         "label": "Treasury Analytics"
       },
       {
-        "id": "urn:visionflow:linked:voter-participation-metrics",
+        "id": "urn:ngm:class:voter-participation-metrics",
         "label": "Voter Participation Metrics"
       },
       {
-        "id": "urn:visionflow:linked:voting-power-distribution",
+        "id": "urn:ngm:class:voting-power-distribution",
         "label": "Voting Power Distribution"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:abi-repository",
+        "id": "urn:ngm:class:abi-repository",
         "label": "ABI Repository"
       },
       {
-        "id": "urn:visionflow:linked:block-explorer",
+        "id": "urn:ngm:class:block-explorer",
         "label": "Block Explorer"
       },
       {
-        "id": "urn:visionflow:linked:chainlink",
+        "id": "urn:ngm:class:chainlink",
         "label": "Chainlink"
       },
       {
-        "id": "urn:visionflow:linked:ipfs",
+        "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-data-indexing",
+        "id": "urn:ngm:class:on-chain-data-indexing",
         "label": "On-Chain Data Indexing"
       },
       {
-        "id": "urn:visionflow:linked:oracle-price-feeds",
+        "id": "urn:ngm:class:oracle-price-feeds",
         "label": "Oracle Price Feeds"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-event-decoding",
+        "id": "urn:ngm:class:smart-contract-event-decoding",
         "label": "Smart Contract Event Decoding"
       },
       {
-        "id": "urn:visionflow:linked:snapshot-api",
+        "id": "urn:ngm:class:snapshot-api",
         "label": "Snapshot API"
       },
       {
-        "id": "urn:visionflow:linked:subgraph-protocol",
+        "id": "urn:ngm:class:subgraph-protocol",
         "label": "Subgraph Protocol"
       },
       {
-        "id": "urn:visionflow:linked:the-graph-protocol",
+        "id": "urn:ngm:class:the-graph-protocol",
         "label": "The Graph Protocol"
       },
       {
-        "id": "urn:visionflow:linked:token-holder-mapping",
+        "id": "urn:ngm:class:token-holder-mapping",
         "label": "Token Holder Mapping"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-understanding",
+        "id": "urn:ngm:class:community-understanding",
         "label": "Community Understanding"
       },
       {
-        "id": "urn:visionflow:linked:cross-dao-benchmarking",
+        "id": "urn:ngm:class:cross-dao-benchmarking",
         "label": "Cross-DAO Benchmarking"
       },
       {
-        "id": "urn:visionflow:linked:data-driven-governance",
+        "id": "urn:ngm:class:data-driven-governance",
         "label": "Data-Driven Governance"
       },
       {
-        "id": "urn:visionflow:linked:delegate-accountability",
+        "id": "urn:ngm:class:delegate-accountability",
         "label": "Delegate Accountability"
       },
       {
-        "id": "urn:visionflow:linked:governance-attack-detection",
+        "id": "urn:ngm:class:governance-attack-detection",
         "label": "Governance Attack Detection"
       },
       {
-        "id": "urn:visionflow:linked:institutional-due-diligence",
+        "id": "urn:ngm:class:institutional-due-diligence",
         "label": "Institutional Due Diligence"
       },
       {
-        "id": "urn:visionflow:linked:retroactive-public-goods-funding",
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       },
       {
-        "id": "urn:visionflow:linked:sybil-detection",
+        "id": "urn:ngm:class:sybil-detection",
         "label": "Sybil Detection"
       },
       {
-        "id": "urn:visionflow:linked:treasury-transparency",
+        "id": "urn:ngm:class:treasury-transparency",
         "label": "Treasury Transparency"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:delegate-reputation-score",
+        "id": "urn:ngm:class:delegate-reputation-score",
         "label": "Delegate Reputation Score"
       },
       {
-        "id": "urn:visionflow:linked:gini-coefficient",
+        "id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:proposal-success-rate",
+        "id": "urn:ngm:class:proposal-success-rate",
         "label": "Proposal Success Rate"
       },
       {
-        "id": "urn:visionflow:linked:quadratic-voting-analytics",
+        "id": "urn:ngm:class:quadratic-voting-analytics",
         "label": "Quadratic Voting Analytics"
       },
       {
-        "id": "urn:visionflow:linked:sybil-clustering",
+        "id": "urn:ngm:class:sybil-clustering",
         "label": "Sybil Clustering"
       },
       {
-        "id": "urn:visionflow:linked:treasury-runway-calculation",
+        "id": "urn:ngm:class:treasury-runway-calculation",
         "label": "Treasury Runway Calculation"
       },
       {
-        "id": "urn:visionflow:linked:voter-participation-rate",
+        "id": "urn:ngm:class:voter-participation-rate",
         "label": "Voter Participation Rate"
       },
       {
-        "id": "urn:visionflow:owl:class:sentiment-analysis",
+        "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      },
+      {
+        "id": "urn:ngm:class:dbt-data-build-tool",
+        "label": "dbt Data Build Tool"
+      },
+      {
+        "id": "urn:ngm:class:duck-db",
+        "label": "DuckDB"
+      },
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      },
+      {
+        "id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:sql-analytics",
+        "label": "SQL Analytics"
+      },
+      {
+        "id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aave-governance",
+        "label": "Aave Governance"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum-dao",
+        "label": "Arbitrum DAO"
+      },
+      {
+        "id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "id": "urn:ngm:class:ens-dao",
+        "label": "ENS DAO"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "id": "urn:ngm:class:lido-dao",
+        "label": "Lido DAO"
+      },
+      {
+        "id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "id": "urn:ngm:class:nouns-dao",
+        "label": "Nouns DAO"
+      },
+      {
+        "id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "id": "urn:ngm:class:optimism-rpgf",
+        "label": "Optimism RPGF"
+      },
+      {
+        "id": "urn:ngm:class:uniswap-governance",
+        "label": "Uniswap Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:daostar-metadata-standard",
+        "label": "DAOstar Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:eip-4824-dao-uri-standard",
+        "label": "EIP-4824 DAO URI Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-governance-framework",
+        "label": "Snapshot Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:tally-governor-standard",
+        "label": "Tally Governor Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "id": "urn:ngm:class:maci",
+        "label": "MACI"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanisms",
+        "label": "Voting Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegate Democracy"
+      },
+      {
+        "id": "urn:ngm:class:grant-programs",
+        "label": "Grant Programs"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "3D and 4D",
   "slug": "3-d-and-4-d",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-and-4-d",
+  "classIri": "urn:ngm:class:3-d-and-4-d",
   "domain": "spatial-computing",
   "definition": "3D and 4D is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

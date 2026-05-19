@@ -3,24 +3,23 @@
   "title": "Probabilistic Finality",
   "slug": "probabilistic-finality",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:probabilistic-finality",
+  "classIri": "urn:ngm:class:probabilistic-finality",
   "domain": "blockchain",
-  "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.",
+  "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:longest-chain-rule",
+        "id": "urn:ngm:class:longest-chain-rule",
         "label": "Longest Chain Rule"
       }
     ],
@@ -28,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

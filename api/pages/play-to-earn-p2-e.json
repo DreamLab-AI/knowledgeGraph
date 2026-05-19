@@ -3,94 +3,107 @@
   "title": "Play-to-Earn (P2E)",
   "slug": "play-to-earn-p2-e",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:play-to-earn-p2-e",
+  "classIri": "urn:ngm:class:play-to-earn-p2-e",
   "domain": "spatial-computing",
   "definition": "Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-generation",
+        "id": "urn:ngm:class:asset-generation",
         "label": "Asset Generation"
       },
       {
-        "id": "urn:visionflow:linked:gameplay-mechanics",
+        "id": "urn:ngm:class:gameplay-mechanics",
         "label": "Gameplay Mechanics"
       },
       {
-        "id": "urn:visionflow:linked:task-completion-system",
+        "id": "urn:ngm:class:task-completion-system",
         "label": "Task Completion System"
       },
       {
-        "id": "urn:visionflow:linked:value-conversion",
+        "id": "urn:ngm:class:value-conversion",
         "label": "Value Conversion"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-distribution",
+        "id": "urn:ngm:class:reward-distribution",
         "label": "Reward Distribution"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenomics",
+        "id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:game-engine",
+        "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-ownership",
+        "id": "urn:ngm:class:asset-ownership",
         "label": "Asset Ownership"
       },
       {
-        "id": "urn:visionflow:linked:community-growth",
+        "id": "urn:ngm:class:community-growth",
         "label": "Community Growth"
       },
       {
-        "id": "urn:visionflow:linked:income-generation",
+        "id": "urn:ngm:class:income-generation",
         "label": "Income Generation"
       },
       {
-        "id": "urn:visionflow:linked:player-engagement",
+        "id": "urn:ngm:class:player-engagement",
         "label": "Player Engagement"
       },
       {
-        "id": "urn:visionflow:owl:class:economic-participation",
+        "id": "urn:ngm:class:economic-participation",
         "label": "Economic Participation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-fi",
+        "label": "GameFi"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:knowledge-distillation-for-edge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-distillation-for-edge",
+  "@type": "Class",
   "label": "Knowledge Distillation for Edge",
+  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining + of accuracy.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d995ed508b3f8bd26d1af4f5eea4de7afafc6c80fcaa2e45063a091f5d1bfd0d"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d995ed508b3f8bd26d1af4f5eea4de7afafc6c80fcaa2e45063a091f5d1bfd0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Knowledge Distillation for Edge transfers learned representations from large, accurate teacher neural networks to compact student models optimized for edge deployment, achieving 20-30x compression while retaining 97%+ of accuracy. Knowledge distillation addresses the mismatch between expensive training (requiring large models and substantial compute) and deployment constraints (limited memory, power, latency). A large teacher model trained on expansive datasets learns rich feature representations; the student model learns to mimic teacher predictions and intermediate representations through soft targets (probability distributions over classes) rather than hard labels. Temperature scaling softens teacher probabilities, revealing knowledge about class confusion and similarity that hard labels omit. Dark knowledge captures patterns learned through large-scale training that transfer to compact students. Typical teacher-student compression ratios reach 20x: a 500MB teacher network compresses to 25MB student while retaining accuracy. Layer-wise knowledge distillation transfers intermediate representations, not just final predictions, improving student generalization. Multi-task distillat",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

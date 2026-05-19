@@ -3,36 +3,45 @@
   "title": "ETSI Domain Application + Education",
   "slug": "etsi-domain-application-education",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-application-education",
+  "classIri": "urn:ngm:class:etsi-domain-application-education",
   "domain": "spatial-computing",
   "definition": "Cross-domain marker for metaverse application components focused on education and training including virtual classrooms, immersive learning environments, educational simulations, and collaborative learning platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:education-application-classification",
+        "id": "urn:ngm:class:education-application-classification",
         "label": "Education Application Classification"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-platform-categorization",
+        "id": "urn:ngm:class:learning-platform-categorization",
         "label": "Learning Platform Categorization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

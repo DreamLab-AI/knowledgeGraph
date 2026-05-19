@@ -216,140 +216,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:play-to-earn-p2-e",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:play-to-earn-p2-e",
+  "@type": "Class",
   "label": "Play-to-Earn (P2E)",
+  "definition": "Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:174d3cf50cd857a43af13fd66d3a40b77ae7f8c56eaa0e78d2ce37bd29babf98"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-generation",
+        "label": "Asset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:gameplay-mechanics",
+        "label": "Gameplay Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:task-completion-system",
+        "label": "Task Completion System"
+      },
+      {
+        "@id": "urn:ngm:class:value-conversion",
+        "label": "Value Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-ownership",
+        "label": "Asset Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:community-growth",
+        "label": "Community Growth"
+      },
+      {
+        "@id": "urn:ngm:class:income-generation",
+        "label": "Income Generation"
+      },
+      {
+        "@id": "urn:ngm:class:player-engagement",
+        "label": "Player Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:economic-participation",
+        "label": "Economic Participation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:game-fi",
+        "label": "GameFi"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:174d3cf50cd857a43af13fd66d3a40b77ae7f8c56eaa0e78d2ce37bd29babf98@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:game-fi",
-      "vc:label": "GameFi"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-generation",
-      "vc:label": "Asset Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gameplay-mechanics",
-      "vc:label": "Gameplay Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-completion-system",
-      "vc:label": "Task Completion System"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-conversion",
-      "vc:label": "Value Conversion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reward-distribution",
-      "vc:label": "Reward Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenomics",
-      "vc:label": "Tokenomics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-ownership",
-      "vc:label": "Asset Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-growth",
-      "vc:label": "Community Growth"
-    },
-    {
-      "@id": "urn:visionflow:linked:income-generation",
-      "vc:label": "Income Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:player-engagement",
-      "vc:label": "Player Engagement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:economic-participation",
-      "vc:label": "Economic Participation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:nft-non-fungible-token",
-      "vc:label": "NFT (Non-Fungible Token)"
-    },
-    {
-      "@id": "urn:visionflow:linked:player-identity",
-      "vc:label": "Player Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marketplace",
-      "vc:label": "Marketplace"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

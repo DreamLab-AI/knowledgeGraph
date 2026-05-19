@@ -3,19 +3,18 @@
   "title": "Edge AI System",
   "slug": "edge-ai-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-ai-system",
+  "classIri": "urn:ngm:class:edge-ai-system",
   "domain": "artificial-intelligence",
-  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity. These systems process data in real-time at the source, reducing latency to milliseconds while minimizing bandwidth consumption and cloud dependency. Edge AI Systems optimize for resource-constrained environments with limited memory (typically 128KB-512MB), power budgets (10-100mW), and computational capacity compared to data centers. They incorporate model compression techniques including quantization, pruning, and knowledge distillation to fit neural networks into embedded hardware. Core characteristics include deterministic latency guarantees, offline-capable operation, privacy preservation through local processing, and direct sensor-to-actuator decision loops. Edge AI Systems span diverse deployment scenarios: industrial IoT monitoring for predictive maintenance, autonomous vehicle perception pipelines, smart home voice processing, medical wearables, drone navigation, and surveillance analytics. The architecture balances accuracy against resource co",
+  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,151 +3,235 @@
   "title": "Breakout Room",
   "slug": "breakout-room",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:breakout-room",
+  "classIri": "urn:ngm:class:breakout-room",
   "domain": "distributed-collaboration",
-  "definition": "Breakout rooms are temporary, parallel sub-session spaces embedded within a primary virtual meeting or conferencing environment that partition a large group of participants into smaller, purpose-bounded clusters for focused collaborative work, deliberation, or learning activities, enabling concurrent independent interaction across multiple groups before participants reconvene in the main session to synthesise outputs, report findings, or continue collective proceedings \u2014 operationalising the widely-established facilitation principle that small-group interaction (typically 3\u20138 participants) substantially increases individual participation rates, psychological safety, and depth of inquiry compared with plenary formats where discussion is dominated by a minority of vocal participants or constrained by time proportional to total headcount, implemented across all major synchronous communication platforms (Zoom 300 million daily participants peak April 2020, Microsoft Teams 320 million monthly active users 2024, Google Meet 100 million daily participants 2023, Cisco Webex, Hopin, Airmeet, Gather.town, Spatial.io) spanning pedagogical (think-pair-share, jigsaw cooperative learning, fishbo",
+  "definition": "Breakout rooms are temporary, parallel sub-session spaces embedded within a primary virtual meeting or conferencing environment that partition a large group of participants into smaller, purpose-bounded clusters for focused collaborative work, deliberation, or learning activities, enabling concur...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:collaborative-learning-infrastructure",
+      "id": "urn:ngm:class:collaborative-learning-infrastructure",
       "label": "Collaborative Learning Infrastructure"
     },
     {
-      "id": "urn:visionflow:linked:group-facilitation-tools",
+      "id": "urn:ngm:class:group-facilitation-tools",
       "label": "Group Facilitation Tools"
-    },
-    {
-      "id": "urn:visionflow:linked:synchronous-communication",
-      "label": "Synchronous Communication"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-group-formation",
+        "id": "urn:ngm:class:ai-group-formation",
         "label": "AI Group Formation"
       },
       {
-        "id": "urn:visionflow:linked:automatic-grouping",
+        "id": "urn:ngm:class:automatic-grouping",
         "label": "Automatic Grouping"
       },
       {
-        "id": "urn:visionflow:linked:host-broadcast-channel",
+        "id": "urn:ngm:class:host-broadcast-channel",
         "label": "Host Broadcast Channel"
       },
       {
-        "id": "urn:visionflow:linked:manual-room-assignment",
+        "id": "urn:ngm:class:manual-room-assignment",
         "label": "Manual Room Assignment"
       },
       {
-        "id": "urn:visionflow:linked:participant-assignment-interface",
+        "id": "urn:ngm:class:participant-assignment-interface",
         "label": "Participant Assignment Interface"
       },
       {
-        "id": "urn:visionflow:linked:return-to-main-signalling",
+        "id": "urn:ngm:class:return-to-main-signalling",
         "label": "Return-to-main Signalling"
       },
       {
-        "id": "urn:visionflow:linked:room-level-recording",
+        "id": "urn:ngm:class:room-level-recording",
         "label": "Room-level Recording"
       },
       {
-        "id": "urn:visionflow:linked:room-state-tracking",
+        "id": "urn:ngm:class:room-state-tracking",
         "label": "Room State Tracking"
       },
       {
-        "id": "urn:visionflow:linked:timer-and-notifications",
+        "id": "urn:ngm:class:timer-and-notifications",
         "label": "Timer and Notifications"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:hosting-privileges",
+        "id": "urn:ngm:class:hosting-privileges",
         "label": "Hosting Privileges"
       },
       {
-        "id": "urn:visionflow:linked:media-routing-infrastructure",
+        "id": "urn:ngm:class:media-routing-infrastructure",
         "label": "Media Routing Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:multiple-concurrent-video-streams",
+        "id": "urn:ngm:class:multiple-concurrent-video-streams",
         "label": "Multiple Concurrent Video Streams"
       },
       {
-        "id": "urn:visionflow:linked:room-state-tracking",
+        "id": "urn:ngm:class:room-state-tracking",
         "label": "Room State Tracking"
       },
       {
-        "id": "urn:visionflow:linked:session-multiplexing",
+        "id": "urn:ngm:class:session-multiplexing",
         "label": "Session Multiplexing"
       },
       {
-        "id": "urn:visionflow:linked:user-identity-management",
+        "id": "urn:ngm:class:user-identity-management",
         "label": "User Identity Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cooperative-learning",
+        "id": "urn:ngm:class:cooperative-learning",
         "label": "Cooperative Learning"
       },
       {
-        "id": "urn:visionflow:linked:cross-functional-team-collaboration",
+        "id": "urn:ngm:class:cross-functional-team-collaboration",
         "label": "Cross-functional Team Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:focused-sub-team-discussions",
+        "id": "urn:ngm:class:focused-sub-team-discussions",
         "label": "Focused Sub-team Discussions"
       },
       {
-        "id": "urn:visionflow:linked:parallel-problem-solving",
+        "id": "urn:ngm:class:parallel-problem-solving",
         "label": "Parallel Problem-Solving"
       },
       {
-        "id": "urn:visionflow:linked:participation-equity",
+        "id": "urn:ngm:class:participation-equity",
         "label": "Participation Equity"
       },
       {
-        "id": "urn:visionflow:linked:scaled-workshop-facilitation",
+        "id": "urn:ngm:class:scaled-workshop-facilitation",
         "label": "Scaled Workshop Facilitation"
       },
       {
-        "id": "urn:visionflow:linked:think-pair-share-pedagogy",
+        "id": "urn:ngm:class:think-pair-share-pedagogy",
         "label": "Think-Pair-Share Pedagogy"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:fishbowl-dialogue",
+        "id": "urn:ngm:class:fishbowl-dialogue",
         "label": "Fishbowl Dialogue"
       },
       {
-        "id": "urn:visionflow:linked:flipped-classroom",
+        "id": "urn:ngm:class:flipped-classroom",
         "label": "Flipped Classroom"
       },
       {
-        "id": "urn:visionflow:linked:jigsaw-cooperative-learning",
+        "id": "urn:ngm:class:jigsaw-cooperative-learning",
         "label": "Jigsaw Cooperative Learning"
       },
       {
-        "id": "urn:visionflow:linked:problem-based-learning",
+        "id": "urn:ngm:class:problem-based-learning",
         "label": "Problem-Based Learning"
       },
       {
-        "id": "urn:visionflow:linked:think-pair-share",
+        "id": "urn:ngm:class:think-pair-share",
         "label": "Think-Pair-Share"
       },
       {
-        "id": "urn:visionflow:owl:class:active-learning",
+        "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-group-formation",
+        "label": "AI Group Formation"
+      },
+      {
+        "id": "urn:ngm:class:chat-messaging",
+        "label": "Chat Messaging"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:conference-facilitation",
+        "label": "Conference Facilitation"
+      },
+      {
+        "id": "urn:ngm:class:corporate-training",
+        "label": "Corporate Training"
+      },
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:hackathon-events",
+        "label": "Hackathon Events"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:virtual-workshop",
+        "label": "Virtual Workshop"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-802-11-wireless-lan",
+        "label": "IEEE 802.11 Wireless LAN"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-3550-rtp",
+        "label": "IETF RFC 3550 RTP"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc-w3-c-specification",
+        "label": "WebRTC W3C Specification"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:team-communication-platform",
+        "label": "Team Communication Platform"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ]
   },
   "wikilinks": [
     {

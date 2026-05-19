@@ -3,19 +3,13 @@
   "title": "AI Metadata",
   "slug": "ai-metadata",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-metadata",
+  "classIri": "urn:ngm:class:ai-metadata",
   "domain": "artificial-intelligence",
-  "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

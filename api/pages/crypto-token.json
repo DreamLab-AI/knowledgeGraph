@@ -3,82 +3,95 @@
   "title": "Crypto Token",
   "slug": "crypto-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:crypto-token",
+  "classIri": "urn:ngm:class:crypto-token",
   "domain": "blockchain",
   "definition": "A blockchain-based programmable token representing assets, rights, or utility within a decentralized system, with transferability governed by smart contract logic.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:loyalty-token",
+        "id": "urn:ngm:class:loyalty-token",
         "label": "Loyalty Token"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-schema",
+        "id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schema"
       },
       {
-        "id": "urn:visionflow:owl:class:non-fungible-token-nft",
+        "id": "urn:ngm:class:non-fungible-token-nft",
         "label": "Non-Fungible Token (NFT)"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:stablecoin",
+        "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       },
       {
-        "id": "urn:visionflow:owl:class:wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:governance-voting",
+        "id": "urn:ngm:class:governance-voting",
         "label": "Governance Voting"
       },
       {
-        "id": "urn:visionflow:linked:programmable-value",
+        "id": "urn:ngm:class:programmable-value",
         "label": "Programmable Value"
       },
       {
-        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

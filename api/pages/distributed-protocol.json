@@ -3,27 +3,31 @@
   "title": "Distributed Protocol",
   "slug": "distributed-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-protocol",
+  "classIri": "urn:ngm:class:distributed-protocol",
   "domain": "blockchain",
-  "definition": "A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control. Unlike centralized protocols where a single authoritative server coordinates client interactions, distributed protocols enable peer-to-peer coordination where participants jointly implement the protocol logic to achieve system-wide objectives. These protocols must address fundamental distributed systems challenges including asynchronous message delivery, network partitions, Byzantine failures (where nodes may behave arbitrarily or maliciously), and the impossibility of perfectly coordinating clocks across geographic distances. Blockchain distributed protocols encompass consensus protocols for agreeing on transaction ordering, gossip protocols for information dissemination, peer discovery protocols for network topology management, and state synchronization protocols for new node bootstrapping. Effective distributed protocols must specify normal operation (how honest nodes behave), failure handling (how to detect and recover from node failures), and at",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    }
-  ],
+  "definition": "A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain-entity",
+        "label": "Blockchain Entity"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

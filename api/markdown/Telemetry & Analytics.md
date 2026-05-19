@@ -184,108 +184,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:telemetry-and-analytics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:telemetry-and-analytics",
+  "@type": "Class",
   "label": "Telemetry & Analytics",
+  "definition": "Systematic collection and analysis of usage and performance data from metaverse applications and platforms to enable monitoring, optimization, and decision-making.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3f27018a13eb8432239a4ec8d04b5b7d2d89bfb4861d1647a7fd9461ee1b448"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-collection-pipeline",
+        "label": "Data Collection Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:usage-analytics",
+        "label": "Usage Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:event-logging",
+        "label": "Event Logging"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "@id": "urn:ngm:class:user-behavior-analysis",
+        "label": "User Behavior Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3f27018a13eb8432239a4ec8d04b5b7d2d89bfb4861d1647a7fd9461ee1b448@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic collection and analysis of usage and performance data from metaverse applications and platforms to enable monitoring, optimization, and decision-making.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-collection-pipeline",
-      "vc:label": "Data Collection Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-analytics",
-      "vc:label": "Usage Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monitoring-dashboard",
-      "vc:label": "Monitoring Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-metrics",
-      "vc:label": "Performance Metrics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:analytics-engine",
-      "vc:label": "Analytics Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-logging",
-      "vc:label": "Event Logging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:capacity-planning",
-      "vc:label": "Capacity Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-behavior-analysis",
-      "vc:label": "User Behavior Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-optimization",
-      "vc:label": "Performance Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:real-time-data-streaming",
-      "vc:label": "Real-Time Data Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-analysis",
-      "vc:label": "Statistical Analysis"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

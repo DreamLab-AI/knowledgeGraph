@@ -172,106 +172,77 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-scalability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-scalability",
+  "@type": "Class",
   "label": "Blockchain Scalability",
+  "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:protocol-architecture",
-      "vc:label": "Protocol Architecture"
+      "@id": "urn:ngm:class:protocol-architecture",
+      "label": "Protocol Architecture"
     },
     {
-      "@id": "urn:visionflow:linked:system-performance",
-      "vc:label": "System Performance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:system-performance",
+      "label": "System Performance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b93bdabea566799526167e092d49b7a1d884dda164ad584ff460e4880de2b336"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:layer-2-solution",
+        "label": "Layer 2 Solution"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-throughput",
+        "label": "High Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "@id": "urn:ngm:class:mass-adoption",
+        "label": "Mass Adoption"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b93bdabea566799526167e092d49b7a1d884dda164ad584ff460e4880de2b336@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:layer-2-solution",
-      "vc:label": "Layer 2 Solution"
-    },
-    {
-      "@id": "urn:visionflow:linked:rollup",
-      "vc:label": "Rollup"
-    },
-    {
-      "@id": "urn:visionflow:linked:sharding",
-      "vc:label": "Sharding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-channel",
-      "vc:label": "State Channel"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-throughput",
-      "vc:label": "High Throughput"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency",
-      "vc:label": "Low Latency"
-    },
-    {
-      "@id": "urn:visionflow:linked:mass-adoption",
-      "vc:label": "Mass Adoption"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-compression",
-      "vc:label": "Data Compression"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

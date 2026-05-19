@@ -928,122 +928,89 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:value-transfer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:value-transfer",
+  "@type": "Class",
   "label": "Value Transfer",
+  "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
+      "@id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:88eee08f9e6364fa7c3272c861c433ea02ea6ecd650e450be4aa3de300fe532f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:rights-transfer",
+        "label": "Rights Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transfer-protocol",
+        "label": "Transfer Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:trust-mechanism",
+        "label": "Trust Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:value-representation",
+        "label": "Value Representation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:commerce",
+        "label": "Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:economic-exchange",
+        "label": "Economic Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:payment",
+        "label": "Payment"
+      },
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:trade",
+        "label": "Trade"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:88eee08f9e6364fa7c3272c861c433ea02ea6ecd650e450be4aa3de300fe532f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "1.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:resource-allocation",
-      "vc:label": "Resource Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-transfer",
-      "vc:label": "Rights Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:barter-system",
-      "vc:label": "Barter System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-currency",
-      "vc:label": "Digital Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:money",
-      "vc:label": "Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token",
-      "vc:label": "Token"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:transfer-protocol",
-      "vc:label": "Transfer Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-mechanism",
-      "vc:label": "Trust Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-representation",
-      "vc:label": "Value Representation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:commerce",
-      "vc:label": "Commerce"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-exchange",
-      "vc:label": "Economic Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment",
-      "vc:label": "Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement",
-      "vc:label": "Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade",
-      "vc:label": "Trade"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-agent-economic-interaction",
-      "vc:label": "AI Agent Economic Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-to-robot-commerce",
-      "vc:label": "Robot-to-Robot Commerce"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-transaction",
-      "vc:label": "Blockchain Transaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

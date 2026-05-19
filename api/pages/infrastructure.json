@@ -3,19 +3,13 @@
   "title": "infrastructure",
   "slug": "infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrastructure",
+  "classIri": "urn:ngm:class:infrastructure",
   "domain": "infrastructure",
   "definition": "infrastructure is a technology infrastructure concept and a type of owl:Thing.",
-  "subClassOf": [
-    {
-      "id": "owl:Thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

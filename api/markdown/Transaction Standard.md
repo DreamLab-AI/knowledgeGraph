@@ -208,128 +208,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transaction-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transaction-standard",
+  "@type": "Class",
   "label": "Transaction Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6d283c8e166041f907a7aa5d1e8da9bb0d98030216edc49ed5818b22cd417e90"
-  },
-  "vc:inferenceRule": "R5",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6d283c8e166041f907a7aa5d1e8da9bb0d98030216edc49ed5818b22cd417e90@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:integrity-verification",
+        "label": "Integrity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-protocol",
+        "label": "Settlement Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-ledger",
+        "label": "Transaction Ledger"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-swaps",
+        "label": "Atomic Swaps"
+      },
+      {
+        "@id": "urn:ngm:class:economic-interoperability",
+        "label": "Economic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:secure-asset-transfer",
+        "label": "Secure Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-auditability",
+        "label": "Transaction Auditability"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-transactions",
+        "label": "Multi-Party Transactions"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy-infrastructure",
+        "label": "Virtual Economy Infrastructure"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:payment-system",
-      "vc:label": "Payment System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
-      "vc:label": "Virtual Economy Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:authentication-mechanism",
-      "vc:label": "Authentication Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:integrity-verification",
-      "vc:label": "Integrity Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-format",
-      "vc:label": "Message Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-protocol",
-      "vc:label": "Settlement Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-ledger",
-      "vc:label": "Transaction Ledger"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-persistence",
-      "vc:label": "Data Persistence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
-      "vc:label": "Cryptographic Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:atomic-swaps",
-      "vc:label": "Atomic Swaps"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-interoperability",
-      "vc:label": "Economic Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-asset-transfer",
-      "vc:label": "Secure Asset Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-auditability",
-      "vc:label": "Transaction Auditability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-party-transactions",
-      "vc:label": "Multi-Party Transactions"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:wallet-system",
-      "vc:label": "Wallet System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5"
+  }
 }
 ```
 

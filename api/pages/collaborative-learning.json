@@ -3,53 +3,57 @@
   "title": "Collaborative Learning",
   "slug": "collaborative-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collaborative-learning",
+  "classIri": "urn:ngm:class:collaborative-learning",
   "domain": "spatial-computing",
-  "definition": "An educational approach where learners work together in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
+  "definition": "An educational approach where learners work toger in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-methodology",
+      "id": "urn:ngm:class:educational-methodology",
       "label": "Educational Methodology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:communication-tools",
+        "id": "urn:ngm:class:communication-tools",
         "label": "Communication Tools"
       },
       {
-        "id": "urn:visionflow:linked:shared-workspace",
+        "id": "urn:ngm:class:shared-workspace",
         "label": "Shared Workspace"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:knowledge-co-construction",
+        "id": "urn:ngm:class:knowledge-co-construction",
         "label": "Knowledge Co-Construction"
       },
       {
-        "id": "urn:visionflow:linked:social-learning",
+        "id": "urn:ngm:class:social-learning",
         "label": "Social Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:remote-collaboration",
+        "id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

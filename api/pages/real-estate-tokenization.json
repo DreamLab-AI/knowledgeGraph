@@ -3,19 +3,18 @@
   "title": "Real Estate Tokenization",
   "slug": "real-estate-tokenization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-estate-tokenization",
+  "classIri": "urn:ngm:class:real-estate-tokenization",
   "domain": "blockchain",
-  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to \u00a350, and creating 24/7 tradeable markets projected to grow from \u00a32.6-3.5 billion (2024) to \u00a34 trillion (2035) whilst providing regulatory compliance through Regulation D, Regulation A+, and international frameworks.",
+  "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to \u00a350, and creati...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.87,
   "maturity": "draft",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

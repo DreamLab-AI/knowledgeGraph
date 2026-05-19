@@ -120,41 +120,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pattern-recognition",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pattern-recognition",
+  "@type": "Class",
   "label": "Pattern Recognition",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e2db02173f6427fb26711a948f13ab9c939f06659d07e3f2edabbada2e58c469"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e2db02173f6427fb26711a948f13ab9c939f06659d07e3f2edabbada2e58c469@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), and feature extraction techniques. Applications span computer vision (object recognition, face detection), speech recognition, biometric identification, medical diagnosis, and anomaly detection. Modern approaches leverage deep learning for end-to-end feature learning, replacing hand-crafted features with learned representations from raw data.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

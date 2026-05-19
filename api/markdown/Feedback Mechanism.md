@@ -196,120 +196,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:feedback-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:feedback-mechanism",
+  "@type": "Class",
   "label": "Feedback Mechanism",
+  "definition": "Mod providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-experience-pipeline",
-      "vc:label": "Immersive Experience Pipeline"
+      "@id": "urn:ngm:class:immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9c080f6e90f4c720eb0415f4a58bff7a1d43afe60195b640720b1ee4ff437ab6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-response-module",
+        "label": "Audio Response Module"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-integration-controller",
+        "label": "Sensory Integration Controller"
+      },
+      {
+        "@id": "urn:ngm:class:visual-feedback-renderer",
+        "label": "Visual Feedback Renderer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:input-detection",
+        "label": "Input Detection"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-network",
+        "label": "Low Latency Network"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:enhanced-presence",
+        "label": "Enhanced Presence"
+      },
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-immersion",
+        "label": "Sensory Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:user-feedback-loop",
+        "label": "User Feedback Loop"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:user-interaction-system",
+        "label": "User Interaction System"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience-pipeline",
+        "label": "Immersive Experience Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9c080f6e90f4c720eb0415f4a58bff7a1d43afe60195b640720b1ee4ff437ab6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Method providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:user-interaction-system",
-      "vc:label": "User Interaction System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experience-pipeline",
-      "vc:label": "Immersive Experience Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audio-response-module",
-      "vc:label": "Audio Response Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:haptic-feedback-system",
-      "vc:label": "Haptic Feedback System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-integration-controller",
-      "vc:label": "Sensory Integration Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-feedback-renderer",
-      "vc:label": "Visual Feedback Renderer"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:input-detection",
-      "vc:label": "Input Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-network",
-      "vc:label": "Low Latency Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data",
-      "vc:label": "Sensor Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:enhanced-presence",
-      "vc:label": "Enhanced Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:natural-interaction",
-      "vc:label": "Natural Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-immersion",
-      "vc:label": "Sensory Immersion"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-feedback-loop",
-      "vc:label": "User Feedback Loop"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:event-processing",
-      "vc:label": "Event Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-management",
-      "vc:label": "State Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-context-awareness",
-      "vc:label": "User Context Awareness"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -580,372 +580,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-network",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-network",
+  "@type": "Class",
   "label": "Blockchain Network",
+  "definition": "A Blockchain Network is a permissionless or permissioned peer-to-peer (P2P) overlay network through which participating nodes collectively maintain, validate, and propagate a shared append-only ledger (the blockchain) without relying on any central coordinator, achieving agreement through a deter...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:fault-tolerant-system",
-      "vc:label": "Fault Tolerant System"
+      "@id": "urn:ngm:class:fault-tolerant-system",
+      "label": "Fault Tolerant System"
     },
     {
-      "@id": "urn:visionflow:linked:overlay-network",
-      "vc:label": "Overlay Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "vc:label": "Byzantine Fault Tolerant System"
+      "@id": "urn:ngm:class:overlay-network",
+      "label": "Overlay Network"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:230a0e31bd9609940281fed686f29949c74597f80408465b80d9c401c3840a6a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:archive-node",
+        "label": "Archive Node"
+      },
+      {
+        "@id": "urn:ngm:class:finality-mechanism",
+        "label": "Finality Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:mining-node",
+        "label": "Mining Node"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery-protocol",
+        "label": "Peer Discovery Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:network-transport-protocol",
+        "label": "Network Transport Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-sub",
+        "label": "GossipSub"
+      },
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "@id": "urn:ngm:class:lmd-ghost",
+        "label": "LMD-GHOST"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dev-p2-p",
+        "label": "devP2P"
+      },
+      {
+        "@id": "urn:ngm:class:discv5",
+        "label": "discv5"
+      },
+      {
+        "@id": "urn:ngm:class:dns-seed-bootstrap",
+        "label": "DNS Seed Bootstrap"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
+      },
+      {
+        "@id": "urn:ngm:class:noise-protocol",
+        "label": "Noise Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fork",
+        "label": "Fork"
+      },
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-foundation-eips",
+        "label": "Ethereum Foundation EIPs"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-blockchain-initiative",
+        "label": "IEEE Blockchain Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-188",
+        "label": "NIST SP 800-188"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:230a0e31bd9609940281fed686f29949c74597f80408465b80d9c401c3840a6a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Blockchain Network is a permissionless or permissioned peer-to-peer (P2P) overlay network through which participating nodes collectively maintain, validate, and propagate a shared append-only ledger (the blockchain) without relying on any central coordinator, achieving agreement through a deterministic consensus protocol that selects and finalises canonical chain state under bounded Byzantine fault assumptions. At the physical layer the network is realised as a set of independent software processes—full nodes, light clients, validators, miners, and archive nodes—connected via encrypted TCP/IP or QUIC transport sessions, discovering peers through Kademlia-derived distributed hash table (DHT) protocols such as Ethereum's discv5 v5.1 or Bitcoin's DNS seed bootstrapping, and disseminating transactions and blocks through gossip-based flooding protocols (GossipSub in Ethereum's consensus layer, INV/GETDATA inventory propagation in Bitcoin). The network topology is neither a pure random graph nor a structured DHT overlay but an emergent hybrid: each node maintains a small out-degree peer set (typically 8–125 connections) selected by a combination of geographic diversity heuristics, late",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:archive-node",
-      "vc:label": "Archive Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:finality-mechanism",
-      "vc:label": "Finality Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:mining-node",
-      "vc:label": "Mining Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-discovery-protocol",
-      "vc:label": "Peer Discovery Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator",
-      "vc:label": "Validator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bootstrap-node",
-      "vc:label": "Bootstrap Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fork-choice-rule",
-      "vc:label": "Fork Choice Rule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:full-node",
-      "vc:label": "Full Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:light-client",
-      "vc:label": "Light Client"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mempool",
-      "vc:label": "Mempool"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-transport-protocol",
-      "vc:label": "Network Transport Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-discovery",
-      "vc:label": "Peer Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-settlement",
-      "vc:label": "Trustless Settlement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "vc:label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immutability",
-      "vc:label": "Immutability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenization",
-      "vc:label": "Tokenization"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:casper-ffg",
-      "vc:label": "Casper FFG"
-    },
-    {
-      "@id": "urn:visionflow:linked:gossip-sub",
-      "vc:label": "GossipSub"
-    },
-    {
-      "@id": "urn:visionflow:linked:kademlia-dht",
-      "vc:label": "Kademlia DHT"
-    },
-    {
-      "@id": "urn:visionflow:linked:lmd-ghost",
-      "vc:label": "LMD-GHOST"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nakamoto-consensus",
-      "vc:label": "Nakamoto Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-stake",
-      "vc:label": "Proof of Stake"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-systems-theory",
-      "vc:label": "Distributed Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-theory",
-      "vc:label": "Network Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:quic-protocol",
-      "vc:label": "QUIC Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcp-ip",
-      "vc:label": "TCP/IP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cosmos",
-      "vc:label": "Cosmos"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-solutions",
-      "vc:label": "Layer 2 Solutions"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkadot",
-      "vc:label": "Polkadot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solana",
-      "vc:label": "Solana"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:dev-p2-p",
-      "vc:label": "devP2P"
-    },
-    {
-      "@id": "urn:visionflow:linked:discv5",
-      "vc:label": "discv5"
-    },
-    {
-      "@id": "urn:visionflow:linked:dns-seed-bootstrap",
-      "vc:label": "DNS Seed Bootstrap"
-    },
-    {
-      "@id": "urn:visionflow:linked:libp2p",
-      "vc:label": "libp2p"
-    },
-    {
-      "@id": "urn:visionflow:linked:nat-traversal",
-      "vc:label": "NAT Traversal"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-protocol",
-      "vc:label": "Noise Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls-encryption",
-      "vc:label": "TLS Encryption"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-database",
-      "vc:label": "Centralised Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:client-server-architecture",
-      "vc:label": "Client-Server Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-network",
-      "vc:label": "Federated Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-financial-network",
-      "vc:label": "Traditional Financial Network"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:fork",
-      "vc:label": "Fork"
-    },
-    {
-      "@id": "urn:visionflow:linked:sharding",
-      "vc:label": "Sharding"
-    },
-    {
-      "@id": "urn:visionflow:linked:validator",
-      "vc:label": "Validator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eclipse-attack",
-      "vc:label": "Eclipse Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:finality",
-      "vc:label": "Finality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining",
-      "vc:label": "Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-topology",
-      "vc:label": "Network Topology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:node",
-      "vc:label": "Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sybil-attack",
-      "vc:label": "Sybil Attack"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-improvement-proposals",
-      "vc:label": "Bitcoin Improvement Proposals"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-foundation-eips",
-      "vc:label": "Ethereum Foundation EIPs"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-blockchain-initiative",
-      "vc:label": "IEEE Blockchain Initiative"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc-307",
-      "vc:label": "ISO TC 307"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-188",
-      "vc:label": "NIST SP 800-188"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer to Peer Network"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

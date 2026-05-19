@@ -3,74 +3,83 @@
   "title": "Networking Layer",
   "slug": "networking-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:networking-layer",
+  "classIri": "urn:ngm:class:networking-layer",
   "domain": "spatial-computing",
   "definition": "Communication systems that connect components and users across distributed metaverse environments through network protocols and software.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure-architecture",
+      "id": "urn:ngm:class:infrastructure-architecture",
       "label": "Infrastructure Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-transmission-service",
+        "id": "urn:ngm:class:data-transmission-service",
         "label": "Data Transmission Service"
       },
       {
-        "id": "urn:visionflow:linked:routing-infrastructure",
+        "id": "urn:ngm:class:routing-infrastructure",
         "label": "Routing Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:communication-software",
+        "id": "urn:ngm:class:communication-software",
         "label": "Communication Software"
       },
       {
-        "id": "urn:visionflow:owl:class:network-protocol",
+        "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:communication-protocols",
+        "id": "urn:ngm:class:communication-protocols",
         "label": "Communication Protocols"
       },
       {
-        "id": "urn:visionflow:owl:class:network-standards",
+        "id": "urn:ngm:class:network-standards",
         "label": "Network Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:physical-network-hardware",
+        "id": "urn:ngm:class:physical-network-hardware",
         "label": "Physical Network Hardware"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-connectivity",
+        "id": "urn:ngm:class:cross-platform-connectivity",
         "label": "Cross-Platform Connectivity"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-interaction",
+        "id": "urn:ngm:class:low-latency-interaction",
         "label": "Low-latency Interaction"
       },
       {
-        "id": "urn:visionflow:linked:real-time-communication",
+        "id": "urn:ngm:class:real-time-communication",
         "label": "Real-time Communication"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-computing",
+        "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure-architecture",
+        "label": "Infrastructure Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

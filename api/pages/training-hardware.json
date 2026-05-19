@@ -3,32 +3,36 @@
   "title": "Training Hardware",
   "slug": "training-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-hardware",
+  "classIri": "urn:ngm:class:training-hardware",
   "domain": "artificial-intelligence",
   "definition": "Training Hardware is a artificial intelligence concept and a type of High-Performance Computing. that enables Neural Network Training.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:high-performance-computing",
+      "id": "urn:ngm:class:high-performance-computing",
       "label": "High-Performance Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:neural-network-training",
+        "id": "urn:ngm:class:neural-network-training",
         "label": "Neural Network Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

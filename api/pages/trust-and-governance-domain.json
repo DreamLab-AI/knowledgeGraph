@@ -3,27 +3,31 @@
   "title": "Trust and Governance Domain",
   "slug": "trust-and-governance-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trust-and-governance-domain",
+  "classIri": "urn:ngm:class:trust-and-governance-domain",
   "domain": "artificial-intelligence",
-  "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems. It encompasses computational trust models, regulatory compliance, decision traceability, multi-stakeholder oversight, and ethical frameworks that enable transparent, accountable, and trustworthy interactions between humans, organizations, and autonomous systems.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

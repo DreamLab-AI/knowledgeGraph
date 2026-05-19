@@ -3,19 +3,18 @@
   "title": "Trajectory Control",
   "slug": "trajectory-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trajectory-control",
+  "classIri": "urn:ngm:class:trajectory-control",
   "domain": "robotics",
   "definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-control",
+      "id": "urn:ngm:class:motion-control",
       "label": "Motion Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

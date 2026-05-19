@@ -3,19 +3,18 @@
   "title": "Digital Humans",
   "slug": "digital-humans",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-humans",
+  "classIri": "urn:ngm:class:digital-humans",
   "domain": "spatial-computing",
-  "definition": "[Generated from Gartner emerging tech analysis] bridges-to:: [[DID Nostr Identity]]",
+  "definition": "Digital Humans is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

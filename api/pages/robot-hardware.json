@@ -3,151 +3,239 @@
   "title": "Robot Hardware",
   "slug": "robot-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-hardware",
+  "classIri": "urn:ngm:class:robot-hardware",
   "domain": "robotics",
-  "definition": "RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4.1, RP2040, ESP32-S3), motor driver electronics (ODrive Pro, MoteusController, hoverboard motor controllers), actuator assemblies (BLDC motors, servo motors, hydraulic/pneumatic actuators, compliant series-elastic actuators), power systems (multi-cell LiPo/LiFePO4 battery packs, Battery Management Systems enforcing SOC/SOH monitoring, cell balancing, thermal protection at 2\u201380A continuous), wiring harnesses (shielded twisted-pair CAN-FD at 8 Mbit/s, EtherCAT at 100 Mbit/s, RS-485, PWM signal cables rated 600V), sensor suites (proprioceptive IMUs, encoders, force/torque sensors; exteroceptive LiDAR, depth cameras, stereo rigs), communication fabric (Gigabit Ethernet, Wi-Fi 6/6E, Bluetooth 5.3, 5G NR), and structural chassis designed to IP20\u2013IP68 environmental ingress ratings. Hardware integration is mediated by [[ROS 2]] and micro-ROS, which bridge deterministic real-time microcontroller loop",
+  "definition": "RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4....",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mobile-robot-platform",
+      "id": "urn:ngm:class:mobile-robot-platform",
       "label": "Mobile Robot Platform"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics-platform",
+      "id": "urn:ngm:class:robotics-platform",
       "label": "Robotics Platform"
-    },
-    {
-      "id": "urn:visionflow:linked:mechatronics",
-      "label": "Mechatronics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
-        "id": "urn:visionflow:linked:battery-management-system",
+        "id": "urn:ngm:class:battery-management-system",
         "label": "Battery Management System"
       },
       {
-        "id": "urn:visionflow:linked:communication-bus",
+        "id": "urn:ngm:class:communication-bus",
         "label": "Communication Bus"
       },
       {
-        "id": "urn:visionflow:linked:embedded-controller",
+        "id": "urn:ngm:class:embedded-controller",
         "label": "Embedded Controller"
       },
       {
-        "id": "urn:visionflow:linked:motor-driver",
+        "id": "urn:ngm:class:motor-driver",
         "label": "Motor Driver"
       },
       {
-        "id": "urn:visionflow:linked:power-distribution-board",
+        "id": "urn:ngm:class:power-distribution-board",
         "label": "Power Distribution Board"
       },
       {
-        "id": "urn:visionflow:linked:sensor-suite",
+        "id": "urn:ngm:class:sensor-suite",
         "label": "Sensor Suite"
       },
       {
-        "id": "urn:visionflow:linked:wiring-harness",
+        "id": "urn:ngm:class:wiring-harness",
         "label": "Wiring Harness"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:can-fd-bus",
+        "id": "urn:ngm:class:can-fd-bus",
         "label": "CAN-FD Bus"
       },
       {
-        "id": "urn:visionflow:linked:ether-cat",
+        "id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
       },
       {
-        "id": "urn:visionflow:linked:imu-sensor",
+        "id": "urn:ngm:class:imu-sensor",
         "label": "IMU Sensor"
       },
       {
-        "id": "urn:visionflow:linked:li-po-battery",
+        "id": "urn:ngm:class:li-po-battery",
         "label": "LiPo Battery"
       },
       {
-        "id": "urn:visionflow:linked:motor-encoder",
+        "id": "urn:ngm:class:motor-encoder",
         "label": "Motor Encoder"
       },
       {
-        "id": "urn:visionflow:linked:real-time-operating-system",
+        "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
       },
       {
-        "id": "urn:visionflow:linked:ros-2",
+        "id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-operation",
+        "id": "urn:ngm:class:autonomous-operation",
         "label": "Autonomous Operation"
       },
       {
-        "id": "urn:visionflow:linked:robot-perception",
+        "id": "urn:ngm:class:robot-perception",
         "label": "Robot Perception"
       },
       {
-        "id": "urn:visionflow:owl:class:kinematics-model",
+        "id": "urn:ngm:class:kinematics-model",
         "label": "Kinematics Model"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-control",
+        "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
       },
       {
-        "id": "urn:visionflow:owl:class:navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:proprioceptive-sensor",
+        "id": "urn:ngm:class:proprioceptive-sensor",
         "label": "Proprioceptive Sensor"
       },
       {
-        "id": "urn:visionflow:owl:class:teleoperation",
+        "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:can-fd-protocol",
+        "id": "urn:ngm:class:can-fd-protocol",
         "label": "CAN-FD Protocol"
       },
       {
-        "id": "urn:visionflow:linked:dds-middleware",
+        "id": "urn:ngm:class:dds-middleware",
         "label": "DDS Middleware"
       },
       {
-        "id": "urn:visionflow:linked:ether-cat-protocol",
+        "id": "urn:ngm:class:ether-cat-protocol",
         "label": "EtherCAT Protocol"
       },
       {
-        "id": "urn:visionflow:linked:micro-ros",
+        "id": "urn:ngm:class:micro-ros",
         "label": "micro-ROS"
       },
       {
-        "id": "urn:visionflow:linked:ros2-control-framework",
+        "id": "urn:ngm:class:ros2-control-framework",
         "label": "ros2_control Framework"
       },
       {
-        "id": "urn:visionflow:linked:urdf-hardware-description",
+        "id": "urn:ngm:class:urdf-hardware-description",
         "label": "URDF Hardware Description"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arm-cortex-m",
+        "label": "ARM Cortex-M"
+      },
+      {
+        "id": "urn:ngm:class:ethernet-switch",
+        "label": "Ethernet Switch"
+      },
+      {
+        "id": "urn:ngm:class:fpga-acceleration",
+        "label": "FPGA Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-jetson",
+        "label": "NVIDIA Jetson"
+      },
+      {
+        "id": "urn:ngm:class:stm32-microcontroller",
+        "label": "STM32 Microcontroller"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      },
+      {
+        "id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ci-a-301-canopen-standard",
+        "label": "CiA 301 CANopen Standard"
+      },
+      {
+        "id": "urn:ngm:class:ether-cat-technology-group",
+        "label": "EtherCAT Technology Group"
+      },
+      {
+        "id": "urn:ngm:class:iec-61800-drives-standard",
+        "label": "IEC 61800 Drives Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218-robot-safety",
+        "label": "ISO 10218 Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:ros-2-reps",
+        "label": "ROS 2 REPs"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-based-control",
+        "label": "Model Based Control"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-omniverse",
+        "label": "NVIDIA Omniverse"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
+    ]
   },
   "wikilinks": [
     {

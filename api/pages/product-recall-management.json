@@ -3,19 +3,18 @@
   "title": "Product Recall Management",
   "slug": "product-recall-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:product-recall-management",
+  "classIri": "urn:ngm:class:product-recall-management",
   "domain": "blockchain",
-  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-85% whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days \u2192 2.2 seconds mango tracing), [[Carrefour]], [[MediLedger]], and automotive consortia for food safety, pharmaceuticals, and vehicle component recalls.",
+  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days \u2192 2.2 seconds mango tracing),...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Educational Technology",
   "slug": "educational-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:educational-technology",
+  "classIri": "urn:ngm:class:educational-technology",
   "domain": "spatial-computing",
-  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and methodologies for delivering learning experiences in immersive virtual environments. This includes virtual classrooms, simulation-based training, immersive learning experiences, and collaborative educational spaces that leverage spatial computing for enhanced knowledge transfer.",
+  "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and modologies for delivering learning experiences in immersive virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-technology",
+      "id": "urn:ngm:class:metaverse-technology",
       "label": "Metaverse Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

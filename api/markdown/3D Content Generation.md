@@ -128,52 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-content-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-content-generation",
+  "@type": "Class",
   "label": "3D Content Generation",
+  "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven mods.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:51c0e5ef7591702c8c4d472804e65247217bbef62b25f4282a5fbd57bc733afc"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:51c0e5ef7591702c8c4d472804e65247217bbef62b25f4282a5fbd57bc733afc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

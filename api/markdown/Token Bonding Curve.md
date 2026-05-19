@@ -192,116 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:token-bonding-curve",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:token-bonding-curve",
+  "@type": "Class",
   "label": "Token Bonding Curve",
+  "definition": "Algorithmic pricing mechanism that defines token value as a mathematical function of circulating supply and reserve balance, providing continuous liquidity through automated market making.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c8753b8e5445f4bf8064cb4c18055d9a85fd4a6724b116a7f741dc55d8a16ea"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:liquidity-mechanism",
+        "label": "Liquidity Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:pricing-formula",
+        "label": "Pricing Formula"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-pool",
+        "label": "Reserve Pool"
+      },
+      {
+        "@id": "urn:ngm:class:supply-function",
+        "label": "Supply Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-token",
+        "label": "Reserve Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-trading",
+        "label": "Automated Trading"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-liquidity",
+        "label": "Continuous Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:predictable-pricing",
+        "label": "Predictable Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c8753b8e5445f4bf8064cb4c18055d9a85fd4a6724b116a7f741dc55d8a16ea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Algorithmic pricing mechanism that defines token value as a mathematical function of circulating supply and reserve balance, providing continuous liquidity through automated market making.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:token-economy",
-      "vc:label": "Token Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:automated-market-maker",
-      "vc:label": "Automated Market Maker"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:liquidity-mechanism",
-      "vc:label": "Liquidity Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:pricing-formula",
-      "vc:label": "Pricing Formula"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-pool",
-      "vc:label": "Reserve Pool"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-function",
-      "vc:label": "Supply Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:price-oracle",
-      "vc:label": "Price Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-token",
-      "vc:label": "Reserve Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-trading",
-      "vc:label": "Automated Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-liquidity",
-      "vc:label": "Continuous Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictable-pricing",
-      "vc:label": "Predictable Pricing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:mathematical-model",
-      "vc:label": "Mathematical Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:economic-parameters",
-      "vc:label": "Economic Parameters"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

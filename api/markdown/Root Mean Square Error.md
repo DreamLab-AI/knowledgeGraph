@@ -160,41 +160,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:root-mean-square-error",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:root-mean-square-error",
+  "@type": "Class",
   "label": "Root Mean Square Error",
+  "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the ta...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:mean-absolute-error",
-      "vc:label": "Mean Absolute Error"
+      "@id": "urn:ngm:class:mean-absolute-error",
+      "label": "Mean Absolute Error"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bee8ff422a3e378e607e13c048f51c14b7f6903574a12d8e49a33da9f892d2b6"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bee8ff422a3e378e607e13c048f51c14b7f6903574a12d8e49a33da9f892d2b6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the target variable whilst giving disproportionate weight to larger errors, making it particularly sensitive to outliers and appropriate when large prediction errors are significantly more problematic than small errors.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

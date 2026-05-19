@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:character-rigging",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:character-rigging",
+  "@type": "Class",
   "label": "Character Rigging",
+  "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:animation-technique",
-      "vc:label": "Animation Technique"
+      "@id": "urn:ngm:class:animation-technique",
+      "label": "Animation Technique"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8cf9b6758ca95b2b4c52a8b90edac409cec25ebe89a26095efc976e9ad356cbd"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      },
+      {
+        "@id": "urn:ngm:class:weight-painting",
+        "label": "Weight Painting"
+      },
+      {
+        "@id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-retargeting",
+        "label": "Motion Capture Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8cf9b6758ca95b2b4c52a8b90edac409cec25ebe89a26095efc976e9ad356cbd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:skinning",
-      "vc:label": "Skinning"
-    },
-    {
-      "@id": "urn:visionflow:linked:weight-painting",
-      "vc:label": "Weight Painting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:character-model",
-      "vc:label": "Character Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:character-animation",
-      "vc:label": "Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-capture-retargeting",
-      "vc:label": "Motion Capture Retargeting"
-    },
-    {
-      "@id": "urn:visionflow:linked:skeletal-animation",
-      "vc:label": "Skeletal Animation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

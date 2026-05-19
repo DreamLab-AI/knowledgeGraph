@@ -3,32 +3,36 @@
   "title": "Infrared Camera",
   "slug": "infrared-camera",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrared-camera",
+  "classIri": "urn:ngm:class:infrared-camera",
   "domain": "spatial-computing",
   "definition": "Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "id": "urn:ngm:class:tracking-hardware",
       "label": "Tracking Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:motion-tracking",
+        "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

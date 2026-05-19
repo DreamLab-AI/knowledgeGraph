@@ -3,143 +3,255 @@
   "title": "Global Inequality",
   "slug": "global-inequality",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:global-inequality",
+  "classIri": "urn:ngm:class:global-inequality",
   "domain": "artificial-intelligence",
-  "definition": "Global Inequality is the systematic, multi-dimensional divergence in life chances, material resources, political power, and technological access experienced by individuals, households, communities, and nations across the world economic order \u2014 encompassing income inequality (the Gini coefficient measuring distributional spread from 0 perfect equality to 1 maximum concentration), wealth inequality (asset and capital ownership skewed far more steeply than income flows, with the top 10% of global households owning 76% of total household wealth while the bottom 50% holds 2%), digital and compute inequality (differential access to hardware, bandwidth, training data, and AI inference capacity), opportunity inequality (intergenerational mobility, educational attainment, access to health systems and legal protections), gender inequality (persistent labour market, pay, and asset gaps), and climate-inequality intersections (low-income populations bearing disproportionate exposure to environmental shocks they did not cause). The field integrates distributional economics, political economy, social stratification sociology, development economics, and computational social science to analyse how ",
+  "definition": "Global Inequality is the systematic, multi-dimensional divergence in life chances, material resources, political power, and technological access experienced by individuals, households, communities, and nations across the world economic order \u2014 encompassing income inequality (the Gini coefficient ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:development-economics",
+      "id": "urn:ngm:class:development-economics",
       "label": "Development Economics"
     },
     {
-      "id": "urn:visionflow:linked:distributive-justice",
+      "id": "urn:ngm:class:distributive-justice",
       "label": "Distributive Justice"
-    },
-    {
-      "id": "urn:visionflow:linked:economic-inequality",
-      "label": "Economic Inequality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compute-divide",
+        "id": "urn:ngm:class:compute-divide",
         "label": "Compute Divide"
       },
       {
-        "id": "urn:visionflow:linked:digital-divide",
+        "id": "urn:ngm:class:digital-divide",
         "label": "Digital Divide"
       },
       {
-        "id": "urn:visionflow:linked:financial-inclusion",
+        "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
-        "id": "urn:visionflow:linked:gender-pay-gap",
+        "id": "urn:ngm:class:gender-pay-gap",
         "label": "Gender Pay Gap"
       },
       {
-        "id": "urn:visionflow:linked:gini-coefficient",
+        "id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:income-inequality",
+        "id": "urn:ngm:class:income-inequality",
         "label": "Income Inequality"
       },
       {
-        "id": "urn:visionflow:linked:intergenerational-mobility",
+        "id": "urn:ngm:class:intergenerational-mobility",
         "label": "Intergenerational Mobility"
       },
       {
-        "id": "urn:visionflow:linked:labour-income-share",
+        "id": "urn:ngm:class:labour-income-share",
         "label": "Labour Income Share"
       },
       {
-        "id": "urn:visionflow:linked:wealth-inequality",
+        "id": "urn:ngm:class:wealth-inequality",
         "label": "Wealth Inequality"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:distributional-data",
+        "id": "urn:ngm:class:distributional-data",
         "label": "Distributional Data"
       },
       {
-        "id": "urn:visionflow:linked:household-survey-data",
+        "id": "urn:ngm:class:household-survey-data",
         "label": "Household Survey Data"
       },
       {
-        "id": "urn:visionflow:linked:national-accounts",
+        "id": "urn:ngm:class:national-accounts",
         "label": "National Accounts"
       },
       {
-        "id": "urn:visionflow:linked:tax-record-microdata",
+        "id": "urn:ngm:class:tax-record-microdata",
         "label": "Tax Record Microdata"
       },
       {
-        "id": "urn:visionflow:linked:world-inequality-database",
+        "id": "urn:ngm:class:world-inequality-database",
         "label": "World Inequality Database"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:digital-infrastructure-investment",
+        "id": "urn:ngm:class:digital-infrastructure-investment",
         "label": "Digital Infrastructure Investment"
       },
       {
-        "id": "urn:visionflow:linked:policy-design",
+        "id": "urn:ngm:class:policy-design",
         "label": "Policy Design"
       },
       {
-        "id": "urn:visionflow:linked:progressive-wealth-tax",
+        "id": "urn:ngm:class:progressive-wealth-tax",
         "label": "Progressive Wealth Tax"
       },
       {
-        "id": "urn:visionflow:linked:redistributive-taxation",
+        "id": "urn:ngm:class:redistributive-taxation",
         "label": "Redistributive Taxation"
       },
       {
-        "id": "urn:visionflow:linked:social-protection",
+        "id": "urn:ngm:class:social-protection",
         "label": "Social Protection"
       },
       {
-        "id": "urn:visionflow:linked:universal-basic-income",
+        "id": "urn:ngm:class:universal-basic-income",
         "label": "Universal Basic Income"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:atkinson-index",
+        "id": "urn:ngm:class:atkinson-index",
         "label": "Atkinson Index"
       },
       {
-        "id": "urn:visionflow:linked:gini-coefficient",
+        "id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:human-development-index",
+        "id": "urn:ngm:class:human-development-index",
         "label": "Human Development Index"
       },
       {
-        "id": "urn:visionflow:linked:palma-ratio",
+        "id": "urn:ngm:class:palma-ratio",
         "label": "Palma Ratio"
       },
       {
-        "id": "urn:visionflow:linked:s80-s20-ratio",
+        "id": "urn:ngm:class:s80-s20-ratio",
         "label": "S80/S20 Ratio"
       },
       {
-        "id": "urn:visionflow:linked:top-income-shares",
+        "id": "urn:ngm:class:top-income-shares",
         "label": "Top Income Shares"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ilo-weso",
+        "label": "ILO WESO"
+      },
+      {
+        "id": "urn:ngm:class:imf-article-iv-consultations",
+        "label": "IMF Article IV Consultations"
+      },
+      {
+        "id": "urn:ngm:class:oecd-income-distribution-database",
+        "label": "OECD Income Distribution Database"
+      },
+      {
+        "id": "urn:ngm:class:undp-human-development-index",
+        "label": "UNDP Human Development Index"
+      },
+      {
+        "id": "urn:ngm:class:world-bank-findex",
+        "label": "World Bank Findex"
+      },
+      {
+        "id": "urn:ngm:class:world-inequality-database",
+        "label": "World Inequality Database"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:climate-justice",
+        "label": "Climate Justice"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:global-digital-compact",
+        "label": "Global Digital Compact"
+      },
+      {
+        "id": "urn:ngm:class:just-transition",
+        "label": "Just Transition"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ilo-decent-work-agenda",
+        "label": "ILO Decent Work Agenda"
+      },
+      {
+        "id": "urn:ngm:class:oecd-guidelines-on-measuring-inequality",
+        "label": "OECD Guidelines on Measuring Inequality"
+      },
+      {
+        "id": "urn:ngm:class:united-nations-sustainable-development-goals",
+        "label": "United Nations Sustainable Development Goals"
+      },
+      {
+        "id": "urn:ngm:class:world-bank-povcal-net-standards",
+        "label": "World Bank PovcalNet Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-labour-displacement",
+        "label": "AI Labour Displacement"
+      },
+      {
+        "id": "urn:ngm:class:austerity",
+        "label": "Austerity"
+      },
+      {
+        "id": "urn:ngm:class:climate-change",
+        "label": "Climate Change"
+      },
+      {
+        "id": "urn:ngm:class:financialisation",
+        "label": "Financialisation"
+      },
+      {
+        "id": "urn:ngm:class:human-development-index",
+        "label": "Human Development Index"
+      },
+      {
+        "id": "urn:ngm:class:migration",
+        "label": "Migration"
+      },
+      {
+        "id": "urn:ngm:class:poverty",
+        "label": "Poverty"
+      },
+      {
+        "id": "urn:ngm:class:social-mobility",
+        "label": "Social Mobility"
+      },
+      {
+        "id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -224,41 +224,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:social-vr",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:social-vr",
+  "@type": "Class",
   "label": "Social VR",
+  "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
+      "@id": "urn:ngm:class:virtual-reality",
+      "label": "Virtual Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:64e216942c5b6da9bf3d68aea5c1a2776949267e488efd668f0d8abba6dd7a81"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:64e216942c5b6da9bf3d68aea5c1a2776949267e488efd668f0d8abba6dd7a81@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable diverse social activities from casual hangouts and professional meetings to educational workshops and entertainment events, with spatial audio and gesture recognition enhancing social presence. Integration with [[DecentralizedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] creates interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

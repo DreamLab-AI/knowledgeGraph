@@ -164,41 +164,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:traceability-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:traceability-mechanism",
+  "@type": "Class",
   "label": "Traceability Mechanism",
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-governance-principle",
-      "vc:label": "AI Governance Principle"
+      "@id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ddca30d573e726ba685a913fe90e053224b913cf43893d418004f396464348bf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and r",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

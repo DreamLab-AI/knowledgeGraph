@@ -284,258 +284,203 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:policy-enforcement",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:policy-enforcement",
+  "@type": "Class",
   "label": "Policy Enforcement",
+  "definition": "Mechanisms, architectures, and toolchains that translate declarative security and governance rules into runtime decisions—permitting, denying, mutating, or auditing operations across compute, data, network, and AI systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
     },
     {
-      "@id": "urn:visionflow:owl:class:security-services",
-      "vc:label": "Security Services"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
+      "@id": "urn:ngm:class:security-services",
+      "label": "Security Services"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:63b2da1ccbc192bc761d93d0af2cc9d88cd238a72a2eb33fce66546545cda49e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-article-22-compliance",
+        "label": "GDPR Article 22 Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-register",
+        "label": "AI Risk Register"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-article-22-compliance",
+        "label": "GDPR Article 22 Compliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:63b2da1ccbc192bc761d93d0af2cc9d88cd238a72a2eb33fce66546545cda49e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mechanisms, architectures, and toolchains that translate declarative security and governance rules into runtime decisions—permitting, denying, mutating, or auditing operations across compute, data, network, and AI systems. Policy enforcement separates rule authorship (Policy Administration Point, PAP), rule evaluation (Policy Decision Point, PDP), and rule application (Policy Enforcement Point, PEP) into loosely coupled tiers; a fifth actor—the Policy Information Point (PIP)—enriches evaluation requests with live attribute data. Modern enforcement spans four paradigms: Role-Based Access Control (RBAC) granting permissions via static role assignments and suited to organisations with bounded permission variance; Attribute-Based Access Control (ABAC) evaluating dynamic subject, resource, action, and environment attributes and suited to fine-grained contextual decisions; Relationship-Based Access Control (ReBAC) traversing entity-relationship graphs (e.g., a user who is an owner of a folder inherits owner rights on all nested files) and suited to collaborative document and object stores; and Policy-Based Access Control (PBAC) composing rules across RBAC/ABAC/ReBAC into a single declara",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-standards",
-      "vc:label": "Authentication Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-control",
-      "vc:label": "Compliance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-trust-risk-and-security-management",
-      "vc:label": "AI Trust Risk and Security Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-audit-trail",
-      "vc:label": "Compliance Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection-regulation",
-      "vc:label": "Data Protection Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gdpr-article-22-compliance",
-      "vc:label": "GDPR Article 22 Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-standards",
-      "vc:label": "Compliance Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-security",
-      "vc:label": "Cryptographic Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-management",
-      "vc:label": "Digital Identity Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-native-applications",
-      "vc:label": "Cloud-Native Applications"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:service-oriented-architecture",
-      "vc:label": "Service Oriented Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risk-register",
-      "vc:label": "AI Risk Register"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-trustworthiness",
-      "vc:label": "AI Trustworthiness"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-control",
-      "vc:label": "Compliance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-dashboard",
-      "vc:label": "Compliance Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-border-compliance",
-      "vc:label": "Cross Border Compliance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-regulation",
-      "vc:label": "Digital Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-services-act",
-      "vc:label": "Digital Services Act"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:community-governance-model",
-      "vc:label": "Community Governance Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-compliance",
-      "vc:label": "Blockchain Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "Blockchain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:compliance-standards",
-      "vc:label": "Compliance Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection-regulation",
-      "vc:label": "Data Protection Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gdpr-article-22-compliance",
-      "vc:label": "GDPR Article 22 Compliance"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

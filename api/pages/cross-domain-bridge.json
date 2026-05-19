@@ -3,19 +3,18 @@
   "title": "Cross Domain Bridge",
   "slug": "cross-domain-bridge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-domain-bridge",
+  "classIri": "urn:ngm:class:cross-domain-bridge",
   "domain": "infrastructure",
   "definition": "Cross Domain Bridge is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

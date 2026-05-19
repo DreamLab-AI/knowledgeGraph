@@ -3,32 +3,36 @@
   "title": "Spatial Presence",
   "slug": "spatial-presence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-presence",
+  "classIri": "urn:ngm:class:spatial-presence",
   "domain": "spatial-computing",
   "definition": "The psychological state of feeling physically located within a virtual environment, experiencing the sense of \"being there\" despite technological mediation, influenced by place illusion (perceived location), plausibility illusion (believable events), and temporal presence (immediacy of experience).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:vr-psychology",
+      "id": "urn:ngm:class:vr-psychology",
       "label": "VR Psychology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:immersive-experience",
+        "id": "urn:ngm:class:immersive-experience",
         "label": "Immersive Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Portability",
   "slug": "portability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:portability",
+  "classIri": "urn:ngm:class:portability",
   "domain": "spatial-computing",
-  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats ([[glTF]], [[USD]]), metadata schemas, and blockchain bridges\u2014enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemplified by [[Ready Player Me]] cross-platform avatars and [[Decentraland]] NFT portability.",
+  "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats metadata schemas, and blockchain bridges\u2014enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemp...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -228,332 +228,261 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:norbert-wiener",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:norbert-wiener",
+  "@type": "Individual",
   "label": "Norbert Wiener",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:history-and-path-to-agi",
-      "vc:label": "History and Path to AGI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9fd12b928e12b3c3173c4bc84a6ba5e5207ac04f8cf42485a5d4ec1766f69ded"
+  "definition": "American mathematician and founder of cybernetics who established foundational theory linking communication, control, and statistical mechanics in machines and living organisms.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:wiener-filter",
+        "label": "Wiener Filter"
+      },
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:control-algorithm",
+        "label": "Control Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9fd12b928e12b3c3173c4bc84a6ba5e5207ac04f8cf42485a5d4ec1766f69ded@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Norbert Wiener (26 November 1894 – 18 March 1964) was an American mathematician, philosopher of science, and polymath at the Massachusetts Institute of Technology whose foundational synthesis of control theory, statistical communication theory, and neurophysiology produced Cybernetics: Or Control and Communication in the Animal and the Machine (MIT Press / Wiley, 1948), establishing cybernetics as the transdisciplinary science of purposive systems governed by feedback. Wiener formalised the concept of the negative feedback loop — the mechanism by which a system continuously samples its own output, compares it against a desired goal-state or reference signal, and computes an error signal that is fed back to drive corrective action — demonstrating through mathematical rigour that this single circular causal principle unified servo-mechanisms, biological homeostasis, neurological motor control, economic price adjustment, ecological population regulation, and social norm propagation under one unified framework governed by the same differential equations and information-theoretic quantities. His wartime work (1940–1945) commissioned by the US National Defense Research Committee and task",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:wiener-filter",
-      "vc:label": "Wiener Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:probabilistic-model",
-      "vc:label": "Probabilistic Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine",
-      "vc:label": "State Machine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-algorithm",
-      "vc:label": "Learning Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:probabilistic-model",
-      "vc:label": "Probabilistic Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:education-and-ai",
-      "vc:label": "Education and AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:embodied-minds",
-      "vc:label": "Embodied Minds"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emergence",
-      "vc:label": "Emergence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reasoning",
-      "vc:label": "Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-algorithm",
-      "vc:label": "Learning Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:probabilistic-model",
-      "vc:label": "Probabilistic Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-algorithm",
-      "vc:label": "Learning Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:probabilistic-model",
-      "vc:label": "Probabilistic Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine",
-      "vc:label": "State Machine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:education-and-ai",
-      "vc:label": "Education and AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emergence",
-      "vc:label": "Emergence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reasoning",
-      "vc:label": "Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-algorithm",
-      "vc:label": "Learning Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:probabilistic-model",
-      "vc:label": "Probabilistic Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine",
-      "vc:label": "State Machine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:time-series-forecasting",
-      "vc:label": "Time Series Forecasting"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proprietary-large-language-models",
-      "vc:label": "Proprietary Large Language Models"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:embodied-minds",
-      "vc:label": "Embodied Minds"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emergence",
-      "vc:label": "Emergence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:history-and-path-to-agi",
-      "vc:label": "History and Path to AGI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reasoning",
-      "vc:label": "Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:history-and-path-to-agi",
-      "vc:label": "History and Path to AGI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety-and-alignment",
-      "vc:label": "Safety and alignment"
+      "@id": "urn:ngm:class:person",
+      "label": "Person"
     }
   ]
 }

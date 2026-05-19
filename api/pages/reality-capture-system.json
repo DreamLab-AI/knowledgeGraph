@@ -3,86 +3,99 @@
   "title": "Reality Capture System",
   "slug": "reality-capture-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reality-capture-system",
+  "classIri": "urn:ngm:class:reality-capture-system",
   "domain": "spatial-computing",
   "definition": "Physical hardware system comprising 3D scanners, LIDAR sensors, photogrammetry cameras, and associated equipment for acquiring spatial and visual data from real-world environments to create digital representations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-scanner",
+        "id": "urn:ngm:class:3-d-scanner",
         "label": "3D Scanner"
       },
       {
-        "id": "urn:visionflow:linked:depth-sensor",
+        "id": "urn:ngm:class:depth-sensor",
         "label": "Depth Sensor"
       },
       {
-        "id": "urn:visionflow:linked:lidar-sensor",
+        "id": "urn:ngm:class:lidar-sensor",
         "label": "LIDAR Sensor"
       },
       {
-        "id": "urn:visionflow:linked:photogrammetry-camera",
+        "id": "urn:ngm:class:photogrammetry-camera",
         "label": "Photogrammetry Camera"
       },
       {
-        "id": "urn:visionflow:linked:point-cloud-processor",
+        "id": "urn:ngm:class:point-cloud-processor",
         "label": "Point Cloud Processor"
       },
       {
-        "id": "urn:visionflow:linked:tracking-system",
+        "id": "urn:ngm:class:tracking-system",
         "label": "Tracking System"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-capture-rig",
+        "id": "urn:ngm:class:motion-capture-rig",
         "label": "Motion Capture Rig"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:data-processing-hardware",
+        "id": "urn:ngm:class:data-processing-hardware",
         "label": "Data Processing Hardware"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-calibration",
+        "id": "urn:ngm:class:spatial-calibration",
         "label": "Spatial Calibration"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-model-generation",
+        "id": "urn:ngm:class:3-d-model-generation",
         "label": "3D Model Generation"
       },
       {
-        "id": "urn:visionflow:linked:environment-reconstruction",
+        "id": "urn:ngm:class:environment-reconstruction",
         "label": "Environment Reconstruction"
       },
       {
-        "id": "urn:visionflow:linked:visual-representation",
+        "id": "urn:ngm:class:visual-representation",
         "label": "Visual Representation"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin-creation",
+        "id": "urn:ngm:class:digital-twin-creation",
         "label": "Digital Twin Creation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-twin-creation-pipeline",
+        "label": "Digital Twin Creation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Symbolic Object Library",
   "slug": "symbolic-object-library",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:symbolic-object-library",
+  "classIri": "urn:ngm:class:symbolic-object-library",
   "domain": "spatial-computing",
   "definition": "A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

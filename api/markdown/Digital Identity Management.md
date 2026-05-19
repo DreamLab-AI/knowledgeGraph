@@ -160,70 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-identity-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-identity-management",
+  "@type": "Class",
   "label": "Digital Identity Management",
+  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform auth...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-systems",
-      "vc:label": "Identity Systems"
+      "@id": "urn:ngm:class:identity-systems",
+      "label": "Identity Systems"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:credential-storage",
+        "label": "Credential Storage"
+      },
+      {
+        "@id": "urn:ngm:class:identity-providers",
+        "label": "Identity Providers"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-control",
+        "label": "Privacy Control"
+      },
+      {
+        "@id": "urn:ngm:class:user-authentication",
+        "label": "User Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6e0d88a1312e970fe31e9ba2da84c3522535a78f9f325268634f375d3872a81b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication. bridges-to:: [[DID Nostr Identity]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:credential-storage",
-      "vc:label": "Credential Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-providers",
-      "vc:label": "Identity Providers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:privacy-control",
-      "vc:label": "Privacy Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-authentication",
-      "vc:label": "User Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

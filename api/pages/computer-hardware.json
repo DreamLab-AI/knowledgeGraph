@@ -3,19 +3,13 @@
   "title": "Computer Hardware",
   "slug": "computer-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:computer-hardware",
+  "classIri": "urn:ngm:class:computer-hardware",
   "domain": "artificial-intelligence",
-  "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

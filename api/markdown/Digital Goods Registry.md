@@ -208,112 +208,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-goods-registry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-goods-registry",
+  "@type": "Class",
   "label": "Digital Goods Registry",
+  "definition": "Digital Goods Registry is a type of Spatial Computing in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:071eeb69dc92650ee4a4bf323e708ac435e644ba309b7b20020c7c4c208c21bc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-catalog",
+        "label": "Asset Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-store",
+        "label": "Metadata Store"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-records",
+        "label": "Ownership Records"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracker",
+        "label": "Provenance Tracker"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:search-index",
+        "label": "Search Index"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-discovery",
+        "label": "Asset Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:071eeb69dc92650ee4a4bf323e708ac435e644ba309b7b20020c7c4c208c21bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Centralised or distributed system for cataloguing, tracking, and managing digital goods and virtual assets across metaverse platforms, providing authoritative records of existence, ownership, and provenance. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-catalog",
-      "vc:label": "Asset Catalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-store",
-      "vc:label": "Metadata Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-records",
-      "vc:label": "Ownership Records"
-    },
-    {
-      "@id": "urn:visionflow:linked:provenance-tracker",
-      "vc:label": "Provenance Tracker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:search-index",
-      "vc:label": "Search Index"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-discovery",
-      "vc:label": "Asset Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-transfer",
-      "vc:label": "Ownership Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marketplace-integration",
-      "vc:label": "Marketplace Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-verification",
-      "vc:label": "Provenance Verification"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

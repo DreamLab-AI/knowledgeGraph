@@ -3,19 +3,18 @@
   "title": "Telecollaboration and Telepresence",
   "slug": "telecollaboration-and-telepresence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:telecollaboration-and-telepresence",
+  "classIri": "urn:ngm:class:telecollaboration-and-telepresence",
   "domain": "spatial-computing",
   "definition": "Telecollaboration and Telepresence is a spatial computing concept and a type of Telepresence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:telepresence",
+      "id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

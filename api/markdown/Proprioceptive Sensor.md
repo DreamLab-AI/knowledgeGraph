@@ -384,298 +384,235 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:proprioceptive-sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proprioceptive-sensor",
+  "@type": "Class",
   "label": "Proprioceptive Sensor",
+  "definition": "ProprioceptiveSensor is a transducer or sensing system that measures a robot's internal physical state — encompassing joint angle, angular velocity, linear and angular acceleration, motor torque, drive current, strain, and contact force — without reference to external landmarks or environmental f...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:control-feedback-element",
-      "vc:label": "Control Feedback Element"
+      "@id": "urn:ngm:class:control-feedback-element",
+      "label": "Control Feedback Element"
     },
     {
-      "@id": "urn:visionflow:linked:mechatronic-component",
-      "vc:label": "Mechatronic Component"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-subsystem",
-      "vc:label": "Robotic Subsystem"
+      "@id": "urn:ngm:class:mechatronic-component",
+      "label": "Mechatronic Component"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c5ca7ebb6bdf9bfb1dd3000e53b194136ae5bd66564516560ddb9a282e52a018"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:joint-encoder",
+        "label": "Joint Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:resolver",
+        "label": "Resolver"
+      },
+      {
+        "@id": "urn:ngm:class:strain-gauge",
+        "label": "Strain Gauge"
+      },
+      {
+        "@id": "urn:ngm:class:tachometer",
+        "label": "Tachometer"
+      },
+      {
+        "@id": "urn:ngm:class:current-sensor",
+        "label": "Current Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force-Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Tactile Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog to Digital Converter"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:safe-physical-human-robot-interaction",
+        "label": "Safe Physical Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hall-effect-sensing",
+        "label": "Hall Effect Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:mems-gyroscope",
+        "label": "MEMS Gyroscope"
+      },
+      {
+        "@id": "urn:ngm:class:photometric-stereo",
+        "label": "Photometric Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:quadrature-encoding",
+        "label": "Quadrature Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:wheatstone-bridge-measurement",
+        "label": "Wheatstone Bridge Measurement"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bi-ss-c-protocol",
+        "label": "BiSS-C Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:can-bus",
+        "label": "CAN Bus"
+      },
+      {
+        "@id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "@id": "urn:ngm:class:i2-c",
+        "label": "I2C"
+      },
+      {
+        "@id": "urn:ngm:class:spi",
+        "label": "SPI"
+      },
+      {
+        "@id": "urn:ngm:class:ssi-protocol",
+        "label": "SSI Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+        "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:exoskeleton-control",
+        "label": "Exoskeleton Control"
+      },
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-drives",
+        "label": "IEC 61800 Adjustable Speed Drives"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1451-sensor-standard",
+        "label": "IEEE 1451 Sensor Standard"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9283-robot-performance-standard",
+        "label": "ISO 9283 Robot Performance Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c5ca7ebb6bdf9bfb1dd3000e53b194136ae5bd66564516560ddb9a282e52a018@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ProprioceptiveSensor is a transducer or sensing system that measures a robot's internal physical state — encompassing joint angle, angular velocity, linear and angular acceleration, motor torque, drive current, strain, and contact force — without reference to external landmarks or environmental features, enabling closed-loop servo control, dynamics estimation, balance, fault detection, and safe physical human-robot interaction. The term derives from the Latin proprius (one's own) + capere (to take), by analogy with biological mechanoreceptors in muscle spindles (Ia and II afferents), Golgi tendon organs (Ib afferents), and joint capsule mechanoreceptors that supply the central nervous system with limb-state information independent of vision. In engineering practice the proprioceptive sensor category comprises: (1) rotary position encoders — incremental quadrature (Renishaw RGH/RGS series, Heidenhain ERN/ECN, US Digital HEDL) producing A/B pulse trains with index at typically 500–10,000,000 counts per revolution; absolute single-turn and multi-turn (Renishaw RESOLUTE, Heidenhain ECI/ECN, Sick Stegmann DBS) providing unambiguous angle on power-up, eliminating homing; optical and magn",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:inertial-measurement-unit",
-      "vc:label": "Inertial Measurement Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:joint-encoder",
-      "vc:label": "Joint Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolver",
-      "vc:label": "Resolver"
-    },
-    {
-      "@id": "urn:visionflow:linked:strain-gauge",
-      "vc:label": "Strain Gauge"
-    },
-    {
-      "@id": "urn:visionflow:linked:tachometer",
-      "vc:label": "Tachometer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:current-sensor",
-      "vc:label": "Current Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-torque-sensor",
-      "vc:label": "Force-Torque Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tactile-sensor",
-      "vc:label": "Tactile Sensor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-driver",
-      "vc:label": "Motor Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-operating-system",
-      "vc:label": "Real Time Operating System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-calibration",
-      "vc:label": "Sensor Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-conditioning",
-      "vc:label": "Signal Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:analog-to-digital-converter",
-      "vc:label": "Analog to Digital Converter"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:legged-locomotion",
-      "vc:label": "Legged Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-physical-human-robot-interaction",
-      "vc:label": "Safe Physical Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:closed-loop-control",
-      "vc:label": "Closed Loop Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-detection",
-      "vc:label": "Collision Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:torque-control",
-      "vc:label": "Torque Control"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:hall-effect-sensing",
-      "vc:label": "Hall Effect Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:mems-gyroscope",
-      "vc:label": "MEMS Gyroscope"
-    },
-    {
-      "@id": "urn:visionflow:linked:photometric-stereo",
-      "vc:label": "Photometric Stereo"
-    },
-    {
-      "@id": "urn:visionflow:linked:quadrature-encoding",
-      "vc:label": "Quadrature Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuation",
-      "vc:label": "Series Elastic Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wheatstone-bridge-measurement",
-      "vc:label": "Wheatstone Bridge Measurement"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:real-time-control",
-      "vc:label": "Real Time Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-dynamics",
-      "vc:label": "Robot Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:exoskeleton-control",
-      "vc:label": "Exoskeleton Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:legged-locomotion",
-      "vc:label": "Legged Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:manipulation",
-      "vc:label": "Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bi-ss-c-protocol",
-      "vc:label": "BiSS-C Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:can-bus",
-      "vc:label": "CAN Bus"
-    },
-    {
-      "@id": "urn:visionflow:linked:ether-cat",
-      "vc:label": "EtherCAT"
-    },
-    {
-      "@id": "urn:visionflow:linked:i2-c",
-      "vc:label": "I2C"
-    },
-    {
-      "@id": "urn:visionflow:linked:spi",
-      "vc:label": "SPI"
-    },
-    {
-      "@id": "urn:visionflow:linked:ssi-protocol",
-      "vc:label": "SSI Protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:li-dar",
-      "vc:label": "LiDAR"
-    },
-    {
-      "@id": "urn:visionflow:linked:radar",
-      "vc:label": "Radar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:camera",
-      "vc:label": "Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:exteroceptive-sensor",
-      "vc:label": "Exteroceptive Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ultrasonic-sensor",
-      "vc:label": "Ultrasonic Sensor"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:reinforcement-learning-for-robotics",
-      "vc:label": "Reinforcement Learning for Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:whole-body-control",
-      "vc:label": "Whole Body Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iec-61800-adjustable-speed-drives",
-      "vc:label": "IEC 61800 Adjustable Speed Drives"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1451-sensor-standard",
-      "vc:label": "IEEE 1451 Sensor Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-9283-robot-performance-standard",
-      "vc:label": "ISO 9283 Robot Performance Standard"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,147 +3,251 @@
   "title": "History and Path to AGI",
   "slug": "history-and-path-to-agi",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:history-and-path-to-agi",
+  "classIri": "urn:ngm:class:history-and-path-to-agi",
   "domain": "artificial-intelligence",
-  "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's trajectory toward Artificial General Intelligence (AGI) \u2014 a hypothetical system matching or exceeding human-level cognitive performance across all domains without task-specific training \u2014 spanning the conceptual foundations of Alan Turing's 1950 paper \"Computing Machinery and Intelligence\" in Mind (introducing the imitation game as an operational criterion for machine thought, asking \"Can machines think?\" and proposing the Turing Test as the deflationary substitute for that metaphysically fraught question), the formal founding of AI as a discipline at the Dartmouth Summer Research Project on Artificial Intelligence in 1956 convened by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon at Dartmouth College proposing over two months that \"every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simu",
+  "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's t...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-research",
+      "id": "urn:ngm:class:ai-research",
       "label": "AI Research"
     },
     {
-      "id": "urn:visionflow:linked:scientific-paradigm",
+      "id": "urn:ngm:class:scientific-paradigm",
       "label": "Scientific Paradigm"
-    },
-    {
-      "id": "urn:visionflow:linked:technology-history",
-      "label": "Technology History"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-winter",
+        "id": "urn:ngm:class:ai-winter",
         "label": "AI Winter"
       },
       {
-        "id": "urn:visionflow:linked:connectionism",
+        "id": "urn:ngm:class:connectionism",
         "label": "Connectionism"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:linked:scaling-laws",
+        "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:visionflow:owl:class:deep-learning",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:expert-systems",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Expert Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:symbolic-ai",
+        "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-substrate",
+        "id": "urn:ngm:class:computational-substrate",
         "label": "Computational Substrate"
       },
       {
-        "id": "urn:visionflow:linked:institutional-funding",
+        "id": "urn:ngm:class:institutional-funding",
         "label": "Institutional Funding"
       },
       {
-        "id": "urn:visionflow:linked:mathematical-foundations",
+        "id": "urn:ngm:class:mathematical-foundations",
         "label": "Mathematical Foundations"
       },
       {
-        "id": "urn:visionflow:linked:scientific-method",
+        "id": "urn:ngm:class:scientific-method",
         "label": "Scientific Method"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-policy",
+        "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
       },
       {
-        "id": "urn:visionflow:linked:ai-safety-research",
+        "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-systems",
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:visionflow:linked:frontier-ai-evaluation",
+        "id": "urn:ngm:class:frontier-ai-evaluation",
         "label": "Frontier AI Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:scientific-discovery-acceleration",
+        "id": "urn:ngm:class:scientific-discovery-acceleration",
         "label": "Scientific Discovery Acceleration"
       },
       {
-        "id": "urn:visionflow:owl:class:artificial-general-intelligence",
+        "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "Artificial General Intelligence"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:scaling-laws",
+        "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:visionflow:linked:turing-test",
+        "id": "urn:ngm:class:turing-test",
         "label": "Turing Test"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-mechanism",
+        "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       },
       {
-        "id": "urn:visionflow:owl:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai",
         "label": "Constitutional AI"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "id": "urn:ngm:class:acl",
+        "label": "ACL"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:nature",
+        "label": "Nature"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:science",
+        "label": "Science"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
   },
   "wikilinks": [
     {

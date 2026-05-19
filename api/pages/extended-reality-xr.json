@@ -3,78 +3,91 @@
   "title": "Extended Reality (XR)",
   "slug": "extended-reality-xr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:extended-reality-xr",
+  "classIri": "urn:ngm:class:extended-reality-xr",
   "domain": "spatial-computing",
   "definition": "Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-technology",
+      "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:augmented-reality-ar",
+        "id": "urn:ngm:class:augmented-reality-ar",
         "label": "Augmented Reality (AR)"
       },
       {
-        "id": "urn:visionflow:owl:class:mixed-reality-mr",
+        "id": "urn:ngm:class:mixed-reality-mr",
         "label": "Mixed Reality (MR)"
       },
       {
-        "id": "urn:visionflow:owl:class:reality-virtuality-continuum",
+        "id": "urn:ngm:class:reality-virtuality-continuum",
         "label": "Reality-Virtuality Continuum"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-reality-vr",
+        "id": "urn:ngm:class:virtual-reality-vr",
         "label": "Virtual Reality (VR)"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:head-mounted-display",
+        "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:visionflow:linked:input-device",
+        "id": "urn:ngm:class:input-device",
         "label": "Input Device"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-tracking",
+        "id": "urn:ngm:class:spatial-tracking",
         "label": "Spatial Tracking"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-reality-transitions",
+        "id": "urn:ngm:class:cross-reality-transitions",
         "label": "Cross-Reality Transitions"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       },
       {
-        "id": "urn:visionflow:owl:class:presence",
+        "id": "urn:ngm:class:presence",
         "label": "Presence"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-interaction",
+        "id": "urn:ngm:class:spatial-interaction",
         "label": "Spatial Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

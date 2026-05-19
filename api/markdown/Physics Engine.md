@@ -212,124 +212,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:physics-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:physics-engine",
+  "@type": "Class",
   "label": "Physics Engine",
+  "definition": "Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:605d1c8d3e5b8e94b85b7c72e3209bfe8265c7dec51286891637349bdab5b129"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:collision-detection-system",
+        "label": "Collision Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:math-library",
+        "label": "Math Library"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collision-response",
+        "label": "Collision Response"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-animation",
+        "label": "Kinematic Animation"
+      },
+      {
+        "@id": "urn:ngm:class:physical-simulation",
+        "label": "Physical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:realistic-interaction",
+        "label": "Realistic Interaction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:605d1c8d3e5b8e94b85b7c72e3209bfe8265c7dec51286891637349bdab5b129@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software component that simulates physical interactions, constraints, and dynamics in real-time for virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:simulation-environment",
-      "vc:label": "Simulation Environment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-layer",
-      "vc:label": "Compute Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:game-engine",
-      "vc:label": "Game Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:collision-detection-system",
-      "vc:label": "Collision Detection System"
-    },
-    {
-      "@id": "urn:visionflow:linked:constraint-solver",
-      "vc:label": "Constraint Solver"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:particle-system",
-      "vc:label": "Particle System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "vc:label": "Rigid Body Dynamics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:math-library",
-      "vc:label": "Math Library"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collision-response",
-      "vc:label": "Collision Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-animation",
-      "vc:label": "Kinematic Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-simulation",
-      "vc:label": "Physical Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:realistic-interaction",
-      "vc:label": "Realistic Interaction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:3-d-engine",
-      "vc:label": "3D Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:animation-system",
-      "vc:label": "Animation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

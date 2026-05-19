@@ -3,82 +3,82 @@
   "title": "Cylindrical Robot",
   "slug": "cylindrical-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cylindrical-robot",
+  "classIri": "urn:ngm:class:cylindrical-robot",
   "domain": "robotics",
-  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes. This architecture, simpler and more affordable than six-axis articulated robots, has historically dominated [[Assembly Automation]] and [[Material Handling]] applications where reach and vertical lift are primary requirements.",
+  "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:coordinate-robots",
+      "id": "urn:ngm:class:coordinate-robots",
       "label": "Coordinate Robots"
     },
     {
-      "id": "urn:visionflow:linked:fixed-base-manipulator",
+      "id": "urn:ngm:class:fixed-base-manipulator",
       "label": "Fixed-Base Manipulator"
-    },
-    {
-      "id": "urn:visionflow:owl:class:industrial-robot",
-      "label": "Industrial Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:azimuth-drive",
+        "id": "urn:ngm:class:azimuth-drive",
         "label": "Azimuth Drive"
       },
       {
-        "id": "urn:visionflow:linked:end-effector-mount",
+        "id": "urn:ngm:class:end-effector-mount",
         "label": "End-Effector Mount"
       },
       {
-        "id": "urn:visionflow:linked:radial-actuator",
+        "id": "urn:ngm:class:radial-actuator",
         "label": "Radial Actuator"
       },
       {
-        "id": "urn:visionflow:linked:vertical-actuator",
+        "id": "urn:ngm:class:vertical-actuator",
         "label": "Vertical Actuator"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:base-support",
+        "id": "urn:ngm:class:base-support",
         "label": "Base Support"
       },
       {
-        "id": "urn:visionflow:linked:prismatic-actuators",
+        "id": "urn:ngm:class:prismatic-actuators",
         "label": "Prismatic Actuators"
       },
       {
-        "id": "urn:visionflow:linked:rotary-joint",
+        "id": "urn:ngm:class:rotary-joint",
         "label": "Rotary Joint"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:component-assembly",
+        "id": "urn:ngm:class:component-assembly",
         "label": "Component Assembly"
       },
       {
-        "id": "urn:visionflow:linked:depalletising",
+        "id": "urn:ngm:class:depalletising",
         "label": "Depalletising"
       },
       {
-        "id": "urn:visionflow:linked:palletising",
+        "id": "urn:ngm:class:palletising",
         "label": "Palletising"
       },
       {
-        "id": "urn:visionflow:linked:pick-and-place",
+        "id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

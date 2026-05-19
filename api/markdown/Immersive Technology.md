@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-technology",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-technology",
+  "@type": "Class",
   "label": "Immersive Technology",
+  "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-technology",
-      "vc:label": "Digital Technology"
+      "@id": "urn:ngm:class:digital-technology",
+      "label": "Digital Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:af3b215e40b16c25b0e3bc4a88bdf65d6160e267f4dcaed4db5506da3453e564"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:af3b215e40b16c25b0e3bc4a88bdf65d6160e267f4dcaed4db5506da3453e564@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

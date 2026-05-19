@@ -3,19 +3,18 @@
   "title": "Land Scarcity",
   "slug": "land-scarcity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:land-scarcity",
+  "classIri": "urn:ngm:class:land-scarcity",
   "domain": "spatial-computing",
   "definition": "Economic principle in virtual worlds where digital land parcels are artificially limited to create value and drive virtual real estate markets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

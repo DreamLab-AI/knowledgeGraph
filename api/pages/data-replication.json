@@ -3,53 +3,57 @@
   "title": "Data Replication",
   "slug": "data-replication",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-replication",
+  "classIri": "urn:ngm:class:data-replication",
   "domain": "infrastructure",
-  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.",
+  "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized ne...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-systems",
+      "id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:storage-systems",
+        "id": "urn:ngm:class:storage-systems",
         "label": "Storage Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consistency-guarantees",
+        "id": "urn:ngm:class:consistency-guarantees",
         "label": "Consistency Guarantees"
       },
       {
-        "id": "urn:visionflow:linked:data-availability",
+        "id": "urn:ngm:class:data-availability",
         "label": "Data Availability"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

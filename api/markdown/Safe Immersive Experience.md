@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:safe-immersive-experience",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:safe-immersive-experience",
+  "@type": "Class",
   "label": "Safe Immersive Experience",
+  "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:user-safety",
-      "vc:label": "User Safety"
+      "@id": "urn:ngm:class:user-safety",
+      "label": "User Safety"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f7fa50fefa75e38d13b3d5b39953338267e478b96b184235698df402ca861af5"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:responsible-xr-design",
+        "label": "Responsible XR Design"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7fa50fefa75e38d13b3d5b39953338267e478b96b184235698df402ca861af5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:responsible-xr-design",
-      "vc:label": "Responsible XR Design"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

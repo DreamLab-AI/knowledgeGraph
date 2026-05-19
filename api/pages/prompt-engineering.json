@@ -3,179 +3,291 @@
   "title": "Prompt Engineering",
   "slug": "prompt-engineering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:prompt-engineering",
+  "classIri": "urn:ngm:class:prompt-engineering",
   "domain": "artificial-intelligence",
-  "definition": "Prompt Engineering is the systematic discipline of designing, structuring, and optimising natural language or structured inputs (prompts) to elicit desired behaviours, outputs, and reasoning traces from large language models (LLMs) and other generative AI systems, spanning a hierarchy of techniques from zero-shot instruction following through few-shot in-context learning (ICL) where 1-16 demonstration examples are embedded in context improving task accuracy by 10-40% across classification, translation, and reasoning benchmarks, to chain-of-thought (CoT) prompting (Wei et al. 2022 NeurIPS) where explicit step-by-step reasoning elicitation through the phrase \"Let's think step by step\" improved GPT-3 performance on GSM8K arithmetic from 17.9% to 48.7% and on MATH from 5% to 40%+, self-consistency decoding (Wang et al. 2022) sampling 40+ diverse reasoning chains and majority-voting the final answer to gain 17.9% on GSM8K over greedy CoT, tree-of-thoughts (ToT) (Yao et al. 2023 NeurIPS) decomposing problems into intermediate thought nodes explored via breadth-first or depth-first search with LLM-based evaluation raising Game of 24 success from 4% (CoT) to 74%, ReAct (Yao et al. 2022) in",
+  "definition": "Prompt Engineering is the systematic discipline of designing, structuring, and optimising natural language or structured inputs (prompts) to elicit desired behaviours, outputs, and reasoning traces from large language models (LLMs) and other generative AI systems, spanning a hierarchy of techniqu...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:in-context-learning",
+      "id": "urn:ngm:class:in-context-learning",
       "label": "In-Context Learning"
     },
     {
-      "id": "urn:visionflow:linked:applied-artificial-intelligence",
+      "id": "urn:ngm:class:applied-artificial-intelligence",
       "label": "Applied Artificial Intelligence"
-    },
-    {
-      "id": "urn:visionflow:linked:instruction-following",
-      "label": "Instruction Following"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:automatic-prompt-optimisation",
+        "id": "urn:ngm:class:automatic-prompt-optimisation",
         "label": "Automatic Prompt Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
       },
       {
-        "id": "urn:visionflow:linked:dspy",
+        "id": "urn:ngm:class:dspy",
         "label": "DSPy"
       },
       {
-        "id": "urn:visionflow:linked:few-shot-prompting",
+        "id": "urn:ngm:class:few-shot-prompting",
         "label": "Few-Shot Prompting"
       },
       {
-        "id": "urn:visionflow:linked:prompt-injection-defence",
+        "id": "urn:ngm:class:prompt-injection-defence",
         "label": "Prompt Injection Defence"
       },
       {
-        "id": "urn:visionflow:linked:prompt-templates",
+        "id": "urn:ngm:class:prompt-templates",
         "label": "Prompt Templates"
       },
       {
-        "id": "urn:visionflow:linked:re-act",
+        "id": "urn:ngm:class:re-act",
         "label": "ReAct"
       },
       {
-        "id": "urn:visionflow:linked:self-consistency",
+        "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
       },
       {
-        "id": "urn:visionflow:linked:structured-output",
+        "id": "urn:ngm:class:structured-output",
         "label": "Structured Output"
       },
       {
-        "id": "urn:visionflow:linked:system-prompts",
+        "id": "urn:ngm:class:system-prompts",
         "label": "System Prompts"
       },
       {
-        "id": "urn:visionflow:linked:tree-of-thoughts",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thoughts"
       },
       {
-        "id": "urn:visionflow:linked:zero-shot-prompting",
+        "id": "urn:ngm:class:zero-shot-prompting",
         "label": "Zero-Shot Prompting"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:instruction-following",
+        "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:visionflow:linked:rlhf",
+        "id": "urn:ngm:class:rlhf",
         "label": "RLHF"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenisation",
+        "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
       },
       {
-        "id": "urn:visionflow:owl:class:transformer-architecture",
+        "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:structured-output",
+        "id": "urn:ngm:class:structured-output",
         "label": "Structured Output"
       },
       {
-        "id": "urn:visionflow:linked:tool-use",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       },
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:visionflow:owl:class:agents",
+        "id": "urn:ngm:class:agents",
         "label": "Agents"
       },
       {
-        "id": "urn:visionflow:owl:class:chatbots",
+        "id": "urn:ngm:class:chatbots",
         "label": "Chatbots"
       },
       {
-        "id": "urn:visionflow:owl:class:cli-multi-agent-systems",
+        "id": "urn:ngm:class:cli-multi-agent-systems",
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:reasoning",
+        "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:automatic-prompt-optimisation",
+        "id": "urn:ngm:class:automatic-prompt-optimisation",
         "label": "Automatic Prompt Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
       },
       {
-        "id": "urn:visionflow:linked:dspy",
+        "id": "urn:ngm:class:dspy",
         "label": "DSPy"
       },
       {
-        "id": "urn:visionflow:linked:in-context-learning",
+        "id": "urn:ngm:class:in-context-learning",
         "label": "In-Context Learning"
       },
       {
-        "id": "urn:visionflow:linked:instruction-following",
+        "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:visionflow:linked:re-act",
+        "id": "urn:ngm:class:re-act",
         "label": "ReAct"
       },
       {
-        "id": "urn:visionflow:linked:self-consistency",
+        "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dspy",
+        "label": "DSPy"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:courses-and-training",
+        "label": "Courses and Training"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      }
+    ]
   },
   "wikilinks": [
     {

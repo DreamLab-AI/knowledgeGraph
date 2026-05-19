@@ -3,19 +3,13 @@
   "title": "Unsupervised Learning",
   "slug": "unsupervised-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:unsupervised-learning",
+  "classIri": "urn:ngm:class:unsupervised-learning",
   "domain": "artificial-intelligence",
-  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

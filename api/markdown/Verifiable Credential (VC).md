@@ -204,128 +204,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:verifiable-credential-vc",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:verifiable-credential-vc",
+  "@type": "Class",
   "label": "Verifiable Credential (VC)",
+  "definition": "A W3C standard for tamper-evident credentials that can be cryptographically verified, containing claims made by an issuer about a subject, enabling trustable digital attestations without requiring direct communication with the issuer.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:15f797c54395d972c16eb1922b5f55e06337c065782feddc399ee65db4928d44"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:claim",
+        "label": "Claim"
+      },
+      {
+        "@id": "urn:ngm:class:credential-metadata",
+        "label": "Credential Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:issuer-signature",
+        "label": "Issuer Signature"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-wallet",
+        "label": "Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-verification",
+        "label": "Privacy-Preserving Verification"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:trustable-attestations",
+        "label": "Trustable Attestations"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-presentations",
+        "label": "Verifiable Presentations"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity-ssi",
+        "label": "Self-Sovereign Identity (SSI)"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:15f797c54395d972c16eb1922b5f55e06337c065782feddc399ee65db4928d44@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A W3C standard for tamper-evident credentials that can be cryptographically verified, containing claims made by an issuer about a subject, enabling trustable digital attestations without requiring direct communication with the issuer.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:self-sovereign-identity-ssi",
-      "vc:label": "Self-Sovereign Identity (SSI)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:claim",
-      "vc:label": "Claim"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-metadata",
-      "vc:label": "Credential Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-schema",
-      "vc:label": "Credential Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proof",
-      "vc:label": "Cryptographic Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:issuer-signature",
-      "vc:label": "Issuer Signature"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-wallet",
-      "vc:label": "Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identity-did",
-      "vc:label": "Decentralized Identity (DID)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-verification",
-      "vc:label": "Privacy-Preserving Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustable-attestations",
-      "vc:label": "Trustable Attestations"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-presentations",
-      "vc:label": "Verifiable Presentations"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:credential-status-registry",
-      "vc:label": "Credential Status Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data-signatures",
-      "vc:label": "Linked Data Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-vc-data-model",
-      "vc:label": "W3C VC Data Model"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

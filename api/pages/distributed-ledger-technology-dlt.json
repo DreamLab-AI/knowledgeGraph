@@ -3,106 +3,110 @@
   "title": "Distributed Ledger Technology (DLT)",
   "slug": "distributed-ledger-technology-dlt",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+  "classIri": "urn:ngm:class:distributed-ledger-technology-dlt",
   "domain": "infrastructure",
   "definition": "Distributed database infrastructure using cryptographic consensus mechanisms to maintain immutable, tamper-resistant records across decentralised peer-to-peer networks without centralised authority.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:block-structure",
+        "id": "urn:ngm:class:block-structure",
         "label": "Block Structure"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:distributed-network",
+        "id": "urn:ngm:class:distributed-network",
         "label": "Distributed Network"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:visionflow:owl:class:transaction-pool",
+        "id": "urn:ngm:class:transaction-pool",
         "label": "Transaction Pool"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-algorithm",
+        "id": "urn:ngm:class:cryptographic-algorithm",
         "label": "Cryptographic Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:network-protocol",
+        "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-application",
+        "id": "urn:ngm:class:decentralized-application",
         "label": "Decentralized Application"
       },
       {
-        "id": "urn:visionflow:linked:immutable-record",
+        "id": "urn:ngm:class:immutable-record",
         "label": "Immutable Record"
       },
       {
-        "id": "urn:visionflow:linked:trustless-transaction",
+        "id": "urn:ngm:class:trustless-transaction",
         "label": "Trustless Transaction"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-notary-service",
+        "id": "urn:ngm:class:virtual-notary-service",
         "label": "Virtual Notary Service"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

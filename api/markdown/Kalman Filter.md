@@ -196,66 +196,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:kalman-filter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:kalman-filter",
+  "@type": "Class",
   "label": "Kalman Filter",
+  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:bayes-filter",
-      "vc:label": "Bayes Filter"
+      "@id": "urn:ngm:class:bayes-filter",
+      "label": "Bayes Filter"
     },
     {
-      "@id": "urn:visionflow:owl:class:state-estimation",
-      "vc:label": "State Estimation"
+      "@id": "urn:ngm:class:state-estimation",
+      "label": "State Estimation"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gaussian-noise-assumption",
+        "label": "Gaussian Noise Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:linear-system-model",
+        "label": "Linear System Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ea6c2983b34f00da5cacfd50813bb1c8e9d618c9e38659a1f02278e5eb24e5f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gaussian-noise-assumption",
-      "vc:label": "Gaussian Noise Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-system-model",
-      "vc:label": "Linear System Model"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:rb-1008-odometry",
-      "vc:label": "RB-1008-odometry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

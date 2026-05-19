@@ -224,128 +224,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-of-society-dto-s",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-of-society-dto-s",
+  "@type": "Class",
   "label": "Digital Twin of Society (DToS)",
+  "definition": "Digital Twin of Society (DToS) is a type of Spatial Computing in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:387f7bf30699be6a6c1e2591529cd9faeed61070bd6655585300e8f92b15c28f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:city-infrastructure-twin",
+        "label": "City Infrastructure Twin"
+      },
+      {
+        "@id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sensor-network",
+        "label": "Environmental Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:population-simulation",
+        "label": "Population Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:traffic-management-system",
+        "label": "Traffic Management System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:agent-based-simulation",
+        "label": "Agent-Based Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-city-data",
+        "label": "Real-time City Data"
+      },
+      {
+        "@id": "urn:ngm:class:urban-data-platform",
+        "label": "Urban Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:crisis-management",
+        "label": "Crisis Management"
+      },
+      {
+        "@id": "urn:ngm:class:policy-simulation",
+        "label": "Policy Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-optimization",
+        "label": "Sustainability Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:urban-planning",
+        "label": "Urban Planning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:smart-city-ecosystem",
+        "label": "Smart City Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:387f7bf30699be6a6c1e2591529cd9faeed61070bd6655585300e8f92b15c28f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A large-scale simulation of social, economic, and behavioural systems integrating city infrastructure, population dynamics, and environmental data to model and optimise societal outcomes. bridges-to:: [[Autonomous Robot]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:smart-city-ecosystem",
-      "vc:label": "Smart City Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:city-infrastructure-twin",
-      "vc:label": "City Infrastructure Twin"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-model",
-      "vc:label": "Economic Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-sensor-network",
-      "vc:label": "Environmental Sensor Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:population-simulation",
-      "vc:label": "Population Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:traffic-management-system",
-      "vc:label": "Traffic Management System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:agent-based-simulation",
-      "vc:label": "Agent-Based Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-city-data",
-      "vc:label": "Real-time City Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:urban-data-platform",
-      "vc:label": "Urban Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:crisis-management",
-      "vc:label": "Crisis Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-simulation",
-      "vc:label": "Policy Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-optimization",
-      "vc:label": "Sustainability Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:urban-planning",
-      "vc:label": "Urban Planning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:census-data",
-      "vc:label": "Census Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:geographic-information-system",
-      "vc:label": "Geographic Information System"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-network-analysis",
-      "vc:label": "Social Network Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensor-network",
-      "vc:label": "IoT Sensor Network"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -204,120 +204,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reputation-data",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reputation-data",
+  "@type": "Class",
   "label": "Reputation Data",
+  "definition": "A structured dataset containing historical records of user behavior, transaction outcomes, peer feedback, and trust metrics used to calculate reputation scores in peer-to-peer systems and virtual communities.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
+      "@id": "urn:ngm:class:reputation-system",
+      "label": "Reputation System"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:62e427c925aa60cc735c199673e7d74016dc072fbc056fbdbaf27c9380c44624"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behavioral-pattern",
+        "label": "Behavioral Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-score",
+        "label": "Feedback Score"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-history",
+        "label": "Transaction History"
+      },
+      {
+        "@id": "urn:ngm:class:trust-indicator",
+        "label": "Trust Indicator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:timestamp-service",
+        "label": "Timestamp Service"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-moderation",
+        "label": "Community Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:trust-scoring",
+        "label": "Trust Scoring"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:social-graph",
+        "label": "Social Graph"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:62e427c925aa60cc735c199673e7d74016dc072fbc056fbdbaf27c9380c44624@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured dataset containing historical records of user behavior, transaction outcomes, peer feedback, and trust metrics used to calculate reputation scores in peer-to-peer systems and virtual communities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:social-graph",
-      "vc:label": "Social Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-pattern",
-      "vc:label": "Behavioral Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedback-score",
-      "vc:label": "Feedback Score"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-history",
-      "vc:label": "Transaction History"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-indicator",
-      "vc:label": "Trust Indicator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:timestamp-service",
-      "vc:label": "Timestamp Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-moderation",
-      "vc:label": "Community Moderation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-detection",
-      "vc:label": "Fraud Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-scoring",
-      "vc:label": "Trust Scoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

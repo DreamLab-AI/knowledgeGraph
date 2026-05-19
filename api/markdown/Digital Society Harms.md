@@ -484,292 +484,223 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-society-harms",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-society-harms",
+  "@type": "Class",
   "label": "Digital Society Harms",
+  "definition": "Digital Society Harms is the catalogue of empirically documented and structurally anticipated negative impacts arising from the deployment of digital, algorithmic, and AI systems at population scale across information, psychological, economic, social, human-rights, child-safety, environmental, an...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:sociotechnical-risk",
-      "vc:label": "Sociotechnical Risk"
+      "@id": "urn:ngm:class:sociotechnical-risk",
+      "label": "Sociotechnical Risk"
     },
     {
-      "@id": "urn:visionflow:owl:class:digital-safety",
-      "vc:label": "Digital Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-rights",
-      "vc:label": "Human Rights"
+      "@id": "urn:ngm:class:digital-safety",
+      "label": "Digital Safety"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5cb775ee1953c1b1abf7d3c1c7cb13c390bdbff79267562161d8c960ca7a0bf1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:child-safety-harms",
+        "label": "Child Safety Harms"
+      },
+      {
+        "@id": "urn:ngm:class:economic-harms",
+        "label": "Economic Harms"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-harms",
+        "label": "Environmental Harms"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-harms",
+        "label": "Human Rights Harms"
+      },
+      {
+        "@id": "urn:ngm:class:information-harms",
+        "label": "Information Harms"
+      },
+      {
+        "@id": "urn:ngm:class:labour-harms",
+        "label": "Labour Harms"
+      },
+      {
+        "@id": "urn:ngm:class:psychological-harms",
+        "label": "Psychological Harms"
+      },
+      {
+        "@id": "urn:ngm:class:social-harms",
+        "label": "Social Harms"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:civil-society-oversight",
+        "label": "Civil Society Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-base",
+        "label": "Evidence Base"
+      },
+      {
+        "@id": "urn:ngm:class:harm-taxonomy",
+        "label": "Harm Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:harm-mitigation",
+        "label": "Harm Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-regulation",
+        "label": "Online Safety Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:platform-liability",
+        "label": "Platform Liability"
+      },
+      {
+        "@id": "urn:ngm:class:user-empowerment",
+        "label": "User Empowerment"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ada-lovelace-harms-framework",
+        "label": "Ada Lovelace Harms Framework"
+      },
+      {
+        "@id": "urn:ngm:class:council-of-europe-huderia",
+        "label": "Council of Europe HUDERIA"
+      },
+      {
+        "@id": "urn:ngm:class:ico-children-code",
+        "label": "ICO Children Code"
+      },
+      {
+        "@id": "urn:ngm:class:mit-ai-risk-repository-taxonomy",
+        "label": "MIT AI Risk Repository Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom-online-safety-act-codes",
+        "label": "Ofcom Online Safety Act Codes"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:algorithmic-audit",
+        "label": "Algorithmic Audit"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:independent-research",
+        "label": "Independent Research"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorithmic-amplification",
+        "label": "Algorithmic Amplification"
+      },
+      {
+        "@id": "urn:ngm:class:attention-economy",
+        "label": "Attention Economy"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:child-safety-online",
+        "label": "Child Safety Online"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-resilience",
+        "label": "Democratic Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-advocacy",
+        "label": "Digital Rights Advocacy"
+      },
+      {
+        "@id": "urn:ngm:class:trauma-informed-policy",
+        "label": "Trauma-Informed Policy"
+      },
+      {
+        "@id": "urn:ngm:class:worker-protection",
+        "label": "Worker Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:council-of-europe-framework-convention-on-ai",
+        "label": "Council of Europe Framework Convention on AI"
+      },
+      {
+        "@id": "urn:ngm:class:eu-digital-services-act",
+        "label": "EU Digital Services Act"
+      },
+      {
+        "@id": "urn:ngm:class:ico-age-appropriate-design-code",
+        "label": "ICO Age-Appropriate Design Code"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5cb775ee1953c1b1abf7d3c1c7cb13c390bdbff79267562161d8c960ca7a0bf1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital Society Harms is the catalogue of empirically documented and structurally anticipated negative impacts arising from the deployment of digital, algorithmic, and AI systems at population scale across information, psychological, economic, social, human-rights, child-safety, environmental, and labour dimensions, formalised through overlapping taxonomies (Ofcom Online Safety Act 2023 Schedule 5 priority illegal harms — child sexual exploitation and abuse CSEA, terrorism, suicide/self-harm content, dishonest content/fraud, controlling or coercive behaviour, harassment/stalking, hate, intimate-image abuse, drugs/weapons; Schedule 6 priority harms to children — pornography, abuse/hate, bullying, violent content, harmful substances, body-stigma content, dangerous-stunts content; Schedule 7 user-empowerment categories — suicide/self-harm content adults can opt out of; Ada Lovelace Institute Harms Framework 2022 distinguishing allocative/representational/quality-of-service/loss-of-liberty/social-system harms; MIT AI Risk Repository Slattery et al. August 2024 cataloguing 700+ unique risks across 23 source documents and 7 risk taxonomies covering causal factors entity/intent/timing and",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:child-safety-harms",
-      "vc:label": "Child Safety Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-harms",
-      "vc:label": "Economic Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-harms",
-      "vc:label": "Environmental Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-rights-harms",
-      "vc:label": "Human Rights Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-harms",
-      "vc:label": "Information Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:labour-harms",
-      "vc:label": "Labour Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:psychological-harms",
-      "vc:label": "Psychological Harms"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-harms",
-      "vc:label": "Social Harms"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:civil-society-oversight",
-      "vc:label": "Civil Society Oversight"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-base",
-      "vc:label": "Evidence Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:harm-taxonomy",
-      "vc:label": "Harm Taxonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:incident-reporting",
-      "vc:label": "Incident Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:harm-mitigation",
-      "vc:label": "Harm Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-regulation",
-      "vc:label": "Online Safety Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-liability",
-      "vc:label": "Platform Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-empowerment",
-      "vc:label": "User Empowerment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
-      "vc:label": "Algorithmic Accountability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ada-lovelace-harms-framework",
-      "vc:label": "Ada Lovelace Harms Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:council-of-europe-huderia",
-      "vc:label": "Council of Europe HUDERIA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-children-code",
-      "vc:label": "ICO Children Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:mit-ai-risk-repository-taxonomy",
-      "vc:label": "MIT AI Risk Repository Taxonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom-online-safety-act-codes",
-      "vc:label": "Ofcom Online Safety Act Codes"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:empirical-harm-measurement",
-      "vc:label": "Empirical Harm Measurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-audit",
-      "vc:label": "Independent Audit"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-transparency",
-      "vc:label": "Platform Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:researcher-data-access",
-      "vc:label": "Researcher Data Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:whistleblower-protection",
-      "vc:label": "Whistleblower Protection"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:child-safety-online",
-      "vc:label": "Child Safety Online"
-    },
-    {
-      "@id": "urn:visionflow:linked:democratic-resilience",
-      "vc:label": "Democratic Resilience"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-rights-advocacy",
-      "vc:label": "Digital Rights Advocacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:trauma-informed-policy",
-      "vc:label": "Trauma-Informed Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:worker-protection",
-      "vc:label": "Worker Protection"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-audit",
-      "vc:label": "Algorithmic Audit"
-    },
-    {
-      "@id": "urn:visionflow:linked:impact-assessment",
-      "vc:label": "Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-research",
-      "vc:label": "Independent Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:transparency-reporting",
-      "vc:label": "Transparency Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:individual-choice-framing",
-      "vc:label": "Individual Choice Framing"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-only-solutions",
-      "vc:label": "Market-Only Solutions"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-neutral-platform-doctrine",
-      "vc:label": "Net-Neutral Platform Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-innovation",
-      "vc:label": "Permissionless Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:techno-utopianism",
-      "vc:label": "Techno-Utopianism"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-amplification",
-      "vc:label": "Algorithmic Amplification"
-    },
-    {
-      "@id": "urn:visionflow:linked:attention-economy",
-      "vc:label": "Attention Economy"
-    },
-    {
-      "@id": "urn:visionflow:linked:surveillance-capitalism",
-      "vc:label": "Surveillance Capitalism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias",
-      "vc:label": "Algorithmic Bias"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:council-of-europe-framework-convention-on-ai",
-      "vc:label": "Council of Europe Framework Convention on AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-digital-services-act",
-      "vc:label": "EU Digital Services Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-age-appropriate-design-code",
-      "vc:label": "ICO Age-Appropriate Design Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-act-2023",
-      "vc:label": "Online Safety Act 2023"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

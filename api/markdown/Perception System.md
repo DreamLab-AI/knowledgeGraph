@@ -652,78 +652,63 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:perception-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:perception-system",
+  "@type": "Class",
   "label": "Perception System",
+  "definition": "A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:autonomous-systems",
-      "vc:label": "Autonomous Systems"
+      "@id": "urn:ngm:class:autonomous-systems",
+      "label": "Autonomous Systems"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-mapping",
+        "label": "Environmental Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-virtual-entity",
+        "label": "Intelligent Virtual Entity"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]], and [[Scene Understanding]]. Perception systems fuse data from multiple [[Sensor Modalities]] ([[Camera]], [[LiDAR]], [[Radar]], [[Ultrasonic Sensors]]) to create robust environmental models for [[Autonomous Decision-Making]]. [Updated 2025]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:intelligent-virtual-entity",
-      "vc:label": "Intelligent Virtual Entity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics-systems",
-      "vc:label": "Robotics Systems"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:environmental-mapping",
-      "vc:label": "Environmental Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-recognition",
-      "vc:label": "Object Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:situational-awareness",
-      "vc:label": "Situational Awareness"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -500,300 +500,227 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:generative-adversarial-networks",
+  "@type": "Class",
   "label": "Generative Adversarial Networks",
+  "definition": "Generative Adversarial Networks (GANs) are a class of deep generative models introduced by Ian Goodfellow and colleagues at the University of Montreal framing density estimation as a two-player zero-sum minimax game between a generator network G:Z→X mapping samples from a low-dimensional latent p...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:adversarial-learning-system",
-      "vc:label": "Adversarial Learning System"
+      "@id": "urn:ngm:class:adversarial-learning-system",
+      "label": "Adversarial Learning System"
     },
     {
-      "@id": "urn:visionflow:linked:implicit-density-model",
-      "vc:label": "Implicit Density Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unsupervised-learning",
-      "vc:label": "Unsupervised Learning"
+      "@id": "urn:ngm:class:implicit-density-model",
+      "label": "Implicit Density Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:809adcd22708f0e5571a2b29493c6b8a253111c641e8729a1251adff6500f73a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adversarial-loss",
+        "label": "Adversarial Loss"
+      },
+      {
+        "@id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "@id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-procedure",
+        "label": "Sampling Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:differentiable-architecture",
+        "label": "Differentiable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:training-data-distribution",
+        "label": "Training Data Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:implicit-density-estimation",
+        "label": "Implicit Density Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:jensen-shannon-divergence-minimisation",
+        "label": "Jensen-Shannon Divergence Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:minimax-optimisation",
+        "label": "Minimax Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:wasserstein-distance-minimisation",
+        "label": "Wasserstein Distance Minimisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-penalty",
+        "label": "Gradient Penalty"
+      },
+      {
+        "@id": "urn:ngm:class:re-lu-activation",
+        "label": "ReLU Activation"
+      },
+      {
+        "@id": "urn:ngm:class:spectral-normalisation",
+        "label": "Spectral Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-synthesis",
+        "label": "Medical Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-synthesis",
+        "label": "Privacy-Preserving Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:fid-benchmark-protocol",
+        "label": "FID Benchmark Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:809adcd22708f0e5571a2b29493c6b8a253111c641e8729a1251adff6500f73a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Generative Adversarial Networks (GANs) are a class of deep generative models introduced by Ian Goodfellow and colleagues at the University of Montreal in 2014, framing density estimation as a two-player zero-sum minimax game between a generator network G:Z→X mapping samples from a low-dimensional latent prior z∼p_z(z) (typically isotropic Gaussian N(0,I) or uniform U(-1,1) of dimension 100-512) into a high-dimensional data space X (images, audio, text, molecular graphs, tabular records), and a discriminator network D:X→[0,1] producing the probability that a given sample originated from the real data distribution p_data(x) rather than the generator's induced distribution p_g(x), trained jointly via the canonical value function V(D,G) = E_{x∼p_data}[log D(x)] + E_{z∼p_z}[log(1−D(G(z)))] with G minimising and D maximising under stochastic gradient descent, theoretically converging at the Nash equilibrium where p_g = p_data and D(x) = 1/2 everywhere (Goodfellow et al. 2014 demonstrating the global optimum minimises the Jensen-Shannon divergence JSD(p_data ‖ p_g) between real and generated distributions), spawning an extensive variant ecosystem (DCGAN Radford et al. 2015 establishing co",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adversarial-loss",
-      "vc:label": "Adversarial Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:discriminator-network",
-      "vc:label": "Discriminator Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:generator-network",
-      "vc:label": "Generator Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampling-procedure",
-      "vc:label": "Sampling Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-function",
-      "vc:label": "Value Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latent-space",
-      "vc:label": "Latent Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimiser",
-      "vc:label": "Optimiser"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:differentiable-architecture",
-      "vc:label": "Differentiable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-data-distribution",
-      "vc:label": "Training Data Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-augmentation",
-      "vc:label": "Data Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-adaptation",
-      "vc:label": "Domain Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-synthesis",
-      "vc:label": "Image Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-to-image-translation",
-      "vc:label": "Image to Image Translation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:super-resolution",
-      "vc:label": "Super Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synthetic-data-generation",
-      "vc:label": "Synthetic Data Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:implicit-density-estimation",
-      "vc:label": "Implicit Density Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:jensen-shannon-divergence-minimisation",
-      "vc:label": "Jensen-Shannon Divergence Minimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:minimax-optimisation",
-      "vc:label": "Minimax Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:wasserstein-distance-minimisation",
-      "vc:label": "Wasserstein Distance Minimisation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimal-transport",
-      "vc:label": "Optimal Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:creative-tools",
-      "vc:label": "Creative Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake-detection",
-      "vc:label": "Deepfake Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-image-synthesis",
-      "vc:label": "Medical Image Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-synthesis",
-      "vc:label": "Privacy-Preserving Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-simulation",
-      "vc:label": "Scientific Simulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:convolution",
-      "vc:label": "Convolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:gradient-penalty",
-      "vc:label": "Gradient Penalty"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-lu-activation",
-      "vc:label": "ReLU Activation"
-    },
-    {
-      "@id": "urn:visionflow:linked:spectral-normalisation",
-      "vc:label": "Spectral Normalisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:batch-normalisation",
-      "vc:label": "Batch Normalisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:autoregressive-model",
-      "vc:label": "Autoregressive Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:normalising-flow",
-      "vc:label": "Normalising Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:representation-learning",
-      "vc:label": "Representation Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:fid-benchmark-protocol",
-      "vc:label": "FID Benchmark Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-data",
-      "vc:label": "Synthetic Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

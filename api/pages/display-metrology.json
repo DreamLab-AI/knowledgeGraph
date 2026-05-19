@@ -3,78 +3,87 @@
   "title": "Display Metrology",
   "slug": "display-metrology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:display-metrology",
+  "classIri": "urn:ngm:class:display-metrology",
   "domain": "spatial-computing",
   "definition": "Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:xr-testing-infrastructure",
+      "id": "urn:ngm:class:xr-testing-infrastructure",
       "label": "XR Testing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:colorimeter",
+        "id": "urn:ngm:class:colorimeter",
         "label": "Colorimeter"
       },
       {
-        "id": "urn:visionflow:linked:contrast-ratio-meter",
+        "id": "urn:ngm:class:contrast-ratio-meter",
         "label": "Contrast Ratio Meter"
       },
       {
-        "id": "urn:visionflow:linked:luminance-meter",
+        "id": "urn:ngm:class:luminance-meter",
         "label": "Luminance Meter"
       },
       {
-        "id": "urn:visionflow:linked:photometer",
+        "id": "urn:ngm:class:photometer",
         "label": "Photometer"
       },
       {
-        "id": "urn:visionflow:owl:class:resolution-test-chart",
+        "id": "urn:ngm:class:resolution-test-chart",
         "label": "Resolution Test Chart"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:environmental-control",
+        "id": "urn:ngm:class:environmental-control",
         "label": "Environmental Control"
       },
       {
-        "id": "urn:visionflow:linked:measurement-protocols",
+        "id": "urn:ngm:class:measurement-protocols",
         "label": "Measurement Protocols"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-standards",
+        "id": "urn:ngm:class:calibration-standards",
         "label": "Calibration Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance-testing",
+        "id": "urn:ngm:class:compliance-testing",
         "label": "Compliance Testing"
       },
       {
-        "id": "urn:visionflow:linked:display-calibration",
+        "id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
       },
       {
-        "id": "urn:visionflow:linked:performance-validation",
+        "id": "urn:ngm:class:performance-validation",
         "label": "Performance Validation"
       },
       {
-        "id": "urn:visionflow:linked:visual-quality-assessment",
+        "id": "urn:ngm:class:visual-quality-assessment",
         "label": "Visual Quality Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:xr-testing-infrastructure",
+        "label": "XR Testing Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

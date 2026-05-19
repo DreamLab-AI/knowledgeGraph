@@ -3,19 +3,18 @@
   "title": "Threat Actor",
   "slug": "threat-actor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:threat-actor",
+  "classIri": "urn:ngm:class:threat-actor",
   "domain": "blockchain",
   "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:attack-vector",
+      "id": "urn:ngm:class:attack-vector",
       "label": "Attack Vector"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

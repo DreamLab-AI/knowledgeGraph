@@ -160,98 +160,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:byzantine-fault-tolerance",
+  "@type": "Class",
   "label": "Byzantine Fault Tolerance",
+  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:distributed-agreement",
-      "vc:label": "Distributed Agreement"
+      "@id": "urn:ngm:class:distributed-agreement",
+      "label": "Distributed Agreement"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3230b05f1b205e113b5f0a7fc05e44ed3056d17aeb500678c992e7169780475e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:finality-gadget",
+        "label": "Finality Gadget"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:voting-round",
+        "label": "Voting Round"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consensus-safety",
+        "label": "Consensus Safety"
+      },
+      {
+        "@id": "urn:ngm:class:malicious-node-handling",
+        "label": "Malicious Node Handling"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3230b05f1b205e113b5f0a7fc05e44ed3056d17aeb500678c992e7169780475e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:finality-gadget",
-      "vc:label": "Finality Gadget"
-    },
-    {
-      "@id": "urn:visionflow:linked:leader-election",
-      "vc:label": "Leader Election"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-round",
-      "vc:label": "Voting Round"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication",
-      "vc:label": "Message Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum",
-      "vc:label": "Quorum"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consensus-safety",
-      "vc:label": "Consensus Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:malicious-node-handling",
-      "vc:label": "Malicious Node Handling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-energy-optimisation",
-      "vc:label": "AI Energy Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

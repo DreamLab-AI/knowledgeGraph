@@ -3,66 +3,75 @@
   "title": "ETSI Domain: Governance & Compliance",
   "slug": "etsi-domain-governance-and-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-and-compliance",
+  "classIri": "urn:ngm:class:etsi-domain-governance-and-compliance",
   "domain": "artificial-intelligence",
   "definition": "Crossover domain for ETSI metaverse categorisation addressing organisational governance structures, compliance verification systems, and regulatory adherence mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance-framework",
+      "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-systems",
+        "id": "urn:ngm:class:audit-systems",
         "label": "Audit Systems"
       },
       {
-        "id": "urn:visionflow:linked:reporting-tools",
+        "id": "urn:ngm:class:reporting-tools",
         "label": "Reporting Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-monitoring",
+        "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:governance-frameworks",
+        "id": "urn:ngm:class:governance-frameworks",
         "label": "Governance Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-standards",
+        "id": "urn:ngm:class:regulatory-standards",
         "label": "Regulatory Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:audit-trails",
+        "id": "urn:ngm:class:audit-trails",
         "label": "Audit Trails"
       },
       {
-        "id": "urn:visionflow:linked:automated-compliance",
+        "id": "urn:ngm:class:automated-compliance",
         "label": "Automated Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -148,88 +148,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ai",
+  "@type": "Class",
   "label": "ETSI Domain AI",
+  "definition": "Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-ai-creative-media",
+        "label": "ETSI Domain AI Creative Media"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-ai-data-mgmt",
+        "label": "ETSI Domain AI Data Mgmt"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-ai-governance",
+        "label": "ETSI Domain AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-ai-human-interface",
+        "label": "ETSI Domain AI Human Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-service-classification",
+        "label": "AI Service Classification"
+      },
+      {
+        "@id": "urn:ngm:class:intelligence-layer-categorization",
+        "label": "Intelligence Layer Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:babbbc5e48be6ec89517066976a3c2d1e23b129b76c632478d3b7928a3f9ad6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain marker concept for categorising metaverse components related to artificial intelligence, machine learning, and computational intelligence capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
-      "vc:label": "ETSI Domain AI Creative Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai-data-mgmt",
-      "vc:label": "ETSI Domain AI Data Mgmt"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai-governance",
-      "vc:label": "ETSI Domain AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai-human-interface",
-      "vc:label": "ETSI Domain AI Human Interface"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-service-classification",
-      "vc:label": "AI Service Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:intelligence-layer-categorization",
-      "vc:label": "Intelligence Layer Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:computation-and-intelligence-domain",
-      "vc:label": "ComputationAndIntelligenceDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

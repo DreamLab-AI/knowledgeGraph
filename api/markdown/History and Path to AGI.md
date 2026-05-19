@@ -392,332 +392,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:history-and-path-to-agi",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:history-and-path-to-agi",
+  "@type": "Class",
   "label": "History and Path to AGI",
+  "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's t...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-research",
-      "vc:label": "AI Research"
+      "@id": "urn:ngm:class:ai-research",
+      "label": "AI Research"
     },
     {
-      "@id": "urn:visionflow:linked:scientific-paradigm",
-      "vc:label": "Scientific Paradigm"
-    },
-    {
-      "@id": "urn:visionflow:linked:technology-history",
-      "vc:label": "Technology History"
+      "@id": "urn:ngm:class:scientific-paradigm",
+      "label": "Scientific Paradigm"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b814dcac254473d609c6a63302198692b21aa0922a9aec6f4c81e656034b411a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-winter",
+        "label": "AI Winter"
+      },
+      {
+        "@id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-substrate",
+        "label": "Computational Substrate"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-funding",
+        "label": "Institutional Funding"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai-evaluation",
+        "label": "Frontier AI Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:turing-test",
+        "label": "Turing Test"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "@id": "urn:ngm:class:acl",
+        "label": "ACL"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:nature",
+        "label": "Nature"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:science",
+        "label": "Science"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b814dcac254473d609c6a63302198692b21aa0922a9aec6f4c81e656034b411a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's trajectory toward Artificial General Intelligence (AGI) — a hypothetical system matching or exceeding human-level cognitive performance across all domains without task-specific training — spanning the conceptual foundations of Alan Turing's 1950 paper \"Computing Machinery and Intelligence\" in Mind (introducing the imitation game as an operational criterion for machine thought, asking \"Can machines think?\" and proposing the Turing Test as the deflationary substitute for that metaphysically fraught question), the formal founding of AI as a discipline at the Dartmouth Summer Research Project on Artificial Intelligence in 1956 convened by John McCarthy, Marvin Minsky, Nathaniel Rochester and Claude Shannon at Dartmouth College proposing over two months that \"every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simu",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-winter",
-      "vc:label": "AI Winter"
-    },
-    {
-      "@id": "urn:visionflow:linked:connectionism",
-      "vc:label": "Connectionism"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:scaling-laws",
-      "vc:label": "Scaling Laws"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:expert-systems",
-      "vc:label": "Expert Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symbolic-ai",
-      "vc:label": "Symbolic AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-substrate",
-      "vc:label": "Computational Substrate"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-funding",
-      "vc:label": "Institutional Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-foundations",
-      "vc:label": "Mathematical Foundations"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-method",
-      "vc:label": "Scientific Method"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-policy",
-      "vc:label": "AI Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-safety-research",
-      "vc:label": "AI Safety Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-ai-evaluation",
-      "vc:label": "Frontier AI Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-discovery-acceleration",
-      "vc:label": "Scientific Discovery Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:scaling-laws",
-      "vc:label": "Scaling Laws"
-    },
-    {
-      "@id": "urn:visionflow:linked:turing-test",
-      "vc:label": "Turing Test"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-psychology",
-      "vc:label": "Cognitive Psychology"
-    },
-    {
-      "@id": "urn:visionflow:linked:computer-science",
-      "vc:label": "Computer Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematics",
-      "vc:label": "Mathematics"
-    },
-    {
-      "@id": "urn:visionflow:linked:neuroscience",
-      "vc:label": "Neuroscience"
-    },
-    {
-      "@id": "urn:visionflow:linked:philosophy-of-mind",
-      "vc:label": "Philosophy of Mind"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistics",
-      "vc:label": "Statistics"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-alignment",
-      "vc:label": "AI Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-inference",
-      "vc:label": "Probabilistic Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:narrow-ai",
-      "vc:label": "Narrow AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-systems",
-      "vc:label": "Rule-Based Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:expert-systems",
-      "vc:label": "Expert Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symbolic-ai",
-      "vc:label": "Symbolic AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:aaai",
-      "vc:label": "AAAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:acl",
-      "vc:label": "ACL"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:nature",
-      "vc:label": "Nature"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    },
-    {
-      "@id": "urn:visionflow:linked:science",
-      "vc:label": "Science"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

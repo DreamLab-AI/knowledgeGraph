@@ -3,86 +3,86 @@
   "title": "Renewable Energy Certificates",
   "slug": "renewable-energy-certificates",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:renewable-energy-certificates",
+  "classIri": "urn:ngm:class:renewable-energy-certificates",
   "domain": "blockchain",
-  "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with blockchain implementations enabling automated tracking, fractional ownership, peer-to-peer trading, and integration with smart contracts for renewable energy procurement, grid management, and carbon offset markets.",
+  "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:carbon-credit",
+      "id": "urn:ngm:class:carbon-credit",
       "label": "CarbonCredit"
     },
     {
-      "id": "urn:visionflow:linked:environmental-commodity",
+      "id": "urn:ngm:class:environmental-commodity",
       "label": "EnvironmentalCommodity"
-    },
-    {
-      "id": "urn:visionflow:linked:sustainability-instrument",
-      "label": "SustainabilityInstrument"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:certificate-metadata",
+        "id": "urn:ngm:class:certificate-metadata",
         "label": "CertificateMetadata"
       },
       {
-        "id": "urn:visionflow:linked:generation-data",
+        "id": "urn:ngm:class:generation-data",
         "label": "GenerationData"
       },
       {
-        "id": "urn:visionflow:linked:ownership-record",
+        "id": "urn:ngm:class:ownership-record",
         "label": "OwnershipRecord"
       },
       {
-        "id": "urn:visionflow:linked:retirement-proof",
+        "id": "urn:ngm:class:retirement-proof",
         "label": "RetirementProof"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:metering-data",
+        "id": "urn:ngm:class:metering-data",
         "label": "MeteringData"
       },
       {
-        "id": "urn:visionflow:linked:registry-infrastructure",
+        "id": "urn:ngm:class:registry-infrastructure",
         "label": "RegistryInfrastructure"
       },
       {
-        "id": "urn:visionflow:linked:renewable-energy-generation",
+        "id": "urn:ngm:class:renewable-energy-generation",
         "label": "RenewableEnergyGeneration"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:peer-to-peer-energy-trading",
+        "id": "urn:ngm:class:peer-to-peer-energy-trading",
         "label": "PeerToPeerEnergyTrading"
       },
       {
-        "id": "urn:visionflow:linked:renewable-energy-tracking",
+        "id": "urn:ngm:class:renewable-energy-tracking",
         "label": "RenewableEnergyTracking"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-reporting",
+        "id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "CarbonAccounting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

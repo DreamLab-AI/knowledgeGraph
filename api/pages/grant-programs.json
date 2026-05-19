@@ -3,19 +3,18 @@
   "title": "Grant Programs",
   "slug": "grant-programs",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:grant-programs",
+  "classIri": "urn:ngm:class:grant-programs",
   "domain": "blockchain",
-  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth billions to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap $74M) to retroactive public goods funding ([[Optimism]] $30M) to innovative quadratic funding mechanisms ([[Gitcoin]] $50M+).",
+  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap ) to retroactive public goods funding ([[Optimism]] ) to inn...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

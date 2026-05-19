@@ -3,53 +3,57 @@
   "title": "Carbon Offset Certificate",
   "slug": "carbon-offset-certificate",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-offset-certificate",
+  "classIri": "urn:ngm:class:carbon-offset-certificate",
   "domain": "spatial-computing",
   "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:environmental-certificate",
+      "id": "urn:ngm:class:environmental-certificate",
       "label": "Environmental Certificate"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:project-verification",
+        "id": "urn:ngm:class:project-verification",
         "label": "Project Verification"
       },
       {
-        "id": "urn:visionflow:linked:registry-issuance",
+        "id": "urn:ngm:class:registry-issuance",
         "label": "Registry Issuance"
       },
       {
-        "id": "urn:visionflow:linked:third-party-validation",
+        "id": "urn:ngm:class:third-party-validation",
         "label": "Third Party Validation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:carbon-neutrality",
+        "id": "urn:ngm:class:carbon-neutrality",
         "label": "Carbon Neutrality"
       },
       {
-        "id": "urn:visionflow:linked:climate-investment",
+        "id": "urn:ngm:class:climate-investment",
         "label": "Climate Investment"
       },
       {
-        "id": "urn:visionflow:linked:emissions-compensation",
+        "id": "urn:ngm:class:emissions-compensation",
         "label": "Emissions Compensation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

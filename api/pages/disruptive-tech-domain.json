@@ -3,37 +3,41 @@
   "title": "Disruptive Tech Domain",
   "slug": "disruptive-tech-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:disruptive-tech-domain",
+  "classIri": "urn:ngm:class:disruptive-tech-domain",
   "domain": "infrastructure",
-  "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices. This domain spans AI, Blockchain, Metaverse, Robotics, and Telecollaboration, tagging concepts that represent paradigm shifts, emerging capabilities, or technologies displacing established approaches. Used for strategic analysis, trend identification, and innovation portfolio management.",
+  "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:domain",
+      "id": "urn:ngm:class:domain",
       "label": "Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:aiapplications-domain",
+        "id": "urn:ngm:class:aiapplications-domain",
         "label": "AIApplicationsDomain"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:technology-forecasting",
+        "id": "urn:ngm:class:technology-forecasting",
         "label": "Technology Forecasting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

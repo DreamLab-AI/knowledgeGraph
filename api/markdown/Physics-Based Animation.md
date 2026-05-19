@@ -188,112 +188,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:physics-based-animation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:physics-based-animation",
+  "@type": "Class",
   "label": "Physics-Based Animation",
+  "definition": "Animation technique that computes object motion through real-time simulation of physical forces, gravity, collisions, and dynamics to create realistic movement and interactions.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real Time Rendering"
+      "@id": "urn:ngm:class:real-time-rendering",
+      "label": "Real Time Rendering"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6d020ea6ba9c41d2e94331bd8636567ec7ab1139835315ba4bb2f1e3d3aa9316"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:collision-detection-system",
+        "label": "Collision Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:force-integrator",
+        "label": "Force Integrator"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-transform-system",
+        "label": "3D Transform System"
+      },
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cloth-simulation",
+        "label": "Cloth Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:ragdoll-physics",
+        "label": "Ragdoll Physics"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:particle-systems",
+        "label": "Particle Systems"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6d020ea6ba9c41d2e94331bd8636567ec7ab1139835315ba4bb2f1e3d3aa9316@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Animation technique that computes object motion through real-time simulation of physical forces, gravity, collisions, and dynamics to create realistic movement and interactions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
-      "vc:label": "Real-Time Rendering Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:collision-detection-system",
-      "vc:label": "Collision Detection System"
-    },
-    {
-      "@id": "urn:visionflow:linked:constraint-solver",
-      "vc:label": "Constraint Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-integrator",
-      "vc:label": "Force Integrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:physics-simulation-engine",
-      "vc:label": "Physics Simulation Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-transform-system",
-      "vc:label": "3D Transform System"
-    },
-    {
-      "@id": "urn:visionflow:linked:animation-controller",
-      "vc:label": "Animation Controller"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cloth-simulation",
-      "vc:label": "Cloth Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ragdoll-physics",
-      "vc:label": "Ragdoll Physics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dynamic-character-animation",
-      "vc:label": "Dynamic Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:particle-systems",
-      "vc:label": "Particle Systems"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:numerical-integration",
-      "vc:label": "Numerical Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:soft-body-simulation",
-      "vc:label": "Soft Body Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "vc:label": "Rigid Body Dynamics"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

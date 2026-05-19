@@ -3,19 +3,18 @@
   "title": "State Estimation",
   "slug": "state-estimation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:state-estimation",
+  "classIri": "urn:ngm:class:state-estimation",
   "domain": "robotics",
-  "definition": "State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements. Key approaches include Kalman filtering, particle filters, and Bayesian estimation methods that enable robots to maintain accurate representations of position, velocity, and other dynamic state variables.",
+  "definition": "State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics-systems",
+      "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

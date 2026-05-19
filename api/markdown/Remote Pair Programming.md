@@ -488,298 +488,235 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:remote-pair-programming",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:remote-pair-programming",
+  "@type": "Class",
   "label": "Remote Pair Programming",
+  "definition": "Remote Pair Programming is a synchronous collaborative software-development practice in which two developers—one acting as driver (typing) and one as navigator (reviewing, guiding, strategising)—share a single logical programming environment across geographically separated workstations, communica...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agile-software-development",
-      "vc:label": "Agile Software Development"
+      "@id": "urn:ngm:class:agile-software-development",
+      "label": "Agile Software Development"
     },
     {
-      "@id": "urn:visionflow:linked:collaborative-development",
-      "vc:label": "Collaborative Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-software-engineering",
-      "vc:label": "Distributed Software Engineering"
+      "@id": "urn:ngm:class:collaborative-development",
+      "label": "Collaborative Development"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b43cd165a6da69bec32abb4284b3c870f6bb3ae51b77a8a11a50cd95e239759b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-video-channel",
+        "label": "Audio/Video Channel"
+      },
+      {
+        "@id": "urn:ngm:class:cursor-synchronisation",
+        "label": "Cursor Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:driver-role",
+        "label": "Driver Role"
+      },
+      {
+        "@id": "urn:ngm:class:navigator-role",
+        "label": "Navigator Role"
+      },
+      {
+        "@id": "urn:ngm:class:role-rotation-protocol",
+        "label": "Role Rotation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:session-recording",
+        "label": "Session Recording"
+      },
+      {
+        "@id": "urn:ngm:class:shared-code-editor",
+        "label": "Shared Code Editor"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-collaborative-editor",
+        "label": "Real-time Collaborative Editor"
+      },
+      {
+        "@id": "urn:ngm:class:shared-development-environment",
+        "label": "Shared Development Environment"
+      },
+      {
+        "@id": "urn:ngm:class:stable-network-connection",
+        "label": "Stable Network Connection"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:code-quality-assurance",
+        "label": "Code Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:collective-code-ownership",
+        "label": "Collective Code Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-learning",
+        "label": "Continuous Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-code-review",
+        "label": "Distributed Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:onboarding-acceleration",
+        "label": "Onboarding Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-debugging",
+        "label": "Real-time Debugging"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:driver-navigator-pattern",
+        "label": "Driver/Navigator Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "@id": "urn:ngm:class:mob-programming",
+        "label": "Mob Programming"
+      },
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:floobits",
+        "label": "Floobits"
+      },
+      {
+        "@id": "urn:ngm:class:git-hub-codespaces",
+        "label": "GitHub Codespaces"
+      },
+      {
+        "@id": "urn:ngm:class:jet-brains-code-with-me",
+        "label": "JetBrains Code With Me"
+      },
+      {
+        "@id": "urn:ngm:class:neovim",
+        "label": "Neovim"
+      },
+      {
+        "@id": "urn:ngm:class:tmux",
+        "label": "tmux"
+      },
+      {
+        "@id": "urn:ngm:class:tuple",
+        "label": "Tuple"
+      },
+      {
+        "@id": "urn:ngm:class:vs-code-live-share",
+        "label": "VS Code Live Share"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:cursor",
+        "label": "Cursor"
+      },
+      {
+        "@id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "@id": "urn:ngm:class:git-hub-copilot",
+        "label": "GitHub Copilot"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:mob-programming",
+        "label": "Mob Programming"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:dev-ops-practices",
+        "label": "DevOps Practices"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "@id": "urn:ngm:class:pair-rotation-scheduling",
+        "label": "Pair Rotation Scheduling"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:agile-manifesto-2001",
+        "label": "Agile Manifesto (2001)"
+      },
+      {
+        "@id": "urn:ngm:class:extreme-programming-explained-beck-1999",
+        "label": "Extreme Programming Explained (Beck 1999)"
+      },
+      {
+        "@id": "urn:ngm:class:team-topologies-skelton-and-pais-2019",
+        "label": "Team Topologies (Skelton & Pais 2019)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b43cd165a6da69bec32abb4284b3c870f6bb3ae51b77a8a11a50cd95e239759b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Remote Pair Programming is a synchronous collaborative software-development practice in which two developers—one acting as **driver** (typing) and one as **navigator** (reviewing, guiding, strategising)—share a single logical programming environment across geographically separated workstations, communicating over an audio-video channel and co-editing code through real-time synchronisation tools such as [[VS Code Live Share]], [[JetBrains Code With Me]], [[Tuple]], or [[tmux]]-based terminal sharing. Originating in Kent Beck's [[Extreme Programming]] methodology (1999), the practice formalises the driver/navigator dyad with regular role rotation (typically every 10-25 minutes using the Pomodoro cadence or test-red-green-refactor cycle) to distribute cognitive load, transfer tacit knowledge, and eliminate single points of failure in codebase understanding. The remote variant overcomes the geographical barrier that prevented distributed teams from exploiting the original co-located technique, at the cost of added latency sensitivity, screen-resolution constraints, and coordination overhead. Empirical research (Williams & Kessler 2000) demonstrated that collocated pairs produce code wi",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audio-video-channel",
-      "vc:label": "Audio/Video Channel"
-    },
-    {
-      "@id": "urn:visionflow:linked:cursor-synchronisation",
-      "vc:label": "Cursor Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:driver-role",
-      "vc:label": "Driver Role"
-    },
-    {
-      "@id": "urn:visionflow:linked:navigator-role",
-      "vc:label": "Navigator Role"
-    },
-    {
-      "@id": "urn:visionflow:linked:role-rotation-protocol",
-      "vc:label": "Role Rotation Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-recording",
-      "vc:label": "Session Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:shared-code-editor",
-      "vc:label": "Shared Code Editor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:screen-sharing",
-      "vc:label": "Screen Sharing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:real-time-collaborative-editor",
-      "vc:label": "Real-time Collaborative Editor"
-    },
-    {
-      "@id": "urn:visionflow:linked:shared-development-environment",
-      "vc:label": "Shared Development Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-network-connection",
-      "vc:label": "Stable Network Connection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:video-conferencing",
-      "vc:label": "Video Conferencing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:code-quality-assurance",
-      "vc:label": "Code Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:collective-code-ownership",
-      "vc:label": "Collective Code Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-learning",
-      "vc:label": "Continuous Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-code-review",
-      "vc:label": "Distributed Code Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-transfer",
-      "vc:label": "Knowledge Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboarding-acceleration",
-      "vc:label": "Onboarding Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-debugging",
-      "vc:label": "Real-time Debugging"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:continuous-integration",
-      "vc:label": "Continuous Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:driver-navigator-pattern",
-      "vc:label": "Driver/Navigator Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:extreme-programming",
-      "vc:label": "Extreme Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:mob-programming",
-      "vc:label": "Mob Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-driven-development",
-      "vc:label": "Test-Driven Development"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cloud-development-environment",
-      "vc:label": "Cloud Development Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-transformation",
-      "vc:label": "Operational Transformation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ssh-tunnelling",
-      "vc:label": "SSH Tunnelling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:crdt",
-      "vc:label": "CRDT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:agile-software-development",
-      "vc:label": "Agile Software Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:dev-ops-practices",
-      "vc:label": "DevOps Practices"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-team-collaboration",
-      "vc:label": "Distributed Team Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-development",
-      "vc:label": "Open Source Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:pair-rotation-scheduling",
-      "vc:label": "Pair Rotation Scheduling"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:floobits",
-      "vc:label": "Floobits"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-hub-codespaces",
-      "vc:label": "GitHub Codespaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:jet-brains-code-with-me",
-      "vc:label": "JetBrains Code With Me"
-    },
-    {
-      "@id": "urn:visionflow:linked:neovim",
-      "vc:label": "Neovim"
-    },
-    {
-      "@id": "urn:visionflow:linked:tmux",
-      "vc:label": "tmux"
-    },
-    {
-      "@id": "urn:visionflow:linked:tuple",
-      "vc:label": "Tuple"
-    },
-    {
-      "@id": "urn:visionflow:linked:vs-code-live-share",
-      "vc:label": "VS Code Live Share"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:asynchronous-code-review",
-      "vc:label": "Asynchronous Code Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-walkthrough",
-      "vc:label": "Code Walkthrough"
-    },
-    {
-      "@id": "urn:visionflow:linked:handoff-pairing",
-      "vc:label": "Handoff Pairing"
-    },
-    {
-      "@id": "urn:visionflow:linked:pull-request-review",
-      "vc:label": "Pull Request Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:solo-programming",
-      "vc:label": "Solo Programming"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:code-review",
-      "vc:label": "Code Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-integration",
-      "vc:label": "Continuous Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:cursor",
-      "vc:label": "Cursor"
-    },
-    {
-      "@id": "urn:visionflow:linked:extreme-programming",
-      "vc:label": "Extreme Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-hub-copilot",
-      "vc:label": "GitHub Copilot"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-transfer",
-      "vc:label": "Knowledge Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:mob-programming",
-      "vc:label": "Mob Programming"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:agile-manifesto-2001",
-      "vc:label": "Agile Manifesto (2001)"
-    },
-    {
-      "@id": "urn:visionflow:linked:extreme-programming-explained-beck-1999",
-      "vc:label": "Extreme Programming Explained (Beck 1999)"
-    },
-    {
-      "@id": "urn:visionflow:linked:team-topologies-skelton-and-pais-2019",
-      "vc:label": "Team Topologies (Skelton & Pais 2019)"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

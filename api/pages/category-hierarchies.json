@@ -3,53 +3,57 @@
   "title": "Category Hierarchies",
   "slug": "category-hierarchies",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:category-hierarchies",
+  "classIri": "urn:ngm:class:category-hierarchies",
   "domain": "spatial-computing",
   "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-organization-system",
+      "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:classification-rules",
+        "id": "urn:ngm:class:classification-rules",
         "label": "Classification Rules"
       },
       {
-        "id": "urn:visionflow:linked:taxonomy-design",
+        "id": "urn:ngm:class:taxonomy-design",
         "label": "Taxonomy Design"
       },
       {
-        "id": "urn:visionflow:linked:term-relationships",
+        "id": "urn:ngm:class:term-relationships",
         "label": "Term Relationships"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-classification",
+        "id": "urn:ngm:class:content-classification",
         "label": "Content Classification"
       },
       {
-        "id": "urn:visionflow:linked:navigation-structure",
+        "id": "urn:ngm:class:navigation-structure",
         "label": "Navigation Structure"
       },
       {
-        "id": "urn:visionflow:linked:semantic-organization",
+        "id": "urn:ngm:class:semantic-organization",
         "label": "Semantic Organization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

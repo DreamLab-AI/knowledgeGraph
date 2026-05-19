@@ -128,60 +128,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:motion-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-tracking",
+  "@type": "Class",
   "label": "Motion Tracking",
+  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:xr-input-technologies",
-      "vc:label": "XR Input Technologies"
+      "@id": "urn:ngm:class:xr-input-technologies",
+      "label": "XR Input Technologies"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c5eb977950ea4a99f857a08454dbfb7cf477cc113fc85d0333ed191352d81f58"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-presence",
+        "label": "Embodied Presence"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-control",
+        "label": "Gesture Control"
+      },
+      {
+        "@id": "urn:ngm:class:user-identification",
+        "label": "User Identification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c5eb977950ea4a99f857a08454dbfb7cf477cc113fc85d0333ed191352d81f58@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts, motion tracking is fundamental to creating embodied presence by translating user movements into avatar animations and enabling natural interaction with virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:avatar-animation",
-      "vc:label": "Avatar Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:embodied-presence",
-      "vc:label": "Embodied Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:gesture-control",
-      "vc:label": "Gesture Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-identification",
-      "vc:label": "User Identification"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

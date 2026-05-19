@@ -3,19 +3,18 @@
   "title": "Societal and Environmental Wellbeing",
   "slug": "societal-and-environmental-wellbeing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:societal-and-environmental-wellbeing",
+  "classIri": "urn:ngm:class:societal-and-environmental-wellbeing",
   "domain": "artificial-intelligence",
-  "definition": "Societal and Environmental Wellbeing is a trustworthiness dimension ensuring AI systems consider broader impacts on communities, environment, democratic processes, and human flourishing beyond immediate functional objectives, promoting sustainable development and social cohesion. This dimension encompasses four core components: environmental sustainability (measuring and minimizing energy consumption and carbon footprint throughout AI lifecycle including training and inference, implementing resource efficiency through techniques like model pruning, quantization, and distillation reducing computational requirements, supporting circular economy principles through hardware reuse and responsible disposal, and utilizing renewable energy sources and carbon-aware scheduling), social impact assessment (evaluating employment effects including job displacement risks, transformation of work roles, and creation of new opportunities, assessing skills impact and reskilling requirements as automation changes workforce needs, evaluating democratic impact on civic participation, information ecosystems, and governance processes, and considering social cohesion effects on community bonds, inequality,",
+  "definition": "Societal and Environmental Wellbeing is a trustworthiness dimension ensuring AI systems consider broader impacts on communities, environment, democratic processes, and human flourishing beyond immediate functional objectives, promoting sustainable development and social cohesion.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
+      "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

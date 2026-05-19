@@ -3,19 +3,18 @@
   "title": "Maximum Sequence Length",
   "slug": "maximum-sequence-length",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:maximum-sequence-length",
+  "classIri": "urn:ngm:class:maximum-sequence-length",
   "domain": "artificial-intelligence",
   "definition": "The longest sequence of tokens that a model can process in a single forward pass, constrained by positional encoding scheme and computational resources.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

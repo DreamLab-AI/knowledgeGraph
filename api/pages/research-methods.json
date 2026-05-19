@@ -3,19 +3,18 @@
   "title": "Research Methods",
   "slug": "research-methods",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:research-methods",
+  "classIri": "urn:ngm:class:research-methods",
   "domain": "spatial-computing",
-  "definition": "Research Methods is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Research Methods is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

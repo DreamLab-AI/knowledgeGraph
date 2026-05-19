@@ -3,19 +3,18 @@
   "title": "Privacy Impact Assessment",
   "slug": "privacy-impact-assessment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-impact-assessment",
+  "classIri": "urn:ngm:class:privacy-impact-assessment",
   "domain": "artificial-intelligence",
-  "definition": "Privacy Impact Assessment is a structured evaluation process identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights. This assessment methodology follows defined stages including systematic description documenting processing operations (data flows, purposes, retention periods, recipients), necessity and proportionality assessment evaluating whether processing is essential for stated purposes and uses minimal data required, privacy risk identification analyzing potential harms including unauthorized access, discrimination, surveillance, function creep, and re-identification risks, risk severity and likelihood evaluation producing risk matrices categorizing threats as low, medium, high, or very high based on potential impact and probability, mitigation strategy design specifying technical and organizational measures reducing risks to acceptable levels, and residual risk assessment determining whether remaining risks after mitigation require consultation with data protection authorities per GDPR Ar",
+  "definition": "Privacy Impact Assessment is a structured eprocess identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

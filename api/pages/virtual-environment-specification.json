@@ -3,19 +3,18 @@
   "title": "Virtual Environment Specification",
   "slug": "virtual-environment-specification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-environment-specification",
+  "classIri": "urn:ngm:class:virtual-environment-specification",
   "domain": "spatial-computing",
   "definition": "Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

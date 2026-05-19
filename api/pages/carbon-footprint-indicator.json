@@ -3,53 +3,57 @@
   "title": "Carbon Footprint Indicator",
   "slug": "carbon-footprint-indicator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-footprint-indicator",
+  "classIri": "urn:ngm:class:carbon-footprint-indicator",
   "domain": "spatial-computing",
   "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:environmental-kpi",
+      "id": "urn:ngm:class:environmental-kpi",
       "label": "Environmental KPI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:emissions-data",
+        "id": "urn:ngm:class:emissions-data",
         "label": "Emissions Data"
       },
       {
-        "id": "urn:visionflow:linked:measurement-methodology",
+        "id": "urn:ngm:class:measurement-methodology",
         "label": "Measurement Methodology"
       },
       {
-        "id": "urn:visionflow:linked:reporting-framework",
+        "id": "urn:ngm:class:reporting-framework",
         "label": "Reporting Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:benchmarking",
+        "id": "urn:ngm:class:benchmarking",
         "label": "Benchmarking"
       },
       {
-        "id": "urn:visionflow:linked:performance-monitoring",
+        "id": "urn:ngm:class:performance-monitoring",
         "label": "Performance Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:target-tracking",
+        "id": "urn:ngm:class:target-tracking",
         "label": "Target Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

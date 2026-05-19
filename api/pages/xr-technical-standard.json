@@ -3,27 +3,31 @@
   "title": "XR Technical Standard",
   "slug": "xr-technical-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-technical-standard",
+  "classIri": "urn:ngm:class:xr-technical-standard",
   "domain": "spatial-computing",
-  "definition": "X R Technical Standard is a concept within the metaverse domain. Further enrichment pending.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "spatial-computing"
-    }
-  ],
+  "definition": "XR Technical Standard is a spatial computing concept.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

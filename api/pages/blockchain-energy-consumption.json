@@ -3,43 +3,38 @@
   "title": "Blockchain Energy Consumption",
   "slug": "blockchain-energy-consumption",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-energy-consumption",
+  "classIri": "urn:ngm:class:blockchain-energy-consumption",
   "domain": "blockchain",
-  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, 0.65% global electricity) to energy-efficient Proof-of-Stake (Ethereum post-Merge: 99.95% reduction), with ongoing research into sustainable consensus algorithms, renewable energy mining, carbon credit tokenization, and environmental impact measurement frameworks.",
+  "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, global electricity) to en...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:blockchain-performance",
+      "id": "urn:ngm:class:blockchain-performance",
       "label": "BlockchainPerformance"
     },
     {
-      "id": "urn:visionflow:linked:environmental-impact",
+      "id": "urn:ngm:class:environmental-impact",
       "label": "EnvironmentalImpact"
-    },
-    {
-      "id": "urn:visionflow:owl:class:sustainability",
-      "label": "Sustainability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.88,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:carbon-emissions",
+        "id": "urn:ngm:class:carbon-emissions",
         "label": "CarbonEmissions"
       },
       {
-        "id": "urn:visionflow:linked:computational-power",
+        "id": "urn:ngm:class:computational-power",
         "label": "ComputationalPower"
       },
       {
-        "id": "urn:visionflow:linked:electricity-consumption",
+        "id": "urn:ngm:class:electricity-consumption",
         "label": "ElectricityConsumption"
       },
       {
-        "id": "urn:visionflow:linked:hash-rate",
+        "id": "urn:ngm:class:hash-rate",
         "label": "HashRate"
       }
     ],
@@ -48,7 +43,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

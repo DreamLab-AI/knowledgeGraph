@@ -3,53 +3,57 @@
   "title": "Destination Marketing",
   "slug": "destination-marketing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:destination-marketing",
+  "classIri": "urn:ngm:class:destination-marketing",
   "domain": "spatial-computing",
-  "definition": "The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence. bridges-to:: [[Blockchain]]",
+  "definition": "The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-marketing",
+      "id": "urn:ngm:class:digital-marketing",
       "label": "Digital Marketing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-content-creation",
+        "id": "urn:ngm:class:3-d-content-creation",
         "label": "3D Content Creation"
       },
       {
-        "id": "urn:visionflow:linked:vr-experiences",
+        "id": "urn:ngm:class:vr-experiences",
         "label": "VR Experiences"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-advertising",
+        "id": "urn:ngm:class:immersive-advertising",
         "label": "Immersive Advertising"
       },
       {
-        "id": "urn:visionflow:linked:location-promotion",
+        "id": "urn:ngm:class:location-promotion",
         "label": "Location Promotion"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "id": "urn:ngm:class:virtual-tourism",
         "label": "Virtual Tourism"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Calibration Target",
   "slug": "calibration-target",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:calibration-target",
+  "classIri": "urn:ngm:class:calibration-target",
   "domain": "spatial-computing",
   "definition": "A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:reference-standard",
+      "id": "urn:ngm:class:reference-standard",
       "label": "Reference Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:flatness-control",
+        "id": "urn:ngm:class:flatness-control",
         "label": "Flatness Control"
       },
       {
-        "id": "urn:visionflow:linked:pattern-definition",
+        "id": "urn:ngm:class:pattern-definition",
         "label": "Pattern Definition"
       },
       {
-        "id": "urn:visionflow:linked:precision-manufacturing",
+        "id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Manufacturing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:color-accuracy",
+        "id": "urn:ngm:class:color-accuracy",
         "label": "Color Accuracy"
       },
       {
-        "id": "urn:visionflow:linked:lens-distortion-correction",
+        "id": "urn:ngm:class:lens-distortion-correction",
         "label": "Lens Distortion Correction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

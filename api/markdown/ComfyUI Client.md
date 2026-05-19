@@ -564,428 +564,323 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:comfy-ui-client",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:comfy-ui-client",
+  "@type": "Class",
   "label": "ComfyUI Client",
+  "definition": "ComfyUI Client refers collectively to the suite of client-side interfaces, API layers, and software components that communicate with a running ComfyUI server—the open-source, node-based diffusion model inference engine created by comfyanonymous (GitHub user) and released in January 2023—enabling ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:api-client",
-      "vc:label": "API Client"
+      "@id": "urn:ngm:class:api-client",
+      "label": "API Client"
     },
     {
-      "@id": "urn:visionflow:linked:graphical-user-interface",
-      "vc:label": "Graphical User Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-based-interface",
-      "vc:label": "Node Based Interface"
+      "@id": "urn:ngm:class:graphical-user-interface",
+      "label": "Graphical User Interface"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4c4121a68f78152eaab745733224d2ac21a3b734b19e1d9ae5d13095e190a1db"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:comfy-ui-desktop-app",
+        "label": "ComfyUI Desktop App"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "@id": "urn:ngm:class:custom-node-system",
+        "label": "Custom Node System"
+      },
+      {
+        "@id": "urn:ngm:class:model-library-browser",
+        "label": "Model Library Browser"
+      },
+      {
+        "@id": "urn:ngm:class:node-graph-editor",
+        "label": "Node Graph Editor"
+      },
+      {
+        "@id": "urn:ngm:class:preview-node",
+        "label": "Preview Node"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-queue-manager",
+        "label": "Prompt Queue Manager"
+      },
+      {
+        "@id": "urn:ngm:class:vae-preview",
+        "label": "VAE Preview"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-client",
+        "label": "WebSocket Client"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-browser",
+        "label": "Workflow Browser"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:http-api",
+        "label": "HTTP API"
+      },
+      {
+        "@id": "urn:ngm:class:node-graph",
+        "label": "Node Graph"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-guidance",
+        "label": "ControlNet Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:custom-node-development",
+        "label": "Custom Node Development"
+      },
+      {
+        "@id": "urn:ngm:class:latent-space-exploration",
+        "label": "Latent Space Exploration"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-application",
+        "label": "LoRA Application"
+      },
+      {
+        "@id": "urn:ngm:class:model-chaining",
+        "label": "Model Chaining"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "@id": "urn:ngm:class:json-workflow-serialisation",
+        "label": "JSON Workflow Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:observer-pattern",
+        "label": "Observer Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:plugin-architecture",
+        "label": "Plugin Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:queue-management-pattern",
+        "label": "Queue Management Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api-pattern",
+        "label": "REST API Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aiohttp",
+        "label": "aiohttp"
+      },
+      {
+        "@id": "urn:ngm:class:electron",
+        "label": "Electron"
+      },
+      {
+        "@id": "urn:ngm:class:lite-graph-js",
+        "label": "LiteGraph.js"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:type-script",
+        "label": "TypeScript"
+      },
+      {
+        "@id": "urn:ngm:class:vite",
+        "label": "Vite"
+      },
+      {
+        "@id": "urn:ngm:class:vue-js",
+        "label": "Vue.js"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-interface",
+        "label": "Node Based Interface"
+      },
+      {
+        "@id": "urn:ngm:class:replicate",
+        "label": "Replicate"
+      },
+      {
+        "@id": "urn:ngm:class:run-pod",
+        "label": "RunPod"
+      },
+      {
+        "@id": "urn:ngm:class:sdxl",
+        "label": "SDXL"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:3-d-generation",
+        "label": "3D Generation"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:video-diffusion",
+        "label": "Video Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:comfy-org",
+        "label": "Comfy-Org"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-api-specification",
+        "label": "ComfyUI API Specification"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-node-registry",
+        "label": "ComfyUI Node Registry"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-rfc-6455",
+        "label": "WebSocket RFC 6455"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4c4121a68f78152eaab745733224d2ac21a3b734b19e1d9ae5d13095e190a1db@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ComfyUI Client refers collectively to the suite of client-side interfaces, API layers, and software components that communicate with a running ComfyUI server—the open-source, node-based diffusion model inference engine created by comfyanonymous (GitHub user) and released in January 2023—enabling users and programmatic consumers to submit graph-structured generation workflows, monitor execution progress in real time via WebSocket events, retrieve generated outputs, and manage the server's prompt queue. The broader concept encompasses multiple interoperating client modalities: the canonical browser-based frontend (historically built on LiteGraph.js canvas, fully rewritten in Vue 3 and TypeScript from August 2024 onwards), the Electron-packaged ComfyUI Desktop application released in stable form October 2024, first-party and community mobile clients for iOS and Android, TypeScript and Python API client libraries that abstract the raw HTTP/WebSocket API, and commercial cloud deployments where ComfyUI's server is hosted on GPU-as-a-service platforms (RunPod, Replicate, fal.ai, Modal, RunDiffusion, ViewComfy, ComfyICU) with client-facing REST APIs layered over the underlying ComfyUI WebS",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-desktop-app",
-      "vc:label": "ComfyUI Desktop App"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-manager",
-      "vc:label": "ComfyUI Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:custom-node-system",
-      "vc:label": "Custom Node System"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-library-browser",
-      "vc:label": "Model Library Browser"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-graph-editor",
-      "vc:label": "Node Graph Editor"
-    },
-    {
-      "@id": "urn:visionflow:linked:preview-node",
-      "vc:label": "Preview Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-queue-manager",
-      "vc:label": "Prompt Queue Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:vae-preview",
-      "vc:label": "VAE Preview"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-client",
-      "vc:label": "WebSocket Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-browser",
-      "vc:label": "Workflow Browser"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-computing",
-      "vc:label": "GPU Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-api",
-      "vc:label": "HTTP API"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-graph",
-      "vc:label": "Node Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-runtime",
-      "vc:label": "Python Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket",
-      "vc:label": "WebSocket"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:api-integration",
-      "vc:label": "API Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net-guidance",
-      "vc:label": "ControlNet Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:custom-node-development",
-      "vc:label": "Custom Node Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-space-exploration",
-      "vc:label": "Latent Space Exploration"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-application",
-      "vc:label": "LoRA Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-chaining",
-      "vc:label": "Model Chaining"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:batch-processing",
-      "vc:label": "Batch Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:directed-acyclic-graph-execution",
-      "vc:label": "Directed Acyclic Graph Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-workflow-serialisation",
-      "vc:label": "JSON Workflow Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:observer-pattern",
-      "vc:label": "Observer Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:plugin-architecture",
-      "vc:label": "Plugin Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:queue-management-pattern",
-      "vc:label": "Queue Management Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api-pattern",
-      "vc:label": "REST API Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-protocol",
-      "vc:label": "WebSocket Protocol"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip-text-encoder",
-      "vc:label": "CLIP Text Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ksampler",
-      "vc:label": "KSampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdxl",
-      "vc:label": "SDXL"
-    },
-    {
-      "@id": "urn:visionflow:linked:unet-architecture",
-      "vc:label": "UNet Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:vae",
-      "vc:label": "VAE"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:3-d-generation",
-      "vc:label": "3D Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-to-image",
-      "vc:label": "Image-to-Image"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-diffusion",
-      "vc:label": "Video Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:super-resolution",
-      "vc:label": "Super Resolution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-image",
-      "vc:label": "Text-to-Image"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:aiohttp",
-      "vc:label": "aiohttp"
-    },
-    {
-      "@id": "urn:visionflow:linked:electron",
-      "vc:label": "Electron"
-    },
-    {
-      "@id": "urn:visionflow:linked:lite-graph-js",
-      "vc:label": "LiteGraph.js"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-script",
-      "vc:label": "TypeScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:vite",
-      "vc:label": "Vite"
-    },
-    {
-      "@id": "urn:visionflow:linked:vue-js",
-      "vc:label": "Vue.js"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket",
-      "vc:label": "WebSocket"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:json",
-      "vc:label": "JSON"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:automatic1111-web-ui",
-      "vc:label": "AUTOMATIC1111 WebUI"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-bee",
-      "vc:label": "DiffusionBee"
-    },
-    {
-      "@id": "urn:visionflow:linked:forge-web-ui",
-      "vc:label": "Forge WebUI"
-    },
-    {
-      "@id": "urn:visionflow:linked:invoke-ai",
-      "vc:label": "InvokeAI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fooocus",
-      "vc:label": "Fooocus"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:api",
-      "vc:label": "API"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-computing",
-      "vc:label": "GPU Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-based-interface",
-      "vc:label": "Node Based Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:replicate",
-      "vc:label": "Replicate"
-    },
-    {
-      "@id": "urn:visionflow:linked:run-pod",
-      "vc:label": "RunPod"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdxl",
-      "vc:label": "SDXL"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:comfy-org",
-      "vc:label": "Comfy-Org"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-api-specification",
-      "vc:label": "ComfyUI API Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-node-registry",
-      "vc:label": "ComfyUI Node Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-rfc-6455",
-      "vc:label": "WebSocket RFC 6455"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:node-based-interface",
-      "vc:label": "Node Based Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-generation",
-      "vc:label": "Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

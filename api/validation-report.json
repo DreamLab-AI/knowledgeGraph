@@ -1,27 +1,14 @@
 {
   "total_pages": 2816,
-  "pages_with_ontology": 2812,
+  "pages_with_ontology": 2793,
   "public_pages": 2794,
-  "total_issues": 608,
+  "total_issues": 457,
   "errors": 0,
-  "warnings": 608,
+  "warnings": 457,
   "by_code": {
-    "MULTI_PARENT": 488,
-    "SLUG_MISMATCH": 120
+    "MULTI_PARENT": 457
   },
   "issues": [
-    {
-      "path": "3D Graphics Standard.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Rendering Standard, Technical Specification"
-    },
-    {
-      "path": "3D Modeling.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug '3-d-development' != label slug '3d-development'"
-    },
     {
       "path": "3D Modeling.md",
       "severity": "warning",
@@ -38,19 +25,19 @@
       "path": "AI Adoption.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Organisational Change, Socio-Technical Process, Innovation Diffusion"
+      "message": "Multiple parents (2): Organisational Change, Socio-Technical Process"
     },
     {
       "path": "AI Companies.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Commercial Enterprise, Industry Sector, Research Organisation"
+      "message": "Multiple parents (2): Commercial Enterprise, Industry Sector"
     },
     {
       "path": "AI Diagram Tools.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Diagram-as-Code, Knowledge Visualisation, LLM-Powered Tool"
+      "message": "Multiple parents (2): Diagram-as-Code, Knowledge Visualisation"
     },
     {
       "path": "AI Game Agent.md",
@@ -62,61 +49,61 @@
       "path": "AI Liability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Civil Liability, Tort Law, Algorithmic Accountability"
+      "message": "Multiple parents (2): Civil Liability, Tort Law"
     },
     {
       "path": "AI Risks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Governance Object, Harm Taxonomy, Technology Risk"
+      "message": "Multiple parents (2): Governance Object, Harm Taxonomy"
     },
     {
       "path": "AI Scrapers.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Automated Agent, Data Acquisition Pipeline, Internet Bot"
+      "message": "Multiple parents (2): Automated Agent, Data Acquisition Pipeline"
     },
     {
       "path": "AI Search.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Question Answering System, Retrieval-Augmented Generation, Search Engine"
+      "message": "Multiple parents (2): Question Answering System, Retrieval-Augmented Generation"
     },
     {
       "path": "AI Video.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Deep Generative Model, Synthetic Media, Foundation Model"
+      "message": "Multiple parents (2): Deep Generative Model, Synthetic Media"
     },
     {
       "path": "AI companions.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Affective Computing System, Consumer AI Product, Large Language Model Application"
+      "message": "Multiple parents (2): Affective Computing System, Consumer AI Product"
     },
     {
       "path": "AI in Games.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Entertainment Technology, Game Development, Interactive Computing"
+      "message": "Multiple parents (2): Entertainment Technology, Game Development"
     },
     {
       "path": "AML KYC Compliance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Anti-Financial Crime Regime, Customer Onboarding Discipline, Financial Crime Compliance"
+      "message": "Multiple parents (2): Anti-Financial Crime Regime, Customer Onboarding Discipline"
     },
     {
       "path": "API Gateway.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cloud Native Component, Policy Enforcement Point, Reverse Proxy"
+      "message": "Multiple parents (2): Cloud Native Component, Policy Enforcement Point"
     },
     {
       "path": "AR Frame.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AR Hardware, Optical See-Through HMD, Spatial Computing Platform"
+      "message": "Multiple parents (2): AR Hardware, Optical See-Through HMD"
     },
     {
       "path": "AR Registration.md",
@@ -128,13 +115,13 @@
       "path": "Access Control System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Authorisation Mechanism, Governance Control, Information Security System"
+      "message": "Multiple parents (2): Authorisation Mechanism, Governance Control"
     },
     {
       "path": "Accessibility.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Design Principle, Non-Functional Requirement, Quality Attribute"
+      "message": "Multiple parents (2): Design Principle, Non-Functional Requirement"
     },
     {
       "path": "Accessible Design.md",
@@ -151,12 +138,6 @@
     {
       "path": "Account Model.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
-    },
-    {
-      "path": "Account Model.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
     },
@@ -164,13 +145,7 @@
       "path": "Active Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data-Efficient Learning, Interactive Learning, Human-in-the-Loop Learning"
-    },
-    {
-      "path": "Address.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Data-Efficient Learning, Interactive Learning"
     },
     {
       "path": "Address.md",
@@ -182,13 +157,13 @@
       "path": "Admittance Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Force Control, Compliance Control, Robot Control"
+      "message": "Multiple parents (2): Force Control, Compliance Control"
     },
     {
       "path": "Adoption of Convergent Technologies.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Socio-Technical Transition, Innovation Diffusion, Technology Policy"
+      "message": "Multiple parents (2): Socio-Technical Transition, Innovation Diffusion"
     },
     {
       "path": "Aerial Robot.md",
@@ -200,73 +175,49 @@
       "path": "Agent Frameworks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): LLM Orchestration, Workflow Engine, Software Framework"
+      "message": "Multiple parents (2): LLM Orchestration, Workflow Engine"
     },
     {
       "path": "Agentic Internet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agent-Oriented Computing, Sociotechnical System, Web Architecture"
+      "message": "Multiple parents (2): Agent-Oriented Computing, Sociotechnical System"
     },
     {
       "path": "Agents.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Intelligent System, Cognitive Architecture, Autonomous System"
+      "message": "Multiple parents (2): Intelligent System, Cognitive Architecture"
     },
     {
       "path": "Agricultural Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Mobile Robot, Robotics, Service Robot"
-    },
-    {
-      "path": "Algorithmic Accountability.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'ethical-framework' != label slug 'ethicalframework'"
-    },
-    {
-      "path": "Algorithmic Accountability.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'regulatory-compliance' != label slug 'regulatorycompliance'"
+      "message": "Multiple parents (2): Mobile Robot, Robotics"
     },
     {
       "path": "Algorithmic Accountability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AIGovernancePrinciple, EthicalFramework, RegulatoryCompliance"
+      "message": "Multiple parents (2): AIGovernancePrinciple, EthicalFramework"
     },
     {
       "path": "Algorithmic Bias and Variance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Generalisation Theory, Model Evaluation, Statistical Learning Theory"
+      "message": "Multiple parents (2): Generalisation Theory, Model Evaluation"
     },
     {
       "path": "AnimateDiff.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Latent Diffusion, Text-to-Video, Video Generation"
+      "message": "Multiple parents (2): Latent Diffusion, Text-to-Video"
     },
     {
       "path": "Anthropic Claude.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Safety Organization, Frontier AI Lab, Large Language Model Family"
-    },
-    {
-      "path": "Apple.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Hardware Manufacturer, Mobile Ecosystem, Platform Gatekeeper"
-    },
-    {
-      "path": "Archival Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): AI Safety Organization, Frontier AI Lab"
     },
     {
       "path": "Archival Node.md",
@@ -278,31 +229,31 @@
       "path": "Artificial General Intelligence.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Foundation Model Capability, Frontier AI, General Intelligence"
+      "message": "Multiple parents (2): Foundation Model Capability, Frontier AI"
     },
     {
       "path": "Asia Pacific Regulation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cross-Border AI Law, Digital Technology Policy, Regional AI Regulation"
+      "message": "Multiple parents (2): Cross-Border AI Law, Digital Technology Policy"
     },
     {
       "path": "Asset Registry.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Ownership System, Blockchain Application, Financial Infrastructure"
+      "message": "Multiple parents (2): Ownership System, Blockchain Application"
     },
     {
       "path": "Asynchronous Video.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Workplace Technology, Video-based Communication, Asynchronous Communication"
+      "message": "Multiple parents (2): Digital Workplace Technology, Video-based Communication"
     },
     {
       "path": "Attention.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Differentiable Memory, Neural Network Mechanism, Representation Learning"
+      "message": "Multiple parents (2): Differentiable Memory, Neural Network Mechanism"
     },
     {
       "path": "AutoML.md",
@@ -314,13 +265,7 @@
       "path": "Automated Podcasting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Audio, Content Automation, Speech Synthesis"
-    },
-    {
-      "path": "BLAKE2.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): AI Audio, Content Automation"
     },
     {
       "path": "BLAKE2.md",
@@ -332,19 +277,13 @@
       "path": "BTC Layer 3.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Application Layer Protocol, Bitcoin Protocol Stack, Blockchain Scalability Solution"
+      "message": "Multiple parents (2): Application Layer Protocol, Bitcoin Protocol Stack"
     },
     {
       "path": "Bandwidth Adaptation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Adaptive Bitrate Streaming, Congestion Control, Network Quality-of-Service"
-    },
-    {
-      "path": "Base Fee.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Adaptive Bitrate Streaming, Congestion Control"
     },
     {
       "path": "Base Fee.md",
@@ -356,73 +295,61 @@
       "path": "Bayes Filter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Probabilistic Filter, Recursive Estimator, Sequential Monte Carlo"
+      "message": "Multiple parents (2): Probabilistic Filter, Recursive Estimator"
     },
     {
       "path": "Bias in Large Language Models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Representational Harm, Sociotechnical Harm, Algorithmic Bias"
+      "message": "Multiple parents (2): Representational Harm, Sociotechnical Harm"
     },
     {
       "path": "Bio Terror.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Biosecurity, Dual-Use Research, Global Catastrophic Risk"
+      "message": "Multiple parents (2): Biosecurity, Dual-Use Research"
     },
     {
       "path": "Bitcoin As Money.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Austrian Economics, Cryptocurrency Economics, Digital Asset Economics"
+      "message": "Multiple parents (2): Austrian Economics, Cryptocurrency Economics"
     },
     {
       "path": "Bitcoin Centralisation Risks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Blockchain Governance Risk, Concentration Risk, Decentralisation"
+      "message": "Multiple parents (2): Blockchain Governance Risk, Concentration Risk"
     },
     {
       "path": "Bitcoin ETF.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Bitcoin Exposure Product, Exchange-Traded Fund, Passive Index Product"
+      "message": "Multiple parents (2): Bitcoin Exposure Product, Exchange-Traded Fund"
     },
     {
       "path": "Bitcoin Environmental Issues.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Asset Ecology, Energy Economics, Environmental Impact Assessment"
+      "message": "Multiple parents (2): Digital Asset Ecology, Energy Economics"
     },
     {
       "path": "Bitcoin Mining.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Mining, Industrial Process, Proof-of-Work"
+      "message": "Multiple parents (2): Cryptographic Mining, Industrial Process"
     },
     {
       "path": "Bitcoin Value Proposition.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Economic Philosophy, Store of Value, Monetary Theory"
-    },
-    {
-      "path": "Blender.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug '3-d-and-4-d' != label slug '3d-and-4d'"
+      "message": "Multiple parents (2): Economic Philosophy, Store of Value"
     },
     {
       "path": "Blender.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): 3D and 4D, Rendering Engine, Creative Software"
-    },
-    {
-      "path": "Block Header.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): 3D and 4D, Rendering Engine"
     },
     {
       "path": "Block Header.md",
@@ -433,20 +360,8 @@
     {
       "path": "Block Height.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
-    },
-    {
-      "path": "Block Height.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Block Propagation Time.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Block Propagation Time.md",
@@ -457,32 +372,14 @@
     {
       "path": "Block Propagation.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Block Propagation.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
     },
     {
       "path": "Block Reward.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
-    },
-    {
-      "path": "Block Reward.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Block Size.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
     },
     {
       "path": "Block Size.md",
@@ -493,20 +390,8 @@
     {
       "path": "Block Time.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
-    },
-    {
-      "path": "Block Time.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Block.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
     },
     {
       "path": "Block.md",
@@ -518,67 +403,49 @@
       "path": "Blockchain As A Service.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cloud Service Model, Enterprise Software Platform, Managed Service"
+      "message": "Multiple parents (2): Cloud Service Model, Enterprise Software Platform"
     },
     {
       "path": "Blockchain Energy Consumption.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): BlockchainPerformance, EnvironmentalImpact, Sustainability"
-    },
-    {
-      "path": "Blockchain Environmental Impact Assessment.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'environmental-assessment' != label slug 'environmentalassessment'"
+      "message": "Multiple parents (2): BlockchainPerformance, EnvironmentalImpact"
     },
     {
       "path": "Blockchain Environmental Impact Assessment.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): LifeCycleAssessment, SustainabilityMetric, EnvironmentalAssessment"
-    },
-    {
-      "path": "Blockchain Governance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Decentralized Organization, Blockchain Entity"
+      "message": "Multiple parents (2): LifeCycleAssessment, SustainabilityMetric"
     },
     {
       "path": "Blockchain Interoperability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Network Interoperability, Cross Chain Communication, Distributed Systems Protocol"
+      "message": "Multiple parents (2): Network Interoperability, Cross Chain Communication"
     },
     {
       "path": "Blockchain Network.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Fault Tolerant System, Overlay Network, Byzantine Fault Tolerant System"
+      "message": "Multiple parents (2): Fault Tolerant System, Overlay Network"
     },
     {
       "path": "Blockchain Protocol.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Peer-to-Peer Protocol, Consensus Algorithm, Distributed System Protocol"
+      "message": "Multiple parents (2): Peer-to-Peer Protocol, Distributed System Protocol"
     },
     {
       "path": "Blockchain Scalability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol Architecture, System Performance, Blockchain Entity"
+      "message": "Multiple parents (2): Protocol Architecture, System Performance"
     },
     {
       "path": "Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic System, Distributed Data Structure, Distributed Ledger"
-    },
-    {
-      "path": "Bootstrap Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Cryptographic System, Distributed Data Structure"
     },
     {
       "path": "Bootstrap Node.md",
@@ -590,19 +457,13 @@
       "path": "Brain Computer Interfaces.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Assistive Technology, Biomedical Device, Neural Interface"
+      "message": "Multiple parents (2): Assistive Technology, Biomedical Device"
     },
     {
       "path": "Breakout Room.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Collaborative Learning Infrastructure, Group Facilitation Tools, Synchronous Communication"
-    },
-    {
-      "path": "Burning Mechanism.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Collaborative Learning Infrastructure, Group Facilitation Tools"
     },
     {
       "path": "Burning Mechanism.md",
@@ -620,37 +481,37 @@
       "path": "CBDC Frameworks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Central Bank Infrastructure, Monetary Policy Framework, Payment System Standard"
+      "message": "Multiple parents (2): Central Bank Infrastructure, Monetary Policy Framework"
     },
     {
       "path": "CBDCs.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Central Bank Money, Legal Tender, Payment Instrument"
+      "message": "Multiple parents (2): Central Bank Money, Legal Tender"
     },
     {
       "path": "CLI Multi-Agent Systems.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agentic Workflow, Autonomous Agents, LLM Agents"
+      "message": "Multiple parents (2): Agentic Workflow, Autonomous Agents"
     },
     {
       "path": "CRDT.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Commutative Data Structure, Distributed Data Synchronisation, Eventually Consistent Data Structure"
+      "message": "Multiple parents (2): Commutative Data Structure, Distributed Data Synchronisation"
     },
     {
       "path": "California AI bill.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Frontier Model Governance, Legislative Instrument, State Law"
+      "message": "Multiple parents (2): Frontier Model Governance, Legislative Instrument"
     },
     {
       "path": "Call Centres.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Customer Service Automation, Enterprise AI, Operational AI"
+      "message": "Multiple parents (2): Customer Service Automation, Enterprise AI"
     },
     {
       "path": "Camera.md",
@@ -662,19 +523,19 @@
       "path": "Carbon Credit Tracking.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Carbon Markets, Distributed Ledger Application, Environmental Finance"
+      "message": "Multiple parents (2): Carbon Markets, Distributed Ledger Application"
     },
     {
       "path": "Carbon Footprint Measurement.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Climate Risk Management, Measurement Frameworks, Sustainability Reporting"
+      "message": "Multiple parents (2): Climate Risk Management, Measurement Frameworks"
     },
     {
       "path": "Carbon Neutral Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Climate-Aligned Finance, Green Infrastructure, Sustainable Technology"
+      "message": "Multiple parents (2): Climate-Aligned Finance, Green Infrastructure"
     },
     {
       "path": "Cardano.md",
@@ -686,13 +547,7 @@
       "path": "Cashu.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Bitcoin Layer 2, Chaumian Ecash, Digital Cash"
-    },
-    {
-      "path": "Censorship Resistance.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Bitcoin Layer 2, Chaumian Ecash"
     },
     {
       "path": "Censorship Resistance.md",
@@ -704,25 +559,13 @@
       "path": "Centralized Swarm Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Centralized Control Architecture, Swarm Control, Robotics"
-    },
-    {
-      "path": "Chain Reorganization.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Centralized Control Architecture, Swarm Control"
     },
     {
       "path": "Chain Reorganization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Chain State.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
     },
     {
       "path": "Chain State.md",
@@ -734,31 +577,25 @@
       "path": "ChatGPT.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Assistants, Natural Language Generation, Instruction Following"
+      "message": "Multiple parents (2): AI Assistants, Natural Language Generation"
     },
     {
       "path": "Chatbots.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Dialogue Systems, AI Agent System, Conversational AI"
+      "message": "Multiple parents (2): Dialogue Systems, AI Agent System"
     },
     {
       "path": "Checkpoints.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Model Serialisation, Model Versioning, Fault Tolerance"
+      "message": "Multiple parents (2): Model Serialisation, Model Versioning"
     },
     {
       "path": "Circular Economy.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Economic Model, Environmental Policy, Industrial Ecology"
-    },
-    {
-      "path": "Circulating Supply.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Economic Model, Environmental Policy"
     },
     {
       "path": "Circulating Supply.md",
@@ -769,38 +606,20 @@
     {
       "path": "Climate Action DAO.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'decentralized-autonomous-organization' != label slug 'decentralizedautonomousorganization'"
-    },
-    {
-      "path": "Climate Action DAO.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): CollectiveGovernance, ImpactInvestment, DecentralizedAutonomousOrganization"
+      "message": "Multiple parents (2): CollectiveGovernance, ImpactInvestment"
     },
     {
       "path": "Cognitive AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Hybrid AI, Neurosymbolic AI, Cognitive Architecture"
-    },
-    {
-      "path": "Coin.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Hybrid AI, Neurosymbolic AI"
     },
     {
       "path": "Coin.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
-    },
-    {
-      "path": "Coinbase Transaction.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
     },
     {
       "path": "Coinbase Transaction.md",
@@ -812,7 +631,7 @@
       "path": "Cold Chain Monitoring.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Compliance Infrastructure, Logistics Management, Monitoring Systems"
+      "message": "Multiple parents (2): Compliance Infrastructure, Logistics Management"
     },
     {
       "path": "Collaborative Robot.md",
@@ -824,13 +643,7 @@
       "path": "Collaborative Whiteboard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Workspace, Visual Collaboration Tools, Remote Work Technology"
-    },
-    {
-      "path": "Collision Resistance.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Digital Workspace, Visual Collaboration Tools"
     },
     {
       "path": "Collision Resistance.md",
@@ -842,73 +655,55 @@
       "path": "ComfyUI Client.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): API Client, Graphical User Interface, Node Based Interface"
+      "message": "Multiple parents (2): API Client, Graphical User Interface"
     },
     {
       "path": "ComfyUI Workflows.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Diffusion Model Interface, Generative AI Pipeline, Inference Orchestration System"
-    },
-    {
-      "path": "ComfyUI for Fashion and Brands.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'comfy-ui' != label slug 'comfyui'"
+      "message": "Multiple parents (2): Diffusion Model Interface, Generative AI Pipeline"
     },
     {
       "path": "ComfyUI for Fashion and Brands.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Fashion Technology, ComfyUI, Style Transfer"
+      "message": "Multiple parents (2): Fashion Technology, ComfyUI"
     },
     {
       "path": "ComfyUI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Diffusion Model Runtime, Inference Orchestrator, Node-Based Visual Programming Environment"
-    },
-    {
-      "path": "Communication Protocol.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Communication Systems, Information Architecture"
+      "message": "Multiple parents (2): Diffusion Model Runtime, Inference Orchestrator"
     },
     {
       "path": "Competition in AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Geopolitics, Industrial Competition, Innovation Economics"
+      "message": "Multiple parents (2): Geopolitics, Industrial Competition"
     },
     {
       "path": "Compliance Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Enterprise Risk Management, Information Security Management, Internal Control"
+      "message": "Multiple parents (2): Enterprise Risk Management, Information Security Management"
     },
     {
       "path": "Compliance Monitoring.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Automated Compliance, Continuous Control Monitoring, Governance Risk Compliance"
+      "message": "Multiple parents (2): Automated Compliance, Continuous Control Monitoring"
     },
     {
       "path": "Computer Use and Browser Agents.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Intelligent System, Cognitive Architecture, Agents"
+      "message": "Multiple parents (2): Intelligent System, Cognitive Architecture"
     },
     {
       "path": "Consensus Mechanism.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Atomic Broadcast, Coordination Protocol, Distributed Algorithm"
-    },
-    {
-      "path": "Consensus Rule.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Atomic Broadcast, Coordination Protocol"
     },
     {
       "path": "Consensus Rule.md",
@@ -920,25 +715,25 @@
       "path": "Consortium Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Federated System, Multi-Organisation Database, Permissioned Network"
+      "message": "Multiple parents (2): Federated System, Multi-Organisation Database"
     },
     {
       "path": "Consumer Protection.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Competition Law, Market Regulation, Regulation"
+      "message": "Multiple parents (2): Competition Law, Market Regulation"
     },
     {
       "path": "Context Engineering.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agent Engineering, AI Engineering, LLM Application Engineering"
+      "message": "Multiple parents (2): Agent Engineering, AI Engineering"
     },
     {
       "path": "Control Algorithm.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Dynamical Systems, Computational Intelligence, Optimal Control"
+      "message": "Multiple parents (2): Dynamical Systems, Computational Intelligence"
     },
     {
       "path": "Control System.md",
@@ -950,31 +745,31 @@
       "path": "Control Theory.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Control Engineering, Cybernetics, Dynamical Systems Theory"
+      "message": "Multiple parents (2): Control Engineering, Cybernetics"
     },
     {
       "path": "ControlNet and Similar Spatial Conditioning Systems.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Conditional Image Generation, Fine-tuning, Diffusion Model"
+      "message": "Multiple parents (2): Conditional Image Generation, Fine-tuning"
     },
     {
       "path": "Convergence.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): General Purpose Technology, Innovation Systems, Sociotechnical Systems"
+      "message": "Multiple parents (2): General Purpose Technology, Innovation Systems"
     },
     {
       "path": "Conviction Voting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Continuous Decision-Making, DAO Governance Mechanism, Token-Weighted Governance"
+      "message": "Multiple parents (2): Continuous Decision-Making, DAO Governance Mechanism"
     },
     {
       "path": "Cortex Agent.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agentic Internet, Agents, Cognitive AI"
+      "message": "Multiple parents (2): Agentic Internet, Agents"
     },
     {
       "path": "Cosmos IBC.md",
@@ -986,13 +781,13 @@
       "path": "Cross Border Compliance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Compliance Programs, International Law, Legal Risk Management"
+      "message": "Multiple parents (2): Compliance Programs, International Law"
     },
     {
       "path": "Cross-Chain Bridge.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Asset Transfer Mechanism, Cross-Chain Application, Smart Contract Protocol"
+      "message": "Multiple parents (2): Asset Transfer Mechanism, Cross-Chain Application"
     },
     {
       "path": "Cross-Chain Messaging.md",
@@ -1004,13 +799,7 @@
       "path": "Cryptocurrency.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptoasset, Distributed Ledger Native Token, Permissionless Asset"
-    },
-    {
-      "path": "Cryptographic Commitment.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Cryptoasset, Distributed Ledger Native Token"
     },
     {
       "path": "Cryptographic Commitment.md",
@@ -1022,7 +811,7 @@
       "path": "Cryptography Security and Privacy.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computer Science, Privacy Engineering, Trusted Computing"
+      "message": "Multiple parents (2): Computer Science, Privacy Engineering"
     },
     {
       "path": "Current Sensor.md",
@@ -1034,19 +823,19 @@
       "path": "Customs Trade Facilitation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Customs, Trade Finance, Supply Chain Traceability"
+      "message": "Multiple parents (2): Digital Customs, Trade Finance"
     },
     {
       "path": "Cyber Security and Cryptography.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Network Security, Applied Mathematics, Systems Engineering"
+      "message": "Multiple parents (2): Network Security, Applied Mathematics"
     },
     {
       "path": "Cyber Security and Military.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cyber Operations, Defence Capability, National Security Capability"
+      "message": "Multiple parents (2): Cyber Operations, Defence Capability"
     },
     {
       "path": "Cybersecurity Standard.md",
@@ -1058,31 +847,25 @@
       "path": "Cylindrical Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Coordinate Robots, Fixed-Base Manipulator, Industrial Robot"
-    },
-    {
-      "path": "DALL\u00b7E.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Multimodal Model, Proprietary Model, Text-to-Image Model"
+      "message": "Multiple parents (2): Coordinate Robots, Fixed-Base Manipulator"
     },
     {
       "path": "DAO Analytics.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Analytics Platforms, Blockchain Analytics, Data-Driven Governance"
+      "message": "Multiple parents (2): Analytics Platforms, Blockchain Analytics"
     },
     {
       "path": "DAO Legal Structures.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Corporate Forms, Governance Structures, Legal Entity Wrappers"
+      "message": "Multiple parents (2): Corporate Forms, Governance Structures"
     },
     {
       "path": "DAO Tooling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Coordination Technology, Governance Infrastructure, Organisational Software"
+      "message": "Multiple parents (2): Coordination Technology, Governance Infrastructure"
     },
     {
       "path": "DC Servo Motor.md",
@@ -1094,31 +877,25 @@
       "path": "Data Layer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Architectural Layer, Software Layer, System Tier"
+      "message": "Multiple parents (2): Architectural Layer, Software Layer"
     },
     {
       "path": "Death of the Internet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Information Integrity, Platform Decay, Surveillance Capitalism"
+      "message": "Multiple parents (2): Information Integrity, Platform Decay"
     },
     {
       "path": "Decentralised Web.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Open Protocol, Sociotechnical System, Web Architecture"
+      "message": "Multiple parents (2): Open Protocol, Sociotechnical System"
     },
     {
       "path": "Decentralised file storage.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Content-Addressed Storage, Distributed Storage, Permissionless Protocol"
-    },
-    {
-      "path": "Decentralization.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Content-Addressed Storage, Distributed Storage"
     },
     {
       "path": "Decentralization.md",
@@ -1130,43 +907,25 @@
       "path": "Decentralized Exchange.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Finance Primitive, Financial Protocol, Trading Venue"
+      "message": "Multiple parents (2): Decentralised Finance Primitive, Financial Protocol"
     },
     {
       "path": "Decentralized Finance (DeFi).md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Protocols, Token Economy, Financial Technology"
-    },
-    {
-      "path": "Decentralized Governance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Collective Action, Common Pool Resources, Institutional Economics"
+      "message": "Multiple parents (2): Cryptographic Protocols, Token Economy"
     },
     {
       "path": "Decentralized Identifiers.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Identifier, Identifier, Self-Sovereign Identifier"
-    },
-    {
-      "path": "Deep Learning.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Artificial Intelligence, Machine Learning"
+      "message": "Multiple parents (2): Cryptographic Identifier, Identifier"
     },
     {
       "path": "Deepfakes and fraudulent content.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Generative AI Misuse, Identity Fraud, Information Integrity Threat"
-    },
-    {
-      "path": "Deflationary Token.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Generative AI Misuse, Identity Fraud"
     },
     {
       "path": "Deflationary Token.md",
@@ -1178,7 +937,7 @@
       "path": "Delegate Democracy.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Collective Decision Making, Hybrid Democracy, Social Choice Mechanism"
+      "message": "Multiple parents (2): Collective Decision Making, Hybrid Democracy"
     },
     {
       "path": "Delta Robot.md",
@@ -1190,19 +949,19 @@
       "path": "Depth Estimation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): 3D Perception, Geometric Vision, Dense Prediction"
+      "message": "Multiple parents (2): 3D Perception, Geometric Vision"
     },
     {
       "path": "Derivative Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Control Actions, PID Control Component, Feedback Control"
+      "message": "Multiple parents (2): Control Actions, PID Control Component"
     },
     {
       "path": "Diagrams as Code.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Declarative Specification, Documentation as Code, Domain-Specific Language"
+      "message": "Multiple parents (2): Declarative Specification, Documentation as Code"
     },
     {
       "path": "Differential Drive Robot.md",
@@ -1219,32 +978,14 @@
     {
       "path": "Difficulty Adjustment.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Difficulty Adjustment.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
     },
     {
       "path": "Difficulty Target.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Difficulty Target.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Difficulty.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
     },
     {
       "path": "Difficulty.md",
@@ -1256,43 +997,43 @@
       "path": "Diffusion Models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Latent Variable Model, Markov Chain Model, Score-Based Model"
+      "message": "Multiple parents (2): Latent Variable Model, Markov Chain Model"
     },
     {
       "path": "Digital Identity Wallet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Key Container, Mobile Application, Self-Sovereign Identity Component"
+      "message": "Multiple parents (2): Cryptographic Key Container, Mobile Application"
     },
     {
       "path": "Digital Objects.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Artefact, Identified Entity, Information Resource"
+      "message": "Multiple parents (2): Digital Artefact, Identified Entity"
     },
     {
       "path": "Digital Signature.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Asymmetric Cryptography, Authentication Mechanism, Public-Key Cryptosystem"
+      "message": "Multiple parents (2): Asymmetric Cryptography, Authentication Mechanism"
     },
     {
       "path": "Digital Society Harms.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Sociotechnical Risk, Digital Safety, Human Rights"
+      "message": "Multiple parents (2): Sociotechnical Risk, Digital Safety"
     },
     {
       "path": "Digital Society Surveillance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Civil Liberties, Data Ethics, Digital Rights"
+      "message": "Multiple parents (2): Civil Liberties, Data Ethics"
     },
     {
       "path": "Digital Workplace Platform.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cloud Platform, Employee Experience System, Enterprise Software Infrastructure"
+      "message": "Multiple parents (2): Cloud Platform, Employee Experience System"
     },
     {
       "path": "Dijkstra Algorithm.md",
@@ -1304,61 +1045,43 @@
       "path": "Direct Preference Optimization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Implicit Reward Modelling, Language Model Alignment, Offline Reinforcement Learning"
+      "message": "Multiple parents (2): Implicit Reward Modelling, Language Model Alignment"
     },
     {
       "path": "Distributed Computing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Concurrent Computing, Coordination Systems, Networked Systems"
+      "message": "Multiple parents (2): Concurrent Computing, Coordination Systems"
     },
     {
       "path": "Distributed Decision Making.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Collective Intelligence, Coordination Mechanisms, Organisational Governance"
+      "message": "Multiple parents (2): Collective Intelligence, Coordination Mechanisms"
     },
     {
       "path": "Distributed Identity.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Privacy-Preserving Technology, Decentralised Web, Digital Identity"
+      "message": "Multiple parents (2): Privacy-Preserving Technology, Decentralised Web"
     },
     {
       "path": "Distributed Ledger.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Append-Only Log, Multi-Party Database, Replicated State Machine"
-    },
-    {
-      "path": "Docker.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Container Platform, Container Runtime, Developer Tooling"
+      "message": "Multiple parents (2): Append-Only Log, Multi-Party Database"
     },
     {
       "path": "Domain Ontology.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Conceptual Model, Formal Specification, Knowledge Representation Artifact"
-    },
-    {
-      "path": "Double Spending.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Conceptual Model, Formal Specification"
     },
     {
       "path": "Double Spending.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "ECDSA.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
     },
     {
       "path": "ECDSA.md",
@@ -1367,34 +1090,22 @@
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
     {
-      "path": "EMC Standard.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Electromagnetic Compatibility, Robot Standard"
-    },
-    {
       "path": "ESG Reporting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Non-Financial Reporting, Stakeholder Reporting, Sustainability Disclosure"
+      "message": "Multiple parents (2): Non-Financial Reporting, Stakeholder Reporting"
     },
     {
       "path": "EU AI Act.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Product Safety Regulation, Risk-Based Regulation, AI Regulation"
+      "message": "Multiple parents (2): Product Safety Regulation, Risk-Based Regulation"
     },
     {
       "path": "EU MiCA Regulation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Crypto-Asset Regulation, Digital Finance Package, Financial Services Regulation"
-    },
-    {
-      "path": "Eclipse Attack.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Crypto-Asset Regulation, Digital Finance Package"
     },
     {
       "path": "Eclipse Attack.md",
@@ -1403,34 +1114,22 @@
       "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
     },
     {
-      "path": "Economic Security.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
-    },
-    {
-      "path": "Economic Security.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
-    },
-    {
       "path": "Economics.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Behavioural Economics, Complexity Science, Information Theory"
+      "message": "Multiple parents (2): Behavioural Economics, Complexity Science"
     },
     {
       "path": "Edge Computing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Architecture, Latency-Sensitive Infrastructure, Network Function Virtualisation"
+      "message": "Multiple parents (2): Decentralised Architecture, Latency-Sensitive Infrastructure"
     },
     {
       "path": "Education and AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Applied AI, Conversational AI Applications, Human-Centred AI"
+      "message": "Multiple parents (2): Applied AI, Conversational AI Applications"
     },
     {
       "path": "Electric Actuator.md",
@@ -1447,12 +1146,6 @@
     {
       "path": "Elliptic Curve Cryptography.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
-    },
-    {
-      "path": "Elliptic Curve Cryptography.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
@@ -1460,19 +1153,13 @@
       "path": "Embodied Minds.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Situated Cognition, Philosophy of Mind, Cognitive Science"
+      "message": "Multiple parents (2): Situated Cognition, Philosophy of Mind"
     },
     {
       "path": "Emergence.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Collective Behaviour, Complex Systems Concept, Cross-Scale Phenomenon"
-    },
-    {
-      "path": "Emission Schedule.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Collective Behaviour, Complex Systems Concept"
     },
     {
       "path": "Emission Schedule.md",
@@ -1484,7 +1171,7 @@
       "path": "Empathetic AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Affective Computing, Cognitive AI, Multimodal AI"
+      "message": "Multiple parents (2): Affective Computing, Cognitive AI"
     },
     {
       "path": "End Effector.md",
@@ -1496,37 +1183,31 @@
       "path": "Energy and Power.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Critical Infrastructure, Grid Infrastructure, Carbon Footprint Measurement"
+      "message": "Multiple parents (2): Critical Infrastructure, Grid Infrastructure"
     },
     {
       "path": "Enterprise Smart Contracts.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Business Logic Code, Multi-Party Agreement, Permissioned Compute Artefact"
-    },
-    {
-      "path": "Enterprise Token Standards.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Asset Standard, Regulated Financial Instrument, Securities Representation Format"
+      "message": "Multiple parents (2): Business Logic Code, Multi-Party Agreement"
     },
     {
       "path": "Ethereum.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Computing Platform, Layer 1 Blockchain, Programmable Money"
+      "message": "Multiple parents (2): Decentralised Computing Platform, Layer 1 Blockchain"
     },
     {
       "path": "Ethical Sourcing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Corporate Social Responsibility, Human Rights Due Diligence, Responsible Business Conduct"
+      "message": "Multiple parents (2): Corporate Social Responsibility, Human Rights Due Diligence"
     },
     {
       "path": "Evaluation benchmarks and leaderboards.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Evaluation, Capability Assessment, Empirical Methodology"
+      "message": "Multiple parents (2): AI Evaluation, Capability Assessment"
     },
     {
       "path": "Exoskeleton Robot.md",
@@ -1538,31 +1219,25 @@
       "path": "Exteroceptive Sensor.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Environmental Sensor, Perception Transducer, Robot Sensor"
+      "message": "Multiple parents (2): Environmental Sensor, Perception Transducer"
     },
     {
       "path": "Face Swap.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Face Manipulation, Identity Transfer, Conditional Image Synthesis"
+      "message": "Multiple parents (2): Face Manipulation, Identity Transfer"
     },
     {
       "path": "Fashion.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Creative Industries, Retail Technology, Supply Chain Management"
+      "message": "Multiple parents (2): Creative Industries, Retail Technology"
     },
     {
       "path": "Fault Tolerance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Dependability, Reliability Engineering, System Property"
-    },
-    {
-      "path": "Fee Market.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Dependability, Reliability Engineering"
     },
     {
       "path": "Fee Market.md",
@@ -1574,7 +1249,7 @@
       "path": "Feed Forward Network.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Differentiable Programming, Parametric Model, Neural Network"
+      "message": "Multiple parents (2): Differentiable Programming, Parametric Model"
     },
     {
       "path": "Feedback Control.md",
@@ -1586,13 +1261,7 @@
       "path": "Feedback Loop.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Circular Causality, Closed-Loop System, Control Mechanism"
-    },
-    {
-      "path": "Finality.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Circular Causality, Closed-Loop System"
     },
     {
       "path": "Finality.md",
@@ -1604,19 +1273,19 @@
       "path": "Flux.1.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Multimodal Diffusion Transformer, Rectified Flow Model, Latent Diffusion Model"
+      "message": "Multiple parents (2): Multimodal Diffusion Transformer, Rectified Flow Model"
     },
     {
       "path": "Fooocus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Gradio Application, Local Image Generation Interface, Stable Diffusion Frontend"
+      "message": "Multiple parents (2): Gradio Application, Local Image Generation Interface"
     },
     {
       "path": "Force Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cyber-Physical Control, Robotic Control, Closed Loop Control"
+      "message": "Multiple parents (2): Cyber-Physical Control, Robotic Control"
     },
     {
       "path": "Force Torque Sensor.md",
@@ -1627,32 +1296,14 @@
     {
       "path": "Fork Choice Rule.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Fork Choice Rule.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Foundation Models.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): General-Purpose AI, Self-Supervised Learning, Pretrained Model"
     },
     {
       "path": "Friction.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Physics Modelling, Robot Dynamics"
-    },
-    {
-      "path": "Full Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Full Node.md",
@@ -1664,7 +1315,7 @@
       "path": "Function Calling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agentic Capability, Language Model Augmentation, LLM Capability"
+      "message": "Multiple parents (2): Agentic Capability, Language Model Augmentation"
     },
     {
       "path": "Functional Safety.md",
@@ -1676,19 +1327,13 @@
       "path": "GPT Engineer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Adoption, CLI Multi-Agent Systems, Agentic Internet"
+      "message": "Multiple parents (2): AI Adoption, CLI Multi-Agent Systems"
     },
     {
       "path": "GPTs and Custom Assistants.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): LLM Application, No-Code Platform, Retrieval-Augmented Generation System"
-    },
-    {
-      "path": "Gas Limit.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): LLM Application, No-Code Platform"
     },
     {
       "path": "Gas Limit.md",
@@ -1699,20 +1344,8 @@
     {
       "path": "Gas Price.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
-    },
-    {
-      "path": "Gas Price.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
-    },
-    {
-      "path": "Gas.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
     },
     {
       "path": "Gas.md",
@@ -1724,7 +1357,7 @@
       "path": "Gaussian Splatting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): 3D Scene Reconstruction, Differentiable Rendering, Novel View Synthesis"
+      "message": "Multiple parents (2): 3D Scene Reconstruction, Differentiable Rendering"
     },
     {
       "path": "Gaze Control.md",
@@ -1739,22 +1372,10 @@
       "message": "Multiple parents (2): Physics Simulator, Robotics Development Tool"
     },
     {
-      "path": "Generative AI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Artificial Intelligence, Deep Learning, Machine Learning"
-    },
-    {
       "path": "Generative Adversarial Networks.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Adversarial Learning System, Implicit Density Model, Unsupervised Learning"
-    },
-    {
-      "path": "Genesis Block.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Adversarial Learning System, Implicit Density Model"
     },
     {
       "path": "Genesis Block.md",
@@ -1766,49 +1387,19 @@
       "path": "Global Inequality.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Development Economics, Distributive Justice, Economic Inequality"
+      "message": "Multiple parents (2): Development Economics, Distributive Justice"
     },
     {
       "path": "Gold.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Commodity, Hard Money, Monetary Metal"
+      "message": "Multiple parents (2): Commodity, Hard Money"
     },
     {
       "path": "Google DeepMind.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Research Laboratory, Alphabet Subsidiary, Corporate Research Lab"
-    },
-    {
-      "path": "Google.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Search, Technology Conglomerate, Foundation Model Provider"
-    },
-    {
-      "path": "Gossip Protocol.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
-    },
-    {
-      "path": "Gossip Protocol.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "Governance Structure.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Institutional Design, Accountability Mechanism, Trust Framework"
-    },
-    {
-      "path": "Governance Token.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Coordination Primitive, Crypto-Asset, ERC-20 Token"
+      "message": "Multiple parents (2): AI Research Laboratory, Alphabet Subsidiary"
     },
     {
       "path": "Gps.md",
@@ -1820,49 +1411,37 @@
       "path": "Graph Database.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data Management System, Database, NoSQL Database"
+      "message": "Multiple parents (2): Data Management System, Database"
     },
     {
       "path": "Graphics API.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Application Programming Interface, Hardware Abstraction Layer, Hardware Interface"
+      "message": "Multiple parents (2): Application Programming Interface, Hardware Abstraction Layer"
     },
     {
       "path": "Green Blockchain Initiatives.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): ESG, Sustainable Finance, Environmental Technology"
+      "message": "Multiple parents (2): ESG, Sustainable Finance"
     },
     {
       "path": "Grok.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Frontier Model, Large Language Model, Transformer Model"
-    },
-    {
-      "path": "Groq.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Inference Hardware, Cloud Inference Provider, Domain-Specific Architecture"
+      "message": "Multiple parents (2): Frontier Model, Large Language Model"
     },
     {
       "path": "Ground Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Autonomous Systems, Embodied AI, Unmanned Ground Vehicle"
+      "message": "Multiple parents (2): Autonomous Systems, Embodied AI"
     },
     {
       "path": "Gyroscope.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Inertial Sensor, Robotics"
-    },
-    {
-      "path": "Halving.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Inertial Sensor, Sensor"
     },
     {
       "path": "Halving.md",
@@ -1874,19 +1453,13 @@
       "path": "Hand Tracking.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Gesture Recognition, Pose Estimation, Human-Computer Interaction"
+      "message": "Multiple parents (2): Gesture Recognition, Pose Estimation"
     },
     {
       "path": "Hardware and Edge.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Neural Processing Unit, AI Accelerator, Edge Computing"
-    },
-    {
-      "path": "Hash Collision.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Neural Processing Unit, AI Accelerator"
     },
     {
       "path": "Hash Collision.md",
@@ -1898,19 +1471,19 @@
       "path": "Hash Function.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Compression Function, Cryptographic Algorithm, Deterministic Function"
+      "message": "Multiple parents (2): Compression Function, Cryptographic Algorithm"
     },
     {
       "path": "History and Path to AGI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Research, Scientific Paradigm, Technology History"
+      "message": "Multiple parents (2): AI Research, Scientific Paradigm"
     },
     {
       "path": "Home Assistant.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Home Automation, IoT Platform, Smart Home"
+      "message": "Multiple parents (2): Home Automation, IoT Platform"
     },
     {
       "path": "Human Factors.md",
@@ -1922,85 +1495,79 @@
       "path": "Humanoid Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Bipedal Robot, Embodied Agent, Autonomous System"
+      "message": "Multiple parents (2): Bipedal Robot, Embodied Agent"
     },
     {
       "path": "Hunyuan Video.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Diffusion Transformer, Generative Video Model, Open-Weights Foundation Model"
+      "message": "Multiple parents (2): Diffusion Transformer, Generative Video Model"
     },
     {
       "path": "Hydraulic Actuator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Fluid Power System, Force Control System, Mechanical Transducer"
+      "message": "Multiple parents (2): Fluid Power System, Force Control System"
     },
     {
       "path": "Hyper personalisation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Behavioural AI, Customer Experience Management, Recommender Systems"
+      "message": "Multiple parents (2): Behavioural AI, Customer Experience Management"
     },
     {
       "path": "Hyperledger Indy.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralized Identifier Method, Permissioned Distributed Ledger, Verifiable Data Registry"
+      "message": "Multiple parents (2): Decentralized Identifier Method, Permissioned Distributed Ledger"
     },
     {
       "path": "Hyperledger Iroha.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Enterprise Blockchain Framework, Hyperledger Project, Byzantine Fault Tolerant System"
+      "message": "Multiple parents (2): Enterprise Blockchain Framework, Hyperledger Project"
     },
     {
       "path": "IP-Adapter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cross-Attention Module, Diffusion Model Adapter, Image Conditioning Mechanism"
+      "message": "Multiple parents (2): Cross-Attention Module, Diffusion Model Adapter"
     },
     {
       "path": "Identity Management System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Zero Trust Architecture, Access Control System, Security Architecture"
+      "message": "Multiple parents (2): Zero Trust Architecture, Access Control System"
     },
     {
       "path": "Identity Provider.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Security Infrastructure, Trust Service, Authentication Service"
+      "message": "Multiple parents (2): Security Infrastructure, Trust Service"
     },
     {
       "path": "Identity Verification.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Authentication Method, Identity Proofing, Trust Establishment"
+      "message": "Multiple parents (2): Authentication Method, Identity Proofing"
     },
     {
       "path": "Image Segmentation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Structured Prediction, Dense Prediction, Scene Understanding"
+      "message": "Multiple parents (2): Structured Prediction, Dense Prediction"
     },
     {
       "path": "Image and Video Restoration.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Image Processing, Inverse Problems, Signal Recovery"
+      "message": "Multiple parents (2): Image Processing, Inverse Problems"
     },
     {
       "path": "Imitation Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Learning from Demonstration, Policy Learning, Sequential Decision Making"
-    },
-    {
-      "path": "Immutability.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Learning from Demonstration, Policy Learning"
     },
     {
       "path": "Immutability.md",
@@ -2017,12 +1584,6 @@
     {
       "path": "Incentive Alignment.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
-    },
-    {
-      "path": "Incentive Alignment.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
     },
@@ -2030,13 +1591,7 @@
       "path": "Industrial Robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Manufacturing Automation, Programmable Logic Controller, Electromechanical Systems"
-    },
-    {
-      "path": "Inflation.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Manufacturing Automation, Programmable Logic Controller"
     },
     {
       "path": "Inflation.md",
@@ -2047,38 +1602,20 @@
     {
       "path": "Inflationary Token.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
-    },
-    {
-      "path": "Inflationary Token.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
     },
     {
       "path": "InfraredSensor.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'proximity-sensor' != label slug 'proximitysensor'"
-    },
-    {
-      "path": "InfraredSensor.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): OptoelectronicDevice, ThermalImager, ProximitySensor"
+      "message": "Multiple parents (2): OptoelectronicDevice, ThermalImager"
     },
     {
       "path": "Inpainting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Image Editing, Image Restoration, Computer Vision Task"
-    },
-    {
-      "path": "Input.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Image Editing, Image Restoration"
     },
     {
       "path": "Input.md",
@@ -2090,37 +1627,31 @@
       "path": "Instant value settlement.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Financial Infrastructure, Cryptocurrency, Smart Contract"
+      "message": "Multiple parents (2): Financial Infrastructure, Cryptocurrency"
     },
     {
       "path": "Iot Sensor Network.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Networked Embedded Systems, Pervasive Computing, Wireless Sensor Network"
+      "message": "Multiple parents (2): Networked Embedded Systems, Pervasive Computing"
     },
     {
       "path": "Jailbreaking.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Adversarial Machine Learning, Prompt Engineering, AI Risks"
+      "message": "Multiple parents (2): Adversarial Machine Learning, Prompt Engineering"
     },
     {
       "path": "KOHYA Dreambooth and similar.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Diffusion Models, Parameter-Efficient Fine-Tuning, Transfer Learning"
+      "message": "Multiple parents (2): Diffusion Models, Parameter-Efficient Fine-Tuning"
     },
     {
       "path": "Kalman Filter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Bayes Filter, State Estimation"
-    },
-    {
-      "path": "Keccak-256.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
     },
     {
       "path": "Keccak-256.md",
@@ -2132,13 +1663,13 @@
       "path": "Kinematics Model.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Geometric Model, Mathematical Model, Motion Model"
+      "message": "Multiple parents (2): Geometric Model, Mathematical Model"
     },
     {
       "path": "Knowledge Graphing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data Engineering, Graph Databases, Ontology Engineering"
+      "message": "Multiple parents (2): Data Engineering, Graph Databases"
     },
     {
       "path": "LangChain.md",
@@ -2150,31 +1681,19 @@
       "path": "Large Language Models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Neural Network, Foundation Models, Deep Learning"
+      "message": "Multiple parents (2): Neural Network, Foundation Models"
     },
     {
       "path": "Learning Algorithm.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computational Intelligence, Optimisation, Statistical Learning Theory"
-    },
-    {
-      "path": "Lens and Camera Calibration.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug '3-d-reconstruction' != label slug '3d-reconstruction'"
+      "message": "Multiple parents (2): Computational Intelligence, Optimisation"
     },
     {
       "path": "Lens and Camera Calibration.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Geometric Camera Models, Sensor Calibration, 3D Reconstruction"
-    },
-    {
-      "path": "Light Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Geometric Camera Models, Sensor Calibration"
     },
     {
       "path": "Light Node.md",
@@ -2186,49 +1705,37 @@
       "path": "Light field.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Image Based Rendering, Optical Representation, Radiance Field"
+      "message": "Multiple parents (2): Image Based Rendering, Optical Representation"
     },
     {
       "path": "Lightning Network.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Layer 2 Scaling, Payment Channel Network, Bitcoin Technical Overview"
+      "message": "Multiple parents (2): Layer 2 Scaling, Payment Channel Network"
     },
     {
       "path": "Liquidity Provision.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Capital Deployment, Financial Mechanism, Market Making"
-    },
-    {
-      "path": "Llama 3.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decoder-Only Models, Open Source, Transformer Architecture"
+      "message": "Multiple parents (2): Capital Deployment, Financial Mechanism"
     },
     {
       "path": "LoRA DoRA etc.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Model Adaptation, Neural Networks, Fine Tuning"
+      "message": "Multiple parents (2): Model Adaptation, Neural Networks"
     },
     {
       "path": "Logistics Optimization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Applied Machine Learning, Combinatorial Optimization, Industrial AI"
+      "message": "Multiple parents (2): Applied Machine Learning, Combinatorial Optimization"
     },
     {
       "path": "Logseq.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Local-First Software, Note-Taking Application, Outliner"
-    },
-    {
-      "path": "Longest Chain Rule.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Local-First Software, Note-Taking Application"
     },
     {
       "path": "Longest Chain Rule.md",
@@ -2240,19 +1747,7 @@
       "path": "MS Phi models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): General Purpose AI Model, Proprietary Large Language Models, Generative Model"
-    },
-    {
-      "path": "Machine Learning.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'artificial-intelligence-core' != label slug 'artificial-intelligence'"
-    },
-    {
-      "path": "Market Capitalization.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): General Purpose AI Model, Proprietary Large Language Models"
     },
     {
       "path": "Market Capitalization.md",
@@ -2264,7 +1759,7 @@
       "path": "Mechanical Component.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Kinematic Chain, Manufacturing Product, Mechatronic System"
+      "message": "Multiple parents (2): Kinematic Chain, Manufacturing Product"
     },
     {
       "path": "Medical AI.md",
@@ -2276,19 +1771,13 @@
       "path": "Meeting AI Assistant.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Agent, Collaboration Software, Meeting Support Tools"
+      "message": "Multiple parents (2): AI Agent, Collaboration Software"
     },
     {
       "path": "Meeting Recording.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Meeting Documentation, Digital Workplace Platform, Knowledge Graphing"
-    },
-    {
-      "path": "Mempool.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Meeting Documentation, Digital Workplace Platform"
     },
     {
       "path": "Mempool.md",
@@ -2299,32 +1788,14 @@
     {
       "path": "Merkle Proof.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
-    },
-    {
-      "path": "Merkle Proof.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
     {
       "path": "Merkle Root.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
-    },
-    {
-      "path": "Merkle Root.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
-    },
-    {
-      "path": "Merkle Tree.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
     },
     {
       "path": "Merkle Tree.md",
@@ -2336,43 +1807,25 @@
       "path": "Meta Platforms.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Foundation Model Developer, Hyperscaler, Social Media Platform Operator"
+      "message": "Multiple parents (2): Foundation Model Developer, Hyperscaler"
     },
     {
       "path": "Metadata Management.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data Quality, Enterprise Architecture, Information Architecture"
-    },
-    {
-      "path": "MicroStrategy.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Bitcoin Holder, Corporate Treasury Strategy, Levered Asset Allocator"
+      "message": "Multiple parents (2): Data Quality, Enterprise Architecture"
     },
     {
       "path": "Micropayments.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Finance, Payment Systems, Lightning and Similar L2"
+      "message": "Multiple parents (2): Digital Finance, Payment Systems"
     },
     {
       "path": "Microsoft Copilot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Code Generation, AI Adoption, Agent Frameworks"
-    },
-    {
-      "path": "Midjourney.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Creative AI Tools, Text-to-Image Generation, AI Video"
-    },
-    {
-      "path": "Miner.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Code Generation, AI Adoption"
     },
     {
       "path": "Miner.md",
@@ -2383,20 +1836,8 @@
     {
       "path": "Mining Pool.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Mining Pool.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Mining Reward.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
     },
     {
       "path": "Mining Reward.md",
@@ -2407,20 +1848,8 @@
     {
       "path": "Mining.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Mining.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Minting.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
     },
     {
       "path": "Minting.md",
@@ -2432,25 +1861,25 @@
       "path": "Mistral and Mixtral.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Open Source AI, Transformer Architecture, Large Language Models"
+      "message": "Multiple parents (2): Open Source AI, Transformer Architecture"
     },
     {
       "path": "Mixed Reality.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Immersive Computing, Perceptual Computing, Extended Reality"
+      "message": "Multiple parents (2): Immersive Computing, Perceptual Computing"
     },
     {
       "path": "Mobile Robot Platform.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cyber Physical System, Embodied AI, Unmanned Ground Vehicle"
+      "message": "Multiple parents (2): Cyber Physical System, Embodied AI"
     },
     {
       "path": "Model Based Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Predictive Control, Trajectory Optimisation, Robot Control"
+      "message": "Multiple parents (2): Predictive Control, Trajectory Optimisation"
     },
     {
       "path": "Model Context Protocol.md",
@@ -2459,46 +1888,34 @@
       "message": "Multiple parents (2): Agent Communication Protocol, JSON-RPC Protocol"
     },
     {
-      "path": "Model Control Protocols like MCP.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): API Gateway, CLI Multi-Agent Systems, Agentic Internet"
-    },
-    {
       "path": "Model Optimisation and Performance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computational Efficiency, MLOps, Neural Network Compression"
+      "message": "Multiple parents (2): Computational Efficiency, MLOps"
     },
     {
       "path": "Model Training.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Neural Networks, Optimisation, Foundation Models"
+      "message": "Multiple parents (2): Neural Networks, Optimisation"
     },
     {
       "path": "Motion Capture.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Animation, Biomechanics, Performance Capture"
+      "message": "Multiple parents (2): Animation, Biomechanics"
     },
     {
       "path": "Motion Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Industrial Automation, Mechatronics, Embedded Systems"
-    },
-    {
-      "path": "Multi Sig Governance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Committee Governance, Threshold Cryptography, Digital Signature"
+      "message": "Multiple parents (2): Industrial Automation, Mechatronics"
     },
     {
       "path": "Music and Audio.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Audio Signal Processing, Creative AI, Multimodal AI"
+      "message": "Multiple parents (2): Audio Signal Processing, Creative AI"
     },
     {
       "path": "NGM Domain.md",
@@ -2510,31 +1927,13 @@
       "path": "NVIDIA Omniverse.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): 3D Platform, Physical AI, Simulation Platform"
-    },
-    {
-      "path": "NVIDIA.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Accelerated Computing Platform, AI Hardware Vendor, Fabless Semiconductor"
-    },
-    {
-      "path": "Nakamoto Consensus.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): 3D Platform, Physical AI"
     },
     {
       "path": "Nakamoto Consensus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Native Token.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
     },
     {
       "path": "Native Token.md",
@@ -2546,25 +1945,13 @@
       "path": "Navigation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Path Planning, Autonomous Systems, Motion Planning"
-    },
-    {
-      "path": "Network Hash Rate.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Path Planning, Autonomous Systems"
     },
     {
       "path": "Network Hash Rate.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Network Latency.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Network Latency.md",
@@ -2575,20 +1962,8 @@
     {
       "path": "Network Synchronization.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
-    },
-    {
-      "path": "Network Synchronization.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, ConsensusProtocol"
-    },
-    {
-      "path": "Network Topology.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Network Topology.md",
@@ -2600,13 +1975,7 @@
       "path": "Nft Minting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Asset Creation, Provenance Recording, Smart Contract Operation"
-    },
-    {
-      "path": "Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Digital Asset Creation, Provenance Recording"
     },
     {
       "path": "Node.md",
@@ -2618,13 +1987,7 @@
       "path": "Non-Repudiation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Evidence, Security Property, Accountability Mechanism"
-    },
-    {
-      "path": "Nonce.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Digital Evidence, Security Property"
     },
     {
       "path": "Nonce.md",
@@ -2633,34 +1996,16 @@
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
     {
-      "path": "Norbert Wiener.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Feedback Loop, History and Path to AGI, Safety and alignment"
-    },
-    {
-      "path": "Nostr Protocol.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Cryptographic Identity System, Decentralised Communication Protocol"
-    },
-    {
       "path": "ONTOLOGY_TECHNICAL_DETAILS.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Record-Keeping System, Data Structure, Distributed System"
+      "message": "Multiple parents (2): Record-Keeping System, Data Structure"
     },
     {
       "path": "On Chain Voting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptography Security and Privacy, DAO, Governance Token"
-    },
-    {
-      "path": "Opcodes.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Cryptography Security and Privacy, DAO"
     },
     {
       "path": "Opcodes.md",
@@ -2672,25 +2017,19 @@
       "path": "Open AI Whisper.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Automatic Speech Recognition, Multilingual Model, Sequence to Sequence Model"
+      "message": "Multiple parents (2): Automatic Speech Recognition, Multilingual Model"
     },
     {
       "path": "Open Generative AI tools.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Ecosystem, Machine Learning Infrastructure, Open Source Software"
-    },
-    {
-      "path": "Open Webui and Pipelines.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'web-dev-and-consumer-tooling' != label slug 'webdev-and-consumer-tooling'"
+      "message": "Multiple parents (2): AI Ecosystem, Machine Learning Infrastructure"
     },
     {
       "path": "Open Webui and Pipelines.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Chatbots, Retrieval Augmented Generation - RAG, WebDev and Consumer Tooling"
+      "message": "Multiple parents (2): Chatbots, Retrieval Augmented Generation - RAG"
     },
     {
       "path": "OpenXR.md",
@@ -2702,25 +2041,13 @@
       "path": "Optical Sensor Array.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computer Vision System, Imaging Parameters, Hardware"
-    },
-    {
-      "path": "Orphan Block.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Computer Vision System, Imaging Parameters"
     },
     {
       "path": "Orphan Block.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Output.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
     },
     {
       "path": "Output.md",
@@ -2732,13 +2059,7 @@
       "path": "Particle Filter.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Monte Carlo Method, Nonparametric Filter, Recursive Bayesian Estimator"
-    },
-    {
-      "path": "Partition Attack.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Monte Carlo Method, Nonparametric Filter"
     },
     {
       "path": "Partition Attack.md",
@@ -2749,20 +2070,8 @@
     {
       "path": "Peer Discovery.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
-    },
-    {
-      "path": "Peer Discovery.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "Peer-to-Peer Network.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Peer-to-Peer Network.md",
@@ -2773,20 +2082,8 @@
     {
       "path": "Permissioned Network.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
-    },
-    {
-      "path": "Permissioned Network.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "Permissionless Network.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
     },
     {
       "path": "Permissionless Network.md",
@@ -2798,31 +2095,25 @@
       "path": "Physical Layer.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Communications Engineering, Hardware Layer, OSI Model"
+      "message": "Multiple parents (2): Communications Engineering, Hardware Layer"
     },
     {
       "path": "Pika.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Creative AI Tool, Generative AI Product, Latent Diffusion System"
+      "message": "Multiple parents (2): Creative AI Tool, Generative AI Product"
     },
     {
       "path": "Pneumatic Actuator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Compliant Mechanism, Fluid Power Device, Robotic Actuator"
+      "message": "Multiple parents (2): Compliant Mechanism, Fluid Power Device"
     },
     {
       "path": "Policy Enforcement.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Access Control, Security Services, Compliance Framework"
-    },
-    {
-      "path": "Pool Share.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Access Control, Security Services"
     },
     {
       "path": "Pool Share.md",
@@ -2834,37 +2125,19 @@
       "path": "Pose Estimation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Perception, Human-Computer Interaction, Deep Learning"
-    },
-    {
-      "path": "PositionControl.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'control-algorithm' != label slug 'controlalgorithm'"
-    },
-    {
-      "path": "PositionControl.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'feedback-control' != label slug 'feedbackcontrol'"
+      "message": "Multiple parents (2): Perception, Human-Computer Interaction"
     },
     {
       "path": "PositionControl.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): ServoSystem, ControlAlgorithm, FeedbackControl"
+      "message": "Multiple parents (2): ServoSystem, ControlAlgorithm"
     },
     {
       "path": "Predictive Maintenance.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Asset Health Management, Condition-Based Maintenance, Industrial IoT"
-    },
-    {
-      "path": "Preimage Resistance.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Asset Health Management, Condition-Based Maintenance"
     },
     {
       "path": "Preimage Resistance.md",
@@ -2876,19 +2149,13 @@
       "path": "Presence Indicator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Ambient Awareness, Awareness Mechanisms, Synchronous Collaboration Infrastructure"
+      "message": "Multiple parents (2): Ambient Awareness, Awareness Mechanisms"
     },
     {
       "path": "Prime Intellect.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised AI, Federated Learning, Open Source AI"
-    },
-    {
-      "path": "Priority Fee.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Decentralised AI, Federated Learning"
     },
     {
       "path": "Priority Fee.md",
@@ -2900,19 +2167,13 @@
       "path": "Privacy Preserving Analytics.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data Analysis, Privacy Enhancing Technologies, Statistical Computing"
+      "message": "Multiple parents (2): Data Analysis, Privacy Enhancing Technologies"
     },
     {
       "path": "Privacy Preserving Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Privacy Technology, Zero-Knowledge System, Cryptographic Protocol"
-    },
-    {
-      "path": "Private Key.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Privacy Technology, Zero-Knowledge System"
     },
     {
       "path": "Private Key.md",
@@ -2924,37 +2185,31 @@
       "path": "Probabilistic Model.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Statistical Learning, Uncertainty Quantification, Bayesian Inference"
+      "message": "Multiple parents (2): Statistical Learning, Uncertainty Quantification"
     },
     {
       "path": "Procedural and Hybrid 4D.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): 3D Modelling, Simulation, Visual Effects"
+      "message": "Multiple parents (2): 3D Modelling, Simulation"
     },
     {
       "path": "Product Design.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Creative Practice, Design Thinking, Engineering Design"
+      "message": "Multiple parents (2): Creative Practice, Design Thinking"
     },
     {
       "path": "Prompt Engineering.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): In-Context Learning, Applied Artificial Intelligence, Instruction Following"
+      "message": "Multiple parents (2): In-Context Learning, Applied Artificial Intelligence"
     },
     {
       "path": "Proof Of Stake Sustainability.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Environmental Technology, Blockchain Sustainability, Consensus Mechanism"
-    },
-    {
-      "path": "Proof Of Work.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Environmental Technology, Blockchain Sustainability"
     },
     {
       "path": "Proof Of Work.md",
@@ -2966,37 +2221,31 @@
       "path": "Proprietary AI Video.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Model Training, AI Video, Diffusion Models"
+      "message": "Multiple parents (2): Model Training, AI Video"
     },
     {
       "path": "Proprietary Image Generation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Commercial AI Systems, Text-to-Image Generation, Diffusion Model"
+      "message": "Multiple parents (2): Commercial AI Systems, Text-to-Image Generation"
     },
     {
       "path": "Proprietary Large Language Models.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Transformer Architecture, Cognitive AI, Large Language Models"
+      "message": "Multiple parents (2): Transformer Architecture, Cognitive AI"
     },
     {
       "path": "Proprietary Video.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Broadcast Standards, Content Delivery Network, Intellectual Property"
+      "message": "Multiple parents (2): Broadcast Standards, Content Delivery Network"
     },
     {
       "path": "Proprioceptive Sensor.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Control Feedback Element, Mechatronic Component, Robotic Subsystem"
-    },
-    {
-      "path": "Pruned Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Control Feedback Element, Mechatronic Component"
     },
     {
       "path": "Pruned Node.md",
@@ -3007,20 +2256,8 @@
     {
       "path": "Public Key.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
-    },
-    {
-      "path": "Public Key.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
-    },
-    {
-      "path": "Public-Key Cryptography.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
     },
     {
       "path": "Public-Key Cryptography.md",
@@ -3032,37 +2269,37 @@
       "path": "Quadratic Voting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Governance Protocol, Public Goods Funding, Voting Theory"
+      "message": "Multiple parents (2): Governance Protocol, Public Goods Funding"
     },
     {
       "path": "Quorum Blockchain.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Consortium Blockchain, Ethereum, Enterprise Blockchain"
+      "message": "Multiple parents (2): Consortium Blockchain, Ethereum"
     },
     {
       "path": "R3 Corda.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Financial Services Technology, Enterprise Blockchain, Permissioned Blockchain"
+      "message": "Multiple parents (2): Financial Services Technology, Enterprise Blockchain"
     },
     {
       "path": "RGB and Client Side Validation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Client-Side Validation Theory, Off-Chain Protocol, Layer 3"
+      "message": "Multiple parents (2): Client-Side Validation Theory, Off-Chain Protocol"
     },
     {
       "path": "Ray Tracing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Light Transport, Monte Carlo Methods, Rendering"
+      "message": "Multiple parents (2): Light Transport, Monte Carlo Methods"
     },
     {
       "path": "Real Time.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Operating Systems, Safety Critical Systems, Control Systems"
+      "message": "Multiple parents (2): Operating Systems, Safety Critical Systems"
     },
     {
       "path": "Real-time Processing.md",
@@ -3074,61 +2311,61 @@
       "path": "Real-time Translation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Accessibility Tools, Communication Infrastructure, Distributed Collaboration Enablers"
+      "message": "Multiple parents (2): Accessibility Tools, Communication Infrastructure"
     },
     {
       "path": "Reasoning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Formal Verification, Artificial General Intelligence, Knowledge Representation"
+      "message": "Multiple parents (2): Formal Verification, Artificial General Intelligence"
     },
     {
       "path": "Regulatory Reporting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Supervisory Technology, Financial Services, Data Governance"
+      "message": "Multiple parents (2): Supervisory Technology, Financial Services"
     },
     {
       "path": "Remote Pair Programming.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Agile Software Development, Collaborative Development, Distributed Software Engineering"
+      "message": "Multiple parents (2): Agile Software Development, Collaborative Development"
     },
     {
       "path": "Rendering Pipeline.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): GPU Compute, Rasterisation, Real-Time Systems"
+      "message": "Multiple parents (2): GPU Compute, Rasterisation"
     },
     {
       "path": "Renewable Energy Certificates.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): CarbonCredit, EnvironmentalCommodity, SustainabilityInstrument"
+      "message": "Multiple parents (2): CarbonCredit, EnvironmentalCommodity"
     },
     {
       "path": "Reputation System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Governance, Feedback System, Social Coordination"
+      "message": "Multiple parents (2): Decentralised Governance, Feedback System"
     },
     {
       "path": "Retrieval Augmented Generation - RAG.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Knowledge-Intensive NLP, Open Domain Question Answering, Neural Information Retrieval"
+      "message": "Multiple parents (2): Knowledge-Intensive NLP, Open Domain Question Answering"
     },
     {
       "path": "Risk Assessment.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Audit, Systems Analysis, Safety Engineering"
+      "message": "Multiple parents (2): Audit, Systems Analysis"
     },
     {
       "path": "Robot Hardware.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Mobile Robot Platform, Robotics Platform, Mechatronics"
+      "message": "Multiple parents (2): Mobile Robot Platform, Robotics Platform"
     },
     {
       "path": "Robot Operating System.md",
@@ -3137,28 +2374,16 @@
       "message": "Multiple parents (2): Publish-Subscribe Framework, Robotic Middleware"
     },
     {
-      "path": "Robot Standard.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Industrial Safety, Normative Framework, Product Regulation"
-    },
-    {
       "path": "Robotics Platform.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Embedded System, Simulation Environment, Software Framework"
+      "message": "Multiple parents (2): Embedded System, Simulation Environment"
     },
     {
       "path": "Rust.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Compiled Language, Concurrent Programming Language, Memory-Safe Language"
-    },
-    {
-      "path": "SHA-256.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Compiled Language, Concurrent Programming Language"
     },
     {
       "path": "SHA-256.md",
@@ -3170,13 +2395,7 @@
       "path": "Safety and alignment.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Existential Risk Research, AI Ethics, Human-Computer Interaction"
-    },
-    {
-      "path": "Salt.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Existential Risk Research, AI Ethics"
     },
     {
       "path": "Salt.md",
@@ -3188,13 +2407,7 @@
       "path": "Sampling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Numerical Methods, Stochastic Processes, Probabilistic Model"
-    },
-    {
-      "path": "Schnorr Signature.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Numerical Methods, Stochastic Processes"
     },
     {
       "path": "Schnorr Signature.md",
@@ -3206,13 +2419,7 @@
       "path": "Screen Sharing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Remote Desktop Technology, Synchronous Collaboration Tools, Visual Communication"
-    },
-    {
-      "path": "Script.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Remote Desktop Technology, Synchronous Collaboration Tools"
     },
     {
       "path": "Script.md",
@@ -3224,25 +2431,19 @@
       "path": "Securities Regulation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Capital Markets Regulation, Digital Asset Law, Investment Law"
+      "message": "Multiple parents (2): Capital Markets Regulation, Digital Asset Law"
     },
     {
       "path": "Segmentation and Identification.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Image Analysis, Object Recognition, Scene Understanding"
+      "message": "Multiple parents (2): Image Analysis, Object Recognition"
     },
     {
       "path": "Self Sovereign Identity.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Identity, Privacy-Enhancing Technology, User-Centric Identity"
-    },
-    {
-      "path": "Selfish Mining.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Decentralised Identity, Privacy-Enhancing Technology"
     },
     {
       "path": "Selfish Mining.md",
@@ -3254,13 +2455,7 @@
       "path": "Semantic Search.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Knowledge Retrieval, Search Technology, Neural Information Retrieval"
-    },
-    {
-      "path": "Signature Scheme.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
+      "message": "Multiple parents (2): Knowledge Retrieval, Search Technology"
     },
     {
       "path": "Signature Scheme.md",
@@ -3269,22 +2464,16 @@
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
     {
-      "path": "Silo AI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Anthropic Claude, Competition in AI, AI Companies"
-    },
-    {
       "path": "Singularity.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Existential Risk, Futures Studies, Transhumanism"
+      "message": "Multiple parents (2): Existential Risk, Futures Studies"
     },
     {
       "path": "Smart Contract.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Digital Agreement, Executable Code, Protocol"
+      "message": "Multiple parents (2): Digital Agreement, Executable Code"
     },
     {
       "path": "Smart Contracts.md",
@@ -3296,7 +2485,7 @@
       "path": "Snapshot Voting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Signalling, Decentralised Voting, Gasless Governance"
+      "message": "Multiple parents (2): Cryptographic Signalling, Decentralised Voting"
     },
     {
       "path": "Solid Pod.md",
@@ -3308,13 +2497,7 @@
       "path": "Solid.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Data Sovereignty, Decentralised Protocol, Decentralized Web"
-    },
-    {
-      "path": "Solo Mining.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'consensus-protocol' != label slug 'consensusprotocol'"
+      "message": "Multiple parents (2): Data Sovereignty, Decentralised Protocol"
     },
     {
       "path": "Solo Mining.md",
@@ -3326,49 +2509,37 @@
       "path": "Speech and Voice.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Audio Processing, Multimodal AI, Conversational AI"
+      "message": "Multiple parents (2): Audio Processing, Multimodal AI"
     },
     {
       "path": "Stable Coins.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Financial Instrument, Payments Infrastructure, Tokenised Asset"
+      "message": "Multiple parents (2): Financial Instrument, Payments Infrastructure"
     },
     {
       "path": "Stable Diffusion Training.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Fine Tuning, Diffusion Model, Parameter Efficient Fine-Tuning"
-    },
-    {
-      "path": "Stable Diffusion.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Latent Diffusion Model, Text-to-Image Model, Diffusion Model"
+      "message": "Multiple parents (2): Fine Tuning, Diffusion Model"
     },
     {
       "path": "Stablecoin Regulation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Crypto Regulation, Electronic Money Regulation, Monetary Law"
+      "message": "Multiple parents (2): Crypto Regulation, Electronic Money Regulation"
     },
     {
       "path": "State Machine.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Automata Theory, Computational Model, Concurrency Theory"
+      "message": "Multiple parents (2): Automata Theory, Computational Model"
     },
     {
       "path": "Stochastic Process.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Dynamical System, Mathematical Statistics, Measure Theory"
-    },
-    {
-      "path": "Supply Cap.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Dynamical System, Mathematical Statistics"
     },
     {
       "path": "Supply Cap.md",
@@ -3380,13 +2551,7 @@
       "path": "Sustainable Consensus.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Climate Technology, Energy Efficient Computing, Distributed Systems Protocol"
-    },
-    {
-      "path": "Sybil Attack.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Climate Technology, Energy Efficient Computing"
     },
     {
       "path": "Sybil Attack.md",
@@ -3398,31 +2563,25 @@
       "path": "Taproot Assets.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Asset Issuance Protocol, Bitcoin Protocol, Client-Side Validation"
+      "message": "Multiple parents (2): Asset Issuance Protocol, Bitcoin Protocol"
     },
     {
       "path": "Task Planning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Automated Planning, Symbolic AI, Sequential Decision Making"
+      "message": "Multiple parents (2): Automated Planning, Symbolic AI"
     },
     {
       "path": "Testnet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Protocol Implementation, Testing Infrastructure, Distributed System"
+      "message": "Multiple parents (2): Protocol Implementation, Testing Infrastructure"
     },
     {
       "path": "Time Series Forecasting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Probabilistic Forecasting, Sequential Data Processing, Statistical Modelling"
-    },
-    {
-      "path": "Timestamp.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Probabilistic Forecasting, Sequential Data Processing"
     },
     {
       "path": "Timestamp.md",
@@ -3434,25 +2593,13 @@
       "path": "Token.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Blockchain Entity, Digital Asset, Transferable Right"
-    },
-    {
-      "path": "Tokenomics Governance.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Finance, Mechanism Design, Protocol Economics"
+      "message": "Multiple parents (2): Blockchain Entity, Digital Asset"
     },
     {
       "path": "Topological Map.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cognitive Map, Mobile Robot Navigation, Simultaneous Localisation and Mapping"
-    },
-    {
-      "path": "Total Supply.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
+      "message": "Multiple parents (2): Cognitive Map, Mobile Robot Navigation"
     },
     {
       "path": "Total Supply.md",
@@ -3464,31 +2611,19 @@
       "path": "Training Data.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Dataset, Data Governance, Knowledge Representation"
+      "message": "Multiple parents (2): Dataset, Data Governance"
     },
     {
       "path": "Training and fine tuning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Model Training, Transfer Learning, Foundation Models"
-    },
-    {
-      "path": "Transaction Confirmation.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Model Training, Transfer Learning"
     },
     {
       "path": "Transaction Confirmation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Transaction Fee.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'economic-mechanism' != label slug 'economicmechanism'"
     },
     {
       "path": "Transaction Fee.md",
@@ -3499,20 +2634,8 @@
     {
       "path": "Transaction Pool.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
-    },
-    {
-      "path": "Transaction Pool.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
-      "path": "Transaction.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
     },
     {
       "path": "Transaction.md",
@@ -3524,43 +2647,37 @@
       "path": "Transformers.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Sequence Modelling, Attention Mechanism, Neural Network"
+      "message": "Multiple parents (2): Sequence Modelling, Attention Mechanism"
     },
     {
       "path": "Translation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Computational Linguistics, Cross-Lingual Transfer, Language Technology"
+      "message": "Multiple parents (2): Computational Linguistics, Cross-Lingual Transfer"
     },
     {
       "path": "Travel Rule.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Anti-Money Laundering, Counter-Terrorist Financing, FATF Recommendation"
+      "message": "Multiple parents (2): Anti-Money Laundering, Counter-Terrorist Financing"
     },
     {
       "path": "Treasury Management.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Corporate Finance, Financial Management, Institutional Asset Management"
+      "message": "Multiple parents (2): Corporate Finance, Financial Management"
     },
     {
       "path": "Trust Framework.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Certification Scheme, Framework, Policy Framework"
+      "message": "Multiple parents (2): Certification Scheme, Framework"
     },
     {
       "path": "Trust and Safety.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Online Safety, Digital Society Harms, Content Moderation"
-    },
-    {
-      "path": "UTXO Model.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'distributed-data-structure' != label slug 'distributeddatastructure'"
+      "message": "Multiple parents (2): Online Safety, Digital Society Harms"
     },
     {
       "path": "UTXO Model.md",
@@ -3571,20 +2688,8 @@
     {
       "path": "Universal Scene Description.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug '3-d-file-format' != label slug '3d-file-format'"
-    },
-    {
-      "path": "Universal Scene Description.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Asset Pipeline, 3D File Format, Interoperability"
-    },
-    {
-      "path": "Validator Node.md",
-      "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'network-component' != label slug 'networkcomponent'"
+      "message": "Multiple parents (2): Asset Pipeline, 3D File Format"
     },
     {
       "path": "Validator Node.md",
@@ -3596,25 +2701,19 @@
       "path": "Verifiable Credentials.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Cryptographic Proof, W3C Standard, Self-Sovereign Identity"
+      "message": "Multiple parents (2): Cryptographic Proof, W3C Standard"
     },
     {
       "path": "Vircadia.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Social VR, Virtual World, Open Source Software"
-    },
-    {
-      "path": "Vision Pro.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Wearable Computing, Mixed Reality, Head-Mounted Display"
+      "message": "Multiple parents (2): Social VR, Virtual World"
     },
     {
       "path": "Web3.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Decentralised Finance, Peer-to-Peer Network, Blockchain Network"
+      "message": "Multiple parents (2): Decentralised Finance, Peer-to-Peer Network"
     },
     {
       "path": "WebAssembly.md",
@@ -3631,12 +2730,6 @@
     {
       "path": "Zero-Knowledge Proof.md",
       "severity": "warning",
-      "code": "SLUG_MISMATCH",
-      "message": "Parent IRI slug 'cryptographic-primitive' != label slug 'cryptographicprimitive'"
-    },
-    {
-      "path": "Zero-Knowledge Proof.md",
-      "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, CryptographicPrimitive"
     },
@@ -3644,7 +2737,7 @@
       "path": "fast.ai.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Applied AI Research Lab, Deep Learning Library, Educational Platform"
+      "message": "Multiple parents (2): Applied AI Research Lab, Deep Learning Library"
     },
     {
       "path": "tc 0002 collaborative document editing.md",
@@ -3656,7 +2749,7 @@
       "path": "tc 0003 telepresence robot.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Telepresence Technology, Mobile Robot, Remote Collaboration"
+      "message": "Multiple parents (2): Telepresence Technology, Mobile Robot"
     }
   ]
 }

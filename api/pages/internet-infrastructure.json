@@ -3,19 +3,13 @@
   "title": "Internet Infrastructure",
   "slug": "internet-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:internet-infrastructure",
+  "classIri": "urn:ngm:class:internet-infrastructure",
   "domain": "artificial-intelligence",
-  "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services. This includes cloud-native architectures, serverless computing for inference, 5G/6G networks for low-latency AI, edge-cloud continuum for distributed intelligence, and specialized AI hardware deployed at network edges. Modern AI infrastructure leverages containerization (Docker, Kubernetes), service meshes, and API gateways to provide scalable, reliable, and globally distributed AI applications with real-time responsiveness.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

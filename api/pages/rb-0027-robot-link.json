@@ -3,19 +3,18 @@
   "title": "rb 0027 robot link",
   "slug": "rb-0027-robot-link",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0027-robot-link",
+  "classIri": "urn:ngm:class:rb-0027-robot-link",
   "domain": "robotics",
   "definition": "robot link is a robotics and autonomous systems concept and a type of Robot.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot",
+      "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

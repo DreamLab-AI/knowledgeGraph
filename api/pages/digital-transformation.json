@@ -3,53 +3,57 @@
   "title": "Digital Transformation",
   "slug": "digital-transformation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-transformation",
+  "classIri": "urn:ngm:class:digital-transformation",
   "domain": "spatial-computing",
-  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse. bridges-to:: [[Computer Vision]]",
+  "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:organizational-change",
+      "id": "urn:ngm:class:organizational-change",
       "label": "Organizational Change"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:change-management",
+        "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
       {
-        "id": "urn:visionflow:owl:class:cloud-computing",
+        "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:data-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:business-innovation",
+        "id": "urn:ngm:class:business-innovation",
         "label": "Business Innovation"
       },
       {
-        "id": "urn:visionflow:linked:customer-experience",
+        "id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience"
       },
       {
-        "id": "urn:visionflow:linked:operational-efficiency",
+        "id": "urn:ngm:class:operational-efficiency",
         "label": "Operational Efficiency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

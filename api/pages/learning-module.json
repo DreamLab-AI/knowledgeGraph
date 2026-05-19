@@ -3,32 +3,36 @@
   "title": "Learning Module",
   "slug": "learning-module",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-module",
+  "classIri": "urn:ngm:class:learning-module",
   "domain": "spatial-computing",
   "definition": "Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:structured-training",
+        "id": "urn:ngm:class:structured-training",
         "label": "Structured Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

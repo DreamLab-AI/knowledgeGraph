@@ -188,96 +188,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-mesh-network",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-mesh-network",
+  "@type": "Class",
   "label": "Edge Mesh Network",
+  "definition": "Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:36c457fdb4f403f42b7cdd31f97a53577d2b29bea1a908b4ee27c85422a4771e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:failover-mechanism",
+        "label": "Failover Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-router",
+        "label": "Mesh Router"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-coordination-protocol",
+        "label": "Distributed Coordination Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-computation",
+        "label": "Decentralized Computation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-load-balancing",
+        "label": "Dynamic Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:redundant-processing",
+        "label": "Redundant Processing"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:36c457fdb4f403f42b7cdd31f97a53577d2b29bea1a908b4ee27c85422a4771e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Decentralized interconnection of edge computing nodes providing dynamic load balancing, redundancy, and peer-to-peer communication for distributed workloads.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:failover-mechanism",
-      "vc:label": "Failover Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-balancer",
-      "vc:label": "Load Balancer"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-router",
-      "vc:label": "Mesh Router"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-protocol",
-      "vc:label": "Routing Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing-node",
-      "vc:label": "Edge Computing Node"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:distributed-coordination-protocol",
-      "vc:label": "Distributed Coordination Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-discovery",
-      "vc:label": "Service Discovery"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-computation",
-      "vc:label": "Decentralized Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-load-balancing",
-      "vc:label": "Dynamic Load Balancing"
-    },
-    {
-      "@id": "urn:visionflow:linked:redundant-processing",
-      "vc:label": "Redundant Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

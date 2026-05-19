@@ -3,19 +3,18 @@
   "title": "rb 0052 collision avoidance",
   "slug": "rb-0052-collision-avoidance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0052-collision-avoidance",
+  "classIri": "urn:ngm:class:rb-0052-collision-avoidance",
   "domain": "robotics",
   "definition": "collision avoidance is a robotics and autonomous systems concept and a type of Motion Planning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-planning",
+      "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

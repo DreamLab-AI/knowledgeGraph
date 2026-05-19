@@ -156,76 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compatibility-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compatibility-standards",
+  "@type": "Class",
   "label": "Compatibility Standards",
+  "definition": "Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without ve...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1f29761c196312150bf85dab54a1c1b5bd3200981984eae428f69a30506db0b2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:industry-collaboration",
+        "label": "Industry Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-development",
+        "label": "Protocol Development"
+      },
+      {
+        "@id": "urn:ngm:class:standards-bodies",
+        "label": "Standards Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-experience",
+        "label": "Cross-Platform Experience"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1f29761c196312150bf85dab54a1c1b5bd3200981984eae428f69a30506db0b2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without vendor lock-in.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:industry-collaboration",
-      "vc:label": "Industry Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-development",
-      "vc:label": "Protocol Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:standards-bodies",
-      "vc:label": "Standards Bodies"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-portability",
-      "vc:label": "Asset Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-experience",
-      "vc:label": "Cross-Platform Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

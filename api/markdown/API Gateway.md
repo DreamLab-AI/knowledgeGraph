@@ -728,338 +728,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:api-gateway",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:api-gateway",
+  "@type": "Class",
   "label": "API Gateway",
+  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a [[Distributed System|distributed]] or [[Microservices|microservices]] backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentic...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cloud-native-component",
-      "vc:label": "Cloud Native Component"
+      "@id": "urn:ngm:class:cloud-native-component",
+      "label": "Cloud Native Component"
     },
     {
-      "@id": "urn:visionflow:linked:policy-enforcement-point",
-      "vc:label": "Policy Enforcement Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-proxy",
-      "vc:label": "Reverse Proxy"
+      "@id": "urn:ngm:class:policy-enforcement-point",
+      "label": "Policy Enforcement Point"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:41429f88d32357fd807516683babacf879581c8bb489793d3fe085b106605583"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-log-emitter",
+        "label": "Access Log Emitter"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-handler",
+        "label": "Authentication Handler"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-tracing-collector",
+        "label": "Distributed Tracing Collector"
+      },
+      {
+        "@id": "urn:ngm:class:health-checker",
+        "label": "Health Checker"
+      },
+      {
+        "@id": "urn:ngm:class:plugin-runtime",
+        "label": "Plugin Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiter",
+        "label": "Rate Limiter"
+      },
+      {
+        "@id": "urn:ngm:class:request-router",
+        "label": "Request Router"
+      },
+      {
+        "@id": "urn:ngm:class:request-transformer",
+        "label": "Request Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:response-cache",
+        "label": "Response Cache"
+      },
+      {
+        "@id": "urn:ngm:class:tls-terminator",
+        "label": "TLS Terminator"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-store",
+        "label": "Configuration Store"
+      },
+      {
+        "@id": "urn:ngm:class:observability-pipeline",
+        "label": "Observability Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:api-lifecycle-management",
+        "label": "API Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:backend-for-frontend",
+        "label": "Backend-for-Frontend"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql-federation",
+        "label": "GraphQL Federation"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "@id": "urn:ngm:class:strangler-fig-pattern",
+        "label": "Strangler Fig Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bulkhead-pattern",
+        "label": "Bulkhead Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "@id": "urn:ngm:class:jwt",
+        "label": "JWT"
+      },
+      {
+        "@id": "urn:ngm:class:m-tls",
+        "label": "mTLS"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:oidc",
+        "label": "OIDC"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:retry-pattern",
+        "label": "Retry Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:token-bucket-algorithm",
+        "label": "Token Bucket Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:async-api",
+        "label": "AsyncAPI"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-trace-context",
+        "label": "W3C Trace Context"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-gateway",
+        "label": "AI Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "@id": "urn:ngm:class:identity-aware-proxy",
+        "label": "Identity-Aware Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:ingress-controller",
+        "label": "Ingress Controller"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes-gateway-api",
+        "label": "Kubernetes Gateway API"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-initiative",
+        "label": "OpenAPI Initiative"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:41429f88d32357fd807516683babacf879581c8bb489793d3fe085b106605583@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a [[Distributed System|distributed]] or [[Microservices|microservices]] backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentication via [[OAuth 2.0]]/[[OIDC]]/[[JWT]] validation against [[Identity Provider|identity providers]], authorisation via [[Access Control System|attribute-based]]/[[Role-Based Access Control|role-based]] policies, rate limiting and quota enforcement protecting backends from 10K-1M+ RPS bursts, request/response transformation including [[Protocol Buffers]]↔JSON transcoding gRPC↔REST, schema validation against [[OpenAPI Specification|OpenAPI]] contracts, body encryption/decryption, header manipulation, [[Web Application Firewall|WAF]] inspection for [[OWASP API Top 10]] threats, distributed tracing context propagation via [[W3C Trace Context]] headers, structured access logging, response caching at edge), terminating [[TLS]]/[[mTLS]] connections (typically [[HTTP/2]] and increasingly [[HTTP/3]] over [[QUIC]] inbound, with connection pooling and multiplexing onto persistent upstream connections",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:access-log-emitter",
-      "vc:label": "Access Log Emitter"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-handler",
-      "vc:label": "Authentication Handler"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-tracing-collector",
-      "vc:label": "Distributed Tracing Collector"
-    },
-    {
-      "@id": "urn:visionflow:linked:health-checker",
-      "vc:label": "Health Checker"
-    },
-    {
-      "@id": "urn:visionflow:linked:plugin-runtime",
-      "vc:label": "Plugin Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:rate-limiter",
-      "vc:label": "Rate Limiter"
-    },
-    {
-      "@id": "urn:visionflow:linked:request-router",
-      "vc:label": "Request Router"
-    },
-    {
-      "@id": "urn:visionflow:linked:request-transformer",
-      "vc:label": "Request Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:response-cache",
-      "vc:label": "Response Cache"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls-terminator",
-      "vc:label": "TLS Terminator"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:configuration-store",
-      "vc:label": "Configuration Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:observability-pipeline",
-      "vc:label": "Observability Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-discovery",
-      "vc:label": "Service Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:api-lifecycle-management",
-      "vc:label": "API Lifecycle Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:backend-for-frontend",
-      "vc:label": "Backend-for-Frontend"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-ql-federation",
-      "vc:label": "GraphQL Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:microservices",
-      "vc:label": "Microservices"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-tenancy",
-      "vc:label": "Multi-Tenancy"
-    },
-    {
-      "@id": "urn:visionflow:linked:strangler-fig-pattern",
-      "vc:label": "Strangler Fig Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bulkhead-pattern",
-      "vc:label": "Bulkhead Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:circuit-breaker",
-      "vc:label": "Circuit Breaker"
-    },
-    {
-      "@id": "urn:visionflow:linked:jwt",
-      "vc:label": "JWT"
-    },
-    {
-      "@id": "urn:visionflow:linked:m-tls",
-      "vc:label": "mTLS"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:oidc",
-      "vc:label": "OIDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:rate-limiting",
-      "vc:label": "Rate Limiting"
-    },
-    {
-      "@id": "urn:visionflow:linked:retry-pattern",
-      "vc:label": "Retry Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-bucket-algorithm",
-      "vc:label": "Token Bucket Algorithm"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dns",
-      "vc:label": "DNS"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-2",
-      "vc:label": "HTTP/2"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-3",
-      "vc:label": "HTTP/3"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-discovery",
-      "vc:label": "Service Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcp-ip",
-      "vc:label": "TCP/IP"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls",
-      "vc:label": "TLS"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:g-rpc",
-      "vc:label": "gRPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-ql",
-      "vc:label": "GraphQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:mqtt",
-      "vc:label": "MQTT"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest",
-      "vc:label": "REST"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket",
-      "vc:label": "WebSocket"
-    },
-    {
-      "@id": "urn:visionflow:linked:webhook",
-      "vc:label": "Webhook"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:async-api",
-      "vc:label": "AsyncAPI"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-specification",
-      "vc:label": "OpenAPI Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-telemetry",
-      "vc:label": "OpenTelemetry"
-    },
-    {
-      "@id": "urn:visionflow:linked:prometheus",
-      "vc:label": "Prometheus"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-buffers",
-      "vc:label": "Protocol Buffers"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-trace-context",
-      "vc:label": "W3C Trace Context"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cdn",
-      "vc:label": "CDN"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-service-bus",
-      "vc:label": "Enterprise Service Bus"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-balancer",
-      "vc:label": "Load Balancer"
-    },
-    {
-      "@id": "urn:visionflow:linked:reverse-proxy",
-      "vc:label": "Reverse Proxy"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-mesh",
-      "vc:label": "Service Mesh"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-gateway",
-      "vc:label": "AI Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:api-management",
-      "vc:label": "API Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:cdn",
-      "vc:label": "CDN"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-aware-proxy",
-      "vc:label": "Identity-Aware Proxy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ingress-controller",
-      "vc:label": "Ingress Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-mesh",
-      "vc:label": "Service Mesh"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-application-firewall",
-      "vc:label": "Web Application Firewall"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cloud-native-computing-foundation",
-      "vc:label": "Cloud Native Computing Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cncf",
-      "vc:label": "CNCF"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes-gateway-api",
-      "vc:label": "Kubernetes Gateway API"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-initiative",
-      "vc:label": "OpenAPI Initiative"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

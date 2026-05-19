@@ -3,19 +3,18 @@
   "title": "rb 0077 depth camera",
   "slug": "rb-0077-depth-camera",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0077-depth-camera",
+  "classIri": "urn:ngm:class:rb-0077-depth-camera",
   "domain": "robotics",
   "definition": "depth camera is a robotics and autonomous systems concept and a type of Camera.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:camera",
+      "id": "urn:ngm:class:camera",
       "label": "Camera"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -184,102 +184,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:micropayment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:micropayment",
+  "@type": "Class",
   "label": "Micropayment",
+  "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
+      "@id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45f63be9b7468ef858d38f7c3184636a5c665d2ccf7ec652a23acc67111ae228"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fee-calculation",
+        "label": "Fee Calculation"
+      },
+      {
+        "@id": "urn:ngm:class:payment-protocol",
+        "label": "Payment Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-mechanism",
+        "label": "Settlement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-authentication",
+        "label": "Cryptographic Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:instant-settlements",
+        "label": "Instant Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:microtransactions",
+        "label": "Microtransactions"
+      },
+      {
+        "@id": "urn:ngm:class:pay-per-use-models",
+        "label": "Pay-Per-Use Models"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45f63be9b7468ef858d38f7c3184636a5c665d2ccf7ec652a23acc67111ae228@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:owl:class:digital-payment-system",
-      "vc:label": "Digital Payment System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:fee-calculation",
-      "vc:label": "Fee Calculation"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-protocol",
-      "vc:label": "Payment Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-mechanism",
-      "vc:label": "Settlement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-validation",
-      "vc:label": "Transaction Validation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-authentication",
-      "vc:label": "Cryptographic Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-network",
-      "vc:label": "Payment Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:instant-settlements",
-      "vc:label": "Instant Settlements"
-    },
-    {
-      "@id": "urn:visionflow:linked:microtransactions",
-      "vc:label": "Microtransactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:pay-per-use-models",
-      "vc:label": "Pay-Per-Use Models"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
+      "@id": "urn:ngm:class:micropayments",
+      "label": "Micropayments"
     }
   ]
 }

@@ -3,57 +3,70 @@
   "title": "Gps",
   "slug": "gps",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gps",
+  "classIri": "urn:ngm:class:gps",
   "domain": "robotics",
-  "definition": "**GPS** (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 metres.",
+  "definition": "GPS (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:navigation-system",
+      "id": "urn:ngm:class:navigation-system",
       "label": "Navigation System"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.51,
-  "authorityScore": 0.09,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:antenna-array",
+        "id": "urn:ngm:class:antenna-array",
         "label": "Antenna Array"
       },
       {
-        "id": "urn:visionflow:linked:map-integration",
+        "id": "urn:ngm:class:map-integration",
         "label": "Map Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:signal-processing",
+        "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:geofencing",
+        "id": "urn:ngm:class:geofencing",
         "label": "Geofencing"
       },
       {
-        "id": "urn:visionflow:linked:long-range-navigation",
+        "id": "urn:ngm:class:long-range-navigation",
         "label": "Long-range Navigation"
       },
       {
-        "id": "urn:visionflow:linked:multi-robot-coordination",
+        "id": "urn:ngm:class:multi-robot-coordination",
         "label": "Multi-robot Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-localisation",
+        "label": "Global Localisation"
+      },
+      {
+        "id": "urn:ngm:class:mission-planning",
+        "label": "Mission Planning"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

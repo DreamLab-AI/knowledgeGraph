@@ -184,64 +184,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-deployment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-deployment",
+  "@type": "Class",
   "label": "AI Deployment",
+  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisi...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-lifecycle",
-      "vc:label": "AI Lifecycle"
+      "@id": "urn:ngm:class:ai-lifecycle",
+      "label": "AI Lifecycle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:deployment-infrastructure",
+        "label": "Deployment infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:operational-procedures",
+        "label": "operational procedures"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-system-use-by-ai-users-and-ai-operators",
+        "label": "AI system use by AI Users and AI Operators"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bcc40f30a61820e91533388453caf5265b62a01062aefd882594aeb836483c94@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The phase of the AI lifecycle in which a developed and validated artificial intelligence system is integrated into operational environments, made available to end users, and transitioned from development to production use, encompassing activities such as system integration, infrastructure provisioning, release management, user training, documentation delivery, and the establishment of operational support structures to ensure reliable, safe, and effective system functioning in real-world conditions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:deployment-infrastructure",
-      "vc:label": "Deployment infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-procedures",
-      "vc:label": "operational procedures"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-system-use-by-ai-users-and-ai-operators",
-      "vc:label": "AI system use by AI Users and AI Operators"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

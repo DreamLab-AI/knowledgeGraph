@@ -3,147 +3,255 @@
   "title": "Asynchronous Video",
   "slug": "asynchronous-video",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asynchronous-video",
+  "classIri": "urn:ngm:class:asynchronous-video",
   "domain": "distributed-collaboration",
-  "definition": "Asynchronous video is a [[Distributed Collaboration]] communication modality in which recorded video messages \u2014 combining screen capture, webcam footage, audio narration, and on-screen annotation \u2014 are produced by a sender and consumed by recipients independently of the sender's presence, eliminating synchronisation requirements across time zones, work schedules, and cognitive availability windows. Distinguished from [[Video Conferencing]] (synchronous, live presence required) and [[Screencasting]] (one-way broadcast tutorial, not conversational), asynchronous video occupies the communication richness stratum above text-based [[Asynchronous Communication]] whilst remaining fully time-shifted: the sender records a 2\u201315 minute message and the recipient watches, pauses, re-watches, and responds at their own cadence.",
+  "definition": "Asynchronous video is a [[Distributed Collaboration]] communication modality in which recorded video messages \u2014 combining screen capture, webcam footage, audio narration, and on-screen annotation \u2014 are produced by a sender and consumed by recipients independently of the sender's presence, elimina...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:digital-workplace-technology",
+      "id": "urn:ngm:class:digital-workplace-technology",
       "label": "Digital Workplace Technology"
     },
     {
-      "id": "urn:visionflow:linked:video-based-communication",
+      "id": "urn:ngm:class:video-based-communication",
       "label": "Video-based Communication"
-    },
-    {
-      "id": "urn:visionflow:linked:asynchronous-communication",
-      "label": "Asynchronous Communication"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-video-summary",
+        "id": "urn:ngm:class:ai-video-summary",
         "label": "AI Video Summary"
       },
       {
-        "id": "urn:visionflow:linked:audio-narration",
+        "id": "urn:ngm:class:audio-narration",
         "label": "Audio Narration"
       },
       {
-        "id": "urn:visionflow:linked:chapter-marker",
+        "id": "urn:ngm:class:chapter-marker",
         "label": "Chapter Marker"
       },
       {
-        "id": "urn:visionflow:linked:click-tracking",
+        "id": "urn:ngm:class:click-tracking",
         "label": "Click Tracking"
       },
       {
-        "id": "urn:visionflow:linked:emoji-reaction",
+        "id": "urn:ngm:class:emoji-reaction",
         "label": "Emoji Reaction"
       },
       {
-        "id": "urn:visionflow:linked:screen-recording",
+        "id": "urn:ngm:class:screen-recording",
         "label": "Screen Recording"
       },
       {
-        "id": "urn:visionflow:linked:timeline-annotation",
+        "id": "urn:ngm:class:timeline-annotation",
         "label": "Timeline Annotation"
       },
       {
-        "id": "urn:visionflow:linked:timestamped-comment",
+        "id": "urn:ngm:class:timestamped-comment",
         "label": "Timestamped Comment"
       },
       {
-        "id": "urn:visionflow:linked:video-transcription",
+        "id": "urn:ngm:class:video-transcription",
         "label": "Video Transcription"
       },
       {
-        "id": "urn:visionflow:linked:viewer-analytics",
+        "id": "urn:ngm:class:viewer-analytics",
         "label": "Viewer Analytics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:browser-based-screen-capture",
+        "id": "urn:ngm:class:browser-based-screen-capture",
         "label": "Browser-based Screen Capture"
       },
       {
-        "id": "urn:visionflow:linked:cloud-storage",
+        "id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
       },
       {
-        "id": "urn:visionflow:linked:content-delivery-network",
+        "id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
-        "id": "urn:visionflow:linked:video-codec",
+        "id": "urn:ngm:class:video-codec",
         "label": "Video Codec"
       },
       {
-        "id": "urn:visionflow:linked:video-playback-infrastructure",
+        "id": "urn:ngm:class:video-playback-infrastructure",
         "label": "Video Playback Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:speech-recognition",
+        "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:async-standup",
+        "id": "urn:ngm:class:async-standup",
         "label": "Async Standup"
       },
       {
-        "id": "urn:visionflow:linked:asynchronous-code-review",
+        "id": "urn:ngm:class:asynchronous-code-review",
         "label": "Asynchronous Code Review"
       },
       {
-        "id": "urn:visionflow:linked:complex-decision-documentation",
+        "id": "urn:ngm:class:complex-decision-documentation",
         "label": "Complex Decision Documentation"
       },
       {
-        "id": "urn:visionflow:linked:distributed-onboarding",
+        "id": "urn:ngm:class:distributed-onboarding",
         "label": "Distributed Onboarding"
       },
       {
-        "id": "urn:visionflow:linked:remote-team-alignment",
+        "id": "urn:ngm:class:remote-team-alignment",
         "label": "Remote Team Alignment"
       },
       {
-        "id": "urn:visionflow:linked:sales-outreach-video",
+        "id": "urn:ngm:class:sales-outreach-video",
         "label": "Sales Outreach Video"
       },
       {
-        "id": "urn:visionflow:linked:time-zone-decoupled-communication",
+        "id": "urn:ngm:class:time-zone-decoupled-communication",
         "label": "Time Zone Decoupled Communication"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:async-first-work-culture",
+        "id": "urn:ngm:class:async-first-work-culture",
         "label": "Async-First Work Culture"
       },
       {
-        "id": "urn:visionflow:linked:communication-synchronicity-theory",
+        "id": "urn:ngm:class:communication-synchronicity-theory",
         "label": "Communication Synchronicity Theory"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-video-search",
+        "id": "urn:ngm:class:retrieval-augmented-video-search",
         "label": "Retrieval-Augmented Video Search"
       },
       {
-        "id": "urn:visionflow:owl:class:media-richness-theory",
+        "id": "urn:ngm:class:media-richness-theory",
         "label": "Media Richness Theory"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-onboarding",
+        "label": "Customer Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:design-review",
+        "label": "Design Review"
+      },
+      {
+        "id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "id": "urn:ngm:class:executive-communication",
+        "label": "Executive Communication"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering-workflows",
+        "label": "Software Engineering Workflows"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aom-av1-specification",
+        "label": "AOM AV1 Specification"
+      },
+      {
+        "id": "urn:ngm:class:ietf-rfc-7742-web-rtc-video",
+        "label": "IETF RFC 7742 WebRTC Video"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-14496-mpeg-4",
+        "label": "ISO/IEC 14496 MPEG-4"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc-w3-c-specification",
+        "label": "WebRTC W3C Specification"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:claap",
+        "label": "Claap"
+      },
+      {
+        "id": "urn:ngm:class:jira",
+        "label": "Jira"
+      },
+      {
+        "id": "urn:ngm:class:loom",
+        "label": "Loom"
+      },
+      {
+        "id": "urn:ngm:class:notion",
+        "label": "Notion"
+      },
+      {
+        "id": "urn:ngm:class:otter-ai",
+        "label": "Otter.ai"
+      },
+      {
+        "id": "urn:ngm:class:slack",
+        "label": "Slack"
+      },
+      {
+        "id": "urn:ngm:class:veed-io",
+        "label": "Veed.io"
+      },
+      {
+        "id": "urn:ngm:class:vidyard",
+        "label": "Vidyard"
+      },
+      {
+        "id": "urn:ngm:class:zoom-ai-companion",
+        "label": "Zoom AI Companion"
+      },
+      {
+        "id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "id": "urn:ngm:class:meeting-recording",
+        "label": "Meeting Recording"
+      }
+    ]
   },
   "wikilinks": [
     {

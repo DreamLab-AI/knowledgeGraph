@@ -3,53 +3,57 @@
   "title": "Digital Rights",
   "slug": "digital-rights",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-rights",
+  "classIri": "urn:ngm:class:digital-rights",
   "domain": "spatial-computing",
-  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation. bridges-to:: [[Blockchain]]",
+  "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and nati...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:human-rights",
+      "id": "urn:ngm:class:human-rights",
       "label": "Human Rights"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:enforcement-mechanisms",
+        "id": "urn:ngm:class:enforcement-mechanisms",
         "label": "Enforcement Mechanisms"
       },
       {
-        "id": "urn:visionflow:linked:technical-safeguards",
+        "id": "urn:ngm:class:technical-safeguards",
         "label": "Technical Safeguards"
       },
       {
-        "id": "urn:visionflow:owl:class:legal-framework",
+        "id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-sovereignty",
+        "id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:visionflow:linked:digital-freedom",
+        "id": "urn:ngm:class:digital-freedom",
         "label": "Digital Freedom"
       },
       {
-        "id": "urn:visionflow:linked:privacy-protection",
+        "id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

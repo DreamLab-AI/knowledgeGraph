@@ -3,53 +3,57 @@
   "title": "Cross Platform Digital Twins",
   "slug": "cross-platform-digital-twins",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-platform-digital-twins",
+  "classIri": "urn:ngm:class:cross-platform-digital-twins",
   "domain": "spatial-computing",
-  "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.",
+  "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible sy...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin-technology",
+      "id": "urn:ngm:class:digital-twin-technology",
       "label": "Digital Twin Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:api-integration",
+        "id": "urn:ngm:class:api-integration",
         "label": "API Integration"
       },
       {
-        "id": "urn:visionflow:linked:interoperability-standards",
+        "id": "urn:ngm:class:interoperability-standards",
         "label": "Interoperability Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:universal-scene-description",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-simulation",
+        "id": "urn:ngm:class:collaborative-simulation",
         "label": "Collaborative Simulation"
       },
       {
-        "id": "urn:visionflow:linked:multi-vendor-ecosystems",
+        "id": "urn:ngm:class:multi-vendor-ecosystems",
         "label": "Multi-Vendor Ecosystems"
       },
       {
-        "id": "urn:visionflow:owl:class:data-integration",
+        "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

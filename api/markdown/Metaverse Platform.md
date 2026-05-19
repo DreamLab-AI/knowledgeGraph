@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-platform",
+  "@type": "Class",
   "label": "Metaverse Platform",
+  "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
+      "@id": "urn:ngm:class:virtual-world",
+      "label": "Virtual World"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b1e44fa19f9afeec186e96ce72ea39e98307728fc292b515a66ca31d7126a63b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-social-interaction",
+        "label": "Virtual Social Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b1e44fa19f9afeec186e96ce72ea39e98307728fc292b515a66ca31d7126a63b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:virtual-social-interaction",
-      "vc:label": "Virtual Social Interaction"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,139 +3,222 @@
   "title": "Stable Diffusion",
   "slug": "stable-diffusion",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:stable-diffusion",
+  "classIri": "urn:ngm:individual:stable-diffusion",
   "domain": "artificial-intelligence",
-  "definition": "Stable Diffusion is a family of open-weight latent diffusion models (LDMs) developed primarily by Stability AI in collaboration with academic partners, originating from the seminal \"High-Resolution Image Synthesis with Latent Diffusion Models\" paper (Rombach et al., CompVis Heidelberg, CVPR 2022), which introduced the core architectural insight of performing the iterative denoising process in a compressed latent space rather than pixel space, enabling high-resolution synthesis on consumer GPUs by compressing 512\u00d7512 RGB images (786,432 pixels) into 64\u00d764\u00d74 latent tensors (16,384 values, 48\u00d7 compression) via a trainable variational autoencoder (VAE) with encoder E:X\u2192Z and decoder D:Z\u2192X, training a U-Net denoising network \u03b5_\u03b8(z_t, t, \u03c4_\u03b8(y)) conditioned on timestep t and text prompt embeddings \u03c4_\u03b8(y) from CLIP text encoder ViT-L/14, applying Gaussian noise forward process q(z_t|z_{t-1}) = N(z_t; \u221a(1-\u03b2_t)z_{t-1}, \u03b2_tI) over T=1000 steps and learning reverse denoising p_\u03b8(z_{t-1}|z_t) to minimise L = E_{\u03b5\u223cN(0,1),t}[\u2016\u03b5 \u2212 \u03b5_\u03b8(z_t, t, \u03c4_\u03b8(y))\u2016\u00b2] integrating cross-attention between U-Net spatial features and CLIP embeddings for text conditioning (Rombach et al. 2022 achieving FID 12.64 on ",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:latent-diffusion-model",
-      "label": "Latent Diffusion Model"
-    },
-    {
-      "id": "urn:visionflow:linked:text-to-image-model",
-      "label": "Text-to-Image Model"
-    },
-    {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
-    }
-  ],
+  "definition": "Stable Diffusion is a family of open-weight latent diffusion models (LDMs) developed primarily by Stability AI in collaboration with academic partners, originating from the seminal \"High-Resolution Image Synthesis with Latent Diffusion Models\" paper (Rombach et al., CompVis Heidelberg, CVPR 2022)...",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:clip",
+        "id": "urn:ngm:class:clip",
         "label": "CLIP"
       },
       {
-        "id": "urn:visionflow:linked:control-net-and-similar",
+        "id": "urn:ngm:class:control-net-and-similar",
         "label": "ControlNet and similar"
       },
       {
-        "id": "urn:visionflow:linked:noise-scheduler",
+        "id": "urn:ngm:class:noise-scheduler",
         "label": "Noise Scheduler"
       },
       {
-        "id": "urn:visionflow:linked:sampler",
+        "id": "urn:ngm:class:sampler",
         "label": "Sampler"
       },
       {
-        "id": "urn:visionflow:linked:u-net",
+        "id": "urn:ngm:class:u-net",
         "label": "U-Net"
       },
       {
-        "id": "urn:visionflow:linked:vae",
+        "id": "urn:ngm:class:vae",
         "label": "VAE"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-attention",
+        "id": "urn:ngm:class:cross-attention",
         "label": "Cross Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
         "label": "LoRA DoRA etc"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:denoising-network",
+        "id": "urn:ngm:class:denoising-network",
         "label": "Denoising Network"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:laion-dataset",
+        "id": "urn:ngm:class:laion-dataset",
         "label": "LAION Dataset"
       },
       {
-        "id": "urn:visionflow:linked:text-encoder",
+        "id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
       },
       {
-        "id": "urn:visionflow:linked:variational-autoencoder",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:image-editing",
+        "id": "urn:ngm:class:image-editing",
         "label": "Image Editing"
       },
       {
-        "id": "urn:visionflow:linked:image-synthesis",
+        "id": "urn:ngm:class:image-synthesis",
         "label": "Image Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:outpainting",
+        "id": "urn:ngm:class:outpainting",
         "label": "Outpainting"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-diagram-tools",
+        "id": "urn:ngm:class:ai-diagram-tools",
         "label": "AI Diagram Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-video",
+        "id": "urn:ngm:class:ai-video",
         "label": "AI Video"
       },
       {
-        "id": "urn:visionflow:owl:class:inpainting",
+        "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
       },
       {
-        "id": "urn:visionflow:owl:class:style-transfer",
+        "id": "urn:ngm:class:style-transfer",
         "label": "Style Transfer"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:classifier-free-guidance",
+        "id": "urn:ngm:class:classifier-free-guidance",
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:visionflow:linked:denoising-diffusion-probabilistic-models",
+        "id": "urn:ngm:class:denoising-diffusion-probabilistic-models",
         "label": "Denoising Diffusion Probabilistic Models"
       },
       {
-        "id": "urn:visionflow:linked:flow-matching",
+        "id": "urn:ngm:class:flow-matching",
         "label": "Flow Matching"
       },
       {
-        "id": "urn:visionflow:linked:latent-space-compression",
+        "id": "urn:ngm:class:latent-space-compression",
         "label": "Latent Space Compression"
       },
       {
-        "id": "urn:visionflow:linked:rectified-flow",
+        "id": "urn:ngm:class:rectified-flow",
         "label": "Rectified Flow"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adam-w-optimiser",
+        "label": "AdamW Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:t5-text-encoder",
+        "label": "T5 Text Encoder"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:fashion",
+        "label": "Fashion"
+      },
+      {
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "KOHYA Dreambooth and similar"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:creative-ml-open-rail-m-licence",
+        "label": "CreativeML Open RAIL-M Licence"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-client",
+        "label": "ComfyUI Client"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "wikilinks": [
     {

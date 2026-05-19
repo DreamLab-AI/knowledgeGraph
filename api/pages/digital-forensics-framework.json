@@ -3,53 +3,57 @@
   "title": "Digital Forensics Framework",
   "slug": "digital-forensics-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-forensics-framework",
+  "classIri": "urn:ngm:class:digital-forensics-framework",
   "domain": "spatial-computing",
-  "definition": "A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts. bridges-to:: [[Blockchain]]",
+  "definition": "A structured modology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cybersecurity",
+      "id": "urn:ngm:class:cybersecurity",
       "label": "Cybersecurity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:chain-of-custody",
+        "id": "urn:ngm:class:chain-of-custody",
         "label": "Chain of Custody"
       },
       {
-        "id": "urn:visionflow:linked:data-integrity",
+        "id": "urn:ngm:class:data-integrity",
         "label": "Data Integrity"
       },
       {
-        "id": "urn:visionflow:linked:forensic-tools",
+        "id": "urn:ngm:class:forensic-tools",
         "label": "Forensic Tools"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:evidence-collection",
+        "id": "urn:ngm:class:evidence-collection",
         "label": "Evidence Collection"
       },
       {
-        "id": "urn:visionflow:linked:incident-investigation",
+        "id": "urn:ngm:class:incident-investigation",
         "label": "Incident Investigation"
       },
       {
-        "id": "urn:visionflow:linked:legal-documentation",
+        "id": "urn:ngm:class:legal-documentation",
         "label": "Legal Documentation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

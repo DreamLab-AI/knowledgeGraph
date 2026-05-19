@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0088-iso-13482-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0088-iso-13482-compliance",
+  "@type": "Class",
   "label": "rb 0088 iso 13482 compliance",
+  "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:functional-safety",
-      "vc:label": "Functional Safety"
+      "@id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:56dcdb1a4e2bc61d11899d783603b21db7854e1dbc407b70cb43222b1f056a40"
-  },
-  "vc:inferenceRule": "R4SemanticRelation",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:56dcdb1a4e2bc61d11899d783603b21db7854e1dbc407b70cb43222b1f056a40@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R4SemanticRelation"
+  }
 }
 ```
 

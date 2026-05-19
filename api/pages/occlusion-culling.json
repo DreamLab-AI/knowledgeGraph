@@ -3,19 +3,18 @@
   "title": "Occlusion Culling",
   "slug": "occlusion-culling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:occlusion-culling",
+  "classIri": "urn:ngm:class:occlusion-culling",
   "domain": "spatial-computing",
   "definition": "Occlusion Culling is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

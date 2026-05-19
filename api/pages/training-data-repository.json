@@ -3,19 +3,18 @@
   "title": "Training Data Repository",
   "slug": "training-data-repository",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-data-repository",
+  "classIri": "urn:ngm:class:training-data-repository",
   "domain": "artificial-intelligence",
   "definition": "A centralized or distributed storage system for collecting, organizing, versioning, and managing datasets used to train AI and machine learning models, including data provenance tracking, quality assurance, and access control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

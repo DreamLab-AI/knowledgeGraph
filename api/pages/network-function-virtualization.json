@@ -3,32 +3,36 @@
   "title": "Network Function Virtualization",
   "slug": "network-function-virtualization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-function-virtualization",
+  "classIri": "urn:ngm:class:network-function-virtualization",
   "domain": "spatial-computing",
   "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-architecture",
+      "id": "urn:ngm:class:network-architecture",
       "label": "Network Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:network-scalability",
+        "id": "urn:ngm:class:network-scalability",
         "label": "Network Scalability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

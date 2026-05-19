@@ -3,53 +3,57 @@
   "title": "Awareness",
   "slug": "awareness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:awareness",
+  "classIri": "urn:ngm:class:awareness",
   "domain": "spatial-computing",
-  "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, audio, and haptic cues.",
+  "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, aud...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:social-computing",
+      "id": "urn:ngm:class:social-computing",
       "label": "Social Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:notification-systems",
+        "id": "urn:ngm:class:notification-systems",
         "label": "Notification Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:presence-detection",
+        "id": "urn:ngm:class:presence-detection",
         "label": "Presence Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:state-synchronization",
+        "id": "urn:ngm:class:state-synchronization",
         "label": "State Synchronization"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-presence",
+        "id": "urn:ngm:class:collaborative-presence",
         "label": "Collaborative Presence"
       },
       {
-        "id": "urn:visionflow:linked:situational-understanding",
+        "id": "urn:ngm:class:situational-understanding",
         "label": "Situational Understanding"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction",
+        "id": "urn:ngm:class:social-interaction",
         "label": "Social Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

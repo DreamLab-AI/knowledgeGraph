@@ -3,32 +3,31 @@
   "title": "AI Operator",
   "slug": "ai-operator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-operator",
+  "classIri": "urn:ngm:class:ai-operator",
   "domain": "artificial-intelligence",
-  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.",
+  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-deployment",
+      "id": "urn:ngm:class:ai-deployment",
       "label": "AI Deployment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:competence-development",
+        "id": "urn:ngm:class:competence-development",
         "label": "competence development"
       },
       {
-        "id": "urn:visionflow:linked:ongoing-support",
+        "id": "urn:ngm:class:ongoing-support",
         "label": "ongoing support"
       },
       {
-        "id": "urn:visionflow:owl:class:training",
+        "id": "urn:ngm:class:training",
         "label": "Training"
       }
     ],
@@ -36,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

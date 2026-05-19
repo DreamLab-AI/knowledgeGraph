@@ -200,124 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:nft-swapping",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nft-swapping",
+  "@type": "Class",
   "label": "NFT Swapping",
+  "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a0ed3047e419d0cb5504c5249d040d9a521fefb7b8039113edd3eccb93fae4dd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-verification",
+        "label": "Asset Verification"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-transaction",
+        "label": "Atomic Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-agreement",
+        "label": "Exchange Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:swap-smart-contract",
+        "label": "Swap Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gas-fee-payment",
+        "label": "Gas Fee Payment"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:nft-ownership-proof",
+        "label": "NFT Ownership Proof"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:direct-exchange",
+        "label": "Direct Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-trading",
+        "label": "Peer-to-Peer Trading"
+      },
+      {
+        "@id": "urn:ngm:class:trust-minimized-transfer",
+        "label": "Trust-Minimized Transfer"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a0ed3047e419d0cb5504c5249d040d9a521fefb7b8039113edd3eccb93fae4dd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-marketplace",
-      "vc:label": "NFT Marketplace"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-verification",
-      "vc:label": "Asset Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:atomic-transaction",
-      "vc:label": "Atomic Transaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:exchange-agreement",
-      "vc:label": "Exchange Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:swap-smart-contract",
-      "vc:label": "Swap Smart Contract"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gas-fee-payment",
-      "vc:label": "Gas Fee Payment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-ownership-proof",
-      "vc:label": "NFT Ownership Proof"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-liquidity",
-      "vc:label": "Asset Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:direct-exchange",
-      "vc:label": "Direct Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-trading",
-      "vc:label": "Peer-to-Peer Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-minimized-transfer",
-      "vc:label": "Trust-Minimized Transfer"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:transaction-validation",
-      "vc:label": "Transaction Validation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-verification",
-      "vc:label": "Cryptographic Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

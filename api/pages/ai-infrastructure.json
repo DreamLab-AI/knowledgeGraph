@@ -3,19 +3,18 @@
   "title": "AI Infrastructure",
   "slug": "ai-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-infrastructure",
+  "classIri": "urn:ngm:class:ai-infrastructure",
   "domain": "artificial-intelligence",
-  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications. This includes GPU computing clusters, cloud AI services, edge computing devices, machine learning platforms, and the supporting toolchains for model development and deployment.",
+  "definition": "AI Infrastructure refers to the hardware, software, and systems required to develop, train, deploy, and operate artificial intelligence applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

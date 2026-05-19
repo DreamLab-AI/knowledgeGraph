@@ -3,32 +3,36 @@
   "title": "Non Linear Storytelling",
   "slug": "non-linear-storytelling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:non-linear-storytelling",
+  "classIri": "urn:ngm:class:non-linear-storytelling",
   "domain": "spatial-computing",
   "definition": "The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:storytelling",
+      "id": "urn:ngm:class:storytelling",
       "label": "Storytelling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:multiple-endings",
+        "id": "urn:ngm:class:multiple-endings",
         "label": "Multiple Endings"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

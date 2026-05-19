@@ -3,53 +3,57 @@
   "title": "Digital Twin Infrastructure",
   "slug": "digital-twin-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-infrastructure",
+  "classIri": "urn:ngm:class:digital-twin-infrastructure",
   "domain": "infrastructure",
-  "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts. bridges-to:: [[Sensor Input]]",
+  "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual count...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:5-g-connectivity",
+        "id": "urn:ngm:class:5-g-connectivity",
         "label": "5G Connectivity"
       },
       {
-        "id": "urn:visionflow:linked:cloud-platform",
+        "id": "urn:ngm:class:cloud-platform",
         "label": "Cloud Platform"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing",
+        "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:edge-analytics",
+        "id": "urn:ngm:class:edge-analytics",
         "label": "Edge Analytics"
       },
       {
-        "id": "urn:visionflow:linked:scalable-deployment",
+        "id": "urn:ngm:class:scalable-deployment",
         "label": "Scalable Deployment"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-processing",
+        "id": "urn:ngm:class:real-time-processing",
         "label": "Real-Time Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

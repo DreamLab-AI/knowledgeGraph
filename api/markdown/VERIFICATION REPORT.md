@@ -160,41 +160,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:verification-report",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:verification-report",
+  "@type": "Class",
   "label": "VERIFICATION REPORT",
+  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:09d75f0e036a58c5121ffabaf6d5e6567788a987f963c1652e864451bfe2ace8"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:09d75f0e036a58c5121ffabaf6d5e6567788a987f963c1652e864451bfe2ace8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures. These reports provide transparent documentation of [[DataQualityMetrics|data quality assessments]], [[SchemaCompliance|schema validation]], [[SemanticConsistency|semantic consistency]] checks, and testing results covering [[RDFTriples|RDF triples]], [[OWLAxioms|OWL axioms]], and [[DataIntegrity|data integrity]]. Comprehensive verification reporting with detailed defect categorisation, remediation progress tracking, and [[QualityMetrics|quality metrics]] enables stakeholders to assess production readiness and compliance with [[OntologyStandards|ontology standards]] before deployment.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

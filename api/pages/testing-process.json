@@ -3,78 +3,91 @@
   "title": "Testing Process",
   "slug": "testing-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:testing-process",
+  "classIri": "urn:ngm:class:testing-process",
   "domain": "spatial-computing",
   "definition": "Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:quality-assurance",
+      "id": "urn:ngm:class:quality-assurance",
       "label": "Quality Assurance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:integration-testing",
+        "id": "urn:ngm:class:integration-testing",
         "label": "Integration Testing"
       },
       {
-        "id": "urn:visionflow:linked:performance-testing",
+        "id": "urn:ngm:class:performance-testing",
         "label": "Performance Testing"
       },
       {
-        "id": "urn:visionflow:linked:security-testing",
+        "id": "urn:ngm:class:security-testing",
         "label": "Security Testing"
       },
       {
-        "id": "urn:visionflow:linked:unit-testing",
+        "id": "urn:ngm:class:unit-testing",
         "label": "Unit Testing"
       },
       {
-        "id": "urn:visionflow:linked:user-acceptance-testing",
+        "id": "urn:ngm:class:user-acceptance-testing",
         "label": "User Acceptance Testing"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:defect-tracking-system",
+        "id": "urn:ngm:class:defect-tracking-system",
         "label": "Defect Tracking System"
       },
       {
-        "id": "urn:visionflow:linked:test-automation-framework",
+        "id": "urn:ngm:class:test-automation-framework",
         "label": "Test Automation Framework"
       },
       {
-        "id": "urn:visionflow:linked:test-data-management",
+        "id": "urn:ngm:class:test-data-management",
         "label": "Test Data Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:quality-validation",
+        "id": "urn:ngm:class:quality-validation",
         "label": "Quality Validation"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:performance-optimization",
+        "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:development-workflow",
+        "label": "Development Workflow"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -156,90 +156,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:exoskeleton-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:exoskeleton-robot",
+  "@type": "Class",
   "label": "Exoskeleton Robot",
+  "definition": "Exoskeleton Robot - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:wearable-robotics",
-      "vc:label": "Wearable Robotics"
+      "@id": "urn:ngm:class:wearable-robotics",
+      "label": "Wearable Robotics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-time Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessibility-in-harsh-environments",
+        "label": "Accessibility in Harsh Environments"
+      },
+      {
+        "@id": "urn:ngm:class:injury-prevention",
+        "label": "Injury Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:worker-productivity",
+        "label": "Worker Productivity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-augmentation-system",
+        "label": "Human Augmentation System"
+      },
+      {
+        "@id": "urn:ngm:class:occupational-safety-equipment",
+        "label": "Occupational Safety Equipment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:07c7703f24ae697770a90f9b69569f278bdbd8a8bf457d7e58becaef7cf19337@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Exoskeleton Robot** - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
-  "vc:qualityScore": {
-    "@value": "0.57",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.14",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:human-augmentation-system",
-      "vc:label": "Human Augmentation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:occupational-safety-equipment",
-      "vc:label": "Occupational Safety Equipment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:real-time-control",
-      "vc:label": "Real-time Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture",
-      "vc:label": "Motion Capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-in-harsh-environments",
-      "vc:label": "Accessibility in Harsh Environments"
-    },
-    {
-      "@id": "urn:visionflow:linked:injury-prevention",
-      "vc:label": "Injury Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:worker-productivity",
-      "vc:label": "Worker Productivity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.57,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

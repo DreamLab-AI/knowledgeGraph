@@ -3,50 +3,59 @@
   "title": "Avatar",
   "slug": "avatar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:avatar",
+  "classIri": "urn:ngm:class:avatar",
   "domain": "spatial-computing",
   "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:animation-rig",
+        "id": "urn:ngm:class:animation-rig",
         "label": "Animation Rig"
       },
       {
-        "id": "urn:visionflow:linked:visual-mesh",
+        "id": "urn:ngm:class:visual-mesh",
         "label": "Visual Mesh"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-embodiment",
+        "id": "urn:ngm:class:user-embodiment",
         "label": "User Embodiment"
       },
       {
-        "id": "urn:visionflow:owl:class:social-presence",
+        "id": "urn:ngm:class:social-presence",
         "label": "Social Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

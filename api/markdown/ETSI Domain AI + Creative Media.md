@@ -140,74 +140,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-ai-creative-media",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-ai-creative-media",
+  "@type": "Class",
   "label": "ETSI Domain AI + Creative Media",
+  "definition": "Cross-domain marker for metaverse components that combine artificial intelligence capabilities with creative media applications such as generative content, procedural generation, and AI-assisted authoring.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:578213cb0f2435ad2a6e1d55f09476262b45787bd966cc16be340c17efc8480b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:generative-content-classification",
+        "label": "Generative Content Classification"
+      },
+      {
+        "@id": "urn:ngm:class:ai-art-categorization",
+        "label": "AI Art Categorization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:578213cb0f2435ad2a6e1d55f09476262b45787bd966cc16be340c17efc8480b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse components that combine artificial intelligence capabilities with creative media applications such as generative content, procedural generation, and AI-assisted authoring.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:generative-content-classification",
-      "vc:label": "Generative Content Classification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-art-categorization",
-      "vc:label": "AI Art Categorization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
-      "vc:label": "CreativeMediaDomain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-ai",
-      "vc:label": "ETSI Domain AI"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

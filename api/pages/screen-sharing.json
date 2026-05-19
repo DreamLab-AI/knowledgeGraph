@@ -3,155 +3,251 @@
   "title": "Screen Sharing",
   "slug": "screen-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:screen-sharing",
+  "classIri": "urn:ngm:class:screen-sharing",
   "domain": "distributed-collaboration",
-  "definition": "Screen sharing is the real-time capture and transmission of a computing device's visual display output \u2014 encompassing full-desktop, application-window, browser-tab, and mobile-device viewports \u2014 to one or more remote participants over a network, enabling synchronous visual communication of interfaces, live code execution, design artefacts, data dashboards, and instructional demonstrations without requiring physical co-location or asynchronous file exchange. The technology operates through a pipeline of display capture, frame encoding, network packetisation, decoding, and rendering, spanning four dominant protocol stacks \u2014 [[WebRTC]] getDisplayMedia API (browser-native, peer-to-peer), [[Remote Desktop Protocol]] (RDP; Microsoft, TCP/UDP 3389), VNC/[[RFB Protocol]] (Remote Framebuffer, port 5900), and [[Network Device Interface]] (NDI, broadcast-grade LAN/WAN) \u2014 each making different trade-offs across latency, fidelity, interactivity, and deployment complexity. Codec selection is the primary quality lever: H.264 Screen Content Coding (SCC, ISO/IEC 14496-10 Annex N) adds palette tables and intra-block-copy (IBC) tools that exploit the large flat-colour regions and sharp text edges pre",
+  "definition": "Screen sharing is the real-time capture and transmission of a computing device's visual display output \u2014 encompassing full-desktop, application-window, browser-tab, and mobile-device viewports \u2014 to one or more remote participants over a network, enabling synchronous visual communication of interf...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:remote-desktop-technology",
+      "id": "urn:ngm:class:remote-desktop-technology",
       "label": "Remote Desktop Technology"
     },
     {
-      "id": "urn:visionflow:linked:synchronous-collaboration-tools",
+      "id": "urn:ngm:class:synchronous-collaboration-tools",
       "label": "Synchronous Collaboration Tools"
-    },
-    {
-      "id": "urn:visionflow:linked:visual-communication",
-      "label": "Visual Communication"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:annotation-overlay",
+        "id": "urn:ngm:class:annotation-overlay",
         "label": "Annotation Overlay"
       },
       {
-        "id": "urn:visionflow:linked:application-window-capture",
+        "id": "urn:ngm:class:application-window-capture",
         "label": "Application Window Capture"
       },
       {
-        "id": "urn:visionflow:linked:clipboard-synchronisation",
+        "id": "urn:ngm:class:clipboard-synchronisation",
         "label": "Clipboard Synchronisation"
       },
       {
-        "id": "urn:visionflow:linked:display-capture",
+        "id": "urn:ngm:class:display-capture",
         "label": "Display Capture"
       },
       {
-        "id": "urn:visionflow:linked:intraframe-refresh",
+        "id": "urn:ngm:class:intraframe-refresh",
         "label": "Intraframe Refresh"
       },
       {
-        "id": "urn:visionflow:linked:remote-control",
+        "id": "urn:ngm:class:remote-control",
         "label": "Remote Control"
       },
       {
-        "id": "urn:visionflow:linked:tab-capture",
+        "id": "urn:ngm:class:tab-capture",
         "label": "Tab Capture"
       },
       {
-        "id": "urn:visionflow:linked:video-encoding",
+        "id": "urn:ngm:class:video-encoding",
         "label": "Video Encoding"
       },
       {
-        "id": "urn:visionflow:owl:class:bandwidth-adaptation",
+        "id": "urn:ngm:class:bandwidth-adaptation",
         "label": "Bandwidth Adaptation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:network-device-interface",
+        "id": "urn:ngm:class:network-device-interface",
         "label": "Network Device Interface"
       },
       {
-        "id": "urn:visionflow:linked:operating-system-capture-apis",
+        "id": "urn:ngm:class:operating-system-capture-apis",
         "label": "Operating System Capture APIs"
       },
       {
-        "id": "urn:visionflow:linked:real-time-transport-protocol",
+        "id": "urn:ngm:class:real-time-transport-protocol",
         "label": "Real-time Transport Protocol"
       },
       {
-        "id": "urn:visionflow:linked:session-signalling",
+        "id": "urn:ngm:class:session-signalling",
         "label": "Session Signalling"
       },
       {
-        "id": "urn:visionflow:linked:video-bandwidth",
+        "id": "urn:ngm:class:video-bandwidth",
         "label": "Video Bandwidth"
       },
       {
-        "id": "urn:visionflow:linked:video-codec",
+        "id": "urn:ngm:class:video-codec",
         "label": "Video Codec"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ar-screen-projection",
+        "id": "urn:ngm:class:ar-screen-projection",
         "label": "AR Screen Projection"
       },
       {
-        "id": "urn:visionflow:linked:live-code-demonstration",
+        "id": "urn:ngm:class:live-code-demonstration",
         "label": "Live Code Demonstration"
       },
       {
-        "id": "urn:visionflow:linked:remote-technical-support",
+        "id": "urn:ngm:class:remote-technical-support",
         "label": "Remote Technical Support"
       },
       {
-        "id": "urn:visionflow:linked:visual-design-review",
+        "id": "urn:ngm:class:visual-design-review",
         "label": "Visual Design Review"
       },
       {
-        "id": "urn:visionflow:owl:class:collaborative-whiteboard",
+        "id": "urn:ngm:class:collaborative-whiteboard",
         "label": "Collaborative Whiteboard"
       },
       {
-        "id": "urn:visionflow:owl:class:remote-pair-programming",
+        "id": "urn:ngm:class:remote-pair-programming",
         "label": "Remote Pair Programming"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-classroom",
+        "id": "urn:ngm:class:virtual-classroom",
         "label": "Virtual Classroom"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:av1-codec",
+        "id": "urn:ngm:class:av1-codec",
         "label": "AV1 Codec"
       },
       {
-        "id": "urn:visionflow:linked:h-264-screen-content-coding",
+        "id": "urn:ngm:class:h-264-screen-content-coding",
         "label": "H.264 Screen Content Coding"
       },
       {
-        "id": "urn:visionflow:linked:ndi-protocol",
+        "id": "urn:ngm:class:ndi-protocol",
         "label": "NDI Protocol"
       },
       {
-        "id": "urn:visionflow:linked:remote-desktop-protocol",
+        "id": "urn:ngm:class:remote-desktop-protocol",
         "label": "Remote Desktop Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rfb-protocol",
+        "id": "urn:ngm:class:rfb-protocol",
         "label": "RFB Protocol"
       },
       {
-        "id": "urn:visionflow:linked:vp9-codec",
+        "id": "urn:ngm:class:vp9-codec",
         "label": "VP9 Codec"
       },
       {
-        "id": "urn:visionflow:owl:class:web-rtc",
+        "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:av1-codec",
+        "label": "AV1 Codec"
+      },
+      {
+        "id": "urn:ngm:class:gpu-hardware-encoding",
+        "label": "GPU Hardware Encoding"
+      },
+      {
+        "id": "urn:ngm:class:h-264",
+        "label": "H.264"
+      },
+      {
+        "id": "urn:ngm:class:screen-capture-api",
+        "label": "Screen Capture API"
+      },
+      {
+        "id": "urn:ngm:class:stun-turn-servers",
+        "label": "STUN TURN Servers"
+      },
+      {
+        "id": "urn:ngm:class:vp9-codec",
+        "label": "VP9 Codec"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:design-collaboration",
+        "label": "Design Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-working",
+        "label": "Hybrid Working"
+      },
+      {
+        "id": "urn:ngm:class:technical-support-workflows",
+        "label": "Technical Support Workflows"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      },
+      {
+        "id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:alliance-for-open-media-av1",
+        "label": "Alliance for Open Media AV1"
+      },
+      {
+        "id": "urn:ngm:class:ietf-web-rtc",
+        "label": "IETF WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:itu-t-h-264",
+        "label": "ITU-T H.264"
+      },
+      {
+        "id": "urn:ngm:class:smpte-ndi-standard",
+        "label": "SMPTE NDI Standard"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-screen-capture-api",
+        "label": "W3C Screen Capture API"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:breakout-room",
+        "label": "Breakout Room"
+      },
+      {
+        "id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed reality"
+      },
+      {
+        "id": "urn:ngm:class:remote-pair-programming",
+        "label": "Remote Pair Programming"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ]
   },
   "wikilinks": [
     {

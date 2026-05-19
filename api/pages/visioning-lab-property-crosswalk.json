@@ -3,47 +3,51 @@
   "title": "VisioningLab-Property-Crosswalk",
   "slug": "visioning-lab-property-crosswalk",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:visioning-lab-property-crosswalk",
+  "classIri": "urn:ngm:class:visioning-lab-property-crosswalk",
   "domain": "spatial-computing",
   "definition": "Mapping framework for aligning VisioningLab hybrid page properties to RDF/OWL/SKOS predicates for ontology interoperability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "\u2192 ai:status",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-has-part",
+        "id": "urn:ngm:class:ai-has-part",
         "label": "\u2192 ai:hasPart"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-requires",
+        "id": "urn:ngm:class:ai-requires",
         "label": "\u2192 ai:requires"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-enables",
+        "id": "urn:ngm:class:ai-enables",
         "label": "\u2192 ai:enables"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ai-implements",
+        "id": "urn:ngm:class:ai-implements",
         "label": "\u2192 ai:implements"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

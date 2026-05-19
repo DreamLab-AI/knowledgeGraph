@@ -3,78 +3,82 @@
   "title": "Technology Adoption",
   "slug": "technology-adoption",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:technology-adoption",
+  "classIri": "urn:ngm:class:technology-adoption",
   "domain": "distributed-collaboration",
-  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
+  "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, etrial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.93,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:evaluation",
+        "id": "urn:ngm:class:evaluation",
         "label": "Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:implementation",
+        "id": "urn:ngm:class:implementation",
         "label": "Implementation"
       },
       {
-        "id": "urn:visionflow:linked:sustained-use",
+        "id": "urn:ngm:class:sustained-use",
         "label": "Sustained Use"
       },
       {
-        "id": "urn:visionflow:linked:trial",
+        "id": "urn:ngm:class:trial",
         "label": "Trial"
       },
       {
-        "id": "urn:visionflow:owl:class:awareness",
+        "id": "urn:ngm:class:awareness",
         "label": "Awareness"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:change-management",
+        "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-buy-in",
+        "id": "urn:ngm:class:stakeholder-buy-in",
         "label": "Stakeholder Buy-In"
       },
       {
-        "id": "urn:visionflow:owl:class:infrastructure",
+        "id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:training",
+        "id": "urn:ngm:class:training",
         "label": "Training"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:competitive-advantage",
+        "id": "urn:ngm:class:competitive-advantage",
         "label": "Competitive Advantage"
       },
       {
-        "id": "urn:visionflow:linked:innovation-diffusion",
+        "id": "urn:ngm:class:innovation-diffusion",
         "label": "Innovation Diffusion"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-transformation",
+        "id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

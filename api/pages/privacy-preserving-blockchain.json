@@ -3,155 +3,279 @@
   "title": "Privacy Preserving Blockchain",
   "slug": "privacy-preserving-blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-preserving-blockchain",
+  "classIri": "urn:ngm:class:privacy-preserving-blockchain",
   "domain": "blockchain",
-  "definition": "Blockchain architectures and cryptographic protocol suites that conceal transaction metadata \u2014 sender identity, recipient identity, transferred amounts, and smart contract state \u2014 whilst preserving network verifiability, immutability, and auditability for authorised parties through an ensemble of techniques including [[Zero-Knowledge Proofs]] (zk-SNARKs via [[Groth16]] and [[Halo 2]], zk-STARKs via [[FRI]] polynomial commitment), [[Ring Signatures]] with decoy mixing sets ([[Monero]] RingCT + [[Bulletproofs+]]), [[Stealth Addresses]] generating one-time ephemeral recipient keys, [[Pedersen Commitments]] binding amounts cryptographically whilst supporting homomorphic addition, [[Confidential Transactions]] (CT) hiding values with blinding factors, [[Homomorphic Encryption]] enabling ciphertext arithmetic, [[Secure Multi-Party Computation]] (SMPC) for threshold key management, and [[Trusted Execution Environments]] (TEE/SGX) for confidential smart contract execution, deployed across a spectrum from pure privacy-by-default chains ([[Monero]] XMR, [[Zcash]] ZEC shielded pool, [[Grin]] MimbleWimble, [[Beam]] MimbleWimble-MW) through programmable privacy layers ([[Aztec Protocol]] Noir-c",
+  "definition": "Blockchain architectures and cryptographic protocol suites that conceal transaction metadata \u2014 sender identity, recipient identity, transferred amounts, and smart contract state \u2014 whilst preserving network verifiability, immutability, and auditability for authorised parties through an ensemble of...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:privacy-technology",
+      "id": "urn:ngm:class:privacy-technology",
       "label": "Privacy Technology"
     },
     {
-      "id": "urn:visionflow:linked:zero-knowledge-system",
+      "id": "urn:ngm:class:zero-knowledge-system",
       "label": "Zero-Knowledge System"
-    },
-    {
-      "id": "urn:visionflow:owl:class:cryptographic-protocol",
-      "label": "Cryptographic Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bulletproofs",
+        "id": "urn:ngm:class:bulletproofs",
         "label": "Bulletproofs"
       },
       {
-        "id": "urn:visionflow:linked:merkle-tree-accumulator",
+        "id": "urn:ngm:class:merkle-tree-accumulator",
         "label": "Merkle Tree Accumulator"
       },
       {
-        "id": "urn:visionflow:linked:nullifier-set",
+        "id": "urn:ngm:class:nullifier-set",
         "label": "Nullifier Set"
       },
       {
-        "id": "urn:visionflow:linked:pedersen-commitment",
+        "id": "urn:ngm:class:pedersen-commitment",
         "label": "Pedersen Commitment"
       },
       {
-        "id": "urn:visionflow:linked:ring-signature",
+        "id": "urn:ngm:class:ring-signature",
         "label": "Ring Signature"
       },
       {
-        "id": "urn:visionflow:linked:shielded-pool",
+        "id": "urn:ngm:class:shielded-pool",
         "label": "Shielded Pool"
       },
       {
-        "id": "urn:visionflow:linked:spend-key",
+        "id": "urn:ngm:class:spend-key",
         "label": "Spend Key"
       },
       {
-        "id": "urn:visionflow:linked:stealth-address",
+        "id": "urn:ngm:class:stealth-address",
         "label": "Stealth Address"
       },
       {
-        "id": "urn:visionflow:linked:viewing-key",
+        "id": "urn:ngm:class:viewing-key",
         "label": "Viewing Key"
       },
       {
-        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:commitment-scheme",
+        "id": "urn:ngm:class:commitment-scheme",
         "label": "Commitment Scheme"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-hardness-assumption",
+        "id": "urn:ngm:class:cryptographic-hardness-assumption",
         "label": "Cryptographic Hardness Assumption"
       },
       {
-        "id": "urn:visionflow:linked:proof-system",
+        "id": "urn:ngm:class:proof-system",
         "label": "Proof System"
       },
       {
-        "id": "urn:visionflow:linked:trusted-setup-ceremony",
+        "id": "urn:ngm:class:trusted-setup-ceremony",
         "label": "Trusted Setup Ceremony"
       },
       {
-        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:anonymous-transactions",
+        "id": "urn:ngm:class:anonymous-transactions",
         "label": "Anonymous Transactions"
       },
       {
-        "id": "urn:visionflow:linked:compliance-proofs",
+        "id": "urn:ngm:class:compliance-proofs",
         "label": "Compliance Proofs"
       },
       {
-        "id": "urn:visionflow:linked:confidential-de-fi",
+        "id": "urn:ngm:class:confidential-de-fi",
         "label": "Confidential DeFi"
       },
       {
-        "id": "urn:visionflow:linked:financial-privacy",
+        "id": "urn:ngm:class:financial-privacy",
         "label": "Financial Privacy"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bulletproofs-range-proof",
+        "id": "urn:ngm:class:bulletproofs-range-proof",
         "label": "Bulletproofs Range Proof"
       },
       {
-        "id": "urn:visionflow:linked:groth16-zk-snark",
+        "id": "urn:ngm:class:groth16-zk-snark",
         "label": "Groth16 zk-SNARK"
       },
       {
-        "id": "urn:visionflow:linked:halo-2-recursive-proof",
+        "id": "urn:ngm:class:halo-2-recursive-proof",
         "label": "Halo 2 Recursive Proof"
       },
       {
-        "id": "urn:visionflow:linked:mimble-wimble-protocol",
+        "id": "urn:ngm:class:mimble-wimble-protocol",
         "label": "MimbleWimble Protocol"
       },
       {
-        "id": "urn:visionflow:linked:pedersen-commitment-scheme",
+        "id": "urn:ngm:class:pedersen-commitment-scheme",
         "label": "Pedersen Commitment Scheme"
       },
       {
-        "id": "urn:visionflow:linked:plonk-proof-system",
+        "id": "urn:ngm:class:plonk-proof-system",
         "label": "PLONK Proof System"
       },
       {
-        "id": "urn:visionflow:linked:ring-ct-protocol",
+        "id": "urn:ngm:class:ring-ct-protocol",
         "label": "RingCT Protocol"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:confidential-assets",
+        "label": "Confidential Assets"
+      },
+      {
+        "id": "urn:ngm:class:decoy-outputs",
+        "label": "Decoy Outputs"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:mpc-wallets",
+        "label": "MPC Wallets"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclaves",
+        "label": "Secure Enclaves"
+      },
+      {
+        "id": "urn:ngm:class:viewing-keys",
+        "label": "Viewing Keys"
+      },
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "zk-SNARKs"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "zk-STARKs"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-data-privacy",
+        "label": "Healthcare Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-confidentiality",
+        "label": "Supply Chain Confidentiality"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:ieee-p2418-1",
+        "label": "IEEE P2418.1"
+      },
+      {
+        "id": "urn:ngm:class:nist-post-quantum-standards",
+        "label": "NIST Post-Quantum Standards"
+      },
+      {
+        "id": "urn:ngm:class:ofac-sdn-designations",
+        "label": "OFAC SDN Designations"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      },
+      {
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aleo",
+        "label": "Aleo"
+      },
+      {
+        "id": "urn:ngm:class:aztec-protocol",
+        "label": "Aztec Protocol"
+      },
+      {
+        "id": "urn:ngm:class:iron-fish",
+        "label": "Iron Fish"
+      },
+      {
+        "id": "urn:ngm:class:mina-protocol",
+        "label": "Mina Protocol"
+      },
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "id": "urn:ngm:class:namada",
+        "label": "Namada"
+      },
+      {
+        "id": "urn:ngm:class:penumbra",
+        "label": "Penumbra"
+      },
+      {
+        "id": "urn:ngm:class:railgun",
+        "label": "Railgun"
+      },
+      {
+        "id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      },
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      }
+    ]
   },
   "wikilinks": [
     {

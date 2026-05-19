@@ -3,66 +3,75 @@
   "title": "ETSI Domain: Creative Media",
   "slug": "etsi-domain-creative-media",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-creative-media",
+  "classIri": "urn:ngm:class:etsi-domain-creative-media",
   "domain": "spatial-computing",
   "definition": "Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "ETSI Metaverse Domain Taxonomy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-content-creation",
+        "id": "urn:ngm:class:3-d-content-creation",
         "label": "3D Content Creation"
       },
       {
-        "id": "urn:visionflow:linked:multimedia-authoring",
+        "id": "urn:ngm:class:multimedia-authoring",
         "label": "Multimedia Authoring"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-pipeline",
+        "id": "urn:ngm:class:content-pipeline",
         "label": "Content Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:creative-tools",
+        "id": "urn:ngm:class:creative-tools",
         "label": "Creative Tools"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scene-design",
+        "id": "urn:ngm:class:scene-design",
         "label": "Scene Design"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-customization",
+        "id": "urn:ngm:class:avatar-customization",
         "label": "Avatar Customization"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-world-building",
+        "id": "urn:ngm:class:virtual-world-building",
         "label": "Virtual World Building"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

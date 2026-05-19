@@ -3,191 +3,387 @@
   "title": "AML KYC Compliance",
   "slug": "aml-kyc-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:aml-kyc-compliance",
+  "classIri": "urn:ngm:class:aml-kyc-compliance",
   "domain": "blockchain",
-  "definition": "**AML KYC Compliance** is the composite regulatory and operational discipline by which obligated entities \u2014 banks, payment institutions, e-money issuers, brokers, insurers, accountants, lawyers, art dealers, casinos, real-estate agents, virtual-asset service providers (VASPs / crypto-asset service providers CASPs) and an expanding perimeter of \"gatekeepers\" \u2014 implement statutory **Anti-Money Laundering** (AML), **Countering the Financing of Terrorism** (CFT), **Counter-Proliferation Financing** (CPF) and **Know Your Customer** (KYC) controls to identify their customers and ultimate beneficial owners, assess and risk-rate the relationship, monitor transactional behaviour continuously, screen against sanctions and politically-exposed-person (PEP) lists, file suspicious activity / transaction reports (SARs / STRs) with national Financial Intelligence Units (FIUs), and preserve auditable records for a minimum of five years; the regime descends institutionally from the **Bank Secrecy Act 1970** (US Public Law 91-508 establishing Currency Transaction Reports CTRs above $10,000 and the predecessor to FinCEN), the **Financial Action Task Force** (FATF, established at the 1989 G7 Arche Summ",
+  "definition": "AML KYC Compliance is the composite regulatory and operational discipline by which obligated entities \u2014 banks, payment institutions, e-money issuers, brokers, insurers, accountants, lawyers, art dealers, casinos, real-estate agents, virtual-asset service providers (VASPs / crypto-asset service pr...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:anti-financial-crime-regime",
+      "id": "urn:ngm:class:anti-financial-crime-regime",
       "label": "Anti-Financial Crime Regime"
     },
     {
-      "id": "urn:visionflow:linked:customer-onboarding-discipline",
+      "id": "urn:ngm:class:customer-onboarding-discipline",
       "label": "Customer Onboarding Discipline"
-    },
-    {
-      "id": "urn:visionflow:linked:financial-crime-compliance",
-      "label": "Financial Crime Compliance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:adverse-media-screening",
+        "id": "urn:ngm:class:adverse-media-screening",
         "label": "Adverse Media Screening"
       },
       {
-        "id": "urn:visionflow:linked:beneficial-ownership-disclosure",
+        "id": "urn:ngm:class:beneficial-ownership-disclosure",
         "label": "Beneficial Ownership Disclosure"
       },
       {
-        "id": "urn:visionflow:linked:customer-due-diligence",
+        "id": "urn:ngm:class:customer-due-diligence",
         "label": "Customer Due Diligence"
       },
       {
-        "id": "urn:visionflow:linked:customer-identification-programme",
+        "id": "urn:ngm:class:customer-identification-programme",
         "label": "Customer Identification Programme"
       },
       {
-        "id": "urn:visionflow:linked:enhanced-due-diligence",
+        "id": "urn:ngm:class:enhanced-due-diligence",
         "label": "Enhanced Due Diligence"
       },
       {
-        "id": "urn:visionflow:linked:pep-screening",
+        "id": "urn:ngm:class:pep-screening",
         "label": "PEP Screening"
       },
       {
-        "id": "urn:visionflow:linked:record-keeping",
+        "id": "urn:ngm:class:record-keeping",
         "label": "Record Keeping"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-screening",
+        "id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:visionflow:linked:simplified-due-diligence",
+        "id": "urn:ngm:class:simplified-due-diligence",
         "label": "Simplified Due Diligence"
       },
       {
-        "id": "urn:visionflow:linked:source-of-funds-verification",
+        "id": "urn:ngm:class:source-of-funds-verification",
         "label": "Source of Funds Verification"
       },
       {
-        "id": "urn:visionflow:linked:source-of-wealth-verification",
+        "id": "urn:ngm:class:source-of-wealth-verification",
         "label": "Source of Wealth Verification"
       },
       {
-        "id": "urn:visionflow:linked:suspicious-activity-report",
+        "id": "urn:ngm:class:suspicious-activity-report",
         "label": "Suspicious Activity Report"
       },
       {
-        "id": "urn:visionflow:linked:transaction-monitoring",
+        "id": "urn:ngm:class:transaction-monitoring",
         "label": "Transaction Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:travel-rule-compliance",
+        "id": "urn:ngm:class:travel-rule-compliance",
         "label": "Travel Rule Compliance"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:board-level-oversight",
+        "id": "urn:ngm:class:board-level-oversight",
         "label": "Board-Level Oversight"
       },
       {
-        "id": "urn:visionflow:linked:compliance-officer",
+        "id": "urn:ngm:class:compliance-officer",
         "label": "Compliance Officer"
       },
       {
-        "id": "urn:visionflow:linked:customer-identification-documentation",
+        "id": "urn:ngm:class:customer-identification-documentation",
         "label": "Customer Identification Documentation"
       },
       {
-        "id": "urn:visionflow:linked:fiu-reporting-channel",
+        "id": "urn:ngm:class:fiu-reporting-channel",
         "label": "FIU Reporting Channel"
       },
       {
-        "id": "urn:visionflow:linked:independent-audit-function",
+        "id": "urn:ngm:class:independent-audit-function",
         "label": "Independent Audit Function"
       },
       {
-        "id": "urn:visionflow:linked:risk-based-approach",
+        "id": "urn:ngm:class:risk-based-approach",
         "label": "Risk-Based Approach"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-list-feed",
+        "id": "urn:ngm:class:sanctions-list-feed",
         "label": "Sanctions List Feed"
       },
       {
-        "id": "urn:visionflow:linked:staff-training-programme",
+        "id": "urn:ngm:class:staff-training-programme",
         "label": "Staff Training Programme"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:banking-correspondent-relationships",
+        "id": "urn:ngm:class:banking-correspondent-relationships",
         "label": "Banking Correspondent Relationships"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-payment-compliance",
+        "id": "urn:ngm:class:cross-border-payment-compliance",
         "label": "Cross-Border Payment Compliance"
       },
       {
-        "id": "urn:visionflow:linked:financial-system-integrity",
+        "id": "urn:ngm:class:financial-system-integrity",
         "label": "Financial System Integrity"
       },
       {
-        "id": "urn:visionflow:linked:proceeds-of-crime-recovery",
+        "id": "urn:ngm:class:proceeds-of-crime-recovery",
         "label": "Proceeds of Crime Recovery"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-enforcement",
+        "id": "urn:ngm:class:sanctions-enforcement",
         "label": "Sanctions Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:tax-evasion-detection",
+        "id": "urn:ngm:class:tax-evasion-detection",
         "label": "Tax Evasion Detection"
       },
       {
-        "id": "urn:visionflow:linked:terrorist-financing-disruption",
+        "id": "urn:ngm:class:terrorist-financing-disruption",
         "label": "Terrorist Financing Disruption"
       },
       {
-        "id": "urn:visionflow:linked:vasp-market-access",
+        "id": "urn:ngm:class:vasp-market-access",
         "label": "VASP Market Access"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bank-secrecy-act",
+        "id": "urn:ngm:class:bank-secrecy-act",
         "label": "Bank Secrecy Act"
       },
       {
-        "id": "urn:visionflow:linked:eu-amlr-single-rulebook",
+        "id": "urn:ngm:class:eu-amlr-single-rulebook",
         "label": "EU AMLR Single Rulebook"
       },
       {
-        "id": "urn:visionflow:linked:fatf-40-recommendations",
+        "id": "urn:ngm:class:fatf-40-recommendations",
         "label": "FATF 40 Recommendations"
       },
       {
-        "id": "urn:visionflow:linked:fatf-travel-rule",
+        "id": "urn:ngm:class:fatf-travel-rule",
         "label": "FATF Travel Rule"
       },
       {
-        "id": "urn:visionflow:linked:proceeds-of-crime-act-2002",
+        "id": "urn:ngm:class:proceeds-of-crime-act-2002",
         "label": "Proceeds of Crime Act 2002"
       },
       {
-        "id": "urn:visionflow:linked:risk-based-approach-methodology",
+        "id": "urn:ngm:class:risk-based-approach-methodology",
         "label": "Risk-Based Approach Methodology"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-and-anti-money-laundering-act-2018",
+        "id": "urn:ngm:class:sanctions-and-anti-money-laundering-act-2018",
         "label": "Sanctions and Anti-Money Laundering Act 2018"
       },
       {
-        "id": "urn:visionflow:linked:uk-mlr-2017",
+        "id": "urn:ngm:class:uk-mlr-2017",
         "label": "UK MLR 2017"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-liveness-detection",
+        "label": "Biometric Liveness Detection"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analytics-platform",
+        "label": "Blockchain Analytics Platform"
+      },
+      {
+        "id": "urn:ngm:class:document-authentication-ocr",
+        "label": "Document Authentication OCR"
+      },
+      {
+        "id": "urn:ngm:class:electronic-identity-verification",
+        "label": "Electronic Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-risk-scoring",
+        "label": "Machine Learning Risk Scoring"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:nfc-chip-reading",
+        "label": "NFC Chip Reading"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening-engine",
+        "label": "Sanctions Screening Engine"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule-protocol",
+        "label": "Travel Rule Protocol"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "id": "urn:ngm:class:de-risking-avoidance",
+        "label": "De-Risking Avoidance"
+      },
+      {
+        "id": "urn:ngm:class:fca-cryptoasset-registration",
+        "label": "FCA Cryptoasset Registration"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:listed-company-compliance",
+        "label": "Listed Company Compliance"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-authorisation",
+        "label": "MiCA Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:vasp-licensing",
+        "label": "VASP Licensing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bank-secrecy-act-1970",
+        "label": "Bank Secrecy Act 1970"
+      },
+      {
+        "id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "id": "urn:ngm:class:eccta-2023",
+        "label": "ECCTA 2023"
+      },
+      {
+        "id": "urn:ngm:class:eu-amla-regulation-2024-1620",
+        "label": "EU AMLA Regulation 2024/1620"
+      },
+      {
+        "id": "urn:ngm:class:eu-amld6-2024-1640",
+        "label": "EU AMLD6 2024/1640"
+      },
+      {
+        "id": "urn:ngm:class:eu-amlr-2024-1624",
+        "label": "EU AMLR 2024/1624"
+      },
+      {
+        "id": "urn:ngm:class:fatf-40-recommendations",
+        "label": "FATF 40 Recommendations"
+      },
+      {
+        "id": "urn:ngm:class:fatf-recommendation-15",
+        "label": "FATF Recommendation 15"
+      },
+      {
+        "id": "urn:ngm:class:fatf-recommendation-16-travel-rule",
+        "label": "FATF Recommendation 16 Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022-payment-messaging",
+        "label": "ISO 20022 Payment Messaging"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-30107-3-pad",
+        "label": "ISO/IEC 30107-3 PAD"
+      },
+      {
+        "id": "urn:ngm:class:uk-mlr-2017",
+        "label": "UK MLR 2017"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:amla",
+        "label": "AMLA"
+      },
+      {
+        "id": "urn:ngm:class:austrac",
+        "label": "AUSTRAC"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      },
+      {
+        "id": "urn:ngm:class:binance-settlement-2023",
+        "label": "Binance Settlement 2023"
+      },
+      {
+        "id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      },
+      {
+        "id": "urn:ngm:class:comply-advantage",
+        "label": "ComplyAdvantage"
+      },
+      {
+        "id": "urn:ngm:class:elliptic",
+        "label": "Elliptic"
+      },
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:fin-cen",
+        "label": "FinCEN"
+      },
+      {
+        "id": "urn:ngm:class:jumio",
+        "label": "Jumio"
+      },
+      {
+        "id": "urn:ngm:class:mas",
+        "label": "MAS"
+      },
+      {
+        "id": "urn:ngm:class:ofac",
+        "label": "OFAC"
+      },
+      {
+        "id": "urn:ngm:class:onfido",
+        "label": "Onfido"
+      },
+      {
+        "id": "urn:ngm:class:sumsub",
+        "label": "Sumsub"
+      },
+      {
+        "id": "urn:ngm:class:td-bank-aml-settlement",
+        "label": "TD Bank AML Settlement"
+      },
+      {
+        "id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -152,41 +152,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sparql-examples",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sparql-examples",
+  "@type": "Class",
   "label": "SPARQL EXAMPLES",
+  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:semantic-web-standards",
-      "vc:label": "Semantic Web Standards"
+      "@id": "urn:ngm:class:semantic-web-standards",
+      "label": "Semantic Web Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:458cfd89fd63a74b57923a26b1a6658c1b4b71eb783b1ace6b0218aca02c98ec"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:458cfd89fd63a74b57923a26b1a6658c1b4b71eb783b1ace6b0218aca02c98ec@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale. Standardised by the [[W3C|World Wide Web Consortium]], SPARQL supports diverse query operations including [[SELECTQuery|SELECT]], [[CONSTRUCTQuery|CONSTRUCT]], [[ASKQuery|ASK]], and [[DESCRIBEQuery|DESCRIBE]] to extract, transform, and explore interconnected data from heterogeneous sources. Applications span semantic web research, [[LinkedData|linked data]] integration, and [[KnowledgeGraphQuerying|knowledge graph exploration]] across domains from bioinformatics to cultural heritage and blockchain ontologies.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

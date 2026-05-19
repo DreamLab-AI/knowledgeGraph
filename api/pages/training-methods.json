@@ -3,19 +3,18 @@
   "title": "Training Methods",
   "slug": "training-methods",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-methods",
+  "classIri": "urn:ngm:class:training-methods",
   "domain": "artificial-intelligence",
-  "definition": "Training Methods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data. These methods include supervised learning, unsupervised learning, reinforcement learning, transfer learning, fine-tuning, and curriculum learning approaches.",
+  "definition": "Training Mods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

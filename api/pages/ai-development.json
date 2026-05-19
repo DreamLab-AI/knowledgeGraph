@@ -3,32 +3,31 @@
   "title": "AI Development",
   "slug": "ai-development",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-development",
+  "classIri": "urn:ngm:class:ai-development",
   "domain": "artificial-intelligence",
-  "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.",
+  "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance eand do...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-resources",
+        "id": "urn:ngm:class:computational-resources",
         "label": "computational resources"
       },
       {
-        "id": "urn:visionflow:linked:technical-expertise",
+        "id": "urn:ngm:class:technical-expertise",
         "label": "technical expertise"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
@@ -36,7 +35,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

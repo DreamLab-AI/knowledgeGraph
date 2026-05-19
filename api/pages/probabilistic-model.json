@@ -3,163 +3,275 @@
   "title": "Probabilistic Model",
   "slug": "probabilistic-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:probabilistic-model",
+  "classIri": "urn:ngm:class:probabilistic-model",
   "domain": "artificial-intelligence",
-  "definition": "ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making under incomplete information \u2014 encompassing directed graphical models (Bayesian networks where joint distributions factorise as products of conditionals p(x\u2081,...,x\u2099) = \u220f\u1d62 p(x\u1d62|pa(x\u1d62)) over directed acyclic graphs encoding conditional independencies via d-separation; dynamic Bayesian networks propagating beliefs across time via Chapman-Kolmogorov; hidden Markov models with discrete latent chains; Kalman filters with Gaussian linear-Gaussian dynamics; particle filters implementing sequential Monte Carlo resampling for non-linear state spaces), undirected graphical models (Markov random fields with Gibbs distributions p(x) = (1/Z) \u220f_C \u03c8_C(x_C) over clique potentials; conditional random fields p(y|x) = (1/Z(x)) exp(\u2211_k \u03bb_k f_k(y,x)) discriminatively conditioning label fields on rich observation features; Boltzmann machines with symmetric weight matrices defining energy-based distributions p(x) \u221d ex",
+  "definition": "ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:statistical-learning",
+      "id": "urn:ngm:class:statistical-learning",
       "label": "Statistical Learning"
     },
     {
-      "id": "urn:visionflow:linked:uncertainty-quantification",
+      "id": "urn:ngm:class:uncertainty-quantification",
       "label": "Uncertainty Quantification"
-    },
-    {
-      "id": "urn:visionflow:linked:bayesian-inference",
-      "label": "Bayesian Inference"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acquisition-function",
+        "id": "urn:ngm:class:acquisition-function",
         "label": "Acquisition Function"
       },
       {
-        "id": "urn:visionflow:linked:graphical-model",
+        "id": "urn:ngm:class:graphical-model",
         "label": "Graphical Model"
       },
       {
-        "id": "urn:visionflow:linked:inference-algorithm",
+        "id": "urn:ngm:class:inference-algorithm",
         "label": "Inference Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:latent-variable",
+        "id": "urn:ngm:class:latent-variable",
         "label": "Latent Variable"
       },
       {
-        "id": "urn:visionflow:linked:likelihood-function",
+        "id": "urn:ngm:class:likelihood-function",
         "label": "Likelihood Function"
       },
       {
-        "id": "urn:visionflow:linked:nonconformity-score",
+        "id": "urn:ngm:class:nonconformity-score",
         "label": "Nonconformity Score"
       },
       {
-        "id": "urn:visionflow:linked:posterior-distribution",
+        "id": "urn:ngm:class:posterior-distribution",
         "label": "Posterior Distribution"
       },
       {
-        "id": "urn:visionflow:linked:prior-distribution",
+        "id": "urn:ngm:class:prior-distribution",
         "label": "Prior Distribution"
       },
       {
-        "id": "urn:visionflow:linked:probabilistic-programming-language",
+        "id": "urn:ngm:class:probabilistic-programming-language",
         "label": "Probabilistic Programming Language"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:automatic-differentiation",
+        "id": "urn:ngm:class:automatic-differentiation",
         "label": "Automatic Differentiation"
       },
       {
-        "id": "urn:visionflow:linked:computational-graph",
+        "id": "urn:ngm:class:computational-graph",
         "label": "Computational Graph"
       },
       {
-        "id": "urn:visionflow:linked:measure-theory",
+        "id": "urn:ngm:class:measure-theory",
         "label": "Measure Theory"
       },
       {
-        "id": "urn:visionflow:linked:monte-carlo-methods",
+        "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Methods"
       },
       {
-        "id": "urn:visionflow:linked:numerical-linear-algebra",
+        "id": "urn:ngm:class:numerical-linear-algebra",
         "label": "Numerical Linear Algebra"
       },
       {
-        "id": "urn:visionflow:linked:probability-theory",
+        "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:anomaly-detection",
+        "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
       },
       {
-        "id": "urn:visionflow:linked:bayesian-decision-theory",
+        "id": "urn:ngm:class:bayesian-decision-theory",
         "label": "Bayesian Decision Theory"
       },
       {
-        "id": "urn:visionflow:linked:bayesian-optimisation",
+        "id": "urn:ngm:class:bayesian-optimisation",
         "label": "Bayesian Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:causal-inference",
+        "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
       },
       {
-        "id": "urn:visionflow:linked:conformal-prediction",
+        "id": "urn:ngm:class:conformal-prediction",
         "label": "Conformal Prediction"
       },
       {
-        "id": "urn:visionflow:linked:probabilistic-forecasting",
+        "id": "urn:ngm:class:probabilistic-forecasting",
         "label": "Probabilistic Forecasting"
       },
       {
-        "id": "urn:visionflow:linked:uncertainty-quantification",
+        "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:visionflow:owl:class:active-learning",
+        "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bayes-theorem",
+        "id": "urn:ngm:class:bayes-theorem",
         "label": "Bayes Theorem"
       },
       {
-        "id": "urn:visionflow:linked:evidence-lower-bound",
+        "id": "urn:ngm:class:evidence-lower-bound",
         "label": "Evidence Lower Bound"
       },
       {
-        "id": "urn:visionflow:linked:expectation-maximisation",
+        "id": "urn:ngm:class:expectation-maximisation",
         "label": "Expectation Maximisation"
       },
       {
-        "id": "urn:visionflow:linked:hamiltonian-monte-carlo",
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
         "label": "Hamiltonian Monte Carlo"
       },
       {
-        "id": "urn:visionflow:linked:markov-chain-monte-carlo",
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
         "label": "Markov Chain Monte Carlo"
       },
       {
-        "id": "urn:visionflow:linked:message-passing",
+        "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
       },
       {
-        "id": "urn:visionflow:linked:score-matching",
+        "id": "urn:ngm:class:score-matching",
         "label": "Score Matching"
       },
       {
-        "id": "urn:visionflow:linked:variational-inference",
+        "id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:belief-propagation",
+        "label": "Belief Propagation"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:financial-risk-modelling",
+        "label": "Financial Risk Modelling"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aistats",
+        "label": "AISTATS"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-analysis-journal",
+        "label": "Bayesian Analysis Journal"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Journal of Machine Learning Research"
+      },
+      {
+        "id": "urn:ngm:class:journal-of-the-american-statistical-association",
+        "label": "Journal of the American Statistical Association"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips-probabilistic-track",
+        "label": "NeurIPS Probabilistic Track"
+      },
+      {
+        "id": "urn:ngm:class:uai-conference",
+        "label": "UAI Conference"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:causal-model",
+        "label": "Causal Model"
+      },
+      {
+        "id": "urn:ngm:class:conformal-prediction",
+        "label": "Conformal Prediction"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:score-based-diffusion",
+        "label": "Score-Based Diffusion"
+      }
+    ]
   },
   "wikilinks": [
     {

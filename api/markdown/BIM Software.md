@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bim-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bim-software",
+  "@type": "Class",
   "label": "BIM Software",
+  "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to ope...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:design-software",
-      "vc:label": "Design Software"
+      "@id": "urn:ngm:class:design-software",
+      "label": "Design Software"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:90f40c7247da6563b8448537ac11c48d525d0a6dc1330d9720025fc1bb0f566b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cad-capabilities",
+        "label": "CAD Capabilities"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-tools",
+        "label": "Collaboration Tools"
+      },
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:construction-coordination",
+        "label": "Construction Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:facility-management",
+        "label": "Facility Management"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:90f40c7247da6563b8448537ac11c48d525d0a6dc1330d9720025fc1bb0f566b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to operations.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cad-capabilities",
-      "vc:label": "CAD Capabilities"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaboration-tools",
-      "vc:label": "Collaboration Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:construction-coordination",
-      "vc:label": "Construction Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:facility-management",
-      "vc:label": "Facility Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

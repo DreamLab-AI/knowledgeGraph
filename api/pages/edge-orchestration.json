@@ -3,82 +3,95 @@
   "title": "Edge Orchestration",
   "slug": "edge-orchestration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-orchestration",
+  "classIri": "urn:ngm:class:edge-orchestration",
   "domain": "spatial-computing",
   "definition": "The process of dynamically coordinating, allocating, and balancing computational tasks between edge nodes and cloud infrastructure to optimize latency, resource utilization, and quality of experience for immersive metaverse applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:edge-computing-architecture",
+      "id": "urn:ngm:class:edge-computing-architecture",
       "label": "Edge Computing Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:decision-framework",
+        "id": "urn:ngm:class:decision-framework",
         "label": "Decision Framework"
       },
       {
-        "id": "urn:visionflow:linked:load-balancing-system",
+        "id": "urn:ngm:class:load-balancing-system",
         "label": "Load Balancing System"
       },
       {
-        "id": "urn:visionflow:linked:resource-monitor",
+        "id": "urn:ngm:class:resource-monitor",
         "label": "Resource Monitor"
       },
       {
-        "id": "urn:visionflow:linked:task-allocation-engine",
+        "id": "urn:ngm:class:task-allocation-engine",
         "label": "Task Allocation Engine"
       },
       {
-        "id": "urn:visionflow:linked:workload-scheduler",
+        "id": "urn:ngm:class:workload-scheduler",
         "label": "Workload Scheduler"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:edge-computing-nodes",
+        "id": "urn:ngm:class:edge-computing-nodes",
         "label": "Edge Computing Nodes"
       },
       {
-        "id": "urn:visionflow:linked:network-performance-metrics",
+        "id": "urn:ngm:class:network-performance-metrics",
         "label": "Network Performance Metrics"
       },
       {
-        "id": "urn:visionflow:linked:orchestration-policy",
+        "id": "urn:ngm:class:orchestration-policy",
         "label": "Orchestration Policy"
       },
       {
-        "id": "urn:visionflow:linked:resource-availability-data",
+        "id": "urn:ngm:class:resource-availability-data",
         "label": "Resource Availability Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-workload-distribution",
+        "id": "urn:ngm:class:adaptive-workload-distribution",
         "label": "Adaptive Workload Distribution"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-computing",
+        "id": "urn:ngm:class:low-latency-computing",
         "label": "Low-Latency Computing"
       },
       {
-        "id": "urn:visionflow:linked:optimized-resource-utilization",
+        "id": "urn:ngm:class:optimized-resource-utilization",
         "label": "Optimized Resource Utilization"
       },
       {
-        "id": "urn:visionflow:linked:scalable-processing",
+        "id": "urn:ngm:class:scalable-processing",
         "label": "Scalable Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-computing-infrastructure",
+        "label": "Distributed Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

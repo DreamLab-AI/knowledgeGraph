@@ -3,19 +3,18 @@
   "title": "Data Lake",
   "slug": "data-lake",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-lake",
+  "classIri": "urn:ngm:class:data-lake",
   "domain": "artificial-intelligence",
   "definition": "Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-domain-data-management-ai",
+      "id": "urn:ngm:class:etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

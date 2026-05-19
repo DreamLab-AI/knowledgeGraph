@@ -232,41 +232,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:slam",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:slam",
+  "@type": "Class",
   "label": "SLAM",
+  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map c...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-mapping",
-      "vc:label": "Spatial Mapping"
+      "@id": "urn:ngm:class:spatial-mapping",
+      "label": "Spatial Mapping"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:43bc20069def346dab8ef0fd610fa5801f51bcbed6f853b2bbd1096be160fc03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Simultaneous Localization and Mapping (SLAM) is a robotics and computer vision technique enabling devices to build maps of unknown environments whilst simultaneously tracking their own position within those environments, combining [[LocalizationTechnique|localisation]] and [[MapConstruction|map construction]] in real-time. Essential for [[AutonomousNavigation|autonomous navigation]], [[AugmentedReality|AR/VR systems]], and [[AutonomousVehicles|autonomous vehicles]], SLAM processes sensor data from [[LiDAR]], [[RGBDCamera|RGB-D cameras]], and [[VisualOdometry|visual odometry]] to estimate robot pose and build spatial representations. Modern implementations integrate [[DeepLearning|neural networks]] for improved robustness and performance in dynamic environments.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

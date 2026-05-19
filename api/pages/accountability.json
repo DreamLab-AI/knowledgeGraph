@@ -3,49 +3,53 @@
   "title": "Accountability",
   "slug": "accountability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accountability",
+  "classIri": "urn:ngm:class:accountability",
   "domain": "artificial-intelligence",
   "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:explainability-ai-0063",
+        "id": "urn:ngm:class:explainability-ai-0063",
         "label": "Explainability (AI-0063)"
       },
       {
-        "id": "urn:visionflow:linked:transparency-ai-0062",
+        "id": "urn:ngm:class:transparency-ai-0062",
         "label": "Transparency (AI-0062)"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliance",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance"
       },
       {
-        "id": "urn:visionflow:linked:risk-management-ai-0078",
+        "id": "urn:ngm:class:risk-management-ai-0078",
         "label": "Risk Management (AI-0078)"
       },
       {
-        "id": "urn:visionflow:linked:trust",
+        "id": "urn:ngm:class:trust",
         "label": "Trust"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

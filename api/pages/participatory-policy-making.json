@@ -3,32 +3,36 @@
   "title": "Participatory Policy Making",
   "slug": "participatory-policy-making",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:participatory-policy-making",
+  "classIri": "urn:ngm:class:participatory-policy-making",
   "domain": "spatial-computing",
-  "definition": "A governance approach that involves citizens and stakeholders directly in the formulation, design, and evaluation of public policies through mechanisms such as citizen advisory boards, deliberative assemblies, and digital participation platforms.",
+  "definition": "A governance approach that involves citizens and stakeholders directly in the formulation, design, and eof public policies through mechanisms such as citizen advisory boards, deliberative assemblies, and digital participation platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:democratic-governance",
+      "id": "urn:ngm:class:democratic-governance",
       "label": "Democratic Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:policy-legitimacy",
+        "id": "urn:ngm:class:policy-legitimacy",
         "label": "Policy Legitimacy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

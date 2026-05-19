@@ -216,146 +216,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:deepfakes",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:deepfakes",
+  "@type": "Class",
   "label": "Deepfakes",
+  "definition": "AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c9cf86dad0d305f6d58ee39eb64decbc393256ce1ce9edd997e3866d98062a6d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-manipulation",
+        "label": "Audio Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:face-swapping",
+        "label": "Face Swapping"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-synthesis",
+        "label": "Gesture Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-video-generation",
+        "label": "Synthetic Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:entertainment-production",
+        "label": "Entertainment Production"
+      },
+      {
+        "@id": "urn:ngm:class:identity-deception",
+        "label": "Identity Deception"
+      },
+      {
+        "@id": "urn:ngm:class:media-manipulation",
+        "label": "Media Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-generated-content",
+        "label": "AI-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c9cf86dad0d305f6d58ee39eb64decbc393256ce1ce9edd997e3866d98062a6d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI-generated or manipulated synthetic media content that convincingly alters a person's appearance, voice, or actions using deep learning techniques such as GANs, autoencoders, and voice synthesis models.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-generated-content",
-      "vc:label": "AI-Generated Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audio-manipulation",
-      "vc:label": "Audio Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-swapping",
-      "vc:label": "Face Swapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:gesture-synthesis",
-      "vc:label": "Gesture Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-video-generation",
-      "vc:label": "Synthetic Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning",
-      "vc:label": "Voice Cloning"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-infrastructure",
-      "vc:label": "Computational Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-dataset",
-      "vc:label": "Training Dataset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-network",
-      "vc:label": "Generative Adversarial Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-creation",
-      "vc:label": "Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:entertainment-production",
-      "vc:label": "Entertainment Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-deception",
-      "vc:label": "Identity Deception"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-manipulation",
-      "vc:label": "Media Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:misinformation",
-      "vc:label": "Misinformation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audio-processing",
-      "vc:label": "Audio Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:face-recognition",
-      "vc:label": "Face Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-models",
-      "vc:label": "Machine Learning Models"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,171 +3,275 @@
   "title": "Pose Estimation",
   "slug": "pose-estimation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pose-estimation",
+  "classIri": "urn:ngm:class:pose-estimation",
   "domain": "artificial-intelligence",
-  "definition": "Pose estimation is the computational task of inferring the spatial configuration\u2014position, orientation, and joint angles\u2014of a body or rigid object from image or video data, spanning 2D keypoint localisation on the image plane (pixel-coordinate skeleton graphs), 3D joint position regression in camera or world coordinates, 6-Degrees-of-Freedom (6DoF) rigid object pose (3D translation + 3D rotation), and parametric human mesh recovery yielding dense surface models from statistical body shape priors (SMPL, SMPL-X), applied across robotics grasping and manipulation, extended/mixed reality avatar animation, medical rehabilitation monitoring, sports biomechanics analytics, autonomous vehicle pedestrian prediction, and creative content generation, achieved through architectural families spanning bottom-up multi-person keypoint detectors (OpenPose CMU 2019 achieving 40 FPS on COCO body+hand+face, MediaPipe BlazePose 2020-2025 running real-time on mobile devices at 30+ FPS with 33 full-body landmarks, RTMPose 2024 MMDet-based RTM architecture achieving 91.4 AP on COCO and 73 ms inference on CPU), top-down single-person refiners (HRNet 2019, ViTPose 2022, DWPose 2023 distilled from DWPose-L a",
+  "definition": "Pose estimation is the computational task of inferring the spatial configuration\u2014position, orientation, and joint angles\u2014of a body or rigid object from image or video data, spanning 2D keypoint localisation on the image plane (pixel-coordinate skeleton graphs), 3D joint position regression in cam...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:perception",
+      "id": "urn:ngm:class:perception",
       "label": "Perception"
     },
     {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human-Computer Interaction"
-    },
-    {
-      "id": "urn:visionflow:owl:class:deep-learning",
-      "label": "Deep Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:6-do-f-estimation",
+        "id": "urn:ngm:class:6-do-f-estimation",
         "label": "6DoF Estimation"
       },
       {
-        "id": "urn:visionflow:linked:body-model",
+        "id": "urn:ngm:class:body-model",
         "label": "Body Model"
       },
       {
-        "id": "urn:visionflow:linked:heatmap-regression",
+        "id": "urn:ngm:class:heatmap-regression",
         "label": "Heatmap Regression"
       },
       {
-        "id": "urn:visionflow:linked:keypoint-detection",
+        "id": "urn:ngm:class:keypoint-detection",
         "label": "Keypoint Detection"
       },
       {
-        "id": "urn:visionflow:linked:mesh-recovery",
+        "id": "urn:ngm:class:mesh-recovery",
         "label": "Mesh Recovery"
       },
       {
-        "id": "urn:visionflow:linked:skeleton-graph",
+        "id": "urn:ngm:class:skeleton-graph",
         "label": "Skeleton Graph"
       },
       {
-        "id": "urn:visionflow:linked:temporal-smoothing",
+        "id": "urn:ngm:class:temporal-smoothing",
         "label": "Temporal Smoothing"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:benchmark-dataset",
+        "id": "urn:ngm:class:benchmark-dataset",
         "label": "Benchmark Dataset"
       },
       {
-        "id": "urn:visionflow:linked:body-prior",
+        "id": "urn:ngm:class:body-prior",
         "label": "Body Prior"
       },
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "id": "urn:ngm:class:convolutional-neural-networks",
         "label": "Convolutional Neural Networks"
       },
       {
-        "id": "urn:visionflow:linked:image-features",
+        "id": "urn:ngm:class:image-features",
         "label": "Image Features"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:action-recognition",
+        "id": "urn:ngm:class:action-recognition",
         "label": "Action Recognition"
       },
       {
-        "id": "urn:visionflow:linked:avatar-animation",
+        "id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation"
       },
       {
-        "id": "urn:visionflow:linked:gesture-recognition",
+        "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
       },
       {
-        "id": "urn:visionflow:linked:rehabilitation-monitoring",
+        "id": "urn:ngm:class:rehabilitation-monitoring",
         "label": "Rehabilitation Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:robotic-grasping",
+        "id": "urn:ngm:class:robotic-grasping",
         "label": "Robotic Grasping"
       },
       {
-        "id": "urn:visionflow:linked:sports-analytics",
+        "id": "urn:ngm:class:sports-analytics",
         "label": "Sports Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:augmented-reality",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-capture",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:4-d-humans",
+        "id": "urn:ngm:class:4-d-humans",
         "label": "4D-Humans"
       },
       {
-        "id": "urn:visionflow:linked:center-pose",
+        "id": "urn:ngm:class:center-pose",
         "label": "CenterPose"
       },
       {
-        "id": "urn:visionflow:linked:dwpose",
+        "id": "urn:ngm:class:dwpose",
         "label": "DWPose"
       },
       {
-        "id": "urn:visionflow:linked:foundation-pose",
+        "id": "urn:ngm:class:foundation-pose",
         "label": "FoundationPose"
       },
       {
-        "id": "urn:visionflow:linked:gdr-net",
+        "id": "urn:ngm:class:gdr-net",
         "label": "GDR-Net"
       },
       {
-        "id": "urn:visionflow:linked:hrnet",
+        "id": "urn:ngm:class:hrnet",
         "label": "HRNet"
       },
       {
-        "id": "urn:visionflow:linked:media-pipe-pose",
+        "id": "urn:ngm:class:media-pipe-pose",
         "label": "MediaPipe Pose"
       },
       {
-        "id": "urn:visionflow:linked:open-pose",
+        "id": "urn:ngm:class:open-pose",
         "label": "OpenPose"
       },
       {
-        "id": "urn:visionflow:linked:rtmpose",
+        "id": "urn:ngm:class:rtmpose",
         "label": "RTMPose"
       },
       {
-        "id": "urn:visionflow:linked:smpl",
+        "id": "urn:ngm:class:smpl",
         "label": "SMPL"
       },
       {
-        "id": "urn:visionflow:linked:smpl-x",
+        "id": "urn:ngm:class:smpl-x",
         "label": "SMPL-X"
       },
       {
-        "id": "urn:visionflow:linked:vi-tpose",
+        "id": "urn:ngm:class:vi-tpose",
         "label": "ViTPose"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "id": "urn:ngm:class:direct-coordinate-regression",
+        "label": "Direct Coordinate Regression"
+      },
+      {
+        "id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:perspective-n-point",
+        "label": "Perspective-n-Point"
+      },
+      {
+        "id": "urn:ngm:class:smpl-body-model",
+        "label": "SMPL Body Model"
+      },
+      {
+        "id": "urn:ngm:class:vi-t-backbone",
+        "label": "ViT Backbone"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:animation-pipeline",
+        "label": "Animation Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:clinical-gait-analysis",
+        "label": "Clinical Gait Analysis"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:sports-science",
+        "label": "Sports Science"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:3-dpw-benchmark",
+        "label": "3DPW Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:bop-benchmark",
+        "label": "BOP Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "id": "urn:ngm:class:human3-6-m",
+        "label": "Human3.6M"
+      },
+      {
+        "id": "urn:ngm:class:mpii-human-pose-dataset",
+        "label": "MPII Human Pose Dataset"
+      },
+      {
+        "id": "urn:ngm:class:ycb-video-dataset",
+        "label": "YCB-Video Dataset"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:ngm:class:body-segmentation",
+        "label": "Body Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:gaze-estimation",
+        "label": "Gaze Estimation"
+      },
+      {
+        "id": "urn:ngm:class:hand-pose-estimation",
+        "label": "Hand Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:human-parsing",
+        "label": "Human Parsing"
+      },
+      {
+        "id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

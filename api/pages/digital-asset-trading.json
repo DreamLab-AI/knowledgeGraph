@@ -3,53 +3,57 @@
   "title": "Digital Asset Trading",
   "slug": "digital-asset-trading",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-trading",
+  "classIri": "urn:ngm:class:digital-asset-trading",
   "domain": "spatial-computing",
-  "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity. bridges-to:: [[Blockchain]]",
+  "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-trading",
+      "id": "urn:ngm:class:financial-trading",
       "label": "Financial Trading"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:exchange-platform",
+        "id": "urn:ngm:class:exchange-platform",
         "label": "Exchange Platform"
       },
       {
-        "id": "urn:visionflow:linked:order-matching",
+        "id": "urn:ngm:class:order-matching",
         "label": "Order Matching"
       },
       {
-        "id": "urn:visionflow:linked:settlement-systems",
+        "id": "urn:ngm:class:settlement-systems",
         "label": "Settlement Systems"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:market-making",
+        "id": "urn:ngm:class:market-making",
         "label": "Market Making"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
       },
       {
-        "id": "urn:visionflow:owl:class:price-discovery",
+        "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

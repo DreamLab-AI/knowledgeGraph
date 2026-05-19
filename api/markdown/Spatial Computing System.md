@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-computing-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-computing-system",
+  "@type": "Class",
   "label": "Spatial Computing System",
+  "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positionin...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:mixed-reality-platform",
-      "vc:label": "Mixed Reality Platform"
+      "@id": "urn:ngm:class:mixed-reality-platform",
+      "label": "Mixed Reality Platform"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f9965a28d5363437e73aeb2bc893928731ee53604525b2bb411b7af414c40fd4"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:spatial-interface",
+        "label": "Spatial Interface"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f9965a28d5363437e73aeb2bc893928731ee53604525b2bb411b7af414c40fd4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positioning awareness.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:spatial-interface",
-      "vc:label": "Spatial Interface"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

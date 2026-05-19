@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ritual-artifact",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ritual-artifact",
+  "@type": "Class",
   "label": "Ritual Artifact",
+  "definition": "Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-heritage",
-      "vc:label": "Digital Heritage"
+      "@id": "urn:ngm:class:digital-heritage",
+      "label": "Digital Heritage"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a767ee9904729064d56fc56d8aae132f7aa86adac7c12ffa7ed8f20b23537c9b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-cultural-heritage",
+        "label": "Digital Cultural Heritage"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a767ee9904729064d56fc56d8aae132f7aa86adac7c12ffa7ed8f20b23537c9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-cultural-heritage",
-      "vc:label": "Digital Cultural Heritage"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Digital Gaming",
   "slug": "digital-gaming",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-gaming",
+  "classIri": "urn:ngm:class:digital-gaming",
   "domain": "spatial-computing",
-  "definition": "Digital Gaming is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Gaming is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

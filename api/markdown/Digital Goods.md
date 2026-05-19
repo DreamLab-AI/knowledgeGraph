@@ -200,116 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-goods",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-goods",
+  "@type": "Class",
   "label": "Digital Goods",
+  "definition": "Digital Goods is a type of Virtual Economy in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bb5252bde9c5a50ba6df7fe4d21616d3d32b47aa229dcf6459d08577becb79cd"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-token",
+        "label": "Ownership Token"
+      },
+      {
+        "@id": "urn:ngm:class:usage-rights",
+        "label": "Usage Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:user-ownership",
+        "label": "User Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bb5252bde9c5a50ba6df7fe4d21616d3d32b47aa229dcf6459d08577becb79cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and ownership. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:metadata",
-      "vc:label": "Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-token",
-      "vc:label": "Ownership Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-rights",
-      "vc:label": "Usage Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creator-monetization",
-      "vc:label": "Creator Monetization"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-ownership",
-      "vc:label": "User Ownership"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-trading",
-      "vc:label": "Asset Trading"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-commerce",
-      "vc:label": "Virtual Commerce"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-rights-management",
-      "vc:label": "Digital Rights Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standards",
-      "vc:label": "NFT Standards"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

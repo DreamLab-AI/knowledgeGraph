@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:context-aware-response",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:context-aware-response",
+  "@type": "Class",
   "label": "Context Aware Response",
+  "definition": "An AI-driven capability in metaverse and virtual environments that enables systems to generate dynamic, personalized responses based on real-time understanding of user context, including location, activity, preferences, social environment, and interaction history, utilizing large language models ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:68988061ceb24a22d7e0fe0524955fbf2eb560cfc1c1703f9c474c6429054068"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:context-awareness-system",
+        "label": "Context Awareness System"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-ux",
+        "label": "Adaptive UX"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-content",
+        "label": "Dynamic Content"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-interaction",
+        "label": "Personalized Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:68988061ceb24a22d7e0fe0524955fbf2eb560cfc1c1703f9c474c6429054068@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An AI-driven capability in metaverse and virtual environments that enables systems to generate dynamic, personalized responses based on real-time understanding of user context, including location, activity, preferences, social environment, and interaction history, utilizing large language models and adaptive learning frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:context-awareness-system",
-      "vc:label": "Context Awareness System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-ux",
-      "vc:label": "Adaptive UX"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-content",
-      "vc:label": "Dynamic Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-interaction",
-      "vc:label": "Personalized Interaction"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

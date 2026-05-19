@@ -268,128 +268,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sovereign-mesh",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sovereign-mesh",
+  "@type": "Class",
   "label": "Sovereign Mesh",
+  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting ea...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
+      "@id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b87156006fb81027dc511e3b8bbb3e9d9be780de76bf6403ad6ee7151f7b308c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:agent-beacon",
+        "label": "Agent Beacon"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-relay",
+        "label": "Nostr Relay"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bip-340-schnorr-keypair",
+        "label": "BIP-340 Schnorr Keypair"
+      },
+      {
+        "@id": "urn:ngm:class:message-signing",
+        "label": "Message Signing"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-agent-coordination",
+        "label": "Decentralised Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-peer-communication",
+        "label": "Trustless Peer Communication"
+      },
+      {
+        "@id": "urn:ngm:class:work-distribution",
+        "label": "Work Distribution"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gossip-consensus",
+        "label": "Gossip Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol-nip-01",
+        "label": "Nostr Protocol (NIP-01)"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b87156006fb81027dc511e3b8bbb3e9d9be780de76bf6403ad6ee7151f7b308c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting each agent's sovereignty over its own keys and credentials.",
-  "vc:qualityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:agent-beacon",
-      "vc:label": "Agent Beacon"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-relay",
-      "vc:label": "Nostr Relay"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-discovery",
-      "vc:label": "Peer Discovery"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bip-340-schnorr-keypair",
-      "vc:label": "BIP-340 Schnorr Keypair"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-signing",
-      "vc:label": "Message Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nostr-protocol",
-      "vc:label": "Nostr Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-agent-coordination",
-      "vc:label": "Decentralised Agent Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:federation",
-      "vc:label": "Federation"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-peer-communication",
-      "vc:label": "Trustless Peer Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:work-distribution",
-      "vc:label": "Work Distribution"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:gossip-consensus",
-      "vc:label": "Gossip Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr-protocol-nip-01",
-      "vc:label": "Nostr Protocol (NIP-01)"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-core",
-      "vc:label": "W3C DID Core"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "vc:label": "Decentralised Autonomous Organisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    }
-  ]
+  "quality": 0.87,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

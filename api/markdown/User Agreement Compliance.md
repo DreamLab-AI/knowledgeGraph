@@ -188,120 +188,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:user-agreement-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:user-agreement-compliance",
+  "@type": "Class",
   "label": "User Agreement Compliance",
+  "definition": "Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3b31024e6293c027bd1f1846a813b40c2fa513e89843af9d76be114b39923ecc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:remediation-process",
+        "label": "Remediation Process"
+      },
+      {
+        "@id": "urn:ngm:class:user-monitoring",
+        "label": "User Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:violation-detection",
+        "label": "Violation Detection"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:enforcement-mechanisms",
+        "label": "Enforcement Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:user-agreement",
+        "label": "User Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:platform-safety",
+        "label": "Platform Safety"
+      },
+      {
+        "@id": "urn:ngm:class:policy-adherence",
+        "label": "Policy Adherence"
+      },
+      {
+        "@id": "urn:ngm:class:user-accountability",
+        "label": "User Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:platform-management",
+        "label": "Platform Management"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3b31024e6293c027bd1f1846a813b40c2fa513e89843af9d76be114b39923ecc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:platform-management",
-      "vc:label": "Platform Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:remediation-process",
-      "vc:label": "Remediation Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-monitoring",
-      "vc:label": "User Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:violation-detection",
-      "vc:label": "Violation Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:enforcement-mechanisms",
-      "vc:label": "Enforcement Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-system",
-      "vc:label": "Monitoring System"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-agreement",
-      "vc:label": "User Agreement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:platform-safety",
-      "vc:label": "Platform Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-adherence",
-      "vc:label": "Policy Adherence"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-accountability",
-      "vc:label": "User Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-mitigation",
-      "vc:label": "Risk Mitigation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:behavior-analytics",
-      "vc:label": "Behavior Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,70 +3,83 @@
   "title": "Data Integration Interface",
   "slug": "data-integration-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-integration-interface",
+  "classIri": "urn:ngm:class:data-integration-interface",
   "domain": "infrastructure",
   "definition": "A standardized set of protocols, rules, and formats for unifying and mediating data flows across heterogeneous platforms, enabling seamless data exchange and interoperability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-adapter",
+        "id": "urn:ngm:class:data-adapter",
         "label": "Data Adapter"
       },
       {
-        "id": "urn:visionflow:linked:message-broker",
+        "id": "urn:ngm:class:message-broker",
         "label": "Message Broker"
       },
       {
-        "id": "urn:visionflow:linked:protocol-translator",
+        "id": "urn:ngm:class:protocol-translator",
         "label": "Protocol Translator"
       },
       {
-        "id": "urn:visionflow:linked:schema-mapper",
+        "id": "urn:ngm:class:schema-mapper",
         "label": "Schema Mapper"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-schema",
+        "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:communication-protocol",
+        "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-data-exchange",
+        "id": "urn:ngm:class:cross-platform-data-exchange",
         "label": "Cross-Platform Data Exchange"
       },
       {
-        "id": "urn:visionflow:linked:data-federation",
+        "id": "urn:ngm:class:data-federation",
         "label": "Data Federation"
       },
       {
-        "id": "urn:visionflow:linked:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronization",
         "label": "Real-Time Synchronization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

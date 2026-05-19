@@ -196,74 +196,49 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-impact-assessment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-impact-assessment",
+  "@type": "Class",
   "label": "AI Impact Assessment",
+  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ical principle...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "accountability"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "transparency"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9a546ff9090ff84352d8fb08fe4f427b47603d964cca74ae7a8cc264db831a88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A systematic process for identifying, analysing, evaluating, and documenting the potential positive and negative effects of an artificial intelligence system on individuals, groups, organisations, society, and the environment across multiple dimensions including fundamental rights, ethical principles, safety, fairness, privacy, environmental sustainability, and socioeconomic impacts, conducted prior to deployment and periodically thereafter to inform design decisions, risk mitigation strategies, governance arrangements, and stakeholder communication regarding AI system consequences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:informed-decision-making",
-      "vc:label": "Informed decision-making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparency",
-      "vc:label": "transparency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparency",
-      "vc:label": "Transparency"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

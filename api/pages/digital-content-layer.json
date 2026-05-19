@@ -3,53 +3,57 @@
   "title": "Digital Content Layer",
   "slug": "digital-content-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-content-layer",
+  "classIri": "urn:ngm:class:digital-content-layer",
   "domain": "spatial-computing",
   "definition": "An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-architecture",
+      "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-mapping",
+        "id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-composition",
+        "id": "urn:ngm:class:content-composition",
         "label": "Content Composition"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-rendering",
+        "id": "urn:ngm:class:dynamic-rendering",
         "label": "Dynamic Rendering"
       },
       {
-        "id": "urn:visionflow:linked:layer-management",
+        "id": "urn:ngm:class:layer-management",
         "label": "Layer Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

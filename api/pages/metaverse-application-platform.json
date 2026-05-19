@@ -3,32 +3,36 @@
   "title": "Metaverse Application Platform",
   "slug": "metaverse-application-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-application-platform",
+  "classIri": "urn:ngm:class:metaverse-application-platform",
   "domain": "spatial-computing",
   "definition": "Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:development-platform",
+      "id": "urn:ngm:class:development-platform",
       "label": "Development Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:metaverse-content-creation",
+        "id": "urn:ngm:class:metaverse-content-creation",
         "label": "Metaverse Content Creation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

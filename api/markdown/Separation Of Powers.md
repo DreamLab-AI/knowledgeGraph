@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:separation-of-powers",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:separation-of-powers",
+  "@type": "Class",
   "label": "Separation Of Powers",
+  "definition": "Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
+      "@id": "urn:ngm:class:dao-governance",
+      "label": "DAO Governance"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:22090cced5f0bc5190bf785464da370aacff6a9ee6e7fde24687ce2813420a00"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-control",
+        "label": "Decentralized Control"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:22090cced5f0bc5190bf785464da370aacff6a9ee6e7fde24687ce2813420a00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-control",
-      "vc:label": "Decentralized Control"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

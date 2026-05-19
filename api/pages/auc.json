@@ -3,19 +3,18 @@
   "title": "AUC",
   "slug": "auc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:auc",
+  "classIri": "urn:ngm:class:auc",
   "domain": "artificial-intelligence",
-  "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly chosen negative instance, providing threshold-independent assessment of a classifier's discriminative ability with values ranging from 0 to 1, where 0.5 indicates random guessing, 1.0 represents perfect classification, and values above 0.5 indicate better-than-random performance.",
+  "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Training Method",
   "slug": "training-method",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:training-method",
+  "classIri": "urn:ngm:class:training-method",
   "domain": "artificial-intelligence",
-  "definition": "Training methods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates. The core approach combines backpropagation (computing gradients via the chain rule) with gradient descent optimization (adjusting weights in the direction that reduces loss), with variants including stochastic gradient descent (SGD), Adam, RMSprop, and AdaGrad offering different convergence properties.",
+  "definition": "Training mods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

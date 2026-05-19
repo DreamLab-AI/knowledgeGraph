@@ -3,32 +3,36 @@
   "title": "Particle Systems",
   "slug": "particle-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:particle-systems",
+  "classIri": "urn:ngm:class:particle-systems",
   "domain": "spatial-computing",
   "definition": "The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:vfx-tools",
+      "id": "urn:ngm:class:vfx-tools",
       "label": "VFX Tools"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:real-time-vfx",
+        "id": "urn:ngm:class:real-time-vfx",
         "label": "Real Time VFX"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

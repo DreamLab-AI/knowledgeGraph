@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:physical-virtual-registration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:physical-virtual-registration",
+  "@type": "Class",
   "label": "Physical Virtual Registration",
+  "definition": "The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:05f42e95501c23f7ddf8cd9a692a206c5d70ba1df9026e4ff5174d0680434803"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accurate-ar-overlay",
+        "label": "Accurate AR Overlay"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:05f42e95501c23f7ddf8cd9a692a206c5d70ba1df9026e4ff5174d0680434803@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accurate-ar-overlay",
-      "vc:label": "Accurate AR Overlay"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

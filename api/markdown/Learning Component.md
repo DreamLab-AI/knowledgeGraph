@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:learning-component",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:learning-component",
+  "@type": "Class",
   "label": "Learning Component",
+  "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:educational-technology",
-      "vc:label": "Educational Technology"
+      "@id": "urn:ngm:class:educational-technology",
+      "label": "Educational Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:57ceecd1d876d3696759f572c5f75d99605d2c51da33b46599a2d3072b8e47de"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:customised-training",
+        "label": "Customised Training"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:57ceecd1d876d3696759f572c5f75d99605d2c51da33b46599a2d3072b8e47de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:customised-training",
-      "vc:label": "Customised Training"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

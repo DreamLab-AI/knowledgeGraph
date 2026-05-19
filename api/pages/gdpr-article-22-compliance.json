@@ -3,19 +3,18 @@
   "title": "GDPR Article 22 Compliance",
   "slug": "gdpr-article-22-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gdpr-article-22-compliance",
+  "classIri": "urn:ngm:class:gdpr-article-22-compliance",
   "domain": "artificial-intelligence",
-  "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring human intervention, contestation mechanisms, and meaningful information provision for permitted automated decisions. Article 22(1) prohibits solely automated decisions with significant effects unless falling within Article 22(2) exceptions: necessary for contract performance between data subject and controller, authorized by EU or member state law providing suitable safeguards for rights and legitimate interests, or based on data subject's explicit consent. Article 22(3) mandates safeguards for permitted automated decisions including right to obtain human intervention (qualified human reviewer with authority to change decision assessing AI outputs and exercising meaningful discretion rather than rubber-stamping), right to express views (data subjects may provide context, explanations, or objections influencing final determination), and right to contest decision (formal challenge procedures wi",
+  "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring hu...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

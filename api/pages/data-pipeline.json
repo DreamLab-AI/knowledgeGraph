@@ -3,19 +3,18 @@
   "title": "Data Pipeline",
   "slug": "data-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-pipeline",
+  "classIri": "urn:ngm:class:data-pipeline",
   "domain": "infrastructure",
-  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs. Data pipelines implement [[ETL Patterns]], [[Data Validation]], [[Error Handling]], and [[Monitoring]] to ensure [[Data Reliability]] and [[Availability]].",
+  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

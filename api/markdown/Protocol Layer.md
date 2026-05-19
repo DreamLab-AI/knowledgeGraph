@@ -99,41 +99,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:protocol-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:protocol-layer",
+  "@type": "Class",
   "label": "Protocol Layer",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4022ac53d277e7a77147071daf699b368764d85d558847ea4a103ae14afc9ce3"
+  "definition": "The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems.",
+  "domain": "infrastructure",
+  "maturity": "draft",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4022ac53d277e7a77147071daf699b368764d85d558847ea4a103ae14afc9ce3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems. This layer encompasses consensus protocol implementations (Proof-of-Work mining protocols, Proof-of-Stake validation protocols, Byzantine Fault Tolerance protocol instances like PBFT and Tendermint), network protocols (peer-to-peer gossip, block propagation, transaction relay), data format specifications (transaction formats, block structures, serialization schemes), communication standards (RPC interfaces, message formats, network handshakes), smart contract execution protocols (EVM execution, gas metering, state transitions), interoperability protocols (cross-chain bridges, atomic swaps, inter-blockchain communication), and layer-2 protocols (Lightning Network, rollups, state channels). Unlike ConceptualLayer which addresses abstract protocol concepts, ProtocolLayer focuses on concrete protocol specifications and implementations. Unlike SecurityLayer which emphasizes security mechanisms, ProtocolLayer addresses the full scope of ",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

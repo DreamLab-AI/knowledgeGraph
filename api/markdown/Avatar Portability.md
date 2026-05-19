@@ -172,76 +172,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-portability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-portability",
+  "@type": "Class",
   "label": "Avatar Portability",
+  "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-asset-portability",
-      "vc:label": "Digital Asset Portability"
+      "@id": "urn:ngm:class:digital-asset-portability",
+      "label": "Digital Asset Portability"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f9b900d1f22554de8a4edcf5196b2c0cca2dc7e128a05291048c0ee82aede7ab"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:platform-integration",
+        "label": "Platform Integration"
+      },
+      {
+        "@id": "urn:ngm:class:standardized-formats",
+        "label": "Standardized Formats"
+      },
+      {
+        "@id": "urn:ngm:class:translation-frameworks",
+        "label": "Translation Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-continuity",
+        "label": "Asset Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:seamless-world-transitions",
+        "label": "Seamless World Transitions"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f9b900d1f22554de8a4edcf5196b2c0cca2dc7e128a05291048c0ee82aede7ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:platform-integration",
-      "vc:label": "Platform Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:standardized-formats",
-      "vc:label": "Standardized Formats"
-    },
-    {
-      "@id": "urn:visionflow:linked:translation-frameworks",
-      "vc:label": "Translation Frameworks"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-continuity",
-      "vc:label": "Asset Continuity"
-    },
-    {
-      "@id": "urn:visionflow:linked:seamless-world-transitions",
-      "vc:label": "Seamless World Transitions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

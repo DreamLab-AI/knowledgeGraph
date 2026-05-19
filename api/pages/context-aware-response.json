@@ -3,53 +3,57 @@
   "title": "Context Aware Response",
   "slug": "context-aware-response",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:context-aware-response",
+  "classIri": "urn:ngm:class:context-aware-response",
   "domain": "spatial-computing",
-  "definition": "An AI-driven capability in metaverse and virtual environments that enables systems to generate dynamic, personalized responses based on real-time understanding of user context, including location, activity, preferences, social environment, and interaction history, utilizing large language models and adaptive learning frameworks.",
+  "definition": "An AI-driven capability in metaverse and virtual environments that enables systems to generate dynamic, personalized responses based on real-time understanding of user context, including location, activity, preferences, social environment, and interaction history, utilizing large language models ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:context-awareness-system",
+        "id": "urn:ngm:class:context-awareness-system",
         "label": "Context Awareness System"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-ux",
+        "id": "urn:ngm:class:adaptive-ux",
         "label": "Adaptive UX"
       },
       {
-        "id": "urn:visionflow:linked:dynamic-content",
+        "id": "urn:ngm:class:dynamic-content",
         "label": "Dynamic Content"
       },
       {
-        "id": "urn:visionflow:linked:personalized-interaction",
+        "id": "urn:ngm:class:personalized-interaction",
         "label": "Personalized Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

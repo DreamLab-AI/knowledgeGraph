@@ -128,41 +128,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gdpr-article-22-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gdpr-article-22-compliance",
+  "@type": "Class",
   "label": "GDPR Article 22 Compliance",
+  "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring hu...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cc8690b5d2b8370d4887fa8f8541dc4d0b08e43ffc6683ce8594ca18a5288530"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cc8690b5d2b8370d4887fa8f8541dc4d0b08e43ffc6683ce8594ca18a5288530@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "GDPR Article 22 Compliance addresses automated decision-making and profiling by establishing that data subjects have the right not to be subject to decisions based solely on automated processing (including profiling) which produce legal effects or similarly significantly affect them, requiring human intervention, contestation mechanisms, and meaningful information provision for permitted automated decisions. Article 22(1) prohibits solely automated decisions with significant effects unless falling within Article 22(2) exceptions: necessary for contract performance between data subject and controller, authorized by EU or member state law providing suitable safeguards for rights and legitimate interests, or based on data subject's explicit consent. Article 22(3) mandates safeguards for permitted automated decisions including right to obtain human intervention (qualified human reviewer with authority to change decision assessing AI outputs and exercising meaningful discretion rather than rubber-stamping), right to express views (data subjects may provide context, explanations, or objections influencing final determination), and right to contest decision (formal challenge procedures wi",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

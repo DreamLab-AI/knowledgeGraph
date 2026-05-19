@@ -112,48 +112,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:minimax-algorithm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:minimax-algorithm",
+  "@type": "Class",
   "label": "Minimax Algorithm",
+  "definition": "Minimax Algorithm is a artificial intelligence concept and a type of Search Algorithms. that enables Adversarial Search.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:search-algorithms",
-      "vc:label": "Search Algorithms"
+      "@id": "urn:ngm:class:search-algorithms",
+      "label": "Search Algorithms"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d9e1ec6f3323eba996d79c85a30ff26a9090223ba061defd0eb921e4733e93f4"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adversarial-search",
+        "label": "Adversarial Search"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d9e1ec6f3323eba996d79c85a30ff26a9090223ba061defd0eb921e4733e93f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Minimax Algorithm is a artificial intelligence concept and a type of Search Algorithms. that enables Adversarial Search.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adversarial-search",
-      "vc:label": "Adversarial Search"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

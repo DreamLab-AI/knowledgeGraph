@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-experiences",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-experiences",
+  "@type": "Class",
   "label": "Immersive Experiences",
+  "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-experience",
-      "vc:label": "Digital Experience"
+      "@id": "urn:ngm:class:digital-experience",
+      "label": "Digital Experience"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5a1f10fca3617303eb98dfc43923dee12a66e46832ab551eaef417a776e43c83"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-presence",
+        "label": "Virtual Presence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5a1f10fca3617303eb98dfc43923dee12a66e46832ab551eaef417a776e43c83@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-presence",
-      "vc:label": "Virtual Presence"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -712,540 +712,435 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:esg-reporting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:esg-reporting",
+  "@type": "Class",
   "label": "ESG Reporting",
+  "definition": "ESG Reporting is the composite corporate disclosure discipline by which obligated and voluntary entities — listed companies, large private undertakings, banks, insurers, asset managers, investment funds and a rapidly expanding perimeter of public-interest organisations — measure, assure and publi...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:non-financial-reporting",
-      "vc:label": "Non-Financial Reporting"
+      "@id": "urn:ngm:class:non-financial-reporting",
+      "label": "Non-Financial Reporting"
     },
     {
-      "@id": "urn:visionflow:linked:stakeholder-reporting",
-      "vc:label": "Stakeholder Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-disclosure",
-      "vc:label": "Sustainability Disclosure"
+      "@id": "urn:ngm:class:stakeholder-reporting",
+      "label": "Stakeholder Reporting"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a1a89d13b20aa5bfee04aaead9041c32321e5724fe23bb355616e45a527d3b6e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:climate-scenario-analysis",
+        "label": "Climate Scenario Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:double-materiality-assessment",
+        "label": "Double Materiality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-inventory",
+        "label": "GHG Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:limited-assurance-opinion",
+        "label": "Limited Assurance Opinion"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:principal-adverse-impact-statement",
+        "label": "Principal Adverse Impact Statement"
+      },
+      {
+        "@id": "urn:ngm:class:reasonable-assurance-opinion",
+        "label": "Reasonable Assurance Opinion"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-target",
+        "label": "Science-Based Target"
+      },
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-statement",
+        "label": "Sustainability Statement"
+      },
+      {
+        "@id": "urn:ngm:class:transition-plan",
+        "label": "Transition Plan"
+      },
+      {
+        "@id": "urn:ngm:class:xbrl-digital-tagging",
+        "label": "XBRL Digital Tagging"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:board-level-oversight",
+        "label": "Board-Level Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:independent-assurance-provider",
+        "label": "Independent Assurance Provider"
+      },
+      {
+        "@id": "urn:ngm:class:internal-carbon-accounting",
+        "label": "Internal Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-threshold",
+        "label": "Materiality Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-framework-selection",
+        "label": "Reporting Framework Selection"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-data-collection",
+        "label": "Sustainability Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:value-chain-mapping",
+        "label": "Value Chain Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capital-allocation-efficiency",
+        "label": "Capital Allocation Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-border-adjustment-compliance",
+        "label": "Carbon Border Adjustment Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk-pricing",
+        "label": "Climate Risk Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing-detection",
+        "label": "Greenwashing Detection"
+      },
+      {
+        "@id": "urn:ngm:class:investor-decision-support",
+        "label": "Investor Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-pathway-tracking",
+        "label": "Net Zero Pathway Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-linked-loan-pricing",
+        "label": "Sustainability-Linked Loan Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-investment-identification",
+        "label": "Sustainable Investment Identification"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cdp-questionnaires",
+        "label": "CDP Questionnaires"
+      },
+      {
+        "@id": "urn:ngm:class:esrs-standards",
+        "label": "ESRS Standards"
+      },
+      {
+        "@id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "@id": "urn:ngm:class:pcaf-methodology",
+        "label": "PCAF Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:sasb-standards",
+        "label": "SASB Standards"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd-recommendations",
+        "label": "TCFD Recommendations"
+      },
+      {
+        "@id": "urn:ngm:class:tnfd-recommendations",
+        "label": "TNFD Recommendations"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-sustainability-copilot",
+        "label": "AI Sustainability Copilot"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting-software",
+        "label": "Carbon Accounting Software"
+      },
+      {
+        "@id": "urn:ngm:class:climate-scenario-modelling",
+        "label": "Climate Scenario Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:esg-data-management-platform",
+        "label": "ESG Data Management Platform"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-heatmap",
+        "label": "Materiality Heatmap"
+      },
+      {
+        "@id": "urn:ngm:class:nlp-regulatory-monitoring",
+        "label": "NLP Regulatory Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-emissions-inventory",
+        "label": "Satellite Emissions Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:xbrl-inline-reporting",
+        "label": "XBRL Inline Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cdp",
+        "label": "CDP"
+      },
+      {
+        "@id": "urn:ngm:class:dws-greenwashing-settlement",
+        "label": "DWS Greenwashing Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:efrag",
+        "label": "EFRAG"
+      },
+      {
+        "@id": "urn:ngm:class:emmanuel-faber",
+        "label": "Emmanuel Faber"
+      },
+      {
+        "@id": "urn:ngm:class:eu-omnibus-2025",
+        "label": "EU Omnibus 2025"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "@id": "urn:ngm:class:frc",
+        "label": "FRC"
+      },
+      {
+        "@id": "urn:ngm:class:gfanz",
+        "label": "GFANZ"
+      },
+      {
+        "@id": "urn:ngm:class:gri",
+        "label": "GRI"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-foundation",
+        "label": "IFRS Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "@id": "urn:ngm:class:mark-carney",
+        "label": "Mark Carney"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-sustainability-manager",
+        "label": "Microsoft Sustainability Manager"
+      },
+      {
+        "@id": "urn:ngm:class:msci-esg",
+        "label": "MSCI ESG"
+      },
+      {
+        "@id": "urn:ngm:class:persefoni",
+        "label": "Persefoni"
+      },
+      {
+        "@id": "urn:ngm:class:sasb",
+        "label": "SASB"
+      },
+      {
+        "@id": "urn:ngm:class:sbti",
+        "label": "SBTi"
+      },
+      {
+        "@id": "urn:ngm:class:sec",
+        "label": "SEC"
+      },
+      {
+        "@id": "urn:ngm:class:sustainalytics",
+        "label": "Sustainalytics"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "@id": "urn:ngm:class:texas-anti-esg-legislation",
+        "label": "Texas Anti-ESG Legislation"
+      },
+      {
+        "@id": "urn:ngm:class:tnfd",
+        "label": "TNFD"
+      },
+      {
+        "@id": "urn:ngm:class:watershed",
+        "label": "Watershed"
+      },
+      {
+        "@id": "urn:ngm:class:workiva",
+        "label": "Workiva"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:article-8-fund-classification",
+        "label": "Article 8 Fund Classification"
+      },
+      {
+        "@id": "urn:ngm:class:article-9-fund-classification",
+        "label": "Article 9 Fund Classification"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-border-adjustment-mechanism",
+        "label": "Carbon Border Adjustment Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-due-diligence",
+        "label": "Corporate Sustainability Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:green-bond-issuance",
+        "label": "Green Bond Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-asset-managers-initiative",
+        "label": "Net Zero Asset Managers Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-banking-alliance",
+        "label": "Net-Zero Banking Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-linked-bond-issuance",
+        "label": "Sustainability-Linked Bond Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance-disclosure-regulation",
+        "label": "Sustainable Finance Disclosure Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:csrd-directive-2022-2464",
+        "label": "CSRD Directive 2022/2464"
+      },
+      {
+        "@id": "urn:ngm:class:esrs-delegated-regulation-2023-2772",
+        "label": "ESRS Delegated Regulation 2023/2772"
+      },
+      {
+        "@id": "urn:ngm:class:eu-taxonomy-regulation-2020-852",
+        "label": "EU Taxonomy Regulation 2020/852"
+      },
+      {
+        "@id": "urn:ngm:class:fca-sdr-ps23-16",
+        "label": "FCA SDR PS23/16"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol-corporate-standard",
+        "label": "GHG Protocol Corporate Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gri-universal-standards-2021",
+        "label": "GRI Universal Standards 2021"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-s1",
+        "label": "IFRS S1"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "@id": "urn:ngm:class:isae-3000",
+        "label": "ISAE 3000"
+      },
+      {
+        "@id": "urn:ngm:class:isae-3410",
+        "label": "ISAE 3410"
+      },
+      {
+        "@id": "urn:ngm:class:issa-5000-assurance-standard",
+        "label": "ISSA 5000 Assurance Standard"
+      },
+      {
+        "@id": "urn:ngm:class:sec-climate-rule-33-11275",
+        "label": "SEC Climate Rule 33-11275"
+      },
+      {
+        "@id": "urn:ngm:class:sfdr-2019-2088",
+        "label": "SFDR 2019/2088"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a1a89d13b20aa5bfee04aaead9041c32321e5724fe23bb355616e45a527d3b6e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**ESG Reporting** is the composite corporate disclosure discipline by which obligated and voluntary entities — listed companies, large private undertakings, banks, insurers, asset managers, investment funds and a rapidly expanding perimeter of public-interest organisations — measure, assure and publish structured information about their **Environmental** (climate change mitigation/adaptation, GHG emissions across Scopes 1/2/3, energy mix, water and marine resources, biodiversity and ecosystems, circular economy, pollution), **Social** (own workforce, workers in the value chain, affected communities, consumers and end-users, human rights, diversity equity and inclusion, occupational health and safety) and **Governance** (business conduct, anti-corruption and anti-bribery, political engagement, lobbying activities, supplier relationships including payment practices, board composition and independence, executive remuneration linkage to sustainability metrics) performance against codified reporting frameworks; the regime descends institutionally from the **Global Reporting Initiative** (GRI, founded 1997 in Boston by CERES and Tellus Institute following the Exxon Valdez disaster, headq",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:climate-scenario-analysis",
-      "vc:label": "Climate Scenario Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-materiality-assessment",
-      "vc:label": "Double Materiality Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-inventory",
-      "vc:label": "GHG Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:limited-assurance-opinion",
-      "vc:label": "Limited Assurance Opinion"
-    },
-    {
-      "@id": "urn:visionflow:linked:materiality-assessment",
-      "vc:label": "Materiality Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:principal-adverse-impact-statement",
-      "vc:label": "Principal Adverse Impact Statement"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasonable-assurance-opinion",
-      "vc:label": "Reasonable Assurance Opinion"
-    },
-    {
-      "@id": "urn:visionflow:linked:science-based-target",
-      "vc:label": "Science-Based Target"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-1-emissions",
-      "vc:label": "Scope 1 Emissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-2-emissions",
-      "vc:label": "Scope 2 Emissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-3-emissions",
-      "vc:label": "Scope 3 Emissions"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-statement",
-      "vc:label": "Sustainability Statement"
-    },
-    {
-      "@id": "urn:visionflow:linked:transition-plan",
-      "vc:label": "Transition Plan"
-    },
-    {
-      "@id": "urn:visionflow:linked:xbrl-digital-tagging",
-      "vc:label": "XBRL Digital Tagging"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:board-level-oversight",
-      "vc:label": "Board-Level Oversight"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-assurance-provider",
-      "vc:label": "Independent Assurance Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:internal-carbon-accounting",
-      "vc:label": "Internal Carbon Accounting"
-    },
-    {
-      "@id": "urn:visionflow:linked:materiality-threshold",
-      "vc:label": "Materiality Threshold"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-framework-selection",
-      "vc:label": "Reporting Framework Selection"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-engagement",
-      "vc:label": "Stakeholder Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-data-collection",
-      "vc:label": "Sustainability Data Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-chain-mapping",
-      "vc:label": "Value Chain Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:capital-allocation-efficiency",
-      "vc:label": "Capital Allocation Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-border-adjustment-compliance",
-      "vc:label": "Carbon Border Adjustment Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-risk-pricing",
-      "vc:label": "Climate Risk Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:greenwashing-detection",
-      "vc:label": "Greenwashing Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:investor-decision-support",
-      "vc:label": "Investor Decision Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-pathway-tracking",
-      "vc:label": "Net Zero Pathway Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-linked-loan-pricing",
-      "vc:label": "Sustainability-Linked Loan Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-investment-identification",
-      "vc:label": "Sustainable Investment Identification"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cdp-questionnaires",
-      "vc:label": "CDP Questionnaires"
-    },
-    {
-      "@id": "urn:visionflow:linked:esrs-standards",
-      "vc:label": "ESRS Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-taxonomy",
-      "vc:label": "EU Taxonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol-corporate-standard",
-      "vc:label": "GHG Protocol Corporate Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:gri-standards",
-      "vc:label": "GRI Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-s1",
-      "vc:label": "IFRS S1"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-s2",
-      "vc:label": "IFRS S2"
-    },
-    {
-      "@id": "urn:visionflow:linked:pcaf-methodology",
-      "vc:label": "PCAF Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:sasb-standards",
-      "vc:label": "SASB Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcfd-recommendations",
-      "vc:label": "TCFD Recommendations"
-    },
-    {
-      "@id": "urn:visionflow:linked:tnfd-recommendations",
-      "vc:label": "TNFD Recommendations"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:climate-scenario-database",
-      "vc:label": "Climate Scenario Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factor-database",
-      "vc:label": "Emission Factor Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:greenhouse-gas-protocol",
-      "vc:label": "Greenhouse Gas Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-inventory-reports",
-      "vc:label": "National Inventory Reports"
-    },
-    {
-      "@id": "urn:visionflow:linked:sector-specific-guidance",
-      "vc:label": "Sector-Specific Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-data-platform",
-      "vc:label": "Sustainability Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:third-party-esg-ratings",
-      "vc:label": "Third-Party ESG Ratings"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-chain-data",
-      "vc:label": "Value Chain Data"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:article-8-fund-classification",
-      "vc:label": "Article 8 Fund Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:article-9-fund-classification",
-      "vc:label": "Article 9 Fund Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-border-adjustment-mechanism",
-      "vc:label": "Carbon Border Adjustment Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-sustainability-due-diligence",
-      "vc:label": "Corporate Sustainability Due Diligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-bond-issuance",
-      "vc:label": "Green Bond Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-asset-managers-initiative",
-      "vc:label": "Net Zero Asset Managers Initiative"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-zero-banking-alliance",
-      "vc:label": "Net-Zero Banking Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-linked-bond-issuance",
-      "vc:label": "Sustainability-Linked Bond Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-finance-disclosure-regulation",
-      "vc:label": "Sustainable Finance Disclosure Regulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ai-sustainability-copilot",
-      "vc:label": "AI Sustainability Copilot"
-    },
-    {
-      "@id": "urn:visionflow:linked:carbon-accounting-software",
-      "vc:label": "Carbon Accounting Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-scenario-modelling",
-      "vc:label": "Climate Scenario Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:esg-data-management-platform",
-      "vc:label": "ESG Data Management Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:life-cycle-assessment",
-      "vc:label": "Life Cycle Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:materiality-heatmap",
-      "vc:label": "Materiality Heatmap"
-    },
-    {
-      "@id": "urn:visionflow:linked:nlp-regulatory-monitoring",
-      "vc:label": "NLP Regulatory Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-emissions-inventory",
-      "vc:label": "Satellite Emissions Inventory"
-    },
-    {
-      "@id": "urn:visionflow:linked:xbrl-inline-reporting",
-      "vc:label": "XBRL Inline Reporting"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:esg-rating-inflation",
-      "vc:label": "ESG Rating Inflation"
-    },
-    {
-      "@id": "urn:visionflow:linked:greenwashing",
-      "vc:label": "Greenwashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-financial-reporting",
-      "vc:label": "IFRS Financial Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:pre-2014-sustainability-report",
-      "vc:label": "Pre-2014 Sustainability Report"
-    },
-    {
-      "@id": "urn:visionflow:linked:shareholder-primacy-reporting",
-      "vc:label": "Shareholder Primacy Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-materiality-reporting",
-      "vc:label": "Single Materiality Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-gaap-financial-reporting",
-      "vc:label": "UK GAAP Financial Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-csr-report",
-      "vc:label": "Voluntary CSR Report"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cdp",
-      "vc:label": "CDP"
-    },
-    {
-      "@id": "urn:visionflow:linked:dws-greenwashing-settlement",
-      "vc:label": "DWS Greenwashing Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:efrag",
-      "vc:label": "EFRAG"
-    },
-    {
-      "@id": "urn:visionflow:linked:emmanuel-faber",
-      "vc:label": "Emmanuel Faber"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-omnibus-2025",
-      "vc:label": "EU Omnibus 2025"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-commission",
-      "vc:label": "European Commission"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:frc",
-      "vc:label": "FRC"
-    },
-    {
-      "@id": "urn:visionflow:linked:gfanz",
-      "vc:label": "GFANZ"
-    },
-    {
-      "@id": "urn:visionflow:linked:gri",
-      "vc:label": "GRI"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-foundation",
-      "vc:label": "IFRS Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:issb",
-      "vc:label": "ISSB"
-    },
-    {
-      "@id": "urn:visionflow:linked:mark-carney",
-      "vc:label": "Mark Carney"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-sustainability-manager",
-      "vc:label": "Microsoft Sustainability Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:msci-esg",
-      "vc:label": "MSCI ESG"
-    },
-    {
-      "@id": "urn:visionflow:linked:persefoni",
-      "vc:label": "Persefoni"
-    },
-    {
-      "@id": "urn:visionflow:linked:sasb",
-      "vc:label": "SASB"
-    },
-    {
-      "@id": "urn:visionflow:linked:sbti",
-      "vc:label": "SBTi"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec",
-      "vc:label": "SEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainalytics",
-      "vc:label": "Sustainalytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:tcfd",
-      "vc:label": "TCFD"
-    },
-    {
-      "@id": "urn:visionflow:linked:texas-anti-esg-legislation",
-      "vc:label": "Texas Anti-ESG Legislation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tnfd",
-      "vc:label": "TNFD"
-    },
-    {
-      "@id": "urn:visionflow:linked:watershed",
-      "vc:label": "Watershed"
-    },
-    {
-      "@id": "urn:visionflow:linked:workiva",
-      "vc:label": "Workiva"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:csrd-directive-2022-2464",
-      "vc:label": "CSRD Directive 2022/2464"
-    },
-    {
-      "@id": "urn:visionflow:linked:esrs-delegated-regulation-2023-2772",
-      "vc:label": "ESRS Delegated Regulation 2023/2772"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-taxonomy-regulation-2020-852",
-      "vc:label": "EU Taxonomy Regulation 2020/852"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-sdr-ps23-16",
-      "vc:label": "FCA SDR PS23/16"
-    },
-    {
-      "@id": "urn:visionflow:linked:ghg-protocol-corporate-standard",
-      "vc:label": "GHG Protocol Corporate Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:gri-universal-standards-2021",
-      "vc:label": "GRI Universal Standards 2021"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-s1",
-      "vc:label": "IFRS S1"
-    },
-    {
-      "@id": "urn:visionflow:linked:ifrs-s2",
-      "vc:label": "IFRS S2"
-    },
-    {
-      "@id": "urn:visionflow:linked:isae-3000",
-      "vc:label": "ISAE 3000"
-    },
-    {
-      "@id": "urn:visionflow:linked:isae-3410",
-      "vc:label": "ISAE 3410"
-    },
-    {
-      "@id": "urn:visionflow:linked:issa-5000-assurance-standard",
-      "vc:label": "ISSA 5000 Assurance Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-climate-rule-33-11275",
-      "vc:label": "SEC Climate Rule 33-11275"
-    },
-    {
-      "@id": "urn:visionflow:linked:sfdr-2019-2088",
-      "vc:label": "SFDR 2019/2088"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:climate-risk-disclosure",
-      "vc:label": "Climate Risk Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-finance",
-      "vc:label": "Sustainable Finance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-accounting",
-      "vc:label": "Carbon Accounting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

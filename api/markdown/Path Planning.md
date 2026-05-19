@@ -188,84 +188,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:path-planning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:path-planning",
+  "@type": "Class",
   "label": "Path Planning",
+  "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
+      "@id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      },
+      {
+        "@id": "urn:ngm:class:goal-configuration",
+        "label": "Goal Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:start-configuration",
+        "label": "Start Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rb-1017-rrt-algorithm",
+        "label": "RB-1017-rrt-algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1018-dijkstra-algorithm",
+        "label": "RB-1018-dijkstra-algorithm"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:93764e7e84a935ee83e735b276b38f7fcdc25722b11e85e326039e13c26f9e67@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.97",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:environment-model",
-      "vc:label": "Environment Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:goal-configuration",
-      "vc:label": "Goal Configuration"
-    },
-    {
-      "@id": "urn:visionflow:linked:mapping",
-      "vc:label": "Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:start-configuration",
-      "vc:label": "Start Configuration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rb-1013-localization",
-      "vc:label": "RB-1013-localization"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:rb-1007-trajectory-generation",
-      "vc:label": "RB-1007-trajectory-generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:navigation",
-      "vc:label": "Navigation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:rb-1017-rrt-algorithm",
-      "vc:label": "RB-1017-rrt-algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1018-dijkstra-algorithm",
-      "vc:label": "RB-1018-dijkstra-algorithm"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

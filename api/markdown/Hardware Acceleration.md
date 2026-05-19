@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hardware-acceleration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-acceleration",
+  "@type": "Class",
   "label": "Hardware Acceleration",
+  "definition": "The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-infrastructure",
-      "vc:label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1b50d4c8c9f4753b80de9b14b86bbbe8ef2e637a8d902b1a0474490f1600dd6e"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-vr-performance",
+        "label": "Real-Time VR Performance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1b50d4c8c9f4753b80de9b14b86bbbe8ef2e637a8d902b1a0474490f1600dd6e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:real-time-vr-performance",
-      "vc:label": "Real-Time VR Performance"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

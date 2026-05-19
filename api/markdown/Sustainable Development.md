@@ -132,56 +132,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sustainable-development",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sustainable-development",
+  "@type": "Class",
   "label": "Sustainable Development",
+  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f60801a6cf1694e4c33e710286ae507dc969033a5f23927684bdb626fb994d8a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:computational-sustainability",
+        "label": "computational sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:green-ai",
+        "label": "Green AI"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-ai-operations",
+        "label": "sustainable AI operations"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f60801a6cf1694e4c33e710286ae507dc969033a5f23927684bdb626fb994d8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability to meet their own needs.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:computational-sustainability",
-      "vc:label": "computational sustainability"
-    },
-    {
-      "@id": "urn:visionflow:linked:green-ai",
-      "vc:label": "Green AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainable-ai-operations",
-      "vc:label": "sustainable AI operations"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

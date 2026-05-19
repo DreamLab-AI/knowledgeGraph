@@ -13,27 +13,14 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:ai-governance-principle",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-governance-principle",
+  "@type": "Class",
   "label": "Ai Governance Principle",
-  "vc:sourceDomain": "artificial-intelligence",
   "definition": "Ai Governance Principle is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.3
 }
 ```
 

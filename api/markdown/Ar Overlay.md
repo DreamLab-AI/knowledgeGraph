@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-overlay",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-overlay",
+  "@type": "Class",
   "label": "Ar Overlay",
+  "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-display-layer",
-      "vc:label": "Digital Display Layer"
+      "@id": "urn:ngm:class:digital-display-layer",
+      "label": "Digital Display Layer"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:93e1dfa6756cf66e03c051e17c61fe397a222a28a89502d2075bebe9f7bf58a2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-understanding",
+        "label": "Environmental Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:information-augmentation",
+        "label": "Information Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-annotation",
+        "label": "Spatial Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-object-placement",
+        "label": "Virtual Object Placement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:93e1dfa6756cf66e03c051e17c61fe397a222a28a89502d2075bebe9f7bf58a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:environmental-understanding",
-      "vc:label": "Environmental Understanding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-anchoring",
-      "vc:label": "Spatial Anchoring"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:information-augmentation",
-      "vc:label": "Information Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-annotation",
-      "vc:label": "Spatial Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-object-placement",
-      "vc:label": "Virtual Object Placement"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

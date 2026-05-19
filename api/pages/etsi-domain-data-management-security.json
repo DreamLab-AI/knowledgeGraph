@@ -3,66 +3,75 @@
   "title": "ETSI Domain: Data Management + Security",
   "slug": "etsi-domain-data-management-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-security",
+  "classIri": "urn:ngm:class:etsi-domain-data-management-security",
   "domain": "infrastructure",
   "definition": "Crossover domain for ETSI metaverse categorisation addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "ETSI Metaverse Domain Taxonomy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:encrypted-storage",
+        "id": "urn:ngm:class:encrypted-storage",
         "label": "Encrypted Storage"
       },
       {
-        "id": "urn:visionflow:linked:key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "id": "urn:visionflow:linked:security-audit",
+        "id": "urn:ngm:class:security-audit",
         "label": "Security Audit"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:security-and-privacy",
+        "id": "urn:ngm:class:security-and-privacy",
         "label": "Security & Privacy"
       },
       {
-        "id": "urn:visionflow:owl:class:data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:access-control-enforcement",
+        "id": "urn:ngm:class:access-control-enforcement",
         "label": "Access Control Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:data-at-rest-protection",
+        "id": "urn:ngm:class:data-at-rest-protection",
         "label": "Data-at-Rest Protection"
       },
       {
-        "id": "urn:visionflow:linked:threat-detection",
+        "id": "urn:ngm:class:threat-detection",
         "label": "Threat Detection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -520,350 +520,261 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dall-e",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:dall-e",
+  "@type": "Individual",
   "label": "DALL·E",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:multimodal-model",
-      "vc:label": "Multimodal Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:proprietary-model",
-      "vc:label": "Proprietary Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-model",
-      "vc:label": "Text-to-Image Model"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:351906350ad08c9e822f2525c24b07bd3b6b420129762fad28d6483f562828ca"
+  "definition": "DALL·E (canonical typography with U+00B7 middle dot; portmanteau of Salvador Dalí + Pixar's WALL·E) is the proprietary text-to-image model family developed by OpenAI from January 2021 onwards, comprising four generations of foundation models that progressively redefined the state-of-the-art for n...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:c2-pa-metadata-embedder",
+        "label": "C2PA Metadata Embedder"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-decoder",
+        "label": "Diffusion Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-prior",
+        "label": "Diffusion Prior"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-vae",
+        "label": "Discrete VAE"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-rewriter",
+        "label": "Prompt Rewriter"
+      },
+      {
+        "@id": "urn:ngm:class:safety-filter",
+        "label": "Safety Filter"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution-cascade",
+        "label": "Super-Resolution Cascade"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:clip-embedding-space",
+        "label": "CLIP Embedding Space"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:massive-image-text-dataset",
+        "label": "Massive Image-Text Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:concept-art-generation",
+        "label": "Concept Art Generation"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-image-editing",
+        "label": "Conversational Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:image-variations",
+        "label": "Image Variations"
+      },
+      {
+        "@id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-stock-imagery",
+        "label": "Synthetic Stock Imagery"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:autoregressive-image-generation",
+        "label": "Autoregressive Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:cascaded-super-resolution",
+        "label": "Cascaded Super-Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-caption-training",
+        "label": "Synthetic Caption Training"
+      },
+      {
+        "@id": "urn:ngm:class:un-clip-architecture",
+        "label": "unCLIP Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diffusion-sampling",
+        "label": "Diffusion Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:nsfw-classifier",
+        "label": "NSFW Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:marketing",
+        "label": "Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa-specification",
+        "label": "C2PA Specification"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-usage-policies",
+        "label": "OpenAI Usage Policies"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:351906350ad08c9e822f2525c24b07bd3b6b420129762fad28d6483f562828ca@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**DALL·E** (canonical typography with U+00B7 middle dot; portmanteau of Salvador Dalí + Pixar's WALL·E) is the proprietary text-to-image model family developed by OpenAI from January 2021 onwards, comprising four generations of foundation models that progressively redefined the state-of-the-art for natural-language-conditioned image synthesis: **DALL·E 1** (Ramesh, Pavlov, Goh, Gray, Voss, Radford, Chen, Sutskever 2021, arXiv:2102.12092) — a 12-billion-parameter sparse-attention decoder-only transformer trained autoregressively over interleaved text BPE tokens and image tokens emitted by a discrete VAE (dVAE) compressing 256×256 images into 32×32 grids of indices over an 8,192-entry codebook, demonstrating for the first time at scale that a single autoregressive transformer can generate plausible novel images from arbitrary text prompts including unprecedented compositions (the canonical \"an armchair in the shape of an avocado\") through zero-shot reasoning over a 250-million image-text dataset filtered from Conceptual Captions, YFCC100M and proprietary web crawls, with results released as a research blog post and curated gallery rather than a production API; **DALL·E 2** (Ramesh, D",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:c2-pa-metadata-embedder",
-      "vc:label": "C2PA Metadata Embedder"
+      "@id": "urn:ngm:class:multimodal-model",
+      "label": "Multimodal Model"
     },
     {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-decoder",
-      "vc:label": "Diffusion Decoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-prior",
-      "vc:label": "Diffusion Prior"
-    },
-    {
-      "@id": "urn:visionflow:linked:discrete-vae",
-      "vc:label": "Discrete VAE"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-rewriter",
-      "vc:label": "Prompt Rewriter"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-filter",
-      "vc:label": "Safety Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:super-resolution-cascade",
-      "vc:label": "Super-Resolution Cascade"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-encoder",
-      "vc:label": "Text Encoder"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:clip-embedding-space",
-      "vc:label": "CLIP Embedding Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:massive-image-text-dataset",
-      "vc:label": "Massive Image-Text Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokeniser",
-      "vc:label": "Tokeniser"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:backpropagation",
-      "vc:label": "Backpropagation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:concept-art-generation",
-      "vc:label": "Concept Art Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:conversational-image-editing",
-      "vc:label": "Conversational Image Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-variations",
-      "vc:label": "Image Variations"
-    },
-    {
-      "@id": "urn:visionflow:linked:outpainting",
-      "vc:label": "Outpainting"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-stock-imagery",
-      "vc:label": "Synthetic Stock Imagery"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-generation",
-      "vc:label": "Text-to-Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:autoregressive-image-generation",
-      "vc:label": "Autoregressive Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cascaded-super-resolution",
-      "vc:label": "Cascaded Super-Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-caption-training",
-      "vc:label": "Synthetic Caption Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:un-clip-architecture",
-      "vc:label": "unCLIP Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt-4",
-      "vc:label": "GPT 4"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning From Human Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:advertising",
-      "vc:label": "Advertising"
-    },
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-industries",
-      "vc:label": "Creative Industries"
-    },
-    {
-      "@id": "urn:visionflow:linked:education",
-      "vc:label": "Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:marketing",
-      "vc:label": "Marketing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:synthetic-data-generation",
-      "vc:label": "Synthetic Data Generation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-sampling",
-      "vc:label": "Diffusion Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:nsfw-classifier",
-      "vc:label": "NSFW Classifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:u-net",
-      "vc:label": "U-Net"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:adobe-firefly",
-      "vc:label": "Adobe Firefly"
-    },
-    {
-      "@id": "urn:visionflow:linked:ideogram",
-      "vc:label": "Ideogram"
-    },
-    {
-      "@id": "urn:visionflow:linked:imagen",
-      "vc:label": "Imagen"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:midjourney",
-      "vc:label": "Midjourney"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake",
-      "vc:label": "Deepfake"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt-4",
-      "vc:label": "GPT 4"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa-specification",
-      "vc:label": "C2PA Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:icml",
-      "vc:label": "ICML"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-usage-policies",
-      "vc:label": "OpenAI Usage Policies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
+      "@id": "urn:ngm:class:proprietary-model",
+      "label": "Proprietary Model"
     }
   ]
 }

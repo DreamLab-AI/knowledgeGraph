@@ -488,302 +488,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-preserving-analytics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-preserving-analytics",
+  "@type": "Class",
   "label": "Privacy Preserving Analytics",
+  "definition": "Privacy Preserving Analytics (PPA) is a cross-disciplinary field at the intersection of cryptography, statistics, and data engineering concerned with enabling quantitative analysis of datasets containing sensitive personal or proprietary information without exposing the underlying individual-leve...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:data-analysis",
-      "vc:label": "Data Analysis"
+      "@id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
     },
     {
-      "@id": "urn:visionflow:linked:privacy-enhancing-technologies",
-      "vc:label": "Privacy Enhancing Technologies"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-computing",
-      "vc:label": "Statistical Computing"
+      "@id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy Enhancing Technologies"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9a6957db4250757a81fdf1515a888fa12a729691a069261aaa44a032fdfeab1b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:k-anonymity",
+        "label": "k-Anonymity"
+      },
+      {
+        "@id": "urn:ngm:class:l-diversity",
+        "label": "l-Diversity"
+      },
+      {
+        "@id": "urn:ngm:class:noise-mechanism",
+        "label": "Noise Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-budget",
+        "label": "Privacy Budget"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:t-closeness",
+        "label": "t-Closeness"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:noise-calibration",
+        "label": "Noise Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-model-training-on-sensitive-data",
+        "label": "AI Model Training on Sensitive Data"
+      },
+      {
+        "@id": "urn:ngm:class:cross-institutional-data-collaboration",
+        "label": "Cross-Institutional Data Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-safe-harbour",
+        "label": "Regulatory Safe Harbour"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy-by-Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bfv-scheme",
+        "label": "BFV Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:ckks-scheme",
+        "label": "CKKS Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:fed-avg-algorithm",
+        "label": "FedAvg Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:garbled-circuits",
+        "label": "Garbled Circuits"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:randomised-response",
+        "label": "Randomised Response"
+      },
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
+      },
+      {
+        "@id": "urn:ngm:class:oblivious-ram",
+        "label": "Oblivious RAM"
+      },
+      {
+        "@id": "urn:ngm:class:random-noise-injection",
+        "label": "Random Noise Injection"
+      },
+      {
+        "@id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:clinical-trial-data-sharing",
+        "label": "Clinical Trial Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "@id": "urn:ngm:class:national-statistics",
+        "label": "National Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr-article-89",
+        "label": "GDPR Article 89"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-prio-protocol",
+        "label": "IETF PRIO Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO/IEC 27701"
+      },
+      {
+        "@id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-data-privacy-vocabulary",
+        "label": "W3C Data Privacy Vocabulary"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9a6957db4250757a81fdf1515a888fa12a729691a069261aaa44a032fdfeab1b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy Preserving Analytics (PPA) is a cross-disciplinary field at the intersection of cryptography, statistics, and data engineering concerned with enabling quantitative analysis of datasets containing sensitive personal or proprietary information without exposing the underlying individual-level records to analysts, adversaries, or unintended recipients. The field formalises the fundamental tension between **data utility**—the degree to which analytical queries yield accurate, actionable insights—and **privacy**, defined as the inability of any party to learn anything about a specific individual beyond what they already knew before the computation. PPA operationalises this tension through a portfolio of complementary techniques, each offering distinct privacy-utility trade-offs and computational overheads.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:homomorphic-encryption",
-      "vc:label": "Homomorphic Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:k-anonymity",
-      "vc:label": "k-Anonymity"
-    },
-    {
-      "@id": "urn:visionflow:linked:l-diversity",
-      "vc:label": "l-Diversity"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-mechanism",
-      "vc:label": "Noise Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-budget",
-      "vc:label": "Privacy Budget"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-data",
-      "vc:label": "Synthetic Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:t-closeness",
-      "vc:label": "t-Closeness"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-multi-party-computation",
-      "vc:label": "Secure Multi-Party Computation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-governance-framework",
-      "vc:label": "Data Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-calibration",
-      "vc:label": "Noise Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensitivity-analysis",
-      "vc:label": "Sensitivity Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-execution-environment",
-      "vc:label": "Trusted Execution Environment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-model-training-on-sensitive-data",
-      "vc:label": "AI Model Training on Sensitive Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-institutional-data-collaboration",
-      "vc:label": "Cross-Institutional Data Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-safe-harbour",
-      "vc:label": "Regulatory Safe Harbour"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-by-design",
-      "vc:label": "Privacy-by-Design"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bfv-scheme",
-      "vc:label": "BFV Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:ckks-scheme",
-      "vc:label": "CKKS Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:fed-avg-algorithm",
-      "vc:label": "FedAvg Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:garbled-circuits",
-      "vc:label": "Garbled Circuits"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaussian-mechanism",
-      "vc:label": "Gaussian Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:laplace-mechanism",
-      "vc:label": "Laplace Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:randomised-response",
-      "vc:label": "Randomised Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:secret-sharing",
-      "vc:label": "Secret Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:computational-complexity-theory",
-      "vc:label": "Computational Complexity Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:formal-privacy-models",
-      "vc:label": "Formal Privacy Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public-Key Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:clinical-trial-data-sharing",
-      "vc:label": "Clinical Trial Data Sharing"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-crime-detection",
-      "vc:label": "Financial Crime Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-statistics",
-      "vc:label": "National Statistics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:healthcare-analytics",
-      "vc:label": "Healthcare Analytics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gradient-compression",
-      "vc:label": "Gradient Compression"
-    },
-    {
-      "@id": "urn:visionflow:linked:oblivious-ram",
-      "vc:label": "Oblivious RAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-noise-injection",
-      "vc:label": "Random Noise Injection"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-aggregation",
-      "vc:label": "Secure Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:data-aggregation",
-      "vc:label": "Data Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:membership-inference-attack",
-      "vc:label": "Membership Inference Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:raw-data-centralisation",
-      "vc:label": "Raw Data Centralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-identification-attack",
-      "vc:label": "Re-identification Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pseudonymisation",
-      "vc:label": "Pseudonymisation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-fairness",
-      "vc:label": "Algorithmic Fairness"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-minimisation",
-      "vc:label": "Data Minimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:explainable-ai",
-      "vc:label": "Explainable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:gdpr-article-89",
-      "vc:label": "GDPR Article 89"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-prio-protocol",
-      "vc:label": "IETF PRIO Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-27701",
-      "vc:label": "ISO/IEC 27701"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-privacy-framework",
-      "vc:label": "NIST Privacy Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-data-privacy-vocabulary",
-      "vc:label": "W3C Data Privacy Vocabulary"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

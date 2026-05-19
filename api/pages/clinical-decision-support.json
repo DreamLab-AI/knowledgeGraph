@@ -3,19 +3,18 @@
   "title": "Clinical Decision Support",
   "slug": "clinical-decision-support",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:clinical-decision-support",
+  "classIri": "urn:ngm:class:clinical-decision-support",
   "domain": "spatial-computing",
-  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care. CDS systems integrate patient data, medical knowledge bases, clinical guidelines, and evidence-based protocols to assist in diagnosis, treatment selection, medication management, and care coordination whilst maintaining clinician autonomy and clinical judgement.",
+  "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:healthcare-analytics",
+      "id": "urn:ngm:class:healthcare-analytics",
       "label": "Healthcare Analytics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

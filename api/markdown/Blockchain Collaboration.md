@@ -140,60 +140,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-collaboration",
+  "@type": "Class",
   "label": "Blockchain Collaboration",
+  "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent recor...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
-      "vc:label": "TELE-002-telecollaboration"
+      "@id": "urn:ngm:class:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b99c880fe68d222707158dc902c9f7c5c38d07931d9f1279bc51b790c8d1dbda"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "ConsensusProtocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:transparent-decision-making",
+        "label": "TransparentDecisionMaking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b99c880fe68d222707158dc902c9f7c5c38d07931d9f1279bc51b790c8d1dbda@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent record-keeping without centralised intermediaries.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "ConsensusProtocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:transparent-decision-making",
-      "vc:label": "TransparentDecisionMaking"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

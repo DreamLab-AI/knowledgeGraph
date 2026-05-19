@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transparent-decision-making",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transparent-decision-making",
+  "@type": "Class",
   "label": "Transparent Decision Making",
+  "definition": "Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:governance",
-      "vc:label": "Governance"
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9a29c54b14a471d9bea485258e4a9fbecdbb3da355508b7e3a5bc6bc8168996e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9a29c54b14a471d9bea485258e4a9fbecdbb3da355508b7e3a5bc6bc8168996e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

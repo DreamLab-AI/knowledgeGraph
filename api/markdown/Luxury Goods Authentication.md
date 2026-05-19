@@ -188,41 +188,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:luxury-goods-authentication",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:luxury-goods-authentication",
+  "@type": "Class",
   "label": "Luxury Goods Authentication",
+  "definition": "Blockchain technology addressing the £400-450 global counterfeit luxury market (of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
+      "@id": "urn:ngm:class:provenance-tracking",
+      "label": "Provenance Tracking"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8f7d8a0fffa354db1b126b33bef024788592b04f0f55d301f9f37c0fd2acf9aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain technology addressing the £400-450 billion global counterfeit luxury market (10% of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated. LVMH's Aura Blockchain Consortium (Prada Group, Cartier, Mercedes-Benz) has registered millions of luxury products, demonstrating that blockchain authentication increases purchase confidence (65-70% of consumers report higher willingness to purchase authenticated products) whilst enabling the rapidly growing £30-35 billion secondary luxury market where 20-30% of goods may be counterfeit, with blockchain-verified products commanding 8-12% premiums over non-certified equivalents.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

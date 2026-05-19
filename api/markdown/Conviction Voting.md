@@ -660,320 +660,235 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:conviction-voting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:conviction-voting",
+  "@type": "Class",
   "label": "Conviction Voting",
+  "definition": "Conviction Voting is a continuous-time, conviction-weighted decentralised governance mechanism — originally formalised by [[Block Science]] researchers Jeff Emmett, Michael Zargham and Jessica Zartler in the 2019 working paper Conviction Voting: A Novel Continuous Decision Making Alternative to G...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:continuous-decision-making",
-      "vc:label": "Continuous Decision-Making"
+      "@id": "urn:ngm:class:continuous-decision-making",
+      "label": "Continuous Decision-Making"
     },
     {
-      "@id": "urn:visionflow:linked:dao-governance-mechanism",
-      "vc:label": "DAO Governance Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-governance",
-      "vc:label": "Token-Weighted Governance"
+      "@id": "urn:ngm:class:dao-governance-mechanism",
+      "label": "DAO Governance Mechanism"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d277a94f19dcef45df4da9822ece13ed73219ee543b4dc8e9e2ad33ac1908e16"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conviction-accumulation-function",
+        "label": "Conviction Accumulation Function"
+      },
+      {
+        "@id": "urn:ngm:class:decay-constant-alpha",
+        "label": "Decay Constant Alpha"
+      },
+      {
+        "@id": "urn:ngm:class:minimum-conviction-threshold",
+        "label": "Minimum Conviction Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-executor",
+        "label": "Proposal Executor"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-stake-ledger",
+        "label": "Proposal Stake Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:spending-limit",
+        "label": "Spending Limit"
+      },
+      {
+        "@id": "urn:ngm:class:trigger-threshold-function",
+        "label": "Trigger Threshold Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:block-indexed-time-reference",
+        "label": "Block-Indexed Time Reference"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-or-off-chain-settlement-layer",
+        "label": "On-Chain or Off-Chain Settlement Layer"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-registry",
+        "label": "Proposal Registry"
+      },
+      {
+        "@id": "urn:ngm:class:stake-registry",
+        "label": "Stake Registry"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-pool",
+        "label": "Treasury Pool"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-public-goods-funding",
+        "label": "Continuous Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:last-minute-attack-resistance",
+        "label": "Last-Minute Attack Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:organic-proposal-prioritisation",
+        "label": "Organic Proposal Prioritisation"
+      },
+      {
+        "@id": "urn:ngm:class:passive-participation-tolerance",
+        "label": "Passive Participation Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:time-weighted-preference-expression",
+        "label": "Time-Weighted Preference Expression"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:continuous-time-preference-aggregation",
+        "label": "Continuous-Time Preference Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-spending-limit",
+        "label": "Dynamic Spending Limit"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-moving-average-aggregation",
+        "label": "Exponential Moving Average Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-stake-decay",
+        "label": "Symmetric Stake Decay"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-triggered-execution",
+        "label": "Threshold-Triggered Execution"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:block-number-as-discrete-time",
+        "label": "Block Number as Discrete Time"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
+      },
+      {
+        "@id": "urn:ngm:class:lazy-conviction-evaluation",
+        "label": "Lazy Conviction Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:solidity-smart-contracts",
+        "label": "Solidity Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:token-stake-locking",
+        "label": "Token Stake Locking"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:1-hive",
+        "label": "1Hive"
+      },
+      {
+        "@id": "urn:ngm:class:aragon",
+        "label": "Aragon"
+      },
+      {
+        "@id": "urn:ngm:class:block-science",
+        "label": "Block Science"
+      },
+      {
+        "@id": "urn:ngm:class:celeste",
+        "label": "Celeste"
+      },
+      {
+        "@id": "urn:ngm:class:commons-stack",
+        "label": "Commons Stack"
+      },
+      {
+        "@id": "urn:ngm:class:gardens-framework",
+        "label": "Gardens Framework"
+      },
+      {
+        "@id": "urn:ngm:class:giveth",
+        "label": "Giveth"
+      },
+      {
+        "@id": "urn:ngm:class:praise",
+        "label": "Praise"
+      },
+      {
+        "@id": "urn:ngm:class:token-engineering-commons",
+        "label": "Token Engineering Commons"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:augmented-bonding-curve-communities",
+        "label": "Augmented Bonding Curve Communities"
+      },
+      {
+        "@id": "urn:ngm:class:common-pool-resource-management",
+        "label": "Common-Pool Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:dao-treasury-operations",
+        "label": "DAO Treasury Operations"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:regenerative-cryptoeconomics",
+        "label": "Regenerative Cryptoeconomics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:1-hive-gardens-specification",
+        "label": "1Hive Gardens Specification"
+      },
+      {
+        "@id": "urn:ngm:class:aragon-conviction-voting-app-abi",
+        "label": "Aragon Conviction Voting App ABI"
+      },
+      {
+        "@id": "urn:ngm:class:cad-cad-reference-model",
+        "label": "cadCAD Reference Model"
+      },
+      {
+        "@id": "urn:ngm:class:commons-stack-abc-spec",
+        "label": "Commons Stack ABC Spec"
+      },
+      {
+        "@id": "urn:ngm:class:emmett-zargham-zartler-2019-paper",
+        "label": "Emmett Zargham Zartler 2019 Paper"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d277a94f19dcef45df4da9822ece13ed73219ee543b4dc8e9e2ad33ac1908e16@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Conviction Voting** is a continuous-time, conviction-weighted decentralised governance mechanism — originally formalised by [[Block Science]] researchers Jeff Emmett, Michael Zargham and Jessica Zartler in the 2019 working paper *Conviction Voting: A Novel Continuous Decision Making Alternative to Governance* and first deployed in production by the [[1Hive]] collective on [[xDai]] (later renamed [[Gnosis Chain]]) — in which token holders express preference *intensity* by staking governance tokens on competing proposals, with each proposal accumulating \"conviction\" as a continuous-time exponential moving average of the form **y(t+1) = α·y(t) + x(t)** where α ∈ (0,1) is the decay constant (typically 0.9-0.9999 depending on block time and community velocity) and x(t) is the instantaneous stake supporting the proposal at time t, such that a proposal passes and is automatically executed once accumulated conviction exceeds a dynamic trigger threshold **f(R, S, ρ)** parameterised by R (requested funds), S (total funding pool) and ρ (conviction ratio / spending limit fraction), producing an *asymptotic* maximum conviction of x/(1-α) under sustained support and *symmetric* exponential dec",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conviction-accumulation-function",
-      "vc:label": "Conviction Accumulation Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:decay-constant-alpha",
-      "vc:label": "Decay Constant Alpha"
-    },
-    {
-      "@id": "urn:visionflow:linked:minimum-conviction-threshold",
-      "vc:label": "Minimum Conviction Threshold"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-executor",
-      "vc:label": "Proposal Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-stake-ledger",
-      "vc:label": "Proposal Stake Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:spending-limit",
-      "vc:label": "Spending Limit"
-    },
-    {
-      "@id": "urn:visionflow:linked:trigger-threshold-function",
-      "vc:label": "Trigger Threshold Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:block-indexed-time-reference",
-      "vc:label": "Block-Indexed Time Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-chain-or-off-chain-settlement-layer",
-      "vc:label": "On-Chain or Off-Chain Settlement Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:proposal-registry",
-      "vc:label": "Proposal Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:stake-registry",
-      "vc:label": "Stake Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:treasury-pool",
-      "vc:label": "Treasury Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:continuous-public-goods-funding",
-      "vc:label": "Continuous Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:last-minute-attack-resistance",
-      "vc:label": "Last-Minute Attack Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:organic-proposal-prioritisation",
-      "vc:label": "Organic Proposal Prioritisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:passive-participation-tolerance",
-      "vc:label": "Passive Participation Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-weighted-preference-expression",
-      "vc:label": "Time-Weighted Preference Expression"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:continuous-time-preference-aggregation",
-      "vc:label": "Continuous-Time Preference Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-spending-limit",
-      "vc:label": "Dynamic Spending Limit"
-    },
-    {
-      "@id": "urn:visionflow:linked:exponential-moving-average-aggregation",
-      "vc:label": "Exponential Moving Average Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:symmetric-stake-decay",
-      "vc:label": "Symmetric Stake Decay"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-triggered-execution",
-      "vc:label": "Threshold-Triggered Execution"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:block-science-theory",
-      "vc:label": "Block Science Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:cad-cad-simulation",
-      "vc:label": "cadCAD Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-time-dynamical-systems",
-      "vc:label": "Continuous-Time Dynamical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-engineering",
-      "vc:label": "Token Engineering"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:augmented-bonding-curve-communities",
-      "vc:label": "Augmented Bonding Curve Communities"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-pool-resource-management",
-      "vc:label": "Common-Pool Resource Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:dao-treasury-operations",
-      "vc:label": "DAO Treasury Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-goods-funding",
-      "vc:label": "Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:regenerative-cryptoeconomics",
-      "vc:label": "Regenerative Cryptoeconomics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:block-number-as-discrete-time",
-      "vc:label": "Block Number as Discrete Time"
-    },
-    {
-      "@id": "urn:visionflow:linked:exponential-moving-average",
-      "vc:label": "Exponential Moving Average"
-    },
-    {
-      "@id": "urn:visionflow:linked:lazy-conviction-evaluation",
-      "vc:label": "Lazy Conviction Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity-smart-contracts",
-      "vc:label": "Solidity Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-stake-locking",
-      "vc:label": "Token Stake Locking"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:compound-governor-bravo",
-      "vc:label": "Compound Governor Bravo"
-    },
-    {
-      "@id": "urn:visionflow:linked:futarchy",
-      "vc:label": "Futarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimism-retro-pgf",
-      "vc:label": "Optimism RetroPGF"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkadot-open-gov",
-      "vc:label": "Polkadot OpenGov"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-off-chain-voting",
-      "vc:label": "Snapshot Off-Chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:tally-on-chain-governance",
-      "vc:label": "Tally On-Chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:1-hive",
-      "vc:label": "1Hive"
-    },
-    {
-      "@id": "urn:visionflow:linked:aragon",
-      "vc:label": "Aragon"
-    },
-    {
-      "@id": "urn:visionflow:linked:block-science",
-      "vc:label": "Block Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:celeste",
-      "vc:label": "Celeste"
-    },
-    {
-      "@id": "urn:visionflow:linked:commons-stack",
-      "vc:label": "Commons Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:gardens-framework",
-      "vc:label": "Gardens Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:giveth",
-      "vc:label": "Giveth"
-    },
-    {
-      "@id": "urn:visionflow:linked:praise",
-      "vc:label": "Praise"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-engineering-commons",
-      "vc:label": "Token Engineering Commons"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:1-hive-gardens-specification",
-      "vc:label": "1Hive Gardens Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:aragon-conviction-voting-app-abi",
-      "vc:label": "Aragon Conviction Voting App ABI"
-    },
-    {
-      "@id": "urn:visionflow:linked:cad-cad-reference-model",
-      "vc:label": "cadCAD Reference Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:commons-stack-abc-spec",
-      "vc:label": "Commons Stack ABC Spec"
-    },
-    {
-      "@id": "urn:visionflow:linked:emmett-zargham-zartler-2019-paper",
-      "vc:label": "Emmett Zargham Zartler 2019 Paper"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:public-goods-funding",
-      "vc:label": "Public Goods Funding"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-engineering",
-      "vc:label": "Token Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

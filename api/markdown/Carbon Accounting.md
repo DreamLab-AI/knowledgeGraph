@@ -160,76 +160,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-accounting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-accounting",
+  "@type": "Class",
   "label": "Carbon Accounting",
+  "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-accounting",
-      "vc:label": "Environmental Accounting"
+      "@id": "urn:ngm:class:environmental-accounting",
+      "label": "Environmental Accounting"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5aba8cc2ca3b9d23b361b3fb3376fc94067c3ce7d34305b0f963d9a71d189a95"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factors"
+      },
+      {
+        "@id": "urn:ngm:class:verification-process",
+        "label": "Verification Process"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:climate-action-planning",
+        "label": "Climate Action Planning"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-reporting",
+        "label": "Emissions Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5aba8cc2ca3b9d23b361b3fb3376fc94067c3ce7d34305b0f963d9a71d189a95@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-collection",
-      "vc:label": "Data Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:emission-factors",
-      "vc:label": "Emission Factors"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-process",
-      "vc:label": "Verification Process"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:climate-action-planning",
-      "vc:label": "Climate Action Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:emissions-reporting",
-      "vc:label": "Emissions Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

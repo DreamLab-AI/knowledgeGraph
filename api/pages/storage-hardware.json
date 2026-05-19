@@ -3,19 +3,18 @@
   "title": "Storage Hardware",
   "slug": "storage-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:storage-hardware",
+  "classIri": "urn:ngm:class:storage-hardware",
   "domain": "spatial-computing",
   "definition": "A storage hardware component in the Metaverse domain that required by DataStorageLayer.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hardware-component",
+      "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

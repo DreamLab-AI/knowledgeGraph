@@ -3,53 +3,57 @@
   "title": "Automated Market Making",
   "slug": "automated-market-making",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:automated-market-making",
+  "classIri": "urn:ngm:class:automated-market-making",
   "domain": "spatial-computing",
-  "definition": "Automated Market Making is the practice and methodology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation strategies.",
+  "definition": "Automated Market Making is the practice and modology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation stra...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:de-fi-operations",
+      "id": "urn:ngm:class:de-fi-operations",
       "label": "DeFi Operations"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:price-oracle-integration",
+        "id": "urn:ngm:class:price-oracle-integration",
         "label": "Price Oracle Integration"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-deployment",
+        "id": "urn:ngm:class:smart-contract-deployment",
         "label": "Smart Contract Deployment"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-provision",
+        "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralized-trading",
+        "id": "urn:ngm:class:decentralized-trading",
         "label": "Decentralized Trading"
       },
       {
-        "id": "urn:visionflow:linked:liquidity-mining",
+        "id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
       },
       {
-        "id": "urn:visionflow:linked:token-accessibility",
+        "id": "urn:ngm:class:token-accessibility",
         "label": "Token Accessibility"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

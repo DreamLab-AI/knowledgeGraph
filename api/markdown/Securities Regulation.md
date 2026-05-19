@@ -468,444 +468,343 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:securities-regulation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:securities-regulation",
+  "@type": "Class",
   "label": "Securities Regulation",
+  "definition": "The legal and regulatory frameworks determining wher digital assets — cryptocurrency tokens, stablecoins, security tokens, DeFi protocol interests, NFTs, and AI-generated financial instruments — qualify as securities requiring registration, disclosure, and ongoing compliance obligations across mu...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:capital-markets-regulation",
-      "vc:label": "Capital Markets Regulation"
+      "@id": "urn:ngm:class:capital-markets-regulation",
+      "label": "Capital Markets Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:digital-asset-law",
-      "vc:label": "Digital Asset Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:investment-law",
-      "vc:label": "Investment Law"
+      "@id": "urn:ngm:class:digital-asset-law",
+      "label": "Digital Asset Law"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9a43b5300dd8ba2ab6012531fe706ed6217dd1c6966ad6eeece92673ba4406ab"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:broker-dealer-registration",
+        "label": "Broker-Dealer Registration"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-obligations",
+        "label": "Disclosure Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:exemption-framework",
+        "label": "Exemption Framework"
+      },
+      {
+        "@id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "@id": "urn:ngm:class:investment-adviser-act",
+        "label": "Investment Adviser Act"
+      },
+      {
+        "@id": "urn:ngm:class:periodic-reporting-obligations",
+        "label": "Periodic Reporting Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:registration-requirements",
+        "label": "Registration Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:securities-exchange-act",
+        "label": "Securities Exchange Act"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-agent-requirements",
+        "label": "Transfer Agent Requirements"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accredited-investor-verification",
+        "label": "Accredited Investor Verification"
+      },
+      {
+        "@id": "urn:ngm:class:investor-disclosure",
+        "label": "Investor Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:legal-classification-system",
+        "label": "Legal Classification System"
+      },
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "@id": "urn:ngm:class:securities-counsel-opinion",
+        "label": "Securities Counsel Opinion"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody-innovation",
+        "label": "Digital Asset Custody Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-crypto-adoption",
+        "label": "Institutional Crypto Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:spot-ethereum-etf",
+        "label": "Spot Ethereum ETF"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-securities-market",
+        "label": "Tokenised Securities Market"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:alternative-trading-system",
+        "label": "Alternative Trading System"
+      },
+      {
+        "@id": "urn:ngm:class:dlt-pilot-regime",
+        "label": "DLT Pilot Regime"
+      },
+      {
+        "@id": "urn:ngm:class:fca-consumer-duty",
+        "label": "FCA Consumer Duty"
+      },
+      {
+        "@id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "@id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "@id": "urn:ngm:class:iosco-recommendations",
+        "label": "IOSCO Recommendations"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca",
+        "label": "MiCA"
+      },
+      {
+        "@id": "urn:ngm:class:regulation-a-plus",
+        "label": "Regulation A Plus"
+      },
+      {
+        "@id": "urn:ngm:class:regulation-crowdfunding",
+        "label": "Regulation Crowdfunding"
+      },
+      {
+        "@id": "urn:ngm:class:regulation-d",
+        "label": "Regulation D"
+      },
+      {
+        "@id": "urn:ngm:class:regulation-s",
+        "label": "Regulation S"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:decentralisation-analysis",
+        "label": "Decentralisation Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:economic-substance-test",
+        "label": "Economic Substance Test"
+      },
+      {
+        "@id": "urn:ngm:class:functional-equivalence-principle",
+        "label": "Functional Equivalence Principle"
+      },
+      {
+        "@id": "urn:ngm:class:investment-contract-analysis",
+        "label": "Investment Contract Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-decentralisation-framework",
+        "label": "Progressive Decentralisation Framework"
+      },
+      {
+        "@id": "urn:ngm:class:proportionality-principle",
+        "label": "Proportionality Principle"
+      },
+      {
+        "@id": "urn:ngm:class:same-activity-same-risk-principle",
+        "label": "Same Activity Same Risk Principle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real World Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      },
+      {
+        "@id": "urn:ngm:class:spot-ethereum-etf",
+        "label": "Spot Ethereum ETF"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "@id": "urn:ngm:class:cpmi",
+        "label": "CPMI"
+      },
+      {
+        "@id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "@id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "@id": "urn:ngm:class:g20-financial-regulation",
+        "label": "G20 Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:sec",
+        "label": "SEC"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9a43b5300dd8ba2ab6012531fe706ed6217dd1c6966ad6eeece92673ba4406ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The legal and regulatory frameworks determining whether digital assets — cryptocurrency tokens, stablecoins, security tokens, DeFi protocol interests, NFTs, and AI-generated financial instruments — qualify as securities requiring registration, disclosure, and ongoing compliance obligations across multiple overlapping jurisdictions, anchored by the United States Howey Test (SEC v. W.J. Howey Co. 328 U.S. 293 (1946)) requiring: (1) investment of money, (2) in a common enterprise, (3) with reasonable expectation of profits, (4) derived from the efforts of others; operationalised through the SEC's April 2019 FinHub Framework for Investment Contract Analysis evaluating active participant reliance, network decentralisation sufficiency, purchaser profit expectations, and token utility at time of sale; resolved in landmark enforcement via SEC v. Ripple Labs (Judge Torres July 2023: institutional XRP sales are securities; programmatic exchange sales are not; $125M settlement August 2025); SEC v. Coinbase (2023 charges, evolving under Paul Atkins as SEC Chair from March 2025 on a crypto-industry-friendly mandate); SEC v. Binance ($4.3B DOJ criminal penalty November 2023; Changpeng Zhao guilt",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:broker-dealer-registration",
-      "vc:label": "Broker-Dealer Registration"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosure-obligations",
-      "vc:label": "Disclosure Obligations"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-mechanism",
-      "vc:label": "Enforcement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:exemption-framework",
-      "vc:label": "Exemption Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:howey-test",
-      "vc:label": "Howey Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:investment-adviser-act",
-      "vc:label": "Investment Adviser Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:periodic-reporting-obligations",
-      "vc:label": "Periodic Reporting Obligations"
-    },
-    {
-      "@id": "urn:visionflow:linked:registration-requirements",
-      "vc:label": "Registration Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-exchange-act",
-      "vc:label": "Securities Exchange Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-agent-requirements",
-      "vc:label": "Transfer Agent Requirements"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:accredited-investor-verification",
-      "vc:label": "Accredited Investor Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:investor-disclosure",
-      "vc:label": "Investor Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-classification-system",
-      "vc:label": "Legal Classification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-surveillance",
-      "vc:label": "Market Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-authority",
-      "vc:label": "Regulatory Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-counsel-opinion",
-      "vc:label": "Securities Counsel Opinion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:travel-rule",
-      "vc:label": "Travel Rule"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:capital-formation",
-      "vc:label": "Capital Formation"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-asset-custody-innovation",
-      "vc:label": "Digital Asset Custody Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-crypto-adoption",
-      "vc:label": "Institutional Crypto Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:investor-protection",
-      "vc:label": "Investor Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-integrity",
-      "vc:label": "Market Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
-      "vc:label": "Spot Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-ethereum-etf",
-      "vc:label": "Spot Ethereum ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-securities-market",
-      "vc:label": "Tokenised Securities Market"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-token-offering",
-      "vc:label": "Security Token Offering"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:alternative-trading-system",
-      "vc:label": "Alternative Trading System"
-    },
-    {
-      "@id": "urn:visionflow:linked:dlt-pilot-regime",
-      "vc:label": "DLT Pilot Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca-consumer-duty",
-      "vc:label": "FCA Consumer Duty"
-    },
-    {
-      "@id": "urn:visionflow:linked:genius-act",
-      "vc:label": "GENIUS Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:howey-test",
-      "vc:label": "Howey Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco-recommendations",
-      "vc:label": "IOSCO Recommendations"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca",
-      "vc:label": "MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation-a-plus",
-      "vc:label": "Regulation A Plus"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation-crowdfunding",
-      "vc:label": "Regulation Crowdfunding"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation-d",
-      "vc:label": "Regulation D"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation-s",
-      "vc:label": "Regulation S"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bank-secrecy-act",
-      "vc:label": "Bank Secrecy Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:cftc",
-      "vc:label": "CFTC"
-    },
-    {
-      "@id": "urn:visionflow:linked:esma",
-      "vc:label": "ESMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-recommendations",
-      "vc:label": "FATF Recommendations"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-services-and-markets-act",
-      "vc:label": "Financial Services and Markets Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:finma",
-      "vc:label": "FINMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:markets-in-financial-instruments-directive",
-      "vc:label": "Markets in Financial Instruments Directive"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca",
-      "vc:label": "MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec",
-      "vc:label": "SEC"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-asset-tokenisation",
-      "vc:label": "Real World Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
-      "vc:label": "Spot Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-ethereum-etf",
-      "vc:label": "Spot Ethereum ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-securities",
-      "vc:label": "Tokenised Securities"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdc-frameworks",
-      "vc:label": "CBDC Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-token-offering",
-      "vc:label": "Security Token Offering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin-regulation",
-      "vc:label": "Stablecoin Regulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:decentralisation-analysis",
-      "vc:label": "Decentralisation Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-substance-test",
-      "vc:label": "Economic Substance Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:functional-equivalence-principle",
-      "vc:label": "Functional Equivalence Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:investment-contract-analysis",
-      "vc:label": "Investment Contract Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:progressive-decentralisation-framework",
-      "vc:label": "Progressive Decentralisation Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:proportionality-principle",
-      "vc:label": "Proportionality Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:same-activity-same-risk-principle",
-      "vc:label": "Same Activity Same Risk Principle"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:banking-regulation",
-      "vc:label": "Banking Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:commodity-regulation",
-      "vc:label": "Commodity Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-law-frameworks",
-      "vc:label": "Contract Law Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-regulation",
-      "vc:label": "Insurance Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-services-regulation",
-      "vc:label": "Payment Services Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-law-frameworks",
-      "vc:label": "Property Law Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:utility-token-framework",
-      "vc:label": "Utility Token Framework"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-asset-custody",
-      "vc:label": "Digital Asset Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:initial-coin-offering",
-      "vc:label": "Initial Coin Offering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-interoperability",
-      "vc:label": "Blockchain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin-regulation",
-      "vc:label": "Stablecoin Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:travel-rule",
-      "vc:label": "Travel Rule"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:basel-committee-on-banking-supervision",
-      "vc:label": "Basel Committee on Banking Supervision"
-    },
-    {
-      "@id": "urn:visionflow:linked:bis",
-      "vc:label": "BIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:cpmi",
-      "vc:label": "CPMI"
-    },
-    {
-      "@id": "urn:visionflow:linked:esma",
-      "vc:label": "ESMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf",
-      "vc:label": "FATF"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsb",
-      "vc:label": "FSB"
-    },
-    {
-      "@id": "urn:visionflow:linked:g20-financial-regulation",
-      "vc:label": "G20 Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco",
-      "vc:label": "IOSCO"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec",
-      "vc:label": "SEC"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

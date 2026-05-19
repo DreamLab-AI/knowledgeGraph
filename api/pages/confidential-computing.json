@@ -3,19 +3,18 @@
   "title": "Confidential Computing",
   "slug": "confidential-computing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:confidential-computing",
+  "classIri": "urn:ngm:class:confidential-computing",
   "domain": "artificial-intelligence",
-  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, operating systems, hypervisors, and cloud providers. This approach addresses the three states of data protection by extending encryption beyond data at rest (storage encryption) and data in transit (TLS/network encryption) to data in use (memory encryption during active computation), implementing secure enclaves that are isolated memory regions with hardware-enforced access controls preventing external observation or modification even by ring-0 privileged code. Hardware technologies enabling confidential computing include Intel SGX (Software Guard Extensions) providing application-level enclaves with encrypted memory up to 256MB protected from OS and hypervisor inspection, AMD SEV (Secure Encrypted Virtualization) offering VM-level protection encrypting entire virtual machine memory with VM-specific keys inaccessible to hypervisor, ARM TrustZone partitioning processor into secure and normal w",
+  "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, op...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -448,378 +448,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blender",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blender",
+  "@type": "Class",
   "label": "Blender",
+  "definition": "Blender is a free, open-source, cross-platform 3D computer graphics software suite developed by the Blender Foundation (Amsterdam) and maintained by a global community of thousands of contributors, providing a fully integrated production pipeline covering 3D polygonal modelling, digital sculpting...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:3-d-and-4-d",
-      "vc:label": "3D and 4D"
+      "@id": "urn:ngm:class:3-d-and-4-d",
+      "label": "3D and 4D"
     },
     {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creative-software",
-      "vc:label": "Creative Software"
+      "@id": "urn:ngm:class:rendering-engine",
+      "label": "Rendering Engine"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:264adfd862ed5affdc6614c4695b8770fd856637b7f1132afd9e60e5e446383a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compositor",
+        "label": "Compositor"
+      },
+      {
+        "@id": "urn:ngm:class:cycles-renderer",
+        "label": "Cycles Renderer"
+      },
+      {
+        "@id": "urn:ngm:class:eevee-renderer",
+        "label": "EEVEE Renderer"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-nodes",
+        "label": "Geometry Nodes"
+      },
+      {
+        "@id": "urn:ngm:class:grease-pencil",
+        "label": "Grease Pencil"
+      },
+      {
+        "@id": "urn:ngm:class:non-linear-animation-editor",
+        "label": "Non-Linear Animation Editor"
+      },
+      {
+        "@id": "urn:ngm:class:python-scripting-api",
+        "label": "Python Scripting API"
+      },
+      {
+        "@id": "urn:ngm:class:sculpt-mode",
+        "label": "Sculpt Mode"
+      },
+      {
+        "@id": "urn:ngm:class:shader-editor",
+        "label": "Shader Editor"
+      },
+      {
+        "@id": "urn:ngm:class:video-sequence-editor",
+        "label": "Video Sequence Editor"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:open-color-io",
+        "label": "OpenColorIO"
+      },
+      {
+        "@id": "urn:ngm:class:open-gl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:open-image-io",
+        "label": "OpenImageIO"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:usd-pipeline",
+        "label": "USD Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:ai-texture-generation",
+        "label": "AI Texture Generation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-graphics",
+        "label": "Motion Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-dataset-generation",
+        "label": "Synthetic Dataset Generation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:usd-import-export",
+        "label": "USD Import Export"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:particle-system",
+        "label": "Particle System"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:glsl-shaders",
+        "label": "GLSL Shaders"
+      },
+      {
+        "@id": "urn:ngm:class:hdri-lighting",
+        "label": "HDRI Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:intel-open-image-denoise",
+        "label": "Intel Open Image Denoise"
+      },
+      {
+        "@id": "urn:ngm:class:manta-flow",
+        "label": "MantaFlow"
+      },
+      {
+        "@id": "urn:ngm:class:opti-x-denoising",
+        "label": "OptiX Denoising"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:godot",
+        "label": "Godot"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:broadcast-previsualisation",
+        "label": "Broadcast Previsualisation"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-pipeline",
+        "label": "Game Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:medical-visualisation",
+        "label": "Medical Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:open-movie-production",
+        "label": "Open Movie Production"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-simulation",
+        "label": "Robotics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:alliance-for-open-usd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:blender-foundation",
+        "label": "Blender Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:vfx-reference-platform",
+        "label": "VFX Reference Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:264adfd862ed5affdc6614c4695b8770fd856637b7f1132afd9e60e5e446383a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blender is a free, open-source, cross-platform 3D computer graphics software suite developed by the Blender Foundation (Amsterdam) and maintained by a global community of thousands of contributors, providing a fully integrated production pipeline covering 3D polygonal modelling, digital sculpting, armature-based skeletal rigging, keyframe and physics-driven animation, multi-physics simulation (rigid body via Bullet, cloth, FLIP fluid via MantaFlow, smoke/fire via OpenVDB volumes, soft body, ocean modifiers), non-destructive procedural modelling and scene generation via Geometry Nodes, hybrid 2D/3D animation and storyboarding via the Grease Pencil subsystem, physically based rendering through two production-quality engines (Cycles unidirectional path tracer and EEVEE Next rasteriser with screen-space ray tracing), node-based compositing, camera and object motion tracking, a timeline-based Video Sequence Editor (VSE), and a comprehensive Python scripting API (`bpy`) that exposes the full data model and operator system to programmatic manipulation — constituting the most widely deployed open-source DCC (Digital Content Creation) application in the world with approximately 30 million d",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compositor",
-      "vc:label": "Compositor"
-    },
-    {
-      "@id": "urn:visionflow:linked:cycles-renderer",
-      "vc:label": "Cycles Renderer"
-    },
-    {
-      "@id": "urn:visionflow:linked:eevee-renderer",
-      "vc:label": "EEVEE Renderer"
-    },
-    {
-      "@id": "urn:visionflow:linked:geometry-nodes",
-      "vc:label": "Geometry Nodes"
-    },
-    {
-      "@id": "urn:visionflow:linked:grease-pencil",
-      "vc:label": "Grease Pencil"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-linear-animation-editor",
-      "vc:label": "Non-Linear Animation Editor"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-scripting-api",
-      "vc:label": "Python Scripting API"
-    },
-    {
-      "@id": "urn:visionflow:linked:sculpt-mode",
-      "vc:label": "Sculpt Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-editor",
-      "vc:label": "Shader Editor"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-sequence-editor",
-      "vc:label": "Video Sequence Editor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-acceleration",
-      "vc:label": "GPU Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-color-io",
-      "vc:label": "OpenColorIO"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-gl",
-      "vc:label": "OpenGL"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-image-io",
-      "vc:label": "OpenImageIO"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-pipeline",
-      "vc:label": "USD Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-modelling",
-      "vc:label": "3D Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-texture-generation",
-      "vc:label": "AI Texture Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:character-animation",
-      "vc:label": "Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-graphics",
-      "vc:label": "Motion Graphics"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-visualisation",
-      "vc:label": "Scientific Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-dataset-generation",
-      "vc:label": "Synthetic Dataset Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-generation",
-      "vc:label": "Procedural Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:visual-effects",
-      "vc:label": "Visual Effects"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:path-tracing",
-      "vc:label": "Path Tracing"
-    },
-    {
-      "@id": "urn:visionflow:linked:rasterisation",
-      "vc:label": "Rasterisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-import-export",
-      "vc:label": "USD Import Export"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fluid-simulation",
-      "vc:label": "Fluid Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:particle-system",
-      "vc:label": "Particle System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physically-based-rendering",
-      "vc:label": "Physically Based Rendering"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:alembic",
-      "vc:label": "Alembic"
-    },
-    {
-      "@id": "urn:visionflow:linked:bullet-physics",
-      "vc:label": "Bullet Physics"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-color-io",
-      "vc:label": "OpenColorIO"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-image-io",
-      "vc:label": "OpenImageIO"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-subdiv",
-      "vc:label": "OpenSubdiv"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-usd",
-      "vc:label": "OpenUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-vdb",
-      "vc:label": "OpenVDB"
-    },
-    {
-      "@id": "urn:visionflow:linked:vfx-reference-platform",
-      "vc:label": "VFX Reference Platform"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:broadcast-previsualisation",
-      "vc:label": "Broadcast Previsualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-asset-pipeline",
-      "vc:label": "Game Asset Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-visualisation",
-      "vc:label": "Medical Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-movie-production",
-      "vc:label": "Open Movie Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-simulation",
-      "vc:label": "Robotics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:glsl-shaders",
-      "vc:label": "GLSL Shaders"
-    },
-    {
-      "@id": "urn:visionflow:linked:hdri-lighting",
-      "vc:label": "HDRI Lighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:intel-open-image-denoise",
-      "vc:label": "Intel Open Image Denoise"
-    },
-    {
-      "@id": "urn:visionflow:linked:manta-flow",
-      "vc:label": "MantaFlow"
-    },
-    {
-      "@id": "urn:visionflow:linked:opti-x-denoising",
-      "vc:label": "OptiX Denoising"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:3ds-max",
-      "vc:label": "3ds Max"
-    },
-    {
-      "@id": "urn:visionflow:linked:cinema-4-d",
-      "vc:label": "Cinema 4D"
-    },
-    {
-      "@id": "urn:visionflow:linked:houdini",
-      "vc:label": "Houdini"
-    },
-    {
-      "@id": "urn:visionflow:linked:maya",
-      "vc:label": "Maya"
-    },
-    {
-      "@id": "urn:visionflow:linked:modo",
-      "vc:label": "Modo"
-    },
-    {
-      "@id": "urn:visionflow:linked:zbrush",
-      "vc:label": "ZBrush"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:godot",
-      "vc:label": "Godot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unreal-engine",
-      "vc:label": "Unreal Engine"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:alliance-for-open-usd",
-      "vc:label": "Alliance for OpenUSD"
-    },
-    {
-      "@id": "urn:visionflow:linked:blender-foundation",
-      "vc:label": "Blender Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-group",
-      "vc:label": "Khronos Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:vfx-reference-platform",
-      "vc:label": "VFX Reference Platform"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

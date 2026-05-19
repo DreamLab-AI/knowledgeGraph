@@ -3,32 +3,36 @@
   "title": "Learning Analytics",
   "slug": "learning-analytics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:learning-analytics",
+  "classIri": "urn:ngm:class:learning-analytics",
   "domain": "spatial-computing",
   "definition": "The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-technology",
+      "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-learning",
+        "id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

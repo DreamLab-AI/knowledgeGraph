@@ -120,42 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:search-algorithm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:search-algorithm",
+  "@type": "Class",
   "label": "Search Algorithm",
-  "subClassOf": [
+  "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search).",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  },
+  "sameAs": [
     {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
+      "@id": "urn:ngm:class:search-algorithms",
+      "label": "Search Algorithms"
     }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5c9e1c11dec34e3576214bdbb0e50cb0bb51b916601b004893c4adad29b9c790"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5c9e1c11dec34e3576214bdbb0e50cb0bb51b916601b004893c4adad29b9c790@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  ]
 }
 ```
 

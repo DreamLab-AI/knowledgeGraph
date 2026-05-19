@@ -3,74 +3,87 @@
   "title": "Generative Design Tool",
   "slug": "generative-design-tool",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:generative-design-tool",
+  "classIri": "urn:ngm:class:generative-design-tool",
   "domain": "artificial-intelligence",
   "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-generator",
+        "id": "urn:ngm:class:3-d-generator",
         "label": "3D Generator"
       },
       {
-        "id": "urn:visionflow:linked:ai-model",
+        "id": "urn:ngm:class:ai-model",
         "label": "AI Model"
       },
       {
-        "id": "urn:visionflow:linked:constraint-solver",
+        "id": "urn:ngm:class:constraint-solver",
         "label": "Constraint Solver"
       },
       {
-        "id": "urn:visionflow:linked:design-optimizer",
+        "id": "urn:ngm:class:design-optimizer",
         "label": "Design Optimizer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:design-database",
+        "id": "urn:ngm:class:design-database",
         "label": "Design Database"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-design",
+        "id": "urn:ngm:class:automated-design",
         "label": "Automated Design"
       },
       {
-        "id": "urn:visionflow:linked:design-optimization",
+        "id": "urn:ngm:class:design-optimization",
         "label": "Design Optimization"
       },
       {
-        "id": "urn:visionflow:owl:class:constraint-based-design",
+        "id": "urn:ngm:class:constraint-based-design",
         "label": "Constraint-Based Design"
       },
       {
-        "id": "urn:visionflow:owl:class:parametric-modeling",
+        "id": "urn:ngm:class:parametric-modeling",
         "label": "Parametric Modeling"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-creation-tool",
+        "label": "Content Creation Tool"
+      },
+      {
+        "id": "urn:ngm:class:authoring-tool",
+        "label": "Authoring Tool"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

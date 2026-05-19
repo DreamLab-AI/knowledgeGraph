@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-inference-at-edge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-inference-at-edge",
+  "@type": "Class",
   "label": "Real-Time Inference at Edge",
+  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b8ffab85b78a1cb8054c7df812f808afa3165369de49eabc346ee69c4c053014"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b8ffab85b78a1cb8054c7df812f808afa3165369de49eabc346ee69c4c053014@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Real-Time Inference at Edge delivers deterministic machine learning predictions with strict latency deadlines on edge devices, enabling safety-critical autonomous systems and time-sensitive intelligent applications. Real-time inference guarantees P99 latency below 10-100ms depending on application requirements, supporting 60+ frames-per-second video processing for autonomous vehicle perception or sub-millisecond control loops for robotic systems. The architecture implements hard real-time constraints with priority scheduling, ensuring critical inference tasks always meet timing deadlines regardless of system load or competing workloads. Hardware acceleration through NPUs (Neural Processing Units), FPGAs, or specialized ASICs (Application-Specific Integrated Circuits) enables real-time performance by offloading computation from energy-hungry CPUs. Real-time systems employ overlapping computation and I/O through techniques like CUDA streams, pipelined inference, and speculative execution to maximize throughput while meeting latency bounds. The challenge extends beyond single-inference latency to end-to-end system latency: sensor acquisition, preprocessing, model inference, postproces",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

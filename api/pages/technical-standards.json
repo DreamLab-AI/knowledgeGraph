@@ -3,19 +3,18 @@
   "title": "Technical Standards",
   "slug": "technical-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:technical-standards",
+  "classIri": "urn:ngm:class:technical-standards",
   "domain": "spatial-computing",
   "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

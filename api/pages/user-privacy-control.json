@@ -3,19 +3,18 @@
   "title": "User Privacy Control",
   "slug": "user-privacy-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-privacy-control",
+  "classIri": "urn:ngm:class:user-privacy-control",
   "domain": "artificial-intelligence",
   "definition": "A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-mechanism",
+      "id": "urn:ngm:class:privacy-mechanism",
       "label": "Privacy Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

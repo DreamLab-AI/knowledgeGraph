@@ -232,132 +232,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-filter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-filter",
+  "@type": "Class",
   "label": "Privacy Filter",
+  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and le...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:security-layer",
-      "vc:label": "Security Layer"
+      "@id": "urn:ngm:class:security-layer",
+      "label": "Security Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ceffb0b23fae2badbd2c6c03cfd7a893d8551b267c85e428a2c9f8734f1bb3b5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      },
+      {
+        "@id": "urn:ngm:class:pii-detection",
+        "label": "PII Detection"
+      },
+      {
+        "@id": "urn:ngm:class:redaction-engine",
+        "label": "Redaction Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:classification-rules",
+        "label": "Classification Rules"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-optional",
+        "label": "Machine Learning (optional)"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:regular-expressions",
+        "label": "Regular Expressions"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance-with-ccpa",
+        "label": "Compliance with CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-with-gdpr",
+        "label": "Compliance with GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preservation",
+        "label": "Privacy Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:data-anonymisation",
+        "label": "Data Anonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-emission",
+        "label": "Privacy-Preserving Data Emission"
+      },
+      {
+        "@id": "urn:ngm:class:redaction-policies",
+        "label": "Redaction Policies"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ceffb0b23fae2badbd2c6c03cfd7a893d8551b267c85e428a2c9f8734f1bb3b5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and leaving a tamper-evident audit trail of redactions.",
-  "vc:qualityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:pattern-matching",
-      "vc:label": "Pattern Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:pii-detection",
-      "vc:label": "PII Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:redaction-engine",
-      "vc:label": "Redaction Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:classification-rules",
-      "vc:label": "Classification Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:machine-learning-optional",
-      "vc:label": "Machine Learning (optional)"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy",
-      "vc:label": "Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:regular-expressions",
-      "vc:label": "Regular Expressions"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance-with-ccpa",
-      "vc:label": "Compliance with CCPA"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-with-gdpr",
-      "vc:label": "Compliance with GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preservation",
-      "vc:label": "Privacy Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:selective-disclosure",
-      "vc:label": "Selective Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-minimisation",
-      "vc:label": "Data Minimisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:data-anonymisation",
-      "vc:label": "Data Anonymisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-data-emission",
-      "vc:label": "Privacy-Preserving Data Emission"
-    },
-    {
-      "@id": "urn:visionflow:linked:redaction-policies",
-      "vc:label": "Redaction Policies"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:gdpr-regulation",
-      "vc:label": "GDPR Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    }
-  ]
+  "quality": 0.87,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

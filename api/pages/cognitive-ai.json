@@ -3,151 +3,243 @@
   "title": "Cognitive AI",
   "slug": "cognitive-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cognitive-ai",
+  "classIri": "urn:ngm:class:cognitive-ai",
   "domain": "artificial-intelligence",
-  "definition": "Cognitive AI is the family of artificial-intelligence systems built around cognitively-plausible architectures that explicitly model the components and information-flow of human cognition \u2014 working memory, declarative and procedural long-term memory, perception-action loops, attention, production-rule firing, chunking, goal stacks, metacognitive control \u2014 rather than treating intelligence as an undifferentiated statistical mapping from inputs to outputs, instantiating in classical Unified Theories of Cognition (Newell 1990) realised through symbolic cognitive architectures SOAR (Soar Technology Inc / University of Michigan, originated Carnegie Mellon 1983, ~280 publications, fielded in TacAir-Soar piloting 100+ simulated fighter aircraft in DARPA STOW-97 exercise) and ACT-R (Carnegie Mellon, John Anderson 1993-present, 1,200+ derivative models, ~7,500 citations on ACT-R 5.0 paper), hybrid neuro-symbolic architectures CLARION (Ron Sun, RPI, dual-process implicit/explicit learning, 1997-present), LIDA (Stan Franklin, Memphis, global-workspace consciousness model, 2009-present), Sigma (Paul Rosenbloom, USC ICT, graphical-model unification, 2011-present), Companion cognitive architectu",
+  "definition": "Cognitive AI is the family of artificial-intelligence systems built around cognitively-plausible architectures that explicitly model the components and information-flow of human cognition \u2014 working memory, declarative and procedural long-term memory, perception-action loops, attention, production...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:hybrid-ai",
+      "id": "urn:ngm:class:hybrid-ai",
       "label": "Hybrid AI"
     },
     {
-      "id": "urn:visionflow:linked:neurosymbolic-ai",
+      "id": "urn:ngm:class:neurosymbolic-ai",
       "label": "Neurosymbolic AI"
-    },
-    {
-      "id": "urn:visionflow:linked:cognitive-architecture",
-      "label": "Cognitive Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:chunking-mechanism",
+        "id": "urn:ngm:class:chunking-mechanism",
         "label": "Chunking Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:declarative-memory",
+        "id": "urn:ngm:class:declarative-memory",
         "label": "Declarative Memory"
       },
       {
-        "id": "urn:visionflow:linked:goal-stack",
+        "id": "urn:ngm:class:goal-stack",
         "label": "Goal Stack"
       },
       {
-        "id": "urn:visionflow:linked:metacognitive-controller",
+        "id": "urn:ngm:class:metacognitive-controller",
         "label": "Metacognitive Controller"
       },
       {
-        "id": "urn:visionflow:linked:motor-module",
+        "id": "urn:ngm:class:motor-module",
         "label": "Motor Module"
       },
       {
-        "id": "urn:visionflow:linked:perception-module",
+        "id": "urn:ngm:class:perception-module",
         "label": "Perception Module"
       },
       {
-        "id": "urn:visionflow:linked:procedural-memory",
+        "id": "urn:ngm:class:procedural-memory",
         "label": "Procedural Memory"
       },
       {
-        "id": "urn:visionflow:linked:production-rules",
+        "id": "urn:ngm:class:production-rules",
         "label": "Production Rules"
       },
       {
-        "id": "urn:visionflow:linked:working-memory",
+        "id": "urn:ngm:class:working-memory",
         "label": "Working Memory"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:conflict-resolution",
+        "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
       },
       {
-        "id": "urn:visionflow:linked:inference-engine",
+        "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
       },
       {
-        "id": "urn:visionflow:linked:memory-indexing",
+        "id": "urn:ngm:class:memory-indexing",
         "label": "Memory Indexing"
       },
       {
-        "id": "urn:visionflow:linked:symbol-grounding",
+        "id": "urn:ngm:class:symbol-grounding",
         "label": "Symbol Grounding"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cognitive-modelling",
+        "id": "urn:ngm:class:cognitive-modelling",
         "label": "Cognitive Modelling"
       },
       {
-        "id": "urn:visionflow:linked:continual-learning",
+        "id": "urn:ngm:class:continual-learning",
         "label": "Continual Learning"
       },
       {
-        "id": "urn:visionflow:linked:decision-support-system",
+        "id": "urn:ngm:class:decision-support-system",
         "label": "Decision Support System"
       },
       {
-        "id": "urn:visionflow:linked:explainable-reasoning",
+        "id": "urn:ngm:class:explainable-reasoning",
         "label": "Explainable Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:human-machine-teaming",
+        "id": "urn:ngm:class:human-machine-teaming",
         "label": "Human-Machine Teaming"
       },
       {
-        "id": "urn:visionflow:linked:intelligent-tutoring-system",
+        "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring System"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:act-r",
+        "id": "urn:ngm:class:act-r",
         "label": "ACT-R"
       },
       {
-        "id": "urn:visionflow:linked:clarion",
+        "id": "urn:ngm:class:clarion",
         "label": "CLARION"
       },
       {
-        "id": "urn:visionflow:linked:co-ala",
+        "id": "urn:ngm:class:co-ala",
         "label": "CoALA"
       },
       {
-        "id": "urn:visionflow:linked:companion-cognitive-architecture",
+        "id": "urn:ngm:class:companion-cognitive-architecture",
         "label": "Companion Cognitive Architecture"
       },
       {
-        "id": "urn:visionflow:linked:lida",
+        "id": "urn:ngm:class:lida",
         "label": "LIDA"
       },
       {
-        "id": "urn:visionflow:linked:nars",
+        "id": "urn:ngm:class:nars",
         "label": "NARS"
       },
       {
-        "id": "urn:visionflow:linked:sigma-architecture",
+        "id": "urn:ngm:class:sigma-architecture",
         "label": "Sigma Architecture"
       },
       {
-        "id": "urn:visionflow:linked:soar",
+        "id": "urn:ngm:class:soar",
         "label": "SOAR"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:production-system",
+        "label": "Production System"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
+      },
+      {
+        "id": "urn:ngm:class:spreading-activation",
+        "label": "Spreading Activation"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cognitive-engineering",
+        "label": "Cognitive Engineering"
+      },
+      {
+        "id": "urn:ngm:class:defence-decision-support",
+        "label": "Defence Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:pilot-training",
+        "label": "Pilot Training"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aaai-cognitive-systems",
+        "label": "AAAI Cognitive Systems"
+      },
+      {
+        "id": "urn:ngm:class:advances-in-cognitive-systems-journal",
+        "label": "Advances in Cognitive Systems Journal"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science-society",
+        "label": "Cognitive Science Society"
+      },
+      {
+        "id": "urn:ngm:class:iccm-conference",
+        "label": "ICCM Conference"
+      },
+      {
+        "id": "urn:ngm:class:soar-workshop",
+        "label": "Soar Workshop"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:global-workspace-theory",
+        "label": "Global Workspace Theory"
+      },
+      {
+        "id": "urn:ngm:class:predictive-processing",
+        "label": "Predictive Processing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ]
   },
   "wikilinks": [
     {

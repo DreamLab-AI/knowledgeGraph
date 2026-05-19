@@ -176,100 +176,75 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-computing-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-computing-layer",
+  "@type": "Class",
   "label": "Spatial Computing Layer",
+  "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
+      "@id": "urn:ngm:class:infrastructure-layer",
+      "label": "Infrastructure Layer"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1609f6368b177d195bbfc54ec80b22822ac1bc5abb4cf129ecfaebf41b28e05c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-mapping-engine",
+        "label": "3D Mapping Engine"
+      },
+      {
+        "@id": "urn:ngm:class:localization-service",
+        "label": "Localization Service"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:positioning-system",
+        "label": "Positioning System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-understanding",
+        "label": "Environmental Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:ar-experiences",
+        "label": "AR Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1609f6368b177d195bbfc54ec80b22822ac1bc5abb4cf129ecfaebf41b28e05c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-mapping-engine",
-      "vc:label": "3D Mapping Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:localization-service",
-      "vc:label": "Localization Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-anchors",
-      "vc:label": "Spatial Anchors"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:compute-resources",
-      "vc:label": "Compute Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:positioning-system",
-      "vc:label": "Positioning System"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data",
-      "vc:label": "Sensor Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:environmental-understanding",
-      "vc:label": "Environmental Understanding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-experiences",
-      "vc:label": "AR Experiences"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:slam-algorithm",
-      "vc:label": "SLAM Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

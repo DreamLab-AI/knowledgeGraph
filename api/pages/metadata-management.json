@@ -3,175 +3,291 @@
   "title": "Metadata Management",
   "slug": "metadata-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-management",
+  "classIri": "urn:ngm:class:metadata-management",
   "domain": "infrastructure",
-  "definition": "[[Metadata Management]] encompasses the discipline, tooling, standards, and governance processes required to systematically capture, store, classify, version, discover, and operationalise descriptive, structural, and administrative information about data assets, pipelines, models, and services across modern enterprise [[Data Governance]] programmes, operating across four complementary metadata layers: (1) **technical metadata** \u2014 schemas, data types, storage formats, partition layouts, column statistics, null rates, cardinality estimates \u2014 captured by crawlers (AWS Glue Crawlers, DataHub ingestion connectors, Apache Atlas Hive Bridge) at cadences from minutes to days; (2) **operational metadata** \u2014 pipeline run history, job durations, SLA breaches, data freshness timestamps, row counts, byte volumes \u2014 surfaced by [[OpenLineage]] run events, Apache Airflow metadata DB, Great Expectations validation results, and Monte Carlo Data observability agents at sub-minute latency; (3) **business metadata** \u2014 ownership assignments, data steward contacts, domain classification, sensitivity classification, PII flags, regulatory scope tags, business term associations, certifications, and deprecat",
+  "definition": "[[Metadata Management]] encompasses the discipline, tooling, standards, and governance processes required to systematically capture, store, classify, version, discover, and operationalise descriptive, structural, and administrative information about data assets, pipelines, models, and services ac...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:data-quality",
+      "id": "urn:ngm:class:data-quality",
       "label": "Data Quality"
     },
     {
-      "id": "urn:visionflow:owl:class:enterprise-architecture",
+      "id": "urn:ngm:class:enterprise-architecture",
       "label": "Enterprise Architecture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-architecture",
-      "label": "Information Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:business-glossary",
+        "id": "urn:ngm:class:business-glossary",
         "label": "Business Glossary"
       },
       {
-        "id": "urn:visionflow:linked:data-catalog",
+        "id": "urn:ngm:class:data-catalog",
         "label": "Data Catalog"
       },
       {
-        "id": "urn:visionflow:linked:data-contracts",
+        "id": "urn:ngm:class:data-contracts",
         "label": "Data Contracts"
       },
       {
-        "id": "urn:visionflow:linked:data-discovery",
+        "id": "urn:ngm:class:data-discovery",
         "label": "Data Discovery"
       },
       {
-        "id": "urn:visionflow:linked:data-lineage",
+        "id": "urn:ngm:class:data-lineage",
         "label": "Data Lineage"
       },
       {
-        "id": "urn:visionflow:linked:data-observability",
+        "id": "urn:ngm:class:data-observability",
         "label": "Data Observability"
       },
       {
-        "id": "urn:visionflow:linked:metadata-model",
+        "id": "urn:ngm:class:metadata-model",
         "label": "Metadata Model"
       },
       {
-        "id": "urn:visionflow:linked:ontology",
+        "id": "urn:ngm:class:ontology",
         "label": "Ontology"
       },
       {
-        "id": "urn:visionflow:linked:quality-scorecard",
+        "id": "urn:ngm:class:quality-scorecard",
         "label": "Quality Scorecard"
       },
       {
-        "id": "urn:visionflow:linked:semantic-layer",
+        "id": "urn:ngm:class:semantic-layer",
         "label": "Semantic Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:schema-registry",
+        "id": "urn:ngm:class:schema-registry",
         "label": "Schema Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:apache-kafka",
+        "id": "urn:ngm:class:apache-kafka",
         "label": "Apache Kafka"
       },
       {
-        "id": "urn:visionflow:linked:data-warehouse",
+        "id": "urn:ngm:class:data-warehouse",
         "label": "Data Warehouse"
       },
       {
-        "id": "urn:visionflow:linked:event-streaming",
+        "id": "urn:ngm:class:event-streaming",
         "label": "Event Streaming"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:data-lake",
+        "id": "urn:ngm:class:data-lake",
         "label": "Data Lake"
       },
       {
-        "id": "urn:visionflow:owl:class:graph-database",
+        "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-provider",
+        "id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-discovery",
+        "id": "urn:ngm:class:data-discovery",
         "label": "Data Discovery"
       },
       {
-        "id": "urn:visionflow:linked:data-fabric",
+        "id": "urn:ngm:class:data-fabric",
         "label": "Data Fabric"
       },
       {
-        "id": "urn:visionflow:linked:data-mesh",
+        "id": "urn:ngm:class:data-mesh",
         "label": "Data Mesh"
       },
       {
-        "id": "urn:visionflow:linked:data-quality",
+        "id": "urn:ngm:class:data-quality",
         "label": "Data Quality"
       },
       {
-        "id": "urn:visionflow:linked:mlops",
+        "id": "urn:ngm:class:mlops",
         "label": "MLOps"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:data-governance",
+        "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:feature-store",
+        "id": "urn:ngm:class:feature-store",
         "label": "Feature Store"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:apache-atlas",
+        "id": "urn:ngm:class:apache-atlas",
         "label": "Apache Atlas"
       },
       {
-        "id": "urn:visionflow:linked:aws-glue-data-catalog",
+        "id": "urn:ngm:class:aws-glue-data-catalog",
         "label": "AWS Glue Data Catalog"
       },
       {
-        "id": "urn:visionflow:linked:data-hub",
+        "id": "urn:ngm:class:data-hub",
         "label": "DataHub"
       },
       {
-        "id": "urn:visionflow:linked:microsoft-purview",
+        "id": "urn:ngm:class:microsoft-purview",
         "label": "Microsoft Purview"
       },
       {
-        "id": "urn:visionflow:linked:open-lineage",
+        "id": "urn:ngm:class:open-lineage",
         "label": "OpenLineage"
       },
       {
-        "id": "urn:visionflow:linked:open-metadata",
+        "id": "urn:ngm:class:open-metadata",
         "label": "OpenMetadata"
       },
       {
-        "id": "urn:visionflow:linked:unity-catalog",
+        "id": "urn:ngm:class:unity-catalog",
         "label": "Unity Catalog"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apache-atlas",
+        "label": "Apache Atlas"
+      },
+      {
+        "id": "urn:ngm:class:data-hub-metadata-model",
+        "label": "DataHub Metadata Model"
+      },
+      {
+        "id": "urn:ngm:class:dcat",
+        "label": "DCAT"
+      },
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:ngm:class:iso-gql",
+        "label": "ISO GQL"
+      },
+      {
+        "id": "urn:ngm:class:open-lineage",
+        "label": "OpenLineage"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:active-metadata",
+        "label": "Active Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-contracts",
+        "label": "Data Contracts"
+      },
+      {
+        "id": "urn:ngm:class:data-fabric",
+        "label": "Data Fabric"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      },
+      {
+        "id": "urn:ngm:class:data-ops",
+        "label": "DataOps"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ]
   },
   "wikilinks": [
     {

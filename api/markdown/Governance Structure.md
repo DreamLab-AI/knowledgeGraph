@@ -344,278 +344,225 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:governance-structure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:governance-structure",
+  "@type": "Class",
   "label": "Governance Structure",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:institutional-design",
-      "vc:label": "Institutional Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e7d233f9094369f874eb710538dd2331f8b19719aea1b432da711da4dba1bcf9"
+  "definition": "A governance structure is the formal arrangement of authority, accountability, decision-making rights, and control mechanisms within an organisation, system, protocol, or jurisdiction that determines how strategic direction is set, resources are allocated, obligations are enforced, and stakeholde...",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "@id": "urn:ngm:class:board-of-directors",
+        "label": "Board of Directors"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework-policy",
+        "label": "Trust Framework Policy"
+      },
+      {
+        "@id": "urn:ngm:class:voting-systems",
+        "label": "Voting Systems"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-design",
+        "label": "Institutional Design"
+      },
+      {
+        "@id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accountability-mechanism",
+        "label": "Accountability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:principal-agent-problem",
+        "label": "Principal Agent Problem"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-theory",
+        "label": "Stakeholder Theory"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-obligation",
+        "label": "Transparency Obligation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cobit-framework",
+        "label": "COBIT Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      },
+      {
+        "@id": "urn:ngm:class:itil-framework",
+        "label": "ITIL Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-corporate-governance-principles",
+        "label": "OECD Corporate Governance Principles"
+      },
+      {
+        "@id": "urn:ngm:class:uk-corporate-governance-code",
+        "label": "UK Corporate Governance Code"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:voting-systems",
+        "label": "Voting Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance-for-telecollaboration",
+        "label": "DAO Governance for Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:dao-legal-structures",
+        "label": "DAO Legal Structures"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-governance-maturity-model",
+        "label": "AI Governance Maturity Model"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance-model",
+        "label": "Community Governance Model"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:companies-act",
+        "label": "Companies Act"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-guidelines",
+        "label": "OECD Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e7d233f9094369f874eb710538dd2331f8b19719aea1b432da711da4dba1bcf9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A governance structure is the formal arrangement of authority, accountability, decision-making rights, and control mechanisms within an organisation, system, protocol, or jurisdiction that determines how strategic direction is set, resources are allocated, obligations are enforced, and stakeholders are held accountable for outcomes. Governance structures encompass the roles, bodies, rules, processes, and incentive mechanisms that collectively shape who can decide what, under what constraints, with what transparency, and with what consequences for failure. The concept spans five major domains of contemporary practice: **Corporate governance**: board of directors, C-suite executives, audit committee, remuneration committee, nominations committee operating under Companies Act 2006, UK Corporate Governance Code 2024, OECD Principles of Corporate Governance 2023, and shareholder activism frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-committee",
-      "vc:label": "Audit Committee"
-    },
-    {
-      "@id": "urn:visionflow:linked:board-of-directors",
-      "vc:label": "Board of Directors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-control",
-      "vc:label": "Compliance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-standards",
-      "vc:label": "Compliance Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework-policy",
-      "vc:label": "Trust Framework Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:voting-systems",
-      "vc:label": "Voting Systems"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-mechanism",
-      "vc:label": "Enforcement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:principal-agent-problem",
-      "vc:label": "Principal Agent Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-theory",
-      "vc:label": "Stakeholder Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:transparency-obligation",
-      "vc:label": "Transparency Obligation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "Blockchain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance",
-      "vc:label": "Community Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:democratic-governance",
-      "vc:label": "Democratic Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-governance",
-      "vc:label": "Digital Governance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cobit-framework",
-      "vc:label": "COBIT Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-42001",
-      "vc:label": "ISO 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:itil-framework",
-      "vc:label": "ITIL Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-corporate-governance-principles",
-      "vc:label": "OECD Corporate Governance Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-corporate-governance-code",
-      "vc:label": "UK Corporate Governance Code"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-maturity-model",
-      "vc:label": "AI Governance Maturity Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:community-governance-model",
-      "vc:label": "Community Governance Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-governance",
-      "vc:label": "Decentralized Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-regulation",
-      "vc:label": "Digital Regulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:compliance-audit-trail",
-      "vc:label": "Compliance Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-dashboard",
-      "vc:label": "Compliance Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:voting-systems",
-      "vc:label": "Voting Systems"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:anarchic-coordination",
-      "vc:label": "Anarchic Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:informal-norm",
-      "vc:label": "Informal Norm"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-regulation",
-      "vc:label": "Self-Regulation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance-for-telecollaboration",
-      "vc:label": "DAO Governance for Telecollaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-legal-structures",
-      "vc:label": "DAO Legal Structures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection-regulation",
-      "vc:label": "Data Protection Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenomics-governance",
-      "vc:label": "Tokenomics Governance"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:companies-act",
-      "vc:label": "Companies Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-guidelines",
-      "vc:label": "OECD Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:iso-standards",
-      "vc:label": "ISO Standards"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

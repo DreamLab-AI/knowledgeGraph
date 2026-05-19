@@ -128,41 +128,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ieee-7000-series-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ieee-7000-series-standards",
+  "@type": "Class",
   "label": "IEEE 7000 Series Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9db40ec8d985f7e10b44a30afcda08c715530b824c73ddc8614fe6074d66f08d"
+  "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ics standards providing process-based guidance for addressing ical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9db40ec8d985f7e10b44a30afcda08c715530b824c73ddc8614fe6074d66f08d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "IEEE 7000 Series Standards are a comprehensive suite of technical and ethics standards providing process-based guidance for addressing ethical concerns in system design, development, and deployment, with specific focus on autonomous and intelligent systems including AI. This series encompasses multiple complementary standards: IEEE 7000 (core standard for addressing ethical concerns in system design providing systems engineering process for value-sensitive design that identifies stakeholder values and translates them into verifiable requirements), IEEE P7001 (transparency of autonomous systems defining transparency requirements, metrics, and implementation guidance enabling stakeholders to understand system capabilities, limitations, and decision processes), IEEE P7002 (data privacy process establishing privacy-by-design methodologies, privacy impact assessment procedures, and technical safeguards for personal data protection in AI systems), IEEE P7003 (algorithmic bias considerations providing bias assessment methods, fairness testing procedures, and mitigation strategies addressing discriminatory outcomes across protected groups), IEEE P7010 (wellbeing metrics standard for autono",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

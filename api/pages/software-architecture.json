@@ -3,19 +3,13 @@
   "title": "Software Architecture",
   "slug": "software-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:software-architecture",
+  "classIri": "urn:ngm:class:software-architecture",
   "domain": "artificial-intelligence",
-  "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications. Architectural patterns include microservices (decoupled AI components), serverless (event-driven inference), model-view-controller (MVC) for AI applications, and lambda architecture (batch and stream processing). AI-specific concerns include model versioning, A/B testing infrastructure, feature stores, model registries, and monitoring systems. Modern architectures emphasize modularity, reproducibility, and operational excellence.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -168,62 +168,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-operator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-operator",
+  "@type": "Class",
   "label": "AI Operator",
+  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordi...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-deployment",
-      "vc:label": "AI Deployment"
+      "@id": "urn:ngm:class:ai-deployment",
+      "label": "AI Deployment"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:competence-development",
+        "label": "competence development"
+      },
+      {
+        "@id": "urn:ngm:class:ongoing-support",
+        "label": "ongoing support"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a96d0721bff9417841ec995a45eacdb638b04061bc150a6fbeb6c7b42b3d63d0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordinating maintenance, exercising human oversight, and ensuring the AI system operates safely, effectively, and in accordance with established policies, procedures, and regulatory requirements within specific operational contexts.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:competence-development",
-      "vc:label": "competence development"
-    },
-    {
-      "@id": "urn:visionflow:linked:ongoing-support",
-      "vc:label": "ongoing support"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training",
-      "vc:label": "Training"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

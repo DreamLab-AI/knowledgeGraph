@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:context-awareness-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:context-awareness-system",
+  "@type": "Class",
   "label": "Context Awareness System",
+  "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:intelligent-systems",
-      "vc:label": "Intelligent Systems"
+      "@id": "urn:ngm:class:intelligent-systems",
+      "label": "Intelligent Systems"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-services",
+        "label": "Adaptive Services"
+      },
+      {
+        "@id": "urn:ngm:class:location-based-services",
+        "label": "Location Based Services"
+      },
+      {
+        "@id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:78789e1509d8379e91b3f3393a7cdc1f602b4a5a2cd3a2cba50f5ad2f44e949c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-services",
-      "vc:label": "Adaptive Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:location-based-services",
-      "vc:label": "Location Based Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:situational-awareness",
-      "vc:label": "Situational Awareness"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

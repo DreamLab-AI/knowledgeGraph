@@ -464,390 +464,315 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robotics-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robotics-platform",
+  "@type": "Class",
   "label": "Robotics Platform",
+  "definition": "RoboticsPlatform is an integrated hardware–software–middleware ecosystem providing standardised communication layers, hardware abstraction, simulation environments, motion-planning stacks, real-time control loops, and cloud-edge orchestration that collectively reduce engineering effort for robot ...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:embedded-system",
-      "vc:label": "Embedded System"
+      "@id": "urn:ngm:class:embedded-system",
+      "label": "Embedded System"
     },
     {
-      "@id": "urn:visionflow:linked:simulation-environment",
-      "vc:label": "Simulation Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-framework",
-      "vc:label": "Software Framework"
+      "@id": "urn:ngm:class:simulation-environment",
+      "label": "Simulation Environment"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:429f7ad7a8cde6da162e746865b15e967ed51749eaeac8127fd4c1945df2e5ad"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:gripper-control",
+        "label": "Gripper Control"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dds",
+        "label": "DDS"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Camera"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:micro-ros",
+        "label": "micro-ROS"
+      },
+      {
+        "@id": "urn:ngm:class:move-it-2",
+        "label": "MoveIt 2"
+      },
+      {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:ros2-control",
+        "label": "ros2_control"
+      },
+      {
+        "@id": "urn:ngm:class:urdf",
+        "label": "URDF"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:c",
+        "label": "C++"
+      },
+      {
+        "@id": "urn:ngm:class:eigen",
+        "label": "Eigen"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-gym",
+        "label": "OpenAI Gym"
+      },
+      {
+        "@id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "@id": "urn:ngm:class:pcl",
+        "label": "PCL"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:sdf",
+        "label": "SDF"
+      },
+      {
+        "@id": "urn:ngm:class:urdf",
+        "label": "URDF"
+      },
+      {
+        "@id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "@id": "urn:ngm:class:rust",
+        "label": "Rust"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:digital-manufacturing",
+        "label": "Digital Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agricultural-robotics",
+        "label": "Agricultural Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:field-robotics",
+        "label": "Field Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:space-robotics",
+        "label": "Space Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9283",
+        "label": "ISO 9283"
+      },
+      {
+        "@id": "urn:ngm:class:omg-dds-standard",
+        "label": "OMG DDS Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ros-rep",
+        "label": "ROS REP"
+      },
+      {
+        "@id": "urn:ngm:class:vda-5050",
+        "label": "VDA 5050"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:429f7ad7a8cde6da162e746865b15e967ed51749eaeac8127fd4c1945df2e5ad@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "RoboticsPlatform is an integrated hardware–software–middleware ecosystem providing standardised communication layers, hardware abstraction, simulation environments, motion-planning stacks, real-time control loops, and cloud-edge orchestration that collectively reduce engineering effort for robot development, deployment, and autonomous operation across manipulation, mobile robotics, field inspection, surgical, agricultural, and space domains. Contemporary platforms span five orthogonal axes: (1) robot middleware and communication frameworks — ROS 2 Humble (LTS May 2022–May 2027), Iron (May 2023–Nov 2024), and Jazzy Jalisco (LTS May 2024–May 2029) built on Data Distribution Service (DDS) with zero-copy intraprocess transport, security enclave support, managed lifecycle nodes, and deterministic QoS policies enabling hard-real-time profiles at < 50 µs jitter; (2) physics-accurate simulation and digital-twin environments — NVIDIA Isaac Sim 4.0–4.5 (2024–2025) based on Omniverse USD rendering with PhysX 5.x GPU-accelerated rigid-body/soft-body/fluid simulation achieving sub-millimetre contact accuracy, NVIDIA Isaac Lab (formerly Isaac Gym successor) providing GPU-parallelised reinforceme",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:dds-middleware",
-      "vc:label": "DDS Middleware"
-    },
-    {
-      "@id": "urn:visionflow:linked:gripper-control",
-      "vc:label": "Gripper Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-abstraction-layer",
-      "vc:label": "Hardware Abstraction Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:localisation",
-      "vc:label": "Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-control",
-      "vc:label": "Real-Time Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:path-planning",
-      "vc:label": "Path Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dds",
-      "vc:label": "DDS"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethernet",
-      "vc:label": "Ethernet"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:inertial-measurement-unit",
-      "vc:label": "Inertial Measurement Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-operating-system",
-      "vc:label": "Real-Time Operating System"
-    },
-    {
-      "@id": "urn:visionflow:linked:rgb-d-camera",
-      "vc:label": "RGB-D Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-torque-sensor",
-      "vc:label": "Force Torque Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "Lidar"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fleet-management",
-      "vc:label": "Fleet Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-manipulation",
-      "vc:label": "Robot Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sim-to-real-transfer",
-      "vc:label": "Sim-to-Real Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:task-planning",
-      "vc:label": "Task Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:behaviour-tree",
-      "vc:label": "Behaviour Tree"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-ros",
-      "vc:label": "micro-ROS"
-    },
-    {
-      "@id": "urn:visionflow:linked:move-it-2",
-      "vc:label": "MoveIt 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:nav2",
-      "vc:label": "Nav2"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2",
-      "vc:label": "ROS 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros2-control",
-      "vc:label": "ros2_control"
-    },
-    {
-      "@id": "urn:visionflow:linked:urdf",
-      "vc:label": "URDF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:can-bus",
-      "vc:label": "CAN Bus"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:dds-qo-s",
-      "vc:label": "DDS QoS"
-    },
-    {
-      "@id": "urn:visionflow:linked:eigen",
-      "vc:label": "Eigen"
-    },
-    {
-      "@id": "urn:visionflow:linked:ether-cat",
-      "vc:label": "EtherCAT"
-    },
-    {
-      "@id": "urn:visionflow:linked:omniverse-usd",
-      "vc:label": "Omniverse USD"
-    },
-    {
-      "@id": "urn:visionflow:linked:pcl",
-      "vc:label": "PCL"
-    },
-    {
-      "@id": "urn:visionflow:linked:posix-real-time",
-      "vc:label": "POSIX Real-Time"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:agricultural-robotics",
-      "vc:label": "Agricultural Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:assistive-robotics",
-      "vc:label": "Assistive Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:field-robotics",
-      "vc:label": "Field Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-automation",
-      "vc:label": "Industrial Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:space-robotics",
-      "vc:label": "Space Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-robotics",
-      "vc:label": "Warehouse Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:c",
-      "vc:label": "C++"
-    },
-    {
-      "@id": "urn:visionflow:linked:eigen",
-      "vc:label": "Eigen"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-gym",
-      "vc:label": "OpenAI Gym"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-cv",
-      "vc:label": "OpenCV"
-    },
-    {
-      "@id": "urn:visionflow:linked:pcl",
-      "vc:label": "PCL"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:sdf",
-      "vc:label": "SDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:urdf",
-      "vc:label": "URDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd",
-      "vc:label": "USD"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rust",
-      "vc:label": "Rust"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:custom-rtos-firmware",
-      "vc:label": "Custom RTOS Firmware"
-    },
-    {
-      "@id": "urn:visionflow:linked:plc",
-      "vc:label": "PLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:proprietary-robot-controller",
-      "vc:label": "Proprietary Robot Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-1",
-      "vc:label": "ROS 1"
-    },
-    {
-      "@id": "urn:visionflow:linked:scada",
-      "vc:label": "SCADA"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:5-g",
-      "vc:label": "5G"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-manufacturing",
-      "vc:label": "Digital Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iec-61508",
-      "vc:label": "IEC 61508"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1872",
-      "vc:label": "IEEE 1872"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-10218",
-      "vc:label": "ISO 10218"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-9283",
-      "vc:label": "ISO 9283"
-    },
-    {
-      "@id": "urn:visionflow:linked:omg-dds-standard",
-      "vc:label": "OMG DDS Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-rep",
-      "vc:label": "ROS REP"
-    },
-    {
-      "@id": "urn:visionflow:linked:vda-5050",
-      "vc:label": "VDA 5050"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

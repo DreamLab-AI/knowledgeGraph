@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:motion-markers",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-markers",
+  "@type": "Class",
   "label": "Motion Markers",
+  "definition": "Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to fps for animation, biomechanics, and performance analysis.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:motion-capture-technology",
-      "vc:label": "Motion Capture Technology"
+      "@id": "urn:ngm:class:motion-capture-technology",
+      "label": "Motion Capture Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f1bf3fc72b516ee4b96a59c7fdc6d337b7b1ecd491fa7d68c85695c73963627a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-motion-analysis",
+        "label": "3D Motion Analysis"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f1bf3fc72b516ee4b96a59c7fdc6d337b7b1ecd491fa7d68c85695c73963627a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to 10,000fps for animation, biomechanics, and performance analysis.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-motion-analysis",
-      "vc:label": "3D Motion Analysis"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

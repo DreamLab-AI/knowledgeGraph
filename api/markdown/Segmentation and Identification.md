@@ -400,334 +400,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:segmentation-and-identification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:segmentation-and-identification",
+  "@type": "Class",
   "label": "Segmentation and Identification",
+  "definition": "Segmentation and Identification is a foundational computer vision subdomain encompassing the computational processes of partitioning digital images and video frames into semantically meaningful regions and assigning categorical or instance-level identities to those regions.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:image-analysis",
-      "vc:label": "Image Analysis"
+      "@id": "urn:ngm:class:image-analysis",
+      "label": "Image Analysis"
     },
     {
-      "@id": "urn:visionflow:linked:object-recognition",
-      "vc:label": "Object Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-understanding",
-      "vc:label": "Scene Understanding"
+      "@id": "urn:ngm:class:object-recognition",
+      "label": "Object Recognition"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d29a7910d3326991675304cebc76f2ef09523d7100a9a028f01168dc48df6958"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mask-decoder",
+        "label": "Mask Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:medical-segmentation",
+        "label": "Medical Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:open-vocabulary-segmentation",
+        "label": "Open-Vocabulary Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-classification-head",
+        "label": "Pixel Classification Head"
+      },
+      {
+        "@id": "urn:ngm:class:promptable-segmentation",
+        "label": "Promptable Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:video-object-segmentation",
+        "label": "Video Object Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:backbone-network",
+        "label": "Backbone Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ar-content-removal",
+        "label": "AR Content Removal"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-quality-control",
+        "label": "Industrial Quality Control"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-earth-observation",
+        "label": "Satellite Earth Observation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics-vision",
+        "label": "Surgical Robotics Vision"
+      },
+      {
+        "@id": "urn:ngm:class:video-editing-automation",
+        "label": "Video Editing Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:deep-lab",
+        "label": "DeepLab"
+      },
+      {
+        "@id": "urn:ngm:class:detr",
+        "label": "DETR"
+      },
+      {
+        "@id": "urn:ngm:class:grounded-sam",
+        "label": "Grounded SAM"
+      },
+      {
+        "@id": "urn:ngm:class:mask-r-cnn",
+        "label": "Mask R-CNN"
+      },
+      {
+        "@id": "urn:ngm:class:mask2-former",
+        "label": "Mask2Former"
+      },
+      {
+        "@id": "urn:ngm:class:med-sam",
+        "label": "MedSAM"
+      },
+      {
+        "@id": "urn:ngm:class:nn-unet",
+        "label": "nnUNet"
+      },
+      {
+        "@id": "urn:ngm:class:owlv2",
+        "label": "OWLv2"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-fpn",
+        "label": "Panoptic FPN"
+      },
+      {
+        "@id": "urn:ngm:class:sam-2",
+        "label": "SAM 2"
+      },
+      {
+        "@id": "urn:ngm:class:seg-former",
+        "label": "SegFormer"
+      },
+      {
+        "@id": "urn:ngm:class:segment-anything-model",
+        "label": "Segment Anything Model"
+      },
+      {
+        "@id": "urn:ngm:class:x-decoder",
+        "label": "X-Decoder"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "@id": "urn:ngm:class:dice-loss",
+        "label": "Dice Loss"
+      },
+      {
+        "@id": "urn:ngm:class:hungarian-matching",
+        "label": "Hungarian Matching"
+      },
+      {
+        "@id": "urn:ngm:class:io-u-metric",
+        "label": "IoU Metric"
+      },
+      {
+        "@id": "urn:ngm:class:mean-average-precision",
+        "label": "Mean Average Precision"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-quality-metric",
+        "label": "Panoptic Quality Metric"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:human-tracking-and-slam-capture",
+        "label": "Human tracking and SLAM capture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ade20-k",
+        "label": "ADE20K"
+      },
+      {
+        "@id": "urn:ngm:class:bdd100-k",
+        "label": "BDD100K"
+      },
+      {
+        "@id": "urn:ngm:class:cityscapes-benchmark",
+        "label": "Cityscapes Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:medical-segmentation-decathlon",
+        "label": "Medical Segmentation Decathlon"
+      },
+      {
+        "@id": "urn:ngm:class:nu-scenes",
+        "label": "nuScenes"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cityscapes-evaluation",
+        "label": "Cityscapes Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:coco-benchmark",
+        "label": "COCO Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:medical-segmentation-decathlon",
+        "label": "Medical Segmentation Decathlon"
+      },
+      {
+        "@id": "urn:ngm:class:pascal-voc-protocol",
+        "label": "Pascal VOC Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d29a7910d3326991675304cebc76f2ef09523d7100a9a028f01168dc48df6958@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Segmentation and Identification is a foundational computer vision subdomain encompassing the computational processes of partitioning digital images and video frames into semantically meaningful regions and assigning categorical or instance-level identities to those regions. It spans four classical problem formulations — semantic segmentation (assigning a class label to every pixel without distinguishing object instances), instance segmentation (delineating each individual object occurrence with a unique mask), panoptic segmentation (unifying semantic and instance pipelines to produce a comprehensive scene parse where every pixel is assigned both a class and optionally an instance identity), and promptable/interactive segmentation (producing masks on demand from sparse user cues such as points, boxes, or free-form text) — as well as the emerging open-vocabulary paradigm in which arbitrary user-specified categories replace fixed taxonomies at inference time. Modern segmentation architectures exploit transformer-based masked-attention mechanisms (Mask2Former CVPR 2022, SegFormer NeurIPS 2021), convolutional encoder-decoder backbones (DeepLab V3+, U-Net), region-proposal networks (Mask",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:mask-decoder",
-      "vc:label": "Mask Decoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-segmentation",
-      "vc:label": "Medical Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-vocabulary-segmentation",
-      "vc:label": "Open-Vocabulary Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pixel-classification-head",
-      "vc:label": "Pixel Classification Head"
-    },
-    {
-      "@id": "urn:visionflow:linked:promptable-segmentation",
-      "vc:label": "Promptable Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-object-segmentation",
-      "vc:label": "Video Object Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:instance-segmentation",
-      "vc:label": "Instance Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:panoptic-segmentation",
-      "vc:label": "Panoptic Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-segmentation",
-      "vc:label": "Semantic Segmentation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:annotated-training-data",
-      "vc:label": "Annotated Training Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:backbone-network",
-      "vc:label": "Backbone Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-pyramid-network",
-      "vc:label": "Feature Pyramid Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-acceleration",
-      "vc:label": "GPU Acceleration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ar-content-removal",
-      "vc:label": "AR Content Removal"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-driving-perception",
-      "vc:label": "Autonomous Driving Perception"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-quality-control",
-      "vc:label": "Industrial Quality Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-image-analysis",
-      "vc:label": "Medical Image Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-earth-observation",
-      "vc:label": "Satellite Earth Observation"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics-vision",
-      "vc:label": "Surgical Robotics Vision"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-editing-automation",
-      "vc:label": "Video Editing Automation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:deep-lab",
-      "vc:label": "DeepLab"
-    },
-    {
-      "@id": "urn:visionflow:linked:detr",
-      "vc:label": "DETR"
-    },
-    {
-      "@id": "urn:visionflow:linked:grounded-sam",
-      "vc:label": "Grounded SAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:mask-r-cnn",
-      "vc:label": "Mask R-CNN"
-    },
-    {
-      "@id": "urn:visionflow:linked:mask2-former",
-      "vc:label": "Mask2Former"
-    },
-    {
-      "@id": "urn:visionflow:linked:med-sam",
-      "vc:label": "MedSAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:nn-unet",
-      "vc:label": "nnUNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:owlv2",
-      "vc:label": "OWLv2"
-    },
-    {
-      "@id": "urn:visionflow:linked:panoptic-fpn",
-      "vc:label": "Panoptic FPN"
-    },
-    {
-      "@id": "urn:visionflow:linked:sam-2",
-      "vc:label": "SAM 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:seg-former",
-      "vc:label": "SegFormer"
-    },
-    {
-      "@id": "urn:visionflow:linked:segment-anything-model",
-      "vc:label": "Segment Anything Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-decoder",
-      "vc:label": "X-Decoder"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-pyramid-network",
-      "vc:label": "Feature Pyramid Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-embeddings",
-      "vc:label": "Image Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-foundation-models",
-      "vc:label": "Visual Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:contrastive-learning",
-      "vc:label": "Contrastive Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ade20-k",
-      "vc:label": "ADE20K"
-    },
-    {
-      "@id": "urn:visionflow:linked:bdd100-k",
-      "vc:label": "BDD100K"
-    },
-    {
-      "@id": "urn:visionflow:linked:cityscapes-benchmark",
-      "vc:label": "Cityscapes Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:coco-dataset",
-      "vc:label": "COCO Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-segmentation-decathlon",
-      "vc:label": "Medical Segmentation Decathlon"
-    },
-    {
-      "@id": "urn:visionflow:linked:nu-scenes",
-      "vc:label": "nuScenes"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cross-entropy-loss",
-      "vc:label": "Cross-Entropy Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:dice-loss",
-      "vc:label": "Dice Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:hungarian-matching",
-      "vc:label": "Hungarian Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:io-u-metric",
-      "vc:label": "IoU Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:mean-average-precision",
-      "vc:label": "Mean Average Precision"
-    },
-    {
-      "@id": "urn:visionflow:linked:panoptic-quality-metric",
-      "vc:label": "Panoptic Quality Metric"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:optical-flow",
-      "vc:label": "Optical Flow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:image-classification",
-      "vc:label": "Image Classification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "Object Detection"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-diagram-tools",
-      "vc:label": "AI Diagram Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-tracking-and-slam-capture",
-      "vc:label": "Human tracking and SLAM capture"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cityscapes-evaluation",
-      "vc:label": "Cityscapes Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:coco-benchmark",
-      "vc:label": "COCO Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-segmentation-decathlon",
-      "vc:label": "Medical Segmentation Decathlon"
-    },
-    {
-      "@id": "urn:visionflow:linked:pascal-voc-protocol",
-      "vc:label": "Pascal VOC Protocol"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

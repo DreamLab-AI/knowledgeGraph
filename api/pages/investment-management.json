@@ -3,19 +3,18 @@
   "title": "Investment Management",
   "slug": "investment-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:investment-management",
+  "classIri": "urn:ngm:class:investment-management",
   "domain": "blockchain",
-  "definition": "Investment Management is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Investment Management is a type of Digital Asset in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

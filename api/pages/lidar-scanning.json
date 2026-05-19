@@ -3,32 +3,36 @@
   "title": "Lidar Scanning",
   "slug": "lidar-scanning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lidar-scanning",
+  "classIri": "urn:ngm:class:lidar-scanning",
   "domain": "robotics",
   "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-mapping-technology",
+      "id": "urn:ngm:class:spatial-mapping-technology",
       "label": "Spatial Mapping Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:digital-twin-creation",
+        "id": "urn:ngm:class:digital-twin-creation",
         "label": "Digital Twin Creation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

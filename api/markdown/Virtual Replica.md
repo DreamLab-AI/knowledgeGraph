@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-replica",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-replica",
+  "@type": "Class",
   "label": "Virtual Replica",
+  "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-model",
-      "vc:label": "Digital Model"
+      "@id": "urn:ngm:class:digital-model",
+      "label": "Digital Model"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0e859fa5585716d5e9d26a67e80c2546b29e5ae5ecdaddb37430310b77ac7b74"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0e859fa5585716d5e9d26a67e80c2546b29e5ae5ecdaddb37430310b77ac7b74@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes digital twins.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

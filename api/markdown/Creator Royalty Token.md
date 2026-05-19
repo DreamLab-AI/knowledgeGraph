@@ -216,134 +216,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:creator-royalty-token",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:creator-royalty-token",
+  "@type": "Class",
   "label": "Creator Royalty Token",
+  "definition": "Token granting its holder a share of ongoing from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:16f6fcf5a94ca483b146ee9f5a6fc1d99f9b8e6e3a401d3a259b3aa800427ba7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ip-rights-metadata",
+        "label": "IP Rights Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-record",
+        "label": "Ownership Record"
+      },
+      {
+        "@id": "urn:ngm:class:revenue-distribution-logic",
+        "label": "Revenue Distribution Logic"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-smart-contract",
+        "label": "Royalty Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:royalty-tracking-system",
+        "label": "Royalty Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-royalty-distribution",
+        "label": "Automated Royalty Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:creator-compensation",
+        "label": "Creator Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:fan-investment",
+        "label": "Fan Investment"
+      },
+      {
+        "@id": "urn:ngm:class:ip-monetization",
+        "label": "IP Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:revenue-sharing",
+        "label": "Revenue Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:intellectual-property-system",
+        "label": "Intellectual Property System"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:16f6fcf5a94ca483b146ee9f5a6fc1d99f9b8e6e3a401d3a259b3aa800427ba7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:intellectual-property-system",
-      "vc:label": "Intellectual Property System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ip-rights-metadata",
-      "vc:label": "IP Rights Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-record",
-      "vc:label": "Ownership Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:revenue-distribution-logic",
-      "vc:label": "Revenue Distribution Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-smart-contract",
-      "vc:label": "Royalty Smart Contract"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:royalty-tracking-system",
-      "vc:label": "Royalty Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-royalty-distribution",
-      "vc:label": "Automated Royalty Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:creator-compensation",
-      "vc:label": "Creator Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fan-investment",
-      "vc:label": "Fan Investment"
-    },
-    {
-      "@id": "urn:visionflow:linked:ip-monetization",
-      "vc:label": "IP Monetization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:revenue-sharing",
-      "vc:label": "Revenue Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:payment-gateway",
-      "vc:label": "Payment Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:revenue-monitoring-service",
-      "vc:label": "Revenue Monitoring Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standard",
-      "vc:label": "NFT Standard"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

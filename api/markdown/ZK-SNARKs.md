@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:zk-snarks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:zk-snarks",
+  "@type": "Class",
   "label": "ZK-SNARKs",
+  "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verif...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
+      "@id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6aebfeb79efe77570fc745314b025fec7737a565cf13cbc0bc131ce5372fbfe1"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6aebfeb79efe77570fc745314b025fec7737a565cf13cbc0bc131ce5372fbfe1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verifier, though requiring a trusted setup ceremony.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

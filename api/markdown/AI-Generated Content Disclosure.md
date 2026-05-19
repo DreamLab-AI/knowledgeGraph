@@ -176,118 +176,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-generated-content-disclosure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-generated-content-disclosure",
+  "@type": "Class",
   "label": "AI-Generated Content Disclosure",
+  "definition": "Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-transparency-framework",
-      "vc:label": "AI Transparency Framework"
+      "@id": "urn:ngm:class:ai-transparency-framework",
+      "label": "AI Transparency Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a0caa765933cb1d6aa96d422792caaade40616416fcb6a895a44f2e98aa446ef"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-labeling-metadata",
+        "label": "Content Labeling Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-enforcement-mechanism",
+        "label": "Disclosure Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:ai-origin-declaration",
+        "label": "AI Origin Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-notice",
+        "label": "Transparency Notice"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:user-awareness",
+        "label": "User Awareness"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a0caa765933cb1d6aa96d422792caaade40616416fcb6a895a44f2e98aa446ef@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-transparency-framework",
-      "vc:label": "AI Transparency Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-labeling-metadata",
-      "vc:label": "Content Labeling Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosure-enforcement-mechanism",
-      "vc:label": "Disclosure Enforcement Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-origin-declaration",
-      "vc:label": "AI Origin Declaration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparency-notice",
-      "vc:label": "Transparency Notice"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:content-authentication",
-      "vc:label": "Content Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:informed-consent",
-      "vc:label": "Informed Consent"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-building",
-      "vc:label": "Trust Building"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-awareness",
-      "vc:label": "User Awareness"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ieee-7001",
-      "vc:label": "IEEE 7001"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:c2-pa-standard",
-      "vc:label": "C2PA Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

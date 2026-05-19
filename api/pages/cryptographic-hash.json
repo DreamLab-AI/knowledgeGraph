@@ -3,19 +3,18 @@
   "title": "Cryptographic Hash",
   "slug": "cryptographic-hash",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-hash",
+  "classIri": "urn:ngm:class:cryptographic-hash",
   "domain": "blockchain",
-  "definition": "Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties. [[Hash Functions]] form the foundation of [[Digital Signatures]], [[Merkle Trees]], and [[Blockchain Security]].",
+  "definition": "Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

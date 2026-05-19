@@ -3,19 +3,18 @@
   "title": "US Regulatory Framework",
   "slug": "us-regulatory-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:us-regulatory-framework",
+  "classIri": "urn:ngm:class:us-regulatory-framework",
   "domain": "blockchain",
-  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[OCC|Office of the Comptroller of Currency]] addresses banking relationships, and the [[CFTC|Commodity Futures Trading Commission]] regulates cryptocurrency derivatives. This jurisdictional overlap creates compliance complexity, with inconsistent agency positions leading to regulatory uncertainty regarding token classification and exchange registration requirements, prompting Congressional proposals for comprehensive legislation establishing tailored digital asset frameworks. State-level [[MoneyTransmitterLicenses|money transmitter licenses]], banking charters, and inconsistent interpretations of existing laws further fragment the regulatory landscape, with major protocols and exchanges navigating dozens of jurisdiction-specific compliance requirements.",
+  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub-needs-content",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

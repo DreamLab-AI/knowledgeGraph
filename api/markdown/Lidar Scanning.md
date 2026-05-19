@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:lidar-scanning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:lidar-scanning",
+  "@type": "Class",
   "label": "Lidar Scanning",
+  "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-mapping-technology",
-      "vc:label": "Spatial Mapping Technology"
+      "@id": "urn:ngm:class:spatial-mapping-technology",
+      "label": "Spatial Mapping Technology"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7e5e7b09c6d0a708dc129e2af5a8ea0d717b3f6f17d38c524abbdca01f9336fc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-creation",
-      "vc:label": "Digital Twin Creation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

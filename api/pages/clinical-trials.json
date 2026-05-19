@@ -3,19 +3,18 @@
   "title": "Clinical Trials",
   "slug": "clinical-trials",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:clinical-trials",
+  "classIri": "urn:ngm:class:clinical-trials",
   "domain": "blockchain",
-  "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof record keeping whilst reducing monitoring costs from \u20ac722 to \u20ac10 per participant visit.",
+  "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof reco...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.91,
   "maturity": "draft",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,155 +3,291 @@
   "title": "Flux.1",
   "slug": "flux-1",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:flux-1",
+  "classIri": "urn:ngm:class:flux-1",
   "domain": "artificial-intelligence",
-  "definition": "**Flux.1** (stylised **FLUX.1**) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Robin Rombach, Andreas Blattmann, Patrick Esser, Dominik Lorenz, Tim Dockhorn, Sumith Kulal and colleagues, most departing [[Stability AI]] in mid-2024 to establish BFL in Freiburg im Breisgau, Germany), comprising a tiered model lineup distinguished by licence and intended deployment surface\u2014**FLUX.1 [pro]** (closed-weights flagship accessed solely through the BFL API and partner endpoints fal.ai/Replicate/Together AI/AWS Bedrock with the highest measured quality), **FLUX.1 [dev]** (12-billion-parameter open-weights variant distributed under the bespoke FLUX.1 [dev] Non-Commercial Licence permitting research/personal/non-revenue use whilst requiring a separate commercial licence agreement for monetisation, distilled from pro via guidance distillation, accumulating 2M+ Hugging Face downloads within thirty days of release establishing it as the dominant open-weights image baseline by Q",
+  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Ro...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:multimodal-diffusion-transformer",
+      "id": "urn:ngm:class:multimodal-diffusion-transformer",
       "label": "Multimodal Diffusion Transformer"
     },
     {
-      "id": "urn:visionflow:linked:rectified-flow-model",
+      "id": "urn:ngm:class:rectified-flow-model",
       "label": "Rectified Flow Model"
-    },
-    {
-      "id": "urn:visionflow:linked:latent-diffusion-model",
-      "label": "Latent Diffusion Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:clip-l-encoder",
+        "id": "urn:ngm:class:clip-l-encoder",
         "label": "CLIP-L Encoder"
       },
       {
-        "id": "urn:visionflow:linked:distilled-classifier-free-guidance",
+        "id": "urn:ngm:class:distilled-classifier-free-guidance",
         "label": "Distilled Classifier-Free Guidance"
       },
       {
-        "id": "urn:visionflow:linked:flow-matching-objective",
+        "id": "urn:ngm:class:flow-matching-objective",
         "label": "Flow Matching Objective"
       },
       {
-        "id": "urn:visionflow:linked:multimodal-diffusion-transformer",
+        "id": "urn:ngm:class:multimodal-diffusion-transformer",
         "label": "Multimodal Diffusion Transformer"
       },
       {
-        "id": "urn:visionflow:linked:rotary-position-embedding",
+        "id": "urn:ngm:class:rotary-position-embedding",
         "label": "Rotary Position Embedding"
       },
       {
-        "id": "urn:visionflow:linked:t5-xxl",
+        "id": "urn:ngm:class:t5-xxl",
         "label": "T5-XXL"
       },
       {
-        "id": "urn:visionflow:linked:variational-autoencoder",
+        "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       },
       {
-        "id": "urn:visionflow:owl:class:latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:differentiable-architecture",
+        "id": "urn:ngm:class:differentiable-architecture",
         "label": "Differentiable Architecture"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:text-encoder",
+        "id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
       },
       {
-        "id": "urn:visionflow:linked:training-data-distribution",
+        "id": "urn:ngm:class:training-data-distribution",
         "label": "Training Data Distribution"
       },
       {
-        "id": "urn:visionflow:owl:class:mixed-precision-training",
+        "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
       },
       {
-        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:canny-conditioned-generation",
+        "id": "urn:ngm:class:canny-conditioned-generation",
         "label": "Canny-Conditioned Generation"
       },
       {
-        "id": "urn:visionflow:linked:depth-conditioned-generation",
+        "id": "urn:ngm:class:depth-conditioned-generation",
         "label": "Depth-Conditioned Generation"
       },
       {
-        "id": "urn:visionflow:linked:identity-preserving-generation",
+        "id": "urn:ngm:class:identity-preserving-generation",
         "label": "Identity-Preserving Generation"
       },
       {
-        "id": "urn:visionflow:linked:image-editing",
+        "id": "urn:ngm:class:image-editing",
         "label": "Image Editing"
       },
       {
-        "id": "urn:visionflow:linked:image-variation",
+        "id": "urn:ngm:class:image-variation",
         "label": "Image Variation"
       },
       {
-        "id": "urn:visionflow:linked:lo-ra-fine-tuning",
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "LoRA Fine-Tuning"
       },
       {
-        "id": "urn:visionflow:linked:outpainting",
+        "id": "urn:ngm:class:outpainting",
         "label": "Outpainting"
       },
       {
-        "id": "urn:visionflow:linked:text-to-image-synthesis",
+        "id": "urn:ngm:class:text-to-image-synthesis",
         "label": "Text-to-Image Synthesis"
       },
       {
-        "id": "urn:visionflow:owl:class:inpainting",
+        "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adversarial-diffusion-distillation",
+        "id": "urn:ngm:class:adversarial-diffusion-distillation",
         "label": "Adversarial Diffusion Distillation"
       },
       {
-        "id": "urn:visionflow:linked:flow-matching",
+        "id": "urn:ngm:class:flow-matching",
         "label": "Flow Matching"
       },
       {
-        "id": "urn:visionflow:linked:guidance-distillation",
+        "id": "urn:ngm:class:guidance-distillation",
         "label": "Guidance Distillation"
       },
       {
-        "id": "urn:visionflow:linked:latent-diffusion",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:rectified-flow",
+        "id": "urn:ngm:class:rectified-flow",
         "label": "Rectified Flow"
       },
       {
-        "id": "urn:visionflow:linked:timestep-distillation",
+        "id": "urn:ngm:class:timestep-distillation",
         "label": "Timestep Distillation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip-l-encoder",
+        "label": "CLIP-L Encoder"
+      },
+      {
+        "id": "urn:ngm:class:dpm-sampler",
+        "label": "DPM++ Sampler"
+      },
+      {
+        "id": "urn:ngm:class:euler-sampler",
+        "label": "Euler Sampler"
+      },
+      {
+        "id": "urn:ngm:class:fp8-quantisation",
+        "label": "fp8 Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:gguf-quantisation",
+        "label": "GGUF Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision",
+        "label": "Mixed Precision"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-diffusion-transformer",
+        "label": "Multimodal Diffusion Transformer"
+      },
+      {
+        "id": "urn:ngm:class:nf4-quantisation",
+        "label": "NF4 Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:t5-xxl",
+        "label": "T5-XXL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:fal-ai",
+        "label": "fal.ai"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:instant-id",
+        "label": "InstantID"
+      },
+      {
+        "id": "urn:ngm:class:pu-lid-flux",
+        "label": "PuLID-FLUX"
+      },
+      {
+        "id": "urn:ngm:class:replicate",
+        "label": "Replicate"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-forge",
+        "label": "Stable Diffusion Forge"
+      },
+      {
+        "id": "urn:ngm:class:swarm-ui",
+        "label": "SwarmUI"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-model-card-spec",
+        "label": "Hugging Face Model Card Spec"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:black-forest-labs",
+        "label": "Black Forest Labs"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:stability-ai",
+        "label": "Stability AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:x-ai-grok",
+        "label": "xAI Grok"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ]
   },
   "wikilinks": [
     {

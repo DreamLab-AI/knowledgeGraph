@@ -3,32 +3,36 @@
   "title": "Infrared Led Illuminator",
   "slug": "infrared-led-illuminator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrared-led-illuminator",
+  "classIri": "urn:ngm:class:infrared-led-illuminator",
   "domain": "spatial-computing",
   "definition": "LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrared-illuminator",
+      "id": "urn:ngm:class:infrared-illuminator",
       "label": "Infrared Illuminator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hand-tracking-enhancement",
+        "id": "urn:ngm:class:hand-tracking-enhancement",
         "label": "Hand Tracking Enhancement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

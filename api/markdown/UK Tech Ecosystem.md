@@ -136,62 +136,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:uk-tech-ecosystem",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:uk-tech-ecosystem",
+  "@type": "Class",
   "label": "UK Tech Ecosystem",
+  "definition": "The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market of 2 and over VC-backed startups.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:technology-industry",
-      "vc:label": "Technology Industry"
+      "@id": "urn:ngm:class:technology-industry",
+      "label": "Technology Industry"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:148e1c1559cfd5043698dd0e599525ae0fe22d7d53956ba6d491e12a1940ccef"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-innovation",
+        "label": "Digital Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:tech-entrepreneurship",
+        "label": "Tech Entrepreneurship"
+      },
+      {
+        "@id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:148e1c1559cfd5043698dd0e599525ae0fe22d7d53956ba6d491e12a1940ccef@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups. The UK is the third largest AI market globally (after US and China), valued at $92 billion in 2024, with 185+ unicorns, 3,700+ AI companies employing 60,000+ people, and $16.2 billion VC raised in 2024. Key hubs include London (1,603 AI startups, 14 unicorns) and Cambridge (world's most intensive science cluster, $222bn valuation). Despite startup creation strengths, the ecosystem faces challenges retaining scale-ups, with 43% of founders considering US relocation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-innovation",
-      "vc:label": "Digital Innovation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tech-entrepreneurship",
-      "vc:label": "Tech Entrepreneurship"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-development",
-      "vc:label": "AI Development"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -228,142 +228,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:state-synchronization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:state-synchronization",
+  "@type": "Class",
   "label": "State Synchronization",
+  "definition": "The process of maintaining consistent, coherent representations of virtual world state across distributed clients, servers, and edge nodes through continuous replication, conflict resolution, and consistency protocols.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-system-architecture",
-      "vc:label": "Distributed System Architecture"
+      "@id": "urn:ngm:class:distributed-system-architecture",
+      "label": "Distributed System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c57bfe2ddbeade430e29f33d3d60ea1e1e115856dab80d41fe0a5cf3c9cdd4d4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution-engine",
+        "label": "Conflict Resolution Engine"
+      },
+      {
+        "@id": "urn:ngm:class:consistency-protocol",
+        "label": "Consistency Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:delta-compression",
+        "label": "Delta Compression"
+      },
+      {
+        "@id": "urn:ngm:class:state-replication",
+        "label": "State Replication"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-ordering",
+        "label": "Timestamp Ordering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      },
+      {
+        "@id": "urn:ngm:class:state-representation",
+        "label": "State Representation"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-protocol",
+        "label": "Synchronization Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consistent-user-experience",
+        "label": "Consistent User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:multiplayer-interaction",
+        "label": "Multiplayer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:shared-virtual-world",
+        "label": "Shared Virtual World"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:multiplayer-infrastructure",
+        "label": "Multiplayer Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-interop-protocol",
+        "label": "Digital Twin Interop Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c57bfe2ddbeade430e29f33d3d60ea1e1e115856dab80d41fe0a5cf3c9cdd4d4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of maintaining consistent, coherent representations of virtual world state across distributed clients, servers, and edge nodes through continuous replication, conflict resolution, and consistency protocols.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:multiplayer-infrastructure",
-      "vc:label": "Multiplayer Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-interop-protocol",
-      "vc:label": "Digital Twin Interop Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-architecture",
-      "vc:label": "Distributed Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system-architecture",
-      "vc:label": "Distributed System Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution-engine",
-      "vc:label": "Conflict Resolution Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:consistency-protocol",
-      "vc:label": "Consistency Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:delta-compression",
-      "vc:label": "Delta Compression"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-replication",
-      "vc:label": "State Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-ordering",
-      "vc:label": "Timestamp Ordering"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clock-synchronization",
-      "vc:label": "Clock Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-transport",
-      "vc:label": "Network Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-representation",
-      "vc:label": "State Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronization-protocol",
-      "vc:label": "Synchronization Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consistent-user-experience",
-      "vc:label": "Consistent User Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-collaboration",
-      "vc:label": "Distributed Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:multiplayer-interaction",
-      "vc:label": "Multiplayer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shared-virtual-world",
-      "vc:label": "Shared Virtual World"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:event-ordering",
-      "vc:label": "Event Ordering"
-    },
-    {
-      "@id": "urn:visionflow:linked:reliable-messaging",
-      "vc:label": "Reliable Messaging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:latency-management-protocol",
-      "vc:label": "Latency Management Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

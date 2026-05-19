@@ -3,147 +3,255 @@
   "title": "AI Adoption",
   "slug": "ai-adoption",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-adoption",
+  "classIri": "urn:ngm:class:ai-adoption",
   "domain": "artificial-intelligence",
-  "definition": "**AI Adoption** is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems \u2014 classical machine learning, deep learning, foundation models, generative AI and agentic AI \u2014 into productive workflows, decision-making pipelines, products, services and governance structures, measured through complementary lenses of **diffusion** (share of organisations using AI in at least one business function, which rose from 55% in 2023 to 78% in 2024 to 88% in 2025 according to the McKinsey *State of AI* survey series and corroborated by the Stanford HAI *AI Index Report 2025*), **depth** (number of business functions using AI per organisation, with two-thirds of adopters now deploying across multiple functions and half across three or more by late 2025), **modality mix** (the rapid shift from narrow predictive ML through 2022 to generative AI dominating new deployments 2023-2025 with 72% generative AI adoption by 2025 up >65% year-on-year, and a 2025-2026 transition toward agentic AI with 17% enterprise deployment and 60%+ planning within 24 months per the 2026 Gartner CIO Survey)",
+  "definition": "AI Adoption is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems \u2014 classical machine learning, deep learning, foundation models, generative AI and agentic AI \u2014 into produ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:organisational-change",
+      "id": "urn:ngm:class:organisational-change",
       "label": "Organisational Change"
     },
     {
-      "id": "urn:visionflow:linked:socio-technical-process",
+      "id": "urn:ngm:class:socio-technical-process",
       "label": "Socio-Technical Process"
-    },
-    {
-      "id": "urn:visionflow:linked:innovation-diffusion",
-      "label": "Innovation Diffusion"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-strategy",
+        "id": "urn:ngm:class:ai-strategy",
         "label": "AI Strategy"
       },
       {
-        "id": "urn:visionflow:linked:ai-talent-capacity",
+        "id": "urn:ngm:class:ai-talent-capacity",
         "label": "AI Talent Capacity"
       },
       {
-        "id": "urn:visionflow:linked:ai-use-case-portfolio",
+        "id": "urn:ngm:class:ai-use-case-portfolio",
         "label": "AI Use Case Portfolio"
       },
       {
-        "id": "urn:visionflow:linked:ai-vendor-stack",
+        "id": "urn:ngm:class:ai-vendor-stack",
         "label": "AI Vendor Stack"
       },
       {
-        "id": "urn:visionflow:linked:change-management-programme",
+        "id": "urn:ngm:class:change-management-programme",
         "label": "Change Management Programme"
       },
       {
-        "id": "urn:visionflow:linked:data-foundation",
+        "id": "urn:ngm:class:data-foundation",
         "label": "Data Foundation"
       },
       {
-        "id": "urn:visionflow:linked:mlops-infrastructure",
+        "id": "urn:ngm:class:mlops-infrastructure",
         "label": "MLOps Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-governance-framework",
+        "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-talent",
+        "id": "urn:ngm:class:ai-talent",
         "label": "AI Talent"
       },
       {
-        "id": "urn:visionflow:linked:change-management",
+        "id": "urn:ngm:class:change-management",
         "label": "Change Management"
       },
       {
-        "id": "urn:visionflow:linked:data-infrastructure",
+        "id": "urn:ngm:class:data-infrastructure",
         "label": "Data Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:executive-sponsorship",
+        "id": "urn:ngm:class:executive-sponsorship",
         "label": "Executive Sponsorship"
       },
       {
-        "id": "urn:visionflow:linked:risk-management-framework",
+        "id": "urn:ngm:class:risk-management-framework",
         "label": "Risk Management Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cost-reduction",
+        "id": "urn:ngm:class:cost-reduction",
         "label": "Cost Reduction"
       },
       {
-        "id": "urn:visionflow:linked:customer-experience-enhancement",
+        "id": "urn:ngm:class:customer-experience-enhancement",
         "label": "Customer Experience Enhancement"
       },
       {
-        "id": "urn:visionflow:linked:decision-augmentation",
+        "id": "urn:ngm:class:decision-augmentation",
         "label": "Decision Augmentation"
       },
       {
-        "id": "urn:visionflow:linked:innovation-velocity",
+        "id": "urn:ngm:class:innovation-velocity",
         "label": "Innovation Velocity"
       },
       {
-        "id": "urn:visionflow:linked:process-automation",
+        "id": "urn:ngm:class:process-automation",
         "label": "Process Automation"
       },
       {
-        "id": "urn:visionflow:linked:productivity-improvement",
+        "id": "urn:ngm:class:productivity-improvement",
         "label": "Productivity Improvement"
       },
       {
-        "id": "urn:visionflow:linked:revenue-growth",
+        "id": "urn:ngm:class:revenue-growth",
         "label": "Revenue Growth"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:diffusion-of-innovations-theory",
+        "id": "urn:ngm:class:diffusion-of-innovations-theory",
         "label": "Diffusion of Innovations Theory"
       },
       {
-        "id": "urn:visionflow:linked:organisational-learning",
+        "id": "urn:ngm:class:organisational-learning",
         "label": "Organisational Learning"
       },
       {
-        "id": "urn:visionflow:linked:stage-gate-adoption-process",
+        "id": "urn:ngm:class:stage-gate-adoption-process",
         "label": "Stage-Gate Adoption Process"
       },
       {
-        "id": "urn:visionflow:linked:technology-acceptance-model",
+        "id": "urn:ngm:class:technology-acceptance-model",
         "label": "Technology Acceptance Model"
       },
       {
-        "id": "urn:visionflow:linked:toe-framework",
+        "id": "urn:ngm:class:toe-framework",
         "label": "TOE Framework"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:copilot-systems",
+        "label": "Copilot Systems"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:national-competitiveness",
+        "label": "National Competitiveness"
+      },
+      {
+        "id": "urn:ngm:class:public-service-modernisation",
+        "label": "Public Service Modernisation"
+      },
+      {
+        "id": "urn:ngm:class:sectoral-productivity",
+        "label": "Sectoral Productivity"
+      },
+      {
+        "id": "urn:ngm:class:workforce-transformation",
+        "label": "Workforce Transformation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001-ai-management-system",
+        "label": "ISO/IEC 42001 AI Management System"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:uk-ai-opportunities-action-plan",
+        "label": "UK AI Opportunities Action Plan"
+      },
+      {
+        "id": "urn:ngm:class:us-ai-action-plan-2025",
+        "label": "US AI Action Plan 2025"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-investment-cycle",
+        "label": "AI Investment Cycle"
+      },
+      {
+        "id": "urn:ngm:class:ai-productivity-paradox",
+        "label": "AI Productivity Paradox"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model-race",
+        "label": "Foundation Model Race"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-boom",
+        "label": "Generative AI Boom"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

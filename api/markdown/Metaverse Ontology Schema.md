@@ -208,124 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-ontology-schema",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-ontology-schema",
+  "@type": "Class",
   "label": "Metaverse Ontology Schema",
+  "definition": "A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e9cf98f9ba9e45f80f6d9a7a60679c6a0772a46e5419c4ce5bfee73d8f6cfe52"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:axiom-rules",
+        "label": "Axiom Rules"
+      },
+      {
+        "@id": "urn:ngm:class:inference-rules",
+        "label": "Inference Rules"
+      },
+      {
+        "@id": "urn:ngm:class:property-definitions",
+        "label": "Property Definitions"
+      },
+      {
+        "@id": "urn:ngm:class:validation-constraints",
+        "label": "Validation Constraints"
+      },
+      {
+        "@id": "urn:ngm:class:namespace-declarations",
+        "label": "Namespace Declarations"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:owl-2-reasoner",
+        "label": "OWL 2 Reasoner"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-triple-store",
+        "label": "RDF Triple Store"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-based-data-access",
+        "label": "Ontology-Based Data Access"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation-system",
+        "label": "Knowledge Representation System"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-infrastructure",
+        "label": "Semantic Web Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e9cf98f9ba9e45f80f6d9a7a60679c6a0772a46e5419c4ce5bfee73d8f6cfe52@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:knowledge-representation-system",
-      "vc:label": "Knowledge Representation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-web-infrastructure",
-      "vc:label": "Semantic Web Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:axiom-rules",
-      "vc:label": "Axiom Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-rules",
-      "vc:label": "Inference Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-definitions",
-      "vc:label": "Property Definitions"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-constraints",
-      "vc:label": "Validation Constraints"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:namespace-declarations",
-      "vc:label": "Namespace Declarations"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:owl-class-hierarchy",
-      "vc:label": "OWL Class Hierarchy"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:owl-2-reasoner",
-      "vc:label": "OWL 2 Reasoner"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-triple-store",
-      "vc:label": "RDF Triple Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparql-endpoint",
-      "vc:label": "SPARQL Endpoint"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-reasoning",
-      "vc:label": "Automated Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-based-data-access",
-      "vc:label": "Ontology-Based Data Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph-construction",
-      "vc:label": "Knowledge Graph Construction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:rdf-schema",
-      "vc:label": "RDF Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:shacl-constraints",
-      "vc:label": "SHACL Constraints"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:skos-vocabulary",
-      "vc:label": "SKOS Vocabulary"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

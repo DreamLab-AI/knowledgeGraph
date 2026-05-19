@@ -224,152 +224,105 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ngm-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ngm-domain",
+  "@type": "Class",
   "label": "NGM Domain",
+  "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts — identity primitives, data governance constructs, semantic web patterns, and integration infrastructure — that do not belong exclusively to any single special...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:knowledge-graph-domain",
-      "vc:label": "Knowledge Graph Domain"
+      "@id": "urn:ngm:class:knowledge-graph-domain",
+      "label": "Knowledge Graph Domain"
     },
     {
-      "@id": "urn:visionflow:linked:ontology-namespace",
-      "vc:label": "Ontology Namespace"
+      "@id": "urn:ngm:class:ontology-namespace",
+      "label": "Ontology Namespace"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:efe790183fca9b08c7c84bd9c807ec2d67053078a9d22cf07769c70ce75a511d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      },
+      {
+        "@id": "urn:ngm:class:uri-canonicaliser",
+        "label": "URI Canonicaliser"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-surface",
+        "label": "Verifiable Credential Surface"
+      },
+      {
+        "@id": "urn:ngm:class:vision-claw-agentic-container",
+        "label": "VisionClaw Agentic Container"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:json-ld-context",
+        "label": "JSON-LD Context"
+      },
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-data-model",
+        "label": "RDF Data Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-domain-concept-linking",
+        "label": "Cross-Domain Concept Linking"
+      },
+      {
+        "@id": "urn:ngm:class:federated-knowledge-graph",
+        "label": "Federated Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3-c-json-ld-1-1",
+        "label": "W3C JSON-LD 1.1"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-owl-2-specification",
+        "label": "W3C OWL 2 Specification"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-rdf-specification",
+        "label": "W3C RDF Specification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:narrative-gold-mine-ontology",
+        "label": "Narrative Gold Mine Ontology"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:efe790183fca9b08c7c84bd9c807ec2d67053078a9d22cf07769c70ce75a511d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts — identity primitives, data governance constructs, semantic web patterns, and integration infrastructure — that do not belong exclusively to any single specialised domain (ai, bc, mv, rb, tc) but are required as shared dependencies by all of them. It corresponds to the `http://narrativegoldmine.com/ontology#` IRI namespace and acts as the backbone against which domain-specific ontologies align their upper-level classes and properties.",
-  "vc:qualityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.75",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:narrative-gold-mine-ontology",
-      "vc:label": "Narrative Gold Mine Ontology"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid-pod",
-      "vc:label": "Solid Pod"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:uri-canonicaliser",
-      "vc:label": "URI Canonicaliser"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credential-surface",
-      "vc:label": "Verifiable Credential Surface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vision-claw-agentic-container",
-      "vc:label": "VisionClaw Agentic Container"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:json-ld-context",
-      "vc:label": "JSON-LD Context"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl-2-web-ontology-language",
-      "vc:label": "OWL 2 Web Ontology Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf-data-model",
-      "vc:label": "RDF Data Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-domain-concept-linking",
-      "vc:label": "Cross-Domain Concept Linking"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-knowledge-graph",
-      "vc:label": "Federated Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:w3-c-json-ld-1-1",
-      "vc:label": "W3C JSON-LD 1.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-owl-2-specification",
-      "vc:label": "W3C OWL 2 Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-rdf-specification",
-      "vc:label": "W3C RDF Specification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:logseq-graph-database",
-      "vc:label": "Logseq Graph Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-claw-json-ld-context",
-      "vc:label": "VisionClaw JSON-LD Context"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-domain",
-      "vc:label": "AI Domain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-domain",
-      "vc:label": "Blockchain Domain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-domain",
-      "vc:label": "Metaverse Domain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics-domain",
-      "vc:label": "Robotics Domain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration-domain",
-      "vc:label": "Telecollaboration Domain"
-    }
-  ]
+  "quality": 0.65,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

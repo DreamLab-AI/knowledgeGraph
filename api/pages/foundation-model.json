@@ -3,14 +3,13 @@
   "title": "Foundation Model",
   "slug": "foundation-model",
   "public": true,
-  "classIri": "urn:visionflow:linked:foundation-model",
+  "classIri": "urn:ngm:individual:foundation-model",
   "domain": "artificial-intelligence",
-  "definition": "Foundation Model is a foundational concept in artificial intelligence that serves as a classification parent for 6 related concepts in the ontology.",
+  "definition": "Large-scale machine learning model pretrained on broad, general-purpose data and subsequently adapted via fine-tuning or prompting to a wide variety of downstream tasks.",
   "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

@@ -3,32 +3,36 @@
   "title": "Machine Learning Platform",
   "slug": "machine-learning-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-platform",
+  "classIri": "urn:ngm:class:machine-learning-platform",
   "domain": "artificial-intelligence",
   "definition": "Comprehensive cloud-based or enterprise software systems that provide integrated tools for building, training, deploying, and managing machine learning models, including AutoML capabilities, model registries, and MLOps features.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cloud-computing",
+      "id": "urn:ngm:class:cloud-computing",
       "label": "Cloud Computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:enterprise-ai-adoption",
+        "id": "urn:ngm:class:enterprise-ai-adoption",
         "label": "Enterprise AI Adoption"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

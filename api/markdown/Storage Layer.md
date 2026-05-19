@@ -168,104 +168,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:storage-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:storage-layer",
+  "@type": "Class",
   "label": "Storage Layer",
+  "definition": "Hardware and software infrastructure responsible for persistent retention, retrieval, and management of data and digital assets across distributed systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
+      "@id": "urn:ngm:class:infrastructure-layer",
+      "label": "Infrastructure Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2db80d7a5a0bdca575f2b381dd4528ab4aaf5772a95b37441c039a14c0abf350"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:storage-hardware",
+        "label": "Storage Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-delivery",
+        "label": "Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2db80d7a5a0bdca575f2b381dd4528ab4aaf5772a95b37441c039a14c0abf350@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hardware and software infrastructure responsible for persistent retention, retrieval, and management of data and digital assets across distributed systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-layer",
-      "vc:label": "Infrastructure Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-storage",
-      "vc:label": "Block Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:cache-layer",
-      "vc:label": "Cache Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-storage",
-      "vc:label": "Object Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:file-system",
-      "vc:label": "File System"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-hardware",
-      "vc:label": "Storage Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-delivery",
-      "vc:label": "Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-persistence",
-      "vc:label": "Data Persistence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:replication-protocol",
-      "vc:label": "Replication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

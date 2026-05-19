@@ -3,82 +3,95 @@
   "title": "Metaverse Ontology Schema",
   "slug": "metaverse-ontology-schema",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-ontology-schema",
+  "classIri": "urn:ngm:class:metaverse-ontology-schema",
   "domain": "spatial-computing",
   "definition": "A formal OWL 2 ontology framework defining the complete taxonomic structure, semantic relationships, axioms, and reasoning rules for metaverse concepts, enabling automated classification, consistency validation, and interoperability across virtual world implementations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:axiom-rules",
+        "id": "urn:ngm:class:axiom-rules",
         "label": "Axiom Rules"
       },
       {
-        "id": "urn:visionflow:linked:inference-rules",
+        "id": "urn:ngm:class:inference-rules",
         "label": "Inference Rules"
       },
       {
-        "id": "urn:visionflow:linked:property-definitions",
+        "id": "urn:ngm:class:property-definitions",
         "label": "Property Definitions"
       },
       {
-        "id": "urn:visionflow:linked:validation-constraints",
+        "id": "urn:ngm:class:validation-constraints",
         "label": "Validation Constraints"
       },
       {
-        "id": "urn:visionflow:owl:class:namespace-declarations",
+        "id": "urn:ngm:class:namespace-declarations",
         "label": "Namespace Declarations"
       },
       {
-        "id": "urn:visionflow:owl:class:owl-class-hierarchy",
+        "id": "urn:ngm:class:owl-class-hierarchy",
         "label": "OWL Class Hierarchy"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:owl-2-reasoner",
+        "id": "urn:ngm:class:owl-2-reasoner",
         "label": "OWL 2 Reasoner"
       },
       {
-        "id": "urn:visionflow:linked:rdf-triple-store",
+        "id": "urn:ngm:class:rdf-triple-store",
         "label": "RDF Triple Store"
       },
       {
-        "id": "urn:visionflow:owl:class:sparql-endpoint",
+        "id": "urn:ngm:class:sparql-endpoint",
         "label": "SPARQL Endpoint"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-reasoning",
+        "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:ontology-based-data-access",
+        "id": "urn:ngm:class:ontology-based-data-access",
         "label": "Ontology-Based Data Access"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-graph-construction",
+        "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-representation-system",
+        "label": "Knowledge Representation System"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web-infrastructure",
+        "label": "Semantic Web Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

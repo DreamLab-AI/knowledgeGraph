@@ -180,102 +180,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-interface-layer-hil",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-interface-layer-hil",
+  "@type": "Class",
   "label": "Human Interface Layer (HIL)",
+  "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
-      "vc:label": "Interaction Domain"
+      "@id": "urn:ngm:class:interaction-domain",
+      "label": "Interaction Domain"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45da067e9908a6c8df3b6bfc85866aca5b0acbb9c4ad081214871d3d830b0a32"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:haptic-systems",
+        "label": "Haptic Systems"
+      },
+      {
+        "@id": "urn:ngm:class:input-devices",
+        "label": "Input Devices"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-models",
+        "label": "Interaction Models"
+      },
+      {
+        "@id": "urn:ngm:class:output-devices",
+        "label": "Output Devices"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-systems",
+        "label": "Tracking Systems"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multimodal-feedback",
+        "label": "Multimodal Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-immersion",
+        "label": "User Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:interaction-domain",
+        "label": "Interaction Domain"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45da067e9908a6c8df3b6bfc85866aca5b0acbb9c4ad081214871d3d830b0a32@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:interaction-domain",
-      "vc:label": "Interaction Domain"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:haptic-systems",
-      "vc:label": "Haptic Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-devices",
-      "vc:label": "Input Devices"
-    },
-    {
-      "@id": "urn:visionflow:linked:interaction-models",
-      "vc:label": "Interaction Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-devices",
-      "vc:label": "Output Devices"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-systems",
-      "vc:label": "Tracking Systems"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tracking-system",
-      "vc:label": "Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
-      "vc:label": "Hardware Abstraction Layer (HAL)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:multimodal-feedback",
-      "vc:label": "Multimodal Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:natural-interaction",
-      "vc:label": "Natural Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-immersion",
-      "vc:label": "User Immersion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence",
-      "vc:label": "Presence"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

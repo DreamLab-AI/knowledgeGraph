@@ -208,124 +208,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:extended-reality-xr",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:extended-reality-xr",
+  "@type": "Class",
   "label": "Extended Reality (XR)",
+  "definition": "Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-technology",
-      "vc:label": "Immersive Technology"
+      "@id": "urn:ngm:class:immersive-technology",
+      "label": "Immersive Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:08ae9efbfe769ccabbe07d6d96955d9b8dd6a607b3e1f947921d5e6f02f6c42a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:augmented-reality-ar",
+        "label": "Augmented Reality (AR)"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-mr",
+        "label": "Mixed Reality (MR)"
+      },
+      {
+        "@id": "urn:ngm:class:reality-virtuality-continuum",
+        "label": "Reality-Virtuality Continuum"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality-vr",
+        "label": "Virtual Reality (VR)"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:input-device",
+        "label": "Input Device"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-reality-transitions",
+        "label": "Cross-Reality Transitions"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:08ae9efbfe769ccabbe07d6d96955d9b8dd6a607b3e1f947921d5e6f02f6c42a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:immersive-technology",
-      "vc:label": "Immersive Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality-ar",
-      "vc:label": "Augmented Reality (AR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality-mr",
-      "vc:label": "Mixed Reality (MR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reality-virtuality-continuum",
-      "vc:label": "Reality-Virtuality Continuum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality-vr",
-      "vc:label": "Virtual Reality (VR)"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:head-mounted-display",
-      "vc:label": "Head-Mounted Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-device",
-      "vc:label": "Input Device"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-tracking",
-      "vc:label": "Spatial Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-reality-transitions",
-      "vc:label": "Cross-Reality Transitions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence",
-      "vc:label": "Presence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-interaction",
-      "vc:label": "Spatial Interaction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing",
-      "vc:label": "Graphics Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

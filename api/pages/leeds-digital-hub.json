@@ -3,19 +3,18 @@
   "title": "Leeds Digital Hub",
   "slug": "leeds-digital-hub",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:leeds-digital-hub",
+  "classIri": "urn:ngm:class:leeds-digital-hub",
   "domain": "infrastructure",
   "definition": "Leeds' digital technology sector focusing on health technology innovation, financial services technology, and digital creative industries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "established",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

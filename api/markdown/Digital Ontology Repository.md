@@ -212,112 +212,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-ontology-repository",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-ontology-repository",
+  "@type": "Class",
   "label": "Digital Ontology Repository",
+  "definition": "Digital Ontology Repository is a type of Metadata Repository in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metadata-repository",
-      "vc:label": "Metadata Repository"
+      "@id": "urn:ngm:class:metadata-repository",
+      "label": "Metadata Repository"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7a5ecfebc642c25feea4fb1d5d5e5f6d49af7f29d87e56f83e0b237e3fe49173"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ontology-storage-system",
+        "label": "Ontology Storage System"
+      },
+      {
+        "@id": "urn:ngm:class:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "@id": "urn:ngm:class:validation-engine",
+        "label": "Validation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-reasoning-engine",
+        "label": "Semantic Reasoning Engine"
+      },
+      {
+        "@id": "urn:ngm:class:uri-resolution-service",
+        "label": "URI Resolution Service"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-domain-integration",
+        "label": "Cross-Domain Integration"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-reuse",
+        "label": "Ontology Reuse"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:vocabulary-governance",
+        "label": "Vocabulary Governance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7a5ecfebc642c25feea4fb1d5d5e5f6d49af7f29d87e56f83e0b237e3fe49173@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured collection system that stores, versions, and manages formal ontologies and semantic models to enable interoperability and shared understanding across metaverse domains. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ontology-storage-system",
-      "vc:label": "Ontology Storage System"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-interface",
-      "vc:label": "Query Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-engine",
-      "vc:label": "Validation Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-control",
-      "vc:label": "Version Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-registry",
-      "vc:label": "Metadata Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:database-management-system",
-      "vc:label": "Database Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-reasoning-engine",
-      "vc:label": "Semantic Reasoning Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri-resolution-service",
-      "vc:label": "URI Resolution Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standard",
-      "vc:label": "Metadata Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-domain-integration",
-      "vc:label": "Cross-Domain Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-reuse",
-      "vc:label": "Ontology Reuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-sharing",
-      "vc:label": "Knowledge Sharing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vocabulary-governance",
-      "vc:label": "Vocabulary Governance"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

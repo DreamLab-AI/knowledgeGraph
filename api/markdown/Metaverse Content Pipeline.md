@@ -244,160 +244,123 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-content-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-content-pipeline",
+  "@type": "Class",
   "label": "Metaverse Content Pipeline",
+  "definition": "End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:content-production-workflow",
-      "vc:label": "Content Production Workflow"
+      "@id": "urn:ngm:class:content-production-workflow",
+      "label": "Content Production Workflow"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:85f783f3c7423837477061b6c08670acba6b511b8925a5014c67b6d9f83269e3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-creation",
+        "label": "Asset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:asset-optimization",
+        "label": "Asset Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:cdn-distribution",
+        "label": "CDN Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:content-storage",
+        "label": "Content Storage"
+      },
+      {
+        "@id": "urn:ngm:class:lod-generation",
+        "label": "LOD Generation"
+      },
+      {
+        "@id": "urn:ngm:class:runtime-loading",
+        "label": "Runtime Loading"
+      },
+      {
+        "@id": "urn:ngm:class:texture-baking",
+        "label": "Texture Baking"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-authoring-tools",
+        "label": "3D Authoring Tools"
+      },
+      {
+        "@id": "urn:ngm:class:asset-compression",
+        "label": "Asset Compression"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:format-conversion",
+        "label": "Format Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-engine",
+        "label": "Real-Time Rendering Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-interoperability",
+        "label": "Content Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-content",
+        "label": "Cross-Platform Content"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-asset-loading",
+        "label": "Dynamic Asset Loading"
+      },
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:85f783f3c7423837477061b6c08670acba6b511b8925a5014c67b6d9f83269e3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "End-to-end workflow connecting asset creation, optimization, storage, distribution, and real-time rendering for metaverse experiences across platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-infrastructure",
-      "vc:label": "Metaverse Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-creation",
-      "vc:label": "Asset Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-optimization",
-      "vc:label": "Asset Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:cdn-distribution",
-      "vc:label": "CDN Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-storage",
-      "vc:label": "Content Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:lod-generation",
-      "vc:label": "LOD Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:runtime-loading",
-      "vc:label": "Runtime Loading"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-baking",
-      "vc:label": "Texture Baking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:render-pipeline",
-      "vc:label": "Render Pipeline"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-authoring-tools",
-      "vc:label": "3D Authoring Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-compression",
-      "vc:label": "Asset Compression"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-management-system",
-      "vc:label": "Asset Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-conversion",
-      "vc:label": "Format Conversion"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-rendering-engine",
-      "vc:label": "Real-Time Rendering Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-interoperability",
-      "vc:label": "Content Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-content",
-      "vc:label": "Cross-Platform Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-asset-loading",
-      "vc:label": "Dynamic Asset Loading"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-generated-content",
-      "vc:label": "User-Generated Content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-generation",
-      "vc:label": "Procedural Generation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gl-tf-standard",
-      "vc:label": "glTF Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-system",
-      "vc:label": "Material System"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-pipeline",
-      "vc:label": "Shader Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:usd-format",
-      "vc:label": "USD Format"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

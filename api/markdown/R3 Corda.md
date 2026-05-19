@@ -456,388 +456,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:r3-corda",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:r3-corda",
+  "@type": "Class",
   "label": "R3 Corda",
+  "definition": "R3 Corda is a purpose-built permissioned distributed ledger platform designed exclusively for regulated financial services, implementing a \"need-to-know\" peer-to-peer architecture in which transaction data is shared solely amongst parties with legitimate business interest, eliminating global stat...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:financial-services-technology",
-      "vc:label": "Financial Services Technology"
+      "@id": "urn:ngm:class:financial-services-technology",
+      "label": "Financial Services Technology"
     },
     {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
+      "@id": "urn:ngm:class:enterprise-blockchain",
+      "label": "Enterprise Blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dc48506db948925ed8baa2e40997c04507f96b0b13d026049a518193aacc00bc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:contract-code",
+        "label": "Contract Code"
+      },
+      {
+        "@id": "urn:ngm:class:cor-dapp",
+        "label": "CorDapp"
+      },
+      {
+        "@id": "urn:ngm:class:corda-node",
+        "label": "Corda Node"
+      },
+      {
+        "@id": "urn:ngm:class:corda-vault",
+        "label": "Corda Vault"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-jvm",
+        "label": "Deterministic JVM"
+      },
+      {
+        "@id": "urn:ngm:class:doorman",
+        "label": "Doorman"
+      },
+      {
+        "@id": "urn:ngm:class:flow-framework",
+        "label": "Flow Framework"
+      },
+      {
+        "@id": "urn:ngm:class:network-map-service",
+        "label": "Network Map Service"
+      },
+      {
+        "@id": "urn:ngm:class:notary",
+        "label": "Notary"
+      },
+      {
+        "@id": "urn:ngm:class:state-object",
+        "label": "State Object"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:jvm-runtime",
+        "label": "JVM Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:tls-encryption",
+        "label": "TLS Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-identity",
+        "label": "X.509 Identity"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
+      },
+      {
+        "@id": "urn:ngm:class:legal-agreement-automation",
+        "label": "Legal Agreement Automation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ledger",
+        "label": "Privacy-Preserving Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-asset-issuance",
+        "label": "Tokenised Asset Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:flow-coroutine",
+        "label": "Flow Coroutine"
+      },
+      {
+        "@id": "urn:ngm:class:notary-consensus",
+        "label": "Notary Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:point-to-point-messaging",
+        "label": "Point-to-Point Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:ricardian-contract",
+        "label": "Ricardian Contract"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:gradle",
+        "label": "Gradle"
+      },
+      {
+        "@id": "urn:ngm:class:http-rest-api",
+        "label": "HTTP REST API"
+      },
+      {
+        "@id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-db",
+        "label": "Oracle DB"
+      },
+      {
+        "@id": "urn:ngm:class:postgre-sql",
+        "label": "PostgreSQL"
+      },
+      {
+        "@id": "urn:ngm:class:sql-server",
+        "label": "SQL Server"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      },
+      {
+        "@id": "urn:ngm:class:digital-securities",
+        "label": "Digital Securities"
+      },
+      {
+        "@id": "urn:ngm:class:fnality",
+        "label": "Fnality"
+      },
+      {
+        "@id": "urn:ngm:class:regulated-liability-network",
+        "label": "Regulated Liability Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-processing",
+        "label": "Insurance Processing"
+      },
+      {
+        "@id": "urn:ngm:class:interbank-reconciliation",
+        "label": "Interbank Reconciliation"
+      },
+      {
+        "@id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:syndicated-lending",
+        "label": "Syndicated Lending"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "@id": "urn:ngm:class:bis-cpmi",
+        "label": "BIS CPMI"
+      },
+      {
+        "@id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      },
+      {
+        "@id": "urn:ngm:class:dtcc",
+        "label": "DTCC"
+      },
+      {
+        "@id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "@id": "urn:ngm:class:isda",
+        "label": "ISDA"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc307",
+        "label": "ISO TC307"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dc48506db948925ed8baa2e40997c04507f96b0b13d026049a518193aacc00bc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "R3 Corda is a purpose-built permissioned distributed ledger platform designed exclusively for regulated financial services, implementing a \"need-to-know\" peer-to-peer architecture in which transaction data is shared solely amongst parties with legitimate business interest, eliminating global state replication in favour of individual cryptographically-assured facts (state objects) whose uniqueness is assured by dedicated [[Notary]] services without exposing transaction contents to the wider network. Corda models [[Smart Contracts]] as legally enforceable agreements between identified parties, expressed in Kotlin or Java running on the JVM, pairing executable contract code with optional Ricardian legal prose to produce agreements that are simultaneously machine-verifiable and court-admissible. The platform implements a UTXO-like state model akin to [[Bitcoin]] but with rich typed states—states carry arbitrary Kotlin/Java objects, carry reference to their governing contract, are consumed atomically in transactions, and are replaced by successor states—providing clear provenance chains for regulatory audit without global ledger visibility. Transaction flows, expressed as coroutines via",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:contract-code",
-      "vc:label": "Contract Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:cor-dapp",
-      "vc:label": "CorDapp"
-    },
-    {
-      "@id": "urn:visionflow:linked:corda-node",
-      "vc:label": "Corda Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:corda-vault",
-      "vc:label": "Corda Vault"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-jvm",
-      "vc:label": "Deterministic JVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:doorman",
-      "vc:label": "Doorman"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-framework",
-      "vc:label": "Flow Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-map-service",
-      "vc:label": "Network Map Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:notary",
-      "vc:label": "Notary"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-object",
-      "vc:label": "State Object"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:jvm-runtime",
-      "vc:label": "JVM Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:kotlin",
-      "vc:label": "Kotlin"
-    },
-    {
-      "@id": "urn:visionflow:linked:relational-database",
-      "vc:label": "Relational Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls-encryption",
-      "vc:label": "TLS Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-509-identity",
-      "vc:label": "X.509 Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:atomic-settlement",
-      "vc:label": "Atomic Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-payment",
-      "vc:label": "Cross-Border Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:delivery-versus-payment",
-      "vc:label": "Delivery Versus Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-agreement-automation",
-      "vc:label": "Legal Agreement Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-ledger",
-      "vc:label": "Privacy-Preserving Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-asset-issuance",
-      "vc:label": "Tokenised Asset Issuance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:flow-coroutine",
-      "vc:label": "Flow Coroutine"
-    },
-    {
-      "@id": "urn:visionflow:linked:notary-consensus",
-      "vc:label": "Notary Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-to-point-messaging",
-      "vc:label": "Point-to-Point Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:ricardian-contract",
-      "vc:label": "Ricardian Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:two-phase-commit",
-      "vc:label": "Two-Phase Commit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:utxo-model",
-      "vc:label": "UTXO Model"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:apache-kafka",
-      "vc:label": "Apache Kafka"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-technology",
-      "vc:label": "Database Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:asset-tokenisation",
-      "vc:label": "Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-processing",
-      "vc:label": "Insurance Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:interbank-reconciliation",
-      "vc:label": "Interbank Reconciliation"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-settlement",
-      "vc:label": "Securities Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:syndicated-lending",
-      "vc:label": "Syndicated Lending"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance",
-      "vc:label": "Trade Finance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-credit-tracking",
-      "vc:label": "Carbon Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:amqp",
-      "vc:label": "AMQP"
-    },
-    {
-      "@id": "urn:visionflow:linked:apache-kafka",
-      "vc:label": "Apache Kafka"
-    },
-    {
-      "@id": "urn:visionflow:linked:gradle",
-      "vc:label": "Gradle"
-    },
-    {
-      "@id": "urn:visionflow:linked:http-rest-api",
-      "vc:label": "HTTP REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:kotlin",
-      "vc:label": "Kotlin"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-db",
-      "vc:label": "Oracle DB"
-    },
-    {
-      "@id": "urn:visionflow:linked:postgre-sql",
-      "vc:label": "PostgreSQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:sql-server",
-      "vc:label": "SQL Server"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:daml-ledger",
-      "vc:label": "DAML Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-iroha",
-      "vc:label": "Hyperledger Iroha"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quorum-blockchain",
-      "vc:label": "Quorum Blockchain"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bis-innovation-hub",
-      "vc:label": "BIS Innovation Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-securities",
-      "vc:label": "Digital Securities"
-    },
-    {
-      "@id": "urn:visionflow:linked:fnality",
-      "vc:label": "Fnality"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulated-liability-network",
-      "vc:label": "Regulated Liability Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bank-of-england",
-      "vc:label": "Bank of England"
-    },
-    {
-      "@id": "urn:visionflow:linked:bis-cpmi",
-      "vc:label": "BIS CPMI"
-    },
-    {
-      "@id": "urn:visionflow:linked:bis-innovation-hub",
-      "vc:label": "BIS Innovation Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:dtcc",
-      "vc:label": "DTCC"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:isda",
-      "vc:label": "ISDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc307",
-      "vc:label": "ISO TC307"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-smart-contracts",
-      "vc:label": "Enterprise Smart Contracts"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

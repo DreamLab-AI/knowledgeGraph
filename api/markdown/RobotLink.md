@@ -204,112 +204,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robot-link",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robot-link",
+  "@type": "Class",
   "label": "RobotLink",
+  "definition": "A rigid mechanical structural component in a robotic manipulator or kinematic chain that connects two consecutive joints and transmits motion and forces between them, characterized by fixed geometric and inertial properties including length, mass, center of mass location, and inertia tensor, desc...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cdae20b6599c30f6c00e1ac9dfd54bccbb0446bc1abecf11a3441332f9a274c5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inertial-frame",
+        "label": "InertialFrame"
+      },
+      {
+        "@id": "urn:ngm:class:link-geometry",
+        "label": "LinkGeometry"
+      },
+      {
+        "@id": "urn:ngm:class:mass-properties",
+        "label": "MassProperties"
+      },
+      {
+        "@id": "urn:ngm:class:material-composition",
+        "label": "MaterialComposition"
+      },
+      {
+        "@id": "urn:ngm:class:mounting-interface",
+        "label": "MountingInterface"
+      },
+      {
+        "@id": "urn:ngm:class:surface-finish",
+        "label": "SurfaceFinish"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:dynamic-balancing",
+        "label": "DynamicBalancing"
+      },
+      {
+        "@id": "urn:ngm:class:material-selection",
+        "label": "MaterialSelection"
+      },
+      {
+        "@id": "urn:ngm:class:structural-analysis",
+        "label": "StructuralAnalysis"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-management",
+        "label": "ThermalManagement"
+      },
+      {
+        "@id": "urn:ngm:class:vibration-damping",
+        "label": "VibrationDamping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:force-transmission",
+        "label": "ForceTransmission"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-chain",
+        "label": "KinematicChain"
+      },
+      {
+        "@id": "urn:ngm:class:motion-propagation",
+        "label": "MotionPropagation"
+      },
+      {
+        "@id": "urn:ngm:class:payload-support",
+        "label": "PayloadSupport"
+      },
+      {
+        "@id": "urn:ngm:class:workspace-reach",
+        "label": "WorkspaceReach"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cdae20b6599c30f6c00e1ac9dfd54bccbb0446bc1abecf11a3441332f9a274c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A rigid mechanical structural component in a robotic manipulator or kinematic chain that connects two consecutive joints and transmits motion and forces between them, characterized by fixed geometric and inertial properties including length, mass, center of mass location, and inertia tensor, described mathematically using Denavit-Hartenberg parameters (link length a, link twist α, link offset d, joint angle θ) that define the relative transformation between adjacent joint coordinate frames, manufactured from materials such as aluminum alloys (density 2.7 g/cm³, yield strength 200-600 MPa for 6061-T6/7075-T6), carbon fiber composites (specific stiffness up to 5× steel, achieving 40-60% mass reduction in collaborative robot arms), or structural steel (density 7.85 g/cm³, Young's modulus 200 GPa) depending on payload capacity (0.5-2000 kg) and speed requirements (up to 10 m/s for delta robot links), with applications spanning serial manipulators (6-DOF articulated arms with 6 links connecting base to end-effector), parallel manipulators (Stewart platform with 6 links forming closed kinematic loops), mobile robot chassis (differential drive platform with rigid frame linking wheels and ",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:inertial-frame",
-      "vc:label": "InertialFrame"
-    },
-    {
-      "@id": "urn:visionflow:linked:link-geometry",
-      "vc:label": "LinkGeometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:mass-properties",
-      "vc:label": "MassProperties"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-composition",
-      "vc:label": "MaterialComposition"
-    },
-    {
-      "@id": "urn:visionflow:linked:mounting-interface",
-      "vc:label": "MountingInterface"
-    },
-    {
-      "@id": "urn:visionflow:linked:surface-finish",
-      "vc:label": "SurfaceFinish"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-balancing",
-      "vc:label": "DynamicBalancing"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-selection",
-      "vc:label": "MaterialSelection"
-    },
-    {
-      "@id": "urn:visionflow:linked:structural-analysis",
-      "vc:label": "StructuralAnalysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:thermal-management",
-      "vc:label": "ThermalManagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:vibration-damping",
-      "vc:label": "VibrationDamping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:force-transmission",
-      "vc:label": "ForceTransmission"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-chain",
-      "vc:label": "KinematicChain"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-propagation",
-      "vc:label": "MotionPropagation"
-    },
-    {
-      "@id": "urn:visionflow:linked:payload-support",
-      "vc:label": "PayloadSupport"
-    },
-    {
-      "@id": "urn:visionflow:linked:workspace-reach",
-      "vc:label": "WorkspaceReach"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

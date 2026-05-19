@@ -664,436 +664,335 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:enterprise-smart-contracts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:enterprise-smart-contracts",
+  "@type": "Class",
   "label": "Enterprise Smart Contracts",
+  "definition": "Enterprise smart contracts are self-executing code artefacts deployed on permissioned [[Distributed Ledger Technology]] platforms — [[Hyperledger Fabric]] chaincode (Go/Node.js/Java), [[R3 Corda]] CorDapps (Kotlin/JVM), [[Quorum Blockchain]] and [[Hyperledger Besu]] (EVM permissioned with Tessera...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:business-logic-code",
-      "vc:label": "Business Logic Code"
+      "@id": "urn:ngm:class:business-logic-code",
+      "label": "Business Logic Code"
     },
     {
-      "@id": "urn:visionflow:linked:multi-party-agreement",
-      "vc:label": "Multi-Party Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-compute-artefact",
-      "vc:label": "Permissioned Compute Artefact"
+      "@id": "urn:ngm:class:multi-party-agreement",
+      "label": "Multi-Party Agreement"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3000009a5288b779cad5dcb87e4fd1e042199a3dbd91326da432c8763e5e566a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:chaincode",
+        "label": "Chaincode"
+      },
+      {
+        "@id": "urn:ngm:class:contract-state",
+        "label": "Contract State"
+      },
+      {
+        "@id": "urn:ngm:class:cor-dapp",
+        "label": "CorDapp"
+      },
+      {
+        "@id": "urn:ngm:class:endorsement-policy",
+        "label": "Endorsement Policy"
+      },
+      {
+        "@id": "urn:ngm:class:flow-logic",
+        "label": "Flow Logic"
+      },
+      {
+        "@id": "urn:ngm:class:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "@id": "urn:ngm:class:private-data-collection",
+        "label": "Private Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:ricardian-contract-template",
+        "label": "Ricardian Contract Template"
+      },
+      {
+        "@id": "urn:ngm:class:solidity-contract",
+        "label": "Solidity Contract"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-function",
+        "label": "Audit Function"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:legal-agreement",
+        "label": "Legal Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery-Versus-Payment"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-claim-automation",
+        "label": "Insurance Claim Automation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting-automation",
+        "label": "Regulatory Reporting Automation"
+      },
+      {
+        "@id": "urn:ngm:class:syndicated-lending-automation",
+        "label": "Syndicated Lending Automation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:accord-project-cicero",
+        "label": "Accord Project Cicero"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1400-security-token",
+        "label": "ERC-1400 Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3475-abstract-bond",
+        "label": "ERC-3475 Abstract Bond"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3643-t-rex",
+        "label": "ERC-3643 T-REX"
+      },
+      {
+        "@id": "urn:ngm:class:finos-common-domain-model",
+        "label": "FINOS Common Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:isda-common-domain-model",
+        "label": "ISDA Common Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:ricardian-contracts",
+        "label": "Ricardian Contracts"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:amd-sev-snp",
+        "label": "AMD SEV-SNP"
+      },
+      {
+        "@id": "urn:ngm:class:aws-nitro-enclaves",
+        "label": "AWS Nitro Enclaves"
+      },
+      {
+        "@id": "urn:ngm:class:azure-confidential-ledger",
+        "label": "Azure Confidential Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:go",
+        "label": "Go"
+      },
+      {
+        "@id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "@id": "urn:ngm:class:java",
+        "label": "Java"
+      },
+      {
+        "@id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "@id": "urn:ngm:class:node-js",
+        "label": "Node.js"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-proxy-pattern",
+        "label": "OpenZeppelin Proxy Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:orion",
+        "label": "Orion"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:tessera",
+        "label": "Tessera"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:b3i",
+        "label": "B3i"
+      },
+      {
+        "@id": "urn:ngm:class:contour",
+        "label": "Contour"
+      },
+      {
+        "@id": "urn:ngm:class:dtcc-digital-securities-initiative",
+        "label": "DTCC Digital Securities Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:finastra-fusion-lender-comm",
+        "label": "Finastra Fusion LenderComm"
+      },
+      {
+        "@id": "urn:ngm:class:insurwave",
+        "label": "Insurwave"
+      },
+      {
+        "@id": "urn:ngm:class:jpm-onyx",
+        "label": "JPM Onyx"
+      },
+      {
+        "@id": "urn:ngm:class:marco-polo-network",
+        "label": "Marco Polo Network"
+      },
+      {
+        "@id": "urn:ngm:class:project-cedar",
+        "label": "Project Cedar"
+      },
+      {
+        "@id": "urn:ngm:class:project-mariana",
+        "label": "Project Mariana"
+      },
+      {
+        "@id": "urn:ngm:class:project-rosalind",
+        "label": "Project Rosalind"
+      },
+      {
+        "@id": "urn:ngm:class:trade-lens",
+        "label": "TradeLens"
+      },
+      {
+        "@id": "urn:ngm:class:we-trade",
+        "label": "we.trade"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:consortium-governance",
+        "label": "Consortium Governance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-workflow",
+        "label": "Multi-Party Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:accord-project",
+        "label": "Accord Project"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3475",
+        "label": "ERC-3475"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "@id": "urn:ngm:class:finos-cdm",
+        "label": "FINOS CDM"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "@id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3000009a5288b779cad5dcb87e4fd1e042199a3dbd91326da432c8763e5e566a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Enterprise smart contracts** are self-executing code artefacts deployed on permissioned [[Distributed Ledger Technology]] platforms — [[Hyperledger Fabric]] chaincode (Go/Node.js/Java), [[R3 Corda]] CorDapps (Kotlin/JVM), [[Quorum Blockchain]] and [[Hyperledger Besu]] (EVM permissioned with Tessera/Orion private state), [[Hyperledger Iroha]] (command-based), [[R3 Conclave]] (Intel SGX confidential computing), [[JPM Onyx]] Coin Systems, and Microsoft's Confidential Consortium Framework — that automate multi-party business agreements under regulated governance, confidentiality, and legal-enforceability constraints fundamentally different from public-blockchain code (e.g., [[Ethereum]] [[Solidity]] on Mainnet, [[Solana]] programs). Where public smart contracts prioritise trustlessness, censorship resistance, and immutable \"code is law\" semantics, enterprise smart contracts prioritise organisational governance (multi-party endorsement, on-chain voting), regulatory compliance (KYC/AML/sanctions screening, [[GDPR]] right-to-erasure reconciliation), business confidentiality (private data collections, point-to-point flows, encrypted contracts via Tessera/Orion, [[Zero-Knowledge Proofs]] ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:chaincode",
-      "vc:label": "Chaincode"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-state",
-      "vc:label": "Contract State"
-    },
-    {
-      "@id": "urn:visionflow:linked:cor-dapp",
-      "vc:label": "CorDapp"
-    },
-    {
-      "@id": "urn:visionflow:linked:endorsement-policy",
-      "vc:label": "Endorsement Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-logic",
-      "vc:label": "Flow Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:notary-service",
-      "vc:label": "Notary Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:private-data-collection",
-      "vc:label": "Private Data Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:ricardian-contract-template",
-      "vc:label": "Ricardian Contract Template"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity-contract",
-      "vc:label": "Solidity Contract"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audit-function",
-      "vc:label": "Audit Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-agreement",
-      "vc:label": "Legal Agreement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:atomic-settlement",
-      "vc:label": "Atomic Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:delivery-versus-payment",
-      "vc:label": "Delivery-Versus-Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-claim-automation",
-      "vc:label": "Insurance Claim Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-reporting-automation",
-      "vc:label": "Regulatory Reporting Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:syndicated-lending-automation",
-      "vc:label": "Syndicated Lending Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokenised-securities",
-      "vc:label": "Tokenised Securities"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-finance-automation",
-      "vc:label": "Trade Finance Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-tracking",
-      "vc:label": "Provenance Tracking"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:accord-project-cicero",
-      "vc:label": "Accord Project Cicero"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1400-security-token",
-      "vc:label": "ERC-1400 Security Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3475-abstract-bond",
-      "vc:label": "ERC-3475 Abstract Bond"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3643-t-rex",
-      "vc:label": "ERC-3643 T-REX"
-    },
-    {
-      "@id": "urn:visionflow:linked:finos-common-domain-model",
-      "vc:label": "FINOS Common Domain Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:isda-common-domain-model",
-      "vc:label": "ISDA Common Domain Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:ricardian-contracts",
-      "vc:label": "Ricardian Contracts"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management-service",
-      "vc:label": "Key Management Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-service",
-      "vc:label": "Oracle Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-iroha",
-      "vc:label": "Hyperledger Iroha"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quorum-blockchain",
-      "vc:label": "Quorum Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:r3-corda",
-      "vc:label": "R3 Corda"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:consortium-governance",
-      "vc:label": "Consortium Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-interoperability",
-      "vc:label": "Cross-Chain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-party-workflow",
-      "vc:label": "Multi-Party Workflow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:confidential-computing",
-      "vc:label": "Confidential Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero-Knowledge Proof"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:amd-sev-snp",
-      "vc:label": "AMD SEV-SNP"
-    },
-    {
-      "@id": "urn:visionflow:linked:aws-nitro-enclaves",
-      "vc:label": "AWS Nitro Enclaves"
-    },
-    {
-      "@id": "urn:visionflow:linked:azure-confidential-ledger",
-      "vc:label": "Azure Confidential Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:go",
-      "vc:label": "Go"
-    },
-    {
-      "@id": "urn:visionflow:linked:intel-sgx",
-      "vc:label": "Intel SGX"
-    },
-    {
-      "@id": "urn:visionflow:linked:java",
-      "vc:label": "Java"
-    },
-    {
-      "@id": "urn:visionflow:linked:kotlin",
-      "vc:label": "Kotlin"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-js",
-      "vc:label": "Node.js"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-proxy-pattern",
-      "vc:label": "OpenZeppelin Proxy Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:orion",
-      "vc:label": "Orion"
-    },
-    {
-      "@id": "urn:visionflow:linked:solidity",
-      "vc:label": "Solidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:tessera",
-      "vc:label": "Tessera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:edi-without-code-execution",
-      "vc:label": "EDI Without Code Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-mainnet-contracts",
-      "vc:label": "Ethereum Mainnet Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-smart-contracts",
-      "vc:label": "Public Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:solana-programs",
-      "vc:label": "Solana Programs"
-    },
-    {
-      "@id": "urn:visionflow:linked:swift-messaging",
-      "vc:label": "SWIFT Messaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-legal-contract",
-      "vc:label": "Traditional Legal Contract"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:b3i",
-      "vc:label": "B3i"
-    },
-    {
-      "@id": "urn:visionflow:linked:contour",
-      "vc:label": "Contour"
-    },
-    {
-      "@id": "urn:visionflow:linked:dtcc-digital-securities-initiative",
-      "vc:label": "DTCC Digital Securities Initiative"
-    },
-    {
-      "@id": "urn:visionflow:linked:finastra-fusion-lender-comm",
-      "vc:label": "Finastra Fusion LenderComm"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurwave",
-      "vc:label": "Insurwave"
-    },
-    {
-      "@id": "urn:visionflow:linked:jpm-onyx",
-      "vc:label": "JPM Onyx"
-    },
-    {
-      "@id": "urn:visionflow:linked:marco-polo-network",
-      "vc:label": "Marco Polo Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-cedar",
-      "vc:label": "Project Cedar"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-mariana",
-      "vc:label": "Project Mariana"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-rosalind",
-      "vc:label": "Project Rosalind"
-    },
-    {
-      "@id": "urn:visionflow:linked:trade-lens",
-      "vc:label": "TradeLens"
-    },
-    {
-      "@id": "urn:visionflow:linked:we-trade",
-      "vc:label": "we.trade"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:accord-project",
-      "vc:label": "Accord Project"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-ethereum-alliance",
-      "vc:label": "Enterprise Ethereum Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-1400",
-      "vc:label": "ERC-1400"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3475",
-      "vc:label": "ERC-3475"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-3643",
-      "vc:label": "ERC-3643"
-    },
-    {
-      "@id": "urn:visionflow:linked:finos-cdm",
-      "vc:label": "FINOS CDM"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-foundation",
-      "vc:label": "Hyperledger Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:isda-cdm",
-      "vc:label": "ISDA CDM"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-tc-307",
-      "vc:label": "ISO TC 307"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:legal-tech",
-      "vc:label": "Legal Tech"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:confidential-computing",
-      "vc:label": "Confidential Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:permissioned-blockchain",
-      "vc:label": "Permissioned Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

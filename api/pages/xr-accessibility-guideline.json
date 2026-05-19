@@ -3,62 +3,71 @@
   "title": "XR Accessibility Guideline",
   "slug": "xr-accessibility-guideline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-accessibility-guideline",
+  "classIri": "urn:ngm:class:xr-accessibility-guideline",
   "domain": "spatial-computing",
   "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:accessibility-standard",
+      "id": "urn:ngm:class:accessibility-standard",
       "label": "Accessibility Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:best-practice",
+        "id": "urn:ngm:class:best-practice",
         "label": "Best Practice"
       },
       {
-        "id": "urn:visionflow:linked:design-recommendation",
+        "id": "urn:ngm:class:design-recommendation",
         "label": "Design Recommendation"
       },
       {
-        "id": "urn:visionflow:linked:implementation-example",
+        "id": "urn:ngm:class:implementation-example",
         "label": "Implementation Example"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:accessibility-testing",
+        "id": "urn:ngm:class:accessibility-testing",
         "label": "Accessibility Testing"
       },
       {
-        "id": "urn:visionflow:owl:class:user-research",
+        "id": "urn:ngm:class:user-research",
         "label": "User Research"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:assistive-technology-integration",
+        "id": "urn:ngm:class:assistive-technology-integration",
         "label": "Assistive Technology Integration"
       },
       {
-        "id": "urn:visionflow:linked:universal-access",
+        "id": "urn:ngm:class:universal-access",
         "label": "Universal Access"
       },
       {
-        "id": "urn:visionflow:owl:class:inclusive-xr-design",
+        "id": "urn:ngm:class:inclusive-xr-design",
         "label": "Inclusive XR Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

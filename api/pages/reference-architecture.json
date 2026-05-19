@@ -3,32 +3,36 @@
   "title": "Reference Architecture",
   "slug": "reference-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reference-architecture",
+  "classIri": "urn:ngm:class:reference-architecture",
   "domain": "spatial-computing",
   "definition": "A standardized architectural template that provides proven structural frameworks and design patterns for building scalable, resilient enterprise applications, establishing shared vocabulary and best practices across development teams.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-architecture",
+      "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalable-systems",
+        "id": "urn:ngm:class:scalable-systems",
         "label": "Scalable Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

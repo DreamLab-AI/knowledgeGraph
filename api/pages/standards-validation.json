@@ -3,19 +3,18 @@
   "title": "Standards Validation",
   "slug": "standards-validation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:standards-validation",
+  "classIri": "urn:ngm:class:standards-validation",
   "domain": "spatial-computing",
-  "definition": "Processes used to determine whether development products conform to requirements and whether the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
+  "definition": "Processes used to determine wher development products conform to requirements and wher the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:standards",
+      "id": "urn:ngm:class:standards",
       "label": "Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

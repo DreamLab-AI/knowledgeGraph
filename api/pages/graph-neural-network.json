@@ -3,19 +3,18 @@
   "title": "Graph Neural Network",
   "slug": "graph-neural-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:graph-neural-network",
+  "classIri": "urn:ngm:class:graph-neural-network",
   "domain": "artificial-intelligence",
   "definition": "Graph Neural Network is a artificial intelligence concept and a type of Neural Network.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:neural-network",
+      "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

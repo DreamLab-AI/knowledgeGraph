@@ -232,143 +232,119 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-world",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-world",
+  "@type": "Class",
   "label": "Virtual World",
-  "subClassOf": [],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2b1744cbd5f15f80edf95b3f906b315e2edd5b3ce4fb2a083174f0dfae98545a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2b1744cbd5f15f80edf95b3f906b315e2edd5b3ce4fb2a083174f0dfae98545a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing-core",
+      "label": "Spatial Computing"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:economic-system",
+        "label": "Economic System"
+      },
+      {
+        "@id": "urn:ngm:class:object-persistence",
+        "label": "Object Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:social-system",
+        "label": "Social System"
+      },
+      {
+        "@id": "urn:ngm:class:user-representation",
+        "label": "User Representation"
+      },
+      {
+        "@id": "urn:ngm:class:world-space",
+        "label": "World Space"
+      },
+      {
+        "@id": "urn:ngm:class:digital-real-estate",
+        "label": "Digital Real Estate"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:tourism-metaverse",
+        "label": "Tourism Metaverse"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-work",
+        "label": "Collaborative Work"
+      },
+      {
+        "@id": "urn:ngm:class:creative-expression",
+        "label": "Creative Expression"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:economic-system",
-      "vc:label": "Economic System"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-persistence",
-      "vc:label": "Object Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-system",
-      "vc:label": "Social System"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-representation",
-      "vc:label": "User Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-space",
-      "vc:label": "World Space"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-real-estate",
-      "vc:label": "Digital Real Estate"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tourism-metaverse",
-      "vc:label": "Tourism Metaverse"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-management",
-      "vc:label": "Asset Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-work",
-      "vc:label": "Collaborative Work"
-    },
-    {
-      "@id": "urn:visionflow:linked:creative-expression",
-      "vc:label": "Creative Expression"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-interaction",
-      "vc:label": "Social Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-economy",
-      "vc:label": "Digital Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-society",
-      "vc:label": "Virtual Society"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:client-application",
-      "vc:label": "Client Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-infrastructure",
-      "vc:label": "Server Infrastructure"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

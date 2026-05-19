@@ -3,53 +3,57 @@
   "title": "Ai Art Categorization",
   "slug": "ai-art-categorization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-art-categorization",
+  "classIri": "urn:ngm:class:ai-art-categorization",
   "domain": "artificial-intelligence",
-  "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning methods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation methodology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the creative process.",
+  "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning mods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation modology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the cr...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:art-classification",
+      "id": "urn:ngm:class:art-classification",
       "label": "Art Classification"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:art-historical-knowledge",
+        "id": "urn:ngm:class:art-historical-knowledge",
         "label": "Art Historical Knowledge"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:deep-learning",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:art-curation",
+        "id": "urn:ngm:class:art-curation",
         "label": "Art Curation"
       },
       {
-        "id": "urn:visionflow:linked:authenticity-detection",
+        "id": "urn:ngm:class:authenticity-detection",
         "label": "Authenticity Detection"
       },
       {
-        "id": "urn:visionflow:linked:style-analysis",
+        "id": "urn:ngm:class:style-analysis",
         "label": "Style Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

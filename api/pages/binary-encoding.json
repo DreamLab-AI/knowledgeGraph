@@ -3,53 +3,57 @@
   "title": "Binary Encoding",
   "slug": "binary-encoding",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:binary-encoding",
+  "classIri": "urn:ngm:class:binary-encoding",
   "domain": "spatial-computing",
   "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-format",
+      "id": "urn:ngm:class:data-format",
       "label": "Data Format"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:encoding-rules",
+        "id": "urn:ngm:class:encoding-rules",
         "label": "Encoding Rules"
       },
       {
-        "id": "urn:visionflow:linked:parser-implementation",
+        "id": "urn:ngm:class:parser-implementation",
         "label": "Parser Implementation"
       },
       {
-        "id": "urn:visionflow:linked:schema-definition",
+        "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-serialization",
+        "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialization"
       },
       {
-        "id": "urn:visionflow:linked:efficient-storage",
+        "id": "urn:ngm:class:efficient-storage",
         "label": "Efficient Storage"
       },
       {
-        "id": "urn:visionflow:linked:network-transmission",
+        "id": "urn:ngm:class:network-transmission",
         "label": "Network Transmission"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

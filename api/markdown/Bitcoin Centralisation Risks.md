@@ -600,380 +600,287 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bitcoin-centralisation-risks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bitcoin-centralisation-risks",
+  "@type": "Class",
   "label": "Bitcoin Centralisation Risks",
+  "definition": "Bitcoin Centralisation Risks refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised e...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:blockchain-governance-risk",
-      "vc:label": "Blockchain Governance Risk"
+      "@id": "urn:ngm:class:blockchain-governance-risk",
+      "label": "Blockchain Governance Risk"
     },
     {
-      "@id": "urn:visionflow:linked:concentration-risk",
-      "vc:label": "Concentration Risk"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralisation",
-      "vc:label": "Decentralisation"
+      "@id": "urn:ngm:class:concentration-risk",
+      "label": "Concentration Risk"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2526ce5881f9f2c433c59a7cc12a64a6806291aba8fc9cdcd8321c6538073461"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asic-manufacturer-duopoly",
+        "label": "ASIC Manufacturer Duopoly"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-concentration",
+        "label": "Custodial Concentration"
+      },
+      {
+        "@id": "urn:ngm:class:developer-centralisation",
+        "label": "Developer Centralisation"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-hashrate-concentration",
+        "label": "Geographic Hashrate Concentration"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-holder-concentration",
+        "label": "Institutional Holder Concentration"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network-hub-centralisation",
+        "label": "Lightning Network Hub Centralisation"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool-concentration",
+        "label": "Mining Pool Concentration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:protocol-capture",
+        "label": "Protocol Capture"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-capture",
+        "label": "Regulatory Capture"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-attack",
+        "label": "Supply Chain Attack"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-censorship",
+        "label": "Transaction Censorship"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:gini-coefficient-analysis",
+        "label": "Gini Coefficient Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:hashrate-distribution-analysis",
+        "label": "Hashrate Distribution Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:herfindahl-hirschman-index",
+        "label": "Herfindahl-Hirschman Index"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology-analysis",
+        "label": "Network Topology Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:hash-power",
+        "label": "Hash Power"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-channel",
+        "label": "Lightning Channel"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ant-pool",
+        "label": "AntPool"
+      },
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:bitmain",
+        "label": "Bitmain"
+      },
+      {
+        "@id": "urn:ngm:class:black-rock",
+        "label": "BlackRock"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "@id": "urn:ngm:class:exchange",
+        "label": "Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:foundry-usa",
+        "label": "Foundry USA"
+      },
+      {
+        "@id": "urn:ngm:class:micro-bt",
+        "label": "MicroBT"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-risk",
+        "label": "Regulatory Risk"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-v2",
+        "label": "Stratum V2"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralisation-monitoring",
+        "label": "Decentralisation Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:governance-reform",
+        "label": "Governance Reform"
+      },
+      {
+        "@id": "urn:ngm:class:network-security-analysis",
+        "label": "Network Security Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-v2",
+        "label": "Stratum V2"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bis-crypto-risk-assessment-framework",
+        "label": "BIS Crypto Risk Assessment Framework"
+      },
+      {
+        "@id": "urn:ngm:class:cambridge-centre-for-alternative-finance-mining-reports",
+        "label": "Cambridge Centre for Alternative Finance Mining Reports"
+      },
+      {
+        "@id": "urn:ngm:class:fsb-crypto-asset-monitoring-framework",
+        "label": "FSB Crypto Asset Monitoring Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-coefficient",
+        "label": "Nakamoto Coefficient"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2526ce5881f9f2c433c59a7cc12a64a6806291aba8fc9cdcd8321c6538073461@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Bitcoin Centralisation Risks** refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised ecosystem. [[Bitcoin]] was designed — through Nakamoto's 2008 whitepaper — to operate without any trusted third party, using a distributed [[Proof of Work]] consensus to prevent any single actor from rewriting the ledger or censoring transactions. Yet, across every major subsystem of the Bitcoin stack, observable concentration trends challenge this foundational guarantee. Centralisation risks in [[Bitcoin]] operate across at least seven distinct attack surfaces, each capable of independently undermining a different aspect of Bitcoin's core security model:",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asic-manufacturer-duopoly",
-      "vc:label": "ASIC Manufacturer Duopoly"
-    },
-    {
-      "@id": "urn:visionflow:linked:custodial-concentration",
-      "vc:label": "Custodial Concentration"
-    },
-    {
-      "@id": "urn:visionflow:linked:developer-centralisation",
-      "vc:label": "Developer Centralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:geographic-hashrate-concentration",
-      "vc:label": "Geographic Hashrate Concentration"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-holder-concentration",
-      "vc:label": "Institutional Holder Concentration"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-network-hub-centralisation",
-      "vc:label": "Lightning Network Hub Centralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mining-pool-concentration",
-      "vc:label": "Mining Pool Concentration"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asic",
-      "vc:label": "ASIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-core",
-      "vc:label": "Bitcoin Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network",
-      "vc:label": "Bitcoin Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:full-node",
-      "vc:label": "Full Node"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining-pool",
-      "vc:label": "Mining Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:protocol-capture",
-      "vc:label": "Protocol Capture"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-capture",
-      "vc:label": "Regulatory Capture"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-attack",
-      "vc:label": "Supply Chain Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-censorship",
-      "vc:label": "Transaction Censorship"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:51-attack",
-      "vc:label": "51% Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eclipse-attack",
-      "vc:label": "Eclipse Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sybil-attack",
-      "vc:label": "Sybil Attack"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:gini-coefficient-analysis",
-      "vc:label": "Gini Coefficient Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:hashrate-distribution-analysis",
-      "vc:label": "Hashrate Distribution Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:herfindahl-hirschman-index",
-      "vc:label": "Herfindahl-Hirschman Index"
-    },
-    {
-      "@id": "urn:visionflow:linked:nakamoto-coefficient",
-      "vc:label": "Nakamoto Coefficient"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-topology-analysis",
-      "vc:label": "Network Topology Analysis"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:asic",
-      "vc:label": "ASIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-core",
-      "vc:label": "Bitcoin Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:exchange",
-      "vc:label": "Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining",
-      "vc:label": "Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:decentralisation-monitoring",
-      "vc:label": "Decentralisation Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-reform",
-      "vc:label": "Governance Reform"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-security-analysis",
-      "vc:label": "Network Security Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self-Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-v2",
-      "vc:label": "Stratum V2"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:custodial-wallet",
-      "vc:label": "Custodial Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-power",
-      "vc:label": "Hash Power"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-custody",
-      "vc:label": "Institutional Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:lightning-channel",
-      "vc:label": "Lightning Channel"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-development",
-      "vc:label": "Open Source Development"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining-pool",
-      "vc:label": "Mining Pool"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:decentralisation",
-      "vc:label": "Decentralisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionlessness",
-      "vc:label": "Permissionlessness"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-custody",
-      "vc:label": "Self-Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-system",
-      "vc:label": "Trustless System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ant-pool",
-      "vc:label": "AntPool"
-    },
-    {
-      "@id": "urn:visionflow:linked:asic",
-      "vc:label": "ASIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-core",
-      "vc:label": "Bitcoin Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitmain",
-      "vc:label": "Bitmain"
-    },
-    {
-      "@id": "urn:visionflow:linked:black-rock",
-      "vc:label": "BlackRock"
-    },
-    {
-      "@id": "urn:visionflow:linked:coinbase",
-      "vc:label": "Coinbase"
-    },
-    {
-      "@id": "urn:visionflow:linked:exchange",
-      "vc:label": "Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundry-usa",
-      "vc:label": "Foundry USA"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-bt",
-      "vc:label": "MicroBT"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-risk",
-      "vc:label": "Regulatory Risk"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratum-v2",
-      "vc:label": "Stratum V2"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:51-attack",
-      "vc:label": "51% Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micro-strategy",
-      "vc:label": "MicroStrategy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining",
-      "vc:label": "Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining-pool",
-      "vc:label": "Mining Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sybil-attack",
-      "vc:label": "Sybil Attack"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bis-crypto-risk-assessment-framework",
-      "vc:label": "BIS Crypto Risk Assessment Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:cambridge-centre-for-alternative-finance-mining-reports",
-      "vc:label": "Cambridge Centre for Alternative Finance Mining Reports"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsb-crypto-asset-monitoring-framework",
-      "vc:label": "FSB Crypto Asset Monitoring Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:nakamoto-coefficient",
-      "vc:label": "Nakamoto Coefficient"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralisation",
-      "vc:label": "Decentralisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mining",
-      "vc:label": "Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

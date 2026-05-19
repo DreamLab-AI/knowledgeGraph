@@ -140,70 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-actor-creation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-actor-creation",
+  "@type": "Class",
   "label": "Digital Actor Creation",
+  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-human-technology",
-      "vc:label": "Digital Human Technology"
+      "@id": "urn:ngm:class:digital-human-technology",
+      "label": "Digital Human Technology"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-synthesis",
+        "label": "AI Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-performances",
+        "label": "Virtual Performances"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:15dac667e7f6b23152cc4acc69455f6a901597f749de300815615cd8fe1415ed@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications. bridges-to:: [[DID Nostr Identity]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-synthesis",
-      "vc:label": "AI Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture",
-      "vc:label": "Motion Capture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-twins",
-      "vc:label": "Digital Twins"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-performances",
-      "vc:label": "Virtual Performances"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -148,48 +148,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reinforcement-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reinforcement-learning",
+  "@type": "Class",
   "label": "Reinforcement Learning",
+  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ded4241aacca2cc1fa44a8125ba440cccf0b2341dcb9780de12617cae46ee8f7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error. This approach is fundamental to [[AutonomousRobot|autonomous systems]] and [[ArtificialIntelligence|AI agents]] that must adapt to dynamic, uncertain environments without explicit human supervision. Applications span [[GameAI|game-playing agents]], [[RoboticControl|robotic control]], and [[RecommendationSystem|recommendation systems]] where learning from environmental feedback optimises long-term performance.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

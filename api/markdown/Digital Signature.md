@@ -716,364 +716,283 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-signature",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-signature",
+  "@type": "Class",
   "label": "Digital Signature",
+  "definition": "A [[Digital Signature]] is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature σ that Verify(pk, m,...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:asymmetric-cryptography",
-      "vc:label": "Asymmetric Cryptography"
+      "@id": "urn:ngm:class:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
     },
     {
-      "@id": "urn:visionflow:linked:authentication-mechanism",
-      "vc:label": "Authentication Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-key-cryptosystem",
-      "vc:label": "Public-Key Cryptosystem"
+      "@id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d006dd86b8222ab315a6d31c1a3de89330671b1338ad77dd222de92a2cf2e507"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:random-nonce",
+        "label": "Random Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:signature-value",
+        "label": "Signature Value"
+      },
+      {
+        "@id": "urn:ngm:class:signing-algorithm",
+        "label": "Signing Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:verification-algorithm",
+        "label": "Verification Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographically-secure-random-number-generator",
+        "label": "Cryptographically Secure Random Number Generator"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-key-distribution",
+        "label": "Trusted Key Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:document-signing",
+        "label": "Document Signing"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain-integrity",
+        "label": "Software Supply Chain Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-authorisation",
+        "label": "Transaction Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:euf-cma-security",
+        "label": "EUF-CMA Security"
+      },
+      {
+        "@id": "urn:ngm:class:existential-unforgeability",
+        "label": "Existential Unforgeability"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-shamir-heuristic",
+        "label": "Fiat-Shamir Heuristic"
+      },
+      {
+        "@id": "urn:ngm:class:integer-factorisation-problem",
+        "label": "Integer Factorisation Problem"
+      },
+      {
+        "@id": "urn:ngm:class:lattice-trapdoor",
+        "label": "Lattice Trapdoor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:base58-encoding",
+        "label": "Base58 Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:blake3",
+        "label": "BLAKE3"
+      },
+      {
+        "@id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      },
+      {
+        "@id": "urn:ngm:class:der-encoding",
+        "label": "DER Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:e-idas-qes",
+        "label": "eIDAS QES"
+      },
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:open-pgp",
+        "label": "OpenPGP"
+      },
+      {
+        "@id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-authorisation",
+        "label": "Smart Contract Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ansi-x9",
+        "label": "ANSI X9"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:fips-186-5",
+        "label": "FIPS 186-5"
+      },
+      {
+        "@id": "urn:ngm:class:fips-204",
+        "label": "FIPS 204"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d006dd86b8222ab315a6d31c1a3de89330671b1338ad77dd222de92a2cf2e507@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A [[Digital Signature]] is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature σ that Verify(pk, m, σ) accepts with overwhelming probability while no efficient adversary lacking sk can produce a forgery (m*, σ*) satisfying Verify(pk, m*, σ*) = 1 except with negligible probability under the standard security notion of existential unforgeability under adaptive chosen-message attack (EUF-CMA, Goldwasser, Micali & Rivest 1988), providing the three foundational guarantees of authentication (only the holder of sk could have produced σ), integrity (any modification to m invalidates Verify), and [[Non-Repudiation]] (sk-holders cannot plausibly deny having signed) — distinct from [[Message Authentication Code]]s which use symmetric keys and provide no non-repudiation, from [[Hash Function]]s alone which lack origin authentication, and from physical signatures which lack mathematical binding to content — instantiated across a deep algorithmic family beginning with the [[Diffie-Hellman Key Exchange",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:key-generation-algorithm",
-      "vc:label": "Key Generation Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-nonce",
-      "vc:label": "Random Nonce"
-    },
-    {
-      "@id": "urn:visionflow:linked:signature-value",
-      "vc:label": "Signature Value"
-    },
-    {
-      "@id": "urn:visionflow:linked:signing-algorithm",
-      "vc:label": "Signing Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-algorithm",
-      "vc:label": "Verification Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:private-key",
-      "vc:label": "Private Key"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key",
-      "vc:label": "Public Key"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-hardness-assumption",
-      "vc:label": "Computational Hardness Assumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographically-secure-random-number-generator",
-      "vc:label": "Cryptographically Secure Random Number Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-key-distribution",
-      "vc:label": "Trusted Key Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-signing",
-      "vc:label": "Code Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-signing",
-      "vc:label": "Document Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-supply-chain-integrity",
-      "vc:label": "Software Supply Chain Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-authorisation",
-      "vc:label": "Transaction Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-transaction",
-      "vc:label": "Blockchain Transaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:discrete-logarithm-problem",
-      "vc:label": "Discrete Logarithm Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:euf-cma-security",
-      "vc:label": "EUF-CMA Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:existential-unforgeability",
-      "vc:label": "Existential Unforgeability"
-    },
-    {
-      "@id": "urn:visionflow:linked:fiat-shamir-heuristic",
-      "vc:label": "Fiat-Shamir Heuristic"
-    },
-    {
-      "@id": "urn:visionflow:linked:integer-factorisation-problem",
-      "vc:label": "Integer Factorisation Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:lattice-trapdoor",
-      "vc:label": "Lattice Trapdoor"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:computational-complexity-theory",
-      "vc:label": "Computational Complexity Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:elliptic-curve-theory",
-      "vc:label": "Elliptic Curve Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:lattice-cryptography",
-      "vc:label": "Lattice Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:number-theory",
-      "vc:label": "Number Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-oracle-model",
-      "vc:label": "Random Oracle Model"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:e-idas-qes",
-      "vc:label": "eIDAS QES"
-    },
-    {
-      "@id": "urn:visionflow:linked:nostr",
-      "vc:label": "Nostr"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-pgp",
-      "vc:label": "OpenPGP"
-    },
-    {
-      "@id": "urn:visionflow:linked:sigstore",
-      "vc:label": "Sigstore"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-authorisation",
-      "vc:label": "Smart Contract Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls",
-      "vc:label": "TLS"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:base58-encoding",
-      "vc:label": "Base58 Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:blake3",
-      "vc:label": "BLAKE3"
-    },
-    {
-      "@id": "urn:visionflow:linked:curve25519",
-      "vc:label": "Curve25519"
-    },
-    {
-      "@id": "urn:visionflow:linked:der-encoding",
-      "vc:label": "DER Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed25519",
-      "vc:label": "Ed25519"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1",
-      "vc:label": "secp256k1"
-    },
-    {
-      "@id": "urn:visionflow:linked:sha-3",
-      "vc:label": "SHA-3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sha-256",
-      "vc:label": "SHA-256"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:hash-based-commitment",
-      "vc:label": "Hash-Based Commitment"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication-code",
-      "vc:label": "Message Authentication Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:ring-signature",
-      "vc:label": "Ring Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:symmetric-authenticator",
-      "vc:label": "Symmetric Authenticator"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-signature",
-      "vc:label": "Threshold Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:wet-signature",
-      "vc:label": "Wet Signature"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bls-signature",
-      "vc:label": "BLS Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:certificate-transparency",
-      "vc:label": "Certificate Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature",
-      "vc:label": "Multi-Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-random-function",
-      "vc:label": "Verifiable Random Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero-Knowledge Proof"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ansi-x9",
-      "vc:label": "ANSI X9"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-idas-2-0",
-      "vc:label": "eIDAS 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:fips-186-5",
-      "vc:label": "FIPS 186-5"
-    },
-    {
-      "@id": "urn:visionflow:linked:fips-204",
-      "vc:label": "FIPS 204"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec",
-      "vc:label": "ISO/IEC"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t",
-      "vc:label": "ITU-T"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-5280",
-      "vc:label": "RFC 5280"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-8032",
-      "vc:label": "RFC 8032"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
-      "vc:label": "Post-Quantum Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

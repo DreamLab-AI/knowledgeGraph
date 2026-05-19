@@ -220,140 +220,97 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compatibility-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compatibility-process",
+  "@type": "Class",
   "label": "Compatibility Process",
+  "definition": "Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:compatibility-standards",
-      "vc:label": "Compatibility Standards"
+      "@id": "urn:ngm:class:compatibility-standards",
+      "label": "Compatibility Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6d794de57e005746716c7343683c1474e8090758d7862aedaf3e510b8004893f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cross-platform-testing",
+        "label": "Cross-Platform Testing"
+      },
+      {
+        "@id": "urn:ngm:class:format-validation",
+        "label": "Format Validation"
+      },
+      {
+        "@id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-verification",
+        "label": "Interoperability Verification"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-compatibility-checks",
+        "label": "Protocol Compatibility Checks"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Standards Conformance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conformance-criteria",
+        "label": "Conformance Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:reference-implementations",
+        "label": "Reference Implementations"
+      },
+      {
+        "@id": "urn:ngm:class:test-specifications",
+        "label": "Test Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:validation-tools",
+        "label": "Validation Tools"
+      },
+      {
+        "@id": "urn:ngm:class:compatibility-standards",
+        "label": "Compatibility Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:ecosystem-connectivity",
+        "label": "Ecosystem Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6d794de57e005746716c7343683c1474e8090758d7862aedaf3e510b8004893f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-testing",
-      "vc:label": "Cross-Platform Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:format-validation",
-      "vc:label": "Format Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:integration-testing",
-      "vc:label": "Integration Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:interoperability-verification",
-      "vc:label": "Interoperability Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-compatibility-checks",
-      "vc:label": "Protocol Compatibility Checks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-conformance-testing",
-      "vc:label": "Standards Conformance Testing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conformance-criteria",
-      "vc:label": "Conformance Criteria"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-implementations",
-      "vc:label": "Reference Implementations"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-specifications",
-      "vc:label": "Test Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-tools",
-      "vc:label": "Validation Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compatibility-standards",
-      "vc:label": "Compatibility Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-portability",
-      "vc:label": "Asset Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecosystem-connectivity",
-      "vc:label": "Ecosystem Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standards-compliance",
-      "vc:label": "Standards Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-integration",
-      "vc:label": "System Integration"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:api-specifications",
-      "vc:label": "API Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-format-schemas",
-      "vc:label": "Data Format Schemas"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-definitions",
-      "vc:label": "Protocol Definitions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-framework",
-      "vc:label": "Interoperability Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

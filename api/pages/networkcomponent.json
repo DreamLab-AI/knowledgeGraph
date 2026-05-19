@@ -3,19 +3,18 @@
   "title": "Networkcomponent",
   "slug": "networkcomponent",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:networkcomponent",
+  "classIri": "urn:ngm:class:networkcomponent",
   "domain": "distributed-collaboration",
-  "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet. Core components include switches for local traffic routing, routers for inter-network packet forwarding, and firewalls for security enforcement, forming the foundation of modern digital communications.",
+  "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

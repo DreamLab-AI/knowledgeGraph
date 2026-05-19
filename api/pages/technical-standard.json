@@ -3,49 +3,52 @@
   "title": "Technical Standard",
   "slug": "technical-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:technical-standard",
+  "classIri": "urn:ngm:class:technical-standard",
   "domain": "infrastructure",
-  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:specification",
-      "label": "Specification"
-    }
-  ],
+  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, mods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:quality-assurance",
+        "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       },
       {
-        "id": "urn:visionflow:owl:class:safety",
+        "id": "urn:ngm:class:safety",
         "label": "Safety"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:best-practices",
+        "id": "urn:ngm:class:best-practices",
         "label": "Best Practices"
       },
       {
-        "id": "urn:visionflow:linked:technical-requirements",
+        "id": "urn:ngm:class:technical-requirements",
         "label": "Technical Requirements"
+      },
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

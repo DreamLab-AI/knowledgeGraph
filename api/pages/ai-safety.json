@@ -3,19 +3,18 @@
   "title": "AI Safety",
   "slug": "ai-safety",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-safety",
+  "classIri": "urn:ngm:class:ai-safety",
   "domain": "artificial-intelligence",
-  "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.",
+  "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
+      "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

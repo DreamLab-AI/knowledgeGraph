@@ -3,19 +3,18 @@
   "title": "Virtual Network",
   "slug": "virtual-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-network",
+  "classIri": "urn:ngm:class:virtual-network",
   "domain": "spatial-computing",
   "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

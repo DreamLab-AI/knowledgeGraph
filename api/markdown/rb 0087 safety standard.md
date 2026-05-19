@@ -116,42 +116,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0087-safety-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0087-safety-standard",
+  "@type": "Class",
   "label": "rb 0087 safety standard",
+  "definition": "safety standard is a robotics and autonomous systems concept and a type of Robot Standard.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robot-standard",
-      "vc:label": "Robot Standard"
+      "@id": "urn:ngm:class:robot-standard",
+      "label": "Robot Standard"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f5616b6bf9eefab3b7bd006c5f3771c4d122ea9f04c883fccac8ecc84ecb4f5b"
-  },
-  "vc:inferenceRule": "R3SemanticMatch",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f5616b6bf9eefab3b7bd006c5f3771c4d122ea9f04c883fccac8ecc84ecb4f5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "safety standard is a robotics and autonomous systems concept and a type of Robot Standard."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R3SemanticMatch"
+  }
 }
 ```
 

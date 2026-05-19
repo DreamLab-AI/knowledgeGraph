@@ -156,41 +156,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fault-tolerance-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fault-tolerance-system",
+  "@type": "Class",
   "label": "Fault Tolerance System",
+  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c46e1fc597829039ad94a73e9470e8693f28a3a70ffd7b716c3b2ed3d93b3f1f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environ",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

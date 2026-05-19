@@ -3,19 +3,18 @@
   "title": "Self Training",
   "slug": "self-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:self-training",
+  "classIri": "urn:ngm:class:self-training",
   "domain": "artificial-intelligence",
   "definition": "A semi-supervised learning technique where a model is iteratively improved by training on its own high-confidence predictions on unlabelled data. Self-training enables learning from large amounts of unlabelled data by using the model's own predictions as pseudo-labels.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:semi-supervised-learning",
+      "id": "urn:ngm:class:semi-supervised-learning",
       "label": "Semi-Supervised Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

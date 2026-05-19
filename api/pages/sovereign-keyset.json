@@ -3,95 +3,99 @@
   "title": "Sovereign Keyset",
   "slug": "sovereign-keyset",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sovereign-keyset",
+  "classIri": "urn:ngm:class:sovereign-keyset",
   "domain": "blockchain",
-  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.",
+  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authentica...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.86,
-  "authorityScore": 0.88,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bip-340-schnorr-keypair",
+        "id": "urn:ngm:class:bip-340-schnorr-keypair",
         "label": "BIP-340 Schnorr Keypair"
       },
       {
-        "id": "urn:visionflow:linked:key-rotation-policy",
+        "id": "urn:ngm:class:key-rotation-policy",
         "label": "Key Rotation Policy"
       },
       {
-        "id": "urn:visionflow:owl:class:private-key",
+        "id": "urn:ngm:class:private-key",
         "label": "Private Key"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key",
+        "id": "urn:ngm:class:public-key",
         "label": "Public Key"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:hardware-security-module-optional",
+        "id": "urn:ngm:class:hardware-security-module-optional",
         "label": "Hardware Security Module (optional)"
       },
       {
-        "id": "urn:visionflow:linked:key-storage",
+        "id": "urn:ngm:class:key-storage",
         "label": "Key Storage"
       },
       {
-        "id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+        "id": "urn:ngm:class:secp256k1-elliptic-curve",
         "label": "secp256k1 Elliptic Curve"
       },
       {
-        "id": "urn:visionflow:linked:secure-random-number-generator",
+        "id": "urn:ngm:class:secure-random-number-generator",
         "label": "Secure Random Number Generator"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:credential-issuance",
+        "id": "urn:ngm:class:credential-issuance",
         "label": "Credential Issuance"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-trust",
+        "id": "urn:ngm:class:decentralised-trust",
         "label": "Decentralised Trust"
       },
       {
-        "id": "urn:visionflow:linked:message-signing",
+        "id": "urn:ngm:class:message-signing",
         "label": "Message Signing"
       },
       {
-        "id": "urn:visionflow:linked:peer-authentication",
+        "id": "urn:ngm:class:peer-authentication",
         "label": "Peer Authentication"
       },
       {
-        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self-Sovereign Identity"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bip-340",
+        "id": "urn:ngm:class:bip-340",
         "label": "BIP-340"
       },
       {
-        "id": "urn:visionflow:linked:secp256k1",
+        "id": "urn:ngm:class:secp256k1",
         "label": "secp256k1"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

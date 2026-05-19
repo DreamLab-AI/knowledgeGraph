@@ -224,132 +224,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:health-metaverse-application",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:health-metaverse-application",
+  "@type": "Class",
   "label": "Health Metaverse Application",
+  "definition": "A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:diagnostic-interface",
+        "label": "Diagnostic Interface"
+      },
+      {
+        "@id": "urn:ngm:class:health-record-system",
+        "label": "Health Record System"
+      },
+      {
+        "@id": "urn:ngm:class:medical-simulation",
+        "label": "Medical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:patient-portal",
+        "label": "Patient Portal"
+      },
+      {
+        "@id": "urn:ngm:class:therapy-environment",
+        "label": "Therapy Environment"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-clinic",
+        "label": "Virtual Clinic"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:biometric-sensor-integration",
+        "label": "Biometric Sensor Integration"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-education",
+        "label": "Medical Education"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-therapy",
+        "label": "Mental Health Therapy"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-program",
+        "label": "Rehabilitation Program"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-training",
+        "label": "Surgical Training"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7f71e59a6e61b42120268a2cfa2e2cf15bd0cd849bbbf0cd1d7433a810cc21eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A specialized virtual platform integrating healthcare delivery, medical training, therapeutic interventions, and patient engagement through immersive environments that comply with health data regulations and clinical standards.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
-      "vc:label": "Metaverse Application Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:diagnostic-interface",
-      "vc:label": "Diagnostic Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:health-record-system",
-      "vc:label": "Health Record System"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-simulation",
-      "vc:label": "Medical Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:patient-portal",
-      "vc:label": "Patient Portal"
-    },
-    {
-      "@id": "urn:visionflow:linked:therapy-environment",
-      "vc:label": "Therapy Environment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-clinic",
-      "vc:label": "Virtual Clinic"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:biometric-sensor-integration",
-      "vc:label": "Biometric Sensor Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:end-to-end-encryption",
-      "vc:label": "End-to-End Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:haptic-feedback-system",
-      "vc:label": "Haptic Feedback System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:medical-education",
-      "vc:label": "Medical Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:mental-health-therapy",
-      "vc:label": "Mental Health Therapy"
-    },
-    {
-      "@id": "urn:visionflow:linked:rehabilitation-program",
-      "vc:label": "Rehabilitation Program"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-training",
-      "vc:label": "Surgical Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:telemedicine",
-      "vc:label": "Telemedicine"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:3-d-medical-imaging",
-      "vc:label": "3D Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:clinical-ai",
-      "vc:label": "Clinical AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-device",
-      "vc:label": "XR Device"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

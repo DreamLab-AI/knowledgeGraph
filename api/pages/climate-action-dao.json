@@ -3,90 +3,90 @@
   "title": "Climate Action DAO",
   "slug": "climate-action-dao",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:climate-action-dao",
+  "classIri": "urn:ngm:class:climate-action-dao",
   "domain": "blockchain",
-  "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate projects, purchasing and retiring carbon credits, managing regenerative finance (ReFi) portfolios, and distributing climate impact rewards, with notable examples including KlimaDAO (carbon market liquidity), Gitcoin Climate Solutions ($10M+ distributed), and Regen Network (ecological data marketplace).",
+  "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate pro...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:collective-governance",
+      "id": "urn:ngm:class:collective-governance",
       "label": "CollectiveGovernance"
     },
     {
-      "id": "urn:visionflow:linked:impact-investment",
+      "id": "urn:ngm:class:impact-investment",
       "label": "ImpactInvestment"
-    },
-    {
-      "id": "urn:visionflow:owl:class:decentralized-autonomous-organization",
-      "label": "DecentralizedAutonomousOrganization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.85,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:impact-metrics",
+        "id": "urn:ngm:class:impact-metrics",
         "label": "ImpactMetrics"
       },
       {
-        "id": "urn:visionflow:linked:voting-mechanism",
+        "id": "urn:ngm:class:voting-mechanism",
         "label": "VotingMechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-token",
+        "id": "urn:ngm:class:governance-token",
         "label": "GovernanceToken"
       },
       {
-        "id": "urn:visionflow:owl:class:proposal-system",
+        "id": "urn:ngm:class:proposal-system",
         "label": "ProposalSystem"
       },
       {
-        "id": "urn:visionflow:owl:class:treasury-management",
+        "id": "urn:ngm:class:treasury-management",
         "label": "TreasuryManagement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:community-participation",
+        "id": "urn:ngm:class:community-participation",
         "label": "CommunityParticipation"
       },
       {
-        "id": "urn:visionflow:linked:impact-verification",
+        "id": "urn:ngm:class:impact-verification",
         "label": "ImpactVerification"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "SmartContracts"
       },
       {
-        "id": "urn:visionflow:owl:class:token-economics",
+        "id": "urn:ngm:class:token-economics",
         "label": "TokenEconomics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:carbon-credit-retirement",
+        "id": "urn:ngm:class:carbon-credit-retirement",
         "label": "CarbonCreditRetirement"
       },
       {
-        "id": "urn:visionflow:linked:climate-project-funding",
+        "id": "urn:ngm:class:climate-project-funding",
         "label": "ClimateProjectFunding"
       },
       {
-        "id": "urn:visionflow:linked:community-coordination",
+        "id": "urn:ngm:class:community-coordination",
         "label": "CommunityCoordination"
       },
       {
-        "id": "urn:visionflow:owl:class:transparent-governance",
+        "id": "urn:ngm:class:transparent-governance",
         "label": "TransparentGovernance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

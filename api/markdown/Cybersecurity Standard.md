@@ -200,120 +200,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cybersecurity-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cybersecurity-standard",
+  "@type": "Class",
   "label": "Cybersecurity Standard",
+  "definition": "Cybersecurity standard addresses digital security threats to robot systems through standardised practices for vulnerability assessment, secure communications, authentication, and incident response.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:security-standards",
-      "vc:label": "Security Standards"
+      "@id": "urn:ngm:class:security-standards",
+      "label": "Security Standards"
     },
     {
-      "@id": "urn:visionflow:owl:class:robot-standard",
-      "vc:label": "Robot Standard"
+      "@id": "urn:ngm:class:robot-standard",
+      "label": "Robot Standard"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c8bfe5c8adf776f08b653a8ec360391015aec4bb7914d350e6fe483bc0fdae42"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:encryption-protocol",
+        "label": "Encryption Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:secure-communication-channel",
+        "label": "Secure Communication Channel"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance-assurance",
+        "label": "Compliance Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:malicious-control-prevention",
+        "label": "Malicious Control Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:protected-data-transmission",
+        "label": "Protected Data Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:secure-teleoperation",
+        "label": "Secure Teleoperation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c8bfe5c8adf776f08b653a8ec360391015aec4bb7914d350e6fe483bc0fdae42@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cybersecurity standard addresses digital security threats to robot systems through standardised practices for vulnerability assessment, secure communications, authentication, and incident response. These standards protect robots from remote exploitation, data theft, and malicious control whilst maintaining operational availability in safety-critical deployments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-logging",
-      "vc:label": "Audit Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-mechanism",
-      "vc:label": "Authentication Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption-protocol",
-      "vc:label": "Encryption Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:secure-communication-channel",
-      "vc:label": "Secure Communication Channel"
-    },
-    {
-      "@id": "urn:visionflow:linked:threat-detection",
-      "vc:label": "Threat Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerability-assessment",
-      "vc:label": "Vulnerability Assessment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance-assurance",
-      "vc:label": "Compliance Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:malicious-control-prevention",
-      "vc:label": "Malicious Control Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:protected-data-transmission",
-      "vc:label": "Protected Data Transmission"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-teleoperation",
-      "vc:label": "Secure Teleoperation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-infrastructure",
-      "vc:label": "Cryptographic Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:device-hardening",
-      "vc:label": "Device Hardening"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-security",
-      "vc:label": "Network Security"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

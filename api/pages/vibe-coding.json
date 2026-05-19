@@ -3,19 +3,18 @@
   "title": "Vibe Coding",
   "slug": "vibe-coding",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vibe-coding",
+  "classIri": "urn:ngm:class:vibe-coding",
   "domain": "infrastructure",
   "definition": "Vibe Coding is a technology infrastructure concept and a type of Software Engineering.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-engineering",
+      "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

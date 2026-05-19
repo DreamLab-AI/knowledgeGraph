@@ -3,19 +3,18 @@
   "title": "Module",
   "slug": "module",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:module",
+  "classIri": "urn:ngm:class:module",
   "domain": "artificial-intelligence",
   "definition": "Module is a artificial intelligence concept and a type of Component.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:component",
+      "id": "urn:ngm:class:component",
       "label": "Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

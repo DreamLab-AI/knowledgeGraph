@@ -3,19 +3,18 @@
   "title": "User Privacy",
   "slug": "user-privacy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-privacy",
+  "classIri": "urn:ngm:class:user-privacy",
   "domain": "infrastructure",
   "definition": "User Privacy is a technology infrastructure concept and a type of Privacy Framework.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-framework",
+      "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

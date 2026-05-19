@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:zk-starks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:zk-starks",
+  "@type": "Class",
   "label": "ZK-STARKs",
+  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
+      "@id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero Knowledge Proof"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:81bc2435eea663b8b335ddea6d101e23c7a28a085e5e70118aa6a7229d25205e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:81bc2435eea663b8b335ddea6d101e23c7a28a085e5e70118aa6a7229d25205e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

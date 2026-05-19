@@ -99,41 +99,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:middleware-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:middleware-layer",
+  "@type": "Class",
   "label": "Middleware Layer",
+  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:febc6e5d529dbca8acf159943b63f0a4c2470d0001bd2b496819f2268669132d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems. This layer encompasses components that sit \"in the middle\" of system architectures, providing services that enable interoperability, abstract complexity, coordinate across boundaries, or integrate heterogeneous systems. Middleware includes blockchain client APIs (JSON-RPC interfaces, GraphQL endpoints, REST APIs providing programmatic blockchain access), integration frameworks (Web3.js, ethers.js, blockchain SDKs), oracle systems (Chainlink, Band Protocol bridging on-chain and off-chain data), cross-chain bridges (enabling asset transfer between blockchains), indexing and query services (The Graph, blockchain explorers providing structured data access), wallet infrastructure (wallet connect protocols, key management services), abstraction layers (account abstraction, meta-transactions hiding blockchain complexity), and orchestration services (transaction batching, gas management, nonce management). Unlike lowe",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

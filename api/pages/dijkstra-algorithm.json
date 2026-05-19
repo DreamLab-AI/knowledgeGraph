@@ -3,32 +3,31 @@
   "title": "Dijkstra Algorithm",
   "slug": "dijkstra-algorithm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dijkstra-algorithm",
+  "classIri": "urn:ngm:class:dijkstra-algorithm",
   "domain": "robotics",
   "definition": "A graph search algorithm that finds the shortest path from a source node to all other nodes in a weighted graph with non-negative edge weights. It systematically explores nodes in order of increasing distance from the source, guaranteeing optimal solutions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:rb-1016-path-planning",
+      "id": "urn:ngm:class:rb-1016-path-planning",
       "label": "RB-1016-path-planning"
     },
     {
-      "id": "urn:visionflow:owl:class:graph-search",
+      "id": "urn:ngm:class:graph-search",
       "label": "Graph Search"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.99,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:non-negative-weights",
+        "id": "urn:ngm:class:non-negative-weights",
         "label": "Non-negative Weights"
       },
       {
-        "id": "urn:visionflow:linked:weighted-graph",
+        "id": "urn:ngm:class:weighted-graph",
         "label": "Weighted Graph"
       }
     ],
@@ -36,7 +35,21 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      },
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

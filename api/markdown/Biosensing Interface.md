@@ -236,138 +236,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:biosensing-interface",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biosensing-interface",
+  "@type": "Class",
   "label": "Biosensing Interface",
+  "definition": "Physical sensor hardware system that detects physiological signals such as heart rate, electroencephalography (EEG), galvanic skin response (GSR), and electromyography (EMG) to enable real-time adaptation of virtual interaction and user experience.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:sensor-system",
-      "vc:label": "Sensor System"
+      "@id": "urn:ngm:class:sensor-system",
+      "label": "Sensor System"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fb063844c93cd45a7898d1574deb5130ec7d27e646a30aa934df91635d1db8c7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:electrocardiogram-sensor",
+        "label": "Electrocardiogram Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:electroencephalography-sensor",
+        "label": "Electroencephalography Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:galvanic-skin-response-sensor",
+        "label": "Galvanic Skin Response Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:pulse-oximeter",
+        "label": "Pulse Oximeter"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing-unit",
+        "label": "Signal Processing Unit"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:skin-contact-electrodes",
+        "label": "Skin Contact Electrodes"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication-module",
+        "label": "Wireless Communication Module"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:biofeedback-systems",
+        "label": "Biofeedback Systems"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-state-detection",
+        "label": "Emotional State Detection"
+      },
+      {
+        "@id": "urn:ngm:class:stress-monitoring",
+        "label": "Stress Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-virtual-experience",
+        "label": "Adaptive Virtual Experience"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:affective-computing-framework",
+        "label": "Affective Computing Framework"
+      },
+      {
+        "@id": "urn:ngm:class:physiological-computing-system",
+        "label": "Physiological Computing System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fb063844c93cd45a7898d1574deb5130ec7d27e646a30aa934df91635d1db8c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical sensor hardware system that detects physiological signals such as heart rate, electroencephalography (EEG), galvanic skin response (GSR), and electromyography (EMG) to enable real-time adaptation of virtual interaction and user experience. Biosensing interfaces bridge human physiology and computational systems, translating biological measurements into actionable digital feedback for [[Affective Computing]] and [[Human-Robot Interaction]] applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:affective-computing-framework",
-      "vc:label": "Affective Computing Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:physiological-computing-system",
-      "vc:label": "Physiological Computing System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:electrocardiogram-sensor",
-      "vc:label": "Electrocardiogram Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:electroencephalography-sensor",
-      "vc:label": "Electroencephalography Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:galvanic-skin-response-sensor",
-      "vc:label": "Galvanic Skin Response Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:pulse-oximeter",
-      "vc:label": "Pulse Oximeter"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-processing-unit",
-      "vc:label": "Signal Processing Unit"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:skin-contact-electrodes",
-      "vc:label": "Skin Contact Electrodes"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-communication-module",
-      "vc:label": "Wireless Communication Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:analog-to-digital-converter",
-      "vc:label": "Analog-to-Digital Converter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:biofeedback-systems",
-      "vc:label": "Biofeedback Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:emotional-state-detection",
-      "vc:label": "Emotional State Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:stress-monitoring",
-      "vc:label": "Stress Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adaptive-virtual-experience",
-      "vc:label": "Adaptive Virtual Experience"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cloud-analytics-service",
-      "vc:label": "Cloud Analytics Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:wearable-computing-platform",
-      "vc:label": "Wearable Computing Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-headset",
-      "vc:label": "XR Headset"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:neurotechnology",
-      "vc:label": "Neurotechnology"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    },
-    {
-      "@id": "urn:visionflow:linked:wearable-computing",
-      "vc:label": "Wearable Computing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

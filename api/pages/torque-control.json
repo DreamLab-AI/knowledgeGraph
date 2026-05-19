@@ -3,19 +3,18 @@
   "title": "Torque Control",
   "slug": "torque-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:torque-control",
+  "classIri": "urn:ngm:class:torque-control",
   "domain": "robotics",
   "definition": "Torque control directly commands actuator torques for compliant interaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-control",
+      "id": "urn:ngm:class:motion-control",
       "label": "Motion Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

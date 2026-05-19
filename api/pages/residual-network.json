@@ -3,19 +3,18 @@
   "title": "Residual Network",
   "slug": "residual-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:residual-network",
+  "classIri": "urn:ngm:class:residual-network",
   "domain": "artificial-intelligence",
   "definition": "Residual Network is a artificial intelligence concept and a type of Deep Learning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

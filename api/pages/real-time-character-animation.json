@@ -3,32 +3,36 @@
   "title": "Real Time Character Animation",
   "slug": "real-time-character-animation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-character-animation",
+  "classIri": "urn:ngm:class:real-time-character-animation",
   "domain": "spatial-computing",
   "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:3-d-animation",
+      "id": "urn:ngm:class:3-d-animation",
       "label": "3D Animation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:interactive-experiences",
+        "id": "urn:ngm:class:interactive-experiences",
         "label": "Interactive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

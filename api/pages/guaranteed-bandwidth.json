@@ -3,19 +3,18 @@
   "title": "Guaranteed Bandwidth",
   "slug": "guaranteed-bandwidth",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:guaranteed-bandwidth",
+  "classIri": "urn:ngm:class:guaranteed-bandwidth",
   "domain": "spatial-computing",
   "definition": "A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-quality-metric",
+      "id": "urn:ngm:class:network-quality-metric",
       "label": "Network Quality Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

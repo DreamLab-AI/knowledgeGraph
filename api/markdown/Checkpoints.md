@@ -400,372 +400,295 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:checkpoints",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:checkpoints",
+  "@type": "Class",
   "label": "Checkpoints",
+  "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state — weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters — persisted to durable storage at regular intervals during...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:model-serialisation",
-      "vc:label": "Model Serialisation"
+      "@id": "urn:ngm:class:model-serialisation",
+      "label": "Model Serialisation"
     },
     {
-      "@id": "urn:visionflow:linked:model-versioning",
-      "vc:label": "Model Versioning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
+      "@id": "urn:ngm:class:model-versioning",
+      "label": "Model Versioning"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9853fde272d42b8dbcf0ed367844a6f084fe838a6042902539a7fa72ab404420"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:checkpoint-index",
+        "label": "Checkpoint Index"
+      },
+      {
+        "@id": "urn:ngm:class:ema-shadow-weights",
+        "label": "EMA Shadow Weights"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser-state",
+        "label": "Optimiser State"
+      },
+      {
+        "@id": "urn:ngm:class:rng-state",
+        "label": "RNG State"
+      },
+      {
+        "@id": "urn:ngm:class:shard-metadata",
+        "label": "Shard Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:step-counter",
+        "label": "Step Counter"
+      },
+      {
+        "@id": "urn:ngm:class:weight-tensor",
+        "label": "Weight Tensor"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:checkpoint-frequency-policy",
+        "label": "Checkpoint Frequency Policy"
+      },
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "@id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "@id": "urn:ngm:class:training-loop",
+        "label": "Training Loop"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:checkpoint-averaging",
+        "label": "Checkpoint Averaging"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training-recovery",
+        "label": "Distributed Training Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-reproducibility",
+        "label": "Experiment Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:training-resumption",
+        "label": "Training Resumption"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:fsdp",
+        "label": "FSDP"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      },
+      {
+        "@id": "urn:ngm:class:fsdp",
+        "label": "FSDP"
+      },
+      {
+        "@id": "urn:ngm:class:gguf",
+        "label": "GGUF"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:pickle",
+        "label": "Pickle"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:saved-model",
+        "label": "SavedModel"
+      },
+      {
+        "@id": "urn:ngm:class:ze-ro",
+        "label": "ZeRO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:peft",
+        "label": "PEFT"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:torch-script",
+        "label": "TorchScript"
+      },
+      {
+        "@id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch-foundation",
+        "label": "PyTorch Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9853fde272d42b8dbcf0ed367844a6f084fe838a6042902539a7fa72ab404420@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state — weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters — persisted to durable storage at regular intervals during training so that: (a) training can resume after hardware failure or preemption without replaying all prior computation; (b) intermediate weight versions can be evaluated and compared before committing to a final release; (c) the best-performing weight configuration identified during a hyperparameter sweep can be recovered independently of the final training step; and (d) pre-trained representations can be shared and reused for downstream [[Transfer Learning]] and [[Fine-tuning]] tasks without distributing training code or data.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:checkpoint-index",
-      "vc:label": "Checkpoint Index"
-    },
-    {
-      "@id": "urn:visionflow:linked:ema-shadow-weights",
-      "vc:label": "EMA Shadow Weights"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimiser-state",
-      "vc:label": "Optimiser State"
-    },
-    {
-      "@id": "urn:visionflow:linked:rng-state",
-      "vc:label": "RNG State"
-    },
-    {
-      "@id": "urn:visionflow:linked:shard-metadata",
-      "vc:label": "Shard Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:step-counter",
-      "vc:label": "Step Counter"
-    },
-    {
-      "@id": "urn:visionflow:linked:weight-tensor",
-      "vc:label": "Weight Tensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-rate-schedule",
-      "vc:label": "Learning Rate Schedule"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:checkpoint-frequency-policy",
-      "vc:label": "Checkpoint Frequency Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:file-system",
-      "vc:label": "File System"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-storage",
-      "vc:label": "Persistent Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:serialisation-format",
-      "vc:label": "Serialisation Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-loop",
-      "vc:label": "Training Loop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-architecture",
-      "vc:label": "Model Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:checkpoint-averaging",
-      "vc:label": "Checkpoint Averaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-training-recovery",
-      "vc:label": "Distributed Training Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:experiment-reproducibility",
-      "vc:label": "Experiment Reproducibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-serving",
-      "vc:label": "Model Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-versioning",
-      "vc:label": "Model Versioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-resumption",
-      "vc:label": "Training Resumption"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine-tuning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:deep-speed",
-      "vc:label": "DeepSpeed"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsdp",
-      "vc:label": "FSDP"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlflow",
-      "vc:label": "MLflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:safetensors",
-      "vc:label": "Safetensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow",
-      "vc:label": "TensorFlow"
-    },
-    {
-      "@id": "urn:visionflow:linked:weights-and-biases",
-      "vc:label": "Weights and Biases"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:file-system",
-      "vc:label": "File System"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-registry",
-      "vc:label": "Model Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:serialisation",
-      "vc:label": "Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optimiser",
-      "vc:label": "Optimiser"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:mlops",
-      "vc:label": "MLOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-serving",
-      "vc:label": "Model Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine-tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:dvc",
-      "vc:label": "DVC"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsdp",
-      "vc:label": "FSDP"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf",
-      "vc:label": "GGUF"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx",
-      "vc:label": "ONNX"
-    },
-    {
-      "@id": "urn:visionflow:linked:pickle",
-      "vc:label": "Pickle"
-    },
-    {
-      "@id": "urn:visionflow:linked:safetensors",
-      "vc:label": "Safetensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:saved-model",
-      "vc:label": "SavedModel"
-    },
-    {
-      "@id": "urn:visionflow:linked:ze-ro",
-      "vc:label": "ZeRO"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:model-distillation",
-      "vc:label": "Model Distillation"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-the-fly-training",
-      "vc:label": "On-the-fly Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:stateless-execution",
-      "vc:label": "Stateless Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-inference",
-      "vc:label": "Streaming Inference"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:dvc",
-      "vc:label": "DVC"
-    },
-    {
-      "@id": "urn:visionflow:linked:experiment-tracking",
-      "vc:label": "Experiment Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlflow",
-      "vc:label": "MLflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-registry",
-      "vc:label": "Model Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx",
-      "vc:label": "ONNX"
-    },
-    {
-      "@id": "urn:visionflow:linked:peft",
-      "vc:label": "PEFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:torch-script",
-      "vc:label": "TorchScript"
-    },
-    {
-      "@id": "urn:visionflow:linked:weights-and-biases",
-      "vc:label": "Weights and Biases"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:deep-speed",
-      "vc:label": "DeepSpeed"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face",
-      "vc:label": "Hugging Face"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation",
-      "vc:label": "Linux Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch-foundation",
-      "vc:label": "PyTorch Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow",
-      "vc:label": "TensorFlow"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlops",
-      "vc:label": "MLOps"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

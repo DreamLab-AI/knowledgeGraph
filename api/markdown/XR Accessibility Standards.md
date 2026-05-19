@@ -124,41 +124,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:xr-accessibility-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:xr-accessibility-standards",
+  "@type": "Class",
   "label": "XR Accessibility Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aac0046fe3c05adeadb539141152c646972ce695e9f8f5b6149df1b72ecc2f1e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

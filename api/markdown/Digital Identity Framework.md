@@ -180,102 +180,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-identity-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-identity-framework",
+  "@type": "Class",
   "label": "Digital Identity Framework",
+  "definition": "Digital Identity Framework is a type of Infrastructure in the infrastructure domain.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:694da137453a1c2489e1b3b80fac909f8d827913d9050a3004266ffabc61724a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:identity-policies",
+        "label": "Identity Policies"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "@id": "urn:ngm:class:trust-mechanisms",
+        "label": "Trust Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-systems",
+        "label": "Cryptographic Systems"
+      },
+      {
+        "@id": "urn:ngm:class:policy-frameworks",
+        "label": "Policy Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-protection",
+        "label": "Privacy Protection"
+      },
+      {
+        "@id": "urn:ngm:class:secure-authentication",
+        "label": "Secure Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-architecture",
+        "label": "Trust Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:694da137453a1c2489e1b3b80fac909f8d827913d9050a3004266ffabc61724a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Coordinated set of policies and standards governing creation, management, and use of digital identities in metaverse environments. bridges-to:: [[DID Nostr Identity]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-architecture",
-      "vc:label": "Trust Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:identity-policies",
-      "vc:label": "Identity Policies"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-controls",
-      "vc:label": "Privacy Controls"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-mechanisms",
-      "vc:label": "Trust Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-standards",
-      "vc:label": "Authentication Standards"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-systems",
-      "vc:label": "Cryptographic Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-frameworks",
-      "vc:label": "Policy Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standardization-bodies",
-      "vc:label": "Standardization Bodies"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:privacy-protection",
-      "vc:label": "Privacy Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-authentication",
-      "vc:label": "Secure Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-management",
-      "vc:label": "Digital Identity Management"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

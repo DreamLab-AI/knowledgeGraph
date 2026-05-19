@@ -3,37 +3,59 @@
   "title": "Blockchain Compliance",
   "slug": "blockchain-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-compliance",
+  "classIri": "urn:ngm:class:blockchain-compliance",
   "domain": "blockchain",
-  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency and security.",
+  "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency an...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:regulatory-compliance",
+      "id": "urn:ngm:class:regulatory-compliance",
       "label": "Regulatory Compliance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:institutional-adoption",
+        "id": "urn:ngm:class:institutional-adoption",
         "label": "Institutional Adoption"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

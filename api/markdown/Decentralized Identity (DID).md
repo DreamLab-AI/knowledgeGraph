@@ -188,126 +188,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-identity-did",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-identity-did",
+  "@type": "Class",
   "label": "Decentralized Identity (DID)",
+  "definition": "A W3C standard for self-sovereign digital identities that are globally unique, cryptographically verifiable, and controlled by the identity subject without requiring centralized authorities.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:64812304a0cb52ad329a73633d0b791a1254bf509de49b6432e4dfba4f29f3a2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      },
+      {
+        "@id": "urn:ngm:class:did-uri",
+        "label": "DID URI"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-domain-identity",
+        "label": "Cross-Domain Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-authentication",
+        "label": "Decentralized Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity-ssi",
+        "label": "Self-Sovereign Identity (SSI)"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:64812304a0cb52ad329a73633d0b791a1254bf509de49b6432e4dfba4f29f3a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A W3C standard for self-sovereign digital identities that are globally unique, cryptographically verifiable, and controlled by the identity subject without requiring centralized authorities.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:self-sovereign-identity-ssi",
-      "vc:label": "Self-Sovereign Identity (SSI)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:did-document",
-      "vc:label": "DID Document"
-    },
-    {
-      "@id": "urn:visionflow:linked:did-method",
-      "vc:label": "DID Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:did-resolver",
-      "vc:label": "DID Resolver"
-    },
-    {
-      "@id": "urn:visionflow:linked:did-uri",
-      "vc:label": "DID URI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-data-registry",
-      "vc:label": "Verifiable Data Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-domain-identity",
-      "vc:label": "Cross-Domain Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-authentication",
-      "vc:label": "Decentralized Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-identity",
-      "vc:label": "Privacy-Preserving Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credential-vc",
-      "vc:label": "Verifiable Credential (VC)"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-technology",
-      "vc:label": "Blockchain Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-specification",
-      "vc:label": "W3C DID Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

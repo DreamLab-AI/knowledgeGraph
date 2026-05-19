@@ -200,116 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-performance-capture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-performance-capture",
+  "@type": "Class",
   "label": "Digital Performance Capture",
+  "definition": "Digital Performance Capture is a type of Creative Media Domain in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:creative-media-domain",
-      "vc:label": "Creative Media Domain"
+      "@id": "urn:ngm:class:creative-media-domain",
+      "label": "Creative Media Domain"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:603f13bcfe2894c33baae9c90147408d35670585571a75066e8a1e2abb197931"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:facial-capture-system",
+        "label": "Facial Capture System"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-system",
+        "label": "Motion Capture System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-solver",
+        "label": "Real-Time Solver"
+      },
+      {
+        "@id": "urn:ngm:class:voice-recording-system",
+        "label": "Voice Recording System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-recording-equipment",
+        "label": "Audio Recording Equipment"
+      },
+      {
+        "@id": "urn:ngm:class:optical-sensors",
+        "label": "Optical Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-system",
+        "label": "Synchronization System"
+      },
+      {
+        "@id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker-Based Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:live-performance",
+        "label": "Live Performance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-actor-creation",
+        "label": "Digital Actor Creation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real-Time Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reality-capture-workflow",
+        "label": "Reality Capture Workflow"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:603f13bcfe2894c33baae9c90147408d35670585571a75066e8a1e2abb197931@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Integrated capture of body, facial, and voice data for real-time animation of digital characters in virtual environments. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:reality-capture-workflow",
-      "vc:label": "Reality Capture Workflow"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:facial-capture-system",
-      "vc:label": "Facial Capture System"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-capture-system",
-      "vc:label": "Motion Capture System"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-solver",
-      "vc:label": "Real-Time Solver"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-recording-system",
-      "vc:label": "Voice Recording System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-recording-equipment",
-      "vc:label": "Audio Recording Equipment"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-sensors",
-      "vc:label": "Optical Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronization-system",
-      "vc:label": "Synchronization System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marker-based-tracking",
-      "vc:label": "Marker-Based Tracking"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:live-performance",
-      "vc:label": "Live Performance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-actor-creation",
-      "vc:label": "Digital Actor Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-character-animation",
-      "vc:label": "Real-Time Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production",
-      "vc:label": "Virtual Production"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:performance-animation",
-      "vc:label": "Performance Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:skeletal-animation",
-      "vc:label": "Skeletal Animation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:character-rigging",
-      "vc:label": "Character Rigging"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

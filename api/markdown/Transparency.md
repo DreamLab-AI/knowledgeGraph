@@ -116,52 +116,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transparency",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transparency",
+  "@type": "Class",
   "label": "Transparency",
+  "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:492e9a425d67ce3cad65eae7dde6be8ddb547c38c920e3325e827bf1be3facc8"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability-ai-0068",
+        "label": "Accountability (AI-0068)"
+      },
+      {
+        "@id": "urn:ngm:class:explainability-ai-0064",
+        "label": "Explainability (AI-0064)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:492e9a425d67ce3cad65eae7dde6be8ddb547c38c920e3325e827bf1be3facc8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The property of an AI system whereby relevant information about the system's design, operation, capabilities, limitations, and decision-making processes is accessible and understandable to appropriate stakeholders.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accountability-ai-0068",
-      "vc:label": "Accountability (AI-0068)"
-    },
-    {
-      "@id": "urn:visionflow:linked:explainability-ai-0064",
-      "vc:label": "Explainability (AI-0064)"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

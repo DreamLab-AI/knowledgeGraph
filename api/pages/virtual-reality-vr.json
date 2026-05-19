@@ -3,82 +3,91 @@
   "title": "Virtual Reality (VR)",
   "slug": "virtual-reality-vr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-reality-vr",
+  "classIri": "urn:ngm:class:virtual-reality-vr",
   "domain": "spatial-computing",
   "definition": "Immersive technology system that combines physical head-mounted display hardware with virtual computer-generated 3D environments to create fully encompassing sensory experiences that replace user perception of the physical world.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:head-mounted-display",
+        "id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:visionflow:linked:tracking-sensors",
+        "id": "urn:ngm:class:tracking-sensors",
         "label": "Tracking Sensors"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio-system",
+        "id": "urn:ngm:class:spatial-audio-system",
         "label": "Spatial Audio System"
       },
       {
-        "id": "urn:visionflow:owl:class:vr-controllers",
+        "id": "urn:ngm:class:vr-controllers",
         "label": "VR Controllers"
       },
       {
-        "id": "urn:visionflow:owl:class:vr-rendering-engine",
+        "id": "urn:ngm:class:vr-rendering-engine",
         "label": "VR Rendering Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:6-do-f-tracking",
+        "id": "urn:ngm:class:6-do-f-tracking",
         "label": "6DoF Tracking"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-display",
+        "id": "urn:ngm:class:low-latency-display",
         "label": "Low-Latency Display"
       },
       {
-        "id": "urn:visionflow:linked:stereoscopic-rendering",
+        "id": "urn:ngm:class:stereoscopic-rendering",
         "label": "Stereoscopic Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:immersive-gaming",
+        "id": "urn:ngm:class:immersive-gaming",
         "label": "Immersive Gaming"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-presence",
+        "id": "urn:ngm:class:virtual-presence",
         "label": "Virtual Presence"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "id": "urn:ngm:class:virtual-tourism",
         "label": "Virtual Tourism"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-training",
+        "id": "urn:ngm:class:virtual-training",
         "label": "Virtual Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

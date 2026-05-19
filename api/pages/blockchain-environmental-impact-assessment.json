@@ -3,94 +3,94 @@
   "title": "Blockchain Environmental Impact Assessment",
   "slug": "blockchain-environmental-impact-assessment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-environmental-impact-assessment",
+  "classIri": "urn:ngm:class:blockchain-environmental-impact-assessment",
   "domain": "blockchain",
-  "definition": "A systematic evaluation methodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO\u2082e from electricity generation mix), e-waste generation (hardware lifecycle and disposal), water consumption (data center cooling), and broader ecological impacts, with standardized frameworks including Life Cycle Assessment (ISO 14040/14044), Cambridge Centre for Alternative Finance methodologies, and blockchain-specific metrics for comparing consensus mechanisms (Proof-of-Work vs Proof-of-Stake environmental profiles).",
+  "definition": "A systematic emodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO\u2082e from electricity generati...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:life-cycle-assessment",
+      "id": "urn:ngm:class:life-cycle-assessment",
       "label": "LifeCycleAssessment"
     },
     {
-      "id": "urn:visionflow:linked:sustainability-metric",
+      "id": "urn:ngm:class:sustainability-metric",
       "label": "SustainabilityMetric"
-    },
-    {
-      "id": "urn:visionflow:owl:class:environmental-assessment",
-      "label": "EnvironmentalAssessment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.89,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:carbon-emissions-calculation",
+        "id": "urn:ngm:class:carbon-emissions-calculation",
         "label": "CarbonEmissionsCalculation"
       },
       {
-        "id": "urn:visionflow:linked:energy-consumption-measurement",
+        "id": "urn:ngm:class:energy-consumption-measurement",
         "label": "EnergyConsumptionMeasurement"
       },
       {
-        "id": "urn:visionflow:linked:ewaste-analysis",
+        "id": "urn:ngm:class:ewaste-analysis",
         "label": "EWasteAnalysis"
       },
       {
-        "id": "urn:visionflow:linked:scope-definition",
+        "id": "urn:ngm:class:scope-definition",
         "label": "ScopeDefinition"
       },
       {
-        "id": "urn:visionflow:linked:water-usage-tracking",
+        "id": "urn:ngm:class:water-usage-tracking",
         "label": "WaterUsageTracking"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-center-metrics",
+        "id": "urn:ngm:class:data-center-metrics",
         "label": "DataCenterMetrics"
       },
       {
-        "id": "urn:visionflow:linked:energy-mix",
+        "id": "urn:ngm:class:energy-mix",
         "label": "EnergyMix"
       },
       {
-        "id": "urn:visionflow:linked:hardware-inventory",
+        "id": "urn:ngm:class:hardware-inventory",
         "label": "HardwareInventory"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-algorithm",
+        "id": "urn:ngm:class:consensus-algorithm",
         "label": "ConsensusAlgorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:network-hash-rate",
+        "id": "urn:ngm:class:network-hash-rate",
         "label": "NetworkHashRate"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:investor-disclosure",
+        "id": "urn:ngm:class:investor-disclosure",
         "label": "InvestorDisclosure"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-reporting",
+        "id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "CarbonAccounting"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "RegulatoryCompliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

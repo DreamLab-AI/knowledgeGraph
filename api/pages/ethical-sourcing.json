@@ -3,151 +3,283 @@
   "title": "Ethical Sourcing",
   "slug": "ethical-sourcing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ethical-sourcing",
+  "classIri": "urn:ngm:class:ethical-sourcing",
   "domain": "blockchain",
-  "definition": "**Ethical Sourcing** is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards \u2014 operationalised through codified frameworks (**[[ISO 20400]]:2017** sustainable procurement, **[[SA8000]]** Social Accountability International, **[[UN Global Compact]]** ten principles, **[[ILO Core Labour Standards]]** eight fundamental Conventions on forced labour, child labour, freedom of association and discrimination, **[[OECD Guidelines for Multinational Enterprises]]**, **[[OECD Due Diligence Guidance for Responsible Mineral Supply Chains]]** five-step framework for 3TG and cobalt), enforced through a rapidly expanding mandatory-disclosure and due-diligence regulatory stack (**[[UK Modern Slavery Act 2015]]** Section 54 transparency statements for \u00a336M+ turnover entities, **[[California SB 657]]** Transparency in Supply Chains Act 2010, **[[Dodd-Frank Section 1502]]** conflict mineral disclosure for SEC filers, **[[EU Conflict Minerals Regulation 2017/821]]** mandatory due diligence for tin/tantalum/tungsten/gold importers sin",
+  "definition": "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards \u2014 operationalised through codified frameworks ([[ISO 2...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:corporate-social-responsibility",
+      "id": "urn:ngm:class:corporate-social-responsibility",
       "label": "Corporate Social Responsibility"
     },
     {
-      "id": "urn:visionflow:linked:human-rights-due-diligence",
+      "id": "urn:ngm:class:human-rights-due-diligence",
       "label": "Human Rights Due Diligence"
-    },
-    {
-      "id": "urn:visionflow:linked:responsible-business-conduct",
-      "label": "Responsible Business Conduct"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:chain-of-custody",
+        "id": "urn:ngm:class:chain-of-custody",
         "label": "Chain of Custody"
       },
       {
-        "id": "urn:visionflow:linked:grievance-mechanism",
+        "id": "urn:ngm:class:grievance-mechanism",
         "label": "Grievance Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:remediation-plan",
+        "id": "urn:ngm:class:remediation-plan",
         "label": "Remediation Plan"
       },
       {
-        "id": "urn:visionflow:linked:supplier-audit",
+        "id": "urn:ngm:class:supplier-audit",
         "label": "Supplier Audit"
       },
       {
-        "id": "urn:visionflow:linked:supplier-code-of-conduct",
+        "id": "urn:ngm:class:supplier-code-of-conduct",
         "label": "Supplier Code of Conduct"
       },
       {
-        "id": "urn:visionflow:linked:third-party-certification",
+        "id": "urn:ngm:class:third-party-certification",
         "label": "Third-Party Certification"
       },
       {
-        "id": "urn:visionflow:linked:transparency-statement",
+        "id": "urn:ngm:class:transparency-statement",
         "label": "Transparency Statement"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:stakeholder-engagement",
+        "id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
       },
       {
-        "id": "urn:visionflow:linked:supplier-identification",
+        "id": "urn:ngm:class:supplier-identification",
         "label": "Supplier Identification"
       },
       {
-        "id": "urn:visionflow:linked:supply-chain-transparency",
+        "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
       },
       {
-        "id": "urn:visionflow:linked:third-party-audit",
+        "id": "urn:ngm:class:third-party-audit",
         "label": "Third-Party Audit"
       },
       {
-        "id": "urn:visionflow:linked:worker-voice-mechanism",
+        "id": "urn:ngm:class:worker-voice-mechanism",
         "label": "Worker Voice Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:child-labour-prevention",
+        "id": "urn:ngm:class:child-labour-prevention",
         "label": "Child Labour Prevention"
       },
       {
-        "id": "urn:visionflow:linked:conflict-free-minerals",
+        "id": "urn:ngm:class:conflict-free-minerals",
         "label": "Conflict-Free Minerals"
       },
       {
-        "id": "urn:visionflow:linked:consumer-trust",
+        "id": "urn:ngm:class:consumer-trust",
         "label": "Consumer Trust"
       },
       {
-        "id": "urn:visionflow:linked:deforestation-free-commodities",
+        "id": "urn:ngm:class:deforestation-free-commodities",
         "label": "Deforestation-Free Commodities"
       },
       {
-        "id": "urn:visionflow:linked:living-wage",
+        "id": "urn:ngm:class:living-wage",
         "label": "Living Wage"
       },
       {
-        "id": "urn:visionflow:linked:modern-slavery-eradication",
+        "id": "urn:ngm:class:modern-slavery-eradication",
         "label": "Modern Slavery Eradication"
       },
       {
-        "id": "urn:visionflow:linked:premium-pricing",
+        "id": "urn:ngm:class:premium-pricing",
         "label": "Premium Pricing"
       },
       {
-        "id": "urn:visionflow:linked:worker-rights",
+        "id": "urn:ngm:class:worker-rights",
         "label": "Worker Rights"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ilo-core-labour-standards",
+        "id": "urn:ngm:class:ilo-core-labour-standards",
         "label": "ILO Core Labour Standards"
       },
       {
-        "id": "urn:visionflow:linked:iso-20400",
+        "id": "urn:ngm:class:iso-20400",
         "label": "ISO 20400"
       },
       {
-        "id": "urn:visionflow:linked:oecd-due-diligence-guidance",
+        "id": "urn:ngm:class:oecd-due-diligence-guidance",
         "label": "OECD Due Diligence Guidance"
       },
       {
-        "id": "urn:visionflow:linked:sa8000",
+        "id": "urn:ngm:class:sa8000",
         "label": "SA8000"
       },
       {
-        "id": "urn:visionflow:linked:un-global-compact",
+        "id": "urn:ngm:class:un-global-compact",
         "label": "UN Global Compact"
       },
       {
-        "id": "urn:visionflow:linked:un-guiding-principles-on-business-and-human-rights",
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
         "label": "UN Guiding Principles on Business and Human Rights"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-risk-scoring",
+        "label": "AI Risk Scoring"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "id": "urn:ngm:class:nlp-esg-analysis",
+        "label": "NLP ESG Analysis"
+      },
+      {
+        "id": "urn:ngm:class:qr-code-authentication",
+        "label": "QR Code Authentication"
+      },
+      {
+        "id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biodiversity-conservation",
+        "label": "Biodiversity Conservation"
+      },
+      {
+        "id": "urn:ngm:class:indigenous-rights",
+        "label": "Indigenous Rights"
+      },
+      {
+        "id": "urn:ngm:class:just-transition",
+        "label": "Just Transition"
+      },
+      {
+        "id": "urn:ngm:class:living-wage-campaign",
+        "label": "Living Wage Campaign"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ilo-core-labour-standards",
+        "label": "ILO Core Labour Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-20400",
+        "label": "ISO 20400"
+      },
+      {
+        "id": "urn:ngm:class:oecd-due-diligence-guidance",
+        "label": "OECD Due Diligence Guidance"
+      },
+      {
+        "id": "urn:ngm:class:oecd-guidelines-for-multinational-enterprises",
+        "label": "OECD Guidelines for Multinational Enterprises"
+      },
+      {
+        "id": "urn:ngm:class:sa8000",
+        "label": "SA8000"
+      },
+      {
+        "id": "urn:ngm:class:un-global-compact",
+        "label": "UN Global Compact"
+      },
+      {
+        "id": "urn:ngm:class:un-guiding-principles-on-business-and-human-rights",
+        "label": "UN Guiding Principles on Business and Human Rights"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:apple-supplier-responsibility",
+        "label": "Apple Supplier Responsibility"
+      },
+      {
+        "id": "urn:ngm:class:bangladesh-accord",
+        "label": "Bangladesh Accord"
+      },
+      {
+        "id": "urn:ngm:class:conflict-minerals",
+        "label": "Conflict Minerals"
+      },
+      {
+        "id": "urn:ngm:class:csddd",
+        "label": "CSDDD"
+      },
+      {
+        "id": "urn:ngm:class:eu-forced-labour-regulation",
+        "label": "EU Forced Labour Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fair-trade",
+        "label": "Fair Trade"
+      },
+      {
+        "id": "urn:ngm:class:modern-slavery-act-2015",
+        "label": "Modern Slavery Act 2015"
+      },
+      {
+        "id": "urn:ngm:class:rana-plaza",
+        "label": "Rana Plaza"
+      },
+      {
+        "id": "urn:ngm:class:tony-s-chocolonely",
+        "label": "Tony's Chocolonely"
+      },
+      {
+        "id": "urn:ngm:class:uyghur-forced-labour",
+        "label": "Uyghur Forced Labour"
+      }
+    ]
   },
   "wikilinks": [
     {

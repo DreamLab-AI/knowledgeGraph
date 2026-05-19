@@ -228,136 +228,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-audio-scene-description",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-audio-scene-description",
+  "@type": "Class",
   "label": "Spatial Audio Scene Description",
+  "definition": "A data model for encoding sound sources, listener positions, acoustic environments, and spatial audio metadata in three-dimensional space to enable immersive and realistic audio experiences in virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1a6a88c36de812d0fb797f60b0bd3cc5f446f00861d5f7e6a7d0c1d734f3fbd3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:acoustic-properties",
+        "label": "Acoustic Properties"
+      },
+      {
+        "@id": "urn:ngm:class:ambisonics-representation",
+        "label": "Ambisonics Representation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-object",
+        "label": "Audio Object"
+      },
+      {
+        "@id": "urn:ngm:class:listener-position",
+        "label": "Listener Position"
+      },
+      {
+        "@id": "urn:ngm:class:sound-source-position",
+        "label": "Sound Source Position"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-metadata",
+        "label": "Spatial Metadata"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-coordinate-system",
+        "label": "3D Coordinate System"
+      },
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio-processor",
+        "label": "Spatial Audio Processor"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:acoustic-realism",
+        "label": "Acoustic Realism"
+      },
+      {
+        "@id": "urn:ngm:class:ambisonics-playback",
+        "label": "Ambisonics Playback"
+      },
+      {
+        "@id": "urn:ngm:class:binaural-rendering",
+        "label": "Binaural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-audio-mixing",
+        "label": "Dynamic Audio Mixing"
+      },
+      {
+        "@id": "urn:ngm:class:object-based-audio",
+        "label": "Object-Based Audio"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-scene-graph",
+        "label": "3D Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-specification",
+        "label": "Virtual Environment Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1a6a88c36de812d0fb797f60b0bd3cc5f446f00861d5f7e6a7d0c1d734f3fbd3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A data model for encoding sound sources, listener positions, acoustic environments, and spatial audio metadata in three-dimensional space to enable immersive and realistic audio experiences in virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scene-graph",
-      "vc:label": "3D Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-audio-system",
-      "vc:label": "Immersive Audio System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-environment-specification",
-      "vc:label": "Virtual Environment Specification"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:acoustic-properties",
-      "vc:label": "Acoustic Properties"
-    },
-    {
-      "@id": "urn:visionflow:linked:ambisonics-representation",
-      "vc:label": "Ambisonics Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:audio-object",
-      "vc:label": "Audio Object"
-    },
-    {
-      "@id": "urn:visionflow:linked:listener-position",
-      "vc:label": "Listener Position"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-source-position",
-      "vc:label": "Sound Source Position"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-metadata",
-      "vc:label": "Spatial Metadata"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-coordinate-system",
-      "vc:label": "3D Coordinate System"
-    },
-    {
-      "@id": "urn:visionflow:linked:audio-codec",
-      "vc:label": "Audio Codec"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio-processor",
-      "vc:label": "Spatial Audio Processor"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:acoustic-realism",
-      "vc:label": "Acoustic Realism"
-    },
-    {
-      "@id": "urn:visionflow:linked:ambisonics-playback",
-      "vc:label": "Ambisonics Playback"
-    },
-    {
-      "@id": "urn:visionflow:linked:binaural-rendering",
-      "vc:label": "Binaural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-audio-mixing",
-      "vc:label": "Dynamic Audio Mixing"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-based-audio",
-      "vc:label": "Object-Based Audio"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audio-streaming-protocol",
-      "vc:label": "Audio Streaming Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-tracking-system",
-      "vc:label": "Head Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:room-acoustics-model",
-      "vc:label": "Room Acoustics Model"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "rb 0049 motion planning",
   "slug": "rb-0049-motion-planning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0049-motion-planning",
+  "classIri": "urn:ngm:class:rb-0049-motion-planning",
   "domain": "robotics",
-  "definition": "**Motion Planning** - Motion Planning in robotics systems",
+  "definition": "Motion Planning - Motion Planning in robotics systems",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

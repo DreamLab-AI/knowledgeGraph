@@ -552,332 +552,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-liability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-liability",
+  "@type": "Class",
   "label": "AI Liability",
+  "definition": "AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems—encomp...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:civil-liability",
-      "vc:label": "Civil Liability"
+      "@id": "urn:ngm:class:civil-liability",
+      "label": "Civil Liability"
     },
     {
-      "@id": "urn:visionflow:linked:tort-law",
-      "vc:label": "Tort Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
-      "vc:label": "Algorithmic Accountability"
+      "@id": "urn:ngm:class:tort-law",
+      "label": "Tort Law"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:breach-of-duty",
+        "label": "Breach of Duty"
+      },
+      {
+        "@id": "urn:ngm:class:causation",
+        "label": "Causation"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:damages",
+        "label": "Damages"
+      },
+      {
+        "@id": "urn:ngm:class:duty-of-care",
+        "label": "Duty of Care"
+      },
+      {
+        "@id": "urn:ngm:class:foreseeability",
+        "label": "Foreseeability"
+      },
+      {
+        "@id": "urn:ngm:class:post-market-monitoring",
+        "label": "Post-Market Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:strict-liability-standard",
+        "label": "Strict Liability Standard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:causal-linkage",
+        "label": "Causal Linkage"
+      },
+      {
+        "@id": "urn:ngm:class:compensable-harm",
+        "label": "Compensable Harm"
+      },
+      {
+        "@id": "urn:ngm:class:evidentiary-record",
+        "label": "Evidentiary Record"
+      },
+      {
+        "@id": "urn:ngm:class:identifiable-legal-person",
+        "label": "Identifiable Legal Person"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdictional-framework",
+        "label": "Jurisdictional Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compensation-for-victims",
+        "label": "Compensation for Victims"
+      },
+      {
+        "@id": "urn:ngm:class:deterrence-of-harm",
+        "label": "Deterrence of Harm"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-pricing",
+        "label": "Insurance Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:risk-internalisation",
+        "label": "Risk Internalisation"
+      },
+      {
+        "@id": "urn:ngm:class:safety-investment",
+        "label": "Safety Investment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:abnormally-dangerous-activity-doctrine",
+        "label": "Abnormally Dangerous Activity Doctrine"
+      },
+      {
+        "@id": "urn:ngm:class:negligence-standard",
+        "label": "Negligence Standard"
+      },
+      {
+        "@id": "urn:ngm:class:product-liability-directive",
+        "label": "Product Liability Directive"
+      },
+      {
+        "@id": "urn:ngm:class:strict-liability",
+        "label": "Strict Liability"
+      },
+      {
+        "@id": "urn:ngm:class:vicarious-liability",
+        "label": "Vicarious Liability"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:caparo-three-stage-test",
+        "label": "Caparo Three-Stage Test"
+      },
+      {
+        "@id": "urn:ngm:class:daubert-standard",
+        "label": "Daubert Standard"
+      },
+      {
+        "@id": "urn:ngm:class:foreseeability-test",
+        "label": "Foreseeability Test"
+      },
+      {
+        "@id": "urn:ngm:class:reasonable-care-standard",
+        "label": "Reasonable Care Standard"
+      },
+      {
+        "@id": "urn:ngm:class:restatement-second-of-torts-402-a",
+        "label": "Restatement (Second) of Torts § 402A"
+      },
+      {
+        "@id": "urn:ngm:class:risk-benefit-analysis",
+        "label": "Risk-Benefit Analysis"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-insurance",
+        "label": "AI Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:consumer-protection-act-1987",
+        "label": "Consumer Protection Act 1987"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-7000-series",
+        "label": "IEEE 7000 Series"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:product-liability-directive",
+        "label": "Product Liability Directive"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:08f8a95794397b82a254bfe32333f811212c444b34c53a572638102e400d0613@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems—encompassing the application and adaptation of common-law tort frameworks (negligence requiring duty/breach/causation/damage per [[Donoghue v. Stevenson]] 1932 and [[Caparo Industries plc v. Dickman]] 1990 in the UK; the four-element negligence formulation traced to [[Brown v. Kendall]] 1850 and [[Palsgraf v. Long Island Railroad]] 1928 in the US), statutory strict-liability regimes (the UK [[Consumer Protection Act 1987]] implementing EC Directive 85/374/EEC; [[Restatement (Second) of Torts § 402A]] in the US; the EU revised [[Product Liability Directive]] (EU) 2024/2853 entering into force 9 December 2024 explicitly extending product status to software, AI systems and digital manufacturing files with a presumption of defectiveness when a claimant faces excessive difficulty in proving technical complexity), the doctrine of strict liability for [[Abnormally Dangerous Activity]] descended from [[R",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:breach-of-duty",
-      "vc:label": "Breach of Duty"
-    },
-    {
-      "@id": "urn:visionflow:linked:causation",
-      "vc:label": "Causation"
-    },
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment",
-      "vc:label": "Conformity Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:damages",
-      "vc:label": "Damages"
-    },
-    {
-      "@id": "urn:visionflow:linked:duty-of-care",
-      "vc:label": "Duty of Care"
-    },
-    {
-      "@id": "urn:visionflow:linked:foreseeability",
-      "vc:label": "Foreseeability"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-market-monitoring",
-      "vc:label": "Post-Market Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-liability-standard",
-      "vc:label": "Strict Liability Standard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:causal-linkage",
-      "vc:label": "Causal Linkage"
-    },
-    {
-      "@id": "urn:visionflow:linked:compensable-harm",
-      "vc:label": "Compensable Harm"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidentiary-record",
-      "vc:label": "Evidentiary Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:identifiable-legal-person",
-      "vc:label": "Identifiable Legal Person"
-    },
-    {
-      "@id": "urn:visionflow:linked:jurisdictional-framework",
-      "vc:label": "Jurisdictional Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compensation-for-victims",
-      "vc:label": "Compensation for Victims"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterrence-of-harm",
-      "vc:label": "Deterrence of Harm"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-pricing",
-      "vc:label": "Insurance Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-enforcement",
-      "vc:label": "Regulatory Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-internalisation",
-      "vc:label": "Risk Internalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-investment",
-      "vc:label": "Safety Investment"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:abnormally-dangerous-activity-doctrine",
-      "vc:label": "Abnormally Dangerous Activity Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:negligence-standard",
-      "vc:label": "Negligence Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-liability-directive",
-      "vc:label": "Product Liability Directive"
-    },
-    {
-      "@id": "urn:visionflow:linked:strict-liability",
-      "vc:label": "Strict Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:vicarious-liability",
-      "vc:label": "Vicarious Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:causation-doctrine",
-      "vc:label": "Causation Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-law-system",
-      "vc:label": "Common Law System"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-evidence",
-      "vc:label": "Expert Evidence"
-    },
-    {
-      "@id": "urn:visionflow:linked:judicial-capacity",
-      "vc:label": "Judicial Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:precedent",
-      "vc:label": "Precedent"
-    },
-    {
-      "@id": "urn:visionflow:linked:statutory-interpretation",
-      "vc:label": "Statutory Interpretation"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-insurance",
-      "vc:label": "AI Insurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:algorithmic-auditing",
-      "vc:label": "Algorithmic Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment",
-      "vc:label": "Conformity Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-surveillance",
-      "vc:label": "Market Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:caparo-three-stage-test",
-      "vc:label": "Caparo Three-Stage Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:daubert-standard",
-      "vc:label": "Daubert Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:foreseeability-test",
-      "vc:label": "Foreseeability Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasonable-care-standard",
-      "vc:label": "Reasonable Care Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:restatement-second-of-torts-402-a",
-      "vc:label": "Restatement (Second) of Torts § 402A"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-benefit-analysis",
-      "vc:label": "Risk-Benefit Analysis"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:contractual-liability",
-      "vc:label": "Contractual Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:criminal-liability",
-      "vc:label": "Criminal Liability"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-sanction",
-      "vc:label": "Regulatory Sanction"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-regulation",
-      "vc:label": "Self-Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-code",
-      "vc:label": "Voluntary Code"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-ai",
-      "vc:label": "Frontier AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias",
-      "vc:label": "Algorithmic Bias"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:explainable-ai",
-      "vc:label": "Explainable AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:consumer-protection-act-1987",
-      "vc:label": "Consumer Protection Act 1987"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-7000-series",
-      "vc:label": "IEEE 7000 Series"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-42001",
-      "vc:label": "ISO/IEC 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-liability-directive",
-      "vc:label": "Product Liability Directive"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:product-liability",
-      "vc:label": "Product Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

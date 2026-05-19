@@ -132,48 +132,27 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-documentation-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-documentation-standards",
+  "@type": "Class",
   "label": "AI Documentation Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f"
+  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:df2916f682f73afa86cc420193328ddb65ca3144592d1897ca0ac4e952ed7c4f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle. These standards specify required information about system characteristics, development processes, performance metrics, limitations, intended uses, and governance practices, enabling auditing, compliance verification, and risk assessment. Key documentation artifacts include Model Cards (introduced by Mitchell et al. 2019) documenting model details, intended use, performance metrics across demographic groups, ethical considerations, and caveats; Datasheets for Datasets (Gebru et al. 2018) describing data composition, collection processes, preprocessing steps, labeling procedures, intended uses, and limitations; System Cards documenting end-to-end AI systems including architecture, training procedures, deployment context, monitoring approaches, and governance structures; and FactSheets (IBM) providing comprehensive transparency information for AI services. Documentation standards address critical transparency needs including algor",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

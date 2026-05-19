@@ -224,41 +224,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-asset",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-asset",
+  "@type": "Class",
   "label": "Virtual Asset",
+  "definition": "Virtual assets are digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique digital collectibles, [[Avatar|avatars]] and avatar customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-g...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3afdf1da69f9aab966630fbc2de315c584d8684b9297acc4328f04d69945be63"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3afdf1da69f9aab966630fbc2de315c584d8684b9297acc4328f04d69945be63@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual assets are digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique digital collectibles, [[Avatar|avatars]] and avatar customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-game items]] with market-tradeable value. Ownership and transfer of virtual assets rely on [[BlockchainTechnology|blockchain]] smart contracts or centralised platform ledgers, with [[Interoperability|interoperability standards]] enabling asset portability across platforms and markets. Economic significance of virtual assets spans consumer entertainment (gaming, social worlds) to investment speculation, with regulatory frameworks increasingly addressing [[VirtualAssetTaxation|taxation]] and classification under securities laws.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

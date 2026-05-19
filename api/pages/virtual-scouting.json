@@ -3,19 +3,18 @@
   "title": "Virtual Scouting",
   "slug": "virtual-scouting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-scouting",
+  "classIri": "urn:ngm:class:virtual-scouting",
   "domain": "spatial-computing",
-  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisions without physical travel.",
+  "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:pre-production",
+      "id": "urn:ngm:class:pre-production",
       "label": "Pre-Production"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

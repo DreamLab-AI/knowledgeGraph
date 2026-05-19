@@ -3,19 +3,18 @@
   "title": "Accountable Party",
   "slug": "accountable-party",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accountable-party",
+  "classIri": "urn:ngm:class:accountable-party",
   "domain": "artificial-intelligence",
-  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties\u2014it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems crea",
+  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ical standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-governance-principle",
+      "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

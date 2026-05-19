@@ -3,53 +3,57 @@
   "title": "Attention Aware Interaction",
   "slug": "attention-aware-interaction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:attention-aware-interaction",
+  "classIri": "urn:ngm:class:attention-aware-interaction",
   "domain": "artificial-intelligence",
-  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.",
+  "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, A...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:human-computer-interaction",
+      "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human-Computer Interaction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:attention-modeling",
+        "id": "urn:ngm:class:attention-modeling",
         "label": "Attention Modeling"
       },
       {
-        "id": "urn:visionflow:linked:eye-tracking-hardware",
+        "id": "urn:ngm:class:eye-tracking-hardware",
         "label": "Eye Tracking Hardware"
       },
       {
-        "id": "urn:visionflow:linked:gaze-detection-algorithms",
+        "id": "urn:ngm:class:gaze-detection-algorithms",
         "label": "Gaze Detection Algorithms"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-interfaces",
+        "id": "urn:ngm:class:adaptive-interfaces",
         "label": "Adaptive Interfaces"
       },
       {
-        "id": "urn:visionflow:linked:foveated-rendering",
+        "id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gaze-based-selection",
+        "id": "urn:ngm:class:gaze-based-selection",
         "label": "Gaze-Based Selection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:marker-based-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:marker-based-tracking",
+  "@type": "Class",
   "label": "Marker Based Tracking",
+  "definition": "AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-tracking-technology",
-      "vc:label": "Spatial Tracking Technology"
+      "@id": "urn:ngm:class:spatial-tracking-technology",
+      "label": "Spatial Tracking Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0f21abf55c6f0a06b63efe2c82f44b7cbf0e0c0f27ba733c0321dabca25e72f2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ar-content-positioning",
+        "label": "AR Content Positioning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0f21abf55c6f0a06b63efe2c82f44b7cbf0e0c0f27ba733c0321dabca25e72f2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ar-content-positioning",
-      "vc:label": "AR Content Positioning"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

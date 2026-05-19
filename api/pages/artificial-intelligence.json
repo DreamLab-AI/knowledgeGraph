@@ -3,86 +3,85 @@
   "title": "Artificial Intelligence",
   "slug": "artificial-intelligence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:artificial-intelligence",
+  "classIri": "urn:ngm:class:artificial-intelligence",
   "domain": "artificial-intelligence",
   "definition": "Artificial Intelligence is a artificial intelligence concept and a type of owl:Thing. that enables Autonomous Systems, Decision Support. comprising Computer Vision, Deep Learning.",
-  "subClassOf": [
-    {
-      "id": "owl:Thing",
-      "label": "owl:Thing"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:deep-learning",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:generative-ai",
+        "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-infrastructure",
+        "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:neural-networks",
+        "id": "urn:ngm:class:neural-networks",
         "label": "Neural Networks"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-systems",
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:visionflow:linked:decision-support",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
       },
       {
-        "id": "urn:visionflow:linked:intelligent-automation",
+        "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Automation"
       },
       {
-        "id": "urn:visionflow:linked:personalisation",
+        "id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

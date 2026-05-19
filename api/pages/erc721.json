@@ -3,19 +3,18 @@
   "title": "ERC721",
   "slug": "erc721",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc721",
+  "classIri": "urn:ngm:class:erc721",
   "domain": "blockchain",
-  "definition": "The Ethereum non-fungible token standard for unique digital assets.",
+  "definition": "The ereum non-fungible token standard for unique digital assets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

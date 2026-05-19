@@ -3,139 +3,263 @@
   "title": "Domain Ontology",
   "slug": "domain-ontology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:domain-ontology",
+  "classIri": "urn:ngm:class:domain-ontology",
   "domain": "infrastructure",
-  "definition": "A **Domain Ontology** is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), following Tom Gruber's foundational 1993 definition \"a specification of a conceptualization\" as extended by Studer, Benjamins and Fensel (1998) to \"a formal, explicit specification of a shared conceptualization\", encoded in description-logic-grounded representation languages (W3C OWL 2 with EL/QL/RL/DL profiles, RDF/RDFS, SKOS for concept hierarchies, Common Logic ISO/IEC 24707, KIF Knowledge Interchange Format, Frame Logic F-Logic) and materialising four constituent layers: a **terminological component (TBox)** declaring named classes (rdfs:Class, owl:Class), object properties (owl:ObjectProperty) and data properties (owl:DataProperty) along with axiomatic relationships SubClassOf, EquivalentClasses, DisjointClasses, ObjectSomeValuesFrom, ObjectAllValuesFrom, cardinality restrictions and property characteristics (Transitive, Symmetric, Functional, InverseFunctional, Asymmetric, Reflexive, Irr",
+  "definition": "A Domain Ontology is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), followi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:conceptual-model",
+      "id": "urn:ngm:class:conceptual-model",
       "label": "Conceptual Model"
     },
     {
-      "id": "urn:visionflow:linked:formal-specification",
+      "id": "urn:ngm:class:formal-specification",
       "label": "Formal Specification"
-    },
-    {
-      "id": "urn:visionflow:linked:knowledge-representation-artifact",
-      "label": "Knowledge Representation Artifact"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:annotation-property",
+        "id": "urn:ngm:class:annotation-property",
         "label": "Annotation Property"
       },
       {
-        "id": "urn:visionflow:linked:axiom-set",
+        "id": "urn:ngm:class:axiom-set",
         "label": "Axiom Set"
       },
       {
-        "id": "urn:visionflow:linked:class-hierarchy",
+        "id": "urn:ngm:class:class-hierarchy",
         "label": "Class Hierarchy"
       },
       {
-        "id": "urn:visionflow:linked:data-property",
+        "id": "urn:ngm:class:data-property",
         "label": "Data Property"
       },
       {
-        "id": "urn:visionflow:linked:named-individual",
+        "id": "urn:ngm:class:named-individual",
         "label": "Named Individual"
       },
       {
-        "id": "urn:visionflow:linked:namespace-iri",
+        "id": "urn:ngm:class:namespace-iri",
         "label": "Namespace IRI"
       },
       {
-        "id": "urn:visionflow:linked:object-property",
+        "id": "urn:ngm:class:object-property",
         "label": "Object Property"
       },
       {
-        "id": "urn:visionflow:linked:ontology-design-pattern",
+        "id": "urn:ngm:class:ontology-design-pattern",
         "label": "Ontology Design Pattern"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:conceptualisation",
+        "id": "urn:ngm:class:conceptualisation",
         "label": "Conceptualisation"
       },
       {
-        "id": "urn:visionflow:linked:domain-expert",
+        "id": "urn:ngm:class:domain-expert",
         "label": "Domain Expert"
       },
       {
-        "id": "urn:visionflow:linked:identifier-scheme",
+        "id": "urn:ngm:class:identifier-scheme",
         "label": "Identifier Scheme"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-engineer",
+        "id": "urn:ngm:class:knowledge-engineer",
         "label": "Knowledge Engineer"
       },
       {
-        "id": "urn:visionflow:linked:logical-formalism",
+        "id": "urn:ngm:class:logical-formalism",
         "label": "Logical Formalism"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-reasoning",
+        "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:fair-data-principles",
+        "id": "urn:ngm:class:fair-data-principles",
         "label": "FAIR Data Principles"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-reuse",
+        "id": "urn:ngm:class:knowledge-reuse",
         "label": "Knowledge Reuse"
       },
       {
-        "id": "urn:visionflow:linked:linked-data-publication",
+        "id": "urn:ngm:class:linked-data-publication",
         "label": "Linked Data Publication"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
       {
-        "id": "urn:visionflow:owl:class:data-integration",
+        "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:closed-world-negation-as-failure",
+        "id": "urn:ngm:class:closed-world-negation-as-failure",
         "label": "Closed-World Negation as Failure"
       },
       {
-        "id": "urn:visionflow:linked:description-logic",
+        "id": "urn:ngm:class:description-logic",
         "label": "Description Logic"
       },
       {
-        "id": "urn:visionflow:linked:open-world-assumption",
+        "id": "urn:ngm:class:open-world-assumption",
         "label": "Open-World Assumption"
       },
       {
-        "id": "urn:visionflow:linked:owl-2-semantics",
+        "id": "urn:ngm:class:owl-2-semantics",
         "label": "OWL 2 Semantics"
       },
       {
-        "id": "urn:visionflow:linked:rdf-schema",
+        "id": "urn:ngm:class:rdf-schema",
         "label": "RDF Schema"
       },
       {
-        "id": "urn:visionflow:linked:skos-concept-scheme",
+        "id": "urn:ngm:class:skos-concept-scheme",
         "label": "SKOS Concept Scheme"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology-design-patterns",
+        "label": "Ontology Design Patterns"
+      },
+      {
+        "id": "urn:ngm:class:owl-2",
+        "label": "OWL 2"
+      },
+      {
+        "id": "urn:ngm:class:prot-g",
+        "label": "Prot\u00e9g\u00e9"
+      },
+      {
+        "id": "urn:ngm:class:rdf-rdfs",
+        "label": "RDF/RDFS"
+      },
+      {
+        "id": "urn:ngm:class:sh-ex",
+        "label": "ShEx"
+      },
+      {
+        "id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:tableaux-reasoning",
+        "label": "Tableaux Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:linked-open-data",
+        "label": "Linked Open Data"
+      },
+      {
+        "id": "urn:ngm:class:scientific-data-sharing",
+        "label": "Scientific Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-21127-cidoc-crm",
+        "label": "ISO 21127 CIDOC CRM"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-21838-2-bfo",
+        "label": "ISO/IEC 21838-2 BFO"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-24707-common-logic",
+        "label": "ISO/IEC 24707 Common Logic"
+      },
+      {
+        "id": "urn:ngm:class:obo-foundry",
+        "label": "OBO Foundry"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-owl-2",
+        "label": "W3C OWL 2"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-rdf-1-1",
+        "label": "W3C RDF 1.1"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-skos",
+        "label": "W3C SKOS"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-sparql-1-1",
+        "label": "W3C SPARQL 1.1"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:application-ontology",
+        "label": "Application Ontology"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      },
+      {
+        "id": "urn:ngm:class:upper-ontology",
+        "label": "Upper Ontology"
+      },
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
   },
   "wikilinks": [
     {

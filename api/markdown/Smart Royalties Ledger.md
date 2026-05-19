@@ -188,124 +188,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:smart-royalties-ledger",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:smart-royalties-ledger",
+  "@type": "Class",
   "label": "Smart Royalties Ledger",
+  "definition": "An automated tracking and distribution system that records creator royalty obligations, calculates payment amounts, and executes compensation transfers for digital content and NFT sales in virtual economy environments.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:economic-layer",
-      "vc:label": "Economic Layer"
+      "@id": "urn:ngm:class:economic-layer",
+      "label": "Economic Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3ec9cc50431c3b8522c9a5df95a11ea765f0769f76694f738300173ea08edb45"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-record",
+        "label": "Audit Record"
+      },
+      {
+        "@id": "urn:ngm:class:distribution-queue",
+        "label": "Distribution Queue"
+      },
+      {
+        "@id": "urn:ngm:class:payment-tracking-engine",
+        "label": "Payment Tracking Engine"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-calculator",
+        "label": "Royalty Calculator"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-system",
+        "label": "Settlement System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processor",
+        "label": "Transaction Processor"
+      },
+      {
+        "@id": "urn:ngm:class:smart-royalty-contract",
+        "label": "Smart Royalty Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-creator-compensation",
+        "label": "Automated Creator Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-attribution",
+        "label": "Cross-Platform Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-royalties",
+        "label": "Multi-Party Royalties"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-revenue-sharing",
+        "label": "Transparent Revenue Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:creator-economy-infrastructure",
+        "label": "Creator Economy Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3ec9cc50431c3b8522c9a5df95a11ea765f0769f76694f738300173ea08edb45@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An automated tracking and distribution system that records creator royalty obligations, calculates payment amounts, and executes compensation transfers for digital content and NFT sales in virtual economy environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:creator-economy-infrastructure",
-      "vc:label": "Creator Economy Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-record",
-      "vc:label": "Audit Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:distribution-queue",
-      "vc:label": "Distribution Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-tracking-engine",
-      "vc:label": "Payment Tracking Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:royalty-calculator",
-      "vc:label": "Royalty Calculator"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-system",
-      "vc:label": "Settlement System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-system",
-      "vc:label": "Identity System"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-gateway",
-      "vc:label": "Payment Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-processor",
-      "vc:label": "Transaction Processor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-royalty-contract",
-      "vc:label": "Smart Royalty Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-creator-compensation",
-      "vc:label": "Automated Creator Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-attribution",
-      "vc:label": "Cross-Platform Attribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-party-royalties",
-      "vc:label": "Multi-Party Royalties"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparent-revenue-sharing",
-      "vc:label": "Transparent Revenue Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:oracle-service",
-      "vc:label": "Oracle Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-feed",
-      "vc:label": "Price Feed"
-    },
-    {
-      "@id": "urn:visionflow:linked:treasury-system",
-      "vc:label": "Treasury System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

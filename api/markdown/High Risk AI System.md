@@ -124,52 +124,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:high-risk-ai-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:high-risk-ai-system",
+  "@type": "Class",
   "label": "High Risk AI System",
+  "definition": "An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar f...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:96bb0de4e8cccc607abb77e96fe5f36cf1ff91b9c8a5e150aef66fb8a42271bb"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conformity-assessment-ai-0103",
+        "label": "Conformity Assessment (AI-0103)"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight-ai-0041",
+        "label": "Human Oversight (AI-0041)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:96bb0de4e8cccc607abb77e96fe5f36cf1ff91b9c8a5e150aef66fb8a42271bb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An AI system classified as presenting significant risk to health, safety, fundamental rights, or other critical interests based on its intended purpose, deployment context, and potential for substantial adverse impact, subject to stringent regulatory requirements under the EU AI Act and similar frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:conformity-assessment-ai-0103",
-      "vc:label": "Conformity Assessment (AI-0103)"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-oversight-ai-0041",
-      "vc:label": "Human Oversight (AI-0041)"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

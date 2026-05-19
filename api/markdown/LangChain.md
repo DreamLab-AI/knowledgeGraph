@@ -280,176 +280,121 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:lang-chain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:lang-chain",
+  "@type": "Class",
   "label": "LangChain",
+  "definition": "LangChain is an open-source Python and TypeScript framework for composing [[Large Language Model]] applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agent-orchestration-framework",
-      "vc:label": "Agent Orchestration Framework"
+      "@id": "urn:ngm:class:agent-orchestration-framework",
+      "label": "Agent Orchestration Framework"
     },
     {
-      "@id": "urn:visionflow:linked:llm-application-framework",
-      "vc:label": "LLM Application Framework"
+      "@id": "urn:ngm:class:llm-application-framework",
+      "label": "LLM Application Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lang-chain-agent",
+        "label": "LangChain Agent"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain-chain",
+        "label": "LangChain Chain"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain-memory",
+        "label": "LangChain Memory"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain-retriever",
+        "label": "LangChain Retriever"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain-tool",
+        "label": "LangChain Tool"
+      },
+      {
+        "@id": "urn:ngm:class:lang-graph-workflow",
+        "label": "LangGraph Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:lang-smith-observability",
+        "label": "LangSmith Observability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:python-3",
+        "label": "Python 3"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:conversational-memory",
+        "label": "Conversational Memory"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-calling-agent",
+        "label": "Tool-Calling Agent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:lcel-lang-chain-expression-language",
+        "label": "LCEL LangChain Expression Language"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol-integration",
+        "label": "Model Context Protocol Integration"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-agent-pattern",
+        "label": "ReAct Agent Pattern"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:llm-application-stack",
+        "label": "LLM Application Stack"
+      },
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3b520673c603059fe5d1d5924538f90c865a6428c677c0ac8af6cfbad4db6457@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "LangChain is an open-source Python and TypeScript framework for composing [[Large Language Model]] applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified interface across LLM providers (OpenAI, Anthropic, Cohere, local Ollama) and complementary services (vector databases, document loaders, external APIs) that accelerates the development of conversational AI systems, RAG pipelines, and agentic workflows, integrating natively with the [[Model Context Protocol]] tool surface used by [[VisionClaw Agentic Container]] agent skills.",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.75",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:llm-application-stack",
-      "vc:label": "LLM Application Stack"
-    },
-    {
-      "@id": "urn:visionflow:linked:rag-pipeline",
-      "vc:label": "RAG Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:lang-chain-agent",
-      "vc:label": "LangChain Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-chain",
-      "vc:label": "LangChain Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-memory",
-      "vc:label": "LangChain Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-retriever",
-      "vc:label": "LangChain Retriever"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-tool",
-      "vc:label": "LangChain Tool"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-graph-workflow",
-      "vc:label": "LangGraph Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-smith-observability",
-      "vc:label": "LangSmith Observability"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:embedding-model",
-      "vc:label": "Embedding Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-3",
-      "vc:label": "Python 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:conversational-memory",
-      "vc:label": "Conversational Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-step-reasoning",
-      "vc:label": "Multi-Step Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-calling-agent",
-      "vc:label": "Tool-Calling Agent"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:lcel-lang-chain-expression-language",
-      "vc:label": "LCEL LangChain Expression Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-context-protocol-integration",
-      "vc:label": "Model Context Protocol Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act-agent-pattern",
-      "vc:label": "ReAct Agent Pattern"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:anthropic-claude-api",
-      "vc:label": "Anthropic Claude API"
-    },
-    {
-      "@id": "urn:visionflow:linked:chroma-vector-database",
-      "vc:label": "Chroma Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:faiss",
-      "vc:label": "FAISS"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-api",
-      "vc:label": "OpenAI API"
-    },
-    {
-      "@id": "urn:visionflow:linked:pinecone",
-      "vc:label": "Pinecone"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:auto-ml",
-      "vc:label": "AutoML"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:solid-pod",
-      "vc:label": "Solid Pod"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

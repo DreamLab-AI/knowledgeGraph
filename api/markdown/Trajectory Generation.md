@@ -180,86 +180,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trajectory-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trajectory-generation",
+  "@type": "Class",
   "label": "Trajectory Generation",
+  "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
+      "@id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:goal-configuration",
+        "label": "Goal Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1016-path-planning",
+        "label": "RB-1016-path-planning"
+      },
+      {
+        "@id": "urn:ngm:class:start-configuration",
+        "label": "Start Configuration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:robot-motion",
+        "label": "Robot Motion"
+      },
+      {
+        "@id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rb-1005-forward-kinematics",
+        "label": "RB-1005-forward-kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1006-inverse-kinematics",
+        "label": "RB-1006-inverse-kinematics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9e09807a119395f7fc00887be47ffc48078dc5a5e3054cff483bb27a26e2fe6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:goal-configuration",
-      "vc:label": "Goal Configuration"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1016-path-planning",
-      "vc:label": "RB-1016-path-planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:start-configuration",
-      "vc:label": "Start Configuration"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:robot-motion",
-      "vc:label": "Robot Motion"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-execution",
-      "vc:label": "Task Execution"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:rb-1005-forward-kinematics",
-      "vc:label": "RB-1005-forward-kinematics"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1006-inverse-kinematics",
-      "vc:label": "RB-1006-inverse-kinematics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

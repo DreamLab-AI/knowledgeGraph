@@ -3,147 +3,247 @@
   "title": "Competition in AI",
   "slug": "competition-in-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:competition-in-ai",
+  "classIri": "urn:ngm:class:competition-in-ai",
   "domain": "artificial-intelligence",
-  "definition": "Competition in AI is the multi-dimensional race dynamics \u2014 geopolitical, corporate, research, and regulatory \u2014 through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial intelligence, operating across six interlocking battlegrounds: (1) frontier-model capability \u2014 benchmark supremacy on reasoning, coding, multimodality, and long-context tasks where as of Q1 2026 Anthropic (Arena Elo 1,503), xAI (1,495), Google (1,494), OpenAI (1,481), Alibaba (1,449), and DeepSeek (1,424) occupy the top tier within 79 Elo points of each other, with the Stanford AI Index 2026 recording only a 2.7% capability gap between the best US and best Chinese frontier models; (2) compute and supply-chain dominance \u2014 NVIDIA holds ~80% of the AI accelerator market and secured over 70% of TSMC's CoWoS-L advanced-packaging capacity for 2025\u20132026, SK Hynix confirmed all 2026 HBM3E supply sold out, and the $500 billion Stargate initiative secured 10 GW of US AI compute capacity ahead of its original 2029 target; (3) capital formation \u2014 global corporate AI investment reached $581 billion in 20",
+  "definition": "Competition in AI is the multi-dimensional race dynamics \u2014 geopolitical, corporate, research, and regulatory \u2014 through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial i...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:geopolitics",
+      "id": "urn:ngm:class:geopolitics",
       "label": "Geopolitics"
     },
     {
-      "id": "urn:visionflow:linked:industrial-competition",
+      "id": "urn:ngm:class:industrial-competition",
       "label": "Industrial Competition"
-    },
-    {
-      "id": "urn:visionflow:linked:innovation-economics",
-      "label": "Innovation Economics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-chips",
+        "id": "urn:ngm:class:ai-chips",
         "label": "AI Chips"
       },
       {
-        "id": "urn:visionflow:linked:ai-investment",
+        "id": "urn:ngm:class:ai-investment",
         "label": "AI Investment"
       },
       {
-        "id": "urn:visionflow:linked:ai-regulation",
+        "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
       },
       {
-        "id": "urn:visionflow:linked:benchmark-evaluation",
+        "id": "urn:ngm:class:benchmark-evaluation",
         "label": "Benchmark Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:compute-access",
+        "id": "urn:ngm:class:compute-access",
         "label": "Compute Access"
       },
       {
-        "id": "urn:visionflow:linked:export-controls",
+        "id": "urn:ngm:class:export-controls",
         "label": "Export Controls"
       },
       {
-        "id": "urn:visionflow:linked:frontier-models",
+        "id": "urn:ngm:class:frontier-models",
         "label": "Frontier Models"
       },
       {
-        "id": "urn:visionflow:linked:open-source-ai",
+        "id": "urn:ngm:class:open-source-ai",
         "label": "Open Source AI"
       },
       {
-        "id": "urn:visionflow:linked:talent-concentration",
+        "id": "urn:ngm:class:talent-concentration",
         "label": "Talent Concentration"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-safety",
+        "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ai-research-talent",
+        "id": "urn:ngm:class:ai-research-talent",
         "label": "AI Research Talent"
       },
       {
-        "id": "urn:visionflow:linked:capital-markets",
+        "id": "urn:ngm:class:capital-markets",
         "label": "Capital Markets"
       },
       {
-        "id": "urn:visionflow:linked:gpu-supply-chain",
+        "id": "urn:ngm:class:gpu-supply-chain",
         "label": "GPU Supply Chain"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-frameworks",
+        "id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
       },
       {
-        "id": "urn:visionflow:owl:class:cloud-infrastructure",
+        "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-policy",
+        "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
       },
       {
-        "id": "urn:visionflow:linked:ai-sovereignty",
+        "id": "urn:ngm:class:ai-sovereignty",
         "label": "AI Sovereignty"
       },
       {
-        "id": "urn:visionflow:linked:economic-competitiveness",
+        "id": "urn:ngm:class:economic-competitiveness",
         "label": "Economic Competitiveness"
       },
       {
-        "id": "urn:visionflow:linked:national-security-advantage",
+        "id": "urn:ngm:class:national-security-advantage",
         "label": "National Security Advantage"
       },
       {
-        "id": "urn:visionflow:linked:technological-leadership",
+        "id": "urn:ngm:class:technological-leadership",
         "label": "Technological Leadership"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:antitrust-oversight",
+        "id": "urn:ngm:class:antitrust-oversight",
         "label": "Antitrust Oversight"
       },
       {
-        "id": "urn:visionflow:linked:benchmark-evaluation",
+        "id": "urn:ngm:class:benchmark-evaluation",
         "label": "Benchmark Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:compute-governance",
+        "id": "urn:ngm:class:compute-governance",
         "label": "Compute Governance"
       },
       {
-        "id": "urn:visionflow:linked:export-controls",
+        "id": "urn:ngm:class:export-controls",
         "label": "Export Controls"
       },
       {
-        "id": "urn:visionflow:linked:open-model-licensing",
+        "id": "urn:ngm:class:open-model-licensing",
         "label": "Open Model Licensing"
       },
       {
-        "id": "urn:visionflow:linked:responsible-scaling-policy",
+        "id": "urn:ngm:class:responsible-scaling-policy",
         "label": "Responsible Scaling Policy"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agentic-ai-systems",
+        "label": "Agentic AI Systems"
+      },
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-sovereignty",
+        "label": "AI Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystems",
+        "label": "Innovation Ecosystems"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategies",
+        "label": "National AI Strategies"
+      },
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      },
+      {
+        "id": "urn:ngm:class:mistral-ai",
+        "label": "Mistral AI"
+      },
+      {
+        "id": "urn:ngm:class:google-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:open-ai",
+        "label": "OpenAI"
+      }
+    ]
   },
   "wikilinks": [
     {

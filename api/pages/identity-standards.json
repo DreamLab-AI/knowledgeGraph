@@ -3,27 +3,31 @@
   "title": "Identity Standards",
   "slug": "identity-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:identity-standards",
+  "classIri": "urn:ngm:class:identity-standards",
   "domain": "infrastructure",
-  "definition": "Identity Standards is a concept within the metaverse domain. Further enrichment pending.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
+  "definition": "Identity Standards is an infrastructure concept.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

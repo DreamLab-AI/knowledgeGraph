@@ -3,32 +3,36 @@
   "title": "Inclusive Xr Design",
   "slug": "inclusive-xr-design",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:inclusive-xr-design",
+  "classIri": "urn:ngm:class:inclusive-xr-design",
   "domain": "spatial-computing",
-  "definition": "Design methodologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input methods, adaptive interfaces, and assistive technology integration.",
+  "definition": "Design modologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input mods, adaptive interfaces, and assistive technology in...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:accessible-design",
+      "id": "urn:ngm:class:accessible-design",
       "label": "Accessible Design"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:universal-xr-access",
+        "id": "urn:ngm:class:universal-xr-access",
         "label": "Universal XR Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

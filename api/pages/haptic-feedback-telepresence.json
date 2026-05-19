@@ -3,19 +3,18 @@
   "title": "Haptic Feedback Telepresence",
   "slug": "haptic-feedback-telepresence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:haptic-feedback-telepresence",
+  "classIri": "urn:ngm:class:haptic-feedback-telepresence",
   "domain": "distributed-collaboration",
-  "definition": "\"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensation for immersive remote interaction with physical or virtual objects.\"",
+  "definition": "\"The integration of haptic (tactile and kinesthetic) feedback devices into telepresence systems, enabling remote operators to feel forces, textures, and vibrations from distant environments through force-feedback gloves, exoskeletons, or handheld controllers, creating bidirectional touch sensatio...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:haptic-technology",
+      "id": "urn:ngm:class:haptic-technology",
       "label": "Haptic Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

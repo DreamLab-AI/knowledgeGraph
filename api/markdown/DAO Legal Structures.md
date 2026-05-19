@@ -756,416 +756,323 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dao-legal-structures",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dao-legal-structures",
+  "@type": "Class",
   "label": "DAO Legal Structures",
+  "definition": "DAO Legal Structures are the corpus of statutory wrappers, jurisdictional incorporation regimes, and bespoke entity forms — spanning US state limited-liability companies, US state unincorporated nonprofit associations, offshore foundation companies, Swiss associations and foundations, Liechtenste...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:corporate-forms",
-      "vc:label": "Corporate Forms"
+      "@id": "urn:ngm:class:corporate-forms",
+      "label": "Corporate Forms"
     },
     {
-      "@id": "urn:visionflow:linked:governance-structures",
-      "vc:label": "Governance Structures"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-entity-wrappers",
-      "vc:label": "Legal Entity Wrappers"
+      "@id": "urn:ngm:class:governance-structures",
+      "label": "Governance Structures"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1701c8af122ff205bcacb0d64f029f5871410a923f8dd31bed172cded4a5adb2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bvi-limited-company",
+        "label": "BVI Limited Company"
+      },
+      {
+        "@id": "urn:ngm:class:cayman-foundation-company",
+        "label": "Cayman Foundation Company"
+      },
+      {
+        "@id": "urn:ngm:class:delaware-statutory-trust",
+        "label": "Delaware Statutory Trust"
+      },
+      {
+        "@id": "urn:ngm:class:liechtenstein-tvtg-entity",
+        "label": "Liechtenstein TVTG Entity"
+      },
+      {
+        "@id": "urn:ngm:class:marshall-islands-dao-llc",
+        "label": "Marshall Islands DAO LLC"
+      },
+      {
+        "@id": "urn:ngm:class:panama-private-interest-foundation",
+        "label": "Panama Private Interest Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:singapore-variable-capital-company",
+        "label": "Singapore Variable Capital Company"
+      },
+      {
+        "@id": "urn:ngm:class:swiss-stiftung",
+        "label": "Swiss Stiftung"
+      },
+      {
+        "@id": "urn:ngm:class:swiss-verein",
+        "label": "Swiss Verein"
+      },
+      {
+        "@id": "urn:ngm:class:tennessee-do",
+        "label": "Tennessee DO"
+      },
+      {
+        "@id": "urn:ngm:class:utah-dao-llc",
+        "label": "Utah DAO LLC"
+      },
+      {
+        "@id": "urn:ngm:class:vermont-bbllc",
+        "label": "Vermont BBLLC"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-dao-llc",
+        "label": "Wyoming DAO LLC"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-duna",
+        "label": "Wyoming DUNA"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering-compliance",
+        "label": "Anti-Money Laundering Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:articles-of-organization",
+        "label": "Articles of Organization"
+      },
+      {
+        "@id": "urn:ngm:class:beneficial-ownership-disclosure",
+        "label": "Beneficial Ownership Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:bylaws",
+        "label": "Bylaws"
+      },
+      {
+        "@id": "urn:ngm:class:operating-agreement",
+        "label": "Operating Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:registered-agent",
+        "label": "Registered Agent"
+      },
+      {
+        "@id": "urn:ngm:class:tax-identification-number",
+        "label": "Tax Identification Number"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bank-account-access",
+        "label": "Bank Account Access"
+      },
+      {
+        "@id": "urn:ngm:class:contractual-capacity",
+        "label": "Contractual Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:dispute-resolution-forum",
+        "label": "Dispute Resolution Forum"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-ownership",
+        "label": "Intellectual Property Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:legal-personality",
+        "label": "Legal Personality"
+      },
+      {
+        "@id": "urn:ngm:class:liability-protection",
+        "label": "Liability Protection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-engagement",
+        "label": "Regulatory Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:tax-treatment-clarity",
+        "label": "Tax Treatment Clarity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:algorithmic-management-doctrine",
+        "label": "Algorithmic Management Doctrine"
+      },
+      {
+        "@id": "urn:ngm:class:dual-entity-structure",
+        "label": "Dual Entity Structure"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-plus-subsidiary-pattern",
+        "label": "Foundation Plus Subsidiary Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:legal-wrapping-pattern",
+        "label": "Legal Wrapping Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:operating-agreement-supremacy",
+        "label": "Operating Agreement Supremacy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:legal-wrapper-service-providers",
+        "label": "Legal Wrapper Service Providers"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallets",
+        "label": "Multi-Signature Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-governance",
+        "label": "Smart Contract Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cftc-v-ooki-dao",
+        "label": "CFTC v Ooki DAO"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-law",
+        "label": "Corporate Law"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "@id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "@id": "urn:ngm:class:law-commission-dao-report",
+        "label": "Law Commission DAO Report"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:midao",
+        "label": "MIDAO"
+      },
+      {
+        "@id": "urn:ngm:class:otonomos",
+        "label": "Otonomos"
+      },
+      {
+        "@id": "urn:ngm:class:sarcuni-v-b-zx-dao",
+        "label": "Sarcuni v bZx DAO"
+      },
+      {
+        "@id": "urn:ngm:class:tax-treatment",
+        "label": "Tax Treatment"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-border-treasury-operations",
+        "label": "Cross-Border Treasury Operations"
+      },
+      {
+        "@id": "urn:ngm:class:dao-bank-account-opening",
+        "label": "DAO Bank Account Opening"
+      },
+      {
+        "@id": "urn:ngm:class:dao-contributor-payroll",
+        "label": "DAO Contributor Payroll"
+      },
+      {
+        "@id": "urn:ngm:class:dao-grant-programmes",
+        "label": "DAO Grant Programmes"
+      },
+      {
+        "@id": "urn:ngm:class:dao-trademark-registration",
+        "label": "DAO Trademark Registration"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-negotiation-capacity",
+        "label": "Regulatory Negotiation Capacity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:cayman-foundation-companies-act-2017",
+        "label": "Cayman Foundation Companies Act 2017"
+      },
+      {
+        "@id": "urn:ngm:class:coala-model-dao-law",
+        "label": "COALA Model DAO Law"
+      },
+      {
+        "@id": "urn:ngm:class:fsma-2023",
+        "label": "FSMA 2023"
+      },
+      {
+        "@id": "urn:ngm:class:liechtenstein-tvtg",
+        "label": "Liechtenstein TVTG"
+      },
+      {
+        "@id": "urn:ngm:class:marshall-islands-non-profit-entities-amendment-act-2022",
+        "label": "Marshall Islands Non-Profit Entities Amendment Act 2022"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation-2023-1114",
+        "label": "MiCA Regulation 2023-1114"
+      },
+      {
+        "@id": "urn:ngm:class:swiss-civil-code-articles-60-79",
+        "label": "Swiss Civil Code Articles 60-79"
+      },
+      {
+        "@id": "urn:ngm:class:uk-law-commission-report-414",
+        "label": "UK Law Commission Report 414"
+      },
+      {
+        "@id": "urn:ngm:class:vermont-title-11-chapter-25",
+        "label": "Vermont Title 11 Chapter 25"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-duna-act-2024",
+        "label": "Wyoming DUNA Act 2024"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-sf0038",
+        "label": "Wyoming SF0038"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1701c8af122ff205bcacb0d64f029f5871410a923f8dd31bed172cded4a5adb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**DAO Legal Structures** are the corpus of statutory wrappers, jurisdictional incorporation regimes, and bespoke entity forms — spanning US state limited-liability companies, US state unincorporated nonprofit associations, offshore foundation companies, Swiss associations and foundations, Liechtenstein TVTG-registered entities, BVI limited companies, Marshall Islands DAO LLCs, Singapore Variable Capital Companies, Panama private interest foundations and Delaware statutory trusts — that confer **legal personality, limited liability, tax classification, contractual capacity, and regulatory recognition** on [[Decentralised Autonomous Organisations]] which would otherwise default to a stateless **general partnership** under common law (in which every token holder bears joint-and-several liability for the collective's debts, torts, and regulatory penalties, as the September 2022 **CFTC v. Ooki DAO** default judgment chillingly demonstrated when a US district court entered $643,542 in penalties and a permanent injunction against an unincorporated DAO and its token-holder members, expressly finding the Ooki DAO to be an unincorporated association subject to service via help-chat and a for",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bvi-limited-company",
-      "vc:label": "BVI Limited Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:cayman-foundation-company",
-      "vc:label": "Cayman Foundation Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:delaware-statutory-trust",
-      "vc:label": "Delaware Statutory Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:liechtenstein-tvtg-entity",
-      "vc:label": "Liechtenstein TVTG Entity"
-    },
-    {
-      "@id": "urn:visionflow:linked:marshall-islands-dao-llc",
-      "vc:label": "Marshall Islands DAO LLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:panama-private-interest-foundation",
-      "vc:label": "Panama Private Interest Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:singapore-variable-capital-company",
-      "vc:label": "Singapore Variable Capital Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:swiss-stiftung",
-      "vc:label": "Swiss Stiftung"
-    },
-    {
-      "@id": "urn:visionflow:linked:swiss-verein",
-      "vc:label": "Swiss Verein"
-    },
-    {
-      "@id": "urn:visionflow:linked:tennessee-do",
-      "vc:label": "Tennessee DO"
-    },
-    {
-      "@id": "urn:visionflow:linked:utah-dao-llc",
-      "vc:label": "Utah DAO LLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:vermont-bbllc",
-      "vc:label": "Vermont BBLLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-dao-llc",
-      "vc:label": "Wyoming DAO LLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-duna",
-      "vc:label": "Wyoming DUNA"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering-compliance",
-      "vc:label": "Anti-Money Laundering Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:articles-of-organization",
-      "vc:label": "Articles of Organization"
-    },
-    {
-      "@id": "urn:visionflow:linked:beneficial-ownership-disclosure",
-      "vc:label": "Beneficial Ownership Disclosure"
-    },
-    {
-      "@id": "urn:visionflow:linked:bylaws",
-      "vc:label": "Bylaws"
-    },
-    {
-      "@id": "urn:visionflow:linked:operating-agreement",
-      "vc:label": "Operating Agreement"
-    },
-    {
-      "@id": "urn:visionflow:linked:registered-agent",
-      "vc:label": "Registered Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-identification-number",
-      "vc:label": "Tax Identification Number"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bank-account-access",
-      "vc:label": "Bank Account Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:contractual-capacity",
-      "vc:label": "Contractual Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:dispute-resolution-forum",
-      "vc:label": "Dispute Resolution Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:intellectual-property-ownership",
-      "vc:label": "Intellectual Property Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-personality",
-      "vc:label": "Legal Personality"
-    },
-    {
-      "@id": "urn:visionflow:linked:liability-protection",
-      "vc:label": "Liability Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-engagement",
-      "vc:label": "Regulatory Engagement"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-treatment-clarity",
-      "vc:label": "Tax Treatment Clarity"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-management-doctrine",
-      "vc:label": "Algorithmic Management Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:dual-entity-structure",
-      "vc:label": "Dual Entity Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-plus-subsidiary-pattern",
-      "vc:label": "Foundation Plus Subsidiary Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-wrapping-pattern",
-      "vc:label": "Legal Wrapping Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:operating-agreement-supremacy",
-      "vc:label": "Operating Agreement Supremacy"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:beneficial-ownership-registers",
-      "vc:label": "Beneficial Ownership Registers"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-tokens",
-      "vc:label": "Governance Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:jurisdictional-recognition",
-      "vc:label": "Jurisdictional Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-multisig",
-      "vc:label": "Off-Chain Multisig"
-    },
-    {
-      "@id": "urn:visionflow:linked:statutory-authorisation",
-      "vc:label": "Statutory Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-treasury-operations",
-      "vc:label": "Cross-Border Treasury Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:dao-bank-account-opening",
-      "vc:label": "DAO Bank Account Opening"
-    },
-    {
-      "@id": "urn:visionflow:linked:dao-contributor-payroll",
-      "vc:label": "DAO Contributor Payroll"
-    },
-    {
-      "@id": "urn:visionflow:linked:dao-grant-programmes",
-      "vc:label": "DAO Grant Programmes"
-    },
-    {
-      "@id": "urn:visionflow:linked:dao-trademark-registration",
-      "vc:label": "DAO Trademark Registration"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-negotiation-capacity",
-      "vc:label": "Regulatory Negotiation Capacity"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:legal-wrapper-service-providers",
-      "vc:label": "Legal Wrapper Service Providers"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature-wallets",
-      "vc:label": "Multi-Signature Wallets"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-governance",
-      "vc:label": "Smart Contract Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-voting",
-      "vc:label": "Token-Weighted Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:on-chain-voting",
-      "vc:label": "On-Chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:charitable-incorporated-organisation",
-      "vc:label": "Charitable Incorporated Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:closed-end-investment-fund",
-      "vc:label": "Closed-End Investment Fund"
-    },
-    {
-      "@id": "urn:visionflow:linked:general-partnership",
-      "vc:label": "General Partnership"
-    },
-    {
-      "@id": "urn:visionflow:linked:sole-proprietorship",
-      "vc:label": "Sole Proprietorship"
-    },
-    {
-      "@id": "urn:visionflow:linked:stateless-dao",
-      "vc:label": "Stateless DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-limited-liability-company",
-      "vc:label": "Traditional Limited Liability Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:unincorporated-association",
-      "vc:label": "Unincorporated Association"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cftc-v-ooki-dao",
-      "vc:label": "CFTC v Ooki DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-law",
-      "vc:label": "Corporate Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisations",
-      "vc:label": "Decentralised Autonomous Organisations"
-    },
-    {
-      "@id": "urn:visionflow:linked:howey-test",
-      "vc:label": "Howey Test"
-    },
-    {
-      "@id": "urn:visionflow:linked:law-commission-dao-report",
-      "vc:label": "Law Commission DAO Report"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-regulation",
-      "vc:label": "MiCA Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:midao",
-      "vc:label": "MIDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:otonomos",
-      "vc:label": "Otonomos"
-    },
-    {
-      "@id": "urn:visionflow:linked:sarcuni-v-b-zx-dao",
-      "vc:label": "Sarcuni v bZx DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-treatment",
-      "vc:label": "Tax Treatment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:securities-regulation",
-      "vc:label": "Securities Regulation"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:cayman-foundation-companies-act-2017",
-      "vc:label": "Cayman Foundation Companies Act 2017"
-    },
-    {
-      "@id": "urn:visionflow:linked:coala-model-dao-law",
-      "vc:label": "COALA Model DAO Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsma-2023",
-      "vc:label": "FSMA 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:liechtenstein-tvtg",
-      "vc:label": "Liechtenstein TVTG"
-    },
-    {
-      "@id": "urn:visionflow:linked:marshall-islands-non-profit-entities-amendment-act-2022",
-      "vc:label": "Marshall Islands Non-Profit Entities Amendment Act 2022"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-regulation-2023-1114",
-      "vc:label": "MiCA Regulation 2023-1114"
-    },
-    {
-      "@id": "urn:visionflow:linked:swiss-civil-code-articles-60-79",
-      "vc:label": "Swiss Civil Code Articles 60-79"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-law-commission-report-414",
-      "vc:label": "UK Law Commission Report 414"
-    },
-    {
-      "@id": "urn:visionflow:linked:vermont-title-11-chapter-25",
-      "vc:label": "Vermont Title 11 Chapter 25"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-duna-act-2024",
-      "vc:label": "Wyoming DUNA Act 2024"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-sf0038",
-      "vc:label": "Wyoming SF0038"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:corporate-law",
-      "vc:label": "Corporate Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisations",
-      "vc:label": "Decentralised Autonomous Organisations"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-law",
-      "vc:label": "Tax Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:securities-regulation",
-      "vc:label": "Securities Regulation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

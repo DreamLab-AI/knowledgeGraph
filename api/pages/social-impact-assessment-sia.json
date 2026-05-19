@@ -3,74 +3,87 @@
   "title": "Social Impact Assessment (SIA)",
   "slug": "social-impact-assessment-sia",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:social-impact-assessment-sia",
+  "classIri": "urn:ngm:class:social-impact-assessment-sia",
   "domain": "spatial-computing",
-  "definition": "Systematic evaluation of potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
+  "definition": "Systematic eof potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:community-consultation",
+        "id": "urn:ngm:class:community-consultation",
         "label": "Community Consultation"
       },
       {
-        "id": "urn:visionflow:linked:impact-metrics",
+        "id": "urn:ngm:class:impact-metrics",
         "label": "Impact Metrics"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-analysis",
+        "id": "urn:ngm:class:stakeholder-analysis",
         "label": "Stakeholder Analysis"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Data Collection"
       },
       {
-        "id": "urn:visionflow:linked:impact-indicators",
+        "id": "urn:ngm:class:impact-indicators",
         "label": "Impact Indicators"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-mapping",
+        "id": "urn:ngm:class:stakeholder-mapping",
         "label": "Stakeholder Mapping"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-protection",
+        "id": "urn:ngm:class:community-protection",
         "label": "Community Protection"
       },
       {
-        "id": "urn:visionflow:linked:policy-development",
+        "id": "urn:ngm:class:policy-development",
         "label": "Policy Development"
       },
       {
-        "id": "urn:visionflow:linked:responsible-deployment",
+        "id": "urn:ngm:class:responsible-deployment",
         "label": "Responsible Deployment"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-alignment",
+        "id": "urn:ngm:class:stakeholder-alignment",
         "label": "Stakeholder Alignment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

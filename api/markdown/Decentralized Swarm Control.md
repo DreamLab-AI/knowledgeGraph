@@ -212,110 +212,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-swarm-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-swarm-control",
+  "@type": "Class",
   "label": "Decentralized Swarm Control",
+  "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents.",
+  "domain": "robotics",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:swarm-robotics",
-      "vc:label": "Swarm Robotics"
+      "@id": "urn:ngm:class:swarm-robotics",
+      "label": "Swarm Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c893bd2a2c50b94e065d239d3bd0a26c184de8eb8a8145f37dee144c9136fa85"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:agent-autonomy",
+        "label": "Agent Autonomy"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-behaviour",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:local-decision-logic",
+        "label": "Local Decision Logic"
+      },
+      {
+        "@id": "urn:ngm:class:neighbourhood-communication",
+        "label": "Neighbourhood Communication"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asynchronous-coordination",
+        "label": "Asynchronous Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-algorithm",
+        "label": "Distributed Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:local-sensing",
+        "label": "Local Sensing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-swarm-behaviour",
+        "label": "Adaptive Swarm Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-task-performance",
+        "label": "Emergent Task Performance"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c893bd2a2c50b94e065d239d3bd0a26c184de8eb8a8145f37dee144c9136fa85@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents. This architecture inherently tolerates individual robot failures, scales to arbitrarily large swarms, and enables emergence of collective behaviours from simple local rules, contrasting with [[Centralized Swarm Control]].",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:agent-autonomy",
-      "vc:label": "Agent Autonomy"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergent-behaviour",
-      "vc:label": "Emergent Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-decision-logic",
-      "vc:label": "Local Decision Logic"
-    },
-    {
-      "@id": "urn:visionflow:linked:neighbourhood-communication",
-      "vc:label": "Neighbourhood Communication"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asynchronous-coordination",
-      "vc:label": "Asynchronous Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-algorithm",
-      "vc:label": "Distributed Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-agent-communication",
-      "vc:label": "Inter-Agent Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-sensing",
-      "vc:label": "Local Sensing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-swarm-behaviour",
-      "vc:label": "Adaptive Swarm Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergent-task-performance",
-      "vc:label": "Emergent Task Performance"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalability",
-      "vc:label": "Scalability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:biologically-inspired-robotics",
-      "vc:label": "Biologically Inspired Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

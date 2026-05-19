@@ -3,19 +3,18 @@
   "title": "User Research",
   "slug": "user-research",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-research",
+  "classIri": "urn:ngm:class:user-research",
   "domain": "spatial-computing",
-  "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative methods to inform design decisions and improve virtual world experiences.",
+  "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative mods to inform design decisions and improve virtual world experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:research-methods",
+      "id": "urn:ngm:class:research-methods",
       "label": "Research Methods"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

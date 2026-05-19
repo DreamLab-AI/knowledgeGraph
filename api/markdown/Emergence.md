@@ -600,340 +600,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:emergence",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emergence",
+  "@type": "Class",
   "label": "Emergence",
+  "definition": "Emergence is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level ...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:collective-behaviour",
-      "vc:label": "Collective Behaviour"
+      "@id": "urn:ngm:class:collective-behaviour",
+      "label": "Collective Behaviour"
     },
     {
-      "@id": "urn:visionflow:linked:complex-systems-concept",
-      "vc:label": "Complex Systems Concept"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-scale-phenomenon",
-      "vc:label": "Cross-Scale Phenomenon"
+      "@id": "urn:ngm:class:complex-systems-concept",
+      "label": "Complex Systems Concept"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:75b2f8cc7b3d45645ebc729eda9c2807185d718ce082b36d830ae4574fc038b3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cross-scale-mapping",
+        "label": "Cross-Scale Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:local-interaction-rules",
+        "label": "Local Interaction Rules"
+      },
+      {
+        "@id": "urn:ngm:class:lower-level-components",
+        "label": "Lower-Level Components"
+      },
+      {
+        "@id": "urn:ngm:class:macro-level-pattern",
+        "label": "Macro-Level Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:order-parameter",
+        "label": "Order Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:symmetry-breaking",
+        "label": "Symmetry Breaking"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:critical-threshold",
+        "label": "Critical Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:energy-or-information-flow",
+        "label": "Energy or Information Flow"
+      },
+      {
+        "@id": "urn:ngm:class:local-coupling",
+        "label": "Local Coupling"
+      },
+      {
+        "@id": "urn:ngm:class:many-body-system",
+        "label": "Many-Body System"
+      },
+      {
+        "@id": "urn:ngm:class:non-linear-interaction",
+        "label": "Non-Linear Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:sufficient-composition",
+        "label": "Sufficient Composition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:computational-universality",
+        "label": "Computational Universality"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-formation",
+        "label": "Pattern Formation"
+      },
+      {
+        "@id": "urn:ngm:class:phase-transition",
+        "label": "Phase Transition"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:universality",
+        "label": "Universality"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mean-field-approximation",
+        "label": "Mean-Field Approximation"
+      },
+      {
+        "@id": "urn:ngm:class:preferential-attachment",
+        "label": "Preferential Attachment"
+      },
+      {
+        "@id": "urn:ngm:class:renormalisation-group-flow",
+        "label": "Renormalisation Group Flow"
+      },
+      {
+        "@id": "urn:ngm:class:self-organised-criticality",
+        "label": "Self-Organised Criticality"
+      },
+      {
+        "@id": "urn:ngm:class:variational-free-energy-minimisation",
+        "label": "Variational Free-Energy Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:stigmergy",
+        "label": "Stigmergy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:agent-based-models",
+        "label": "Agent-Based Models"
+      },
+      {
+        "@id": "urn:ngm:class:cellular-automata",
+        "label": "Cellular Automata"
+      },
+      {
+        "@id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:order-parameters",
+        "label": "Order Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:phase-diagrams",
+        "label": "Phase Diagrams"
+      },
+      {
+        "@id": "urn:ngm:class:power-law-distributions",
+        "label": "Power-Law Distributions"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "@id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      },
+      {
+        "@id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "@id": "urn:ngm:class:downward-causation",
+        "label": "Downward Causation"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:supervenience",
+        "label": "Supervenience"
+      },
+      {
+        "@id": "urn:ngm:class:synergetics",
+        "label": "Synergetics"
+      },
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:ai-capability-forecasting",
+        "label": "AI Capability Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "@id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      },
+      {
+        "@id": "urn:ngm:class:consciousness-studies",
+        "label": "Consciousness Studies"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiology",
+        "label": "Epidemiology"
+      },
+      {
+        "@id": "urn:ngm:class:multi-scale-simulation",
+        "label": "Multi-Scale Simulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:complex-systems-society",
+        "label": "Complex Systems Society"
+      },
+      {
+        "@id": "urn:ngm:class:imperial-centre-for-complexity-science",
+        "label": "Imperial Centre for Complexity Science"
+      },
+      {
+        "@id": "urn:ngm:class:net-sci-conference-series",
+        "label": "NetSci Conference Series"
+      },
+      {
+        "@id": "urn:ngm:class:royal-society-theo-murphy-meetings",
+        "label": "Royal Society Theo Murphy meetings"
+      },
+      {
+        "@id": "urn:ngm:class:santa-fe-institute",
+        "label": "Santa Fe Institute"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:75b2f8cc7b3d45645ebc729eda9c2807185d718ce082b36d830ae4574fc038b3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Emergence** is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level features are neither directly designed into the components, nor straightforwardly predictable from the component rules in isolation, nor easily reducible to a mere aggregation or summation of micro-level facts—a notion whose modern philosophical articulation was crystallised by George Henry Lewes coining the term \"emergent\" in *Problems of Life and Mind* (Vol. 2, 1875) to distinguish causally non-additive resultants from additive ones (building on John Stuart Mill's earlier separation of heteropathic from homopathic laws in *A System of Logic*, 1843), elaborated by C. Lloyd Morgan in the Gifford Lectures published as *Emergent Evolution* (1923), reignited in physics by Philip W. Anderson's manifesto *More is Different* (*Science* 177:393-396, August 1972) arguing that broken symmetry and renormalisation-group flow at each scale produce genuinely autonomous laws (superconductivity, magne",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cross-scale-mapping",
-      "vc:label": "Cross-Scale Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-interaction-rules",
-      "vc:label": "Local Interaction Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:lower-level-components",
-      "vc:label": "Lower-Level Components"
-    },
-    {
-      "@id": "urn:visionflow:linked:macro-level-pattern",
-      "vc:label": "Macro-Level Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:order-parameter",
-      "vc:label": "Order Parameter"
-    },
-    {
-      "@id": "urn:visionflow:linked:symmetry-breaking",
-      "vc:label": "Symmetry Breaking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:critical-threshold",
-      "vc:label": "Critical Threshold"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-or-information-flow",
-      "vc:label": "Energy or Information Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-coupling",
-      "vc:label": "Local Coupling"
-    },
-    {
-      "@id": "urn:visionflow:linked:many-body-system",
-      "vc:label": "Many-Body System"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-linear-interaction",
-      "vc:label": "Non-Linear Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:sufficient-composition",
-      "vc:label": "Sufficient Composition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-behaviour",
-      "vc:label": "Adaptive Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:collective-intelligence",
-      "vc:label": "Collective Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:computational-universality",
-      "vc:label": "Computational Universality"
-    },
-    {
-      "@id": "urn:visionflow:linked:pattern-formation",
-      "vc:label": "Pattern Formation"
-    },
-    {
-      "@id": "urn:visionflow:linked:phase-transition",
-      "vc:label": "Phase Transition"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-organisation",
-      "vc:label": "Self-Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:universality",
-      "vc:label": "Universality"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:mean-field-approximation",
-      "vc:label": "Mean-Field Approximation"
-    },
-    {
-      "@id": "urn:visionflow:linked:preferential-attachment",
-      "vc:label": "Preferential Attachment"
-    },
-    {
-      "@id": "urn:visionflow:linked:renormalisation-group-flow",
-      "vc:label": "Renormalisation Group Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-organised-criticality",
-      "vc:label": "Self-Organised Criticality"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-free-energy-minimisation",
-      "vc:label": "Variational Free-Energy Minimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stigmergy",
-      "vc:label": "Stigmergy"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dynamical-systems-theory",
-      "vc:label": "Dynamical Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-theory",
-      "vc:label": "Network Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-linear-dynamics",
-      "vc:label": "Non-Linear Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-mechanics",
-      "vc:label": "Statistical Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-processes",
-      "vc:label": "Stochastic Processes"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:agent-based-modelling",
-      "vc:label": "Agent-Based Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-capability-forecasting",
-      "vc:label": "AI Capability Forecasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:behavioural-economics",
-      "vc:label": "Behavioural Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:complex-systems",
-      "vc:label": "Complex Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:consciousness-studies",
-      "vc:label": "Consciousness Studies"
-    },
-    {
-      "@id": "urn:visionflow:linked:epidemiology",
-      "vc:label": "Epidemiology"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-scale-simulation",
-      "vc:label": "Multi-Scale Simulation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:agent-based-models",
-      "vc:label": "Agent-Based Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:cellular-automata",
-      "vc:label": "Cellular Automata"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-analysis",
-      "vc:label": "Network Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:order-parameters",
-      "vc:label": "Order Parameters"
-    },
-    {
-      "@id": "urn:visionflow:linked:phase-diagrams",
-      "vc:label": "Phase Diagrams"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-law-distributions",
-      "vc:label": "Power-Law Distributions"
-    },
-    {
-      "@id": "urn:visionflow:linked:scaling-laws",
-      "vc:label": "Scaling Laws"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:aggregative-property",
-      "vc:label": "Aggregative Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:fixed-rule-mechanisms",
-      "vc:label": "Fixed-Rule Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-systems",
-      "vc:label": "Linear Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:reductionism",
-      "vc:label": "Reductionism"
-    },
-    {
-      "@id": "urn:visionflow:linked:top-down-design",
-      "vc:label": "Top-Down Design"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:chaos-theory",
-      "vc:label": "Chaos Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:complexity-science",
-      "vc:label": "Complexity Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:cybernetics",
-      "vc:label": "Cybernetics"
-    },
-    {
-      "@id": "urn:visionflow:linked:downward-causation",
-      "vc:label": "Downward Causation"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-organisation",
-      "vc:label": "Self-Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:supervenience",
-      "vc:label": "Supervenience"
-    },
-    {
-      "@id": "urn:visionflow:linked:synergetics",
-      "vc:label": "Synergetics"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-theory",
-      "vc:label": "Systems Theory"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:complex-systems-society",
-      "vc:label": "Complex Systems Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:imperial-centre-for-complexity-science",
-      "vc:label": "Imperial Centre for Complexity Science"
-    },
-    {
-      "@id": "urn:visionflow:linked:net-sci-conference-series",
-      "vc:label": "NetSci Conference Series"
-    },
-    {
-      "@id": "urn:visionflow:linked:royal-society-theo-murphy-meetings",
-      "vc:label": "Royal Society Theo Murphy meetings"
-    },
-    {
-      "@id": "urn:visionflow:linked:santa-fe-institute",
-      "vc:label": "Santa Fe Institute"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:complex-systems",
-      "vc:label": "Complex Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:consciousness",
-      "vc:label": "Consciousness"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-organisation",
-      "vc:label": "Self-Organisation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,57 +3,70 @@
   "title": "Exoskeleton Robot",
   "slug": "exoskeleton-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:exoskeleton-robot",
+  "classIri": "urn:ngm:class:exoskeleton-robot",
   "domain": "robotics",
-  "definition": "**Exoskeleton Robot** - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
+  "definition": "Exoskeleton Robot - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:wearable-robotics",
+      "id": "urn:ngm:class:wearable-robotics",
       "label": "Wearable Robotics"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.57,
-  "authorityScore": 0.14,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:real-time-control",
+        "id": "urn:ngm:class:real-time-control",
         "label": "Real-time Control"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-capture",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accessibility-in-harsh-environments",
+        "id": "urn:ngm:class:accessibility-in-harsh-environments",
         "label": "Accessibility in Harsh Environments"
       },
       {
-        "id": "urn:visionflow:linked:injury-prevention",
+        "id": "urn:ngm:class:injury-prevention",
         "label": "Injury Prevention"
       },
       {
-        "id": "urn:visionflow:linked:worker-productivity",
+        "id": "urn:ngm:class:worker-productivity",
         "label": "Worker Productivity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-augmentation-system",
+        "label": "Human Augmentation System"
+      },
+      {
+        "id": "urn:ngm:class:occupational-safety-equipment",
+        "label": "Occupational Safety Equipment"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Human Agency and Oversight",
   "slug": "human-agency-and-oversight",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-agency-and-oversight",
+  "classIri": "urn:ngm:class:human-agency-and-oversight",
   "domain": "artificial-intelligence",
-  "definition": "Human Agency and Oversight is a trustworthiness dimension ensuring AI systems respect human autonomy, preserve meaningful human control, and implement appropriate human supervision mechanisms to prevent undue coercion, manipulation, or erosion of self-determination. This dimension encompasses two core components: human agency (protecting human freedom and decision-making capacity by preventing unfair coercion, manipulation through deceptive interfaces or dark patterns, and enabling informed decision-making through transparent presentation of AI involvement and capabilities) and human oversight (establishing supervision mechanisms ensuring humans can intervene in AI operations through human-in-the-loop requiring human approval for critical decisions before execution, human-on-the-loop enabling human operators to monitor system operation and intervene when necessary, and human-in-command allowing authorized humans to override or deactivate systems while maintaining ultimate control). The EU AI Act Article 14 mandates that high-risk AI systems be designed with appropriate human oversight, requiring qualified personnel to interpret system outputs and exercise intervention authority, wi",
+  "definition": "Human Agency and Oversight is a trustworthiness dimension ensuring AI systems respect human autonomy, preserve meaningful human control, and implement appropriate human supervision mechanisms to prevent undue coercion, manipulation, or erosion of self-determination.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

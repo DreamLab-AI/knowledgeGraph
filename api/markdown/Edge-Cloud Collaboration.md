@@ -132,52 +132,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-cloud-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-cloud-collaboration",
+  "@type": "Class",
   "label": "Edge-Cloud Collaboration",
+  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting,...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4583ca4598431ebeac2e7f354d83f3cce801d5c5768847236c703bf514f967bb"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4583ca4598431ebeac2e7f354d83f3cce801d5c5768847236c703bf514f967bb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting, and hierarchical inference. This approach implements collaboration patterns including model splitting where neural networks are partitioned across edge and cloud with early layers on edge extracting features and final layers in cloud for classification enabling bandwidth reduction through compressed intermediate representations, early exit where models have multiple exit points enabling confident predictions to terminate early on edge while uncertain cases escalate to cloud balancing accuracy and latency, cascaded inference deploying lightweight model on edge as first-stage filter with complex model in cloud for challenging instances providing 60-80% latency reduction for common cases, and federated learning where edge devices collaboratively train shared model through local training and gradient aggregation without centralizing raw data. Optimization objectives balance competing goals inc",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

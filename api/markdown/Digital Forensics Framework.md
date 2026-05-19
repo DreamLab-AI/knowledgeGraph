@@ -156,70 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-forensics-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-forensics-framework",
+  "@type": "Class",
   "label": "Digital Forensics Framework",
+  "definition": "A structured modology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cybersecurity",
-      "vc:label": "Cybersecurity"
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-tools",
+        "label": "Forensic Tools"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
+      },
+      {
+        "@id": "urn:ngm:class:incident-investigation",
+        "label": "Incident Investigation"
+      },
+      {
+        "@id": "urn:ngm:class:legal-documentation",
+        "label": "Legal Documentation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7e14fb388d8e13e9e44fceb2eba86b0fc247cef1b8922db85e72b48142e57762@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:chain-of-custody",
-      "vc:label": "Chain of Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-integrity",
-      "vc:label": "Data Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:forensic-tools",
-      "vc:label": "Forensic Tools"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:evidence-collection",
-      "vc:label": "Evidence Collection"
-    },
-    {
-      "@id": "urn:visionflow:linked:incident-investigation",
-      "vc:label": "Incident Investigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-documentation",
-      "vc:label": "Legal Documentation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

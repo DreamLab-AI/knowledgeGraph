@@ -156,60 +156,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:horizon-workrooms",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:horizon-workrooms",
+  "@type": "Class",
   "label": "Horizon Workrooms",
+  "definition": "\"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstre...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "vc:label": "TELE-020-virtual-reality-telepresence"
+      "@id": "urn:ngm:class:tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tele-100-ai-avatars",
+        "label": "TELE-100-ai-avatars"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-whiteboarding",
+        "label": "VirtualWhiteboarding"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b0d379afea8d7e6ef44ea206a7742fd3b059b16cc7cc1cab3655b73f0e1b4a5b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Meta's enterprise virtual reality telepresence application for Quest headsets, providing immersive meeting rooms where distributed teams collaborate as avatars around virtual conference tables with spatial audio, shared whiteboards, screen sharing, and keyboard passthrough, representing mainstream commercialisation of VR-based remote collaboration.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tele-100-ai-avatars",
-      "vc:label": "TELE-100-ai-avatars"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:virtual-whiteboarding",
-      "vc:label": "VirtualWhiteboarding"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

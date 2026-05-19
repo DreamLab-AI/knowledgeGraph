@@ -528,472 +528,367 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:multi-sig-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:multi-sig-governance",
+  "@type": "Class",
   "label": "Multi Sig Governance",
+  "definition": "Multi-signature (multi-sig) governance is a cryptographic threshold-signature scheme requiring m-of-n authorised keyholders to co-sign a transaction or message before it executes, eliminating single points of failure in digital-asset control and enabling graduated, committee-based decision-making...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:committee-governance",
-      "vc:label": "Committee Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-cryptography",
-      "vc:label": "Threshold Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
+      "@id": "urn:ngm:class:committee-governance",
+      "label": "Committee Governance"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:002fac67297e4dcaaba5e18a9a793b684c8eb6534dfa6033d4c420b0ff4e1a25"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:guardian-set",
+        "label": "Guardian Set"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:mpc-key-share",
+        "label": "MPC Key Share"
+      },
+      {
+        "@id": "urn:ngm:class:nonce-commitment",
+        "label": "Nonce Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:redeem-script",
+        "label": "Redeem Script"
+      },
+      {
+        "@id": "urn:ngm:class:signer-ceremony",
+        "label": "Signer Ceremony"
+      },
+      {
+        "@id": "urn:ngm:class:signer-quorum",
+        "label": "Signer Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:signing-key",
+        "label": "Signing Key"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-parameter",
+        "label": "Threshold Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-module",
+        "label": "Timelock Module"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-queue",
+        "label": "Transaction Queue"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:secure-key-storage",
+        "label": "Secure Key Storage"
+      },
+      {
+        "@id": "urn:ngm:class:signer-coordination-protocol",
+        "label": "Signer Coordination Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-etf-custody",
+        "label": "Bitcoin ETF Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge-security",
+        "label": "Cross-Chain Bridge Security"
+      },
+      {
+        "@id": "urn:ngm:class:emergency-response-governance",
+        "label": "Emergency Response Governance"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-security-council",
+        "label": "Layer 2 Security Council"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade-control",
+        "label": "Protocol Upgrade Control"
+      },
+      {
+        "@id": "urn:ngm:class:social-recovery",
+        "label": "Social Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bip-16",
+        "label": "BIP-16"
+      },
+      {
+        "@id": "urn:ngm:class:cggmp21-protocol",
+        "label": "CGGMP21 Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:erc-4337-account-abstraction",
+        "label": "ERC-4337 Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:frost-threshold-signatures",
+        "label": "FROST Threshold Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:gg20-protocol",
+        "label": "GG20 Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:mu-sig2",
+        "label": "MuSig2"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:roast-protocol",
+        "label": "ROAST Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:safe-smart-account",
+        "label": "Safe Smart Account"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:argent-account",
+        "label": "Argent Account"
+      },
+      {
+        "@id": "urn:ngm:class:bit-go-wallet",
+        "label": "BitGo Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:copper-mpc",
+        "label": "Copper MPC"
+      },
+      {
+        "@id": "urn:ngm:class:fireblocks-mpc",
+        "label": "Fireblocks MPC"
+      },
+      {
+        "@id": "urn:ngm:class:gnosis-safe",
+        "label": "Gnosis Safe"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:ledger",
+        "label": "Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:safe-wallet",
+        "label": "Safe Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:squads-protocol",
+        "label": "Squads Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:trezor",
+        "label": "Trezor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-etf-custody",
+        "label": "Bitcoin ETF Custody"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-protocol-security",
+        "label": "DeFi Protocol Security"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-digital-asset-custody",
+        "label": "Institutional Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-security-council",
+        "label": "Layer 2 Security Council"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-custody",
+        "label": "Regulatory Compliance Custody"
+      },
+      {
+        "@id": "urn:ngm:class:wholesale-payment-system",
+        "label": "Wholesale Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bip-11",
+        "label": "BIP-11"
+      },
+      {
+        "@id": "urn:ngm:class:bip-16",
+        "label": "BIP-16"
+      },
+      {
+        "@id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      },
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "@id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "@id": "urn:ngm:class:bip-373",
+        "label": "BIP-373"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1271",
+        "label": "EIP-1271"
+      },
+      {
+        "@id": "urn:ngm:class:eip-4337",
+        "label": "EIP-4337"
+      },
+      {
+        "@id": "urn:ngm:class:eip-7702",
+        "label": "EIP-7702"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ir-8214-b",
+        "label": "NIST IR 8214B"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-9591",
+        "label": "RFC 9591"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:002fac67297e4dcaaba5e18a9a793b684c8eb6534dfa6033d4c420b0ff4e1a25@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Multi-signature (multi-sig) governance** is a cryptographic threshold-signature scheme requiring m-of-n authorised keyholders to co-sign a transaction or message before it executes, eliminating single points of failure in digital-asset control and enabling graduated, committee-based decision-making across the full blockchain governance spectrum. The fundamental security claim is mathematical rather than policy-based: no fewer than m valid signatures can generate an accepted transaction, regardless of attacker sophistication, insider threat, or legal coercion applied to fewer than m keyholders simultaneously. This property distinguishes multi-sig from conventional access control systems, where determined insiders can often circumvent policy through administrative override or system compromise — cryptographic enforcement at the signature-verification layer is mathematically non-negotiable, running identically on thousands of independent network nodes without any single operator capable of making exceptions. The m-of-n model spans a complete family of cryptographic constructions: Bitcoin native Pay-to-Script-Hash (P2SH, BIP-16 2012) revealing the signer set at spend time; Pay-to-Tap",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:guardian-set",
-      "vc:label": "Guardian Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-wallet",
-      "vc:label": "Hardware Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpc-key-share",
-      "vc:label": "MPC Key Share"
-    },
-    {
-      "@id": "urn:visionflow:linked:nonce-commitment",
-      "vc:label": "Nonce Commitment"
-    },
-    {
-      "@id": "urn:visionflow:linked:redeem-script",
-      "vc:label": "Redeem Script"
-    },
-    {
-      "@id": "urn:visionflow:linked:signer-ceremony",
-      "vc:label": "Signer Ceremony"
-    },
-    {
-      "@id": "urn:visionflow:linked:signer-quorum",
-      "vc:label": "Signer Quorum"
-    },
-    {
-      "@id": "urn:visionflow:linked:signing-key",
-      "vc:label": "Signing Key"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-parameter",
-      "vc:label": "Threshold Parameter"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelock-module",
-      "vc:label": "Timelock Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-queue",
-      "vc:label": "Transaction Queue"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:distributed-key-generation",
-      "vc:label": "Distributed Key Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-key-storage",
-      "vc:label": "Secure Key Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:signer-coordination-protocol",
-      "vc:label": "Signer Coordination Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecdsa",
-      "vc:label": "ECDSA"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-etf-custody",
-      "vc:label": "Bitcoin ETF Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-chain-bridge-security",
-      "vc:label": "Cross-Chain Bridge Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:emergency-response-governance",
-      "vc:label": "Emergency Response Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-custody",
-      "vc:label": "Institutional Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-security-council",
-      "vc:label": "Layer 2 Security Council"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-upgrade-control",
-      "vc:label": "Protocol Upgrade Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-recovery",
-      "vc:label": "Social Recovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao-governance",
-      "vc:label": "DAO Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bip-16",
-      "vc:label": "BIP-16"
-    },
-    {
-      "@id": "urn:visionflow:linked:cggmp21-protocol",
-      "vc:label": "CGGMP21 Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-4337-account-abstraction",
-      "vc:label": "ERC-4337 Account Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:frost-threshold-signatures",
-      "vc:label": "FROST Threshold Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:gg20-protocol",
-      "vc:label": "GG20 Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpc-wallet",
-      "vc:label": "MPC Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:mu-sig2",
-      "vc:label": "MuSig2"
-    },
-    {
-      "@id": "urn:visionflow:linked:pay-to-script-hash",
-      "vc:label": "Pay-to-Script-Hash"
-    },
-    {
-      "@id": "urn:visionflow:linked:roast-protocol",
-      "vc:label": "ROAST Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-smart-account",
-      "vc:label": "Safe Smart Account"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bip-327",
-      "vc:label": "BIP-327"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-340",
-      "vc:label": "BIP-340"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-script",
-      "vc:label": "Bitcoin Script"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed-dsa",
-      "vc:label": "EdDSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:elliptic-curve-discrete-logarithm-problem",
-      "vc:label": "Elliptic Curve Discrete Logarithm Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-smart-contracts",
-      "vc:label": "Ethereum Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:paillier-cryptosystem",
-      "vc:label": "Paillier Cryptosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:secp256k1",
-      "vc:label": "Secp256k1"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-etf-custody",
-      "vc:label": "Bitcoin ETF Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-protocol-security",
-      "vc:label": "DeFi Protocol Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-digital-asset-custody",
-      "vc:label": "Institutional Digital Asset Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:layer-2-security-council",
-      "vc:label": "Layer 2 Security Council"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-compliance-custody",
-      "vc:label": "Regulatory Compliance Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:wholesale-payment-system",
-      "vc:label": "Wholesale Payment System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:argent-account",
-      "vc:label": "Argent Account"
-    },
-    {
-      "@id": "urn:visionflow:linked:bit-go-wallet",
-      "vc:label": "BitGo Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:copper-mpc",
-      "vc:label": "Copper MPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:fireblocks-mpc",
-      "vc:label": "Fireblocks MPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:gnosis-safe",
-      "vc:label": "Gnosis Safe"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-wallet",
-      "vc:label": "Hardware Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:ledger",
-      "vc:label": "Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-wallet",
-      "vc:label": "Safe Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:squads-protocol",
-      "vc:label": "Squads Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:trezor",
-      "vc:label": "Trezor"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:single-key-wallet",
-      "vc:label": "Single-Key Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelock-contract",
-      "vc:label": "Timelock Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delegate-democracy",
-      "vc:label": "Delegate Democracy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:on-chain-voting",
-      "vc:label": "On-Chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin-technical-overview",
-      "vc:label": "Bitcoin Technical Overview"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:taproot-assets",
-      "vc:label": "Taproot Assets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bip-11",
-      "vc:label": "BIP-11"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-16",
-      "vc:label": "BIP-16"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-327",
-      "vc:label": "BIP-327"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-340",
-      "vc:label": "BIP-340"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-341",
-      "vc:label": "BIP-341"
-    },
-    {
-      "@id": "urn:visionflow:linked:bip-373",
-      "vc:label": "BIP-373"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-1271",
-      "vc:label": "EIP-1271"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-4337",
-      "vc:label": "EIP-4337"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-7702",
-      "vc:label": "EIP-7702"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ir-8214-b",
-      "vc:label": "NIST IR 8214B"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-9591",
-      "vc:label": "RFC 9591"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,53 +3,57 @@
   "title": "Appearance Translation",
   "slug": "appearance-translation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:appearance-translation",
+  "classIri": "urn:ngm:class:appearance-translation",
   "domain": "spatial-computing",
-  "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across different aesthetic representations.",
+  "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across di...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:neural-image-processing",
+      "id": "urn:ngm:class:neural-image-processing",
       "label": "Neural Image Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-preservation",
+        "id": "urn:ngm:class:content-preservation",
         "label": "Content Preservation"
       },
       {
-        "id": "urn:visionflow:linked:convolutional-neural-networks",
+        "id": "urn:ngm:class:convolutional-neural-networks",
         "label": "Convolutional Neural Networks"
       },
       {
-        "id": "urn:visionflow:linked:style-representations",
+        "id": "urn:ngm:class:style-representations",
         "label": "Style Representations"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:artistic-stylization",
+        "id": "urn:ngm:class:artistic-stylization",
         "label": "Artistic Stylization"
       },
       {
-        "id": "urn:visionflow:linked:domain-adaptation",
+        "id": "urn:ngm:class:domain-adaptation",
         "label": "Domain Adaptation"
       },
       {
-        "id": "urn:visionflow:linked:visual-content-transformation",
+        "id": "urn:ngm:class:visual-content-transformation",
         "label": "Visual Content Transformation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

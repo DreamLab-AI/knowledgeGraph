@@ -572,392 +572,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hunyuan-video",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hunyuan-video",
+  "@type": "Class",
   "label": "Hunyuan Video",
+  "definition": "Hunyuan Video (HunyuanVideo) is Tencent's open-weights text-to-video diffusion foundation model released December 2024 under a custom non-commercial community licence, comprising 13 parameters trained via Flow Matching on a curated multi--clip video corpus and architected as a Causal 3D Variation...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:diffusion-transformer",
-      "vc:label": "Diffusion Transformer"
+      "@id": "urn:ngm:class:diffusion-transformer",
+      "label": "Diffusion Transformer"
     },
     {
-      "@id": "urn:visionflow:linked:generative-video-model",
-      "vc:label": "Generative Video Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-weights-foundation-model",
-      "vc:label": "Open-Weights Foundation Model"
+      "@id": "urn:ngm:class:generative-video-model",
+      "label": "Generative Video Model"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d574678e249c6296357debe4bf91a8422b2018f5adc3898fb2bfba18b6dd2c2a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:causal-3-d-vae",
+        "label": "Causal 3D VAE"
+      },
+      {
+        "@id": "urn:ngm:class:dual-stream-diffusion-transformer",
+        "label": "Dual-Stream Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching-objective",
+        "label": "Flow Matching Objective"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:single-stream-diffusion-transformer",
+        "label": "Single-Stream Diffusion Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:t5-prompt-encoder",
+        "label": "T5 Prompt Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:video-latent-tokeniser",
+        "label": "Video Latent Tokeniser"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:flow-matching-training",
+        "label": "Flow Matching Training"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-encoder-model",
+        "label": "Prompt Encoder Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:video-training-corpus",
+        "label": "Video Training Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-human-animation",
+        "label": "Digital Human Animation"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-video-generation",
+        "label": "Image-to-Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:indie-animation",
+        "label": "Indie Animation"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:previsualisation",
+        "label": "Previsualisation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-video-data",
+        "label": "Synthetic Video Data"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video-generation",
+        "label": "Text-to-Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-to-video-translation",
+        "label": "Video-to-Video Translation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bilingual-prompt-conditioning",
+        "label": "Bilingual Prompt Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:causal-video-compression",
+        "label": "Causal Video Compression"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-flow-matching",
+        "label": "Conditional Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-diffusion-transformer",
+        "label": "Multimodal Diffusion Transformer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:block-swap-offloading",
+        "label": "Block Swap Offloading"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:ro-pe-positional-encoding",
+        "label": "RoPE Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:tea-cache",
+        "label": "TeaCache"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-block",
+        "label": "Transformer Block"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflow",
+        "label": "ComfyUI Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan-family",
+        "label": "Hunyuan Family"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan-large",
+        "label": "Hunyuan-Large"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan-t1",
+        "label": "Hunyuan T1"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan-video-avatar",
+        "label": "HunyuanVideo-Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan-video-i2-v",
+        "label": "Hunyuan Video-I2V"
+      },
+      {
+        "@id": "urn:ngm:class:hunyuan3-d",
+        "label": "Hunyuan3D"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:advertising-prototyping",
+        "label": "Advertising Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:civitai-lo-ra-ecosystem",
+        "label": "Civitai LoRA Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:kijai-wrappers",
+        "label": "Kijai Wrappers"
+      },
+      {
+        "@id": "urn:ngm:class:musubi-tuner",
+        "label": "Musubi-tuner"
+      },
+      {
+        "@id": "urn:ngm:class:tencent-cloud-api",
+        "label": "Tencent Cloud API"
+      },
+      {
+        "@id": "urn:ngm:class:tencent-yuanbao",
+        "label": "Tencent Yuanbao"
+      },
+      {
+        "@id": "urn:ngm:class:vfx-previsualisation",
+        "label": "VFX Previsualisation"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:civitai-lo-ra-distribution",
+        "label": "Civitai LoRA Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-custom-node-protocol",
+        "label": "ComfyUI Custom Node Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:git-hub-open-source-release",
+        "label": "GitHub Open-Source Release"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:tencent-community-licence",
+        "label": "Tencent Community Licence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d574678e249c6296357debe4bf91a8422b2018f5adc3898fb2bfba18b6dd2c2a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hunyuan Video (HunyuanVideo) is Tencent's open-weights text-to-video diffusion foundation model released December 2024 under a custom non-commercial community licence, comprising 13 billion parameters trained via Flow Matching on a curated multi-billion-clip video corpus and architected as a Causal 3D Variational Autoencoder (Causal 3D VAE) paired with a dual-stream then single-stream Multimodal Diffusion Transformer (MMDiT-style) backbone using Rotary Position Embeddings (RoPE) for spatiotemporal tokens and a frozen T5/MLLM-style prompt encoder consuming bilingual Chinese/English text, generating videos up to 720×1280 (720p) and 5 seconds (~129 frames at 24fps) with flexible aspect ratios (16:9, 9:16, 1:1, 4:3, 3:4, 2.39:1) and resolutions (540p/720p, with downstream community 1080p upscales), distributed via Hugging Face (Tencent/HunyuanVideo, 600K+ downloads by Q1 2026) and GitHub (Tencent/HunyuanVideo, 11K+ stars) under a permissive-for-research, royalty-bearing-for-large-commercial licence, supported on reference hardware (NVIDIA H100 80GB or A100 80GB delivering 720p 5s generation in ~15 minutes at 50 steps) and democratised to consumer GPUs (RTX 4090 24GB, RTX 3090 24GB) thr",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:causal-3-d-vae",
-      "vc:label": "Causal 3D VAE"
-    },
-    {
-      "@id": "urn:visionflow:linked:dual-stream-diffusion-transformer",
-      "vc:label": "Dual-Stream Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching-objective",
-      "vc:label": "Flow Matching Objective"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-position-embedding",
-      "vc:label": "Rotary Position Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-stream-diffusion-transformer",
-      "vc:label": "Single-Stream Diffusion Transformer"
-    },
-    {
-      "@id": "urn:visionflow:linked:t5-prompt-encoder",
-      "vc:label": "T5 Prompt Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-latent-tokeniser",
-      "vc:label": "Video Latent Tokeniser"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:flow-matching-training",
-      "vc:label": "Flow Matching Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-bandwidth-memory",
-      "vc:label": "High-Bandwidth Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-encoder-model",
-      "vc:label": "Prompt Encoder Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-training-corpus",
-      "vc:label": "Video Training Corpus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-human-animation",
-      "vc:label": "Digital Human Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-to-video-generation",
-      "vc:label": "Image-to-Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:indie-animation",
-      "vc:label": "Indie Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-fine-tuning",
-      "vc:label": "LoRA Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:previsualisation",
-      "vc:label": "Previsualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-video-data",
-      "vc:label": "Synthetic Video Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-video-generation",
-      "vc:label": "Text-to-Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-to-video-translation",
-      "vc:label": "Video-to-Video Translation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bilingual-prompt-conditioning",
-      "vc:label": "Bilingual Prompt Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:causal-video-compression",
-      "vc:label": "Causal Video Compression"
-    },
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:conditional-flow-matching",
-      "vc:label": "Conditional Flow Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-diffusion-transformer",
-      "vc:label": "Multimodal Diffusion Transformer"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching",
-      "vc:label": "Flow Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion-model",
-      "vc:label": "Latent Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:pix-art",
-      "vc:label": "PixArt-α"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-3",
-      "vc:label": "Stable Diffusion 3"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:advertising-prototyping",
-      "vc:label": "Advertising Prototyping"
-    },
-    {
-      "@id": "urn:visionflow:linked:civitai-lo-ra-ecosystem",
-      "vc:label": "Civitai LoRA Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:kijai-wrappers",
-      "vc:label": "Kijai Wrappers"
-    },
-    {
-      "@id": "urn:visionflow:linked:musubi-tuner",
-      "vc:label": "Musubi-tuner"
-    },
-    {
-      "@id": "urn:visionflow:linked:tencent-cloud-api",
-      "vc:label": "Tencent Cloud API"
-    },
-    {
-      "@id": "urn:visionflow:linked:tencent-yuanbao",
-      "vc:label": "Tencent Yuanbao"
-    },
-    {
-      "@id": "urn:visionflow:linked:vfx-previsualisation",
-      "vc:label": "VFX Previsualisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:block-swap-offloading",
-      "vc:label": "Block Swap Offloading"
-    },
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "FlashAttention"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ro-pe-positional-encoding",
-      "vc:label": "RoPE Positional Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:tea-cache",
-      "vc:label": "TeaCache"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-block",
-      "vc:label": "Transformer Block"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-precision-training",
-      "vc:label": "Mixed Precision Training"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cog-video-x",
-      "vc:label": "CogVideoX"
-    },
-    {
-      "@id": "urn:visionflow:linked:kling",
-      "vc:label": "Kling"
-    },
-    {
-      "@id": "urn:visionflow:linked:ltx-video",
-      "vc:label": "LTX-Video"
-    },
-    {
-      "@id": "urn:visionflow:linked:mochi-1",
-      "vc:label": "Mochi 1"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-sora",
-      "vc:label": "Open-Sora"
-    },
-    {
-      "@id": "urn:visionflow:linked:pika-1-5",
-      "vc:label": "Pika 1.5"
-    },
-    {
-      "@id": "urn:visionflow:linked:runway-gen-3",
-      "vc:label": "Runway Gen-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:sora",
-      "vc:label": "Sora"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-video-diffusion",
-      "vc:label": "Stable Video Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:veo",
-      "vc:label": "Veo"
-    },
-    {
-      "@id": "urn:visionflow:linked:wan-2-1",
-      "vc:label": "Wan 2.1"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-workflow",
-      "vc:label": "ComfyUI Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan-family",
-      "vc:label": "Hunyuan Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan-large",
-      "vc:label": "Hunyuan-Large"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan-t1",
-      "vc:label": "Hunyuan T1"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan-video-avatar",
-      "vc:label": "HunyuanVideo-Avatar"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan-video-i2-v",
-      "vc:label": "Hunyuan Video-I2V"
-    },
-    {
-      "@id": "urn:visionflow:linked:hunyuan3-d",
-      "vc:label": "Hunyuan3D"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media",
-      "vc:label": "Synthetic Media"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:civitai-lo-ra-distribution",
-      "vc:label": "Civitai LoRA Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-custom-node-protocol",
-      "vc:label": "ComfyUI Custom Node Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-hub-open-source-release",
-      "vc:label": "GitHub Open-Source Release"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:tencent-community-licence",
-      "vc:label": "Tencent Community Licence"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:generative-video",
-      "vc:label": "Generative Video"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open-Source AI"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

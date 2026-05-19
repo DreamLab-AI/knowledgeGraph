@@ -3,119 +3,123 @@
   "title": "A-Star Algorithm",
   "slug": "a-star-algorithm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:a-star-algorithm",
+  "classIri": "urn:ngm:class:a-star-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael in 1968 that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heuristic estimated cost to the goal (h-score providing optimistic lower bound on remaining distance), using evaluation function f(n) = g(n) + h(n) to prioritize exploration through a priority queue ordering nodes by total estimated path cost, guaranteeing optimality and completeness when employing admissible heuristics (never overestimating true cost) whilst remaining optimally efficient by expanding the minimum number of nodes necessary among all optimal algorithms using the same heuristic knowledge, extensively deployed across autonomous vehicle route planning processing 15 billion+ navigation queries daily (Google Maps, Waze, HERE Technologies), video game pathfinding engines (Unity NavMesh serving 1.5 million+ developers, Unreal Engine 5 navigation graphs), robotics motion planning (warehouse automation systems coordinating 500,000+ robots globally including Amazon Robotics 520,000",
+  "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heur...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:search-algorithms",
+      "id": "urn:ngm:class:search-algorithms",
       "label": "Search Algorithms"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.94,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:closed-set",
+        "id": "urn:ngm:class:closed-set",
         "label": "Closed Set"
       },
       {
-        "id": "urn:visionflow:linked:cost-function",
+        "id": "urn:ngm:class:cost-function",
         "label": "Cost Function"
       },
       {
-        "id": "urn:visionflow:linked:evaluation-function",
+        "id": "urn:ngm:class:evaluation-function",
         "label": "Evaluation Function"
       },
       {
-        "id": "urn:visionflow:linked:heuristic-function",
+        "id": "urn:ngm:class:heuristic-function",
         "label": "Heuristic Function"
       },
       {
-        "id": "urn:visionflow:linked:open-set",
+        "id": "urn:ngm:class:open-set",
         "label": "Open Set"
       },
       {
-        "id": "urn:visionflow:linked:path-reconstruction",
+        "id": "urn:ngm:class:path-reconstruction",
         "label": "Path Reconstruction"
       },
       {
-        "id": "urn:visionflow:linked:priority-queue",
+        "id": "urn:ngm:class:priority-queue",
         "label": "Priority Queue"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:admissible-heuristic",
+        "id": "urn:ngm:class:admissible-heuristic",
         "label": "Admissible Heuristic"
       },
       {
-        "id": "urn:visionflow:linked:distance-metric",
+        "id": "urn:ngm:class:distance-metric",
         "label": "Distance Metric"
       },
       {
-        "id": "urn:visionflow:linked:graph-representation",
+        "id": "urn:ngm:class:graph-representation",
         "label": "Graph Representation"
       },
       {
-        "id": "urn:visionflow:linked:node-expansion",
+        "id": "urn:ngm:class:node-expansion",
         "label": "Node Expansion"
       },
       {
-        "id": "urn:visionflow:linked:priority-queue-data-structure",
+        "id": "urn:ngm:class:priority-queue-data-structure",
         "label": "Priority Queue Data Structure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:goal-directed-search",
+        "id": "urn:ngm:class:goal-directed-search",
         "label": "Goal-Directed Search"
       },
       {
-        "id": "urn:visionflow:linked:optimal-path-discovery",
+        "id": "urn:ngm:class:optimal-path-discovery",
         "label": "Optimal Path Discovery"
       },
       {
-        "id": "urn:visionflow:linked:pathfinding",
+        "id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding"
       },
       {
-        "id": "urn:visionflow:linked:route-planning",
+        "id": "urn:ngm:class:route-planning",
         "label": "Route Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:best-first-search",
+        "id": "urn:ngm:class:best-first-search",
         "label": "Best-First Search"
       },
       {
-        "id": "urn:visionflow:linked:heuristic-evaluation",
+        "id": "urn:ngm:class:heuristic-evaluation",
         "label": "Heuristic Evaluation"
       },
       {
-        "id": "urn:visionflow:linked:informed-search-strategy",
+        "id": "urn:ngm:class:informed-search-strategy",
         "label": "Informed Search Strategy"
       },
       {
-        "id": "urn:visionflow:linked:optimal-pathfinding",
+        "id": "urn:ngm:class:optimal-pathfinding",
         "label": "Optimal Pathfinding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

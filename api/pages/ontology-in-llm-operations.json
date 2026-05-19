@@ -3,19 +3,18 @@
   "title": "Ontology in LLM Operations",
   "slug": "ontology-in-llm-operations",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ontology-in-llm-operations",
+  "classIri": "urn:ngm:class:ontology-in-llm-operations",
   "domain": "artificial-intelligence",
   "definition": "Ontology in LLM Operations is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

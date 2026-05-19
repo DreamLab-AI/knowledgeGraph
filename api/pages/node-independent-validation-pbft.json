@@ -3,19 +3,18 @@
   "title": "Node-Independent Validation PBFT",
   "slug": "node-independent-validation-pbft",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:node-independent-validation-pbft",
+  "classIri": "urn:ngm:class:node-independent-validation-pbft",
   "domain": "blockchain",
   "definition": "An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
+      "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
       "label": "Practical Byzantine Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

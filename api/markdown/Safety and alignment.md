@@ -352,306 +352,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:safety-and-alignment",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:safety-and-alignment",
+  "@type": "Class",
   "label": "Safety and alignment",
+  "definition": "AI safety and alignment is the interdisciplinary research programme and engineering practice concerned with ensuring that artificial intelligence systems — particularly large language models and future general AI — behave in accordance with human intentions, values, and oversight mechanisms acros...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:existential-risk-research",
-      "vc:label": "Existential Risk Research"
+      "@id": "urn:ngm:class:existential-risk-research",
+      "label": "Existential Risk Research"
     },
     {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
+      "@id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:98d5d126963ac029e8e998554a1c256b16863a85385116cebccd43d19e7c19f4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dangerous-capability-evaluations",
+        "label": "Dangerous Capability Evaluations"
+      },
+      {
+        "@id": "urn:ngm:class:debate",
+        "label": "Debate"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoders"
+      },
+      {
+        "@id": "urn:ngm:class:weak-to-strong-generalisation",
+        "label": "Weak-to-Strong Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks",
+        "label": "Evaluation Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:governance-frameworks",
+        "label": "Governance Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability-tools",
+        "label": "Interpretability Tools"
+      },
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:catastrophic-risk-reduction",
+        "label": "Catastrophic Risk Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling",
+        "label": "Responsible Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:safe-ai-deployment",
+        "label": "Safe AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai-systems",
+        "label": "Trustworthy AI Systems"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:adversarial-red-teaming",
+        "label": "Adversarial Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:debate-protocol",
+        "label": "Debate Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-circuits-analysis",
+        "label": "Mechanistic Circuits Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:weak-to-strong-generalisation",
+        "label": "Weak-to-Strong Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:activation-patching",
+        "label": "Activation Patching"
+      },
+      {
+        "@id": "urn:ngm:class:causal-tracing",
+        "label": "Causal Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-autoencoders",
+        "label": "Sparse Autoencoders"
+      },
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:seoul-ai-summit",
+        "label": "Seoul AI Summit"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      },
+      {
+        "@id": "urn:ngm:class:iso-42001",
+        "label": "ISO 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:uk-aisi-evaluation-protocols",
+        "label": "UK AISI Evaluation Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:98d5d126963ac029e8e998554a1c256b16863a85385116cebccd43d19e7c19f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI safety and alignment is the interdisciplinary research programme and engineering practice concerned with ensuring that artificial intelligence systems — particularly large language models and future general AI — behave in accordance with human intentions, values, and oversight mechanisms across all operational conditions, including adversarial, out-of-distribution, and high-stakes deployment contexts. The field encompasses: (1) **alignment techniques** instilling intended goals through reinforcement learning from human feedback (RLHF, Christiano et al. 2017), reinforcement learning from AI feedback (RLAIF), and Constitutional AI (Bai et al. 2022, Anthropic); (2) **scalable oversight** methodologies including debate (Irving et al. 2018, OpenAI), iterated amplification (Christiano et al. 2018), and weak-to-strong generalisation (Burns et al. 2023, OpenAI) enabling humans to supervise systems exceeding narrow human expertise; (3) **mechanistic interpretability** research (Elhage et al. 2021–2026, Anthropic Circuits; Nanda et al. 2022 OthelloGPT; Templeton et al. 2024 Sparse Autoencoders) reverse-engineering model circuits; (4) **red-teaming and dangerous-capability evaluations** pr",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:dangerous-capability-evaluations",
-      "vc:label": "Dangerous Capability Evaluations"
-    },
-    {
-      "@id": "urn:visionflow:linked:debate",
-      "vc:label": "Debate"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanistic-interpretability",
-      "vc:label": "Mechanistic Interpretability"
-    },
-    {
-      "@id": "urn:visionflow:linked:reward-modelling",
-      "vc:label": "Reward Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-oversight",
-      "vc:label": "Scalable Oversight"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparse-autoencoders",
-      "vc:label": "Sparse Autoencoders"
-    },
-    {
-      "@id": "urn:visionflow:linked:weak-to-strong-generalisation",
-      "vc:label": "Weak-to-Strong Generalisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:red-teaming",
-      "vc:label": "Red Teaming"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:evaluation-benchmarks",
-      "vc:label": "Evaluation Benchmarks"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-frameworks",
-      "vc:label": "Governance Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:linked:interpretability-tools",
-      "vc:label": "Interpretability Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-feedback",
-      "vc:label": "Human Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reward-model",
-      "vc:label": "Reward Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:catastrophic-risk-reduction",
-      "vc:label": "Catastrophic Risk Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling",
-      "vc:label": "Responsible Scaling"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-ai-deployment",
-      "vc:label": "Safe AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustworthy-ai-systems",
-      "vc:label": "Trustworthy AI Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-oversight",
-      "vc:label": "Human Oversight"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:adversarial-red-teaming",
-      "vc:label": "Adversarial Red Teaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:debate-protocol",
-      "vc:label": "Debate Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanistic-circuits-analysis",
-      "vc:label": "Mechanistic Circuits Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:weak-to-strong-generalisation",
-      "vc:label": "Weak-to-Strong Generalisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:direct-preference-optimisation",
-      "vc:label": "Direct Preference Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-theory",
-      "vc:label": "Decision Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-safety-institute",
-      "vc:label": "AI Safety Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:bletchley-declaration",
-      "vc:label": "Bletchley Declaration"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling-policy",
-      "vc:label": "Responsible Scaling Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:seoul-ai-summit",
-      "vc:label": "Seoul AI Summit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:activation-patching",
-      "vc:label": "Activation Patching"
-    },
-    {
-      "@id": "urn:visionflow:linked:causal-tracing",
-      "vc:label": "Causal Tracing"
-    },
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought",
-      "vc:label": "Chain of Thought"
-    },
-    {
-      "@id": "urn:visionflow:linked:reward-modelling",
-      "vc:label": "Reward Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparse-autoencoders",
-      "vc:label": "Sparse Autoencoders"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-feedback",
-      "vc:label": "Human Feedback"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:ai-capabilities-research",
-      "vc:label": "AI Capabilities Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:opaque-systems",
-      "vc:label": "Opaque Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:uncontrolled-deployment",
-      "vc:label": "Uncontrolled Deployment"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bletchley-declaration",
-      "vc:label": "Bletchley Declaration"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-42001",
-      "vc:label": "ISO 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-aisi-evaluation-protocols",
-      "vc:label": "UK AISI Evaluation Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

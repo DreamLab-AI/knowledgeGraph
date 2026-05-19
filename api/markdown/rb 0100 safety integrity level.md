@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0100-safety-integrity-level",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0100-safety-integrity-level",
+  "@type": "Class",
   "label": "rb 0100 safety integrity level",
+  "definition": "safety integrity level is a robotics and autonomous systems concept and a type of Cobot Safety Levels.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cobot-safety-levels",
-      "vc:label": "Cobot Safety Levels"
+      "@id": "urn:ngm:class:cobot-safety-levels",
+      "label": "Cobot Safety Levels"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:88c0c2c9b99e5ed7984bd09c196eadd4175bd20f08552b20482a8169485fab50"
-  },
-  "vc:inferenceRule": "R5",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:88c0c2c9b99e5ed7984bd09c196eadd4175bd20f08552b20482a8169485fab50@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "safety integrity level is a robotics and autonomous systems concept and a type of Cobot Safety Levels."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5"
+  }
 }
 ```
 

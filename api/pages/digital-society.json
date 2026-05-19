@@ -3,19 +3,18 @@
   "title": "Digital Society",
   "slug": "digital-society",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-society",
+  "classIri": "urn:ngm:class:digital-society",
   "domain": "spatial-computing",
-  "definition": "Digital Society is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Telecollaboration]]",
+  "definition": "Digital Society is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

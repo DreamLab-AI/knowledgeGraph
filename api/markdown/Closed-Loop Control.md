@@ -176,106 +176,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:closed-loop-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:closed-loop-control",
+  "@type": "Class",
   "label": "Closed-Loop Control",
+  "definition": "A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:control-system",
-      "vc:label": "Control System"
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:df1a0bb515d030f9e0e35c99dbc2b3dd9844452c7b1873c9882424fa1cefbdb3"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:rb-1007-trajectory-generation",
+        "label": "RB-1007-trajectory-generation"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1013-localization",
+        "label": "RB-1013-localization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-1004-adaptive-control",
+        "label": "RB-1004-adaptive-control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-system",
+        "label": "Sensor System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:df1a0bb515d030f9e0e35c99dbc2b3dd9844452c7b1873c9882424fa1cefbdb3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.98",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller",
-      "vc:label": "Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-system",
-      "vc:label": "Sensor System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-mechanism",
-      "vc:label": "Feedback Mechanism"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:rb-1007-trajectory-generation",
-      "vc:label": "RB-1007-trajectory-generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rb-1013-localization",
-      "vc:label": "RB-1013-localization"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:pid-control",
-      "vc:label": "PID Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:rb-1004-adaptive-control",
-      "vc:label": "RB-1004-adaptive-control"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:actuator",
-      "vc:label": "Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller",
-      "vc:label": "Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-system",
-      "vc:label": "Sensor System"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:rb-1001-open-loop-control",
-      "vc:label": "RB-1001-open-loop-control"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

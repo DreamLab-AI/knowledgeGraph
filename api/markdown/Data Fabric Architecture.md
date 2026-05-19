@@ -220,142 +220,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-fabric-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-fabric-architecture",
+  "@type": "Class",
   "label": "Data Fabric Architecture",
+  "definition": "An integrated data-management architecture that provides unified access, governance, security, and orchestration across distributed and heterogeneous data sources through active metadata management, automated data integration, and policy-driven controls.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:07937043b7cd7a99170bc6524cb02fbb48d31e0f358f7c23e15966772d3c1a9b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:access-control-layer",
+        "label": "Access Control Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration-service",
+        "label": "Data Integration Service"
+      },
+      {
+        "@id": "urn:ngm:class:data-virtualization",
+        "label": "Data Virtualization"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-repository",
+        "label": "Metadata Repository"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-domain-governance",
+        "label": "Cross-Domain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage-tracking",
+        "label": "Data Lineage Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:federated-queries",
+        "label": "Federated Queries"
+      },
+      {
+        "@id": "urn:ngm:class:self-service-analytics",
+        "label": "Self-Service Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:unified-data-access",
+        "label": "Unified Data Access"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:07937043b7cd7a99170bc6524cb02fbb48d31e0f358f7c23e15966772d3c1a9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An integrated data-management architecture that provides unified access, governance, security, and orchestration across distributed and heterogeneous data sources through active metadata management, automated data integration, and policy-driven controls.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-management",
-      "vc:label": "Data Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-architecture",
-      "vc:label": "Enterprise Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:access-control-layer",
-      "vc:label": "Access Control Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-catalog",
-      "vc:label": "Data Catalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-integration-service",
-      "vc:label": "Data Integration Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-virtualization",
-      "vc:label": "Data Virtualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-schema",
-      "vc:label": "Data Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-storage",
-      "vc:label": "Distributed Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-repository",
-      "vc:label": "Metadata Repository"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-domain-governance",
-      "vc:label": "Cross-Domain Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-lineage-tracking",
-      "vc:label": "Data Lineage Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-queries",
-      "vc:label": "Federated Queries"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-service-analytics",
-      "vc:label": "Self-Service Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:unified-data-access",
-      "vc:label": "Unified Data Access"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:semantic-layer",
-      "vc:label": "Semantic Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

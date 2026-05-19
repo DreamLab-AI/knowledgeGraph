@@ -3,82 +3,95 @@
   "title": "Conversion Pipeline",
   "slug": "conversion-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:conversion-pipeline",
+  "classIri": "urn:ngm:class:conversion-pipeline",
   "domain": "spatial-computing",
   "definition": "An automated workflow process that transforms digital data or assets from one format, schema, or representation to another, enabling interoperability and compatibility across heterogeneous systems and platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-processing",
+      "id": "urn:ngm:class:data-processing",
       "label": "Data Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:error-handler",
+        "id": "urn:ngm:class:error-handler",
         "label": "Error Handler"
       },
       {
-        "id": "urn:visionflow:linked:output-generator",
+        "id": "urn:ngm:class:output-generator",
         "label": "Output Generator"
       },
       {
-        "id": "urn:visionflow:linked:transformation-engine",
+        "id": "urn:ngm:class:transformation-engine",
         "label": "Transformation Engine"
       },
       {
-        "id": "urn:visionflow:linked:validation-module",
+        "id": "urn:ngm:class:validation-module",
         "label": "Validation Module"
       },
       {
-        "id": "urn:visionflow:owl:class:format-parser",
+        "id": "urn:ngm:class:format-parser",
         "label": "Format Parser"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:asset-metadata",
+        "id": "urn:ngm:class:asset-metadata",
         "label": "Asset Metadata"
       },
       {
-        "id": "urn:visionflow:linked:conversion-rules",
+        "id": "urn:ngm:class:conversion-rules",
         "label": "Conversion Rules"
       },
       {
-        "id": "urn:visionflow:linked:data-schema",
+        "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
       },
       {
-        "id": "urn:visionflow:linked:format-specification",
+        "id": "urn:ngm:class:format-specification",
         "label": "Format Specification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-optimization",
+        "id": "urn:ngm:class:asset-optimization",
         "label": "Asset Optimization"
       },
       {
-        "id": "urn:visionflow:linked:data-harmonization",
+        "id": "urn:ngm:class:data-harmonization",
         "label": "Data Harmonization"
       },
       {
-        "id": "urn:visionflow:linked:format-migration",
+        "id": "urn:ngm:class:format-migration",
         "label": "Format Migration"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

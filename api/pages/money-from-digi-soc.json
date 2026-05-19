@@ -3,19 +3,18 @@
   "title": "Money from DigiSoc",
   "slug": "money-from-digi-soc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:money-from-digi-soc",
+  "classIri": "urn:ngm:class:money-from-digi-soc",
   "domain": "infrastructure",
   "definition": "Money from DigiSoc is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

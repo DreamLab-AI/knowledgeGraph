@@ -3,90 +3,99 @@
   "title": "Education Metaverse",
   "slug": "education-metaverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:education-metaverse",
+  "classIri": "urn:ngm:class:education-metaverse",
   "domain": "spatial-computing",
   "definition": "A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:assessment-system",
+        "id": "urn:ngm:class:assessment-system",
         "label": "Assessment System"
       },
       {
-        "id": "urn:visionflow:linked:collaboration-tool",
+        "id": "urn:ngm:class:collaboration-tool",
         "label": "Collaboration Tool"
       },
       {
-        "id": "urn:visionflow:linked:content-authoring-system",
+        "id": "urn:ngm:class:content-authoring-system",
         "label": "Content Authoring System"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-analytics",
+        "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-module",
+        "id": "urn:ngm:class:learning-module",
         "label": "Learning Module"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-classroom",
+        "id": "urn:ngm:class:virtual-classroom",
         "label": "Virtual Classroom"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-system",
+        "id": "urn:ngm:class:avatar-system",
         "label": "Avatar System"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:remote-education",
+        "id": "urn:ngm:class:remote-education",
         "label": "Remote Education"
       },
       {
-        "id": "urn:visionflow:linked:skills-training",
+        "id": "urn:ngm:class:skills-training",
         "label": "Skills Training"
       },
       {
-        "id": "urn:visionflow:owl:class:collaborative-learning",
+        "id": "urn:ngm:class:collaborative-learning",
         "label": "Collaborative Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-learning",
+        "id": "urn:ngm:class:immersive-learning",
         "label": "Immersive Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-field-trip",
+        "id": "urn:ngm:class:virtual-field-trip",
         "label": "Virtual Field Trip"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

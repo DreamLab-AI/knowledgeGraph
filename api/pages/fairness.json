@@ -3,45 +3,49 @@
   "title": "Fairness",
   "slug": "fairness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fairness",
+  "classIri": "urn:ngm:class:fairness",
   "domain": "artificial-intelligence",
-  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.",
+  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ical principles.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bias-detection",
+        "id": "urn:ngm:class:bias-detection",
         "label": "Bias Detection"
       },
       {
-        "id": "urn:visionflow:linked:bias-mitigation",
+        "id": "urn:ngm:class:bias-mitigation",
         "label": "Bias Mitigation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:equal-treatment",
+        "id": "urn:ngm:class:equal-treatment",
         "label": "Equal Treatment"
       },
       {
-        "id": "urn:visionflow:linked:non-discrimination",
+        "id": "urn:ngm:class:non-discrimination",
         "label": "Non-discrimination"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

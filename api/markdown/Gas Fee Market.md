@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gas-fee-market",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gas-fee-market",
+  "@type": "Class",
   "label": "Gas Fee Market",
+  "definition": "The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-economics",
-      "vc:label": "Blockchain Economics"
+      "@id": "urn:ngm:class:blockchain-economics",
+      "label": "Blockchain Economics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:01aa7df4db1f62dfc6a4969b05ae2ef438de315a17ccfbcdb83f6758fe25bc12"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:01aa7df4db1f62dfc6a4969b05ae2ef438de315a17ccfbcdb83f6758fe25bc12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

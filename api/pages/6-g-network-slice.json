@@ -3,74 +3,78 @@
   "title": "6G Network Slice",
   "slug": "6-g-network-slice",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:6-g-network-slice",
+  "classIri": "urn:ngm:class:6-g-network-slice",
   "domain": "infrastructure",
   "definition": "Virtual partition of 6G infrastructure guaranteeing specified quality-of-service levels for immersive workloads through isolated resource allocation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:qo-s-policy",
+        "id": "urn:ngm:class:qo-s-policy",
         "label": "QoS Policy"
       },
       {
-        "id": "urn:visionflow:linked:resource-allocation-unit",
+        "id": "urn:ngm:class:resource-allocation-unit",
         "label": "Resource Allocation Unit"
       },
       {
-        "id": "urn:visionflow:linked:service-level-agreement",
+        "id": "urn:ngm:class:service-level-agreement",
         "label": "Service Level Agreement"
       },
       {
-        "id": "urn:visionflow:linked:traffic-classifier",
+        "id": "urn:ngm:class:traffic-classifier",
         "label": "Traffic Classifier"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:6-g-network-infrastructure",
+        "id": "urn:ngm:class:6-g-network-infrastructure",
         "label": "6G Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:network-slicing-orchestrator",
+        "id": "urn:ngm:class:network-slicing-orchestrator",
         "label": "Network Slicing Orchestrator"
       },
       {
-        "id": "urn:visionflow:linked:sdn-controller",
+        "id": "urn:ngm:class:sdn-controller",
         "label": "SDN Controller"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-resource-allocation",
+        "id": "urn:ngm:class:dynamic-resource-allocation",
         "label": "Dynamic Resource Allocation"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-service",
+        "id": "urn:ngm:class:low-latency-service",
         "label": "Low Latency Service"
       },
       {
-        "id": "urn:visionflow:linked:workload-isolation",
+        "id": "urn:ngm:class:workload-isolation",
         "label": "Workload Isolation"
       },
       {
-        "id": "urn:visionflow:owl:class:guaranteed-bandwidth",
+        "id": "urn:ngm:class:guaranteed-bandwidth",
         "label": "Guaranteed Bandwidth"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

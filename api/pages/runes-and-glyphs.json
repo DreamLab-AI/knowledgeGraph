@@ -3,19 +3,18 @@
   "title": "Runes and Glyphs",
   "slug": "runes-and-glyphs",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:runes-and-glyphs",
+  "classIri": "urn:ngm:class:runes-and-glyphs",
   "domain": "infrastructure",
   "definition": "Runes and Glyphs is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

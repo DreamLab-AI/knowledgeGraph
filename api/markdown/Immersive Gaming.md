@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-gaming",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-gaming",
+  "@type": "Class",
   "label": "Immersive Gaming",
+  "definition": "Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-gaming",
-      "vc:label": "Digital Gaming"
+      "@id": "urn:ngm:class:digital-gaming",
+      "label": "Digital Gaming"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:017394f0d26e93a21fb8ab35dbf94870ed99a9c5b70f6f43bd50ca1f63f1ca80"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:vr-gaming-experience",
+        "label": "VR Gaming Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:017394f0d26e93a21fb8ab35dbf94870ed99a9c5b70f6f43bd50ca1f63f1ca80@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Video gaming experiences enhanced through VR, AR, and metaverse technologies that place players within interactive 3D environments, enabling physical interaction, spatial awareness, and presence-based gameplay through advanced headsets, motion tracking, and haptic feedback systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:vr-gaming-experience",
-      "vc:label": "VR Gaming Experience"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

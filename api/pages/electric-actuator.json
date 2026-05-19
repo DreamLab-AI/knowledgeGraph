@@ -3,82 +3,86 @@
   "title": "Electric Actuator",
   "slug": "electric-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:electric-actuator",
+  "classIri": "urn:ngm:class:electric-actuator",
   "domain": "robotics",
-  "definition": "Electric actuator converts electrical energy into controlled mechanical motion through electromagnetic forces, providing the primary means of actuation in modern robots. Electric actuators encompass [[Electric Motor]], [[Linear Servo]], and [[Shape Memory Alloy]] devices, offering precise control, efficient energy conversion, and clean operation compared to pneumatic or hydraulic alternatives.",
+  "definition": "Electric actuator converts electrical energy into controlled mechanical motion through electromagnetic forces, providing the primary means of actuation in modern robots.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:electromechanical-systems",
+      "id": "urn:ngm:class:electromechanical-systems",
       "label": "Electromechanical Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:robot-actuator",
+      "id": "urn:ngm:class:robot-actuator",
       "label": "Robot Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:mechanical-interface",
+        "id": "urn:ngm:class:mechanical-interface",
         "label": "Mechanical Interface"
       },
       {
-        "id": "urn:visionflow:linked:motor-winding",
+        "id": "urn:ngm:class:motor-winding",
         "label": "Motor Winding"
       },
       {
-        "id": "urn:visionflow:linked:output-transmission",
+        "id": "urn:ngm:class:output-transmission",
         "label": "Output Transmission"
       },
       {
-        "id": "urn:visionflow:linked:power-electronics",
+        "id": "urn:ngm:class:power-electronics",
         "label": "Power Electronics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:control-signal",
+        "id": "urn:ngm:class:control-signal",
         "label": "Control Signal"
       },
       {
-        "id": "urn:visionflow:linked:electrical-power",
+        "id": "urn:ngm:class:electrical-power",
         "label": "Electrical Power"
       },
       {
-        "id": "urn:visionflow:linked:load-support",
+        "id": "urn:ngm:class:load-support",
         "label": "Load Support"
       },
       {
-        "id": "urn:visionflow:linked:thermal-dissipation",
+        "id": "urn:ngm:class:thermal-dissipation",
         "label": "Thermal Dissipation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-responsiveness",
+        "id": "urn:ngm:class:dynamic-responsiveness",
         "label": "Dynamic Responsiveness"
       },
       {
-        "id": "urn:visionflow:linked:force-exertion",
+        "id": "urn:ngm:class:force-exertion",
         "label": "Force Exertion"
       },
       {
-        "id": "urn:visionflow:linked:motion-generation",
+        "id": "urn:ngm:class:motion-generation",
         "label": "Motion Generation"
       },
       {
-        "id": "urn:visionflow:linked:precise-control",
+        "id": "urn:ngm:class:precise-control",
         "label": "Precise Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

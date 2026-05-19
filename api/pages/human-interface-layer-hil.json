@@ -3,78 +3,87 @@
   "title": "Human Interface Layer (HIL)",
   "slug": "human-interface-layer-hil",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-interface-layer-hil",
+  "classIri": "urn:ngm:class:human-interface-layer-hil",
   "domain": "spatial-computing",
   "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:interaction-domain",
+      "id": "urn:ngm:class:interaction-domain",
       "label": "Interaction Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:haptic-systems",
+        "id": "urn:ngm:class:haptic-systems",
         "label": "Haptic Systems"
       },
       {
-        "id": "urn:visionflow:linked:input-devices",
+        "id": "urn:ngm:class:input-devices",
         "label": "Input Devices"
       },
       {
-        "id": "urn:visionflow:linked:interaction-models",
+        "id": "urn:ngm:class:interaction-models",
         "label": "Interaction Models"
       },
       {
-        "id": "urn:visionflow:linked:output-devices",
+        "id": "urn:ngm:class:output-devices",
         "label": "Output Devices"
       },
       {
-        "id": "urn:visionflow:linked:tracking-systems",
+        "id": "urn:ngm:class:tracking-systems",
         "label": "Tracking Systems"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:tracking-system",
+        "id": "urn:ngm:class:tracking-system",
         "label": "Tracking System"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+        "id": "urn:ngm:class:hardware-abstraction-layer-hal",
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:multimodal-feedback",
+        "id": "urn:ngm:class:multimodal-feedback",
         "label": "Multimodal Feedback"
       },
       {
-        "id": "urn:visionflow:linked:natural-interaction",
+        "id": "urn:ngm:class:natural-interaction",
         "label": "Natural Interaction"
       },
       {
-        "id": "urn:visionflow:linked:user-immersion",
+        "id": "urn:ngm:class:user-immersion",
         "label": "User Immersion"
       },
       {
-        "id": "urn:visionflow:owl:class:presence",
+        "id": "urn:ngm:class:presence",
         "label": "Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interaction-domain",
+        "label": "Interaction Domain"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

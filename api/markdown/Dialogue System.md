@@ -140,41 +140,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dialogue-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dialogue-system",
+  "@type": "Class",
   "label": "Dialogue System",
+  "definition": "A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4d832cb308dec9f4f45a321a331d5714f2fcb96a49931babee5f4657f8dbda16"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4d832cb308dec9f4f45a321a331d5714f2fcb96a49931babee5f4657f8dbda16@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues. Modern dialogue systems employ transformer-based language models, dialogue state tracking, and reinforcement learning to power virtual assistants, customer service chatbots, and conversational interfaces. bridges-to:: [[Telecollaboration]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

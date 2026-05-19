@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:artifact-metadata",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:artifact-metadata",
+  "@type": "Class",
   "label": "Artifact Metadata",
+  "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verifica...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-metadata",
-      "vc:label": "Digital Metadata"
+      "@id": "urn:ngm:class:digital-metadata",
+      "label": "Digital Metadata"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fc27e5e567e248eb2a3757b7c93b0fa6ab4220a1ef02829991e243ecb80a163b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-recording",
+        "label": "Blockchain Recording"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-practices",
+        "label": "Documentation Practices"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:authenticity-tracking",
+        "label": "Authenticity Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-preservation",
+        "label": "Cultural Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fc27e5e567e248eb2a3757b7c93b0fa6ab4220a1ef02829991e243ecb80a163b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verification and long-term accessibility.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-recording",
-      "vc:label": "Blockchain Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:documentation-practices",
-      "vc:label": "Documentation Practices"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:authenticity-tracking",
-      "vc:label": "Authenticity Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-preservation",
-      "vc:label": "Cultural Preservation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:provenance-verification",
-      "vc:label": "Provenance Verification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

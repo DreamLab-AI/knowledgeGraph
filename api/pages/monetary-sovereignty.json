@@ -3,32 +3,36 @@
   "title": "Monetary Sovereignty",
   "slug": "monetary-sovereignty",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monetary-sovereignty",
+  "classIri": "urn:ngm:class:monetary-sovereignty",
   "domain": "spatial-computing",
   "definition": "A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:economic-governance",
+      "id": "urn:ngm:class:economic-governance",
       "label": "Economic Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:national-financial-control",
+        "id": "urn:ngm:class:national-financial-control",
         "label": "National Financial Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

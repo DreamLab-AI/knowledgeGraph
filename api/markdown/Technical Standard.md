@@ -136,76 +136,49 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:technical-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:technical-standard",
+  "@type": "Class",
   "label": "Technical Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:specification",
-      "vc:label": "Specification"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f"
+  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, mods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:best-practices",
+        "label": "Best Practices"
+      },
+      {
+        "@id": "urn:ngm:class:technical-requirements",
+        "label": "Technical Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cca2d24cc90cb0baac76b07bbf5f213d51af9c362e7782ad73b171f59869098f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A technical standard is a formal document that establishes uniform engineering or technical criteria, methods, processes, and practices to ensure that products, services, and systems are safe, reliable, interoperable, and consistently perform as intended. Standards are developed through consensus-based processes by authoritative bodies and provide the foundation for quality control, innovation, and global trade in technology systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety",
-      "vc:label": "Safety"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:best-practices",
-      "vc:label": "Best Practices"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-requirements",
-      "vc:label": "Technical Requirements"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

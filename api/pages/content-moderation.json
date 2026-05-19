@@ -3,82 +3,95 @@
   "title": "Content Moderation",
   "slug": "content-moderation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:content-moderation",
+  "classIri": "urn:ngm:class:content-moderation",
   "domain": "artificial-intelligence",
   "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-safety",
+      "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:appeal-process",
+        "id": "urn:ngm:class:appeal-process",
         "label": "Appeal Process"
       },
       {
-        "id": "urn:visionflow:linked:automated-filtering",
+        "id": "urn:ngm:class:automated-filtering",
         "label": "Automated Filtering"
       },
       {
-        "id": "urn:visionflow:linked:content-classification-system",
+        "id": "urn:ngm:class:content-classification-system",
         "label": "Content Classification System"
       },
       {
-        "id": "urn:visionflow:linked:human-review-workflow",
+        "id": "urn:ngm:class:human-review-workflow",
         "label": "Human Review Workflow"
       },
       {
-        "id": "urn:visionflow:linked:policy-enforcement-engine",
+        "id": "urn:ngm:class:policy-enforcement-engine",
         "label": "Policy Enforcement Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-analysis-tools",
+        "id": "urn:ngm:class:content-analysis-tools",
         "label": "Content Analysis Tools"
       },
       {
-        "id": "urn:visionflow:linked:moderation-policy",
+        "id": "urn:ngm:class:moderation-policy",
         "label": "Moderation Policy"
       },
       {
-        "id": "urn:visionflow:linked:reviewer-training-program",
+        "id": "urn:ngm:class:reviewer-training-program",
         "label": "Reviewer Training Program"
       },
       {
-        "id": "urn:visionflow:owl:class:community-standards",
+        "id": "urn:ngm:class:community-standards",
         "label": "Community Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-guidelines-enforcement",
+        "id": "urn:ngm:class:community-guidelines-enforcement",
         "label": "Community Guidelines Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:harmful-content-prevention",
+        "id": "urn:ngm:class:harmful-content-prevention",
         "label": "Harmful Content Prevention"
       },
       {
-        "id": "urn:visionflow:linked:safe-user-experience",
+        "id": "urn:ngm:class:safe-user-experience",
         "label": "Safe User Experience"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-governance-system",
+        "label": "Platform Governance System"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety-infrastructure",
+        "label": "Trust and Safety Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

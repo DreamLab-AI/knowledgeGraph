@@ -3,147 +3,259 @@
   "title": "Real Time",
   "slug": "real-time",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time",
+  "classIri": "urn:ngm:class:real-time",
   "domain": "infrastructure",
-  "definition": "Real-Time Computing is the discipline of designing computing systems, operating environments, and algorithmic frameworks in which program correctness depends not only on the logical result of computation but also on the time at which those results are produced, enforcing temporal constraints \u2014 deadlines, periods, jitter bounds \u2014 as first-class correctness conditions alongside functional specifications. A real-time system fails not merely when it produces wrong output but equally when it produces correct output too late: deadline violations in a cardiac pacemaker controller, engine control unit, fly-by-wire flight surface actuator, or nuclear plant safety monitor are catastrophic, making temporal determinism as safety-critical as logical correctness. The field partitions constraints into three canonical tiers established by Buttazzo (1st ed. 1997, 4th ed. 2024): hard real-time where any deadline miss constitutes total system failure (utility function drops discontinuously to \u2212\u221e at deadline d; aeroengine FADEC, autonomous-vehicle AEB), firm real-time where late results have zero value but do not cause system failure (multimedia frame rendering, industrial batch reporting), and soft r",
+  "definition": "Real-Time Computing is the discipline of designing computing systems, operating environments, and algorithmic frameworks in which program correctness depends not only on the logical result of computation but also on the time at which those results are produced, enforcing temporal constraints \u2014 de...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:operating-systems",
+      "id": "urn:ngm:class:operating-systems",
       "label": "Operating Systems"
     },
     {
-      "id": "urn:visionflow:linked:safety-critical-systems",
+      "id": "urn:ngm:class:safety-critical-systems",
       "label": "Safety Critical Systems"
-    },
-    {
-      "id": "urn:visionflow:linked:control-systems",
-      "label": "Control Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:deadline",
+        "id": "urn:ngm:class:deadline",
         "label": "Deadline"
       },
       {
-        "id": "urn:visionflow:linked:interrupt-handler",
+        "id": "urn:ngm:class:interrupt-handler",
         "label": "Interrupt Handler"
       },
       {
-        "id": "urn:visionflow:linked:priority-ceiling-protocol",
+        "id": "urn:ngm:class:priority-ceiling-protocol",
         "label": "Priority Ceiling Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rtos",
+        "id": "urn:ngm:class:rtos",
         "label": "RTOS"
       },
       {
-        "id": "urn:visionflow:linked:scheduler",
+        "id": "urn:ngm:class:scheduler",
         "label": "Scheduler"
       },
       {
-        "id": "urn:visionflow:linked:task",
+        "id": "urn:ngm:class:task",
         "label": "Task"
       },
       {
-        "id": "urn:visionflow:linked:timer",
+        "id": "urn:ngm:class:timer",
         "label": "Timer"
       },
       {
-        "id": "urn:visionflow:linked:wcet-analysis",
+        "id": "urn:ngm:class:wcet-analysis",
         "label": "WCET Analysis"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:determinism",
+        "id": "urn:ngm:class:determinism",
         "label": "Determinism"
       },
       {
-        "id": "urn:visionflow:linked:hardware-abstraction-layer",
+        "id": "urn:ngm:class:hardware-abstraction-layer",
         "label": "Hardware Abstraction Layer"
       },
       {
-        "id": "urn:visionflow:linked:priority-inheritance",
+        "id": "urn:ngm:class:priority-inheritance",
         "label": "Priority Inheritance"
       },
       {
-        "id": "urn:visionflow:linked:schedulability-analysis",
+        "id": "urn:ngm:class:schedulability-analysis",
         "label": "Schedulability Analysis"
       },
       {
-        "id": "urn:visionflow:linked:temporal-correctness",
+        "id": "urn:ngm:class:temporal-correctness",
         "label": "Temporal Correctness"
       },
       {
-        "id": "urn:visionflow:linked:wcet-bound",
+        "id": "urn:ngm:class:wcet-bound",
         "label": "WCET Bound"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automotive-control",
+        "id": "urn:ngm:class:automotive-control",
         "label": "Automotive Control"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-systems",
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:visionflow:linked:avionics",
+        "id": "urn:ngm:class:avionics",
         "label": "Avionics"
       },
       {
-        "id": "urn:visionflow:linked:distributed-real-time",
+        "id": "urn:ngm:class:distributed-real-time",
         "label": "Distributed Real-Time"
       },
       {
-        "id": "urn:visionflow:linked:industrial-automation",
+        "id": "urn:ngm:class:industrial-automation",
         "label": "Industrial Automation"
       },
       {
-        "id": "urn:visionflow:linked:real-time-ai-inference",
+        "id": "urn:ngm:class:real-time-ai-inference",
         "label": "Real-Time AI Inference"
       },
       {
-        "id": "urn:visionflow:linked:safety-critical-computing",
+        "id": "urn:ngm:class:safety-critical-computing",
         "label": "Safety Critical Computing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:constant-bandwidth-server",
+        "id": "urn:ngm:class:constant-bandwidth-server",
         "label": "Constant Bandwidth Server"
       },
       {
-        "id": "urn:visionflow:linked:earliest-deadline-first",
+        "id": "urn:ngm:class:earliest-deadline-first",
         "label": "Earliest Deadline First"
       },
       {
-        "id": "urn:visionflow:linked:hierarchical-scheduling",
+        "id": "urn:ngm:class:hierarchical-scheduling",
         "label": "Hierarchical Scheduling"
       },
       {
-        "id": "urn:visionflow:linked:priority-ceiling-protocol",
+        "id": "urn:ngm:class:priority-ceiling-protocol",
         "label": "Priority Ceiling Protocol"
       },
       {
-        "id": "urn:visionflow:linked:priority-inheritance-protocol",
+        "id": "urn:ngm:class:priority-inheritance-protocol",
         "label": "Priority Inheritance Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rate-monotonic-algorithm",
+        "id": "urn:ngm:class:rate-monotonic-algorithm",
         "label": "Rate Monotonic Algorithm"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dds",
+        "label": "DDS"
+      },
+      {
+        "id": "urn:ngm:class:free-rtos",
+        "label": "FreeRTOS"
+      },
+      {
+        "id": "urn:ngm:class:qnx",
+        "label": "QNX"
+      },
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:tsn",
+        "label": "TSN"
+      },
+      {
+        "id": "urn:ngm:class:vx-works",
+        "label": "VxWorks"
+      },
+      {
+        "id": "urn:ngm:class:zephyr",
+        "label": "Zephyr"
+      },
+      {
+        "id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:avionics",
+        "label": "Avionics"
+      },
+      {
+        "id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:medical-devices",
+        "label": "Medical Devices"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:do-178-c",
+        "label": "DO-178C"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1588",
+        "label": "IEEE 1588"
+      },
+      {
+        "id": "urn:ngm:class:ieee-802-1-tsn",
+        "label": "IEEE 802.1 TSN"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:omg-dds-specification",
+        "label": "OMG DDS Specification"
+      },
+      {
+        "id": "urn:ngm:class:posix-1003-1b",
+        "label": "POSIX 1003.1b"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

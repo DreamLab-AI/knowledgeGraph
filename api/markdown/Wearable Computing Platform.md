@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:wearable-computing-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:wearable-computing-platform",
+  "@type": "Class",
   "label": "Wearable Computing Platform",
+  "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-platform",
-      "vc:label": "Computing Platform"
+      "@id": "urn:ngm:class:computing-platform",
+      "label": "Computing Platform"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8f0dfe1eaeb99706904743c35a8986fa34f08412f473e21fe7cd02e7f3a8b4b9"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8f0dfe1eaeb99706904743c35a8986fa34f08412f473e21fe7cd02e7f3a8b4b9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

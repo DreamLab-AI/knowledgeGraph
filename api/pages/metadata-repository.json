@@ -3,32 +3,36 @@
   "title": "Metadata Repository",
   "slug": "metadata-repository",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-repository",
+  "classIri": "urn:ngm:class:metadata-repository",
   "domain": "spatial-computing",
   "definition": "Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-management",
+      "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-discovery",
+        "id": "urn:ngm:class:data-discovery",
         "label": "Data Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

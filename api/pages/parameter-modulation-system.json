@@ -3,32 +3,36 @@
   "title": "Parameter Modulation System",
   "slug": "parameter-modulation-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:parameter-modulation-system",
+  "classIri": "urn:ngm:class:parameter-modulation-system",
   "domain": "spatial-computing",
   "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:audio-system",
+      "id": "urn:ngm:class:audio-system",
       "label": "Audio System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-sound-design",
+        "id": "urn:ngm:class:dynamic-sound-design",
         "label": "Dynamic Sound Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

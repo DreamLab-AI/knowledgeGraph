@@ -3,74 +3,83 @@
   "title": "Digital Asset Workflow",
   "slug": "digital-asset-workflow",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-workflow",
+  "classIri": "urn:ngm:class:digital-asset-workflow",
   "domain": "spatial-computing",
-  "definition": "Controlled process governing the creation, approval, distribution, and lifecycle management of digital content assets in virtual environments. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Asset Workflow is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:approval-workflow",
+        "id": "urn:ngm:class:approval-workflow",
         "label": "Approval Workflow"
       },
       {
-        "id": "urn:visionflow:linked:content-creation-pipeline",
+        "id": "urn:ngm:class:content-creation-pipeline",
         "label": "Content Creation Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:distribution-system",
+        "id": "urn:ngm:class:distribution-system",
         "label": "Distribution System"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-archive",
+        "id": "urn:ngm:class:asset-archive",
         "label": "Asset Archive"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:version-control",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-rights-management",
+        "id": "urn:ngm:class:digital-rights-management",
         "label": "Digital Rights Management"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-management",
+        "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-monetization",
+        "id": "urn:ngm:class:asset-monetization",
         "label": "Asset Monetization"
       },
       {
-        "id": "urn:visionflow:linked:content-distribution",
+        "id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-goods",
+        "id": "urn:ngm:class:digital-goods",
         "label": "Digital Goods"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-minting",
+        "id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,78 +3,87 @@
   "title": "Voice Interaction",
   "slug": "voice-interaction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:voice-interaction",
+  "classIri": "urn:ngm:class:voice-interaction",
   "domain": "spatial-computing",
-  "definition": "Communication method enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
+  "definition": "Communication mod enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:interaction-domain",
+      "id": "urn:ngm:class:interaction-domain",
       "label": "Interaction Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:natural-language-understanding",
+        "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
       },
       {
-        "id": "urn:visionflow:linked:voice-commands",
+        "id": "urn:ngm:class:voice-commands",
         "label": "Voice Commands"
       },
       {
-        "id": "urn:visionflow:owl:class:speech-recognition",
+        "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
       },
       {
-        "id": "urn:visionflow:owl:class:text-to-speech",
+        "id": "urn:ngm:class:text-to-speech",
         "label": "Text-to-Speech"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audio-processing",
+        "id": "urn:ngm:class:audio-processing",
         "label": "Audio Processing"
       },
       {
-        "id": "urn:visionflow:linked:language-model",
+        "id": "urn:ngm:class:language-model",
         "label": "Language Model"
       },
       {
-        "id": "urn:visionflow:linked:microphone",
+        "id": "urn:ngm:class:microphone",
         "label": "Microphone"
       },
       {
-        "id": "urn:visionflow:linked:speech-synthesis",
+        "id": "urn:ngm:class:speech-synthesis",
         "label": "Speech Synthesis"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hands-free-control",
+        "id": "urn:ngm:class:hands-free-control",
         "label": "Hands-Free Control"
       },
       {
-        "id": "urn:visionflow:linked:natural-communication",
+        "id": "urn:ngm:class:natural-communication",
         "label": "Natural Communication"
       },
       {
-        "id": "urn:visionflow:linked:voice-assistant",
+        "id": "urn:ngm:class:voice-assistant",
         "label": "Voice Assistant"
       },
       {
-        "id": "urn:visionflow:owl:class:accessibility",
+        "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-registry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-registry",
+  "@type": "Class",
   "label": "Carbon Registry",
+  "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-registry",
-      "vc:label": "Environmental Registry"
+      "@id": "urn:ngm:class:environmental-registry",
+      "label": "Environmental Registry"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:database-infrastructure",
+        "label": "Database Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:unique-identifiers",
+        "label": "Unique Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verification-process",
+        "label": "Verification Process"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credit-tracking",
+        "label": "Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:double-counting-prevention",
+        "label": "Double Counting Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:market-transparency",
+        "label": "Market Transparency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f304b214cd0a5f2e62acb2a479eed8241b3fa2d9861287e48233682236f961d3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:database-infrastructure",
-      "vc:label": "Database Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:unique-identifiers",
-      "vc:label": "Unique Identifiers"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-process",
-      "vc:label": "Verification Process"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credit-tracking",
-      "vc:label": "Credit Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-counting-prevention",
-      "vc:label": "Double Counting Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-transparency",
-      "vc:label": "Market Transparency"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

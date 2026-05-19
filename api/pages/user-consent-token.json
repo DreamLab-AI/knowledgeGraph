@@ -3,90 +3,99 @@
   "title": "User Consent Token",
   "slug": "user-consent-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-consent-token",
+  "classIri": "urn:ngm:class:user-consent-token",
   "domain": "spatial-computing",
   "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:consent-payload",
+        "id": "urn:ngm:class:consent-payload",
         "label": "Consent Payload"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-signature",
+        "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:visionflow:linked:revocation-mechanism",
+        "id": "urn:ngm:class:revocation-mechanism",
         "label": "Revocation Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:scope-definition",
+        "id": "urn:ngm:class:scope-definition",
         "label": "Scope Definition"
       },
       {
-        "id": "urn:visionflow:owl:class:timestamp",
+        "id": "urn:ngm:class:timestamp",
         "label": "Timestamp"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:consent-registry",
+        "id": "urn:ngm:class:consent-registry",
         "label": "Consent Registry"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-key",
+        "id": "urn:ngm:class:cryptographic-key",
         "label": "Cryptographic Key"
       },
       {
-        "id": "urn:visionflow:linked:data-schema",
+        "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
       },
       {
-        "id": "urn:visionflow:linked:privacy-policy",
+        "id": "urn:ngm:class:privacy-policy",
         "label": "Privacy Policy"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-privacy-compliance",
+        "id": "urn:ngm:class:automated-privacy-compliance",
         "label": "Automated Privacy Compliance"
       },
       {
-        "id": "urn:visionflow:linked:consent-audit-trail",
+        "id": "urn:ngm:class:consent-audit-trail",
         "label": "Consent Audit Trail"
       },
       {
-        "id": "urn:visionflow:linked:consent-revocation",
+        "id": "urn:ngm:class:consent-revocation",
         "label": "Consent Revocation"
       },
       {
-        "id": "urn:visionflow:linked:user-data-sovereignty",
+        "id": "urn:ngm:class:user-data-sovereignty",
         "label": "User Data Sovereignty"
       },
       {
-        "id": "urn:visionflow:owl:class:granular-consent-control",
+        "id": "urn:ngm:class:granular-consent-control",
         "label": "Granular Consent Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consent-management-framework",
+        "label": "Consent Management Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

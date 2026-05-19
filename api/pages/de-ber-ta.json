@@ -3,19 +3,18 @@
   "title": "De BER Ta",
   "slug": "de-ber-ta",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:de-ber-ta",
+  "classIri": "urn:ngm:class:de-ber-ta",
   "domain": "spatial-computing",
   "definition": "Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:language-modeling",
+      "id": "urn:ngm:class:language-modeling",
       "label": "Language Modeling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

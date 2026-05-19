@@ -3,19 +3,18 @@
   "title": "Privacy By Design",
   "slug": "privacy-by-design",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-by-design",
+  "classIri": "urn:ngm:class:privacy-by-design",
   "domain": "artificial-intelligence",
-  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core functionality rather than optional feature. This approach follows seven foundational principles articulated by Ann Cavoukian including proactive not reactive prevention (anticipating and preventing privacy risks before they materialize), privacy as default setting (systems configured for maximum privacy protection without user intervention), privacy embedded into design (integrated into system architecture and business operations as essential component), full functionality positive-sum not zero-sum (avoiding false dichotomies between privacy and other objectives, achieving both through innovative design), end-to-end security protecting data throughout lifecycle (from collection through retention to destruction), visibility and transparency (keeping systems open and accountable with clear documentation), and respect for user privacy (maintaining user-centric focus with empowering privacy contro",
+  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core fun...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

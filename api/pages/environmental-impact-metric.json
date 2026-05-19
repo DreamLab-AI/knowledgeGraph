@@ -3,82 +3,99 @@
   "title": "Environmental Impact Metric",
   "slug": "environmental-impact-metric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:environmental-impact-metric",
+  "classIri": "urn:ngm:class:environmental-impact-metric",
   "domain": "spatial-computing",
   "definition": "A quantitative measurement framework for assessing the environmental sustainability of metaverse and digital systems, encompassing energy consumption, carbon emissions, resource efficiency, and ecological footprint across computational infrastructure and user interactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:e-waste-measurement",
+        "id": "urn:ngm:class:e-waste-measurement",
         "label": "E-Waste Measurement"
       },
       {
-        "id": "urn:visionflow:linked:energy-consumption-metric",
+        "id": "urn:ngm:class:energy-consumption-metric",
         "label": "Energy Consumption Metric"
       },
       {
-        "id": "urn:visionflow:linked:resource-efficiency-score",
+        "id": "urn:ngm:class:resource-efficiency-score",
         "label": "Resource Efficiency Score"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-report",
+        "id": "urn:ngm:class:sustainability-report",
         "label": "Sustainability Report"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-footprint-indicator",
+        "id": "urn:ngm:class:carbon-footprint-indicator",
         "label": "Carbon Footprint Indicator"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-collection-system",
+        "id": "urn:ngm:class:data-collection-system",
         "label": "Data Collection System"
       },
       {
-        "id": "urn:visionflow:linked:lifecycle-assessment-tool",
+        "id": "urn:ngm:class:lifecycle-assessment-tool",
         "label": "Lifecycle Assessment Tool"
       },
       {
-        "id": "urn:visionflow:linked:monitoring-infrastructure",
+        "id": "urn:ngm:class:monitoring-infrastructure",
         "label": "Monitoring Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-calculator",
+        "id": "urn:ngm:class:carbon-calculator",
         "label": "Carbon Calculator"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:environmental-optimization",
+        "id": "urn:ngm:class:environmental-optimization",
         "label": "Environmental Optimization"
       },
       {
-        "id": "urn:visionflow:linked:green-it-compliance",
+        "id": "urn:ngm:class:green-it-compliance",
         "label": "Green IT Compliance"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-reporting",
+        "id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Reporting"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-neutrality-planning",
+        "id": "urn:ngm:class:carbon-neutrality-planning",
         "label": "Carbon Neutrality Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:esg-reporting-system",
+        "label": "ESG Reporting System"
+      },
+      {
+        "id": "urn:ngm:class:green-computing-initiative",
+        "label": "Green Computing Initiative"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-framework",
+        "label": "Sustainability Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

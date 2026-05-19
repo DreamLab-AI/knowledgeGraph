@@ -3,19 +3,18 @@
   "title": "Contrastive Learning",
   "slug": "contrastive-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:contrastive-learning",
+  "classIri": "urn:ngm:class:contrastive-learning",
   "domain": "artificial-intelligence",
-  "definition": "A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples). Contrastive learning enables models to learn powerful representations without explicit labels by pushing similar examples together and dissimilar ones apart in embedding space.",
+  "definition": "A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

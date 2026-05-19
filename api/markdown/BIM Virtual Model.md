@@ -156,76 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bim-virtual-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bim-virtual-model",
+  "@type": "Class",
   "label": "BIM Virtual Model",
+  "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection througho...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f34276247e9d10c5ddf7c74900704f8649629dfe4e5da7203626248d11b40313"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:design-data",
+        "label": "Design Data"
+      },
+      {
+        "@id": "urn:ngm:class:modeling-standards",
+        "label": "Modeling Standards"
+      },
+      {
+        "@id": "urn:ngm:class:bim-software",
+        "label": "BIM Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:clash-detection",
+        "label": "Clash Detection"
+      },
+      {
+        "@id": "urn:ngm:class:construction-simulation",
+        "label": "Construction Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:design-visualization",
+        "label": "Design Visualization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f34276247e9d10c5ddf7c74900704f8649629dfe4e5da7203626248d11b40313@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:design-data",
-      "vc:label": "Design Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:modeling-standards",
-      "vc:label": "Modeling Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bim-software",
-      "vc:label": "BIM Software"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:clash-detection",
-      "vc:label": "Clash Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:construction-simulation",
-      "vc:label": "Construction Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:design-visualization",
-      "vc:label": "Design Visualization"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

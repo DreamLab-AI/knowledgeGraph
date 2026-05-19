@@ -3,19 +3,18 @@
   "title": "Practical Byzantine Fault Tolerance",
   "slug": "practical-byzantine-fault-tolerance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:practical-byzantine-fault-tolerance",
+  "classIri": "urn:ngm:class:practical-byzantine-fault-tolerance",
   "domain": "blockchain",
   "definition": "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

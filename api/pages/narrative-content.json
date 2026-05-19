@@ -3,32 +3,36 @@
   "title": "Narrative Content",
   "slug": "narrative-content",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:narrative-content",
+  "classIri": "urn:ngm:class:narrative-content",
   "domain": "spatial-computing",
   "definition": "Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-content",
+      "id": "urn:ngm:class:digital-content",
       "label": "Digital Content"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:personalized-virtual-experiences",
+        "id": "urn:ngm:class:personalized-virtual-experiences",
         "label": "Personalized Virtual Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

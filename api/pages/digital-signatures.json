@@ -3,53 +3,57 @@
   "title": "Digital Signatures",
   "slug": "digital-signatures",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-signatures",
+  "classIri": "urn:ngm:class:digital-signatures",
   "domain": "spatial-computing",
-  "definition": "Cryptographic seals that confirm the authenticity and integrity of digital data using public-key cryptography, enabling transaction authorisation on blockchain networks, document authentication, and non-repudiation in metaverse and decentralised systems. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Signatures is a type of Cryptography in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptography",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:signature-algorithm",
+        "id": "urn:ngm:class:signature-algorithm",
         "label": "Signature Algorithm"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
       {
-        "id": "urn:visionflow:owl:class:private-key",
+        "id": "urn:ngm:class:private-key",
         "label": "Private Key"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:visionflow:linked:data-integrity",
+        "id": "urn:ngm:class:data-integrity",
         "label": "Data Integrity"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

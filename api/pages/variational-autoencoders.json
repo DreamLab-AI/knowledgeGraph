@@ -3,19 +3,18 @@
   "title": "Variational Autoencoders",
   "slug": "variational-autoencoders",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:variational-autoencoders",
+  "classIri": "urn:ngm:class:variational-autoencoders",
   "domain": "artificial-intelligence",
   "definition": "Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:generative-model",
+      "id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.93,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

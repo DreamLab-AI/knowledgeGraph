@@ -3,40 +3,44 @@
   "title": "Sustainable Development",
   "slug": "sustainable-development",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sustainable-development",
+  "classIri": "urn:ngm:class:sustainable-development",
   "domain": "spatial-computing",
-  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability to meet their own needs.",
+  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:computational-sustainability",
+        "id": "urn:ngm:class:computational-sustainability",
         "label": "computational sustainability"
       },
       {
-        "id": "urn:visionflow:linked:green-ai",
+        "id": "urn:ngm:class:green-ai",
         "label": "Green AI"
       },
       {
-        "id": "urn:visionflow:linked:sustainable-ai-operations",
+        "id": "urn:ngm:class:sustainable-ai-operations",
         "label": "sustainable AI operations"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -156,60 +156,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:augmented-reality-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:augmented-reality-collaboration",
+  "@type": "Class",
   "label": "Augmented Reality Collaboration",
+  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual...",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tele-002-telecollaboration",
-      "vc:label": "TELE-002-telecollaboration"
+      "@id": "urn:ngm:class:tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tele-150-webrtc",
+        "label": "TELE-150-webrtc"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-design",
+        "label": "CollaborativeDesign"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Collaborative work where geographically distributed team members share a common augmented reality environment, viewing and manipulating virtual 3D objects overlaid on their respective physical spaces whilst communicating via spatial audio and holographic avatars, enabling hybrid physical-virtual cooperation through AR headsets or mobile devices.\"",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tele-150-webrtc",
-      "vc:label": "TELE-150-webrtc"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-design",
-      "vc:label": "CollaborativeDesign"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

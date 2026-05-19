@@ -172,88 +172,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-modeling",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-modeling",
+  "@type": "Class",
   "label": "3D Modeling",
+  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-art",
-      "vc:label": "Digital Art"
+      "@id": "urn:ngm:class:digital-art",
+      "label": "Digital Art"
     },
     {
-      "@id": "urn:visionflow:owl:class:3-d-development",
-      "vc:label": "3D Development"
+      "@id": "urn:ngm:class:3-d-development",
+      "label": "3D Development"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:80b7420df8cc6c901a243f9e2191cff2e4e81d2caafd791fac2d3c18629f359b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:anatomical-knowledge",
+        "label": "Anatomical Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:material-understanding",
+        "label": "Material Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:modelling-software",
+        "label": "Modelling Software"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-creation",
+        "label": "Asset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-design",
+        "label": "Virtual Environment Design"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:80b7420df8cc6c901a243f9e2191cff2e4e81d2caafd791fac2d3c18629f359b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools. It encompasses organic modelling (characters, creatures), hard-surface modelling (architecture, vehicles), texture development, and material definition, producing [[3D Model]]s suitable for animation, rendering, and real-time applications in games and immersive environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:anatomical-knowledge",
-      "vc:label": "Anatomical Knowledge"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-understanding",
-      "vc:label": "Material Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:modelling-software",
-      "vc:label": "Modelling Software"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-creation",
-      "vc:label": "Asset Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:character-animation",
-      "vc:label": "Character Animation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-environment-design",
-      "vc:label": "Virtual Environment Design"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sculpting",
-      "vc:label": "Sculpting"
-    },
-    {
-      "@id": "urn:visionflow:linked:texturing",
-      "vc:label": "Texturing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

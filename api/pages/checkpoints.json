@@ -3,159 +3,291 @@
   "title": "Checkpoints",
   "slug": "checkpoints",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:checkpoints",
+  "classIri": "urn:ngm:class:checkpoints",
   "domain": "artificial-intelligence",
-  "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state \u2014 weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters \u2014 persisted to durable storage at regular intervals during training so that: (a) training can resume after hardware failure or preemption without replaying all prior computation; (b) intermediate weight versions can be evaluated and compared before committing to a final release; (c) the best-performing weight configuration identified during a hyperparameter sweep can be recovered independently of the final training step; and (d) pre-trained representations can be shared and reused for downstream [[Transfer Learning]] and [[Fine-tuning]] tasks without distributing training code or data.",
+  "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state \u2014 weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters \u2014 persisted to durable storage at regular intervals during...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:model-serialisation",
+      "id": "urn:ngm:class:model-serialisation",
       "label": "Model Serialisation"
     },
     {
-      "id": "urn:visionflow:linked:model-versioning",
+      "id": "urn:ngm:class:model-versioning",
       "label": "Model Versioning"
-    },
-    {
-      "id": "urn:visionflow:owl:class:fault-tolerance",
-      "label": "Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:checkpoint-index",
+        "id": "urn:ngm:class:checkpoint-index",
         "label": "Checkpoint Index"
       },
       {
-        "id": "urn:visionflow:linked:ema-shadow-weights",
+        "id": "urn:ngm:class:ema-shadow-weights",
         "label": "EMA Shadow Weights"
       },
       {
-        "id": "urn:visionflow:linked:optimiser-state",
+        "id": "urn:ngm:class:optimiser-state",
         "label": "Optimiser State"
       },
       {
-        "id": "urn:visionflow:linked:rng-state",
+        "id": "urn:ngm:class:rng-state",
         "label": "RNG State"
       },
       {
-        "id": "urn:visionflow:linked:shard-metadata",
+        "id": "urn:ngm:class:shard-metadata",
         "label": "Shard Metadata"
       },
       {
-        "id": "urn:visionflow:linked:step-counter",
+        "id": "urn:ngm:class:step-counter",
         "label": "Step Counter"
       },
       {
-        "id": "urn:visionflow:linked:weight-tensor",
+        "id": "urn:ngm:class:weight-tensor",
         "label": "Weight Tensor"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-rate-schedule",
+        "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Schedule"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:checkpoint-frequency-policy",
+        "id": "urn:ngm:class:checkpoint-frequency-policy",
         "label": "Checkpoint Frequency Policy"
       },
       {
-        "id": "urn:visionflow:linked:file-system",
+        "id": "urn:ngm:class:file-system",
         "label": "File System"
       },
       {
-        "id": "urn:visionflow:linked:persistent-storage",
+        "id": "urn:ngm:class:persistent-storage",
         "label": "Persistent Storage"
       },
       {
-        "id": "urn:visionflow:linked:serialisation-format",
+        "id": "urn:ngm:class:serialisation-format",
         "label": "Serialisation Format"
       },
       {
-        "id": "urn:visionflow:linked:training-loop",
+        "id": "urn:ngm:class:training-loop",
         "label": "Training Loop"
       },
       {
-        "id": "urn:visionflow:owl:class:model-architecture",
+        "id": "urn:ngm:class:model-architecture",
         "label": "Model Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:checkpoint-averaging",
+        "id": "urn:ngm:class:checkpoint-averaging",
         "label": "Checkpoint Averaging"
       },
       {
-        "id": "urn:visionflow:linked:distributed-training-recovery",
+        "id": "urn:ngm:class:distributed-training-recovery",
         "label": "Distributed Training Recovery"
       },
       {
-        "id": "urn:visionflow:linked:experiment-reproducibility",
+        "id": "urn:ngm:class:experiment-reproducibility",
         "label": "Experiment Reproducibility"
       },
       {
-        "id": "urn:visionflow:linked:model-serving",
+        "id": "urn:ngm:class:model-serving",
         "label": "Model Serving"
       },
       {
-        "id": "urn:visionflow:linked:model-versioning",
+        "id": "urn:ngm:class:model-versioning",
         "label": "Model Versioning"
       },
       {
-        "id": "urn:visionflow:linked:training-resumption",
+        "id": "urn:ngm:class:training-resumption",
         "label": "Training Resumption"
       },
       {
-        "id": "urn:visionflow:linked:transfer-learning",
+        "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:fine-tuning",
+        "id": "urn:ngm:class:fine-tuning",
         "label": "Fine-tuning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:deep-speed",
+        "id": "urn:ngm:class:deep-speed",
         "label": "DeepSpeed"
       },
       {
-        "id": "urn:visionflow:linked:fsdp",
+        "id": "urn:ngm:class:fsdp",
         "label": "FSDP"
       },
       {
-        "id": "urn:visionflow:linked:hugging-face-hub",
+        "id": "urn:ngm:class:hugging-face-hub",
         "label": "Hugging Face Hub"
       },
       {
-        "id": "urn:visionflow:linked:mlflow",
+        "id": "urn:ngm:class:mlflow",
         "label": "MLflow"
       },
       {
-        "id": "urn:visionflow:linked:py-torch",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
-        "id": "urn:visionflow:linked:safetensors",
+        "id": "urn:ngm:class:safetensors",
         "label": "Safetensors"
       },
       {
-        "id": "urn:visionflow:linked:tensor-flow",
+        "id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       },
       {
-        "id": "urn:visionflow:linked:weights-and-biases",
+        "id": "urn:ngm:class:weights-and-biases",
         "label": "Weights and Biases"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      },
+      {
+        "id": "urn:ngm:class:fsdp",
+        "label": "FSDP"
+      },
+      {
+        "id": "urn:ngm:class:gguf",
+        "label": "GGUF"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:pickle",
+        "label": "Pickle"
+      },
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "id": "urn:ngm:class:saved-model",
+        "label": "SavedModel"
+      },
+      {
+        "id": "urn:ngm:class:ze-ro",
+        "label": "ZeRO"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:py-torch-foundation",
+        "label": "PyTorch Foundation"
+      },
+      {
+        "id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:peft",
+        "label": "PEFT"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:torch-script",
+        "label": "TorchScript"
+      },
+      {
+        "id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ]
   },
   "wikilinks": [
     {

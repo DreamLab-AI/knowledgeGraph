@@ -3,40 +3,61 @@
   "title": "rb 0069 lidar",
   "slug": "rb-0069-lidar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0069-lidar",
+  "classIri": "urn:ngm:class:rb-0069-lidar",
   "domain": "robotics",
-  "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accuracy.",
+  "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accu...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:lidar",
+      "id": "urn:ngm:class:lidar",
       "label": "Lidar"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-mapping",
+        "id": "urn:ngm:class:3-d-mapping",
         "label": "3D Mapping"
       },
       {
-        "id": "urn:visionflow:linked:obstacle-detection",
+        "id": "urn:ngm:class:obstacle-detection",
         "label": "Obstacle Detection"
       },
       {
-        "id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localisation and Mapping"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
   "wikilinks": [
     {

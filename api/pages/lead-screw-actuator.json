@@ -3,19 +3,18 @@
   "title": "Lead Screw Actuator",
   "slug": "lead-screw-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lead-screw-actuator",
+  "classIri": "urn:ngm:class:lead-screw-actuator",
   "domain": "robotics",
   "definition": "Lead screw actuator uses threaded rod for simple linear motion.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:electric-linear-actuator",
+      "id": "urn:ngm:class:electric-linear-actuator",
       "label": "Electric Linear Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

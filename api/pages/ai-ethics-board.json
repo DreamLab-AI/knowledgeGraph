@@ -3,19 +3,18 @@
   "title": "AI Ethics Board",
   "slug": "ai-ethics-board",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-ethics-board",
+  "classIri": "urn:ngm:class:ai-ethics-board",
   "domain": "artificial-intelligence",
-  "definition": "AI Ethics Board is a multidisciplinary oversight committee comprising technical experts, ethicists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ethical reviews of AI systems, providing guidance on ethical dilemmas, and exercising veto authority over AI deployments that violate ethical principles or organizational values. This governance body evaluates proposed AI systems against ethical frameworks, assesses potential harms and benefits, reviews fairness and bias implications, examines privacy and data protection compliance, and ensures alignment with responsible AI principles. The board operates through structured ethical review processes including proposal submission and screening, expert deliberation and assessment, stakeholder consultation and impact evaluation, ethical decision-making with documented rationale, and ongoing monitoring of deployed systems. Authority and scope typically include power to approve, conditionally approve with modifications, defer for additional information, or reject AI projects, mandate ethical impact assessments and fairness audits, require mitigation measures for identified risks, and escalat",
+  "definition": "AI ics Board is a multidisciplinary oversight committee comprising technical experts, icists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ical reviews of AI systems, providing guidance on ical dilemmas, and exercising veto authority over AI...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
+      "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

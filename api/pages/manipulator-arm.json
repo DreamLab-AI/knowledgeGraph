@@ -3,19 +3,18 @@
   "title": "Manipulator Arm",
   "slug": "manipulator-arm",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:manipulator-arm",
+  "classIri": "urn:ngm:class:manipulator-arm",
   "domain": "spatial-computing",
-  "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation and grasping in XR applications, exemplified by the Avatarm system enabling remote physical object manipulation whilst maintaining immersive virtual presence, and deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training simulators addressing challenges around latency, haptic feedback fidelity, and standardised interfaces for physical-virtual interaction.",
+  "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:avatar-wearable",
+      "id": "urn:ngm:class:avatar-wearable",
       "label": "Avatar Wearable"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

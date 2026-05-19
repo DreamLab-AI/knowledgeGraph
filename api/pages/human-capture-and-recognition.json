@@ -3,82 +3,91 @@
   "title": "Human Capture & Recognition",
   "slug": "human-capture-and-recognition",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-capture-and-recognition",
+  "classIri": "urn:ngm:class:human-capture-and-recognition",
   "domain": "spatial-computing",
   "definition": "Techniques for digitally acquiring and interpreting human appearance, motion, and biometric data for use in virtual and augmented environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:reality-capture",
+      "id": "urn:ngm:class:reality-capture",
       "label": "Reality Capture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-scanning",
+        "id": "urn:ngm:class:3-d-scanning",
         "label": "3D Scanning"
       },
       {
-        "id": "urn:visionflow:linked:biometric-analysis",
+        "id": "urn:ngm:class:biometric-analysis",
         "label": "Biometric Analysis"
       },
       {
-        "id": "urn:visionflow:linked:facial-recognition",
+        "id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition"
       },
       {
-        "id": "urn:visionflow:linked:reality-modeling",
+        "id": "urn:ngm:class:reality-modeling",
         "label": "Reality Modeling"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-tracking",
+        "id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:depth-cameras",
+        "id": "urn:ngm:class:depth-cameras",
         "label": "Depth Cameras"
       },
       {
-        "id": "urn:visionflow:linked:optical-sensors",
+        "id": "urn:ngm:class:optical-sensors",
         "label": "Optical Sensors"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning-models",
+        "id": "urn:ngm:class:machine-learning-models",
         "label": "Machine Learning Models"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-visualization",
+        "id": "urn:ngm:class:3-d-visualization",
         "label": "3D Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-creation",
+        "id": "urn:ngm:class:avatar-creation",
         "label": "Avatar Creation"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin-generation",
+        "id": "urn:ngm:class:digital-twin-generation",
         "label": "Digital Twin Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-identity",
+        "id": "urn:ngm:class:virtual-identity",
         "label": "Virtual Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reality-capture",
+        "label": "Reality Capture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

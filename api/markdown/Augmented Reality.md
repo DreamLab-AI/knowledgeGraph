@@ -140,62 +140,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:augmented-reality",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:augmented-reality",
+  "@type": "Class",
   "label": "Augmented Reality",
+  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c49800be1c4585cfef2523c311b410ff903bc646bf08ba59829b64374aa7384c"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:contextual-information-display",
+        "label": "Contextual Information Display"
+      },
+      {
+        "@id": "urn:ngm:class:remote-assistance",
+        "label": "Remote Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c49800be1c4585cfef2523c311b410ff903bc646bf08ba59829b64374aa7384c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems operate on three essentialities: coupling of real and virtual environments, real-time interaction, and precise 3D visualisation of virtual objects aligned with physical space.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:contextual-information-display",
-      "vc:label": "Contextual Information Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-assistance",
-      "vc:label": "Remote Assistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

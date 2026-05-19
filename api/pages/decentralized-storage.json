@@ -3,19 +3,18 @@
   "title": "Decentralized Storage",
   "slug": "decentralized-storage",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decentralized-storage",
+  "classIri": "urn:ngm:class:decentralized-storage",
   "domain": "infrastructure",
-  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure. [[Decentralised Storage]] networks such as [[IPFS]] and [[Filecoin]] provide [[Censorship Resistance]], [[Data Availability]], and [[User Sovereignty]] guarantees.",
+  "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

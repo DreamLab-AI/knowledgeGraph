@@ -3,28 +3,27 @@
   "title": "Cobot Safety Levels",
   "slug": "cobot-safety-levels",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cobot-safety-levels",
+  "classIri": "urn:ngm:class:cobot-safety-levels",
   "domain": "robotics",
   "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:safety-standard",
+      "id": "urn:ngm:class:safety-standard",
       "label": "Safety Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.98,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:safety-certification",
+        "id": "urn:ngm:class:safety-certification",
         "label": "Safety Certification"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
@@ -32,16 +31,21 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:force-limiting",
+        "id": "urn:ngm:class:force-limiting",
         "label": "Force Limiting"
       },
       {
-        "id": "urn:visionflow:linked:speed-monitoring",
+        "id": "urn:ngm:class:speed-monitoring",
         "label": "Speed Monitoring"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

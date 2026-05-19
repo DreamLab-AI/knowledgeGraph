@@ -192,106 +192,77 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stablecoin",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stablecoin",
+  "@type": "Class",
   "label": "Stablecoin",
+  "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:crypto-token",
-      "vc:label": "Crypto Token"
+      "@id": "urn:ngm:class:crypto-token",
+      "label": "Crypto Token"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3dd038b6119a27758d5e8177d5e8c8dfb3981352e0edce7120ffc1bb5df158bd"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collateral-reserves",
+        "label": "Collateral Reserves"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-transactions",
+        "label": "Cross-Border Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "@id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3dd038b6119a27758d5e8177d5e8c8dfb3981352e0edce7120ffc1bb5df158bd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:crypto-token",
-      "vc:label": "Crypto Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-currency",
-      "vc:label": "Virtual Currency"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:collateral-reserves",
-      "vc:label": "Collateral Reserves"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-oracle",
-      "vc:label": "Price Oracle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-transactions",
-      "vc:label": "Cross-Border Transactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-stability",
-      "vc:label": "Price Stability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:value-transfer",
-      "vc:label": "Value Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-commerce",
-      "vc:label": "Virtual Commerce"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:peg-mechanism",
-      "vc:label": "Peg Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-asset",
-      "vc:label": "Reserve Asset"
-    },
-    {
-      "@id": "urn:visionflow:linked:stabilization-algorithm",
-      "vc:label": "Stabilization Algorithm"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

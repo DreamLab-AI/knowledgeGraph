@@ -124,48 +124,19 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-compression",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-compression",
+  "@type": "Class",
   "label": "Data Compression",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b817ef7e9f1177a8c1370c6fa4c2669c896ec4a5ba5da76cb0dbd11a04f29e81"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b817ef7e9f1177a8c1370c6fa4c2669c896ec4a5ba5da76cb0dbd11a04f29e81@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information. Techniques include model quantization (reducing numerical precision), pruning (removing redundant parameters), knowledge distillation (training smaller models to mimic larger ones), and neural compression methods (autoencoders, learned compression). Data compression is critical for deploying AI on resource-constrained devices, reducing storage costs, accelerating inference, and minimizing energy consumption. Advanced approaches leverage entropy coding, sparsity exploitation, and learned representations for adaptive compression.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    }
-  ]
+  "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Search Discovery",
   "slug": "search-discovery",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:search-discovery",
+  "classIri": "urn:ngm:class:search-discovery",
   "domain": "spatial-computing",
   "definition": "Systems and interfaces that enable users to find relevant content, assets, experiences, and other users within metaverse platforms through keyword search, semantic queries, recommendations, and spatial exploration mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:information-retrieval",
+      "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-navigation",
+        "id": "urn:ngm:class:user-navigation",
         "label": "User Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

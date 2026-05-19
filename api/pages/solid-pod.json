@@ -3,99 +3,112 @@
   "title": "Solid Pod",
   "slug": "solid-pod",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:solid-pod",
+  "classIri": "urn:ngm:class:solid-pod",
   "domain": "infrastructure",
-  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), so that authorised applications can read and write data without the data ever leaving the owner's pod or being locked into any single application silo. In the [[VisionClaw Agentic Container]] architecture, Solid Pods serve as the personal context store for agent preference profiles, credential histories, and verifiable presentation caches, consumed via the [[Model Context Protocol]] tool surface.",
+  "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:linked-data-platform-resource",
+      "id": "urn:ngm:class:linked-data-platform-resource",
       "label": "Linked Data Platform Resource"
     },
     {
-      "id": "urn:visionflow:owl:class:personal-data-store",
+      "id": "urn:ngm:class:personal-data-store",
       "label": "Personal Data Store"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.65,
-  "authorityScore": 0.78,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acp-access-control-policy",
+        "id": "urn:ngm:class:acp-access-control-policy",
         "label": "ACP Access Control Policy"
       },
       {
-        "id": "urn:visionflow:linked:ldp-container",
+        "id": "urn:ngm:class:ldp-container",
         "label": "LDP Container"
       },
       {
-        "id": "urn:visionflow:linked:rdf-resource",
+        "id": "urn:ngm:class:rdf-resource",
         "label": "RDF Resource"
       },
       {
-        "id": "urn:visionflow:linked:wac-access-control-list",
+        "id": "urn:ngm:class:wac-access-control-list",
         "label": "WAC Access Control List"
       },
       {
-        "id": "urn:visionflow:linked:web-id-profile",
+        "id": "urn:ngm:class:web-id-profile",
         "label": "WebID Profile"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:http-protocol",
+        "id": "urn:ngm:class:http-protocol",
         "label": "HTTP Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rdf-data-model",
+        "id": "urn:ngm:class:rdf-data-model",
         "label": "RDF Data Model"
       },
       {
-        "id": "urn:visionflow:linked:turtle-serialisation",
+        "id": "urn:ngm:class:turtle-serialisation",
         "label": "Turtle Serialisation"
       },
       {
-        "id": "urn:visionflow:linked:web-id",
+        "id": "urn:ngm:class:web-id",
         "label": "WebID"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agent-personalisation",
+        "id": "urn:ngm:class:agent-personalisation",
         "label": "Agent Personalisation"
       },
       {
-        "id": "urn:visionflow:linked:data-sovereignty",
+        "id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-identity",
+        "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:visionflow:linked:interoperable-personal-data",
+        "id": "urn:ngm:class:interoperable-personal-data",
         "label": "Interoperable Personal Data"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:w3-c-linked-data-platform",
+        "id": "urn:ngm:class:w3-c-linked-data-platform",
         "label": "W3C Linked Data Platform"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-solid-protocol",
+        "id": "urn:ngm:class:w3-c-solid-protocol",
         "label": "W3C Solid Protocol"
       },
       {
-        "id": "urn:visionflow:linked:w3-c-web-access-control",
+        "id": "urn:ngm:class:w3-c-web-access-control",
         "label": "W3C Web Access Control"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-web-stack",
+        "label": "Decentralised Web Stack"
+      },
+      {
+        "id": "urn:ngm:class:solid-ecosystem",
+        "label": "Solid Ecosystem"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

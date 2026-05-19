@@ -3,19 +3,18 @@
   "title": "Bias Mitigation Techniques",
   "slug": "bias-mitigation-techniques",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bias-mitigation-techniques",
+  "classIri": "urn:ngm:class:bias-mitigation-techniques",
   "domain": "artificial-intelligence",
-  "definition": "Bias Mitigation Techniques are methods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline. These techniques are categorized into pre-processing methods (data transformation before training, including reweighting samples, resampling underrepresented groups, SMOTE for synthetic minority oversampling, and feature modification), in-processing methods (fairness constraints during model training, including regularization penalties, adversarial debiasing that trains models to be invariant to protected attributes, and constrained optimization), and post-processing methods (prediction adjustment after training, including threshold optimization for different groups and calibration techniques). Each approach involves tradeoffs between fairness improvement and predictive accuracy, with pre-processing methods typically preserving model flexibility but potentially discarding useful data, in-processing methods directly optimizing fairness-accuracy frontiers but requiring specialized algorithms, and post-processing methods being model-agnostic but potentially violating calibration. The ",
+  "definition": "Bias Mitigation Techniques are mods and interventions designed to reduce algorithmic bias and improve fairness in AI systems through modifications at different stages of the machine learning pipeline.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Community Practice",
   "slug": "virtual-community-practice",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-community-practice",
+  "classIri": "urn:ngm:class:virtual-community-practice",
   "domain": "spatial-computing",
-  "definition": "The methodologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
+  "definition": "The modologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:community-governance",
+      "id": "urn:ngm:class:community-governance",
       "label": "Community Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

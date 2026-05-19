@@ -3,19 +3,18 @@
   "title": "Digital Dualism",
   "slug": "digital-dualism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-dualism",
+  "classIri": "urn:ngm:class:digital-dualism",
   "domain": "spatial-computing",
-  "definition": "Digital Dualism is a concept within the mv domain. bridges-to:: [[Telecollaboration]]",
+  "definition": "Digital Dualism is a type of Metaverse in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

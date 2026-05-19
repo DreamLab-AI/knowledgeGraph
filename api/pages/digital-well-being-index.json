@@ -3,90 +3,103 @@
   "title": "Digital Well-Being Index",
   "slug": "digital-well-being-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-well-being-index",
+  "classIri": "urn:ngm:class:digital-well-being-index",
   "domain": "spatial-computing",
   "definition": "Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cognitive-load-measurements",
+        "id": "urn:ngm:class:cognitive-load-measurements",
         "label": "Cognitive Load Measurements"
       },
       {
-        "id": "urn:visionflow:linked:emotional-wellness-scores",
+        "id": "urn:ngm:class:emotional-wellness-scores",
         "label": "Emotional Wellness Scores"
       },
       {
-        "id": "urn:visionflow:linked:physical-activity-indicators",
+        "id": "urn:ngm:class:physical-activity-indicators",
         "label": "Physical Activity Indicators"
       },
       {
-        "id": "urn:visionflow:linked:screen-time-metrics",
+        "id": "urn:ngm:class:screen-time-metrics",
         "label": "Screen Time Metrics"
       },
       {
-        "id": "urn:visionflow:linked:sleep-impact-assessment",
+        "id": "urn:ngm:class:sleep-impact-assessment",
         "label": "Sleep Impact Assessment"
       },
       {
-        "id": "urn:visionflow:linked:social-engagement-scores",
+        "id": "urn:ngm:class:social-engagement-scores",
         "label": "Social Engagement Scores"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:behavioral-tracking",
+        "id": "urn:ngm:class:behavioral-tracking",
         "label": "Behavioral Tracking"
       },
       {
-        "id": "urn:visionflow:linked:health-data-integration",
+        "id": "urn:ngm:class:health-data-integration",
         "label": "Health Data Integration"
       },
       {
-        "id": "urn:visionflow:linked:temporal-analysis-tools",
+        "id": "urn:ngm:class:temporal-analysis-tools",
         "label": "Temporal Analysis Tools"
       },
       {
-        "id": "urn:visionflow:linked:usage-analytics",
+        "id": "urn:ngm:class:usage-analytics",
         "label": "Usage Analytics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:healthy-engagement-recommendations",
+        "id": "urn:ngm:class:healthy-engagement-recommendations",
         "label": "Healthy Engagement Recommendations"
       },
       {
-        "id": "urn:visionflow:linked:platform-health-reports",
+        "id": "urn:ngm:class:platform-health-reports",
         "label": "Platform Health Reports"
       },
       {
-        "id": "urn:visionflow:linked:usage-alerts",
+        "id": "urn:ngm:class:usage-alerts",
         "label": "Usage Alerts"
       },
       {
-        "id": "urn:visionflow:owl:class:parental-controls",
+        "id": "urn:ngm:class:parental-controls",
         "label": "Parental Controls"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-governance-framework",
+        "label": "Platform Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:user-health-monitoring-system",
+        "label": "User Health Monitoring System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

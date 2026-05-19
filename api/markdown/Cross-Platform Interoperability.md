@@ -144,72 +144,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-platform-interoperability",
+  "@type": "Class",
   "label": "Cross-Platform Interoperability",
+  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:next-generation-mobile",
-      "vc:label": "Next Generation Mobile"
+      "@id": "urn:ngm:class:next-generation-mobile",
+      "label": "Next Generation Mobile"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:relayer",
+        "label": "Relayer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:layer-0",
+        "label": "Layer 0"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5fc08920b9391f33c1b9e449563808e39b568862ccc9b2f4140ed91cd47f61ab@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:cross-chain-bridge",
-      "vc:label": "Cross-Chain Bridge"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:light-client",
-      "vc:label": "Light Client"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:relayer",
-      "vc:label": "Relayer"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:layer-0",
-      "vc:label": "Layer 0"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

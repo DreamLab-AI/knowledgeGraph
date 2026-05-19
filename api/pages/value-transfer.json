@@ -3,86 +3,90 @@
   "title": "Value Transfer",
   "slug": "value-transfer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:value-transfer",
+  "classIri": "urn:ngm:class:value-transfer",
   "domain": "blockchain",
   "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptocurrency",
+      "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 1.0,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:resource-allocation",
+        "id": "urn:ngm:class:resource-allocation",
         "label": "Resource Allocation"
       },
       {
-        "id": "urn:visionflow:linked:rights-transfer",
+        "id": "urn:ngm:class:rights-transfer",
         "label": "Rights Transfer"
       },
       {
-        "id": "urn:visionflow:owl:class:barter-system",
+        "id": "urn:ngm:class:barter-system",
         "label": "Barter System"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-currency",
+        "id": "urn:ngm:class:digital-currency",
         "label": "Digital Currency"
       },
       {
-        "id": "urn:visionflow:owl:class:money",
+        "id": "urn:ngm:class:money",
         "label": "Money"
       },
       {
-        "id": "urn:visionflow:owl:class:token",
+        "id": "urn:ngm:class:token",
         "label": "Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:transfer-protocol",
+        "id": "urn:ngm:class:transfer-protocol",
         "label": "Transfer Protocol"
       },
       {
-        "id": "urn:visionflow:linked:trust-mechanism",
+        "id": "urn:ngm:class:trust-mechanism",
         "label": "Trust Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:value-representation",
+        "id": "urn:ngm:class:value-representation",
         "label": "Value Representation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:commerce",
+        "id": "urn:ngm:class:commerce",
         "label": "Commerce"
       },
       {
-        "id": "urn:visionflow:linked:economic-exchange",
+        "id": "urn:ngm:class:economic-exchange",
         "label": "Economic Exchange"
       },
       {
-        "id": "urn:visionflow:linked:payment",
+        "id": "urn:ngm:class:payment",
         "label": "Payment"
       },
       {
-        "id": "urn:visionflow:linked:settlement",
+        "id": "urn:ngm:class:settlement",
         "label": "Settlement"
       },
       {
-        "id": "urn:visionflow:linked:trade",
+        "id": "urn:ngm:class:trade",
         "label": "Trade"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

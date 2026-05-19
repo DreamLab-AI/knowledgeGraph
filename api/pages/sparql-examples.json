@@ -3,19 +3,18 @@
   "title": "SPARQL EXAMPLES",
   "slug": "sparql-examples",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sparql-examples",
+  "classIri": "urn:ngm:class:sparql-examples",
   "domain": "spatial-computing",
-  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale. Standardised by the [[W3C|World Wide Web Consortium]], SPARQL supports diverse query operations including [[SELECTQuery|SELECT]], [[CONSTRUCTQuery|CONSTRUCT]], [[ASKQuery|ASK]], and [[DESCRIBEQuery|DESCRIBE]] to extract, transform, and explore interconnected data from heterogeneous sources. Applications span semantic web research, [[LinkedData|linked data]] integration, and [[KnowledgeGraphQuerying|knowledge graph exploration]] across domains from bioinformatics to cultural heritage and blockchain ontologies.",
+  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:semantic-web-standards",
+      "id": "urn:ngm:class:semantic-web-standards",
       "label": "Semantic Web Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

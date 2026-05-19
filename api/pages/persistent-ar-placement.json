@@ -3,32 +3,36 @@
   "title": "Persistent AR Placement",
   "slug": "persistent-ar-placement",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:persistent-ar-placement",
+  "classIri": "urn:ngm:class:persistent-ar-placement",
   "domain": "spatial-computing",
   "definition": "The capability to anchor augmented reality content at specific real-world locations that persists across sessions and devices, using cloud-stored spatial anchors and environmental mapping to enable shared, location-based AR experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:augmented-reality",
+      "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:shared-ar-experiences",
+        "id": "urn:ngm:class:shared-ar-experiences",
         "label": "Shared AR Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

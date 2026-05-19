@@ -3,86 +3,90 @@
   "title": "Electric Motor",
   "slug": "electric-motor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:electric-motor",
+  "classIri": "urn:ngm:class:electric-motor",
   "domain": "robotics",
-  "definition": "Electric motor converts electrical energy into rotational mechanical power through electromagnetic forces, forming the most widespread actuation technology in modern robotics. Motors operate across a spectrum of designs\u2014from simple brush DC motors to complex brushless variants and AC induction motors\u2014each offering different efficiency, control characteristics, and power-to-weight performance trade-offs suitable for varied robotic applications.",
+  "definition": "Electric motor converts electrical energy into rotational mechanical power through electromagnetic forces, forming the most widespread actuation technology in modern robotics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:rotating-machinery",
+      "id": "urn:ngm:class:rotating-machinery",
       "label": "Rotating Machinery"
     },
     {
-      "id": "urn:visionflow:owl:class:electric-actuator",
+      "id": "urn:ngm:class:electric-actuator",
       "label": "Electric Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bearings",
+        "id": "urn:ngm:class:bearings",
         "label": "Bearings"
       },
       {
-        "id": "urn:visionflow:linked:power-terminals",
+        "id": "urn:ngm:class:power-terminals",
         "label": "Power Terminals"
       },
       {
-        "id": "urn:visionflow:linked:rotor",
+        "id": "urn:ngm:class:rotor",
         "label": "Rotor"
       },
       {
-        "id": "urn:visionflow:linked:shaft",
+        "id": "urn:ngm:class:shaft",
         "label": "Shaft"
       },
       {
-        "id": "urn:visionflow:linked:stator",
+        "id": "urn:ngm:class:stator",
         "label": "Stator"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:electrical-power-supply",
+        "id": "urn:ngm:class:electrical-power-supply",
         "label": "Electrical Power Supply"
       },
       {
-        "id": "urn:visionflow:linked:heat-dissipation",
+        "id": "urn:ngm:class:heat-dissipation",
         "label": "Heat Dissipation"
       },
       {
-        "id": "urn:visionflow:linked:mechanical-load",
+        "id": "urn:ngm:class:mechanical-load",
         "label": "Mechanical Load"
       },
       {
-        "id": "urn:visionflow:linked:motor-driver-electronics",
+        "id": "urn:ngm:class:motor-driver-electronics",
         "label": "Motor Driver Electronics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:joint-actuation",
+        "id": "urn:ngm:class:joint-actuation",
         "label": "Joint Actuation"
       },
       {
-        "id": "urn:visionflow:linked:rotational-motion",
+        "id": "urn:ngm:class:rotational-motion",
         "label": "Rotational Motion"
       },
       {
-        "id": "urn:visionflow:linked:speed-control",
+        "id": "urn:ngm:class:speed-control",
         "label": "Speed Control"
       },
       {
-        "id": "urn:visionflow:linked:torque-generation",
+        "id": "urn:ngm:class:torque-generation",
         "label": "Torque Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

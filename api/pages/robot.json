@@ -3,19 +3,18 @@
   "title": "Robot",
   "slug": "robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot",
+  "classIri": "urn:ngm:class:robot",
   "domain": "robotics",
   "definition": "A robot is an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 1.0,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,21 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mechatronic-system",
+        "label": "MechatronicSystem"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "AutonomousAgent"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

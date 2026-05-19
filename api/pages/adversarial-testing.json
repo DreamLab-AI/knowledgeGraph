@@ -3,19 +3,18 @@
   "title": "Adversarial Testing",
   "slug": "adversarial-testing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adversarial-testing",
+  "classIri": "urn:ngm:class:adversarial-testing",
   "domain": "artificial-intelligence",
-  "definition": "Testing methodology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
+  "definition": "Testing modology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-safety",
+      "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

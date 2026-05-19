@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:optical-calibration-target",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:optical-calibration-target",
+  "@type": "Class",
   "label": "Optical Calibration Target",
+  "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:calibration-equipment",
-      "vc:label": "Calibration Equipment"
+      "@id": "urn:ngm:class:calibration-equipment",
+      "label": "Calibration Equipment"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a3862e9998f0e78f264c86ff2e1dc495d5138662ea21d6e7bd9fc7d44183b163"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:optical-system-accuracy",
+        "label": "Optical System Accuracy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a3862e9998f0e78f264c86ff2e1dc495d5138662ea21d6e7bd9fc7d44183b163@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:optical-system-accuracy",
-      "vc:label": "Optical System Accuracy"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

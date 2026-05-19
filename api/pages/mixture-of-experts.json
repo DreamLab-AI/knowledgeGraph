@@ -3,19 +3,18 @@
   "title": "Mixture of Experts",
   "slug": "mixture-of-experts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mixture-of-experts",
+  "classIri": "urn:ngm:class:mixture-of-experts",
   "domain": "artificial-intelligence",
   "definition": "An architecture that uses multiple specialised sub-networks (experts) with a gating mechanism that routes inputs to a sparse subset of experts, enabling scaling without proportional compute increases. MoE is adopted in production LLMs like GPT-4, enabling massive scale with controlled costs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-architecture",
+      "id": "urn:ngm:class:model-architecture",
       "label": "Model Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

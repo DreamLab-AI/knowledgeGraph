@@ -3,32 +3,36 @@
   "title": "Spatial Mesh",
   "slug": "spatial-mesh",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-mesh",
+  "classIri": "urn:ngm:class:spatial-mesh",
   "domain": "spatial-computing",
   "definition": "A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ar-occlusion",
+        "id": "urn:ngm:class:ar-occlusion",
         "label": "AR Occlusion"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Transparent Revenue Sharing",
   "slug": "transparent-revenue-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparent-revenue-sharing",
+  "classIri": "urn:ngm:class:transparent-revenue-sharing",
   "domain": "spatial-computing",
-  "definition": "A financial distribution model where revenue allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
+  "definition": "A financial distribution model where allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:revenue-distribution",
+      "id": "urn:ngm:class:revenue-distribution",
       "label": "Revenue Distribution"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

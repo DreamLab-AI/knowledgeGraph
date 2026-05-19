@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-tour",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-tour",
+  "@type": "Class",
   "label": "Virtual Tour",
+  "definition": "An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersive-experience",
-      "vc:label": "Immersive Experience"
+      "@id": "urn:ngm:class:immersive-experience",
+      "label": "Immersive Experience"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:53b6abce1251f0078207f17be8d754e1a80535bc2b941fc0f7c8569b32c841eb"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:53b6abce1251f0078207f17be8d754e1a80535bc2b941fc0f7c8569b32c841eb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

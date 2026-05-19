@@ -3,19 +3,18 @@
   "title": "Fault Tolerance System",
   "slug": "fault-tolerance-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fault-tolerance-system",
+  "classIri": "urn:ngm:class:fault-tolerance-system",
   "domain": "blockchain",
-  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants. Fault tolerance is essential for blockchain systems that must maintain availability and consistency across geographically distributed nodes operating in adversarial environments without centralized recovery mechanisms. These systems employ redundancy (replicating data and computation across multiple nodes), error detection (identifying when failures occur), error recovery (restoring correct state after failures), and failure masking (hiding failures from users through automatic compensation). Fault tolerance systems are classified by failure models: crash faults (nodes stop operating but don't send incorrect information), omission faults (nodes fail to send or receive messages), timing faults (nodes operate correctly but too slowly), and Byzantine faults (nodes exhibit arbitrary malicious behavior including sending conflicting information). Blockchain fault tolerance systems must typically handle Byzantine failures since blockchain operates in adversarial environ",
+  "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

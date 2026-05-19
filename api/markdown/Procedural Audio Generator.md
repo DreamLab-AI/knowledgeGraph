@@ -188,112 +188,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:procedural-audio-generator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:procedural-audio-generator",
+  "@type": "Class",
   "label": "Procedural Audio Generator",
+  "definition": "System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bebe51a3abb188209ee848894b2a7f8e0592543f47a5a4ae1e28befcf726bb8e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audio-synthesis-engine",
+        "label": "Audio Synthesis Engine"
+      },
+      {
+        "@id": "urn:ngm:class:context-analysis-module",
+        "label": "Context Analysis Module"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-mixer",
+        "label": "Real-Time Mixer"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-modulation-system",
+        "label": "Parameter Modulation System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-api",
+        "label": "Audio API"
+      },
+      {
+        "@id": "urn:ngm:class:context-awareness-system",
+        "label": "Context Awareness System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-soundscapes",
+        "label": "Dynamic Soundscapes"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-audio",
+        "label": "Interactive Audio"
+      },
+      {
+        "@id": "urn:ngm:class:responsive-sound-effects",
+        "label": "Responsive Sound Effects"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:audio-rendering-pipeline",
+        "label": "Audio Rendering Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bebe51a3abb188209ee848894b2a7f8e0592543f47a5a4ae1e28befcf726bb8e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:audio-rendering-pipeline",
-      "vc:label": "Audio Rendering Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audio-synthesis-engine",
-      "vc:label": "Audio Synthesis Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:context-analysis-module",
-      "vc:label": "Context Analysis Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-mixer",
-      "vc:label": "Real-Time Mixer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parameter-modulation-system",
-      "vc:label": "Parameter Modulation System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-api",
-      "vc:label": "Audio API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-awareness-system",
-      "vc:label": "Context Awareness System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signal-processing",
-      "vc:label": "Digital Signal Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-music",
-      "vc:label": "Adaptive Music"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-soundscapes",
-      "vc:label": "Dynamic Soundscapes"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-audio",
-      "vc:label": "Interactive Audio"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsive-sound-effects",
-      "vc:label": "Responsive Sound Effects"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:event-system",
-      "vc:label": "Event System"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthesis-algorithms",
-      "vc:label": "Synthesis Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audio-parameters",
-      "vc:label": "Audio Parameters"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

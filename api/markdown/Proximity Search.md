@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:proximity-search",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:proximity-search",
+  "@type": "Class",
   "label": "Proximity Search",
+  "definition": "Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing mods such as geohashing and quadtree structures for efficient location-based service applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:geospatial-technology",
-      "vc:label": "Geospatial Technology"
+      "@id": "urn:ngm:class:geospatial-technology",
+      "label": "Geospatial Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d3228437c2ecf783c5d95fe345ec60373fc61ecfe1254b64edc74e27db3d13a8"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:nearby-discovery",
+        "label": "Nearby Discovery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d3228437c2ecf783c5d95fe345ec60373fc61ecfe1254b64edc74e27db3d13a8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing methods such as geohashing and quadtree structures for efficient location-based service applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:nearby-discovery",
-      "vc:label": "Nearby Discovery"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

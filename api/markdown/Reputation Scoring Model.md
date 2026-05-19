@@ -196,116 +196,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reputation-scoring-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reputation-scoring-model",
+  "@type": "Class",
   "label": "Reputation Scoring Model",
+  "definition": "An algorithmic process that computes quantitative reputation scores by aggregating behavioral data, applying weighted scoring functions, implementing temporal decay, and evaluating threshold conditions to generate trust indicators for entities in virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:113e1ddc3a7e833df9098618e427ecbc4ebd412ed7c820ac701a992000a6e240"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behavioral-data-aggregator",
+        "label": "Behavioral Data Aggregator"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-decay-engine",
+        "label": "Temporal Decay Engine"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-evaluator",
+        "label": "Threshold Evaluator"
+      },
+      {
+        "@id": "urn:ngm:class:weighted-scoring-function",
+        "label": "Weighted Scoring Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:behavioral-models",
+        "label": "Behavioral Models"
+      },
+      {
+        "@id": "urn:ngm:class:scoring-algorithms",
+        "label": "Scoring Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:validation-rules",
+        "label": "Validation Rules"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-data",
+        "label": "Reputation Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:access-control-decisions",
+        "label": "Access Control Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:governance-voting-weight",
+        "label": "Governance Voting Weight"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:trust-score-metric",
+        "label": "Trust Score Metric"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:113e1ddc3a7e833df9098618e427ecbc4ebd412ed7c820ac701a992000a6e240@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An algorithmic process that computes quantitative reputation scores by aggregating behavioral data, applying weighted scoring functions, implementing temporal decay, and evaluating threshold conditions to generate trust indicators for entities in virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-data-aggregator",
-      "vc:label": "Behavioral Data Aggregator"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-decay-engine",
-      "vc:label": "Temporal Decay Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-evaluator",
-      "vc:label": "Threshold Evaluator"
-    },
-    {
-      "@id": "urn:visionflow:linked:weighted-scoring-function",
-      "vc:label": "Weighted Scoring Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-models",
-      "vc:label": "Behavioral Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:scoring-algorithms",
-      "vc:label": "Scoring Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-rules",
-      "vc:label": "Validation Rules"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-data",
-      "vc:label": "Reputation Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:access-control-decisions",
-      "vc:label": "Access Control Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-voting-weight",
-      "vc:label": "Governance Voting Weight"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-score-metric",
-      "vc:label": "Trust Score Metric"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-collection-pipeline",
-      "vc:label": "Data Collection Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:metric-computation",
-      "vc:label": "Metric Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-analysis",
-      "vc:label": "Statistical Analysis"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

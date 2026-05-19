@@ -3,70 +3,79 @@
   "title": "Visualization Layer",
   "slug": "visualization-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:visualization-layer",
+  "classIri": "urn:ngm:class:visualization-layer",
   "domain": "spatial-computing",
   "definition": "Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:display-manager",
+        "id": "urn:ngm:class:display-manager",
         "label": "Display Manager"
       },
       {
-        "id": "urn:visionflow:linked:graphics-pipeline",
+        "id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:shader-system",
+        "id": "urn:ngm:class:shader-system",
         "label": "Shader System"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-engine",
+        "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-resources",
+        "id": "urn:ngm:class:gpu-resources",
         "label": "GPU Resources"
       },
       {
-        "id": "urn:visionflow:owl:class:display-hardware",
+        "id": "urn:ngm:class:display-hardware",
         "label": "Display Hardware"
       },
       {
-        "id": "urn:visionflow:owl:class:graphics-api",
+        "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-interface-rendering",
+        "id": "urn:ngm:class:user-interface-rendering",
         "label": "User Interface Rendering"
       },
       {
-        "id": "urn:visionflow:linked:visual-output",
+        "id": "urn:ngm:class:visual-output",
         "label": "Visual Output"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:presentation-infrastructure",
+        "label": "Presentation Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

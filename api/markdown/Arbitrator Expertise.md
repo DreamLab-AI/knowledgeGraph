@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:arbitrator-expertise",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:arbitrator-expertise",
+  "@type": "Class",
   "label": "Arbitrator Expertise",
+  "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:professional-qualification",
-      "vc:label": "Professional Qualification"
+      "@id": "urn:ngm:class:professional-qualification",
+      "label": "Professional Qualification"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef2902f7cbc0b491a1e01606c6e29c5aca6d682c845d19b3b02e00121152ec14"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-knowledge",
+        "label": "Blockchain Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:industry-experience",
+        "label": "Industry Experience"
+      },
+      {
+        "@id": "urn:ngm:class:legal-training",
+        "label": "Legal Training"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fair-outcomes",
+        "label": "Fair Outcomes"
+      },
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:technical-evidence-evaluation",
+        "label": "Technical Evidence Evaluation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef2902f7cbc0b491a1e01606c6e29c5aca6d682c845d19b3b02e00121152ec14@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-knowledge",
-      "vc:label": "Blockchain Knowledge"
-    },
-    {
-      "@id": "urn:visionflow:linked:industry-experience",
-      "vc:label": "Industry Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-training",
-      "vc:label": "Legal Training"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fair-outcomes",
-      "vc:label": "Fair Outcomes"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-decision-making",
-      "vc:label": "Informed Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-evidence-evaluation",
-      "vc:label": "Technical Evidence Evaluation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

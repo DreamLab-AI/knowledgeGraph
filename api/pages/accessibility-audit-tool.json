@@ -3,74 +3,83 @@
   "title": "Accessibility Audit Tool",
   "slug": "accessibility-audit-tool",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accessibility-audit-tool",
+  "classIri": "urn:ngm:class:accessibility-audit-tool",
   "domain": "spatial-computing",
   "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:automated-testing-engine",
+        "id": "urn:ngm:class:automated-testing-engine",
         "label": "Automated Testing Engine"
       },
       {
-        "id": "urn:visionflow:linked:report-generator",
+        "id": "urn:ngm:class:report-generator",
         "label": "Report Generator"
       },
       {
-        "id": "urn:visionflow:linked:wcag-validator",
+        "id": "urn:ngm:class:wcag-validator",
         "label": "WCAG Validator"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-dashboard",
+        "id": "urn:ngm:class:compliance-dashboard",
         "label": "Compliance Dashboard"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:testing-framework",
+        "id": "urn:ngm:class:testing-framework",
         "label": "Testing Framework"
       },
       {
-        "id": "urn:visionflow:linked:user-interface-analyzer",
+        "id": "urn:ngm:class:user-interface-analyzer",
         "label": "User Interface Analyzer"
       },
       {
-        "id": "urn:visionflow:owl:class:accessibility-standards",
+        "id": "urn:ngm:class:accessibility-standards",
         "label": "Accessibility Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accessibility-reporting",
+        "id": "urn:ngm:class:accessibility-reporting",
         "label": "Accessibility Reporting"
       },
       {
-        "id": "urn:visionflow:linked:inclusive-design",
+        "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quality-assurance-toolchain",
+        "label": "Quality Assurance Toolchain"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

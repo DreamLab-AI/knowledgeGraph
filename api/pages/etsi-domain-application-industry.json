@@ -3,36 +3,45 @@
   "title": "ETSI Domain Application + Industry",
   "slug": "etsi-domain-application-industry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-application-industry",
+  "classIri": "urn:ngm:class:etsi-domain-application-industry",
   "domain": "spatial-computing",
   "definition": "Cross-domain marker for metaverse application components focused on industrial applications including manufacturing simulations, industrial digital twins, predictive maintenance, remote operations, and industrial training systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:industrial-application-classification",
+        "id": "urn:ngm:class:industrial-application-classification",
         "label": "Industrial Application Classification"
       },
       {
-        "id": "urn:visionflow:linked:manufacturing-platform-categorization",
+        "id": "urn:ngm:class:manufacturing-platform-categorization",
         "label": "Manufacturing Platform Categorization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

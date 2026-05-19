@@ -3,19 +3,13 @@
   "title": "Data Structure",
   "slug": "data-structure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-structure",
+  "classIri": "urn:ngm:class:data-structure",
   "domain": "artificial-intelligence",
-  "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

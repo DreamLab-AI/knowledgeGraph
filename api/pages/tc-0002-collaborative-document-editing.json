@@ -3,57 +3,61 @@
   "title": "tc 0002 collaborative document editing",
   "slug": "tc-0002-collaborative-document-editing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tc-0002-collaborative-document-editing",
+  "classIri": "urn:ngm:class:tc-0002-collaborative-document-editing",
   "domain": "distributed-collaboration",
-  "definition": "**Collaborative Document Editing** - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
+  "definition": "Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:knowledge-co-creation",
+      "id": "urn:ngm:class:knowledge-co-creation",
       "label": "Knowledge Co-Creation"
     },
     {
-      "id": "urn:visionflow:owl:class:remote-collaboration",
+      "id": "urn:ngm:class:remote-collaboration",
       "label": "Remote Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:comments",
+        "id": "urn:ngm:class:comments",
         "label": "Comments"
       },
       {
-        "id": "urn:visionflow:linked:version-history",
+        "id": "urn:ngm:class:version-history",
         "label": "Version History"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:distributed-teamwork",
+        "id": "urn:ngm:class:distributed-teamwork",
         "label": "Distributed Teamwork"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-building",
+        "id": "urn:ngm:class:knowledge-building",
         "label": "Knowledge Building"
       },
       {
-        "id": "urn:visionflow:linked:peer-learning",
+        "id": "urn:ngm:class:peer-learning",
         "label": "Peer Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

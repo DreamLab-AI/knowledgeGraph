@@ -3,78 +3,91 @@
   "title": "Provenance Verification",
   "slug": "provenance-verification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:provenance-verification",
+  "classIri": "urn:ngm:class:provenance-verification",
   "domain": "spatial-computing",
   "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:authenticity-checking",
+        "id": "urn:ngm:class:authenticity-checking",
         "label": "Authenticity Checking"
       },
       {
-        "id": "urn:visionflow:linked:chain-of-custody-tracking",
+        "id": "urn:ngm:class:chain-of-custody-tracking",
         "label": "Chain of Custody Tracking"
       },
       {
-        "id": "urn:visionflow:linked:ledger-record-verification",
+        "id": "urn:ngm:class:ledger-record-verification",
         "label": "Ledger Record Verification"
       },
       {
-        "id": "urn:visionflow:linked:metadata-validation",
+        "id": "urn:ngm:class:metadata-validation",
         "label": "Metadata Validation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:timestamp-authority",
+        "id": "urn:ngm:class:timestamp-authority",
         "label": "Timestamp Authority"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signatures",
+        "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-authentication",
+        "id": "urn:ngm:class:asset-authentication",
         "label": "Asset Authentication"
       },
       {
-        "id": "urn:visionflow:linked:compliance-auditing",
+        "id": "urn:ngm:class:compliance-auditing",
         "label": "Compliance Auditing"
       },
       {
-        "id": "urn:visionflow:linked:ownership-validation",
+        "id": "urn:ngm:class:ownership-validation",
         "label": "Ownership Validation"
       },
       {
-        "id": "urn:visionflow:linked:trust-establishment",
+        "id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

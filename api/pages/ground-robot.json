@@ -3,159 +3,263 @@
   "title": "Ground Robot",
   "slug": "ground-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ground-robot",
+  "classIri": "urn:ngm:class:ground-robot",
   "domain": "robotics",
-  "definition": "Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks \u2014 including material transport, environmental inspection, search and rescue, precision agriculture, planetary exploration, and armed force support \u2014 across indoor, outdoor, and extreme off-road conditions. Ground robots span a capability spectrum from centimetre-scale research platforms to multi-tonne industrial autonomous guided vehicles (AGVs) and military unmanned ground vehicles (UGVs), distinguished from [[Aerial Robot]] (UAV/drone) and [[Marine Robot]] (USV/AUV) classes by their reliance on surface contact for locomotion and their coupling with ground-terrain mechanics including traction, slip, and obstacle negotiation. The field integrates [[Simultaneous Localisation and Mapping]] (SLAM), [[Motion Planning]], [[Computer Vision]], [[Lidar]], [[Inertial Measurement Unit]] fusion, and increasingly [[Foundation Models]] for natural-language task specification, constituting one of the largest segments of the global robotics market \u2014 projected by IDC to exce",
+  "definition": "Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks \u2014 including material transport, environmental inspection, search and r...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:autonomous-systems",
+      "id": "urn:ngm:class:autonomous-systems",
       "label": "Autonomous Systems"
     },
     {
-      "id": "urn:visionflow:linked:embodied-ai",
+      "id": "urn:ngm:class:embodied-ai",
       "label": "Embodied AI"
-    },
-    {
-      "id": "urn:visionflow:linked:unmanned-ground-vehicle",
-      "label": "Unmanned Ground Vehicle"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:communication-interface",
+        "id": "urn:ngm:class:communication-interface",
         "label": "Communication Interface"
       },
       {
-        "id": "urn:visionflow:linked:locomotion-mechanism",
+        "id": "urn:ngm:class:locomotion-mechanism",
         "label": "Locomotion Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:navigation-stack",
+        "id": "urn:ngm:class:navigation-stack",
         "label": "Navigation Stack"
       },
       {
-        "id": "urn:visionflow:linked:power-system",
+        "id": "urn:ngm:class:power-system",
         "label": "Power System"
       },
       {
-        "id": "urn:visionflow:linked:safety-system",
+        "id": "urn:ngm:class:safety-system",
         "label": "Safety System"
       },
       {
-        "id": "urn:visionflow:linked:task-planner",
+        "id": "urn:ngm:class:task-planner",
         "label": "Task Planner"
       },
       {
-        "id": "urn:visionflow:owl:class:manipulator-arm",
+        "id": "urn:ngm:class:manipulator-arm",
         "label": "Manipulator Arm"
       },
       {
-        "id": "urn:visionflow:owl:class:perception-system",
+        "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:battery-management-system",
+        "id": "urn:ngm:class:battery-management-system",
         "label": "Battery Management System"
       },
       {
-        "id": "urn:visionflow:linked:localisation",
+        "id": "urn:ngm:class:localisation",
         "label": "Localisation"
       },
       {
-        "id": "urn:visionflow:linked:terrain-interaction-model",
+        "id": "urn:ngm:class:terrain-interaction-model",
         "label": "Terrain Interaction Model"
       },
       {
-        "id": "urn:visionflow:linked:traction-control",
+        "id": "urn:ngm:class:traction-control",
         "label": "Traction Control"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:obstacle-avoidance",
+        "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agricultural-robotics",
+        "id": "urn:ngm:class:agricultural-robotics",
         "label": "Agricultural Robotics"
       },
       {
-        "id": "urn:visionflow:linked:infrastructure-inspection",
+        "id": "urn:ngm:class:infrastructure-inspection",
         "label": "Infrastructure Inspection"
       },
       {
-        "id": "urn:visionflow:linked:material-transport",
+        "id": "urn:ngm:class:material-transport",
         "label": "Material Transport"
       },
       {
-        "id": "urn:visionflow:linked:military-operations",
+        "id": "urn:ngm:class:military-operations",
         "label": "Military Operations"
       },
       {
-        "id": "urn:visionflow:linked:planetary-exploration",
+        "id": "urn:ngm:class:planetary-exploration",
         "label": "Planetary Exploration"
       },
       {
-        "id": "urn:visionflow:linked:search-and-rescue",
+        "id": "urn:ngm:class:search-and-rescue",
         "label": "Search and Rescue"
       },
       {
-        "id": "urn:visionflow:linked:warehouse-automation",
+        "id": "urn:ngm:class:warehouse-automation",
         "label": "Warehouse Automation"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:cartographer-slam",
+        "id": "urn:ngm:class:cartographer-slam",
         "label": "Cartographer SLAM"
       },
       {
-        "id": "urn:visionflow:linked:deep-reinforcement-learning",
+        "id": "urn:ngm:class:deep-reinforcement-learning",
         "label": "Deep Reinforcement Learning"
       },
       {
-        "id": "urn:visionflow:linked:model-predictive-control",
+        "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
       },
       {
-        "id": "urn:visionflow:linked:nav2-navigation-stack",
+        "id": "urn:ngm:class:nav2-navigation-stack",
         "label": "Nav2 Navigation Stack"
       },
       {
-        "id": "urn:visionflow:linked:ros-2",
+        "id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
       },
       {
-        "id": "urn:visionflow:linked:rtab-map",
+        "id": "urn:ngm:class:rtab-map",
         "label": "RTAB-Map"
       },
       {
-        "id": "urn:visionflow:linked:whole-body-control",
+        "id": "urn:ngm:class:whole-body-control",
         "label": "Whole-Body Control"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gazebo-simulation",
+        "label": "Gazebo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:move-it2",
+        "label": "MoveIt2"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-isaac-sim",
+        "label": "NVIDIA Isaac Sim"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "id": "urn:ngm:class:pcl-point-cloud-library",
+        "label": "PCL Point Cloud Library"
+      },
+      {
+        "id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:slam-toolbox",
+        "label": "SLAM Toolbox"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disaster-response",
+        "label": "Disaster Response"
+      },
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:scientific-exploration",
+        "label": "Scientific Exploration"
+      },
+      {
+        "id": "urn:ngm:class:security-patrol",
+        "label": "Security Patrol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ansi-ria-r15-08",
+        "label": "ANSI/RIA R15.08"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:ieee-1872-2015",
+        "label": "IEEE 1872-2015"
+      },
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "id": "urn:ngm:class:iso-3691-4",
+        "label": "ISO 3691-4"
+      },
+      {
+        "id": "urn:ngm:class:ul-3100",
+        "label": "UL 3100"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ]
   },
   "wikilinks": [
     {

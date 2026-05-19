@@ -3,147 +3,263 @@
   "title": "Sampling",
   "slug": "sampling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sampling",
+  "classIri": "urn:ngm:class:sampling",
   "domain": "artificial-intelligence",
-  "definition": "Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions \u2014 ranging from classical Markov chain Monte Carlo methods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential methods (Sequential Monte Carlo, particle filters) through information-geometric approaches (importance sampling, rejection sampling, nested sampling, quasi-Monte Carlo via Sobol sequences, Latin Hypercube sampling) to the domain-specific decoding strategies used in autoregressive language models (temperature scaling, top-k truncation, nucleus/top-p filtering, min-p dynamic thresholding, mirostat adaptive entropy control, eta sampling) and diffusion model schedulers (DDIM deterministic inversion, DPM-Solver fast ODE integrators, Euler/Euler-a, Heun second-order corrector, Karras EDM Restart sampler).",
+  "definition": "Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions \u2014 ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:numerical-methods",
+      "id": "urn:ngm:class:numerical-methods",
       "label": "Numerical Methods"
     },
     {
-      "id": "urn:visionflow:linked:stochastic-processes",
+      "id": "urn:ngm:class:stochastic-processes",
       "label": "Stochastic Processes"
-    },
-    {
-      "id": "urn:visionflow:owl:class:probabilistic-model",
-      "label": "Probabilistic Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:autoregressive-sampling",
+        "id": "urn:ngm:class:autoregressive-sampling",
         "label": "Autoregressive Sampling"
       },
       {
-        "id": "urn:visionflow:linked:importance-sampling",
+        "id": "urn:ngm:class:importance-sampling",
         "label": "Importance Sampling"
       },
       {
-        "id": "urn:visionflow:linked:markov-chain-monte-carlo",
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
         "label": "Markov Chain Monte Carlo"
       },
       {
-        "id": "urn:visionflow:linked:nested-sampling",
+        "id": "urn:ngm:class:nested-sampling",
         "label": "Nested Sampling"
       },
       {
-        "id": "urn:visionflow:linked:quasi-monte-carlo",
+        "id": "urn:ngm:class:quasi-monte-carlo",
         "label": "Quasi-Monte Carlo"
       },
       {
-        "id": "urn:visionflow:linked:rejection-sampling",
+        "id": "urn:ngm:class:rejection-sampling",
         "label": "Rejection Sampling"
       },
       {
-        "id": "urn:visionflow:linked:sequential-monte-carlo",
+        "id": "urn:ngm:class:sequential-monte-carlo",
         "label": "Sequential Monte Carlo"
       },
       {
-        "id": "urn:visionflow:owl:class:diffusion-models",
+        "id": "urn:ngm:class:diffusion-models",
         "label": "Diffusion Models"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:convergence-criterion",
+        "id": "urn:ngm:class:convergence-criterion",
         "label": "Convergence Criterion"
       },
       {
-        "id": "urn:visionflow:linked:probability-distribution",
+        "id": "urn:ngm:class:probability-distribution",
         "label": "Probability Distribution"
       },
       {
-        "id": "urn:visionflow:linked:proposal-distribution",
+        "id": "urn:ngm:class:proposal-distribution",
         "label": "Proposal Distribution"
       },
       {
-        "id": "urn:visionflow:linked:random-number-generator",
+        "id": "urn:ngm:class:random-number-generator",
         "label": "Random Number Generator"
       },
       {
-        "id": "urn:visionflow:linked:target-density",
+        "id": "urn:ngm:class:target-density",
         "label": "Target Density"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bayesian-inference",
+        "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
       },
       {
-        "id": "urn:visionflow:linked:uncertainty-quantification",
+        "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "id": "urn:visionflow:owl:class:particle-filter",
+        "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:ddim",
+        "id": "urn:ngm:class:ddim",
         "label": "DDIM"
       },
       {
-        "id": "urn:visionflow:linked:dpm-solver",
+        "id": "urn:ngm:class:dpm-solver",
         "label": "DPM-Solver"
       },
       {
-        "id": "urn:visionflow:linked:gibbs-sampling",
+        "id": "urn:ngm:class:gibbs-sampling",
         "label": "Gibbs Sampling"
       },
       {
-        "id": "urn:visionflow:linked:hamiltonian-monte-carlo",
+        "id": "urn:ngm:class:hamiltonian-monte-carlo",
         "label": "Hamiltonian Monte Carlo"
       },
       {
-        "id": "urn:visionflow:linked:metropolis-hastings-algorithm",
+        "id": "urn:ngm:class:metropolis-hastings-algorithm",
         "label": "Metropolis-Hastings Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:nucleus-sampling",
+        "id": "urn:ngm:class:nucleus-sampling",
         "label": "Nucleus Sampling"
       },
       {
-        "id": "urn:visionflow:linked:nuts",
+        "id": "urn:ngm:class:nuts",
         "label": "NUTS"
       },
       {
-        "id": "urn:visionflow:linked:speculative-decoding",
+        "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:gradient-information",
+        "label": "Gradient Information"
+      },
+      {
+        "id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:ngm:class:score-function",
+        "label": "Score Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:num-pyro",
+        "label": "NumPyro"
+      },
+      {
+        "id": "urn:ngm:class:py-mc",
+        "label": "PyMC"
+      },
+      {
+        "id": "urn:ngm:class:robert-casella-monte-carlo-statistical-methods",
+        "label": "Robert-Casella Monte Carlo Statistical Methods"
+      },
+      {
+        "id": "urn:ngm:class:stan-probabilistic-programming",
+        "label": "Stan Probabilistic Programming"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ]
   },
   "wikilinks": [
     {

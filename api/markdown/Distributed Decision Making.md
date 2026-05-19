@@ -360,300 +360,223 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-decision-making",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-decision-making",
+  "@type": "Class",
   "label": "Distributed Decision Making",
+  "definition": "Distributed decision making encompasses the full spectrum of collective and algorithmic processes by which multiple autonomous agents, nodes, organisations, or individuals arrive at binding or coordinating choices without relying on a single central authority.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:collective-intelligence",
-      "vc:label": "Collective Intelligence"
+      "@id": "urn:ngm:class:collective-intelligence",
+      "label": "Collective Intelligence"
     },
     {
-      "@id": "urn:visionflow:linked:coordination-mechanisms",
-      "vc:label": "Coordination Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:organisational-governance",
-      "vc:label": "Organisational Governance"
+      "@id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5363bfb6edde550bb3f2bb3a03a9d754b4f1c2b349cea68c45692ac6e6303c5c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:appeal-mechanism",
+        "label": "Appeal Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocols",
+        "label": "Consensus Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:decision-documentation",
+        "label": "Decision Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:delegation-mechanisms",
+        "label": "Delegation Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-systems",
+        "label": "Quorum Systems"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanisms",
+        "label": "Voting Mechanisms"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:explicit-decision-criteria",
+        "label": "Explicit Decision Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:time-boxed-feedback-windows",
+        "label": "Time-boxed Feedback Windows"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-information-access",
+        "label": "Transparent Information Access"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "@id": "urn:ngm:class:decision-traceability",
+        "label": "Decision Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:equitable-voice-across-time-zones",
+        "label": "Equitable Voice Across Time Zones"
+      },
+      {
+        "@id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:lazy-consensus",
+        "label": "Lazy Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:commit-reveal-schemes",
+        "label": "Commit-Reveal Schemes"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration-patterns",
+        "label": "Asynchronous Collaboration Patterns"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action-problems",
+        "label": "Collective Action Problems"
+      },
+      {
+        "@id": "urn:ngm:class:common-pool-resource-governance",
+        "label": "Common-Pool Resource Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:dao-treasury-management",
+        "label": "DAO Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-project-governance",
+        "label": "Open-Source Project Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposals",
+        "label": "Ethereum Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-process",
+        "label": "IETF RFC Process"
+      },
+      {
+        "@id": "urn:ngm:class:iso-31000-risk-management",
+        "label": "ISO 31000 Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-decentralised-identifiers",
+        "label": "W3C Decentralised Identifiers"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5363bfb6edde550bb3f2bb3a03a9d754b4f1c2b349cea68c45692ac6e6303c5c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Distributed decision making encompasses the full spectrum of collective and algorithmic processes by which multiple autonomous agents, nodes, organisations, or individuals arrive at binding or coordinating choices without relying on a single central authority. The domain synthesises theoretical foundations from Arrow's social choice theory (1951), Ostrom's polycentric governance (1990 Nobel Memorial Prize in Economic Sciences), Byzantine fault tolerance (Lamport, Shostak, Pease 1982), and the FLP impossibility theorem (Fischer, Lynch, Paterson 1985) with practical engineering instantiated in consensus protocols (Raft, PBFT, Tendermint, HotStuff), blockchain governance (on-chain voting, off-chain signalling, token-weighted delegation), decentralised autonomous organisations (DAOs), multi-agent reinforcement learning (MARL), prediction markets, and organisational design patterns (Galbraith star model, Ostrom's polycentric governance, sociocracy, holacracy). Distributed decision making differs from distributed computing in that it explicitly addresses the legitimacy, preference-aggregation, and incentive-compatibility dimensions of collective choice, not merely the technical replicati",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:appeal-mechanism",
-      "vc:label": "Appeal Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution",
-      "vc:label": "Conflict Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:consensus-protocols",
-      "vc:label": "Consensus Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-documentation",
-      "vc:label": "Decision Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:delegation-mechanisms",
-      "vc:label": "Delegation Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum-systems",
-      "vc:label": "Quorum Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-mechanisms",
-      "vc:label": "Voting Mechanisms"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:explicit-decision-criteria",
-      "vc:label": "Explicit Decision Criteria"
-    },
-    {
-      "@id": "urn:visionflow:linked:incentive-compatibility",
-      "vc:label": "Incentive Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-boxed-feedback-windows",
-      "vc:label": "Time-boxed Feedback Windows"
-    },
-    {
-      "@id": "urn:visionflow:linked:transparent-information-access",
-      "vc:label": "Transparent Information Access"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisations",
-      "vc:label": "Decentralised Autonomous Organisations"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-traceability",
-      "vc:label": "Decision Traceability"
-    },
-    {
-      "@id": "urn:visionflow:linked:equitable-voice-across-time-zones",
-      "vc:label": "Equitable Voice Across Time Zones"
-    },
-    {
-      "@id": "urn:visionflow:linked:polycentric-governance",
-      "vc:label": "Polycentric Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-coordination",
-      "vc:label": "Trustless Coordination"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:lazy-consensus",
-      "vc:label": "Lazy Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-democracy",
-      "vc:label": "Liquid Democracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:pbft",
-      "vc:label": "PBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft-consensus",
-      "vc:label": "Raft Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:tendermint",
-      "vc:label": "Tendermint"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:arrow-impossibility-theorem",
-      "vc:label": "Arrow Impossibility Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:flp-impossibility",
-      "vc:label": "FLP Impossibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-choice-theory",
-      "vc:label": "Social Choice Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:dao-treasury-management",
-      "vc:label": "DAO Treasury Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-project-governance",
-      "vc:label": "Open-Source Project Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-governance",
-      "vc:label": "Blockchain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:commit-reveal-schemes",
-      "vc:label": "Commit-Reveal Schemes"
-    },
-    {
-      "@id": "urn:visionflow:linked:prediction-markets",
-      "vc:label": "Prediction Markets"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-voting",
-      "vc:label": "Token-Weighted Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-decision-making",
-      "vc:label": "Centralised Decision Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:command-and-control-organisations",
-      "vc:label": "Command-and-Control Organisations"
-    },
-    {
-      "@id": "urn:visionflow:linked:hierarchical-authority",
-      "vc:label": "Hierarchical Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-point-of-control",
-      "vc:label": "Single Point of Control"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:asynchronous-collaboration-patterns",
-      "vc:label": "Asynchronous Collaboration Patterns"
-    },
-    {
-      "@id": "urn:visionflow:linked:collective-action-problems",
-      "vc:label": "Collective Action Problems"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-pool-resource-governance",
-      "vc:label": "Common-Pool Resource Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-reinforcement-learning",
-      "vc:label": "Multi-Agent Reinforcement Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-improvement-proposals",
-      "vc:label": "Bitcoin Improvement Proposals"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethereum-improvement-proposals",
-      "vc:label": "Ethereum Improvement Proposals"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-process",
-      "vc:label": "IETF RFC Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-31000-risk-management",
-      "vc:label": "ISO 31000 Risk Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-decentralised-identifiers",
-      "vc:label": "W3C Decentralised Identifiers"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:consensus-protocols",
-      "vc:label": "Consensus Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisations",
-      "vc:label": "Decentralised Autonomous Organisations"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-systems",
-      "vc:label": "Multi-Agent Systems"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

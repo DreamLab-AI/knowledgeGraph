@@ -3,53 +3,57 @@
   "title": "Arbitrator Expertise",
   "slug": "arbitrator-expertise",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:arbitrator-expertise",
+  "classIri": "urn:ngm:class:arbitrator-expertise",
   "domain": "spatial-computing",
-  "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for informed dispute resolution.",
+  "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:professional-qualification",
+      "id": "urn:ngm:class:professional-qualification",
       "label": "Professional Qualification"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-knowledge",
+        "id": "urn:ngm:class:blockchain-knowledge",
         "label": "Blockchain Knowledge"
       },
       {
-        "id": "urn:visionflow:linked:industry-experience",
+        "id": "urn:ngm:class:industry-experience",
         "label": "Industry Experience"
       },
       {
-        "id": "urn:visionflow:linked:legal-training",
+        "id": "urn:ngm:class:legal-training",
         "label": "Legal Training"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:fair-outcomes",
+        "id": "urn:ngm:class:fair-outcomes",
         "label": "Fair Outcomes"
       },
       {
-        "id": "urn:visionflow:linked:informed-decision-making",
+        "id": "urn:ngm:class:informed-decision-making",
         "label": "Informed Decision Making"
       },
       {
-        "id": "urn:visionflow:linked:technical-evidence-evaluation",
+        "id": "urn:ngm:class:technical-evidence-evaluation",
         "label": "Technical Evidence Evaluation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

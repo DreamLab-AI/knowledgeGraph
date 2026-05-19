@@ -200,128 +200,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:experience-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:experience-layer",
+  "@type": "Class",
   "label": "Experience Layer",
+  "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:interaction-manager",
+        "label": "Interaction Manager"
+      },
+      {
+        "@id": "urn:ngm:class:presence-system",
+        "label": "Presence System"
+      },
+      {
+        "@id": "urn:ngm:class:ux-framework",
+        "label": "UX Framework"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:input-system",
+        "label": "Input System"
+      },
+      {
+        "@id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-architecture",
+        "label": "User Interface Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:90a641684537c8f0be326cf1d8be4fd3a7b4d5d57368ab65cbdd34da607cf5e6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-layer",
-      "vc:label": "Compute Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-interface-architecture",
-      "vc:label": "User Interface Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:interaction-manager",
-      "vc:label": "Interaction Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:presence-system",
-      "vc:label": "Presence System"
-    },
-    {
-      "@id": "urn:visionflow:linked:ux-framework",
-      "vc:label": "UX Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-interface",
-      "vc:label": "Immersive Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:graphics-pipeline",
-      "vc:label": "Graphics Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-system",
-      "vc:label": "Input System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audio-system",
-      "vc:label": "Audio System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:natural-interaction",
-      "vc:label": "Natural Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-engagement",
-      "vc:label": "User Engagement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experience",
-      "vc:label": "Immersive Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence",
-      "vc:label": "Presence"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:content-delivery",
-      "vc:label": "Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:display-technology",
-      "vc:label": "Display Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-system",
-      "vc:label": "Avatar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

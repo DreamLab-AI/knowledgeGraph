@@ -3,57 +3,70 @@
   "title": "Feedback Control",
   "slug": "feedback-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feedback-control",
+  "classIri": "urn:ngm:class:feedback-control",
   "domain": "robotics",
-  "definition": "**Feedback Control** - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
+  "definition": "Feedback Control - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:control-theory",
+      "id": "urn:ngm:class:control-theory",
       "label": "Control Theory"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.61,
-  "authorityScore": 0.16,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:actuator-response",
+        "id": "urn:ngm:class:actuator-response",
         "label": "Actuator Response"
       },
       {
-        "id": "urn:visionflow:linked:error-measurement",
+        "id": "urn:ngm:class:error-measurement",
         "label": "Error Measurement"
       },
       {
-        "id": "urn:visionflow:owl:class:control-algorithm",
+        "id": "urn:ngm:class:control-algorithm",
         "label": "Control Algorithm"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:disturbance-rejection",
+        "id": "urn:ngm:class:disturbance-rejection",
         "label": "Disturbance Rejection"
       },
       {
-        "id": "urn:visionflow:linked:robust-operation",
+        "id": "urn:ngm:class:robust-operation",
         "label": "Robust Operation"
       },
       {
-        "id": "urn:visionflow:linked:trajectory-tracking",
+        "id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motion-control-system",
+        "label": "Motion Control System"
+      },
+      {
+        "id": "urn:ngm:class:stabilisation-architecture",
+        "label": "Stabilisation Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

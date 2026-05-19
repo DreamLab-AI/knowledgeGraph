@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-training",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-training",
+  "@type": "Class",
   "label": "Virtual Training",
+  "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:workforce-development",
-      "vc:label": "Workforce Development"
+      "@id": "urn:ngm:class:workforce-development",
+      "label": "Workforce Development"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

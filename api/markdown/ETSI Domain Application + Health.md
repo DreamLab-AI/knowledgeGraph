@@ -148,74 +148,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-application-health",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-application-health",
+  "@type": "Class",
   "label": "ETSI Domain Application + Health",
+  "definition": "Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f01f9ea97cf3f59002d6661383b7211175fd8f31caa9106972f2edc82e0a6f02"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-platform-categorization",
+        "label": "Medical Platform Categorization"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-application-classification",
+        "label": "Healthcare Application Classification"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f01f9ea97cf3f59002d6661383b7211175fd8f31caa9106972f2edc82e0a6f02@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:etsi-domain-taxonomy",
-      "vc:label": "ETSI Domain Taxonomy"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:medical-platform-categorization",
-      "vc:label": "Medical Platform Categorization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:healthcare-application-classification",
-      "vc:label": "Healthcare Application Classification"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:infrastructure-domain",
-      "vc:label": "InfrastructureDomain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-society-domain",
-      "vc:label": "VirtualSocietyDomain"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,94 +3,98 @@
   "title": "Digital Curation Platform",
   "slug": "digital-curation-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-curation-platform",
+  "classIri": "urn:ngm:class:digital-curation-platform",
   "domain": "spatial-computing",
-  "definition": "Integrated system for organising, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Curation Platform is a type of Digital Asset Management in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:content-repository",
+        "id": "urn:ngm:class:content-repository",
         "label": "Content Repository"
       },
       {
-        "id": "urn:visionflow:linked:metadata-manager",
+        "id": "urn:ngm:class:metadata-manager",
         "label": "Metadata Manager"
       },
       {
-        "id": "urn:visionflow:linked:preservation-engine",
+        "id": "urn:ngm:class:preservation-engine",
         "label": "Preservation Engine"
       },
       {
-        "id": "urn:visionflow:linked:versioning-system",
+        "id": "urn:ngm:class:versioning-system",
         "label": "Versioning System"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:search-interface",
+        "id": "urn:ngm:class:search-interface",
         "label": "Search Interface"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:preservation-policy",
+        "id": "urn:ngm:class:preservation-policy",
         "label": "Preservation Policy"
       },
       {
-        "id": "urn:visionflow:owl:class:authentication-service",
+        "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset-management",
+        "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collection-management",
+        "id": "urn:ngm:class:collection-management",
         "label": "Collection Management"
       },
       {
-        "id": "urn:visionflow:linked:content-discovery",
+        "id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
       },
       {
-        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Preservation"
       },
       {
-        "id": "urn:visionflow:linked:public-access",
+        "id": "urn:ngm:class:public-access",
         "label": "Public Access"
       },
       {
-        "id": "urn:visionflow:owl:class:long-term-archival",
+        "id": "urn:ngm:class:long-term-archival",
         "label": "Long-Term Archival"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

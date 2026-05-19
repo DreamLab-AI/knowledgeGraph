@@ -140,62 +140,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-rendering-engine",
+  "@type": "Class",
   "label": "3D Rendering Engine",
+  "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computer-graphics",
-      "vc:label": "Computer Graphics"
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-visualisation",
+        "label": "Real-time Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation. In the context of metaverse and XR technologies, rendering engines power real-time visualisation of immersive virtual environments, enabling stereoscopic displays, spatial audio integration, and motion-to-photon latency optimisation essential for presence and embodiment in virtual spaces.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:real-time-visualisation",
-      "vc:label": "Real-time Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-applications",
-      "vc:label": "XR Applications"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

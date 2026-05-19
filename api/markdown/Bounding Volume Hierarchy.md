@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bounding-volume-hierarchy",
+  "@type": "Class",
   "label": "Bounding Volume Hierarchy",
+  "definition": "A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-data-structure",
-      "vc:label": "Spatial Data Structure"
+      "@id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:traversal-algorithm",
+        "label": "Traversal Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:tree-construction",
+        "label": "Tree Construction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4152fcd91f23e521d7f6671bf47289ea66c41f4ea8ee954c37191c1366d4017c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bounding-volume",
-      "vc:label": "Bounding Volume"
-    },
-    {
-      "@id": "urn:visionflow:linked:traversal-algorithm",
-      "vc:label": "Traversal Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:tree-construction",
-      "vc:label": "Tree Construction"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:frustum-culling",
-      "vc:label": "Frustum Culling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-detection",
-      "vc:label": "Collision Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ray-tracing",
-      "vc:label": "Ray Tracing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:audio-spatialization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:audio-spatialization",
+  "@type": "Class",
   "label": "Audio Spatialization",
+  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive a...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:spatial-audio-technology",
-      "vc:label": "Spatial Audio Technology"
+      "@id": "urn:ngm:class:spatial-audio-technology",
+      "label": "Spatial Audio Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e6c3e5023e5ae312ec715d0b4f64de216f215f0a9029eb930d27f1c14f5347c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:binaural-rendering",
+        "label": "Binaural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:head-tracking",
+        "label": "Head Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hrtf-filters",
+        "label": "HRTF Filters"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-sound-perception",
+        "label": "3D Sound Perception"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "@id": "urn:ngm:class:sound-localization",
+        "label": "Sound Localization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e6c3e5023e5ae312ec715d0b4f64de216f215f0a9029eb930d27f1c14f5347c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Audio Spatialization is the technique of positioning sounds in three-dimensional space using Head-Related Transfer Functions (HRTFs), binaural processing, and ambisonics to create realistic 3D audio experiences that respond to listener position and head movement in virtual reality and immersive applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:binaural-rendering",
-      "vc:label": "Binaural Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:head-tracking",
-      "vc:label": "Head Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:hrtf-filters",
-      "vc:label": "HRTF Filters"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-sound-perception",
-      "vc:label": "3D Sound Perception"
-    },
-    {
-      "@id": "urn:visionflow:linked:immersive-audio",
-      "vc:label": "Immersive Audio"
-    },
-    {
-      "@id": "urn:visionflow:linked:sound-localization",
-      "vc:label": "Sound Localization"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

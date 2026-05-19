@@ -3,32 +3,41 @@
   "title": "Light Client",
   "slug": "light-client",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:light-client",
+  "classIri": "urn:ngm:class:light-client",
   "domain": "blockchain",
-  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.",
+  "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:node",
+      "id": "urn:ngm:class:node",
       "label": "Node"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

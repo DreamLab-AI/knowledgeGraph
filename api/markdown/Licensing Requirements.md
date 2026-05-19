@@ -348,41 +348,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:licensing-requirements",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:licensing-requirements",
+  "@type": "Class",
   "label": "Licensing Requirements",
+  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub-needs-content",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4e6b42852a4a553196b9aac9d8051fdc3b31fc7b4c5a4a2506148b8362046253@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] ($100K-$1M capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and ongoing compliance reporting. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions with diverse requirements—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity in developed markets (UK, Switzerland, El Salvador) attracts institutional capital.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

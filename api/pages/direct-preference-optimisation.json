@@ -3,19 +3,18 @@
   "title": "Direct Preference Optimisation",
   "slug": "direct-preference-optimisation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:direct-preference-optimisation",
+  "classIri": "urn:ngm:class:direct-preference-optimisation",
   "domain": "spatial-computing",
-  "definition": "An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF. DPO optimizes the policy directly on preference comparisons through a reparameterisation of the reward model objective.",
+  "definition": "An alignment mod that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

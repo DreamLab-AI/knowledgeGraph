@@ -104,48 +104,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:consensus-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consensus-domain",
+  "@type": "Class",
   "label": "Consensus Domain",
+  "definition": "The Consensomain represents a specialized sub-domain within blockchain technology that encompasses all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralized networks to achieve consistent state without trusted central authorities.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:133db1f6c2b7f34b17d72e35fceb0fe7750b5b779332f406f9764129594a092f"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:133db1f6c2b7f34b17d72e35fceb0fe7750b5b779332f406f9764129594a092f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The ConsensusDomain represents a specialized sub-domain within blockchain technology that encompasses all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralized networks to achieve consistent state without trusted central authorities. This domain includes foundational consensus concepts, Byzantine Fault Tolerance (BFT) protocols, Proof-of-Work (PoW) mechanisms, Proof-of-Stake (PoS) systems and variants (Delegated PoS, Liquid PoS, Bonded PoS), hybrid consensus mechanisms, finality concepts, fork choice rules, validator systems, mining mechanisms, staking protocols, slashing conditions, leader election algorithms, and consensus security analysis. These consensus mechanisms solve the fundamental distributed systems problem of achieving agreement in adversarial environments where some participants may be faulty, malicious, or offline. The domain addresses critical challenges including the Byzantine Generals Problem, double-spending prevention, finality guarantees, liveness (ensuring continuous progress), safety (preventing invalid state transitions), and scalability tradeoffs inherent in distributed agreement. Consensus mechanisms typi",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.65",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

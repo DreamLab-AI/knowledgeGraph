@@ -164,48 +164,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:private-channels",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:private-channels",
+  "@type": "Class",
   "label": "Private Channels",
+  "definition": "Confidential transaction subsets in [[PermissionedBlockchain|permissioned blockchains]] where designated participants conduct transactions invisibly to other network members, implementing [[Encryption|encryption]] and [[AccessControl|access control]] to segregate sensitive business data whilst ma...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:35008e78258e1b6b342ec3bc1f2292346ffcd12a7a2ff1bd9a94153863736744"
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:35008e78258e1b6b342ec3bc1f2292346ffcd12a7a2ff1bd9a94153863736744@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Confidential transaction subsets in [[PermissionedBlockchain|permissioned blockchains]] where designated participants conduct transactions invisibly to other network members, implementing [[Encryption|encryption]] and [[AccessControl|access control]] to segregate sensitive business data whilst maintaining [[Immutability|immutability]] and [[SmartContract]] functionality. Private channels enable consortia members to conduct confidential transactions on shared infrastructure without exposing proprietary information, deployed extensively in [[HyperledgerFabric]] for trade finance, supply chain, and healthcare where some parties require visibility exclusion. Channels combine cryptographic isolation with shared ledger infrastructure enabling efficient [[ConsensusProtocol|consensus]] and settlement.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:encryption",
-      "vc:label": "Encryption"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

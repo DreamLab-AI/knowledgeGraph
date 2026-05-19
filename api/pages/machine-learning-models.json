@@ -3,32 +3,36 @@
   "title": "Machine Learning Models",
   "slug": "machine-learning-models",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning-models",
+  "classIri": "urn:ngm:class:machine-learning-models",
   "domain": "artificial-intelligence",
   "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-decision-making",
+        "id": "urn:ngm:class:automated-decision-making",
         "label": "Automated Decision Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -164,48 +164,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cryptographic-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptographic-system",
+  "@type": "Class",
   "label": "Cryptographic System",
+  "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-entity",
-      "vc:label": "Blockchain Entity"
+      "@id": "urn:ngm:class:blockchain-entity",
+      "label": "Blockchain Entity"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e8a56cbdc90beb3dc8539c8a916c1ca18d9fb113b88c85dfa65462e7ee51571d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity thro",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

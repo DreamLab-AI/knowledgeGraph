@@ -3,94 +3,107 @@
   "title": "Virtual Production (VP)",
   "slug": "virtual-production-vp",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-production-vp",
+  "classIri": "urn:ngm:class:virtual-production-vp",
   "domain": "spatial-computing",
   "definition": "Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:rendering-technique",
+      "id": "urn:ngm:class:rendering-technique",
       "label": "Rendering Technique"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-tracking",
+        "id": "urn:ngm:class:camera-tracking",
         "label": "Camera Tracking"
       },
       {
-        "id": "urn:visionflow:linked:compositing-pipeline",
+        "id": "urn:ngm:class:compositing-pipeline",
         "label": "Compositing Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:led-volume",
+        "id": "urn:ngm:class:led-volume",
         "label": "LED Volume"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-capture",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-camera",
+        "id": "urn:ngm:class:virtual-camera",
         "label": "Virtual Camera"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-tracking-system",
+        "id": "urn:ngm:class:camera-tracking-system",
         "label": "Camera Tracking System"
       },
       {
-        "id": "urn:visionflow:linked:led-display-system",
+        "id": "urn:ngm:class:led-display-system",
         "label": "LED Display System"
       },
       {
-        "id": "urn:visionflow:linked:render-engine",
+        "id": "urn:ngm:class:render-engine",
         "label": "Render Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:game-engine",
+        "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:xr-hardware",
+        "id": "urn:ngm:class:xr-hardware",
         "label": "XR Hardware"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:in-camera-vfx",
+        "id": "urn:ngm:class:in-camera-vfx",
         "label": "In-Camera VFX"
       },
       {
-        "id": "urn:visionflow:linked:interactive-filmmaking",
+        "id": "urn:ngm:class:interactive-filmmaking",
         "label": "Interactive Filmmaking"
       },
       {
-        "id": "urn:visionflow:linked:live-compositing",
+        "id": "urn:ngm:class:live-compositing",
         "label": "Live Compositing"
       },
       {
-        "id": "urn:visionflow:linked:previsualization",
+        "id": "urn:ngm:class:previsualization",
         "label": "Previsualization"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-scouting",
+        "id": "urn:ngm:class:virtual-scouting",
         "label": "Virtual Scouting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:broadcast-production",
+        "label": "Broadcast Production"
+      },
+      {
+        "id": "urn:ngm:class:film-production-workflow",
+        "label": "Film Production Workflow"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

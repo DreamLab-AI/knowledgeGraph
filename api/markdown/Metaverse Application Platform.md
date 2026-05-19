@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-application-platform",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-application-platform",
+  "@type": "Class",
   "label": "Metaverse Application Platform",
+  "definition": "Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:development-platform",
-      "vc:label": "Development Platform"
+      "@id": "urn:ngm:class:development-platform",
+      "label": "Development Platform"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-content-creation",
+        "label": "Metaverse Content Creation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:275fd4c32716925a3a0f6c74eec0405601f1ba43a826053c5fced7c68dff6215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:metaverse-content-creation",
-      "vc:label": "Metaverse Content Creation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

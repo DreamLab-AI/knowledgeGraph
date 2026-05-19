@@ -3,19 +3,18 @@
   "title": "Co Training",
   "slug": "co-training",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:co-training",
+  "classIri": "urn:ngm:class:co-training",
   "domain": "artificial-intelligence",
-  "definition": "A semi-supervised learning technique where two or more models with different views of the data train each other by labelling unlabelled examples. Co-training leverages complementary feature sets or model architectures to improve performance through mutual teaching. bridges-to:: [[Autonomous Robot]]",
+  "definition": "Co Training is a type of Artificial Intelligence in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

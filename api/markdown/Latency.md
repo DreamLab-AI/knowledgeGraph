@@ -188,106 +188,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:latency",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:latency",
+  "@type": "Class",
   "label": "Latency",
+  "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:quality-of-service",
-      "vc:label": "Quality of Service"
+      "@id": "urn:ngm:class:quality-of-service",
+      "label": "Quality of Service"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:281cdf45875a731319c752994463696dbb850c7b54402463ce1714136866e9f5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:measurement-tools",
+        "label": "Measurement Tools"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp-synchronization",
+        "label": "Timestamp Synchronization"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quality-assessment",
+        "label": "Quality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:sla-monitoring",
+        "label": "SLA Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-tuning",
+        "label": "User Experience Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:281cdf45875a731319c752994463696dbb850c7b54402463ce1714136866e9f5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:network-performance-metrics",
-      "vc:label": "Network Performance Metrics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-of-service",
-      "vc:label": "Quality of Service"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:measurement-tools",
-      "vc:label": "Measurement Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-system",
-      "vc:label": "Monitoring System"
-    },
-    {
-      "@id": "urn:visionflow:linked:timestamp-synchronization",
-      "vc:label": "Timestamp Synchronization"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:quality-assessment",
-      "vc:label": "Quality Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:sla-monitoring",
-      "vc:label": "SLA Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience-tuning",
-      "vc:label": "User Experience Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-optimization",
-      "vc:label": "Performance Optimization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth",
-      "vc:label": "Bandwidth"
-    },
-    {
-      "@id": "urn:visionflow:linked:processing-delay",
-      "vc:label": "Processing Delay"
-    },
-    {
-      "@id": "urn:visionflow:linked:propagation-delay",
-      "vc:label": "Propagation Delay"
-    },
-    {
-      "@id": "urn:visionflow:linked:routing-protocol",
-      "vc:label": "Routing Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

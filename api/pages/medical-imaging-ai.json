@@ -3,19 +3,18 @@
   "title": "Medical Imaging AI",
   "slug": "medical-imaging-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:medical-imaging-ai",
+  "classIri": "urn:ngm:class:medical-imaging-ai",
   "domain": "artificial-intelligence",
-  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities. These systems employ deep learning architectures, particularly convolutional neural networks, to perform tasks such as lesion detection, disease classification, segmentation of anatomical structures, and quantitative image analysis whilst adhering to clinical validation standards and regulatory requirements.",
+  "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:vision-processing",
+      "id": "urn:ngm:class:vision-processing",
       "label": "Vision Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

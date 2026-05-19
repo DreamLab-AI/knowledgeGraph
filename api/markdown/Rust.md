@@ -376,328 +376,247 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rust",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rust",
+  "@type": "Class",
   "label": "Rust",
+  "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft,...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:compiled-language",
-      "vc:label": "Compiled Language"
+      "@id": "urn:ngm:class:compiled-language",
+      "label": "Compiled Language"
     },
     {
-      "@id": "urn:visionflow:linked:concurrent-programming-language",
-      "vc:label": "Concurrent Programming Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-safe-language",
-      "vc:label": "Memory-Safe Language"
+      "@id": "urn:ngm:class:concurrent-programming-language",
+      "label": "Concurrent Programming Language"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d9aa8f0f6af17d054c4ca9adfeb325feac3aca7ec5459ba3db5e284d70ced7a4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:async-runtime",
+        "label": "Async Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:borrow-checker",
+        "label": "Borrow Checker"
+      },
+      {
+        "@id": "urn:ngm:class:cargo",
+        "label": "Cargo"
+      },
+      {
+        "@id": "urn:ngm:class:lifetime-annotations",
+        "label": "Lifetime Annotations"
+      },
+      {
+        "@id": "urn:ngm:class:macro-system",
+        "label": "Macro System"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-system",
+        "label": "Ownership System"
+      },
+      {
+        "@id": "urn:ngm:class:rust-standard-library",
+        "label": "Rust Standard Library"
+      },
+      {
+        "@id": "urn:ngm:class:trait-system",
+        "label": "Trait System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:borrow-checker",
+        "label": "Borrow Checker"
+      },
+      {
+        "@id": "urn:ngm:class:cargo-package-manager",
+        "label": "Cargo Package Manager"
+      },
+      {
+        "@id": "urn:ngm:class:crates-io-registry",
+        "label": "Crates.io Registry"
+      },
+      {
+        "@id": "urn:ngm:class:llvm",
+        "label": "LLVM"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-development",
+        "label": "Blockchain Development"
+      },
+      {
+        "@id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:linux-kernel-development",
+        "label": "Linux Kernel Development"
+      },
+      {
+        "@id": "urn:ngm:class:memory-safety",
+        "label": "Memory Safety"
+      },
+      {
+        "@id": "urn:ngm:class:systems-programming",
+        "label": "Systems Programming"
+      },
+      {
+        "@id": "urn:ngm:class:zero-cost-abstractions",
+        "label": "Zero-Cost Abstractions"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:affine-type-system",
+        "label": "Affine Type System"
+      },
+      {
+        "@id": "urn:ngm:class:async-await-pattern",
+        "label": "Async Await Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-model",
+        "label": "Ownership Model"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      },
+      {
+        "@id": "urn:ngm:class:raii",
+        "label": "RAII"
+      },
+      {
+        "@id": "urn:ngm:class:trait-objects",
+        "label": "Trait Objects"
+      },
+      {
+        "@id": "urn:ngm:class:zero-cost-abstractions",
+        "label": "Zero-Cost Abstractions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cargo",
+        "label": "Cargo"
+      },
+      {
+        "@id": "urn:ngm:class:clippy",
+        "label": "Clippy"
+      },
+      {
+        "@id": "urn:ngm:class:crates-io",
+        "label": "Crates.io"
+      },
+      {
+        "@id": "urn:ngm:class:llvm-ir",
+        "label": "LLVM IR"
+      },
+      {
+        "@id": "urn:ngm:class:rustfmt",
+        "label": "Rustfmt"
+      },
+      {
+        "@id": "urn:ngm:class:tokio",
+        "label": "Tokio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compiler-design",
+        "label": "Compiler Design"
+      },
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:operating-systems",
+        "label": "Operating Systems"
+      },
+      {
+        "@id": "urn:ngm:class:systems-programming",
+        "label": "Systems Programming"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:blockchain-networks",
+        "label": "Blockchain Networks"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:network-services",
+        "label": "Network Services"
+      },
+      {
+        "@id": "urn:ngm:class:web-servers",
+        "label": "Web Servers"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:rust-edition-system",
+        "label": "Rust Edition System"
+      },
+      {
+        "@id": "urn:ngm:class:rust-foundation",
+        "label": "Rust Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:rust-language-reference",
+        "label": "Rust Language Reference"
+      },
+      {
+        "@id": "urn:ngm:class:rust-rfc-process",
+        "label": "Rust RFC Process"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d9aa8f0f6af17d054c4ca9adfeb325feac3aca7ec5459ba3db5e284d70ced7a4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft, and Mozilla as platinum founding members), whose central technical innovation is a compile-time ownership-and-borrowing memory model that eliminates the entire class of memory-safety errors — null-pointer dereferences, use-after-free, double-free, data races, buffer overflows — without a garbage collector or runtime overhead, achieving the dual objectives of C/C++-grade throughput (typically within 5% of equivalent C on CPU-bound benchmarks, LLVM code generation, zero-cost abstractions) and memory safety guarantees previously reachable only through managed runtimes (Java, Go, C#) that impose GC pause latencies of 1-50 ms incompatible with hard-real-time or kernel contexts. The ownership system enforces three invariants at compile time via the borrow checker: (i) every value has exactly one owner whose scope determines the value's lifetime; (ii) at any moment a value may have either one exc",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:async-runtime",
-      "vc:label": "Async Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:borrow-checker",
-      "vc:label": "Borrow Checker"
-    },
-    {
-      "@id": "urn:visionflow:linked:cargo",
-      "vc:label": "Cargo"
-    },
-    {
-      "@id": "urn:visionflow:linked:lifetime-annotations",
-      "vc:label": "Lifetime Annotations"
-    },
-    {
-      "@id": "urn:visionflow:linked:macro-system",
-      "vc:label": "Macro System"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-system",
-      "vc:label": "Ownership System"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-standard-library",
-      "vc:label": "Rust Standard Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:trait-system",
-      "vc:label": "Trait System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:borrow-checker",
-      "vc:label": "Borrow Checker"
-    },
-    {
-      "@id": "urn:visionflow:linked:cargo-package-manager",
-      "vc:label": "Cargo Package Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:crates-io-registry",
-      "vc:label": "Crates.io Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:llvm",
-      "vc:label": "LLVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-system",
-      "vc:label": "Type System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-development",
-      "vc:label": "Blockchain Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:concurrent-programming",
-      "vc:label": "Concurrent Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-kernel-development",
-      "vc:label": "Linux Kernel Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-safety",
-      "vc:label": "Memory Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-programming",
-      "vc:label": "Systems Programming"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-cost-abstractions",
-      "vc:label": "Zero-Cost Abstractions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:affine-type-system",
-      "vc:label": "Affine Type System"
-    },
-    {
-      "@id": "urn:visionflow:linked:async-await-pattern",
-      "vc:label": "Async Await Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-model",
-      "vc:label": "Ownership Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:pattern-matching",
-      "vc:label": "Pattern Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:raii",
-      "vc:label": "RAII"
-    },
-    {
-      "@id": "urn:visionflow:linked:trait-objects",
-      "vc:label": "Trait Objects"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-cost-abstractions",
-      "vc:label": "Zero-Cost Abstractions"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:algebraic-data-types",
-      "vc:label": "Algebraic Data Types"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-types",
-      "vc:label": "Linear Types"
-    },
-    {
-      "@id": "urn:visionflow:linked:llvm",
-      "vc:label": "LLVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:region-based-memory-management",
-      "vc:label": "Region-Based Memory Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-theory",
-      "vc:label": "Type Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-networks",
-      "vc:label": "Blockchain Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-kernel",
-      "vc:label": "Linux Kernel"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-services",
-      "vc:label": "Network Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-servers",
-      "vc:label": "Web Servers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cargo",
-      "vc:label": "Cargo"
-    },
-    {
-      "@id": "urn:visionflow:linked:clippy",
-      "vc:label": "Clippy"
-    },
-    {
-      "@id": "urn:visionflow:linked:crates-io",
-      "vc:label": "Crates.io"
-    },
-    {
-      "@id": "urn:visionflow:linked:llvm-ir",
-      "vc:label": "LLVM IR"
-    },
-    {
-      "@id": "urn:visionflow:linked:rustfmt",
-      "vc:label": "Rustfmt"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokio",
-      "vc:label": "Tokio"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:c",
-      "vc:label": "C++"
-    },
-    {
-      "@id": "urn:visionflow:linked:c-programming-language",
-      "vc:label": "C Programming Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:go",
-      "vc:label": "Go"
-    },
-    {
-      "@id": "urn:visionflow:linked:java",
-      "vc:label": "Java"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:swift",
-      "vc:label": "Swift"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:compiler-design",
-      "vc:label": "Compiler Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:concurrency",
-      "vc:label": "Concurrency"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-management",
-      "vc:label": "Memory Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:operating-systems",
-      "vc:label": "Operating Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-programming",
-      "vc:label": "Systems Programming"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:rust-edition-system",
-      "vc:label": "Rust Edition System"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-foundation",
-      "vc:label": "Rust Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-language-reference",
-      "vc:label": "Rust Language Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-rfc-process",
-      "vc:label": "Rust RFC Process"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:systems-programming",
-      "vc:label": "Systems Programming"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

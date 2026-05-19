@@ -204,104 +204,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:renewable-energy-certificates",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:renewable-energy-certificates",
+  "@type": "Class",
   "label": "Renewable Energy Certificates",
+  "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:carbon-credit",
-      "vc:label": "CarbonCredit"
+      "@id": "urn:ngm:class:carbon-credit",
+      "label": "CarbonCredit"
     },
     {
-      "@id": "urn:visionflow:linked:environmental-commodity",
-      "vc:label": "EnvironmentalCommodity"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-instrument",
-      "vc:label": "SustainabilityInstrument"
+      "@id": "urn:ngm:class:environmental-commodity",
+      "label": "EnvironmentalCommodity"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:02e21880f0e92b8fcf72879da229d9ec17fbdd3936013dbb38a5b329bd31f021"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:certificate-metadata",
+        "label": "CertificateMetadata"
+      },
+      {
+        "@id": "urn:ngm:class:generation-data",
+        "label": "GenerationData"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-record",
+        "label": "OwnershipRecord"
+      },
+      {
+        "@id": "urn:ngm:class:retirement-proof",
+        "label": "RetirementProof"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:metering-data",
+        "label": "MeteringData"
+      },
+      {
+        "@id": "urn:ngm:class:registry-infrastructure",
+        "label": "RegistryInfrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-generation",
+        "label": "RenewableEnergyGeneration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-energy-trading",
+        "label": "PeerToPeerEnergyTrading"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-tracking",
+        "label": "RenewableEnergyTracking"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "CarbonAccounting"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:02e21880f0e92b8fcf72879da229d9ec17fbdd3936013dbb38a5b329bd31f021@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with blockchain implementations enabling automated tracking, fractional ownership, peer-to-peer trading, and integration with smart contracts for renewable energy procurement, grid management, and carbon offset markets.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:certificate-metadata",
-      "vc:label": "CertificateMetadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:generation-data",
-      "vc:label": "GenerationData"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-record",
-      "vc:label": "OwnershipRecord"
-    },
-    {
-      "@id": "urn:visionflow:linked:retirement-proof",
-      "vc:label": "RetirementProof"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:metering-data",
-      "vc:label": "MeteringData"
-    },
-    {
-      "@id": "urn:visionflow:linked:registry-infrastructure",
-      "vc:label": "RegistryInfrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy-generation",
-      "vc:label": "RenewableEnergyGeneration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-energy-trading",
-      "vc:label": "PeerToPeerEnergyTrading"
-    },
-    {
-      "@id": "urn:visionflow:linked:renewable-energy-tracking",
-      "vc:label": "RenewableEnergyTracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "SustainabilityReporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-accounting",
-      "vc:label": "CarbonAccounting"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

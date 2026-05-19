@@ -168,76 +168,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-standard",
+  "@type": "Class",
   "label": "Avatar Standard",
+  "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standard",
-      "vc:label": "Technical Standard"
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:format-compliance",
+        "label": "Format Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-specification",
+        "label": "Metadata Specification"
+      },
+      {
+        "@id": "urn:ngm:class:skeleton-configuration",
+        "label": "Skeleton Configuration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:platform-independent-identities",
+        "label": "Platform-Independent Identities"
+      },
+      {
+        "@id": "urn:ngm:class:standardized-rigging",
+        "label": "Standardized Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a261e58d3f7da06f035db3c5a01f4ff63258b64bf78045d6036d31de604b6c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:format-compliance",
-      "vc:label": "Format Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:metadata-specification",
-      "vc:label": "Metadata Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:skeleton-configuration",
-      "vc:label": "Skeleton Configuration"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:platform-independent-identities",
-      "vc:label": "Platform-Independent Identities"
-    },
-    {
-      "@id": "urn:visionflow:linked:standardized-rigging",
-      "vc:label": "Standardized Rigging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-interoperability",
-      "vc:label": "Avatar Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

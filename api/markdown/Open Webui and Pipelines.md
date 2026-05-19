@@ -252,256 +252,191 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:open-webui-and-pipelines",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-webui-and-pipelines",
+  "@type": "Class",
   "label": "Open Webui and Pipelines",
+  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, + GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
+      "@id": "urn:ngm:class:chatbots",
+      "label": "Chatbots"
     },
     {
-      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
-      "vc:label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-dev-and-consumer-tooling",
-      "vc:label": "WebDev and Consumer Tooling"
+      "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1f0ff8608c95df65e147304a7d02222f4d82c51efe9945d9dcf103e0d2560787"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      },
+      {
+        "@id": "urn:ngm:class:ollama",
+        "label": "Ollama"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-whisper",
+        "label": "Open AI Whisper"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ollama",
+        "label": "Ollama"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+        "label": "Retrieval Augmented Generation - RAG"
+      },
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "@id": "urn:ngm:class:ollama",
+        "label": "Ollama"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-whisper",
+        "label": "Open AI Whisper"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "@id": "urn:ngm:class:llama-3",
+        "label": "Llama 3"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "label": "Mistral and Mixtral"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1f0ff8608c95df65e147304a7d02222f4d82c51efe9945d9dcf103e0d2560787@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, 50,000+ GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] backends for on-device inference alongside any OpenAI-compatible REST API (OpenAI GPT-4o, Anthropic Claude 3.x, Mistral, Groq, Together AI, Replicate, and arbitrary custom endpoints), providing document-grounded [[Retrieval Augmented Generation - RAG]] via ChromaDB vector storage with configurable chunking (default 1,500-token chunks, 100-token overlap) and BM25/dense-embedding hybrid retrieval (sentence-transformers or OpenAI text-embedding-3-small/large), built-in web search integration (SearXNG, Google PSE, Brave Search, DuckDuckGo, Tavily, Jina AI, Bing), JSON-schema tool calling and Python [[Function Calling]] execution (native Functions editor with Valve parameter configuration, event emitter streaming, shared library dependencies), image generation via [[Stable Diffusion]] ComfyUI/AUTOMATIC1111/Replicate backends, speech-to-text (OpenAI Whisper and Faster-Whisper local) and tex",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-      "vc:label": "Model Control Protocols like MCP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ollama",
-      "vc:label": "Ollama"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai-whisper",
-      "vc:label": "Open AI Whisper"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
-      "vc:label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ollama",
-      "vc:label": "Ollama"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
-      "vc:label": "Model Optimisation and Performance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reasoning",
-      "vc:label": "Reasoning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-      "vc:label": "Model Control Protocols like MCP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
-      "vc:label": "Retrieval Augmented Generation - RAG"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-and-voice",
-      "vc:label": "Speech and Voice"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:education-and-ai",
-      "vc:label": "Education and AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:home-assistant",
-      "vc:label": "Home Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ollama",
-      "vc:label": "Ollama"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai-whisper",
-      "vc:label": "Open AI Whisper"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:microsoft-copilot",
-      "vc:label": "Microsoft Copilot"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-and-edge",
-      "vc:label": "Hardware and Edge"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:llama-3",
-      "vc:label": "Llama 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mistral-and-mixtral",
-      "vc:label": "Mistral and Mixtral"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-      "vc:label": "Model Control Protocols like MCP"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

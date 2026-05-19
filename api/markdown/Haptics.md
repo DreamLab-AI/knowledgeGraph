@@ -184,108 +184,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:haptics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:haptics",
+  "@type": "Class",
   "label": "Haptics",
+  "definition": "Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e122faa66c0cb3c67082128f04433650ef7eb843bbfe5c9efe80fc023f51a5e9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:force-feedback-actuators",
+        "label": "Force Feedback Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:piezoelectric-sensors",
+        "label": "Piezoelectric Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-actuators",
+        "label": "Tactile Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:vibration-motors",
+        "label": "Vibration Motors"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:signal-processing-unit",
+        "label": "Signal Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:driver-software",
+        "label": "Driver Software"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:physical-presence",
+        "label": "Physical Presence"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-feedback",
+        "label": "Tactile Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:texture-simulation",
+        "label": "Texture Simulation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:human-interface-device",
+        "label": "Human Interface Device"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e122faa66c0cb3c67082128f04433650ef7eb843bbfe5c9efe80fc023f51a5e9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical hardware systems that simulate tactile sensations and force feedback within virtual environments through actuators and sensors.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:human-interface-device",
-      "vc:label": "Human Interface Device"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:force-feedback-actuators",
-      "vc:label": "Force Feedback Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:piezoelectric-sensors",
-      "vc:label": "Piezoelectric Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-actuators",
-      "vc:label": "Tactile Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:vibration-motors",
-      "vc:label": "Vibration Motors"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:signal-processing-unit",
-      "vc:label": "Signal Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:driver-software",
-      "vc:label": "Driver Software"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:force-feedback",
-      "vc:label": "Force Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-presence",
-      "vc:label": "Physical Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-feedback",
-      "vc:label": "Tactile Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-simulation",
-      "vc:label": "Texture Simulation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:low-latency-communication",
-      "vc:label": "Low Latency Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-time Processing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

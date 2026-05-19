@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-architecture",
+  "@type": "Class",
   "label": "Metaverse Architecture",
+  "definition": "The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:777c046d839ec59d85eb7612200e5d2fa6cd8d1a3aa6ff38bcfdb79763da1b91"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-world-operation",
+        "label": "Virtual World Operation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:777c046d839ec59d85eb7612200e5d2fa6cd8d1a3aa6ff38bcfdb79763da1b91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:virtual-world-operation",
-      "vc:label": "Virtual World Operation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -1404,52 +1404,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:layer2",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:layer2",
+  "@type": "Class",
   "label": "Layer2",
+  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-reduction), and improved user experience while inheriting base laye...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4faf9199f5a7fb2797979540a85a2aef8715f073ec326b4c1d934095bd1cc7e4"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4faf9199f5a7fb2797979540a85a2aef8715f073ec326b4c1d934095bd1cc7e4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-99.9% reduction), and improved user experience while inheriting base layer security guarantees.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

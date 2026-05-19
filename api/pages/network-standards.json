@@ -3,32 +3,36 @@
   "title": "Network Standards",
   "slug": "network-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-standards",
+  "classIri": "urn:ngm:class:network-standards",
   "domain": "spatial-computing",
   "definition": "Technical specifications and protocols developed by standards bodies like IEEE, IETF, ITU, and ISO that define how network devices communicate, ensuring interoperability, security, and performance across telecommunications and internet infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:network-interoperability",
+        "id": "urn:ngm:class:network-interoperability",
         "label": "Network Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

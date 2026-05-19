@@ -176,72 +176,63 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:transformer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:transformer",
+  "@type": "Class",
   "label": "Transformer",
+  "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:695e15dfc8ba55fcdf2e9ff51f22547244c6b9499a1ca2889c186d4b46e6e6a2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bert",
-      "vc:label": "BERT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt",
-      "vc:label": "GPT"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-attention",
-      "vc:label": "Self Attention"
+      "@id": "urn:ngm:class:transformers",
+      "label": "Transformers"
     }
   ]
 }

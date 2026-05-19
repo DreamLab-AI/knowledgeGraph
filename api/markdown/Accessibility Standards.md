@@ -148,68 +148,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accessibility-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accessibility-standards",
+  "@type": "Class",
   "label": "Accessibility Standards",
+  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:design-standards",
-      "vc:label": "Design Standards"
+      "@id": "urn:ngm:class:design-standards",
+      "label": "Design Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:98ed5585fea6e2c105139f6b22f065d291a581c1d27282b74455e67c279aa880"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      },
+      {
+        "@id": "urn:ngm:class:multi-modal-interfaces",
+        "label": "Multi-Modal Interfaces"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:inclusive-virtual-experiences",
+        "label": "Inclusive Virtual Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:98ed5585fea6e2c105139f6b22f065d291a581c1d27282b74455e67c279aa880@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, and neurological impairments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:assistive-technology-integration",
-      "vc:label": "Assistive Technology Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-modal-interfaces",
-      "vc:label": "Multi-Modal Interfaces"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:inclusive-virtual-experiences",
-      "vc:label": "Inclusive Virtual Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-design",
-      "vc:label": "Universal Design"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

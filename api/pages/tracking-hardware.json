@@ -3,19 +3,18 @@
   "title": "Tracking Hardware",
   "slug": "tracking-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tracking-hardware",
+  "classIri": "urn:ngm:class:tracking-hardware",
   "domain": "spatial-computing",
-  "definition": "Tracking Hardware is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Tracking Hardware is a type of Tracking Technology in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tracking-technology",
+      "id": "urn:ngm:class:tracking-technology",
       "label": "Tracking Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

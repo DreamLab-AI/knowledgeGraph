@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-art-application",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-art-application",
+  "@type": "Class",
   "label": "Digital Art Application",
+  "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:creative-software",
-      "vc:label": "Creative Software"
+      "@id": "urn:ngm:class:creative-software",
+      "label": "Creative Software"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5bdc811fb5fd14eeb0eb39947e6f61caec3e5670779a34160ae77bf2bab80923"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graphics-processing",
+        "label": "Graphics Processing"
+      },
+      {
+        "@id": "urn:ngm:class:storage-systems",
+        "label": "Storage Systems"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-art-creation",
+        "label": "Digital Art Creation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-exhibitions",
+        "label": "Virtual Exhibitions"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5bdc811fb5fd14eeb0eb39947e6f61caec3e5670779a34160ae77bf2bab80923@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing",
-      "vc:label": "Graphics Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-systems",
-      "vc:label": "Storage Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-interface",
-      "vc:label": "User Interface"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:digital-art-creation",
-      "vc:label": "Digital Art Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-exhibitions",
-      "vc:label": "Virtual Exhibitions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-minting",
-      "vc:label": "NFT Minting"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

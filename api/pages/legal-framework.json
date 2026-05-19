@@ -3,44 +3,48 @@
   "title": "Legal Framework",
   "slug": "legal-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:legal-framework",
+  "classIri": "urn:ngm:class:legal-framework",
   "domain": "infrastructure",
-  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
+  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:legal-compliance",
+        "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
       },
       {
-        "id": "urn:visionflow:linked:rights-protection",
+        "id": "urn:ngm:class:rights-protection",
         "label": "Rights Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:privacy-requirements",
+        "id": "urn:ngm:class:privacy-requirements",
         "label": "Privacy Requirements"
       },
       {
-        "id": "urn:visionflow:linked:security-obligations",
+        "id": "urn:ngm:class:security-obligations",
         "label": "Security Obligations"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

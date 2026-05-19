@@ -3,19 +3,18 @@
   "title": "Digital Commerce",
   "slug": "digital-commerce",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-commerce",
+  "classIri": "urn:ngm:class:digital-commerce",
   "domain": "spatial-computing",
-  "definition": "Digital Commerce is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Commerce is a type of Digital Asset Ecosystem in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-ecosystem",
+      "id": "urn:ngm:class:digital-asset-ecosystem",
       "label": "Digital Asset Ecosystem"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

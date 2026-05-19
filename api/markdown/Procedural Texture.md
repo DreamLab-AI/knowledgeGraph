@@ -188,112 +188,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:procedural-texture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:procedural-texture",
+  "@type": "Class",
   "label": "Procedural Texture",
+  "definition": "Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:render-pipeline",
-      "vc:label": "Render Pipeline"
+      "@id": "urn:ngm:class:render-pipeline",
+      "label": "Render Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d3b66f40b8fb9b5ada655daa1265f3bd635e86650549045757468c8960b45c7a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:noise-function",
+        "label": "Noise Function"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-generator",
+        "label": "Pattern Generator"
+      },
+      {
+        "@id": "urn:ngm:class:shader-code",
+        "label": "Shader Code"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-set",
+        "label": "Parameter Set"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-shader",
+        "label": "GPU Shader"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-functions",
+        "label": "Mathematical Functions"
+      },
+      {
+        "@id": "urn:ngm:class:texture-coordinates",
+        "label": "Texture Coordinates"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dynamic-surface-detail",
+        "label": "Dynamic Surface Detail"
+      },
+      {
+        "@id": "urn:ngm:class:memory-efficient-texturing",
+        "label": "Memory Efficient Texturing"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-materials",
+        "label": "Procedural Materials"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-independent-graphics",
+        "label": "Resolution Independent Graphics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d3b66f40b8fb9b5ada655daa1265f3bd635e86650549045757468c8960b45c7a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:material-system",
-      "vc:label": "Material System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:noise-function",
-      "vc:label": "Noise Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:pattern-generator",
-      "vc:label": "Pattern Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-code",
-      "vc:label": "Shader Code"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parameter-set",
-      "vc:label": "Parameter Set"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-shader",
-      "vc:label": "GPU Shader"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-functions",
-      "vc:label": "Mathematical Functions"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-coordinates",
-      "vc:label": "Texture Coordinates"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dynamic-surface-detail",
-      "vc:label": "Dynamic Surface Detail"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-efficient-texturing",
-      "vc:label": "Memory Efficient Texturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:procedural-materials",
-      "vc:label": "Procedural Materials"
-    },
-    {
-      "@id": "urn:visionflow:linked:resolution-independent-graphics",
-      "vc:label": "Resolution Independent Graphics"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:graphics-processing-unit",
-      "vc:label": "Graphics Processing Unit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shader-language",
-      "vc:label": "Shader Language"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

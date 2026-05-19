@@ -3,53 +3,57 @@
   "title": "Digital Content Overlay",
   "slug": "digital-content-overlay",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-content-overlay",
+  "classIri": "urn:ngm:class:digital-content-overlay",
   "domain": "spatial-computing",
-  "definition": "The real-time integration and superimposition of digital information, graphics, 3D models, and interactive elements onto a user's view of the physical world through augmented reality displays, achieving a blended experience that enriches perception of reality. bridges-to:: [[Sensor Input]]",
+  "definition": "Digital Content Overlay is a type of Augmented Reality in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:augmented-reality",
+      "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-systems",
+        "id": "urn:ngm:class:camera-systems",
         "label": "Camera Systems"
       },
       {
-        "id": "urn:visionflow:linked:slam-technology",
+        "id": "urn:ngm:class:slam-technology",
         "label": "SLAM Technology"
       },
       {
-        "id": "urn:visionflow:owl:class:display-hardware",
+        "id": "urn:ngm:class:display-hardware",
         "label": "Display Hardware"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:information-display",
+        "id": "urn:ngm:class:information-display",
         "label": "Information Display"
       },
       {
-        "id": "urn:visionflow:linked:interactive-guidance",
+        "id": "urn:ngm:class:interactive-guidance",
         "label": "Interactive Guidance"
       },
       {
-        "id": "urn:visionflow:linked:spatial-annotation",
+        "id": "urn:ngm:class:spatial-annotation",
         "label": "Spatial Annotation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

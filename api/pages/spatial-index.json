@@ -3,86 +3,99 @@
   "title": "Spatial Index",
   "slug": "spatial-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-index",
+  "classIri": "urn:ngm:class:spatial-index",
   "domain": "spatial-computing",
   "definition": "Data structure optimized for efficient storage, retrieval, and querying of 3D spatial objects within virtual worlds using hierarchical geometric partitioning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-data-structure",
+      "id": "urn:ngm:class:spatial-data-structure",
       "label": "Spatial Data Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:grid-based-index",
+        "id": "urn:ngm:class:grid-based-index",
         "label": "Grid-based Index"
       },
       {
-        "id": "urn:visionflow:linked:octree",
+        "id": "urn:ngm:class:octree",
         "label": "Octree"
       },
       {
-        "id": "urn:visionflow:linked:quadtree",
+        "id": "urn:ngm:class:quadtree",
         "label": "Quadtree"
       },
       {
-        "id": "urn:visionflow:linked:r-tree-structure",
+        "id": "urn:ngm:class:r-tree-structure",
         "label": "R-tree Structure"
       },
       {
-        "id": "urn:visionflow:owl:class:bounding-volume-hierarchy",
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bounding-box",
+        "id": "urn:ngm:class:bounding-box",
         "label": "Bounding Box"
       },
       {
-        "id": "urn:visionflow:linked:distance-metric",
+        "id": "urn:ngm:class:distance-metric",
         "label": "Distance Metric"
       },
       {
-        "id": "urn:visionflow:linked:geometric-primitives",
+        "id": "urn:ngm:class:geometric-primitives",
         "label": "Geometric Primitives"
       },
       {
-        "id": "urn:visionflow:owl:class:coordinate-system",
+        "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:level-of-detail-selection",
+        "id": "urn:ngm:class:level-of-detail-selection",
         "label": "Level of Detail Selection"
       },
       {
-        "id": "urn:visionflow:linked:view-frustum-culling",
+        "id": "urn:ngm:class:view-frustum-culling",
         "label": "View Frustum Culling"
       },
       {
-        "id": "urn:visionflow:owl:class:collision-detection",
+        "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:fast-spatial-queries",
+        "id": "urn:ngm:class:fast-spatial-queries",
         "label": "Fast Spatial Queries"
       },
       {
-        "id": "urn:visionflow:owl:class:proximity-search",
+        "id": "urn:ngm:class:proximity-search",
         "label": "Proximity Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world-infrastructure",
+        "label": "Virtual World Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

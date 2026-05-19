@@ -200,122 +200,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:testing-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:testing-process",
+  "@type": "Class",
   "label": "Testing Process",
+  "definition": "Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
+      "@id": "urn:ngm:class:quality-assurance",
+      "label": "Quality Assurance"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8b50b981291109209c41fa523c5002985630408cbe1650fdadb30afc900595c5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:performance-testing",
+        "label": "Performance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "@id": "urn:ngm:class:user-acceptance-testing",
+        "label": "User Acceptance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:defect-tracking-system",
+        "label": "Defect Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:test-automation-framework",
+        "label": "Test Automation Framework"
+      },
+      {
+        "@id": "urn:ngm:class:test-data-management",
+        "label": "Test Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:quality-validation",
+        "label": "Quality Validation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:development-workflow",
+        "label": "Development Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b50b981291109209c41fa523c5002985630408cbe1650fdadb30afc900595c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:development-workflow",
-      "vc:label": "Development Workflow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:integration-testing",
-      "vc:label": "Integration Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-testing",
-      "vc:label": "Performance Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-testing",
-      "vc:label": "Security Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:unit-testing",
-      "vc:label": "Unit Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-acceptance-testing",
-      "vc:label": "User Acceptance Testing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:defect-tracking-system",
-      "vc:label": "Defect Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-automation-framework",
-      "vc:label": "Test Automation Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-data-management",
-      "vc:label": "Test Data Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:quality-validation",
-      "vc:label": "Quality Validation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:performance-optimization",
-      "vc:label": "Performance Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-mitigation",
-      "vc:label": "Risk Mitigation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:continuous-integration",
-      "vc:label": "Continuous Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telemetry-and-analytics",
-      "vc:label": "Telemetry & Analytics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

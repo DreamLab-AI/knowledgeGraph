@@ -3,171 +3,283 @@
   "title": "Hydraulic Actuator",
   "slug": "hydraulic-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hydraulic-actuator",
+  "classIri": "urn:ngm:class:hydraulic-actuator",
   "domain": "robotics",
-  "definition": "HydraulicActuator is a mechanical transduction device that converts the energy stored in pressurised hydraulic fluid into controlled mechanical work\u2014linear force and stroke via hydraulic cylinders, continuous rotational torque and speed via hydraulic motors, or limited angular displacement via rotary actuators\u2014operating at gauge pressures of 14\u201335 MPa (2,000\u20135,000 psi) to deliver specific force densities of 50\u2013200 N/cm\u00b2 effective bore area loading and joint-level power densities of 2\u201310 kW/kg, exceeding comparably sized electric BLDC motors by 3\u20136\u00d7 and surpassing pneumatic actuators at equivalent bore by 20\u201350\u00d7, making hydraulic actuation the dominant technology for legged robots requiring impulsive ground-contact forces, heavy industrial manipulators demanding tens of kilonewtons of sustained force, six-DOF flight simulation motion platforms requiring 40\u201380 kN per leg, deep-sea remotely operated vehicles where pressure-equalised hydraulics eliminate pressure vessel mass, nuclear remote-handling systems where electric motors cannot be shielded against radiation, and powered exoskeletons rated above 50 kg payload where no commercially available electric joint actuator offers compara",
+  "definition": "HydraulicActuator is a mechanical transduction device that converts the energy stored in pressurised hydraulic fluid into controlled mechanical work\u2014linear force and stroke via hydraulic cylinders, continuous rotational torque and speed via hydraulic motors, or limited angular displacement via ro...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:fluid-power-system",
+      "id": "urn:ngm:class:fluid-power-system",
       "label": "Fluid Power System"
     },
     {
-      "id": "urn:visionflow:linked:force-control-system",
+      "id": "urn:ngm:class:force-control-system",
       "label": "Force Control System"
-    },
-    {
-      "id": "urn:visionflow:linked:mechanical-transducer",
-      "label": "Mechanical Transducer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:accumulator",
+        "id": "urn:ngm:class:accumulator",
         "label": "Accumulator"
       },
       {
-        "id": "urn:visionflow:linked:force-sensor",
+        "id": "urn:ngm:class:force-sensor",
         "label": "Force Sensor"
       },
       {
-        "id": "urn:visionflow:linked:hydraulic-manifold",
+        "id": "urn:ngm:class:hydraulic-manifold",
         "label": "Hydraulic Manifold"
       },
       {
-        "id": "urn:visionflow:linked:hydraulic-pump",
+        "id": "urn:ngm:class:hydraulic-pump",
         "label": "Hydraulic Pump"
       },
       {
-        "id": "urn:visionflow:linked:hydraulic-reservoir",
+        "id": "urn:ngm:class:hydraulic-reservoir",
         "label": "Hydraulic Reservoir"
       },
       {
-        "id": "urn:visionflow:linked:position-sensor",
+        "id": "urn:ngm:class:position-sensor",
         "label": "Position Sensor"
       },
       {
-        "id": "urn:visionflow:linked:pressure-relief-valve",
+        "id": "urn:ngm:class:pressure-relief-valve",
         "label": "Pressure Relief Valve"
       },
       {
-        "id": "urn:visionflow:linked:proportional-valve",
+        "id": "urn:ngm:class:proportional-valve",
         "label": "Proportional Valve"
       },
       {
-        "id": "urn:visionflow:linked:servo-valve",
+        "id": "urn:ngm:class:servo-valve",
         "label": "Servo Valve"
       },
       {
-        "id": "urn:visionflow:owl:class:hydraulic-cylinder",
+        "id": "urn:ngm:class:hydraulic-cylinder",
         "label": "Hydraulic Cylinder"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:feedback-sensor",
+        "id": "urn:ngm:class:feedback-sensor",
         "label": "Feedback Sensor"
       },
       {
-        "id": "urn:visionflow:linked:heat-exchanger",
+        "id": "urn:ngm:class:heat-exchanger",
         "label": "Heat Exchanger"
       },
       {
-        "id": "urn:visionflow:linked:hydraulic-fluid",
+        "id": "urn:ngm:class:hydraulic-fluid",
         "label": "Hydraulic Fluid"
       },
       {
-        "id": "urn:visionflow:linked:hydraulic-power-unit",
+        "id": "urn:ngm:class:hydraulic-power-unit",
         "label": "Hydraulic Power Unit"
       },
       {
-        "id": "urn:visionflow:linked:pressurised-fluid-supply",
+        "id": "urn:ngm:class:pressurised-fluid-supply",
         "label": "Pressurised Fluid Supply"
       },
       {
-        "id": "urn:visionflow:linked:return-filter",
+        "id": "urn:ngm:class:return-filter",
         "label": "Return Filter"
       },
       {
-        "id": "urn:visionflow:linked:seal-system",
+        "id": "urn:ngm:class:seal-system",
         "label": "Seal System"
       },
       {
-        "id": "urn:visionflow:linked:servo-controller",
+        "id": "urn:ngm:class:servo-controller",
         "label": "Servo Controller"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:compliant-force-control",
+        "id": "urn:ngm:class:compliant-force-control",
         "label": "Compliant Force Control"
       },
       {
-        "id": "urn:visionflow:linked:deep-sea-robotics",
+        "id": "urn:ngm:class:deep-sea-robotics",
         "label": "Deep-Sea Robotics"
       },
       {
-        "id": "urn:visionflow:linked:exoskeleton-actuation",
+        "id": "urn:ngm:class:exoskeleton-actuation",
         "label": "Exoskeleton Actuation"
       },
       {
-        "id": "urn:visionflow:linked:flight-simulation",
+        "id": "urn:ngm:class:flight-simulation",
         "label": "Flight Simulation"
       },
       {
-        "id": "urn:visionflow:linked:haptic-interface",
+        "id": "urn:ngm:class:haptic-interface",
         "label": "Haptic Interface"
       },
       {
-        "id": "urn:visionflow:linked:heavy-manipulation",
+        "id": "urn:ngm:class:heavy-manipulation",
         "label": "Heavy Manipulation"
       },
       {
-        "id": "urn:visionflow:linked:high-force-industrial-automation",
+        "id": "urn:ngm:class:high-force-industrial-automation",
         "label": "High-Force Industrial Automation"
       },
       {
-        "id": "urn:visionflow:linked:legged-robot-locomotion",
+        "id": "urn:ngm:class:legged-robot-locomotion",
         "label": "Legged Robot Locomotion"
       },
       {
-        "id": "urn:visionflow:owl:class:teleoperation",
+        "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:closed-loop-position-control",
+        "id": "urn:ngm:class:closed-loop-position-control",
         "label": "Closed-Loop Position Control"
       },
       {
-        "id": "urn:visionflow:linked:electrohydrostatic-drive",
+        "id": "urn:ngm:class:electrohydrostatic-drive",
         "label": "Electrohydrostatic Drive"
       },
       {
-        "id": "urn:visionflow:linked:force-impedance-control",
+        "id": "urn:ngm:class:force-impedance-control",
         "label": "Force Impedance Control"
       },
       {
-        "id": "urn:visionflow:linked:pascal-law-actuation",
+        "id": "urn:ngm:class:pascal-law-actuation",
         "label": "Pascal Law Actuation"
       },
       {
-        "id": "urn:visionflow:linked:proportional-flow-control",
+        "id": "urn:ngm:class:proportional-flow-control",
         "label": "Proportional Flow Control"
       },
       {
-        "id": "urn:visionflow:linked:series-elastic-actuation",
+        "id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differential-pressure-sensing",
+        "label": "Differential Pressure Sensing"
+      },
+      {
+        "id": "urn:ngm:class:electrohydraulic-servo-valve",
+        "label": "Electrohydraulic Servo Valve"
+      },
+      {
+        "id": "urn:ngm:class:linear-variable-differential-transformer",
+        "label": "Linear Variable Differential Transformer"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:proportional-valve",
+        "label": "Proportional Valve"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:boston-dynamics-atlas",
+        "label": "Boston Dynamics Atlas"
+      },
+      {
+        "id": "urn:ngm:class:boston-dynamics-big-dog",
+        "label": "Boston Dynamics BigDog"
+      },
+      {
+        "id": "urn:ngm:class:darpa-robotics-challenge",
+        "label": "DARPA Robotics Challenge"
+      },
+      {
+        "id": "urn:ngm:class:iit-hy-q-family",
+        "label": "IIT HyQ Family"
+      },
+      {
+        "id": "urn:ngm:class:legged-locomotion-research",
+        "label": "Legged Locomotion Research"
+      },
+      {
+        "id": "urn:ngm:class:nuclear-remote-handling",
+        "label": "Nuclear Remote Handling"
+      },
+      {
+        "id": "urn:ngm:class:sarcos-guardian-xo",
+        "label": "Sarcos Guardian XO"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:din-24346-hydraulic-components",
+        "label": "DIN 24346 Hydraulic Components"
+      },
+      {
+        "id": "urn:ngm:class:iso-4413-hydraulics-safety",
+        "label": "ISO 4413 Hydraulics Safety"
+      },
+      {
+        "id": "urn:ngm:class:nfpa-t3-fluid-power-standard",
+        "label": "NFPA T3 Fluid Power Standard"
+      },
+      {
+        "id": "urn:ngm:class:sae-j2048-hydraulic-systems",
+        "label": "SAE J2048 Hydraulic Systems"
+      },
+      {
+        "id": "urn:ngm:class:uk-hse-hsg244",
+        "label": "UK HSE HSG244"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:construction-robotics",
+        "label": "Construction Robotics"
+      },
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      },
+      {
+        "id": "urn:ngm:class:legged-robotics",
+        "label": "Legged Robotics"
+      },
+      {
+        "id": "urn:ngm:class:subsea-robotics",
+        "label": "Subsea Robotics"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
+    ]
   },
   "wikilinks": [
     {

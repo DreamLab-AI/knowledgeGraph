@@ -3,45 +3,49 @@
   "title": "Adversarial Attacks",
   "slug": "adversarial-attacks",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:adversarial-attacks",
+  "classIri": "urn:ngm:class:adversarial-attacks",
   "domain": "artificial-intelligence",
-  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.",
+  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significan...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-security-threats",
+      "id": "urn:ngm:class:ai-security-threats",
       "label": "AI Security Threats"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:crafted-perturbations",
+        "id": "urn:ngm:class:crafted-perturbations",
         "label": "Crafted Perturbations"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-of-target-model",
+        "id": "urn:ngm:class:knowledge-of-target-model",
         "label": "Knowledge of Target Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:model-evasion",
+        "id": "urn:ngm:class:model-evasion",
         "label": "Model Evasion"
       },
       {
-        "id": "urn:visionflow:linked:system-manipulation",
+        "id": "urn:ngm:class:system-manipulation",
         "label": "System Manipulation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

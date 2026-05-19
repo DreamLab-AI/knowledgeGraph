@@ -3,19 +3,18 @@
   "title": "rb 0054 position control",
   "slug": "rb-0054-position-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0054-position-control",
+  "classIri": "urn:ngm:class:rb-0054-position-control",
   "domain": "robotics",
   "definition": "position control is a robotics and autonomous systems concept and a type of Motion Control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-control",
+      "id": "urn:ngm:class:motion-control",
       "label": "Motion Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

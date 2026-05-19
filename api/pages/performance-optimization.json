@@ -3,40 +3,44 @@
   "title": "Performance Optimization",
   "slug": "performance-optimization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:performance-optimization",
+  "classIri": "urn:ngm:class:performance-optimization",
   "domain": "infrastructure",
-  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.",
+  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:optimization-technique",
+      "id": "urn:ngm:class:optimization-technique",
       "label": "Optimization Technique"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:resource-efficiency",
+        "id": "urn:ngm:class:resource-efficiency",
         "label": "Resource Efficiency"
       },
       {
-        "id": "urn:visionflow:linked:system-scalability",
+        "id": "urn:ngm:class:system-scalability",
         "label": "System Scalability"
       },
       {
-        "id": "urn:visionflow:linked:user-experience",
+        "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

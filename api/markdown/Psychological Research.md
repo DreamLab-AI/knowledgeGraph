@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:psychological-research",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:psychological-research",
+  "@type": "Class",
   "label": "Psychological Research",
+  "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:research-methods",
-      "vc:label": "Research Methods"
+      "@id": "urn:ngm:class:research-methods",
+      "label": "Research Methods"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8d61a0856d1af1435642dee62d50589d0886ebd6d8ac8b97af91f556c1fd3ecc"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:evidence-based-vr-treatment",
+        "label": "Evidence Based VR Treatment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8d61a0856d1af1435642dee62d50589d0886ebd6d8ac8b97af91f556c1fd3ecc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:evidence-based-vr-treatment",
-      "vc:label": "Evidence Based VR Treatment"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -136,54 +136,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gas-optimization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gas-optimization",
+  "@type": "Class",
   "label": "Gas Optimization",
+  "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic vi...",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability-solutions",
+        "label": "Scalability Solutions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4fbc1445fcf9ef40188a8715d434e8bdc8abc62572c8185d7822cee8ba46b65d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic viability.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scalability-solutions",
-      "vc:label": "Scalability Solutions"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:owl:class:gas",
-      "vc:label": "Gas"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

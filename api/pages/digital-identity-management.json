@@ -3,53 +3,57 @@
   "title": "Digital Identity Management",
   "slug": "digital-identity-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-identity-management",
+  "classIri": "urn:ngm:class:digital-identity-management",
   "domain": "infrastructure",
-  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication. bridges-to:: [[DID Nostr Identity]]",
+  "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform auth...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:identity-systems",
+      "id": "urn:ngm:class:identity-systems",
       "label": "Identity Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:credential-storage",
+        "id": "urn:ngm:class:credential-storage",
         "label": "Credential Storage"
       },
       {
-        "id": "urn:visionflow:linked:identity-providers",
+        "id": "urn:ngm:class:identity-providers",
         "label": "Identity Providers"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:privacy-control",
+        "id": "urn:ngm:class:privacy-control",
         "label": "Privacy Control"
       },
       {
-        "id": "urn:visionflow:linked:user-authentication",
+        "id": "urn:ngm:class:user-authentication",
         "label": "User Authentication"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-identity",
+        "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

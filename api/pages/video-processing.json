@@ -3,19 +3,13 @@
   "title": "Video Processing",
   "slug": "video-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:video-processing",
+  "classIri": "urn:ngm:class:video-processing",
   "domain": "artificial-intelligence",
-  "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques. Core tasks include object detection and tracking, action recognition, video segmentation, temporal modeling, scene understanding, and video generation. Modern approaches leverage 3D convolutional networks, recurrent architectures, transformers for temporal reasoning, and self-supervised learning on large video datasets. Applications span surveillance, autonomous driving, content moderation, sports analytics, medical imaging, and video editing automation.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Gasper Consensus",
   "slug": "gasper-consensus",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gasper-consensus",
+  "classIri": "urn:ngm:class:gasper-consensus",
   "domain": "blockchain",
-  "definition": "Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism.",
+  "definition": "ereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake er without delegation mechanism.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hybrid-consensus",
+      "id": "urn:ngm:class:hybrid-consensus",
       "label": "Hybrid Consensus"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

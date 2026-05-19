@@ -160,62 +160,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ethical-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ethical-ai",
+  "@type": "Class",
   "label": "Ethical AI",
+  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI life...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "stakeholder engagement"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e661e3ab271a4ed9ba95df9403da179bfa12f474a9a39d0d4d6e81618847a61d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:stakeholder-engagement",
-      "vc:label": "stakeholder engagement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:trustworthy-ai",
-      "vc:label": "Trustworthy AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:responsible-ai",
-      "vc:label": "Responsible AI"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

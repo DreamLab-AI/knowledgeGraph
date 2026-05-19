@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-ai-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-ai-system",
+  "@type": "Class",
   "label": "Edge AI System",
+  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:224f6918ad7037ce02a1ca266b65ecdee97f684c0f4f17389cf2d1090b694a12@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An Edge AI System is a distributed computing architecture that deploys machine learning models directly onto edge devices and sensors at the network periphery, enabling local inference without requiring continuous cloud connectivity. These systems process data in real-time at the source, reducing latency to milliseconds while minimizing bandwidth consumption and cloud dependency. Edge AI Systems optimize for resource-constrained environments with limited memory (typically 128KB-512MB), power budgets (10-100mW), and computational capacity compared to data centers. They incorporate model compression techniques including quantization, pruning, and knowledge distillation to fit neural networks into embedded hardware. Core characteristics include deterministic latency guarantees, offline-capable operation, privacy preservation through local processing, and direct sensor-to-actuator decision loops. Edge AI Systems span diverse deployment scenarios: industrial IoT monitoring for predictive maintenance, autonomous vehicle perception pipelines, smart home voice processing, medical wearables, drone navigation, and surveillance analytics. The architecture balances accuracy against resource co",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

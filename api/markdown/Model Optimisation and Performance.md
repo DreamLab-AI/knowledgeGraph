@@ -428,316 +428,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-optimisation-and-performance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-optimisation-and-performance",
+  "@type": "Class",
   "label": "Model Optimisation and Performance",
+  "definition": "Model Optimisation and Performance is the body of post-training techniques, inference-time systems, and hardware-aware transformations that reduce the computational cost, memory footprint, and latency of neural networks—particularly large language models (LLMs)—without unacceptable degradation of...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-efficiency",
-      "vc:label": "Computational Efficiency"
+      "@id": "urn:ngm:class:computational-efficiency",
+      "label": "Computational Efficiency"
     },
     {
-      "@id": "urn:visionflow:linked:mlops",
-      "vc:label": "MLOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-network-compression",
-      "vc:label": "Neural Network Compression"
+      "@id": "urn:ngm:class:mlops",
+      "label": "MLOps"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:58ff4879e744df4cc627608735dd48bd230ddc38c0ca0d57a6c4d5249ae775fa"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "FlashAttention"
+      },
+      {
+        "@id": "urn:ngm:class:gguf-format",
+        "label": "GGUF Format"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "PagedAttention"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calibration-dataset",
+        "label": "Calibration Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:cuda-runtime",
+        "label": "CUDA Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating Point Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cost-effective-llm-serving",
+        "label": "Cost-Effective LLM Serving"
+      },
+      {
+        "@id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-apis",
+        "label": "Low-Latency APIs"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-ai",
+        "label": "Mobile AI"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai",
+        "label": "Real-Time AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:attention-tiling",
+        "label": "Attention Tiling"
+      },
+      {
+        "@id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-fusion",
+        "label": "Kernel Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:structured-sparsity",
+        "label": "Structured Sparsity"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-memory-management",
+        "label": "Virtual Memory Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bfloat16",
+        "label": "BFLOAT16"
+      },
+      {
+        "@id": "urn:ngm:class:int8-arithmetic",
+        "label": "INT8 Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:neon-simd",
+        "label": "NEON SIMD"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-graph",
+        "label": "ONNX Graph"
+      },
+      {
+        "@id": "urn:ngm:class:sme2",
+        "label": "SME2"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-cores",
+        "label": "Tensor Cores"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:efficient-transformers",
+        "label": "Efficient Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:khronos-nnapi",
+        "label": "Khronos NNAPI"
+      },
+      {
+        "@id": "urn:ngm:class:mlperf-inference",
+        "label": "MLPerf Inference"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-xla",
+        "label": "OpenXLA"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:58ff4879e744df4cc627608735dd48bd230ddc38c0ca0d57a6c4d5249ae775fa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Model Optimisation and Performance is the body of post-training techniques, inference-time systems, and hardware-aware transformations that reduce the computational cost, memory footprint, and latency of neural networks—particularly large language models (LLMs)—without unacceptable degradation of task quality, encompassing quantisation (converting FP32/BF16 weights and activations to INT8, INT4, or 1-bit representations via uniform symmetric/asymmetric mapping, per-channel or per-group affine scaling, and block-wise calibration, with post-training quantisation (PTQ) variants including GPTQ Frantar et al. NeurIPS 2022 applying optimal brain quantisation column-wise Hessian approximation achieving 3-4-bit LLaMA-65B with <1% perplexity increase, AWQ Lin et al. 2023 protecting 0.1% salient weights scaling activations to minimise quantisation error without data backpropagation, AQLM Egiazarian et al. 2024 additive quantisation with residual vector codebooks at 2-bit enabling 2× VRAM reduction vs INT4, and GGUF format Georgi Gerganov 2023 extending GGML binary with per-tensor quantisation metadata, typed tensors and versioned magic bytes enabling llama.cpp deployment across CPU and mobil",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "FlashAttention"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf-format",
-      "vc:label": "GGUF Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:kv-cache",
-      "vc:label": "KV Cache"
-    },
-    {
-      "@id": "urn:visionflow:linked:paged-attention",
-      "vc:label": "PagedAttention"
-    },
-    {
-      "@id": "urn:visionflow:linked:pruning",
-      "vc:label": "Pruning"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speculative-decoding",
-      "vc:label": "Speculative Decoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-distillation",
-      "vc:label": "Knowledge Distillation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:calibration-dataset",
-      "vc:label": "Calibration Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda-runtime",
-      "vc:label": "CUDA Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:floating-point-arithmetic",
-      "vc:label": "Floating Point Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-hierarchy",
-      "vc:label": "Memory Hierarchy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cost-effective-llm-serving",
-      "vc:label": "Cost-Effective LLM Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-deployment",
-      "vc:label": "Edge Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-apis",
-      "vc:label": "Low-Latency APIs"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-ai",
-      "vc:label": "Mobile AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:on-device-inference",
-      "vc:label": "On-Device Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-ai",
-      "vc:label": "Real-Time AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:attention-tiling",
-      "vc:label": "Attention Tiling"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-optimisation",
-      "vc:label": "Graph Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:kernel-fusion",
-      "vc:label": "Kernel Fusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-training-quantisation",
-      "vc:label": "Post-Training Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-sparsity",
-      "vc:label": "Structured Sparsity"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-memory-management",
-      "vc:label": "Virtual Memory Management"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda-programming-model",
-      "vc:label": "CUDA Programming Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-architecture",
-      "vc:label": "Hardware Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:numerical-precision",
-      "vc:label": "Numerical Precision"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-attention-mechanism",
-      "vc:label": "Transformer Attention Mechanism"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:medical-ai",
-      "vc:label": "Medical AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bfloat16",
-      "vc:label": "BFLOAT16"
-    },
-    {
-      "@id": "urn:visionflow:linked:int8-arithmetic",
-      "vc:label": "INT8 Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:neon-simd",
-      "vc:label": "NEON SIMD"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-graph",
-      "vc:label": "ONNX Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:sme2",
-      "vc:label": "SME2"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-cores",
-      "vc:label": "Tensor Cores"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:dense-inference",
-      "vc:label": "Dense Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:eager-execution",
-      "vc:label": "Eager Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:full-precision-training",
-      "vc:label": "Full-Precision Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-request-batching",
-      "vc:label": "Single-Request Batching"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:efficient-transformers",
-      "vc:label": "Efficient Transformers"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
-      "vc:label": "Hyperparameter Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlops",
-      "vc:label": "MLOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-architecture-search",
-      "vc:label": "Neural Architecture Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:auto-ml",
-      "vc:label": "AutoML"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:khronos-nnapi",
-      "vc:label": "Khronos NNAPI"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlperf-inference",
-      "vc:label": "MLPerf Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-standard",
-      "vc:label": "ONNX Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xla",
-      "vc:label": "OpenXLA"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:mlops",
-      "vc:label": "MLOps"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-systems",
-      "vc:label": "Distributed Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

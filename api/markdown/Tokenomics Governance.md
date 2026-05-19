@@ -444,332 +444,249 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tokenomics-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tokenomics-governance",
+  "@type": "Class",
   "label": "Tokenomics Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-finance",
-      "vc:label": "Decentralised Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-economics",
-      "vc:label": "Protocol Economics"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0d0875a062df379668c7410230e7acb8fb6c3ca83e8fb605c1a63a942cb274de"
+  "definition": "Tokenomics governance is the discipline integrating token-economic design with decentralised decision-making mechanisms, defining how [[Governance Token]] holders in [[DeFi]] and [[DAO]] protocols gain, exercise, and lose voting power whilst simultaneously participating as economic stakeholders t...",
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "@id": "urn:ngm:class:bribe-market",
+        "label": "Bribe Market"
+      },
+      {
+        "@id": "urn:ngm:class:buyback-and-burn",
+        "label": "Buyback and Burn"
+      },
+      {
+        "@id": "urn:ngm:class:delegation-system",
+        "label": "Delegation System"
+      },
+      {
+        "@id": "urn:ngm:class:gauge-voting",
+        "label": "Gauge Voting"
+      },
+      {
+        "@id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-economics",
+        "label": "Protocol Economics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:on-chain-voting-infrastructure",
+        "label": "On-chain Voting Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:token-distribution-event",
+        "label": "Token Distribution Event"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:emission-direction-control",
+        "label": "Emission Direction Control"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-holder-alignment",
+        "label": "Long-term Holder Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:meta-governance-attack-resistance",
+        "label": "Meta-governance Attack Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-fee-distribution",
+        "label": "Protocol Fee Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-governance",
+        "label": "Treasury Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bonding-mechanism",
+        "label": "Bonding Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:gauge-weighting",
+        "label": "Gauge Weighting"
+      },
+      {
+        "@id": "urn:ngm:class:real-yield-distribution",
+        "label": "Real Yield Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow-model",
+        "label": "Vote-Escrow Model"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:multisignature-wallet",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tally-on-chain-voting",
+        "label": "Tally On-chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "@id": "urn:ngm:class:balancer",
+        "label": "Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "@id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "@id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "@id": "urn:ngm:class:eigen-layer",
+        "label": "EigenLayer"
+      },
+      {
+        "@id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "@id": "urn:ngm:class:olympus-dao",
+        "label": "Olympus DAO"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "@id": "urn:ngm:class:velodrome-finance",
+        "label": "Velodrome Finance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:governance-attack-resistance",
+        "label": "Governance Attack Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-sustainability",
+        "label": "Protocol Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-coordination",
+        "label": "Stakeholder Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:value-accrual",
+        "label": "Value Accrual"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-standard",
+        "label": "ERC-20 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:maker-dao-endgame-framework",
+        "label": "MakerDAO Endgame Framework"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governance-contracts",
+        "label": "OpenZeppelin Governance Contracts"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0d0875a062df379668c7410230e7acb8fb6c3ca83e8fb605c1a63a942cb274de@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Tokenomics governance is the discipline integrating token-economic design with decentralised decision-making mechanisms, defining how [[Governance Token]] holders in [[DeFi]] and [[DAO]] protocols gain, exercise, and lose voting power whilst simultaneously participating as economic stakeholders through fee accrual, inflationary rewards, and secondary-market liquidity. The field encompasses the full lifecycle of protocol-native tokens from initial issuance (airdrops, liquidity mining, bonding, [[Token Generation Event]]) through vesting schedules and cliff periods, vote-escrow locking (veCRV on [[Curve Finance]], veBAL on [[Balancer]], vlAURA on Aura Finance), secondary markets for locked voting power (Votium, Hidden Hand, Paladin — collectively the \"bribe economy\"), tail-emission schedules, halving curves, buyback-and-burn deflation (MKR, [[Ethereum]] EIP-1559), real-yield fee distribution ([[GMX]], [[Gains Network]]), bonding curves for algorithmic supply adjustment ([[Olympus DAO]] OHM), and the emergent meta-governance layer in which aggregator protocols (Convex Finance, Llama Airforce, vlAURA) accumulate locked tokens to steer billions in weekly emission votes — known as the [[",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bonding-curve",
-      "vc:label": "Bonding Curve"
-    },
-    {
-      "@id": "urn:visionflow:linked:bribe-market",
-      "vc:label": "Bribe Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:buyback-and-burn",
-      "vc:label": "Buyback and Burn"
-    },
-    {
-      "@id": "urn:visionflow:linked:delegation-system",
-      "vc:label": "Delegation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:gauge-voting",
-      "vc:label": "Gauge Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:vesting-schedule",
-      "vc:label": "Vesting Schedule"
-    },
-    {
-      "@id": "urn:visionflow:linked:vote-escrow",
-      "vc:label": "Vote Escrow"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:emission-schedule",
-      "vc:label": "Emission Schedule"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:on-chain-voting-infrastructure",
-      "vc:label": "On-chain Voting Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-distribution-event",
-      "vc:label": "Token Distribution Event"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-token",
-      "vc:label": "Governance Token"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:liquidity-pool",
-      "vc:label": "Liquidity Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:emission-direction-control",
-      "vc:label": "Emission Direction Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-term-holder-alignment",
-      "vc:label": "Long-term Holder Alignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-governance-attack-resistance",
-      "vc:label": "Meta-governance Attack Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-fee-distribution",
-      "vc:label": "Protocol Fee Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:treasury-governance",
-      "vc:label": "Treasury Governance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bonding-mechanism",
-      "vc:label": "Bonding Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:gauge-weighting",
-      "vc:label": "Gauge Weighting"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-yield-distribution",
-      "vc:label": "Real Yield Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:vote-escrow-model",
-      "vc:label": "Vote-Escrow Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:game-theory",
-      "vc:label": "Game Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity-depth",
-      "vc:label": "Liquidity Depth"
-    },
-    {
-      "@id": "urn:visionflow:linked:oracle-infrastructure",
-      "vc:label": "Oracle Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-security",
-      "vc:label": "Smart Contract Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-autonomous-organisation",
-      "vc:label": "Decentralised Autonomous Organisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-attack-resistance",
-      "vc:label": "Governance Attack Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-sustainability",
-      "vc:label": "Protocol Sustainability"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-coordination",
-      "vc:label": "Stakeholder Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-accrual",
-      "vc:label": "Value Accrual"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:multisignature-wallet",
-      "vc:label": "Multisignature Wallet"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governor",
-      "vc:label": "OpenZeppelin Governor"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot-governance",
-      "vc:label": "Snapshot Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:tally-on-chain-voting",
-      "vc:label": "Tally On-chain Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelock-controller",
-      "vc:label": "Timelock Controller"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-exchange-token",
-      "vc:label": "Centralised Exchange Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-governance",
-      "vc:label": "Off-chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:shareholder-voting",
-      "vc:label": "Shareholder Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-corporate-governance",
-      "vc:label": "Traditional Corporate Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof of Work"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:aave",
-      "vc:label": "Aave"
-    },
-    {
-      "@id": "urn:visionflow:linked:balancer",
-      "vc:label": "Balancer"
-    },
-    {
-      "@id": "urn:visionflow:linked:compound",
-      "vc:label": "Compound"
-    },
-    {
-      "@id": "urn:visionflow:linked:convex-finance",
-      "vc:label": "Convex Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:curve-finance",
-      "vc:label": "Curve Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:eigen-layer",
-      "vc:label": "EigenLayer"
-    },
-    {
-      "@id": "urn:visionflow:linked:maker-dao",
-      "vc:label": "MakerDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:olympus-dao",
-      "vc:label": "Olympus DAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:uniswap",
-      "vc:label": "Uniswap"
-    },
-    {
-      "@id": "urn:visionflow:linked:velodrome-finance",
-      "vc:label": "Velodrome Finance"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:compound-governor-bravo",
-      "vc:label": "Compound Governor Bravo"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-1559",
-      "vc:label": "EIP-1559"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20-standard",
-      "vc:label": "ERC-20 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:maker-dao-endgame-framework",
-      "vc:label": "MakerDAO Endgame Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governance-contracts",
-      "vc:label": "OpenZeppelin Governance Contracts"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:curve-finance",
-      "vc:label": "Curve Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi",
-      "vc:label": "DeFi"
-    },
-    {
-      "@id": "urn:visionflow:linked:eigen-layer",
-      "vc:label": "EigenLayer"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-tokens",
-      "vc:label": "Governance Tokens"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dao",
-      "vc:label": "DAO"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

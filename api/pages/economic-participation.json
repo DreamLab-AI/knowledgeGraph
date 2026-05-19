@@ -3,32 +3,36 @@
   "title": "Economic Participation",
   "slug": "economic-participation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:economic-participation",
+  "classIri": "urn:ngm:class:economic-participation",
   "domain": "spatial-computing",
   "definition": "The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:play-to-earn",
+        "id": "urn:ngm:class:play-to-earn",
         "label": "Play-to-Earn"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

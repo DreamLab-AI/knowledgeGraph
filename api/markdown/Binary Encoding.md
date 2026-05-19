@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:binary-encoding",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:binary-encoding",
+  "@type": "Class",
   "label": "Binary Encoding",
+  "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-format",
-      "vc:label": "Data Format"
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:encoding-rules",
+        "label": "Encoding Rules"
+      },
+      {
+        "@id": "urn:ngm:class:parser-implementation",
+        "label": "Parser Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "@id": "urn:ngm:class:efficient-storage",
+        "label": "Efficient Storage"
+      },
+      {
+        "@id": "urn:ngm:class:network-transmission",
+        "label": "Network Transmission"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6b0066187c0fa0f28969340288f10bd668053c1f8317159d3f097285ea110665@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:encoding-rules",
-      "vc:label": "Encoding Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:parser-implementation",
-      "vc:label": "Parser Implementation"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-definition",
-      "vc:label": "Schema Definition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-serialization",
-      "vc:label": "Data Serialization"
-    },
-    {
-      "@id": "urn:visionflow:linked:efficient-storage",
-      "vc:label": "Efficient Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-transmission",
-      "vc:label": "Network Transmission"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

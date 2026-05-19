@@ -3,187 +3,190 @@
   "title": "3D Scene Exchange Protocol (SXP)",
   "slug": "3-d-scene-exchange-protocol-sxp",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-scene-exchange-protocol-sxp",
+  "classIri": "urn:ngm:class:3-d-scene-exchange-protocol-sxp",
   "domain": "spatial-computing",
-  "definition": "Open standards framework enabling interoperable transfer of complete 3D scene graphs including geometric meshes (polygon topology vertex positions normals texture coordinates with indexed triangle lists optimized for GPU rendering), physically-based rendering (PBR) material systems (metallic-roughness workflows base color textures normal maps ambient occlusion emission properties following Disney Principled BRDF model adopted across real-time engines), skeletal animation rigs (hierarchical bone transforms keyframe interpolation blend shapes morph targets skinning weights supporting quaternion rotation curves SLERP interpolation), environmental lighting (image-based lighting spherical harmonics environment maps reflections shadows caustics global illumination probes), camera definitions (perspective/orthographic projections field-of-view aspect ratios near/far clipping planes), and spatial metadata (scene hierarchies parent-child transforms pivot points bounding volumes level-of-detail specifications occlusion culling hints) between heterogeneous 3D software applications (content creation tools Blender Maya 3ds Max Houdini Cinema 4D, game engines Unity Unreal Godot, rendering engine",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:scene-graph-format",
-      "label": "Scene Graph Format"
-    }
-  ],
+  "definition": "Open standards framework enabling interoperable transfer of complete 3D scene graphs including geometric meshes (polygon topology vertex positions normals texture coordinates with indexed triangle lists optimized for GPU rendering), physically-based rendering (PBR) material systems (metallic-roug...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.86,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:animation-rig",
+        "id": "urn:ngm:class:animation-rig",
         "label": "Animation Rig"
       },
       {
-        "id": "urn:visionflow:linked:camera-definition",
+        "id": "urn:ngm:class:camera-definition",
         "label": "Camera Definition"
       },
       {
-        "id": "urn:visionflow:linked:geometric-mesh",
+        "id": "urn:ngm:class:geometric-mesh",
         "label": "Geometric Mesh"
       },
       {
-        "id": "urn:visionflow:linked:lighting-environment",
+        "id": "urn:ngm:class:lighting-environment",
         "label": "Lighting Environment"
       },
       {
-        "id": "urn:visionflow:linked:lod-specification",
+        "id": "urn:ngm:class:lod-specification",
         "label": "LOD Specification"
       },
       {
-        "id": "urn:visionflow:linked:material-system",
+        "id": "urn:ngm:class:material-system",
         "label": "Material System"
       },
       {
-        "id": "urn:visionflow:linked:normal-map",
+        "id": "urn:ngm:class:normal-map",
         "label": "Normal Map"
       },
       {
-        "id": "urn:visionflow:linked:pbr-workflow",
+        "id": "urn:ngm:class:pbr-workflow",
         "label": "PBR Workflow"
       },
       {
-        "id": "urn:visionflow:linked:polygon-topology",
+        "id": "urn:ngm:class:polygon-topology",
         "label": "Polygon Topology"
       },
       {
-        "id": "urn:visionflow:linked:scene-hierarchy",
+        "id": "urn:ngm:class:scene-hierarchy",
         "label": "Scene Hierarchy"
       },
       {
-        "id": "urn:visionflow:linked:skeletal-bone",
+        "id": "urn:ngm:class:skeletal-bone",
         "label": "Skeletal Bone"
       },
       {
-        "id": "urn:visionflow:linked:texture-map",
+        "id": "urn:ngm:class:texture-map",
         "label": "Texture Map"
       },
       {
-        "id": "urn:visionflow:linked:uv-coordinate",
+        "id": "urn:ngm:class:uv-coordinate",
         "label": "UV Coordinate"
       },
       {
-        "id": "urn:visionflow:linked:vertex-attribute",
+        "id": "urn:ngm:class:vertex-attribute",
         "label": "Vertex Attribute"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-modeling-software",
+        "id": "urn:ngm:class:3-d-modeling-software",
         "label": "3D Modeling Software"
       },
       {
-        "id": "urn:visionflow:linked:animation-tools",
+        "id": "urn:ngm:class:animation-tools",
         "label": "Animation Tools"
       },
       {
-        "id": "urn:visionflow:linked:material-converter",
+        "id": "urn:ngm:class:material-converter",
         "label": "Material Converter"
       },
       {
-        "id": "urn:visionflow:linked:mesh-compression",
+        "id": "urn:ngm:class:mesh-compression",
         "label": "Mesh Compression"
       },
       {
-        "id": "urn:visionflow:linked:scene-validator",
+        "id": "urn:ngm:class:scene-validator",
         "label": "Scene Validator"
       },
       {
-        "id": "urn:visionflow:linked:texture-authoring",
+        "id": "urn:ngm:class:texture-authoring",
         "label": "Texture Authoring"
       },
       {
-        "id": "urn:visionflow:owl:class:game-engine",
+        "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:rendering-pipeline",
+        "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-asset-interchange",
+        "id": "urn:ngm:class:3-d-asset-interchange",
         "label": "3D Asset Interchange"
       },
       {
-        "id": "urn:visionflow:linked:ar-vr-experiences",
+        "id": "urn:ngm:class:ar-vr-experiences",
         "label": "AR/VR Experiences"
       },
       {
-        "id": "urn:visionflow:linked:asset-portability",
+        "id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
       },
       {
-        "id": "urn:visionflow:linked:collaborative-workflows",
+        "id": "urn:ngm:class:collaborative-workflows",
         "label": "Collaborative Workflows"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-compatibility",
+        "id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
       },
       {
-        "id": "urn:visionflow:linked:e-commerce-3-d",
+        "id": "urn:ngm:class:e-commerce-3-d",
         "label": "E-Commerce 3D"
       },
       {
-        "id": "urn:visionflow:linked:metaverse-interoperability",
+        "id": "urn:ngm:class:metaverse-interoperability",
         "label": "Metaverse Interoperability"
       },
       {
-        "id": "urn:visionflow:linked:web-3-d-visualization",
+        "id": "urn:ngm:class:web-3-d-visualization",
         "label": "Web 3D Visualization"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:extension-mechanism",
+        "id": "urn:ngm:class:extension-mechanism",
         "label": "Extension Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:mesh-lod",
+        "id": "urn:ngm:class:mesh-lod",
         "label": "Mesh LOD"
       },
       {
-        "id": "urn:visionflow:linked:non-destructive-editing",
+        "id": "urn:ngm:class:non-destructive-editing",
         "label": "Non-Destructive Editing"
       },
       {
-        "id": "urn:visionflow:linked:pbr-materials",
+        "id": "urn:ngm:class:pbr-materials",
         "label": "PBR Materials"
       },
       {
-        "id": "urn:visionflow:linked:progressive-loading",
+        "id": "urn:ngm:class:progressive-loading",
         "label": "Progressive Loading"
       },
       {
-        "id": "urn:visionflow:linked:scene-composition",
+        "id": "urn:ngm:class:scene-composition",
         "label": "Scene Composition"
       },
       {
-        "id": "urn:visionflow:linked:skeletal-animation",
+        "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
       },
       {
-        "id": "urn:visionflow:linked:version-control",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph-format",
+        "label": "Scene Graph Format"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

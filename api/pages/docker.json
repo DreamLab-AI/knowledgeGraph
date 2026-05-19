@@ -3,147 +3,250 @@
   "title": "Docker",
   "slug": "docker",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:docker",
+  "classIri": "urn:ngm:individual:docker",
   "domain": "infrastructure",
-  "definition": "**Docker** is the canonical OS-level virtualisation platform and toolchain for packaging, distributing and executing software in isolated user-space instances called **containers** that share a single host Linux (or Windows) kernel via the kernel's namespace, cgroup and union-filesystem primitives, originally released as open source by Solomon Hykes at the Paris/San Francisco PaaS startup dotCloud on 13 March 2013, formally rebranded to Docker Inc. in October 2013, reaching general availability with Docker 1.0 at DockerCon June 2014, and credited with single-handedly popularising the modern container ecosystem by providing a developer-friendly CLI (`docker run`, `docker build`, `docker push`), a declarative image-build grammar (the **Dockerfile**), a layered, content-addressable image format with immutable cryptographic digests (now standardised as the **OCI Image Specification v1.1**), a default public registry (**Docker Hub**, ~13M+ repositories, ~25B+ image pulls per month by 2025), and a daemon-mediated execution model (`dockerd` \u2192 `containerd` \u2192 `runc`) on top of low-level Linux isolation primitives \u2014 **PID, network (NET), mount (MNT), UTS (hostname), IPC, user, and cgroup nam",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:container-platform",
-      "label": "Container Platform"
-    },
-    {
-      "id": "urn:visionflow:linked:container-runtime",
-      "label": "Container Runtime"
-    },
-    {
-      "id": "urn:visionflow:linked:developer-tooling",
-      "label": "Developer Tooling"
-    }
-  ],
+  "definition": "Platform and toolchain for packaging, distributing, and executing software in isolated containers that share a host OS kernel via Linux namespaces and cgroups, enabling reproducible deployment across environments.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:build-kit",
+        "id": "urn:ngm:class:build-kit",
         "label": "BuildKit"
       },
       {
-        "id": "urn:visionflow:linked:containerd",
+        "id": "urn:ngm:class:containerd",
         "label": "Containerd"
       },
       {
-        "id": "urn:visionflow:linked:docker-cli",
+        "id": "urn:ngm:class:docker-cli",
         "label": "Docker CLI"
       },
       {
-        "id": "urn:visionflow:linked:docker-compose",
+        "id": "urn:ngm:class:docker-compose",
         "label": "Docker Compose"
       },
       {
-        "id": "urn:visionflow:linked:docker-daemon",
+        "id": "urn:ngm:class:docker-daemon",
         "label": "Docker Daemon"
       },
       {
-        "id": "urn:visionflow:linked:docker-desktop",
+        "id": "urn:ngm:class:docker-desktop",
         "label": "Docker Desktop"
       },
       {
-        "id": "urn:visionflow:linked:docker-hub",
+        "id": "urn:ngm:class:docker-hub",
         "label": "Docker Hub"
       },
       {
-        "id": "urn:visionflow:linked:dockerfile",
+        "id": "urn:ngm:class:dockerfile",
         "label": "Dockerfile"
       },
       {
-        "id": "urn:visionflow:linked:runc",
+        "id": "urn:ngm:class:runc",
         "label": "runc"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:control-groups",
+        "id": "urn:ngm:class:control-groups",
         "label": "Control Groups"
       },
       {
-        "id": "urn:visionflow:linked:linux-kernel",
+        "id": "urn:ngm:class:linux-kernel",
         "label": "Linux Kernel"
       },
       {
-        "id": "urn:visionflow:linked:linux-namespaces",
+        "id": "urn:ngm:class:linux-namespaces",
         "label": "Linux Namespaces"
       },
       {
-        "id": "urn:visionflow:linked:overlay-fs",
+        "id": "urn:ngm:class:overlay-fs",
         "label": "OverlayFS"
       },
       {
-        "id": "urn:visionflow:linked:seccomp",
+        "id": "urn:ngm:class:seccomp",
         "label": "Seccomp"
       },
       {
-        "id": "urn:visionflow:linked:union-filesystem",
+        "id": "urn:ngm:class:union-filesystem",
         "label": "Union Filesystem"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:containerisation",
+        "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
       },
       {
-        "id": "urn:visionflow:linked:continuous-integration",
+        "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
       },
       {
-        "id": "urn:visionflow:linked:developer-environment-parity",
+        "id": "urn:ngm:class:developer-environment-parity",
         "label": "Developer Environment Parity"
       },
       {
-        "id": "urn:visionflow:linked:immutable-infrastructure",
+        "id": "urn:ngm:class:immutable-infrastructure",
         "label": "Immutable Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:microservices-deployment",
+        "id": "urn:ngm:class:microservices-deployment",
         "label": "Microservices Deployment"
       },
       {
-        "id": "urn:visionflow:linked:reproducible-builds",
+        "id": "urn:ngm:class:reproducible-builds",
         "label": "Reproducible Builds"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:container-runtime-interface",
+        "id": "urn:ngm:class:container-runtime-interface",
         "label": "Container Runtime Interface"
       },
       {
-        "id": "urn:visionflow:linked:copy-on-write-filesystem",
+        "id": "urn:ngm:class:copy-on-write-filesystem",
         "label": "Copy-on-Write Filesystem"
       },
       {
-        "id": "urn:visionflow:linked:layered-image-format",
+        "id": "urn:ngm:class:layered-image-format",
         "label": "Layered Image Format"
       },
       {
-        "id": "urn:visionflow:linked:oci-distribution-spec",
+        "id": "urn:ngm:class:oci-distribution-spec",
         "label": "OCI Distribution Spec"
       },
       {
-        "id": "urn:visionflow:linked:oci-image-spec",
+        "id": "urn:ngm:class:oci-image-spec",
         "label": "OCI Image Spec"
       },
       {
-        "id": "urn:visionflow:linked:oci-runtime-spec",
+        "id": "urn:ngm:class:oci-runtime-spec",
         "label": "OCI Runtime Spec"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bridge-networking",
+        "label": "Bridge Networking"
+      },
+      {
+        "id": "urn:ngm:class:cgroups-v2",
+        "label": "Cgroups v2"
+      },
+      {
+        "id": "urn:ngm:class:content-addressable-storage",
+        "label": "Content-Addressable Storage"
+      },
+      {
+        "id": "urn:ngm:class:iptables",
+        "label": "Iptables"
+      },
+      {
+        "id": "urn:ngm:class:linux-namespaces",
+        "label": "Linux Namespaces"
+      },
+      {
+        "id": "urn:ngm:class:overlay-fs",
+        "label": "OverlayFS"
+      },
+      {
+        "id": "urn:ngm:class:vxlan",
+        "label": "VXLAN"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:12-factor-app-methodology",
+        "label": "12 Factor App Methodology"
+      },
+      {
+        "id": "urn:ngm:class:ci-cd-pipelines",
+        "label": "CI/CD Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:docker-swarm",
+        "label": "Docker Swarm"
+      },
+      {
+        "id": "urn:ngm:class:git-ops",
+        "label": "GitOps"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud Native Applications"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime-interface",
+        "label": "Container Runtime Interface"
+      },
+      {
+        "id": "urn:ngm:class:oci-distribution-spec",
+        "label": "OCI Distribution Spec"
+      },
+      {
+        "id": "urn:ngm:class:oci-image-spec",
+        "label": "OCI Image Spec"
+      },
+      {
+        "id": "urn:ngm:class:oci-runtime-spec",
+        "label": "OCI Runtime Spec"
+      },
+      {
+        "id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:build-kit",
+        "label": "BuildKit"
+      },
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "id": "urn:ngm:class:containerd",
+        "label": "Containerd"
+      },
+      {
+        "id": "urn:ngm:class:docker-compose",
+        "label": "Docker Compose"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:moby-project",
+        "label": "Moby Project"
+      },
+      {
+        "id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      },
+      {
+        "id": "urn:ngm:class:podman",
+        "label": "Podman"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -200,122 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collective-memory-archive",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collective-memory-archive",
+  "@type": "Class",
   "label": "Collective Memory Archive",
+  "definition": "A community-maintained repository that preserves shared cultural memories, historical events, and collective experiences for long-term access and cultural heritage preservation.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5b9dee77784e7db89b727317f5a7b89594bab1275897f7ad26c1170f8ff5b980"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:community-contributions",
+        "label": "Community Contributions"
+      },
+      {
+        "@id": "urn:ngm:class:memory-records",
+        "label": "Memory Records"
+      },
+      {
+        "@id": "urn:ngm:class:preservation-metadata",
+        "label": "Preservation Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-index",
+        "label": "Temporal Index"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-repository",
+        "label": "Digital Repository"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-storytelling",
+        "label": "Community Storytelling"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-preservation",
+        "label": "Cultural Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:heritage-access",
+        "label": "Heritage Access"
+      },
+      {
+        "@id": "urn:ngm:class:historical-documentation",
+        "label": "Historical Documentation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:community-knowledge-systems",
+        "label": "Community Knowledge Systems"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5b9dee77784e7db89b727317f5a7b89594bab1275897f7ad26c1170f8ff5b980@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A community-maintained repository that preserves shared cultural memories, historical events, and collective experiences for long-term access and cultural heritage preservation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:community-knowledge-systems",
-      "vc:label": "Community Knowledge Systems"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:community-contributions",
-      "vc:label": "Community Contributions"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-records",
-      "vc:label": "Memory Records"
-    },
-    {
-      "@id": "urn:visionflow:linked:preservation-metadata",
-      "vc:label": "Preservation Metadata"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-index",
-      "vc:label": "Temporal Index"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-repository",
-      "vc:label": "Digital Repository"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-registry",
-      "vc:label": "Metadata Registry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-storytelling",
-      "vc:label": "Community Storytelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:cultural-preservation",
-      "vc:label": "Cultural Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:heritage-access",
-      "vc:label": "Heritage Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:historical-documentation",
-      "vc:label": "Historical Documentation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:preservation-policies",
-      "vc:label": "Preservation Policies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:search-engine",
-      "vc:label": "Search Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

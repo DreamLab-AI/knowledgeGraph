@@ -3,19 +3,18 @@
   "title": "Supply Chain Traceability",
   "slug": "supply-chain-traceability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:supply-chain-traceability",
+  "classIri": "urn:ngm:class:supply-chain-traceability",
   "domain": "blockchain",
-  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each stage. Systems like [[HyperledgerFabric|Hyperledger Fabric]] implementations track product provenance, environmental conditions (via [[ColdChainMonitoring|cold chain monitoring]]), and regulatory certifications, providing consumers and businesses with cryptographic proof of authenticity and preventing [[Counterfeiting|counterfeiting]]. Applications extend across food safety, pharmaceutical verification, luxury goods authentication, and [[CircularEconomy|circular economy]] initiatives where blockchain records enable product take-back, refurbishment, and responsible resource recovery.",
+  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-application",
+      "id": "urn:ngm:class:blockchain-application",
       "label": "Blockchain Application"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

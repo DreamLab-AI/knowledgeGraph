@@ -120,56 +120,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-extraction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-extraction",
+  "@type": "Class",
   "label": "Model Extraction",
+  "definition": "An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:adversarial-attacks",
-      "vc:label": "Adversarial Attacks"
+      "@id": "urn:ngm:class:adversarial-attacks",
+      "label": "Adversarial Attacks"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a3151f4306d94dcea708b9dc8d8828949dafdc94dd9cd66de6f3f884d0e7a249"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a3151f4306d94dcea708b9dc8d8828949dafdc94dd9cd66de6f3f884d0e7a249@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An attack where adversaries reconstruct a functionally equivalent or similar machine learning model by systematically querying a target model and training a substitute model on the collected input-output pairs, enabling theft of intellectual property, privacy violations, and subsequent attacks.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:adversarial-attacks",
-      "vc:label": "Adversarial Attacks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:membership-inference",
-      "vc:label": "Membership Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-inversion",
-      "vc:label": "Model Inversion"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

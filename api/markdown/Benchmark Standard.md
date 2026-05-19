@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:benchmark-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:benchmark-standard",
+  "@type": "Class",
   "label": "Benchmark Standard",
+  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and modologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standard",
-      "vc:label": "Technical Standard"
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:measurement-methodology",
+        "label": "Measurement Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:validation-process",
+        "label": "Validation Process"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:performance-comparison",
+        "label": "Performance Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:system-evaluation",
+        "label": "System Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5e5892a6d6d5bde47f4ade9ab725880f951d5d86d3ffb972c046941c7295a352@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:measurement-methodology",
-      "vc:label": "Measurement Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-implementation",
-      "vc:label": "Reference Implementation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:validation-process",
-      "vc:label": "Validation Process"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:performance-comparison",
-      "vc:label": "Performance Comparison"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-evaluation",
-      "vc:label": "System Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

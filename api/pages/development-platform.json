@@ -3,19 +3,18 @@
   "title": "Development Platform",
   "slug": "development-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:development-platform",
+  "classIri": "urn:ngm:class:development-platform",
   "domain": "spatial-computing",
-  "definition": "Development Platform is a concept within the metaverse domain. Further enrichment pending. bridges-to:: [[Computer Vision]]",
+  "definition": "Development Platform is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -416,270 +416,215 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-protocol",
+  "@type": "Class",
   "label": "Blockchain Protocol",
+  "definition": "Foundational rule set governing distributed ledger system operation comprising consensus mechanisms (algorithmic procedures enabling network-wide agreement on canonical state without centralized authority including Proof of Work PoW SHA-256 hash puzzles requiring computational expenditure Bitcoin...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:peer-to-peer-protocol",
-      "vc:label": "Peer-to-Peer Protocol"
+      "@id": "urn:ngm:class:peer-to-peer-protocol",
+      "label": "Peer-to-Peer Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system-protocol",
-      "vc:label": "Distributed System Protocol"
+      "@id": "urn:ngm:class:distributed-system-protocol",
+      "label": "Distributed System Protocol"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:836f082d6455d72a6bb2b1dc9f8070937c383b2ae5859c5c0485213c6954f695"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:block-structure",
+        "label": "Block Structure"
+      },
+      {
+        "@id": "urn:ngm:class:governance-system",
+        "label": "Governance System"
+      },
+      {
+        "@id": "urn:ngm:class:state-storage",
+        "label": "State Storage"
+      },
+      {
+        "@id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-format",
+        "label": "Transaction Format"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:block-validation",
+        "label": "Block Validation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:economic-incentives",
+        "label": "Economic Incentives"
+      },
+      {
+        "@id": "urn:ngm:class:state-database",
+        "label": "State Database"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-applications",
+        "label": "DeFi Applications"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-consensus",
+        "label": "Decentralized Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-execution",
+        "label": "Trustless Execution"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:nft-standards",
+        "label": "NFT Standards"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bft-consensus",
+        "label": "BFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:fee-mechanism",
+        "label": "Fee Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:governance-voting",
+        "label": "Governance Voting"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof-verification",
+        "label": "Merkle Proof Verification"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-conditions",
+        "label": "Slashing Conditions"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-ordering",
+        "label": "Transaction Ordering"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:836f082d6455d72a6bb2b1dc9f8070937c383b2ae5859c5c0485213c6954f695@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Foundational rule set governing distributed ledger system operation comprising consensus mechanisms (algorithmic procedures enabling network-wide agreement on canonical state without centralized authority including Proof of Work PoW SHA-256 hash puzzles requiring computational expenditure Bitcoin 10-minute target block time difficulty adjustment every 2,016 blocks maintaining probabilistic finality 6-confirmation standard 99.9% security, Proof of Stake PoS validator selection weighted by token stake Ethereum Beacon Chain 32 ETH minimum deposit Casper FFG finality gadget achieving economic finality through slashing 1-4 ETH penalties equivocation offline infractions, Byzantine Fault Tolerance BFT Practical Byzantine Fault Tolerance PBFT tolerating f < n/3 faulty nodes deterministic finality single-slot confirmation Tendermint Core 67% supermajority voting rounds, Delegated Proof of Stake DPoS witness election systems EOS 21 block producers 0.5-second block time, Nominated Proof of Stake NPoS Polkadot validator nomination 297 active validators 24-hour era rotation), network communication protocols (peer-to-peer topology gossip protocols epidemic information dissemination Bitcoin INV/G",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:block-structure",
-      "vc:label": "Block Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-system",
-      "vc:label": "Governance System"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-storage",
-      "vc:label": "State Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-transition-function",
-      "vc:label": "State Transition Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-format",
-      "vc:label": "Transaction Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-validation",
-      "vc:label": "Transaction Validation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:block-propagation",
-      "vc:label": "Block Propagation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fee-market",
-      "vc:label": "Fee Market"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-discovery",
-      "vc:label": "Peer Discovery"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-machine",
-      "vc:label": "Virtual Machine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:block-validation",
-      "vc:label": "Block Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-incentives",
-      "vc:label": "Economic Incentives"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-database",
-      "vc:label": "State Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-algorithm",
-      "vc:label": "Consensus Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-synchronization",
-      "vc:label": "Network Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:peer-to-peer-network",
-      "vc:label": "Peer-to-Peer Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transaction-pool",
-      "vc:label": "Transaction Pool"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-chain-interoperability",
-      "vc:label": "Cross-Chain Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-applications",
-      "vc:label": "DeFi Applications"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-consensus",
-      "vc:label": "Decentralized Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-spend-prevention",
-      "vc:label": "Double-Spend Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-participation",
-      "vc:label": "Permissionless Participation"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-execution",
-      "vc:label": "Smart Contract Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-execution",
-      "vc:label": "Trustless Execution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standards",
-      "vc:label": "NFT Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenization",
-      "vc:label": "Tokenization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:value-transfer",
-      "vc:label": "Value Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bft-consensus",
-      "vc:label": "BFT Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:fee-mechanism",
-      "vc:label": "Fee Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-voting",
-      "vc:label": "Governance Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-proof-verification",
-      "vc:label": "Merkle Proof Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:slashing-conditions",
-      "vc:label": "Slashing Conditions"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-ordering",
-      "vc:label": "Transaction Ordering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nakamoto-consensus",
-      "vc:label": "Nakamoto Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-machine-replication",
-      "vc:label": "State Machine Replication"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:digital-signature-scheme",
-      "vc:label": "Digital Signature Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-model",
-      "vc:label": "Economic Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-tree-structure",
-      "vc:label": "Merkle Tree Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:networking-stack",
-      "vc:label": "Networking Stack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-machine",
-      "vc:label": "Virtual Machine"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

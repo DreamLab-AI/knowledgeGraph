@@ -228,120 +228,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:control-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:control-system",
+  "@type": "Class",
   "label": "Control System",
+  "definition": "Control system encompasses the computational and hardware subsystems that sense environmental state, evaluate performance against desired objectives, and generate actuation commands to regulate robot behaviour toward goals.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:feedback-systems",
-      "vc:label": "Feedback Systems"
+      "@id": "urn:ngm:class:feedback-systems",
+      "label": "Feedback Systems"
     },
     {
-      "@id": "urn:visionflow:linked:robotic-systems",
-      "vc:label": "Robotic Systems"
+      "@id": "urn:ngm:class:robotic-systems",
+      "label": "Robotic Systems"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:afd8c149cd5031555c95631eac6ec32c80ed3bc2eed7bcf6fe5983ea4840f3f5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator-driver",
+        "label": "Actuator Driver"
+      },
+      {
+        "@id": "urn:ngm:class:controller",
+        "label": "Controller"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-interface",
+        "label": "Sensor Interface"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuator-output",
+        "label": "Actuator Output"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computation",
+        "label": "Real-Time Computation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
+      },
+      {
+        "@id": "urn:ngm:class:timing-synchronisation",
+        "label": "Timing Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-behaviour",
+        "label": "Adaptive Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:stabilisation",
+        "label": "Stabilisation"
+      },
+      {
+        "@id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:afd8c149cd5031555c95631eac6ec32c80ed3bc2eed7bcf6fe5983ea4840f3f5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Control system encompasses the computational and hardware subsystems that sense environmental state, evaluate performance against desired objectives, and generate actuation commands to regulate robot behaviour toward goals. Control systems form the core feedback loop linking [[Robot Perception]], [[Motion Planning]], and [[Actuator Control]] to produce coordinated, goal-directed robot action.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:actuator-driver",
-      "vc:label": "Actuator Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller",
-      "vc:label": "Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-interface",
-      "vc:label": "Sensor Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feedback-loop",
-      "vc:label": "Feedback Loop"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuator-output",
-      "vc:label": "Actuator Output"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-computation",
-      "vc:label": "Real-Time Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    },
-    {
-      "@id": "urn:visionflow:linked:timing-synchronisation",
-      "vc:label": "Timing Synchronisation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-behaviour",
-      "vc:label": "Adaptive Behaviour"
-    },
-    {
-      "@id": "urn:visionflow:linked:stabilisation",
-      "vc:label": "Stabilisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-execution",
-      "vc:label": "Task Execution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-control",
-      "vc:label": "Motion Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:communication-protocol",
-      "vc:label": "Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-algorithm",
-      "vc:label": "Control Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

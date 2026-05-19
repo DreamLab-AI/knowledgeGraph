@@ -640,356 +640,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-companies",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-companies",
+  "@type": "Class",
   "label": "AI Companies",
+  "definition": "AI Companies is the population-level concept comprising commercial and non-profit organisations whose principal economic activity is the research, development, productisation, deployment, distribution, or infrastructure-provision of artificial intelligence technologies—spanning the 2024-2026 indu...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:commercial-enterprise",
-      "vc:label": "Commercial Enterprise"
+      "@id": "urn:ngm:class:commercial-enterprise",
+      "label": "Commercial Enterprise"
     },
     {
-      "@id": "urn:visionflow:linked:industry-sector",
-      "vc:label": "Industry Sector"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-organisation",
-      "vc:label": "Research Organisation"
+      "@id": "urn:ngm:class:industry-sector",
+      "label": "Industry Sector"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2851fac3932ad2e5d0dccde01a247e5307ec23f76403434e1957631462ad9ebc"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-infrastructure-providers",
+        "label": "AI Infrastructure Providers"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-laboratory",
+        "label": "AI Research Laboratory"
+      },
+      {
+        "@id": "urn:ngm:class:application-ai-companies",
+        "label": "Application AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:capital-base",
+        "label": "Capital Base"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model-labs",
+        "label": "Foundation Model Labs"
+      },
+      {
+        "@id": "urn:ngm:class:founding-team",
+        "label": "Founding Team"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai-platforms",
+        "label": "Open Source AI Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:vertical-ai-specialists",
+        "label": "Vertical AI Specialists"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:capital-investment",
+        "label": "Capital Investment"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-license",
+        "label": "Regulatory License"
+      },
+      {
+        "@id": "urn:ngm:class:talent-pool",
+        "label": "Talent Pool"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-apis",
+        "label": "AI APIs"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model-licensing",
+        "label": "Foundation Model Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai-products",
+        "label": "Generative AI Products"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media-creation",
+        "label": "Synthetic Media Creation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:commercial-productisation",
+        "label": "Commercial Productisation"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-training",
+        "label": "Frontier Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "@id": "urn:ngm:class:model-distribution",
+        "label": "Model Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf-alignment",
+        "label": "RLHF Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:safety-research-programmes",
+        "label": "Safety Research Programmes"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain of Thought Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agi-race",
+        "label": "AGI Race"
+      },
+      {
+        "@id": "urn:ngm:class:ai-acquisitions-and-m-and-a",
+        "label": "AI Acquisitions and M&A"
+      },
+      {
+        "@id": "urn:ngm:class:ai-funding-landscape",
+        "label": "AI Funding Landscape"
+      },
+      {
+        "@id": "urn:ngm:class:ai-talent-war",
+        "label": "AI Talent War"
+      },
+      {
+        "@id": "urn:ngm:class:compute-cluster",
+        "label": "Compute Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscaler-cloud",
+        "label": "Hyperscaler Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "@id": "urn:ngm:class:defence-and-security-ai",
+        "label": "Defence and Security AI"
+      },
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-automation",
+        "label": "Enterprise Automation"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:legal-tech",
+        "label": "Legal Tech"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:partnership-on-ai",
+        "label": "Partnership on AI"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ai-security-institute",
+        "label": "UK AI Security Institute"
+      },
+      {
+        "@id": "urn:ngm:class:white-house-voluntary-ai-commitments",
+        "label": "White House Voluntary AI Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2851fac3932ad2e5d0dccde01a247e5307ec23f76403434e1957631462ad9ebc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Companies is the population-level concept comprising commercial and non-profit organisations whose principal economic activity is the research, development, productisation, deployment, distribution, or infrastructure-provision of artificial intelligence technologies—spanning the 2024-2026 industry stratified into five primary structural tiers: (1) **foundation model laboratories** building general-purpose pre-trained models at frontier scale ($1B+ training budgets, $50B-$300B valuations)—[[OpenAI]] ($157B post-money October 2024, $300B+ March 2025 SoftBank-led round, ChatGPT 200M+ weekly active users, GPT-4o/o1/o3/o4-mini/GPT-5 family), [[Anthropic]] ($61.5B January 2025 Lightspeed-led, $183B March 2025 reported, Claude 3.5 Sonnet/Claude 3.7 Sonnet/Claude Opus 4/Claude 4.5/Claude Opus 4.7 family with constitutional AI alignment), [[Google DeepMind]] (Alphabet subsidiary post-2023 merger, Gemini 1.5/2.0/2.5 Pro and Flash, Gemini Ultra, Veo 2 video, Imagen 3, AlphaFold 3 protein structure, Project Astra agentic assistant), [[Meta AI]] (FAIR + GenAI, Llama 3.1 405B/Llama 3.2/Llama 3.3/Llama 4 open-weight family, ~$40B 2025 capex on AI infrastructure), [[xAI]] ($50B November 2024, $",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-infrastructure-providers",
-      "vc:label": "AI Infrastructure Providers"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-research-laboratory",
-      "vc:label": "AI Research Laboratory"
-    },
-    {
-      "@id": "urn:visionflow:linked:application-ai-companies",
-      "vc:label": "Application AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-base",
-      "vc:label": "Capital Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model-labs",
-      "vc:label": "Foundation Model Labs"
-    },
-    {
-      "@id": "urn:visionflow:linked:founding-team",
-      "vc:label": "Founding Team"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ai-platforms",
-      "vc:label": "Open Source AI Platforms"
-    },
-    {
-      "@id": "urn:visionflow:linked:vertical-ai-specialists",
-      "vc:label": "Vertical AI Specialists"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:capital-investment",
-      "vc:label": "Capital Investment"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-license",
-      "vc:label": "Regulatory License"
-    },
-    {
-      "@id": "urn:visionflow:linked:talent-pool",
-      "vc:label": "Talent Pool"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-apis",
-      "vc:label": "AI APIs"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-ai-adoption",
-      "vc:label": "Enterprise AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model-licensing",
-      "vc:label": "Foundation Model Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:generative-ai-products",
-      "vc:label": "Generative AI Products"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-media-creation",
-      "vc:label": "Synthetic Media Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:commercial-productisation",
-      "vc:label": "Commercial Productisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-training",
-      "vc:label": "Frontier Model Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-serving",
-      "vc:label": "Inference Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-distribution",
-      "vc:label": "Model Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf-alignment",
-      "vc:label": "RLHF Alignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-research-programmes",
-      "vc:label": "Safety Research Programmes"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:academic-research-pipeline",
-      "vc:label": "Academic Research Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperscaler-cloud",
-      "vc:label": "Hyperscaler Cloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvidia-gpus",
-      "vc:label": "NVIDIA GPUs"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-grid-capacity",
-      "vc:label": "Power Grid Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-supply-chain",
-      "vc:label": "Semiconductor Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-wealth-investment",
-      "vc:label": "Sovereign Wealth Investment"
-    },
-    {
-      "@id": "urn:visionflow:linked:venture-capital",
-      "vc:label": "Venture Capital"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:creative-industries",
-      "vc:label": "Creative Industries"
-    },
-    {
-      "@id": "urn:visionflow:linked:defence-and-security-ai",
-      "vc:label": "Defence and Security AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:education-technology",
-      "vc:label": "Education Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-automation",
-      "vc:label": "Enterprise Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-ai",
-      "vc:label": "Healthcare AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-tech",
-      "vc:label": "Legal Tech"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-ai-strategy",
-      "vc:label": "National AI Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-research",
-      "vc:label": "Scientific Research"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought-reasoning",
-      "vc:label": "Chain of Thought Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:constitutional-ai",
-      "vc:label": "Constitutional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:academic-ai-labs",
-      "vc:label": "Academic AI Labs"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-communities",
-      "vc:label": "Open Source Communities"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-play-saa-s-companies",
-      "vc:label": "Pure-Play SaaS Companies"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-software-vendors",
-      "vc:label": "Traditional Software Vendors"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:agi-race",
-      "vc:label": "AGI Race"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-acquisitions-and-m-and-a",
-      "vc:label": "AI Acquisitions and M&A"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-funding-landscape",
-      "vc:label": "AI Funding Landscape"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-talent-war",
-      "vc:label": "AI Talent War"
-    },
-    {
-      "@id": "urn:visionflow:linked:compute-cluster",
-      "vc:label": "Compute Cluster"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperscaler-cloud",
-      "vc:label": "Hyperscaler Cloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-ai",
-      "vc:label": "Sovereign AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-42001",
-      "vc:label": "ISO IEC 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:partnership-on-ai",
-      "vc:label": "Partnership on AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ai-security-institute",
-      "vc:label": "UK AI Security Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:white-house-voluntary-ai-commitments",
-      "vc:label": "White House Voluntary AI Commitments"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

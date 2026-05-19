@@ -392,324 +392,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:translation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:translation",
+  "@type": "Class",
   "label": "Translation",
+  "definition": "Machine Translation (MT) is the automated conversion of natural language text or speech from a source language into semantically and pragmatically equivalent target language output, evolving from rule-based symbolic approaches (RBMT, 1950s-1990s) through statistical phrase-based models (SMT, Mose...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:computational-linguistics",
-      "vc:label": "Computational Linguistics"
+      "@id": "urn:ngm:class:computational-linguistics",
+      "label": "Computational Linguistics"
     },
     {
-      "@id": "urn:visionflow:linked:cross-lingual-transfer",
-      "vc:label": "Cross-Lingual Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-technology",
-      "vc:label": "Language Technology"
+      "@id": "urn:ngm:class:cross-lingual-transfer",
+      "label": "Cross-Lingual Transfer"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d2207713f4ecfe28854cbf265c4ed0cdcbbd8b682821a443f5393871c9b8c02f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:bpe-vocabulary",
+        "label": "BPE Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bilingual-evaluation-data",
+        "label": "Bilingual Evaluation Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:language-pair-coverage",
+        "label": "Language Pair Coverage"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-corpora",
+        "label": "Parallel Corpora"
+      },
+      {
+        "@id": "urn:ngm:class:subword-segmentation",
+        "label": "Subword Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-lingual-information-retrieval",
+        "label": "Cross-Lingual Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:global-content-delivery",
+        "label": "Global Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:low-resource-language-preservation",
+        "label": "Low-Resource Language Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-communication",
+        "label": "Multilingual Communication"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-interpretation",
+        "label": "Real-Time Interpretation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:back-translation",
+        "label": "Back-Translation"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:back-translation",
+        "label": "Back-Translation"
+      },
+      {
+        "@id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "@id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "@id": "urn:ngm:class:human-post-editing",
+        "label": "Human Post-Editing"
+      },
+      {
+        "@id": "urn:ngm:class:monolingual-data-augmentation",
+        "label": "Monolingual Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:summarisation",
+        "label": "Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cross-border-commerce",
+        "label": "Cross-Border Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:diplomatic-communication",
+        "label": "Diplomatic Communication"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-communication",
+        "label": "Healthcare Communication"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-publishing",
+        "label": "Scientific Publishing"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:comet-benchmark",
+        "label": "COMET Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:flores-200-evaluation-set",
+        "label": "FLORES-200 Evaluation Set"
+      },
+      {
+        "@id": "urn:ngm:class:iso-639-language-codes",
+        "label": "ISO 639 Language Codes"
+      },
+      {
+        "@id": "urn:ngm:class:iwslt",
+        "label": "IWSLT"
+      },
+      {
+        "@id": "urn:ngm:class:wmt-shared-tasks",
+        "label": "WMT Shared Tasks"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d2207713f4ecfe28854cbf265c4ed0cdcbbd8b682821a443f5393871c9b8c02f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Machine Translation (MT) is the automated conversion of natural language text or speech from a source language into semantically and pragmatically equivalent target language output, evolving from rule-based symbolic approaches (RBMT, 1950s-1990s) through statistical phrase-based models (SMT, Moses decoder, 2000s-2014) to dominant neural sequence-to-sequence architectures (NMT, 2014-present), with large language model translation (LLM-MT, GPT-4o/Claude/Gemini, 2023-present) increasingly surpassing purpose-built commercial MT on high-resource language pairs. The field is defined by its core technical challenge: the many-to-many mapping between language pairs encodes not merely lexical substitution but morphological, syntactic, pragmatic, and cultural transformations that resist direct computational formalisation, requiring models to learn representations across 7,000+ extant natural languages with wildly asymmetric data availability — English-French corpora exceeding 40 billion sentence pairs whilst 95%+ of languages possess fewer than 100,000 parallel sentences (low-resource MT). Key architectural paradigm shifts include: (1) the encoder-decoder recurrent neural network (Sutskever e",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:beam-search",
-      "vc:label": "Beam Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:bpe-vocabulary",
-      "vc:label": "BPE Vocabulary"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-model",
-      "vc:label": "Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallel-corpus",
-      "vc:label": "Parallel Corpus"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-estimation",
-      "vc:label": "Quality Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokeniser",
-      "vc:label": "Tokeniser"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decoder",
-      "vc:label": "Decoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:encoder",
-      "vc:label": "Encoder"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bilingual-evaluation-data",
-      "vc:label": "Bilingual Evaluation Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-pair-coverage",
-      "vc:label": "Language Pair Coverage"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallel-corpora",
-      "vc:label": "Parallel Corpora"
-    },
-    {
-      "@id": "urn:visionflow:linked:subword-segmentation",
-      "vc:label": "Subword Segmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-lingual-information-retrieval",
-      "vc:label": "Cross-Lingual Information Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-content-delivery",
-      "vc:label": "Global Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:localisation",
-      "vc:label": "Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-resource-language-preservation",
-      "vc:label": "Low-Resource Language Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multilingual-communication",
-      "vc:label": "Multilingual Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-interpretation",
-      "vc:label": "Real-Time Interpretation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:back-translation",
-      "vc:label": "Back-Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:beam-search-decoding",
-      "vc:label": "Beam Search Decoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:byte-pair-encoding",
-      "vc:label": "Byte Pair Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:contrastive-learning",
-      "vc:label": "Contrastive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-distillation",
-      "vc:label": "Knowledge Distillation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:linguistic-annotation",
-      "vc:label": "Linguistic Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-commerce",
-      "vc:label": "Cross-Border Commerce"
-    },
-    {
-      "@id": "urn:visionflow:linked:diplomatic-communication",
-      "vc:label": "Diplomatic Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-communication",
-      "vc:label": "Healthcare Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:localisation",
-      "vc:label": "Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-publishing",
-      "vc:label": "Scientific Publishing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:back-translation",
-      "vc:label": "Back-Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:bleu-score",
-      "vc:label": "BLEU Score"
-    },
-    {
-      "@id": "urn:visionflow:linked:comet-metric",
-      "vc:label": "COMET Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-post-editing",
-      "vc:label": "Human Post-Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:monolingual-data-augmentation",
-      "vc:label": "Monolingual Data Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adapter-modules",
-      "vc:label": "Adapter Modules"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:dictionary-based-translation",
-      "vc:label": "Dictionary-Based Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-translation",
-      "vc:label": "Human Translation"
-    },
-    {
-      "@id": "urn:visionflow:linked:interpreting",
-      "vc:label": "Interpreting"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-machine-translation",
-      "vc:label": "Rule-Based Machine Translation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:natural-language-understanding",
-      "vc:label": "Natural Language Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:summarisation",
-      "vc:label": "Summarisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:named-entity-recognition",
-      "vc:label": "Named Entity Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:comet-benchmark",
-      "vc:label": "COMET Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:flores-200-evaluation-set",
-      "vc:label": "FLORES-200 Evaluation Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-639-language-codes",
-      "vc:label": "ISO 639 Language Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:iwslt",
-      "vc:label": "IWSLT"
-    },
-    {
-      "@id": "urn:visionflow:linked:wmt-shared-tasks",
-      "vc:label": "WMT Shared Tasks"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

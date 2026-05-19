@@ -188,126 +188,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:data-storage-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:data-storage-layer",
+  "@type": "Class",
   "label": "Data Storage Layer",
+  "definition": "Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
+      "@id": "urn:ngm:class:data-layer",
+      "label": "Data Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f1b76802e3999a3ee03f8d5bbd33c87224b82797ed63a80fb767283952954fa3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:blockchain-storage",
+        "label": "Blockchain Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cache-layer",
+        "label": "Cache Layer"
+      },
+      {
+        "@id": "urn:ngm:class:cdn-storage",
+        "label": "CDN Storage"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage-service",
+        "label": "Object Storage Service"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:backup-systems",
+        "label": "Backup Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:storage-hardware",
+        "label": "Storage Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-persistence",
+        "label": "Asset Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:user-profile-storage",
+        "label": "User Profile Storage"
+      },
+      {
+        "@id": "urn:ngm:class:world-state-management",
+        "label": "World State Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f1b76802e3999a3ee03f8d5bbd33c87224b82797ed63a80fb767283952954fa3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-stack",
-      "vc:label": "Metaverse Stack"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-storage",
-      "vc:label": "Blockchain Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:cache-layer",
-      "vc:label": "Cache Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:cdn-storage",
-      "vc:label": "CDN Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-storage-service",
-      "vc:label": "Object Storage Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:database-system",
-      "vc:label": "Database System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:backup-systems",
-      "vc:label": "Backup Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-hardware",
-      "vc:label": "Storage Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-persistence",
-      "vc:label": "Asset Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-distribution",
-      "vc:label": "Content Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-profile-storage",
-      "vc:label": "User Profile Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-state-management",
-      "vc:label": "World State Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-indexing",
-      "vc:label": "Data Indexing"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption-service",
-      "vc:label": "Encryption Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-service",
-      "vc:label": "Replication Service"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

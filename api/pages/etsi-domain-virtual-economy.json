@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Virtual_Economy",
   "slug": "etsi-domain-virtual-economy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-virtual-economy",
+  "classIri": "urn:ngm:class:etsi-domain-virtual-economy",
   "domain": "spatial-computing",
-  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets]] including [[DigitalGoods]], [[NFT|NFTs]], and [[VirtualAsset|virtual assets]]. Virtual economy infrastructure coordinates [[DecentralizedExchange|decentralised exchanges]], [[CreatorEconomy|creator economy]] mechanisms enabling direct creator-audience relationships, [[CreatorRoyaltyToken|creator royalty tokens]] automating compensation, and emerging [[CarbonCreditToken|carbon credit tokenisation]] for environmental accounting. Standards development addresses [[VirtualEconomy|virtual economy]] integration with traditional finance, regulatory compliance for tokenised assets, taxation frameworks for cross-border virtual transactions, and mechanisms ensuring sustainable economic value creation within persistent virtual worlds.",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

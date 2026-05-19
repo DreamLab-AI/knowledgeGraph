@@ -548,336 +548,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+  "@type": "Class",
   "label": "Evaluation benchmarks and leaderboards",
+  "definition": "Ebenchmarks and leaderboards constitute the standardised measurement infrastructure of contemporary artificial intelligence, comprising curated test datasets, scoring protocols, and publicly comparable scoreboards that quantify model capability, safety, robustness, and alignment across narrowly s...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-evaluation",
-      "vc:label": "AI Evaluation"
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
     },
     {
-      "@id": "urn:visionflow:linked:capability-assessment",
-      "vc:label": "Capability Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:empirical-methodology",
-      "vc:label": "Empirical Methodology"
+      "@id": "urn:ngm:class:capability-assessment",
+      "label": "Capability Assessment"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7afff42b15a42d5b319e8f5cd819291734bd12732df442b701c823e9eee8de73"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:elo-rating-system",
+        "label": "Elo Rating System"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "@id": "urn:ngm:class:grader",
+        "label": "Grader"
+      },
+      {
+        "@id": "urn:ngm:class:held-out-set",
+        "label": "Held-out Set"
+      },
+      {
+        "@id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "@id": "urn:ngm:class:scoring-protocol",
+        "label": "Scoring Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:submission-pipeline",
+        "label": "Submission Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:test-dataset",
+        "label": "Test Dataset"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:curated-dataset",
+        "label": "Curated Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "@id": "urn:ngm:class:reference-model",
+        "label": "Reference Model"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-protocol",
+        "label": "Reproducible Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-significance-testing",
+        "label": "Statistical Significance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:pre-deployment-assessment",
+        "label": "Pre-Deployment Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:procurement-decisions",
+        "label": "Procurement Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:progress-measurement",
+        "label": "Progress Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bradley-terry-aggregation",
+        "label": "Bradley-Terry Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:contamination-detection",
+        "label": "Contamination Detection"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:elo-rating-update",
+        "label": "Elo Rating Update"
+      },
+      {
+        "@id": "urn:ngm:class:exact-match-scoring",
+        "label": "Exact Match Scoring"
+      },
+      {
+        "@id": "urn:ngm:class:pass-at-k-metric",
+        "label": "Pass at k Metric"
+      },
+      {
+        "@id": "urn:ngm:class:win-rate-calculation",
+        "label": "Win Rate Calculation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adversarial-generation",
+        "label": "Adversarial Generation"
+      },
+      {
+        "@id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      },
+      {
+        "@id": "urn:ngm:class:expert-annotation",
+        "label": "Expert Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-models",
+        "label": "Multimodal Models"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-models",
+        "label": "Vision-Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-evaluation",
+        "label": "AI Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:datasheets-for-datasets",
+        "label": "Datasheets for Datasets"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-procurement",
+        "label": "AI Procurement"
+      },
+      {
+        "@id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-safety-framework",
+        "label": "Frontier Safety Framework"
+      },
+      {
+        "@id": "urn:ngm:class:preparedness-framework",
+        "label": "Preparedness Framework"
+      },
+      {
+        "@id": "urn:ngm:class:research-prioritisation",
+        "label": "Research Prioritisation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eleuther-ai-lm-evaluation-harness",
+        "label": "EleutherAI lm-evaluation-harness"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23053",
+        "label": "ISO IEC 23053"
+      },
+      {
+        "@id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "@id": "urn:ngm:class:stanford-crfm-helm",
+        "label": "Stanford CRFM HELM"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ai-safety-institute",
+        "label": "UK AI Safety Institute"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7afff42b15a42d5b319e8f5cd819291734bd12732df442b701c823e9eee8de73@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Evaluation benchmarks and leaderboards constitute the standardised measurement infrastructure of contemporary artificial intelligence, comprising curated test datasets, scoring protocols, and publicly comparable scoreboards that quantify model capability, safety, robustness, and alignment across narrowly scoped tasks ranging from classical natural language understanding (GLUE 2018 nine sentence-pair tasks, SuperGLUE 2019 harder follow-on, MMLU 2020 fifty-seven-subject multiple-choice exam, MMLU-Pro 2024 ten-option harder variant), mathematical reasoning (GSM8K 2021 grade-school word problems 8.5K examples, MATH 2021 competition problems 12.5K, AIME 2024-2025 American Invitational Mathematics Examination grading, FrontierMath Epoch AI November 2024 expert-level research mathematics with under 2% solve rate for top models at release), program synthesis (HumanEval 2021 Codex 164 hand-written Python problems pass@1/pass@10/pass@100, MBPP Mostly Basic Python Problems 974 entry-level tasks, BigCodeBench 2024 1140 fine-grained tool-use tasks, LiveCodeBench rolling contamination-resistant CodeForces/LeetCode/AtCoder 2023-onward, MultiPL-E translating HumanEval/MBPP into 18 programming lang",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:elo-rating-system",
-      "vc:label": "Elo Rating System"
-    },
-    {
-      "@id": "urn:visionflow:linked:evaluation-harness",
-      "vc:label": "Evaluation Harness"
-    },
-    {
-      "@id": "urn:visionflow:linked:grader",
-      "vc:label": "Grader"
-    },
-    {
-      "@id": "urn:visionflow:linked:held-out-set",
-      "vc:label": "Held-out Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:leaderboard",
-      "vc:label": "Leaderboard"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-template",
-      "vc:label": "Prompt Template"
-    },
-    {
-      "@id": "urn:visionflow:linked:scoring-protocol",
-      "vc:label": "Scoring Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:submission-pipeline",
-      "vc:label": "Submission Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-dataset",
-      "vc:label": "Test Dataset"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:curated-dataset",
-      "vc:label": "Curated Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:ground-truth-labels",
-      "vc:label": "Ground Truth Labels"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-model",
-      "vc:label": "Reference Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:reproducible-protocol",
-      "vc:label": "Reproducible Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-significance-testing",
-      "vc:label": "Statistical Significance Testing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:capability-elicitation",
-      "vc:label": "Capability Elicitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-allocation",
-      "vc:label": "Capital Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-comparison",
-      "vc:label": "Model Comparison"
-    },
-    {
-      "@id": "urn:visionflow:linked:pre-deployment-assessment",
-      "vc:label": "Pre-Deployment Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:procurement-decisions",
-      "vc:label": "Procurement Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:progress-measurement",
-      "vc:label": "Progress Measurement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bradley-terry-aggregation",
-      "vc:label": "Bradley-Terry Aggregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:contamination-detection",
-      "vc:label": "Contamination Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-validation",
-      "vc:label": "Cross-Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:elo-rating-update",
-      "vc:label": "Elo Rating Update"
-    },
-    {
-      "@id": "urn:visionflow:linked:exact-match-scoring",
-      "vc:label": "Exact Match Scoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:pass-at-k-metric",
-      "vc:label": "Pass at k Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:win-rate-calculation",
-      "vc:label": "Win Rate Calculation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:construct-validity",
-      "vc:label": "Construct Validity"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-annotation",
-      "vc:label": "Human Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:reproducibility",
-      "vc:label": "Reproducibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-inference",
-      "vc:label": "Statistical Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-train-separation",
-      "vc:label": "Test-Train Separation"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-procurement",
-      "vc:label": "AI Procurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:capability-forecasting",
-      "vc:label": "Capability Forecasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-safety-framework",
-      "vc:label": "Frontier Safety Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:preparedness-framework",
-      "vc:label": "Preparedness Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-prioritisation",
-      "vc:label": "Research Prioritisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-scaling-policy",
-      "vc:label": "Responsible Scaling Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adversarial-generation",
-      "vc:label": "Adversarial Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:crowdsourcing",
-      "vc:label": "Crowdsourcing"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-annotation",
-      "vc:label": "Expert Annotation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-models",
-      "vc:label": "Multimodal Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-models",
-      "vc:label": "Vision-Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:a-b-testing",
-      "vc:label": "A/B Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:academic-peer-review",
-      "vc:label": "Academic Peer Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-world-deployment-evaluation",
-      "vc:label": "Real-World Deployment Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:third-party-audit",
-      "vc:label": "Third-Party Audit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:red-teaming",
-      "vc:label": "Red-Teaming"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-evaluation",
-      "vc:label": "AI Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:alignment",
-      "vc:label": "Alignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:datasheets-for-datasets",
-      "vc:label": "Datasheets for Datasets"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-ai",
-      "vc:label": "Frontier AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-cards",
-      "vc:label": "Model Cards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eleuther-ai-lm-evaluation-harness",
-      "vc:label": "EleutherAI lm-evaluation-harness"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-23053",
-      "vc:label": "ISO IEC 23053"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlcommons",
-      "vc:label": "MLCommons"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-risk-management-framework",
-      "vc:label": "NIST AI Risk Management Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:stanford-crfm-helm",
-      "vc:label": "Stanford CRFM HELM"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ai-safety-institute",
-      "vc:label": "UK AI Safety Institute"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-safety",
-      "vc:label": "AI Safety"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

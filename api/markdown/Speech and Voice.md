@@ -364,302 +364,247 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:speech-and-voice",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:speech-and-voice",
+  "@type": "Class",
   "label": "Speech and Voice",
+  "definition": "Speech and Voice AI is the computational subdomain of artificial intelligence encompassing mods for producing, recognising, transforming, cloning, and reasoning over human speech audio signals, implemented through neural architectures ranging from WaveNet autoregressive dilated convolutional voco...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:audio-processing",
-      "vc:label": "Audio Processing"
+      "@id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing"
     },
     {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
+      "@id": "urn:ngm:class:multimodal-ai",
+      "label": "Multimodal AI"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0835cefa0808684b328ec60c5b26140eeebe2c78f63530a092aa4c63e624826d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:neural-vocoder",
+        "label": "Neural Vocoder"
+      },
+      {
+        "@id": "urn:ngm:class:prosody-modelling",
+        "label": "Prosody Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-verification",
+        "label": "Speaker Verification"
+      },
+      {
+        "@id": "urn:ngm:class:speech-enhancement",
+        "label": "Speech Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:voice-agents",
+        "label": "Voice Agents"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:voice-conversion",
+        "label": "Voice Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-data",
+        "label": "Audio Data"
+      },
+      {
+        "@id": "urn:ngm:class:language-models",
+        "label": "Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-computing",
+        "label": "Low-Latency Computing"
+      },
+      {
+        "@id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:speech-corpus",
+        "label": "Speech Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-infrastructure",
+        "label": "Streaming Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:podcast-production",
+        "label": "Podcast Production"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistants",
+        "label": "Voice Assistants"
+      },
+      {
+        "@id": "urn:ngm:class:voice-security",
+        "label": "Voice Security"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:call-centres",
+        "label": "Call Centres"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-translation",
+        "label": "Real-Time Translation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:state-space-models",
+        "label": "State Space Models"
+      },
+      {
+        "@id": "urn:ngm:class:vits",
+        "label": "VITS"
+      },
+      {
+        "@id": "urn:ngm:class:wave-net",
+        "label": "WaveNet"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gpu-inference",
+        "label": "GPU Inference"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:rest-apis",
+        "label": "REST APIs"
+      },
+      {
+        "@id": "urn:ngm:class:telephony",
+        "label": "Telephony"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:emotional-ai",
+        "label": "Emotional AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:gaming-ai",
+        "label": "Gaming AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-audio-standards",
+        "label": "IEEE Audio Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-web-rtc-standards",
+        "label": "IETF WebRTC Standards"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-speech-api",
+        "label": "W3C Web Speech API"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0835cefa0808684b328ec60c5b26140eeebe2c78f63530a092aa4c63e624826d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Speech and Voice AI is the computational subdomain of artificial intelligence encompassing methods for producing, recognising, transforming, cloning, and reasoning over human speech audio signals, implemented through neural architectures ranging from WaveNet autoregressive dilated convolutional vocoders (DeepMind 2016) through Transformer-based sequence-to-sequence synthesis, diffusion-based waveform generation, and state-space-model streaming synthesis to large-scale foundation models trained on hundreds of thousands of hours of multilingual supervised audio. The domain divides into four primary inference axes: (1) text-to-speech synthesis (TTS) converting written language tokens to natural-sounding waveforms; (2) automatic speech recognition (ASR) mapping continuous acoustic signals to text transcripts; (3) voice cloning and conversion transforming speaker-identity characteristics; and (4) real-time voice agents integrating ASR, LLM reasoning, and TTS in full-duplex conversational pipelines with total round-trip latency below the 300ms perceptual naturalness threshold.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-vocoder",
-      "vc:label": "Neural Vocoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:prosody-modelling",
-      "vc:label": "Prosody Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-verification",
-      "vc:label": "Speaker Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-enhancement",
-      "vc:label": "Speech Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-agents",
-      "vc:label": "Voice Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning",
-      "vc:label": "Voice Cloning"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-conversion",
-      "vc:label": "Voice Conversion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-data",
-      "vc:label": "Audio Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:language-models",
-      "vc:label": "Language Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-computing",
-      "vc:label": "Low-Latency Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-networks",
-      "vc:label": "Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-corpus",
-      "vc:label": "Speech Corpus"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-infrastructure",
-      "vc:label": "Streaming Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:podcast-production",
-      "vc:label": "Podcast Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-assistants",
-      "vc:label": "Voice Assistants"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-security",
-      "vc:label": "Voice Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:call-centres",
-      "vc:label": "Call Centres"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human Computer Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-translation",
-      "vc:label": "Real-Time Translation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:state-space-models",
-      "vc:label": "State Space Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:vits",
-      "vc:label": "VITS"
-    },
-    {
-      "@id": "urn:visionflow:linked:wave-net",
-      "vc:label": "WaveNet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:contrastive-learning",
-      "vc:label": "Contrastive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linguistics",
-      "vc:label": "Linguistics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:customer-service-automation",
-      "vc:label": "Customer Service Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:education-technology",
-      "vc:label": "Education Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaming-ai",
-      "vc:label": "Gaming AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-ai",
-      "vc:label": "Healthcare AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-production",
-      "vc:label": "Media Production"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gpu-inference",
-      "vc:label": "GPU Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:onnx-runtime",
-      "vc:label": "ONNX Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-apis",
-      "vc:label": "REST APIs"
-    },
-    {
-      "@id": "urn:visionflow:linked:telephony",
-      "vc:label": "Telephony"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket",
-      "vc:label": "WebSocket"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:sign-language-processing",
-      "vc:label": "Sign Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-interfaces",
-      "vc:label": "Text Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-ai",
-      "vc:label": "Visual AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:emotional-ai",
-      "vc:label": "Emotional AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-audio-standards",
-      "vc:label": "IEEE Audio Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-web-rtc-standards",
-      "vc:label": "IETF WebRTC Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-speech-api",
-      "vc:label": "W3C Web Speech API"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

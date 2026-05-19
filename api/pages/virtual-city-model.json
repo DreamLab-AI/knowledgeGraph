@@ -3,19 +3,18 @@
   "title": "Virtual City Model",
   "slug": "virtual-city-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-city-model",
+  "classIri": "urn:ngm:class:virtual-city-model",
   "domain": "spatial-computing",
   "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin",
+      "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

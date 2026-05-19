@@ -3,32 +3,36 @@
   "title": "NPC Interaction",
   "slug": "npc-interaction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:npc-interaction",
+  "classIri": "urn:ngm:class:npc-interaction",
   "domain": "spatial-computing",
   "definition": "The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:game-mechanics",
+      "id": "urn:ngm:class:game-mechanics",
       "label": "Game Mechanics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-gameplay",
+        "id": "urn:ngm:class:immersive-gameplay",
         "label": "Immersive Gameplay"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

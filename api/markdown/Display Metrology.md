@@ -192,118 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:display-metrology",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:display-metrology",
+  "@type": "Class",
   "label": "Display Metrology",
+  "definition": "Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:xr-testing-infrastructure",
-      "vc:label": "XR Testing Infrastructure"
+      "@id": "urn:ngm:class:xr-testing-infrastructure",
+      "label": "XR Testing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5e96c9328022741c3e9040b15f72a9d6ea5d376ee40925f5af6d7b456c00141b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:colorimeter",
+        "label": "Colorimeter"
+      },
+      {
+        "@id": "urn:ngm:class:contrast-ratio-meter",
+        "label": "Contrast Ratio Meter"
+      },
+      {
+        "@id": "urn:ngm:class:luminance-meter",
+        "label": "Luminance Meter"
+      },
+      {
+        "@id": "urn:ngm:class:photometer",
+        "label": "Photometer"
+      },
+      {
+        "@id": "urn:ngm:class:resolution-test-chart",
+        "label": "Resolution Test Chart"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-control",
+        "label": "Environmental Control"
+      },
+      {
+        "@id": "urn:ngm:class:measurement-protocols",
+        "label": "Measurement Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-standards",
+        "label": "Calibration Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance-testing",
+        "label": "Compliance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:display-calibration",
+        "label": "Display Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:performance-validation",
+        "label": "Performance Validation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-quality-assessment",
+        "label": "Visual Quality Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:xr-testing-infrastructure",
+        "label": "XR Testing Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5e96c9328022741c3e9040b15f72a9d6ea5d376ee40925f5af6d7b456c00141b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:xr-testing-infrastructure",
-      "vc:label": "XR Testing Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:colorimeter",
-      "vc:label": "Colorimeter"
-    },
-    {
-      "@id": "urn:visionflow:linked:contrast-ratio-meter",
-      "vc:label": "Contrast Ratio Meter"
-    },
-    {
-      "@id": "urn:visionflow:linked:luminance-meter",
-      "vc:label": "Luminance Meter"
-    },
-    {
-      "@id": "urn:visionflow:linked:photometer",
-      "vc:label": "Photometer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:resolution-test-chart",
-      "vc:label": "Resolution Test Chart"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:environmental-control",
-      "vc:label": "Environmental Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:measurement-protocols",
-      "vc:label": "Measurement Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:calibration-standards",
-      "vc:label": "Calibration Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance-testing",
-      "vc:label": "Compliance Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:display-calibration",
-      "vc:label": "Display Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-validation",
-      "vc:label": "Performance Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-quality-assessment",
-      "vc:label": "Visual Quality Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:iso-9241-303",
-      "vc:label": "ISO 9241-303"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ieee-p2733-standards",
-      "vc:label": "IEEE P2733 Standards"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -400,394 +400,319 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:open-generative-ai-tools",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:open-generative-ai-tools",
+  "@type": "Class",
   "label": "Open Generative AI tools",
+  "definition": "Open Generative AI tools is the ecosystem of openly licensed or openly released generative AI models, fine-tuning pipelines, inference infrastructure, and community-distribution platforms that collectively enable practitioners to download, modify, deploy, and share large-scale foundation models f...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-ecosystem",
-      "vc:label": "AI Ecosystem"
+      "@id": "urn:ngm:class:ai-ecosystem",
+      "label": "AI Ecosystem"
     },
     {
-      "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
-      "vc:label": "Machine Learning Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
+      "@id": "urn:ngm:class:machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bc5a70fc0d9254c04e5d8380cf6cfeb92bd8686ed1fb8cf932af29c2f1b283fb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:civitai",
+        "label": "Civitai"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:llm-inference",
+        "label": "LLM Inference"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "@id": "urn:ngm:class:llama-3",
+        "label": "Llama 3"
+      },
+      {
+        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "label": "Mistral and Mixtral"
+      },
+      {
+        "@id": "urn:ngm:class:ollama",
+        "label": "ollama"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:community-licensing",
+        "label": "Community Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-infrastructure",
+        "label": "GPU Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:local-ai-deployment",
+        "label": "Local AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-diagram-tools",
+        "label": "AI Diagram Tools"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "@id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-positional-encoding",
+        "label": "Rotary Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:diffusers-library",
+        "label": "Diffusers Library"
+      },
+      {
+        "@id": "urn:ngm:class:gguf-format",
+        "label": "GGUF Format"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-chat-completions-api",
+        "label": "OpenAI Chat Completions API"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:research-reproducibility",
+        "label": "Research Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-scrapers",
+        "label": "AI Scrapers"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apache-license-2-0",
+        "label": "Apache License 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:gguf-specification",
+        "label": "GGUF Specification"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-chat-completions-api",
+        "label": "OpenAI Chat Completions API"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors-format",
+        "label": "safetensors Format"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bc5a70fc0d9254c04e5d8380cf6cfeb92bd8686ed1fb8cf932af29c2f1b283fb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Open Generative AI tools is the ecosystem of openly licensed or openly released generative AI models, fine-tuning pipelines, inference infrastructure, and community-distribution platforms that collectively enable practitioners to download, modify, deploy, and share large-scale foundation models for text, image, video, audio, and multimodal generation without mandatory API intermediation. The domain spans the full production stack: (1) base model weight families including Llama 3/3.1/3.2/3.3 (Meta AI), Mistral 7B/Mixtral 8x7B/Mistral Large 2 (Mistral AI, Paris), Qwen 2.5 and Qwen 3 (Alibaba DAMO Academy), DeepSeek-V3 and DeepSeek-R1 (DeepSeek AI, Hangzhou), Gemma 2/3 (Google DeepMind), Phi-4 and Phi-4-Multimodal (Microsoft Research Cambridge), FLUX.1 dev/schnell (Black Forest Labs), Stable Diffusion 3.5 (Stability AI), AnimateDiff video generation, and ComfyUI orchestration; (2) community model repositories and marketplaces — Hugging Face Hub crossing 1 million public models in October 2024 and Civitai hosting 12M+ image-generation derivatives; (3) inference infrastructure including llama.cpp (CPU/GPU inference in C++), ollama (user-friendly model server), vLLM (production PagedAtte",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:civitai",
-      "vc:label": "Civitai"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-inference",
-      "vc:label": "LLM Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-fine-tuning",
-      "vc:label": "LoRA Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "Flux.1"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:llama-3",
-      "vc:label": "Llama 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mistral-and-mixtral",
-      "vc:label": "Mistral and Mixtral"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ollama",
-      "vc:label": "ollama"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:community-licensing",
-      "vc:label": "Community Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:compute-resources",
-      "vc:label": "Compute Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-infrastructure",
-      "vc:label": "GPU Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-runtime",
-      "vc:label": "Inference Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-weights",
-      "vc:label": "Model Weights"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:local-ai-deployment",
-      "vc:label": "Local AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-ai",
-      "vc:label": "Privacy-Preserving AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-diagram-tools",
-      "vc:label": "AI Diagram Tools"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:flash-attention",
-      "vc:label": "Flash Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:grouped-query-attention",
-      "vc:label": "Grouped Query Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantisation",
-      "vc:label": "Quantisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:rlhf",
-      "vc:label": "RLHF"
-    },
-    {
-      "@id": "urn:visionflow:linked:rotary-positional-encoding",
-      "vc:label": "Rotary Positional Encoding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:community-licensing",
-      "vc:label": "Community Licensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-infrastructure",
-      "vc:label": "GPU Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-software",
-      "vc:label": "Open Source Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:research-reproducibility",
-      "vc:label": "Research Reproducibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-scrapers",
-      "vc:label": "AI Scrapers"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-workflows",
-      "vc:label": "ComfyUI Workflows"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusers-library",
-      "vc:label": "Diffusers Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf-format",
-      "vc:label": "GGUF Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-fine-tuning",
-      "vc:label": "LoRA Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-chat-completions-api",
-      "vc:label": "OpenAI Chat Completions API"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:safetensors",
-      "vc:label": "safetensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformers-library",
-      "vc:label": "Transformers Library"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:api-only-ai-services",
-      "vc:label": "API-Only AI Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:closed-weight-models",
-      "vc:label": "Closed-Weight Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:proprietary-ai",
-      "vc:label": "Proprietary AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:artificial-general-intelligence",
-      "vc:label": "Artificial General Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multimodal-ai",
-      "vc:label": "Multimodal AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apache-license-2-0",
-      "vc:label": "Apache License 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:gguf-specification",
-      "vc:label": "GGUF Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-hub",
-      "vc:label": "Hugging Face Hub"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-chat-completions-api",
-      "vc:label": "OpenAI Chat Completions API"
-    },
-    {
-      "@id": "urn:visionflow:linked:safetensors-format",
-      "vc:label": "safetensors Format"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

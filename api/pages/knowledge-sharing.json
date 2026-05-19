@@ -3,32 +3,36 @@
   "title": "Knowledge Sharing",
   "slug": "knowledge-sharing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowledge-sharing",
+  "classIri": "urn:ngm:class:knowledge-sharing",
   "domain": "spatial-computing",
   "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaborative-technology",
+      "id": "urn:ngm:class:collaborative-technology",
       "label": "Collaborative Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:distributed-team-collaboration",
+        "id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

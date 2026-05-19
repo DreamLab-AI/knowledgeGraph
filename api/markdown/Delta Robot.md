@@ -200,116 +200,85 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:delta-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:delta-robot",
+  "@type": "Class",
   "label": "Delta Robot",
+  "definition": "Delta robot employs parallel kinematics where three or more kinematic chains connect actuators to an end-effector platform, constraining motion through parallelogram linkages to pure translation.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:parallel-robots",
-      "vc:label": "Parallel Robots"
+      "@id": "urn:ngm:class:parallel-robots",
+      "label": "Parallel Robots"
     },
     {
-      "@id": "urn:visionflow:owl:class:industrial-robot",
-      "vc:label": "Industrial Robot"
+      "@id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9f216b5a22d30d0ef41865b63f474be265c3b57d8f77a607d4c9bd86839c3069"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:actuator-motors",
+        "label": "Actuator Motors"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector-platform",
+        "label": "End-Effector Platform"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-chains",
+        "label": "Kinematic Chains"
+      },
+      {
+        "@id": "urn:ngm:class:parallelogram-linkages",
+        "label": "Parallelogram Linkages"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:coordinated-control",
+        "label": "Coordinated Control"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-actuators",
+        "label": "High-Performance Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:stiff-support-structure",
+        "label": "Stiff Support Structure"
+      },
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:high-speed-picking",
+        "label": "High-Speed Picking"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-sorting",
+        "label": "Rapid Sorting"
+      },
+      {
+        "@id": "urn:ngm:class:ultra-fast-placement",
+        "label": "Ultra-Fast Placement"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9f216b5a22d30d0ef41865b63f474be265c3b57d8f77a607d4c9bd86839c3069@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Delta robot employs parallel kinematics where three or more kinematic chains connect actuators to an end-effector platform, constraining motion through parallelogram linkages to pure translation. This architecture enables extremely high speed and acceleration, positioning delta robots as the preferred design for [[Pick and Place]] operations and applications demanding rapid, precise point-to-point motion.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:actuator-motors",
-      "vc:label": "Actuator Motors"
-    },
-    {
-      "@id": "urn:visionflow:linked:end-effector-platform",
-      "vc:label": "End-Effector Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-chains",
-      "vc:label": "Kinematic Chains"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallelogram-linkages",
-      "vc:label": "Parallelogram Linkages"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:coordinated-control",
-      "vc:label": "Coordinated Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-performance-actuators",
-      "vc:label": "High-Performance Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:stiff-support-structure",
-      "vc:label": "Stiff Support Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronisation",
-      "vc:label": "Synchronisation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:high-speed-picking",
-      "vc:label": "High-Speed Picking"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-sorting",
-      "vc:label": "Rapid Sorting"
-    },
-    {
-      "@id": "urn:visionflow:linked:ultra-fast-placement",
-      "vc:label": "Ultra-Fast Placement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parallel-processing",
-      "vc:label": "Parallel Processing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:inverse-kinematics-computation",
-      "vc:label": "Inverse Kinematics Computation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trajectory-planning",
-      "vc:label": "Trajectory Planning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

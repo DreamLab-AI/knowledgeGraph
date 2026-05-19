@@ -132,61 +132,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:legal-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:legal-framework",
+  "@type": "Class",
   "label": "Legal Framework",
-  "subClassOf": [],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859"
+  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:legal-compliance",
+        "label": "Legal Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:rights-protection",
+        "label": "Rights Protection"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:privacy-requirements",
+        "label": "Privacy Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:security-obligations",
+        "label": "Security Obligations"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4c200ab42b66d715efaf2811bebb2eb82b4e6516a49dbb87ced3eeb738146859@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:legal-compliance",
-      "vc:label": "Legal Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:rights-protection",
-      "vc:label": "Rights Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:privacy-requirements",
-      "vc:label": "Privacy Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-obligations",
-      "vc:label": "Security Obligations"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

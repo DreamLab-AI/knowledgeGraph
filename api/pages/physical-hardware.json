@@ -3,32 +3,36 @@
   "title": "Physical Hardware",
   "slug": "physical-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:physical-hardware",
+  "classIri": "urn:ngm:class:physical-hardware",
   "domain": "spatial-computing",
   "definition": "The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hardware",
+      "id": "urn:ngm:class:hardware",
       "label": "Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:immersive-experiences",
+        "id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

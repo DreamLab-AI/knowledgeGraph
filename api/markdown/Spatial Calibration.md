@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:spatial-calibration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:spatial-calibration",
+  "@type": "Class",
   "label": "Spatial Calibration",
+  "definition": "The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ar-registration",
-      "vc:label": "AR Registration"
+      "@id": "urn:ngm:class:ar-registration",
+      "label": "AR Registration"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d82f71ecd14a231ada0d8feea231f1b1edbd34e8d334b7d857d6ea614d1dc349"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accurate-ar-alignment",
+        "label": "Accurate AR Alignment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d82f71ecd14a231ada0d8feea231f1b1edbd34e8d334b7d857d6ea614d1dc349@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accurate-ar-alignment",
-      "vc:label": "Accurate AR Alignment"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

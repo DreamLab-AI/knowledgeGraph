@@ -3,19 +3,13 @@
   "title": "Heuristic Methods",
   "slug": "heuristic-methods",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:heuristic-methods",
+  "classIri": "urn:ngm:class:heuristic-methods",
   "domain": "artificial-intelligence",
-  "definition": "Heuristic Methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. These methods include search heuristics (A*, hill climbing, simulated annealing), rule-of-thumb strategies, and metaheuristics (genetic algorithms, particle swarm optimization). Heuristics trade completeness and optimality for efficiency, making them essential for combinatorial optimization, planning, and decision-making in large search spaces. Modern applications integrate heuristics with learning algorithms, creating adaptive heuristic systems that improve through experience.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Heuristic Mods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

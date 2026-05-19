@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-world-creation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-world-creation",
+  "@type": "Class",
   "label": "Virtual World Creation",
+  "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse p...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-content-creation",
-      "vc:label": "Digital Content Creation"
+      "@id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c6669d9f0dec5e55e97d3a62c6d031022f87eb9a5bd490041857193a57e24715"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c6669d9f0dec5e55e97d3a62c6d031022f87eb9a5bd490041857193a57e24715@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

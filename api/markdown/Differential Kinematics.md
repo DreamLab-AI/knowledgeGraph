@@ -208,108 +208,77 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:differential-kinematics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:differential-kinematics",
+  "@type": "Class",
   "label": "Differential Kinematics",
+  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:motion-mathematics",
-      "vc:label": "Motion Mathematics"
+      "@id": "urn:ngm:class:motion-mathematics",
+      "label": "Motion Mathematics"
     },
     {
-      "@id": "urn:visionflow:owl:class:robot-kinematics",
-      "vc:label": "Robot Kinematics"
+      "@id": "urn:ngm:class:robot-kinematics",
+      "label": "Robot Kinematics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d71e1e9d1ad5717e9ccb13095096de6e2721e591badb8a9db23e911454699387"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:singularity-condition",
+        "label": "Singularity Condition"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-transformation",
+        "label": "Velocity Transformation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:joint-configuration",
+        "label": "Joint Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:position-kinematics",
+        "label": "Position Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:velocity-inputs",
+        "label": "Velocity Inputs"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:end-effector-velocity-control",
+        "label": "End-Effector Velocity Control"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-transformation",
+        "label": "Force/Torque Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:singularity-detection",
+        "label": "Singularity Detection"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d71e1e9d1ad5717e9ccb13095096de6e2721e591badb8a9db23e911454699387@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators. The Jacobian provides the linear relationship between joint angular velocities and end-effector Cartesian velocities, forming the foundation for [[VelocityControl]], [[Singularity Analysis]], and [[Numerical Inverse Kinematics]] algorithms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:jacobian-matrix",
-      "vc:label": "Jacobian Matrix"
-    },
-    {
-      "@id": "urn:visionflow:linked:singularity-condition",
-      "vc:label": "Singularity Condition"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-transformation",
-      "vc:label": "Velocity Transformation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:joint-configuration",
-      "vc:label": "Joint Configuration"
-    },
-    {
-      "@id": "urn:visionflow:linked:position-kinematics",
-      "vc:label": "Position Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:linked:velocity-inputs",
-      "vc:label": "Velocity Inputs"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:end-effector-velocity-control",
-      "vc:label": "End-Effector Velocity Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-torque-transformation",
-      "vc:label": "Force/Torque Transformation"
-    },
-    {
-      "@id": "urn:visionflow:linked:singularity-detection",
-      "vc:label": "Singularity Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:geometric-relationships",
-      "vc:label": "Geometric Relationships"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:forward-kinematics",
-      "vc:label": "Forward Kinematics"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:revenue-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:revenue-sharing",
+  "@type": "Class",
   "label": "Revenue Sharing",
+  "definition": "Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
+      "@id": "urn:ngm:class:creator-economy",
+      "label": "Creator Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3ec492bf0500a7676e5fe26aa83e8c5fc4de98be9e982444f5dd36021161ece2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3ec492bf0500a7676e5fe26aa83e8c5fc4de98be9e982444f5dd36021161ece2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:creator-monetization",
-      "vc:label": "Creator Monetization"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

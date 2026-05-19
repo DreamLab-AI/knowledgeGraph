@@ -400,326 +400,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:motion-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:motion-control",
+  "@type": "Class",
   "label": "Motion Control",
+  "definition": "MotionControl is the discipline governing the coordinated generation and execution of actuator commands that transform high-level kinematic or task-space specifications into precise, smooth, and dynamically consistent robot motion through the integrated chain of trajectory generation, servo-loop ...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:industrial-automation",
-      "vc:label": "Industrial Automation"
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "Industrial Automation"
     },
     {
-      "@id": "urn:visionflow:linked:mechatronics",
-      "vc:label": "Mechatronics"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedded-systems",
-      "vc:label": "Embedded Systems"
+      "@id": "urn:ngm:class:mechatronics",
+      "label": "Mechatronics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:300cba3ab5c14af892fff92f062fb968a6ac24999d1d17af4db169e3663e8599"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cnc",
+        "label": "CNC"
+      },
+      {
+        "@id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-control",
+        "label": "Feedforward Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-controller",
+        "label": "Motion Controller"
+      },
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:plc",
+        "label": "PLC"
+      },
+      {
+        "@id": "urn:ngm:class:servo-drive",
+        "label": "Servo Drive"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:deterministic-network",
+        "label": "Deterministic Network"
+      },
+      {
+        "@id": "urn:ngm:class:drive-amplifier",
+        "label": "Drive Amplifier"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-model",
+        "label": "Dynamic Model"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-feedback",
+        "label": "Encoder Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-model",
+        "label": "Kinematic Model"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:pick-and-place-automation",
+        "label": "Pick and Place Automation"
+      },
+      {
+        "@id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:semiconductor-lithography",
+        "label": "Semiconductor Lithography"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:computed-torque-control",
+        "label": "Computed Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:field-oriented-control",
+        "label": "Field Oriented Control"
+      },
+      {
+        "@id": "urn:ngm:class:friction-compensation",
+        "label": "Friction Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:pid-tuning",
+        "label": "PID Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:time-optimal-trajectory",
+        "label": "Time-Optimal Trajectory"
+      },
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cubic-splines",
+        "label": "Cubic Splines"
+      },
+      {
+        "@id": "urn:ngm:class:ether-cat",
+        "label": "EtherCAT"
+      },
+      {
+        "@id": "urn:ngm:class:g-code",
+        "label": "G-code"
+      },
+      {
+        "@id": "urn:ngm:class:heidenhain-en-dat",
+        "label": "Heidenhain EnDat"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "@id": "urn:ngm:class:plcopen",
+        "label": "PLCopen"
+      },
+      {
+        "@id": "urn:ngm:class:quintic-splines",
+        "label": "Quintic Splines"
+      },
+      {
+        "@id": "urn:ngm:class:s-curve-profiles",
+        "label": "S-Curve Profiles"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:learning-from-demonstration",
+        "label": "Learning from Demonstration"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cnc-machine-tools",
+        "label": "CNC Machine Tools"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-robots",
+        "label": "Collaborative Robots"
+      },
+      {
+        "@id": "urn:ngm:class:delta-robots",
+        "label": "Delta Robots"
+      },
+      {
+        "@id": "urn:ngm:class:gantry-systems",
+        "label": "Gantry Systems"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-robots",
+        "label": "Manufacturing Robots"
+      },
+      {
+        "@id": "urn:ngm:class:scara-robots",
+        "label": "SCARA Robots"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61158",
+        "label": "IEC 61158"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61800-7",
+        "label": "IEC 61800-7"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588 PTP"
+      },
+      {
+        "@id": "urn:ngm:class:iso-6983",
+        "label": "ISO 6983"
+      },
+      {
+        "@id": "urn:ngm:class:plcopen-motion-control",
+        "label": "PLCopen Motion Control"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:300cba3ab5c14af892fff92f062fb968a6ac24999d1d17af4db169e3663e8599@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "MotionControl is the discipline governing the coordinated generation and execution of actuator commands that transform high-level kinematic or task-space specifications into precise, smooth, and dynamically consistent robot motion through the integrated chain of trajectory generation, servo-loop control, feedforward compensation, and communication infrastructure. The field synthesises classical control theory (PID, state-space, optimal control), mechanical dynamics (Newton-Euler, Lagrangian), drive electronics (BLDC, stepper, linear), and deterministic real-time networks (EtherCAT, SERCOS) to achieve positioning accuracies spanning sub-micron semiconductor lithography through millimetre-level heavy-payload industrial manipulators. At its mathematical core, motion control decomposes into three cascaded abstractions: the **path** (a geometric locus in configuration space, e.g. a Cartesian straight line or joint-space arc), the **trajectory** (the path parameterised by time, imposing velocity and acceleration profiles respecting actuator limits), and the **control law** (the closed-loop algorithm mapping trajectory error to corrective torque or force commands). Lynch and Park (2017) f",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cnc",
-      "vc:label": "CNC"
-    },
-    {
-      "@id": "urn:visionflow:linked:ether-cat",
-      "vc:label": "EtherCAT"
-    },
-    {
-      "@id": "urn:visionflow:linked:feedforward-control",
-      "vc:label": "Feedforward Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-controller",
-      "vc:label": "Motion Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:pid-control",
-      "vc:label": "PID Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:plc",
-      "vc:label": "PLC"
-    },
-    {
-      "@id": "urn:visionflow:linked:servo-drive",
-      "vc:label": "Servo Drive"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:encoder",
-      "vc:label": "Encoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trajectory-generation",
-      "vc:label": "Trajectory Generation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:deterministic-network",
-      "vc:label": "Deterministic Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:drive-amplifier",
-      "vc:label": "Drive Amplifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-model",
-      "vc:label": "Dynamic Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:encoder-feedback",
-      "vc:label": "Encoder Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-model",
-      "vc:label": "Kinematic Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-operating-system",
-      "vc:label": "Real-Time Operating System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cnc-machining",
-      "vc:label": "CNC Machining"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaborative-robotics",
-      "vc:label": "Collaborative Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:pick-and-place-automation",
-      "vc:label": "Pick and Place Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:precision-manufacturing",
-      "vc:label": "Precision Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:robot-manipulation",
-      "vc:label": "Robot Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-lithography",
-      "vc:label": "Semiconductor Lithography"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:computed-torque-control",
-      "vc:label": "Computed Torque Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:field-oriented-control",
-      "vc:label": "Field Oriented Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:friction-compensation",
-      "vc:label": "Friction Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pid-tuning",
-      "vc:label": "PID Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-optimal-trajectory",
-      "vc:label": "Time-Optimal Trajectory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:admittance-control",
-      "vc:label": "Admittance Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:impedance-control",
-      "vc:label": "Impedance Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:classical-control-theory",
-      "vc:label": "Classical Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-electronics",
-      "vc:label": "Power Electronics"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-computing",
-      "vc:label": "Real-Time Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "vc:label": "Rigid Body Dynamics"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:cnc-machine-tools",
-      "vc:label": "CNC Machine Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaborative-robots",
-      "vc:label": "Collaborative Robots"
-    },
-    {
-      "@id": "urn:visionflow:linked:delta-robots",
-      "vc:label": "Delta Robots"
-    },
-    {
-      "@id": "urn:visionflow:linked:gantry-systems",
-      "vc:label": "Gantry Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-robots",
-      "vc:label": "Manufacturing Robots"
-    },
-    {
-      "@id": "urn:visionflow:linked:scara-robots",
-      "vc:label": "SCARA Robots"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:cubic-splines",
-      "vc:label": "Cubic Splines"
-    },
-    {
-      "@id": "urn:visionflow:linked:ether-cat",
-      "vc:label": "EtherCAT"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-code",
-      "vc:label": "G-code"
-    },
-    {
-      "@id": "urn:visionflow:linked:heidenhain-en-dat",
-      "vc:label": "Heidenhain EnDat"
-    },
-    {
-      "@id": "urn:visionflow:linked:iec-61131-3",
-      "vc:label": "IEC 61131-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:plcopen",
-      "vc:label": "PLCopen"
-    },
-    {
-      "@id": "urn:visionflow:linked:quintic-splines",
-      "vc:label": "Quintic Splines"
-    },
-    {
-      "@id": "urn:visionflow:linked:s-curve-profiles",
-      "vc:label": "S-Curve Profiles"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:compliant-actuation",
-      "vc:label": "Compliant Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hydraulic-actuation",
-      "vc:label": "Hydraulic Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:passive-dynamics",
-      "vc:label": "Passive Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:force-control",
-      "vc:label": "Force Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-loop-control",
-      "vc:label": "Open-Loop Control"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:learning-from-demonstration",
-      "vc:label": "Learning from Demonstration"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adaptive-control",
-      "vc:label": "Adaptive Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-operating-system",
-      "vc:label": "Robot Operating System"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iec-61131-3",
-      "vc:label": "IEC 61131-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:iec-61158",
-      "vc:label": "IEC 61158"
-    },
-    {
-      "@id": "urn:visionflow:linked:iec-61800-7",
-      "vc:label": "IEC 61800-7"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-1588-ptp",
-      "vc:label": "IEEE 1588 PTP"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-6983",
-      "vc:label": "ISO 6983"
-    },
-    {
-      "@id": "urn:visionflow:linked:plcopen-motion-control",
-      "vc:label": "PLCopen Motion Control"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

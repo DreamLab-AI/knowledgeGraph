@@ -3,107 +3,120 @@
   "title": "Robot Operating System",
   "slug": "robot-operating-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-operating-system",
+  "classIri": "urn:ngm:class:robot-operating-system",
   "domain": "robotics",
-  "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-subscribe and service-call graph. ROS 2, built on the [[Data Distribution Service]] (DDS) transport, adds real-time guarantees, multi-platform support, and security (SROS2) absent from the original ROS 1, making it the de-facto integration substrate for both research robots and production autonomous systems, and a bridging target for [[VisionClaw Agentic Container]] agent skills interacting with physical hardware.",
+  "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-sub...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:publish-subscribe-framework",
+      "id": "urn:ngm:class:publish-subscribe-framework",
       "label": "Publish-Subscribe Framework"
     },
     {
-      "id": "urn:visionflow:linked:robotic-middleware",
+      "id": "urn:ngm:class:robotic-middleware",
       "label": "Robotic Middleware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.7,
-  "authorityScore": 0.85,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:colcon-build-system",
+        "id": "urn:ngm:class:colcon-build-system",
         "label": "colcon Build System"
       },
       {
-        "id": "urn:visionflow:linked:ros-action",
+        "id": "urn:ngm:class:ros-action",
         "label": "ROS Action"
       },
       {
-        "id": "urn:visionflow:linked:ros-node",
+        "id": "urn:ngm:class:ros-node",
         "label": "ROS Node"
       },
       {
-        "id": "urn:visionflow:linked:ros-package",
+        "id": "urn:ngm:class:ros-package",
         "label": "ROS Package"
       },
       {
-        "id": "urn:visionflow:linked:ros-service",
+        "id": "urn:ngm:class:ros-service",
         "label": "ROS Service"
       },
       {
-        "id": "urn:visionflow:linked:ros-topic",
+        "id": "urn:ngm:class:ros-topic",
         "label": "ROS Topic"
       },
       {
-        "id": "urn:visionflow:linked:urdf-robot-model",
+        "id": "urn:ngm:class:urdf-robot-model",
         "label": "URDF Robot Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cmake-build-system",
+        "id": "urn:ngm:class:cmake-build-system",
         "label": "CMake Build System"
       },
       {
-        "id": "urn:visionflow:linked:data-distribution-service",
+        "id": "urn:ngm:class:data-distribution-service",
         "label": "Data Distribution Service"
       },
       {
-        "id": "urn:visionflow:linked:python-3",
+        "id": "urn:ngm:class:python-3",
         "label": "Python 3"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:robot-simulation",
+        "id": "urn:ngm:class:robot-simulation",
         "label": "Robot Simulation"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-abstraction",
+        "id": "urn:ngm:class:hardware-abstraction",
         "label": "Hardware Abstraction"
       },
       {
-        "id": "urn:visionflow:owl:class:motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Motion Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:dds-rtps-protocol",
+        "id": "urn:ngm:class:dds-rtps-protocol",
         "label": "DDS RTPS Protocol"
       },
       {
-        "id": "urn:visionflow:linked:rep-standards",
+        "id": "urn:ngm:class:rep-standards",
         "label": "REP Standards"
       },
       {
-        "id": "urn:visionflow:linked:sros2-security",
+        "id": "urn:ngm:class:sros2-security",
         "label": "SROS2 Security"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-systems-platform",
+        "label": "Autonomous Systems Platform"
+      },
+      {
+        "id": "urn:ngm:class:robotic-software-stack",
+        "label": "Robotic Software Stack"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

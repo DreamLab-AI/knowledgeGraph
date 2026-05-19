@@ -3,74 +3,87 @@
   "title": "Ethics & Law Layer",
   "slug": "ethics-and-law-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ethics-and-law-layer",
+  "classIri": "urn:ngm:class:ethics-and-law-layer",
   "domain": "artificial-intelligence",
-  "definition": "Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ethical AI governance, and legal frameworks.",
+  "definition": "Framework layer defining norms, rights, and regulations for responsible conduct in metaverse environments through compliance mechanisms, ical AI governance, and legal frameworks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ethical-ai-guidelines",
+        "id": "urn:ngm:class:ethical-ai-guidelines",
         "label": "Ethical AI Guidelines"
       },
       {
-        "id": "urn:visionflow:linked:legal-regulation-schema",
+        "id": "urn:ngm:class:legal-regulation-schema",
         "label": "Legal Regulation Schema"
       },
       {
-        "id": "urn:visionflow:linked:rights-management-system",
+        "id": "urn:ngm:class:rights-management-system",
         "label": "Rights Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-framework",
+        "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audit-logging",
+        "id": "urn:ngm:class:audit-logging",
         "label": "Audit Logging"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-engine",
+        "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ethical-governance",
+        "id": "urn:ngm:class:ethical-governance",
         "label": "Ethical Governance"
       },
       {
-        "id": "urn:visionflow:linked:legal-compliance",
+        "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
       },
       {
-        "id": "urn:visionflow:linked:rights-protection",
+        "id": "urn:ngm:class:rights-protection",
         "label": "Rights Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:responsible-ai",
+        "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-architecture",
+        "label": "Governance Architecture"
+      },
+      {
+        "id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

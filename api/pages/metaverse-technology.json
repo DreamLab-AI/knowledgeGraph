@@ -3,19 +3,18 @@
   "title": "Metaverse Technology",
   "slug": "metaverse-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-technology",
+  "classIri": "urn:ngm:class:metaverse-technology",
   "domain": "spatial-computing",
-  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-time social interaction across physical and virtual boundaries.",
+  "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-tim...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-domain",
+      "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -180,108 +180,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:discovery-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:discovery-layer",
+  "@type": "Class",
   "label": "Discovery Layer",
+  "definition": "Functional layer responsible for search, navigation, and exposure of metaverse experiences and assets through indexing, search engines, and recommendation systems.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e420e9c3373a6071aae20237b37fd492791cc089f9e4e39bc88add5e21facec8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-indexer",
+        "label": "Content Indexer"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-catalog",
+        "label": "Content Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:query-interface",
+        "label": "Query Interface"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-browsing",
+        "label": "Asset Browsing"
+      },
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:experience-navigation",
+        "label": "Experience Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-recommendations",
+        "label": "Personalized Recommendations"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e420e9c3373a6071aae20237b37fd492791cc089f9e4e39bc88add5e21facec8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Functional layer responsible for search, navigation, and exposure of metaverse experiences and assets through indexing, search engines, and recommendation systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-indexer",
-      "vc:label": "Content Indexer"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-system",
-      "vc:label": "Recommendation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-registry",
-      "vc:label": "Metadata Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:search-engine",
-      "vc:label": "Search Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:content-catalog",
-      "vc:label": "Content Catalog"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-interface",
-      "vc:label": "Query Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-storage",
-      "vc:label": "Data Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-schema",
-      "vc:label": "Metadata Schema"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-browsing",
-      "vc:label": "Asset Browsing"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-discovery",
-      "vc:label": "Content Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:experience-navigation",
-      "vc:label": "Experience Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-recommendations",
-      "vc:label": "Personalized Recommendations"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

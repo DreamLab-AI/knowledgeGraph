@@ -212,134 +212,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:biometric-binding-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biometric-binding-mechanism",
+  "@type": "Class",
   "label": "Biometric Binding Mechanism",
+  "definition": "Physical hardware device that captures and verifies biometric traits (fingerprints, iris patterns, facial geometry) to bind digital identities to authenticated users.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:56d1b7db3ab197eb27be0e9a230745dd18b641567fcefd02b80503b23e89b373"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:facial-recognition-sensor",
+        "label": "Facial Recognition Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:fingerprint-scanner",
+        "label": "Fingerprint Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:iris-recognition-camera",
+        "label": "Iris Recognition Camera"
+      },
+      {
+        "@id": "urn:ngm:class:secure-element-chip",
+        "label": "Secure Element Chip"
+      },
+      {
+        "@id": "urn:ngm:class:template-matching-processor",
+        "label": "Template Matching Processor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:anti-spoofing-module",
+        "label": "Anti-Spoofing Module"
+      },
+      {
+        "@id": "urn:ngm:class:encrypted-storage",
+        "label": "Encrypted Storage"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-illuminator",
+        "label": "Infrared Illuminator"
+      },
+      {
+        "@id": "urn:ngm:class:optical-sensor-array",
+        "label": "Optical Sensor Array"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:zero-trust-security-framework",
+        "label": "Zero Trust Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:56d1b7db3ab197eb27be0e9a230745dd18b641567fcefd02b80503b23e89b373@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical hardware device that captures and verifies biometric traits (fingerprints, iris patterns, facial geometry) to bind digital identities to authenticated users.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:zero-trust-security-framework",
-      "vc:label": "Zero Trust Security Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:facial-recognition-sensor",
-      "vc:label": "Facial Recognition Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:fingerprint-scanner",
-      "vc:label": "Fingerprint Scanner"
-    },
-    {
-      "@id": "urn:visionflow:linked:iris-recognition-camera",
-      "vc:label": "Iris Recognition Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-element-chip",
-      "vc:label": "Secure Element Chip"
-    },
-    {
-      "@id": "urn:visionflow:linked:template-matching-processor",
-      "vc:label": "Template Matching Processor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:anti-spoofing-module",
-      "vc:label": "Anti-Spoofing Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:encrypted-storage",
-      "vc:label": "Encrypted Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:infrared-illuminator",
-      "vc:label": "Infrared Illuminator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:optical-sensor-array",
-      "vc:label": "Optical Sensor Array"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:multi-factor-authentication",
-      "vc:label": "Multi-Factor Authentication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:authentication-server",
-      "vc:label": "Authentication Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:biometric-template-database",
-      "vc:label": "Biometric Template Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

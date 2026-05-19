@@ -3,19 +3,18 @@
   "title": "XR Runtime Environment",
   "slug": "xr-runtime-environment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-runtime-environment",
+  "classIri": "urn:ngm:class:xr-runtime-environment",
   "domain": "spatial-computing",
   "definition": "The software infrastructure layer that manages extended reality hardware and provides standardized APIs for XR applications, handling device abstraction, tracking systems, rendering pipelines, input processing, and compositor services to enable cross-platform XR development.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:runtime-environment",
+      "id": "urn:ngm:class:runtime-environment",
       "label": "Runtime Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

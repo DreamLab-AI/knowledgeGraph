@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-character-animation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-character-animation",
+  "@type": "Class",
   "label": "Real Time Character Animation",
+  "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-animation",
-      "vc:label": "3D Animation"
+      "@id": "urn:ngm:class:3-d-animation",
+      "label": "3D Animation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interactive-experiences",
+        "label": "Interactive Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:952deb64598227593aa52c49e5bc267abf9ff7fc60668f1bb9323eb1d191bd3b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of generating and rendering character movements instantaneously during gameplay or interactive experiences, utilizing rigging systems, motion capture data, and procedural animation to create lifelike digital characters that respond dynamically to user input and environmental conditions.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:interactive-experiences",
-      "vc:label": "Interactive Experiences"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

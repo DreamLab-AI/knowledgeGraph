@@ -3,19 +3,18 @@
   "title": "security audit guide",
   "slug": "security-audit-guide",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:security-audit-guide",
+  "classIri": "urn:ngm:class:security-audit-guide",
   "domain": "spatial-computing",
-  "definition": "A comprehensive procedural guide establishing standards, methodologies, and frameworks for conducting security audits of [[Blockchain|blockchain systems]], [[SmartContract|smart contracts]], and [[Cryptography|cryptographic infrastructure]]. This guide enables systematic vulnerability assessment and security control evaluation.",
+  "definition": "A comprehensive procedural guide establishing standards, modologies, and frameworks for conducting security audits of [[Blockchain|blockchain systems]], [[SmartContract|smart contracts]], and [[Cryptography|cryptographic infrastructure]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

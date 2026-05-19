@@ -452,430 +452,355 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:physical-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:physical-layer",
+  "@type": "Class",
   "label": "Physical Layer",
+  "definition": "The Physical Layer (OSI Layer 1) is the foundational stratum of the Open Systems Interconnection reference model defined in ISO/IEC 7498-1 and ITU-T X.200, responsible for raw transmission and reception of unstructured bit streams over a physical communication medium.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:communications-engineering",
-      "vc:label": "Communications Engineering"
+      "@id": "urn:ngm:class:communications-engineering",
+      "label": "Communications Engineering"
     },
     {
-      "@id": "urn:visionflow:linked:hardware-layer",
-      "vc:label": "Hardware Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:osi-model",
-      "vc:label": "OSI Model"
+      "@id": "urn:ngm:class:hardware-layer",
+      "label": "Hardware Layer"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a718aceaa066e10f2b049cea33cbb1f67248e7151a678d817932d001a009b197"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bluetooth-le",
+        "label": "Bluetooth LE"
+      },
+      {
+        "@id": "urn:ngm:class:cable-plant",
+        "label": "Cable Plant"
+      },
+      {
+        "@id": "urn:ngm:class:clock-recovery",
+        "label": "Clock Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:co-packaged-optics",
+        "label": "Co-Packaged Optics"
+      },
+      {
+        "@id": "urn:ngm:class:connector-standards",
+        "label": "Connector Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet-phy",
+        "label": "Ethernet PHY"
+      },
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:line-coding",
+        "label": "Line Coding"
+      },
+      {
+        "@id": "urn:ngm:class:modulation",
+        "label": "Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface-card",
+        "label": "Network Interface Card"
+      },
+      {
+        "@id": "urn:ngm:class:optical-fibre",
+        "label": "Optical Fibre"
+      },
+      {
+        "@id": "urn:ngm:class:photonic-integrated-circuit",
+        "label": "Photonic Integrated Circuit"
+      },
+      {
+        "@id": "urn:ngm:class:ser-des",
+        "label": "SerDes"
+      },
+      {
+        "@id": "urn:ngm:class:transceiver",
+        "label": "Transceiver"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra",
+        "label": "LoRa"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:channel-equalisation",
+        "label": "Channel Equalisation"
+      },
+      {
+        "@id": "urn:ngm:class:clock-recovery",
+        "label": "Clock Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:connector-standards",
+        "label": "Connector Standards"
+      },
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:physical-medium",
+        "label": "Physical Medium"
+      },
+      {
+        "@id": "urn:ngm:class:power-budget",
+        "label": "Power Budget"
+      },
+      {
+        "@id": "urn:ngm:class:signal-encoding",
+        "label": "Signal Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:signal-integrity",
+        "label": "Signal Integrity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:5-g-nr",
+        "label": "5G NR"
+      },
+      {
+        "@id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscale-data-centre",
+        "label": "Hyperscale Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:optical-transport-network",
+        "label": "Optical Transport Network"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:3-gpp-nr",
+        "label": "3GPP NR"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-core-specification",
+        "label": "Bluetooth Core Specification"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-11be",
+        "label": "IEEE 802.11be"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-3",
+        "label": "IEEE 802.3"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t-g-694-1",
+        "label": "ITU-T G.694.1"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-wan-specification",
+        "label": "LoRaWAN Specification"
+      },
+      {
+        "@id": "urn:ngm:class:oif-common-electrical-interface",
+        "label": "OIF Common Electrical Interface"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:chirp-spread-spectrum",
+        "label": "Chirp Spread Spectrum"
+      },
+      {
+        "@id": "urn:ngm:class:dsp",
+        "label": "DSP"
+      },
+      {
+        "@id": "urn:ngm:class:ldpc-codes",
+        "label": "LDPC Codes"
+      },
+      {
+        "@id": "urn:ngm:class:mimo-antenna",
+        "label": "MIMO Antenna"
+      },
+      {
+        "@id": "urn:ngm:class:nrz-signalling",
+        "label": "NRZ Signalling"
+      },
+      {
+        "@id": "urn:ngm:class:ofdm",
+        "label": "OFDM"
+      },
+      {
+        "@id": "urn:ngm:class:pam-4-modulation",
+        "label": "PAM-4 Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:qam",
+        "label": "QAM"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:channel-coding",
+        "label": "Channel Coding"
+      },
+      {
+        "@id": "urn:ngm:class:dispersion-compensation",
+        "label": "Dispersion Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:mimo-antenna",
+        "label": "MIMO Antenna"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface-card",
+        "label": "Network Interface Card"
+      },
+      {
+        "@id": "urn:ngm:class:optical-transport-network",
+        "label": "Optical Transport Network"
+      },
+      {
+        "@id": "urn:ngm:class:propagation-loss",
+        "label": "Propagation Loss"
+      },
+      {
+        "@id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "@id": "urn:ngm:class:switch-fabric",
+        "label": "Switch Fabric"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:financial-trading-networks",
+        "label": "Financial Trading Networks"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:smart-cities",
+        "label": "Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-sig",
+        "label": "Bluetooth SIG"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-11-working-group",
+        "label": "IEEE 802.11 Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-3-task-force",
+        "label": "IEEE 802.3 Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO IEC JTC 1"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t-sg15",
+        "label": "ITU-T SG15"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-alliance",
+        "label": "LoRa Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:oif",
+        "label": "OIF"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a718aceaa066e10f2b049cea33cbb1f67248e7151a678d817932d001a009b197@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Physical Layer (OSI Layer 1) is the foundational stratum of the Open Systems Interconnection reference model defined in ISO/IEC 7498-1 and ITU-T X.200, responsible for raw transmission and reception of unstructured bit streams over a physical communication medium. It encompasses all hardware components, electrical signalling conventions, optical and radio-frequency propagation specifications, modulation schemes, encoding techniques, clock recovery circuits, synchronisation mechanisms, forward error correction engines, connector and cabling standards, and transceiver mechanical form factors that govern how binary data is physically conveyed between adjacent network nodes without awareness of frame boundaries, logical addressing, or routing topology. The Physical Layer defines symbol rate (baud), signal voltage levels or optical power levels, pin assignments, timing recovery loop characteristics, bit synchronisation, scrambling polynomials, line coding transformations, FEC algorithm selection, and the physical conversion between digital symbols and the representation carried on the transmission medium.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bluetooth-le",
-      "vc:label": "Bluetooth LE"
-    },
-    {
-      "@id": "urn:visionflow:linked:cable-plant",
-      "vc:label": "Cable Plant"
-    },
-    {
-      "@id": "urn:visionflow:linked:clock-recovery",
-      "vc:label": "Clock Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:co-packaged-optics",
-      "vc:label": "Co-Packaged Optics"
-    },
-    {
-      "@id": "urn:visionflow:linked:connector-standards",
-      "vc:label": "Connector Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethernet-phy",
-      "vc:label": "Ethernet PHY"
-    },
-    {
-      "@id": "urn:visionflow:linked:forward-error-correction",
-      "vc:label": "Forward Error Correction"
-    },
-    {
-      "@id": "urn:visionflow:linked:line-coding",
-      "vc:label": "Line Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:modulation",
-      "vc:label": "Modulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-interface-card",
-      "vc:label": "Network Interface Card"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-fibre",
-      "vc:label": "Optical Fibre"
-    },
-    {
-      "@id": "urn:visionflow:linked:photonic-integrated-circuit",
-      "vc:label": "Photonic Integrated Circuit"
-    },
-    {
-      "@id": "urn:visionflow:linked:ser-des",
-      "vc:label": "SerDes"
-    },
-    {
-      "@id": "urn:visionflow:linked:transceiver",
-      "vc:label": "Transceiver"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-radio",
-      "vc:label": "Wireless Radio"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee",
-      "vc:label": "Zigbee"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRa"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:channel-equalisation",
-      "vc:label": "Channel Equalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:clock-recovery",
-      "vc:label": "Clock Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:connector-standards",
-      "vc:label": "Connector Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:forward-error-correction",
-      "vc:label": "Forward Error Correction"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-medium",
-      "vc:label": "Physical Medium"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-budget",
-      "vc:label": "Power Budget"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-encoding",
-      "vc:label": "Signal Encoding"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-integrity",
-      "vc:label": "Signal Integrity"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:5-g-nr",
-      "vc:label": "5G NR"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-link-layer",
-      "vc:label": "Data Link Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethernet",
-      "vc:label": "Ethernet"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-performance-computing",
-      "vc:label": "High Performance Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperscale-data-centre",
-      "vc:label": "Hyperscale Data Centre"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-io-t",
-      "vc:label": "Industrial IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-transport-network",
-      "vc:label": "Optical Transport Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:wi-fi",
-      "vc:label": "Wi-Fi"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:3-gpp-nr",
-      "vc:label": "3GPP NR"
-    },
-    {
-      "@id": "urn:visionflow:linked:bluetooth-core-specification",
-      "vc:label": "Bluetooth Core Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-11be",
-      "vc:label": "IEEE 802.11be"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-15-4",
-      "vc:label": "IEEE 802.15.4"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-3",
-      "vc:label": "IEEE 802.3"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t-g-694-1",
-      "vc:label": "ITU-T G.694.1"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-wan-specification",
-      "vc:label": "LoRaWAN Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:oif-common-electrical-interface",
-      "vc:label": "OIF Common Electrical Interface"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:asic-design",
-      "vc:label": "ASIC Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:channel-coding-theory",
-      "vc:label": "Channel Coding Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:electromagnetic-compatibility",
-      "vc:label": "Electromagnetic Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:photonics",
-      "vc:label": "Photonics"
-    },
-    {
-      "@id": "urn:visionflow:linked:rf-engineering",
-      "vc:label": "RF Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-fabrication",
-      "vc:label": "Semiconductor Fabrication"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-integrity",
-      "vc:label": "Signal Integrity"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-trading-networks",
-      "vc:label": "Financial Trading Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-performance-computing",
-      "vc:label": "High-Performance Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-io-t",
-      "vc:label": "Industrial IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-key-distribution",
-      "vc:label": "Quantum Key Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-cities",
-      "vc:label": "Smart Cities"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:chirp-spread-spectrum",
-      "vc:label": "Chirp Spread Spectrum"
-    },
-    {
-      "@id": "urn:visionflow:linked:dsp",
-      "vc:label": "DSP"
-    },
-    {
-      "@id": "urn:visionflow:linked:ldpc-codes",
-      "vc:label": "LDPC Codes"
-    },
-    {
-      "@id": "urn:visionflow:linked:mimo-antenna",
-      "vc:label": "MIMO Antenna"
-    },
-    {
-      "@id": "urn:visionflow:linked:nrz-signalling",
-      "vc:label": "NRZ Signalling"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofdm",
-      "vc:label": "OFDM"
-    },
-    {
-      "@id": "urn:visionflow:linked:pam-4-modulation",
-      "vc:label": "PAM-4 Modulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:qam",
-      "vc:label": "QAM"
-    },
-    {
-      "@id": "urn:visionflow:linked:reed-solomon-codes",
-      "vc:label": "Reed-Solomon Codes"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:data-link-layer",
-      "vc:label": "Data Link Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-defined-networking",
-      "vc:label": "Software-Defined Networking"
-    },
-    {
-      "@id": "urn:visionflow:linked:transport-layer",
-      "vc:label": "Transport Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:application-layer",
-      "vc:label": "Application Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-layer",
-      "vc:label": "Network Layer"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:channel-coding",
-      "vc:label": "Channel Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:dispersion-compensation",
-      "vc:label": "Dispersion Compensation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mimo-antenna",
-      "vc:label": "MIMO Antenna"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-interface-card",
-      "vc:label": "Network Interface Card"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-transport-network",
-      "vc:label": "Optical Transport Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:propagation-loss",
-      "vc:label": "Propagation Loss"
-    },
-    {
-      "@id": "urn:visionflow:linked:radio-access-network",
-      "vc:label": "Radio Access Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:switch-fabric",
-      "vc:label": "Switch Fabric"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:3-gpp",
-      "vc:label": "3GPP"
-    },
-    {
-      "@id": "urn:visionflow:linked:bluetooth-sig",
-      "vc:label": "Bluetooth SIG"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-11-working-group",
-      "vc:label": "IEEE 802.11 Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-3-task-force",
-      "vc:label": "IEEE 802.3 Task Force"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-jtc-1",
-      "vc:label": "ISO IEC JTC 1"
-    },
-    {
-      "@id": "urn:visionflow:linked:itu-t-sg15",
-      "vc:label": "ITU-T SG15"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-alliance",
-      "vc:label": "LoRa Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:oif",
-      "vc:label": "OIF"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

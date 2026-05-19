@@ -180,116 +180,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:identity-graph",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:identity-graph",
+  "@type": "Class",
   "label": "Identity Graph",
+  "definition": "A network-based data structure representing entities, their digital identities, and relationships in a graph database optimized for identity resolution, trust scoring, and social network analysis.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0459c95e67ddad069af922485b5720db509cce31b36e6cac45c4534f190a1ff1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:identity-node",
+        "label": "Identity Node"
+      },
+      {
+        "@id": "urn:ngm:class:relationship-edge",
+        "label": "Relationship Edge"
+      },
+      {
+        "@id": "urn:ngm:class:trust-attribute",
+        "label": "Trust Attribute"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0459c95e67ddad069af922485b5720db509cce31b36e6cac45c4534f190a1ff1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A network-based data structure representing entities, their digital identities, and relationships in a graph database optimized for identity resolution, trust scoring, and social network analysis.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-framework",
-      "vc:label": "Trust Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:identity-node",
-      "vc:label": "Identity Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:relationship-edge",
-      "vc:label": "Relationship Edge"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-attribute",
-      "vc:label": "Trust Attribute"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-database",
-      "vc:label": "Graph Database"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-database",
-      "vc:label": "Graph Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fraud-detection",
-      "vc:label": "Fraud Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-resolution",
-      "vc:label": "Identity Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-network-analysis",
-      "vc:label": "Social Network Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:did-resolution",
-      "vc:label": "DID Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-metrics",
-      "vc:label": "Trust Metrics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

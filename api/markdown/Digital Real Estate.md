@@ -216,128 +216,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-real-estate",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-real-estate",
+  "@type": "Class",
   "label": "Digital Real Estate",
+  "definition": "Digital Real Estate is a type of Virtual Economy in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f6226966197382190340e961edbe86123341696de3e530ddfc4d2cef1329edf8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:development-rights",
+        "label": "Development Rights"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-token",
+        "label": "Ownership Token"
+      },
+      {
+        "@id": "urn:ngm:class:property-metadata",
+        "label": "Property Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:land-parcel",
+        "label": "Land Parcel"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-coordinates",
+        "label": "Spatial Coordinates"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:advertising-space",
+        "label": "Advertising Space"
+      },
+      {
+        "@id": "urn:ngm:class:community-building",
+        "label": "Community Building"
+      },
+      {
+        "@id": "urn:ngm:class:event-hosting",
+        "label": "Event Hosting"
+      },
+      {
+        "@id": "urn:ngm:class:property-development",
+        "label": "Property Development"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-commerce",
+        "label": "Virtual Commerce"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f6226966197382190340e961edbe86123341696de3e530ddfc4d2cef1329edf8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Tokenised virtual land parcels and property within metaverse worlds that can be owned, developed, monetised, and traded as digital assets. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:development-rights",
-      "vc:label": "Development Rights"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-token",
-      "vc:label": "Ownership Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-metadata",
-      "vc:label": "Property Metadata"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:land-parcel",
-      "vc:label": "Land Parcel"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-coordinates",
-      "vc:label": "Spatial Coordinates"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:advertising-space",
-      "vc:label": "Advertising Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:community-building",
-      "vc:label": "Community Building"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-hosting",
-      "vc:label": "Event Hosting"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-development",
-      "vc:label": "Property Development"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-commerce",
-      "vc:label": "Virtual Commerce"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:land-registry",
-      "vc:label": "Land Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-standards",
-      "vc:label": "NFT Standards"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

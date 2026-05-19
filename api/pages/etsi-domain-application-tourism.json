@@ -3,36 +3,45 @@
   "title": "ETSI Domain Application + Tourism",
   "slug": "etsi-domain-application-tourism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-application-tourism",
+  "classIri": "urn:ngm:class:etsi-domain-application-tourism",
   "domain": "spatial-computing",
   "definition": "Cross-domain marker for metaverse application components focused on tourism and hospitality including virtual tours, destination previews, cultural heritage experiences, and travel planning platforms in immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cultural-experience-categorization",
+        "id": "urn:ngm:class:cultural-experience-categorization",
         "label": "Cultural Experience Categorization"
       },
       {
-        "id": "urn:visionflow:linked:tourism-application-classification",
+        "id": "urn:ngm:class:tourism-application-classification",
         "label": "Tourism Application Classification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-domain-taxonomy",
+        "label": "ETSI Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

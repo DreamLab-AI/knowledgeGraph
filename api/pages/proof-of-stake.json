@@ -3,19 +3,18 @@
   "title": "Proof of Stake",
   "slug": "proof-of-stake",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proof-of-stake",
+  "classIri": "urn:ngm:class:proof-of-stake",
   "domain": "blockchain",
-  "definition": "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Formally, a consensus model where the blockchain network is secured by users locking cryptocurrency into the blockchain network through a process called staking.",
+  "definition": "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:proof-based-consensus",
+      "id": "urn:ngm:class:proof-based-consensus",
       "label": "Proof-Based Consensus"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

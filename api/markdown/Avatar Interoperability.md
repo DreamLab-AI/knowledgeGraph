@@ -184,116 +184,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:avatar-interoperability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:avatar-interoperability",
+  "@type": "Class",
   "label": "Avatar Interoperability",
+  "definition": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:be27644293c0c4763646d29168d20b4cc7d0703f4028c83d58433cecb1c3e656"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behavior-mapping",
+        "label": "Behavior Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-authentication",
+        "label": "Cross-Platform Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-portability",
+        "label": "Identity Portability"
+      },
+      {
+        "@id": "urn:ngm:class:appearance-translation",
+        "label": "Appearance Translation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      },
+      {
+        "@id": "urn:ngm:class:identity-protocol",
+        "label": "Identity Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:platform-api",
+        "label": "Platform API"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-presence",
+        "label": "Cross-Platform Presence"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-identity",
+        "label": "Persistent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:seamless-migration",
+        "label": "Seamless Migration"
+      },
+      {
+        "@id": "urn:ngm:class:universal-avatar",
+        "label": "Universal Avatar"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:be27644293c0c4763646d29168d20b4cc7d0703f4028c83d58433cecb1c3e656@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Capability enabling an avatar's identity, appearance, and behaviors to function seamlessly across multiple metaverse platforms and virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behavior-mapping",
-      "vc:label": "Behavior Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-authentication",
-      "vc:label": "Cross-Platform Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-portability",
-      "vc:label": "Identity Portability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:appearance-translation",
-      "vc:label": "Appearance Translation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-serialization",
-      "vc:label": "Data Serialization"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-protocol",
-      "vc:label": "Identity Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-api",
-      "vc:label": "Platform API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-standard",
-      "vc:label": "Avatar Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-presence",
-      "vc:label": "Cross-Platform Presence"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-identity",
-      "vc:label": "Persistent Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:seamless-migration",
-      "vc:label": "Seamless Migration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:universal-avatar",
-      "vc:label": "Universal Avatar"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gl-tf",
-      "vc:label": "glTF"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hanim-standard",
-      "vc:label": "HAnim Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:vrm-format",
-      "vc:label": "VRM Format"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Augmented Connected Workforce",
   "slug": "augmented-connected-workforce",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:augmented-connected-workforce",
+  "classIri": "urn:ngm:class:augmented-connected-workforce",
   "domain": "spatial-computing",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Augmented Connected Workforce is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

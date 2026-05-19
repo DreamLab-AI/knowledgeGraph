@@ -3,19 +3,18 @@
   "title": "Feature Store",
   "slug": "feature-store",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:feature-store",
+  "classIri": "urn:ngm:class:feature-store",
   "domain": "artificial-intelligence",
   "definition": "Centralized repository for storing, managing, and serving machine learning features, ensuring consistency between training and inference while enabling feature reuse across models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning-pipeline",
+      "id": "urn:ngm:class:machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

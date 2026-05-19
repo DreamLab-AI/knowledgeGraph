@@ -492,374 +492,303 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:consumer-protection",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:consumer-protection",
+  "@type": "Class",
   "label": "Consumer Protection",
+  "definition": "Body of law, regulation, and enforcement mechanisms protecting individuals from unfair, deceptive, or abusive commercial practices — spanning statutory rights, enforcement agencies, complaint and redress processes, and product liability standards — now substantially reshaped by digital markets, A...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:competition-law",
-      "vc:label": "Competition Law"
+      "@id": "urn:ngm:class:competition-law",
+      "label": "Competition Law"
     },
     {
-      "@id": "urn:visionflow:linked:market-regulation",
-      "vc:label": "Market Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation",
-      "vc:label": "Regulation"
+      "@id": "urn:ngm:class:market-regulation",
+      "label": "Market Regulation"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:110caae6c8c3607150d0e4664f55dd8aab439f48be8f06ed73538fddd52b460c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adr-schemes",
+        "label": "ADR Schemes"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability-rules",
+        "label": "Algorithmic Accountability Rules"
+      },
+      {
+        "@id": "urn:ngm:class:collective-redress",
+        "label": "Collective Redress"
+      },
+      {
+        "@id": "urn:ngm:class:complaint-infrastructure",
+        "label": "Complaint Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:dark-pattern-prohibition",
+        "label": "Dark Pattern Prohibition"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-powers",
+        "label": "Enforcement Powers"
+      },
+      {
+        "@id": "urn:ngm:class:product-safety-standards",
+        "label": "Product Safety Standards"
+      },
+      {
+        "@id": "urn:ngm:class:redress-mechanisms",
+        "label": "Redress Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:statutory-rights",
+        "label": "Statutory Rights"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:complaint-infrastructure",
+        "label": "Complaint Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-cooperation",
+        "label": "Cross-border Cooperation"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-standards",
+        "label": "Evidence Standards"
+      },
+      {
+        "@id": "urn:ngm:class:judicial-oversight",
+        "label": "Judicial Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "@id": "urn:ngm:class:technical-audit-capability",
+        "label": "Technical Audit Capability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-product-safety",
+        "label": "AI Product Safety"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-redress",
+        "label": "Consumer Redress"
+      },
+      {
+        "@id": "urn:ngm:class:fair-algorithmic-pricing",
+        "label": "Fair Algorithmic Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:informed-purchasing-decisions",
+        "label": "Informed Purchasing Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:market-fairness",
+        "label": "Market Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-content-accountability",
+        "label": "Synthetic Content Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trust-in-digital-platforms",
+        "label": "Trust in Digital Platforms"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ai-act-product-safety",
+        "label": "AI Act Product Safety"
+      },
+      {
+        "@id": "urn:ngm:class:cma-strategic-market-status",
+        "label": "CMA Strategic Market Status"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-duty-fca",
+        "label": "Consumer Duty FCA"
+      },
+      {
+        "@id": "urn:ngm:class:digital-markets-competition-and-consumers-act-2024",
+        "label": "Digital Markets Competition and Consumers Act 2024"
+      },
+      {
+        "@id": "urn:ngm:class:eu-consumer-rights-directive",
+        "label": "EU Consumer Rights Directive"
+      },
+      {
+        "@id": "urn:ngm:class:ftc-unfair-and-deceptive-practices",
+        "label": "FTC Unfair and Deceptive Practices"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:collective-proceedings",
+        "label": "Collective Proceedings"
+      },
+      {
+        "@id": "urn:ngm:class:complaint-analytics",
+        "label": "Complaint Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:dark-pattern-detection",
+        "label": "Dark Pattern Detection"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-action",
+        "label": "Enforcement Action"
+      },
+      {
+        "@id": "urn:ngm:class:market-investigations",
+        "label": "Market Investigations"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-content-detection",
+        "label": "Synthetic Content Detection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-trust",
+        "label": "Consumer Trust"
+      },
+      {
+        "@id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:fair-trading",
+        "label": "Fair Trading"
+      },
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:market-efficiency",
+        "label": "Market Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerable-consumer-protection",
+        "label": "Vulnerable Consumer Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:asa",
+        "label": "ASA"
+      },
+      {
+        "@id": "urn:ngm:class:cma",
+        "label": "CMA"
+      },
+      {
+        "@id": "urn:ngm:class:eu-consumer-protection-cooperation-network",
+        "label": "EU Consumer Protection Cooperation Network"
+      },
+      {
+        "@id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      },
+      {
+        "@id": "urn:ngm:class:ftc",
+        "label": "FTC"
+      },
+      {
+        "@id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "@id": "urn:ngm:class:opss",
+        "label": "OPSS"
+      },
+      {
+        "@id": "urn:ngm:class:trading-standards",
+        "label": "Trading Standards"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:110caae6c8c3607150d0e4664f55dd8aab439f48be8f06ed73538fddd52b460c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Body of law, regulation, and enforcement mechanisms protecting individuals from unfair, deceptive, or abusive commercial practices — spanning statutory rights, enforcement agencies, complaint and redress processes, and product liability standards — now substantially reshaped by digital markets, AI-generated content, algorithmic pricing, platform dark patterns, and AI product liability. Key contemporary instruments include the UK [[Digital Markets Competition and Consumers Act 2024]] (DMCC), the [[EU Consumer Rights Directive]] (amended), [[FTC]] AI guidance (2024–2026), [[CMA]] strategic market status investigations, and the EU [[AI Act]] product-safety overlay. [[Consumer Protection]] interfaces with [[Competition Law]], [[Data Protection]], [[Product Liability]], [[Financial Regulation]], and [[AI Governance]] across all major jurisdictions. The legal architecture rests on four pillars: information obligations (requiring traders to disclose material facts); substantive rights (guaranteeing minimum standards of quality and fairness regardless of contract terms); enforcement powers (enabling agencies and courts to sanction violations and compel redress); and systemic intervention (",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adr-schemes",
-      "vc:label": "ADR Schemes"
-    },
-    {
-      "@id": "urn:visionflow:linked:algorithmic-accountability-rules",
-      "vc:label": "Algorithmic Accountability Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:collective-redress",
-      "vc:label": "Collective Redress"
-    },
-    {
-      "@id": "urn:visionflow:linked:complaint-infrastructure",
-      "vc:label": "Complaint Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:dark-pattern-prohibition",
-      "vc:label": "Dark Pattern Prohibition"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosure-requirements",
-      "vc:label": "Disclosure Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-powers",
-      "vc:label": "Enforcement Powers"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-safety-standards",
-      "vc:label": "Product Safety Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:redress-mechanisms",
-      "vc:label": "Redress Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:statutory-rights",
-      "vc:label": "Statutory Rights"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-transparency",
-      "vc:label": "Algorithmic Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:complaint-infrastructure",
-      "vc:label": "Complaint Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-cooperation",
-      "vc:label": "Cross-border Cooperation"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-standards",
-      "vc:label": "Evidence Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:judicial-oversight",
-      "vc:label": "Judicial Oversight"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-authority",
-      "vc:label": "Regulatory Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-audit-capability",
-      "vc:label": "Technical Audit Capability"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-product-safety",
-      "vc:label": "AI Product Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:consumer-redress",
-      "vc:label": "Consumer Redress"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-algorithmic-pricing",
-      "vc:label": "Fair Algorithmic Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-purchasing-decisions",
-      "vc:label": "Informed Purchasing Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-fairness",
-      "vc:label": "Market Fairness"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-content-accountability",
-      "vc:label": "Synthetic Content Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-in-digital-platforms",
-      "vc:label": "Trust in Digital Platforms"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ai-act-product-safety",
-      "vc:label": "AI Act Product Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:cma-strategic-market-status",
-      "vc:label": "CMA Strategic Market Status"
-    },
-    {
-      "@id": "urn:visionflow:linked:consumer-duty-fca",
-      "vc:label": "Consumer Duty FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-markets-competition-and-consumers-act-2024",
-      "vc:label": "Digital Markets Competition and Consumers Act 2024"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-consumer-rights-directive",
-      "vc:label": "EU Consumer Rights Directive"
-    },
-    {
-      "@id": "urn:visionflow:linked:ftc-unfair-and-deceptive-practices",
-      "vc:label": "FTC Unfair and Deceptive Practices"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-services-act",
-      "vc:label": "Digital Services Act"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:behavioural-economics",
-      "vc:label": "Behavioural Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:competition-law",
-      "vc:label": "Competition Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:contract-law",
-      "vc:label": "Contract Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-economics",
-      "vc:label": "Information Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-liability-law",
-      "vc:label": "Product Liability Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-transparency",
-      "vc:label": "Algorithmic Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:consumer-trust",
-      "vc:label": "Consumer Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-inclusion",
-      "vc:label": "Digital Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-trading",
-      "vc:label": "Fair Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-consent",
-      "vc:label": "Informed Consent"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-efficiency",
-      "vc:label": "Market Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:vulnerable-consumer-protection",
-      "vc:label": "Vulnerable Consumer Protection"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:algorithmic-auditing",
-      "vc:label": "Algorithmic Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:collective-proceedings",
-      "vc:label": "Collective Proceedings"
-    },
-    {
-      "@id": "urn:visionflow:linked:complaint-analytics",
-      "vc:label": "Complaint Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:dark-pattern-detection",
-      "vc:label": "Dark Pattern Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-action",
-      "vc:label": "Enforcement Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-investigations",
-      "vc:label": "Market Investigations"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-content-detection",
-      "vc:label": "Synthetic Content Detection"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:co-regulation",
-      "vc:label": "Co-regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:industry-self-regulation",
-      "vc:label": "Industry Self-Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-terms-of-service",
-      "vc:label": "Platform Terms of Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandbox-approaches",
-      "vc:label": "Sandbox Approaches"
-    },
-    {
-      "@id": "urn:visionflow:linked:voluntary-codes-of-conduct",
-      "vc:label": "Voluntary Codes of Conduct"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-liability",
-      "vc:label": "AI Liability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:california-ai-bill",
-      "vc:label": "California AI bill"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:asa",
-      "vc:label": "ASA"
-    },
-    {
-      "@id": "urn:visionflow:linked:cma",
-      "vc:label": "CMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-consumer-protection-cooperation-network",
-      "vc:label": "EU Consumer Protection Cooperation Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-conduct-authority",
-      "vc:label": "Financial Conduct Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:ftc",
-      "vc:label": "FTC"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico",
-      "vc:label": "ICO"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom",
-      "vc:label": "Ofcom"
-    },
-    {
-      "@id": "urn:visionflow:linked:opss",
-      "vc:label": "OPSS"
-    },
-    {
-      "@id": "urn:visionflow:linked:trading-standards",
-      "vc:label": "Trading Standards"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

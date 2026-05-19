@@ -204,134 +204,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-platform-compliance-hub",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-platform-compliance-hub",
+  "@type": "Class",
   "label": "Cross-Platform Compliance Hub",
+  "definition": "A unified regulatory compliance system that harmonizes and coordinates compliance activities across multiple platforms, jurisdictions, and regulatory frameworks through centralized policy management and audit aggregation.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3d1b3faa415d801438c2a42c6429432528d22845c6e948afe923a11332c63be6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-aggregator",
+        "label": "Audit Aggregator"
+      },
+      {
+        "@id": "urn:ngm:class:policy-synchronization",
+        "label": "Policy Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-mapping-engine",
+        "label": "Regulatory Mapping Engine"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-module",
+        "label": "Risk Assessment Module"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:multi-jurisdictional-policy-store",
+        "label": "Multi-Jurisdictional Policy Store"
+      },
+      {
+        "@id": "urn:ngm:class:reporting-engine",
+        "label": "Reporting Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-auditing",
+        "label": "Cross-Platform Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-harmonization",
+        "label": "Regulatory Harmonization"
+      },
+      {
+        "@id": "urn:ngm:class:unified-compliance-reporting",
+        "label": "Unified Compliance Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-infrastructure",
+        "label": "Governance Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance-framework",
+        "label": "Regulatory Compliance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3d1b3faa415d801438c2a42c6429432528d22845c6e948afe923a11332c63be6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A unified regulatory compliance system that harmonizes and coordinates compliance activities across multiple platforms, jurisdictions, and regulatory frameworks through centralized policy management and audit aggregation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:governance-infrastructure",
-      "vc:label": "Governance Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-compliance-framework",
-      "vc:label": "Regulatory Compliance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-aggregator",
-      "vc:label": "Audit Aggregator"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-synchronization",
-      "vc:label": "Policy Synchronization"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-mapping-engine",
-      "vc:label": "Regulatory Mapping Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-assessment-module",
-      "vc:label": "Risk Assessment Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-dashboard",
-      "vc:label": "Compliance Dashboard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:multi-jurisdictional-policy-store",
-      "vc:label": "Multi-Jurisdictional Policy Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:reporting-engine",
-      "vc:label": "Reporting Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-auditing",
-      "vc:label": "Cross-Platform Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-harmonization",
-      "vc:label": "Regulatory Harmonization"
-    },
-    {
-      "@id": "urn:visionflow:linked:unified-compliance-reporting",
-      "vc:label": "Unified Compliance Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-classification-system",
-      "vc:label": "Data Classification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-framework-database",
-      "vc:label": "Legal Framework Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-integration-api",
-      "vc:label": "Platform Integration API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

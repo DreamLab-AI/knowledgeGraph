@@ -220,120 +220,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:uri-canonicaliser",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:uri-canonicaliser",
+  "@type": "Class",
   "label": "URI Canonicaliser",
+  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-systems",
-      "vc:label": "Identity Systems"
+      "@id": "urn:ngm:class:identity-systems",
+      "label": "Identity Systems"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:hash-computation",
+        "label": "Hash Computation"
+      },
+      {
+        "@id": "urn:ngm:class:scope-bearer",
+        "label": "Scope Bearer"
+      },
+      {
+        "@id": "urn:ngm:class:slug-derivation",
+        "label": "Slug Derivation"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bip-340-pubkey",
+        "label": "BIP-340 Pubkey"
+      },
+      {
+        "@id": "urn:ngm:class:json-stringification",
+        "label": "JSON Stringification"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256-hash-function",
+        "label": "SHA-256 Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:uri-rfc-8141",
+        "label": "URI RFC 8141"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-resolution",
+        "label": "Decentralised Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-serialisation",
+        "label": "Deterministic Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ietf-content-addressable-architecture",
+        "label": "IETF Content-Addressable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8141-urn-syntax",
+        "label": "RFC 8141 URN Syntax"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eb7ea460f23e72d1ae3ea7cccf766fdb20e1a251e7d4f6495f9f763a72eb9bd1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification of agent-emitted artefacts.",
-  "vc:qualityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.93",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:hash-computation",
-      "vc:label": "Hash Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-bearer",
-      "vc:label": "Scope Bearer"
-    },
-    {
-      "@id": "urn:visionflow:linked:slug-derivation",
-      "vc:label": "Slug Derivation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-addressing",
-      "vc:label": "Content Addressing"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bip-340-pubkey",
-      "vc:label": "BIP-340 Pubkey"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-stringification",
-      "vc:label": "JSON Stringification"
-    },
-    {
-      "@id": "urn:visionflow:linked:sha-256-hash-function",
-      "vc:label": "SHA-256 Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:uri-rfc-8141",
-      "vc:label": "URI RFC 8141"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-resolution",
-      "vc:label": "Decentralised Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-serialisation",
-      "vc:label": "Deterministic Serialisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tamper-detection",
-      "vc:label": "Tamper Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-addressing",
-      "vc:label": "Content Addressing"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:ietf-content-addressable-architecture",
-      "vc:label": "IETF Content-Addressable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-8141-urn-syntax",
-      "vc:label": "RFC 8141 URN Syntax"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-did-core",
-      "vc:label": "W3C DID Core"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-hash-function",
-      "vc:label": "Blockchain Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-addressed-storage",
-      "vc:label": "Content-Addressed Storage"
-    }
-  ]
+  "quality": 0.89,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

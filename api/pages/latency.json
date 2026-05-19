@@ -3,57 +3,70 @@
   "title": "Latency",
   "slug": "latency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:latency",
+  "classIri": "urn:ngm:class:latency",
   "domain": "spatial-computing",
   "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:quality-of-service",
+      "id": "urn:ngm:class:quality-of-service",
       "label": "Quality of Service"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:measurement-tools",
+        "id": "urn:ngm:class:measurement-tools",
         "label": "Measurement Tools"
       },
       {
-        "id": "urn:visionflow:linked:monitoring-system",
+        "id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
       },
       {
-        "id": "urn:visionflow:linked:timestamp-synchronization",
+        "id": "urn:ngm:class:timestamp-synchronization",
         "label": "Timestamp Synchronization"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:quality-assessment",
+        "id": "urn:ngm:class:quality-assessment",
         "label": "Quality Assessment"
       },
       {
-        "id": "urn:visionflow:linked:sla-monitoring",
+        "id": "urn:ngm:class:sla-monitoring",
         "label": "SLA Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:user-experience-tuning",
+        "id": "urn:ngm:class:user-experience-tuning",
         "label": "User Experience Tuning"
       },
       {
-        "id": "urn:visionflow:owl:class:performance-optimization",
+        "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance Metrics"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Asset",
   "slug": "virtual-asset",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-asset",
+  "classIri": "urn:ngm:class:virtual-asset",
   "domain": "spatial-computing",
-  "definition": "Virtual assets are digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique digital collectibles, [[Avatar|avatars]] and avatar customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-game items]] with market-tradeable value. Ownership and transfer of virtual assets rely on [[BlockchainTechnology|blockchain]] smart contracts or centralised platform ledgers, with [[Interoperability|interoperability standards]] enabling asset portability across platforms and markets. Economic significance of virtual assets spans consumer entertainment (gaming, social worlds) to investment speculation, with regulatory frameworks increasingly addressing [[VirtualAssetTaxation|taxation]] and classification under securities laws.",
+  "definition": "Virtual assets are digital items with economic value within [[MetaversePlatforms|metaverse environments]], spanning [[NFT|non-fungible tokens]] representing unique digital collectibles, [[Avatar|avatars]] and avatar customisations, [[VirtualRealEstate|virtual real estate]], and [[InGameItems|in-g...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

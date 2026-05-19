@@ -3,53 +3,57 @@
   "title": "Digital Currency",
   "slug": "digital-currency",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-currency",
+  "classIri": "urn:ngm:class:digital-currency",
   "domain": "spatial-computing",
-  "definition": "Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation. bridges-to:: [[Blockchain]]",
+  "definition": "Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-technology",
+      "id": "urn:ngm:class:financial-technology",
       "label": "Financial Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:security-infrastructure",
+        "id": "urn:ngm:class:security-infrastructure",
         "label": "Security Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:transaction-network",
+        "id": "urn:ngm:class:transaction-network",
         "label": "Transaction Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:linked:virtual-transactions",
+        "id": "urn:ngm:class:virtual-transactions",
         "label": "Virtual Transactions"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-payments",
+        "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,163 +3,291 @@
   "title": "Proprietary AI Video",
   "slug": "proprietary-ai-video",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proprietary-ai-video",
+  "classIri": "urn:ngm:class:proprietary-ai-video",
   "domain": "artificial-intelligence",
-  "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated [[Generative AI]] systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons, motion vectors), developed and served by corporations retaining exclusive access to model weights, training data compositions, and inference infrastructure, encompassing five dominant commercial families \u2014 (1) foundation text-to-video generators with physics-aware spatiotemporal modelling (OpenAI Sora Feb 2024 preview / Dec 2024 Turbo launch / Sep 2025 Sora 2 with synchronised audio, [[Google DeepMind]] Veo 2 Dec 2024 / Veo 3 May 2025 with native joint audio, Kuaishou Kling 1.0 Jun 2024 / 2.0 Apr 2025 120-second clips / 2.1 Aug 2025 multi-shot consistency, [[Runway]] Gen-3 Alpha Jun 2024 / Gen-3 Alpha Turbo Jul 2024 $0.05/sec / Gen-4 Mar 2025 character consistency); (2) prosumer creative tools optimised for short-form social content (Pika 1.5 Oct 2024 Pikaffects / 2.0 Dec 2024 Scene Ingredients / 2.2 Feb 2025 Pikaframes-Pikaswaps-Pikadditions, Luma Dream Machine Jun 2024 / Ray2 Jan 2025, M",
+  "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated [[Generative AI]] systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons,...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-training",
+      "id": "urn:ngm:class:model-training",
       "label": "Model Training"
     },
     {
-      "id": "urn:visionflow:owl:class:ai-video",
+      "id": "urn:ngm:class:ai-video",
       "label": "AI Video"
-    },
-    {
-      "id": "urn:visionflow:owl:class:diffusion-models",
-      "label": "Diffusion Models"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:diffusion-transformer",
+        "id": "urn:ngm:class:diffusion-transformer",
         "label": "Diffusion Transformer"
       },
       {
-        "id": "urn:visionflow:linked:text-to-video-generation",
+        "id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:checkpoints",
+        "id": "urn:ngm:class:checkpoints",
         "label": "Checkpoints"
       },
       {
-        "id": "urn:visionflow:owl:class:latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
-        "id": "urn:visionflow:owl:class:model-optimisation-and-performance",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation and Performance"
       },
       {
-        "id": "urn:visionflow:owl:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
-        "id": "urn:visionflow:owl:class:transformers",
+        "id": "urn:ngm:class:transformers",
         "label": "Transformers"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:diffusion-models",
+        "id": "urn:ngm:class:diffusion-models",
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:visionflow:owl:class:foundation-models",
+        "id": "urn:ngm:class:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "id": "urn:visionflow:owl:class:hardware-and-edge",
+        "id": "urn:ngm:class:hardware-and-edge",
         "label": "Hardware and Edge"
       },
       {
-        "id": "urn:visionflow:owl:class:latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
-        "id": "urn:visionflow:owl:class:model-training",
+        "id": "urn:ngm:class:model-training",
         "label": "Model Training"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-adoption",
+        "id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-companions",
+        "id": "urn:ngm:class:ai-companions",
         "label": "AI companions"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-video",
+        "id": "urn:ngm:class:ai-video",
         "label": "AI Video"
       },
       {
-        "id": "urn:visionflow:owl:class:call-centres",
+        "id": "urn:ngm:class:call-centres",
         "label": "Call Centres"
       },
       {
-        "id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
         "label": "Deepfakes and fraudulent content"
       },
       {
-        "id": "urn:visionflow:owl:class:education-and-ai",
+        "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
       },
       {
-        "id": "urn:visionflow:owl:class:hyper-personalisation",
+        "id": "urn:ngm:class:hyper-personalisation",
         "label": "Hyper personalisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:attention",
+        "id": "urn:ngm:class:attention",
         "label": "Attention"
       },
       {
-        "id": "urn:visionflow:owl:class:checkpoints",
+        "id": "urn:ngm:class:checkpoints",
         "label": "Checkpoints"
       },
       {
-        "id": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
         "label": "ControlNet and Similar Spatial Conditioning Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:diffusion-models",
+        "id": "urn:ngm:class:diffusion-models",
         "label": "Diffusion Models"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:latent-space",
+        "id": "urn:ngm:class:latent-space",
         "label": "Latent Space"
       },
       {
-        "id": "urn:visionflow:owl:class:lo-ra-do-ra-etc",
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
         "label": "LoRA DoRA etc"
       },
       {
-        "id": "urn:visionflow:owl:class:transformers",
+        "id": "urn:ngm:class:transformers",
         "label": "Transformers"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-training",
+        "label": "Stable Diffusion Training"
+      },
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:advertising-and-marketing",
+        "label": "Advertising and Marketing"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "Social Media"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:google-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ]
   },
   "wikilinks": [
     {

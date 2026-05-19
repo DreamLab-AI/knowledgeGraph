@@ -3,19 +3,18 @@
   "title": "Post Hoc Explanation",
   "slug": "post-hoc-explanation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:post-hoc-explanation",
+  "classIri": "urn:ngm:class:post-hoc-explanation",
   "domain": "artificial-intelligence",
   "definition": "Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:explainability",
+      "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

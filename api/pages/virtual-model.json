@@ -3,19 +3,18 @@
   "title": "Virtual Model",
   "slug": "virtual-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-model",
+  "classIri": "urn:ngm:class:virtual-model",
   "domain": "spatial-computing",
   "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:3-d-asset",
+      "id": "urn:ngm:class:3-d-asset",
       "label": "3D Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

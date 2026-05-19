@@ -116,48 +116,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:blockchain-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-domain",
+  "@type": "Class",
   "label": "Blockchain Domain",
+  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eaf5acf9ca44903568563624902cd656e216b787699b8c05744b64075df86817@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies. This domain encompasses the foundational concepts, cryptographic primitives, consensus mechanisms, network architectures, smart contract systems, and economic models that constitute blockchain technology. It includes both theoretical concepts and practical implementations of distributed, cryptographically-secured data structures that enable decentralized consensus without trusted intermediaries. The domain spans from low-level cryptographic operations to high-level decentralized applications, covering blockchain fundamentals, data structures, transaction models, consensus protocols, network topologies, virtual machine architectures, token economics, and enterprise blockchain solutions. This domain serves as the primary classification for all blockchain-related ontological concepts, providing a unified framework for organizing and understanding the complex ecosystem of distributed ledger technologies.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.80",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

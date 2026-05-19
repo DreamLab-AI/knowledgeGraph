@@ -3,19 +3,18 @@
   "title": "Universal Avatar",
   "slug": "universal-avatar",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:universal-avatar",
+  "classIri": "urn:ngm:class:universal-avatar",
   "domain": "spatial-computing",
   "definition": "A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:avatar",
+      "id": "urn:ngm:class:avatar",
       "label": "Avatar"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

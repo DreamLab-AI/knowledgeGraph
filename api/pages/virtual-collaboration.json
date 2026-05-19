@@ -3,19 +3,18 @@
   "title": "Virtual Collaboration",
   "slug": "virtual-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-collaboration",
+  "classIri": "urn:ngm:class:virtual-collaboration",
   "domain": "spatial-computing",
   "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-workspace",
+      "id": "urn:ngm:class:virtual-workspace",
       "label": "Virtual Workspace"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

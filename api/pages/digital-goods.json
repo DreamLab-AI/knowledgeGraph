@@ -3,74 +3,87 @@
   "title": "Digital Goods",
   "slug": "digital-goods",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-goods",
+  "classIri": "urn:ngm:class:digital-goods",
   "domain": "spatial-computing",
-  "definition": "Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and ownership. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Goods is a type of Virtual Economy in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:metadata",
+        "id": "urn:ngm:class:metadata",
         "label": "Metadata"
       },
       {
-        "id": "urn:visionflow:linked:ownership-token",
+        "id": "urn:ngm:class:ownership-token",
         "label": "Ownership Token"
       },
       {
-        "id": "urn:visionflow:linked:usage-rights",
+        "id": "urn:ngm:class:usage-rights",
         "label": "Usage Rights"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:creator-monetization",
+        "id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetization"
       },
       {
-        "id": "urn:visionflow:linked:user-ownership",
+        "id": "urn:ngm:class:user-ownership",
         "label": "User Ownership"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-trading",
+        "id": "urn:ngm:class:asset-trading",
         "label": "Asset Trading"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

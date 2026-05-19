@@ -196,41 +196,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:manipulator-arm",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:manipulator-arm",
+  "@type": "Class",
   "label": "Manipulator Arm",
+  "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:avatar-wearable",
-      "vc:label": "Avatar Wearable"
+      "@id": "urn:ngm:class:avatar-wearable",
+      "label": "Avatar Wearable"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3227ce8d0c1014322ddc1e6b29c1f7f62935ab29030ced47964e5dd33e6fb395"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3227ce8d0c1014322ddc1e6b29c1f7f62935ab29030ced47964e5dd33e6fb395@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation and grasping in XR applications, exemplified by the Avatarm system enabling remote physical object manipulation whilst maintaining immersive virtual presence, and deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training simulators addressing challenges around latency, haptic feedback fidelity, and standardised interfaces for physical-virtual interaction.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

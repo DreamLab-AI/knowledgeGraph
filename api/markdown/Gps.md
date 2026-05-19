@@ -152,90 +152,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gps",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gps",
+  "@type": "Class",
   "label": "Gps",
+  "definition": "GPS (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 ...",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:navigation-system",
-      "vc:label": "Navigation System"
+      "@id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:antenna-array",
+        "label": "Antenna Array"
+      },
+      {
+        "@id": "urn:ngm:class:map-integration",
+        "label": "Map Integration"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:geofencing",
+        "label": "Geofencing"
+      },
+      {
+        "@id": "urn:ngm:class:long-range-navigation",
+        "label": "Long-range Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-robot-coordination",
+        "label": "Multi-robot Coordination"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:global-localisation",
+        "label": "Global Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:mission-planning",
+        "label": "Mission Planning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:859c44d401cc1e95abedc2e6a5808017d73b7e62d1bcd98060a35958af26a07d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**GPS** (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 metres.",
-  "vc:qualityScore": {
-    "@value": "0.51",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.09",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:global-localisation",
-      "vc:label": "Global Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:mission-planning",
-      "vc:label": "Mission Planning"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:antenna-array",
-      "vc:label": "Antenna Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:map-integration",
-      "vc:label": "Map Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:geofencing",
-      "vc:label": "Geofencing"
-    },
-    {
-      "@id": "urn:visionflow:linked:long-range-navigation",
-      "vc:label": "Long-range Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-robot-coordination",
-      "vc:label": "Multi-robot Coordination"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.51,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

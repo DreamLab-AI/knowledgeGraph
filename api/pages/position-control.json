@@ -3,98 +3,98 @@
   "title": "PositionControl",
   "slug": "position-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:position-control",
+  "classIri": "urn:ngm:class:position-control",
   "domain": "robotics",
-  "definition": "A closed-loop feedback control methodology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), computing the position error (setpoint minus measured position), and generating corrective control signals through algorithms such as proportional-integral-derivative (PID) control, state-space controllers, or model-based feedforward compensation, with applications spanning industrial robotic arms executing pick-and-place operations with \u00b10.05 mm repeatability, CNC machine tools achieving \u00b12 \u03bcm contouring accuracy, collaborative robots maintaining safe position constraints for human proximity (ISO/TS 15066 compliant force-limited operation), delta robots performing high-speed sorting at 300 picks/minute, and autonomous mobile robots following waypoint trajectories with <10 cm path deviation, characterized by performance metrics including steady-state error (typical <0.1% of travel range for servo drives), settling time (milliseconds to seconds depending on inertia and control bandwidth), ",
+  "definition": "A closed-loop feedback control modology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:servo-system",
+      "id": "urn:ngm:class:servo-system",
       "label": "ServoSystem"
     },
     {
-      "id": "urn:visionflow:owl:class:control-algorithm",
+      "id": "urn:ngm:class:control-algorithm",
       "label": "ControlAlgorithm"
-    },
-    {
-      "id": "urn:visionflow:owl:class:feedback-control",
-      "label": "FeedbackControl"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.91,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:actuator-command",
+        "id": "urn:ngm:class:actuator-command",
         "label": "ActuatorCommand"
       },
       {
-        "id": "urn:visionflow:linked:control-law",
+        "id": "urn:ngm:class:control-law",
         "label": "ControlLaw"
       },
       {
-        "id": "urn:visionflow:linked:error-calculation",
+        "id": "urn:ngm:class:error-calculation",
         "label": "ErrorCalculation"
       },
       {
-        "id": "urn:visionflow:linked:feedforward-compensation",
+        "id": "urn:ngm:class:feedforward-compensation",
         "label": "FeedforwardCompensation"
       },
       {
-        "id": "urn:visionflow:linked:position-sensor",
+        "id": "urn:ngm:class:position-sensor",
         "label": "PositionSensor"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
       {
-        "id": "urn:visionflow:linked:kinematic-model",
+        "id": "urn:ngm:class:kinematic-model",
         "label": "KinematicModel"
       },
       {
-        "id": "urn:visionflow:linked:motor-driver",
+        "id": "urn:ngm:class:motor-driver",
         "label": "MotorDriver"
       },
       {
-        "id": "urn:visionflow:linked:position-feedback",
+        "id": "urn:ngm:class:position-feedback",
         "label": "PositionFeedback"
       },
       {
-        "id": "urn:visionflow:owl:class:power-supply",
+        "id": "urn:ngm:class:power-supply",
         "label": "PowerSupply"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:homing",
+        "id": "urn:ngm:class:homing",
         "label": "Homing"
       },
       {
-        "id": "urn:visionflow:linked:path-following",
+        "id": "urn:ngm:class:path-following",
         "label": "PathFollowing"
       },
       {
-        "id": "urn:visionflow:linked:pick-and-place",
+        "id": "urn:ngm:class:pick-and-place",
         "label": "PickAndPlace"
       },
       {
-        "id": "urn:visionflow:linked:synchronization",
+        "id": "urn:ngm:class:synchronization",
         "label": "Synchronization"
       },
       {
-        "id": "urn:visionflow:linked:trajectory-tracking",
+        "id": "urn:ngm:class:trajectory-tracking",
         "label": "TrajectoryTracking"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

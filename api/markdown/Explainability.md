@@ -116,52 +116,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:explainability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:explainability",
+  "@type": "Class",
   "label": "Explainability",
+  "definition": "The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bc7ff207e9a4b732bf19d750233e8d1cb714a9497a00a7e3603a733fb5cb085f"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability-ai-0068",
+        "label": "Accountability (AI-0068)"
+      },
+      {
+        "@id": "urn:ngm:class:contestability-ai-0043",
+        "label": "Contestability (AI-0043)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bc7ff207e9a4b732bf19d750233e8d1cb714a9497a00a7e3603a733fb5cb085f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accountability-ai-0068",
-      "vc:label": "Accountability (AI-0068)"
-    },
-    {
-      "@id": "urn:visionflow:linked:contestability-ai-0043",
-      "vc:label": "Contestability (AI-0043)"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Autonomous AI Agents",
   "slug": "autonomous-ai-agents",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:autonomous-ai-agents",
+  "classIri": "urn:ngm:class:autonomous-ai-agents",
   "domain": "artificial-intelligence",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Autonomous AI Agents is a type of AI Agent System in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-agent-system",
+      "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

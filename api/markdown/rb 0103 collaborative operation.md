@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0103-collaborative-operation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0103-collaborative-operation",
+  "@type": "Class",
   "label": "rb 0103 collaborative operation",
+  "definition": "collaborative operation is a robotics and autonomous systems concept and a type of Collaborative Operation.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:collaborative-operation",
-      "vc:label": "Collaborative Operation"
+      "@id": "urn:ngm:class:collaborative-operation",
+      "label": "Collaborative Operation"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5cccb3dfd396d281e24f42f4cc501db50f046f90ac4b000bc60333c8a8bcea56"
-  },
-  "vc:inferenceRule": "R5",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5cccb3dfd396d281e24f42f4cc501db50f046f90ac4b000bc60333c8a8bcea56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "collaborative operation is a robotics and autonomous systems concept and a type of Collaborative Operation."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5"
+  }
 }
 ```
 

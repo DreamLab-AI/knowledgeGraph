@@ -3,53 +3,57 @@
   "title": "BIM Virtual Model",
   "slug": "bim-virtual-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bim-virtual-model",
+  "classIri": "urn:ngm:class:bim-virtual-model",
   "domain": "spatial-computing",
-  "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.",
+  "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection througho...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:design-data",
+        "id": "urn:ngm:class:design-data",
         "label": "Design Data"
       },
       {
-        "id": "urn:visionflow:linked:modeling-standards",
+        "id": "urn:ngm:class:modeling-standards",
         "label": "Modeling Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:bim-software",
+        "id": "urn:ngm:class:bim-software",
         "label": "BIM Software"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:clash-detection",
+        "id": "urn:ngm:class:clash-detection",
         "label": "Clash Detection"
       },
       {
-        "id": "urn:visionflow:linked:construction-simulation",
+        "id": "urn:ngm:class:construction-simulation",
         "label": "Construction Simulation"
       },
       {
-        "id": "urn:visionflow:linked:design-visualization",
+        "id": "urn:ngm:class:design-visualization",
         "label": "Design Visualization"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

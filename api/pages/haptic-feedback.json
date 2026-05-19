@@ -3,19 +3,18 @@
   "title": "Haptic Feedback",
   "slug": "haptic-feedback",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:haptic-feedback",
+  "classIri": "urn:ngm:class:haptic-feedback",
   "domain": "spatial-computing",
-  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].",
+  "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tactile-actuator",
+        "label": "TactileActuator"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

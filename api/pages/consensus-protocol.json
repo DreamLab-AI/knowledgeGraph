@@ -3,27 +3,31 @@
   "title": "Consensus Protocol",
   "slug": "consensus-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:consensus-protocol",
+  "classIri": "urn:ngm:class:consensus-protocol",
   "domain": "blockchain",
   "definition": "Consensus Protocol is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

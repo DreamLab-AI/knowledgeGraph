@@ -3,53 +3,57 @@
   "title": "Governance Framework",
   "slug": "governance-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:governance-framework",
+  "classIri": "urn:ngm:class:governance-framework",
   "domain": "artificial-intelligence",
-  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:organisational-framework",
-      "label": "Organisational Framework"
-    }
-  ],
+  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:organisational-framework",
+        "label": "Organisational Framework"
+      }
+    ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:performance-management",
+        "id": "urn:ngm:class:performance-management",
         "label": "Performance Management"
       },
       {
-        "id": "urn:visionflow:linked:strategic-alignment",
+        "id": "urn:ngm:class:strategic-alignment",
         "label": "Strategic Alignment"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-management",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:decision-rights",
+        "id": "urn:ngm:class:decision-rights",
         "label": "Decision Rights"
       },
       {
-        "id": "urn:visionflow:owl:class:accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

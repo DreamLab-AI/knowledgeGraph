@@ -3,19 +3,18 @@
   "title": "Latency-Aware Edge AI",
   "slug": "latency-aware-edge-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:latency-aware-edge-ai",
+  "classIri": "urn:ngm:class:latency-aware-edge-ai",
   "domain": "artificial-intelligence",
-  "definition": "Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption. These systems continuously monitor network conditions, device load, and inference deadlines, selecting optimal inference strategies from a portfolio of options. Dynamic model selection automatically chooses different neural network architectures (fast shallow networks versus accurate deep networks) based on available time budget; 50ms deadline might use lightweight EfficientNet-B0 while 500ms deadline allows ResNet-50. Adaptive offloading intelligently routes inference between edge and cloud: simple queries execute locally within milliseconds, complex requests offload to cloud when network latency allows before deadline expiration. Cascading inference employs early-exit networks that provide predictions at intermediate layers, reducing latency when initial predictions carry sufficient confidence. Adaptive batching accumulates multiple inference requests into batches for efficient processing when time permits; streaming requests process individually for minimal latency. Latency prediction models estimate e",
+  "definition": "Latency-Aware Edge AI systems dynamically adapt machine learning inference strategies to meet strict response time requirements while optimizing accuracy and resource consumption.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

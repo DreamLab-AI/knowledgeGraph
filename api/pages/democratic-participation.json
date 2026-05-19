@@ -3,53 +3,57 @@
   "title": "Democratic Participation",
   "slug": "democratic-participation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:democratic-participation",
+  "classIri": "urn:ngm:class:democratic-participation",
   "domain": "spatial-computing",
-  "definition": "The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance frameworks.",
+  "definition": "The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-governance",
+      "id": "urn:ngm:class:digital-governance",
       "label": "Digital Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:voting-systems",
+        "id": "urn:ngm:class:voting-systems",
         "label": "Voting Systems"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:civic-engagement",
+        "id": "urn:ngm:class:civic-engagement",
         "label": "Civic Engagement"
       },
       {
-        "id": "urn:visionflow:linked:community-decision-making",
+        "id": "urn:ngm:class:community-decision-making",
         "label": "Community Decision Making"
       },
       {
-        "id": "urn:visionflow:linked:virtual-voting",
+        "id": "urn:ngm:class:virtual-voting",
         "label": "Virtual Voting"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

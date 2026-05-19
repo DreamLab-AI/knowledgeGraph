@@ -3,27 +3,31 @@
   "title": "ETSI_Domain_Governance___Ethics",
   "slug": "etsi-domain-governance-ethics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-ethics",
+  "classIri": "urn:ngm:class:etsi-domain-governance-ethics",
   "domain": "artificial-intelligence",
-  "definition": "An [[ETSI]] governance domain addressing ethical principles, values alignment, responsible innovation, and fairness frameworks for metaverse and digital systems. This domain ensures [[Ethical Governance]], [[Stakeholder Alignment]], [[Fairness Assurance]], and [[Impact Assessment]] across technology deployment.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "An [[ETSI]] governance domain addressing ical principles, values alignment, responsible innovation, and fairness frameworks for metaverse and digital systems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

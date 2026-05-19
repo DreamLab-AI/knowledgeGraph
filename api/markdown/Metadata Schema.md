@@ -136,70 +136,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metadata-schema",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metadata-schema",
+  "@type": "Class",
   "label": "Metadata Schema",
+  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:data-standard",
-      "vc:label": "Data Standard"
+      "@id": "urn:ngm:class:data-standard",
+      "label": "Data Standard"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:52c1729e19ee61425d01c6bde48fc52a9fe72978bddb88b874f7e40ae85da0f1"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-discovery",
+        "label": "Data Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:fair-data-principles",
+        "label": "FAIR Data Principles"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "@id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:52c1729e19ee61425d01c6bde48fc52a9fe72978bddb88b874f7e40ae85da0f1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-discovery",
-      "vc:label": "Data Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-data-principles",
-      "vc:label": "FAIR Data Principles"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-interoperability",
-      "vc:label": "Data Interoperability"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:dublin-core",
-      "vc:label": "Dublin Core"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-ld",
-      "vc:label": "JSON-LD"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-org",
-      "vc:label": "Schema.org"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

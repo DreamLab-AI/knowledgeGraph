@@ -3,19 +3,18 @@
   "title": "rb 0064 computed torque control",
   "slug": "rb-0064-computed-torque-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0064-computed-torque-control",
+  "classIri": "urn:ngm:class:rb-0064-computed-torque-control",
   "domain": "robotics",
   "definition": "computed torque control is a robotics and autonomous systems concept and a type of Model Based Control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-based-control",
+      "id": "urn:ngm:class:model-based-control",
       "label": "Model Based Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

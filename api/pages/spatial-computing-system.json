@@ -3,32 +3,36 @@
   "title": "Spatial Computing System",
   "slug": "spatial-computing-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-computing-system",
+  "classIri": "urn:ngm:class:spatial-computing-system",
   "domain": "spatial-computing",
-  "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positioning awareness.",
+  "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positionin...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mixed-reality-platform",
+      "id": "urn:ngm:class:mixed-reality-platform",
       "label": "Mixed Reality Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:spatial-interface",
+        "id": "urn:ngm:class:spatial-interface",
         "label": "Spatial Interface"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

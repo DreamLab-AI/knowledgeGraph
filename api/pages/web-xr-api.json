@@ -3,19 +3,18 @@
   "title": "WebXR API",
   "slug": "web-xr-api",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:web-xr-api",
+  "classIri": "urn:ngm:class:web-xr-api",
   "domain": "spatial-computing",
   "definition": "web interface enabling rendering and input for AR/VR experiences in browsers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

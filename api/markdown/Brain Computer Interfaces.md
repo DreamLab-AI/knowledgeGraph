@@ -608,404 +608,307 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:brain-computer-interfaces",
+  "@type": "Class",
   "label": "Brain Computer Interfaces",
+  "definition": "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cer...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:assistive-technology",
-      "vc:label": "Assistive Technology"
+      "@id": "urn:ngm:class:assistive-technology",
+      "label": "Assistive Technology"
     },
     {
-      "@id": "urn:visionflow:linked:biomedical-device",
-      "vc:label": "Biomedical Device"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-interface",
-      "vc:label": "Neural Interface"
+      "@id": "urn:ngm:class:biomedical-device",
+      "label": "Biomedical Device"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:623b48021141ca5dd14c9ae9522202a74da509ec0cb5d686988c3d1d333eaf43"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:battery-or-inductive-power-link",
+        "label": "Battery or Inductive Power Link"
+      },
+      {
+        "@id": "urn:ngm:class:biocompatible-encapsulation",
+        "label": "Biocompatible Encapsulation"
+      },
+      {
+        "@id": "urn:ngm:class:microelectrode-array",
+        "label": "Microelectrode Array"
+      },
+      {
+        "@id": "urn:ngm:class:neural-decoder",
+        "label": "Neural Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:signal-amplifier",
+        "label": "Signal Amplifier"
+      },
+      {
+        "@id": "urn:ngm:class:spike-sorter",
+        "label": "Spike Sorter"
+      },
+      {
+        "@id": "urn:ngm:class:stimulation-driver",
+        "label": "Stimulation Driver"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-telemetry-module",
+        "label": "Wireless Telemetry Module"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog-to-Digital Converter"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:biocompatible-materials",
+        "label": "Biocompatible Materials"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-trial-infrastructure",
+        "label": "Clinical Trial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:low-noise-analog-electronics",
+        "label": "Low-Noise Analog Electronics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-decoder",
+        "label": "Machine Learning Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:neurosurgical-procedure",
+        "label": "Neurosurgical Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:closed-loop-neuromodulation",
+        "label": "Closed-Loop Neuromodulation"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-augmentation",
+        "label": "Cognitive Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:communication-for-locked-in-patients",
+        "label": "Communication for Locked-In Patients"
+      },
+      {
+        "@id": "urn:ngm:class:direct-neural-control",
+        "label": "Direct Neural Control"
+      },
+      {
+        "@id": "urn:ngm:class:motor-restoration",
+        "label": "Motor Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:neurofeedback-therapy",
+        "label": "Neurofeedback Therapy"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-restoration",
+        "label": "Sensory Restoration"
+      },
+      {
+        "@id": "urn:ngm:class:speech-restoration",
+        "label": "Speech Restoration"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:action-potential-recording",
+        "label": "Action Potential Recording"
+      },
+      {
+        "@id": "urn:ngm:class:electrocorticography",
+        "label": "Electrocorticography"
+      },
+      {
+        "@id": "urn:ngm:class:electroencephalography",
+        "label": "Electroencephalography"
+      },
+      {
+        "@id": "urn:ngm:class:functional-near-infrared-spectroscopy",
+        "label": "Functional Near-Infrared Spectroscopy"
+      },
+      {
+        "@id": "urn:ngm:class:intracortical-microstimulation",
+        "label": "Intracortical Microstimulation"
+      },
+      {
+        "@id": "urn:ngm:class:local-field-potential-recording",
+        "label": "Local Field Potential Recording"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:common-spatial-patterns",
+        "label": "Common Spatial Patterns"
+      },
+      {
+        "@id": "urn:ngm:class:independent-component-analysis",
+        "label": "Independent Component Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:linear-discriminant-analysis",
+        "label": "Linear Discriminant Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:mamba-state-space-model",
+        "label": "Mamba State-Space Model"
+      },
+      {
+        "@id": "urn:ngm:class:riemannian-geometry",
+        "label": "Riemannian Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:wiener-filter",
+        "label": "Wiener Filter"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-enhancement",
+        "label": "Cognitive Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:cyborg",
+        "label": "Cyborg"
+      },
+      {
+        "@id": "urn:ngm:class:neuromodulation",
+        "label": "Neuromodulation"
+      },
+      {
+        "@id": "urn:ngm:class:neuroprosthetics",
+        "label": "Neuroprosthetics"
+      },
+      {
+        "@id": "urn:ngm:class:neurorights",
+        "label": "Neurorights"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:als-communication",
+        "label": "ALS Communication"
+      },
+      {
+        "@id": "urn:ngm:class:locked-in-syndrome-communication",
+        "label": "Locked-In Syndrome Communication"
+      },
+      {
+        "@id": "urn:ngm:class:parkinson-s-disease-treatment",
+        "label": "Parkinson's Disease Treatment"
+      },
+      {
+        "@id": "urn:ngm:class:refractory-epilepsy-treatment",
+        "label": "Refractory Epilepsy Treatment"
+      },
+      {
+        "@id": "urn:ngm:class:spinal-cord-injury-recovery",
+        "label": "Spinal Cord Injury Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:stroke-rehabilitation",
+        "label": "Stroke Rehabilitation"
+      },
+      {
+        "@id": "urn:ngm:class:tetraplegia-rehabilitation",
+        "label": "Tetraplegia Rehabilitation"
+      },
+      {
+        "@id": "urn:ngm:class:treatment-resistant-depression",
+        "label": "Treatment-Resistant Depression"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bci-society",
+        "label": "BCI Society"
+      },
+      {
+        "@id": "urn:ngm:class:eu-medical-device-regulation",
+        "label": "EU Medical Device Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fda-bci-guidance-2021",
+        "label": "FDA BCI Guidance 2021"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-2731",
+        "label": "IEEE 2731"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-3209",
+        "label": "IEEE 3209"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14708-active-implantable-medical-devices",
+        "label": "ISO 14708 Active Implantable Medical Devices"
+      },
+      {
+        "@id": "urn:ngm:class:unesco-neurotech-recommendation",
+        "label": "UNESCO Neurotech Recommendation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:623b48021141ca5dd14c9ae9522202a74da509ec0cb5d686988c3d1d333eaf43@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cerebral cortex, but also subcortical structures, the spinal cord, and peripheral nerves) and an external computational device, bypassing the conventional efferent pathways of muscles and nerves to translate measured neural activity into control signals (decoding) or to inject information into the nervous system through electrical, optical, magnetic, or ultrasonic stimulation (encoding), spanning a taxonomy of acquisition modalities stratified by invasiveness (fully invasive penetrating microelectrode arrays such as the Blackrock Utah Array — a 4×4 mm silicon substrate with 96-128 platinum-iridium needles 1.0-1.5 mm long sampling action potentials from individual neurons at 30 kHz with 100-300 μV signal amplitudes, the Michigan probe family of planar silicon shanks with 16-64 recording sites enabling multi-depth laminar recordings, and the Neuropixels 1.0/2.0 IMEC-Janelia probes integrating 96",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:battery-or-inductive-power-link",
-      "vc:label": "Battery or Inductive Power Link"
-    },
-    {
-      "@id": "urn:visionflow:linked:biocompatible-encapsulation",
-      "vc:label": "Biocompatible Encapsulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:microelectrode-array",
-      "vc:label": "Microelectrode Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-decoder",
-      "vc:label": "Neural Decoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-amplifier",
-      "vc:label": "Signal Amplifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:spike-sorter",
-      "vc:label": "Spike Sorter"
-    },
-    {
-      "@id": "urn:visionflow:linked:stimulation-driver",
-      "vc:label": "Stimulation Driver"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-telemetry-module",
-      "vc:label": "Wireless Telemetry Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:analog-to-digital-converter",
-      "vc:label": "Analog-to-Digital Converter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:surgical-robot",
-      "vc:label": "Surgical Robot"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:biocompatible-materials",
-      "vc:label": "Biocompatible Materials"
-    },
-    {
-      "@id": "urn:visionflow:linked:clinical-trial-infrastructure",
-      "vc:label": "Clinical Trial Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:informed-consent",
-      "vc:label": "Informed Consent"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-noise-analog-electronics",
-      "vc:label": "Low-Noise Analog Electronics"
-    },
-    {
-      "@id": "urn:visionflow:linked:machine-learning-decoder",
-      "vc:label": "Machine Learning Decoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:neurosurgical-procedure",
-      "vc:label": "Neurosurgical Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-computing",
-      "vc:label": "Real-Time Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-approval",
-      "vc:label": "Regulatory Approval"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:closed-loop-neuromodulation",
-      "vc:label": "Closed-Loop Neuromodulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-augmentation",
-      "vc:label": "Cognitive Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:communication-for-locked-in-patients",
-      "vc:label": "Communication for Locked-In Patients"
-    },
-    {
-      "@id": "urn:visionflow:linked:direct-neural-control",
-      "vc:label": "Direct Neural Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:motor-restoration",
-      "vc:label": "Motor Restoration"
-    },
-    {
-      "@id": "urn:visionflow:linked:neurofeedback-therapy",
-      "vc:label": "Neurofeedback Therapy"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-restoration",
-      "vc:label": "Sensory Restoration"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-restoration",
-      "vc:label": "Speech Restoration"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:action-potential-recording",
-      "vc:label": "Action Potential Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrocorticography",
-      "vc:label": "Electrocorticography"
-    },
-    {
-      "@id": "urn:visionflow:linked:electroencephalography",
-      "vc:label": "Electroencephalography"
-    },
-    {
-      "@id": "urn:visionflow:linked:functional-near-infrared-spectroscopy",
-      "vc:label": "Functional Near-Infrared Spectroscopy"
-    },
-    {
-      "@id": "urn:visionflow:linked:intracortical-microstimulation",
-      "vc:label": "Intracortical Microstimulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-field-potential-recording",
-      "vc:label": "Local Field Potential Recording"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:closed-loop-control",
-      "vc:label": "Closed-Loop Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biocompatible-engineering",
-      "vc:label": "Biocompatible Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:computational-neuroscience",
-      "vc:label": "Computational Neuroscience"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrophysiology",
-      "vc:label": "Electrophysiology"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:neuroscience",
-      "vc:label": "Neuroscience"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:als-communication",
-      "vc:label": "ALS Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:locked-in-syndrome-communication",
-      "vc:label": "Locked-In Syndrome Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:parkinson-s-disease-treatment",
-      "vc:label": "Parkinson's Disease Treatment"
-    },
-    {
-      "@id": "urn:visionflow:linked:refractory-epilepsy-treatment",
-      "vc:label": "Refractory Epilepsy Treatment"
-    },
-    {
-      "@id": "urn:visionflow:linked:spinal-cord-injury-recovery",
-      "vc:label": "Spinal Cord Injury Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:stroke-rehabilitation",
-      "vc:label": "Stroke Rehabilitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tetraplegia-rehabilitation",
-      "vc:label": "Tetraplegia Rehabilitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:treatment-resistant-depression",
-      "vc:label": "Treatment-Resistant Depression"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:common-spatial-patterns",
-      "vc:label": "Common Spatial Patterns"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-component-analysis",
-      "vc:label": "Independent Component Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-discriminant-analysis",
-      "vc:label": "Linear Discriminant Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:mamba-state-space-model",
-      "vc:label": "Mamba State-Space Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:riemannian-geometry",
-      "vc:label": "Riemannian Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:wiener-filter",
-      "vc:label": "Wiener Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:recurrent-neural-network",
-      "vc:label": "Recurrent Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:emg-wristband",
-      "vc:label": "EMG Wristband"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyboard",
-      "vc:label": "Keyboard"
-    },
-    {
-      "@id": "urn:visionflow:linked:mouse",
-      "vc:label": "Mouse"
-    },
-    {
-      "@id": "urn:visionflow:linked:peripheral-nerve-interface",
-      "vc:label": "Peripheral Nerve Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:spinal-cord-stimulator",
-      "vc:label": "Spinal Cord Stimulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-recognition",
-      "vc:label": "Voice Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-enhancement",
-      "vc:label": "Cognitive Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyborg",
-      "vc:label": "Cyborg"
-    },
-    {
-      "@id": "urn:visionflow:linked:neuromodulation",
-      "vc:label": "Neuromodulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:neuroprosthetics",
-      "vc:label": "Neuroprosthetics"
-    },
-    {
-      "@id": "urn:visionflow:linked:neurorights",
-      "vc:label": "Neurorights"
-    },
-    {
-      "@id": "urn:visionflow:linked:wearable-computing",
-      "vc:label": "Wearable Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bci-society",
-      "vc:label": "BCI Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-medical-device-regulation",
-      "vc:label": "EU Medical Device Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fda-bci-guidance-2021",
-      "vc:label": "FDA BCI Guidance 2021"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-2731",
-      "vc:label": "IEEE 2731"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-3209",
-      "vc:label": "IEEE 3209"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-14708-active-implantable-medical-devices",
-      "vc:label": "ISO 14708 Active Implantable Medical Devices"
-    },
-    {
-      "@id": "urn:visionflow:linked:unesco-neurotech-recommendation",
-      "vc:label": "UNESCO Neurotech Recommendation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:neuroprosthetics",
-      "vc:label": "Neuroprosthetics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accessibility",
-      "vc:label": "Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

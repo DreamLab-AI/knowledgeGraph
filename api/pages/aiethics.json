@@ -3,19 +3,18 @@
   "title": "AIEthics",
   "slug": "aiethics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:aiethics",
+  "classIri": "urn:ngm:class:aiethics",
   "domain": "artificial-intelligence",
-  "definition": "A framework of ethical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values. It addresses concerns including fairness, accountability, transparency, bias mitigation, and alignment with [[Human Values]].",
+  "definition": "A framework of ical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Online Learning",
   "slug": "online-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:online-learning",
+  "classIri": "urn:ngm:class:online-learning",
   "domain": "artificial-intelligence",
   "definition": "Online Learning is a artificial intelligence concept and a type of Machine Learning. that enables Real-Time Learning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:real-time-learning",
+        "id": "urn:ngm:class:real-time-learning",
         "label": "Real-Time Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Metaverse Classification",
   "slug": "metaverse-classification",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-classification",
+  "classIri": "urn:ngm:class:metaverse-classification",
   "domain": "spatial-computing",
-  "definition": "Metaverse Classification is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Metaverse Classification is a type of Etsi Metaverse Domain Taxonomy in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
+      "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

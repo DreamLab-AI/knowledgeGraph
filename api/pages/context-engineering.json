@@ -3,147 +3,239 @@
   "title": "Context Engineering",
   "slug": "context-engineering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:context-engineering",
+  "classIri": "urn:ngm:class:context-engineering",
   "domain": "artificial-intelligence",
-  "definition": "Context Engineering is the systems-level discipline of designing, curating, compressing, and orchestrating the information delivered into a Large Language Model's context window across a multi-step agentic loop, popularised between mid-2024 and mid-2025 by Walden Yan (Cognition AI's \"Don't Build Multi-Agents\" essay), Shopify CEO Tobi L\u00fctke (\"the art of providing all the context for the task to be plausibly solvable by the LLM\"), Andrej Karpathy (\"the delicate art and science of filling the context window with just the right information for each step\"), and the Anthropic Applied AI team, deliberately superseding the single-turn framing of \"prompt engineering\" with a systems perspective that treats the context window as a managed resource analogous to a CPU's working memory rather than a one-shot instruction string, composing across multiple layers (system prompt and persona, instruction hierarchy following OpenAI's 2024 spec privileging system > developer > user > tool > assistant messages, tool/function-call schema definitions which themselves consume 1-15K tokens for typical agent toolbelts, few-shot exemplars chosen for representativeness rather than mere correctness, retrieval-a",
+  "definition": "Context Engineering is the systems-level discipline of designing, curating, compressing, and orchestrating the information delivered into a Large Language Model's context window across a multi-step agentic loop, popularised between mid-2024 and mid-2025 by Walden Yan (Cognition AI's \"Don't Build ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:agent-engineering",
+      "id": "urn:ngm:class:agent-engineering",
       "label": "Agent Engineering"
     },
     {
-      "id": "urn:visionflow:linked:ai-engineering",
+      "id": "urn:ngm:class:ai-engineering",
       "label": "AI Engineering"
-    },
-    {
-      "id": "urn:visionflow:linked:llm-application-engineering",
-      "label": "LLM Application Engineering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:context-compaction",
+        "id": "urn:ngm:class:context-compaction",
         "label": "Context Compaction"
       },
       {
-        "id": "urn:visionflow:linked:few-shot-examples",
+        "id": "urn:ngm:class:few-shot-examples",
         "label": "Few-Shot Examples"
       },
       {
-        "id": "urn:visionflow:linked:instruction-hierarchy",
+        "id": "urn:ngm:class:instruction-hierarchy",
         "label": "Instruction Hierarchy"
       },
       {
-        "id": "urn:visionflow:linked:persistent-memory",
+        "id": "urn:ngm:class:persistent-memory",
         "label": "Persistent Memory"
       },
       {
-        "id": "urn:visionflow:linked:prefix-cache",
+        "id": "urn:ngm:class:prefix-cache",
         "label": "Prefix Cache"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:scratchpad",
+        "id": "urn:ngm:class:scratchpad",
         "label": "Scratchpad"
       },
       {
-        "id": "urn:visionflow:linked:system-prompt",
+        "id": "urn:ngm:class:system-prompt",
         "label": "System Prompt"
       },
       {
-        "id": "urn:visionflow:linked:tool-schema",
+        "id": "urn:ngm:class:tool-schema",
         "label": "Tool Schema"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:evaluation-harness",
+        "id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Harness"
       },
       {
-        "id": "urn:visionflow:linked:large-language-model",
+        "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
       },
       {
-        "id": "urn:visionflow:linked:memory-store",
+        "id": "urn:ngm:class:memory-store",
         "label": "Memory Store"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-system",
+        "id": "urn:ngm:class:retrieval-system",
         "label": "Retrieval System"
       },
       {
-        "id": "urn:visionflow:linked:tokenizer",
+        "id": "urn:ngm:class:tokenizer",
         "label": "Tokenizer"
       },
       {
-        "id": "urn:visionflow:owl:class:context-window",
+        "id": "urn:ngm:class:context-window",
         "label": "Context Window"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cost-efficient-inference",
+        "id": "urn:ngm:class:cost-efficient-inference",
         "label": "Cost-Efficient Inference"
       },
       {
-        "id": "urn:visionflow:linked:llm-agents",
+        "id": "urn:ngm:class:llm-agents",
         "label": "LLM Agents"
       },
       {
-        "id": "urn:visionflow:linked:long-horizon-planning",
+        "id": "urn:ngm:class:long-horizon-planning",
         "label": "Long-Horizon Planning"
       },
       {
-        "id": "urn:visionflow:linked:multi-turn-coherence",
+        "id": "urn:ngm:class:multi-turn-coherence",
         "label": "Multi-Turn Coherence"
       },
       {
-        "id": "urn:visionflow:linked:persistent-ai-assistants",
+        "id": "urn:ngm:class:persistent-ai-assistants",
         "label": "Persistent AI Assistants"
       },
       {
-        "id": "urn:visionflow:linked:tool-use",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:context-compression",
+        "id": "urn:ngm:class:context-compression",
         "label": "Context Compression"
       },
       {
-        "id": "urn:visionflow:linked:hierarchical-retrieval",
+        "id": "urn:ngm:class:hierarchical-retrieval",
         "label": "Hierarchical Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:memory-block-architecture",
+        "id": "urn:ngm:class:memory-block-architecture",
         "label": "Memory Block Architecture"
       },
       {
-        "id": "urn:visionflow:linked:recursive-summarisation",
+        "id": "urn:ngm:class:recursive-summarisation",
         "label": "Recursive Summarisation"
       },
       {
-        "id": "urn:visionflow:linked:rolling-memory-window",
+        "id": "urn:ngm:class:rolling-memory-window",
         "label": "Rolling Memory Window"
       },
       {
-        "id": "urn:visionflow:linked:structured-output-constraints",
+        "id": "urn:ngm:class:structured-output-constraints",
         "label": "Structured Output Constraints"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:prompt-caching",
+        "label": "Prompt Caching"
+      },
+      {
+        "id": "urn:ngm:class:reranking",
+        "label": "Reranking"
+      },
+      {
+        "id": "urn:ngm:class:vector-embeddings",
+        "label": "Vector Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:xml-tags",
+        "label": "XML Tags"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:browser-agents",
+        "label": "Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:coding-agents",
+        "label": "Coding Agents"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-agents",
+        "label": "Customer Service Agents"
+      },
+      {
+        "id": "urn:ngm:class:research-agents",
+        "label": "Research Agents"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:anthropic-prompt-engineering-guide",
+        "label": "Anthropic Prompt Engineering Guide"
+      },
+      {
+        "id": "urn:ngm:class:claude-code-claude-md-convention",
+        "label": "Claude Code CLAUDE.md Convention"
+      },
+      {
+        "id": "urn:ngm:class:lang-graph-state-schema",
+        "label": "LangGraph State Schema"
+      },
+      {
+        "id": "urn:ngm:class:open-ai-instruction-hierarchy-spec",
+        "label": "OpenAI Instruction Hierarchy Spec"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:long-context-modeling",
+        "label": "Long-Context Modeling"
+      },
+      {
+        "id": "urn:ngm:class:memory-architecture",
+        "label": "Memory Architecture"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ]
   },
   "wikilinks": [
     {

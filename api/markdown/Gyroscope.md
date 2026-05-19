@@ -164,86 +164,71 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gyroscope",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gyroscope",
+  "@type": "Class",
   "label": "Gyroscope",
+  "definition": "Gyroscope - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:inertial-sensor",
-      "vc:label": "Inertial Sensor"
+      "@id": "urn:ngm:class:inertial-sensor",
+      "label": "Inertial Sensor"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bias-compensation",
+        "label": "Bias Compensation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:balance-control",
+        "label": "Balance Control"
+      },
+      {
+        "@id": "urn:ngm:class:drone-stabilisation",
+        "label": "Drone Stabilisation"
+      },
+      {
+        "@id": "urn:ngm:class:orientation-reference",
+        "label": "Orientation Reference"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:attitude-determination",
+        "label": "Attitude Determination"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3cf16e55cd8231d3b7e5006c614d4843b7ff2e375a2c7136def66c2488e4518e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Gyroscope** - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
-  "vc:qualityScore": {
-    "@value": "0.56",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.11",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:attitude-determination",
-      "vc:label": "Attitude Determination"
-    },
-    {
-      "@id": "urn:visionflow:linked:inertial-measurement-unit",
-      "vc:label": "Inertial Measurement Unit"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bias-compensation",
-      "vc:label": "Bias Compensation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:balance-control",
-      "vc:label": "Balance Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:drone-stabilisation",
-      "vc:label": "Drone Stabilisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:orientation-reference",
-      "vc:label": "Orientation Reference"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.56,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,32 +3,36 @@
   "title": "Immersive Experiences",
   "slug": "immersive-experiences",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-experiences",
+  "classIri": "urn:ngm:class:immersive-experiences",
   "domain": "spatial-computing",
   "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-experience",
+      "id": "urn:ngm:class:digital-experience",
       "label": "Digital Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:virtual-presence",
+        "id": "urn:ngm:class:virtual-presence",
         "label": "Virtual Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

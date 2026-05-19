@@ -3,69 +3,73 @@
   "title": "Camera",
   "slug": "camera",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:camera",
+  "classIri": "urn:ngm:class:camera",
   "domain": "robotics",
-  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologies (CCD, CMOS, ToF, structured light).",
+  "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologie...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:visual-perception",
+      "id": "urn:ngm:class:visual-perception",
       "label": "VisualPerception"
     },
     {
-      "id": "urn:visionflow:owl:class:sensor",
+      "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.91,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "CameraCalibration"
       },
       {
-        "id": "urn:visionflow:linked:image-sensor",
+        "id": "urn:ngm:class:image-sensor",
         "label": "ImageSensor"
       },
       {
-        "id": "urn:visionflow:linked:lens",
+        "id": "urn:ngm:class:lens",
         "label": "Lens"
       },
       {
-        "id": "urn:visionflow:linked:processing-unit",
+        "id": "urn:ngm:class:processing-unit",
         "label": "ProcessingUnit"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:visual-servoing",
+        "id": "urn:ngm:class:visual-servoing",
         "label": "VisualServoing"
       },
       {
-        "id": "urn:visionflow:owl:class:3-dreconstruction",
+        "id": "urn:ngm:class:3-dreconstruction",
         "label": "3DReconstruction"
       },
       {
-        "id": "urn:visionflow:owl:class:object-detection",
+        "id": "urn:ngm:class:object-detection",
         "label": "ObjectDetection"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-segmentation",
+        "id": "urn:ngm:class:semantic-segmentation",
         "label": "SemanticSegmentation"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

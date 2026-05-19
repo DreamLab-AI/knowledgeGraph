@@ -204,49 +204,28 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ontology-technical-details",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ontology-technical-details",
+  "@type": "Class",
   "label": "ONTOLOGY_TECHNICAL_DETAILS",
+  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:record-keeping-system",
-      "vc:label": "Record-Keeping System"
+      "@id": "urn:ngm:class:record-keeping-system",
+      "label": "Record-Keeping System"
     },
     {
-      "@id": "urn:visionflow:owl:class:data-structure",
-      "vc:label": "Data Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
+      "@id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "stub",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fb65e711bc7dc77ba82c534c3e239964fb3323a6825e632846e14de443cc2808@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

@@ -3,19 +3,18 @@
   "title": "Virtual Destination",
   "slug": "virtual-destination",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-destination",
+  "classIri": "urn:ngm:class:virtual-destination",
   "domain": "spatial-computing",
   "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-environment",
+      "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

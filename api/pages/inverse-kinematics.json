@@ -3,45 +3,62 @@
   "title": "Inverse Kinematics",
   "slug": "inverse-kinematics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:inverse-kinematics",
+  "classIri": "urn:ngm:class:inverse-kinematics",
   "domain": "robotics",
   "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:kinematics",
+      "id": "urn:ngm:class:kinematics",
       "label": "Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.97,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:kinematic-model",
+        "id": "urn:ngm:class:kinematic-model",
         "label": "Kinematic Model"
       },
       {
-        "id": "urn:visionflow:linked:target-pose",
+        "id": "urn:ngm:class:target-pose",
         "label": "Target Pose"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "id": "urn:ngm:class:rb-1016-path-planning",
         "label": "RB-1016-path-planning"
       },
       {
-        "id": "urn:visionflow:owl:class:robot-control",
+        "id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:analytical-methods",
+        "label": "Analytical Methods"
+      },
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

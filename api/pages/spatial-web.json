@@ -3,19 +3,18 @@
   "title": "Spatial Web",
   "slug": "spatial-web",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-web",
+  "classIri": "urn:ngm:class:spatial-web",
   "domain": "spatial-computing",
   "definition": "Spatial Web is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

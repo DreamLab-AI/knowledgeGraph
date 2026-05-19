@@ -3,90 +3,103 @@
   "title": "Metaverse Psychology Profile",
   "slug": "metaverse-psychology-profile",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-psychology-profile",
+  "classIri": "urn:ngm:class:metaverse-psychology-profile",
   "domain": "spatial-computing",
   "definition": "Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:psychological-research",
+      "id": "urn:ngm:class:psychological-research",
       "label": "Psychological Research"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:affective-response-logs",
+        "id": "urn:ngm:class:affective-response-logs",
         "label": "Affective Response Logs"
       },
       {
-        "id": "urn:visionflow:linked:behavioral-pattern-data",
+        "id": "urn:ngm:class:behavioral-pattern-data",
         "label": "Behavioral Pattern Data"
       },
       {
-        "id": "urn:visionflow:linked:cognitive-trait-indicators",
+        "id": "urn:ngm:class:cognitive-trait-indicators",
         "label": "Cognitive Trait Indicators"
       },
       {
-        "id": "urn:visionflow:linked:emotional-state-metrics",
+        "id": "urn:ngm:class:emotional-state-metrics",
         "label": "Emotional State Metrics"
       },
       {
-        "id": "urn:visionflow:linked:preference-mapping",
+        "id": "urn:ngm:class:preference-mapping",
         "label": "Preference Mapping"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction-analytics",
+        "id": "urn:ngm:class:social-interaction-analytics",
         "label": "Social Interaction Analytics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:behavioral-tracking-system",
+        "id": "urn:ngm:class:behavioral-tracking-system",
         "label": "Behavioral Tracking System"
       },
       {
-        "id": "urn:visionflow:linked:data-analytics-engine",
+        "id": "urn:ngm:class:data-analytics-engine",
         "label": "Data Analytics Engine"
       },
       {
-        "id": "urn:visionflow:linked:user-consent-management",
+        "id": "urn:ngm:class:user-consent-management",
         "label": "User Consent Management"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-framework",
+        "id": "urn:ngm:class:privacy-framework",
         "label": "Privacy Framework"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-content-delivery",
+        "id": "urn:ngm:class:adaptive-content-delivery",
         "label": "Adaptive Content Delivery"
       },
       {
-        "id": "urn:visionflow:linked:mental-health-monitoring",
+        "id": "urn:ngm:class:mental-health-monitoring",
         "label": "Mental Health Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:social-compatibility-matching",
+        "id": "urn:ngm:class:social-compatibility-matching",
         "label": "Social Compatibility Matching"
       },
       {
-        "id": "urn:visionflow:owl:class:personalized-virtual-experiences",
+        "id": "urn:ngm:class:personalized-virtual-experiences",
         "label": "Personalized Virtual Experiences"
       },
       {
-        "id": "urn:visionflow:owl:class:psychological-research",
+        "id": "urn:ngm:class:psychological-research",
         "label": "Psychological Research"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:personalization-framework",
+        "label": "Personalization Framework"
+      },
+      {
+        "id": "urn:ngm:class:user-profile-system",
+        "label": "User Profile System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

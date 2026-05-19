@@ -3,19 +3,18 @@
   "title": "Intelligent NPC",
   "slug": "intelligent-npc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:intelligent-npc",
+  "classIri": "urn:ngm:class:intelligent-npc",
   "domain": "spatial-computing",
   "definition": "Non-player characters with AI-driven behavior.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-humans",
+      "id": "urn:ngm:class:digital-humans",
       "label": "Digital Humans"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Asset Archive",
   "slug": "asset-archive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asset-archive",
+  "classIri": "urn:ngm:class:asset-archive",
   "domain": "spatial-computing",
-  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.",
+  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-repository",
+      "id": "urn:ngm:class:digital-repository",
       "label": "Digital Repository"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:standardized-formats",
+        "id": "urn:ngm:class:standardized-formats",
         "label": "Standardized Formats"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-management",
+        "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-preservation",
+        "id": "urn:ngm:class:asset-preservation",
         "label": "Asset Preservation"
       },
       {
-        "id": "urn:visionflow:linked:content-reuse",
+        "id": "urn:ngm:class:content-reuse",
         "label": "Content Reuse"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

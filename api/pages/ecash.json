@@ -3,19 +3,18 @@
   "title": "ecash",
   "slug": "ecash",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ecash",
+  "classIri": "urn:ngm:class:ecash",
   "domain": "blockchain",
   "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:payment-system",
+      "id": "urn:ngm:class:payment-system",
       "label": "Payment System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

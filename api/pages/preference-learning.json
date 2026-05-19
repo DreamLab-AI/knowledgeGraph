@@ -3,19 +3,18 @@
   "title": "Preference Learning",
   "slug": "preference-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:preference-learning",
+  "classIri": "urn:ngm:class:preference-learning",
   "domain": "spatial-computing",
-  "definition": "A machine learning paradigm that learns from comparative judgments (e.g., \"A is better than B\") rather than absolute labels or demonstrations. Preference learning enables training models to align with human values by learning from rankings and comparisons, which are often easier for humans to provide than absolute ratings or demonstrations.",
+  "definition": "A machine learning paradigm that learns from comparative judgments (e.g., \"A is better than B\") rather than absolute labels or demonstrations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

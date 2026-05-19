@@ -3,79 +3,84 @@
   "title": "tc 0003 telepresence robot",
   "slug": "tc-0003-telepresence-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tc-0003-telepresence-robot",
+  "classIri": "urn:ngm:class:tc-0003-telepresence-robot",
   "domain": "distributed-collaboration",
-  "definition": "**Telepresence Robot** - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
+  "definition": "Telepresence Robot - Mobile robotic platform with audio-visual and manipulation capabilities enabling a remote operator to have a physical embodied presence, interact with environments, and perform tasks at a distance while maintaining situational awareness through real-time sensory feedback.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:telepresence-technology",
+      "id": "urn:ngm:class:telepresence-technology",
       "label": "Telepresence Technology"
     },
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
+      "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
-    },
-    {
-      "id": "urn:visionflow:owl:class:remote-collaboration",
-      "label": "Remote Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-system",
+        "id": "urn:ngm:class:camera-system",
         "label": "Camera System"
       },
       {
-        "id": "urn:visionflow:linked:manipulation-mechanism",
+        "id": "urn:ngm:class:manipulation-mechanism",
         "label": "Manipulation Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:microphone",
+        "id": "urn:ngm:class:microphone",
         "label": "Microphone"
       },
       {
-        "id": "urn:visionflow:linked:motor-controller",
+        "id": "urn:ngm:class:motor-controller",
         "label": "Motor Controller"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:autonomous-navigation-support",
+        "id": "urn:ngm:class:autonomous-navigation-support",
         "label": "Autonomous Navigation Support"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:embodied-collaboration",
+        "id": "urn:ngm:class:embodied-collaboration",
         "label": "Embodied Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:hybrid-presence-avatar",
+        "id": "urn:ngm:class:hybrid-presence-avatar",
         "label": "Hybrid Presence Avatar"
       },
       {
-        "id": "urn:visionflow:linked:physical-presence",
+        "id": "urn:ngm:class:physical-presence",
         "label": "Physical Presence"
       },
       {
-        "id": "urn:visionflow:linked:remote-task-execution",
+        "id": "urn:ngm:class:remote-task-execution",
         "label": "Remote Task Execution"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:computer-vision-understanding",
+        "id": "urn:ngm:class:computer-vision-understanding",
         "label": "Computer Vision Understanding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:5-g-low-latency-networks",
+        "label": "5G Low-Latency Networks"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

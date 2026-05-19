@@ -132,52 +132,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:differential-privacy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:differential-privacy",
+  "@type": "Class",
   "label": "Differential Privacy",
+  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aac2b536196c1883b0e2379617f252c66b0a6864e4c0344ab24257eb6d4d3e9a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results. This technique provides formal privacy protection through the epsilon (ε) parameter quantifying privacy loss, where smaller ε values indicate stronger privacy guarantees (typically ε ≤ 1.0 for high-privacy scenarios), with differential privacy satisfied when for all datasets D1 and D2 differing by one record and all possible outputs S, P(M(D1) ∈ S) ≤ exp(ε) × P(M(D2) ∈ S). Implementation mechanisms include the Laplace mechanism adding noise proportional to query sensitivity for numeric queries, the Gaussian mechanism suitable for more complex settings with delta (δ) parameter allowing negligible probability of privacy breach, the exponential mechanism for non-numeric outputs selecting results proportional to their utility, and composition theorems tracking cumulative privacy loss across multiple queries (sequential composition where total ε_total = Σε_i, advanced composition providing tighter bounds). The 2024-2025 ",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

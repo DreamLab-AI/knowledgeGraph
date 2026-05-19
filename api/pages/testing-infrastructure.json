@@ -3,19 +3,18 @@
   "title": "Testing Infrastructure",
   "slug": "testing-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:testing-infrastructure",
+  "classIri": "urn:ngm:class:testing-infrastructure",
   "domain": "infrastructure",
-  "definition": "Testing Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Testing Infrastructure is a type of Quality Assurance in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:quality-assurance",
+      "id": "urn:ngm:class:quality-assurance",
       "label": "quality-assurance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

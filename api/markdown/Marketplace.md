@@ -208,128 +208,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:marketplace",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:marketplace",
+  "@type": "Class",
   "label": "Marketplace",
+  "definition": "Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1a9c4880b60fd695d135b73365ceada38deec6f66317cfe56036d90bfd21f444"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:escrow-system",
+        "label": "Escrow System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:product-listing",
+        "label": "Product Listing"
+      },
+      {
+        "@id": "urn:ngm:class:search-and-discovery",
+        "label": "Search & Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-engine",
+        "label": "Transaction Engine"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-system",
+        "label": "Identity System"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:economic-activity",
+        "label": "Economic Activity"
+      },
+      {
+        "@id": "urn:ngm:class:secure-transaction",
+        "label": "Secure Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:value-exchange",
+        "label": "Value Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1a9c4880b60fd695d135b73365ceada38deec6f66317cfe56036d90bfd21f444@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:escrow-system",
-      "vc:label": "Escrow System"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-gateway",
-      "vc:label": "Payment Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-listing",
-      "vc:label": "Product Listing"
-    },
-    {
-      "@id": "urn:visionflow:linked:search-and-discovery",
-      "vc:label": "Search & Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-engine",
-      "vc:label": "Transaction Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reputation-system",
-      "vc:label": "Reputation System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-system",
-      "vc:label": "Identity System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:economic-activity",
-      "vc:label": "Economic Activity"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-transaction",
-      "vc:label": "Secure Transaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:value-exchange",
-      "vc:label": "Value Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-trading",
-      "vc:label": "Asset Trading"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:payment-protocol",
-      "vc:label": "Payment Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standard",
-      "vc:label": "Metadata Standard"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

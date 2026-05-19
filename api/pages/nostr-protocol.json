@@ -3,107 +3,120 @@
   "title": "Nostr Protocol",
   "slug": "nostr-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nostr-protocol",
+  "classIri": "urn:ngm:class:nostr-protocol",
   "domain": "blockchain",
-  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of stateless relay servers, so that no single entity can deplatform a user without their private key being lost; the protocol's NIP (Nostr Implementation Possibility) architecture allows feature extension whilst preserving a small, auditable core that integrates natively with [[Bitcoin Lightning Network]] payments and serves as a decentralised identity and communication layer for [[VisionClaw Agentic Container]] agent-to-agent messaging and [[DID Nostr Identity]] resolution.",
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of s...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cryptographic-identity-system",
-      "label": "Cryptographic Identity System"
-    },
-    {
-      "id": "urn:visionflow:linked:decentralised-communication-protocol",
+      "id": "urn:ngm:class:decentralised-communication-protocol",
       "label": "Decentralised Communication Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.7,
-  "authorityScore": 0.8,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:nip-architecture",
+        "id": "urn:ngm:class:nip-architecture",
         "label": "NIP Architecture"
       },
       {
-        "id": "urn:visionflow:linked:nostr-client",
+        "id": "urn:ngm:class:nostr-client",
         "label": "Nostr Client"
       },
       {
-        "id": "urn:visionflow:linked:nostr-event",
+        "id": "urn:ngm:class:nostr-event",
         "label": "Nostr Event"
       },
       {
-        "id": "urn:visionflow:linked:nostr-relay",
+        "id": "urn:ngm:class:nostr-relay",
         "label": "Nostr Relay"
       },
       {
-        "id": "urn:visionflow:linked:schnorr-signatures",
+        "id": "urn:ngm:class:schnorr-signatures",
         "label": "Schnorr Signatures"
       },
       {
-        "id": "urn:visionflow:linked:web-id-profile",
+        "id": "urn:ngm:class:web-id-profile",
         "label": "WebID Profile"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:json-serialisation",
+        "id": "urn:ngm:class:json-serialisation",
         "label": "JSON Serialisation"
       },
       {
-        "id": "urn:visionflow:linked:schnorr-signatures",
+        "id": "urn:ngm:class:schnorr-signatures",
         "label": "Schnorr Signatures"
       },
       {
-        "id": "urn:visionflow:linked:secp256k1-elliptic-curve",
+        "id": "urn:ngm:class:secp256k1-elliptic-curve",
         "label": "secp256k1 Elliptic Curve"
       },
       {
-        "id": "urn:visionflow:linked:web-socket-protocol",
+        "id": "urn:ngm:class:web-socket-protocol",
         "label": "WebSocket Protocol"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agent-to-agent-communication",
+        "id": "urn:ngm:class:agent-to-agent-communication",
         "label": "Agent-to-Agent Communication"
       },
       {
-        "id": "urn:visionflow:linked:censorship-resistant-messaging",
+        "id": "urn:ngm:class:censorship-resistant-messaging",
         "label": "Censorship-Resistant Messaging"
       },
       {
-        "id": "urn:visionflow:linked:data-vending-machine",
+        "id": "urn:ngm:class:data-vending-machine",
         "label": "Data Vending Machine"
       },
       {
-        "id": "urn:visionflow:linked:lightning-zap-payments",
+        "id": "urn:ngm:class:lightning-zap-payments",
         "label": "Lightning Zap Payments"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:nip-01-core-protocol",
+        "id": "urn:ngm:class:nip-01-core-protocol",
         "label": "NIP-01 Core Protocol"
       },
       {
-        "id": "urn:visionflow:linked:nip-05-identity-verification",
+        "id": "urn:ngm:class:nip-05-identity-verification",
         "label": "NIP-05 Identity Verification"
       },
       {
-        "id": "urn:visionflow:linked:nip-47-wallet-connect",
+        "id": "urn:ngm:class:nip-47-wallet-connect",
         "label": "NIP-47 Wallet Connect"
       },
       {
-        "id": "urn:visionflow:linked:nip-90-data-vending-machines",
+        "id": "urn:ngm:class:nip-90-data-vending-machines",
         "label": "NIP-90 Data Vending Machines"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-identity-system",
+        "label": "Cryptographic Identity System"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-ecosystem",
+        "label": "Bitcoin Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-social-web",
+        "label": "Decentralised Social Web"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

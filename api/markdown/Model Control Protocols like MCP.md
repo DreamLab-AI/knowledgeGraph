@@ -352,318 +352,253 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+  "@type": "Class",
   "label": "Model Control Protocols like MCP",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a9138ae5d5135de30e8972cb5adffd1c4d173b04f47348c12e8eb3d9ecb22870"
+  "definition": "Model Control Protocols like MCP refers to the family of open, standardised communication protocols that govern how large language model (LLM) inference hosts communicate with external services, tools, data sources, and agents at runtime, enabling composable agentic ecosystems without per-integra...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-client",
+        "label": "MCP Client"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-prompts",
+        "label": "MCP Prompts"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-resources",
+        "label": "MCP Resources"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-sampling",
+        "label": "MCP Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-server",
+        "label": "MCP Server"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-tools",
+        "label": "MCP Tools"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:stdio-transport",
+        "label": "stdio Transport"
+      },
+      {
+        "@id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:json-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:llm-tool-use",
+        "label": "LLM Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:transport-protocol",
+        "label": "Transport Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-client",
+        "label": "ComfyUI Client"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-tool-discovery",
+        "label": "Dynamic Tool Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:http-streaming",
+        "label": "HTTP Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:process-isolation",
+        "label": "Process Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:stdio",
+        "label": "stdio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:claude-desktop",
+        "label": "Claude Desktop"
+      },
+      {
+        "@id": "urn:ngm:class:cursor-ide",
+        "label": "Cursor IDE"
+      },
+      {
+        "@id": "urn:ngm:class:database-connectivity",
+        "label": "Database Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:filesystem-access",
+        "label": "Filesystem Access"
+      },
+      {
+        "@id": "urn:ngm:class:git-hub-integration",
+        "label": "GitHub Integration"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:json-rpc-2-0-specification",
+        "label": "JSON-RPC 2.0 Specification"
+      },
+      {
+        "@id": "urn:ngm:class:mcp-specification-working-group",
+        "label": "MCP Specification Working Group"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a9138ae5d5135de30e8972cb5adffd1c4d173b04f47348c12e8eb3d9ecb22870@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Model Control Protocols like MCP refers to the family of open, standardised communication protocols that govern how large language model (LLM) inference hosts communicate with external services, tools, data sources, and agents at runtime, enabling composable agentic ecosystems without per-integration custom code. The canonical instantiation is Anthropic's **Model Context Protocol (MCP)**, published as an open specification in November 2024 and reaching stable 1.0 status, which defines a JSON-RPC 2.0 message layer carried over three transport bindings—stdio (subprocess pipe), Server-Sent Events (SSE) over HTTP, and streamable HTTP—through which **MCP Clients** (embedded in host applications such as Claude Desktop, Cursor, Cline, and Continue) discover and invoke capabilities advertised by **MCP Servers** (thin adapters that expose file-systems, databases, APIs, SaaS platforms, or entire workflow engines). The protocol defines four primitive capability types: **Resources** (static or dynamic data blobs the server can provide, e.g. files, database rows, live feeds), **Tools** (callable functions with JSON-Schema parameter schemas that the LLM may invoke by emitting a structured tool-c",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:json-rpc",
-      "vc:label": "JSON-RPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-client",
-      "vc:label": "MCP Client"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-prompts",
-      "vc:label": "MCP Prompts"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-resources",
-      "vc:label": "MCP Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-sampling",
-      "vc:label": "MCP Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-server",
-      "vc:label": "MCP Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-tools",
-      "vc:label": "MCP Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:stdio-transport",
-      "vc:label": "stdio Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-schema",
-      "vc:label": "Tool Schema"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:json-rpc",
-      "vc:label": "JSON-RPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-tool-use",
-      "vc:label": "LLM Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:linked:transport-protocol",
-      "vc:label": "Transport Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companions",
-      "vc:label": "AI companions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui-client",
-      "vc:label": "ComfyUI Client"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:capability-advertisement",
-      "vc:label": "Capability Advertisement"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-tool-discovery",
-      "vc:label": "Dynamic Tool Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-procedure-call",
-      "vc:label": "Remote Procedure Call"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:http",
-      "vc:label": "HTTP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:claude-desktop",
-      "vc:label": "Claude Desktop"
-    },
-    {
-      "@id": "urn:visionflow:linked:cursor-ide",
-      "vc:label": "Cursor IDE"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-connectivity",
-      "vc:label": "Database Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:filesystem-access",
-      "vc:label": "Filesystem Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-hub-integration",
-      "vc:label": "GitHub Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:http-streaming",
-      "vc:label": "HTTP Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:process-isolation",
-      "vc:label": "Process Isolation"
-    },
-    {
-      "@id": "urn:visionflow:linked:server-sent-events",
-      "vc:label": "Server-Sent Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:stdio",
-      "vc:label": "stdio"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:auto-gen",
-      "vc:label": "AutoGen"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-chain-tools",
-      "vc:label": "LangChain Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-function-calling",
-      "vc:label": "OpenAI Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-kernel",
-      "vc:label": "Semantic Kernel"
-    },
-    {
-      "@id": "urn:visionflow:linked:slop-protocol",
-      "vc:label": "SLOP Protocol"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:anthropic",
-      "vc:label": "Anthropic"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-rpc-2-0-specification",
-      "vc:label": "JSON-RPC 2.0 Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcp-specification-working-group",
-      "vc:label": "MCP Specification Working Group"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

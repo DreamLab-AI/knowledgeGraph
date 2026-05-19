@@ -3,19 +3,18 @@
   "title": "Layer2",
   "slug": "layer2",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:layer2",
+  "classIri": "urn:ngm:class:layer2",
   "domain": "blockchain",
-  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-99.9% reduction), and improved user experience while inheriting base layer security guarantees.",
+  "definition": "Secondary protocols built on top of Layer 1 blockchains that process transactions off-chain or in parallel batches, then periodically commit state changes to the main chain, achieving higher throughput (10-10000x), lower fees (90-reduction), and improved user experience while inheriting base laye...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:smart-contract-platform",
+      "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "production",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

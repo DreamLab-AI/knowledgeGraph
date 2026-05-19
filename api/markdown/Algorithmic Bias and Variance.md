@@ -492,296 +492,227 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+  "@type": "Class",
   "label": "Algorithmic Bias and Variance",
+  "definition": "Algorithmic Bias and Variance denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components — squared bias, variance, and irreducible noise — formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y − f̂(x))²] = (E[f̂(x)] − f(x))² + E[(...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:generalisation-theory",
-      "vc:label": "Generalisation Theory"
+      "@id": "urn:ngm:class:generalisation-theory",
+      "label": "Generalisation Theory"
     },
     {
-      "@id": "urn:visionflow:linked:model-evaluation",
-      "vc:label": "Model Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-learning-theory",
-      "vc:label": "Statistical Learning Theory"
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a10c890942ffc7040bc3563aba9c7b0adfb4a5fc877fd6f3147bdabe39c9c2c2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bias-component",
+        "label": "Bias Component"
+      },
+      {
+        "@id": "urn:ngm:class:hypothesis-class",
+        "label": "Hypothesis Class"
+      },
+      {
+        "@id": "urn:ngm:class:irreducible-error",
+        "label": "Irreducible Error"
+      },
+      {
+        "@id": "urn:ngm:class:learning-curve",
+        "label": "Learning Curve"
+      },
+      {
+        "@id": "urn:ngm:class:mean-squared-error",
+        "label": "Mean Squared Error"
+      },
+      {
+        "@id": "urn:ngm:class:validation-curve",
+        "label": "Validation Curve"
+      },
+      {
+        "@id": "urn:ngm:class:variance-component",
+        "label": "Variance Component"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hypothesis-space",
+        "label": "Hypothesis Space"
+      },
+      {
+        "@id": "urn:ngm:class:resampling-method",
+        "label": "Resampling Method"
+      },
+      {
+        "@id": "urn:ngm:class:sample-complexity",
+        "label": "Sample Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:training-distribution",
+        "label": "Training Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:capacity-control",
+        "label": "Capacity Control"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation-bound",
+        "label": "Generalisation Bound"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:risk-minimisation",
+        "label": "Risk Minimisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bootstrap",
+        "label": "Bootstrap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:holdout-method",
+        "label": "Holdout Method"
+      },
+      {
+        "@id": "urn:ngm:class:k-fold",
+        "label": "K-Fold"
+      },
+      {
+        "@id": "urn:ngm:class:loocv",
+        "label": "LOOCV"
+      },
+      {
+        "@id": "urn:ngm:class:stratified-sampling",
+        "label": "Stratified Sampling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bootstrap-resampling",
+        "label": "Bootstrap Resampling"
+      },
+      {
+        "@id": "urn:ngm:class:concentration-inequalities",
+        "label": "Concentration Inequalities"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-operator",
+        "label": "Expectation Operator"
+      },
+      {
+        "@id": "urn:ngm:class:variance-decomposition",
+        "label": "Variance Decomposition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:double-descent",
+        "label": "Double Descent"
+      },
+      {
+        "@id": "urn:ngm:class:grokking",
+        "label": "Grokking"
+      },
+      {
+        "@id": "urn:ngm:class:inductive-bias",
+        "label": "Inductive Bias"
+      },
+      {
+        "@id": "urn:ngm:class:neural-scaling-laws",
+        "label": "Neural Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ensemble-learning",
+        "label": "Ensemble Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "@id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:stacking",
+        "label": "Stacking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hastie-tibshirani-friedman-esl",
+        "label": "Hastie-Tibshirani-Friedman ESL"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:scikit-learn",
+        "label": "scikit-learn"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow-model-analysis",
+        "label": "TensorFlow Model Analysis"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a10c890942ffc7040bc3563aba9c7b0adfb4a5fc877fd6f3147bdabe39c9c2c2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Algorithmic Bias and Variance** denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components — squared bias, variance, and irreducible noise — formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y − f̂(x))²] = (E[f̂(x)] − f(x))² + E[(f̂(x) − E[f̂(x)])²] + σ², where f is the true regression function, f̂ the learned estimator over random training samples of fixed size n drawn i.i.d. from a joint distribution P(X,Y), and σ² the Bayes-optimal noise floor independent of any chosen hypothesis class; the decomposition follows from adding and subtracting E[f̂(x)] inside the mean-squared error and exploiting the bias-noise and variance-noise cross terms vanishing under the i.i.d. and zero-mean-noise assumptions, yielding a structural identity that governs why **underfitting** (a hypothesis class H so restrictive that even its best member misrepresents f, e.g. a linear model fitted to a cubic relationship) manifests as high bias with low variance whilst **overfitting** (a hypothesis class so flexible that f̂ tracks training noise, e.g. a degree-15 polynomial through 20 points or a 10⁹-parameter network on 10⁴ samples) manifes",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bias-component",
-      "vc:label": "Bias Component"
-    },
-    {
-      "@id": "urn:visionflow:linked:hypothesis-class",
-      "vc:label": "Hypothesis Class"
-    },
-    {
-      "@id": "urn:visionflow:linked:irreducible-error",
-      "vc:label": "Irreducible Error"
-    },
-    {
-      "@id": "urn:visionflow:linked:learning-curve",
-      "vc:label": "Learning Curve"
-    },
-    {
-      "@id": "urn:visionflow:linked:mean-squared-error",
-      "vc:label": "Mean Squared Error"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-curve",
-      "vc:label": "Validation Curve"
-    },
-    {
-      "@id": "urn:visionflow:linked:variance-component",
-      "vc:label": "Variance Component"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:hypothesis-space",
-      "vc:label": "Hypothesis Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampling-method",
-      "vc:label": "Resampling Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:sample-complexity",
-      "vc:label": "Sample Complexity"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-distribution",
-      "vc:label": "Training Distribution"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:loss-function",
-      "vc:label": "Loss Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:capacity-control",
-      "vc:label": "Capacity Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:generalisation-bound",
-      "vc:label": "Generalisation Bound"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperparameter-tuning",
-      "vc:label": "Hyperparameter Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-selection",
-      "vc:label": "Model Selection"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-minimisation",
-      "vc:label": "Risk Minimisation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bootstrap",
-      "vc:label": "Bootstrap"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-validation",
-      "vc:label": "Cross-Validation"
-    },
-    {
-      "@id": "urn:visionflow:linked:holdout-method",
-      "vc:label": "Holdout Method"
-    },
-    {
-      "@id": "urn:visionflow:linked:k-fold",
-      "vc:label": "K-Fold"
-    },
-    {
-      "@id": "urn:visionflow:linked:loocv",
-      "vc:label": "LOOCV"
-    },
-    {
-      "@id": "urn:visionflow:linked:stratified-sampling",
-      "vc:label": "Stratified Sampling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:empirical-process-theory",
-      "vc:label": "Empirical Process Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:measure-theory",
-      "vc:label": "Measure Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:pac-learning",
-      "vc:label": "PAC Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:rademacher-complexity",
-      "vc:label": "Rademacher Complexity"
-    },
-    {
-      "@id": "urn:visionflow:linked:vc-dimension",
-      "vc:label": "VC Dimension"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ensemble-learning",
-      "vc:label": "Ensemble Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bagging",
-      "vc:label": "Bagging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:boosting",
-      "vc:label": "Boosting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dropout",
-      "vc:label": "Dropout"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:early-stopping",
-      "vc:label": "Early Stopping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regularisation",
-      "vc:label": "Regularisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stacking",
-      "vc:label": "Stacking"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bootstrap-resampling",
-      "vc:label": "Bootstrap Resampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:concentration-inequalities",
-      "vc:label": "Concentration Inequalities"
-    },
-    {
-      "@id": "urn:visionflow:linked:expectation-operator",
-      "vc:label": "Expectation Operator"
-    },
-    {
-      "@id": "urn:visionflow:linked:variance-decomposition",
-      "vc:label": "Variance Decomposition"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-decision-theory",
-      "vc:label": "Bayesian Decision Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:fairness-in-ai",
-      "vc:label": "Fairness in AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:frequentist-bayesian-divide",
-      "vc:label": "Frequentist-Bayesian Divide"
-    },
-    {
-      "@id": "urn:visionflow:linked:no-free-lunch-theorem",
-      "vc:label": "No-Free-Lunch Theorem"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:benign-overfitting",
-      "vc:label": "Benign Overfitting"
-    },
-    {
-      "@id": "urn:visionflow:linked:double-descent",
-      "vc:label": "Double Descent"
-    },
-    {
-      "@id": "urn:visionflow:linked:grokking",
-      "vc:label": "Grokking"
-    },
-    {
-      "@id": "urn:visionflow:linked:inductive-bias",
-      "vc:label": "Inductive Bias"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-scaling-laws",
-      "vc:label": "Neural Scaling Laws"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:overfitting",
-      "vc:label": "Overfitting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:underfitting",
-      "vc:label": "Underfitting"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:hastie-tibshirani-friedman-esl",
-      "vc:label": "Hastie-Tibshirani-Friedman ESL"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:scikit-learn",
-      "vc:label": "scikit-learn"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow-model-analysis",
-      "vc:label": "TensorFlow Model Analysis"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -208,122 +208,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metadata-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metadata-standard",
+  "@type": "Class",
   "label": "Metadata Standard",
+  "definition": "A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
+      "@id": "urn:ngm:class:technical-standards",
+      "label": "Technical Standards"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a2556dd5d9a9d72475e1c68911a6be2cedf90b71e56c00a07a23b4b49c66077e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-elements",
+        "label": "Data Elements"
+      },
+      {
+        "@id": "urn:ngm:class:encoding-specification",
+        "label": "Encoding Specification"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:semantics-rules",
+        "label": "Semantics Rules"
+      },
+      {
+        "@id": "urn:ngm:class:validation-constraints",
+        "label": "Validation Constraints"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:namespace-management",
+        "label": "Namespace Management"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-discovery",
+        "label": "Data Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:information-exchange",
+        "label": "Information Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:resource-description",
+        "label": "Resource Description"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-management-system",
+        "label": "Data Management System"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2556dd5d9a9d72475e1c68911a6be2cedf90b71e56c00a07a23b4b49c66077e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:linked:data-management-system",
-      "vc:label": "Data Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-framework",
-      "vc:label": "Interoperability Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-elements",
-      "vc:label": "Data Elements"
-    },
-    {
-      "@id": "urn:visionflow:linked:encoding-specification",
-      "vc:label": "Encoding Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-definition",
-      "vc:label": "Schema Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantics-rules",
-      "vc:label": "Semantics Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:validation-constraints",
-      "vc:label": "Validation Constraints"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-model",
-      "vc:label": "Data Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:namespace-management",
-      "vc:label": "Namespace Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:controlled-vocabulary",
-      "vc:label": "Controlled Vocabulary"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-discovery",
-      "vc:label": "Data Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-exchange",
-      "vc:label": "Information Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-description",
-      "vc:label": "Resource Description"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-interoperability",
-      "vc:label": "Semantic Interoperability"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology",
-      "vc:label": "Ontology"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:xml-schema",
-      "vc:label": "XML Schema"
+      "@id": "urn:ngm:class:metadata-standards",
+      "label": "Metadata Standards"
     }
   ]
 }

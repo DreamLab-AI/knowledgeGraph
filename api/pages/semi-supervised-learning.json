@@ -3,32 +3,36 @@
   "title": "Semi-Supervised Learning",
   "slug": "semi-supervised-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:semi-supervised-learning",
+  "classIri": "urn:ngm:class:semi-supervised-learning",
   "domain": "artificial-intelligence",
   "definition": "Semi-Supervised Learning is a artificial intelligence concept and a type of Machine Learning. that enables Data-Efficient Learning.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:machine-learning",
+      "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:data-efficient-learning",
+        "id": "urn:ngm:class:data-efficient-learning",
         "label": "Data-Efficient Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

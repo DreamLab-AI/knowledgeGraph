@@ -3,37 +3,41 @@
   "title": "Telecollaboration and Telepresence Domain",
   "slug": "telecollaboration-and-telepresence-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:telecollaboration-and-telepresence-domain",
+  "classIri": "urn:ngm:class:telecollaboration-and-telepresence-domain",
   "domain": "distributed-collaboration",
   "definition": "Telecollaboration and Telepresence Domain is a distributed collaboration concept and a type of Telecollaboration. that enables DistributedWork.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:telecollaboration",
+      "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:immersive-technology",
+        "id": "urn:ngm:class:immersive-technology",
         "label": "ImmersiveTechnology"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:distributed-work",
+        "id": "urn:ngm:class:distributed-work",
         "label": "DistributedWork"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

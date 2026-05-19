@@ -164,82 +164,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collaborative-operation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collaborative-operation",
+  "@type": "Class",
   "label": "Collaborative Operation",
+  "definition": "Collaborative Operation - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:safety-monitoring",
+        "label": "Safety Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:production-flexibility",
+        "label": "Production Flexibility"
+      },
+      {
+        "@id": "urn:ngm:class:workspace-efficiency",
+        "label": "Workspace Efficiency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e0738b617f8ad8f469651981218290c0e83f244c7eedd98599ea705045289668@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Collaborative Operation** - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
-  "vc:qualityScore": {
-    "@value": "0.56",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.12",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:manufacturing-process",
-      "vc:label": "Manufacturing Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human-Robot Interaction"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:force-feedback",
-      "vc:label": "Force Feedback"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-monitoring",
-      "vc:label": "Safety Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:task-planning",
-      "vc:label": "Task Planning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:production-flexibility",
-      "vc:label": "Production Flexibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:workspace-efficiency",
-      "vc:label": "Workspace Efficiency"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.56,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

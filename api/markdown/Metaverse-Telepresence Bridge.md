@@ -168,54 +168,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-telepresence-bridge",
+  "@type": "Class",
   "label": "Metaverse-Telepresence Bridge",
+  "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence soci...",
+  "domain": "distributed-collaboration",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9f2bc4db1a60d3cd05586593b26ff64b8a18464bbd9b8e6f27434e1ceb28c4af"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tele-020-virtual-reality-telepresence",
+        "label": "TELE-020-virtual-reality-telepresence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:embodied-metaverse-collaboration",
+        "label": "EmbodiedMetaverseCollaboration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9f2bc4db1a60d3cd05586593b26ff64b8a18464bbd9b8e6f27434e1ceb28c4af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence social presence mechanisms to enable embodied collaboration in shared digital spaces.\"",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
-      "vc:label": "TELE-020-virtual-reality-telepresence"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:embodied-metaverse-collaboration",
-      "vc:label": "EmbodiedMetaverseCollaboration"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

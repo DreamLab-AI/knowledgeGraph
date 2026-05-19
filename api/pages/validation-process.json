@@ -3,94 +3,98 @@
   "title": "Validation Process",
   "slug": "validation-process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:validation-process",
+  "classIri": "urn:ngm:class:validation-process",
   "domain": "spatial-computing",
-  "definition": "Activity of systematically checking whether systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.",
+  "definition": "Activity of systematically checking wher systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compliance-testing",
+        "id": "urn:ngm:class:compliance-testing",
         "label": "Compliance Testing"
       },
       {
-        "id": "urn:visionflow:linked:quality-assurance-workflows",
+        "id": "urn:ngm:class:quality-assurance-workflows",
         "label": "Quality Assurance Workflows"
       },
       {
-        "id": "urn:visionflow:linked:requirement-verification",
+        "id": "urn:ngm:class:requirement-verification",
         "label": "Requirement Verification"
       },
       {
-        "id": "urn:visionflow:linked:results-analysis",
+        "id": "urn:ngm:class:results-analysis",
         "label": "Results Analysis"
       },
       {
-        "id": "urn:visionflow:linked:test-execution",
+        "id": "urn:ngm:class:test-execution",
         "label": "Test Execution"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-validation",
+        "id": "urn:ngm:class:standards-validation",
         "label": "Standards Validation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:quality-metrics",
+        "id": "urn:ngm:class:quality-metrics",
         "label": "Quality Metrics"
       },
       {
-        "id": "urn:visionflow:linked:test-framework",
+        "id": "urn:ngm:class:test-framework",
         "label": "Test Framework"
       },
       {
-        "id": "urn:visionflow:linked:testing-tools",
+        "id": "urn:ngm:class:testing-tools",
         "label": "Testing Tools"
       },
       {
-        "id": "urn:visionflow:linked:validation-criteria",
+        "id": "urn:ngm:class:validation-criteria",
         "label": "Validation Criteria"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-standards",
+        "id": "urn:ngm:class:compliance-standards",
         "label": "Compliance Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:quality-certification",
+        "id": "urn:ngm:class:quality-certification",
         "label": "Quality Certification"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-approval",
+        "id": "urn:ngm:class:regulatory-approval",
         "label": "Regulatory Approval"
       },
       {
-        "id": "urn:visionflow:linked:system-acceptance",
+        "id": "urn:ngm:class:system-acceptance",
         "label": "System Acceptance"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-conformance",
+        "id": "urn:ngm:class:standards-conformance",
         "label": "Standards Conformance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

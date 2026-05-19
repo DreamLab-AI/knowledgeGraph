@@ -3,65 +3,74 @@
   "title": "Agricultural Robot",
   "slug": "agricultural-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:agricultural-robot",
+  "classIri": "urn:ngm:class:agricultural-robot",
   "domain": "robotics",
-  "definition": "**Agricultural Robot** - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising soil disturbance and chemical usage.",
+  "definition": "Agricultural Robot - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising s...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mobile-robot",
+      "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
-    },
-    {
-      "id": "urn:visionflow:owl:class:service-robot",
-      "label": "Service Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.53,
-  "authorityScore": 0.11,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:environmental-sensors",
+        "id": "urn:ngm:class:environmental-sensors",
         "label": "Environmental Sensors"
       },
       {
-        "id": "urn:visionflow:linked:terrain-navigation",
+        "id": "urn:ngm:class:terrain-navigation",
         "label": "Terrain Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:soft-robotics",
+        "id": "urn:ngm:class:soft-robotics",
         "label": "Soft Robotics"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:crop-quality-improvement",
+        "id": "urn:ngm:class:crop-quality-improvement",
         "label": "Crop Quality Improvement"
       },
       {
-        "id": "urn:visionflow:linked:labour-cost-reduction",
+        "id": "urn:ngm:class:labour-cost-reduction",
         "label": "Labour Cost Reduction"
       },
       {
-        "id": "urn:visionflow:owl:class:environmental-sustainability",
+        "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:precision-agriculture-system",
+        "label": "Precision Agriculture System"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-farming",
+        "label": "Sustainable Farming"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

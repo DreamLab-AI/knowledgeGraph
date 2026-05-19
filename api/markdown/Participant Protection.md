@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:participant-protection",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:participant-protection",
+  "@type": "Class",
   "label": "Participant Protection",
+  "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-safety",
-      "vc:label": "Digital Safety"
+      "@id": "urn:ngm:class:digital-safety",
+      "label": "Digital Safety"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ef67f5d1f92de366cb14d26976372b83b05ecc72fdc5e23f7db35f37b66bf785"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:trust-in-digital-platforms",
+        "label": "Trust in Digital Platforms"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ef67f5d1f92de366cb14d26976372b83b05ecc72fdc5e23f7db35f37b66bf785@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:trust-in-digital-platforms",
-      "vc:label": "Trust in Digital Platforms"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-stack",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-stack",
+  "@type": "Class",
   "label": "Metaverse Stack",
+  "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that toger enable the creation and operation of persistent virtual world environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technology-stack",
-      "vc:label": "Technology Stack"
+      "@id": "urn:ngm:class:technology-stack",
+      "label": "Technology Stack"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:74d7a3405d9f586fce51ef2a57b46391b6ad351e6da1f2c40c4dfcae2762468c"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-world-operation",
+        "label": "Virtual World Operation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:74d7a3405d9f586fce51ef2a57b46391b6ad351e6da1f2c40c4dfcae2762468c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that together enable the creation and operation of persistent virtual world environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:virtual-world-operation",
-      "vc:label": "Virtual World Operation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

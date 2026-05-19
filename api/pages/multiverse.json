@@ -3,110 +3,119 @@
   "title": "Multiverse",
   "slug": "multiverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:multiverse",
+  "classIri": "urn:ngm:class:multiverse",
   "domain": "spatial-computing",
   "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-web",
+      "id": "urn:ngm:class:spatial-web",
       "label": "Spatial Web"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-translation-layer",
+        "id": "urn:ngm:class:asset-translation-layer",
         "label": "Asset Translation Layer"
       },
       {
-        "id": "urn:visionflow:linked:federated-identity",
+        "id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
       },
       {
-        "id": "urn:visionflow:linked:interoperability-protocol",
+        "id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
       },
       {
-        "id": "urn:visionflow:linked:multi-world-governance",
+        "id": "urn:ngm:class:multi-world-governance",
         "label": "Multi-World Governance"
       },
       {
-        "id": "urn:visionflow:linked:universal-inventory",
+        "id": "urn:ngm:class:universal-inventory",
         "label": "Universal Inventory"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:visionflow:owl:class:metaverse",
+        "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
       },
       {
-        "id": "urn:visionflow:owl:class:portal-system",
+        "id": "urn:ngm:class:portal-system",
         "label": "Portal System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:asset-bridging",
+        "id": "urn:ngm:class:asset-bridging",
         "label": "Asset Bridging"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-authentication",
+        "id": "urn:ngm:class:cross-platform-authentication",
         "label": "Cross-Platform Authentication"
       },
       {
-        "id": "urn:visionflow:linked:distributed-governance",
+        "id": "urn:ngm:class:distributed-governance",
         "label": "Distributed Governance"
       },
       {
-        "id": "urn:visionflow:linked:protocol-translation",
+        "id": "urn:ngm:class:protocol-translation",
         "label": "Protocol Translation"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-federation",
+        "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
       },
       {
-        "id": "urn:visionflow:owl:class:standard-format-support",
+        "id": "urn:ngm:class:standard-format-support",
         "label": "Standard Format Support"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-portability",
+        "id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
       },
       {
-        "id": "urn:visionflow:linked:cross-world-travel",
+        "id": "urn:ngm:class:cross-world-travel",
         "label": "Cross-World Travel"
       },
       {
-        "id": "urn:visionflow:linked:federated-social-networks",
+        "id": "urn:ngm:class:federated-social-networks",
         "label": "Federated Social Networks"
       },
       {
-        "id": "urn:visionflow:linked:multi-platform-gaming",
+        "id": "urn:ngm:class:multi-platform-gaming",
         "label": "Multi-Platform Gaming"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-metaverse-commerce",
+        "id": "urn:ngm:class:cross-metaverse-commerce",
         "label": "Cross-Metaverse Commerce"
       },
       {
-        "id": "urn:visionflow:owl:class:universal-avatar",
+        "id": "urn:ngm:class:universal-avatar",
         "label": "Universal Avatar"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

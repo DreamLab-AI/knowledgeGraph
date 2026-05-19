@@ -3,179 +3,307 @@
   "title": "Computer Use and Browser Agents",
   "slug": "computer-use-and-browser-agents",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:computer-use-and-browser-agents",
+  "classIri": "urn:ngm:class:computer-use-and-browser-agents",
   "domain": "artificial-intelligence",
-  "definition": "**Computer Use and Browser Agents** are a class of agentic AI systems that operate graphical user interfaces, web browsers, and operating systems by perceiving the screen through vision-language models (VLMs), planning actions in natural language, and emitting low-level input events (mouse coordinates, keystrokes, scrolls, clicks, drags, OS shortcuts) through a controlled execution layer (Playwright / Selenium / Puppeteer / Chrome DevTools Protocol / xdotool / PyAutoGUI / OS-native automation APIs), thereby driving software designed for humans rather than relying on programmatic APIs, and distinguished both from earlier passive browser plugins and rule-based Robotic Process Automation (RPA, UiPath / Automation Anywhere / Blue Prism) by their capacity to handle previously-unseen interfaces through visual generalisation rather than recorded scripts, originating with Adept's **ACT-1** (Action Transformer, September 2022, the first commercial agent trained end-to-end to map natural-language instructions to UI actions in a Chrome extension demo-environment), elaborated through a 2023-2024 academic generation of multimodal web agents (Microsoft Research's **WebArena**-targeting agents an",
+  "definition": "Computer Use and Browser Agents are a class of agentic AI systems that operate graphical user interfaces, web browsers, and operating systems by perceiving the screen through vision-language models (VLMs), planning actions in natural language, and emitting low-level input events (mouse coordinate...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:intelligent-system",
+      "id": "urn:ngm:class:intelligent-system",
       "label": "Intelligent System"
     },
     {
-      "id": "urn:visionflow:linked:cognitive-architecture",
+      "id": "urn:ngm:class:cognitive-architecture",
       "label": "Cognitive Architecture"
-    },
-    {
-      "id": "urn:visionflow:owl:class:agents",
-      "label": "Agents"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:accessibility-tree",
+        "id": "urn:ngm:class:accessibility-tree",
         "label": "Accessibility Tree"
       },
       {
-        "id": "urn:visionflow:linked:action-executor",
+        "id": "urn:ngm:class:action-executor",
         "label": "Action Executor"
       },
       {
-        "id": "urn:visionflow:linked:planning-module",
+        "id": "urn:ngm:class:planning-module",
         "label": "Planning Module"
       },
       {
-        "id": "urn:visionflow:linked:reasoning-trace",
+        "id": "urn:ngm:class:reasoning-trace",
         "label": "Reasoning Trace"
       },
       {
-        "id": "urn:visionflow:linked:reflection-loop",
+        "id": "urn:ngm:class:reflection-loop",
         "label": "Reflection Loop"
       },
       {
-        "id": "urn:visionflow:linked:screen-capture",
+        "id": "urn:ngm:class:screen-capture",
         "label": "Screen Capture"
       },
       {
-        "id": "urn:visionflow:linked:set-of-mark-prompting",
+        "id": "urn:ngm:class:set-of-mark-prompting",
         "label": "Set of Mark Prompting"
       },
       {
-        "id": "urn:visionflow:linked:tool-schema",
+        "id": "urn:ngm:class:tool-schema",
         "label": "Tool Schema"
       },
       {
-        "id": "urn:visionflow:linked:virtual-machine-sandbox",
+        "id": "urn:ngm:class:virtual-machine-sandbox",
         "label": "Virtual Machine Sandbox"
       },
       {
-        "id": "urn:visionflow:linked:vision-language-model",
+        "id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:browser-engine",
+        "id": "urn:ngm:class:browser-engine",
         "label": "Browser Engine"
       },
       {
-        "id": "urn:visionflow:linked:display-server",
+        "id": "urn:ngm:class:display-server",
         "label": "Display Server"
       },
       {
-        "id": "urn:visionflow:linked:foundation-model",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model"
       },
       {
-        "id": "urn:visionflow:linked:inference-compute",
+        "id": "urn:ngm:class:inference-compute",
         "label": "Inference Compute"
       },
       {
-        "id": "urn:visionflow:linked:tool-definition",
+        "id": "urn:ngm:class:tool-definition",
         "label": "Tool Definition"
       },
       {
-        "id": "urn:visionflow:linked:vision-language-model",
+        "id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Model"
       },
       {
-        "id": "urn:visionflow:owl:class:function-calling",
+        "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
       },
       {
-        "id": "urn:visionflow:owl:class:human-oversight",
+        "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
       },
       {
-        "id": "urn:visionflow:owl:class:operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agentic-workflow",
+        "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-task-execution",
+        "id": "urn:ngm:class:autonomous-task-execution",
         "label": "Autonomous Task Execution"
       },
       {
-        "id": "urn:visionflow:linked:browser-automation",
+        "id": "urn:ngm:class:browser-automation",
         "label": "Browser Automation"
       },
       {
-        "id": "urn:visionflow:linked:computer-use",
+        "id": "urn:ngm:class:computer-use",
         "label": "Computer Use"
       },
       {
-        "id": "urn:visionflow:linked:end-to-end-ui-testing",
+        "id": "urn:ngm:class:end-to-end-ui-testing",
         "label": "End-to-End UI Testing"
       },
       {
-        "id": "urn:visionflow:linked:form-filling-automation",
+        "id": "urn:ngm:class:form-filling-automation",
         "label": "Form Filling Automation"
       },
       {
-        "id": "urn:visionflow:linked:visual-web-research",
+        "id": "urn:ngm:class:visual-web-research",
         "label": "Visual Web Research"
       },
       {
-        "id": "urn:visionflow:linked:web-navigation",
+        "id": "urn:ngm:class:web-navigation",
         "label": "Web Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:agentic-internet",
+        "id": "urn:ngm:class:agentic-internet",
         "label": "Agentic Internet"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:chain-of-thought",
+        "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
       },
       {
-        "id": "urn:visionflow:linked:plan-and-execute",
+        "id": "urn:ngm:class:plan-and-execute",
         "label": "Plan-and-Execute"
       },
       {
-        "id": "urn:visionflow:linked:re-act",
+        "id": "urn:ngm:class:re-act",
         "label": "ReAct"
       },
       {
-        "id": "urn:visionflow:linked:reflexion",
+        "id": "urn:ngm:class:reflexion",
         "label": "Reflexion"
       },
       {
-        "id": "urn:visionflow:linked:screen2-tree-parsing",
+        "id": "urn:ngm:class:screen2-tree-parsing",
         "label": "Screen2Tree Parsing"
       },
       {
-        "id": "urn:visionflow:linked:set-of-mark-prompting",
+        "id": "urn:ngm:class:set-of-mark-prompting",
         "label": "Set of Mark Prompting"
       },
       {
-        "id": "urn:visionflow:linked:visual-grounding",
+        "id": "urn:ngm:class:visual-grounding",
         "label": "Visual Grounding"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:accessibility-tree",
+        "label": "Accessibility Tree"
+      },
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:function-schemas",
+        "label": "Function Schemas"
+      },
+      {
+        "id": "urn:ngm:class:ocr",
+        "label": "OCR"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "id": "urn:ngm:class:screenshot",
+        "label": "Screenshot"
+      },
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:deep-research",
+        "label": "Deep Research"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-workflow",
+        "label": "Enterprise Workflow"
+      },
+      {
+        "id": "urn:ngm:class:personal-assistance",
+        "label": "Personal Assistance"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance-testing",
+        "label": "Quality Assurance Testing"
+      },
+      {
+        "id": "urn:ngm:class:software-development-automation",
+        "label": "Software Development Automation"
+      },
+      {
+        "id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:agent2-agent-protocol-google-2025",
+        "label": "Agent2Agent Protocol (Google 2025)"
+      },
+      {
+        "id": "urn:ngm:class:chrome-dev-tools-protocol",
+        "label": "Chrome DevTools Protocol"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-article-50-2024",
+        "label": "EU AI Act Article 50 (2024)"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol-anthropic-2024",
+        "label": "Model Context Protocol (Anthropic 2024)"
+      },
+      {
+        "id": "urn:ngm:class:owasp-llm-top-10-2025",
+        "label": "OWASP LLM Top 10 (2025)"
+      },
+      {
+        "id": "urn:ngm:class:web-driver-bi-di-w3-c-2024",
+        "label": "WebDriver BiDi (W3C 2024)"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "id": "urn:ngm:class:tool-augmented-llm",
+        "label": "Tool-Augmented LLM"
+      },
+      {
+        "id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ]
   },
   "wikilinks": [
     {

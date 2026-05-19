@@ -3,126 +3,135 @@
   "title": "Metaverse",
   "slug": "metaverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse",
+  "classIri": "urn:ngm:class:metaverse",
   "domain": "spatial-computing",
   "definition": "A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:multiverse",
+      "id": "urn:ngm:class:multiverse",
       "label": "Multiverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:interoperability-protocol",
+        "id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
       },
       {
-        "id": "urn:visionflow:linked:social-system",
+        "id": "urn:ngm:class:social-system",
         "label": "Social System"
       },
       {
-        "id": "urn:visionflow:linked:synchronous-interaction",
+        "id": "urn:ngm:class:synchronous-interaction",
         "label": "Synchronous Interaction"
       },
       {
-        "id": "urn:visionflow:linked:user-identity-system",
+        "id": "urn:ngm:class:user-identity-system",
         "label": "User Identity System"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar",
+        "id": "urn:ngm:class:avatar",
         "label": "Avatar"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
       {
-        "id": "urn:visionflow:owl:class:persistent-state",
+        "id": "urn:ngm:class:persistent-state",
         "label": "Persistent State"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-economy",
+        "id": "urn:ngm:class:virtual-economy",
         "label": "Virtual Economy"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-world",
+        "id": "urn:ngm:class:virtual-world",
         "label": "Virtual World"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-rendering",
+        "id": "urn:ngm:class:3-d-rendering",
         "label": "3D Rendering"
       },
       {
-        "id": "urn:visionflow:linked:real-time-synchronization",
+        "id": "urn:ngm:class:real-time-synchronization",
         "label": "Real-time Synchronization"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-computing",
+        "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-world-portability",
+        "id": "urn:ngm:class:cross-world-portability",
         "label": "Cross-World Portability"
       },
       {
-        "id": "urn:visionflow:owl:class:creator-economy",
+        "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       },
       {
-        "id": "urn:visionflow:owl:class:immersive-entertainment",
+        "id": "urn:ngm:class:immersive-entertainment",
         "label": "Immersive Entertainment"
       },
       {
-        "id": "urn:visionflow:owl:class:social-vr",
+        "id": "urn:ngm:class:social-vr",
         "label": "Social VR"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-collaboration",
+        "id": "urn:ngm:class:virtual-collaboration",
         "label": "Virtual Collaboration"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multiverse",
+        "label": "Multiverse"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

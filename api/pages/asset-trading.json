@@ -3,32 +3,59 @@
   "title": "Asset Trading",
   "slug": "asset-trading",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asset-trading",
+  "classIri": "urn:ngm:class:asset-trading",
   "domain": "blockchain",
-  "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.",
+  "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:financial-services",
+      "id": "urn:ngm:class:financial-services",
       "label": "Financial Services"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:decentralized-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ]
   },
   "wikilinks": [
     {

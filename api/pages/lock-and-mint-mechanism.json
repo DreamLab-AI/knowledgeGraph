@@ -3,42 +3,51 @@
   "title": "Lock and Mint Mechanism",
   "slug": "lock-and-mint-mechanism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lock-and-mint-mechanism",
+  "classIri": "urn:ngm:class:lock-and-mint-mechanism",
   "domain": "blockchain",
-  "definition": "Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio. Enables asset portability across heterogeneous blockchain ecosystems while preserving value equivalence.",
+  "definition": "Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:de-fi-protocol",
+      "id": "urn:ngm:class:de-fi-protocol",
       "label": "De Fi Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-oracle",
+        "id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:wrapped-token",
+        "id": "urn:ngm:class:wrapped-token",
         "label": "Wrapped Token"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:cross-chain-bridge",
+        "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

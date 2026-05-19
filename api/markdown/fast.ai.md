@@ -548,356 +548,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fast-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fast-ai",
+  "@type": "Class",
   "label": "fast.ai",
+  "definition": "fast.ai is a research lab, online course series, and open-source Python deep learning library founded by Jeremy Howard (former president and chief scientist of Kaggle, founder of FastMail and Optimal Decisions Group) and Rachel Thomas (UCSF / University of San Francisco data ics researcher), buil...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:applied-ai-research-lab",
-      "vc:label": "Applied AI Research Lab"
+      "@id": "urn:ngm:class:applied-ai-research-lab",
+      "label": "Applied AI Research Lab"
     },
     {
-      "@id": "urn:visionflow:linked:deep-learning-library",
-      "vc:label": "Deep Learning Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:educational-platform",
-      "vc:label": "Educational Platform"
+      "@id": "urn:ngm:class:deep-learning-library",
+      "label": "Deep Learning Library"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4580539daaf585361d0eb78dffdfa3f4050bac3688a44e451b4f659e84e59f48"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:answer-ai",
+        "label": "Answer.AI"
+      },
+      {
+        "@id": "urn:ngm:class:callback-system",
+        "label": "Callback System"
+      },
+      {
+        "@id": "urn:ngm:class:data-block-api",
+        "label": "DataBlock API"
+      },
+      {
+        "@id": "urn:ngm:class:fastai-library",
+        "label": "fastai Library"
+      },
+      {
+        "@id": "urn:ngm:class:learner-abstraction",
+        "label": "Learner Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:nbdev",
+        "label": "nbdev"
+      },
+      {
+        "@id": "urn:ngm:class:practical-deep-learning-for-coders-course",
+        "label": "Practical Deep Learning for Coders Course"
+      },
+      {
+        "@id": "urn:ngm:class:ulmfi-t",
+        "label": "ULMFiT"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cuda-gpu",
+        "label": "CUDA GPU"
+      },
+      {
+        "@id": "urn:ngm:class:jupyter-notebook",
+        "label": "Jupyter Notebook"
+      },
+      {
+        "@id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:beginner-friendly-deep-learning",
+        "label": "Beginner-Friendly Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:code-first-education",
+        "label": "Code-First Education"
+      },
+      {
+        "@id": "urn:ngm:class:democratised-deep-learning",
+        "label": "Democratised Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:production-ready-defaults",
+        "label": "Production-Ready Defaults"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning-workflows",
+        "label": "Transfer Learning Workflows"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:1cycle-learning-rate-schedule",
+        "label": "1cycle Learning Rate Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:discriminative-learning-rates",
+        "label": "Discriminative Learning Rates"
+      },
+      {
+        "@id": "urn:ngm:class:frozen-unfrozen-fine-tuning",
+        "label": "Frozen-Unfrozen Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:layered-api-design",
+        "label": "Layered API Design"
+      },
+      {
+        "@id": "urn:ngm:class:mixup-augmentation",
+        "label": "Mixup Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:test-time-augmentation",
+        "label": "Test-Time Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:label-smoothing",
+        "label": "Label Smoothing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:cosine-annealing",
+        "label": "Cosine Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:re-lu-activation",
+        "label": "ReLU Activation"
+      },
+      {
+        "@id": "urn:ngm:class:res-net",
+        "label": "ResNet"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:answer-ai",
+        "label": "Answer.AI"
+      },
+      {
+        "@id": "urn:ngm:class:claudette",
+        "label": "Claudette"
+      },
+      {
+        "@id": "urn:ngm:class:fast-html",
+        "label": "FastHTML"
+      },
+      {
+        "@id": "urn:ngm:class:fsdp-qlo-ra",
+        "label": "FSDP-QLoRA"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Hugging Face Accelerate"
+      },
+      {
+        "@id": "urn:ngm:class:ulmfi-t",
+        "label": "ULMFiT"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:audio-classification",
+        "label": "Audio Classification"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:tabular-learning",
+        "label": "Tabular Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-training",
+        "label": "Stable Diffusion Training"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:acl",
+        "label": "ACL"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:pep-8",
+        "label": "PEP 8"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4580539daaf585361d0eb78dffdfa3f4050bac3688a44e451b4f659e84e59f48@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**fast.ai** is a research lab, online course series, and open-source Python deep learning library founded in 2016 by Jeremy Howard (former president and chief scientist of Kaggle, founder of FastMail and Optimal Decisions Group) and Rachel Thomas (UCSF / University of San Francisco data ethics researcher), built on top of [[PyTorch]] (PyTorch 1.0 for fastai v1 in 2018, fully refactored for the v2 release accompanied by the Howard-Gugger 2020 *Information* journal paper \"fastai: A Layered API for Deep Learning\") to make state-of-the-art deep learning practically accessible to working coders without requiring graduate-level mathematics prerequisites; the project comprises three intertwined deliverables: (1) **the fastai software library** providing a layered API over PyTorch with a high-level `Learner` abstraction handling training loops, callbacks, mixed-precision, distributed training and model export, a `DataBlock` API for declarative data pipeline construction across vision/text/tabular/collaborative-filtering domains, a Callback system implementing the 1cycle learning-rate scheduler (Smith 2018), discriminative learning rates (different learning rates for different layer groups)",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:answer-ai",
-      "vc:label": "Answer.AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:callback-system",
-      "vc:label": "Callback System"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-block-api",
-      "vc:label": "DataBlock API"
-    },
-    {
-      "@id": "urn:visionflow:linked:fastai-library",
-      "vc:label": "fastai Library"
-    },
-    {
-      "@id": "urn:visionflow:linked:learner-abstraction",
-      "vc:label": "Learner Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:nbdev",
-      "vc:label": "nbdev"
-    },
-    {
-      "@id": "urn:visionflow:linked:practical-deep-learning-for-coders-course",
-      "vc:label": "Practical Deep Learning for Coders Course"
-    },
-    {
-      "@id": "urn:visionflow:linked:ulmfi-t",
-      "vc:label": "ULMFiT"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cuda-gpu",
-      "vc:label": "CUDA GPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:jupyter-notebook",
-      "vc:label": "Jupyter Notebook"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:beginner-friendly-deep-learning",
-      "vc:label": "Beginner-Friendly Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-first-education",
-      "vc:label": "Code-First Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:democratised-deep-learning",
-      "vc:label": "Democratised Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:production-ready-defaults",
-      "vc:label": "Production-Ready Defaults"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-prototyping",
-      "vc:label": "Rapid Prototyping"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning-workflows",
-      "vc:label": "Transfer Learning Workflows"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:1cycle-learning-rate-schedule",
-      "vc:label": "1cycle Learning Rate Schedule"
-    },
-    {
-      "@id": "urn:visionflow:linked:discriminative-learning-rates",
-      "vc:label": "Discriminative Learning Rates"
-    },
-    {
-      "@id": "urn:visionflow:linked:frozen-unfrozen-fine-tuning",
-      "vc:label": "Frozen-Unfrozen Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:layered-api-design",
-      "vc:label": "Layered API Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixup-augmentation",
-      "vc:label": "Mixup Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:test-time-augmentation",
-      "vc:label": "Test-Time Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:label-smoothing",
-      "vc:label": "Label Smoothing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:fastcore",
-      "vc:label": "fastcore"
-    },
-    {
-      "@id": "urn:visionflow:linked:fastprogress",
-      "vc:label": "fastprogress"
-    },
-    {
-      "@id": "urn:visionflow:linked:matplotlib",
-      "vc:label": "Matplotlib"
-    },
-    {
-      "@id": "urn:visionflow:linked:num-py",
-      "vc:label": "NumPy"
-    },
-    {
-      "@id": "urn:visionflow:linked:pandas",
-      "vc:label": "Pandas"
-    },
-    {
-      "@id": "urn:visionflow:linked:pillow",
-      "vc:label": "Pillow"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:spa-cy",
-      "vc:label": "spaCy"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:audio-classification",
-      "vc:label": "Audio Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaborative-filtering",
-      "vc:label": "Collaborative Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging",
-      "vc:label": "Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:tabular-learning",
-      "vc:label": "Tabular Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion-training",
-      "vc:label": "Stable Diffusion Training"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adam-optimiser",
-      "vc:label": "Adam Optimiser"
-    },
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosine-annealing",
-      "vc:label": "Cosine Annealing"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-lu-activation",
-      "vc:label": "ReLU Activation"
-    },
-    {
-      "@id": "urn:visionflow:linked:res-net",
-      "vc:label": "ResNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:u-net",
-      "vc:label": "U-Net"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:hugging-face-transformers",
-      "vc:label": "Hugging Face Transformers"
-    },
-    {
-      "@id": "urn:visionflow:linked:keras",
-      "vc:label": "Keras"
-    },
-    {
-      "@id": "urn:visionflow:linked:mxnet",
-      "vc:label": "MXNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch-lightning",
-      "vc:label": "PyTorch Lightning"
-    },
-    {
-      "@id": "urn:visionflow:linked:raw-py-torch",
-      "vc:label": "Raw PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow",
-      "vc:label": "TensorFlow"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:answer-ai",
-      "vc:label": "Answer.AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:claudette",
-      "vc:label": "Claudette"
-    },
-    {
-      "@id": "urn:visionflow:linked:fast-html",
-      "vc:label": "FastHTML"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsdp-qlo-ra",
-      "vc:label": "FSDP-QLoRA"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-accelerate",
-      "vc:label": "Hugging Face Accelerate"
-    },
-    {
-      "@id": "urn:visionflow:linked:ulmfi-t",
-      "vc:label": "ULMFiT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bert",
-      "vc:label": "BERT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:acl",
-      "vc:label": "ACL"
-    },
-    {
-      "@id": "urn:visionflow:linked:iclr",
-      "vc:label": "ICLR"
-    },
-    {
-      "@id": "urn:visionflow:linked:neur-ips",
-      "vc:label": "NeurIPS"
-    },
-    {
-      "@id": "urn:visionflow:linked:pep-8",
-      "vc:label": "PEP 8"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-versioning",
-      "vc:label": "Semantic Versioning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "Transfer Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

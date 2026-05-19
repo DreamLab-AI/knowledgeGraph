@@ -3,167 +3,283 @@
   "title": "Lens and Camera Calibration",
   "slug": "lens-and-camera-calibration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:lens-and-camera-calibration",
+  "classIri": "urn:ngm:class:lens-and-camera-calibration",
   "domain": "artificial-intelligence",
-  "definition": "Lens and Camera Calibration is the systematic metrology process of estimating the full set of geometric and photometric parameters that govern image formation in a camera-lens system, enabling precise bidirectional mapping between three-dimensional world coordinates and two-dimensional image pixel coordinates. This estimation is foundational to every quantitative computer vision task: metric [[3D Reconstruction]], [[Structure from Motion]], [[Stereo Vision]], [[SLAM]], [[Augmented Reality]] hologram registration, surgical robot navigation, autonomous vehicle perception, satellite photogrammetry, and industrial dimensional inspection. Without calibration a camera functions as a qualitative sensor; with calibration every pixel becomes a directed ray in 3D space with known angular bearing, origin, and depth scale, enabling millimetre-accurate spatial reasoning from images alone. The canonical mathematical model decomposes into two tightly coupled components: intrinsic parameters and lens distortion. The intrinsic matrix K \u2014 a 3\u00d73 upper-triangular matrix K = [[fx, s, cx], [0, fy, cy], [0, 0, 1]] \u2014 encodes the focal lengths fx, fy (in pixel units, related to the physical focal length f ",
+  "definition": "Lens and Camera Calibration is the systematic metrology process of estimating the full set of geometric and photometric parameters that govern image formation in a camera-lens system, enabling precise bidirectional mapping between three-dimensional world coordinates and two-dimensional image pixe...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:geometric-camera-models",
+      "id": "urn:ngm:class:geometric-camera-models",
       "label": "Geometric Camera Models"
     },
     {
-      "id": "urn:visionflow:linked:sensor-calibration",
+      "id": "urn:ngm:class:sensor-calibration",
       "label": "Sensor Calibration"
-    },
-    {
-      "id": "urn:visionflow:owl:class:3-d-reconstruction",
-      "label": "3D Reconstruction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:april-tag",
+        "id": "urn:ngm:class:april-tag",
         "label": "AprilTag"
       },
       {
-        "id": "urn:visionflow:linked:bundle-adjustment",
+        "id": "urn:ngm:class:bundle-adjustment",
         "label": "Bundle Adjustment"
       },
       {
-        "id": "urn:visionflow:linked:camera-intrinsics",
+        "id": "urn:ngm:class:camera-intrinsics",
         "label": "Camera Intrinsics"
       },
       {
-        "id": "urn:visionflow:linked:ch-ar-uco-board",
+        "id": "urn:ngm:class:ch-ar-uco-board",
         "label": "ChArUco Board"
       },
       {
-        "id": "urn:visionflow:linked:extrinsic-parameters",
+        "id": "urn:ngm:class:extrinsic-parameters",
         "label": "Extrinsic Parameters"
       },
       {
-        "id": "urn:visionflow:linked:homography",
+        "id": "urn:ngm:class:homography",
         "label": "Homography"
       },
       {
-        "id": "urn:visionflow:linked:lens-distortion-model",
+        "id": "urn:ngm:class:lens-distortion-model",
         "label": "Lens Distortion Model"
       },
       {
-        "id": "urn:visionflow:linked:pinhole-camera-model",
+        "id": "urn:ngm:class:pinhole-camera-model",
         "label": "Pinhole Camera Model"
       },
       {
-        "id": "urn:visionflow:linked:reprojection-error",
+        "id": "urn:ngm:class:reprojection-error",
         "label": "Reprojection Error"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-target",
+        "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:feature-detection",
+        "id": "urn:ngm:class:feature-detection",
         "label": "Feature Detection"
       },
       {
-        "id": "urn:visionflow:linked:linear-algebra",
+        "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
       },
       {
-        "id": "urn:visionflow:linked:nonlinear-optimisation",
+        "id": "urn:ngm:class:nonlinear-optimisation",
         "label": "Nonlinear Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:projective-geometry",
+        "id": "urn:ngm:class:projective-geometry",
         "label": "Projective Geometry"
       },
       {
-        "id": "urn:visionflow:linked:stereo-vision",
+        "id": "urn:ngm:class:stereo-vision",
         "label": "Stereo Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-target",
+        "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
       },
       {
-        "id": "urn:visionflow:owl:class:pose-estimation",
+        "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-driving-perception",
+        "id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Driving Perception"
       },
       {
-        "id": "urn:visionflow:linked:metric-reconstruction",
+        "id": "urn:ngm:class:metric-reconstruction",
         "label": "Metric Reconstruction"
       },
       {
-        "id": "urn:visionflow:linked:robotic-grasping",
+        "id": "urn:ngm:class:robotic-grasping",
         "label": "Robotic Grasping"
       },
       {
-        "id": "urn:visionflow:linked:stereo-depth-estimation",
+        "id": "urn:ngm:class:stereo-depth-estimation",
         "label": "Stereo Depth Estimation"
       },
       {
-        "id": "urn:visionflow:linked:structure-from-motion",
+        "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure from Motion"
       },
       {
-        "id": "urn:visionflow:linked:visual-odometry",
+        "id": "urn:ngm:class:visual-odometry",
         "label": "Visual Odometry"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:visionflow:owl:class:augmented-reality",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:slam",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:brown-conrady-distortion-model",
+        "id": "urn:ngm:class:brown-conrady-distortion-model",
         "label": "Brown-Conrady Distortion Model"
       },
       {
-        "id": "urn:visionflow:linked:direct-linear-transform",
+        "id": "urn:ngm:class:direct-linear-transform",
         "label": "Direct Linear Transform"
       },
       {
-        "id": "urn:visionflow:linked:dual-quaternion-hand-eye-calibration",
+        "id": "urn:ngm:class:dual-quaternion-hand-eye-calibration",
         "label": "Dual Quaternion Hand-Eye Calibration"
       },
       {
-        "id": "urn:visionflow:linked:kannala-brandt-fisheye-model",
+        "id": "urn:ngm:class:kannala-brandt-fisheye-model",
         "label": "Kannala-Brandt Fisheye Model"
       },
       {
-        "id": "urn:visionflow:linked:levenberg-marquardt-optimisation",
+        "id": "urn:ngm:class:levenberg-marquardt-optimisation",
         "label": "Levenberg-Marquardt Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:zhang-calibration-method",
+        "id": "urn:ngm:class:zhang-calibration-method",
         "label": "Zhang Calibration Method"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:april-tag",
+        "label": "AprilTag"
+      },
+      {
+        "id": "urn:ngm:class:ar-uco",
+        "label": "ArUco"
+      },
+      {
+        "id": "urn:ngm:class:colmap",
+        "label": "COLMAP"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-markers",
+        "label": "Fiducial Markers"
+      },
+      {
+        "id": "urn:ngm:class:imu-sensors",
+        "label": "IMU Sensors"
+      },
+      {
+        "id": "urn:ngm:class:kalibr",
+        "label": "Kalibr"
+      },
+      {
+        "id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:drone-photogrammetry",
+        "label": "Drone Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:industrial-machine-vision",
+        "label": "Industrial Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
+      },
+      {
+        "id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-transactions-on-pattern-analysis-and-machine-intelligence",
+        "label": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:iso-10110-optics-standards",
+        "label": "ISO 10110 Optics Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc172-optics-standardisation",
+        "label": "ISO TC172 Optics Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:open-cv-documentation",
+        "label": "OpenCV Documentation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:imu-preintegration",
+        "label": "IMU Preintegration"
+      },
+      {
+        "id": "urn:ngm:class:lidar-calibration",
+        "label": "Lidar Calibration"
+      },
+      {
+        "id": "urn:ngm:class:photometric-calibration",
+        "label": "Photometric Calibration"
+      },
+      {
+        "id": "urn:ngm:class:stereo-matching",
+        "label": "Stereo Matching"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ]
   },
   "wikilinks": [
     {

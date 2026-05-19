@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gpt-2",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:gpt-2",
+  "@type": "Individual",
   "label": "GPT 2",
-  "subClassOf": [
+  "definition": "A 1.5 parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  },
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
     }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:019f3eb367ee2e94ad18314b512a6c0979037bae3d651dab6dfd8f5d5cb1a187"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:019f3eb367ee2e94ad18314b512a6c0979037bae3d651dab6dfd8f5d5cb1a187@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 1.5 billion parameter transformer language model trained simply to predict the next word in 40GB of internet text, demonstrating unsupervised multitask learning capabilities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  ]
 }
 ```
 

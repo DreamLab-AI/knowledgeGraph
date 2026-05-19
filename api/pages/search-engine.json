@@ -3,32 +3,36 @@
   "title": "Search Engine",
   "slug": "search-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:search-engine",
+  "classIri": "urn:ngm:class:search-engine",
   "domain": "spatial-computing",
   "definition": "Software systems that crawl, index, and retrieve digital content based on user queries, using algorithms for relevance ranking, natural language processing, and increasingly semantic understanding to connect users with metaverse assets and experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:information-retrieval",
+      "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-discovery",
+        "id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

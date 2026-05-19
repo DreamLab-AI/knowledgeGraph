@@ -436,366 +436,299 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:retrieval-augmented-generation-rag",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:retrieval-augmented-generation-rag",
+  "@type": "Class",
   "label": "Retrieval Augmented Generation - RAG",
+  "definition": "Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:knowledge-intensive-nlp",
-      "vc:label": "Knowledge-Intensive NLP"
+      "@id": "urn:ngm:class:knowledge-intensive-nlp",
+      "label": "Knowledge-Intensive NLP"
     },
     {
-      "@id": "urn:visionflow:linked:open-domain-question-answering",
-      "vc:label": "Open Domain Question Answering"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-information-retrieval",
-      "vc:label": "Neural Information Retrieval"
+      "@id": "urn:ngm:class:open-domain-question-answering",
+      "label": "Open Domain Question Answering"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f6844001f6f72b1205a2581a7bf163b4d8d7f58c0e74b5bf0a93212aa15352e1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:chunking-strategy",
+        "label": "Chunking Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:document-store",
+        "label": "Document Store"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:generator",
+        "label": "Generator"
+      },
+      {
+        "@id": "urn:ngm:class:passage-encoder",
+        "label": "Passage Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "@id": "urn:ngm:class:query-encoder",
+        "label": "Query Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:reranker",
+        "label": "Reranker"
+      },
+      {
+        "@id": "urn:ngm:class:retriever",
+        "label": "Retriever"
+      },
+      {
+        "@id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:corpus-preprocessing",
+        "label": "Corpus Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:citation-generation",
+        "label": "Citation Generation"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation-without-fine-tuning",
+        "label": "Domain Adaptation Without Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:factual-grounding",
+        "label": "Factual Grounding"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination-reduction",
+        "label": "Hallucination Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-currency",
+        "label": "Knowledge Currency"
+      },
+      {
+        "@id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-ai-outputs",
+        "label": "Verifiable AI Outputs"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:col-bertv2",
+        "label": "ColBERTv2"
+      },
+      {
+        "@id": "urn:ngm:class:contextual-retrieval",
+        "label": "Contextual Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "@id": "urn:ngm:class:hy-de",
+        "label": "HyDE"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "@id": "urn:ngm:class:raptor",
+        "label": "RAPTOR"
+      },
+      {
+        "@id": "urn:ngm:class:self-rag",
+        "label": "Self-RAG"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:llama-index",
+        "label": "LlamaIndex"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
+        "label": "Model Control Protocols like MCP"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:code-navigation",
+        "label": "Code Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:legal-ai",
+        "label": "Legal AI"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-literature-mining",
+        "label": "Scientific Literature Mining"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ares-framework",
+        "label": "ARES Framework"
+      },
+      {
+        "@id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:mteb-benchmark",
+        "label": "MTEB Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:ragas-framework",
+        "label": "RAGAS Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trec-deep-learning-track",
+        "label": "TREC Deep Learning Track"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f6844001f6f72b1205a2581a7bf163b4d8d7f58c0e74b5bf0a93212aa15352e1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model weights. Formalised by Lewis et al. (NeurIPS 2020) as a latent variable generative model p_RAG(y|x) = ∑_z p_η(z|x) · p_θ(y|x,z) where the retriever p_η parameterised by η assigns probability mass over retrieved documents z given query x and the generator p_θ parameterised by θ conditions its output on both query x and retrieved evidence z, RAG decouples knowledge storage from model parameters—facts reside in an external mutable corpus rather than being frozen in billions of model weights. This architectural separation confers four core advantages: (i) knowledge currency, since updating the corpus instantly updates LLM-accessible facts without fine-tuning; (ii) source attribution, since every generated claim can be traced to a retrieved passage with a document identifier; (iii) reduced hallucination, since the generator is anchored to retrieved factual context rather than interpolating paramet",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:chunking-strategy",
-      "vc:label": "Chunking Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-store",
-      "vc:label": "Document Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedding-model",
-      "vc:label": "Embedding Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:generator",
-      "vc:label": "Generator"
-    },
-    {
-      "@id": "urn:visionflow:linked:passage-encoder",
-      "vc:label": "Passage Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-template",
-      "vc:label": "Prompt Template"
-    },
-    {
-      "@id": "urn:visionflow:linked:query-encoder",
-      "vc:label": "Query Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:reranker",
-      "vc:label": "Reranker"
-    },
-    {
-      "@id": "urn:visionflow:linked:retriever",
-      "vc:label": "Retriever"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-index",
-      "vc:label": "Vector Index"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:corpus-preprocessing",
-      "vc:label": "Corpus Preprocessing"
-    },
-    {
-      "@id": "urn:visionflow:linked:dense-passage-retrieval",
-      "vc:label": "Dense Passage Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-embeddings",
-      "vc:label": "Text Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:citation-generation",
-      "vc:label": "Citation Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:domain-adaptation-without-fine-tuning",
-      "vc:label": "Domain Adaptation Without Fine-Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:factual-grounding",
-      "vc:label": "Factual Grounding"
-    },
-    {
-      "@id": "urn:visionflow:linked:hallucination-reduction",
-      "vc:label": "Hallucination Reduction"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-currency",
-      "vc:label": "Knowledge Currency"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-hop-reasoning",
-      "vc:label": "Multi-Hop Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-ai-outputs",
-      "vc:label": "Verifiable AI Outputs"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:agentic-rag",
-      "vc:label": "Agentic RAG"
-    },
-    {
-      "@id": "urn:visionflow:linked:bm25",
-      "vc:label": "BM25"
-    },
-    {
-      "@id": "urn:visionflow:linked:col-bertv2",
-      "vc:label": "ColBERTv2"
-    },
-    {
-      "@id": "urn:visionflow:linked:contextual-retrieval",
-      "vc:label": "Contextual Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:dense-passage-retrieval",
-      "vc:label": "Dense Passage Retrieval"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-rag",
-      "vc:label": "GraphRAG"
-    },
-    {
-      "@id": "urn:visionflow:linked:hy-de",
-      "vc:label": "HyDE"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-search",
-      "vc:label": "Hybrid Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:raptor",
-      "vc:label": "RAPTOR"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-rag",
-      "vc:label": "Self-RAG"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:approximate-nearest-neighbour-search",
-      "vc:label": "Approximate Nearest Neighbour Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:code-navigation",
-      "vc:label": "Code Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-support-automation",
-      "vc:label": "Customer Support Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-search",
-      "vc:label": "Enterprise Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-ai",
-      "vc:label": "Legal AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-literature-mining",
-      "vc:label": "Scientific Literature Mining"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:medical-ai",
-      "vc:label": "Medical AI"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:llama-index",
-      "vc:label": "LlamaIndex"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
-      "vc:label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-      "vc:label": "Model Control Protocols like MCP"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:in-context-learning",
-      "vc:label": "In-Context Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:parametric-knowledge",
-      "vc:label": "Parametric Knowledge"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fine-tuning",
-      "vc:label": "Fine Tuning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-database",
-      "vc:label": "Graph Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graphing",
-      "vc:label": "Knowledge Graphing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-control-protocols-like-mcp",
-      "vc:label": "Model Control Protocols like MCP"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ares-framework",
-      "vc:label": "ARES Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:beir-benchmark",
-      "vc:label": "BEIR Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:mteb-benchmark",
-      "vc:label": "MTEB Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:ragas-framework",
-      "vc:label": "RAGAS Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:trec-deep-learning-track",
-      "vc:label": "TREC Deep Learning Track"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

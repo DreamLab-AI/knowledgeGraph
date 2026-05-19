@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Reality_Capture",
   "slug": "etsi-domain-reality-capture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-reality-capture",
+  "classIri": "urn:ngm:class:etsi-domain-reality-capture",
   "domain": "spatial-computing",
-  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments. Reality capture integrates real-time mesh generation, semantic labelling of captured objects, and [[Human Capture & Recognition|human capture and recognition]] systems enabling accurate representation of physical spaces with precise geometric, textural, and dynamic properties. Technical capabilities span volumetric video coding standards (ISO V3C/V-PCC, V3C/MIV), immersive audio (MPEG-H 3D), and spatial data intelligence enabling seamless physical-to-virtual integration for virtual collaboration, digital preservation, and immersive training across academic and commercial applications.",
+  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

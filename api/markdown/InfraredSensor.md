@@ -220,124 +220,105 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:infrared-sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:infrared-sensor",
+  "@type": "Class",
   "label": "InfraredSensor",
+  "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, empl...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:optoelectronic-device",
-      "vc:label": "OptoelectronicDevice"
+      "@id": "urn:ngm:class:optoelectronic-device",
+      "label": "OptoelectronicDevice"
     },
     {
-      "@id": "urn:visionflow:linked:thermal-imager",
-      "vc:label": "ThermalImager"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proximity-sensor",
-      "vc:label": "ProximitySensor"
+      "@id": "urn:ngm:class:thermal-imager",
+      "label": "ThermalImager"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:339b18a02cc0ab280585e388358b92148b36200a8a6b4be8ec35155a3cf51eb6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:analog-digital-converter",
+        "label": "AnalogDigitalConverter"
+      },
+      {
+        "@id": "urn:ngm:class:iremitter",
+        "label": "IREmitter"
+      },
+      {
+        "@id": "urn:ngm:class:irreceiver",
+        "label": "IRReceiver"
+      },
+      {
+        "@id": "urn:ngm:class:lens-assembly",
+        "label": "LensAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:optical-filter",
+        "label": "OpticalFilter"
+      },
+      {
+        "@id": "urn:ngm:class:signal-amplifier",
+        "label": "SignalAmplifier"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:optical-alignment",
+        "label": "OpticalAlignment"
+      },
+      {
+        "@id": "urn:ngm:class:temperature-compensation",
+        "label": "TemperatureCompensation"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "PowerSupply"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "SignalProcessing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "GestureRecognition"
+      },
+      {
+        "@id": "urn:ngm:class:line-following",
+        "label": "LineFollowing"
+      },
+      {
+        "@id": "urn:ngm:class:navigation-control",
+        "label": "NavigationControl"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-inspection",
+        "label": "ThermalInspection"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "ObstacleAvoidance"
+      },
+      {
+        "@id": "urn:ngm:class:presence-detection",
+        "label": "PresenceDetection"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:339b18a02cc0ab280585e388358b92148b36200a8a6b4be8ec35155a3cf51eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, employing either passive detection of ambient thermal radiation (PIR sensors responding to temperature differentials in the environment) or active emission-reflection measurement (IR emitters paired with receivers for distance ranging and obstacle avoidance), with applications spanning mobile robot navigation, industrial automation, human-robot interaction (gesture recognition, presence detection), thermal imaging for inspection tasks, and line-following robots, and characterized by technical parameters including spectral response range (near-infrared 0.7-1.4 μm, short-wave 1.4-3 μm, mid-wave 3-8 μm, long-wave 8-15 μm, far-infrared 15-1000 μm), detection range (typically 2 cm to 10 meters for proximity sensors, up to 100 meters for long-range thermal cameras), response time (microseconds to milliseconds), field of view (narrow-beam 5-15° for range-finding, wide-angle 90-120° for motion detectio",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:analog-digital-converter",
-      "vc:label": "AnalogDigitalConverter"
-    },
-    {
-      "@id": "urn:visionflow:linked:iremitter",
-      "vc:label": "IREmitter"
-    },
-    {
-      "@id": "urn:visionflow:linked:irreceiver",
-      "vc:label": "IRReceiver"
-    },
-    {
-      "@id": "urn:visionflow:linked:lens-assembly",
-      "vc:label": "LensAssembly"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-filter",
-      "vc:label": "OpticalFilter"
-    },
-    {
-      "@id": "urn:visionflow:linked:signal-amplifier",
-      "vc:label": "SignalAmplifier"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:calibration",
-      "vc:label": "Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-alignment",
-      "vc:label": "OpticalAlignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:temperature-compensation",
-      "vc:label": "TemperatureCompensation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "PowerSupply"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "SignalProcessing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "GestureRecognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:line-following",
-      "vc:label": "LineFollowing"
-    },
-    {
-      "@id": "urn:visionflow:linked:navigation-control",
-      "vc:label": "NavigationControl"
-    },
-    {
-      "@id": "urn:visionflow:linked:thermal-inspection",
-      "vc:label": "ThermalInspection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:obstacle-avoidance",
-      "vc:label": "ObstacleAvoidance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence-detection",
-      "vc:label": "PresenceDetection"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Audio System",
   "slug": "audio-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:audio-system",
+  "classIri": "urn:ngm:class:audio-system",
   "domain": "spatial-computing",
-  "definition": "Audio System is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Audio System is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

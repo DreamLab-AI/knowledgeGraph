@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:interoperability-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:interoperability-standard",
+  "@type": "Class",
   "label": "Interoperability Standard",
+  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate toger seamlessly, including OpenXR, glTF, and emerging standards from the Metaverse Standards Forum.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:technical-standard",
-      "vc:label": "Technical Standard"
+      "@id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb6b161d65d70cdc619cf8402f1f5128ac3ec57c218c85e44b51488451368133@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate together seamlessly, including OpenXR, glTF, USD, and emerging standards from the Metaverse Standards Forum.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-compatibility",
-      "vc:label": "Cross-Platform Compatibility"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

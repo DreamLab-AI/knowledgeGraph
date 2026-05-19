@@ -416,334 +416,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:non-repudiation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:non-repudiation",
+  "@type": "Class",
   "label": "Non-Repudiation",
+  "definition": "[[Non-Repudiation]] is a foundational [[Information Security]] property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:digital-evidence",
-      "vc:label": "Digital Evidence"
+      "@id": "urn:ngm:class:digital-evidence",
+      "label": "Digital Evidence"
     },
     {
-      "@id": "urn:visionflow:linked:security-property",
-      "vc:label": "Security Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:accountability-mechanism",
-      "vc:label": "Accountability Mechanism"
+      "@id": "urn:ngm:class:security-property",
+      "label": "Security Property"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:79340c24cfa30fa123e6aa3b1aa680a81167df21652058068926388375802ee4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-token",
+        "label": "Evidence Token"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-service",
+        "label": "Revocation Service"
+      },
+      {
+        "@id": "urn:ngm:class:trust-service-provider",
+        "label": "Trust Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:pki-x-509",
+        "label": "PKI X.509"
+      },
+      {
+        "@id": "urn:ngm:class:private-key-management",
+        "label": "Private Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:secure-time-source",
+        "label": "Secure Time Source"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-commerce",
+        "label": "Electronic Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:legal-evidence",
+        "label": "Legal Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-verification",
+        "label": "Transaction Verification"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cad-es",
+        "label": "CAdES"
+      },
+      {
+        "@id": "urn:ngm:class:ed-dsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:open-timestamps",
+        "label": "OpenTimestamps"
+      },
+      {
+        "@id": "urn:ngm:class:pad-es",
+        "label": "PAdES"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-3161-tsp",
+        "label": "RFC 3161 TSP"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-signatures",
+        "label": "RSA Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:xad-es",
+        "label": "XAdES"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:crl-certificate-revocation",
+        "label": "CRL Certificate Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:blockchain-transaction-integrity",
+        "label": "Blockchain Transaction Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-compliance",
+        "label": "eIDAS Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:e-signature-law",
+        "label": "eSignature Law"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-audit-trail",
+        "label": "GDPR Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-enforcement",
+        "label": "Smart Contract Enforcement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:e-idas-regulation",
+        "label": "eIDAS Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-en-319-series",
+        "label": "ETSI EN 319 series"
+      },
+      {
+        "@id": "urn:ngm:class:fips-186-5",
+        "label": "FIPS 186-5"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-13888",
+        "label": "ISO IEC 13888"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-7498-2",
+        "label": "ISO IEC 7498-2"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-208",
+        "label": "NIST SP 800-208"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-3161",
+        "label": "RFC 3161"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:79340c24cfa30fa123e6aa3b1aa680a81167df21652058068926388375802ee4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Non-Repudiation]] is a foundational [[Information Security]] property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that participation with credible effect — enforced through mathematically unforgeable [[Digital Signature]] schemes (ECDSA over P-256/P-384/P-521 curves, EdDSA over Curve25519 as Ed25519, Schnorr signatures over secp256k1), anchored by [[Public Key Infrastructure]] (X.509 certificate chains, PKIX-compliant CA hierarchies, OCSP revocation), extended to long-term validity by [[Trusted Timestamping]] mechanisms (RFC 3161 Time-Stamp Protocol, OpenTimestamps Bitcoin-anchored proofs, ANSI ASC X9.95), formalised in standards including ISO/IEC 7498-2 (OSI Security Architecture defining non-repudiation as one of five core security services), ISO/IEC 13888-1/2/3 (non-repudiation mechanisms for data origin, delivery, and submission), and given statutory legal standing under eIDAS Regulation (EU) 910/2014 and its successor eIDAS 2 (EU) 2024/1183, the UK Electronic Communications Act 2000, and ESIGN/UETA in the Uni",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-token",
-      "vc:label": "Evidence Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:revocation-service",
-      "vc:label": "Revocation Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-service-provider",
-      "vc:label": "Trust Service Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-timestamping",
-      "vc:label": "Trusted Timestamping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:asymmetric-cryptography",
-      "vc:label": "Asymmetric Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:certificate-revocation",
-      "vc:label": "Certificate Revocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:pki-x-509",
-      "vc:label": "PKI X.509"
-    },
-    {
-      "@id": "urn:visionflow:linked:private-key-management",
-      "vc:label": "Private Key Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-time-source",
-      "vc:label": "Secure Time Source"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:dispute-resolution",
-      "vc:label": "Dispute Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-commerce",
-      "vc:label": "Electronic Commerce"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-evidence",
-      "vc:label": "Legal Evidence"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-verification",
-      "vc:label": "Transaction Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cad-es",
-      "vc:label": "CAdES"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed-dsa",
-      "vc:label": "EdDSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-timestamps",
-      "vc:label": "OpenTimestamps"
-    },
-    {
-      "@id": "urn:visionflow:linked:pad-es",
-      "vc:label": "PAdES"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-3161-tsp",
-      "vc:label": "RFC 3161 TSP"
-    },
-    {
-      "@id": "urn:visionflow:linked:rsa-signatures",
-      "vc:label": "RSA Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:schnorr-signatures",
-      "vc:label": "Schnorr Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:xad-es",
-      "vc:label": "XAdES"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ecdsa",
-      "vc:label": "ECDSA"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:certificate-authority",
-      "vc:label": "Certificate Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management",
-      "vc:label": "Key Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-third-party",
-      "vc:label": "Trusted Third Party"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-hash",
-      "vc:label": "Cryptographic Hash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
-      "vc:label": "Elliptic Curve Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-transaction-integrity",
-      "vc:label": "Blockchain Transaction Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-idas-compliance",
-      "vc:label": "eIDAS Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-signature-law",
-      "vc:label": "eSignature Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-audit-trail",
-      "vc:label": "GDPR Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-enforcement",
-      "vc:label": "Smart Contract Enforcement"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:crl-certificate-revocation",
-      "vc:label": "CRL Certificate Revocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:ocsp",
-      "vc:label": "OCSP"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:anonymity",
-      "vc:label": "Anonymity"
-    },
-    {
-      "@id": "urn:visionflow:linked:deniable-authentication",
-      "vc:label": "Deniable Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:pseudonymity",
-      "vc:label": "Pseudonymity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-blockchain",
-      "vc:label": "Privacy Preserving Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero Knowledge Proof"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management-system",
-      "vc:label": "Identity Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self Sovereign Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:e-idas-regulation",
-      "vc:label": "eIDAS Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:etsi-en-319-series",
-      "vc:label": "ETSI EN 319 series"
-    },
-    {
-      "@id": "urn:visionflow:linked:fips-186-5",
-      "vc:label": "FIPS 186-5"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-13888",
-      "vc:label": "ISO IEC 13888"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-7498-2",
-      "vc:label": "ISO IEC 7498-2"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-208",
-      "vc:label": "NIST SP 800-208"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfc-3161",
-      "vc:label": "RFC 3161"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

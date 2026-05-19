@@ -3,19 +3,18 @@
   "title": "Distributed Data Structure",
   "slug": "distributed-data-structure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-data-structure",
+  "classIri": "urn:ngm:class:distributed-data-structure",
   "domain": "blockchain",
-  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination. Unlike traditional data structures that reside in a single memory space or storage system, distributed data structures partition data across a network of independent nodes, employing replication, partitioning, and consensus protocols to maintain consistency and availability. These structures provide the foundational storage architecture for blockchain systems, enabling properties such as fault tolerance, censorship resistance, and scalability through horizontal expansion. Distributed data structures in blockchain contexts must address fundamental challenges including data consistency across asynchronous networks, Byzantine fault tolerance, and conflict resolution without trusted intermediaries. Common implementations include distributed hash tables, Merkle trees, append-only logs, and peer-to-peer storage networks, each optimized for specific trade-offs between consistency, availability, and partition tolerance as defined by the CAP theorem.",
+  "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

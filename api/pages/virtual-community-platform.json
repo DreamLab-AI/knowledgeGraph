@@ -3,19 +3,18 @@
   "title": "Virtual Community Platform",
   "slug": "virtual-community-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-community-platform",
+  "classIri": "urn:ngm:class:virtual-community-platform",
   "domain": "spatial-computing",
   "definition": "Spatial computing platforms that enable users to create and interact within immersive 3D virtual environments as digital avatars, supporting social interaction, community building, collaborative activities, and shared experiences across geographic boundaries.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

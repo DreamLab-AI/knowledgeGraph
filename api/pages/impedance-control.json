@@ -3,57 +3,70 @@
   "title": "Impedance Control",
   "slug": "impedance-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:impedance-control",
+  "classIri": "urn:ngm:class:impedance-control",
   "domain": "robotics",
-  "definition": "**Impedance Control** - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "definition": "Impedance Control - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:control-systems",
+      "id": "urn:ngm:class:control-systems",
       "label": "Control Systems"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.66,
-  "authorityScore": 0.2,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:damping-control",
+        "id": "urn:ngm:class:damping-control",
         "label": "Damping Control"
       },
       {
-        "id": "urn:visionflow:linked:stiffness-modulation",
+        "id": "urn:ngm:class:stiffness-modulation",
         "label": "Stiffness Modulation"
       },
       {
-        "id": "urn:visionflow:linked:virtual-dynamics-model",
+        "id": "urn:ngm:class:virtual-dynamics-model",
         "label": "Virtual Dynamics Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-manipulation",
+        "id": "urn:ngm:class:adaptive-manipulation",
         "label": "Adaptive Manipulation"
       },
       {
-        "id": "urn:visionflow:linked:safe-human-interaction",
+        "id": "urn:ngm:class:safe-human-interaction",
         "label": "Safe Human Interaction"
       },
       {
-        "id": "urn:visionflow:linked:soft-contact-tasks",
+        "id": "urn:ngm:class:soft-contact-tasks",
         "label": "Soft Contact Tasks"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliant-motion-control",
+        "label": "Compliant Motion Control"
+      },
+      {
+        "id": "urn:ngm:class:force-regulation",
+        "label": "Force Regulation"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

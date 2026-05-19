@@ -3,143 +3,247 @@
   "title": "Semantic Search",
   "slug": "semantic-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:semantic-search",
+  "classIri": "urn:ngm:class:semantic-search",
   "domain": "artificial-intelligence",
-  "definition": "Semantic search is a retrieval paradigm that understands the meaning and intent of queries and documents rather than relying solely on lexical keyword overlap, deploying continuous vector representations of text\u2014produced by neural encoder models that compress sentences into dense embedding spaces of 384\u20134096 dimensions\u2014to retrieve results whose semantics match the query regardless of whether surface-level vocabulary coincides, operating across five principal architectural families: (1) **bi-encoder dense retrieval** (dual-encoder architecture where query encoder fq and document encoder fd independently produce fixed-size embeddings q=fq(Q) and d=fd(D), retrieved by cosine similarity sim(q,d)=q\u00b7d/|q||d| or inner product via Hierarchical Navigable Small World graph HNSW or Inverted File Index IVF over billion-scale corpora; exemplified by DPR\u2014Dense Passage Retriever, Karpukhin et al. ACL 2020\u2014which demonstrated bi-encoder fine-tuned on Natural Questions outperformed BM25 by 9\u201321 percentage points in top-20 accuracy; and SBERT\u2014Sentence-BERT, Reimers & Gurevych EMNLP 2019\u2014which introduced siamese network fine-tuning of BERT with mean-pooling to produce semantically meaningful sentence ",
+  "definition": "Semantic search is a retrieval paradigm that understands the meaning and intent of queries and documents rather than relying solely on lexical keyword overlap, deploying continuous vector representations of text\u2014produced by neural encoder models that compress sentences into dense embedding spaces...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:knowledge-retrieval",
+      "id": "urn:ngm:class:knowledge-retrieval",
       "label": "Knowledge Retrieval"
     },
     {
-      "id": "urn:visionflow:owl:class:search-technology",
+      "id": "urn:ngm:class:search-technology",
       "label": "Search Technology"
-    },
-    {
-      "id": "urn:visionflow:linked:neural-information-retrieval",
-      "label": "Neural Information Retrieval"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:approximate-nearest-neighbour",
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
         "label": "Approximate Nearest Neighbour"
       },
       {
-        "id": "urn:visionflow:linked:document-encoder",
+        "id": "urn:ngm:class:document-encoder",
         "label": "Document Encoder"
       },
       {
-        "id": "urn:visionflow:linked:embedding-model",
+        "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
       },
       {
-        "id": "urn:visionflow:linked:hybrid-retrieval",
+        "id": "urn:ngm:class:hybrid-retrieval",
         "label": "Hybrid Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:inverted-index",
+        "id": "urn:ngm:class:inverted-index",
         "label": "Inverted Index"
       },
       {
-        "id": "urn:visionflow:linked:query-encoder",
+        "id": "urn:ngm:class:query-encoder",
         "label": "Query Encoder"
       },
       {
-        "id": "urn:visionflow:linked:reranker",
+        "id": "urn:ngm:class:reranker",
         "label": "Reranker"
       },
       {
-        "id": "urn:visionflow:linked:vector-index",
+        "id": "urn:ngm:class:vector-index",
         "label": "Vector Index"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:evaluation-benchmark",
+        "id": "urn:ngm:class:evaluation-benchmark",
         "label": "Evaluation Benchmark"
       },
       {
-        "id": "urn:visionflow:linked:language-model",
+        "id": "urn:ngm:class:language-model",
         "label": "Language Model"
       },
       {
-        "id": "urn:visionflow:linked:query-understanding",
+        "id": "urn:ngm:class:query-understanding",
         "label": "Query Understanding"
       },
       {
-        "id": "urn:visionflow:linked:text-embeddings",
+        "id": "urn:ngm:class:text-embeddings",
         "label": "Text Embeddings"
       },
       {
-        "id": "urn:visionflow:linked:vector-database",
+        "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:conversational-search",
+        "id": "urn:ngm:class:conversational-search",
         "label": "Conversational Search"
       },
       {
-        "id": "urn:visionflow:linked:document-retrieval",
+        "id": "urn:ngm:class:document-retrieval",
         "label": "Document Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:enterprise-search",
+        "id": "urn:ngm:class:enterprise-search",
         "label": "Enterprise Search"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-graph-query",
+        "id": "urn:ngm:class:knowledge-graph-query",
         "label": "Knowledge Graph Query"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:owl:class:question-answering",
+        "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bi-encoder-architecture",
+        "id": "urn:ngm:class:bi-encoder-architecture",
         "label": "Bi-Encoder Architecture"
       },
       {
-        "id": "urn:visionflow:linked:bm25",
+        "id": "urn:ngm:class:bm25",
         "label": "BM25"
       },
       {
-        "id": "urn:visionflow:linked:col-bert-late-interaction",
+        "id": "urn:ngm:class:col-bert-late-interaction",
         "label": "ColBERT Late Interaction"
       },
       {
-        "id": "urn:visionflow:linked:cross-encoder-reranking",
+        "id": "urn:ngm:class:cross-encoder-reranking",
         "label": "Cross-Encoder Reranking"
       },
       {
-        "id": "urn:visionflow:linked:dense-retrieval",
+        "id": "urn:ngm:class:dense-retrieval",
         "label": "Dense Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:hnsw-index",
+        "id": "urn:ngm:class:hnsw-index",
         "label": "HNSW Index"
       },
       {
-        "id": "urn:visionflow:linked:reciprocal-rank-fusion",
+        "id": "urn:ngm:class:reciprocal-rank-fusion",
         "label": "Reciprocal Rank Fusion"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chroma",
+        "label": "Chroma"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "Faiss"
+      },
+      {
+        "id": "urn:ngm:class:inner-product",
+        "label": "Inner Product"
+      },
+      {
+        "id": "urn:ngm:class:pgvector",
+        "label": "pgvector"
+      },
+      {
+        "id": "urn:ngm:class:pinecone",
+        "label": "Pinecone"
+      },
+      {
+        "id": "urn:ngm:class:qdrant",
+        "label": "Qdrant"
+      },
+      {
+        "id": "urn:ngm:class:weaviate",
+        "label": "Weaviate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biomedical-information-retrieval",
+        "label": "Biomedical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce-search",
+        "label": "E-Commerce Search"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:legal-document-retrieval",
+        "label": "Legal Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:beir-benchmark",
+        "label": "BEIR Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:ms-marco",
+        "label": "MS MARCO"
+      },
+      {
+        "id": "urn:ngm:class:mteb-benchmark",
+        "label": "MTEB Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:nist-ir-evaluation",
+        "label": "NIST IR Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:trec",
+        "label": "TREC"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ]
   },
   "wikilinks": [
     {

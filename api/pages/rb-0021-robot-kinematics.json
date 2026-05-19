@@ -3,19 +3,18 @@
   "title": "rb 0021 robot kinematics",
   "slug": "rb-0021-robot-kinematics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0021-robot-kinematics",
+  "classIri": "urn:ngm:class:rb-0021-robot-kinematics",
   "domain": "robotics",
   "definition": "robot kinematics is a robotics and autonomous systems concept and a type of Kinematics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:kinematics",
+      "id": "urn:ngm:class:kinematics",
       "label": "Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

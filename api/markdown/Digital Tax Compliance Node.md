@@ -188,112 +188,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-tax-compliance-node",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-tax-compliance-node",
+  "@type": "Class",
   "label": "Digital Tax Compliance Node",
+  "definition": "Digital Tax Compliance Node is a type of Virtual Economy Infrastructure in the artificial intelligence domain.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
-      "vc:label": "Virtual Economy Infrastructure"
+      "@id": "urn:ngm:class:virtual-economy-infrastructure",
+      "label": "Virtual Economy Infrastructure"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d7ad5d6b8d34dd5de14fc19211e1da62f0cbabb4fb6c5ee5899d71d0ed22edf1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:jurisdiction-mapping-service",
+        "label": "Jurisdiction Mapping Service"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting-module",
+        "label": "Regulatory Reporting Module"
+      },
+      {
+        "@id": "urn:ngm:class:tax-calculation-engine",
+        "label": "Tax Calculation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitor",
+        "label": "Transaction Monitor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-verification-system",
+        "label": "Identity Verification System"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-database",
+        "label": "Regulatory Database"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-ledger",
+        "label": "Transaction Ledger"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:audit-trail-generation",
+        "label": "Audit Trail Generation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-tax-filing",
+        "label": "Automated Tax Filing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-tax-settlement",
+        "label": "Cross-border Tax Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-compliance",
+        "label": "Real-time Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:virtual-economy-infrastructure",
+        "label": "Virtual Economy Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d7ad5d6b8d34dd5de14fc19211e1da62f0cbabb4fb6c5ee5899d71d0ed22edf1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
-      "vc:label": "Virtual Economy Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:jurisdiction-mapping-service",
-      "vc:label": "Jurisdiction Mapping Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-reporting-module",
-      "vc:label": "Regulatory Reporting Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-calculation-engine",
-      "vc:label": "Tax Calculation Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-monitor",
-      "vc:label": "Transaction Monitor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-verification-system",
-      "vc:label": "Identity Verification System"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-database",
-      "vc:label": "Regulatory Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-ledger",
-      "vc:label": "Transaction Ledger"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:audit-trail-generation",
-      "vc:label": "Audit Trail Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-tax-filing",
-      "vc:label": "Automated Tax Filing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-tax-settlement",
-      "vc:label": "Cross-border Tax Settlement"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-compliance",
-      "vc:label": "Real-time Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-payment-system",
-      "vc:label": "Digital Payment System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

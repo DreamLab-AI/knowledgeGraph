@@ -3,82 +3,95 @@
   "title": "Collective Intelligence System",
   "slug": "collective-intelligence-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collective-intelligence-system",
+  "classIri": "urn:ngm:class:collective-intelligence-system",
   "domain": "artificial-intelligence",
   "definition": "Mechanism enabling groups of humans and agents to solve problems collaboratively using shared data through swarm intelligence and emergent decision-making.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:distributed-decision-network",
+        "id": "urn:ngm:class:distributed-decision-network",
         "label": "Distributed Decision Network"
       },
       {
-        "id": "urn:visionflow:linked:emergent-pattern-detector",
+        "id": "urn:ngm:class:emergent-pattern-detector",
         "label": "Emergent Pattern Detector"
       },
       {
-        "id": "urn:visionflow:linked:human-ai-interface",
+        "id": "urn:ngm:class:human-ai-interface",
         "label": "Human-AI Interface"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-aggregation-module",
+        "id": "urn:ngm:class:knowledge-aggregation-module",
         "label": "Knowledge Aggregation Module"
       },
       {
-        "id": "urn:visionflow:linked:swarm-coordination-engine",
+        "id": "urn:ngm:class:swarm-coordination-engine",
         "label": "Swarm Coordination Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-synchronization",
+        "id": "urn:ngm:class:data-synchronization",
         "label": "Data Synchronization"
       },
       {
-        "id": "urn:visionflow:owl:class:communication-protocol",
+        "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:shared-knowledge-base",
+        "id": "urn:ngm:class:shared-knowledge-base",
         "label": "Shared Knowledge Base"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collaborative-decision-making",
+        "id": "urn:ngm:class:collaborative-decision-making",
         "label": "Collaborative Decision-Making"
       },
       {
-        "id": "urn:visionflow:linked:emergent-problem-solving",
+        "id": "urn:ngm:class:emergent-problem-solving",
         "label": "Emergent Problem-Solving"
       },
       {
-        "id": "urn:visionflow:linked:swarm-intelligence",
+        "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
       },
       {
-        "id": "urn:visionflow:owl:class:collective-learning",
+        "id": "urn:ngm:class:collective-learning",
         "label": "Collective Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaborative-ai-platform",
+        "label": "Collaborative AI Platform"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

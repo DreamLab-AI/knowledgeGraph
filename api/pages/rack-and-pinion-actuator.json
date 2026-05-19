@@ -3,19 +3,18 @@
   "title": "Rack and Pinion Actuator",
   "slug": "rack-and-pinion-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rack-and-pinion-actuator",
+  "classIri": "urn:ngm:class:rack-and-pinion-actuator",
   "domain": "robotics",
   "definition": "Rack and pinion actuator converts rotary motion to linear via gear mechanism.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:electric-linear-actuator",
+      "id": "urn:ngm:class:electric-linear-actuator",
       "label": "Electric Linear Actuator"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

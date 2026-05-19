@@ -3,19 +3,18 @@
   "title": "SentencePiece",
   "slug": "sentence-piece",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:sentence-piece",
+  "classIri": "urn:ngm:class:sentence-piece",
   "domain": "artificial-intelligence",
   "definition": "A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tokenisation",
+      "id": "urn:ngm:class:tokenisation",
       "label": "Tokenisation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

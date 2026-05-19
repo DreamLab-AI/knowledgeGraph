@@ -3,19 +3,18 @@
   "title": "Remotely Operated Vehicle (ROV)",
   "slug": "remotely-operated-vehicle-rov",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:remotely-operated-vehicle-rov",
+  "classIri": "urn:ngm:class:remotely-operated-vehicle-rov",
   "domain": "robotics",
-  "definition": "ROV is tethered underwater robot controlled remotely via cable providing power and communications.",
+  "definition": "ROV is tered underwater robot controlled remotely via cable providing power and communications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:underwater-robot",
+      "id": "urn:ngm:class:underwater-robot",
       "label": "Underwater Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

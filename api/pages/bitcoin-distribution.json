@@ -3,159 +3,279 @@
   "title": "Bitcoin Distribution",
   "slug": "bitcoin-distribution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bitcoin-distribution",
+  "classIri": "urn:ngm:class:bitcoin-distribution",
   "domain": "blockchain",
-  "definition": "Bitcoin Distribution is the sub-field of [[Blockchain]] economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provably dormant cohort \u2014 through on-chain address analysis, [[UTXO Model|UTXO]] age-band decomposition ([[HODL Waves]]), [[Blockchain Analysis|entity clustering]], and off-chain data sources including ETF 13-F regulatory filings and corporate treasury disclosures. The field combines [[Blockchain Analysis|cryptographic ledger analysis]] with macroeconomic inequality metrics ([[GINI Coefficient]], Lorenz curve, [[Nakamoto Coefficient]], Herfindahl-Hirschman Index) to characterise [[Bitcoin Centralisation Risks|concentration risk]], market liquidity, and the structural evolution of [[Bitcoin As Money|Bitcoin as a monetary asset]] across successive market cycles.",
+  "definition": "Bitcoin Distribution is the sub-field of [[Blockchain]] economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provabl...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:bitcoin",
+      "id": "urn:ngm:class:bitcoin",
       "label": "Bitcoin"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bitcoin-halving",
+        "id": "urn:ngm:class:bitcoin-halving",
         "label": "Bitcoin Halving"
       },
       {
-        "id": "urn:visionflow:linked:dormant-supply",
+        "id": "urn:ngm:class:dormant-supply",
         "label": "Dormant Supply"
       },
       {
-        "id": "urn:visionflow:linked:gini-coefficient",
+        "id": "urn:ngm:class:gini-coefficient",
         "label": "GINI Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:hodl-waves",
+        "id": "urn:ngm:class:hodl-waves",
         "label": "HODL Waves"
       },
       {
-        "id": "urn:visionflow:linked:long-term-holders",
+        "id": "urn:ngm:class:long-term-holders",
         "label": "Long-Term Holders"
       },
       {
-        "id": "urn:visionflow:linked:lost-coins",
+        "id": "urn:ngm:class:lost-coins",
         "label": "Lost Coins"
       },
       {
-        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:satoshi-nakamoto",
+        "id": "urn:ngm:class:satoshi-nakamoto",
         "label": "Satoshi Nakamoto"
       },
       {
-        "id": "urn:visionflow:linked:short-term-holders",
+        "id": "urn:ngm:class:short-term-holders",
         "label": "Short-Term Holders"
       },
       {
-        "id": "urn:visionflow:linked:whale-addresses",
+        "id": "urn:ngm:class:whale-addresses",
         "label": "Whale Addresses"
       },
       {
-        "id": "urn:visionflow:owl:class:utxo-model",
+        "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-analysis",
+        "id": "urn:ngm:class:blockchain-analysis",
         "label": "Blockchain Analysis"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-addresses",
+        "id": "urn:ngm:class:cryptographic-addresses",
         "label": "Cryptographic Addresses"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-data",
+        "id": "urn:ngm:class:on-chain-data",
         "label": "On-Chain Data"
       },
       {
-        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-mining",
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-technical-overview",
+        "id": "urn:ngm:class:bitcoin-technical-overview",
         "label": "Bitcoin Technical Overview"
       },
       {
-        "id": "urn:visionflow:owl:class:utxo-model",
+        "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bitcoin-scarcity",
+        "id": "urn:ngm:class:bitcoin-scarcity",
         "label": "Bitcoin Scarcity"
       },
       {
-        "id": "urn:visionflow:linked:strategic-bitcoin-reserve",
+        "id": "urn:ngm:class:strategic-bitcoin-reserve",
         "label": "Strategic Bitcoin Reserve"
       },
       {
-        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-as-money",
+        "id": "urn:ngm:class:bitcoin-as-money",
         "label": "Bitcoin As Money"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-centralisation-risks",
+        "id": "urn:ngm:class:bitcoin-centralisation-risks",
         "label": "Bitcoin Centralisation Risks"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-etf",
         "label": "Bitcoin ETF"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-value-proposition",
+        "id": "urn:ngm:class:bitcoin-value-proposition",
         "label": "Bitcoin Value Proposition"
       },
       {
-        "id": "urn:visionflow:owl:class:micro-strategy",
+        "id": "urn:ngm:class:micro-strategy",
         "label": "MicroStrategy"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bitcoin-halving",
+        "id": "urn:ngm:class:bitcoin-halving",
         "label": "Bitcoin Halving"
       },
       {
-        "id": "urn:visionflow:linked:blockchain-analysis",
+        "id": "urn:ngm:class:blockchain-analysis",
         "label": "Blockchain Analysis"
       },
       {
-        "id": "urn:visionflow:linked:gini-coefficient",
+        "id": "urn:ngm:class:gini-coefficient",
         "label": "GINI Coefficient"
       },
       {
-        "id": "urn:visionflow:linked:hodl-waves",
+        "id": "urn:ngm:class:hodl-waves",
         "label": "HODL Waves"
       },
       {
-        "id": "urn:visionflow:linked:nakamoto-coefficient",
+        "id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
       },
       {
-        "id": "urn:visionflow:owl:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-etf",
         "label": "Bitcoin ETF"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bit-info-charts",
+        "label": "BitInfoCharts"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-analysis",
+        "label": "Blockchain Analysis"
+      },
+      {
+        "id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      },
+      {
+        "id": "urn:ngm:class:crypto-quant",
+        "label": "CryptoQuant"
+      },
+      {
+        "id": "urn:ngm:class:glassnode",
+        "label": "Glassnode"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-centralisation-risks",
+        "label": "Bitcoin Centralisation Risks"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:micro-strategy",
+        "label": "MicroStrategy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-centralisation-risks",
+        "label": "Bitcoin Centralisation Risks"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-etf",
+        "label": "Bitcoin ETF"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:btc-layer-3",
+        "label": "BTC Layer 3"
+      },
+      {
+        "id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      }
+    ]
   },
   "wikilinks": [
     {

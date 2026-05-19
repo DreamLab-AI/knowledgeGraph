@@ -3,19 +3,18 @@
   "title": "Global Explanation",
   "slug": "global-explanation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:global-explanation",
+  "classIri": "urn:ngm:class:global-explanation",
   "domain": "artificial-intelligence",
   "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:explainability",
+      "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

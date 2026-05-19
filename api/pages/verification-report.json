@@ -3,19 +3,18 @@
   "title": "VERIFICATION REPORT",
   "slug": "verification-report",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:verification-report",
+  "classIri": "urn:ngm:class:verification-report",
   "domain": "spatial-computing",
-  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures. These reports provide transparent documentation of [[DataQualityMetrics|data quality assessments]], [[SchemaCompliance|schema validation]], [[SemanticConsistency|semantic consistency]] checks, and testing results covering [[RDFTriples|RDF triples]], [[OWLAxioms|OWL axioms]], and [[DataIntegrity|data integrity]]. Comprehensive verification reporting with detailed defect categorisation, remediation progress tracking, and [[QualityMetrics|quality metrics]] enables stakeholders to assess production readiness and compliance with [[OntologyStandards|ontology standards]] before deployment.",
+  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

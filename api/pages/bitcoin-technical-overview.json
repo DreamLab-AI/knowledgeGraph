@@ -3,171 +3,299 @@
   "title": "Bitcoin Technical Overview",
   "slug": "bitcoin-technical-overview",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bitcoin-technical-overview",
+  "classIri": "urn:ngm:class:bitcoin-technical-overview",
   "domain": "blockchain",
-  "definition": "**Bitcoin Technical Overview** is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol \u2014 the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whitepaper \"Bitcoin: A Peer-to-Peer Electronic Cash System\". Bitcoin's technical stack spans seven interrelated layers: (1) a cryptographic foundation built on [[Elliptic Curve Digital Signatures]] over the secp256k1 curve and double-[[SHA-256]] hashing, providing unforgeable ownership proofs and tamper-evident data structures; (2) a [[UTXO Model]] (Unspent Transaction Output) ledger where value is represented as discrete, signed outputs rather than account balances, granting strong [[privacy]] properties and enabling parallelisable validation; (3) a [[Merkle Tree]] transaction accumulator embedded in each block header, enabling O(log n) [[Simplified Payment Verification]] (SPV) proofs without requiring full chain download; (4) [[Proof of Work]] consensus via double-SHA-256 mining producing block hashes below a dynamically adjusted target, with [[Difficulty Adjustment]] every 2,016 blocks m",
+  "definition": "Bitcoin Technical Overview is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol \u2014 the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whit...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:peer-to-peer-network",
+      "id": "urn:ngm:class:peer-to-peer-network",
       "label": "Peer To Peer Network"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.54,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bip-process",
+        "id": "urn:ngm:class:bip-process",
         "label": "BIP Process"
       },
       {
-        "id": "urn:visionflow:linked:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-script",
         "label": "Bitcoin Script"
       },
       {
-        "id": "urn:visionflow:linked:block-structure",
+        "id": "urn:ngm:class:block-structure",
         "label": "Block Structure"
       },
       {
-        "id": "urn:visionflow:linked:segwit",
+        "id": "urn:ngm:class:segwit",
         "label": "Segwit"
       },
       {
-        "id": "urn:visionflow:linked:taproot",
+        "id": "urn:ngm:class:taproot",
         "label": "Taproot"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:visionflow:owl:class:difficulty-adjustment",
+        "id": "urn:ngm:class:difficulty-adjustment",
         "label": "Difficulty Adjustment"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signatures",
+        "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:visionflow:owl:class:lightning-network",
+        "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       },
       {
-        "id": "urn:visionflow:owl:class:mempool",
+        "id": "urn:ngm:class:mempool",
         "label": "Mempool"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
       },
       {
-        "id": "urn:visionflow:owl:class:utxo-model",
+        "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:schnorr-signatures",
+        "id": "urn:ngm:class:schnorr-signatures",
         "label": "Schnorr Signatures"
       },
       {
-        "id": "urn:visionflow:linked:secp256k1",
+        "id": "urn:ngm:class:secp256k1",
         "label": "secp256k1"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signatures",
+        "id": "urn:ngm:class:digital-signatures",
         "label": "Digital Signatures"
       },
       {
-        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
       {
-        "id": "urn:visionflow:owl:class:mining",
+        "id": "urn:ngm:class:mining",
         "label": "Mining"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer to Peer Network"
       },
       {
-        "id": "urn:visionflow:owl:class:sha-256",
+        "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-finance",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:visionflow:linked:layer-2-protocols",
+        "id": "urn:ngm:class:layer-2-protocols",
         "label": "Layer 2 Protocols"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:linked:trustless-payments",
+        "id": "urn:ngm:class:trustless-payments",
         "label": "Trustless Payments"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-currency",
+        "id": "urn:ngm:class:digital-currency",
         "label": "Digital Currency"
       },
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:halving-schedule",
+        "id": "urn:ngm:class:halving-schedule",
         "label": "Halving Schedule"
       },
       {
-        "id": "urn:visionflow:owl:class:difficulty-adjustment",
+        "id": "urn:ngm:class:difficulty-adjustment",
         "label": "Difficulty Adjustment"
       },
       {
-        "id": "urn:visionflow:owl:class:gossip-protocol",
+        "id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:visionflow:owl:class:nakamoto-consensus",
+        "id": "urn:ngm:class:nakamoto-consensus",
         "label": "Nakamoto Consensus"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
       },
       {
-        "id": "urn:visionflow:owl:class:utxo-model",
+        "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bloom-filters",
+        "label": "Bloom Filters"
+      },
+      {
+        "id": "urn:ngm:class:compact-block-relay",
+        "label": "Compact Block Relay"
+      },
+      {
+        "id": "urn:ngm:class:ripemd-160",
+        "label": "RIPEMD-160"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:payment-channels",
+        "label": "Payment Channels"
+      },
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:segwit",
+        "label": "Segwit"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:time-locked-contracts",
+        "label": "Time-locked Contracts"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "id": "urn:ngm:class:bip-342",
+        "label": "BIP-342"
+      },
+      {
+        "id": "urn:ngm:class:bip-process",
+        "label": "BIP Process"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-optech",
+        "label": "Bitcoin Optech"
+      },
+      {
+        "id": "urn:ngm:class:bolt-specification",
+        "label": "BOLT Specification"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-gold",
+        "label": "Digital Gold"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
   "wikilinks": [
     {

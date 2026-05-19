@@ -3,19 +3,18 @@
   "title": "QLoRA",
   "slug": "qlo-ra",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:qlo-ra",
+  "classIri": "urn:ngm:class:qlo-ra",
   "domain": "artificial-intelligence",
-  "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs. QLoRA uses NormalFloat4 quantisation, double quantisation, and paged optimisers to achieve extreme memory efficiency whilst maintaining performance.",
+  "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:parameter-efficient-fine-tuning",
+      "id": "urn:ngm:class:parameter-efficient-fine-tuning",
       "label": "Parameter Efficient Fine-Tuning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,86 +3,99 @@
   "title": "Identity Provider (IdP)",
   "slug": "identity-provider-id-p",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:identity-provider-id-p",
+  "classIri": "urn:ngm:class:identity-provider-id-p",
   "domain": "infrastructure",
   "definition": "An authentication service system that creates, maintains, and manages identity information for principals while providing authentication services to relying party applications within a federation or distributed network.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:authentication-server",
+        "id": "urn:ngm:class:authentication-server",
         "label": "Authentication Server"
       },
       {
-        "id": "urn:visionflow:linked:credential-store",
+        "id": "urn:ngm:class:credential-store",
         "label": "Credential Store"
       },
       {
-        "id": "urn:visionflow:linked:session-manager",
+        "id": "urn:ngm:class:session-manager",
         "label": "Session Manager"
       },
       {
-        "id": "urn:visionflow:linked:token-issuer",
+        "id": "urn:ngm:class:token-issuer",
         "label": "Token Issuer"
       },
       {
-        "id": "urn:visionflow:linked:user-directory",
+        "id": "urn:ngm:class:user-directory",
         "label": "User Directory"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-engine",
+        "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:authentication-protocol",
+        "id": "urn:ngm:class:authentication-protocol",
         "label": "Authentication Protocol"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-key-store",
+        "id": "urn:ngm:class:cryptographic-key-store",
         "label": "Cryptographic Key Store"
       },
       {
-        "id": "urn:visionflow:linked:user-database",
+        "id": "urn:ngm:class:user-database",
         "label": "User Database"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:multi-factor-authentication",
+        "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
       },
       {
-        "id": "urn:visionflow:linked:single-sign-on-sso",
+        "id": "urn:ngm:class:single-sign-on-sso",
         "label": "Single Sign-On (SSO)"
       },
       {
-        "id": "urn:visionflow:linked:user-provisioning",
+        "id": "urn:ngm:class:user-provisioning",
         "label": "User Provisioning"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-federation",
+        "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:federation-infrastructure",
+        "label": "Federation Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:identity-management-system",
+        "label": "Identity Management System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

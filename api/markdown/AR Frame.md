@@ -552,348 +552,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-frame",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-frame",
+  "@type": "Class",
   "label": "AR Frame",
+  "definition": "An AR Frame is a head-worn optical see-through augmented reality platform integrating a transparent or semi-transparent microdisplay (typically a microOLED, LCoS, or holographic waveguide projecting 480p-1080p imagery onto a combiner lens of 20°-50° diagonal field-of-view), onboard processing (AR...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ar-hardware",
-      "vc:label": "AR Hardware"
+      "@id": "urn:ngm:class:ar-hardware",
+      "label": "AR Hardware"
     },
     {
-      "@id": "urn:visionflow:linked:optical-see-through-hmd",
-      "vc:label": "Optical See-Through HMD"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-computing-platform",
-      "vc:label": "Spatial Computing Platform"
+      "@id": "urn:ngm:class:optical-see-through-hmd",
+      "label": "Optical See-Through HMD"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:acffbbdfe0297b61db6fbaac415c08f243cd489eb8bda68f12560fc2d42ca978"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:battery",
+        "label": "Battery"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking-sensor",
+        "label": "Eye-Tracking Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:microdisplay",
+        "label": "Microdisplay"
+      },
+      {
+        "@id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      },
+      {
+        "@id": "urn:ngm:class:onboard-so-c",
+        "label": "Onboard SoC"
+      },
+      {
+        "@id": "urn:ngm:class:optical-combiner",
+        "label": "Optical Combiner"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "@id": "urn:ngm:class:world-facing-camera",
+        "label": "World-Facing Camera"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:inertial-sensors",
+        "label": "Inertial Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:optical-display",
+        "label": "Optical Display"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:slam-algorithm",
+        "label": "SLAM Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:environmental-awareness",
+        "label": "Environmental Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:hands-free-interaction",
+        "label": "Hands-Free Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:heads-up-display",
+        "label": "Heads-Up Display"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-content-anchoring",
+        "label": "Persistent Content Anchoring"
+      },
+      {
+        "@id": "urn:ngm:class:remote-expert-guidance",
+        "label": "Remote Expert Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-translation",
+        "label": "Real-Time Translation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:late-stage-reprojection",
+        "label": "Late-Stage Reprojection"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-runtime",
+        "label": "OpenXR Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:slam-tracking",
+        "label": "SLAM Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:birdbath-optics",
+        "label": "Birdbath Optics"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-waveguide",
+        "label": "Holographic Waveguide"
+      },
+      {
+        "@id": "urn:ngm:class:micro-led-display",
+        "label": "MicroLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:micro-oled-display",
+        "label": "MicroOLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:snapdragon-ar-so-c",
+        "label": "Snapdragon AR SoC"
+      },
+      {
+        "@id": "urn:ngm:class:waveguide-optics",
+        "label": "Waveguide Optics"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi-6",
+        "label": "Wi-Fi 6"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ambient-computing",
+        "label": "Ambient Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-ai",
+        "label": "Wearable AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accessibility-captioning",
+        "label": "Accessibility Captioning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-assistant",
+        "label": "AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:field-service",
+        "label": "Field Service"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "@id": "urn:ngm:class:retail-assistance",
+        "label": "Retail Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-navigation",
+        "label": "Surgical Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:tourism-guidance",
+        "label": "Tourism Guidance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bluetooth-sig",
+        "label": "Bluetooth SIG"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-gl-tf",
+        "label": "Khronos glTF"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-open-xr",
+        "label": "Khronos OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:mpeg-i",
+        "label": "MPEG-I"
+      },
+      {
+        "@id": "urn:ngm:class:usb-if",
+        "label": "USB-IF"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-xr",
+        "label": "W3C WebXR"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:acffbbdfe0297b61db6fbaac415c08f243cd489eb8bda68f12560fc2d42ca978@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An **AR Frame** is a head-worn optical see-through augmented reality platform integrating a transparent or semi-transparent microdisplay (typically a microOLED, LCoS, or holographic waveguide projecting 480p-1080p imagery onto a combiner lens of 20°-50° diagonal field-of-view), onboard processing (ARM Cortex-M, Qualcomm Snapdragon AR, or Apple R-series silicon ranging from a 64MHz Cortex-M4F in the Brilliant Labs Frame at 39g through a 3nm Snapdragon AR2 Gen 1 in Meta Orion at 98g to an Apple M2 + R1 chip pair in Vision Pro at 600-650g), a multimodal sensor suite (6-DOF inertial measurement unit, RGB world-facing camera 1-12MP, optional depth sensor or LiDAR, microphone array for spatial audio capture, optional eye-tracking and electrooculography), wireless connectivity (Bluetooth 5.x BLE for phone tethering, Wi-Fi 6/6E for cloud integration, increasingly 5G via tethered companion), and a developer-facing software stack (Lua scripting on Frame, C++ Snapdragon Spaces SDK on Qualcomm reference designs, Unity XR Plugin Management or Unreal OpenXR runtimes for higher-tier devices, Apple visionOS for the spatial-computing apex device) to deliver hands-free augmented reality experiences ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:battery",
-      "vc:label": "Battery"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-tracking-sensor",
-      "vc:label": "Eye-Tracking Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:inertial-measurement-unit",
-      "vc:label": "Inertial Measurement Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:microdisplay",
-      "vc:label": "Microdisplay"
-    },
-    {
-      "@id": "urn:visionflow:linked:microphone-array",
-      "vc:label": "Microphone Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboard-so-c",
-      "vc:label": "Onboard SoC"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-combiner",
-      "vc:label": "Optical Combiner"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-radio",
-      "vc:label": "Wireless Radio"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-facing-camera",
-      "vc:label": "World-Facing Camera"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:inertial-sensors",
-      "vc:label": "Inertial Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-display",
-      "vc:label": "Optical Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:slam-algorithm",
-      "vc:label": "SLAM Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-connectivity",
-      "vc:label": "Wireless Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:environmental-awareness",
-      "vc:label": "Environmental Awareness"
-    },
-    {
-      "@id": "urn:visionflow:linked:hands-free-interaction",
-      "vc:label": "Hands-Free Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:heads-up-display",
-      "vc:label": "Heads-Up Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:persistent-content-anchoring",
-      "vc:label": "Persistent Content Anchoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-expert-guidance",
-      "vc:label": "Remote Expert Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-question-answering",
-      "vc:label": "Visual Question Answering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-translation",
-      "vc:label": "Real-Time Translation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:foveated-rendering",
-      "vc:label": "Foveated Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:late-stage-reprojection",
-      "vc:label": "Late-Stage Reprojection"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-runtime",
-      "vc:label": "OpenXR Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:slam-tracking",
-      "vc:label": "SLAM Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:edge-ai",
-      "vc:label": "Edge AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:inertial-navigation",
-      "vc:label": "Inertial Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:microelectromechanical-systems",
-      "vc:label": "Microelectromechanical Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-networking",
-      "vc:label": "Wireless Networking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-captioning",
-      "vc:label": "Accessibility Captioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-assistant",
-      "vc:label": "AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:field-service",
-      "vc:label": "Field Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-inspection",
-      "vc:label": "Industrial Inspection"
-    },
-    {
-      "@id": "urn:visionflow:linked:retail-assistance",
-      "vc:label": "Retail Assistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-navigation",
-      "vc:label": "Surgical Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tourism-guidance",
-      "vc:label": "Tourism Guidance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:birdbath-optics",
-      "vc:label": "Birdbath Optics"
-    },
-    {
-      "@id": "urn:visionflow:linked:bluetooth-low-energy",
-      "vc:label": "Bluetooth Low Energy"
-    },
-    {
-      "@id": "urn:visionflow:linked:holographic-waveguide",
-      "vc:label": "Holographic Waveguide"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-led-display",
-      "vc:label": "MicroLED Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-oled-display",
-      "vc:label": "MicroOLED Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapdragon-ar-so-c",
-      "vc:label": "Snapdragon AR SoC"
-    },
-    {
-      "@id": "urn:visionflow:linked:waveguide-optics",
-      "vc:label": "Waveguide Optics"
-    },
-    {
-      "@id": "urn:visionflow:linked:wi-fi-6",
-      "vc:label": "Wi-Fi 6"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:holographic-display",
-      "vc:label": "Holographic Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:projection-mapping-system",
-      "vc:label": "Projection Mapping System"
-    },
-    {
-      "@id": "urn:visionflow:linked:smartphone-ar",
-      "vc:label": "Smartphone AR"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-passthrough-hmd",
-      "vc:label": "Video Passthrough HMD"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-reality-headset",
-      "vc:label": "Virtual Reality Headset"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ambient-computing",
-      "vc:label": "Ambient Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:wearable-ai",
-      "vc:label": "Wearable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse",
-      "vc:label": "Metaverse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality",
-      "vc:label": "Mixed Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bluetooth-sig",
-      "vc:label": "Bluetooth SIG"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-802-11",
-      "vc:label": "IEEE 802.11"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-gl-tf",
-      "vc:label": "Khronos glTF"
-    },
-    {
-      "@id": "urn:visionflow:linked:khronos-open-xr",
-      "vc:label": "Khronos OpenXR"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpeg-i",
-      "vc:label": "MPEG-I"
-    },
-    {
-      "@id": "urn:visionflow:linked:usb-if",
-      "vc:label": "USB-IF"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-xr",
-      "vc:label": "W3C WebXR"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

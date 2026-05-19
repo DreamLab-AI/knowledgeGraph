@@ -3,19 +3,18 @@
   "title": "Infrastructure Domain",
   "slug": "infrastructure-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrastructure-domain",
+  "classIri": "urn:ngm:class:infrastructure-domain",
   "domain": "infrastructure",
-  "definition": "The Infrastructure Domain provides an ontological framework for ICT infrastructure configuration items, resources, and resource groups common across IT service management systems. It encompasses network components, server infrastructure, data centers, software systems, databases, hardware components, and security configurations that enable network connectivity, communication, and computing services.",
+  "definition": "The Infrastructure Domain provides an ontological framework for ICT infrastructure configuration items, resources, and resource groups common across IT service management systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -124,62 +124,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fairness",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fairness",
+  "@type": "Class",
   "label": "Fairness",
+  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ical principles.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bias-detection",
+        "label": "Bias Detection"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:equal-treatment",
+        "label": "Equal Treatment"
+      },
+      {
+        "@id": "urn:ngm:class:non-discrimination",
+        "label": "Non-discrimination"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ac386bbf1125d59473f2497226874cd514386615337c34b307b5d70c7bc0eb2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bias-detection",
-      "vc:label": "Bias Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:bias-mitigation",
-      "vc:label": "Bias Mitigation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:equal-treatment",
-      "vc:label": "Equal Treatment"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-discrimination",
-      "vc:label": "Non-discrimination"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

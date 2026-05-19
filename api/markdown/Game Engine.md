@@ -220,132 +220,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:game-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:game-engine",
+  "@type": "Class",
   "label": "Game Engine",
+  "definition": "Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:software-platform",
-      "vc:label": "Software Platform"
+      "@id": "urn:ngm:class:software-platform",
+      "label": "Software Platform"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a207f69c3bdc74fc1b861656b9b4b422aed55f788385c38d735e51d8e8a7acb"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "@id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "@id": "urn:ngm:class:scripting-runtime",
+        "label": "Scripting Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interactive-experience",
+        "label": "Interactive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:multiplayer-gameplay",
+        "label": "Multiplayer Gameplay"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-creation",
+        "label": "Virtual World Creation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:development-infrastructure",
+        "label": "Development Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:software-platform",
+        "label": "Software Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a207f69c3bdc74fc1b861656b9b4b422aed55f788385c38d735e51d8e8a7acb@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:development-infrastructure",
-      "vc:label": "Development Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:software-platform",
-      "vc:label": "Software Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-management-system",
-      "vc:label": "Asset Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:audio-engine",
-      "vc:label": "Audio Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:scripting-runtime",
-      "vc:label": "Scripting Runtime"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-engine",
-      "vc:label": "Physics Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
-      "vc:label": "Real-Time Rendering Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-pipeline",
-      "vc:label": "Rendering Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scene-graph",
-      "vc:label": "Scene Graph"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:operating-system",
-      "vc:label": "Operating System"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:interactive-experience",
-      "vc:label": "Interactive Experience"
-    },
-    {
-      "@id": "urn:visionflow:linked:multiplayer-gameplay",
-      "vc:label": "Multiplayer Gameplay"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:procedural-content-generation",
-      "vc:label": "Procedural Content Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world-creation",
-      "vc:label": "Virtual World Creation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:3-d-engine",
-      "vc:label": "3D Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphics-driver",
-      "vc:label": "Graphics Driver"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-acceleration",
-      "vc:label": "Hardware Acceleration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -140,68 +140,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-trustworthiness",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-trustworthiness",
+  "@type": "Class",
   "label": "AI Trustworthiness",
+  "definition": "The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-framework-ai-0035",
+        "label": "Governance Framework (AI-0035)"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management-ai-0062",
+        "label": "Risk Management (AI-0062)"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-assurance-ai-0102",
+        "label": "AI Assurance (AI-0102)"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai-ai-0033",
+        "label": "Responsible AI (AI-0033)"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:85fb2266473c3cdf13f2f211c80bf22905a384f5a25fbea9241fd95165aa0f3d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The degree to which an AI system demonstrates characteristics that warrant confidence and reliance, encompassing transparency, explainability, fairness, accountability, robustness, reliability, safety, security, and privacy throughout its lifecycle.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:governance-framework-ai-0035",
-      "vc:label": "Governance Framework (AI-0035)"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-management-ai-0062",
-      "vc:label": "Risk Management (AI-0062)"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-assurance-ai-0102",
-      "vc:label": "AI Assurance (AI-0102)"
-    },
-    {
-      "@id": "urn:visionflow:linked:responsible-ai-ai-0033",
-      "vc:label": "Responsible AI (AI-0033)"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

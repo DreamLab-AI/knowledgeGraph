@@ -3,32 +3,36 @@
   "title": "Metadata Registry",
   "slug": "metadata-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-registry",
+  "classIri": "urn:ngm:class:metadata-registry",
   "domain": "infrastructure",
   "definition": "Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-governance",
+      "id": "urn:ngm:class:data-governance",
       "label": "Data Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:enterprise-data-consistency",
+        "id": "urn:ngm:class:enterprise-data-consistency",
         "label": "Enterprise Data Consistency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

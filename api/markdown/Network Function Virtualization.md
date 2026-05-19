@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:network-function-virtualization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:network-function-virtualization",
+  "@type": "Class",
   "label": "Network Function Virtualization",
+  "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:network-architecture",
-      "vc:label": "Network Architecture"
+      "@id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:network-scalability",
+        "label": "Network Scalability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0636ba27c6ae4498c3ab80d323283f078762f0d898d17d79cc858bfb1db70275@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:network-scalability",
-      "vc:label": "Network Scalability"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

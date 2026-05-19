@@ -116,41 +116,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-infrastructure-interop",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-infrastructure-interop",
+  "@type": "Class",
   "label": "ETSI_Domain_Infrastructure___Interop",
+  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL).",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3c86b313a41247c94dab15fac013cd678dc9241dcb3f50471b09d98daa0674c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "ETSI infrastructure interoperability framework enabling disparate systems and domains to exchange data and operate cohesively through cross-domain models, standardised data exchange protocols, and linked data principles (RDF, RDFS, OWL). Infrastructure interoperability addresses systematic integration challenges through [[NGSI-LD]] interfaces supporting cross-domain data integration, intent-based management systems integrating network capabilities with application functions, and spectrum sharing frameworks (evolved Licensed Shared Access, CBRS) enabling technical interoperability for local private networks. Standards including the European Interoperability Framework (EIF) and EU Data Act Article 35 mandate interoperable specifications whilst addressing accessibility through ETSI ES 204 009 specifying total conversation services combining voice, real-time text, and sign language video.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

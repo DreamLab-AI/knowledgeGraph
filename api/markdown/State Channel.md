@@ -160,72 +160,45 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:state-channel",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:state-channel",
+  "@type": "Class",
   "label": "State Channel",
+  "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:off-chain-scaling",
+        "label": "Off-Chain Scaling"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7921e050abfa69aabc11b0bdd225dc34d5d321b56c811c1aceba0af00805b9c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:off-chain-scaling",
-      "vc:label": "Off-Chain Scaling"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:rollup",
-      "vc:label": "Rollup"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

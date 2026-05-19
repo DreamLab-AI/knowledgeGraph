@@ -3,65 +3,69 @@
   "title": "Network Layer",
   "slug": "network-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-layer",
+  "classIri": "urn:ngm:class:network-layer",
   "domain": "infrastructure",
   "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:architectural-layer",
+      "id": "urn:ngm:class:architectural-layer",
       "label": "ArchitecturalLayer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:congestion-control",
+        "id": "urn:ngm:class:congestion-control",
         "label": "Congestion Control"
       },
       {
-        "id": "urn:visionflow:linked:protocol-stack",
+        "id": "urn:ngm:class:protocol-stack",
         "label": "Protocol Stack"
       },
       {
-        "id": "urn:visionflow:linked:qo-s-manager",
+        "id": "urn:ngm:class:qo-s-manager",
         "label": "QoS Manager"
       },
       {
-        "id": "urn:visionflow:linked:routing-engine",
+        "id": "urn:ngm:class:routing-engine",
         "label": "Routing Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:network-topology",
+        "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:bandwidth-allocation",
+        "id": "urn:ngm:class:bandwidth-allocation",
         "label": "Bandwidth Allocation"
       },
       {
-        "id": "urn:visionflow:linked:latency-management",
+        "id": "urn:ngm:class:latency-management",
         "label": "Latency Management"
       },
       {
-        "id": "urn:visionflow:linked:message-delivery",
+        "id": "urn:ngm:class:message-delivery",
         "label": "Message Delivery"
       },
       {
-        "id": "urn:visionflow:linked:network-resilience",
+        "id": "urn:ngm:class:network-resilience",
         "label": "Network Resilience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

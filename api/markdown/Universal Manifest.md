@@ -216,128 +216,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:universal-manifest",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:universal-manifest",
+  "@type": "Class",
   "label": "Universal Manifest",
+  "definition": "A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.",
+  "domain": "spatial-computing",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:identity-credentials",
+        "label": "Identity Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:permission-grants",
+        "label": "Permission Grants"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-record",
+        "label": "Provenance Record"
+      },
+      {
+        "@id": "urn:ngm:class:relationship-graph",
+        "label": "Relationship Graph"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-interoperability",
+        "label": "Asset Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-ownership",
+        "label": "Decentralized Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-access",
+        "label": "Permissioned Access"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:55be145132f9774e5dcefc4e44db79ed75b53d68802946e99bb6108388fdd50e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A standardized metadata document describing identifiers, permissions, relationships, and provenance of a user's digital assets and identities across platforms, enabling cross-platform portability and interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:asset-management-system",
-      "vc:label": "Asset Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability-framework",
-      "vc:label": "Interoperability Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:identity-credentials",
-      "vc:label": "Identity Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:permission-grants",
-      "vc:label": "Permission Grants"
-    },
-    {
-      "@id": "urn:visionflow:linked:provenance-record",
-      "vc:label": "Provenance Record"
-    },
-    {
-      "@id": "urn:visionflow:linked:relationship-graph",
-      "vc:label": "Relationship Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-identifier",
-      "vc:label": "Decentralized Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-credential",
-      "vc:label": "Verifiable Credential"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-schema",
-      "vc:label": "Metadata Schema"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-interoperability",
-      "vc:label": "Asset Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-ownership",
-      "vc:label": "Decentralized Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-access",
-      "vc:label": "Permissioned Access"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-portability",
-      "vc:label": "Avatar Portability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:trust-registry",
-      "vc:label": "Trust Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-format-standard",
-      "vc:label": "Data Format Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

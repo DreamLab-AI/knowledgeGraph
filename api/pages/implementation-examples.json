@@ -3,19 +3,18 @@
   "title": "implementation examples",
   "slug": "implementation-examples",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:implementation-examples",
+  "classIri": "urn:ngm:class:implementation-examples",
   "domain": "spatial-computing",
-  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[MetaversePlatformAPIs|metaverse platform integrations]]. These examples span [[DeFiProtocols|DeFi protocol]] mechanics, [[DAOGovernance|DAO governance]] implementation, [[CrossChainBridging|cross-chain communication]], and [[PrivacyPreservingProtocols|privacy-preserving techniques]], serving as reference designs for developers and educational resources for researchers. Well-documented implementation examples with security audits, gas optimisation techniques, and [[BestPractices|best practices]] guidance accelerate adoption and reduce deployment risks.",
+  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[Met...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

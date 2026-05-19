@@ -160,82 +160,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:collision-avoidance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collision-avoidance",
+  "@type": "Class",
   "label": "Collision Avoidance",
+  "definition": "Collision Avoidance - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:emergency-stop",
+        "label": "Emergency Stop"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:safe-human-robot-proximity",
+        "label": "Safe Human-Robot Proximity"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:safety-system",
+        "label": "Safety System"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7c0576d74940b8febf45f119aaf826da951f5f44e2c80687dd4c0ba87c24d673@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Collision Avoidance** - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.",
-  "vc:qualityScore": {
-    "@value": "0.58",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.11",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:safety-system",
-      "vc:label": "Safety System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-control",
-      "vc:label": "Motion Control"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:emergency-stop",
-      "vc:label": "Emergency Stop"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:perception-system",
-      "vc:label": "Perception System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-time Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:safe-human-robot-proximity",
-      "vc:label": "Safe Human-Robot Proximity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.58,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

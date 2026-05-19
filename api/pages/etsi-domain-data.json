@@ -3,57 +3,66 @@
   "title": "ETSI Domain Data",
   "slug": "etsi-domain-data",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-data",
+  "classIri": "urn:ngm:class:etsi-domain-data",
   "domain": "spatial-computing",
   "definition": "Domain categorisation for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
+      "id": "urn:ngm:class:etsi-metaverse-domain-model",
       "label": "Etsi Metaverse Domain Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ai-systems",
+        "id": "urn:ngm:class:ai-systems",
         "label": "AI Systems"
       },
       {
-        "id": "urn:visionflow:owl:class:data-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"
       },
       {
-        "id": "urn:visionflow:owl:class:data-storage",
+        "id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:intelligence",
+        "id": "urn:ngm:class:intelligence",
         "label": "Intelligence"
       },
       {
-        "id": "urn:visionflow:owl:class:data-processing",
+        "id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-analytics",
+        "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "ETSI Metaverse Domain Model"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

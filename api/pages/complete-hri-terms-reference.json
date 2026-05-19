@@ -3,19 +3,18 @@
   "title": "COMPLETE_HRI_TERMS_REFERENCE",
   "slug": "complete-hri-terms-reference",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:complete-hri-terms-reference",
+  "classIri": "urn:ngm:class:complete-hri-terms-reference",
   "domain": "robotics",
-  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]]. This reference enables consistent annotation and semantic understanding of interaction contexts across robotic and autonomous systems.",
+  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]].",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

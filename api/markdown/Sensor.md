@@ -108,41 +108,32 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:sensor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:sensor",
+  "@type": "Class",
   "label": "Sensor",
+  "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics-systems",
-      "vc:label": "Robotics Systems"
+      "@id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c961e17db1610d147ee11300eaadbc6a3c13dc6f689247828c51e1505082d66e"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c961e17db1610d147ee11300eaadbc6a3c13dc6f689247828c51e1505082d66e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena. In robotics, sensors include LiDAR for spatial mapping, cameras for visual perception, IMUs for motion sensing, force-torque sensors for manipulation, and encoders for position feedback.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:robotics-systems",
+        "label": "Robotics Systems"
+      }
+    ]
   }
 }
 ```

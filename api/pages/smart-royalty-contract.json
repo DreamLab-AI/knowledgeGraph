@@ -3,82 +3,91 @@
   "title": "Smart Royalty Contract",
   "slug": "smart-royalty-contract",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:smart-royalty-contract",
+  "classIri": "urn:ngm:class:smart-royalty-contract",
   "domain": "spatial-computing",
   "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:royalty-mechanism",
+      "id": "urn:ngm:class:royalty-mechanism",
       "label": "Royalty Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:enforcement-module",
+        "id": "urn:ngm:class:enforcement-module",
         "label": "Enforcement Module"
       },
       {
-        "id": "urn:visionflow:linked:event-emitter",
+        "id": "urn:ngm:class:event-emitter",
         "label": "Event Emitter"
       },
       {
-        "id": "urn:visionflow:linked:payment-splitter",
+        "id": "urn:ngm:class:payment-splitter",
         "label": "Payment Splitter"
       },
       {
-        "id": "urn:visionflow:linked:royalty-logic",
+        "id": "urn:ngm:class:royalty-logic",
         "label": "Royalty Logic"
       },
       {
-        "id": "urn:visionflow:linked:royalty-registry",
+        "id": "urn:ngm:class:royalty-registry",
         "label": "Royalty Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:oracle-service",
+        "id": "urn:ngm:class:oracle-service",
         "label": "Oracle Service"
       },
       {
-        "id": "urn:visionflow:owl:class:payment-token",
+        "id": "urn:ngm:class:payment-token",
         "label": "Payment Token"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       },
       {
-        "id": "urn:visionflow:owl:class:token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-payment-enforcement",
+        "id": "urn:ngm:class:automated-payment-enforcement",
         "label": "Automated Payment Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:multi-recipient-distribution",
+        "id": "urn:ngm:class:multi-recipient-distribution",
         "label": "Multi-Recipient Distribution"
       },
       {
-        "id": "urn:visionflow:linked:perpetual-creator-royalties",
+        "id": "urn:ngm:class:perpetual-creator-royalties",
         "label": "Perpetual Creator Royalties"
       },
       {
-        "id": "urn:visionflow:linked:royalty-verification",
+        "id": "urn:ngm:class:royalty-verification",
         "label": "Royalty Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:nft-standard-implementation",
+        "label": "NFT Standard Implementation"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

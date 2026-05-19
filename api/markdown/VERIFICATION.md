@@ -160,41 +160,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:verification",
+  "@type": "Class",
   "label": "VERIFICATION",
+  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through [[CryptographicProofs|cryptographic verification]], [[RuleBaseValidation|rule-based validatio...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a28e12a031bdfd549b346c04149be895b495e93b9719f19fbfc9b9f76d5b16d9"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a28e12a031bdfd549b346c04149be895b495e93b9719f19fbfc9b9f76d5b16d9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through [[CryptographicProofs|cryptographic verification]], [[RuleBaseValidation|rule-based validation]], and [[UserAcceptanceTesting|user acceptance testing]]. Within [[MetaversePlatforms|metaverse]] and blockchain contexts, verification encompasses [[TransactionVerification|transaction authenticity]], [[SmartContractAudit|smart contract correctness]], [[OntologyValidation|ontology schema conformance]], and [[DigitalAssetAuthenticity|digital asset provenance]] through [[BlockchainConsensus|consensus mechanisms]] or [[DigitalSignature|digital signatures]]. Comprehensive verification frameworks establish trust between stakeholders, prevent fraud, and enable secure interaction in decentralised systems lacking centralised authorities.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

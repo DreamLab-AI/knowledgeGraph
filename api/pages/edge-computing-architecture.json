@@ -3,32 +3,36 @@
   "title": "Edge Computing Architecture",
   "slug": "edge-computing-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-computing-architecture",
+  "classIri": "urn:ngm:class:edge-computing-architecture",
   "domain": "spatial-computing",
   "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-system-architecture",
+      "id": "urn:ngm:class:distributed-system-architecture",
       "label": "Distributed System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:low-latency-experiences",
+        "id": "urn:ngm:class:low-latency-experiences",
         "label": "Low-Latency Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

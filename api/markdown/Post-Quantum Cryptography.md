@@ -192,116 +192,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:post-quantum-cryptography",
+  "@type": "Class",
   "label": "Post-Quantum Cryptography",
+  "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:code-based-cryptography",
+        "label": "Code-Based Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-based-signatures",
+        "label": "Hash-Based Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:isogeny-based-cryptography",
+        "label": "Isogeny-Based Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:lattice-based-cryptography",
+        "label": "Lattice-Based Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:multivariate-cryptography",
+        "label": "Multivariate Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithm-implementation",
+        "label": "Algorithm Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:long-term-data-protection",
+        "label": "Long-Term Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-resistant-encryption",
+        "label": "Quantum-Resistant Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Cryptographic Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8104dd00535d5641d69425c570d930953a4a2cbc2f31bc2b817929d6031dba0b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-infrastructure",
-      "vc:label": "Cryptographic Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-protocol",
-      "vc:label": "Security Protocol"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:code-based-cryptography",
-      "vc:label": "Code-Based Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:hash-based-signatures",
-      "vc:label": "Hash-Based Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:isogeny-based-cryptography",
-      "vc:label": "Isogeny-Based Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:lattice-based-cryptography",
-      "vc:label": "Lattice-Based Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:multivariate-cryptography",
-      "vc:label": "Multivariate Cryptography"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:algorithm-implementation",
-      "vc:label": "Algorithm Implementation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
-      "vc:label": "Cryptographic Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:random-number-generation",
-      "vc:label": "Random Number Generation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:long-term-data-protection",
-      "vc:label": "Long-Term Data Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-resistant-encryption",
-      "vc:label": "Quantum-Resistant Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-key-exchange",
-      "vc:label": "Secure Key Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signatures",
-      "vc:label": "Digital Signatures"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:computational-complexity-theory",
-      "vc:label": "Computational Complexity Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mathematical-hard-problems",
-      "vc:label": "Mathematical Hard Problems"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

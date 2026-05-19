@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-economy-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-economy-domain",
+  "@type": "Class",
   "label": "Virtual Economy Domain",
+  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-economy",
-      "vc:label": "Digital Economy"
+      "@id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f6256e651091529f4198aaa39d8a42c3f487ee1b521125629250cd2eb7f48a99"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f6256e651091529f4198aaa39d8a42c3f487ee1b521125629250cd2eb7f48a99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership and smart contract automation.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

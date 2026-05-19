@@ -3,82 +3,95 @@
   "title": "Tourism Metaverse",
   "slug": "tourism-metaverse",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tourism-metaverse",
+  "classIri": "urn:ngm:class:tourism-metaverse",
   "domain": "spatial-computing",
   "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cultural-exhibit",
+        "id": "urn:ngm:class:cultural-exhibit",
         "label": "Cultural Exhibit"
       },
       {
-        "id": "urn:visionflow:linked:tour-guide-system",
+        "id": "urn:ngm:class:tour-guide-system",
         "label": "Tour Guide System"
       },
       {
-        "id": "urn:visionflow:linked:travel-planner",
+        "id": "urn:ngm:class:travel-planner",
         "label": "Travel Planner"
       },
       {
-        "id": "urn:visionflow:owl:class:geospatial-engine",
+        "id": "urn:ngm:class:geospatial-engine",
         "label": "Geospatial Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-destination",
+        "id": "urn:ngm:class:virtual-destination",
         "label": "Virtual Destination"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-management-system",
+        "id": "urn:ngm:class:content-management-system",
         "label": "Content Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-system",
+        "id": "urn:ngm:class:avatar-system",
         "label": "Avatar System"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio",
+        "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accessibility-enhancement",
+        "id": "urn:ngm:class:accessibility-enhancement",
         "label": "Accessibility Enhancement"
       },
       {
-        "id": "urn:visionflow:linked:cultural-heritage-preservation",
+        "id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Preservation"
       },
       {
-        "id": "urn:visionflow:owl:class:destination-marketing",
+        "id": "urn:ngm:class:destination-marketing",
         "label": "Destination Marketing"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-tourism",
+        "id": "urn:ngm:class:virtual-tourism",
         "label": "Virtual Tourism"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

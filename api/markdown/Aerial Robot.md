@@ -184,94 +184,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:aerial-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:aerial-robot",
+  "@type": "Class",
   "label": "Aerial Robot",
+  "definition": "Aerial Robot - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:mobile-robot",
-      "vc:label": "Mobile Robot"
+      "@id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:flight-control-system",
+        "label": "Flight Control System"
+      },
+      {
+        "@id": "urn:ngm:class:gps-navigation",
+        "label": "GPS Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-delivery",
+        "label": "Automated Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-inspection",
+        "label": "Infrastructure Inspection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:aerial-vehicle",
+        "label": "Aerial Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a7b7a4425bceb74a2925889b6ce0347f909683e1b3fde0cace25185d905a4bb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Aerial Robot** - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.14",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:aerial-vehicle",
-      "vc:label": "Aerial Vehicle"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:flight-control-system",
-      "vc:label": "Flight Control System"
-    },
-    {
-      "@id": "urn:visionflow:linked:gps-navigation",
-      "vc:label": "GPS Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:obstacle-avoidance",
-      "vc:label": "Obstacle Avoidance"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-delivery",
-      "vc:label": "Automated Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-monitoring",
-      "vc:label": "Environmental Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:infrastructure-inspection",
-      "vc:label": "Infrastructure Inspection"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

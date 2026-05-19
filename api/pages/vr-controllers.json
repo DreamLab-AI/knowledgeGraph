@@ -3,19 +3,18 @@
   "title": "VR Controllers",
   "slug": "vr-controllers",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vr-controllers",
+  "classIri": "urn:ngm:class:vr-controllers",
   "domain": "spatial-computing",
   "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:xr-hardware",
+      "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

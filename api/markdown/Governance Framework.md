@@ -136,70 +136,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:governance-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:governance-framework",
+  "@type": "Class",
   "label": "Governance Framework",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:organisational-framework",
-      "vc:label": "Organisational Framework"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4"
+  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:organisational-framework",
+        "label": "Organisational Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:performance-management",
+        "label": "Performance Management"
+      },
+      {
+        "@id": "urn:ngm:class:strategic-alignment",
+        "label": "Strategic Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decision-rights",
+        "label": "Decision Rights"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3560230f77af07b0dea1bb2be1de8c1dd5430f79bf0337d59e6c9d6fff9d1af4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:performance-management",
-      "vc:label": "Performance Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:strategic-alignment",
-      "vc:label": "Strategic Alignment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:decision-rights",
-      "vc:label": "Decision Rights"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

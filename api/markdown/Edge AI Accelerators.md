@@ -120,52 +120,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-ai-accelerators",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-ai-accelerators",
+  "@type": "Class",
   "label": "Edge AI Accelerators",
+  "definition": "Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:243421c2822ec990f7c7ccaa2504a3e77001ad67475c4e296191687598a70985"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:243421c2822ec990f7c7ccaa2504a3e77001ad67475c4e296191687598a70985@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Edge AI Accelerators are specialized hardware processors designed to dramatically improve the performance and energy efficiency of machine learning inference on resource-constrained edge devices. These include Neural Processing Units (NPUs), Tensor Processing Units (TPUs), Digital Signal Processors (DSPs), Field-Programmable Gate Arrays (FPGAs), and Application-Specific Integrated Circuits (ASICs) optimized for neural network computations. NPUs integrate directly into mobile processors (Qualcomm Hexagon, Apple Neural Engine) achieving 2-21 TOPS (tera-operations per second) with 2-10 TOPS per watt efficiency. TPUs and ASICs deliver peak performance 5-100x higher than CPUs while consuming 10-50x less power per inference. FPGAs offer programmable flexibility allowing deployment-specific optimizations when fixed-function accelerators are unavailable. Edge AI accelerators exploit parallelism in matrix multiplication operations inherent to neural networks, typically supporting low-precision arithmetic (INT8, FP16) for dramatic speedups versus full-precision FP32 computation. Hardware features including dedicated memory hierarchies, reduced precision datapaths, and specialized reduction c",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

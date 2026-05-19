@@ -3,19 +3,18 @@
   "title": "Immersive Workspaces",
   "slug": "immersive-workspaces",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-workspaces",
+  "classIri": "urn:ngm:class:immersive-workspaces",
   "domain": "spatial-computing",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Immersive Workspaces is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

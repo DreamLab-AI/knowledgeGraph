@@ -188,96 +188,81 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robot-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robot-learning",
+  "@type": "Class",
   "label": "Robot Learning",
+  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforceme...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "SelfSupervisedLearning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "TransferLearning"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "ImitationLearning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "ReinforcementLearning"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "ComputeResources"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "SensorData"
+      },
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "SimulationEnvironment"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "TrainingData"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:skill-acquisition",
+        "label": "SkillAcquisition"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "AdaptiveControl"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "AutonomousNavigation"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b147f2b77409471d9e917779d983f094cf43b8f8386344355fd297a6d1496bc1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:self-supervised-learning",
-      "vc:label": "SelfSupervisedLearning"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-learning",
-      "vc:label": "TransferLearning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "ImitationLearning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "ReinforcementLearning"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:compute-resources",
-      "vc:label": "ComputeResources"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data",
-      "vc:label": "SensorData"
-    },
-    {
-      "@id": "urn:visionflow:linked:simulation-environment",
-      "vc:label": "SimulationEnvironment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "TrainingData"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:skill-acquisition",
-      "vc:label": "SkillAcquisition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:adaptive-control",
-      "vc:label": "AdaptiveControl"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "AutonomousNavigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:manipulation",
-      "vc:label": "Manipulation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,53 +3,57 @@
   "title": "Carbon Footprint Assessment",
   "slug": "carbon-footprint-assessment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-footprint-assessment",
+  "classIri": "urn:ngm:class:carbon-footprint-assessment",
   "domain": "spatial-computing",
-  "definition": "A comprehensive evaluation methodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
+  "definition": "A comprehensive emodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:environmental-assessment",
+      "id": "urn:ngm:class:environmental-assessment",
       "label": "Environmental Assessment"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:boundary-definition",
+        "id": "urn:ngm:class:boundary-definition",
         "label": "Boundary Definition"
       },
       {
-        "id": "urn:visionflow:linked:emission-factors",
+        "id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
       },
       {
-        "id": "urn:visionflow:linked:lifecycle-data",
+        "id": "urn:ngm:class:lifecycle-data",
         "label": "Lifecycle Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hotspot-identification",
+        "id": "urn:ngm:class:hotspot-identification",
         "label": "Hotspot Identification"
       },
       {
-        "id": "urn:visionflow:linked:impact-quantification",
+        "id": "urn:ngm:class:impact-quantification",
         "label": "Impact Quantification"
       },
       {
-        "id": "urn:visionflow:linked:reduction-strategy",
+        "id": "urn:ngm:class:reduction-strategy",
         "label": "Reduction Strategy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

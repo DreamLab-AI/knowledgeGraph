@@ -3,32 +3,36 @@
   "title": "Security Architecture",
   "slug": "security-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:security-architecture",
+  "classIri": "urn:ngm:class:security-architecture",
   "domain": "spatial-computing",
   "definition": "A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:secure-systems",
+        "id": "urn:ngm:class:secure-systems",
         "label": "Secure Systems"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

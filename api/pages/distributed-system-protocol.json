@@ -3,19 +3,18 @@
   "title": "Distributed System Protocol",
   "slug": "distributed-system-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-system-protocol",
+  "classIri": "urn:ngm:class:distributed-system-protocol",
   "domain": "infrastructure",
   "definition": "Distributed System Protocol is a technology infrastructure concept and a type of Protocol Layer.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:protocol-layer",
+      "id": "urn:ngm:class:protocol-layer",
       "label": "Protocol Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

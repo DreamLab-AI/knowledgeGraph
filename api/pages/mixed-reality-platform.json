@@ -3,19 +3,18 @@
   "title": "Mixed Reality Platform",
   "slug": "mixed-reality-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mixed-reality-platform",
+  "classIri": "urn:ngm:class:mixed-reality-platform",
   "domain": "spatial-computing",
-  "definition": "Mixed Reality Platform is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Mixed Reality Platform is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

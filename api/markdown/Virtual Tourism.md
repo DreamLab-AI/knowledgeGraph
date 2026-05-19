@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-tourism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-tourism",
+  "@type": "Class",
   "label": "Virtual Tourism",
+  "definition": "The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:tourism-industry",
-      "vc:label": "Tourism Industry"
+      "@id": "urn:ngm:class:tourism-industry",
+      "label": "Tourism Industry"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dd7f6c90cb1b124090598e0689dd3fa83655bd82180697c64f926bdedf1cd7f8"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dd7f6c90cb1b124090598e0689dd3fa83655bd82180697c64f926bdedf1cd7f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

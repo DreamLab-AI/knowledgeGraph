@@ -3,40 +3,49 @@
   "title": "Accountability (OECD)",
   "slug": "accountability-oecd",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:accountability-oecd",
+  "classIri": "urn:ngm:class:accountability-oecd",
   "domain": "artificial-intelligence",
   "definition": "Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:policy-framework",
+      "label": "Policy Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:continuous-improvement",
+        "id": "urn:ngm:class:continuous-improvement",
         "label": "continuous improvement"
       },
       {
-        "id": "urn:visionflow:linked:effective-governance",
+        "id": "urn:ngm:class:effective-governance",
         "label": "Effective governance"
       },
       {
-        "id": "urn:visionflow:linked:redress",
+        "id": "urn:ngm:class:redress",
         "label": "redress"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
   "wikilinks": [
     {

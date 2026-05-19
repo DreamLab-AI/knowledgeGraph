@@ -3,19 +3,18 @@
   "title": "Property Registry",
   "slug": "property-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:property-registry",
+  "classIri": "urn:ngm:class:property-registry",
   "domain": "blockchain",
-  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title verification whilst addressing the global challenge where 70% of the world's population lacks access to formal land registration.",
+  "definition": "Blockchain-based land title recording systems employing immutable distributed ledgers, cryptographic signatures, and timestamp verification to create tamper-proof property ownership records, reduce fraud, accelerate transaction processing from 30-90 days to 72 hours, and enable transparent title ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:real-estate-tokenization",
+      "id": "urn:ngm:class:real-estate-tokenization",
       "label": "Real Estate Tokenization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.9,
   "maturity": "draft",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

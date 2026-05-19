@@ -140,56 +140,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:price-discovery",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:price-discovery",
+  "@type": "Class",
   "label": "Price Discovery",
+  "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:market-microstructure",
-      "vc:label": "Market Microstructure"
+      "@id": "urn:ngm:class:market-microstructure",
+      "label": "Market Microstructure"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fair-valuation",
+        "label": "Fair Valuation"
+      },
+      {
+        "@id": "urn:ngm:class:market-efficiency",
+        "label": "Market Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:price-transparency",
+        "label": "Price Transparency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ecea5b1c1940c0e4f5999ee262f61c7b670be6d8a98a4d8f7785d215caf4a721@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fair-valuation",
-      "vc:label": "Fair Valuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-efficiency",
-      "vc:label": "Market Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:price-transparency",
-      "vc:label": "Price Transparency"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

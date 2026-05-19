@@ -492,320 +492,247 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gpts-and-custom-assistants",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gpts-and-custom-assistants",
+  "@type": "Class",
   "label": "GPTs and Custom Assistants",
+  "definition": "GPTs and Custom Assistants are a family of user-configured task-specific applications built on top of foundation large language models in which a vendor exposes a no-code or low-code authoring surface that lets a user, an enterprise administrator, or a third-party developer compose a persistent a...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:llm-application",
-      "vc:label": "LLM Application"
+      "@id": "urn:ngm:class:llm-application",
+      "label": "LLM Application"
     },
     {
-      "@id": "urn:visionflow:linked:no-code-platform",
-      "vc:label": "No-Code Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation-system",
-      "vc:label": "Retrieval-Augmented Generation System"
+      "@id": "urn:ngm:class:no-code-platform",
+      "label": "No-Code Platform"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:075ef6a0a0c8ab6e935d1dc758ad3b9940cae4c9e428693d5ead9e79688dab55"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conversation-starter",
+        "label": "Conversation Starter"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:model-configuration",
+        "label": "Model Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-schema",
+        "label": "OpenAPI Schema"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "@id": "urn:ngm:class:tool-definition",
+        "label": "Tool Definition"
+      },
+      {
+        "@id": "urn:ngm:class:vector-store",
+        "label": "Vector Store"
+      },
+      {
+        "@id": "urn:ngm:class:visibility-setting",
+        "label": "Visibility Setting"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bot-marketplaces",
+        "label": "Bot Marketplaces"
+      },
+      {
+        "@id": "urn:ngm:class:document-q-and-a",
+        "label": "Document Q&A"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-knowledge-surfacing",
+        "label": "Enterprise Knowledge Surfacing"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-ai",
+        "label": "Personalised AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-assistant",
+        "label": "Task-Specific Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:conversation-memory",
+        "label": "Conversation Memory"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:chunking",
+        "label": "Chunking"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:gpt-5",
+        "label": "GPT-5"
+      },
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "@id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:google-gemini",
+        "label": "Google Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:plugins",
+        "label": "Plugins"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:customer-support",
+        "label": "Customer Support"
+      },
+      {
+        "@id": "urn:ngm:class:education",
+        "label": "Education"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-triage",
+        "label": "Healthcare Triage"
+      },
+      {
+        "@id": "urn:ngm:class:legal-research",
+        "label": "Legal Research"
+      },
+      {
+        "@id": "urn:ngm:class:newsroom-workflows",
+        "label": "Newsroom Workflows"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:anthropic-agent-skills-open-standard",
+        "label": "Anthropic Agent Skills Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-3-0",
+        "label": "OpenAPI 3.0"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:075ef6a0a0c8ab6e935d1dc758ad3b9940cae4c9e428693d5ead9e79688dab55@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "GPTs and Custom Assistants are a family of user-configured task-specific applications built on top of foundation large language models in which a vendor exposes a no-code or low-code authoring surface that lets a user, an enterprise administrator, or a third-party developer compose a persistent assistant by combining a natural-language system prompt (the assistant's persona, scope, refusal rules, output format and chain-of-thought directives), a small uploaded knowledge base (typically 1-20 files totalling 50-500MB ingested into a managed vector store such as OpenAI's File Search index, Anthropic's project knowledge index, or Microsoft Graph), an optional set of callable tools described by an OpenAPI 3.0 schema or vendor-specific function-calling JSON schema (web browsing, code execution, image generation, Zapier/Make integrations, bespoke REST endpoints authenticated by API key or OAuth 2.0), and runtime configuration (model choice e.g. GPT-4 Turbo / GPT-5 / Claude Sonnet 4 / Gemini 2.5 Pro, temperature, response length, conversation starters, visibility scope private/link/public/enterprise) without retraining or modifying any model weights, distinguishing this scaffolding-based p",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conversation-starter",
-      "vc:label": "Conversation Starter"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-base",
-      "vc:label": "Knowledge Base"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-configuration",
-      "vc:label": "Model Configuration"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-schema",
-      "vc:label": "OpenAPI Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-prompt",
-      "vc:label": "System Prompt"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-definition",
-      "vc:label": "Tool Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-store",
-      "vc:label": "Vector Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:visibility-setting",
-      "vc:label": "Visibility Setting"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedding-model",
-      "vc:label": "Embedding Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model",
-      "vc:label": "Foundation Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-window",
-      "vc:label": "Context Window"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bot-marketplaces",
-      "vc:label": "Bot Marketplaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-q-and-a",
-      "vc:label": "Document Q&A"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-knowledge-surfacing",
-      "vc:label": "Enterprise Knowledge Surfacing"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalised-ai",
-      "vc:label": "Personalised AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-specific-assistant",
-      "vc:label": "Task-Specific Assistant"
-    },
-    {
-      "@id": "urn:visionflow:linked:workflow-automation",
-      "vc:label": "Workflow Automation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:conversation-memory",
-      "vc:label": "Conversation Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-search",
-      "vc:label": "Hybrid Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:prompt-injection",
-      "vc:label": "Prompt Injection"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-specification",
-      "vc:label": "OpenAPI Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:customer-support",
-      "vc:label": "Customer Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:education",
-      "vc:label": "Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-triage",
-      "vc:label": "Healthcare Triage"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-research",
-      "vc:label": "Legal Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:newsroom-workflows",
-      "vc:label": "Newsroom Workflows"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bm25",
-      "vc:label": "BM25"
-    },
-    {
-      "@id": "urn:visionflow:linked:chunking",
-      "vc:label": "Chunking"
-    },
-    {
-      "@id": "urn:visionflow:linked:embeddings",
-      "vc:label": "Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpt-5",
-      "vc:label": "GPT-5"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:claude",
-      "vc:label": "Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gemini",
-      "vc:label": "Gemini"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gpt-4",
-      "vc:label": "GPT 4"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:fine-tuned-models",
-      "vc:label": "Fine-Tuned Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-chatbots",
-      "vc:label": "Rule-Based Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:google-gemini",
-      "vc:label": "Google Gemini"
-    },
-    {
-      "@id": "urn:visionflow:linked:plugins",
-      "vc:label": "Plugins"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:microsoft-copilot",
-      "vc:label": "Microsoft Copilot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:anthropic-agent-skills-open-standard",
-      "vc:label": "Anthropic Agent Skills Open Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-schema",
-      "vc:label": "JSON Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-api-3-0",
-      "vc:label": "OpenAPI 3.0"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,66 +3,70 @@
   "title": "Immersion",
   "slug": "immersion",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersion",
+  "classIri": "urn:ngm:class:immersion",
   "domain": "spatial-computing",
   "definition": "Subjective experience of psychological engagement and sense of presence within a virtual environment, characterized by reduced awareness of physical surroundings and absorption in virtual context.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cognitive-immersion",
+        "id": "urn:ngm:class:cognitive-immersion",
         "label": "Cognitive Immersion"
       },
       {
-        "id": "urn:visionflow:linked:sensory-immersion",
+        "id": "urn:ngm:class:sensory-immersion",
         "label": "Sensory Immersion"
       },
       {
-        "id": "urn:visionflow:owl:class:emotional-immersion",
+        "id": "urn:ngm:class:emotional-immersion",
         "label": "Emotional Immersion"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-quality",
+        "id": "urn:ngm:class:content-quality",
         "label": "Content Quality"
       },
       {
-        "id": "urn:visionflow:linked:display-technology",
+        "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
       },
       {
-        "id": "urn:visionflow:linked:interaction-mechanism",
+        "id": "urn:ngm:class:interaction-mechanism",
         "label": "Interaction Mechanism"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:flow-state",
+        "id": "urn:ngm:class:flow-state",
         "label": "Flow State"
       },
       {
-        "id": "urn:visionflow:linked:user-engagement",
+        "id": "urn:ngm:class:user-engagement",
         "label": "User Engagement"
       },
       {
-        "id": "urn:visionflow:owl:class:presence",
+        "id": "urn:ngm:class:presence",
         "label": "Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

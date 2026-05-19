@@ -120,41 +120,18 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:system-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:system-architecture",
+  "@type": "Class",
   "label": "System Architecture",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:owl-thing",
-      "vc:label": "['owl:Thing']"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fcab76dde085d16cf6db6ab338f7d244c3bcb0987d8b6d94d16559fdfbba9d8a"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fcab76dde085d16cf6db6ab338f7d244c3bcb0987d8b6d94d16559fdfbba9d8a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale. This encompasses distributed training infrastructure, inference servers, data pipelines, model registries, monitoring systems, and edge-cloud coordination. Architectural decisions address latency requirements, throughput targets, fault tolerance, security, and cost optimization. Modern AI systems adopt cloud-native, containerized architectures with orchestration platforms (Kubernetes), enabling elastic scaling, multi-tenancy, and global deployment.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "definition": "System Architecture in AI defines the holistic structure integrating hardware, software, data infrastructure, and operational components to deliver intelligent capabilities at scale.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

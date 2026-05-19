@@ -3,53 +3,57 @@
   "title": "C2PA Standard",
   "slug": "c2-pa-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:c2-pa-standard",
+  "classIri": "urn:ngm:class:c2-pa-standard",
   "domain": "spatial-computing",
   "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-signing",
+        "id": "urn:ngm:class:cryptographic-signing",
         "label": "Cryptographic Signing"
       },
       {
-        "id": "urn:visionflow:linked:metadata-framework",
+        "id": "urn:ngm:class:metadata-framework",
         "label": "Metadata Framework"
       },
       {
-        "id": "urn:visionflow:linked:trust-model",
+        "id": "urn:ngm:class:trust-model",
         "label": "Trust Model"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authenticity-certification",
+        "id": "urn:ngm:class:authenticity-certification",
         "label": "Authenticity Certification"
       },
       {
-        "id": "urn:visionflow:linked:content-provenance",
+        "id": "urn:ngm:class:content-provenance",
         "label": "Content Provenance"
       },
       {
-        "id": "urn:visionflow:linked:media-verification",
+        "id": "urn:ngm:class:media-verification",
         "label": "Media Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

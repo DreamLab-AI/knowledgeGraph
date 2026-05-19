@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-experiences",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-experiences",
+  "@type": "Class",
   "label": "Ar Experiences",
+  "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:immersive-technology-applications",
-      "vc:label": "Immersive Technology Applications"
+      "@id": "urn:ngm:class:immersive-technology-applications",
+      "label": "Immersive Technology Applications"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d8d3bdc61f3d8c7e3a9ae010e7072b79e254d9c4621ee4e7a0bd12752750f58b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ar-display-devices",
+        "label": "AR Display Devices"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:contextual-information",
+        "label": "Contextual Information"
+      },
+      {
+        "@id": "urn:ngm:class:enhanced-visualization",
+        "label": "Enhanced Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-learning",
+        "label": "Interactive Learning"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d8d3bdc61f3d8c7e3a9ae010e7072b79e254d9c4621ee4e7a0bd12752750f58b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ar-display-devices",
-      "vc:label": "AR Display Devices"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-mapping",
-      "vc:label": "Spatial Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:contextual-information",
-      "vc:label": "Contextual Information"
-    },
-    {
-      "@id": "urn:visionflow:linked:enhanced-visualization",
-      "vc:label": "Enhanced Visualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interactive-learning",
-      "vc:label": "Interactive Learning"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

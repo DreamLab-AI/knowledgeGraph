@@ -3,19 +3,18 @@
   "title": "TERM INDEX",
   "slug": "term-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:term-index",
+  "classIri": "urn:ngm:class:term-index",
   "domain": "spatial-computing",
-  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems. Well-structured indices like the [[RoboticsOntology|robotics ontology term index]] organisation provide hierarchical classification, cross-references, and semantic linking that facilitate knowledge retrieval, API design, and [[KnowledgeGraphIntegration|knowledge graph integration]]. These catalogues serve as both user-facing navigation aids and machine-readable specifications supporting automated reasoning, [[OWLOntology|OWL ontology]] validation, and [[SPARQLQuery|SPARQL query]] optimisation.",
+  "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

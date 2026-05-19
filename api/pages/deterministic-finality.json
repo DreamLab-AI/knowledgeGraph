@@ -3,24 +3,23 @@
   "title": "Deterministic Finality",
   "slug": "deterministic-finality",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:deterministic-finality",
+  "classIri": "urn:ngm:class:deterministic-finality",
   "domain": "blockchain",
-  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.",
+  "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:validator-set",
+        "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
       }
     ],
@@ -28,7 +27,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

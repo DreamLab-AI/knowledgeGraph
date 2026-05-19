@@ -3,32 +3,36 @@
   "title": "OWL Class Hierarchy",
   "slug": "owl-class-hierarchy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:owl-class-hierarchy",
+  "classIri": "urn:ngm:class:owl-class-hierarchy",
   "domain": "spatial-computing",
   "definition": "The taxonomic structure of classes and subclasses defined in the Web Ontology Language (OWL) that organizes concepts into inheritance relationships, enabling automated reasoning, consistency checking, and inference of implicit knowledge in semantic web applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ontology-structure",
+      "id": "urn:ngm:class:ontology-structure",
       "label": "Ontology Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-reasoning",
+        "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

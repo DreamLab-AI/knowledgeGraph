@@ -3,19 +3,18 @@
   "title": "Laser Scanner",
   "slug": "laser-scanner",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:laser-scanner",
+  "classIri": "urn:ngm:class:laser-scanner",
   "domain": "robotics",
   "definition": "Laser Scanner is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

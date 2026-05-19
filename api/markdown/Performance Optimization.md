@@ -124,56 +124,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:performance-optimization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:performance-optimization",
+  "@type": "Class",
   "label": "Performance Optimization",
+  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:optimization-technique",
-      "vc:label": "Optimization Technique"
+      "@id": "urn:ngm:class:optimization-technique",
+      "label": "Optimization Technique"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7e7b0ced78e76da6799a2ff787b26ea0937d2accfb98a41a0e133a87ed735e22"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:resource-efficiency",
+        "label": "Resource Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:system-scalability",
+        "label": "System Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7e7b0ced78e76da6799a2ff787b26ea0937d2accfb98a41a0e133a87ed735e22@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput. It encompasses profiling to identify bottlenecks, algorithmic improvements, caching strategies, parallel processing, and compiler optimizations to meet defined performance targets.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:resource-efficiency",
-      "vc:label": "Resource Efficiency"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-scalability",
-      "vc:label": "System Scalability"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience",
-      "vc:label": "User Experience"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

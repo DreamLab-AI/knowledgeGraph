@@ -136,80 +136,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asset-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asset-management",
+  "@type": "Class",
   "label": "Asset Management",
+  "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:financial-services",
-      "vc:label": "Financial Services"
+      "@id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6c653f59ec06a4c3adffaa332ee1b04b7e039c49816978f716670ddd1be990b7"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6c653f59ec06a4c3adffaa332ee1b04b7e039c49816978f716670ddd1be990b7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization. In the context of fintech and DeFi, asset management encompasses crypto portfolio management, tokenized securities, yield optimization, and institutional-grade custody solutions that enable investors to navigate volatile digital markets while maximizing risk-adjusted returns.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:portfolio-management",
-      "vc:label": "Portfolio Management"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:institutional-investment",
-      "vc:label": "Institutional Investment"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:custody",
-      "vc:label": "Custody"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-finance-de-fi",
-      "vc:label": "Decentralized Finance (DeFi)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenization",
-      "vc:label": "Tokenization"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

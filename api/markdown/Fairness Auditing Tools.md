@@ -136,52 +136,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fairness-auditing-tools",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fairness-auditing-tools",
+  "@type": "Class",
   "label": "Fairness Auditing Tools",
+  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5bb1c15cff7fd2aa723c7d5ec4269650623068fb578d854a20c70e36e975f715@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities. Leading open-source tools include Fairlearn (Microsoft, MIT license) providing fairness metrics and mitigation algorithms for Python with scikit-learn integration, AIF360 (IBM, Apache-2.0 license) offering comprehensive bias detection and mitigation across the ML pipeline with 70+ fairness metrics, What-If Tool (Google, Apache-2.0) providing interactive visual interfaces for TensorFlow model exploration and counterfactual analysis, Aequitas (University of Chicago, MIT license) focusing on fairness auditing for criminal justice and policy applications, and FairTest (Columbia University, MIT license) enabling statistical fairness testing with association discovery. These tools implement fairness metrics including demographic parity, equalized odds, and predictive parity, provide visualizations such as fairness dashboards, confusion matrices disaggregated by group, and disparity charts, and support mitigation techniques including reweighting, threshold optimization, a",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "Autonomous Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

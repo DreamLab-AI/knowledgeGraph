@@ -3,45 +3,66 @@
   "title": "Obstacle Avoidance",
   "slug": "obstacle-avoidance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:obstacle-avoidance",
+  "classIri": "urn:ngm:class:obstacle-avoidance",
   "domain": "robotics",
   "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:reactive-control",
+      "id": "urn:ngm:class:reactive-control",
       "label": "Reactive Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.96,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:proximity-sensors",
+        "id": "urn:ngm:class:proximity-sensors",
         "label": "Proximity Sensors"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-processing",
+        "id": "urn:ngm:class:real-time-processing",
         "label": "Real-Time Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:collision-free-motion",
+        "id": "urn:ngm:class:collision-free-motion",
         "label": "Collision-Free Motion"
       },
       {
-        "id": "urn:visionflow:linked:safe-navigation",
+        "id": "urn:ngm:class:safe-navigation",
         "label": "Safe Navigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LIDAR"
+      },
+      {
+        "id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

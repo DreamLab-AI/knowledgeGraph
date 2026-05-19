@@ -3,53 +3,57 @@
   "title": "Metadata Schema",
   "slug": "metadata-schema",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-schema",
+  "classIri": "urn:ngm:class:metadata-schema",
   "domain": "infrastructure",
-  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
+  "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:data-standard",
+      "id": "urn:ngm:class:data-standard",
       "label": "Data Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-discovery",
+        "id": "urn:ngm:class:data-discovery",
         "label": "Data Discovery"
       },
       {
-        "id": "urn:visionflow:linked:fair-data-principles",
+        "id": "urn:ngm:class:fair-data-principles",
         "label": "FAIR Data Principles"
       },
       {
-        "id": "urn:visionflow:owl:class:data-interoperability",
+        "id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:dublin-core",
+        "id": "urn:ngm:class:dublin-core",
         "label": "Dublin Core"
       },
       {
-        "id": "urn:visionflow:linked:json-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
-        "id": "urn:visionflow:linked:schema-org",
+        "id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

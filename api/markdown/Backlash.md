@@ -160,78 +160,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:backlash",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:backlash",
+  "@type": "Class",
   "label": "Backlash",
+  "definition": "Backlash - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robot-dynamics",
-      "vc:label": "Robot Dynamics"
+      "@id": "urn:ngm:class:robot-dynamics",
+      "label": "Robot Dynamics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-algorithm-tuning",
+        "label": "Control Algorithm Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:mechanical-compensation",
+        "label": "Mechanical Compensation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:backlash-measurement",
+        "label": "Backlash Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:performance-degradation-detection",
+        "label": "Performance Degradation Detection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:joint-mechanics",
+        "label": "Joint Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7616c2357799993762e2fd568be6ea1c22a20167e910358cbe5b8d4377ce786b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Backlash** - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
-  "vc:qualityScore": {
-    "@value": "0.48",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.08",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:joint-mechanics",
-      "vc:label": "Joint Mechanics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-dynamics",
-      "vc:label": "Robot Dynamics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:control-algorithm-tuning",
-      "vc:label": "Control Algorithm Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanical-compensation",
-      "vc:label": "Mechanical Compensation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:backlash-measurement",
-      "vc:label": "Backlash Measurement"
-    },
-    {
-      "@id": "urn:visionflow:linked:performance-degradation-detection",
-      "vc:label": "Performance Degradation Detection"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:control-system",
-      "vc:label": "Control System"
-    }
-  ]
+  "quality": 0.48,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

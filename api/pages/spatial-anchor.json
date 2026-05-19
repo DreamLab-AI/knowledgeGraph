@@ -3,74 +3,87 @@
   "title": "Spatial Anchor",
   "slug": "spatial-anchor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-anchor",
+  "classIri": "urn:ngm:class:spatial-anchor",
   "domain": "spatial-computing",
   "definition": "Coordinate reference that binds a virtual object's pose to a stable location in physical space, enabling persistent AR placement and physical-virtual registration.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ar-scene-graph",
+      "id": "urn:ngm:class:ar-scene-graph",
       "label": "AR Scene Graph"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:gps-reference",
+        "id": "urn:ngm:class:gps-reference",
         "label": "GPS Reference"
       },
       {
-        "id": "urn:visionflow:linked:pose-data",
+        "id": "urn:ngm:class:pose-data",
         "label": "Pose Data"
       },
       {
-        "id": "urn:visionflow:linked:tracking-features",
+        "id": "urn:ngm:class:tracking-features",
         "label": "Tracking Features"
       },
       {
-        "id": "urn:visionflow:owl:class:coordinate-system",
+        "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
       },
       {
-        "id": "urn:visionflow:owl:class:visual-marker",
+        "id": "urn:ngm:class:visual-marker",
         "label": "Visual Marker"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:coordinate-transformation",
+        "id": "urn:ngm:class:coordinate-transformation",
         "label": "Coordinate Transformation"
       },
       {
-        "id": "urn:visionflow:linked:persistence-layer",
+        "id": "urn:ngm:class:persistence-layer",
         "label": "Persistence Layer"
       },
       {
-        "id": "urn:visionflow:linked:tracking-system",
+        "id": "urn:ngm:class:tracking-system",
         "label": "Tracking System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:persistent-ar-placement",
+        "id": "urn:ngm:class:persistent-ar-placement",
         "label": "Persistent AR Placement"
       },
       {
-        "id": "urn:visionflow:owl:class:physical-virtual-registration",
+        "id": "urn:ngm:class:physical-virtual-registration",
         "label": "Physical-Virtual Registration"
       },
       {
-        "id": "urn:visionflow:owl:class:shared-ar-experiences",
+        "id": "urn:ngm:class:shared-ar-experiences",
         "label": "Shared AR Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ar-scene-graph",
+        "label": "AR Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing-system",
+        "label": "Spatial Computing System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

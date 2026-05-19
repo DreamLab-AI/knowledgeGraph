@@ -3,135 +3,243 @@
   "title": "Direct Preference Optimization",
   "slug": "direct-preference-optimization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:direct-preference-optimization",
+  "classIri": "urn:ngm:class:direct-preference-optimization",
   "domain": "artificial-intelligence",
-  "definition": "Direct Preference Optimization (DPO) is a preference-based language model alignment algorithm introduced by Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D. Manning and Chelsea Finn (Stanford University) in the paper \"Direct Preference Optimization: Your Language Model is Secretly a Reward Model\" (NeurIPS 2023 Outstanding Paper Award, December 2023), reformulating the standard Reinforcement Learning from Human Feedback (RLHF) pipeline of Christiano et al. 2017 / Ouyang et al. 2022 InstructGPT\u2014which proceeds through (1) supervised fine-tuning, (2) reward model training on pairwise human preferences under the Bradley-Terry-Luce choice model, and (3) PPO-based policy optimisation against the learned reward subject to a KL-divergence anchor to the reference policy\u2014into a single supervised classification-style loss that bypasses both explicit reward modelling and online policy gradient estimation, deriving from the closed-form solution of the KL-constrained reward maximisation \u03c0*(y|x) = (1/Z(x)) \u03c0_ref(y|x) exp((1/\u03b2) r(x,y)) the implicit reward expression r(x,y) = \u03b2 log(\u03c0_\u03b8(y|x)/\u03c0_ref(y|x)) + \u03b2 log Z(x) and substituting into the Bradley-Terry preference likeli",
+  "definition": "Direct Preference Optimization (DPO) is a preference-based language model alignment algorithm introduced by Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:implicit-reward-modelling",
+      "id": "urn:ngm:class:implicit-reward-modelling",
       "label": "Implicit Reward Modelling"
     },
     {
-      "id": "urn:visionflow:linked:language-model-alignment",
+      "id": "urn:ngm:class:language-model-alignment",
       "label": "Language Model Alignment"
-    },
-    {
-      "id": "urn:visionflow:linked:offline-reinforcement-learning",
-      "label": "Offline Reinforcement Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:beta-temperature",
+        "id": "urn:ngm:class:beta-temperature",
         "label": "Beta Temperature"
       },
       {
-        "id": "urn:visionflow:linked:bradley-terry-model",
+        "id": "urn:ngm:class:bradley-terry-model",
         "label": "Bradley-Terry Model"
       },
       {
-        "id": "urn:visionflow:linked:implicit-reward-function",
+        "id": "urn:ngm:class:implicit-reward-function",
         "label": "Implicit Reward Function"
       },
       {
-        "id": "urn:visionflow:linked:kl-divergence-regulariser",
+        "id": "urn:ngm:class:kl-divergence-regulariser",
         "label": "KL Divergence Regulariser"
       },
       {
-        "id": "urn:visionflow:linked:log-ratio-term",
+        "id": "urn:ngm:class:log-ratio-term",
         "label": "Log-Ratio Term"
       },
       {
-        "id": "urn:visionflow:linked:preference-dataset",
+        "id": "urn:ngm:class:preference-dataset",
         "label": "Preference Dataset"
       },
       {
-        "id": "urn:visionflow:linked:reference-policy",
+        "id": "urn:ngm:class:reference-policy",
         "label": "Reference Policy"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cross-entropy-loss",
+        "id": "urn:ngm:class:cross-entropy-loss",
         "label": "Cross-Entropy Loss"
       },
       {
-        "id": "urn:visionflow:linked:frozen-reference-policy",
+        "id": "urn:ngm:class:frozen-reference-policy",
         "label": "Frozen Reference Policy"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:pairwise-preference-data",
+        "id": "urn:ngm:class:pairwise-preference-data",
         "label": "Pairwise Preference Data"
       },
       {
-        "id": "urn:visionflow:linked:supervised-fine-tuned-model",
+        "id": "urn:ngm:class:supervised-fine-tuned-model",
         "label": "Supervised Fine-Tuned Model"
       },
       {
-        "id": "urn:visionflow:owl:class:stochastic-gradient-descent",
+        "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:harmlessness-tuning",
+        "id": "urn:ngm:class:harmlessness-tuning",
         "label": "Harmlessness Tuning"
       },
       {
-        "id": "urn:visionflow:linked:helpfulness-tuning",
+        "id": "urn:ngm:class:helpfulness-tuning",
         "label": "Helpfulness Tuning"
       },
       {
-        "id": "urn:visionflow:linked:instruction-following",
+        "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
       },
       {
-        "id": "urn:visionflow:linked:language-model-alignment",
+        "id": "urn:ngm:class:language-model-alignment",
         "label": "Language Model Alignment"
       },
       {
-        "id": "urn:visionflow:linked:multi-turn-dialogue-alignment",
+        "id": "urn:ngm:class:multi-turn-dialogue-alignment",
         "label": "Multi-Turn Dialogue Alignment"
       },
       {
-        "id": "urn:visionflow:linked:safety-alignment",
+        "id": "urn:ngm:class:safety-alignment",
         "label": "Safety Alignment"
       },
       {
-        "id": "urn:visionflow:linked:style-transfer-alignment",
+        "id": "urn:ngm:class:style-transfer-alignment",
         "label": "Style Transfer Alignment"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bradley-terry-luce-choice-model",
+        "id": "urn:ngm:class:bradley-terry-luce-choice-model",
         "label": "Bradley-Terry-Luce Choice Model"
       },
       {
-        "id": "urn:visionflow:linked:implicit-reward-estimation",
+        "id": "urn:ngm:class:implicit-reward-estimation",
         "label": "Implicit Reward Estimation"
       },
       {
-        "id": "urn:visionflow:linked:kl-constrained-reward-maximisation",
+        "id": "urn:ngm:class:kl-constrained-reward-maximisation",
         "label": "KL-Constrained Reward Maximisation"
       },
       {
-        "id": "urn:visionflow:linked:maximum-likelihood-estimation",
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
         "label": "Maximum Likelihood Estimation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra-adaptation",
+        "label": "LoRA Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:log-likelihood-ratio",
+        "label": "Log-Likelihood Ratio"
+      },
+      {
+        "id": "urn:ngm:class:sigmoid-function",
+        "label": "Sigmoid Function"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-weight-model-alignment",
+        "label": "Open-Weight Model Alignment"
+      },
+      {
+        "id": "urn:ngm:class:preference-distillation",
+        "label": "Preference Distillation"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming-mitigation",
+        "label": "Red-Teaming Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:reward-model-replacement",
+        "label": "Reward Model Replacement"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:aisi-inspect-framework",
+        "label": "AISI Inspect Framework"
+      },
+      {
+        "id": "urn:ngm:class:axolotl",
+        "label": "Axolotl"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-trl",
+        "label": "Hugging Face TRL"
+      },
+      {
+        "id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:open-rlhf",
+        "label": "OpenRLHF"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipo",
+        "label": "IPO"
+      },
+      {
+        "id": "urn:ngm:class:iterative-dpo",
+        "label": "Iterative DPO"
+      },
+      {
+        "id": "urn:ngm:class:kto",
+        "label": "KTO"
+      },
+      {
+        "id": "urn:ngm:class:online-dpo",
+        "label": "Online DPO"
+      },
+      {
+        "id": "urn:ngm:class:orpo",
+        "label": "ORPO"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:sim-po",
+        "label": "SimPO"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      }
+    ]
   },
   "wikilinks": [
     {

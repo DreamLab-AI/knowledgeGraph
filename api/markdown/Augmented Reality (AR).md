@@ -212,130 +212,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:augmented-reality-ar",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:augmented-reality-ar",
+  "@type": "Class",
   "label": "Augmented Reality (AR)",
+  "definition": "Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
+      "@id": "urn:ngm:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:080523a116005bfe2b94ff503bd475d89235c2f5453301970d0fe5724a010550"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:environmental-sensor",
+        "label": "Environmental Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:ar-display-device",
+        "label": "AR Display Device"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-overlay",
+        "label": "Digital Content Overlay"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-tracking-system",
+        "label": "Spatial Tracking System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:device-camera",
+        "label": "Device Camera"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:contextual-information-overlay",
+        "label": "Contextual Information Overlay"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-holograms",
+        "label": "Interactive Holograms"
+      },
+      {
+        "@id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:080523a116005bfe2b94ff503bd475d89235c2f5453301970d0fe5724a010550@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Interactive system that overlays digital content (visual, audio, haptic) onto the physical environment in real time, enabling spatially-registered blended experiences where virtual information enhances physical perception.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:extended-reality-xr",
-      "vc:label": "Extended Reality (XR)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:environmental-sensor",
-      "vc:label": "Environmental Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-display-device",
-      "vc:label": "AR Display Device"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-content-overlay",
-      "vc:label": "Digital Content Overlay"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-tracking-system",
-      "vc:label": "Spatial Tracking System"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:device-camera",
-      "vc:label": "Device Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-rendering",
-      "vc:label": "Real-Time Rendering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-mapping",
-      "vc:label": "Spatial Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:contextual-information-overlay",
-      "vc:label": "Contextual Information Overlay"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-holograms",
-      "vc:label": "Interactive Holograms"
-    },
-    {
-      "@id": "urn:visionflow:linked:object-recognition",
-      "vc:label": "Object Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-anchoring",
-      "vc:label": "Spatial Anchoring"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:6-dof-tracking",
-      "vc:label": "6DOF Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-understanding",
-      "vc:label": "Environmental Understanding"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-sensing",
-      "vc:label": "Depth Sensing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

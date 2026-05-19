@@ -3,86 +3,111 @@
   "title": "Audit Trail",
   "slug": "audit-trail",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:audit-trail",
+  "classIri": "urn:ngm:class:audit-trail",
   "domain": "artificial-intelligence",
   "definition": "A chronological, tamper-evident record of system activities, transactions, and events that enables reconstruction and verification of sequences of operations for compliance, security, and forensic analysis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:access-logs",
+        "id": "urn:ngm:class:access-logs",
         "label": "Access Logs"
       },
       {
-        "id": "urn:visionflow:linked:event-logs",
+        "id": "urn:ngm:class:event-logs",
         "label": "Event Logs"
       },
       {
-        "id": "urn:visionflow:linked:system-state-snapshots",
+        "id": "urn:ngm:class:system-state-snapshots",
         "label": "System State Snapshots"
       },
       {
-        "id": "urn:visionflow:linked:timestamp-records",
+        "id": "urn:ngm:class:timestamp-records",
         "label": "Timestamp Records"
       },
       {
-        "id": "urn:visionflow:linked:transaction-records",
+        "id": "urn:ngm:class:transaction-records",
         "label": "Transaction Records"
       },
       {
-        "id": "urn:visionflow:linked:user-activity-logs",
+        "id": "urn:ngm:class:user-activity-logs",
         "label": "User Activity Logs"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:clock-synchronization",
+        "id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronization"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-integrity-protection",
+        "id": "urn:ngm:class:cryptographic-integrity-protection",
         "label": "Cryptographic Integrity Protection"
       },
       {
-        "id": "urn:visionflow:linked:logging-infrastructure",
+        "id": "urn:ngm:class:logging-infrastructure",
         "label": "Logging Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:secure-storage",
+        "id": "urn:ngm:class:secure-storage",
         "label": "Secure Storage"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:forensic-analysis",
+        "id": "urn:ngm:class:forensic-analysis",
         "label": "Forensic Analysis"
       },
       {
-        "id": "urn:visionflow:linked:incident-investigation",
+        "id": "urn:ngm:class:incident-investigation",
         "label": "Incident Investigation"
       },
       {
-        "id": "urn:visionflow:owl:class:accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-system",
+        "label": "Governance System"
+      },
+      {
+        "id": "urn:ngm:class:security-infrastructure",
+        "label": "Security Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

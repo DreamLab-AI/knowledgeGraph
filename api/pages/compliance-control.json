@@ -3,183 +3,331 @@
   "title": "Compliance Control",
   "slug": "compliance-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compliance-control",
+  "classIri": "urn:ngm:class:compliance-control",
   "domain": "infrastructure",
-  "definition": "Compliance Control is an enterprise governance mechanism comprising the policies, procedures, automated tests, and continuous monitoring activities that an organisation deploys to demonstrate, document, and enforce adherence to regulatory obligations, internal standards, and contractual requirements across operational, financial, and information-security domains. Compliance controls are operationalised within structured frameworks \u2014 COSO Internal Control\u2013Integrated Framework 2013 (refreshed with cloud-era guidance 2023), NIST Cybersecurity Framework 2.0 published February 2024, ISO/IEC 27001:2022, SOX Sections 302 and 404, GDPR Article 32 technical-and-organisational measures, EU AI Act Articles 9\u201317 for high-risk AI systems, and DORA (Digital Operational Resilience Act) operative January 2025 \u2014 and are executed across three organisational lines of defence: first line (business units executing controls as embedded workflow steps), second line (risk and compliance functions monitoring design and operating effectiveness), and third line (internal and external audit providing independent assurance).",
+  "definition": "Compliance Control is an enterprise governance mechanism comprising the policies, procedures, automated tests, and continuous monitoring activities that an organisation deploys to demonstrate, document, and enforce adherence to regulatory obligations, internal standards, and contractual requireme...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:enterprise-risk-management",
+      "id": "urn:ngm:class:enterprise-risk-management",
       "label": "Enterprise Risk Management"
     },
     {
-      "id": "urn:visionflow:linked:information-security-management",
+      "id": "urn:ngm:class:information-security-management",
       "label": "Information Security Management"
-    },
-    {
-      "id": "urn:visionflow:linked:internal-control",
-      "label": "Internal Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:control-activity",
+        "id": "urn:ngm:class:control-activity",
         "label": "Control Activity"
       },
       {
-        "id": "urn:visionflow:linked:control-evidence",
+        "id": "urn:ngm:class:control-evidence",
         "label": "Control Evidence"
       },
       {
-        "id": "urn:visionflow:linked:control-library",
+        "id": "urn:ngm:class:control-library",
         "label": "Control Library"
       },
       {
-        "id": "urn:visionflow:linked:control-maturity-assessment",
+        "id": "urn:ngm:class:control-maturity-assessment",
         "label": "Control Maturity Assessment"
       },
       {
-        "id": "urn:visionflow:linked:control-objective",
+        "id": "urn:ngm:class:control-objective",
         "label": "Control Objective"
       },
       {
-        "id": "urn:visionflow:linked:control-owner",
+        "id": "urn:ngm:class:control-owner",
         "label": "Control Owner"
       },
       {
-        "id": "urn:visionflow:linked:control-testing",
+        "id": "urn:ngm:class:control-testing",
         "label": "Control Testing"
       },
       {
-        "id": "urn:visionflow:linked:exception-management",
+        "id": "urn:ngm:class:exception-management",
         "label": "Exception Management"
       },
       {
-        "id": "urn:visionflow:linked:remediation-plan",
+        "id": "urn:ngm:class:remediation-plan",
         "label": "Remediation Plan"
       },
       {
-        "id": "urn:visionflow:linked:segregation-of-duties",
+        "id": "urn:ngm:class:segregation-of-duties",
         "label": "Segregation of Duties"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:business-process-management",
+        "id": "urn:ngm:class:business-process-management",
         "label": "Business Process Management"
       },
       {
-        "id": "urn:visionflow:linked:control-documentation",
+        "id": "urn:ngm:class:control-documentation",
         "label": "Control Documentation"
       },
       {
-        "id": "urn:visionflow:linked:it-general-controls",
+        "id": "urn:ngm:class:it-general-controls",
         "label": "IT General Controls"
       },
       {
-        "id": "urn:visionflow:linked:management-oversight",
+        "id": "urn:ngm:class:management-oversight",
         "label": "Management Oversight"
       },
       {
-        "id": "urn:visionflow:linked:policy-framework",
+        "id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-mapping",
+        "id": "urn:ngm:class:regulatory-mapping",
         "label": "Regulatory Mapping"
       },
       {
-        "id": "urn:visionflow:linked:segregation-of-duties",
+        "id": "urn:ngm:class:segregation-of-duties",
         "label": "Segregation of Duties"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:basel-iii-compliance",
+        "id": "urn:ngm:class:basel-iii-compliance",
         "label": "Basel III Compliance"
       },
       {
-        "id": "urn:visionflow:linked:consumer-duty-compliance",
+        "id": "urn:ngm:class:consumer-duty-compliance",
         "label": "Consumer Duty Compliance"
       },
       {
-        "id": "urn:visionflow:linked:dora-compliance",
+        "id": "urn:ngm:class:dora-compliance",
         "label": "DORA Compliance"
       },
       {
-        "id": "urn:visionflow:linked:gdpr-accountability",
+        "id": "urn:ngm:class:gdpr-accountability",
         "label": "GDPR Accountability"
       },
       {
-        "id": "urn:visionflow:linked:iso-27001-certification",
+        "id": "urn:ngm:class:iso-27001-certification",
         "label": "ISO 27001 Certification"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-assurance",
+        "id": "urn:ngm:class:regulatory-assurance",
         "label": "Regulatory Assurance"
       },
       {
-        "id": "urn:visionflow:linked:smcr-compliance",
+        "id": "urn:ngm:class:smcr-compliance",
         "label": "SMCR Compliance"
       },
       {
-        "id": "urn:visionflow:linked:soc-2-type-ii-attestation",
+        "id": "urn:ngm:class:soc-2-type-ii-attestation",
         "label": "SOC 2 Type II Attestation"
       },
       {
-        "id": "urn:visionflow:linked:sox-compliance",
+        "id": "urn:ngm:class:sox-compliance",
         "label": "SOX Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:continuous-controls-monitoring",
+        "id": "urn:ngm:class:continuous-controls-monitoring",
         "label": "Continuous Controls Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:coso-internal-control-framework",
+        "id": "urn:ngm:class:coso-internal-control-framework",
         "label": "COSO Internal Control Framework"
       },
       {
-        "id": "urn:visionflow:linked:grc-platform",
+        "id": "urn:ngm:class:grc-platform",
         "label": "GRC Platform"
       },
       {
-        "id": "urn:visionflow:linked:iso-27001",
+        "id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001"
       },
       {
-        "id": "urn:visionflow:linked:iso-27701",
+        "id": "urn:ngm:class:iso-27701",
         "label": "ISO 27701"
       },
       {
-        "id": "urn:visionflow:linked:nist-cybersecurity-framework",
+        "id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"
       },
       {
-        "id": "urn:visionflow:linked:reg-tech-automation",
+        "id": "urn:ngm:class:reg-tech-automation",
         "label": "RegTech Automation"
       },
       {
-        "id": "urn:visionflow:linked:three-lines-of-defence",
+        "id": "urn:ngm:class:three-lines-of-defence",
         "label": "Three Lines of Defence"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-management-system",
+        "label": "Audit Management System"
+      },
+      {
+        "id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "id": "urn:ngm:class:grc-software",
+        "label": "GRC Software"
+      },
+      {
+        "id": "urn:ngm:class:policy-management-platform",
+        "label": "Policy Management Platform"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:conduct-risk-management",
+        "label": "Conduct Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cyber-risk-management",
+        "label": "Cyber Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-reporting-integrity",
+        "label": "Financial Reporting Integrity"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third Party Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:coso",
+        "label": "COSO"
+      },
+      {
+        "id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:iia",
+        "label": "IIA"
+      },
+      {
+        "id": "urn:ngm:class:isaca",
+        "label": "ISACA"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:pcaob",
+        "label": "PCAOB"
+      },
+      {
+        "id": "urn:ngm:class:pra",
+        "label": "PRA"
+      },
+      {
+        "id": "urn:ngm:class:sec",
+        "label": "SEC"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:operational-risk",
+        "label": "Operational Risk"
+      },
+      {
+        "id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third Party Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,27 +3,31 @@
   "title": "AI Documentation Standards",
   "slug": "ai-documentation-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-documentation-standards",
+  "classIri": "urn:ngm:class:ai-documentation-standards",
   "domain": "artificial-intelligence",
-  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle. These standards specify required information about system characteristics, development processes, performance metrics, limitations, intended uses, and governance practices, enabling auditing, compliance verification, and risk assessment. Key documentation artifacts include Model Cards (introduced by Mitchell et al. 2019) documenting model details, intended use, performance metrics across demographic groups, ethical considerations, and caveats; Datasheets for Datasets (Gebru et al. 2018) describing data composition, collection processes, preprocessing steps, labeling procedures, intended uses, and limitations; System Cards documenting end-to-end AI systems including architecture, training procedures, deployment context, monitoring approaches, and governance structures; and FactSheets (IBM) providing comprehensive transparency information for AI services. Documentation standards address critical transparency needs including algor",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:ai-governance",
-      "label": "AI Governance"
-    }
-  ],
+  "definition": "AI Documentation Standards are structured frameworks and templates for comprehensively documenting AI systems, datasets, and models to ensure transparency, accountability, reproducibility, and informed stakeholder decision-making throughout the AI lifecycle.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

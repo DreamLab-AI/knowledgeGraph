@@ -540,340 +540,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:embodied-minds",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:embodied-minds",
+  "@type": "Class",
   "label": "Embodied Minds",
+  "definition": "Embodied Minds denotes the theoretical and engineering position that genuine cognition, intelligence and meaning-making cannot be reduced to disembodied symbol manipulation or text-token prediction but instead arises from the dynamic, sensorimotor coupling of a physical body with a structured env...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:situated-cognition",
-      "vc:label": "Situated Cognition"
+      "@id": "urn:ngm:class:situated-cognition",
+      "label": "Situated Cognition"
     },
     {
-      "@id": "urn:visionflow:linked:philosophy-of-mind",
-      "vc:label": "Philosophy of Mind"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitive-science",
-      "vc:label": "Cognitive Science"
+      "@id": "urn:ngm:class:philosophy-of-mind",
+      "label": "Philosophy of Mind"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f03fdbd0b481102f994066f893e23e3ceb3e59e1d8d8feae8aff6825ce47a603"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:active-inference",
+        "label": "Active Inference"
+      },
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "@id": "urn:ngm:class:body-schema",
+        "label": "Body Schema"
+      },
+      {
+        "@id": "urn:ngm:class:morphological-computation",
+        "label": "Morphological Computation"
+      },
+      {
+        "@id": "urn:ngm:class:sensorimotor-loop",
+        "label": "Sensorimotor Loop"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-action-model",
+        "label": "Vision-Language-Action Model"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:environment",
+        "label": "Environment"
+      },
+      {
+        "@id": "urn:ngm:class:physical-body",
+        "label": "Physical Body"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensorimotor-coupling",
+        "label": "Sensorimotor Coupling"
+      },
+      {
+        "@id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:common-sense-reasoning",
+        "label": "Common Sense Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:grounded-language-understanding",
+        "label": "Grounded Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:robust-generalisation",
+        "label": "Robust Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:social-cognition",
+        "label": "Social Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:4-e-cognition",
+        "label": "4E Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-based-robotics",
+        "label": "Behaviour-Based Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:free-energy-principle",
+        "label": "Free Energy Principle"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-processing",
+        "label": "Predictive Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:subsumption-architecture",
+        "label": "Subsumption Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-physics",
+        "label": "Differentiable Physics"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-robotics",
+        "label": "Cognitive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:developmental-robotics",
+        "label": "Developmental Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models-for-robotics",
+        "label": "Foundation Models for Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:phenomenology-of-perception",
+        "label": "Phenomenology of Perception"
+      },
+      {
+        "@id": "urn:ngm:class:world-models",
+        "label": "World Models"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:domestic-robotics",
+        "label": "Domestic Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-manipulation",
+        "label": "Industrial Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-robotics-standards",
+        "label": "IEEE Robotics Standards"
+      },
+      {
+        "@id": "urn:ngm:class:isaac-lab",
+        "label": "Isaac Lab"
+      },
+      {
+        "@id": "urn:ngm:class:mu-jo-co",
+        "label": "MuJoCo"
+      },
+      {
+        "@id": "urn:ngm:class:open-x-embodiment",
+        "label": "Open X-Embodiment"
+      },
+      {
+        "@id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:urdf",
+        "label": "URDF"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f03fdbd0b481102f994066f893e23e3ceb3e59e1d8d8feae8aff6825ce47a603@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Embodied Minds** denotes the theoretical and engineering position that genuine cognition, intelligence and meaning-making cannot be reduced to disembodied symbol manipulation or text-token prediction but instead arises from the dynamic, sensorimotor coupling of a physical body with a structured environment, encompassing the philosophical programme of **4E cognition** (cognition as **Embodied**, **Embedded**, **Enacted**, **Extended**) advanced by Varela/Thompson/Rosch (1991 *The Embodied Mind*), Andy Clark (1997 *Being There*, 2008 *Supersizing the Mind*, 2016 *Surfing Uncertainty*, 2023 *The Experience Machine*), Lakoff & Johnson (1999 *Philosophy in the Flesh*) and Alva Noë (2004 *Action in Perception*), the **predictive processing / active inference** framework formalised by Karl Friston's **Free Energy Principle** (FEP, 2010 *Nature Reviews Neuroscience*) where biological agents minimise variational free energy F = E_q[ln q(s) - ln p(o,s)] by either updating internal generative models (perception) or acting on the world to make sensory observations match predictions (action), the phenomenological critique of classical symbolic AI by Hubert Dreyfus (*What Computers Can't Do* 1",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:active-inference",
-      "vc:label": "Active Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:affordance",
-      "vc:label": "Affordance"
-    },
-    {
-      "@id": "urn:visionflow:linked:body-schema",
-      "vc:label": "Body Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:morphological-computation",
-      "vc:label": "Morphological Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensorimotor-loop",
-      "vc:label": "Sensorimotor Loop"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-action-model",
-      "vc:label": "Vision-Language-Action Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-model",
-      "vc:label": "World Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-model",
-      "vc:label": "Generative Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:actuators",
-      "vc:label": "Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:environment",
-      "vc:label": "Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-body",
-      "vc:label": "Physical Body"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-control",
-      "vc:label": "Real-Time Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensorimotor-coupling",
-      "vc:label": "Sensorimotor Coupling"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensors",
-      "vc:label": "Sensors"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:common-sense-reasoning",
-      "vc:label": "Common Sense Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:grounded-language-understanding",
-      "vc:label": "Grounded Language Understanding"
-    },
-    {
-      "@id": "urn:visionflow:linked:locomotion",
-      "vc:label": "Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:robust-generalisation",
-      "vc:label": "Robust Generalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-cognition",
-      "vc:label": "Social Cognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:manipulation",
-      "vc:label": "Manipulation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:4-e-cognition",
-      "vc:label": "4E Cognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:behaviour-based-robotics",
-      "vc:label": "Behaviour-Based Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:free-energy-principle",
-      "vc:label": "Free Energy Principle"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictive-processing",
-      "vc:label": "Predictive Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:sim-to-real-transfer",
-      "vc:label": "Sim-to-Real Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:subsumption-architecture",
-      "vc:label": "Subsumption Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-brain-hypothesis",
-      "vc:label": "Bayesian Brain Hypothesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:cybernetics",
-      "vc:label": "Cybernetics"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamical-systems-theory",
-      "vc:label": "Dynamical Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:ecological-psychology",
-      "vc:label": "Ecological Psychology"
-    },
-    {
-      "@id": "urn:visionflow:linked:phenomenology",
-      "vc:label": "Phenomenology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:assistive-robotics",
-      "vc:label": "Assistive Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "Autonomous Vehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:domestic-robotics",
-      "vc:label": "Domestic Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-robotics",
-      "vc:label": "Humanoid Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-manipulation",
-      "vc:label": "Industrial Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-robotics",
-      "vc:label": "Surgical Robotics"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:deep-reinforcement-learning",
-      "vc:label": "Deep Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:differentiable-physics",
-      "vc:label": "Differentiable Physics"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-policy",
-      "vc:label": "Diffusion Policy"
-    },
-    {
-      "@id": "urn:visionflow:linked:flow-matching",
-      "vc:label": "Flow Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:cartesian-dualism",
-      "vc:label": "Cartesian Dualism"
-    },
-    {
-      "@id": "urn:visionflow:linked:classical-cognitivism",
-      "vc:label": "Classical Cognitivism"
-    },
-    {
-      "@id": "urn:visionflow:linked:disembodied-llm",
-      "vc:label": "Disembodied LLM"
-    },
-    {
-      "@id": "urn:visionflow:linked:gofai",
-      "vc:label": "GOFAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:pure-language-models",
-      "vc:label": "Pure Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:symbolic-ai",
-      "vc:label": "Symbolic AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-robotics",
-      "vc:label": "Cognitive Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:developmental-robotics",
-      "vc:label": "Developmental Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-models-for-robotics",
-      "vc:label": "Foundation Models for Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:phenomenology-of-perception",
-      "vc:label": "Phenomenology of Perception"
-    },
-    {
-      "@id": "urn:visionflow:linked:world-models",
-      "vc:label": "World Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neuromorphic-computing",
-      "vc:label": "Neuromorphic Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "Soft Robotics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-robotics-standards",
-      "vc:label": "IEEE Robotics Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:isaac-lab",
-      "vc:label": "Isaac Lab"
-    },
-    {
-      "@id": "urn:visionflow:linked:mu-jo-co",
-      "vc:label": "MuJoCo"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-x-embodiment",
-      "vc:label": "Open X-Embodiment"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-2",
-      "vc:label": "ROS 2"
-    },
-    {
-      "@id": "urn:visionflow:linked:urdf",
-      "vc:label": "URDF"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:embodied-ai",
-      "vc:label": "Embodied AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:humanoid-robotics",
-      "vc:label": "Humanoid Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:predictive-processing",
-      "vc:label": "Predictive Processing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

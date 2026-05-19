@@ -3,19 +3,13 @@
   "title": "Melvin Carvalho",
   "slug": "melvin-carvalho",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:melvin-carvalho",
+  "classIri": "urn:ngm:individual:melvin-carvalho",
   "domain": "infrastructure",
-  "definition": "Melvin Carvalho is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
+  "definition": "Open-web developer and standards contributor known for work on Linked Data, Solid, and Bitcoin-adjacent decentralised identity and payment protocols within W3C communities.",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

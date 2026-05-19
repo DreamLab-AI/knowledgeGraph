@@ -3,32 +3,36 @@
   "title": "AI Risk",
   "slug": "ai-risk",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-risk",
+  "classIri": "urn:ngm:class:ai-risk",
   "domain": "artificial-intelligence",
-  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation. AI risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.",
+  "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:risk-management",
+      "id": "urn:ngm:class:risk-management",
       "label": "Risk Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-risk-assessment",
+        "id": "urn:ngm:class:ai-risk-assessment",
         "label": "AI Risk Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Network Component",
   "slug": "network-component",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-component",
+  "classIri": "urn:ngm:class:network-component",
   "domain": "blockchain",
-  "definition": "Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.",
+  "definition": "Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

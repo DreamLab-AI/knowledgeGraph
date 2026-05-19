@@ -3,78 +3,87 @@
   "title": "Content Delivery Network (CDN)",
   "slug": "content-delivery-network-cdn",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:content-delivery-network-cdn",
+  "classIri": "urn:ngm:class:content-delivery-network-cdn",
   "domain": "infrastructure",
   "definition": "A geographically distributed network of proxy servers and data centers designed to provide high availability, high performance, and low latency content delivery by caching content closer to end-users.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cache-system",
+        "id": "urn:ngm:class:cache-system",
         "label": "Cache System"
       },
       {
-        "id": "urn:visionflow:linked:edge-server",
+        "id": "urn:ngm:class:edge-server",
         "label": "Edge Server"
       },
       {
-        "id": "urn:visionflow:linked:load-balancer",
+        "id": "urn:ngm:class:load-balancer",
         "label": "Load Balancer"
       },
       {
-        "id": "urn:visionflow:linked:origin-server",
+        "id": "urn:ngm:class:origin-server",
         "label": "Origin Server"
       },
       {
-        "id": "urn:visionflow:linked:routing-protocol",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:dns-service",
+        "id": "urn:ngm:class:dns-service",
         "label": "DNS Service"
       },
       {
-        "id": "urn:visionflow:linked:storage-system",
+        "id": "urn:ngm:class:storage-system",
         "label": "Storage System"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ddo-s-protection",
+        "id": "urn:ngm:class:ddo-s-protection",
         "label": "DDoS Protection"
       },
       {
-        "id": "urn:visionflow:linked:geographic-redundancy",
+        "id": "urn:ngm:class:geographic-redundancy",
         "label": "Geographic Redundancy"
       },
       {
-        "id": "urn:visionflow:linked:low-latency-content-delivery",
+        "id": "urn:ngm:class:low-latency-content-delivery",
         "label": "Low-Latency Content Delivery"
       },
       {
-        "id": "urn:visionflow:linked:scalable-distribution",
+        "id": "urn:ngm:class:scalable-distribution",
         "label": "Scalable Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

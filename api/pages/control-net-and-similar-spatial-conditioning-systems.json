@@ -3,139 +3,255 @@
   "title": "ControlNet and Similar Spatial Conditioning Systems",
   "slug": "control-net-and-similar-spatial-conditioning-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:control-net-and-similar-spatial-conditioning-systems",
+  "classIri": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
   "domain": "artificial-intelligence",
-  "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image [[Diffusion Models]] with fine-grained spatial and semantic control signals\u2014enabling deterministic structural guidance over generated images through conditioning inputs such as [[Edge Detection]] maps (Canny, HED/SoftEdge), depth maps from [[Depth Estimation]] models, human body [[Pose Estimation]] skeletons (OpenPose, DWPose), semantic segmentation maps, line art drawings, handwritten scribbles, surface normal maps, and M-LSD straight-line detections\u2014without retraining or fundamentally altering the base generative model. The canonical architecture, ControlNet, was introduced by Lvmin Zhang and Maneesh Agrawala (Stanford University) in February 2023 in the paper \"Adding Conditional Control to Text-to-Image Diffusion Models\" (ICCV 2023, arXiv:2302.05543, 20,000+ citations by 2026), which proposed attaching a trainable copy of the frozen encoder blocks of [[Stable Diffusion]] 1.5 to a locked copy of the same weights via \"zero convolution\" layers\u20141\u00d71 convolutions with both weights and biases initialised to zero\u2014so th",
+  "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image [[Diffusion Models]] with fine-grained spatial and semantic control signals\u2014enabling deterministic structural guidance over ge...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:conditional-image-generation",
+      "id": "urn:ngm:class:conditional-image-generation",
       "label": "Conditional Image Generation"
     },
     {
-      "id": "urn:visionflow:owl:class:fine-tuning",
+      "id": "urn:ngm:class:fine-tuning",
       "label": "Fine-tuning"
-    },
-    {
-      "id": "urn:visionflow:linked:diffusion-model",
-      "label": "Diffusion Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:conditioning-preprocessor",
+        "id": "urn:ngm:class:conditioning-preprocessor",
         "label": "Conditioning Preprocessor"
       },
       {
-        "id": "urn:visionflow:linked:control-signal",
+        "id": "urn:ngm:class:control-signal",
         "label": "Control Signal"
       },
       {
-        "id": "urn:visionflow:linked:cross-attention-adapter",
+        "id": "urn:ngm:class:cross-attention-adapter",
         "label": "Cross-Attention Adapter"
       },
       {
-        "id": "urn:visionflow:linked:encoder-copy",
+        "id": "urn:ngm:class:encoder-copy",
         "label": "Encoder Copy"
       },
       {
-        "id": "urn:visionflow:linked:identity-network",
+        "id": "urn:ngm:class:identity-network",
         "label": "Identity Network"
       },
       {
-        "id": "urn:visionflow:linked:skip-connection-injection",
+        "id": "urn:ngm:class:skip-connection-injection",
         "label": "Skip Connection Injection"
       },
       {
-        "id": "urn:visionflow:linked:zero-convolution-layer",
+        "id": "urn:ngm:class:zero-convolution-layer",
         "label": "Zero Convolution Layer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:clip-encoder",
+        "id": "urn:ngm:class:clip-encoder",
         "label": "CLIP Encoder"
       },
       {
-        "id": "urn:visionflow:linked:conditioning-signal",
+        "id": "urn:ngm:class:conditioning-signal",
         "label": "Conditioning Signal"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:pretrained-diffusion-model",
+        "id": "urn:ngm:class:pretrained-diffusion-model",
         "label": "Pretrained Diffusion Model"
       },
       {
-        "id": "urn:visionflow:linked:training-data-pairs",
+        "id": "urn:ngm:class:training-data-pairs",
         "label": "Training Data Pairs"
       },
       {
-        "id": "urn:visionflow:owl:class:backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:depth-controlled-synthesis",
+        "id": "urn:ngm:class:depth-controlled-synthesis",
         "label": "Depth-Controlled Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:edge-guided-generation",
+        "id": "urn:ngm:class:edge-guided-generation",
         "label": "Edge-Guided Generation"
       },
       {
-        "id": "urn:visionflow:linked:identity-preservation",
+        "id": "urn:ngm:class:identity-preservation",
         "label": "Identity Preservation"
       },
       {
-        "id": "urn:visionflow:linked:pose-guided-image-generation",
+        "id": "urn:ngm:class:pose-guided-image-generation",
         "label": "Pose-Guided Image Generation"
       },
       {
-        "id": "urn:visionflow:linked:structural-layout-control",
+        "id": "urn:ngm:class:structural-layout-control",
         "label": "Structural Layout Control"
       },
       {
-        "id": "urn:visionflow:linked:video-frame-consistency",
+        "id": "urn:ngm:class:video-frame-consistency",
         "label": "Video Frame Consistency"
       },
       {
-        "id": "urn:visionflow:owl:class:style-transfer",
+        "id": "urn:ngm:class:style-transfer",
         "label": "Style Transfer"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:adapter-fine-tuning",
+        "id": "urn:ngm:class:adapter-fine-tuning",
         "label": "Adapter Fine-tuning"
       },
       {
-        "id": "urn:visionflow:linked:cross-attention-injection",
+        "id": "urn:ngm:class:cross-attention-injection",
         "label": "Cross-Attention Injection"
       },
       {
-        "id": "urn:visionflow:linked:feedback-control-architecture",
+        "id": "urn:ngm:class:feedback-control-architecture",
         "label": "Feedback Control Architecture"
       },
       {
-        "id": "urn:visionflow:linked:spatial-conditioning",
+        "id": "urn:ngm:class:spatial-conditioning",
         "label": "Spatial Conditioning"
       },
       {
-        "id": "urn:visionflow:linked:zero-shot-conditioning",
+        "id": "urn:ngm:class:zero-shot-conditioning",
         "label": "Zero-Shot Conditioning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:canny-edge-detection",
+        "label": "Canny Edge Detection"
+      },
+      {
+        "id": "urn:ngm:class:clip-image-encoder",
+        "label": "CLIP Image Encoder"
+      },
+      {
+        "id": "urn:ngm:class:depth-fm",
+        "label": "DepthFM"
+      },
+      {
+        "id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      },
+      {
+        "id": "urn:ngm:class:insight-face",
+        "label": "InsightFace"
+      },
+      {
+        "id": "urn:ngm:class:mi-da-s-depth-estimation",
+        "label": "MiDaS Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:open-pose",
+        "label": "OpenPose"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:automatic1111",
+        "label": "Automatic1111"
+      },
+      {
+        "id": "urn:ngm:class:character-design",
+        "label": "Character Design"
+      },
+      {
+        "id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:lo-ra",
+        "label": "LoRA"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ar-xiv",
+        "label": "arXiv"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:eccv",
+        "label": "ECCV"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "id": "urn:ngm:class:instant-id",
+        "label": "InstantID"
+      },
+      {
+        "id": "urn:ngm:class:t2-i-adapter",
+        "label": "T2I-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ]
   },
   "wikilinks": [
     {

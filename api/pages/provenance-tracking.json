@@ -3,19 +3,18 @@
   "title": "Provenance Tracking",
   "slug": "provenance-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:provenance-tracking",
+  "classIri": "urn:ngm:class:provenance-tracking",
   "domain": "blockchain",
-  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating \u00a330 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.",
+  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling reduction in tracing time (7 days to 2.2 seconds), combating \u00a330 counterfeit markets, and supporting ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.89,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

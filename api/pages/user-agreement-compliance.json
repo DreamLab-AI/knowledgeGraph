@@ -3,78 +3,91 @@
   "title": "User Agreement Compliance",
   "slug": "user-agreement-compliance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-agreement-compliance",
+  "classIri": "urn:ngm:class:user-agreement-compliance",
   "domain": "artificial-intelligence",
   "definition": "Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:remediation-process",
+        "id": "urn:ngm:class:remediation-process",
         "label": "Remediation Process"
       },
       {
-        "id": "urn:visionflow:linked:user-monitoring",
+        "id": "urn:ngm:class:user-monitoring",
         "label": "User Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:violation-detection",
+        "id": "urn:ngm:class:violation-detection",
         "label": "Violation Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-enforcement",
+        "id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:enforcement-mechanisms",
+        "id": "urn:ngm:class:enforcement-mechanisms",
         "label": "Enforcement Mechanisms"
       },
       {
-        "id": "urn:visionflow:linked:monitoring-system",
+        "id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
       },
       {
-        "id": "urn:visionflow:linked:user-agreement",
+        "id": "urn:ngm:class:user-agreement",
         "label": "User Agreement"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:platform-safety",
+        "id": "urn:ngm:class:platform-safety",
         "label": "Platform Safety"
       },
       {
-        "id": "urn:visionflow:linked:policy-adherence",
+        "id": "urn:ngm:class:policy-adherence",
         "label": "Policy Adherence"
       },
       {
-        "id": "urn:visionflow:linked:user-accountability",
+        "id": "urn:ngm:class:user-accountability",
         "label": "User Accountability"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-management",
+        "label": "Platform Management"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -368,334 +368,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:automated-podcasting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:automated-podcasting",
+  "@type": "Class",
   "label": "Automated Podcasting",
+  "definition": "Automated Podcasting is the application of artificial intelligence, machine learning, and generative systems to partially or fully automate the end-to-end podcast production pipeline—spanning script generation, synthetic voice synthesis, AI-driven audio editing, automated transcription, show-note...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-audio",
-      "vc:label": "AI Audio"
+      "@id": "urn:ngm:class:ai-audio",
+      "label": "AI Audio"
     },
     {
-      "@id": "urn:visionflow:linked:content-automation",
-      "vc:label": "Content Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-synthesis",
-      "vc:label": "Speech Synthesis"
+      "@id": "urn:ngm:class:content-automation",
+      "label": "Content Automation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:216ae731d15671aebb399c92d9afd12d5d9392d70336949c31f258e94c79d150"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-audio-editing",
+        "label": "AI Audio Editing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-script-generation",
+        "label": "AI Script Generation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-transcription",
+        "label": "Automated Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:neural-audio-enhancement",
+        "label": "Neural Audio Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:podcast-distribution-automation",
+        "label": "Podcast Distribution Automation"
+      },
+      {
+        "@id": "urn:ngm:class:show-notes-generation",
+        "label": "Show Notes Generation"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing-infrastructure",
+        "label": "Cloud Computing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:neural-text-to-speech",
+        "label": "Neural Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accessible-media",
+        "label": "Accessible Media"
+      },
+      {
+        "@id": "urn:ngm:class:low-cost-podcast-creation",
+        "label": "Low-Cost Podcast Creation"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-podcasting",
+        "label": "Multilingual Podcasting"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-audio-summaries",
+        "label": "Personalised Audio Summaries"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-content-conversion",
+        "label": "Real-Time Content Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-audio-content-production",
+        "label": "Scalable Audio Content Production"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-ad-insertion",
+        "label": "Dynamic Ad Insertion"
+      },
+      {
+        "@id": "urn:ngm:class:neural-audio-enhancement",
+        "label": "Neural Audio Enhancement"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-based-tts",
+        "label": "Transformer-Based TTS"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adobe-podcast",
+        "label": "Adobe Podcast"
+      },
+      {
+        "@id": "urn:ngm:class:assembly-ai",
+        "label": "AssemblyAI"
+      },
+      {
+        "@id": "urn:ngm:class:descript",
+        "label": "Descript"
+      },
+      {
+        "@id": "urn:ngm:class:eleven-labs",
+        "label": "ElevenLabs"
+      },
+      {
+        "@id": "urn:ngm:class:notebook-lm",
+        "label": "NotebookLM"
+      },
+      {
+        "@id": "urn:ngm:class:otter-ai",
+        "label": "Otter.ai"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-whisper",
+        "label": "OpenAI Whisper"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:media-accessibility",
+        "label": "Media Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:podcast-distribution",
+        "label": "Podcast Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:seo-optimisation",
+        "label": "SEO Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:ai-video",
+        "label": "AI Video"
+      },
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-article-50",
+        "label": "EU AI Act Article 50"
+      },
+      {
+        "@id": "urn:ngm:class:ftc-endorsement-guidelines",
+        "label": "FTC Endorsement Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom-broadcasting-code",
+        "label": "Ofcom Broadcasting Code"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:216ae731d15671aebb399c92d9afd12d5d9392d70336949c31f258e94c79d150@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Automated Podcasting is the application of artificial intelligence, machine learning, and generative systems to partially or fully automate the end-to-end podcast production pipeline—spanning script generation, synthetic voice synthesis, AI-driven audio editing, automated transcription, show-notes authoring, and algorithmically personalised distribution—transforming what was a labour-intensive studio craft into a scalable, software-mediated content medium. The paradigm reached mass-market inflection in September 2024 when Google's NotebookLM Audio Overviews debuted as a free feature, generating two-host AI-narrated podcast summaries from uploaded documents; within weeks the feature had been used by millions of users globally, produced conversations indistinguishable to casual listeners from human hosts, and triggered a widespread public debate about authenticity, disclosure, and the future of professional audio journalism.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-audio-editing",
-      "vc:label": "AI Audio Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-script-generation",
-      "vc:label": "AI Script Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-transcription",
-      "vc:label": "Automated Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-audio-enhancement",
-      "vc:label": "Neural Audio Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:linked:podcast-distribution-automation",
-      "vc:label": "Podcast Distribution Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:show-notes-generation",
-      "vc:label": "Show Notes Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-diarisation",
-      "vc:label": "Speaker Diarisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning",
-      "vc:label": "Voice Cloning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:text-to-speech",
-      "vc:label": "Text-to-Speech"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-signal-processing",
-      "vc:label": "Audio Signal Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-computing-infrastructure",
-      "vc:label": "Cloud Computing Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-text-to-speech",
-      "vc:label": "Neural Text-to-Speech"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-recognition",
-      "vc:label": "Speech Recognition"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:accessible-media",
-      "vc:label": "Accessible Media"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-cost-podcast-creation",
-      "vc:label": "Low-Cost Podcast Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multilingual-podcasting",
-      "vc:label": "Multilingual Podcasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalised-audio-summaries",
-      "vc:label": "Personalised Audio Summaries"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-content-conversion",
-      "vc:label": "Real-Time Content Conversion"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-audio-content-production",
-      "vc:label": "Scalable Audio Content Production"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-ad-insertion",
-      "vc:label": "Dynamic Ad Insertion"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-audio-enhancement",
-      "vc:label": "Neural Audio Enhancement"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-embedding",
-      "vc:label": "Speaker Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-based-tts",
-      "vc:label": "Transformer-Based TTS"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-cloning",
-      "vc:label": "Voice Cloning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audio-signal-processing",
-      "vc:label": "Audio Signal Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-and-voice",
-      "vc:label": "Speech and Voice"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:media-accessibility",
-      "vc:label": "Media Accessibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:podcast-distribution",
-      "vc:label": "Podcast Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:seo-optimisation",
-      "vc:label": "SEO Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companions",
-      "vc:label": "AI companions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adobe-podcast",
-      "vc:label": "Adobe Podcast"
-    },
-    {
-      "@id": "urn:visionflow:linked:assembly-ai",
-      "vc:label": "AssemblyAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:descript",
-      "vc:label": "Descript"
-    },
-    {
-      "@id": "urn:visionflow:linked:eleven-labs",
-      "vc:label": "ElevenLabs"
-    },
-    {
-      "@id": "urn:visionflow:linked:notebook-lm",
-      "vc:label": "NotebookLM"
-    },
-    {
-      "@id": "urn:visionflow:linked:otter-ai",
-      "vc:label": "Otter.ai"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval-Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai-whisper",
-      "vc:label": "OpenAI Whisper"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:human-podcast-production",
-      "vc:label": "Human Podcast Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:manual-audio-editing",
-      "vc:label": "Manual Audio Editing"
-    },
-    {
-      "@id": "urn:visionflow:linked:studio-recording",
-      "vc:label": "Studio Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-radio-broadcasting",
-      "vc:label": "Traditional Radio Broadcasting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:speech-and-voice",
-      "vc:label": "Speech and Voice"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa-content-credentials",
-      "vc:label": "C2PA Content Credentials"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-ai-act-article-50",
-      "vc:label": "EU AI Act Article 50"
-    },
-    {
-      "@id": "urn:visionflow:linked:ftc-endorsement-guidelines",
-      "vc:label": "FTC Endorsement Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom-broadcasting-code",
-      "vc:label": "Ofcom Broadcasting Code"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

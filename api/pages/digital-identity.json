@@ -3,53 +3,57 @@
   "title": "Digital Identity",
   "slug": "digital-identity",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-identity",
+  "classIri": "urn:ngm:class:digital-identity",
   "domain": "infrastructure",
-  "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms. bridges-to:: [[DID Nostr Identity]]",
+  "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metavers...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:identity",
+      "id": "urn:ngm:class:identity",
       "label": "Identity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:credential-storage",
+        "id": "urn:ngm:class:credential-storage",
         "label": "Credential Storage"
       },
       {
-        "id": "urn:visionflow:linked:privacy-controls",
+        "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:visionflow:linked:authorization",
+        "id": "urn:ngm:class:authorization",
         "label": "Authorization"
       },
       {
-        "id": "urn:visionflow:linked:digital-presence",
+        "id": "urn:ngm:class:digital-presence",
         "label": "Digital Presence"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

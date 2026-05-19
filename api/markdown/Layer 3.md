@@ -152,60 +152,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:layer-3",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:layer-3",
+  "@type": "Class",
   "label": "Layer 3",
+  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications.",
+  "domain": "blockchain",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:custom-execution-environment",
+        "label": "Custom Execution Environment"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:67549e32461194e6b0ce28957106567dd408e918035ffa5592c38c8fe7b8178b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:application-specific-blockchain",
-      "vc:label": "Application-Specific Blockchain"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:custom-execution-environment",
-      "vc:label": "Custom Execution Environment"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:general-purpose-smart-contract-platform",
-      "vc:label": "General-Purpose Smart Contract Platform"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

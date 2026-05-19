@@ -3,37 +3,41 @@
   "title": "Metaverse-Telepresence Bridge",
   "slug": "metaverse-telepresence-bridge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-telepresence-bridge",
+  "classIri": "urn:ngm:class:metaverse-telepresence-bridge",
   "domain": "distributed-collaboration",
-  "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence social presence mechanisms to enable embodied collaboration in shared digital spaces.\"",
+  "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence soci...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:tele-020-virtual-reality-telepresence",
+        "id": "urn:ngm:class:tele-020-virtual-reality-telepresence",
         "label": "TELE-020-virtual-reality-telepresence"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:embodied-metaverse-collaboration",
+        "id": "urn:ngm:class:embodied-metaverse-collaboration",
         "label": "EmbodiedMetaverseCollaboration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

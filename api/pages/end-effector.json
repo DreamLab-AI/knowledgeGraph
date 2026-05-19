@@ -3,57 +3,70 @@
   "title": "End Effector",
   "slug": "end-effector",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:end-effector",
+  "classIri": "urn:ngm:class:end-effector",
   "domain": "robotics",
-  "definition": "**End Effector** - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
+  "definition": "End Effector - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:mechanical-component",
+      "id": "urn:ngm:class:mechanical-component",
       "label": "Mechanical Component"
     },
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.59,
-  "authorityScore": 0.13,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:control-interface",
+        "id": "urn:ngm:class:control-interface",
         "label": "Control Interface"
       },
       {
-        "id": "urn:visionflow:linked:force-feedback",
+        "id": "urn:ngm:class:force-feedback",
         "label": "Force Feedback"
       },
       {
-        "id": "urn:visionflow:linked:mechanical-interface",
+        "id": "urn:ngm:class:mechanical-interface",
         "label": "Mechanical Interface"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:assembly-operations",
+        "id": "urn:ngm:class:assembly-operations",
         "label": "Assembly Operations"
       },
       {
-        "id": "urn:visionflow:linked:material-handling",
+        "id": "urn:ngm:class:material-handling",
         "label": "Material Handling"
       },
       {
-        "id": "urn:visionflow:linked:precision-manufacturing",
+        "id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Manufacturing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:manipulation-system",
+        "label": "Manipulation System"
+      },
+      {
+        "id": "urn:ngm:class:robot-arm",
+        "label": "Robot Arm"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

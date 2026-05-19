@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Infrastructure",
   "slug": "etsi-domain-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure",
+  "classIri": "urn:ngm:class:etsi-domain-infrastructure",
   "domain": "infrastructure",
-  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale. This domain encompasses [[NetworkInfrastructure]], [[CloudComputing]], [[EdgeComputing]], [[DataCenter|data centers]], [[NetworkSecurity]], and [[SystemResilience]] to provide reliable, performant, secure technical foundations. owl-class:: infrastructure:ETSI_Domain_Infrastructure owl-role:: Concept belongs-to-domain:: [[MetaverseDomain]]",
+  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

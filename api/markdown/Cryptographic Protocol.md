@@ -212,86 +212,61 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cryptographic-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cryptographic-protocol",
+  "@type": "Class",
   "label": "Cryptographic Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:security-framework",
-      "vc:label": "Security Framework"
-    }
-  ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7a6686ca2e3476f8181e820a110b86a114abe7ec24de857d54d14babf0a828a7"
+  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives.",
+  "domain": "infrastructure",
+  "maturity": "draft",
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption-Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash-Function"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain-Security"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preservation",
+        "label": "Privacy-Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus-Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7a6686ca2e3476f8181e820a110b86a114abe7ec24de857d54d14babf0a828a7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives. Enabling [[Consensus-Protocol|consensus]], privacy-preserving verification, and trustless multi-party computation across [[Convergence]] domains including [[Blockchain]], [[Collaboration]], and [[Digital-Infrastructure]].",
-  "vc:qualityScore": {
-    "@value": "0.55",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:encryption-scheme",
-      "vc:label": "Encryption-Scheme"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital-Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash-Function"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-security",
-      "vc:label": "Blockchain-Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preservation",
-      "vc:label": "Privacy-Preservation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus-Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
-      "vc:label": "Post-Quantum-Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quantum-computing",
-      "vc:label": "Quantum-Computing"
-    }
-  ]
+  "quality": 0.55,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

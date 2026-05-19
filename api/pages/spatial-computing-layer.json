@@ -3,66 +3,75 @@
   "title": "Spatial Computing Layer",
   "slug": "spatial-computing-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-computing-layer",
+  "classIri": "urn:ngm:class:spatial-computing-layer",
   "domain": "spatial-computing",
   "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure-layer",
+      "id": "urn:ngm:class:infrastructure-layer",
       "label": "Infrastructure Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:3-d-mapping-engine",
+        "id": "urn:ngm:class:3-d-mapping-engine",
         "label": "3D Mapping Engine"
       },
       {
-        "id": "urn:visionflow:linked:localization-service",
+        "id": "urn:ngm:class:localization-service",
         "label": "Localization Service"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-anchors",
+        "id": "urn:ngm:class:spatial-anchors",
         "label": "Spatial Anchors"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:compute-resources",
+        "id": "urn:ngm:class:compute-resources",
         "label": "Compute Resources"
       },
       {
-        "id": "urn:visionflow:linked:positioning-system",
+        "id": "urn:ngm:class:positioning-system",
         "label": "Positioning System"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data",
+        "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:environmental-understanding",
+        "id": "urn:ngm:class:environmental-understanding",
         "label": "Environmental Understanding"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-experiences",
+        "id": "urn:ngm:class:ar-experiences",
         "label": "AR Experiences"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio",
+        "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

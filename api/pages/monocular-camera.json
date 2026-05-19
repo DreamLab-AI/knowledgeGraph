@@ -3,19 +3,18 @@
   "title": "Monocular Camera",
   "slug": "monocular-camera",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monocular-camera",
+  "classIri": "urn:ngm:class:monocular-camera",
   "domain": "robotics",
   "definition": "Monocular camera uses single lens to capture 2D images.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:camera",
+      "id": "urn:ngm:class:camera",
       "label": "Camera"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,57 +3,61 @@
   "title": "Ai Machine Learning",
   "slug": "ai-machine-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-machine-learning",
+  "classIri": "urn:ngm:class:ai-machine-learning",
   "domain": "artificial-intelligence",
-  "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.",
+  "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adap...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-infrastructure",
+        "id": "urn:ngm:class:computational-infrastructure",
         "label": "Computational Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:neural-network-architectures",
+        "id": "urn:ngm:class:neural-network-architectures",
         "label": "Neural Network Architectures"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-npcs",
+        "id": "urn:ngm:class:adaptive-npcs",
         "label": "Adaptive NPCs"
       },
       {
-        "id": "urn:visionflow:linked:content-generation",
+        "id": "urn:ngm:class:content-generation",
         "label": "Content Generation"
       },
       {
-        "id": "urn:visionflow:linked:personalized-experiences",
+        "id": "urn:ngm:class:personalized-experiences",
         "label": "Personalized Experiences"
       },
       {
-        "id": "urn:visionflow:linked:smart-virtual-environments",
+        "id": "urn:ngm:class:smart-virtual-environments",
         "label": "Smart Virtual Environments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,155 +3,267 @@
   "title": "Control Theory",
   "slug": "control-theory",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:control-theory",
+  "classIri": "urn:ngm:class:control-theory",
   "domain": "robotics",
-  "definition": "Control Theory is the interdisciplinary mathematical framework for analysing and synthesising dynamical systems that automatically regulate themselves toward desired behaviour in the presence of disturbances, model uncertainty, sensor noise, and parameter variation, formalising the closed-loop feedback principle in which a controller observes system outputs y(t), compares them against a reference r(t) generating an error signal e(t)=r(t)\u2212y(t), and computes an input u(t) driving the plant toward its setpoint, originating in James Clerk Maxwell's 1868 analysis \"On Governors\" of Watt's centrifugal governor establishing the first stability criterion, formalised through Edward Routh (1877) and Adolf Hurwitz (1895) algebraic stability tests, Harry Nyquist's 1932 frequency-domain stability criterion at Bell Labs, Hendrik Bode's 1945 Network Analysis and Feedback Amplifier Design introducing gain-phase relations and the Bode plot, Walter Evans's 1948 root-locus method, and the postwar synthesis of classical control around the PID (proportional-integral-derivative) controller (proportional term K_p\u00b7e(t), integral term K_i\u00b7\u222be(\u03c4)d\u03c4 removing steady-state error, derivative term K_d\u00b7de/dt provid",
+  "definition": "Control Theory is the interdisciplinary mathematical framework for analysing and synthesising dynamical systems that automatically regulate themselves toward desired behaviour in the presence of disturbances, model uncertainty, sensor noise, and parameter variation, formalising the closed-loop fe...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:control-engineering",
+      "id": "urn:ngm:class:control-engineering",
       "label": "Control Engineering"
     },
     {
-      "id": "urn:visionflow:linked:cybernetics",
+      "id": "urn:ngm:class:cybernetics",
       "label": "Cybernetics"
-    },
-    {
-      "id": "urn:visionflow:linked:dynamical-systems-theory",
-      "label": "Dynamical Systems Theory"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:controller",
+        "id": "urn:ngm:class:controller",
         "label": "Controller"
       },
       {
-        "id": "urn:visionflow:linked:disturbance-model",
+        "id": "urn:ngm:class:disturbance-model",
         "label": "Disturbance Model"
       },
       {
-        "id": "urn:visionflow:linked:feedback-loops",
+        "id": "urn:ngm:class:feedback-loops",
         "label": "Feedback Loops"
       },
       {
-        "id": "urn:visionflow:linked:plant-model",
+        "id": "urn:ngm:class:plant-model",
         "label": "Plant Model"
       },
       {
-        "id": "urn:visionflow:linked:reference-signal",
+        "id": "urn:ngm:class:reference-signal",
         "label": "Reference Signal"
       },
       {
-        "id": "urn:visionflow:linked:stability-analysis",
+        "id": "urn:ngm:class:stability-analysis",
         "label": "Stability Analysis"
       },
       {
-        "id": "urn:visionflow:owl:class:state-estimation",
+        "id": "urn:ngm:class:state-estimation",
         "label": "State Estimation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
-        "id": "urn:visionflow:linked:differential-equations",
+        "id": "urn:ngm:class:differential-equations",
         "label": "Differential Equations"
       },
       {
-        "id": "urn:visionflow:linked:linear-algebra",
+        "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
       },
       {
-        "id": "urn:visionflow:linked:optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Optimisation"
       },
       {
-        "id": "urn:visionflow:linked:probability-theory",
+        "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
       },
       {
-        "id": "urn:visionflow:linked:real-time-computation",
+        "id": "urn:ngm:class:real-time-computation",
         "label": "Real-Time Computation"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor",
+        "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:closed-loop-operation",
+        "id": "urn:ngm:class:closed-loop-operation",
         "label": "Closed-Loop Operation"
       },
       {
-        "id": "urn:visionflow:linked:flight-stability",
+        "id": "urn:ngm:class:flight-stability",
         "label": "Flight Stability"
       },
       {
-        "id": "urn:visionflow:linked:process-regulation",
+        "id": "urn:ngm:class:process-regulation",
         "label": "Process Regulation"
       },
       {
-        "id": "urn:visionflow:linked:robust-performance",
+        "id": "urn:ngm:class:robust-performance",
         "label": "Robust Performance"
       },
       {
-        "id": "urn:visionflow:linked:trajectory-tracking",
+        "id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:visionflow:owl:class:predictive-maintenance",
+        "id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:backstepping",
+        "id": "urn:ngm:class:backstepping",
         "label": "Backstepping"
       },
       {
-        "id": "urn:visionflow:linked:h-control",
+        "id": "urn:ngm:class:h-control",
         "label": "H\u221e Control"
       },
       {
-        "id": "urn:visionflow:linked:linear-quadratic-regulator",
+        "id": "urn:ngm:class:linear-quadratic-regulator",
         "label": "Linear Quadratic Regulator"
       },
       {
-        "id": "urn:visionflow:linked:model-predictive-control",
+        "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
       },
       {
-        "id": "urn:visionflow:linked:pid-control",
+        "id": "urn:ngm:class:pid-control",
         "label": "PID Control"
       },
       {
-        "id": "urn:visionflow:linked:sliding-mode-control",
+        "id": "urn:ngm:class:sliding-mode-control",
         "label": "Sliding Mode Control"
       },
       {
-        "id": "urn:visionflow:owl:class:adaptive-control",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
       },
       {
-        "id": "urn:visionflow:owl:class:kalman-filter",
+        "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-function",
+        "label": "Lyapunov Function"
+      },
+      {
+        "id": "urn:ngm:class:nyquist-diagram",
+        "label": "Nyquist Diagram"
+      },
+      {
+        "id": "urn:ngm:class:root-locus",
+        "label": "Root Locus"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State-Space Model"
+      },
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerospace-engineering",
+        "label": "Aerospace Engineering"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicles",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "id": "urn:ngm:class:hvac-systems",
+        "label": "HVAC Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:process-industries",
+        "label": "Process Industries"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:arp4754-a",
+        "label": "ARP4754A"
+      },
+      {
+        "id": "urn:ngm:class:do-178-c-avionics",
+        "label": "DO-178C Avionics"
+      },
+      {
+        "id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131-3"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508-functional-safety",
+        "label": "IEC 61508 Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "id": "urn:ngm:class:ifac",
+        "label": "IFAC"
+      },
+      {
+        "id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:estimation-theory",
+        "label": "Estimation Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

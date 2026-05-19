@@ -3,19 +3,18 @@
   "title": "Fixed Supply Token",
   "slug": "fixed-supply-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:fixed-supply-token",
+  "classIri": "urn:ngm:class:fixed-supply-token",
   "domain": "blockchain",
   "definition": "A token with a predetermined maximum supply that cannot be exceeded, often with emission schedule governing distribution over time.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:fungible-token",
+      "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

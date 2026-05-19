@@ -3,32 +3,36 @@
   "title": "Spatial Audio System",
   "slug": "spatial-audio-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-audio-system",
+  "classIri": "urn:ngm:class:spatial-audio-system",
   "domain": "spatial-computing",
   "definition": "An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-audio-technology",
+      "id": "urn:ngm:class:immersive-audio-technology",
       "label": "Immersive Audio Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-sound-experience",
+        "id": "urn:ngm:class:immersive-sound-experience",
         "label": "Immersive Sound Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

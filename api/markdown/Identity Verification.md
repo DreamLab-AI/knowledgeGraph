@@ -816,340 +816,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:identity-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:identity-verification",
+  "@type": "Class",
   "label": "Identity Verification",
+  "definition": "[[Identity Verification]] (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim — that a specific natural person or legal entity is who they purport to be — by collecting evide...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:authentication-method",
-      "vc:label": "Authentication Method"
+      "@id": "urn:ngm:class:authentication-method",
+      "label": "Authentication Method"
     },
     {
-      "@id": "urn:visionflow:linked:identity-proofing",
-      "vc:label": "Identity Proofing"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-establishment",
-      "vc:label": "Trust Establishment"
+      "@id": "urn:ngm:class:identity-proofing",
+      "label": "Identity Proofing"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d78c4dc0451650c38c1ee23ba11a74efd0222d35e5e65c070e07c35103f9e981"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:database-verification",
+        "label": "Database Verification"
+      },
+      {
+        "@id": "urn:ngm:class:document-verification",
+        "label": "Document Verification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-based-authentication",
+        "label": "Knowledge-Based Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-network-operator-data",
+        "label": "Mobile Network Operator Data"
+      },
+      {
+        "@id": "urn:ngm:class:risk-scoring-engine",
+        "label": "Risk Scoring Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authoritative-data-source",
+        "label": "Authoritative Data Source"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-template",
+        "label": "Biometric Template"
+      },
+      {
+        "@id": "urn:ngm:class:capture-device",
+        "label": "Capture Device"
+      },
+      {
+        "@id": "urn:ngm:class:consent-mechanism",
+        "label": "Consent Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:identity-evidence",
+        "label": "Identity Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-issuer",
+        "label": "Trusted Issuer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:account-opening",
+        "label": "Account Opening"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:reusable-identity",
+        "label": "Reusable Identity"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-compliance",
+        "label": "Sanctions Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-recommendation-10",
+        "label": "FATF Recommendation 10"
+      },
+      {
+        "@id": "urn:ngm:class:icao-9303",
+        "label": "ICAO 9303"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-19794",
+        "label": "ISO/IEC 19794"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-30107",
+        "label": "ISO/IEC 30107"
+      },
+      {
+        "@id": "urn:ngm:class:nist-800-63",
+        "label": "NIST 800-63"
+      },
+      {
+        "@id": "urn:ngm:class:uk-diatf",
+        "label": "UK DIATF"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:face-match",
+        "label": "Face Match"
+      },
+      {
+        "@id": "urn:ngm:class:machine-readable-zone",
+        "label": "Machine-Readable Zone"
+      },
+      {
+        "@id": "urn:ngm:class:near-field-communication",
+        "label": "Near-Field Communication"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-identity-fraud",
+        "label": "Synthetic Identity Fraud"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-services-onboarding",
+        "label": "Financial Services Onboarding"
+      },
+      {
+        "@id": "urn:ngm:class:gambling-regulation",
+        "label": "Gambling Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-access",
+        "label": "Healthcare Access"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act",
+        "label": "Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:travel-and-border-control",
+        "label": "Travel and Border Control"
+      },
+      {
+        "@id": "urn:ngm:class:web3-compliance",
+        "label": "Web3 Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:icao",
+        "label": "ICAO"
+      },
+      {
+        "@id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:of-dia",
+        "label": "OfDIA"
+      },
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d78c4dc0451650c38c1ee23ba11a74efd0222d35e5e65c070e07c35103f9e981@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Identity Verification]] (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim — that a specific natural person or legal entity is who they purport to be — by collecting evidence and reducing the probability of impersonation to a level commensurate with the risk of the relationship, combining (i) [[Document Verification]] of government-issued credentials ([[Passport]], [[Driving Licence]], national ID card) through OCR, MRZ parsing, security-feature inspection (hologram, microprint, ultraviolet/infrared response, intaglio printing), and chip-data extraction over [[Near-Field Communication|NFC]] under [[ICAO 9303]] for [[ePassport|e-passports]], (ii) [[Biometric Verification]] binding the document holder to the live applicant through [[Face Match|selfie-to-document face match]], [[Fingerprint Recognition]], [[Iris Recognition]], [[Palm Vein Recognition]], [[Voice Biometrics]] or [[Behavioural Biometrics]], (iii) [[Liveness Detection]] (active — head turns, blinks, smile; passive — texture, depth from focus, 3D structure-from-motion, micro-expression analysis) def",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:biometric-verification",
-      "vc:label": "Biometric Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:database-verification",
-      "vc:label": "Database Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-verification",
-      "vc:label": "Document Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-based-authentication",
-      "vc:label": "Knowledge-Based Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:liveness-detection",
-      "vc:label": "Liveness Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:mobile-network-operator-data",
-      "vc:label": "Mobile Network Operator Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-scoring-engine",
-      "vc:label": "Risk Scoring Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authoritative-data-source",
-      "vc:label": "Authoritative Data Source"
-    },
-    {
-      "@id": "urn:visionflow:linked:biometric-template",
-      "vc:label": "Biometric Template"
-    },
-    {
-      "@id": "urn:visionflow:linked:capture-device",
-      "vc:label": "Capture Device"
-    },
-    {
-      "@id": "urn:visionflow:linked:consent-mechanism",
-      "vc:label": "Consent Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-evidence",
-      "vc:label": "Identity Evidence"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-issuer",
-      "vc:label": "Trusted Issuer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:account-opening",
-      "vc:label": "Account Opening"
-    },
-    {
-      "@id": "urn:visionflow:linked:age-verification",
-      "vc:label": "Age Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti-Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-prevention",
-      "vc:label": "Fraud Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:know-your-customer",
-      "vc:label": "Know Your Customer"
-    },
-    {
-      "@id": "urn:visionflow:linked:reusable-identity",
-      "vc:label": "Reusable Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-compliance",
-      "vc:label": "Sanctions Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:e-idas-2-0",
-      "vc:label": "eIDAS 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-recommendation-10",
-      "vc:label": "FATF Recommendation 10"
-    },
-    {
-      "@id": "urn:visionflow:linked:icao-9303",
-      "vc:label": "ICAO 9303"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-19794",
-      "vc:label": "ISO/IEC 19794"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-30107",
-      "vc:label": "ISO/IEC 30107"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-800-63",
-      "vc:label": "NIST 800-63"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-diatf",
-      "vc:label": "UK DIATF"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:biometric-matching-algorithm",
-      "vc:label": "Biometric Matching Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-character-recognition",
-      "vc:label": "Optical Character Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:financial-services-onboarding",
-      "vc:label": "Financial Services Onboarding"
-    },
-    {
-      "@id": "urn:visionflow:linked:gambling-regulation",
-      "vc:label": "Gambling Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-access",
-      "vc:label": "Healthcare Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:online-safety-act",
-      "vc:label": "Online Safety Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:telecommunications",
-      "vc:label": "Telecommunications"
-    },
-    {
-      "@id": "urn:visionflow:linked:travel-and-border-control",
-      "vc:label": "Travel and Border Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:web3-compliance",
-      "vc:label": "Web3 Compliance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:face-match",
-      "vc:label": "Face Match"
-    },
-    {
-      "@id": "urn:visionflow:linked:machine-readable-zone",
-      "vc:label": "Machine-Readable Zone"
-    },
-    {
-      "@id": "urn:visionflow:linked:near-field-communication",
-      "vc:label": "Near-Field Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:zero-knowledge-proof",
-      "vc:label": "Zero-Knowledge Proof"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:authorisation",
-      "vc:label": "Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-authentication",
-      "vc:label": "Identity Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:pseudonymity",
-      "vc:label": "Pseudonymity"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifier",
-      "vc:label": "Decentralised Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake",
-      "vc:label": "Deepfake"
-    },
-    {
-      "@id": "urn:visionflow:linked:presentation-attack-detection",
-      "vc:label": "Presentation Attack Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:synthetic-identity-fraud",
-      "vc:label": "Synthetic Identity Fraud"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:etsi",
-      "vc:label": "ETSI"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-commission",
-      "vc:label": "European Commission"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf",
-      "vc:label": "FATF"
-    },
-    {
-      "@id": "urn:visionflow:linked:icao",
-      "vc:label": "ICAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico",
-      "vc:label": "ICO"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso",
-      "vc:label": "ISO"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    },
-    {
-      "@id": "urn:visionflow:linked:of-dia",
-      "vc:label": "OfDIA"
-    },
-    {
-      "@id": "urn:visionflow:linked:ofcom",
-      "vc:label": "Ofcom"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verifiable-credentials",
-      "vc:label": "Verifiable Credentials"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

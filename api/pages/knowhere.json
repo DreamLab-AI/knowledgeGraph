@@ -3,19 +3,18 @@
   "title": "Knowhere",
   "slug": "knowhere",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowhere",
+  "classIri": "urn:ngm:class:knowhere",
   "domain": "infrastructure",
   "definition": "Knowhere is a technology infrastructure concept and a type of Tracking Technology.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tracking-technology",
+      "id": "urn:ngm:class:tracking-technology",
       "label": "Tracking Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

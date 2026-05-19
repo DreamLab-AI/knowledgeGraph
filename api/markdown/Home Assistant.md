@@ -532,478 +532,387 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:home-assistant",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:home-assistant",
+  "@type": "Class",
   "label": "Home Assistant",
+  "definition": "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Prot...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:home-automation",
-      "vc:label": "Home Automation"
+      "@id": "urn:ngm:class:home-automation",
+      "label": "Home Automation"
     },
     {
-      "@id": "urn:visionflow:linked:io-t-platform",
-      "vc:label": "IoT Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-home",
-      "vc:label": "Smart Home"
+      "@id": "urn:ngm:class:io-t-platform",
+      "label": "IoT Platform"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4c688f9fa901907c97eb780341ac552d2a19072de630c4594d9e7d00793ec0aa"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-task-integration",
+        "label": "AI Task Integration"
+      },
+      {
+        "@id": "urn:ngm:class:assist-voice-pipeline",
+        "label": "Assist Voice Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:automation-engine",
+        "label": "Automation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:energy-dashboard",
+        "label": "Energy Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:esphome",
+        "label": "ESPHome"
+      },
+      {
+        "@id": "urn:ngm:class:hacs",
+        "label": "HACS"
+      },
+      {
+        "@id": "urn:ngm:class:home-assistant-cloud",
+        "label": "Home Assistant Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:lovelace-dashboard",
+        "label": "Lovelace Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:matter-server",
+        "label": "Matter Server"
+      },
+      {
+        "@id": "urn:ngm:class:nabu-casa",
+        "label": "Nabu Casa"
+      },
+      {
+        "@id": "urn:ngm:class:ollama-integration",
+        "label": "Ollama Integration"
+      },
+      {
+        "@id": "urn:ngm:class:open-home-foundation",
+        "label": "Open Home Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-protocol",
+        "label": "Wyoming Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave-js",
+        "label": "Z-Wave JS"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave-js-ui",
+        "label": "Z-Wave JS UI"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee-home-automation",
+        "label": "Zigbee Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee2-mqtt",
+        "label": "Zigbee2MQTT"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:local-network-infrastructure",
+        "label": "Local Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt-broker",
+        "label": "MQTT Broker"
+      },
+      {
+        "@id": "urn:ngm:class:python-runtime",
+        "label": "Python Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:raspberry-pi",
+        "label": "Raspberry Pi"
+      },
+      {
+        "@id": "urn:ngm:class:sqlite",
+        "label": "SQLite"
+      },
+      {
+        "@id": "urn:ngm:class:wake-word-engine",
+        "label": "Wake Word Engine"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee-radio-dongle",
+        "label": "Zigbee Radio Dongle"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:demand-side-response",
+        "label": "Demand Side Response"
+      },
+      {
+        "@id": "urn:ngm:class:device-interoperability",
+        "label": "Device Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "@id": "urn:ngm:class:llm-controlled-devices",
+        "label": "LLM-Controlled Devices"
+      },
+      {
+        "@id": "urn:ngm:class:local-voice-control",
+        "label": "Local Voice Control"
+      },
+      {
+        "@id": "urn:ngm:class:matter-commissioning",
+        "label": "Matter Commissioning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-protocol-integration",
+        "label": "Multi-Protocol Integration"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-io-t",
+        "label": "Privacy-Preserving IoT"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid-integration",
+        "label": "Smart Grid Integration"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bluetooth-le",
+        "label": "Bluetooth LE"
+      },
+      {
+        "@id": "urn:ngm:class:co-ap",
+        "label": "CoAP"
+      },
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket-api",
+        "label": "WebSocket API"
+      },
+      {
+        "@id": "urn:ngm:class:wyoming-protocol",
+        "label": "Wyoming Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave-protocol",
+        "label": "Z-Wave Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee-protocol",
+        "label": "Zigbee Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:app-daemon",
+        "label": "AppDaemon"
+      },
+      {
+        "@id": "urn:ngm:class:frigate-nvr",
+        "label": "Frigate NVR"
+      },
+      {
+        "@id": "urn:ngm:class:micro-wake-word",
+        "label": "microWakeWord"
+      },
+      {
+        "@id": "urn:ngm:class:node-red",
+        "label": "Node-RED"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "@id": "urn:ngm:class:open-wake-word",
+        "label": "openWakeWord"
+      },
+      {
+        "@id": "urn:ngm:class:piper-tts",
+        "label": "Piper TTS"
+      },
+      {
+        "@id": "urn:ngm:class:whisper-stt",
+        "label": "Whisper STT"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave-js-ui",
+        "label": "Z-Wave JS UI"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee2-mqtt",
+        "label": "Zigbee2MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:ollama",
+        "label": "Ollama"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      },
+      {
+        "@id": "urn:ngm:class:demand-side-response",
+        "label": "Demand Side Response"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:local-ai",
+        "label": "Local AI"
+      },
+      {
+        "@id": "urn:ngm:class:nilm",
+        "label": "NILM"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:arm64-linux",
+        "label": "ARM64 Linux"
+      },
+      {
+        "@id": "urn:ngm:class:home-assistant-green",
+        "label": "Home Assistant Green"
+      },
+      {
+        "@id": "urn:ngm:class:home-assistant-voice-preview-edition",
+        "label": "Home Assistant Voice Preview Edition"
+      },
+      {
+        "@id": "urn:ngm:class:home-assistant-yellow",
+        "label": "Home Assistant Yellow"
+      },
+      {
+        "@id": "urn:ngm:class:odroid-n2",
+        "label": "Odroid-N2"
+      },
+      {
+        "@id": "urn:ngm:class:orange-pi",
+        "label": "Orange Pi"
+      },
+      {
+        "@id": "urn:ngm:class:proxmox",
+        "label": "Proxmox"
+      },
+      {
+        "@id": "urn:ngm:class:qemu-kvm",
+        "label": "QEMU/KVM"
+      },
+      {
+        "@id": "urn:ngm:class:raspberry-pi",
+        "label": "Raspberry Pi"
+      },
+      {
+        "@id": "urn:ngm:class:x86-64-linux",
+        "label": "x86-64 Linux"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:csa-matter-specification",
+        "label": "CSA Matter Specification"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-co-ap-working-group",
+        "label": "IETF CoAP Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-home-foundation",
+        "label": "Open Home Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:thread-group",
+        "label": "Thread Group"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi-alliance",
+        "label": "Wi-Fi Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave-alliance",
+        "label": "Z-Wave Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:zigbee-alliance",
+        "label": "Zigbee Alliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4c688f9fa901907c97eb780341ac552d2a19072de630c4594d9e7d00793ec0aa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Protocol]], [[Thread Protocol]], [[Bluetooth LE]], [[Wi-Fi]], and EnOcean — operating without mandatory cloud dependency, governed since April 2024 by the [[Open Home Foundation]] (OHF), a Swiss non-profit that owns the source code and brand to ensure perpetual open-source status. Created by Paulus Schoutsen in September 2013 and first publicly released on GitHub in November 2013, Home Assistant has grown from a single-developer weekend project into the most contributor-active open-source project on GitHub (21,000+ unique contributors in 2024) with over 2 million active installations as of April 2025, supported by 56 full-time staff spanning core platform, [[ESPHome]] firmware, [[Z-Wave JS]], Zigpy, [[Matter Server]], voice technology, mobile apps, and infrastructure. The platform's core value proposition rests on three principles enshrined in the Open Home Foundation charter: Privacy (data pro",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-task-integration",
-      "vc:label": "AI Task Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:assist-voice-pipeline",
-      "vc:label": "Assist Voice Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:automation-engine",
-      "vc:label": "Automation Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-dashboard",
-      "vc:label": "Energy Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:linked:esphome",
-      "vc:label": "ESPHome"
-    },
-    {
-      "@id": "urn:visionflow:linked:hacs",
-      "vc:label": "HACS"
-    },
-    {
-      "@id": "urn:visionflow:linked:home-assistant-cloud",
-      "vc:label": "Home Assistant Cloud"
-    },
-    {
-      "@id": "urn:visionflow:linked:lovelace-dashboard",
-      "vc:label": "Lovelace Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:linked:matter-server",
-      "vc:label": "Matter Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:nabu-casa",
-      "vc:label": "Nabu Casa"
-    },
-    {
-      "@id": "urn:visionflow:linked:ollama-integration",
-      "vc:label": "Ollama Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-home-foundation",
-      "vc:label": "Open Home Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-protocol",
-      "vc:label": "Wyoming Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:z-wave-js",
-      "vc:label": "Z-Wave JS"
-    },
-    {
-      "@id": "urn:visionflow:linked:z-wave-js-ui",
-      "vc:label": "Z-Wave JS UI"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee-home-automation",
-      "vc:label": "Zigbee Home Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee2-mqtt",
-      "vc:label": "Zigbee2MQTT"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:local-network-infrastructure",
-      "vc:label": "Local Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:mqtt-broker",
-      "vc:label": "MQTT Broker"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-runtime",
-      "vc:label": "Python Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:raspberry-pi",
-      "vc:label": "Raspberry Pi"
-    },
-    {
-      "@id": "urn:visionflow:linked:sqlite",
-      "vc:label": "SQLite"
-    },
-    {
-      "@id": "urn:visionflow:linked:wake-word-engine",
-      "vc:label": "Wake Word Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee-radio-dongle",
-      "vc:label": "Zigbee Radio Dongle"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:demand-side-response",
-      "vc:label": "Demand Side Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:device-interoperability",
-      "vc:label": "Device Interoperability"
-    },
-    {
-      "@id": "urn:visionflow:linked:energy-management",
-      "vc:label": "Energy Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-controlled-devices",
-      "vc:label": "LLM-Controlled Devices"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-voice-control",
-      "vc:label": "Local Voice Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:matter-commissioning",
-      "vc:label": "Matter Commissioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-protocol-integration",
-      "vc:label": "Multi-Protocol Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-io-t",
-      "vc:label": "Privacy-Preserving IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-grid-integration",
-      "vc:label": "Smart Grid Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-home-automation",
-      "vc:label": "Smart Home Automation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bluetooth-le",
-      "vc:label": "Bluetooth LE"
-    },
-    {
-      "@id": "urn:visionflow:linked:co-ap",
-      "vc:label": "CoAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:matter-protocol",
-      "vc:label": "Matter Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:mqtt",
-      "vc:label": "MQTT"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:rest-api",
-      "vc:label": "REST API"
-    },
-    {
-      "@id": "urn:visionflow:linked:thread-protocol",
-      "vc:label": "Thread Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-socket-api",
-      "vc:label": "WebSocket API"
-    },
-    {
-      "@id": "urn:visionflow:linked:wyoming-protocol",
-      "vc:label": "Wyoming Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:z-wave-protocol",
-      "vc:label": "Z-Wave Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee-protocol",
-      "vc:label": "Zigbee Protocol"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:buildroot",
-      "vc:label": "Buildroot"
-    },
-    {
-      "@id": "urn:visionflow:linked:haos-linux",
-      "vc:label": "HAOS Linux"
-    },
-    {
-      "@id": "urn:visionflow:linked:postgre-sql",
-      "vc:label": "PostgreSQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:redis",
-      "vc:label": "Redis"
-    },
-    {
-      "@id": "urn:visionflow:linked:sqlite",
-      "vc:label": "SQLite"
-    },
-    {
-      "@id": "urn:visionflow:linked:supervisor-api",
-      "vc:label": "Supervisor API"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-script",
-      "vc:label": "TypeScript"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:arm64-linux",
-      "vc:label": "ARM64 Linux"
-    },
-    {
-      "@id": "urn:visionflow:linked:home-assistant-green",
-      "vc:label": "Home Assistant Green"
-    },
-    {
-      "@id": "urn:visionflow:linked:home-assistant-voice-preview-edition",
-      "vc:label": "Home Assistant Voice Preview Edition"
-    },
-    {
-      "@id": "urn:visionflow:linked:home-assistant-yellow",
-      "vc:label": "Home Assistant Yellow"
-    },
-    {
-      "@id": "urn:visionflow:linked:odroid-n2",
-      "vc:label": "Odroid-N2"
-    },
-    {
-      "@id": "urn:visionflow:linked:orange-pi",
-      "vc:label": "Orange Pi"
-    },
-    {
-      "@id": "urn:visionflow:linked:proxmox",
-      "vc:label": "Proxmox"
-    },
-    {
-      "@id": "urn:visionflow:linked:qemu-kvm",
-      "vc:label": "QEMU/KVM"
-    },
-    {
-      "@id": "urn:visionflow:linked:raspberry-pi",
-      "vc:label": "Raspberry Pi"
-    },
-    {
-      "@id": "urn:visionflow:linked:x86-64-linux",
-      "vc:label": "x86-64 Linux"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:app-daemon",
-      "vc:label": "AppDaemon"
-    },
-    {
-      "@id": "urn:visionflow:linked:frigate-nvr",
-      "vc:label": "Frigate NVR"
-    },
-    {
-      "@id": "urn:visionflow:linked:micro-wake-word",
-      "vc:label": "microWakeWord"
-    },
-    {
-      "@id": "urn:visionflow:linked:node-red",
-      "vc:label": "Node-RED"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-api",
-      "vc:label": "OpenAI API"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-wake-word",
-      "vc:label": "openWakeWord"
-    },
-    {
-      "@id": "urn:visionflow:linked:piper-tts",
-      "vc:label": "Piper TTS"
-    },
-    {
-      "@id": "urn:visionflow:linked:whisper-stt",
-      "vc:label": "Whisper STT"
-    },
-    {
-      "@id": "urn:visionflow:linked:z-wave-js-ui",
-      "vc:label": "Z-Wave JS UI"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee2-mqtt",
-      "vc:label": "Zigbee2MQTT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ollama",
-      "vc:label": "Ollama"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:amazon-alexa",
-      "vc:label": "Amazon Alexa"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-home-kit",
-      "vc:label": "Apple HomeKit"
-    },
-    {
-      "@id": "urn:visionflow:linked:domoticz",
-      "vc:label": "Domoticz"
-    },
-    {
-      "@id": "urn:visionflow:linked:fhem",
-      "vc:label": "FHEM"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-home",
-      "vc:label": "Google Home"
-    },
-    {
-      "@id": "urn:visionflow:linked:hubitat",
-      "vc:label": "Hubitat"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-hab",
-      "vc:label": "openHAB"
-    },
-    {
-      "@id": "urn:visionflow:linked:samsung-smart-things",
-      "vc:label": "Samsung SmartThings"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:building-automation",
-      "vc:label": "Building Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-side-response",
-      "vc:label": "Demand Side Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-ai",
-      "vc:label": "Edge AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-ai",
-      "vc:label": "Local AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:nilm",
-      "vc:label": "NILM"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-grid",
-      "vc:label": "Smart Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-assistant",
-      "vc:label": "Voice Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:csa-matter-specification",
-      "vc:label": "CSA Matter Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-co-ap-working-group",
-      "vc:label": "IETF CoAP Working Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-home-foundation",
-      "vc:label": "Open Home Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:thread-group",
-      "vc:label": "Thread Group"
-    },
-    {
-      "@id": "urn:visionflow:linked:wi-fi-alliance",
-      "vc:label": "Wi-Fi Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:z-wave-alliance",
-      "vc:label": "Z-Wave Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:zigbee-alliance",
-      "vc:label": "Zigbee Alliance"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

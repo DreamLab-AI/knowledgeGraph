@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-agency-and-oversight",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-agency-and-oversight",
+  "@type": "Class",
   "label": "Human Agency and Oversight",
+  "definition": "Human Agency and Oversight is a trustworthiness dimension ensuring AI systems respect human autonomy, preserve meaningful human control, and implement appropriate human supervision mechanisms to prevent undue coercion, manipulation, or erosion of self-determination.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:259f0c843434d2042671b0f12d032f3d1eb57fca7a505f49beec8e1ed7f739c3"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:259f0c843434d2042671b0f12d032f3d1eb57fca7a505f49beec8e1ed7f739c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Human Agency and Oversight is a trustworthiness dimension ensuring AI systems respect human autonomy, preserve meaningful human control, and implement appropriate human supervision mechanisms to prevent undue coercion, manipulation, or erosion of self-determination. This dimension encompasses two core components: human agency (protecting human freedom and decision-making capacity by preventing unfair coercion, manipulation through deceptive interfaces or dark patterns, and enabling informed decision-making through transparent presentation of AI involvement and capabilities) and human oversight (establishing supervision mechanisms ensuring humans can intervene in AI operations through human-in-the-loop requiring human approval for critical decisions before execution, human-on-the-loop enabling human operators to monitor system operation and intervene when necessary, and human-in-command allowing authorized humans to override or deactivate systems while maintaining ultimate control). The EU AI Act Article 14 mandates that high-risk AI systems be designed with appropriate human oversight, requiring qualified personnel to interpret system outputs and exercise intervention authority, wi",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

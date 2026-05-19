@@ -3,19 +3,18 @@
   "title": "ERC1400 Token",
   "slug": "erc1400-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:erc1400-token",
+  "classIri": "urn:ngm:class:erc1400-token",
   "domain": "blockchain",
   "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-token",
+      "id": "urn:ngm:class:security-token",
       "label": "Security Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

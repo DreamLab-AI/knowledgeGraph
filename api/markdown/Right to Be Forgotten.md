@@ -196,116 +196,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:right-to-be-forgotten",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:right-to-be-forgotten",
+  "@type": "Class",
   "label": "Right to Be Forgotten",
+  "definition": "A privacy right framework enabling individuals to request deletion or removal of personal data from online platforms and databases, with verification and audit mechanisms.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:privacy-framework",
-      "vc:label": "Privacy Framework"
+      "@id": "urn:ngm:class:privacy-framework",
+      "label": "Privacy Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0d82d3558cc494a2d1259a20b4fd6c8d4bfd2d9ce6ae2599e99a6f958af2b3f8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:deletion-request",
+        "label": "Deletion Request"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-verification",
+        "label": "Erasure Verification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-inventory",
+        "label": "Data Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:compliance-reporting",
+        "label": "Compliance Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:content-removal",
+        "label": "Content Removal"
+      },
+      {
+        "@id": "urn:ngm:class:data-erasure",
+        "label": "Data Erasure"
+      },
+      {
+        "@id": "urn:ngm:class:user-privacy-control",
+        "label": "User Privacy Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-protection-framework",
+        "label": "Data Protection Framework"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-rights-system",
+        "label": "Privacy Rights System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0d82d3558cc494a2d1259a20b4fd6c8d4bfd2d9ce6ae2599e99a6f958af2b3f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A privacy right framework enabling individuals to request deletion or removal of personal data from online platforms and databases, with verification and audit mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:data-protection-framework",
-      "vc:label": "Data Protection Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-rights-system",
-      "vc:label": "Privacy Rights System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:deletion-request",
-      "vc:label": "Deletion Request"
-    },
-    {
-      "@id": "urn:visionflow:linked:erasure-verification",
-      "vc:label": "Erasure Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy",
-      "vc:label": "Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-inventory",
-      "vc:label": "Data Inventory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consent-management",
-      "vc:label": "Consent Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:compliance-reporting",
-      "vc:label": "Compliance Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-removal",
-      "vc:label": "Content Removal"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-erasure",
-      "vc:label": "Data Erasure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-privacy-control",
-      "vc:label": "User Privacy Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:data-controller",
-      "vc:label": "Data Controller"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-processor",
-      "vc:label": "Data Processor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

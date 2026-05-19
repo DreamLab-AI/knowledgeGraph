@@ -416,348 +416,269 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralized-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralized-governance",
+  "@type": "Class",
   "label": "Decentralized Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:collective-action",
-      "vc:label": "Collective Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-pool-resources",
-      "vc:label": "Common Pool Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-economics",
-      "vc:label": "Institutional Economics"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:be6ca92661f74ccbe5ca5a2d8df136d5cabe2ff95ff82365af950d008b55f084"
+  "definition": "Decentralized Governance is a class of collective decision-making systems in which authority, rule-setting, and enforcement mechanisms are distributed across a network of participants rather than concentrated in a single central actor, implemented through formal on-chain voting protocols (token-w...",
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:delegation-system",
+        "label": "Delegation System"
+      },
+      {
+        "@id": "urn:ngm:class:governance-forum",
+        "label": "Governance Forum"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-threshold",
+        "label": "Quorum Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-contract",
+        "label": "Timelock Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "@id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-economics",
+        "label": "Institutional Economics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:identity-systems",
+        "label": "Identity Systems"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-ownership",
+        "label": "Community Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:daos",
+        "label": "DAOs"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-adjustment",
+        "label": "Parameter Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrades",
+        "label": "Protocol Upgrades"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-consensus",
+        "label": "Holographic Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-governance",
+        "label": "Optimistic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:discourse-forums",
+        "label": "Discourse Forums"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Tokens"
+      },
+      {
+        "@id": "urn:ngm:class:governor-contracts",
+        "label": "Governor Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:tally",
+        "label": "Tally"
+      },
+      {
+        "@id": "urn:ngm:class:timelocks",
+        "label": "Timelocks"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      },
+      {
+        "@id": "urn:ngm:class:compound-finance",
+        "label": "Compound Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tezos",
+        "label": "Tezos"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:community-treasury",
+        "label": "Community Treasury"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-protocols",
+        "label": "DeFi Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-decentralization",
+        "label": "Protocol Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bip-process",
+        "label": "BIP Process"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound GovernorBravo"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-governance-module",
+        "label": "Cosmos Governance Module"
+      },
+      {
+        "@id": "urn:ngm:class:eip-process",
+        "label": "EIP Process"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:tally-protocol",
+        "label": "Tally Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:be6ca92661f74ccbe5ca5a2d8df136d5cabe2ff95ff82365af950d008b55f084@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Decentralized Governance** is a class of collective decision-making systems in which authority, rule-setting, and enforcement mechanisms are distributed across a network of participants rather than concentrated in a single central actor, implemented through formal on-chain voting protocols (token-weighted proposals, time-locks, quorum thresholds), off-chain social coordination mechanisms (Snapshot gasless voting, discourse forums, rough consensus), or hybrid combinations of both, manifesting across three primary institutional substrates: **Decentralized Autonomous Organizations** (DAOs) encoding governance rules as smart-contract bytecode on EVM-compatible chains—Compound Finance DAO (COMP token, 400K COMP quorum, 2-day vote, 2-day timelock, $2.5B TVL governed as of Q1 2026), Uniswap DAO (UNI, 4% quorum of 1B supply = 40M UNI, Governance v3 2023, $9B+ TVL), MakerDAO (MKR, Executive Votes requiring hat majority, Emergency Shutdown Module, transitioning to the Sky Protocol rebrand July 2024 with USDS/SKY token migration and Endgame plan including SubDAO structure), Aave DAO (AAVE/stkAAVE, Guardian committee, V3 cross-chain governance), Gitcoin DAO (GTC, Gitcoin Grants quadratic fun",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:delegation-system",
-      "vc:label": "Delegation System"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-forum",
-      "vc:label": "Governance Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:quorum-threshold",
-      "vc:label": "Quorum Threshold"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelock-contract",
-      "vc:label": "Timelock Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-distribution",
-      "vc:label": "Token Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-mechanism",
-      "vc:label": "Voting Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proposal-system",
-      "vc:label": "Proposal System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:snapshot-voting",
-      "vc:label": "Snapshot Voting"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-proofs",
-      "vc:label": "Cryptographic Proofs"
-    },
-    {
-      "@id": "urn:visionflow:linked:sybil-resistance",
-      "vc:label": "Sybil Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-systems",
-      "vc:label": "Identity Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "Token Economics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-ownership",
-      "vc:label": "Community Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:daos",
-      "vc:label": "DAOs"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-finance",
-      "vc:label": "Decentralized Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:parameter-adjustment",
-      "vc:label": "Parameter Adjustment"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-upgrades",
-      "vc:label": "Protocol Upgrades"
-    },
-    {
-      "@id": "urn:visionflow:linked:trustless-coordination",
-      "vc:label": "Trustless Coordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:treasury-management",
-      "vc:label": "Treasury Management"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:futarchy",
-      "vc:label": "Futarchy"
-    },
-    {
-      "@id": "urn:visionflow:linked:holographic-consensus",
-      "vc:label": "Holographic Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-democracy",
-      "vc:label": "Liquid Democracy"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimistic-governance",
-      "vc:label": "Optimistic Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-weighted-voting",
-      "vc:label": "Token-Weighted Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conviction-voting",
-      "vc:label": "Conviction Voting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadratic-voting",
-      "vc:label": "Quadratic Voting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-consensus",
-      "vc:label": "Blockchain Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signatures",
-      "vc:label": "Cryptographic Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-standards",
-      "vc:label": "Token Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:community-treasury",
-      "vc:label": "Community Treasury"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-protocols",
-      "vc:label": "DeFi Protocols"
-    },
-    {
-      "@id": "urn:visionflow:linked:gitcoin-grants",
-      "vc:label": "Gitcoin Grants"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-governance",
-      "vc:label": "Open Source Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-decentralization",
-      "vc:label": "Protocol Decentralization"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-goods-funding",
-      "vc:label": "Public Goods Funding"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:discourse-forums",
-      "vc:label": "Discourse Forums"
-    },
-    {
-      "@id": "urn:visionflow:linked:erc-20-tokens",
-      "vc:label": "ERC-20 Tokens"
-    },
-    {
-      "@id": "urn:visionflow:linked:governor-contracts",
-      "vc:label": "Governor Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:multisignature-wallets",
-      "vc:label": "Multisignature Wallets"
-    },
-    {
-      "@id": "urn:visionflow:linked:snapshot",
-      "vc:label": "Snapshot"
-    },
-    {
-      "@id": "urn:visionflow:linked:tally",
-      "vc:label": "Tally"
-    },
-    {
-      "@id": "urn:visionflow:linked:timelocks",
-      "vc:label": "Timelocks"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:benevolent-dictatorship",
-      "vc:label": "Benevolent Dictatorship"
-    },
-    {
-      "@id": "urn:visionflow:linked:centralised-governance",
-      "vc:label": "Centralised Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-board-governance",
-      "vc:label": "Corporate Board Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-governance",
-      "vc:label": "Off-Chain Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:delegated-proof-of-stake",
-      "vc:label": "Delegated Proof of Stake"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:common-pool-resources",
-      "vc:label": "Common Pool Resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:compound-finance",
-      "vc:label": "Compound Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosmos",
-      "vc:label": "Cosmos"
-    },
-    {
-      "@id": "urn:visionflow:linked:maker-dao",
-      "vc:label": "MakerDAO"
-    },
-    {
-      "@id": "urn:visionflow:linked:mechanism-design",
-      "vc:label": "Mechanism Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:polycentric-governance",
-      "vc:label": "Polycentric Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:tezos",
-      "vc:label": "Tezos"
-    },
-    {
-      "@id": "urn:visionflow:linked:uniswap",
-      "vc:label": "Uniswap"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bip-process",
-      "vc:label": "BIP Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:compound-governor-bravo",
-      "vc:label": "Compound GovernorBravo"
-    },
-    {
-      "@id": "urn:visionflow:linked:cosmos-governance-module",
-      "vc:label": "Cosmos Governance Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:eip-process",
-      "vc:label": "EIP Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-zeppelin-governor",
-      "vc:label": "OpenZeppelin Governor"
-    },
-    {
-      "@id": "urn:visionflow:linked:tally-protocol",
-      "vc:label": "Tally Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:daos",
-      "vc:label": "DAOs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-economics",
-      "vc:label": "Token Economics"
-    }
-  ]
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

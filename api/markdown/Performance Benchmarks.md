@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:performance-benchmarks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:performance-benchmarks",
+  "@type": "Class",
   "label": "Performance Benchmarks",
+  "definition": "Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:software-testing",
-      "vc:label": "Software Testing"
+      "@id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:31152ea43a6cbf190ccad2e254b36e1051181dd97bf830ad8768dde0ff04bf71"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31152ea43a6cbf190ccad2e254b36e1051181dd97bf830ad8768dde0ff04bf71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Standardized tests and metrics used to evaluate and compare software, hardware, or system performance under controlled conditions, measuring factors such as response time, throughput, resource utilization, and error rates.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:performance-optimization",
-      "vc:label": "Performance Optimization"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

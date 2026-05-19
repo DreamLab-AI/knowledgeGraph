@@ -188,52 +188,37 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:roc-curve",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:roc-curve",
+  "@type": "Class",
   "label": "ROC Curve",
+  "definition": "A graphical performance etool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifyi...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:model-performance",
-      "vc:label": "Model Performance"
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "model comparison"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold selection"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4d41ba42a15db003aa3410814c1f3b242c0a05a94aeffebabeeacb1a052f2a71@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A graphical performance evaluation tool for binary classification models that plots the True Positive Rate (Recall/Sensitivity) against the False Positive Rate across all possible classification thresholds, visualising the trade-off between correctly identifying positive instances and incorrectly classifying negative instances as positive, enabling threshold selection, model comparison, and assessment of a classifier's discriminative ability independent of class distribution or threshold choice.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:model-comparison",
-      "vc:label": "model comparison"
-    },
-    {
-      "@id": "urn:visionflow:linked:threshold-selection",
-      "vc:label": "Threshold selection"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

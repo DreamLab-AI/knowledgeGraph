@@ -672,340 +672,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compliance-monitoring",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-monitoring",
+  "@type": "Class",
   "label": "Compliance Monitoring",
+  "definition": "Compliance Monitoring is the continuous, automated oversight of systems, processes, people, and data flows to verify ongoing adherence to applicable regulatory requirements, internal policies, contractual obligations, and technical standards across the full operational surface area of an organisa...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automated-compliance",
-      "vc:label": "Automated Compliance"
+      "@id": "urn:ngm:class:automated-compliance",
+      "label": "Automated Compliance"
     },
     {
-      "@id": "urn:visionflow:linked:continuous-control-monitoring",
-      "vc:label": "Continuous Control Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-risk-compliance",
-      "vc:label": "Governance Risk Compliance"
+      "@id": "urn:ngm:class:continuous-control-monitoring",
+      "label": "Continuous Control Monitoring"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:774871a8e7720009079dc08e4b5bebb594034ed6770bcbd44c0d3c3b97988605"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:alert-management",
+        "label": "Alert Management"
+      },
+      {
+        "@id": "urn:ngm:class:case-management-system",
+        "label": "Case Management System"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-repository",
+        "label": "Evidence Repository"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting-module",
+        "label": "Regulatory Reporting Module"
+      },
+      {
+        "@id": "urn:ngm:class:risk-scoring-engine",
+        "label": "Risk Scoring Engine"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      },
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001-controls",
+        "label": "ISO 27001 Controls"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:soc-2-compliance",
+        "label": "SOC 2 Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-assurance",
+        "label": "Continuous Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:policy-as-code",
+        "label": "Policy-as-Code"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bayesian-risk-models",
+        "label": "Bayesian Risk Models"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-operational-resilience",
+        "label": "Digital Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:governance-risk-compliance",
+        "label": "Governance Risk Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:market-abuse-detection",
+        "label": "Market Abuse Detection"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-compliance",
+        "label": "Supply Chain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "@id": "urn:ngm:class:fin-cen",
+        "label": "FinCEN"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:774871a8e7720009079dc08e4b5bebb594034ed6770bcbd44c0d3c3b97988605@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Compliance Monitoring is the continuous, automated oversight of systems, processes, people, and data flows to verify ongoing adherence to applicable regulatory requirements, internal policies, contractual obligations, and technical standards across the full operational surface area of an organisation. It encompasses real-time ingestion of control evidence, automated rule evaluation against coded policy logic, risk-scored alerting with prioritised analyst queues, structured case management and investigation workflows, regulatory submission pipelines, and immutable audit trail generation — transforming regulatory adherence from a periodic attestation exercise into a continuously maintained operational state. Distinguished from point-in-time auditing by its persistent cadence: evaluation cycles range from sub-second (real-time transaction screening, SIEM event correlation) to hourly (cloud configuration drift detection, access control validation) to daily (ROPA refresh, sanctions list rescreening), with continuous evidence accumulation rather than snapshot evidence capture.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:alert-management",
-      "vc:label": "Alert Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:case-management-system",
-      "vc:label": "Case Management System"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-repository",
-      "vc:label": "Evidence Repository"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-reporting-module",
-      "vc:label": "Regulatory Reporting Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-scoring-engine",
-      "vc:label": "Risk Scoring Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:transaction-monitoring",
-      "vc:label": "Transaction Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:audit-trail",
-      "vc:label": "Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-and-access-management",
-      "vc:label": "Identity and Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc",
-      "vc:label": "KYC"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-information-and-event-management",
-      "vc:label": "Security Information and Event Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-enforcement",
-      "vc:label": "Policy Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-detection",
-      "vc:label": "Fraud Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-27001-controls",
-      "vc:label": "ISO 27001 Controls"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-screening",
-      "vc:label": "Sanctions Screening"
-    },
-    {
-      "@id": "urn:visionflow:linked:soc-2-compliance",
-      "vc:label": "SOC 2 Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:continuous-assurance",
-      "vc:label": "Continuous Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-analytics",
-      "vc:label": "Graph Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-as-code",
-      "vc:label": "Policy-as-Code"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:explainable-ai",
-      "vc:label": "Explainable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hashing",
-      "vc:label": "Cryptographic Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-databases",
-      "vc:label": "Graph Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:stream-processing",
-      "vc:label": "Stream Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-abuse-detection",
-      "vc:label": "Market Abuse Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-resilience",
-      "vc:label": "Operational Resilience"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-operations",
-      "vc:label": "Security Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain-compliance",
-      "vc:label": "Supply Chain Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-protection",
-      "vc:label": "Data Protection"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-risk-models",
-      "vc:label": "Bayesian Risk Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-analytics",
-      "vc:label": "Blockchain Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:homomorphic-encryption",
-      "vc:label": "Homomorphic Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-graphs",
-      "vc:label": "Knowledge Graphs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:checkbox-compliance",
-      "vc:label": "Checkbox Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:manual-review",
-      "vc:label": "Manual Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:periodic-auditing",
-      "vc:label": "Periodic Auditing"
-    },
-    {
-      "@id": "urn:visionflow:linked:reactive-incident-response",
-      "vc:label": "Reactive Incident Response"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-operational-resilience",
-      "vc:label": "Digital Operational Resilience"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-detection",
-      "vc:label": "Fraud Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:governance-risk-compliance",
-      "vc:label": "Governance Risk Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc",
-      "vc:label": "KYC"
-    },
-    {
-      "@id": "urn:visionflow:linked:security-operations",
-      "vc:label": "Security Operations"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:basel-committee-on-banking-supervision",
-      "vc:label": "Basel Committee on Banking Supervision"
-    },
-    {
-      "@id": "urn:visionflow:linked:eba",
-      "vc:label": "EBA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf",
-      "vc:label": "FATF"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fin-cen",
-      "vc:label": "FinCEN"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco",
-      "vc:label": "IOSCO"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-27001",
-      "vc:label": "ISO/IEC 27001"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-cybersecurity-framework",
-      "vc:label": "NIST Cybersecurity Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

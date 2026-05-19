@@ -488,302 +488,217 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:micro-strategy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:micro-strategy",
+  "@type": "Individual",
   "label": "MicroStrategy",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-holder",
-      "vc:label": "Bitcoin Holder"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-treasury-strategy",
-      "vc:label": "Corporate Treasury Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:levered-asset-allocator",
-      "vc:label": "Levered Asset Allocator"
-    }
-  ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c5edcfdb597e96656d16b07477558dc73fa4a618941ad21abcc2ad1c31948785"
+  "definition": "MicroStrategy is a Nasdaq-listed enterprise analytics software company founded by Michael J. Saylor, Sanju K.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:21-21-plan",
+        "label": "21/21 Plan"
+      },
+      {
+        "@id": "urn:ngm:class:at-the-market-equity-offering",
+        "label": "At-the-Market Equity Offering"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-treasury-reserve",
+        "label": "Bitcoin Treasury Reserve"
+      },
+      {
+        "@id": "urn:ngm:class:common-equity-mstr",
+        "label": "Common Equity MSTR"
+      },
+      {
+        "@id": "urn:ngm:class:convertible-senior-notes",
+        "label": "Convertible Senior Notes"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-analytics-software-business",
+        "label": "Enterprise Analytics Software Business"
+      },
+      {
+        "@id": "urn:ngm:class:strk-perpetual-preferred-stock",
+        "label": "STRK Perpetual Preferred Stock"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-function",
+        "label": "Audit Function"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-custody",
+        "label": "Bitcoin Custody"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets-access",
+        "label": "Capital Markets Access"
+      },
+      {
+        "@id": "urn:ngm:class:public-listing",
+        "label": "Public Listing"
+      },
+      {
+        "@id": "urn:ngm:class:sec-reporting",
+        "label": "SEC Reporting"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bitcoin-yield-per-share",
+        "label": "Bitcoin Yield Per Share"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-bitcoin-treasury-adoption",
+        "label": "Corporate Bitcoin Treasury Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:indirect-bitcoin-investment",
+        "label": "Indirect Bitcoin Investment"
+      },
+      {
+        "@id": "urn:ngm:class:levered-bitcoin-exposure",
+        "label": "Levered Bitcoin Exposure"
+      },
+      {
+        "@id": "urn:ngm:class:tax-advantaged-crypto-exposure",
+        "label": "Tax-Advantaged Crypto Exposure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bitcoin-reserve-asset-doctrine",
+        "label": "Bitcoin Reserve Asset Doctrine"
+      },
+      {
+        "@id": "urn:ngm:class:convertible-arbitrage-issuance",
+        "label": "Convertible Arbitrage Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:dollar-cost-averaging-at-scale",
+        "label": "Dollar-Cost Averaging At Scale"
+      },
+      {
+        "@id": "urn:ngm:class:premium-to-nav-capital-raising",
+        "label": "Premium to NAV Capital Raising"
+      },
+      {
+        "@id": "urn:ngm:class:saylor-capital-allocation-framework",
+        "label": "Saylor Capital Allocation Framework"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:atm-equity-offering",
+        "label": "ATM Equity Offering"
+      },
+      {
+        "@id": "urn:ngm:class:convertible-notes",
+        "label": "Convertible Notes"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-cold-storage",
+        "label": "Custodial Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallets",
+        "label": "Multi-Signature Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:perpetual-preferred-stock",
+        "label": "Perpetual Preferred Stock"
+      },
+      {
+        "@id": "urn:ngm:class:senior-secured-notes",
+        "label": "Senior Secured Notes"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bitcoin-standard",
+        "label": "Bitcoin Standard"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-treasury-company",
+        "label": "Bitcoin Treasury Company"
+      },
+      {
+        "@id": "urn:ngm:class:metaplanet",
+        "label": "Metaplanet"
+      },
+      {
+        "@id": "urn:ngm:class:saylor",
+        "label": "Saylor"
+      },
+      {
+        "@id": "urn:ngm:class:smarter-web-company",
+        "label": "Smarter Web Company"
+      },
+      {
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bitcoin-maximalism",
+        "label": "Bitcoin Maximalism"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-standard-adoption",
+        "label": "Bitcoin Standard Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-treasury-diversification",
+        "label": "Corporate Treasury Diversification"
+      },
+      {
+        "@id": "urn:ngm:class:listed-equity-bitcoin-proxy",
+        "label": "Listed Equity Bitcoin Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-property-rights",
+        "label": "Digital Property Rights"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fasb-asu-2023-08",
+        "label": "FASB ASU 2023-08"
+      },
+      {
+        "@id": "urn:ngm:class:gaap-fair-value-accounting",
+        "label": "GAAP Fair Value Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:nasdaq-listing-rules",
+        "label": "Nasdaq Listing Rules"
+      },
+      {
+        "@id": "urn:ngm:class:sec-form-10-k",
+        "label": "SEC Form 10-K"
+      },
+      {
+        "@id": "urn:ngm:class:sec-form-8-k",
+        "label": "SEC Form 8-K"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.54,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c5edcfdb597e96656d16b07477558dc73fa4a618941ad21abcc2ad1c31948785@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**MicroStrategy** (rebranded to **Strategy** in February 2025, NASDAQ ticker **MSTR** retained) is a Nasdaq-listed enterprise analytics software company founded in 1989 by Michael J. Saylor, Sanju K. Bansal and Thomas Spahr that since August 2020 has executed the single largest, longest-running and most-imitated Bitcoin-denominated corporate treasury reserve strategy on record, evolving over five years from a $250M opportunistic balance-sheet hedge against US dollar debasement into the world's first publicly-traded \"Bitcoin Treasury Company\" holding approximately 450,000 BTC (~2.14% of the 21M fixed supply, ~$45-50B in late-2024/early-2025 prices) acquired at an aggregate cost basis of roughly $28B through a sequenced capital-markets programme that combines (i) at-the-market (ATM) equity offerings raising ~$13B 2020-2024 issuing fresh MSTR shares directly into the open market when the stock trades at a premium to its Bitcoin net asset value (mNAV > 1), (ii) seven zero-coupon and low-coupon convertible senior notes (2020 0.75% notes $650M, 2021 0% notes $1.05B, 2024 0.625% notes $800M, 2024 0% notes $3B, 2024 2.25% senior secured $500M, plus follow-ons) raising ~$7.2B in long-dated ",
-  "vc:qualityScore": {
-    "@value": "0.54",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:21-21-plan",
-      "vc:label": "21/21 Plan"
-    },
-    {
-      "@id": "urn:visionflow:linked:at-the-market-equity-offering",
-      "vc:label": "At-the-Market Equity Offering"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-treasury-reserve",
-      "vc:label": "Bitcoin Treasury Reserve"
-    },
-    {
-      "@id": "urn:visionflow:linked:common-equity-mstr",
-      "vc:label": "Common Equity MSTR"
-    },
-    {
-      "@id": "urn:visionflow:linked:convertible-senior-notes",
-      "vc:label": "Convertible Senior Notes"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-analytics-software-business",
-      "vc:label": "Enterprise Analytics Software Business"
-    },
-    {
-      "@id": "urn:visionflow:linked:strk-perpetual-preferred-stock",
-      "vc:label": "STRK Perpetual Preferred Stock"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audit-function",
-      "vc:label": "Audit Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-custody",
-      "vc:label": "Bitcoin Custody"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-markets-access",
-      "vc:label": "Capital Markets Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:public-listing",
-      "vc:label": "Public Listing"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-reporting",
-      "vc:label": "SEC Reporting"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-yield-per-share",
-      "vc:label": "Bitcoin Yield Per Share"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-bitcoin-treasury-adoption",
-      "vc:label": "Corporate Bitcoin Treasury Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:indirect-bitcoin-investment",
-      "vc:label": "Indirect Bitcoin Investment"
-    },
-    {
-      "@id": "urn:visionflow:linked:levered-bitcoin-exposure",
-      "vc:label": "Levered Bitcoin Exposure"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-advantaged-crypto-exposure",
-      "vc:label": "Tax-Advantaged Crypto Exposure"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-reserve-asset-doctrine",
-      "vc:label": "Bitcoin Reserve Asset Doctrine"
-    },
-    {
-      "@id": "urn:visionflow:linked:convertible-arbitrage-issuance",
-      "vc:label": "Convertible Arbitrage Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:dollar-cost-averaging-at-scale",
-      "vc:label": "Dollar-Cost Averaging At Scale"
-    },
-    {
-      "@id": "urn:visionflow:linked:premium-to-nav-capital-raising",
-      "vc:label": "Premium to NAV Capital Raising"
-    },
-    {
-      "@id": "urn:visionflow:linked:saylor-capital-allocation-framework",
-      "vc:label": "Saylor Capital Allocation Framework"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:austrian-economics",
-      "vc:label": "Austrian Economics"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-network",
-      "vc:label": "Bitcoin Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:fiat-debasement-thesis",
-      "vc:label": "Fiat Debasement Thesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:nasdaq",
-      "vc:label": "Nasdaq"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-capital-markets",
-      "vc:label": "US Capital Markets"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-maximalism",
-      "vc:label": "Bitcoin Maximalism"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-standard-adoption",
-      "vc:label": "Bitcoin Standard Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-treasury-diversification",
-      "vc:label": "Corporate Treasury Diversification"
-    },
-    {
-      "@id": "urn:visionflow:linked:listed-equity-bitcoin-proxy",
-      "vc:label": "Listed Equity Bitcoin Proxy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-property-rights",
-      "vc:label": "Digital Property Rights"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:atm-equity-offering",
-      "vc:label": "ATM Equity Offering"
-    },
-    {
-      "@id": "urn:visionflow:linked:convertible-notes",
-      "vc:label": "Convertible Notes"
-    },
-    {
-      "@id": "urn:visionflow:linked:custodial-cold-storage",
-      "vc:label": "Custodial Cold Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature-wallets",
-      "vc:label": "Multi-Signature Wallets"
-    },
-    {
-      "@id": "urn:visionflow:linked:perpetual-preferred-stock",
-      "vc:label": "Perpetual Preferred Stock"
-    },
-    {
-      "@id": "urn:visionflow:linked:senior-secured-notes",
-      "vc:label": "Senior Secured Notes"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:berkshire-hathaway-float-strategy",
-      "vc:label": "Berkshire Hathaway Float Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-mining-company",
-      "vc:label": "Bitcoin Mining Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-bitcoin-reserve",
-      "vc:label": "Sovereign Bitcoin Reserve"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
-      "vc:label": "Spot Bitcoin ETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-cash-treasury",
-      "vc:label": "Traditional Cash Treasury"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:bitcoin-standard",
-      "vc:label": "Bitcoin Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:bitcoin-treasury-company",
-      "vc:label": "Bitcoin Treasury Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:metaplanet",
-      "vc:label": "Metaplanet"
-    },
-    {
-      "@id": "urn:visionflow:linked:saylor",
-      "vc:label": "Saylor"
-    },
-    {
-      "@id": "urn:visionflow:linked:smarter-web-company",
-      "vc:label": "Smarter Web Company"
-    },
-    {
-      "@id": "urn:visionflow:linked:spot-bitcoin-etf",
-      "vc:label": "Spot Bitcoin ETF"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:fasb-asu-2023-08",
-      "vc:label": "FASB ASU 2023-08"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaap-fair-value-accounting",
-      "vc:label": "GAAP Fair Value Accounting"
-    },
-    {
-      "@id": "urn:visionflow:linked:nasdaq-listing-rules",
-      "vc:label": "Nasdaq Listing Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-form-10-k",
-      "vc:label": "SEC Form 10-K"
-    },
-    {
-      "@id": "urn:visionflow:linked:sec-form-8-k",
-      "vc:label": "SEC Form 8-K"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:corporate-treasury",
-      "vc:label": "Corporate Treasury"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
+      "@id": "urn:ngm:class:technology-company",
+      "label": "Technology Company"
     }
   ]
 }

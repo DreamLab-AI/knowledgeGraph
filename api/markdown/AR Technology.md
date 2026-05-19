@@ -164,88 +164,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ar-technology",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ar-technology",
+  "@type": "Class",
   "label": "AR Technology",
+  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:990a3110f71b466b998ee251ccd77179cb17888477943c505dbd53b6c0f617d5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:ar-frame",
+        "label": "AR Frame"
+      },
+      {
+        "@id": "urn:ngm:class:ar-registration",
+        "label": "AR Registration"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:industrial-guidance",
+        "label": "Industrial Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:remote-assistance",
+        "label": "Remote Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing-applications",
+        "label": "Spatial Computing Applications"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:990a3110f71b466b998ee251ccd77179cb17888477943c505dbd53b6c0f617d5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments. Core components include [[AR Registration]], [[Computer Vision]], [[3D Rendering Engine]]s, and [[Sensor Input]] fusion, spanning applications from mobile filters to enterprise industrial systems requiring precise spatial anchoring and persistent content management.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:display-technology",
-      "vc:label": "Display Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-frame",
-      "vc:label": "AR Frame"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ar-registration",
-      "vc:label": "AR Registration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:industrial-guidance",
-      "vc:label": "Industrial Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-assistance",
-      "vc:label": "Remote Assistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-computing-applications",
-      "vc:label": "Spatial Computing Applications"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

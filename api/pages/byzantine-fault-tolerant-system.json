@@ -3,14 +3,13 @@
   "title": "Byzantine Fault Tolerant System",
   "slug": "byzantine-fault-tolerant-system",
   "public": true,
-  "classIri": "urn:visionflow:linked:byzantine-fault-tolerant-system",
+  "classIri": "urn:ngm:class:byzantine-fault-tolerant-system",
   "domain": "infrastructure",
   "definition": "Byzantine Fault Tolerant System is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:on-device-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:on-device-learning",
+  "@type": "Class",
   "label": "On-Device Learning",
+  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functiona...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9bae263d41e6827a70383b7ca7fab8a65554105ecf42389598414fd10793cfa5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functionality while addressing challenges of limited computational resources and energy constraints. This approach implements training paradigms including transfer learning where pre-trained base models are fine-tuned on device-specific data adapting final layers to local patterns, few-shot learning enabling rapid adaptation from handful of examples crucial for personalized applications, meta-learning (learning to learn) where models trained to quickly adapt to new tasks with minimal data and computation, and incremental learning continuously updating models as new data arrives without catastrophic forgetting of previous knowledge. Privacy benefits include data localization ensuring sensitive information (health metrics, personal communications, financial transactions) never leaves device eliminating transmission and storage risks, user control maintaining sovereignty over personal data and model ad",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

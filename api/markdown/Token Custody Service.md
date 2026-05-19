@@ -188,112 +188,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:token-custody-service",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:token-custody-service",
+  "@type": "Class",
   "label": "Token Custody Service",
+  "definition": "A secure infrastructure system for safeguarding digital tokens and cryptographic assets through multi-signature wallets, cold storage, and enterprise-grade custodial services in virtual economy environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-asset-infrastructure",
-      "vc:label": "Digital Asset Infrastructure"
+      "@id": "urn:ngm:class:digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:29787ba7b715f90fd4844b3dfdc5242193e8100d6b184522751bbf1b1474819c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-trail-system",
+        "label": "Audit Trail System"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage-system",
+        "label": "Cold Storage System"
+      },
+      {
+        "@id": "urn:ngm:class:key-management-service",
+        "label": "Key Management Service"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:security-module",
+        "label": "Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-system",
+        "label": "Access Control System"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-recovery",
+        "label": "Asset Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-trading",
+        "label": "Institutional Trading"
+      },
+      {
+        "@id": "urn:ngm:class:secure-token-storage",
+        "label": "Secure Token Storage"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:29787ba7b715f90fd4844b3dfdc5242193e8100d6b184522751bbf1b1474819c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A secure infrastructure system for safeguarding digital tokens and cryptographic assets through multi-signature wallets, cold storage, and enterprise-grade custodial services in virtual economy environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-infrastructure",
-      "vc:label": "Digital Asset Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-trail-system",
-      "vc:label": "Audit Trail System"
-    },
-    {
-      "@id": "urn:visionflow:linked:cold-storage-system",
-      "vc:label": "Cold Storage System"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management-service",
-      "vc:label": "Key Management Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature-wallet",
-      "vc:label": "Multi-Signature Wallet"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:security-module",
-      "vc:label": "Security Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
-      "vc:label": "Cryptographic Key Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-recovery",
-      "vc:label": "Asset Recovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-trading",
-      "vc:label": "Institutional Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-token-storage",
-      "vc:label": "Secure Token Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:identity-verification-system",
-      "vc:label": "Identity Verification System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

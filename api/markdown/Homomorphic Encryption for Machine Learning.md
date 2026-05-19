@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:homomorphic-encryption-for-machine-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
+  "@type": "Class",
   "label": "Homomorphic Encryption for Machine Learning",
+  "definition": "Homomorphic Encryption for Machine Learning is a cryptographic technique enabling computation on encrypted data without decryption, allowing AI model training and inference to be performed on ciphertext while preserving data confidentiality throughout processing.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:80d36a102053319eff33ab6fe02abe888ab7963dfd8ea00c30018376d01e1bd0"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:80d36a102053319eff33ab6fe02abe888ab7963dfd8ea00c30018376d01e1bd0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Homomorphic Encryption for Machine Learning is a cryptographic technique enabling computation on encrypted data without decryption, allowing AI model training and inference to be performed on ciphertext while preserving data confidentiality throughout processing. This approach implements encryption schemes where operations on encrypted data produce encrypted results that, when decrypted, match results of operations on plaintext, formalized as Decrypt(Encrypt(m1) ⊕ Encrypt(m2)) = m1 + m2 for addition and Decrypt(Encrypt(m1) ⊗ Encrypt(m2)) = m1 × m2 for multiplication. Scheme types include partially homomorphic encryption supporting only addition (Paillier) or only multiplication (RSA), somewhat homomorphic encryption permitting limited operations before noise accumulation requires decryption, and fully homomorphic encryption (FHE) enabling arbitrary computations on encrypted data through bootstrapping refreshing ciphertexts to control noise growth, implemented in schemes like BGV, BFV for integer arithmetic, and CKKS for approximate arithmetic on real/complex numbers suitable for machine learning. ML applications include encrypted inference where clients encrypt inputs, servers perf",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

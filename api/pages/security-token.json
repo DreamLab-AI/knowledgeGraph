@@ -3,19 +3,18 @@
   "title": "Security Token",
   "slug": "security-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:security-token",
+  "classIri": "urn:ngm:class:security-token",
   "domain": "blockchain",
-  "definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.",
+  "definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:fungible-token",
+      "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

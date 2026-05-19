@@ -396,328 +396,251 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:time-series-forecasting",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:time-series-forecasting",
+  "@type": "Class",
   "label": "Time Series Forecasting",
+  "definition": "Time orecasting (TSF) is the domain of statistical and machine learning mods that predict future values of ordered sequential observations indexed by time, encompassing classical statistical approaches (ARIMA — AutoRegressive Integrated Moving Average — modelling the s a linear combination of its...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:probabilistic-forecasting",
-      "vc:label": "Probabilistic Forecasting"
+      "@id": "urn:ngm:class:probabilistic-forecasting",
+      "label": "Probabilistic Forecasting"
     },
     {
-      "@id": "urn:visionflow:linked:sequential-data-processing",
-      "vc:label": "Sequential Data Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-modelling",
-      "vc:label": "Statistical Modelling"
+      "@id": "urn:ngm:class:sequential-data-processing",
+      "label": "Sequential Data Processing"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6ba119bfba7f11dacab52df90b3c941eb8b069e8c2bd3493f7a03cd63bbc6659"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:covariates",
+        "label": "Covariates"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:forecast-horizon",
+        "label": "Forecast Horizon"
+      },
+      {
+        "@id": "urn:ngm:class:interval-forecast",
+        "label": "Interval Forecast"
+      },
+      {
+        "@id": "urn:ngm:class:lookback-window",
+        "label": "Lookback Window"
+      },
+      {
+        "@id": "urn:ngm:class:point-forecast",
+        "label": "Point Forecast"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-forecast",
+        "label": "Probabilistic Forecast"
+      },
+      {
+        "@id": "urn:ngm:class:reconciliation-step",
+        "label": "Reconciliation Step"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cross-validation-strategy",
+        "label": "Cross-Validation Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:forecast-evaluation-protocol",
+        "label": "Forecast Evaluation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:historical-time-series-data",
+        "label": "Historical Time Series Data"
+      },
+      {
+        "@id": "urn:ngm:class:stationarity-analysis",
+        "label": "Stationarity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reporting",
+        "label": "Automated Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:demand-planning",
+        "label": "Demand Planning"
+      },
+      {
+        "@id": "urn:ngm:class:risk-quantification",
+        "label": "Risk Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:arima",
+        "label": "ARIMA"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-smoothing",
+        "label": "Exponential Smoothing"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-reconciliation",
+        "label": "Hierarchical Reconciliation"
+      },
+      {
+        "@id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "@id": "urn:ngm:class:quantile-regression",
+        "label": "Quantile Regression"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-models",
+        "label": "State Space Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-attention",
+        "label": "Transformer Attention"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:autocorrelation-analysis",
+        "label": "Autocorrelation Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "@id": "urn:ngm:class:stationarity-testing",
+        "label": "Stationarity Testing"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:energy-forecasting",
+        "label": "Energy Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:financial-risk",
+        "label": "Financial Risk"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid-operations",
+        "label": "Smart Grid Operations"
+      },
+      {
+        "@id": "urn:ngm:class:traffic-prediction",
+        "label": "Traffic Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:crps-evaluation-standard",
+        "label": "CRPS Evaluation Standard"
+      },
+      {
+        "@id": "urn:ngm:class:m-competition-protocol",
+        "label": "M-Competition Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:monash-time-series-archive",
+        "label": "Monash Time Series Archive"
+      },
+      {
+        "@id": "urn:ngm:class:nixtla-benchmark-suite",
+        "label": "Nixtla Benchmark Suite"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6ba119bfba7f11dacab52df90b3c941eb8b069e8c2bd3493f7a03cd63bbc6659@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Time Series Forecasting (TSF) is the domain of statistical and machine learning methods that predict future values of ordered sequential observations indexed by time, encompassing classical statistical approaches (ARIMA — AutoRegressive Integrated Moving Average — modelling the series as a linear combination of its own past values and past forecast errors with parameters (p,d,q) fitted by maximum likelihood or least squares; SARIMA extending ARIMA with seasonal (P,D,Q)_s components for recurring periodic patterns; ETS — Error-Trend-Seasonality — state space exponential smoothing with 30 possible model combinations selected via AIC/BIC; Prophet (Taylor and Letham 2018, Meta) decomposing into piecewise-linear or logistic growth trend, Fourier-series seasonality and sparse holiday regressors), deep learning architectures (DeepAR (Salinas et al. 2020, Amazon) — autoregressive LSTM outputting parametric probabilistic distributions trained globally across thousands of related series; N-BEATS (Oreshkin et al. 2020, Element AI) — purely residual MLP stack with forward/backward basis expansion achieving M4-competition accuracy without recurrence or attention; N-HiTS (Challu et al. 2023) — h",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:covariates",
-      "vc:label": "Covariates"
-    },
-    {
-      "@id": "urn:visionflow:linked:evaluation-metric",
-      "vc:label": "Evaluation Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:forecast-horizon",
-      "vc:label": "Forecast Horizon"
-    },
-    {
-      "@id": "urn:visionflow:linked:interval-forecast",
-      "vc:label": "Interval Forecast"
-    },
-    {
-      "@id": "urn:visionflow:linked:lookback-window",
-      "vc:label": "Lookback Window"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-forecast",
-      "vc:label": "Point Forecast"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-forecast",
-      "vc:label": "Probabilistic Forecast"
-    },
-    {
-      "@id": "urn:visionflow:linked:reconciliation-step",
-      "vc:label": "Reconciliation Step"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cross-validation-strategy",
-      "vc:label": "Cross-Validation Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:forecast-evaluation-protocol",
-      "vc:label": "Forecast Evaluation Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:historical-time-series-data",
-      "vc:label": "Historical Time Series Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:stationarity-analysis",
-      "vc:label": "Stationarity Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compute-infrastructure",
-      "vc:label": "Compute Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-reporting",
-      "vc:label": "Automated Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:capacity-planning",
-      "vc:label": "Capacity Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-support",
-      "vc:label": "Decision Support"
-    },
-    {
-      "@id": "urn:visionflow:linked:demand-planning",
-      "vc:label": "Demand Planning"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-quantification",
-      "vc:label": "Risk Quantification"
-    },
-    {
-      "@id": "urn:visionflow:linked:scenario-analysis",
-      "vc:label": "Scenario Analysis"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:arima",
-      "vc:label": "ARIMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:exponential-smoothing",
-      "vc:label": "Exponential Smoothing"
-    },
-    {
-      "@id": "urn:visionflow:linked:hierarchical-reconciliation",
-      "vc:label": "Hierarchical Reconciliation"
-    },
-    {
-      "@id": "urn:visionflow:linked:lstm",
-      "vc:label": "LSTM"
-    },
-    {
-      "@id": "urn:visionflow:linked:normalising-flows",
-      "vc:label": "Normalising Flows"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantile-regression",
-      "vc:label": "Quantile Regression"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-space-models",
-      "vc:label": "State Space Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-attention",
-      "vc:label": "Transformer Attention"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:optimisation-theory",
-      "vc:label": "Optimisation Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-inference",
-      "vc:label": "Statistical Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:energy-forecasting",
-      "vc:label": "Energy Forecasting"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-risk",
-      "vc:label": "Financial Risk"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-grid-operations",
-      "vc:label": "Smart Grid Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:traffic-prediction",
-      "vc:label": "Traffic Prediction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:clinical-decision-support",
-      "vc:label": "Clinical Decision Support"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:supply-chain-management",
-      "vc:label": "Supply Chain Management"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:autocorrelation-analysis",
-      "vc:label": "Autocorrelation Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:fourier-transform",
-      "vc:label": "Fourier Transform"
-    },
-    {
-      "@id": "urn:visionflow:linked:stationarity-testing",
-      "vc:label": "Stationarity Testing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ensemble-methods",
-      "vc:label": "Ensemble Methods"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gradient-descent",
-      "vc:label": "Gradient Descent"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:causal-inference",
-      "vc:label": "Causal Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:classification",
-      "vc:label": "Classification"
-    },
-    {
-      "@id": "urn:visionflow:linked:regression-analysis",
-      "vc:label": "Regression Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-data-analysis",
-      "vc:label": "Spatial Data Analysis"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:anomaly-detection",
-      "vc:label": "Anomaly Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-modelling",
-      "vc:label": "Climate Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:econometrics",
-      "vc:label": "Econometrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:epidemiological-modelling",
-      "vc:label": "Epidemiological Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:operations-research",
-      "vc:label": "Operations Research"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:signal-processing",
-      "vc:label": "Signal Processing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:crps-evaluation-standard",
-      "vc:label": "CRPS Evaluation Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:m-competition-protocol",
-      "vc:label": "M-Competition Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:monash-time-series-archive",
-      "vc:label": "Monash Time Series Archive"
-    },
-    {
-      "@id": "urn:visionflow:linked:nixtla-benchmark-suite",
-      "vc:label": "Nixtla Benchmark Suite"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:statistical-modelling",
-      "vc:label": "Statistical Modelling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

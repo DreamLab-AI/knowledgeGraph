@@ -3,78 +3,91 @@
   "title": "Metadata Standard",
   "slug": "metadata-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metadata-standard",
+  "classIri": "urn:ngm:class:metadata-standard",
   "domain": "spatial-computing",
   "definition": "A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:data-elements",
+        "id": "urn:ngm:class:data-elements",
         "label": "Data Elements"
       },
       {
-        "id": "urn:visionflow:linked:encoding-specification",
+        "id": "urn:ngm:class:encoding-specification",
         "label": "Encoding Specification"
       },
       {
-        "id": "urn:visionflow:linked:schema-definition",
+        "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
       },
       {
-        "id": "urn:visionflow:linked:semantics-rules",
+        "id": "urn:ngm:class:semantics-rules",
         "label": "Semantics Rules"
       },
       {
-        "id": "urn:visionflow:linked:validation-constraints",
+        "id": "urn:ngm:class:validation-constraints",
         "label": "Validation Constraints"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-model",
+        "id": "urn:ngm:class:data-model",
         "label": "Data Model"
       },
       {
-        "id": "urn:visionflow:linked:namespace-management",
+        "id": "urn:ngm:class:namespace-management",
         "label": "Namespace Management"
       },
       {
-        "id": "urn:visionflow:owl:class:controlled-vocabulary",
+        "id": "urn:ngm:class:controlled-vocabulary",
         "label": "Controlled Vocabulary"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-discovery",
+        "id": "urn:ngm:class:data-discovery",
         "label": "Data Discovery"
       },
       {
-        "id": "urn:visionflow:linked:information-exchange",
+        "id": "urn:ngm:class:information-exchange",
         "label": "Information Exchange"
       },
       {
-        "id": "urn:visionflow:linked:resource-description",
+        "id": "urn:ngm:class:resource-description",
         "label": "Resource Description"
       },
       {
-        "id": "urn:visionflow:linked:semantic-interoperability",
+        "id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management-system",
+        "label": "Data Management System"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Algorithmic Transparency Reports",
   "slug": "algorithmic-transparency-reports",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:algorithmic-transparency-reports",
+  "classIri": "urn:ngm:class:algorithmic-transparency-reports",
   "domain": "artificial-intelligence",
-  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-making. These reports provide standardized transparency information accessible to non-technical audiences, enabling external scrutiny, regulatory compliance verification, and informed public discourse about AI systems affecting individuals and communities. Key report sections include system descriptions (purpose, functionality, deployment scale, affected populations), performance metrics (accuracy, precision, recall, fairness metrics disaggregated by protected groups), fairness and bias analysis (disparate impact assessments, bias mitigation measures, ongoing monitoring), governance and oversight (responsible parties, ethics board reviews, audit procedures), data practices (data sources, collection methods, retention policies, privacy protections), explainability provisions (how decisions are made, contestation mechanisms, human review availability), incidents and remediation (system failure",
+  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-m...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-ethics",
+      "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

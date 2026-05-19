@@ -3,127 +3,215 @@
   "title": "Reputation System",
   "slug": "reputation-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:reputation-system",
+  "classIri": "urn:ngm:class:reputation-system",
   "domain": "blockchain",
-  "definition": "A [[Reputation System]] is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless [[Blockchain]] environments, spanning algorithmic trust propagation architectures (EigenTrust iterative convergence on peer-to-peer trust graphs, PageRank-style trust diffusion across weighted directed graphs, Bayesian reputation aggregation modelling prior beliefs updated by observed interactions), on-chain attestation frameworks ([[Ethereum Attestation Service]] EAS enabling arbitrary claim schemas referenced by UID, Verax shared attestation registry on Optimism/Linea/Polygon, Sign Protocol omnichain attestation), [[Sybil Resistance]] mechanisms (proof-of-humanity biometric verification, [[Gitcoin Passport]] composite stamp scoring aggregating 30+ credential types across OAuth/ENS/POAP sources, [[Worldcoin]] World ID iris biometric ZK-proof uniqueness, [[Gitcoin]] quadratic funding Sybil mitigation), Web3-native credential aggregation protocols ([[Karma3 Labs]] OpenRank EigenTrust-based social graph ranking for Farcaster/Lens 2023-2026, [[ENS]] reverse resolution ",
+  "definition": "A [[Reputation System]] is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless [[Blockchain]] environments, spanning algorithmic trust propagation architect...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralised-governance",
+      "id": "urn:ngm:class:decentralised-governance",
       "label": "Decentralised Governance"
     },
     {
-      "id": "urn:visionflow:linked:feedback-system",
+      "id": "urn:ngm:class:feedback-system",
       "label": "Feedback System"
-    },
-    {
-      "id": "urn:visionflow:linked:social-coordination",
-      "label": "Social Coordination"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:aggregation-algorithm",
+        "id": "urn:ngm:class:aggregation-algorithm",
         "label": "Aggregation Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:attestation-service",
+        "id": "urn:ngm:class:attestation-service",
         "label": "Attestation Service"
       },
       {
-        "id": "urn:visionflow:linked:credential-registry",
+        "id": "urn:ngm:class:credential-registry",
         "label": "Credential Registry"
       },
       {
-        "id": "urn:visionflow:linked:score-oracle",
+        "id": "urn:ngm:class:score-oracle",
         "label": "Score Oracle"
       },
       {
-        "id": "urn:visionflow:linked:sybil-resistance",
+        "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
       },
       {
-        "id": "urn:visionflow:linked:trust-graph",
+        "id": "urn:ngm:class:trust-graph",
         "label": "Trust Graph"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:attestation-schema",
+        "id": "urn:ngm:class:attestation-schema",
         "label": "Attestation Schema"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-proof",
+        "id": "urn:ngm:class:cryptographic-proof",
         "label": "Cryptographic Proof"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-identity",
+        "id": "urn:ngm:class:on-chain-identity",
         "label": "On-Chain Identity"
       },
       {
-        "id": "urn:visionflow:linked:transaction-history",
+        "id": "urn:ngm:class:transaction-history",
         "label": "Transaction History"
       },
       {
-        "id": "urn:visionflow:linked:trust-anchor",
+        "id": "urn:ngm:class:trust-anchor",
         "label": "Trust Anchor"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:peer-selection",
+        "id": "urn:ngm:class:peer-selection",
         "label": "Peer Selection"
       },
       {
-        "id": "urn:visionflow:linked:permissionless-trust",
+        "id": "urn:ngm:class:permissionless-trust",
         "label": "Permissionless Trust"
       },
       {
-        "id": "urn:visionflow:linked:quadratic-funding",
+        "id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
       },
       {
-        "id": "urn:visionflow:linked:reputation-gated-access",
+        "id": "urn:ngm:class:reputation-gated-access",
         "label": "Reputation-Gated Access"
       },
       {
-        "id": "urn:visionflow:linked:social-graph-analysis",
+        "id": "urn:ngm:class:social-graph-analysis",
         "label": "Social Graph Analysis"
       },
       {
-        "id": "urn:visionflow:owl:class:dao-governance",
+        "id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:eigen-trust-algorithm",
+        "id": "urn:ngm:class:eigen-trust-algorithm",
         "label": "EigenTrust Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:page-rank-trust-diffusion",
+        "id": "urn:ngm:class:page-rank-trust-diffusion",
         "label": "PageRank Trust Diffusion"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+        "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proof"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-networks",
+        "label": "Layer 2 Networks"
+      },
+      {
+        "id": "urn:ngm:class:soulbound-tokens",
+        "label": "Soulbound Tokens"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum-attestation-service",
+        "label": "Ethereum Attestation Service"
+      },
+      {
+        "id": "urn:ngm:class:farcaster",
+        "label": "Farcaster"
+      },
+      {
+        "id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "id": "urn:ngm:class:karma3-labs",
+        "label": "Karma3 Labs"
+      },
+      {
+        "id": "urn:ngm:class:lens-protocol",
+        "label": "Lens Protocol"
+      },
+      {
+        "id": "urn:ngm:class:worldcoin",
+        "label": "Worldcoin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eip-4804",
+        "label": "EIP-4804"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-attestation-service",
+        "label": "Ethereum Attestation Service"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-working-group",
+        "label": "W3C DID Working Group"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-vc-working-group",
+        "label": "W3C VC Working Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:web3-social",
+        "label": "Web3 Social"
+      },
+      {
+        "id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,78 +3,87 @@
   "title": "Interoperability Framework",
   "slug": "interoperability-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interoperability-framework",
+  "classIri": "urn:ngm:class:interoperability-framework",
   "domain": "infrastructure",
   "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-architecture",
+      "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:api-specifications",
+        "id": "urn:ngm:class:api-specifications",
         "label": "API Specifications"
       },
       {
-        "id": "urn:visionflow:linked:data-formats",
+        "id": "urn:ngm:class:data-formats",
         "label": "Data Formats"
       },
       {
-        "id": "urn:visionflow:linked:protocol-definitions",
+        "id": "urn:ngm:class:protocol-definitions",
         "label": "Protocol Definitions"
       },
       {
-        "id": "urn:visionflow:owl:class:data-integration-interface",
+        "id": "urn:ngm:class:data-integration-interface",
         "label": "Data Integration Interface"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standard",
+        "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
       },
       {
-        "id": "urn:visionflow:owl:class:technical-standards",
+        "id": "urn:ngm:class:technical-standards",
         "label": "Technical Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:universal-manifest",
+        "id": "urn:ngm:class:universal-manifest",
         "label": "Universal Manifest"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:technical-documentation",
+        "id": "urn:ngm:class:technical-documentation",
         "label": "Technical Documentation"
       },
       {
-        "id": "urn:visionflow:owl:class:standardization-bodies",
+        "id": "urn:ngm:class:standardization-bodies",
         "label": "Standardization Bodies"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-integration",
+        "id": "urn:ngm:class:cross-platform-integration",
         "label": "Cross-Platform Integration"
       },
       {
-        "id": "urn:visionflow:owl:class:scalable-architecture",
+        "id": "urn:ngm:class:scalable-architecture",
         "label": "Scalable Architecture"
       },
       {
-        "id": "urn:visionflow:owl:class:system-interoperability",
+        "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

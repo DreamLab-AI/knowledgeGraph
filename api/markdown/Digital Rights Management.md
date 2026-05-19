@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-rights-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-rights-management",
+  "@type": "Class",
   "label": "Digital Rights Management",
+  "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:content-protection",
-      "vc:label": "Content Protection"
+      "@id": "urn:ngm:class:content-protection",
+      "label": "Content Protection"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9697310208a5da0a432d98f0ff69ab9b749bd531c5cb0677097e3ad5a28125f5"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:license-management",
+        "label": "License Management"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:piracy-prevention",
+        "label": "Piracy Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9697310208a5da0a432d98f0ff69ab9b749bd531c5cb0677097e3ad5a28125f5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:encryption",
-      "vc:label": "Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:license-management",
-      "vc:label": "License Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:piracy-prevention",
-      "vc:label": "Piracy Prevention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:royalty-distribution",
-      "vc:label": "Royalty Distribution"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

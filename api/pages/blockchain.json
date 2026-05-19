@@ -3,94 +3,94 @@
   "title": "Blockchain",
   "slug": "blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain",
+  "classIri": "urn:ngm:class:blockchain",
   "domain": "blockchain",
-  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without requiring a trusted central authority.",
+  "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptographic-system",
+      "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System"
     },
     {
-      "id": "urn:visionflow:owl:class:distributed-data-structure",
+      "id": "urn:ngm:class:distributed-data-structure",
       "label": "Distributed Data Structure"
-    },
-    {
-      "id": "urn:visionflow:owl:class:distributed-ledger",
-      "label": "Distributed Ledger"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 1.0,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:owl:class:block",
+        "id": "urn:ngm:class:block",
         "label": "Block"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:mining",
+        "id": "urn:ngm:class:mining",
         "label": "Mining"
       },
       {
-        "id": "urn:visionflow:owl:class:node",
+        "id": "urn:ngm:class:node",
         "label": "Node"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:transaction",
+        "id": "urn:ngm:class:transaction",
         "label": "Transaction"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:distributed-consensus",
+        "id": "urn:ngm:class:distributed-consensus",
         "label": "Distributed Consensus"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-finance",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:visionflow:linked:supply-chain-transparency",
+        "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptocurrency",
+        "id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
       {
-        "id": "urn:visionflow:owl:class:token-economics",
+        "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

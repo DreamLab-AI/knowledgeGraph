@@ -172,102 +172,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:interoperability-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:interoperability-framework",
+  "@type": "Class",
   "label": "Interoperability Framework",
+  "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture",
-      "vc:label": "Metaverse Architecture"
+      "@id": "urn:ngm:class:metaverse-architecture",
+      "label": "Metaverse Architecture"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:api-specifications",
+        "label": "API Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:data-formats",
+        "label": "Data Formats"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-definitions",
+        "label": "Protocol Definitions"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration-interface",
+        "label": "Data Integration Interface"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:universal-manifest",
+        "label": "Universal Manifest"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:standardization-bodies",
+        "label": "Standardization Bodies"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-integration",
+        "label": "Cross-Platform Integration"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-architecture",
+        "label": "Scalable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-architecture",
+        "label": "Metaverse Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8026325286143126c1c54f1503e4793484088698b0777cb00c6a2b091da181c4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-architecture",
-      "vc:label": "Metaverse Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:api-specifications",
-      "vc:label": "API Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-formats",
-      "vc:label": "Data Formats"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-definitions",
-      "vc:label": "Protocol Definitions"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-integration-interface",
-      "vc:label": "Data Integration Interface"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standard",
-      "vc:label": "Metadata Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:technical-standards",
-      "vc:label": "Technical Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:universal-manifest",
-      "vc:label": "Universal Manifest"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:technical-documentation",
-      "vc:label": "Technical Documentation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:standardization-bodies",
-      "vc:label": "Standardization Bodies"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-integration",
-      "vc:label": "Cross-Platform Integration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:scalable-architecture",
-      "vc:label": "Scalable Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-interoperability",
-      "vc:label": "System Interoperability"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

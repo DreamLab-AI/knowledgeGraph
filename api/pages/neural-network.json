@@ -3,40 +3,61 @@
   "title": "Neural Network",
   "slug": "neural-network",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:neural-network",
+  "classIri": "urn:ngm:class:neural-network",
   "domain": "artificial-intelligence",
-  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, and transformer architectures.",
+  "definition": "A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data, forming the foundational substrate of deep learning systems including convolutional networks, recurrent networks, a...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:deep-learning",
+      "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:computer-vision",
+        "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
-        "id": "urn:visionflow:owl:class:natural-language-processing",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:pattern-recognition",
+        "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   },
   "wikilinks": [
     {

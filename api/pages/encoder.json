@@ -3,19 +3,18 @@
   "title": "Encoder",
   "slug": "encoder",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:encoder",
+  "classIri": "urn:ngm:class:encoder",
   "domain": "artificial-intelligence",
   "definition": "The component in an encoder-decoder architecture that processes the input sequence and produces contextualised representations, using self-attention and feed-forward layers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

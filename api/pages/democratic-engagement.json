@@ -3,19 +3,18 @@
   "title": "Democratic Engagement",
   "slug": "democratic-engagement",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:democratic-engagement",
+  "classIri": "urn:ngm:class:democratic-engagement",
   "domain": "spatial-computing",
-  "definition": "Democratic Engagement is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Democratic Engagement is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-telecollaboration",
+      "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

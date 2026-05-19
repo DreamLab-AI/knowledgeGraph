@@ -348,344 +348,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cli-multi-agent-systems",
+  "@type": "Class",
   "label": "CLI Multi-Agent Systems",
+  "definition": "CLI multi-agent systems are software architectures in which networks of autonomous AI agents operate natively within command-line and terminal environments, coordinating to decompose, plan, and execute complex long-horizon tasks through tool invocation, sandboxed code execution, inter-agent messa...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:agentic-workflow",
-      "vc:label": "Agentic Workflow"
+      "@id": "urn:ngm:class:agentic-workflow",
+      "label": "Agentic Workflow"
     },
     {
-      "@id": "urn:visionflow:linked:autonomous-agents",
-      "vc:label": "Autonomous Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-agents",
-      "vc:label": "LLM Agents"
+      "@id": "urn:ngm:class:autonomous-agents",
+      "label": "Autonomous Agents"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9941fc18e8ae0f9df1c13ae4237aca16ddd280b41f865fcd6346b68a0b3831f9"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:planning-agent",
+        "label": "Planning Agent"
+      },
+      {
+        "@id": "urn:ngm:class:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:tool-catalogue",
+        "label": "Tool Catalogue"
+      },
+      {
+        "@id": "urn:ngm:class:worker-agent",
+        "label": "Worker Agent"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration-protocol",
+        "label": "Orchestration Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
+      },
+      {
+        "@id": "urn:ngm:class:shell-environment",
+        "label": "Shell Environment"
+      },
+      {
+        "@id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:automated-code-review",
+        "label": "Automated Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-debugging",
+        "label": "Autonomous Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD Automation"
+      },
+      {
+        "@id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "@id": "urn:ngm:class:repository-scale-refactoring",
+        "label": "Repository-Scale Refactoring"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "@id": "urn:ngm:class:code-act",
+        "label": "CodeAct"
+      },
+      {
+        "@id": "urn:ngm:class:crew-ai",
+        "label": "CrewAI"
+      },
+      {
+        "@id": "urn:ngm:class:lang-graph",
+        "label": "LangGraph"
+      },
+      {
+        "@id": "urn:ngm:class:re-act",
+        "label": "ReAct"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bash",
+        "label": "Bash"
+      },
+      {
+        "@id": "urn:ngm:class:firecracker",
+        "label": "Firecracker"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agents",
+        "label": "Autonomous Agents"
+      },
+      {
+        "@id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      },
+      {
+        "@id": "urn:ngm:class:crew-ai",
+        "label": "CrewAI"
+      },
+      {
+        "@id": "urn:ngm:class:lang-graph",
+        "label": "LangGraph"
+      },
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "@id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      },
+      {
+        "@id": "urn:ngm:class:dev-sec-ops",
+        "label": "DevSecOps"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-agents",
+        "label": "Software Engineering Agents"
+      },
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop-learning",
+        "label": "Human-in-the-Loop Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-agents-sdk",
+        "label": "OpenAI Agents SDK"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9941fc18e8ae0f9df1c13ae4237aca16ddd280b41f865fcd6346b68a0b3831f9@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "CLI multi-agent systems are software architectures in which networks of autonomous AI agents operate natively within command-line and terminal environments, coordinating to decompose, plan, and execute complex long-horizon tasks through tool invocation, sandboxed code execution, inter-agent messaging, and shared or structured state — distinct from graphical or web-based agent deployments in their emphasis on shell-native operation, scriptability, composability with UNIX pipelines, fire-and-forget batch semantics, and tight integration with developer workflows such as version control, CI/CD pipelines, and headless server automation. The paradigm is defined by five interlocking properties: (1) terminal-native execution, where agents invoke bash, Python, or REPL interpreters directly within the shell, reading stdout/stderr and acting on exit codes; (2) tool use and function calling, where LLM-driven agents select from a catalogue of registered tools (file editors, web search, code executors, API clients) described via structured schemas (JSON, YAML, OpenAPI) and dispatched at inference time; (3) orchestrated multi-agent topologies, where a planner or supervisor agent decomposes a goal",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:agent-orchestrator",
-      "vc:label": "Agent Orchestrator"
-    },
-    {
-      "@id": "urn:visionflow:linked:inter-agent-communication",
-      "vc:label": "Inter-Agent Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:planning-agent",
-      "vc:label": "Planning Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandbox-environment",
-      "vc:label": "Sandbox Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-management",
-      "vc:label": "State Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-decomposition",
-      "vc:label": "Task Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-catalogue",
-      "vc:label": "Tool Catalogue"
-    },
-    {
-      "@id": "urn:visionflow:linked:worker-agent",
-      "vc:label": "Worker Agent"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:orchestration-protocol",
-      "vc:label": "Orchestration Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandboxed-code-execution",
-      "vc:label": "Sandboxed Code Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:shell-environment",
-      "vc:label": "Shell Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-schema",
-      "vc:label": "Tool Schema"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:agentic-workflow",
-      "vc:label": "Agentic Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-code-review",
-      "vc:label": "Automated Code Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-debugging",
-      "vc:label": "Autonomous Debugging"
-    },
-    {
-      "@id": "urn:visionflow:linked:ci-cd-automation",
-      "vc:label": "CI/CD Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dev-sec-ops",
-      "vc:label": "DevSecOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:repository-scale-refactoring",
-      "vc:label": "Repository-Scale Refactoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-engineering-agents",
-      "vc:label": "Software Engineering Agents"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:agent2-agent-protocol",
-      "vc:label": "Agent2Agent Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:auto-gen",
-      "vc:label": "AutoGen"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-act",
-      "vc:label": "CodeAct"
-    },
-    {
-      "@id": "urn:visionflow:linked:crew-ai",
-      "vc:label": "CrewAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-graph",
-      "vc:label": "LangGraph"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act",
-      "vc:label": "ReAct"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:large-language-model",
-      "vc:label": "Large Language Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:function-calling",
-      "vc:label": "Function Calling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:orchestration",
-      "vc:label": "Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:agentic-workflow",
-      "vc:label": "Agentic Workflow"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-testing",
-      "vc:label": "Automated Testing"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-execution",
-      "vc:label": "Code Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:dev-sec-ops",
-      "vc:label": "DevSecOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-engineering-agents",
-      "vc:label": "Software Engineering Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-decomposition",
-      "vc:label": "Task Decomposition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-in-the-loop-learning",
-      "vc:label": "Human-in-the-Loop Learning"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:bash",
-      "vc:label": "Bash"
-    },
-    {
-      "@id": "urn:visionflow:linked:firecracker",
-      "vc:label": "Firecracker"
-    },
-    {
-      "@id": "urn:visionflow:linked:git",
-      "vc:label": "Git"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-telemetry",
-      "vc:label": "OpenTelemetry"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:robotic-process-automation",
-      "vc:label": "Robotic Process Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-agent-system",
-      "vc:label": "Single-Agent System"
-    },
-    {
-      "@id": "urn:visionflow:linked:static-analysis",
-      "vc:label": "Static Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-ci-cd",
-      "vc:label": "Traditional CI/CD"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbot",
-      "vc:label": "Chatbot"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:auto-gen",
-      "vc:label": "AutoGen"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-agents",
-      "vc:label": "Autonomous Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-execution",
-      "vc:label": "Code Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:crew-ai",
-      "vc:label": "CrewAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:lang-graph",
-      "vc:label": "LangGraph"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-agents",
-      "vc:label": "LLM Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:orchestration",
-      "vc:label": "Orchestration"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:agent2-agent-protocol",
-      "vc:label": "Agent2Agent Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-agents-sdk",
-      "vc:label": "OpenAI Agents SDK"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:dev-sec-ops",
-      "vc:label": "DevSecOps"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-engineering-agents",
-      "vc:label": "Software Engineering Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

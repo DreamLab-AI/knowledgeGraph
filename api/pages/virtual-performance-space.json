@@ -3,94 +3,107 @@
   "title": "Virtual Performance Space",
   "slug": "virtual-performance-space",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-performance-space",
+  "classIri": "urn:ngm:class:virtual-performance-space",
   "domain": "spatial-computing",
   "definition": "Immersive virtual venue environment designed for hosting live performances, concerts, theater productions, events, and social gatherings with real-time audience interaction and multimedia presentation capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-reality",
+      "id": "urn:ngm:class:virtual-reality",
       "label": "Virtual Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audience-seating",
+        "id": "urn:ngm:class:audience-seating",
         "label": "Audience Seating"
       },
       {
-        "id": "urn:visionflow:linked:lighting-system",
+        "id": "urn:ngm:class:lighting-system",
         "label": "Lighting System"
       },
       {
-        "id": "urn:visionflow:linked:social-interaction-features",
+        "id": "urn:ngm:class:social-interaction-features",
         "label": "Social Interaction Features"
       },
       {
-        "id": "urn:visionflow:owl:class:audio-system",
+        "id": "urn:ngm:class:audio-system",
         "label": "Audio System"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-stage",
+        "id": "urn:ngm:class:virtual-stage",
         "label": "Virtual Stage"
       },
       {
-        "id": "urn:visionflow:owl:class:visual-effects",
+        "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:real-time-streaming",
+        "id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Streaming"
       },
       {
-        "id": "urn:visionflow:linked:social-presence-system",
+        "id": "urn:ngm:class:social-presence-system",
         "label": "Social Presence System"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:avatar-system",
+        "id": "urn:ngm:class:avatar-system",
         "label": "Avatar System"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-audio",
+        "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:hybrid-performances",
+        "id": "urn:ngm:class:hybrid-performances",
         "label": "Hybrid Performances"
       },
       {
-        "id": "urn:visionflow:linked:live-events",
+        "id": "urn:ngm:class:live-events",
         "label": "Live Events"
       },
       {
-        "id": "urn:visionflow:linked:social-gatherings",
+        "id": "urn:ngm:class:social-gatherings",
         "label": "Social Gatherings"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-concerts",
+        "id": "urn:ngm:class:virtual-concerts",
         "label": "Virtual Concerts"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-theater",
+        "id": "urn:ngm:class:virtual-theater",
         "label": "Virtual Theater"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

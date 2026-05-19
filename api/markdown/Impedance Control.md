@@ -152,84 +152,69 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:impedance-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:impedance-control",
+  "@type": "Class",
   "label": "Impedance Control",
+  "definition": "Impedance Control - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:control-systems",
-      "vc:label": "Control Systems"
+      "@id": "urn:ngm:class:control-systems",
+      "label": "Control Systems"
     },
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "Robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:damping-control",
+        "label": "Damping Control"
+      },
+      {
+        "@id": "urn:ngm:class:stiffness-modulation",
+        "label": "Stiffness Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-dynamics-model",
+        "label": "Virtual Dynamics Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-manipulation",
+        "label": "Adaptive Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:safe-human-interaction",
+        "label": "Safe Human Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:soft-contact-tasks",
+        "label": "Soft Contact Tasks"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compliant-motion-control",
+        "label": "Compliant Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:force-regulation",
+        "label": "Force Regulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e0600858a32e5b0ebcfc39e21c6fed7bb1f92e10fe320e343053ea788f0b9330@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Impedance Control** - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
-  "vc:qualityScore": {
-    "@value": "0.66",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.20",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:compliant-motion-control",
-      "vc:label": "Compliant Motion Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:force-regulation",
-      "vc:label": "Force Regulation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:damping-control",
-      "vc:label": "Damping Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:stiffness-modulation",
-      "vc:label": "Stiffness Modulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-dynamics-model",
-      "vc:label": "Virtual Dynamics Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-manipulation",
-      "vc:label": "Adaptive Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-human-interaction",
-      "vc:label": "Safe Human Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:soft-contact-tasks",
-      "vc:label": "Soft Contact Tasks"
-    }
-  ]
+  "quality": 0.66,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

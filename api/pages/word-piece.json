@@ -3,19 +3,18 @@
   "title": "WordPiece",
   "slug": "word-piece",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:word-piece",
+  "classIri": "urn:ngm:class:word-piece",
   "domain": "spatial-computing",
-  "definition": "A subword tokenisation method that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.",
+  "definition": "A subword tokenisation mod that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

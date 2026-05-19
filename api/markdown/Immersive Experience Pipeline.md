@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:immersive-experience-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:immersive-experience-pipeline",
+  "@type": "Class",
   "label": "Immersive Experience Pipeline",
+  "definition": "The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:content-production-workflow",
-      "vc:label": "Content Production Workflow"
+      "@id": "urn:ngm:class:content-production-workflow",
+      "label": "Content Production Workflow"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:45319ef00213cd8de93695d3781e53616a2411bb82ee64474054870d037bada2"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:xr-content-delivery",
+        "label": "XR Content Delivery"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:45319ef00213cd8de93695d3781e53616a2411bb82ee64474054870d037bada2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:xr-content-delivery",
-      "vc:label": "XR Content Delivery"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

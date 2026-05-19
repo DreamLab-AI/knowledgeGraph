@@ -3,19 +3,18 @@
   "title": "Hardware Abstraction",
   "slug": "hardware-abstraction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hardware-abstraction",
+  "classIri": "urn:ngm:class:hardware-abstraction",
   "domain": "spatial-computing",
-  "definition": "Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Hardware Abstraction is a type of Hardware Abstraction Layer (HAL) in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+      "id": "urn:ngm:class:hardware-abstraction-layer-hal",
       "label": "Hardware Abstraction Layer (HAL)"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

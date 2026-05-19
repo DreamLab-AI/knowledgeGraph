@@ -3,32 +3,36 @@
   "title": "Enterprise Architecture",
   "slug": "enterprise-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:enterprise-architecture",
+  "classIri": "urn:ngm:class:enterprise-architecture",
   "domain": "spatial-computing",
   "definition": "A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:enterprise-metaverse",
+        "id": "urn:ngm:class:enterprise-metaverse",
         "label": "Enterprise Metaverse"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

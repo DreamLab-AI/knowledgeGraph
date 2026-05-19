@@ -3,19 +3,18 @@
   "title": "Treatment Planning AI",
   "slug": "treatment-planning-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:treatment-planning-ai",
+  "classIri": "urn:ngm:class:treatment-planning-ai",
   "domain": "artificial-intelligence",
-  "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design. These systems integrate patient-specific data, treatment guidelines, outcome predictions, and resource constraints to generate evidence-based, individualised treatment plans.",
+  "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:medical-ai",
+      "id": "urn:ngm:class:medical-ai",
       "label": "Medical AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

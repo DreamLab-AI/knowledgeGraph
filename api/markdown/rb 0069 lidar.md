@@ -172,74 +172,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0069-lidar",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0069-lidar",
+  "@type": "Class",
   "label": "rb 0069 lidar",
+  "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accu...",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "Lidar"
+      "@id": "urn:ngm:class:lidar",
+      "label": "Lidar"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a75ad0064cb5ed94f648776a82081d34838694b2ce13b99ade11d4641ec42262"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
   },
-  "vc:inferenceRule": "R2DirectParent",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a75ad0064cb5ed94f648776a82081d34838694b2ce13b99ade11d4641ec42262@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accuracy.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-mapping",
-      "vc:label": "3D Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:obstacle-detection",
-      "vc:label": "Obstacle Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:simultaneous-localisation-and-mapping",
-      "vc:label": "Simultaneous Localisation and Mapping"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:point-cloud",
-      "vc:label": "Point Cloud"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R2DirectParent"
+  }
 }
 ```
 

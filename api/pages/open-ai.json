@@ -3,19 +3,18 @@
   "title": "Open AI",
   "slug": "open-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:open-ai",
+  "classIri": "urn:ngm:class:open-ai",
   "domain": "artificial-intelligence",
-  "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model. Following an October 2025 restructuring, the non-profit OpenAI Foundation holds 26% of the for-profit OpenAI Group PBC (public benefit corporation), with Microsoft owning 27% and the company valued at $500 billion.",
+  "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:aicompanies",
+      "id": "urn:ngm:class:aicompanies",
       "label": "AICompanies"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

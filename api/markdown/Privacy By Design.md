@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-by-design",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-by-design",
+  "@type": "Class",
   "label": "Privacy By Design",
+  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core fun...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4d76be256bfcf32807e21b4900ecc574157751b50e28a362831082346446e521"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4d76be256bfcf32807e21b4900ecc574157751b50e28a362831082346446e521@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core functionality rather than optional feature. This approach follows seven foundational principles articulated by Ann Cavoukian including proactive not reactive prevention (anticipating and preventing privacy risks before they materialize), privacy as default setting (systems configured for maximum privacy protection without user intervention), privacy embedded into design (integrated into system architecture and business operations as essential component), full functionality positive-sum not zero-sum (avoiding false dichotomies between privacy and other objectives, achieving both through innovative design), end-to-end security protecting data throughout lifecycle (from collection through retention to destruction), visibility and transparency (keeping systems open and accountable with clear documentation), and respect for user privacy (maintaining user-centric focus with empowering privacy contro",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

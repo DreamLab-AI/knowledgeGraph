@@ -3,70 +3,74 @@
   "title": "Cosmos IBC",
   "slug": "cosmos-ibc",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cosmos-ibc",
+  "classIri": "urn:ngm:class:cosmos-ibc",
   "domain": "blockchain",
   "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cross-chain-communication",
+      "id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross-Chain Communication"
     },
     {
-      "id": "urn:visionflow:linked:interoperability-protocol",
+      "id": "urn:ngm:class:interoperability-protocol",
       "label": "Interoperability Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:channel-protocol",
+        "id": "urn:ngm:class:channel-protocol",
         "label": "Channel Protocol"
       },
       {
-        "id": "urn:visionflow:linked:connection-protocol",
+        "id": "urn:ngm:class:connection-protocol",
         "label": "Connection Protocol"
       },
       {
-        "id": "urn:visionflow:linked:packet-system",
+        "id": "urn:ngm:class:packet-system",
         "label": "Packet System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-light-client",
+        "id": "urn:ngm:class:blockchain-light-client",
         "label": "Blockchain Light Client"
       },
       {
-        "id": "urn:visionflow:linked:packet-authentication",
+        "id": "urn:ngm:class:packet-authentication",
         "label": "Packet Authentication"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-proof",
+        "id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cosmos-ecosystem",
+        "id": "urn:ngm:class:cosmos-ecosystem",
         "label": "Cosmos Ecosystem"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-contracts",
+        "id": "urn:ngm:class:cross-chain-contracts",
         "label": "Cross-Chain Contracts"
       },
       {
-        "id": "urn:visionflow:linked:inter-chain-value-transfer",
+        "id": "urn:ngm:class:inter-chain-value-transfer",
         "label": "Inter-Chain Value Transfer"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

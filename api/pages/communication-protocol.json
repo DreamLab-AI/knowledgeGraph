@@ -3,90 +3,94 @@
   "title": "Communication Protocol",
   "slug": "communication-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:communication-protocol",
+  "classIri": "urn:ngm:class:communication-protocol",
   "domain": "robotics",
-  "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels. Protocols form the foundational layer enabling [[Inter-Robot Communication]], centralised control architectures, sensor data fusion, and multi-robot task coordination.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:linked:communication-systems",
-      "label": "Communication Systems"
-    },
-    {
-      "id": "urn:visionflow:owl:class:information-architecture",
-      "label": "Information Architecture"
-    }
-  ],
+  "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:addressing-scheme",
+        "id": "urn:ngm:class:addressing-scheme",
         "label": "Addressing Scheme"
       },
       {
-        "id": "urn:visionflow:linked:congestion-control",
+        "id": "urn:ngm:class:congestion-control",
         "label": "Congestion Control"
       },
       {
-        "id": "urn:visionflow:linked:error-correction",
+        "id": "urn:ngm:class:error-correction",
         "label": "Error Correction"
       },
       {
-        "id": "urn:visionflow:linked:message-format",
+        "id": "urn:ngm:class:message-format",
         "label": "Message Format"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bandwidth-constraints",
+        "id": "urn:ngm:class:bandwidth-constraints",
         "label": "Bandwidth Constraints"
       },
       {
-        "id": "urn:visionflow:linked:data-serialisation",
+        "id": "urn:ngm:class:data-serialisation",
         "label": "Data Serialisation"
       },
       {
-        "id": "urn:visionflow:linked:latency-tolerance",
+        "id": "urn:ngm:class:latency-tolerance",
         "label": "Latency Tolerance"
       },
       {
-        "id": "urn:visionflow:linked:network-physical-layer",
+        "id": "urn:ngm:class:network-physical-layer",
         "label": "Network Physical Layer"
       },
       {
-        "id": "urn:visionflow:linked:synchronisation-mechanism",
+        "id": "urn:ngm:class:synchronisation-mechanism",
         "label": "Synchronisation Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:distributed-control",
+        "id": "urn:ngm:class:distributed-control",
         "label": "Distributed Control"
       },
       {
-        "id": "urn:visionflow:linked:remote-teleoperation",
+        "id": "urn:ngm:class:remote-teleoperation",
         "label": "Remote Teleoperation"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data-fusion",
+        "id": "urn:ngm:class:sensor-data-fusion",
         "label": "Sensor Data Fusion"
       },
       {
-        "id": "urn:visionflow:linked:swarm-coordination",
+        "id": "urn:ngm:class:swarm-coordination",
         "label": "Swarm Coordination"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:communication-systems",
+        "label": "Communication Systems"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

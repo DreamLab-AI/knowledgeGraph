@@ -128,48 +128,27 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-governance-maturity-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-governance-maturity-model",
+  "@type": "Class",
   "label": "AI Governance Maturity Model",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6a9eb31c87949c08d1562189f8a3d42e3a8fe36bae6aa046c328e477dc07ba85"
+  "definition": "AI Governance Maturity Model is an assessment framework that defines progressive maturity levels for AI governance capabilities across multiple dimensions, enabling organizations to evaluate current practices, identify gaps, benchmark against peers, and guide continuous improvement toward trustwo...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6a9eb31c87949c08d1562189f8a3d42e3a8fe36bae6aa046c328e477dc07ba85@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Governance Maturity Model is an assessment framework that defines progressive maturity levels for AI governance capabilities across multiple dimensions, enabling organizations to evaluate current practices, identify gaps, benchmark against peers, and guide continuous improvement toward trustworthy AI deployment. These models characterize maturity through defined levels (typically 1-5) representing progression from ad-hoc reactive practices to optimized proactive governance, with each level specifying capabilities, processes, and artifacts expected at that stage. Maturity dimensions typically include governance structure and leadership (executive commitment, organizational roles, policy frameworks), risk management (identification, assessment, mitigation, monitoring), ethical practices (principles adoption, ethics review processes, fairness auditing), technical practices (documentation standards, testing protocols, monitoring systems), compliance and audit (regulatory alignment, audit procedures, evidence collection), stakeholder engagement (consultation processes, transparency practices, redress mechanisms), and continuous improvement (metrics collection, lessons learned, iterat",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

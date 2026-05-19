@@ -212,138 +212,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-architecture",
+  "@type": "Class",
   "label": "Distributed Architecture",
+  "definition": "Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b42ebe82b7de5f53f763969ef75ab437de8994a7086f4a91cb19f44fcecbd039"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:distributed-nodes",
+        "label": "Distributed Nodes"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:replication-strategy",
+        "label": "Replication Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:synchronization-protocols",
+        "label": "Synchronization Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reference-architecture",
+        "label": "Reference Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b42ebe82b7de5f53f763969ef75ab437de8994a7086f4a91cb19f44fcecbd039@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:reference-architecture",
-      "vc:label": "Reference Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:distributed-nodes",
-      "vc:label": "Distributed Nodes"
-    },
-    {
-      "@id": "urn:visionflow:linked:load-balancing",
-      "vc:label": "Load Balancing"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-strategy",
-      "vc:label": "Replication Strategy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-topology",
-      "vc:label": "Network Topology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:state-synchronization",
-      "vc:label": "State Synchronization"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:distributed-consensus",
-      "vc:label": "Distributed Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronization-protocols",
-      "vc:label": "Synchronization Protocols"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:geographic-distribution",
-      "vc:label": "Geographic Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-availability",
-      "vc:label": "High Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalability",
-      "vc:label": "Scalability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralization",
-      "vc:label": "Decentralization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cap-theorem",
-      "vc:label": "CAP Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-systems-theory",
-      "vc:label": "Distributed Systems Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-networking",
-      "vc:label": "Peer-to-Peer Networking"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

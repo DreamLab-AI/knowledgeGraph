@@ -120,52 +120,43 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:power-supply",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:power-supply",
+  "@type": "Class",
   "label": "Power Supply",
+  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7debf069170b6cd342dc80a492a5bffdc0087116fd6bcced7511b7aa7455526a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-operation",
+        "label": "Continuous Operation"
+      },
+      {
+        "@id": "urn:ngm:class:system-reliability",
+        "label": "System Reliability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7debf069170b6cd342dc80a492a5bffdc0087116fd6bcced7511b7aa7455526a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data center contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs).",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:continuous-operation",
-      "vc:label": "Continuous Operation"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-reliability",
-      "vc:label": "System Reliability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

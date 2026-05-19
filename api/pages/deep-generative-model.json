@@ -3,14 +3,13 @@
   "title": "Deep Generative Model",
   "slug": "deep-generative-model",
   "public": true,
-  "classIri": "urn:visionflow:linked:deep-generative-model",
+  "classIri": "urn:ngm:class:deep-generative-model",
   "domain": "artificial-intelligence",
   "definition": "Deep Generative Model is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
   "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.3,
-  "authorityScore": 0.5,
   "maturity": "draft",
-  "status": "stub-promoted",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -18,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

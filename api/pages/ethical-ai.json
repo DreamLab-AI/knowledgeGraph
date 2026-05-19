@@ -3,45 +3,49 @@
   "title": "Ethical AI",
   "slug": "ethical-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ethical-ai",
+  "classIri": "urn:ngm:class:ethical-ai",
   "domain": "artificial-intelligence",
-  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.",
+  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI life...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:stakeholder-engagement",
+        "id": "urn:ngm:class:stakeholder-engagement",
         "label": "stakeholder engagement"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:trustworthy-ai",
+        "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:visionflow:owl:class:responsible-ai",
+        "id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

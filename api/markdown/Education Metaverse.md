@@ -220,132 +220,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:education-metaverse",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:education-metaverse",
+  "@type": "Class",
   "label": "Education Metaverse",
+  "definition": "A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:assessment-system",
+        "label": "Assessment System"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-tool",
+        "label": "Collaboration Tool"
+      },
+      {
+        "@id": "urn:ngm:class:content-authoring-system",
+        "label": "Content Authoring System"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:learning-module",
+        "label": "Learning Module"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "@id": "urn:ngm:class:skills-training",
+        "label": "Skills Training"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-field-trip",
+        "label": "Virtual Field Trip"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse-application-platform",
+        "label": "Metaverse Application Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cfacc77f6e72bc337deb50fff3bea9cfb376ef65033ff5a2163917f113e89755@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-application-platform",
-      "vc:label": "Metaverse Application Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:assessment-system",
-      "vc:label": "Assessment System"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaboration-tool",
-      "vc:label": "Collaboration Tool"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-authoring-system",
-      "vc:label": "Content Authoring System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-analytics",
-      "vc:label": "Learning Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-module",
-      "vc:label": "Learning Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-classroom",
-      "vc:label": "Virtual Classroom"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-rendering-engine",
-      "vc:label": "3D Rendering Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar-system",
-      "vc:label": "Avatar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:remote-education",
-      "vc:label": "Remote Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:skills-training",
-      "vc:label": "Skills Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collaborative-learning",
-      "vc:label": "Collaborative Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-learning",
-      "vc:label": "Immersive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-field-trip",
-      "vc:label": "Virtual Field Trip"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:educational-content",
-      "vc:label": "Educational Content"
-    },
-    {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "Gesture Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-audio",
-      "vc:label": "Spatial Audio"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-device",
-      "vc:label": "XR Device"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

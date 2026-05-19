@@ -200,120 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:procedural-content-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:procedural-content-generation",
+  "@type": "Class",
   "label": "Procedural Content Generation",
+  "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e3ae1b9c99abe380cd7df1b4dac3708a6ec621a35512cc23e97e6f52acfc2995"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-model-inference-engine",
+        "label": "AI Model Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:asset-synthesizer",
+        "label": "Asset Synthesizer"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-generator",
+        "label": "Rule-Based Generator"
+      },
+      {
+        "@id": "urn:ngm:class:grammar-system",
+        "label": "Grammar System"
+      },
+      {
+        "@id": "urn:ngm:class:noise-function-library",
+        "label": "Noise Function Library"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-modeling-api",
+        "label": "3D Modeling API"
+      },
+      {
+        "@id": "urn:ngm:class:texture-generation-system",
+        "label": "Texture Generation System"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-asset-creation",
+        "label": "Automated Asset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-environments",
+        "label": "Dynamic Environments"
+      },
+      {
+        "@id": "urn:ngm:class:infinite-world-generation",
+        "label": "Infinite World Generation"
+      },
+      {
+        "@id": "urn:ngm:class:unique-content-variation",
+        "label": "Unique Content Variation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:content-creation-pipeline",
+        "label": "Content Creation Pipeline"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e3ae1b9c99abe380cd7df1b4dac3708a6ec621a35512cc23e97e6f52acfc2995@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:content-creation-pipeline",
-      "vc:label": "Content Creation Pipeline"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-model-inference-engine",
-      "vc:label": "AI Model Inference Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:asset-synthesizer",
-      "vc:label": "Asset Synthesizer"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-based-generator",
-      "vc:label": "Rule-Based Generator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:grammar-system",
-      "vc:label": "Grammar System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:noise-function-library",
-      "vc:label": "Noise Function Library"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-modeling-api",
-      "vc:label": "3D Modeling API"
-    },
-    {
-      "@id": "urn:visionflow:linked:texture-generation-system",
-      "vc:label": "Texture Generation System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-framework",
-      "vc:label": "Algorithmic Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-asset-creation",
-      "vc:label": "Automated Asset Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-environments",
-      "vc:label": "Dynamic Environments"
-    },
-    {
-      "@id": "urn:visionflow:linked:infinite-world-generation",
-      "vc:label": "Infinite World Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:unique-content-variation",
-      "vc:label": "Unique Content Variation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:fractal-algorithms",
-      "vc:label": "Fractal Algorithms"
-    },
-    {
-      "@id": "urn:visionflow:linked:l-systems",
-      "vc:label": "L-Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:perlin-noise",
-      "vc:label": "Perlin Noise"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-models",
-      "vc:label": "Machine Learning Models"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

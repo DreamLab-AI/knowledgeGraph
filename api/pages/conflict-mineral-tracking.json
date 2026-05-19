@@ -3,19 +3,18 @@
   "title": "Conflict Mineral Tracking",
   "slug": "conflict-mineral-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:conflict-mineral-tracking",
+  "classIri": "urn:ngm:class:conflict-mineral-tracking",
   "domain": "blockchain",
-  "definition": "Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend \u00a3500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.",
+  "definition": "Blockchain applications addressing ical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.89,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

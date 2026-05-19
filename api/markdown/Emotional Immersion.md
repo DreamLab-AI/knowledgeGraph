@@ -176,94 +176,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:emotional-immersion",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:emotional-immersion",
+  "@type": "Class",
   "label": "Emotional Immersion",
+  "definition": "Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:immersion",
-      "vc:label": "Immersion"
+      "@id": "urn:ngm:class:immersion",
+      "label": "Immersion"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:affective-design",
+        "label": "Affective Design"
+      },
+      {
+        "@id": "urn:ngm:class:sensory-feedback",
+        "label": "Sensory Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:narrative-content",
+        "label": "Narrative Content"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:emotional-resonance",
+        "label": "Emotional Resonance"
+      },
+      {
+        "@id": "urn:ngm:class:empathetic-connection",
+        "label": "Empathetic Connection"
+      },
+      {
+        "@id": "urn:ngm:class:story-engagement",
+        "label": "Story Engagement"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a0623ea82e575766323c07d268eaccbb70d3c8dad28e36f0acc96ad0c6a7ddb0@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:user-engagement",
-      "vc:label": "User Engagement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersion",
-      "vc:label": "Immersion"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:affective-design",
-      "vc:label": "Affective Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensory-feedback",
-      "vc:label": "Sensory Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:narrative-content",
-      "vc:label": "Narrative Content"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:emotional-resonance",
-      "vc:label": "Emotional Resonance"
-    },
-    {
-      "@id": "urn:visionflow:linked:empathetic-connection",
-      "vc:label": "Empathetic Connection"
-    },
-    {
-      "@id": "urn:visionflow:linked:story-engagement",
-      "vc:label": "Story Engagement"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audio-design",
-      "vc:label": "Audio Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:interaction-design",
-      "vc:label": "Interaction Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-fidelity",
-      "vc:label": "Visual Fidelity"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-metaverse-commerce",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-metaverse-commerce",
+  "@type": "Class",
   "label": "Cross Metaverse Commerce",
+  "definition": "Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
+      "@id": "urn:ngm:class:virtual-economy",
+      "label": "Virtual Economy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b0af7583b57e4bf6c513f7c9e09eb63bf6f8a5a98da69151e7dd84708d3657a8"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability-standards",
+        "label": "Interoperability Standards"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-trading",
+        "label": "Cross-Platform Trading"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-market-integration",
+        "label": "Virtual Market Integration"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b0af7583b57e4bf6c513f7c9e09eb63bf6f8a5a98da69151e7dd84708d3657a8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:interoperability-standards",
-      "vc:label": "Interoperability Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-infrastructure",
-      "vc:label": "Blockchain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-portability",
-      "vc:label": "Asset Portability"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-platform-trading",
-      "vc:label": "Cross-Platform Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-market-integration",
-      "vc:label": "Virtual Market Integration"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

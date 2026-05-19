@@ -200,80 +200,65 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:obstacle-avoidance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:obstacle-avoidance",
+  "@type": "Class",
   "label": "Obstacle Avoidance",
+  "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:reactive-control",
-      "vc:label": "Reactive Control"
+      "@id": "urn:ngm:class:reactive-control",
+      "label": "Reactive Control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6d5ef87c5d56ac45dc8329c1f456441c3cf2df113774b72ae1e7848dc1588a96"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:proximity-sensors",
+        "label": "Proximity Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collision-free-motion",
+        "label": "Collision-Free Motion"
+      },
+      {
+        "@id": "urn:ngm:class:safe-navigation",
+        "label": "Safe Navigation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:radar",
+        "label": "Radar"
+      },
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LIDAR"
+      },
+      {
+        "@id": "urn:ngm:class:ultrasonic-sensor",
+        "label": "Ultrasonic Sensor"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6d5ef87c5d56ac45dc8329c1f456441c3cf2df113774b72ae1e7848dc1588a96@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The capability of a mobile robot or autonomous system to detect and avoid collisions with obstacles in its environment in real-time using sensors and reactive control strategies. It enables safe navigation without requiring complete prior knowledge of the environment.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.96",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:proximity-sensors",
-      "vc:label": "Proximity Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-Time Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collision-free-motion",
-      "vc:label": "Collision-Free Motion"
-    },
-    {
-      "@id": "urn:visionflow:linked:safe-navigation",
-      "vc:label": "Safe Navigation"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:radar",
-      "vc:label": "Radar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:camera",
-      "vc:label": "Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lidar",
-      "vc:label": "LIDAR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ultrasonic-sensor",
-      "vc:label": "Ultrasonic Sensor"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

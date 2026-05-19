@@ -3,19 +3,18 @@
   "title": "Privacy",
   "slug": "privacy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy",
+  "classIri": "urn:ngm:class:privacy",
   "domain": "infrastructure",
   "definition": "The protection of personal information and individual autonomy in AI systems, encompassing data minimization, purpose limitation, transparency, and individual control over how personal data is collected, processed, stored, and shared throughout the AI lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-framework",
+      "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

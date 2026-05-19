@@ -3,19 +3,18 @@
   "title": "Synchronous Execution",
   "slug": "synchronous-execution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:synchronous-execution",
+  "classIri": "urn:ngm:class:synchronous-execution",
   "domain": "blockchain",
-  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins. The caller waits for the result before proceeding, establishing a direct temporal dependency between operations and enabling predictable, deterministic execution flow.",
+  "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:execution-model",
+      "id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

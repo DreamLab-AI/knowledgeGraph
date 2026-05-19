@@ -184,118 +184,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-ethics-checklist",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-ethics-checklist",
+  "@type": "Class",
   "label": "AI Ethics Checklist",
+  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ical compliance of AI systems against established governance frameworks.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d7fe99457fbbe29902c2831968b7f2a955f3397b8f0eb7181e45439bca52239f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-protocol",
+        "label": "Bias Detection Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-assessment-criteria",
+        "label": "Fairness Assessment Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-metrics",
+        "label": "Transparency Metrics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-system-documentation",
+        "label": "AI System Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:assessment-methodology",
+        "label": "Assessment Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-guidelines",
+        "label": "Ethical Guidelines"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ethical-ai-deployment",
+        "label": "Ethical AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d7fe99457fbbe29902c2831968b7f2a955f3397b8f0eb7181e45439bca52239f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accountability-framework",
-      "vc:label": "Accountability Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:bias-detection-protocol",
-      "vc:label": "Bias Detection Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:fairness-assessment-criteria",
-      "vc:label": "Fairness Assessment Criteria"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparency-metrics",
-      "vc:label": "Transparency Metrics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-system-documentation",
-      "vc:label": "AI System Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:assessment-methodology",
-      "vc:label": "Assessment Methodology"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethical-guidelines",
-      "vc:label": "Ethical Guidelines"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ethical-ai-deployment",
-      "vc:label": "Ethical AI Deployment"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-trust",
-      "vc:label": "Stakeholder Trust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:ieee-7000-standard",
-      "vc:label": "IEEE 7000 Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-ai-principles",
-      "vc:label": "OECD AI Principles"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

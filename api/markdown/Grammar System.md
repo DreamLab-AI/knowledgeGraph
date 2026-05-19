@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:grammar-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:grammar-system",
+  "@type": "Class",
   "label": "Grammar System",
+  "definition": "Natural language processing components within metaverse platforms that interpret, process, and generate human language for user interactions, enabling AI-powered conversations with virtual avatars, real-time language translation, grammar correction, and adaptive dialogue systems that respond to u...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
+      "@id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:55cac69e621a6d7ad4d32dc7193b1b3e59401120bfdf76739941b7e7195ebcbe"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multilingual-metaverse-experience",
+        "label": "Multilingual Metaverse Experience"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:55cac69e621a6d7ad4d32dc7193b1b3e59401120bfdf76739941b7e7195ebcbe@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Natural language processing components within metaverse platforms that interpret, process, and generate human language for user interactions, enabling AI-powered conversations with virtual avatars, real-time language translation, grammar correction, and adaptive dialogue systems that respond to user proficiency levels.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:multilingual-metaverse-experience",
-      "vc:label": "Multilingual Metaverse Experience"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

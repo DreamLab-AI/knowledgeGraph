@@ -3,19 +3,18 @@
   "title": "Virtual Commerce",
   "slug": "virtual-commerce",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-commerce",
+  "classIri": "urn:ngm:class:virtual-commerce",
   "domain": "spatial-computing",
   "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

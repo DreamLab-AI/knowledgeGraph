@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-world-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-world-infrastructure",
+  "@type": "Class",
   "label": "Virtual World Infrastructure",
+  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that toger enable persistent, scalable virtual environments wi...",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-infrastructure",
-      "vc:label": "Digital Infrastructure"
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:aa19f35f2377477f08e17b4363b6d20097217966899e5f0ce5ec0ce914a5b29b"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:aa19f35f2377477f08e17b4363b6d20097217966899e5f0ce5ec0ce914a5b29b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

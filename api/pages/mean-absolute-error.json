@@ -3,19 +3,18 @@
   "title": "Mean Absolute Error",
   "slug": "mean-absolute-error",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mean-absolute-error",
+  "classIri": "urn:ngm:class:mean-absolute-error",
   "domain": "artificial-intelligence",
-  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.",
+  "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:model-performance",
+      "id": "urn:ngm:class:model-performance",
       "label": "Model Performance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

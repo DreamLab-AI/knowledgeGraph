@@ -3,32 +3,36 @@
   "title": "Interface Standards",
   "slug": "interface-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interface-standards",
+  "classIri": "urn:ngm:class:interface-standards",
   "domain": "spatial-computing",
   "definition": "Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

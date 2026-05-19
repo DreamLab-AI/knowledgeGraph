@@ -196,122 +196,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dispute-resolution-mechanism",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dispute-resolution-mechanism",
+  "@type": "Class",
   "label": "Dispute Resolution Mechanism",
+  "definition": "Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution mods.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
+      "@id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fbbc2798bbba52bc9cb01be6acd7263fb8107bda3a86f29f9f7ed7edf8dafb7c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution-protocol",
+        "label": "Conflict Resolution Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-submission-system",
+        "label": "Evidence Submission System"
+      },
+      {
+        "@id": "urn:ngm:class:mediation-process",
+        "label": "Mediation Process"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "@id": "urn:ngm:class:e-contract-arbitration",
+        "label": "E-Contract Arbitration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:evidence-management",
+        "label": "Evidence Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-enforcement",
+        "label": "Automated Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:fair-adjudication",
+        "label": "Fair Adjudication"
+      },
+      {
+        "@id": "urn:ngm:class:participant-protection",
+        "label": "Participant Protection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fbbc2798bbba52bc9cb01be6acd7263fb8107bda3a86f29f9f7ed7edf8dafb7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution methods.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution-protocol",
-      "vc:label": "Conflict Resolution Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-submission-system",
-      "vc:label": "Evidence Submission System"
-    },
-    {
-      "@id": "urn:visionflow:linked:mediation-process",
-      "vc:label": "Mediation Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:arbitration-process",
-      "vc:label": "Arbitration Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:e-contract-arbitration",
-      "vc:label": "E-Contract Arbitration"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:evidence-management",
-      "vc:label": "Evidence Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-enforcement",
-      "vc:label": "Automated Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution",
-      "vc:label": "Conflict Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:fair-adjudication",
-      "vc:label": "Fair Adjudication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participant-protection",
-      "vc:label": "Participant Protection"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dispute-classification-system",
-      "vc:label": "Dispute Classification System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

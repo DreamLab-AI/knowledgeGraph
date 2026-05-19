@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-content-overlay",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-content-overlay",
+  "@type": "Class",
   "label": "Digital Content Overlay",
+  "definition": "Digital Content Overlay is a type of Augmented Reality in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
+      "@id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a7e15b7bb3d5d4c9fa7c3323bcfde3f1367827a42ff550ee1157bc4f699b291f"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-systems",
+        "label": "Camera Systems"
+      },
+      {
+        "@id": "urn:ngm:class:slam-technology",
+        "label": "SLAM Technology"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:information-display",
+        "label": "Information Display"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-guidance",
+        "label": "Interactive Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-annotation",
+        "label": "Spatial Annotation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a7e15b7bb3d5d4c9fa7c3323bcfde3f1367827a42ff550ee1157bc4f699b291f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The real-time integration and superimposition of digital information, graphics, 3D models, and interactive elements onto a user's view of the physical world through augmented reality displays, achieving a blended experience that enriches perception of reality. bridges-to:: [[Sensor Input]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-systems",
-      "vc:label": "Camera Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:slam-technology",
-      "vc:label": "SLAM Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:display-hardware",
-      "vc:label": "Display Hardware"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:information-display",
-      "vc:label": "Information Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-guidance",
-      "vc:label": "Interactive Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:spatial-annotation",
-      "vc:label": "Spatial Annotation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

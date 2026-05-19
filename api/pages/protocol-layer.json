@@ -3,27 +3,31 @@
   "title": "Protocol Layer",
   "slug": "protocol-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:protocol-layer",
+  "classIri": "urn:ngm:class:protocol-layer",
   "domain": "infrastructure",
-  "definition": "The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems. This layer encompasses consensus protocol implementations (Proof-of-Work mining protocols, Proof-of-Stake validation protocols, Byzantine Fault Tolerance protocol instances like PBFT and Tendermint), network protocols (peer-to-peer gossip, block propagation, transaction relay), data format specifications (transaction formats, block structures, serialization schemes), communication standards (RPC interfaces, message formats, network handshakes), smart contract execution protocols (EVM execution, gas metering, state transitions), interoperability protocols (cross-chain bridges, atomic swaps, inter-blockchain communication), and layer-2 protocols (Lightning Network, rollups, state channels). Unlike ConceptualLayer which addresses abstract protocol concepts, ProtocolLayer focuses on concrete protocol specifications and implementations. Unlike SecurityLayer which emphasizes security mechanisms, ProtocolLayer addresses the full scope of ",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
+  "definition": "The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

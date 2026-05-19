@@ -112,42 +112,31 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:training-method",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:training-method",
+  "@type": "Class",
   "label": "Training Method",
+  "definition": "Training mods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f27cd328a0995532faad73fec150a42af5137a83bb13dd0d3c30eb76e85c8a23"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f27cd328a0995532faad73fec150a42af5137a83bb13dd0d3c30eb76e85c8a23@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Training methods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates. The core approach combines backpropagation (computing gradients via the chain rule) with gradient descent optimization (adjusting weights in the direction that reduces loss), with variants including stochastic gradient descent (SGD), Adam, RMSprop, and AdaGrad offering different convergence properties.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  }
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:training-methods",
+      "label": "Training Methods"
+    }
+  ]
 }
 ```
 

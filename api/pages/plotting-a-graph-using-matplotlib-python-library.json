@@ -3,19 +3,18 @@
   "title": "Plotting a graph using matplotlib python library",
   "slug": "plotting-a-graph-using-matplotlib-python-library",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:plotting-a-graph-using-matplotlib-python-library",
+  "classIri": "urn:ngm:class:plotting-a-graph-using-matplotlib-python-library",
   "domain": "infrastructure",
   "definition": "Plotting a graph using matplotlib python library is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": []

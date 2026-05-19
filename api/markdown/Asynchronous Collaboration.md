@@ -164,60 +164,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asynchronous-collaboration",
+  "@type": "Class",
   "label": "Asynchronous Collaboration",
+  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:tc-0001-telecollaboration-domain",
-      "vc:label": "TC-0001-telecollaboration-domain"
+      "@id": "urn:ngm:class:tc-0001-telecollaboration-domain",
+      "label": "TC-0001-telecollaboration-domain"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:documentation-culture",
+        "label": "Documentation Culture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:global-accessibility",
+        "label": "Global Accessibility"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d1ceaffef55b492ce8ee16913a70aff280defab3db604c81866b9bd917fcf16d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"Time-independent collaboration mode where distributed participants contribute at different times through shared persistent artifacts, enabling flexible schedules, deep work periods, and global accessibility while maintaining coordination through explicit documentation and version control.\"",
-  "vc:qualityScore": {
-    "@value": "0.55",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:documentation-culture",
-      "vc:label": "Documentation Culture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:global-accessibility",
-      "vc:label": "Global Accessibility"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:virtual-workspace",
-      "vc:label": "Virtual Workspace"
-    }
-  ]
+  "quality": 0.55,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

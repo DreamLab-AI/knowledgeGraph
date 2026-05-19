@@ -3,53 +3,57 @@
   "title": "3D File Format",
   "slug": "3-d-file-format",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:3-d-file-format",
+  "classIri": "urn:ngm:class:3-d-file-format",
   "domain": "spatial-computing",
-  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata. Common formats include [[glTF]] (GL Transmission Format), FBX, OBJ, and USD, each optimised for specific use cases such as real-time rendering, interoperability, or archival preservation in spatial computing environments.",
+  "definition": "3D File Formats are standardised container structures for encoding three-dimensional geometric data, textures, materials, animations, and metadata.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-format-standard",
+      "id": "urn:ngm:class:data-format-standard",
       "label": "Data Format Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:animation-keyframes",
+        "id": "urn:ngm:class:animation-keyframes",
         "label": "Animation Keyframes"
       },
       {
-        "id": "urn:visionflow:linked:material-definition",
+        "id": "urn:ngm:class:material-definition",
         "label": "Material Definition"
       },
       {
-        "id": "urn:visionflow:linked:mesh-data",
+        "id": "urn:ngm:class:mesh-data",
         "label": "Mesh Data"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-rendering",
+        "id": "urn:ngm:class:3-d-rendering",
         "label": "3D Rendering"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-asset-exchange",
+        "id": "urn:ngm:class:cross-platform-asset-exchange",
         "label": "Cross-Platform Asset Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset-management",
+        "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

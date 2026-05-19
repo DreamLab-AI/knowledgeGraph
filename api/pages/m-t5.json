@@ -3,19 +3,18 @@
   "title": "mT5",
   "slug": "m-t5",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:m-t5",
+  "classIri": "urn:ngm:class:m-t5",
   "domain": "artificial-intelligence",
   "definition": "Multilingual T5: a massively multilingual variant of T5 pre-trained on the mC4 corpus covering 101 languages, using the same text-to-text framework as T5.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:foundation-models",
+      "id": "urn:ngm:class:foundation-models",
       "label": "Foundation Models"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

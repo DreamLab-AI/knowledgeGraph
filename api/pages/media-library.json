@@ -3,32 +3,36 @@
   "title": "Media Library",
   "slug": "media-library",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:media-library",
+  "classIri": "urn:ngm:class:media-library",
   "domain": "spatial-computing",
   "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset-management",
+      "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-organisation",
+        "id": "urn:ngm:class:content-organisation",
         "label": "Content Organisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

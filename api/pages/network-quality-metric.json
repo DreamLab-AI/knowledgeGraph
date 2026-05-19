@@ -3,19 +3,18 @@
   "title": "Network Quality Metric",
   "slug": "network-quality-metric",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:network-quality-metric",
+  "classIri": "urn:ngm:class:network-quality-metric",
   "domain": "spatial-computing",
-  "definition": "Network Quality Metric is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Network Quality Metric is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

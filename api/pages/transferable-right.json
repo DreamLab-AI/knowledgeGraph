@@ -3,19 +3,18 @@
   "title": "Transferable Right",
   "slug": "transferable-right",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transferable-right",
+  "classIri": "urn:ngm:class:transferable-right",
   "domain": "blockchain",
-  "definition": "Transferable Right is a concept within the blockchain domain. Further enrichment pending.",
+  "definition": "Transferable Right is a type of Blockchain in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

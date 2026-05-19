@@ -136,46 +136,29 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:dao",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dao",
+  "@type": "Class",
   "label": "DAO",
+  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale.",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:05fb6ce015b4e111a3052a28bc1be048ec1d6b7d083b01739f7c43a0b65d58d1"
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:05fb6ce015b4e111a3052a28bc1be048ec1d6b7d083b01739f7c43a0b65d58d1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Decentralised Autonomous Organisation operating through transparent code-based rules and distributed governance rather than hierarchical management, enabling community coordination at scale. [[DAOs]] employ [[Smart Contracts]], [[Consensus Voting]], and [[Blockchain-Based Records]] for transparent decision-making and treasury management.",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
+      "@id": "urn:ngm:class:decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
     }
   ]
 }

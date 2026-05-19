@@ -192,116 +192,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:human-interface-device",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:human-interface-device",
+  "@type": "Class",
   "label": "Human Interface Device",
+  "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:communication-interface",
+        "label": "Communication Interface"
+      },
+      {
+        "@id": "urn:ngm:class:input-sensors",
+        "label": "Input Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:output-actuators",
+        "label": "Output Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-components",
+        "label": "Tracking Components"
+      },
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Drivers"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-input",
+        "label": "User Input"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:interaction-system",
+        "label": "Interaction System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e9472fd01f847516daa52197dd44081f4c07d265ee2e00de3fa2623715cdee0d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:interaction-system",
-      "vc:label": "Interaction System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:communication-interface",
-      "vc:label": "Communication Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:input-sensors",
-      "vc:label": "Input Sensors"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-actuators",
-      "vc:label": "Output Actuators"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-components",
-      "vc:label": "Tracking Components"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptics",
-      "vc:label": "Haptics"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:calibration",
-      "vc:label": "Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:device-drivers",
-      "vc:label": "Device Drivers"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-input",
-      "vc:label": "User Input"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:haptic-feedback",
-      "vc:label": "Haptic Feedback"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-interaction",
-      "vc:label": "Spatial Interaction"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bluetooth",
-      "vc:label": "Bluetooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:usb-protocol",
-      "vc:label": "USB Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:wireless-communication",
-      "vc:label": "Wireless Communication"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

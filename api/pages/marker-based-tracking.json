@@ -3,32 +3,36 @@
   "title": "Marker Based Tracking",
   "slug": "marker-based-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:marker-based-tracking",
+  "classIri": "urn:ngm:class:marker-based-tracking",
   "domain": "spatial-computing",
   "definition": "AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-tracking-technology",
+      "id": "urn:ngm:class:spatial-tracking-technology",
       "label": "Spatial Tracking Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ar-content-positioning",
+        "id": "urn:ngm:class:ar-content-positioning",
         "label": "AR Content Positioning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

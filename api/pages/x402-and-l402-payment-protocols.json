@@ -3,27 +3,31 @@
   "title": "x402 and l402 payment protocols",
   "slug": "x402-and-l402-payment-protocols",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:x402-and-l402-payment-protocols",
+  "classIri": "urn:ngm:class:x402-and-l402-payment-protocols",
   "domain": "blockchain",
   "definition": "x402 and l402 payment protocols is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

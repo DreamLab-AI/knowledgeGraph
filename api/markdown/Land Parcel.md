@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:land-parcel",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:land-parcel",
+  "@type": "Class",
   "label": "Land Parcel",
+  "definition": "Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-asset",
-      "vc:label": "Virtual Asset"
+      "@id": "urn:ngm:class:virtual-asset",
+      "label": "Virtual Asset"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1444276b0129e09658cc436f9d975dde0cbab5d614ee5238995a202302a2647b"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:metaverse-development",
+        "label": "Metaverse Development"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1444276b0129e09658cc436f9d975dde0cbab5d614ee5238995a202302a2647b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:metaverse-development",
-      "vc:label": "Metaverse Development"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

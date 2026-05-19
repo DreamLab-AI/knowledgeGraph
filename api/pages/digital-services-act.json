@@ -3,53 +3,57 @@
   "title": "Digital Services Act",
   "slug": "digital-services-act",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-services-act",
+  "classIri": "urn:ngm:class:digital-services-act",
   "domain": "artificial-intelligence",
-  "definition": "A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance. bridges-to:: [[Telecollaboration]]",
+  "definition": "A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and vi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-regulation",
+      "id": "urn:ngm:class:digital-regulation",
       "label": "Digital Regulation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:compliance-systems",
+        "id": "urn:ngm:class:compliance-systems",
         "label": "Compliance Systems"
       },
       {
-        "id": "urn:visionflow:linked:moderation-infrastructure",
+        "id": "urn:ngm:class:moderation-infrastructure",
         "label": "Moderation Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:reporting-mechanisms",
+        "id": "urn:ngm:class:reporting-mechanisms",
         "label": "Reporting Mechanisms"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-transparency",
+        "id": "urn:ngm:class:content-transparency",
         "label": "Content Transparency"
       },
       {
-        "id": "urn:visionflow:linked:platform-accountability",
+        "id": "urn:ngm:class:platform-accountability",
         "label": "Platform Accountability"
       },
       {
-        "id": "urn:visionflow:linked:user-protection",
+        "id": "urn:ngm:class:user-protection",
         "label": "User Protection"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

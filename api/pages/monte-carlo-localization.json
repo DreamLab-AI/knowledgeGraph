@@ -3,49 +3,66 @@
   "title": "Monte Carlo Localization",
   "slug": "monte-carlo-localization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monte-carlo-localization",
+  "classIri": "urn:ngm:class:monte-carlo-localization",
   "domain": "robotics",
   "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:rb-1013-localization",
+      "id": "urn:ngm:class:rb-1013-localization",
       "label": "RB-1013-localization"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.96,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:map",
+        "id": "urn:ngm:class:map",
         "label": "Map"
       },
       {
-        "id": "urn:visionflow:linked:motion-model",
+        "id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
       },
       {
-        "id": "urn:visionflow:linked:sensor-measurements",
+        "id": "urn:ngm:class:sensor-measurements",
         "label": "Sensor Measurements"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:global-localization",
+        "id": "urn:ngm:class:global-localization",
         "label": "Global Localization"
       },
       {
-        "id": "urn:visionflow:linked:kidnapped-robot-problem",
+        "id": "urn:ngm:class:kidnapped-robot-problem",
         "label": "Kidnapped Robot Problem"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:rb-1008-odometry",
+        "label": "RB-1008-odometry"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

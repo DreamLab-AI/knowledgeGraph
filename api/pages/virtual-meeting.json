@@ -3,19 +3,18 @@
   "title": "Virtual Meeting",
   "slug": "virtual-meeting",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-meeting",
+  "classIri": "urn:ngm:class:virtual-meeting",
   "domain": "distributed-collaboration",
-  "definition": "Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely. This encompasses traditional video conferencing platforms, virtual whiteboards, screen sharing capabilities, and emerging 3D virtual meeting spaces.",
+  "definition": "Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:telecollaboration",
+      "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

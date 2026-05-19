@@ -3,19 +3,18 @@
   "title": "Blockchain Domain",
   "slug": "blockchain-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-domain",
+  "classIri": "urn:ngm:class:blockchain-domain",
   "domain": "blockchain",
-  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies. This domain encompasses the foundational concepts, cryptographic primitives, consensus mechanisms, network architectures, smart contract systems, and economic models that constitute blockchain technology. It includes both theoretical concepts and practical implementations of distributed, cryptographically-secured data structures that enable decentralized consensus without trusted intermediaries. The domain spans from low-level cryptographic operations to high-level decentralized applications, covering blockchain fundamentals, data structures, transaction models, consensus protocols, network topologies, virtual machine architectures, token economics, and enterprise blockchain solutions. This domain serves as the primary classification for all blockchain-related ontological concepts, providing a unified framework for organizing and understanding the complex ecosystem of distributed ledger technologies.",
+  "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.8,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

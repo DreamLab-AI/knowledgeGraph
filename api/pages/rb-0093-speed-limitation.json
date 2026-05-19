@@ -3,19 +3,18 @@
   "title": "rb 0093 speed limitation",
   "slug": "rb-0093-speed-limitation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0093-speed-limitation",
+  "classIri": "urn:ngm:class:rb-0093-speed-limitation",
   "domain": "robotics",
   "definition": "speed limitation is a robotics and autonomous systems concept and a type of Robot Safety.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-safety",
+      "id": "urn:ngm:class:robot-safety",
       "label": "Robot Safety"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

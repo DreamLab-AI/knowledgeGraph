@@ -144,80 +144,59 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-machine-learning",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-machine-learning",
+  "@type": "Class",
   "label": "Ai Machine Learning",
+  "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adap...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c2de3b96c0c749eb3e358f0c0fc3d9e1a496df05618e81ae944f19d33e0d0210"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-infrastructure",
+        "label": "Computational Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architectures",
+        "label": "Neural Network Architectures"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-npcs",
+        "label": "Adaptive NPCs"
+      },
+      {
+        "@id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-experiences",
+        "label": "Personalized Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:smart-virtual-environments",
+        "label": "Smart Virtual Environments"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c2de3b96c0c749eb3e358f0c0fc3d9e1a496df05618e81ae944f19d33e0d0210@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-infrastructure",
-      "vc:label": "Computational Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-network-architectures",
-      "vc:label": "Neural Network Architectures"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-npcs",
-      "vc:label": "Adaptive NPCs"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-generation",
-      "vc:label": "Content Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-experiences",
-      "vc:label": "Personalized Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-virtual-environments",
-      "vc:label": "Smart Virtual Environments"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

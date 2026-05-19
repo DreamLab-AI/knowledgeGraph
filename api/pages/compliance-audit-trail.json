@@ -3,82 +3,91 @@
   "title": "Compliance Audit Trail",
   "slug": "compliance-audit-trail",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compliance-audit-trail",
+  "classIri": "urn:ngm:class:compliance-audit-trail",
   "domain": "artificial-intelligence",
   "definition": "Immutable record system demonstrating adherence to policies and regulations through cryptographically sealed logs of compliance verification activities and evidence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compliance-event-log",
+        "id": "urn:ngm:class:compliance-event-log",
         "label": "Compliance Event Log"
       },
       {
-        "id": "urn:visionflow:linked:policy-document",
+        "id": "urn:ngm:class:policy-document",
         "label": "Policy Document"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-evidence",
+        "id": "urn:ngm:class:regulatory-evidence",
         "label": "Regulatory Evidence"
       },
       {
-        "id": "urn:visionflow:linked:verification-record",
+        "id": "urn:ngm:class:verification-record",
         "label": "Verification Record"
       },
       {
-        "id": "urn:visionflow:owl:class:timestamp",
+        "id": "urn:ngm:class:timestamp",
         "label": "Timestamp"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:immutable-storage",
+        "id": "urn:ngm:class:immutable-storage",
         "label": "Immutable Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-hash",
+        "id": "urn:ngm:class:cryptographic-hash",
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:visionflow:owl:class:policy-engine",
+        "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:regulatory-reporting",
+        "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliance-management-system",
+        "label": "Compliance Management System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

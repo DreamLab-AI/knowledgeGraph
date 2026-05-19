@@ -184,108 +184,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:visualization-layer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:visualization-layer",
+  "@type": "Class",
   "label": "Visualization Layer",
+  "definition": "Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7767ffd060ba565dd0e035b6abec2fa9877babaa6d94cf45e0a0bb1ea07ecdc2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:display-manager",
+        "label": "Display Manager"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:shader-system",
+        "label": "Shader System"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-interface-rendering",
+        "label": "User Interface Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:visual-output",
+        "label": "Visual Output"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:presentation-infrastructure",
+        "label": "Presentation Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7767ffd060ba565dd0e035b6abec2fa9877babaa6d94cf45e0a0bb1ea07ecdc2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:presentation-infrastructure",
-      "vc:label": "Presentation Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:display-manager",
-      "vc:label": "Display Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:graphics-pipeline",
-      "vc:label": "Graphics Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:shader-system",
-      "vc:label": "Shader System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gpu-resources",
-      "vc:label": "GPU Resources"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:display-hardware",
-      "vc:label": "Display Hardware"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graphics-api",
-      "vc:label": "Graphics API"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-interface-rendering",
-      "vc:label": "User Interface Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-output",
-      "vc:label": "Visual Output"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:immersive-experiences",
-      "vc:label": "Immersive Experiences"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scene-graph",
-      "vc:label": "3D Scene Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:lighting-system",
-      "vc:label": "Lighting System"
-    },
-    {
-      "@id": "urn:visionflow:linked:material-system",
-      "vc:label": "Material System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

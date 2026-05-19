@@ -392,328 +392,243 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:light-field",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:light-field",
+  "@type": "Class",
   "label": "Light field",
+  "definition": "Light field is a foundational concept in computational optics and computer graphics describing the complete distribution of light rays travelling through free space in all directions at all points, formalised by Adelson and Bergen (1991) as the 7-dimensional plenoptic function P(Vx, Vy, Vz, θ, φ,...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:image-based-rendering",
-      "vc:label": "Image Based Rendering"
+      "@id": "urn:ngm:class:image-based-rendering",
+      "label": "Image Based Rendering"
     },
     {
-      "@id": "urn:visionflow:linked:optical-representation",
-      "vc:label": "Optical Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:radiance-field",
-      "vc:label": "Radiance Field"
+      "@id": "urn:ngm:class:optical-representation",
+      "label": "Optical Representation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3fb64d7ff20a81b720ca32906b48e200b8694a5434b82e5f1d21f3a893015841"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:epipolar-plane-image",
+        "label": "Epipolar Plane Image"
+      },
+      {
+        "@id": "urn:ngm:class:hogel",
+        "label": "Hogel"
+      },
+      {
+        "@id": "urn:ngm:class:light-field-camera",
+        "label": "Light Field Camera"
+      },
+      {
+        "@id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      },
+      {
+        "@id": "urn:ngm:class:microlens-array",
+        "label": "Microlens Array"
+      },
+      {
+        "@id": "urn:ngm:class:plenoptic-function",
+        "label": "Plenoptic Function"
+      },
+      {
+        "@id": "urn:ngm:class:sub-aperture-image",
+        "label": "Sub-aperture Image"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-geometry",
+        "label": "Multi-view Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:ray-parameterisation",
+        "label": "Ray Parameterisation"
+      },
+      {
+        "@id": "urn:ngm:class:sampling-theory",
+        "label": "Sampling Theory"
+      },
+      {
+        "@id": "urn:ngm:class:lens-and-camera-calibration",
+        "label": "Lens and Camera Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:6-do-f-vr",
+        "label": "6-DoF VR"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      },
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:parallax-rendering",
+        "label": "Parallax Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:refocusing-post-capture",
+        "label": "Refocusing Post-capture"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:4-d-parameterisation",
+        "label": "4D Parameterisation"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-slice-theorem",
+        "label": "Fourier Slice Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:microlens-multiplexing",
+        "label": "Microlens Multiplexing"
+      },
+      {
+        "@id": "urn:ngm:class:ray-plane-intersection",
+        "label": "Ray-plane Intersection"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:lenticular-lens",
+        "label": "Lenticular Lens"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:wave-optics",
+        "label": "Wave Optics"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:computational-holography",
+        "label": "Computational Holography"
+      },
+      {
+        "@id": "urn:ngm:class:holography",
+        "label": "Holography"
+      },
+      {
+        "@id": "urn:ngm:class:integral-imaging",
+        "label": "Integral Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:plenoptic-camera",
+        "label": "Plenoptic Camera"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:broadcast-production",
+        "label": "Broadcast Production"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-metrology",
+        "label": "Industrial Metrology"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:museum-digitalisation",
+        "label": "Museum Digitalisation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:acm-tog",
+        "label": "ACM TOG"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-tvcg",
+        "label": "IEEE TVCG"
+      },
+      {
+        "@id": "urn:ngm:class:siggraph",
+        "label": "SIGGRAPH"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3fb64d7ff20a81b720ca32906b48e200b8694a5434b82e5f1d21f3a893015841@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Light field is a foundational concept in computational optics and computer graphics describing the complete distribution of light rays travelling through free space in all directions at all points, formalised by Adelson and Bergen (1991) as the 7-dimensional plenoptic function P(Vx, Vy, Vz, θ, φ, λ, t) specifying the luminance of light rays as a function of 3D position (Vx, Vy, Vz), viewing direction (θ, φ), wavelength λ, and time t — subsequently reduced by Marc Levoy and Pat Hanrahan in their landmark SIGGRAPH 1996 paper \"Light Field Rendering\" to a tractable 4D parameterisation L(s,t,u,v) on two parallel planes (the st-plane and uv-plane) by exploiting the fact that radiance is constant along rays in free space absent occluders, enabling the first practical algorithms for image-based rendering from dense light field samples (100×100 camera arrays producing 10,000 images rendered to novel viewpoints by ray-plane intersection at interactive rates on 1996-era workstations); simultaneously Gortler et al. (1996) introduced the equivalent \"Lumigraph\" parameterisation with a non-uniform sampling correction factor accounting for camera distance variation, establishing the foundational a",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:epipolar-plane-image",
-      "vc:label": "Epipolar Plane Image"
-    },
-    {
-      "@id": "urn:visionflow:linked:hogel",
-      "vc:label": "Hogel"
-    },
-    {
-      "@id": "urn:visionflow:linked:light-field-camera",
-      "vc:label": "Light Field Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:light-field-display",
-      "vc:label": "Light Field Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:microlens-array",
-      "vc:label": "Microlens Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:plenoptic-function",
-      "vc:label": "Plenoptic Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:sub-aperture-image",
-      "vc:label": "Sub-aperture Image"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:camera-calibration",
-      "vc:label": "Camera Calibration"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-view-geometry",
-      "vc:label": "Multi-view Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-parameterisation",
-      "vc:label": "Ray Parameterisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sampling-theory",
-      "vc:label": "Sampling Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lens-and-camera-calibration",
-      "vc:label": "Lens and Camera Calibration"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:6-do-f-vr",
-      "vc:label": "6-DoF VR"
-    },
-    {
-      "@id": "urn:visionflow:linked:holographic-display",
-      "vc:label": "Holographic Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:novel-view-synthesis",
-      "vc:label": "Novel View Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallax-rendering",
-      "vc:label": "Parallax Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:refocusing-post-capture",
-      "vc:label": "Refocusing Post-capture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:4-d-parameterisation",
-      "vc:label": "4D Parameterisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:epipolar-geometry",
-      "vc:label": "Epipolar Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:fourier-slice-theorem",
-      "vc:label": "Fourier Slice Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:microlens-multiplexing",
-      "vc:label": "Microlens Multiplexing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-plane-intersection",
-      "vc:label": "Ray-plane Intersection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
-      "vc:label": "Neural Radiance Fields"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:camera-array",
-      "vc:label": "Camera Array"
-    },
-    {
-      "@id": "urn:visionflow:linked:computational-geometry",
-      "vc:label": "Computational Geometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fourier-analysis",
-      "vc:label": "Fourier Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:optics",
-      "vc:label": "Optics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:broadcast-production",
-      "vc:label": "Broadcast Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-metrology",
-      "vc:label": "Industrial Metrology"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging",
-      "vc:label": "Medical Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:museum-digitalisation",
-      "vc:label": "Museum Digitalisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:convolutional-neural-networks",
-      "vc:label": "Convolutional Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:lenticular-lens",
-      "vc:label": "Lenticular Lens"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-light",
-      "vc:label": "Structured Light"
-    },
-    {
-      "@id": "urn:visionflow:linked:volume-rendering",
-      "vc:label": "Volume Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:wave-optics",
-      "vc:label": "Wave Optics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:2-d-display",
-      "vc:label": "2D Display"
-    },
-    {
-      "@id": "urn:visionflow:linked:monocular-depth-estimation",
-      "vc:label": "Monocular Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:linked:stereo-vision",
-      "vc:label": "Stereo Vision"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-photography",
-      "vc:label": "Traditional Photography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:point-cloud",
-      "vc:label": "Point Cloud"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:computational-holography",
-      "vc:label": "Computational Holography"
-    },
-    {
-      "@id": "urn:visionflow:linked:holography",
-      "vc:label": "Holography"
-    },
-    {
-      "@id": "urn:visionflow:linked:integral-imaging",
-      "vc:label": "Integral Imaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:plenoptic-camera",
-      "vc:label": "Plenoptic Camera"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
-      "vc:label": "Neural Radiance Fields"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:acm-tog",
-      "vc:label": "ACM TOG"
-    },
-    {
-      "@id": "urn:visionflow:linked:cvpr",
-      "vc:label": "CVPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:iccv",
-      "vc:label": "ICCV"
-    },
-    {
-      "@id": "urn:visionflow:linked:ieee-tvcg",
-      "vc:label": "IEEE TVCG"
-    },
-    {
-      "@id": "urn:visionflow:linked:siggraph",
-      "vc:label": "SIGGRAPH"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:holography",
-      "vc:label": "Holography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-fields",
-      "vc:label": "Neural Radiance Fields"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "Spatial Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

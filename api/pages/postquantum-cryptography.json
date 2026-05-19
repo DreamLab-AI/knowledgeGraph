@@ -3,19 +3,18 @@
   "title": "Postquantum Cryptography",
   "slug": "postquantum-cryptography",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:postquantum-cryptography",
+  "classIri": "urn:ngm:class:postquantum-cryptography",
   "domain": "infrastructure",
-  "definition": "[Generated from Gartner emerging tech analysis]",
+  "definition": "Postquantum Cryptography is a type of Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

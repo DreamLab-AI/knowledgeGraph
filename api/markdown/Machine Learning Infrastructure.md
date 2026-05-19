@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:machine-learning-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:machine-learning-infrastructure",
+  "@type": "Class",
   "label": "Machine Learning Infrastructure",
+  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-infrastructure",
-      "vc:label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalable-ai-training",
+        "label": "Scalable AI Training"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb853cdfdb9ca5d244381da771b7be92dfb9d940239a41265f05db576cb6e0bd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scalable-ai-training",
-      "vc:label": "Scalable AI Training"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

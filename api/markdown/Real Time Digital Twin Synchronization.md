@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:real-time-digital-twin-synchronization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:real-time-digital-twin-synchronization",
+  "@type": "Class",
   "label": "Real Time Digital Twin Synchronization",
+  "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin-technology",
-      "vc:label": "Digital Twin Technology"
+      "@id": "urn:ngm:class:digital-twin-technology",
+      "label": "Digital Twin Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6666aa90712324f1fd85de31e66ed4906b86f2e854879bc2b5c02f3679a43d3a"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-real-interaction",
+        "label": "Virtual Real Interaction"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6666aa90712324f1fd85de31e66ed4906b86f2e854879bc2b5c02f3679a43d3a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:virtual-real-interaction",
-      "vc:label": "Virtual Real Interaction"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

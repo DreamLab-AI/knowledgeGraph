@@ -200,112 +200,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:trust-framework-policy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:trust-framework-policy",
+  "@type": "Class",
   "label": "Trust Framework Policy",
+  "definition": "Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:da025756fe1183088d6a4e6853f33f8914affbb1343f842d1d27435c81a0d28a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      },
+      {
+        "@id": "urn:ngm:class:certification-criteria",
+        "label": "Certification Criteria"
+      },
+      {
+        "@id": "urn:ngm:class:policy-rule-set",
+        "label": "Policy Rule Set"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      },
+      {
+        "@id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      },
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperable-authentication",
+        "label": "Interoperable Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:trust-federation",
+        "label": "Trust Federation"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:federated-identity-system",
+        "label": "Federated Identity System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:da025756fe1183088d6a4e6853f33f8914affbb1343f842d1d27435c81a0d28a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:federated-identity-system",
-      "vc:label": "Federated Identity System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accountability-framework",
-      "vc:label": "Accountability Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:certification-criteria",
-      "vc:label": "Certification Criteria"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-rule-set",
-      "vc:label": "Policy Rule Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-anchor",
-      "vc:label": "Trust Anchor"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-standards",
-      "vc:label": "Digital Identity Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-structure",
-      "vc:label": "Governance Structure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:legal-framework",
-      "vc:label": "Legal Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:interoperable-authentication",
-      "vc:label": "Interoperable Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust-federation",
-      "vc:label": "Trust Federation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audit-mechanism",
-      "vc:label": "Audit Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-protocol",
-      "vc:label": "Authentication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:authorization-framework",
-      "vc:label": "Authorization Framework"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

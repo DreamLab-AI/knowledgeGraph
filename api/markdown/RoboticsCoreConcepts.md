@@ -228,128 +228,113 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robotics-core-concepts",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robotics-core-concepts",
+  "@type": "Class",
   "label": "RoboticsCoreConcepts",
+  "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories—autonomous systems (encompassing independent robotic platforms implementing path planning algorithms suc...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics",
-      "vc:label": "robotics"
+      "@id": "urn:ngm:class:robotics",
+      "label": "robotics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ff5e24a6ff02fd04cd751071b55b7eae7eaad6465aa13d5cae1109c69cc308f6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "AutonomousRobot"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "HumanRobotInteraction"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator-arm",
+        "label": "ManipulatorArm"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "PathPlanning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "RobotLearning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "SensorFusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "SoftRobotics"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "SwarmRobotics"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-methods",
+        "label": "ComputationalMethods"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-design",
+        "label": "HardwareDesign"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-foundations",
+        "label": "MathematicalFoundations"
+      },
+      {
+        "@id": "urn:ngm:class:physics-modeling",
+        "label": "PhysicsModeling"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "SoftwareEngineering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:autonomous-vehicles",
+        "label": "AutonomousVehicles"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-education",
+        "label": "RoboticsEducation"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-research",
+        "label": "RoboticsResearch"
+      },
+      {
+        "@id": "urn:ngm:class:service-robotics",
+        "label": "ServiceRobotics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ff5e24a6ff02fd04cd751071b55b7eae7eaad6465aa13d5cae1109c69cc308f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories—autonomous systems (encompassing independent robotic platforms implementing path planning algorithms such as A* achieving 95-99% collision-free navigation, RRT* providing asymptotic optimality with O(n log n) computational complexity, and SLAM simultaneous localization and mapping using extended Kalman filters EKF achieving ±5cm positioning accuracy in structured environments or particle filters with 1000-10,000 particles for non-Gaussian distributions), manipulation and actuation (covering robotic arms with 3-9 degrees of freedom achieving ±0.05mm repeatability in industrial applications using PD position control with gains Kp=100-1000 N·m/rad and Kd=10-50 N·m·s/rad, and soft robotics employing pneumatic actuators generating 5-50N gripping force at 0.2-2 bar pressure or shape memory alloy SMA actuators with 4-8% strain recovery and 10-100 MPa stress generation), perception and intelligence (integrating sensor fusion combining vision (RGB-D cameras 640×480 to 1920×1080 resolution at 30-60 FPS",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.88",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-robot",
-      "vc:label": "AutonomousRobot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "HumanRobotInteraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:manipulator-arm",
-      "vc:label": "ManipulatorArm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:path-planning",
-      "vc:label": "PathPlanning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robot-learning",
-      "vc:label": "RobotLearning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "SensorFusion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:soft-robotics",
-      "vc:label": "SoftRobotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:swarm-robotics",
-      "vc:label": "SwarmRobotics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:teleoperation",
-      "vc:label": "Teleoperation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-methods",
-      "vc:label": "ComputationalMethods"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-design",
-      "vc:label": "HardwareDesign"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-foundations",
-      "vc:label": "MathematicalFoundations"
-    },
-    {
-      "@id": "urn:visionflow:linked:physics-modeling",
-      "vc:label": "PhysicsModeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:software-engineering",
-      "vc:label": "SoftwareEngineering"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-vehicles",
-      "vc:label": "AutonomousVehicles"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-automation",
-      "vc:label": "IndustrialAutomation"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-education",
-      "vc:label": "RoboticsEducation"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-research",
-      "vc:label": "RoboticsResearch"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-robotics",
-      "vc:label": "ServiceRobotics"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

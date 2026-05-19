@@ -3,49 +3,62 @@
   "title": "Collaborative Operation",
   "slug": "collaborative-operation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collaborative-operation",
+  "classIri": "urn:ngm:class:collaborative-operation",
   "domain": "robotics",
-  "definition": "**Collaborative Operation** - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
+  "definition": "Collaborative Operation - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.56,
-  "authorityScore": 0.12,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:force-feedback",
+        "id": "urn:ngm:class:force-feedback",
         "label": "Force Feedback"
       },
       {
-        "id": "urn:visionflow:linked:safety-monitoring",
+        "id": "urn:ngm:class:safety-monitoring",
         "label": "Safety Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:task-planning",
+        "id": "urn:ngm:class:task-planning",
         "label": "Task Planning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:production-flexibility",
+        "id": "urn:ngm:class:production-flexibility",
         "label": "Production Flexibility"
       },
       {
-        "id": "urn:visionflow:linked:workspace-efficiency",
+        "id": "urn:ngm:class:workspace-efficiency",
         "label": "Workspace Efficiency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

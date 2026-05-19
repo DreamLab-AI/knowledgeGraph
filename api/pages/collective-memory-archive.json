@@ -3,78 +3,87 @@
   "title": "Collective Memory Archive",
   "slug": "collective-memory-archive",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collective-memory-archive",
+  "classIri": "urn:ngm:class:collective-memory-archive",
   "domain": "spatial-computing",
   "definition": "A community-maintained repository that preserves shared cultural memories, historical events, and collective experiences for long-term access and cultural heritage preservation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:community-contributions",
+        "id": "urn:ngm:class:community-contributions",
         "label": "Community Contributions"
       },
       {
-        "id": "urn:visionflow:linked:memory-records",
+        "id": "urn:ngm:class:memory-records",
         "label": "Memory Records"
       },
       {
-        "id": "urn:visionflow:linked:preservation-metadata",
+        "id": "urn:ngm:class:preservation-metadata",
         "label": "Preservation Metadata"
       },
       {
-        "id": "urn:visionflow:linked:temporal-index",
+        "id": "urn:ngm:class:temporal-index",
         "label": "Temporal Index"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control-system",
+        "id": "urn:ngm:class:access-control-system",
         "label": "Access Control System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:authentication-service",
+        "id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-repository",
+        "id": "urn:ngm:class:digital-repository",
         "label": "Digital Repository"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-registry",
+        "id": "urn:ngm:class:metadata-registry",
         "label": "Metadata Registry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:community-storytelling",
+        "id": "urn:ngm:class:community-storytelling",
         "label": "Community Storytelling"
       },
       {
-        "id": "urn:visionflow:linked:cultural-preservation",
+        "id": "urn:ngm:class:cultural-preservation",
         "label": "Cultural Preservation"
       },
       {
-        "id": "urn:visionflow:linked:heritage-access",
+        "id": "urn:ngm:class:heritage-access",
         "label": "Heritage Access"
       },
       {
-        "id": "urn:visionflow:linked:historical-documentation",
+        "id": "urn:ngm:class:historical-documentation",
         "label": "Historical Documentation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:community-knowledge-systems",
+        "label": "Community Knowledge Systems"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

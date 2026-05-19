@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-creation-pipeline",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-creation-pipeline",
+  "@type": "Class",
   "label": "Digital Twin Creation Pipeline",
+  "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:3-d-content-pipeline",
-      "vc:label": "3D Content Pipeline"
+      "@id": "urn:ngm:class:3-d-content-pipeline",
+      "label": "3D Content Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4e5fe12b12a856a6e78ec4b034d412d1068789b0fb67c58ed53ad141520b0696"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-digitization",
+        "label": "Asset Digitization"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-replica-creation",
+        "label": "Virtual Replica Creation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4e5fe12b12a856a6e78ec4b034d412d1068789b0fb67c58ed53ad141520b0696@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scanning",
-      "vc:label": "3D Scanning"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-processing",
-      "vc:label": "Point Cloud Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:photogrammetry",
-      "vc:label": "Photogrammetry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-digitization",
-      "vc:label": "Asset Digitization"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-monitoring",
-      "vc:label": "Real-Time Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-replica-creation",
-      "vc:label": "Virtual Replica Creation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

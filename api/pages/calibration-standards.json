@@ -3,53 +3,57 @@
   "title": "Calibration Standards",
   "slug": "calibration-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:calibration-standards",
+  "classIri": "urn:ngm:class:calibration-standards",
   "domain": "spatial-computing",
   "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:reference-materials",
+        "id": "urn:ngm:class:reference-materials",
         "label": "Reference Materials"
       },
       {
-        "id": "urn:visionflow:linked:traceability-chain",
+        "id": "urn:ngm:class:traceability-chain",
         "label": "Traceability Chain"
       },
       {
-        "id": "urn:visionflow:linked:validation-procedures",
+        "id": "urn:ngm:class:validation-procedures",
         "label": "Validation Procedures"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:device-alignment",
+        "id": "urn:ngm:class:device-alignment",
         "label": "Device Alignment"
       },
       {
-        "id": "urn:visionflow:linked:measurement-accuracy",
+        "id": "urn:ngm:class:measurement-accuracy",
         "label": "Measurement Accuracy"
       },
       {
-        "id": "urn:visionflow:owl:class:quality-assurance",
+        "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

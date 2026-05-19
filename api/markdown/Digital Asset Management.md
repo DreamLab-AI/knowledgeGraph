@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-asset-management",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-asset-management",
+  "@type": "Class",
   "label": "Digital Asset Management",
+  "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:investment-management",
-      "vc:label": "Investment Management"
+      "@id": "urn:ngm:class:investment-management",
+      "label": "Investment Management"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5dcfd4c479b492a190d88f872e96f7fbe94d3a41bb2cbc5bf1da288382057297"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:analytics-tools",
+        "label": "Analytics Tools"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-systems",
+        "label": "Compliance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:custody-solutions",
+        "label": "Custody Solutions"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-allocation",
+        "label": "Asset Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-optimization",
+        "label": "Portfolio Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5dcfd4c479b492a190d88f872e96f7fbe94d3a41bb2cbc5bf1da288382057297@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:analytics-tools",
-      "vc:label": "Analytics Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-systems",
-      "vc:label": "Compliance Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:custody-solutions",
-      "vc:label": "Custody Solutions"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-allocation",
-      "vc:label": "Asset Allocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:portfolio-optimization",
-      "vc:label": "Portfolio Optimization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-management",
-      "vc:label": "Risk Management"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

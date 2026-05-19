@@ -220,41 +220,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:pharmaceutical-traceability",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pharmaceutical-traceability",
+  "@type": "Class",
   "label": "Pharmaceutical Traceability",
+  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the £200 counterfeit medicine market causing over 1 deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:75de754d546ee5e315981ff13bfb224414a6fd36c4e4a0edeae2bb5fd2a2eb6c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the £200 billion counterfeit medicine market causing over 1 million deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network's 150+ million verification transactions (Pfizer, McKesson, AmerisourceBergen), and delivering 40-60% verification cost reductions whilst providing cold chain monitoring, clinical trial supply management, and controlled substance tracking.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

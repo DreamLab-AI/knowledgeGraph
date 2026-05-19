@@ -128,48 +128,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:algorithmic-transparency-reports",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-transparency-reports",
+  "@type": "Class",
   "label": "Algorithmic Transparency Reports",
+  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-m...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-ethics",
-      "vc:label": "AI Ethics"
+      "@id": "urn:ngm:class:ai-ethics",
+      "label": "AI Ethics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:50b88bbf648387a74637cee56f61f40fd1964da41e1b6baeda4d5ca0430fec76"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:50b88bbf648387a74637cee56f61f40fd1964da41e1b6baeda4d5ca0430fec76@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-making. These reports provide standardized transparency information accessible to non-technical audiences, enabling external scrutiny, regulatory compliance verification, and informed public discourse about AI systems affecting individuals and communities. Key report sections include system descriptions (purpose, functionality, deployment scale, affected populations), performance metrics (accuracy, precision, recall, fairness metrics disaggregated by protected groups), fairness and bias analysis (disparate impact assessments, bias mitigation measures, ongoing monitoring), governance and oversight (responsible parties, ethics board reviews, audit procedures), data practices (data sources, collection methods, retention policies, privacy protections), explainability provisions (how decisions are made, contestation mechanisms, human review availability), incidents and remediation (system failure",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,74 +3,87 @@
   "title": "Application Layer",
   "slug": "application-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:application-layer",
+  "classIri": "urn:ngm:class:application-layer",
   "domain": "spatial-computing",
   "definition": "Software layer providing domain-specific application interfaces and services for metaverse experiences including education, commerce, healthcare, and entertainment applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:application-api",
+        "id": "urn:ngm:class:application-api",
         "label": "Application API"
       },
       {
-        "id": "urn:visionflow:linked:business-logic-layer",
+        "id": "urn:ngm:class:business-logic-layer",
         "label": "Business Logic Layer"
       },
       {
-        "id": "urn:visionflow:linked:service-interface",
+        "id": "urn:ngm:class:service-interface",
         "label": "Service Interface"
       },
       {
-        "id": "urn:visionflow:linked:user-interface-framework",
+        "id": "urn:ngm:class:user-interface-framework",
         "label": "User Interface Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:compute-layer",
+        "id": "urn:ngm:class:compute-layer",
         "label": "Compute Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:data-storage-layer",
+        "id": "urn:ngm:class:data-storage-layer",
         "label": "Data Storage Layer"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:business-services",
+        "id": "urn:ngm:class:business-services",
         "label": "Business Services"
       },
       {
-        "id": "urn:visionflow:linked:domain-specific-applications",
+        "id": "urn:ngm:class:domain-specific-applications",
         "label": "Domain-Specific Applications"
       },
       {
-        "id": "urn:visionflow:linked:user-experience",
+        "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
       },
       {
-        "id": "urn:visionflow:owl:class:cross-platform-interoperability",
+        "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse-architecture-stack",
+        "label": "Metaverse Architecture Stack"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-stack",
+        "label": "Metaverse Stack"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

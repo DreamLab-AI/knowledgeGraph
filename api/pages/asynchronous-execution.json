@@ -3,19 +3,18 @@
   "title": "Asynchronous Execution",
   "slug": "asynchronous-execution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:asynchronous-execution",
+  "classIri": "urn:ngm:class:asynchronous-execution",
   "domain": "artificial-intelligence",
   "definition": "Asynchronous Execution is a artificial intelligence concept and a type of Execution Model.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:execution-model",
+      "id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

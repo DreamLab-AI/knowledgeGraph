@@ -3,19 +3,18 @@
   "title": "Transparent Data Processing",
   "slug": "transparent-data-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparent-data-processing",
+  "classIri": "urn:ngm:class:transparent-data-processing",
   "domain": "infrastructure",
   "definition": "Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-processing",
+      "id": "urn:ngm:class:data-processing",
       "label": "Data Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

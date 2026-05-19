@@ -532,348 +532,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hash-function",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hash-function",
+  "@type": "Class",
   "label": "Hash Function",
+  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* → {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n ∈ {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:compression-function",
-      "vc:label": "Compression Function"
+      "@id": "urn:ngm:class:compression-function",
+      "label": "Compression Function"
     },
     {
-      "@id": "urn:visionflow:linked:cryptographic-algorithm",
-      "vc:label": "Cryptographic Algorithm"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-function",
-      "vc:label": "Deterministic Function"
+      "@id": "urn:ngm:class:cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f7e02cf5d0ba2fff15f40a10ed5cee40609f0cbc23a37ae231906fb8d8d0385f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compression-function",
+        "label": "Compression Function"
+      },
+      {
+        "@id": "urn:ngm:class:initialization-vector",
+        "label": "Initialization Vector"
+      },
+      {
+        "@id": "urn:ngm:class:internal-state",
+        "label": "Internal State"
+      },
+      {
+        "@id": "urn:ngm:class:output-truncation",
+        "label": "Output Truncation"
+      },
+      {
+        "@id": "urn:ngm:class:padding-scheme",
+        "label": "Padding Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:round-function",
+        "label": "Round Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:avalanche-effect",
+        "label": "Avalanche Effect"
+      },
+      {
+        "@id": "urn:ngm:class:computational-security",
+        "label": "Computational Security"
+      },
+      {
+        "@id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "@id": "urn:ngm:class:pseudo-randomness",
+        "label": "Pseudo-Randomness"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:blockchain-immutability",
+        "label": "Blockchain Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation",
+        "label": "Key Derivation"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:password-storage",
+        "label": "Password Storage"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof-of-Work"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:indistinguishability",
+        "label": "Indistinguishability"
+      },
+      {
+        "@id": "urn:ngm:class:pre-image-resistance",
+        "label": "Pre-Image Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      },
+      {
+        "@id": "urn:ngm:class:second-pre-image-resistance",
+        "label": "Second Pre-Image Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:davies-meyer-construction",
+        "label": "Davies-Meyer Construction"
+      },
+      {
+        "@id": "urn:ngm:class:haifa-construction",
+        "label": "HAIFA Construction"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-damg-rd-construction",
+        "label": "Merkle-Damgård Construction"
+      },
+      {
+        "@id": "urn:ngm:class:sponge-construction",
+        "label": "Sponge Construction"
+      },
+      {
+        "@id": "urn:ngm:class:wide-pipe-construction",
+        "label": "Wide-Pipe Construction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:birthday-attack",
+        "label": "Birthday Attack"
+      },
+      {
+        "@id": "urn:ngm:class:bloom-filter",
+        "label": "Bloom Filter"
+      },
+      {
+        "@id": "urn:ngm:class:cryptanalysis",
+        "label": "Cryptanalysis"
+      },
+      {
+        "@id": "urn:ngm:class:length-extension-attack",
+        "label": "Length-Extension Attack"
+      },
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf-rfc-2104-hmac",
+        "label": "IETF RFC 2104 HMAC"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-6234",
+        "label": "IETF RFC 6234"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-8439",
+        "label": "IETF RFC 8439"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-9106-argon2",
+        "label": "IETF RFC 9106 Argon2"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-10118-3",
+        "label": "ISO/IEC 10118-3"
+      },
+      {
+        "@id": "urn:ngm:class:nist-fips-180-4",
+        "label": "NIST FIPS 180-4"
+      },
+      {
+        "@id": "urn:ngm:class:nist-fips-202",
+        "label": "NIST FIPS 202"
+      },
+      {
+        "@id": "urn:ngm:class:nist-fips-205",
+        "label": "NIST FIPS 205"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7e02cf5d0ba2fff15f40a10ed5cee40609f0cbc23a37ae231906fb8d8d0385f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* → {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n ∈ {128, 160, 224, 256, 384, 512}), whose security and utility derive from three formally distinct property regimes governing different deployment contexts: (1) **cryptographic hash functions** simultaneously satisfying pre-image resistance (given y ∈ {0,1}^n it is computationally infeasible to find any x such that H(x) = y, requiring ≈2^n work), second pre-image resistance (given x₁ it is infeasible to find x₂ ≠ x₁ with H(x₁) = H(x₂), ≈2^n work), collision resistance (it is infeasible to find any pair x₁ ≠ x₂ with H(x₁) = H(x₂), bounded below by the birthday paradox at ≈2^(n/2) work), and ideally pseudo-randomness / indistinguishability from a random oracle, instantiated by NIST-standardised constructions including SHA-1 (Merkle-Damgård, 160-bit, deprecated by NIST SP 800-131A in 2011 following Wang et al. 2005 theoretical collision attack at 2^69 operations and broken by SHAttered Stevens-Bursztein-Karpman-Albertini-Markov 2017 Google Mountain View producing t",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compression-function",
-      "vc:label": "Compression Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:initialization-vector",
-      "vc:label": "Initialization Vector"
-    },
-    {
-      "@id": "urn:visionflow:linked:internal-state",
-      "vc:label": "Internal State"
-    },
-    {
-      "@id": "urn:visionflow:linked:output-truncation",
-      "vc:label": "Output Truncation"
-    },
-    {
-      "@id": "urn:visionflow:linked:padding-scheme",
-      "vc:label": "Padding Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:round-function",
-      "vc:label": "Round Function"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:avalanche-effect",
-      "vc:label": "Avalanche Effect"
-    },
-    {
-      "@id": "urn:visionflow:linked:computational-security",
-      "vc:label": "Computational Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:determinism",
-      "vc:label": "Determinism"
-    },
-    {
-      "@id": "urn:visionflow:linked:pseudo-randomness",
-      "vc:label": "Pseudo-Randomness"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-immutability",
-      "vc:label": "Blockchain Immutability"
-    },
-    {
-      "@id": "urn:visionflow:linked:commitment-scheme",
-      "vc:label": "Commitment Scheme"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-integrity",
-      "vc:label": "Data Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:deduplication",
-      "vc:label": "Deduplication"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-derivation",
-      "vc:label": "Key Derivation"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication-code",
-      "vc:label": "Message Authentication Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:password-storage",
-      "vc:label": "Password Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-addressing",
-      "vc:label": "Content Addressing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:proof-of-work",
-      "vc:label": "Proof-of-Work"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:indistinguishability",
-      "vc:label": "Indistinguishability"
-    },
-    {
-      "@id": "urn:visionflow:linked:pre-image-resistance",
-      "vc:label": "Pre-Image Resistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:random-oracle-model",
-      "vc:label": "Random Oracle Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:second-pre-image-resistance",
-      "vc:label": "Second Pre-Image Resistance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collision-resistance",
-      "vc:label": "Collision Resistance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bitwise-operations",
-      "vc:label": "Bitwise Operations"
-    },
-    {
-      "@id": "urn:visionflow:linked:boolean-algebra",
-      "vc:label": "Boolean Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:complexity-theory",
-      "vc:label": "Complexity Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:finite-field-arithmetic",
-      "vc:label": "Finite Field Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:modular-arithmetic",
-      "vc:label": "Modular Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:number-theory",
-      "vc:label": "Number Theory"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:certificate-transparency",
-      "vc:label": "Certificate Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:code-signing",
-      "vc:label": "Code Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:git",
-      "vc:label": "Git"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipfs",
-      "vc:label": "IPFS"
-    },
-    {
-      "@id": "urn:visionflow:linked:tls",
-      "vc:label": "TLS"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bitcoin",
-      "vc:label": "Bitcoin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:post-quantum-cryptography",
-      "vc:label": "Post-Quantum Cryptography"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:davies-meyer-construction",
-      "vc:label": "Davies-Meyer Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:haifa-construction",
-      "vc:label": "HAIFA Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:merkle-damg-rd-construction",
-      "vc:label": "Merkle-Damgård Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:sponge-construction",
-      "vc:label": "Sponge Construction"
-    },
-    {
-      "@id": "urn:visionflow:linked:wide-pipe-construction",
-      "vc:label": "Wide-Pipe Construction"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:checksum",
-      "vc:label": "Checksum"
-    },
-    {
-      "@id": "urn:visionflow:linked:encryption",
-      "vc:label": "Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:error-detection-code",
-      "vc:label": "Error Detection Code"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-authentication-code",
-      "vc:label": "Message Authentication Code"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:birthday-attack",
-      "vc:label": "Birthday Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:bloom-filter",
-      "vc:label": "Bloom Filter"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptanalysis",
-      "vc:label": "Cryptanalysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:length-extension-attack",
-      "vc:label": "Length-Extension Attack"
-    },
-    {
-      "@id": "urn:visionflow:linked:side-channel-attack",
-      "vc:label": "Side-Channel Attack"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quantum-computing",
-      "vc:label": "Quantum Computing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-2104-hmac",
-      "vc:label": "IETF RFC 2104 HMAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-6234",
-      "vc:label": "IETF RFC 6234"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-8439",
-      "vc:label": "IETF RFC 8439"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-9106-argon2",
-      "vc:label": "IETF RFC 9106 Argon2"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-10118-3",
-      "vc:label": "ISO/IEC 10118-3"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-fips-180-4",
-      "vc:label": "NIST FIPS 180-4"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-fips-202",
-      "vc:label": "NIST FIPS 202"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-fips-205",
-      "vc:label": "NIST FIPS 205"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:message-authentication-code",
-      "vc:label": "Message Authentication Code"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

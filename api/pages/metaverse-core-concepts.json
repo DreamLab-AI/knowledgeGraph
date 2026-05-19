@@ -3,19 +3,18 @@
   "title": "metaverse core concepts",
   "slug": "metaverse-core-concepts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:metaverse-core-concepts",
+  "classIri": "urn:ngm:class:metaverse-core-concepts",
   "domain": "spatial-computing",
-  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.",
+  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

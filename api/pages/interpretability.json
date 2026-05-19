@@ -3,40 +3,44 @@
   "title": "Interpretability",
   "slug": "interpretability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:interpretability",
+  "classIri": "urn:ngm:class:interpretability",
   "domain": "artificial-intelligence",
   "definition": "The degree to which a human can understand the internal mechanics, decision-making processes, and cause-effect relationships within an AI system, independent of external explanation tools.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:debugging",
+        "id": "urn:ngm:class:debugging",
         "label": "Debugging"
       },
       {
-        "id": "urn:visionflow:linked:model-validation",
+        "id": "urn:ngm:class:model-validation",
         "label": "Model Validation"
       },
       {
-        "id": "urn:visionflow:linked:trust",
+        "id": "urn:ngm:class:trust",
         "label": "Trust"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,74 +3,87 @@
   "title": "Humanity Attestation",
   "slug": "humanity-attestation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:humanity-attestation",
+  "classIri": "urn:ngm:class:humanity-attestation",
   "domain": "spatial-computing",
   "definition": "Verification process that confirms a digital identity represents a human rather than an automated agent, bot, or AI system.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavioral-analysis",
+        "id": "urn:ngm:class:behavioral-analysis",
         "label": "Behavioral Analysis"
       },
       {
-        "id": "urn:visionflow:linked:biometric-verification",
+        "id": "urn:ngm:class:biometric-verification",
         "label": "Biometric Verification"
       },
       {
-        "id": "urn:visionflow:linked:captcha",
+        "id": "urn:ngm:class:captcha",
         "label": "CAPTCHA"
       },
       {
-        "id": "urn:visionflow:linked:challenge-response-protocol",
+        "id": "urn:ngm:class:challenge-response-protocol",
         "label": "Challenge-Response Protocol"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:challenge-protocol",
+        "id": "urn:ngm:class:challenge-protocol",
         "label": "Challenge Protocol"
       },
       {
-        "id": "urn:visionflow:linked:verification-mechanism",
+        "id": "urn:ngm:class:verification-mechanism",
         "label": "Verification Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:account-security",
+        "id": "urn:ngm:class:account-security",
         "label": "Account Security"
       },
       {
-        "id": "urn:visionflow:linked:bot-prevention",
+        "id": "urn:ngm:class:bot-prevention",
         "label": "Bot Prevention"
       },
       {
-        "id": "urn:visionflow:linked:fraud-prevention",
+        "id": "urn:ngm:class:fraud-prevention",
         "label": "Fraud Prevention"
       },
       {
-        "id": "urn:visionflow:linked:trust-establishment",
+        "id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

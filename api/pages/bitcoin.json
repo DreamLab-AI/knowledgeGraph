@@ -3,86 +3,90 @@
   "title": "Bitcoin",
   "slug": "bitcoin",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:bitcoin",
+  "classIri": "urn:ngm:class:bitcoin",
   "domain": "blockchain",
-  "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
+  "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:payment-system",
+      "id": "urn:ngm:class:payment-system",
       "label": "Payment System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.96,
-  "authorityScore": 1.0,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:utxo",
+        "id": "urn:ngm:class:utxo",
         "label": "UTXO"
       },
       {
-        "id": "urn:visionflow:owl:class:block",
+        "id": "urn:ngm:class:block",
         "label": "Block"
       },
       {
-        "id": "urn:visionflow:owl:class:lightning-network",
+        "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       },
       {
-        "id": "urn:visionflow:owl:class:mempool",
+        "id": "urn:ngm:class:mempool",
         "label": "Mempool"
       },
       {
-        "id": "urn:visionflow:owl:class:script",
+        "id": "urn:ngm:class:script",
         "label": "Script"
       },
       {
-        "id": "urn:visionflow:owl:class:transaction",
+        "id": "urn:ngm:class:transaction",
         "label": "Transaction"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:peer-to-peer-transfer",
+        "id": "urn:ngm:class:peer-to-peer-transfer",
         "label": "Peer-to-Peer Transfer"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:owl:class:censorship-resistance",
+        "id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
       },
       {
-        "id": "urn:visionflow:owl:class:monetary-sovereignty",
+        "id": "urn:ngm:class:monetary-sovereignty",
         "label": "Monetary Sovereignty"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:owl:class:elliptic-curve-cryptography",
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
       },
       {
-        "id": "urn:visionflow:owl:class:sha-256",
+        "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
       },
       {
-        "id": "urn:visionflow:owl:class:utxo-model",
+        "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

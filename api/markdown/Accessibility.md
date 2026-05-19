@@ -504,344 +504,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accessibility",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accessibility",
+  "@type": "Class",
   "label": "Accessibility",
+  "definition": "Accessibility is the systematic property of digital products, services, environments and information systems being perceivable, operable, understandable and robust (POUR) for the widest possible range of users including those with permanent disabilities temporary impairments (broken arm, post-sur...",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:design-principle",
-      "vc:label": "Design Principle"
+      "@id": "urn:ngm:class:design-principle",
+      "label": "Design Principle"
     },
     {
-      "@id": "urn:visionflow:linked:non-functional-requirement",
-      "vc:label": "Non-Functional Requirement"
-    },
-    {
-      "@id": "urn:visionflow:linked:quality-attribute",
-      "vc:label": "Quality Attribute"
+      "@id": "urn:ngm:class:non-functional-requirement",
+      "label": "Non-Functional Requirement"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ad0ec25e96f3333a038762e1b3db2adbecbd213320296335bde9deacf636cb8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accessibility-statement",
+        "label": "Accessibility Statement"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-name-computation",
+        "label": "Accessible Name Computation"
+      },
+      {
+        "@id": "urn:ngm:class:alternative-text",
+        "label": "Alternative Text"
+      },
+      {
+        "@id": "urn:ngm:class:audio-description",
+        "label": "Audio Description"
+      },
+      {
+        "@id": "urn:ngm:class:captions",
+        "label": "Captions"
+      },
+      {
+        "@id": "urn:ngm:class:focus-management",
+        "label": "Focus Management"
+      },
+      {
+        "@id": "urn:ngm:class:keyboard-navigation",
+        "label": "Keyboard Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:operability",
+        "label": "Operability"
+      },
+      {
+        "@id": "urn:ngm:class:perceivability",
+        "label": "Perceivability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "@id": "urn:ngm:class:understandability",
+        "label": "Understandability"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:assistive-technology-compatibility",
+        "label": "Assistive Technology Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:colour-contrast",
+        "label": "Colour Contrast"
+      },
+      {
+        "@id": "urn:ngm:class:keyboard-operability",
+        "label": "Keyboard Operability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      },
+      {
+        "@id": "urn:ngm:class:user-research-with-disabled-users",
+        "label": "User Research with Disabled Users"
+      },
+      {
+        "@id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:disability-inclusion",
+        "label": "Disability Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "@id": "urn:ngm:class:independent-living",
+        "label": "Independent Living"
+      },
+      {
+        "@id": "urn:ngm:class:market-expansion",
+        "label": "Market Expansion"
+      },
+      {
+        "@id": "urn:ngm:class:universal-usability",
+        "label": "Universal Usability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:atag-2-0",
+        "label": "ATAG 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:en-301-549",
+        "label": "EN 301 549"
+      },
+      {
+        "@id": "urn:ngm:class:pour-principles",
+        "label": "POUR Principles"
+      },
+      {
+        "@id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      },
+      {
+        "@id": "urn:ngm:class:wai-aria-1-2",
+        "label": "WAI-ARIA 1.2"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:axe-core",
+        "label": "axe-core"
+      },
+      {
+        "@id": "urn:ngm:class:jaws",
+        "label": "JAWS"
+      },
+      {
+        "@id": "urn:ngm:class:lighthouse",
+        "label": "Lighthouse"
+      },
+      {
+        "@id": "urn:ngm:class:nvda",
+        "label": "NVDA"
+      },
+      {
+        "@id": "urn:ngm:class:pa11y",
+        "label": "Pa11y"
+      },
+      {
+        "@id": "urn:ngm:class:talk-back",
+        "label": "TalkBack"
+      },
+      {
+        "@id": "urn:ngm:class:voice-over",
+        "label": "VoiceOver"
+      },
+      {
+        "@id": "urn:ngm:class:wave",
+        "label": "WAVE"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:disability-rights",
+        "label": "Disability Rights"
+      },
+      {
+        "@id": "urn:ngm:class:internationalisation",
+        "label": "Internationalisation"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:captioning-users",
+        "label": "Captioning Users"
+      },
+      {
+        "@id": "urn:ngm:class:cognitively-diverse-users",
+        "label": "Cognitively Diverse Users"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking-users",
+        "label": "Eye-Tracking Users"
+      },
+      {
+        "@id": "urn:ngm:class:keyboard-only-users",
+        "label": "Keyboard-Only Users"
+      },
+      {
+        "@id": "urn:ngm:class:screen-reader-users",
+        "label": "Screen Reader Users"
+      },
+      {
+        "@id": "urn:ngm:class:switch-users",
+        "label": "Switch Users"
+      },
+      {
+        "@id": "urn:ngm:class:voice-control-users",
+        "label": "Voice-Control Users"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bs-8878",
+        "label": "BS 8878"
+      },
+      {
+        "@id": "urn:ngm:class:en-301-549",
+        "label": "EN 301 549"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-40500",
+        "label": "ISO/IEC 40500"
+      },
+      {
+        "@id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-wai",
+        "label": "W3C WAI"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ad0ec25e96f3333a038762e1b3db2adbecbd213320296335bde9deacf636cb8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Accessibility is the systematic property of digital products, services, environments and information systems being perceivable, operable, understandable and robust (POUR) for the widest possible range of users including those with permanent disabilities (blindness, low vision, deafness/hard-of-hearing, motor impairments such as paralysis/tremor/limb difference, cognitive/learning disabilities, neurodiversity, speech impairments, photosensitive epilepsy), temporary impairments (broken arm, post-surgery recovery, eye dilation, ear infection, migraine, concussion), and situational limitations (bright sunlight reducing screen contrast, noisy environments masking audio cues, one-handed use whilst carrying objects, limited bandwidth/older hardware, non-native language proficiency), implemented through a stack of normative standards (W3C Web Content Accessibility Guidelines WCAG 2.0/2.1/2.2 published October 2023 introducing nine new success criteria including 2.4.11 Focus Not Obscured, 2.5.7 Dragging Movements, 2.5.8 Target Size Minimum 24×24 CSS pixels, 3.2.6 Consistent Help, 3.3.7 Redundant Entry, 3.3.8/3.3.9 Accessible Authentication; WCAG 3.0 Silver draft introducing outcome-based sc",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-statement",
-      "vc:label": "Accessibility Statement"
-    },
-    {
-      "@id": "urn:visionflow:linked:accessible-name-computation",
-      "vc:label": "Accessible Name Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:alternative-text",
-      "vc:label": "Alternative Text"
-    },
-    {
-      "@id": "urn:visionflow:linked:audio-description",
-      "vc:label": "Audio Description"
-    },
-    {
-      "@id": "urn:visionflow:linked:captions",
-      "vc:label": "Captions"
-    },
-    {
-      "@id": "urn:visionflow:linked:focus-management",
-      "vc:label": "Focus Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyboard-navigation",
-      "vc:label": "Keyboard Navigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:operability",
-      "vc:label": "Operability"
-    },
-    {
-      "@id": "urn:visionflow:linked:perceivability",
-      "vc:label": "Perceivability"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-html",
-      "vc:label": "Semantic HTML"
-    },
-    {
-      "@id": "urn:visionflow:linked:understandability",
-      "vc:label": "Understandability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:robustness",
-      "vc:label": "Robustness"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:assistive-technology-compatibility",
-      "vc:label": "Assistive Technology Compatibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:colour-contrast",
-      "vc:label": "Colour Contrast"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyboard-operability",
-      "vc:label": "Keyboard Operability"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-html",
-      "vc:label": "Semantic HTML"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-research-with-disabled-users",
-      "vc:label": "User Research with Disabled Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:wai-aria",
-      "vc:label": "WAI-ARIA"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:disability-inclusion",
-      "vc:label": "Disability Inclusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:equitable-access",
-      "vc:label": "Equitable Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-living",
-      "vc:label": "Independent Living"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-expansion",
-      "vc:label": "Market Expansion"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-usability",
-      "vc:label": "Universal Usability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:atag-2-0",
-      "vc:label": "ATAG 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:en-301-549",
-      "vc:label": "EN 301 549"
-    },
-    {
-      "@id": "urn:visionflow:linked:pour-principles",
-      "vc:label": "POUR Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:section-508",
-      "vc:label": "Section 508"
-    },
-    {
-      "@id": "urn:visionflow:linked:wai-aria-1-2",
-      "vc:label": "WAI-ARIA 1.2"
-    },
-    {
-      "@id": "urn:visionflow:linked:wcag-2-2",
-      "vc:label": "WCAG 2.2"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:assistive-technology-ecosystem",
-      "vc:label": "Assistive Technology Ecosystem"
-    },
-    {
-      "@id": "urn:visionflow:linked:disability-studies",
-      "vc:label": "Disability Studies"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-factors-research",
-      "vc:label": "Human Factors Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:operating-system-accessibility-apis",
-      "vc:label": "Operating System Accessibility APIs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-standards",
-      "vc:label": "Web Standards"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:captioning-users",
-      "vc:label": "Captioning Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:cognitively-diverse-users",
-      "vc:label": "Cognitively Diverse Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:eye-tracking-users",
-      "vc:label": "Eye-Tracking Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:keyboard-only-users",
-      "vc:label": "Keyboard-Only Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:screen-reader-users",
-      "vc:label": "Screen Reader Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:switch-users",
-      "vc:label": "Switch Users"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-control-users",
-      "vc:label": "Voice-Control Users"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:axe-core",
-      "vc:label": "axe-core"
-    },
-    {
-      "@id": "urn:visionflow:linked:jaws",
-      "vc:label": "JAWS"
-    },
-    {
-      "@id": "urn:visionflow:linked:lighthouse",
-      "vc:label": "Lighthouse"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvda",
-      "vc:label": "NVDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:pa11y",
-      "vc:label": "Pa11y"
-    },
-    {
-      "@id": "urn:visionflow:linked:talk-back",
-      "vc:label": "TalkBack"
-    },
-    {
-      "@id": "urn:visionflow:linked:voice-over",
-      "vc:label": "VoiceOver"
-    },
-    {
-      "@id": "urn:visionflow:linked:wave",
-      "vc:label": "WAVE"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:reasonable-accommodation",
-      "vc:label": "Reasonable Accommodation"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-design",
-      "vc:label": "Universal Design"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:disability-rights",
-      "vc:label": "Disability Rights"
-    },
-    {
-      "@id": "urn:visionflow:linked:internationalisation",
-      "vc:label": "Internationalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:localisation",
-      "vc:label": "Localisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:usability",
-      "vc:label": "Usability"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience",
-      "vc:label": "User Experience"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy",
-      "vc:label": "Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safety",
-      "vc:label": "Safety"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bs-8878",
-      "vc:label": "BS 8878"
-    },
-    {
-      "@id": "urn:visionflow:linked:en-301-549",
-      "vc:label": "EN 301 549"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-40500",
-      "vc:label": "ISO/IEC 40500"
-    },
-    {
-      "@id": "urn:visionflow:linked:section-508",
-      "vc:label": "Section 508"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-wai",
-      "vc:label": "W3C WAI"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:inclusive-design",
-      "vc:label": "Inclusive Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-design",
-      "vc:label": "Universal Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

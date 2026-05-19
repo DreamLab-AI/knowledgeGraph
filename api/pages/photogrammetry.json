@@ -3,94 +3,107 @@
   "title": "Photogrammetry",
   "slug": "photogrammetry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:photogrammetry",
+  "classIri": "urn:ngm:class:photogrammetry",
   "domain": "spatial-computing",
   "definition": "A computational technique for reconstructing 3D geometry from overlapping photographic images through mathematical analysis of correspondences, camera poses, and geometric transformations to extract spatial information from 2D image data.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:linked:feature-detection",
+        "id": "urn:ngm:class:feature-detection",
         "label": "Feature Detection"
       },
       {
-        "id": "urn:visionflow:linked:image-matching",
+        "id": "urn:ngm:class:image-matching",
         "label": "Image Matching"
       },
       {
-        "id": "urn:visionflow:linked:mesh-reconstruction",
+        "id": "urn:ngm:class:mesh-reconstruction",
         "label": "Mesh Reconstruction"
       },
       {
-        "id": "urn:visionflow:linked:point-cloud-generation",
+        "id": "urn:ngm:class:point-cloud-generation",
         "label": "Point Cloud Generation"
       },
       {
-        "id": "urn:visionflow:linked:triangulation",
+        "id": "urn:ngm:class:triangulation",
         "label": "Triangulation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-resources",
+        "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
       },
       {
-        "id": "urn:visionflow:linked:multiple-images",
+        "id": "urn:ngm:class:multiple-images",
         "label": "Multiple Images"
       },
       {
-        "id": "urn:visionflow:linked:overlapping-coverage",
+        "id": "urn:ngm:class:overlapping-coverage",
         "label": "Overlapping Coverage"
       },
       {
-        "id": "urn:visionflow:owl:class:camera",
+        "id": "urn:ngm:class:camera",
         "label": "Camera"
       },
       {
-        "id": "urn:visionflow:owl:class:image-processing-software",
+        "id": "urn:ngm:class:image-processing-software",
         "label": "Image Processing Software"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-model-creation",
+        "id": "urn:ngm:class:3-d-model-creation",
         "label": "3D Model Creation"
       },
       {
-        "id": "urn:visionflow:linked:asset-digitization",
+        "id": "urn:ngm:class:asset-digitization",
         "label": "Asset Digitization"
       },
       {
-        "id": "urn:visionflow:linked:terrain-mapping",
+        "id": "urn:ngm:class:terrain-mapping",
         "label": "Terrain Mapping"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-twin-construction",
+        "id": "urn:ngm:class:digital-twin-construction",
         "label": "Digital Twin Construction"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-measurement",
+        "id": "urn:ngm:class:spatial-measurement",
         "label": "Spatial Measurement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-reconstruction-pipeline",
+        "label": "3D Reconstruction Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:reality-capture-workflow",
+        "label": "Reality Capture Workflow"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

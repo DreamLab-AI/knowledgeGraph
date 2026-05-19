@@ -532,372 +532,289 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:midjourney",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:individual:midjourney",
+  "@type": "Individual",
   "label": "Midjourney",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:linked:creative-ai-tools",
-      "vc:label": "Creative AI Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-to-image-generation",
-      "vc:label": "Text-to-Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-video",
-      "vc:label": "AI Video"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c3d5eef913c7ea2e362c54c3a9075545a44b4896c607f6f4f984367a0e242574"
+  "definition": "AI image-generation platform that produces high-quality artwork and photorealistic images from natural language prompts, distributed primarily via a Discord-based interface.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:discord-bot-framework",
+        "label": "Discord Bot Framework"
+      },
+      {
+        "@id": "urn:ngm:class:draft-mode",
+        "label": "Draft Mode"
+      },
+      {
+        "@id": "urn:ngm:class:niji-model",
+        "label": "Niji Model"
+      },
+      {
+        "@id": "urn:ngm:class:omni-reference",
+        "label": "Omni Reference"
+      },
+      {
+        "@id": "urn:ngm:class:pan-zoom",
+        "label": "Pan Zoom"
+      },
+      {
+        "@id": "urn:ngm:class:personalization-system",
+        "label": "Personalization System"
+      },
+      {
+        "@id": "urn:ngm:class:style-creator",
+        "label": "Style Creator"
+      },
+      {
+        "@id": "urn:ngm:class:style-reference",
+        "label": "Style Reference"
+      },
+      {
+        "@id": "urn:ngm:class:upscale-tools",
+        "label": "Upscale Tools"
+      },
+      {
+        "@id": "urn:ngm:class:vary-region",
+        "label": "Vary Region"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:clip-embeddings",
+        "label": "CLIP Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model-architecture",
+        "label": "Diffusion Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:discord-api",
+        "label": "Discord API"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute-infrastructure",
+        "label": "GPU Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-system",
+        "label": "Subscription System"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:advertising-creative",
+        "label": "Advertising Creative"
+      },
+      {
+        "@id": "urn:ngm:class:ai-art-generation",
+        "label": "AI Art Generation"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:brand-visual-identity",
+        "label": "Brand Visual Identity"
+      },
+      {
+        "@id": "urn:ngm:class:concept-art-production",
+        "label": "Concept Art Production"
+      },
+      {
+        "@id": "urn:ngm:class:fashion-design-ideation",
+        "label": "Fashion Design Ideation"
+      },
+      {
+        "@id": "urn:ngm:class:film-pre-visualisation",
+        "label": "Film Pre-visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-design",
+        "label": "Game Asset Design"
+      },
+      {
+        "@id": "urn:ngm:class:storyboard-generation",
+        "label": "Storyboard Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:image-outpainting",
+        "label": "Image Outpainting"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:noise-scheduling",
+        "label": "Noise Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-generation",
+        "label": "Personalized Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:discord-bot-framework",
+        "label": "Discord Bot Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute-infrastructure",
+        "label": "GPU Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:multi-modal-conditioning",
+        "label": "Multi-modal Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-system",
+        "label": "Subscription System"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:control-net-and-similar",
+        "label": "ControlNet and similar"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:animate-diff",
+        "label": "AnimateDiff"
+      },
+      {
+        "@id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:architecture-design",
+        "label": "Architecture Design"
+      },
+      {
+        "@id": "urn:ngm:class:commercial-image-production",
+        "label": "Commercial Image Production"
+      },
+      {
+        "@id": "urn:ngm:class:educational-content-creation",
+        "label": "Educational Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:fashion-industry",
+        "label": "Fashion Industry"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:motion-picture-pre-production",
+        "label": "Motion Picture Pre-production"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:c2-pa-provenance-standard",
+        "label": "C2PA Provenance Standard"
+      },
+      {
+        "@id": "urn:ngm:class:copyright-law",
+        "label": "Copyright Law"
+      },
+      {
+        "@id": "urn:ngm:class:dmca",
+        "label": "DMCA"
+      },
+      {
+        "@id": "urn:ngm:class:uk-cdpa-1988",
+        "label": "UK CDPA 1988"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c3d5eef913c7ea2e362c54c3a9075545a44b4896c607f6f4f984367a0e242574@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Midjourney is a proprietary text-to-image and text-to-video [[Generative AI]] platform developed by Midjourney Inc. (San Francisco, California, founded 2021, CEO David Holz), operating as a bootstrapped venture-capital-free company that achieved profitability within one month of its July 2022 public beta launch. The platform transforms natural language text prompts — and optionally image references, style references, and character/object references — into high-resolution raster images using a proprietary [[Diffusion Models]] architecture described by Holz at V7 launch as \"a totally different architecture\" from predecessor versions, without disclosure of model weights, training data composition beyond LAION-derived acknowledgement, or peer-reviewed technical specifications. Business scale as of 2026: approximately $300M annual recurring revenue (ARR) by January 2024, $500M ARR in 2025, private market valuation estimated at $10.5B, approximately 107–131 employees, revenue-per-employee exceeding $3.8M — among the highest of any technology company globally.",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
+  "instanceOf": [
     {
-      "@id": "urn:visionflow:linked:discord-bot-framework",
-      "vc:label": "Discord Bot Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:draft-mode",
-      "vc:label": "Draft Mode"
-    },
-    {
-      "@id": "urn:visionflow:linked:niji-model",
-      "vc:label": "Niji Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:omni-reference",
-      "vc:label": "Omni Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:pan-zoom",
-      "vc:label": "Pan Zoom"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalization-system",
-      "vc:label": "Personalization System"
-    },
-    {
-      "@id": "urn:visionflow:linked:style-creator",
-      "vc:label": "Style Creator"
-    },
-    {
-      "@id": "urn:visionflow:linked:style-reference",
-      "vc:label": "Style Reference"
-    },
-    {
-      "@id": "urn:visionflow:linked:upscale-tools",
-      "vc:label": "Upscale Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:vary-region",
-      "vc:label": "Vary Region"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:clip-embeddings",
-      "vc:label": "CLIP Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model-architecture",
-      "vc:label": "Diffusion Model Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:discord-api",
-      "vc:label": "Discord API"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute-infrastructure",
-      "vc:label": "GPU Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:subscription-system",
-      "vc:label": "Subscription System"
-    },
-    {
-      "@id": "urn:visionflow:linked:text-encoder",
-      "vc:label": "Text Encoder"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:advertising-creative",
-      "vc:label": "Advertising Creative"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-art-generation",
-      "vc:label": "AI Art Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:architectural-visualisation",
-      "vc:label": "Architectural Visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:brand-visual-identity",
-      "vc:label": "Brand Visual Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:concept-art-production",
-      "vc:label": "Concept Art Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:fashion-design-ideation",
-      "vc:label": "Fashion Design Ideation"
-    },
-    {
-      "@id": "urn:visionflow:linked:film-pre-visualisation",
-      "vc:label": "Film Pre-visualisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-asset-design",
-      "vc:label": "Game Asset Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:storyboard-generation",
-      "vc:label": "Storyboard Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-outpainting",
-      "vc:label": "Image Outpainting"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-scheduling",
-      "vc:label": "Noise Scheduling"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-generation",
-      "vc:label": "Personalized Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:laion-dataset",
-      "vc:label": "LAION Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:noise-scheduling",
-      "vc:label": "Noise Scheduling"
-    },
-    {
-      "@id": "urn:visionflow:linked:u-net-architecture",
-      "vc:label": "U-Net Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-autoencoder",
-      "vc:label": "Variational Autoencoder"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:contrastive-learning",
-      "vc:label": "Contrastive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:architecture-design",
-      "vc:label": "Architecture Design"
-    },
-    {
-      "@id": "urn:visionflow:linked:commercial-image-production",
-      "vc:label": "Commercial Image Production"
-    },
-    {
-      "@id": "urn:visionflow:linked:educational-content-creation",
-      "vc:label": "Educational Content Creation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fashion-industry",
-      "vc:label": "Fashion Industry"
-    },
-    {
-      "@id": "urn:visionflow:linked:game-development",
-      "vc:label": "Game Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:motion-picture-pre-production",
-      "vc:label": "Motion Picture Pre-production"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-marketing",
-      "vc:label": "Digital Marketing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:discord-bot-framework",
-      "vc:label": "Discord Bot Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute-infrastructure",
-      "vc:label": "GPU Compute Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-modal-conditioning",
-      "vc:label": "Multi-modal Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:progressive-web-app",
-      "vc:label": "Progressive Web App"
-    },
-    {
-      "@id": "urn:visionflow:linked:subscription-system",
-      "vc:label": "Subscription System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:adobe-firefly",
-      "vc:label": "Adobe Firefly"
-    },
-    {
-      "@id": "urn:visionflow:linked:flux",
-      "vc:label": "FLUX"
-    },
-    {
-      "@id": "urn:visionflow:linked:imagen-3",
-      "vc:label": "Imagen 3"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:dall-e",
-      "vc:label": "DALL-E"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:control-net-and-similar",
-      "vc:label": "ControlNet and similar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animate-diff",
-      "vc:label": "AnimateDiff"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:checkpoints",
-      "vc:label": "Checkpoints"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-networks",
-      "vc:label": "Generative Adversarial Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inpainting",
-      "vc:label": "Inpainting"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:c2-pa-provenance-standard",
-      "vc:label": "C2PA Provenance Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:copyright-law",
-      "vc:label": "Copyright Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:dmca",
-      "vc:label": "DMCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-cdpa-1988",
-      "vc:label": "UK CDPA 1988"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
+      "@id": "urn:ngm:class:ai-image-generation",
+      "label": "AI Image Generation"
     }
   ]
 }

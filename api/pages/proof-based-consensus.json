@@ -3,19 +3,18 @@
   "title": "Proof-Based Consensus",
   "slug": "proof-based-consensus",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proof-based-consensus",
+  "classIri": "urn:ngm:class:proof-based-consensus",
   "domain": "blockchain",
   "definition": "Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:consensus-mechanism",
+      "id": "urn:ngm:class:consensus-mechanism",
       "label": "Consensus Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Spatial Database",
   "slug": "spatial-database",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-database",
+  "classIri": "urn:ngm:class:spatial-database",
   "domain": "infrastructure",
   "definition": "A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:database-system",
+      "id": "urn:ngm:class:database-system",
       "label": "Database System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:geospatial-data-management",
+        "id": "urn:ngm:class:geospatial-data-management",
         "label": "Geospatial Data Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Medical Robot",
   "slug": "medical-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:medical-robot",
+  "classIri": "urn:ngm:class:medical-robot",
   "domain": "robotics",
   "definition": "Medical Robot is a robotics and autonomous systems concept and a type of Service Robot.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:service-robot",
+      "id": "urn:ngm:class:service-robot",
       "label": "Service Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

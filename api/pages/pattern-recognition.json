@@ -3,19 +3,13 @@
   "title": "Pattern Recognition",
   "slug": "pattern-recognition",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pattern-recognition",
+  "classIri": "urn:ngm:class:pattern-recognition",
   "domain": "artificial-intelligence",
-  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms. This encompasses supervised learning (classification, regression), unsupervised learning (clustering, dimensionality reduction), and feature extraction techniques. Applications span computer vision (object recognition, face detection), speech recognition, biometric identification, medical diagnosis, and anomaly detection. Modern approaches leverage deep learning for end-to-end feature learning, replacing hand-crafted features with learned representations from raw data.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:owl-thing",
-      "label": "['owl:Thing']"
-    }
-  ],
+  "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +17,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

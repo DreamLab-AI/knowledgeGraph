@@ -3,19 +3,18 @@
   "title": "rb 0073 imu",
   "slug": "rb-0073-imu",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0073-imu",
+  "classIri": "urn:ngm:class:rb-0073-imu",
   "domain": "robotics",
   "definition": "imu is a robotics and autonomous systems concept and a type of Proprioceptive Sensor.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:proprioceptive-sensor",
+      "id": "urn:ngm:class:proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

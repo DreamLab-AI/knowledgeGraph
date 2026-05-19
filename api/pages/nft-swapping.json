@@ -3,78 +3,91 @@
   "title": "NFT Swapping",
   "slug": "nft-swapping",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nft-swapping",
+  "classIri": "urn:ngm:class:nft-swapping",
   "domain": "spatial-computing",
   "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:asset-verification",
+        "id": "urn:ngm:class:asset-verification",
         "label": "Asset Verification"
       },
       {
-        "id": "urn:visionflow:linked:atomic-transaction",
+        "id": "urn:ngm:class:atomic-transaction",
         "label": "Atomic Transaction"
       },
       {
-        "id": "urn:visionflow:linked:exchange-agreement",
+        "id": "urn:ngm:class:exchange-agreement",
         "label": "Exchange Agreement"
       },
       {
-        "id": "urn:visionflow:linked:swap-smart-contract",
+        "id": "urn:ngm:class:swap-smart-contract",
         "label": "Swap Smart Contract"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gas-fee-payment",
+        "id": "urn:ngm:class:gas-fee-payment",
         "label": "Gas Fee Payment"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-ownership-proof",
+        "id": "urn:ngm:class:nft-ownership-proof",
         "label": "NFT Ownership Proof"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-liquidity",
+        "id": "urn:ngm:class:asset-liquidity",
         "label": "Asset Liquidity"
       },
       {
-        "id": "urn:visionflow:linked:direct-exchange",
+        "id": "urn:ngm:class:direct-exchange",
         "label": "Direct Exchange"
       },
       {
-        "id": "urn:visionflow:linked:peer-to-peer-trading",
+        "id": "urn:ngm:class:peer-to-peer-trading",
         "label": "Peer-to-Peer Trading"
       },
       {
-        "id": "urn:visionflow:linked:trust-minimized-transfer",
+        "id": "urn:ngm:class:trust-minimized-transfer",
         "label": "Trust-Minimized Transfer"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

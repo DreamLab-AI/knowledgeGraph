@@ -3,155 +3,259 @@
   "title": "Image and Video Restoration",
   "slug": "image-and-video-restoration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:image-and-video-restoration",
+  "classIri": "urn:ngm:class:image-and-video-restoration",
   "domain": "artificial-intelligence",
-  "definition": "Image and Video Restoration is a computational imaging discipline within the artificial-intelligence and computer-vision domain concerned with recovering high-quality, perceptually faithful visual content from degraded observations, where degradation encompasses noise corruption (Gaussian/Poisson/salt-and-pepper/film grain/sensor read noise arising from low-light imaging, high-ISO photography, medical scanners, astronomical telescopes), blur (camera motion blur from hand-shake or subject movement, optical defocus blur from shallow depth-of-field misalignment, atmospheric turbulence degrading long-range surveillance and astronomical imaging), compression artefacts (JPEG blocking, ringing at sharp edges, colour banding from chroma subsampling in legacy video codecs), downscaling (spatial super-resolution recovering high-frequency detail lost during bicubic/bilinear resampling or achieved through optical limitations), temporal degradation (interlacing, frame-rate conversion, video stabilisation from shaky footage), ageing damage (fading, scratches, dust, chemical decomposition in archival photographic and film stocks), and missing content (inpainting recovering semantically plausible ",
+  "definition": "Image and Video Restoration is a computational imaging discipline within the artificial-intelligence and computer-vision domain concerned with recovering high-quality, perceptually faithful visual content from degraded observations, where degradation encompasses noise corruption (Gaussian/Poisson...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:image-processing",
+      "id": "urn:ngm:class:image-processing",
       "label": "Image Processing"
     },
     {
-      "id": "urn:visionflow:linked:inverse-problems",
+      "id": "urn:ngm:class:inverse-problems",
       "label": "Inverse Problems"
-    },
-    {
-      "id": "urn:visionflow:linked:signal-recovery",
-      "label": "Signal Recovery"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:deblurring-network",
+        "id": "urn:ngm:class:deblurring-network",
         "label": "Deblurring Network"
       },
       {
-        "id": "urn:visionflow:linked:degradation-model",
+        "id": "urn:ngm:class:degradation-model",
         "label": "Degradation Model"
       },
       {
-        "id": "urn:visionflow:linked:denoising-network",
+        "id": "urn:ngm:class:denoising-network",
         "label": "Denoising Network"
       },
       {
-        "id": "urn:visionflow:linked:face-restoration-module",
+        "id": "urn:ngm:class:face-restoration-module",
         "label": "Face Restoration Module"
       },
       {
-        "id": "urn:visionflow:linked:inpainting-model",
+        "id": "urn:ngm:class:inpainting-model",
         "label": "Inpainting Model"
       },
       {
-        "id": "urn:visionflow:linked:perceptual-loss-function",
+        "id": "urn:ngm:class:perceptual-loss-function",
         "label": "Perceptual Loss Function"
       },
       {
-        "id": "urn:visionflow:linked:quality-assessment-metric",
+        "id": "urn:ngm:class:quality-assessment-metric",
         "label": "Quality Assessment Metric"
       },
       {
-        "id": "urn:visionflow:linked:super-resolution-model",
+        "id": "urn:ngm:class:super-resolution-model",
         "label": "Super-Resolution Model"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:deep-learning-framework",
+        "id": "urn:ngm:class:deep-learning-framework",
         "label": "Deep Learning Framework"
       },
       {
-        "id": "urn:visionflow:linked:degradation-prior",
+        "id": "urn:ngm:class:degradation-prior",
         "label": "Degradation Prior"
       },
       {
-        "id": "urn:visionflow:linked:gpu-compute",
+        "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "id": "urn:visionflow:linked:image-quality-metric",
+        "id": "urn:ngm:class:image-quality-metric",
         "label": "Image Quality Metric"
       },
       {
-        "id": "urn:visionflow:linked:training-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Training Dataset"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:computational-photography",
+        "id": "urn:ngm:class:computational-photography",
         "label": "Computational Photography"
       },
       {
-        "id": "urn:visionflow:linked:forensic-image-enhancement",
+        "id": "urn:ngm:class:forensic-image-enhancement",
         "label": "Forensic Image Enhancement"
       },
       {
-        "id": "urn:visionflow:linked:media-archival-restoration",
+        "id": "urn:ngm:class:media-archival-restoration",
         "label": "Media Archival Restoration"
       },
       {
-        "id": "urn:visionflow:linked:medical-image-enhancement",
+        "id": "urn:ngm:class:medical-image-enhancement",
         "label": "Medical Image Enhancement"
       },
       {
-        "id": "urn:visionflow:linked:satellite-image-analysis",
+        "id": "urn:ngm:class:satellite-image-analysis",
         "label": "Satellite Image Analysis"
       },
       {
-        "id": "urn:visionflow:linked:video-production-pipeline",
+        "id": "urn:ngm:class:video-production-pipeline",
         "label": "Video Production Pipeline"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:code-former",
+        "id": "urn:ngm:class:code-former",
         "label": "CodeFormer"
       },
       {
-        "id": "urn:visionflow:linked:dif-face",
+        "id": "urn:ngm:class:dif-face",
         "label": "DifFace"
       },
       {
-        "id": "urn:visionflow:linked:dn-cnn",
+        "id": "urn:ngm:class:dn-cnn",
         "label": "DnCNN"
       },
       {
-        "id": "urn:visionflow:linked:gfpgan",
+        "id": "urn:ngm:class:gfpgan",
         "label": "GFPGAN"
       },
       {
-        "id": "urn:visionflow:linked:la-ma-inpainting",
+        "id": "urn:ngm:class:la-ma-inpainting",
         "label": "LaMa Inpainting"
       },
       {
-        "id": "urn:visionflow:linked:nafnet",
+        "id": "urn:ngm:class:nafnet",
         "label": "NAFNet"
       },
       {
-        "id": "urn:visionflow:linked:real-esrgan",
+        "id": "urn:ngm:class:real-esrgan",
         "label": "Real-ESRGAN"
       },
       {
-        "id": "urn:visionflow:linked:stable-diffusion-inpaint",
+        "id": "urn:ngm:class:stable-diffusion-inpaint",
         "label": "Stable Diffusion Inpaint"
       },
       {
-        "id": "urn:visionflow:linked:stable-sr",
+        "id": "urn:ngm:class:stable-sr",
         "label": "StableSR"
       },
       {
-        "id": "urn:visionflow:linked:swin-ir",
+        "id": "urn:ngm:class:swin-ir",
         "label": "SwinIR"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lpips-metric",
+        "label": "LPIPS Metric"
+      },
+      {
+        "id": "urn:ngm:class:psnr-metric",
+        "label": "PSNR Metric"
+      },
+      {
+        "id": "urn:ngm:class:residual-learning",
+        "label": "Residual Learning"
+      },
+      {
+        "id": "urn:ngm:class:ssim-metric",
+        "label": "SSIM Metric"
+      },
+      {
+        "id": "urn:ngm:class:vector-quantisation",
+        "label": "Vector Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      },
+      {
+        "id": "urn:ngm:class:film-and-television-production",
+        "label": "Film and Television Production"
+      },
+      {
+        "id": "urn:ngm:class:forensic-science",
+        "label": "Forensic Science"
+      },
+      {
+        "id": "urn:ngm:class:immersive-media",
+        "label": "Immersive Media"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:eccv",
+        "label": "ECCV"
+      },
+      {
+        "id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:ntire-workshop",
+        "label": "NTIRE Workshop"
+      },
+      {
+        "id": "urn:ngm:class:pirm-challenge",
+        "label": "PIRM Challenge"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computational-imaging",
+        "label": "Computational Imaging"
+      },
+      {
+        "id": "urn:ngm:class:image-enhancement",
+        "label": "Image Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

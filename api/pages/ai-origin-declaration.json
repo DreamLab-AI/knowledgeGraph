@@ -3,53 +3,57 @@
   "title": "Ai Origin Declaration",
   "slug": "ai-origin-declaration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-origin-declaration",
+  "classIri": "urn:ngm:class:ai-origin-declaration",
   "domain": "artificial-intelligence",
-  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.",
+  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:content-authenticity",
+      "id": "urn:ngm:class:content-authenticity",
       "label": "Content Authenticity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-signing",
+        "id": "urn:ngm:class:cryptographic-signing",
         "label": "Cryptographic Signing"
       },
       {
-        "id": "urn:visionflow:linked:digital-watermarking",
+        "id": "urn:ngm:class:digital-watermarking",
         "label": "Digital Watermarking"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-standards",
+        "id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-verification",
+        "id": "urn:ngm:class:content-verification",
         "label": "Content Verification"
       },
       {
-        "id": "urn:visionflow:linked:deepfake-detection",
+        "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:trust-infrastructure",
+        "id": "urn:ngm:class:trust-infrastructure",
         "label": "Trust Infrastructure"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

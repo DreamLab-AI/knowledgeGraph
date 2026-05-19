@@ -3,32 +3,36 @@
   "title": "Semantic Web Standards",
   "slug": "semantic-web-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:semantic-web-standards",
+  "classIri": "urn:ngm:class:semantic-web-standards",
   "domain": "spatial-computing",
   "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:web-standards",
+      "id": "urn:ngm:class:web-standards",
       "label": "Web Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:data-interoperability",
+        "id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

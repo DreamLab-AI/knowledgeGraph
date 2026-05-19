@@ -3,19 +3,18 @@
   "title": "Robot Joint",
   "slug": "robot-joint",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-joint",
+  "classIri": "urn:ngm:class:robot-joint",
   "domain": "robotics",
-  "definition": "**Robot Joint** - Articulation between robot links allowing relative motion",
+  "definition": "Robot Joint - Articulation between robot links allowing relative motion",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "Robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

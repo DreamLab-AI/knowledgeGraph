@@ -400,298 +400,231 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:humanoid-robot",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:humanoid-robot",
+  "@type": "Class",
   "label": "Humanoid Robot",
+  "definition": "A humanoid robot is an autonomous or semi-autonomous mechanical system whose overall morphology, kinematic chain, and sensorimotor organisation deliberately mirrors the human body plan: a vertical torso supported on two bipedal legs, bilateral upper limbs terminating in multi-fingered end-effecto...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:bipedal-robot",
-      "vc:label": "Bipedal Robot"
+      "@id": "urn:ngm:class:bipedal-robot",
+      "label": "Bipedal Robot"
     },
     {
-      "@id": "urn:visionflow:linked:embodied-agent",
-      "vc:label": "Embodied Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:autonomous-system",
-      "vc:label": "Autonomous System"
+      "@id": "urn:ngm:class:embodied-agent",
+      "label": "Embodied Agent"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:5055998803adf4ccb3d395327fd6976892cc45c81c247263e55aee7a8148d3af"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bipedal-locomotion",
+        "label": "Bipedal Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:onboard-compute",
+        "label": "Onboard Compute"
+      },
+      {
+        "@id": "urn:ngm:class:proprioceptive-sensing",
+        "label": "Proprioceptive Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:vision-system",
+        "label": "Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bipedal-balance",
+        "label": "Bipedal Balance"
+      },
+      {
+        "@id": "urn:ngm:class:contact-dynamics",
+        "label": "Contact Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:elder-care-robotics",
+        "label": "Elder Care Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-manipulation",
+        "label": "General-Purpose Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:hazardous-environment-inspection",
+        "label": "Hazardous Environment Inspection"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-action-models",
+        "label": "Vision-Language-Action Models"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole-Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-modal-sensing",
+        "label": "Multi-Modal Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218-1",
+        "label": "ISO 10218-1"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22166",
+        "label": "ISO 22166"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO/TS 15066"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5055998803adf4ccb3d395327fd6976892cc45c81c247263e55aee7a8148d3af@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A humanoid robot is an autonomous or semi-autonomous mechanical system whose overall morphology, kinematic chain, and sensorimotor organisation deliberately mirrors the human body plan: a vertical torso supported on two bipedal legs, bilateral upper limbs terminating in multi-fingered end-effectors, a head-mounted sensory cluster, and a centralised onboard compute stack, collectively enabling the robot to perceive, navigate, and manipulate a world that has been architecturally and ergonomically designed for human anatomy. Unlike wheeled or tracked mobile bases, humanoid robots must continuously solve the under-determined stability problem of bipedal locomotion—balancing an inverted-pendulum-like structure with a high centre of mass on a small support polygon—whilst simultaneously executing dexterous manipulation, perceiving a 3-D environment, and interpreting natural human instructions. This conjunction of simultaneous hard real-time control (joint torque bandwidths of 200-1000 Hz for balance), mid-frequency motion planning (1-50 Hz trajectory generation), and high-latency cognitive inference (0.1-10 Hz neural policy inference) across a single embodied platform represents the defin",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:bipedal-locomotion",
-      "vc:label": "Bipedal Locomotion"
-    },
-    {
-      "@id": "urn:visionflow:linked:dexterous-manipulation",
-      "vc:label": "Dexterous Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:onboard-compute",
-      "vc:label": "Onboard Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:proprioceptive-sensing",
-      "vc:label": "Proprioceptive Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuator",
-      "vc:label": "Series Elastic Actuator"
-    },
-    {
-      "@id": "urn:visionflow:linked:tactile-sensing",
-      "vc:label": "Tactile Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-system",
-      "vc:label": "Vision System"
-    },
-    {
-      "@id": "urn:visionflow:linked:whole-body-control",
-      "vc:label": "Whole-Body Control"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bipedal-balance",
-      "vc:label": "Bipedal Balance"
-    },
-    {
-      "@id": "urn:visionflow:linked:contact-dynamics",
-      "vc:label": "Contact Dynamics"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-management",
-      "vc:label": "Power Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-control",
-      "vc:label": "Real-Time Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inverse-kinematics",
-      "vc:label": "Inverse Kinematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:elder-care-robotics",
-      "vc:label": "Elder Care Robotics"
-    },
-    {
-      "@id": "urn:visionflow:linked:general-purpose-manipulation",
-      "vc:label": "General-Purpose Manipulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hazardous-environment-inspection",
-      "vc:label": "Hazardous Environment Inspection"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-robot-collaboration",
-      "vc:label": "Human-Robot Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:manufacturing-automation",
-      "vc:label": "Manufacturing Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:warehouse-automation",
-      "vc:label": "Warehouse Automation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:model-predictive-control",
-      "vc:label": "Model Predictive Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:series-elastic-actuation",
-      "vc:label": "Series Elastic Actuation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sim-to-real-transfer",
-      "vc:label": "Sim-to-Real Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-language-action-models",
-      "vc:label": "Vision-Language-Action Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:whole-body-control",
-      "vc:label": "Whole-Body Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:real-time-operating-systems",
-      "vc:label": "Real-Time Operating Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rigid-body-dynamics",
-      "vc:label": "Rigid Body Dynamics"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:embodied-ai",
-      "vc:label": "Embodied AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:task-and-motion-planning",
-      "vc:label": "Task and Motion Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-robot-interaction",
-      "vc:label": "Human-Robot Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:imitation-learning",
-      "vc:label": "Imitation Learning"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:domain-randomisation",
-      "vc:label": "Domain Randomisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-modal-sensing",
-      "vc:label": "Multi-Modal Sensing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:physics-simulation",
-      "vc:label": "Physics Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:slam",
-      "vc:label": "SLAM"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:drone",
-      "vc:label": "Drone"
-    },
-    {
-      "@id": "urn:visionflow:linked:exoskeleton",
-      "vc:label": "Exoskeleton"
-    },
-    {
-      "@id": "urn:visionflow:linked:industrial-robot-arm",
-      "vc:label": "Industrial Robot Arm"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quadruped-robot",
-      "vc:label": "Quadruped Robot"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:wheeled-robot",
-      "vc:label": "Wheeled Robot"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iec-61508",
-      "vc:label": "IEC 61508"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-10218-1",
-      "vc:label": "ISO 10218-1"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22166",
-      "vc:label": "ISO 22166"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-ts-15066",
-      "vc:label": "ISO/TS 15066"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

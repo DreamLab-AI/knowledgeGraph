@@ -3,19 +3,18 @@
   "title": "Telecollaboration Domain",
   "slug": "telecollaboration-domain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:telecollaboration-domain",
+  "classIri": "urn:ngm:class:telecollaboration-domain",
   "domain": "distributed-collaboration",
-  "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work together effectively across geographical and temporal boundaries.\"",
+  "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work toger effectively across geographical and temporal boundaries.\"",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-domain",
+      "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.6,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

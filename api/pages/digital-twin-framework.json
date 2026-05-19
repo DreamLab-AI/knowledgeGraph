@@ -3,53 +3,57 @@
   "title": "Digital Twin Framework",
   "slug": "digital-twin-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-framework",
+  "classIri": "urn:ngm:class:digital-twin-framework",
   "domain": "spatial-computing",
-  "definition": "The architectural blueprint and standards-based methodology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse platforms. bridges-to:: [[Computer Vision]]",
+  "definition": "The architectural blueprint and standards-based modology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse pla...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:enterprise-architecture",
+      "id": "urn:ngm:class:enterprise-architecture",
       "label": "Enterprise Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-models",
+        "id": "urn:ngm:class:data-models",
         "label": "Data Models"
       },
       {
-        "id": "urn:visionflow:linked:integration-standards",
+        "id": "urn:ngm:class:integration-standards",
         "label": "Integration Standards"
       },
       {
-        "id": "urn:visionflow:owl:class:reference-architecture",
+        "id": "urn:ngm:class:reference-architecture",
         "label": "Reference Architecture"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalable-deployment",
+        "id": "urn:ngm:class:scalable-deployment",
         "label": "Scalable Deployment"
       },
       {
-        "id": "urn:visionflow:owl:class:standards-compliance",
+        "id": "urn:ngm:class:standards-compliance",
         "label": "Standards Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:system-interoperability",
+        "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

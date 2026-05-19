@@ -3,19 +3,18 @@
   "title": "Security Technology",
   "slug": "security-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:security-technology",
+  "classIri": "urn:ngm:class:security-technology",
   "domain": "blockchain",
-  "definition": "Security Technology is a concept within the blockchain domain. Further enrichment pending.",
+  "definition": "Security Technology is a type of Blockchain in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

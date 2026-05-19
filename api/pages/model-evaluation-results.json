@@ -3,19 +3,18 @@
   "title": "Model Evaluation Results",
   "slug": "model-evaluation-results",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-evaluation-results",
+  "classIri": "urn:ngm:class:model-evaluation-results",
   "domain": "artificial-intelligence",
-  "definition": "A model evaluation results component in the Artificial Intelligence domain that required by AiModelCard.",
+  "definition": "A model eresults component in the Artificial Intelligence domain that required by AiModelCard.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

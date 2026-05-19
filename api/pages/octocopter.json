@@ -3,19 +3,18 @@
   "title": "Octocopter",
   "slug": "octocopter",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:octocopter",
+  "classIri": "urn:ngm:class:octocopter",
   "domain": "robotics",
   "definition": "Octocopter is an eight-rotor VTOL aircraft for heavy payloads.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:multirotor-uav",
+      "id": "urn:ngm:class:multirotor-uav",
       "label": "Multirotor UAV"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

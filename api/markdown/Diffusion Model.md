@@ -13,27 +13,20 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:linked:diffusion-model",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:diffusion-model",
+  "@type": "Class",
   "label": "Diffusion Model",
-  "vc:sourceDomain": "artificial-intelligence",
   "definition": "Diffusion Model is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "quality": 0.3,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ]
 }
 ```
 

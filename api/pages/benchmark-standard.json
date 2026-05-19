@@ -3,53 +3,57 @@
   "title": "Benchmark Standard",
   "slug": "benchmark-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:benchmark-standard",
+  "classIri": "urn:ngm:class:benchmark-standard",
   "domain": "artificial-intelligence",
-  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and methodologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
+  "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and modologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standard",
+      "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:measurement-methodology",
+        "id": "urn:ngm:class:measurement-methodology",
         "label": "Measurement Methodology"
       },
       {
-        "id": "urn:visionflow:linked:reference-implementation",
+        "id": "urn:ngm:class:reference-implementation",
         "label": "Reference Implementation"
       },
       {
-        "id": "urn:visionflow:owl:class:validation-process",
+        "id": "urn:ngm:class:validation-process",
         "label": "Validation Process"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:performance-comparison",
+        "id": "urn:ngm:class:performance-comparison",
         "label": "Performance Comparison"
       },
       {
-        "id": "urn:visionflow:linked:system-evaluation",
+        "id": "urn:ngm:class:system-evaluation",
         "label": "System Evaluation"
       },
       {
-        "id": "urn:visionflow:owl:class:quality-assurance",
+        "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Land Parcel",
   "slug": "land-parcel",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:land-parcel",
+  "classIri": "urn:ngm:class:land-parcel",
   "domain": "spatial-computing",
   "definition": "Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-asset",
+      "id": "urn:ngm:class:virtual-asset",
       "label": "Virtual Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:metaverse-development",
+        "id": "urn:ngm:class:metaverse-development",
         "label": "Metaverse Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

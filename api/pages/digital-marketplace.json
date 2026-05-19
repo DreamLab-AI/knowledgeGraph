@@ -3,53 +3,57 @@
   "title": "Digital Marketplace",
   "slug": "digital-marketplace",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-marketplace",
+  "classIri": "urn:ngm:class:digital-marketplace",
   "domain": "spatial-computing",
-  "definition": "A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Marketplace is a type of E Commerce in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:e-commerce",
+      "id": "urn:ngm:class:e-commerce",
       "label": "E-Commerce"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:digital-wallets",
+        "id": "urn:ngm:class:digital-wallets",
         "label": "Digital Wallets"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:nft-trading",
+        "id": "urn:ngm:class:nft-trading",
         "label": "NFT Trading"
       },
       {
-        "id": "urn:visionflow:linked:virtual-asset-exchange",
+        "id": "urn:ngm:class:virtual-asset-exchange",
         "label": "Virtual Asset Exchange"
       },
       {
-        "id": "urn:visionflow:owl:class:creator-economy",
+        "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

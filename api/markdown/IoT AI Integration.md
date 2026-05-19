@@ -112,41 +112,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:io-t-ai-integration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:io-t-ai-integration",
+  "@type": "Class",
   "label": "IoT AI Integration",
+  "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f7650921f0d815f5f1b0913e90cade6398328346f775a4b8b2290da14c3c787d"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7650921f0d815f5f1b0913e90cade6398328346f775a4b8b2290da14c3c787d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing. IoT devices continuously generate multi-modal sensor data from accelerometers, temperature sensors, light sensors, and microphones; AI models analyze this streaming data locally for anomaly detection, pattern recognition, and real-time control actions. The integration addresses IoT challenges including network latency, bandwidth limitations, power constraints, and privacy concerns by moving inference onto resource-constrained edge devices. IoT sensors typically operate with extreme power budgets (milliwatts), making efficient inference critical for battery-powered deployments. AI models deployed on IoT devices employ quantization and pruning to fit within 128KB-1MB memory constraints while maintaining sufficient accuracy for task-specific applications. Communication protocols like MQTT, CoAP, and LoRaWAN support integration with backend systems while minimizing network traffic through selective event-driven transmission. IoT AI systems handle diverse use cases: smart b",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

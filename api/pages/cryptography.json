@@ -3,49 +3,53 @@
   "title": "Cryptography",
   "slug": "cryptography",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptography",
+  "classIri": "urn:ngm:class:cryptography",
   "domain": "infrastructure",
-  "definition": "[[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems. Employed across [[Consensus-Protocol]], [[Digital-Asset]], and [[Security]], cryptographic methods enable secure value transfer and trust-less coordination in decentralised networks.",
+  "definition": "[[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptographic-security",
+      "id": "urn:ngm:class:cryptographic-security",
       "label": "Cryptographic Security"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.55,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:encryption-scheme",
+        "id": "urn:ngm:class:encryption-scheme",
         "label": "Encryption-Scheme"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital-Signature"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus-Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-protocol",
+        "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic-Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset",
+        "id": "urn:ngm:class:digital-asset",
         "label": "Digital-Asset"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

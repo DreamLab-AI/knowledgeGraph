@@ -3,32 +3,36 @@
   "title": "Monetary System",
   "slug": "monetary-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:monetary-system",
+  "classIri": "urn:ngm:class:monetary-system",
   "domain": "spatial-computing",
   "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-system",
+      "id": "urn:ngm:class:financial-system",
       "label": "Financial System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:economic-exchange",
+        "id": "urn:ngm:class:economic-exchange",
         "label": "Economic Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Visual Marker",
   "slug": "visual-marker",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:visual-marker",
+  "classIri": "urn:ngm:class:visual-marker",
   "domain": "spatial-computing",
-  "definition": "A distinctive visual pattern or fiducial placed in physical environments to enable computer vision systems to track position, orientation, and pose for augmented reality applications, including QR codes, AprilTags, ARTags, and custom image targets that serve as reference points for overlaying digital content.",
+  "definition": "A distinctive visual pattern or fiducial placed in physical environments to enable computer vision systems to track position, orientation, and pose for augmented reality applications, including QR codes, AprilTags, ARTags, and custom image targets that serve as reference points for overlaying dig...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ar-technology",
+      "id": "urn:ngm:class:ar-technology",
       "label": "AR Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

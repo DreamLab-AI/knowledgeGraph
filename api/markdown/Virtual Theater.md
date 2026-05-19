@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-theater",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-theater",
+  "@type": "Class",
   "label": "Virtual Theater",
+  "definition": "A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience ...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:performing-arts",
-      "vc:label": "Performing Arts"
+      "@id": "urn:ngm:class:performing-arts",
+      "label": "Performing Arts"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dec676d2a5b16c6cd2a773df0495fdbcf8e9bede082d9abc9ebbeca54c6d731c"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dec676d2a5b16c6cd2a773df0495fdbcf8e9bede082d9abc9ebbeca54c6d731c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

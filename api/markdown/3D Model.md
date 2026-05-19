@@ -168,84 +168,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:3-d-model",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:3-d-model",
+  "@type": "Class",
   "label": "3D Model",
+  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]].",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-asset",
-      "vc:label": "Digital Asset"
+      "@id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:material-definition",
+        "label": "Material Definition"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-visualization",
+        "label": "Interactive Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-design",
+        "label": "Virtual Environment Design"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0bd264303fc3ce01603d67dd2fcc53b898655b91b7a02a7b82d083e2a526b9f6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:material-definition",
-      "vc:label": "Material Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:mesh-data",
-      "vc:label": "Mesh Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:texture-mapping",
-      "vc:label": "Texture Mapping"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-rendering",
-      "vc:label": "3D Rendering"
-    },
-    {
-      "@id": "urn:visionflow:linked:interactive-visualization",
-      "vc:label": "Interactive Visualization"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-environment-design",
-      "vc:label": "Virtual Environment Design"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:animation-retargeting",
-      "vc:label": "Animation Retargeting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Liverpool Smart Cities",
   "slug": "liverpool-smart-cities",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:liverpool-smart-cities",
+  "classIri": "urn:ngm:class:liverpool-smart-cities",
   "domain": "infrastructure",
   "definition": "Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "established",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

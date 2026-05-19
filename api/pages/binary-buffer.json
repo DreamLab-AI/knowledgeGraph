@@ -3,53 +3,57 @@
   "title": "Binary Buffer",
   "slug": "binary-buffer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:binary-buffer",
+  "classIri": "urn:ngm:class:binary-buffer",
   "domain": "spatial-computing",
   "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-structure",
+      "id": "urn:ngm:class:data-structure",
       "label": "Data Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:buffer-management",
+        "id": "urn:ngm:class:buffer-management",
         "label": "Buffer Management"
       },
       {
-        "id": "urn:visionflow:linked:data-formatting",
+        "id": "urn:ngm:class:data-formatting",
         "label": "Data Formatting"
       },
       {
-        "id": "urn:visionflow:linked:memory-allocation",
+        "id": "urn:ngm:class:memory-allocation",
         "label": "Memory Allocation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-transfer",
+        "id": "urn:ngm:class:data-transfer",
         "label": "Data Transfer"
       },
       {
-        "id": "urn:visionflow:linked:graphics-rendering",
+        "id": "urn:ngm:class:graphics-rendering",
         "label": "Graphics Rendering"
       },
       {
-        "id": "urn:visionflow:linked:stream-processing",
+        "id": "urn:ngm:class:stream-processing",
         "label": "Stream Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

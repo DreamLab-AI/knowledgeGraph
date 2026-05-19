@@ -3,53 +3,57 @@
   "title": "Collective Learning",
   "slug": "collective-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:collective-learning",
+  "classIri": "urn:ngm:class:collective-learning",
   "domain": "artificial-intelligence",
-  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work together to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR technologies that enable global participation without physical co-location.",
+  "definition": "A collaborative educational approach in virtual environments and metaverse platforms where groups of learners work toger to construct knowledge, share experiences, and solve problems through social interaction, benefiting from diverse perspectives, AI-powered personalization, and immersive VR/AR ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:educational-methodology",
+      "id": "urn:ngm:class:educational-methodology",
       "label": "Educational Methodology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:communication-tools",
+        "id": "urn:ngm:class:communication-tools",
         "label": "Communication Tools"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-management-system",
+        "id": "urn:ngm:class:learning-management-system",
         "label": "Learning Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Virtual Environment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:global-collaboration",
+        "id": "urn:ngm:class:global-collaboration",
         "label": "Global Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-co-construction",
+        "id": "urn:ngm:class:knowledge-co-construction",
         "label": "Knowledge Co-Construction"
       },
       {
-        "id": "urn:visionflow:linked:peer-learning",
+        "id": "urn:ngm:class:peer-learning",
         "label": "Peer Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:arbitration-decision-engine",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:arbitration-decision-engine",
+  "@type": "Class",
   "label": "Arbitration Decision Engine",
+  "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbit...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automated-dispute-resolution",
-      "vc:label": "Automated Dispute Resolution"
+      "@id": "urn:ngm:class:automated-dispute-resolution",
+      "label": "Automated Dispute Resolution"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a2cd5c61fedffce2e2e28f2f115dfe9bfdb5cce7b38636f381ef639f7993a96a"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blockchain-integration",
+        "label": "Blockchain Integration"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-authentication",
+        "label": "Evidence Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:rule-encoding",
+        "label": "Rule Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-arbitration",
+        "label": "Decentralized Arbitration"
+      },
+      {
+        "@id": "urn:ngm:class:self-enforcing-awards",
+        "label": "Self-Enforcing Awards"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-resolution",
+        "label": "Smart Contract Resolution"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2cd5c61fedffce2e2e28f2f115dfe9bfdb5cce7b38636f381ef639f7993a96a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbitral outcomes.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-integration",
-      "vc:label": "Blockchain Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:evidence-authentication",
-      "vc:label": "Evidence Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:rule-encoding",
-      "vc:label": "Rule Encoding"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-arbitration",
-      "vc:label": "Decentralized Arbitration"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-enforcing-awards",
-      "vc:label": "Self-Enforcing Awards"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-contract-resolution",
-      "vc:label": "Smart Contract Resolution"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

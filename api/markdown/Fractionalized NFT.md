@@ -196,120 +196,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:fractionalized-nft",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:fractionalized-nft",
+  "@type": "Class",
   "label": "Fractionalized NFT",
+  "definition": "A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:01587613014d28c8788fce3b6b1dd9c5d8d98e13e3ac9a04da2ac985a9d531c3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fractionalization-contract",
+        "label": "Fractionalization Contract"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-registry",
+        "label": "Ownership Registry"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:fractionalization-protocol",
+        "label": "Fractionalization Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collective-ownership",
+        "label": "Collective Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-trading",
+        "label": "Fractional Trading"
+      },
+      {
+        "@id": "urn:ngm:class:nft-liquidity",
+        "label": "NFT Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:tokenization-system",
+        "label": "Tokenization System"
+      },
+      {
+        "@id": "urn:ngm:class:shared-ownership-model",
+        "label": "Shared Ownership Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:01587613014d28c8788fce3b6b1dd9c5d8d98e13e3ac9a04da2ac985a9d531c3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:tokenization-system",
-      "vc:label": "Tokenization System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:shared-ownership-model",
-      "vc:label": "Shared Ownership Model"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:fractionalization-contract",
-      "vc:label": "Fractionalization Contract"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-registry",
-      "vc:label": "Ownership Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fungible-token",
-      "vc:label": "Fungible Token"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:erc-1155",
-      "vc:label": "ERC-1155"
-    },
-    {
-      "@id": "urn:visionflow:linked:fractionalization-protocol",
-      "vc:label": "Fractionalization Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collective-ownership",
-      "vc:label": "Collective Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:fractional-trading",
-      "vc:label": "Fractional Trading"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft-liquidity",
-      "vc:label": "NFT Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:custody-system",
-      "vc:label": "Custody System"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

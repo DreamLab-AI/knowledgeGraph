@@ -3,19 +3,18 @@
   "title": "Edge-Cloud Collaboration",
   "slug": "edge-cloud-collaboration",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:edge-cloud-collaboration",
+  "classIri": "urn:ngm:class:edge-cloud-collaboration",
   "domain": "artificial-intelligence",
-  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting, and hierarchical inference. This approach implements collaboration patterns including model splitting where neural networks are partitioned across edge and cloud with early layers on edge extracting features and final layers in cloud for classification enabling bandwidth reduction through compressed intermediate representations, early exit where models have multiple exit points enabling confident predictions to terminate early on edge while uncertain cases escalate to cloud balancing accuracy and latency, cascaded inference deploying lightweight model on edge as first-stage filter with complex model in cloud for challenging instances providing 60-80% latency reduction for common cases, and federated learning where edge devices collaboratively train shared model through local training and gradient aggregation without centralizing raw data. Optimization objectives balance competing goals inc",
+  "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting,...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

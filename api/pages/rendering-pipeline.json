@@ -3,187 +3,331 @@
   "title": "Rendering Pipeline",
   "slug": "rendering-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rendering-pipeline",
+  "classIri": "urn:ngm:class:rendering-pipeline",
   "domain": "spatial-computing",
-  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations \u2014 vertex buffers, index buffers, textures, uniform data, and acceleration structures \u2014 into a two-dimensional raster image suitable for display or further processing. It encompasses programmable shader stages (vertex, hull/tessellation control, domain/tessellation evaluation, geometry, fragment/pixel, compute, mesh, task/amplification) and fixed-function hardware blocks (primitive assembly, rasteriser, depth-stencil unit, render output unit, blending) executing across massively parallel SIMD warps (NVIDIA), wavefronts (AMD), or SIMD groups (Metal/Vulkan subgroups), achieving teraflop-scale throughput at 300-450 W power envelopes on discrete desktop hardware. The classical programmable rasterisation pipeline was formalised by SGI GL and codified in OpenGL 1.0 (1992), evolving through DirectX 9 shader model 3.0 (2004) separating vertex and pixel shaders, DirectX 10 unified shader architecture (2006) adding geometry shaders, DirectX 11 tessellation (2009), and the modern low-overhead explicit API era \u2014 AMD Mantle (2014), DirectX 12 (July 2015), Metal 1 (June 2",
+  "definition": "The Rendering Pipeline is the ordered computational sequence by which a GPU transforms three-dimensional scene representations \u2014 vertex buffers, index buffers, textures, uniform data, and acceleration structures \u2014 into a two-dimensional raster image suitable for display or further processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:gpu-compute",
+      "id": "urn:ngm:class:gpu-compute",
       "label": "GPU Compute"
     },
     {
-      "id": "urn:visionflow:linked:rasterisation",
+      "id": "urn:ngm:class:rasterisation",
       "label": "Rasterisation"
-    },
-    {
-      "id": "urn:visionflow:linked:real-time-systems",
-      "label": "Real-Time Systems"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:acceleration-structure",
+        "id": "urn:ngm:class:acceleration-structure",
         "label": "Acceleration Structure"
       },
       {
-        "id": "urn:visionflow:linked:depth-buffer",
+        "id": "urn:ngm:class:depth-buffer",
         "label": "Depth Buffer"
       },
       {
-        "id": "urn:visionflow:linked:fragment-shader",
+        "id": "urn:ngm:class:fragment-shader",
         "label": "Fragment Shader"
       },
       {
-        "id": "urn:visionflow:linked:g-buffer",
+        "id": "urn:ngm:class:g-buffer",
         "label": "G-Buffer"
       },
       {
-        "id": "urn:visionflow:linked:geometry-shader",
+        "id": "urn:ngm:class:geometry-shader",
         "label": "Geometry Shader"
       },
       {
-        "id": "urn:visionflow:linked:mesh-shader",
+        "id": "urn:ngm:class:mesh-shader",
         "label": "Mesh Shader"
       },
       {
-        "id": "urn:visionflow:linked:rasteriser",
+        "id": "urn:ngm:class:rasteriser",
         "label": "Rasteriser"
       },
       {
-        "id": "urn:visionflow:linked:ray-tracing-stage",
+        "id": "urn:ngm:class:ray-tracing-stage",
         "label": "Ray Tracing Stage"
       },
       {
-        "id": "urn:visionflow:linked:tessellation-stage",
+        "id": "urn:ngm:class:tessellation-stage",
         "label": "Tessellation Stage"
       },
       {
-        "id": "urn:visionflow:linked:visibility-buffer",
+        "id": "urn:ngm:class:visibility-buffer",
         "label": "Visibility Buffer"
       },
       {
-        "id": "urn:visionflow:owl:class:compute-shader",
+        "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
       },
       {
-        "id": "urn:visionflow:owl:class:render-target",
+        "id": "urn:ngm:class:render-target",
         "label": "Render Target"
       },
       {
-        "id": "urn:visionflow:owl:class:vertex-shader",
+        "id": "urn:ngm:class:vertex-shader",
         "label": "Vertex Shader"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:gpu-resources",
+        "id": "urn:ngm:class:gpu-resources",
         "label": "GPU Resources"
       },
       {
-        "id": "urn:visionflow:linked:index-buffer",
+        "id": "urn:ngm:class:index-buffer",
         "label": "Index Buffer"
       },
       {
-        "id": "urn:visionflow:linked:memory-bandwidth",
+        "id": "urn:ngm:class:memory-bandwidth",
         "label": "Memory Bandwidth"
       },
       {
-        "id": "urn:visionflow:linked:shader-compilation",
+        "id": "urn:ngm:class:shader-compilation",
         "label": "Shader Compilation"
       },
       {
-        "id": "urn:visionflow:linked:texture-sampler",
+        "id": "urn:ngm:class:texture-sampler",
         "label": "Texture Sampler"
       },
       {
-        "id": "urn:visionflow:linked:vertex-buffer",
+        "id": "urn:ngm:class:vertex-buffer",
         "label": "Vertex Buffer"
       },
       {
-        "id": "urn:visionflow:owl:class:graphics-api",
+        "id": "urn:ngm:class:graphics-api",
         "label": "Graphics API"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:augmented-reality",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:visionflow:owl:class:global-illumination",
+        "id": "urn:ngm:class:global-illumination",
         "label": "Global Illumination"
       },
       {
-        "id": "urn:visionflow:owl:class:neural-rendering",
+        "id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "id": "urn:ngm:class:photorealistic-rendering",
         "label": "Photorealistic Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:physically-based-rendering",
+        "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:post-processing",
+        "id": "urn:ngm:class:post-processing",
         "label": "Post-Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:ray-tracing",
+        "id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-rendering",
+        "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-reality",
+        "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:clustered-shading",
+        "id": "urn:ngm:class:clustered-shading",
         "label": "Clustered Shading"
       },
       {
-        "id": "urn:visionflow:linked:deferred-rendering",
+        "id": "urn:ngm:class:deferred-rendering",
         "label": "Deferred Rendering"
       },
       {
-        "id": "urn:visionflow:linked:forward-rendering",
+        "id": "urn:ngm:class:forward-rendering",
         "label": "Forward Rendering"
       },
       {
-        "id": "urn:visionflow:linked:gpu-driven-rendering",
+        "id": "urn:ngm:class:gpu-driven-rendering",
         "label": "GPU-Driven Rendering"
       },
       {
-        "id": "urn:visionflow:linked:hybrid-ray-tracing",
+        "id": "urn:ngm:class:hybrid-ray-tracing",
         "label": "Hybrid Ray Tracing"
       },
       {
-        "id": "urn:visionflow:linked:mesh-shader-pipeline",
+        "id": "urn:ngm:class:mesh-shader-pipeline",
         "label": "Mesh Shader Pipeline"
       },
       {
-        "id": "urn:visionflow:linked:visibility-buffer-rendering",
+        "id": "urn:ngm:class:visibility-buffer-rendering",
         "label": "Visibility Buffer Rendering"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:direct-x-12",
+        "label": "DirectX 12"
+      },
+      {
+        "id": "urn:ngm:class:dlss",
+        "label": "DLSS"
+      },
+      {
+        "id": "urn:ngm:class:fsr",
+        "label": "FSR"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "id": "urn:ngm:class:metal",
+        "label": "Metal"
+      },
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:web-gpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:wgsl",
+        "label": "WGSL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:film-visual-effects",
+        "label": "Film Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:video-game-development",
+        "label": "Video Game Development"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:apple-metal",
+        "label": "Apple Metal"
+      },
+      {
+        "id": "urn:ngm:class:ieee-754",
+        "label": "IEEE 754"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-direct-x",
+        "label": "Microsoft DirectX"
+      },
+      {
+        "id": "urn:ngm:class:open-gl-arb",
+        "label": "OpenGL ARB"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-web-gpu",
+        "label": "W3C WebGPU"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ]
   },
   "wikilinks": [
     {

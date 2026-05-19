@@ -184,118 +184,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-border-data-transfer-rule",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-border-data-transfer-rule",
+  "@type": "Class",
   "label": "Cross-Border Data Transfer Rule",
+  "definition": "Regulatory framework governing international movement of personal and sensitive data across jurisdictions, ensuring privacy protection through adequacy assessments and safeguarding mechanisms.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:privacy-framework",
-      "vc:label": "Privacy Framework"
+      "@id": "urn:ngm:class:privacy-framework",
+      "label": "Privacy Framework"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3c3e4baf691a5ed00fdeca87fb9975e95b7e0bf3b322326460b0019a147cb342"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:adequacy-decision-framework",
+        "label": "Adequacy Decision Framework"
+      },
+      {
+        "@id": "urn:ngm:class:binding-corporate-rules",
+        "label": "Binding Corporate Rules"
+      },
+      {
+        "@id": "urn:ngm:class:standard-contractual-clauses",
+        "label": "Standard Contractual Clauses"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-impact-assessment",
+        "label": "Transfer Impact Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-protection-authority-notification",
+        "label": "Data Protection Authority Notification"
+      },
+      {
+        "@id": "urn:ngm:class:legal-basis-determination",
+        "label": "Legal Basis Determination"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:international-data-flows",
+        "label": "International Data Flows"
+      },
+      {
+        "@id": "urn:ngm:class:user-privacy-protection",
+        "label": "User Privacy Protection"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:global-metaverse-operations",
+        "label": "Global Metaverse Operations"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-privacy-governance-framework",
+        "label": "Data Privacy Governance Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3c3e4baf691a5ed00fdeca87fb9975e95b7e0bf3b322326460b0019a147cb342@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Regulatory framework governing international movement of personal and sensitive data across jurisdictions, ensuring privacy protection through adequacy assessments and safeguarding mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:data-privacy-governance-framework",
-      "vc:label": "Data Privacy Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:adequacy-decision-framework",
-      "vc:label": "Adequacy Decision Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:binding-corporate-rules",
-      "vc:label": "Binding Corporate Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:standard-contractual-clauses",
-      "vc:label": "Standard Contractual Clauses"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-impact-assessment",
-      "vc:label": "Transfer Impact Assessment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-protection-authority-notification",
-      "vc:label": "Data Protection Authority Notification"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-basis-determination",
-      "vc:label": "Legal Basis Determination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-impact-assessment",
-      "vc:label": "Privacy Impact Assessment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:international-data-flows",
-      "vc:label": "International Data Flows"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-privacy-protection",
-      "vc:label": "User Privacy Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:global-metaverse-operations",
-      "vc:label": "Global Metaverse Operations"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:apec-cbpr",
-      "vc:label": "APEC CBPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-us-data-privacy-framework",
-      "vc:label": "EU-US Data Privacy Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-article-45",
-      "vc:label": "GDPR Article 45"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

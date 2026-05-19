@@ -372,316 +372,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:breakout-room",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:breakout-room",
+  "@type": "Class",
   "label": "Breakout Room",
+  "definition": "Breakout rooms are temporary, parallel sub-session spaces embedded within a primary virtual meeting or conferencing environment that partition a large group of participants into smaller, purpose-bounded clusters for focused collaborative work, deliberation, or learning activities, enabling concur...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:collaborative-learning-infrastructure",
-      "vc:label": "Collaborative Learning Infrastructure"
+      "@id": "urn:ngm:class:collaborative-learning-infrastructure",
+      "label": "Collaborative Learning Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:group-facilitation-tools",
-      "vc:label": "Group Facilitation Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:synchronous-communication",
-      "vc:label": "Synchronous Communication"
+      "@id": "urn:ngm:class:group-facilitation-tools",
+      "label": "Group Facilitation Tools"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f248722e63f9c7ed3c5bc338d938e5eeb011524aecc59050b39d41f6b001d128"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-group-formation",
+        "label": "AI Group Formation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-grouping",
+        "label": "Automatic Grouping"
+      },
+      {
+        "@id": "urn:ngm:class:host-broadcast-channel",
+        "label": "Host Broadcast Channel"
+      },
+      {
+        "@id": "urn:ngm:class:manual-room-assignment",
+        "label": "Manual Room Assignment"
+      },
+      {
+        "@id": "urn:ngm:class:participant-assignment-interface",
+        "label": "Participant Assignment Interface"
+      },
+      {
+        "@id": "urn:ngm:class:return-to-main-signalling",
+        "label": "Return-to-main Signalling"
+      },
+      {
+        "@id": "urn:ngm:class:room-level-recording",
+        "label": "Room-level Recording"
+      },
+      {
+        "@id": "urn:ngm:class:room-state-tracking",
+        "label": "Room State Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:timer-and-notifications",
+        "label": "Timer and Notifications"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hosting-privileges",
+        "label": "Hosting Privileges"
+      },
+      {
+        "@id": "urn:ngm:class:media-routing-infrastructure",
+        "label": "Media Routing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:multiple-concurrent-video-streams",
+        "label": "Multiple Concurrent Video Streams"
+      },
+      {
+        "@id": "urn:ngm:class:room-state-tracking",
+        "label": "Room State Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:session-multiplexing",
+        "label": "Session Multiplexing"
+      },
+      {
+        "@id": "urn:ngm:class:user-identity-management",
+        "label": "User Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cooperative-learning",
+        "label": "Cooperative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cross-functional-team-collaboration",
+        "label": "Cross-functional Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:focused-sub-team-discussions",
+        "label": "Focused Sub-team Discussions"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-problem-solving",
+        "label": "Parallel Problem-Solving"
+      },
+      {
+        "@id": "urn:ngm:class:participation-equity",
+        "label": "Participation Equity"
+      },
+      {
+        "@id": "urn:ngm:class:scaled-workshop-facilitation",
+        "label": "Scaled Workshop Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:think-pair-share-pedagogy",
+        "label": "Think-Pair-Share Pedagogy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fishbowl-dialogue",
+        "label": "Fishbowl Dialogue"
+      },
+      {
+        "@id": "urn:ngm:class:flipped-classroom",
+        "label": "Flipped Classroom"
+      },
+      {
+        "@id": "urn:ngm:class:jigsaw-cooperative-learning",
+        "label": "Jigsaw Cooperative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:problem-based-learning",
+        "label": "Problem-Based Learning"
+      },
+      {
+        "@id": "urn:ngm:class:think-pair-share",
+        "label": "Think-Pair-Share"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ai-group-formation",
+        "label": "AI Group Formation"
+      },
+      {
+        "@id": "urn:ngm:class:chat-messaging",
+        "label": "Chat Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:screen-sharing",
+        "label": "Screen Sharing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:team-communication-platform",
+        "label": "Team Communication Platform"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "Meeting AI Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:presence-indicator",
+        "label": "Presence Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-event-platform",
+        "label": "Virtual Event Platform"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:conference-facilitation",
+        "label": "Conference Facilitation"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-training",
+        "label": "Corporate Training"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:hackathon-events",
+        "label": "Hackathon Events"
+      },
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-workshop",
+        "label": "Virtual Workshop"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee-802-11-wireless-lan",
+        "label": "IEEE 802.11 Wireless LAN"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-3550-rtp",
+        "label": "IETF RFC 3550 RTP"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc-w3-c-specification",
+        "label": "WebRTC W3C Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f248722e63f9c7ed3c5bc338d938e5eeb011524aecc59050b39d41f6b001d128@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Breakout rooms are temporary, parallel sub-session spaces embedded within a primary virtual meeting or conferencing environment that partition a large group of participants into smaller, purpose-bounded clusters for focused collaborative work, deliberation, or learning activities, enabling concurrent independent interaction across multiple groups before participants reconvene in the main session to synthesise outputs, report findings, or continue collective proceedings — operationalising the widely-established facilitation principle that small-group interaction (typically 3–8 participants) substantially increases individual participation rates, psychological safety, and depth of inquiry compared with plenary formats where discussion is dominated by a minority of vocal participants or constrained by time proportional to total headcount, implemented across all major synchronous communication platforms (Zoom 300 million daily participants peak April 2020, Microsoft Teams 320 million monthly active users 2024, Google Meet 100 million daily participants 2023, Cisco Webex, Hopin, Airmeet, Gather.town, Spatial.io) spanning pedagogical (think-pair-share, jigsaw cooperative learning, fishbo",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-group-formation",
-      "vc:label": "AI Group Formation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-grouping",
-      "vc:label": "Automatic Grouping"
-    },
-    {
-      "@id": "urn:visionflow:linked:host-broadcast-channel",
-      "vc:label": "Host Broadcast Channel"
-    },
-    {
-      "@id": "urn:visionflow:linked:manual-room-assignment",
-      "vc:label": "Manual Room Assignment"
-    },
-    {
-      "@id": "urn:visionflow:linked:participant-assignment-interface",
-      "vc:label": "Participant Assignment Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:return-to-main-signalling",
-      "vc:label": "Return-to-main Signalling"
-    },
-    {
-      "@id": "urn:visionflow:linked:room-level-recording",
-      "vc:label": "Room-level Recording"
-    },
-    {
-      "@id": "urn:visionflow:linked:room-state-tracking",
-      "vc:label": "Room State Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:timer-and-notifications",
-      "vc:label": "Timer and Notifications"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:hosting-privileges",
-      "vc:label": "Hosting Privileges"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-routing-infrastructure",
-      "vc:label": "Media Routing Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:multiple-concurrent-video-streams",
-      "vc:label": "Multiple Concurrent Video Streams"
-    },
-    {
-      "@id": "urn:visionflow:linked:room-state-tracking",
-      "vc:label": "Room State Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-multiplexing",
-      "vc:label": "Session Multiplexing"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-identity-management",
-      "vc:label": "User Identity Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cooperative-learning",
-      "vc:label": "Cooperative Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-functional-team-collaboration",
-      "vc:label": "Cross-functional Team Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:focused-sub-team-discussions",
-      "vc:label": "Focused Sub-team Discussions"
-    },
-    {
-      "@id": "urn:visionflow:linked:parallel-problem-solving",
-      "vc:label": "Parallel Problem-Solving"
-    },
-    {
-      "@id": "urn:visionflow:linked:participation-equity",
-      "vc:label": "Participation Equity"
-    },
-    {
-      "@id": "urn:visionflow:linked:scaled-workshop-facilitation",
-      "vc:label": "Scaled Workshop Facilitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:think-pair-share-pedagogy",
-      "vc:label": "Think-Pair-Share Pedagogy"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:fishbowl-dialogue",
-      "vc:label": "Fishbowl Dialogue"
-    },
-    {
-      "@id": "urn:visionflow:linked:flipped-classroom",
-      "vc:label": "Flipped Classroom"
-    },
-    {
-      "@id": "urn:visionflow:linked:jigsaw-cooperative-learning",
-      "vc:label": "Jigsaw Cooperative Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:problem-based-learning",
-      "vc:label": "Problem-Based Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:think-pair-share",
-      "vc:label": "Think-Pair-Share"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:active-learning",
-      "vc:label": "Active Learning"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:real-time-communication-protocol",
-      "vc:label": "Real-time Communication Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-layer-protocol",
-      "vc:label": "Session Layer Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:videoconferencing-platform",
-      "vc:label": "Videoconferencing Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-rtc",
-      "vc:label": "WebRTC"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:conference-facilitation",
-      "vc:label": "Conference Facilitation"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-training",
-      "vc:label": "Corporate Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-team-collaboration",
-      "vc:label": "Distributed Team Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:hackathon-events",
-      "vc:label": "Hackathon Events"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-education",
-      "vc:label": "Remote Education"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-workshop",
-      "vc:label": "Virtual Workshop"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:ai-group-formation",
-      "vc:label": "AI Group Formation"
-    },
-    {
-      "@id": "urn:visionflow:linked:chat-messaging",
-      "vc:label": "Chat Messaging"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collaborative-whiteboard",
-      "vc:label": "Collaborative Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-      "vc:label": "Meeting AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence-indicator",
-      "vc:label": "Presence Indicator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:screen-sharing",
-      "vc:label": "Screen Sharing"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:asynchronous-discussion-forum",
-      "vc:label": "Asynchronous Discussion Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:broadcast-webinar",
-      "vc:label": "Broadcast Webinar"
-    },
-    {
-      "@id": "urn:visionflow:linked:plenary-session",
-      "vc:label": "Plenary Session"
-    },
-    {
-      "@id": "urn:visionflow:linked:town-hall-meeting",
-      "vc:label": "Town Hall Meeting"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:team-communication-platform",
-      "vc:label": "Team Communication Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:collaborative-whiteboard",
-      "vc:label": "Collaborative Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:learning-management-system",
-      "vc:label": "Learning Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-      "vc:label": "Meeting AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence-indicator",
-      "vc:label": "Presence Indicator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-event-platform",
-      "vc:label": "Virtual Event Platform"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ieee-802-11-wireless-lan",
-      "vc:label": "IEEE 802.11 Wireless LAN"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-3550-rtp",
-      "vc:label": "IETF RFC 3550 RTP"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-rtc-w3-c-specification",
-      "vc:label": "WebRTC W3C Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:collaborative-whiteboard",
-      "vc:label": "Collaborative Whiteboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-      "vc:label": "Meeting AI Assistant"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:presence-indicator",
-      "vc:label": "Presence Indicator"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

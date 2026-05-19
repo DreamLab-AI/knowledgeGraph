@@ -3,19 +3,18 @@
   "title": "Batch Processing",
   "slug": "batch-processing",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:batch-processing",
+  "classIri": "urn:ngm:class:batch-processing",
   "domain": "artificial-intelligence",
   "definition": "Batch Processing is a artificial intelligence concept and a type of Processing Model.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:processing-model",
+      "id": "urn:ngm:class:processing-model",
       "label": "Processing Model"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

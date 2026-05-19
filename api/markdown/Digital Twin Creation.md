@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-creation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-creation",
+  "@type": "Class",
   "label": "Digital Twin Creation",
+  "definition": "Digital Twin Creation is a type of Digital Modeling in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-modeling",
-      "vc:label": "Digital Modeling"
+      "@id": "urn:ngm:class:digital-modeling",
+      "label": "Digital Modeling"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8de398bdef16acd3e7889fccd25a3230bbb7d5b39b063cabfd91c43fdae860fa"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:io-t-integration",
+        "label": "IoT Integration"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8de398bdef16acd3e7889fccd25a3230bbb7d5b39b063cabfd91c43fdae860fa@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning. bridges-to:: [[Computer Vision]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:io-t-integration",
-      "vc:label": "IoT Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-data",
-      "vc:label": "Sensor Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:3-d-modeling",
-      "vc:label": "3D Modeling"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:lifecycle-management",
-      "vc:label": "Lifecycle Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-monitoring",
-      "vc:label": "Real-Time Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-analytics",
-      "vc:label": "Predictive Analytics"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

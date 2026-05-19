@@ -3,19 +3,18 @@
   "title": "Serious Incident",
   "slug": "serious-incident",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:serious-incident",
+  "classIri": "urn:ngm:class:serious-incident",
   "domain": "spatial-computing",
   "definition": "An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
+      "id": "urn:ngm:class:metaverse-and-spatial-risks",
       "label": "Metaverse and Spatial Risks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

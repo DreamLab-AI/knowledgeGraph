@@ -3,19 +3,18 @@
   "title": "Immersive Communication",
   "slug": "immersive-communication",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:immersive-communication",
+  "classIri": "urn:ngm:class:immersive-communication",
   "domain": "distributed-collaboration",
-  "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments. This includes VR meetings, AR collaboration tools, spatial audio conferencing, and mixed reality communication platforms that transcend traditional 2D video interfaces.",
+  "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:telecollaboration",
+      "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

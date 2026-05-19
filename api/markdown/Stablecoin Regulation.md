@@ -420,360 +420,279 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stablecoin-regulation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stablecoin-regulation",
+  "@type": "Class",
   "label": "Stablecoin Regulation",
+  "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to [[Cryptocurrency|cryptocurrency tokens]] designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five con...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:crypto-regulation",
-      "vc:label": "Crypto Regulation"
+      "@id": "urn:ngm:class:crypto-regulation",
+      "label": "Crypto Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:electronic-money-regulation",
-      "vc:label": "Electronic Money Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:monetary-law",
-      "vc:label": "Monetary Law"
+      "@id": "urn:ngm:class:electronic-money-regulation",
+      "label": "Electronic Money Regulation"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:998e5610815223ff89906f9c974a998d0017212ab2e2d63c4ace5f2491187632"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attestation-regime",
+        "label": "Attestation Regime"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-standard",
+        "label": "Disclosure Standard"
+      },
+      {
+        "@id": "urn:ngm:class:licensing-regime",
+        "label": "Licensing Regime"
+      },
+      {
+        "@id": "urn:ngm:class:recovery-plan",
+        "label": "Recovery Plan"
+      },
+      {
+        "@id": "urn:ngm:class:redemption-right",
+        "label": "Redemption Right"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-requirement",
+        "label": "Reserve Requirement"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-designation",
+        "label": "Systemic Designation"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "@id": "urn:ngm:class:independent-attestation",
+        "label": "Independent Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-licence",
+        "label": "Regulatory Licence"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-asset-segregation",
+        "label": "Reserve Asset Segregation"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi-integration",
+        "label": "DeFi Integration"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:payment-stablecoin-issuance",
+        "label": "Payment Stablecoin Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-clarity",
+        "label": "Regulatory Clarity"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fca-regulatory-regime",
+        "label": "FCA Regulatory Regime"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:genius-act",
+        "label": "GENIUS Act"
+      },
+      {
+        "@id": "urn:ngm:class:mas-scs-framework",
+        "label": "MAS SCS Framework"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cashu",
+        "label": "Cashu"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:circle",
+        "label": "Circle"
+      },
+      {
+        "@id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cbdcs",
+        "label": "CBDCs"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-compliance",
+        "label": "Cross Border Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "@id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:hkma",
+        "label": "HKMA"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:mas",
+        "label": "MAS"
+      },
+      {
+        "@id": "urn:ngm:class:occ",
+        "label": "OCC"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:998e5610815223ff89906f9c974a998d0017212ab2e2d63c4ace5f2491187632@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to [[Cryptocurrency|cryptocurrency tokens]] designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five concurrent regulatory strata: (1) prudential rules governing capital adequacy, reserve composition, and liquidity—covering the full stack from narrow-bank equivalents through to systemic-designation under [[Financial Stability Board|Financial Stability Board]] frameworks, requiring 100% backing in high-quality liquid assets such as sovereign securities (US Treasuries ≤93-day maturity under the US GENIUS Act, G10 government bonds ≤3-month maturity under Singapore MAS SCS, cash deposits and sovereign bonds under MiCA Title III/IV), monthly independent attestations from registered public accounting firms, and annual comprehensive audits under frameworks including the GENIUS Act (Grant Thornton for USDC, BDO for USDT on quarterly schedules) and MAS SCS; (2) payment-system oversight addressing [[Payments|real-time settlement]] interoperability, access conditions, clearing and finality rules, and op",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attestation-regime",
-      "vc:label": "Attestation Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-adequacy",
-      "vc:label": "Capital Adequacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:disclosure-standard",
-      "vc:label": "Disclosure Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:licensing-regime",
-      "vc:label": "Licensing Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:recovery-plan",
-      "vc:label": "Recovery Plan"
-    },
-    {
-      "@id": "urn:visionflow:linked:redemption-right",
-      "vc:label": "Redemption Right"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-requirement",
-      "vc:label": "Reserve Requirement"
-    },
-    {
-      "@id": "urn:visionflow:linked:systemic-designation",
-      "vc:label": "Systemic Designation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:capital-adequacy",
-      "vc:label": "Capital Adequacy"
-    },
-    {
-      "@id": "urn:visionflow:linked:independent-attestation",
-      "vc:label": "Independent Attestation"
-    },
-    {
-      "@id": "urn:visionflow:linked:operational-resilience",
-      "vc:label": "Operational Resilience"
-    },
-    {
-      "@id": "urn:visionflow:linked:redemption-mechanism",
-      "vc:label": "Redemption Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-licence",
-      "vc:label": "Regulatory Licence"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-asset-segregation",
-      "vc:label": "Reserve Asset Segregation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-payment",
-      "vc:label": "Cross-Border Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:de-fi-integration",
-      "vc:label": "DeFi Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability",
-      "vc:label": "Financial Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-stablecoin-issuance",
-      "vc:label": "Payment Stablecoin Issuance"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-clarity",
-      "vc:label": "Regulatory Clarity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-border-compliance",
-      "vc:label": "Cross Border Compliance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:fca-regulatory-regime",
-      "vc:label": "FCA Regulatory Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability-board",
-      "vc:label": "Financial Stability Board"
-    },
-    {
-      "@id": "urn:visionflow:linked:genius-act",
-      "vc:label": "GENIUS Act"
-    },
-    {
-      "@id": "urn:visionflow:linked:mas-scs-framework",
-      "vc:label": "MAS SCS Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
-      "vc:label": "EU MiCA Regulation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:banking-law",
-      "vc:label": "Banking Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-money-regulation",
-      "vc:label": "Electronic Money Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability-board",
-      "vc:label": "Financial Stability Board"
-    },
-    {
-      "@id": "urn:visionflow:linked:payment-services-regulation",
-      "vc:label": "Payment Services Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:securities-law",
-      "vc:label": "Securities Law"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography-security-and-privacy",
-      "vc:label": "Cryptography Security and Privacy"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:circle",
-      "vc:label": "Circle"
-    },
-    {
-      "@id": "urn:visionflow:linked:tether",
-      "vc:label": "Tether"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-border-compliance",
-      "vc:label": "Cross Border Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-wallet",
-      "vc:label": "Digital Identity Wallet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:reserve-asset",
-      "vc:label": "Reserve Asset"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:bank-deposit",
-      "vc:label": "Bank Deposit"
-    },
-    {
-      "@id": "urn:visionflow:linked:unregulated-crypto",
-      "vc:label": "Unregulated Crypto"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cashu",
-      "vc:label": "Cashu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-exchange",
-      "vc:label": "Decentralized Exchange"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
-      "vc:label": "EU MiCA Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:micropayments",
-      "vc:label": "Micropayments"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eba",
-      "vc:label": "EBA"
-    },
-    {
-      "@id": "urn:visionflow:linked:fca",
-      "vc:label": "FCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability-board",
-      "vc:label": "Financial Stability Board"
-    },
-    {
-      "@id": "urn:visionflow:linked:hkma",
-      "vc:label": "HKMA"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco",
-      "vc:label": "IOSCO"
-    },
-    {
-      "@id": "urn:visionflow:linked:mas",
-      "vc:label": "MAS"
-    },
-    {
-      "@id": "urn:visionflow:linked:occ",
-      "vc:label": "OCC"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cbdcs",
-      "vc:label": "CBDCs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
-      "vc:label": "EU MiCA Regulation"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

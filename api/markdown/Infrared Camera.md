@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:infrared-camera",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:infrared-camera",
+  "@type": "Class",
   "label": "Infrared Camera",
+  "definition": "Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:tracking-hardware",
-      "vc:label": "Tracking Hardware"
+      "@id": "urn:ngm:class:tracking-hardware",
+      "label": "Tracking Hardware"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2a610ae94dd2ced6e799527bb9e6c3e7221d3bc5b55a081658c19faa5f165329"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2a610ae94dd2ced6e799527bb9e6c3e7221d3bc5b55a081658c19faa5f165329@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:motion-tracking",
-      "vc:label": "Motion Tracking"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

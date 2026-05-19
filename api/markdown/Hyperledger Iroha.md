@@ -576,384 +576,287 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hyperledger-iroha",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hyperledger-iroha",
+  "@type": "Class",
   "label": "Hyperledger Iroha",
+  "definition": "Hyperledger Iroha is a general-purpose permissioned Byzantine-fault-tolerant [[Distributed Ledger]] framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the [[Hyperledger]] Foundation (now Linux Foundation Decentralised Trust) ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:enterprise-blockchain-framework",
-      "vc:label": "Enterprise Blockchain Framework"
+      "@id": "urn:ngm:class:enterprise-blockchain-framework",
+      "label": "Enterprise Blockchain Framework"
     },
     {
-      "@id": "urn:visionflow:linked:hyperledger-project",
-      "vc:label": "Hyperledger Project"
-    },
-    {
-      "@id": "urn:visionflow:linked:byzantine-fault-tolerant-system",
-      "vc:label": "Byzantine Fault Tolerant System"
+      "@id": "urn:ngm:class:hyperledger-project",
+      "label": "Hyperledger Project"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:322f3784529d03474c3cee060176cac3dd0f74a4b7523250e3a0251b3956d745"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:iroha-executor",
+        "label": "Iroha Executor"
+      },
+      {
+        "@id": "urn:ngm:class:iroha-special-instructions",
+        "label": "Iroha Special Instructions"
+      },
+      {
+        "@id": "urn:ngm:class:iroha-trigger",
+        "label": "Iroha Trigger"
+      },
+      {
+        "@id": "urn:ngm:class:iroha-wasm-runtime",
+        "label": "Iroha WASM Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:kura-block-store",
+        "label": "Kura Block Store"
+      },
+      {
+        "@id": "urn:ngm:class:sumeragi-block-producer",
+        "label": "Sumeragi Block Producer"
+      },
+      {
+        "@id": "urn:ngm:class:sumeragi-consensus",
+        "label": "Sumeragi Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:torii-api",
+        "label": "Torii API"
+      },
+      {
+        "@id": "urn:ngm:class:yac-consensus",
+        "label": "YAC Consensus"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:blake2b-hashing",
+        "label": "BLAKE2b Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519-signatures",
+        "label": "Ed25519 Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc-transport",
+        "label": "gRPC Transport"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-validator-set",
+        "label": "Permissioned Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:rust-runtime",
+        "label": "Rust Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-multi-asset-transfer",
+        "label": "Atomic Multi-Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-retail-payment",
+        "label": "Cross-Border Retail Payment"
+      },
+      {
+        "@id": "urn:ngm:class:national-payment-system",
+        "label": "National Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-smart-contracts",
+        "label": "Permissioned Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:atomic-batch-transactions",
+        "label": "Atomic Batch Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:command-query-separation",
+        "label": "Command Query Separation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-transactions",
+        "label": "Multi-Signature Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:sumeragi-bft",
+        "label": "Sumeragi BFT"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly-smart-contracts",
+        "label": "WebAssembly Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:yet-another-consensus",
+        "label": "Yet Another Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blake2b",
+        "label": "BLAKE2b"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:kagome-polkadot-host",
+        "label": "Kagome Polkadot Host"
+      },
+      {
+        "@id": "urn:ngm:class:postgre-sql",
+        "label": "PostgreSQL"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:rocks-db",
+        "label": "RocksDB"
+      },
+      {
+        "@id": "urn:ngm:class:tokio",
+        "label": "Tokio"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-sawtooth",
+        "label": "Hyperledger Sawtooth"
+      },
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:m-bridge",
+        "label": "mBridge"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "@id": "urn:ngm:class:project-agora",
+        "label": "Project Agora"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bakong",
+        "label": "Bakong"
+      },
+      {
+        "@id": "urn:ngm:class:bokolo-cash",
+        "label": "Bokolo Cash"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-intelligence-limited",
+        "label": "Fraud Intelligence Limited"
+      },
+      {
+        "@id": "urn:ngm:class:klaytn",
+        "label": "Klaytn"
+      },
+      {
+        "@id": "urn:ngm:class:mufg-coin",
+        "label": "MUFG Coin"
+      },
+      {
+        "@id": "urn:ngm:class:polkaswap",
+        "label": "Polkaswap"
+      },
+      {
+        "@id": "urn:ngm:class:russian-federal-cadastre",
+        "label": "Russian Federal Cadastre"
+      },
+      {
+        "@id": "urn:ngm:class:sora-network",
+        "label": "SORA Network"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bsi-pas-19668",
+        "label": "BSI PAS 19668"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-tsc",
+        "label": "Hyperledger TSC"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation-decentralised-trust",
+        "label": "Linux Foundation Decentralised Trust"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly-2-0-specification",
+        "label": "WebAssembly 2.0 Specification"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:322f3784529d03474c3cee060176cac3dd0f74a4b7523250e3a0251b3956d745@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "**Hyperledger Iroha** is a general-purpose permissioned Byzantine-fault-tolerant [[Distributed Ledger]] framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the [[Hyperledger]] Foundation (now Linux Foundation Decentralised Trust) on 17 October 2017 as the third top-level Hyperledger project after [[Hyperledger Fabric]] and Sawtooth, distinguished from its sibling frameworks by a radical commitment to operational simplicity, a built-in domain model of accounts/assets/permissions/signatories/peers rather than general-purpose smart contracts, and an explicit optimisation for mobile, IoT and bank-grade transaction processing — currently maintained in two production lineages: **Iroha 1.x** (C++17 implementation, YAC \"Yet Another Consensus\" voting BFT, command-query separation with pre-defined commands such as `CreateAccount`, `TransferAsset`, `AddAssetQuantity`, `AppendRole`, `GrantPermission`, PostgreSQL-backed world-state, gRPC + WebSocket Torii API, multi-signature transactions and atomic batches as first-class primitives, client SDKs for Java/Kotlin, Python, JavaScript/TypeScript, iOS Swift, Android, C++ and .NET",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:iroha-executor",
-      "vc:label": "Iroha Executor"
-    },
-    {
-      "@id": "urn:visionflow:linked:iroha-special-instructions",
-      "vc:label": "Iroha Special Instructions"
-    },
-    {
-      "@id": "urn:visionflow:linked:iroha-trigger",
-      "vc:label": "Iroha Trigger"
-    },
-    {
-      "@id": "urn:visionflow:linked:iroha-wasm-runtime",
-      "vc:label": "Iroha WASM Runtime"
-    },
-    {
-      "@id": "urn:visionflow:linked:kura-block-store",
-      "vc:label": "Kura Block Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:sumeragi-block-producer",
-      "vc:label": "Sumeragi Block Producer"
-    },
-    {
-      "@id": "urn:visionflow:linked:sumeragi-consensus",
-      "vc:label": "Sumeragi Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:torii-api",
-      "vc:label": "Torii API"
-    },
-    {
-      "@id": "urn:visionflow:linked:yac-consensus",
-      "vc:label": "YAC Consensus"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:blake2b-hashing",
-      "vc:label": "BLAKE2b Hashing"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed25519-signatures",
-      "vc:label": "Ed25519 Signatures"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-rpc-transport",
-      "vc:label": "gRPC Transport"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-validator-set",
-      "vc:label": "Permissioned Validator Set"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-runtime",
-      "vc:label": "Rust Runtime"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-tokenisation",
-      "vc:label": "Asset Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:atomic-multi-asset-transfer",
-      "vc:label": "Atomic Multi-Asset Transfer"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-retail-payment",
-      "vc:label": "Cross-Border Retail Payment"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-payment-system",
-      "vc:label": "National Payment System"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissioned-smart-contracts",
-      "vc:label": "Permissioned Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:atomic-batch-transactions",
-      "vc:label": "Atomic Batch Transactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:command-query-separation",
-      "vc:label": "Command Query Separation"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-signature-transactions",
-      "vc:label": "Multi-Signature Transactions"
-    },
-    {
-      "@id": "urn:visionflow:linked:role-based-access-control",
-      "vc:label": "Role-Based Access Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:sumeragi-bft",
-      "vc:label": "Sumeragi BFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-assembly-smart-contracts",
-      "vc:label": "WebAssembly Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:linked:yet-another-consensus",
-      "vc:label": "Yet Another Consensus"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:hyperledger-foundation",
-      "vc:label": "Hyperledger Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation-decentralised-trust",
-      "vc:label": "Linux Foundation Decentralised Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:rust-programming-language",
-      "vc:label": "Rust Programming Language"
-    },
-    {
-      "@id": "urn:visionflow:linked:soramitsu",
-      "vc:label": "Soramitsu"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokio-async-runtime",
-      "vc:label": "Tokio Async Runtime"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bakong",
-      "vc:label": "Bakong"
-    },
-    {
-      "@id": "urn:visionflow:linked:bokolo-cash",
-      "vc:label": "Bokolo Cash"
-    },
-    {
-      "@id": "urn:visionflow:linked:fraud-intelligence-limited",
-      "vc:label": "Fraud Intelligence Limited"
-    },
-    {
-      "@id": "urn:visionflow:linked:klaytn",
-      "vc:label": "Klaytn"
-    },
-    {
-      "@id": "urn:visionflow:linked:mufg-coin",
-      "vc:label": "MUFG Coin"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkaswap",
-      "vc:label": "Polkaswap"
-    },
-    {
-      "@id": "urn:visionflow:linked:russian-federal-cadastre",
-      "vc:label": "Russian Federal Cadastre"
-    },
-    {
-      "@id": "urn:visionflow:linked:sora-network",
-      "vc:label": "SORA Network"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:blake2b",
-      "vc:label": "BLAKE2b"
-    },
-    {
-      "@id": "urn:visionflow:linked:ed25519",
-      "vc:label": "Ed25519"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-rpc",
-      "vc:label": "gRPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:kagome-polkadot-host",
-      "vc:label": "Kagome Polkadot Host"
-    },
-    {
-      "@id": "urn:visionflow:linked:postgre-sql",
-      "vc:label": "PostgreSQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:protocol-buffers",
-      "vc:label": "Protocol Buffers"
-    },
-    {
-      "@id": "urn:visionflow:linked:rocks-db",
-      "vc:label": "RocksDB"
-    },
-    {
-      "@id": "urn:visionflow:linked:tokio",
-      "vc:label": "Tokio"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:aleo",
-      "vc:label": "Aleo"
-    },
-    {
-      "@id": "urn:visionflow:linked:aztec-protocol",
-      "vc:label": "Aztec Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:stellar",
-      "vc:label": "Stellar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethereum",
-      "vc:label": "Ethereum"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-besu",
-      "vc:label": "Hyperledger Besu"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-fabric",
-      "vc:label": "Hyperledger Fabric"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quorum-blockchain",
-      "vc:label": "Quorum Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:r3-corda",
-      "vc:label": "R3 Corda"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cosmos-sdk",
-      "vc:label": "Cosmos SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-sawtooth",
-      "vc:label": "Hyperledger Sawtooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-20022",
-      "vc:label": "ISO 20022"
-    },
-    {
-      "@id": "urn:visionflow:linked:m-bridge",
-      "vc:label": "mBridge"
-    },
-    {
-      "@id": "urn:visionflow:linked:polkadot",
-      "vc:label": "Polkadot"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-agora",
-      "vc:label": "Project Agora"
-    },
-    {
-      "@id": "urn:visionflow:linked:tendermint",
-      "vc:label": "Tendermint"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hyperledger-indy",
-      "vc:label": "Hyperledger Indy"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:bsi-pas-19668",
-      "vc:label": "BSI PAS 19668"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-foundation",
-      "vc:label": "Hyperledger Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger-tsc",
-      "vc:label": "Hyperledger TSC"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22739",
-      "vc:label": "ISO 22739"
-    },
-    {
-      "@id": "urn:visionflow:linked:linux-foundation-decentralised-trust",
-      "vc:label": "Linux Foundation Decentralised Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-assembly-2-0-specification",
-      "vc:label": "WebAssembly 2.0 Specification"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:bakong",
-      "vc:label": "Bakong"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperledger",
-      "vc:label": "Hyperledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:sumeragi-consensus",
-      "vc:label": "Sumeragi Consensus"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

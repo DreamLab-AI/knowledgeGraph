@@ -3,37 +3,46 @@
   "title": "Cryptographic Key Management",
   "slug": "cryptographic-key-management",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-key-management",
+  "classIri": "urn:ngm:class:cryptographic-key-management",
   "domain": "blockchain",
-  "definition": "The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise. Governed by standards such as NIST SP 800-57.",
+  "definition": "The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:cryptography",
+      "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:random-number-generation",
+        "id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Virtual Environment",
   "slug": "virtual-environment",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-environment",
+  "classIri": "urn:ngm:class:virtual-environment",
   "domain": "spatial-computing",
   "definition": "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse",
+      "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

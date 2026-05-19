@@ -404,334 +404,271 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hyper-personalisation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hyper-personalisation",
+  "@type": "Class",
   "label": "Hyper personalisation",
+  "definition": "Hyper personalisation is the application of real-time behavioural signals, rich first-party identity data, and AI/ML inference — spanning collaborative filtering, content-based filtering, hybrid ensemble models, transformer-based sequential recommendation, reinforcement-learning-from-feedback loo...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:behavioural-ai",
-      "vc:label": "Behavioural AI"
+      "@id": "urn:ngm:class:behavioural-ai",
+      "label": "Behavioural AI"
     },
     {
-      "@id": "urn:visionflow:linked:customer-experience-management",
-      "vc:label": "Customer Experience Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommender-systems",
-      "vc:label": "Recommender Systems"
+      "@id": "urn:ngm:class:customer-experience-management",
+      "label": "Customer Experience Management"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f5243c9721ae01ab65f6b1df41d2ace9296fa51b8c6866cc53c7057458b3c14a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:a-b-testing-framework",
+        "label": "A/B Testing Framework"
+      },
+      {
+        "@id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:content-based-filtering",
+        "label": "Content-Based Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-pricing-engine",
+        "label": "Dynamic Pricing Engine"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-recommender",
+        "label": "Hybrid Recommender"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference-engine",
+        "label": "Real-Time Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:identity-graph",
+        "label": "Identity Graph"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consent-management-platform",
+        "label": "Consent Management Platform"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-pipeline",
+        "label": "Real-Time Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:user-behaviour-data",
+        "label": "User Behaviour Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:customer-lifetime-value-optimisation",
+        "label": "Customer Lifetime Value Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-pricing",
+        "label": "Dynamic Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:next-best-action",
+        "label": "Next Best Action"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-content-delivery",
+        "label": "Personalised Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:contextual-bandits",
+        "label": "Contextual Bandits"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-collaborative-filtering",
+        "label": "Neural Collaborative Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-sequential-recommendation",
+        "label": "Transformer Sequential Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:multi-armed-bandit",
+        "label": "Multi-Armed Bandit"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-services-personalisation",
+        "label": "Financial Services Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-personalisation",
+        "label": "Healthcare Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:media-streaming",
+        "label": "Media Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:retail-ai",
+        "label": "Retail AI"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:iab-open-rtb-protocol",
+        "label": "IAB OpenRTB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ico-ai-guidance",
+        "label": "ICO AI Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:uk-data-use-and-access-act-2025",
+        "label": "UK Data (Use and Access) Act 2025"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f5243c9721ae01ab65f6b1df41d2ace9296fa51b8c6866cc53c7057458b3c14a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hyper personalisation is the application of real-time behavioural signals, rich first-party identity data, and AI/ML inference — spanning collaborative filtering, content-based filtering, hybrid ensemble models, transformer-based sequential recommendation, reinforcement-learning-from-feedback loops, and large language model (LLM) contextual generation — to construct and continuously refine an individual-level model of each user's preferences, intent, context, and willingness-to-pay, then use that model to dynamically adapt every customer touchpoint (content surfaces, product listings, email cadence, pricing, advertising creative, and conversational interfaces) at sub-second latency across web, mobile, email, in-store kiosk, and chatbot channels. Distinguished from simple personalisation (name-insertion, segment-level targeting) and from narrow recommender systems by four features: (1) individual-resolution identity graphs ingested via real-time Customer Data Platforms (CDPs) such as Salesforce Data Cloud and Adobe Real-Time CDP rather than segment cohorts; (2) multi-modal signal fusion combining clickstream, purchase history, location, device telemetry, social graph, and zero-party",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:a-b-testing-framework",
-      "vc:label": "A/B Testing Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:acquisition-function",
-      "vc:label": "Acquisition Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:collaborative-filtering",
-      "vc:label": "Collaborative Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-based-filtering",
-      "vc:label": "Content-Based Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:customer-data-platform",
-      "vc:label": "Customer Data Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-pricing-engine",
-      "vc:label": "Dynamic Pricing Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:hybrid-recommender",
-      "vc:label": "Hybrid Recommender"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmatic-advertising",
-      "vc:label": "Programmatic Advertising"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-inference-engine",
-      "vc:label": "Real-Time Inference Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-graph",
-      "vc:label": "Identity Graph"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:consent-management-platform",
-      "vc:label": "Consent Management Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:embedding-model",
-      "vc:label": "Embedding Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-resolution",
-      "vc:label": "Identity Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-data-pipeline",
-      "vc:label": "Real-Time Data Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-behaviour-data",
-      "vc:label": "User Behaviour Data"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feature-store",
-      "vc:label": "Feature Store"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:customer-lifetime-value-optimisation",
-      "vc:label": "Customer Lifetime Value Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:dynamic-pricing",
-      "vc:label": "Dynamic Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:next-best-action",
-      "vc:label": "Next Best Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalised-content-delivery",
-      "vc:label": "Personalised Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:programmatic-advertising",
-      "vc:label": "Programmatic Advertising"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:conversational-ai",
-      "vc:label": "Conversational AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:contextual-bandits",
-      "vc:label": "Contextual Bandits"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-neural-networks",
-      "vc:label": "Graph Neural Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:matrix-factorisation",
-      "vc:label": "Matrix Factorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-collaborative-filtering",
-      "vc:label": "Neural Collaborative Filtering"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-sequential-recommendation",
-      "vc:label": "Transformer Sequential Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:gdpr-compliance",
-      "vc:label": "GDPR Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-preserving-ml",
-      "vc:label": "Privacy-Preserving ML"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-databases",
-      "vc:label": "Vector Databases"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:feature-engineering",
-      "vc:label": "Feature Engineering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:financial-services-personalisation",
-      "vc:label": "Financial Services Personalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:healthcare-personalisation",
-      "vc:label": "Healthcare Personalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-streaming",
-      "vc:label": "Media Streaming"
-    },
-    {
-      "@id": "urn:visionflow:linked:retail-ai",
-      "vc:label": "Retail AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-marketing",
-      "vc:label": "Digital Marketing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:e-commerce",
-      "vc:label": "E-Commerce"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:embeddings",
-      "vc:label": "Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-armed-bandit",
-      "vc:label": "Multi-Armed Bandit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:contrastive-learning",
-      "vc:label": "Contrastive Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:batch-recommendation",
-      "vc:label": "Batch Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:linked:generic-content-delivery",
-      "vc:label": "Generic Content Delivery"
-    },
-    {
-      "@id": "urn:visionflow:linked:rules-based-personalisation",
-      "vc:label": "Rules-Based Personalisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:segment-based-marketing",
-      "vc:label": "Segment-Based Marketing"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-risks",
-      "vc:label": "AI Risks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:bias-in-large-language-models",
-      "vc:label": "Bias in Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chatbots",
-      "vc:label": "Chatbots"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-layer",
-      "vc:label": "Data Layer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-      "vc:label": "Deepfakes and fraudulent content"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-society-surveillance",
-      "vc:label": "Digital Society Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:foundation-models",
-      "vc:label": "Foundation Models"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:iab-open-rtb-protocol",
-      "vc:label": "IAB OpenRTB Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-ai-guidance",
-      "vc:label": "ICO AI Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-data-use-and-access-act-2025",
-      "vc:label": "UK Data (Use and Access) Act 2025"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

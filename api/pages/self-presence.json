@@ -3,19 +3,18 @@
   "title": "Self Presence",
   "slug": "self-presence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:self-presence",
+  "classIri": "urn:ngm:class:self-presence",
   "domain": "distributed-collaboration",
   "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:presence",
+      "id": "urn:ngm:class:presence",
       "label": "Presence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

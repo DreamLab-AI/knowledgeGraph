@@ -3,74 +3,83 @@
   "title": "Digital Tax Compliance Node",
   "slug": "digital-tax-compliance-node",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-tax-compliance-node",
+  "classIri": "urn:ngm:class:digital-tax-compliance-node",
   "domain": "artificial-intelligence",
-  "definition": "An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Tax Compliance Node is a type of Virtual Economy Infrastructure in the artificial intelligence domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy-infrastructure",
+      "id": "urn:ngm:class:virtual-economy-infrastructure",
       "label": "Virtual Economy Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:jurisdiction-mapping-service",
+        "id": "urn:ngm:class:jurisdiction-mapping-service",
         "label": "Jurisdiction Mapping Service"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-reporting-module",
+        "id": "urn:ngm:class:regulatory-reporting-module",
         "label": "Regulatory Reporting Module"
       },
       {
-        "id": "urn:visionflow:linked:tax-calculation-engine",
+        "id": "urn:ngm:class:tax-calculation-engine",
         "label": "Tax Calculation Engine"
       },
       {
-        "id": "urn:visionflow:linked:transaction-monitor",
+        "id": "urn:ngm:class:transaction-monitor",
         "label": "Transaction Monitor"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:identity-verification-system",
+        "id": "urn:ngm:class:identity-verification-system",
         "label": "Identity Verification System"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-database",
+        "id": "urn:ngm:class:regulatory-database",
         "label": "Regulatory Database"
       },
       {
-        "id": "urn:visionflow:linked:transaction-ledger",
+        "id": "urn:ngm:class:transaction-ledger",
         "label": "Transaction Ledger"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:audit-trail-generation",
+        "id": "urn:ngm:class:audit-trail-generation",
         "label": "Audit Trail Generation"
       },
       {
-        "id": "urn:visionflow:linked:automated-tax-filing",
+        "id": "urn:ngm:class:automated-tax-filing",
         "label": "Automated Tax Filing"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-tax-settlement",
+        "id": "urn:ngm:class:cross-border-tax-settlement",
         "label": "Cross-border Tax Settlement"
       },
       {
-        "id": "urn:visionflow:linked:real-time-compliance",
+        "id": "urn:ngm:class:real-time-compliance",
         "label": "Real-time Compliance"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-economy-infrastructure",
+        "label": "Virtual Economy Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

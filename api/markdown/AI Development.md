@@ -216,62 +216,41 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-development",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-development",
+  "@type": "Class",
   "label": "AI Development",
+  "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance eand do...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-resources",
+        "label": "computational resources"
+      },
+      {
+        "@id": "urn:ngm:class:technical-expertise",
+        "label": "technical expertise"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1d26841397814e44d994cad0770e8a3629274896c0347d978133d5c245fdb076@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The phase of the AI lifecycle encompassing the design, creation, training, and validation of artificial intelligence systems, including activities such as algorithm selection, data preparation, model architecture design, training process execution, hyperparameter optimisation, performance evaluation, and documentation, conducted according to established engineering principles, ethical guidelines, and governance frameworks to produce AI systems suitable for their intended purpose.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-resources",
-      "vc:label": "computational resources"
-    },
-    {
-      "@id": "urn:visionflow:linked:technical-expertise",
-      "vc:label": "technical expertise"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

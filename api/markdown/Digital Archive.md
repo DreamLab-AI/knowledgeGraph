@@ -152,70 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-archive",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-archive",
+  "@type": "Class",
   "label": "Digital Archive",
+  "definition": "A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-preservation",
-      "vc:label": "Digital Preservation"
+      "@id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:72df96252a0e4c2947fd1dee1e5430daf0f8a2e1182c257d7438ba29b6d85e61"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cultural-heritage-access",
+        "label": "Cultural Heritage Access"
+      },
+      {
+        "@id": "urn:ngm:class:historical-research",
+        "label": "Historical Research"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-preservation",
+        "label": "Knowledge Preservation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:72df96252a0e4c2947fd1dee1e5430daf0f8a2e1182c257d7438ba29b6d85e61@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems. bridges-to:: [[Blockchain]]",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cultural-heritage-access",
-      "vc:label": "Cultural Heritage Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:historical-research",
-      "vc:label": "Historical Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-preservation",
-      "vc:label": "Knowledge Preservation"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

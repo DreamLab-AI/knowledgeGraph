@@ -3,19 +3,18 @@
   "title": "rb 0103 collaborative operation",
   "slug": "rb-0103-collaborative-operation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0103-collaborative-operation",
+  "classIri": "urn:ngm:class:rb-0103-collaborative-operation",
   "domain": "robotics",
   "definition": "collaborative operation is a robotics and autonomous systems concept and a type of Collaborative Operation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:collaborative-operation",
+      "id": "urn:ngm:class:collaborative-operation",
       "label": "Collaborative Operation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

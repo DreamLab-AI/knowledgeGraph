@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:virtual-museum-tour",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtual-museum-tour",
+  "@type": "Class",
   "label": "Virtual Museum Tour",
+  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:virtual-tour",
-      "vc:label": "Virtual Tour"
+      "@id": "urn:ngm:class:virtual-tour",
+      "label": "Virtual Tour"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fed78abb62f00f0c8fd0b2b1a7b18ef8e1e6a157a2c3b35a9a2fb978373d23b5"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fed78abb62f00f0c8fd0b2b1a7b18ef8e1e6a157a2c3b35a9a2fb978373d23b5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

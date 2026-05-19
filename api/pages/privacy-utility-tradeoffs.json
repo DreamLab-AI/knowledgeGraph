@@ -3,19 +3,18 @@
   "title": "Privacy Utility Tradeoffs",
   "slug": "privacy-utility-tradeoffs",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-utility-tradeoffs",
+  "classIri": "urn:ngm:class:privacy-utility-tradeoffs",
   "domain": "artificial-intelligence",
-  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other performance metrics necessary for effective decision-making), characterized by Pareto frontiers of achievable (privacy, utility) pairs where improving privacy typically requires sacrificing utility and vice versa. This tradeoff manifests through multiple mechanisms including noise addition in differential privacy where larger epsilon budgets (weaker privacy) enable more accurate results while smaller epsilon (stronger privacy) introduces more noise degrading utility, generalization in k-anonymity where higher k values (stronger privacy through larger anonymity sets) require more aggressive generalization reducing data granularity and analytical value, encryption overhead in homomorphic encryption where fully homomorphic schemes (strongest privacy enabling arbitrary encrypted computation) incur 10-100x performance penalties versus partially homomorphic schemes with limited operations, and aggre",
+  "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other per...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

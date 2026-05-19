@@ -3,82 +3,99 @@
   "title": "Creator Royalty Token",
   "slug": "creator-royalty-token",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:creator-royalty-token",
+  "classIri": "urn:ngm:class:creator-royalty-token",
   "domain": "blockchain",
-  "definition": "Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
+  "definition": "Token granting its holder a share of ongoing from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ip-rights-metadata",
+        "id": "urn:ngm:class:ip-rights-metadata",
         "label": "IP Rights Metadata"
       },
       {
-        "id": "urn:visionflow:linked:ownership-record",
+        "id": "urn:ngm:class:ownership-record",
         "label": "Ownership Record"
       },
       {
-        "id": "urn:visionflow:linked:revenue-distribution-logic",
+        "id": "urn:ngm:class:revenue-distribution-logic",
         "label": "Revenue Distribution Logic"
       },
       {
-        "id": "urn:visionflow:linked:royalty-smart-contract",
+        "id": "urn:ngm:class:royalty-smart-contract",
         "label": "Royalty Smart Contract"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:royalty-tracking-system",
+        "id": "urn:ngm:class:royalty-tracking-system",
         "label": "Royalty Tracking System"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automated-royalty-distribution",
+        "id": "urn:ngm:class:automated-royalty-distribution",
         "label": "Automated Royalty Distribution"
       },
       {
-        "id": "urn:visionflow:linked:creator-compensation",
+        "id": "urn:ngm:class:creator-compensation",
         "label": "Creator Compensation"
       },
       {
-        "id": "urn:visionflow:linked:fan-investment",
+        "id": "urn:ngm:class:fan-investment",
         "label": "Fan Investment"
       },
       {
-        "id": "urn:visionflow:linked:ip-monetization",
+        "id": "urn:ngm:class:ip-monetization",
         "label": "IP Monetization"
       },
       {
-        "id": "urn:visionflow:owl:class:revenue-sharing",
+        "id": "urn:ngm:class:revenue-sharing",
         "label": "Revenue Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:intellectual-property-system",
+        "label": "Intellectual Property System"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

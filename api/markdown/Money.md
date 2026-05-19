@@ -460,116 +460,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:money",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:money",
+  "@type": "Class",
   "label": "Money",
+  "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
+      "@id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-money",
+        "label": "Digital Money"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:acceptance-network",
+        "label": "Acceptance Network"
+      },
+      {
+        "@id": "urn:ngm:class:issuing-authority",
+        "label": "Issuing Authority"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:debt",
+        "label": "Debt"
+      },
+      {
+        "@id": "urn:ngm:class:economic-exchange",
+        "label": "Economic Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:savings",
+        "label": "Savings"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3dfa29c8e14d4b5a1cecb4cfc860c531b7557ac9715de9088aafc46951cf77f3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "1.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:value-transfer",
-      "vc:label": "Value Transfer"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:fiat-currency",
-      "vc:label": "Fiat Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:central-bank-digital-currency",
-      "vc:label": "Central Bank Digital Currency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency",
-      "vc:label": "Cryptocurrency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-money",
-      "vc:label": "Digital Money"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:acceptance-network",
-      "vc:label": "Acceptance Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:issuing-authority",
-      "vc:label": "Issuing Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquidity",
-      "vc:label": "Liquidity"
-    },
-    {
-      "@id": "urn:visionflow:linked:trust",
-      "vc:label": "Trust"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-payments",
-      "vc:label": "Cross-Border Payments"
-    },
-    {
-      "@id": "urn:visionflow:linked:debt",
-      "vc:label": "Debt"
-    },
-    {
-      "@id": "urn:visionflow:linked:economic-exchange",
-      "vc:label": "Economic Exchange"
-    },
-    {
-      "@id": "urn:visionflow:linked:savings",
-      "vc:label": "Savings"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:price-discovery",
-      "vc:label": "Price Discovery"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:lightning-network",
-      "vc:label": "Lightning Network"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

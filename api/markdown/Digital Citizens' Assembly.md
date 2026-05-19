@@ -204,124 +204,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-citizens-assembly",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-citizens-assembly",
+  "@type": "Class",
   "label": "Digital Citizens' Assembly",
+  "definition": "Digital Citizens' Assembly is a type of Metaverse governance and safeguarding in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:deliberation-agent",
+        "label": "Deliberation Agent"
+      },
+      {
+        "@id": "urn:ngm:class:policy-synthesis-engine",
+        "label": "Policy Synthesis Engine"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:participant-management-system",
+        "label": "Participant Management System"
+      },
+      {
+        "@id": "urn:ngm:class:xr-meeting-space",
+        "label": "XR Meeting Space"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:decision-recording-system",
+        "label": "Decision Recording System"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-deliberation",
+        "label": "Democratic Deliberation"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-governance",
+        "label": "Transparent Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:civic-engagement-platform",
+        "label": "Civic Engagement Platform"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance-system",
+        "label": "Democratic Governance System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a22e1ea027f9f7ba7bbd82e78119775704e87928b1bbf55f54bb010dba3e145e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making. bridges-to:: [[Sensor Input]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:civic-engagement-platform",
-      "vc:label": "Civic Engagement Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:democratic-governance-system",
-      "vc:label": "Democratic Governance System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:deliberation-agent",
-      "vc:label": "Deliberation Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-synthesis-engine",
-      "vc:label": "Policy Synthesis Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:voting-mechanism",
-      "vc:label": "Voting Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participant-management-system",
-      "vc:label": "Participant Management System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-meeting-space",
-      "vc:label": "XR Meeting Space"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:decision-recording-system",
-      "vc:label": "Decision Recording System"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-communication",
-      "vc:label": "Secure Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collective-decision-making",
-      "vc:label": "Collective Decision-Making"
-    },
-    {
-      "@id": "urn:visionflow:linked:democratic-deliberation",
-      "vc:label": "Democratic Deliberation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:participatory-policy-making",
-      "vc:label": "Participatory Policy Making"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transparent-governance",
-      "vc:label": "Transparent Governance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-voting",
-      "vc:label": "Distributed Voting"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-agent-coordination",
-      "vc:label": "Multi-Agent Coordination"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world-platform",
-      "vc:label": "Virtual World Platform"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

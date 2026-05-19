@@ -3,19 +3,18 @@
   "title": "XR Device",
   "slug": "xr-device",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-device",
+  "classIri": "urn:ngm:class:xr-device",
   "domain": "spatial-computing",
   "definition": "Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:xr-hardware",
+      "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

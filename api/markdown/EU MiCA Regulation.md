@@ -564,384 +564,283 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:eu-mi-ca-regulation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:eu-mi-ca-regulation",
+  "@type": "Class",
   "label": "EU MiCA Regulation",
+  "definition": "The EU Markets in Crypto-Assets Regulation (MiCA, formally Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 May 2023), also abbreviated MiCAR, is the world's first comprehensive, directly applicable, horizontally harmonised regulatory framework for crypto-assets and t...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:crypto-asset-regulation",
-      "vc:label": "Crypto-Asset Regulation"
+      "@id": "urn:ngm:class:crypto-asset-regulation",
+      "label": "Crypto-Asset Regulation"
     },
     {
-      "@id": "urn:visionflow:linked:digital-finance-package",
-      "vc:label": "Digital Finance Package"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-services-regulation",
-      "vc:label": "Financial Services Regulation"
+      "@id": "urn:ngm:class:digital-finance-package",
+      "label": "Digital Finance Package"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a229b6ccc7dabbf3268b4eb3c233700d302733007892a18969ae47d9a96ffe90"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-referenced-token",
+        "label": "Asset-Referenced Token"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-service-provider",
+        "label": "Crypto-Asset Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-asset-white-paper",
+        "label": "Crypto-Asset White Paper"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-money-token",
+        "label": "Electronic Money Token"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-title-ii-other-crypto-assets",
+        "label": "MiCA Title II Other Crypto-Assets"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-title-iii-emt",
+        "label": "MiCA Title III EMT"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-title-iv-art",
+        "label": "MiCA Title IV ART"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-title-v-casp",
+        "label": "MiCA Title V CASP"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-title-vi-market-abuse",
+        "label": "MiCA Title VI Market Abuse"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-transitional-regime-article-143",
+        "label": "MiCA Transitional Regime Article 143"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:capital-requirements",
+        "label": "Capital Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:casp-authorisation",
+        "label": "CASP Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:fit-and-proper-management",
+        "label": "Fit and Proper Management"
+      },
+      {
+        "@id": "urn:ngm:class:ict-risk-management-dora",
+        "label": "ICT Risk Management DORA"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-asset-segregation",
+        "label": "Reserve Asset Segregation"
+      },
+      {
+        "@id": "urn:ngm:class:white-paper-notification",
+        "label": "White Paper Notification"
+      },
+      {
+        "@id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:consumer-protection-in-crypto",
+        "label": "Consumer Protection in Crypto"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-casp-services",
+        "label": "Cross-Border CASP Services"
+      },
+      {
+        "@id": "urn:ngm:class:eu-crypto-passport",
+        "label": "EU Crypto Passport"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-crypto-adoption",
+        "label": "Institutional Crypto Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:legal-certainty-for-crypto-issuers",
+        "label": "Legal Certainty for Crypto Issuers"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulatory-clarity",
+        "label": "Stablecoin Regulatory Clarity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:brussels-effect-crypto",
+        "label": "Brussels Effect Crypto"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets-union",
+        "label": "Capital Markets Union"
+      },
+      {
+        "@id": "urn:ngm:class:digital-finance-package",
+        "label": "Digital Finance Package"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-vasp-recommendations",
+        "label": "FATF VASP Recommendations"
+      },
+      {
+        "@id": "urn:ngm:class:g20-crypto-roadmap",
+        "label": "G20 Crypto Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:single-market-for-financial-services",
+        "label": "Single Market for Financial Services"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:authorisation-procedure",
+        "label": "Authorisation Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:market-abuse-surveillance",
+        "label": "Market Abuse Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:passporting-notification",
+        "label": "Passporting Notification"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-asset-composition-rules",
+        "label": "Reserve Asset Composition Rules"
+      },
+      {
+        "@id": "urn:ngm:class:significant-token-designation",
+        "label": "Significant Token Designation"
+      },
+      {
+        "@id": "urn:ngm:class:white-paper-notification-procedure",
+        "label": "White Paper Notification Procedure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:binance-eu-exit",
+        "label": "Binance EU Exit"
+      },
+      {
+        "@id": "urn:ngm:class:bybit-mi-ca",
+        "label": "Bybit MiCA"
+      },
+      {
+        "@id": "urn:ngm:class:circle",
+        "label": "Circle"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-eu-mi-ca-authorisation",
+        "label": "Coinbase EU MiCA Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-com-mi-ca-malta",
+        "label": "Crypto.com MiCA Malta"
+      },
+      {
+        "@id": "urn:ngm:class:dlt-pilot-regime",
+        "label": "DLT Pilot Regime"
+      },
+      {
+        "@id": "urn:ngm:class:kraken-eu-mi-ca-authorisation",
+        "label": "Kraken EU MiCA Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:terra-luna-collapse",
+        "label": "Terra Luna Collapse"
+      },
+      {
+        "@id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "@id": "urn:ngm:class:usdc",
+        "label": "USDC"
+      },
+      {
+        "@id": "urn:ngm:class:usdt",
+        "label": "USDT"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:aml-ctf-compliance",
+        "label": "AML CTF Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets-union",
+        "label": "Capital Markets Union"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-market-integrity",
+        "label": "Crypto Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:eu-digital-finance-strategy",
+        "label": "EU Digital Finance Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-reserve-transparency",
+        "label": "Stablecoin Reserve Transparency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:eba-guidelines",
+        "label": "EBA Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:eba-regulatory-technical-standards-mi-ca",
+        "label": "EBA Regulatory Technical Standards MiCA"
+      },
+      {
+        "@id": "urn:ngm:class:esma-guidelines",
+        "label": "ESMA Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:esma-regulatory-technical-standards-mi-ca",
+        "label": "ESMA Regulatory Technical Standards MiCA"
+      },
+      {
+        "@id": "urn:ngm:class:official-journal-l-150-9-june-2023",
+        "label": "Official Journal L 150 9 June 2023"
+      },
+      {
+        "@id": "urn:ngm:class:regulation-eu-2023-1114",
+        "label": "Regulation EU 2023-1114"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a229b6ccc7dabbf3268b4eb3c233700d302733007892a18969ae47d9a96ffe90@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The **EU Markets in Crypto-Assets Regulation** (MiCA, formally **Regulation (EU) 2023/1114** of the European Parliament and of the Council of 31 May 2023), also abbreviated **MiCAR**, is the world's first comprehensive, directly applicable, horizontally harmonised regulatory framework for crypto-assets and the service providers that issue, trade, custody, advise on, transfer and otherwise commercialise them, adopted by the European Parliament on 20 April 2023 and the Council of the European Union on 16 May 2023, published in the Official Journal of the European Union L 150 on 9 June 2023, entering into force on 29 June 2023 across all 27 EU Member States plus the three additional European Economic Area (EEA) jurisdictions (Iceland, Liechtenstein, Norway via the EEA Joint Committee adoption process), with phased application beginning on **30 June 2024** for Title III (E-Money Tokens) and Title IV (Asset-Referenced Tokens) issuer provisions and **30 December 2024** for Title II (other crypto-assets), Title V (Crypto-Asset Service Providers), Title VI (market abuse) and remaining provisions, replacing a fragmented patchwork of national crypto regimes (France's PSAN since 2019, Germany",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-referenced-token",
-      "vc:label": "Asset-Referenced Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-asset-service-provider",
-      "vc:label": "Crypto-Asset Service Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-asset-white-paper",
-      "vc:label": "Crypto-Asset White Paper"
-    },
-    {
-      "@id": "urn:visionflow:linked:electronic-money-token",
-      "vc:label": "Electronic Money Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-title-ii-other-crypto-assets",
-      "vc:label": "MiCA Title II Other Crypto-Assets"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-title-iii-emt",
-      "vc:label": "MiCA Title III EMT"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-title-iv-art",
-      "vc:label": "MiCA Title IV ART"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-title-v-casp",
-      "vc:label": "MiCA Title V CASP"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-title-vi-market-abuse",
-      "vc:label": "MiCA Title VI Market Abuse"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-transitional-regime-article-143",
-      "vc:label": "MiCA Transitional Regime Article 143"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:capital-requirements",
-      "vc:label": "Capital Requirements"
-    },
-    {
-      "@id": "urn:visionflow:linked:casp-authorisation",
-      "vc:label": "CASP Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:fit-and-proper-management",
-      "vc:label": "Fit and Proper Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:ict-risk-management-dora",
-      "vc:label": "ICT Risk Management DORA"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-asset-segregation",
-      "vc:label": "Reserve Asset Segregation"
-    },
-    {
-      "@id": "urn:visionflow:linked:white-paper-notification",
-      "vc:label": "White Paper Notification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:national-competent-authority",
-      "vc:label": "National Competent Authority"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:consumer-protection-in-crypto",
-      "vc:label": "Consumer Protection in Crypto"
-    },
-    {
-      "@id": "urn:visionflow:linked:cross-border-casp-services",
-      "vc:label": "Cross-Border CASP Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-crypto-passport",
-      "vc:label": "EU Crypto Passport"
-    },
-    {
-      "@id": "urn:visionflow:linked:institutional-crypto-adoption",
-      "vc:label": "Institutional Crypto Adoption"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-certainty-for-crypto-issuers",
-      "vc:label": "Legal Certainty for Crypto Issuers"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoin-regulatory-clarity",
-      "vc:label": "Stablecoin Regulatory Clarity"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:brussels-effect-crypto",
-      "vc:label": "Brussels Effect Crypto"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-markets-union",
-      "vc:label": "Capital Markets Union"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-finance-package",
-      "vc:label": "Digital Finance Package"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-vasp-recommendations",
-      "vc:label": "FATF VASP Recommendations"
-    },
-    {
-      "@id": "urn:visionflow:linked:g20-crypto-roadmap",
-      "vc:label": "G20 Crypto Roadmap"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-market-for-financial-services",
-      "vc:label": "Single Market for Financial Services"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:dora-regulation",
-      "vc:label": "DORA Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:emd2",
-      "vc:label": "EMD2"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-banking-authority",
-      "vc:label": "European Banking Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:european-securities-and-markets-authority",
-      "vc:label": "European Securities and Markets Authority"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-fid-ii",
-      "vc:label": "MiFID II"
-    },
-    {
-      "@id": "urn:visionflow:linked:national-competent-authorities",
-      "vc:label": "National Competent Authorities"
-    },
-    {
-      "@id": "urn:visionflow:linked:psd2",
-      "vc:label": "PSD2"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-of-funds-regulation-2023-1113",
-      "vc:label": "Transfer of Funds Regulation 2023-1113"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:aml-ctf-compliance",
-      "vc:label": "AML CTF Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:capital-markets-union",
-      "vc:label": "Capital Markets Union"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-market-integrity",
-      "vc:label": "Crypto Market Integrity"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-digital-finance-strategy",
-      "vc:label": "EU Digital Finance Strategy"
-    },
-    {
-      "@id": "urn:visionflow:linked:investor-protection",
-      "vc:label": "Investor Protection"
-    },
-    {
-      "@id": "urn:visionflow:linked:stablecoin-reserve-transparency",
-      "vc:label": "Stablecoin Reserve Transparency"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:authorisation-procedure",
-      "vc:label": "Authorisation Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:market-abuse-surveillance",
-      "vc:label": "Market Abuse Surveillance"
-    },
-    {
-      "@id": "urn:visionflow:linked:passporting-notification",
-      "vc:label": "Passporting Notification"
-    },
-    {
-      "@id": "urn:visionflow:linked:reserve-asset-composition-rules",
-      "vc:label": "Reserve Asset Composition Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:significant-token-designation",
-      "vc:label": "Significant Token Designation"
-    },
-    {
-      "@id": "urn:visionflow:linked:white-paper-notification-procedure",
-      "vc:label": "White Paper Notification Procedure"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:fatf-vasp-soft-law",
-      "vc:label": "FATF VASP Soft Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:hong-kong-vatp-regime",
-      "vc:label": "Hong Kong VATP Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:japan-fsa-crypto-exchange-regime",
-      "vc:label": "Japan FSA Crypto Exchange Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:mas-digital-payment-token-framework",
-      "vc:label": "MAS Digital Payment Token Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:swiss-finma-dlt-framework",
-      "vc:label": "Swiss FINMA DLT Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-fsma-2023-crypto-framework",
-      "vc:label": "UK FSMA 2023 Crypto Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:us-executive-action-crypto-approach",
-      "vc:label": "US Executive Action Crypto Approach"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:binance-eu-exit",
-      "vc:label": "Binance EU Exit"
-    },
-    {
-      "@id": "urn:visionflow:linked:bybit-mi-ca",
-      "vc:label": "Bybit MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:circle",
-      "vc:label": "Circle"
-    },
-    {
-      "@id": "urn:visionflow:linked:coinbase-eu-mi-ca-authorisation",
-      "vc:label": "Coinbase EU MiCA Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:crypto-com-mi-ca-malta",
-      "vc:label": "Crypto.com MiCA Malta"
-    },
-    {
-      "@id": "urn:visionflow:linked:dlt-pilot-regime",
-      "vc:label": "DLT Pilot Regime"
-    },
-    {
-      "@id": "urn:visionflow:linked:kraken-eu-mi-ca-authorisation",
-      "vc:label": "Kraken EU MiCA Authorisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:terra-luna-collapse",
-      "vc:label": "Terra Luna Collapse"
-    },
-    {
-      "@id": "urn:visionflow:linked:tether",
-      "vc:label": "Tether"
-    },
-    {
-      "@id": "urn:visionflow:linked:usdc",
-      "vc:label": "USDC"
-    },
-    {
-      "@id": "urn:visionflow:linked:usdt",
-      "vc:label": "USDT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:eba-guidelines",
-      "vc:label": "EBA Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:eba-regulatory-technical-standards-mi-ca",
-      "vc:label": "EBA Regulatory Technical Standards MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:esma-guidelines",
-      "vc:label": "ESMA Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:esma-regulatory-technical-standards-mi-ca",
-      "vc:label": "ESMA Regulatory Technical Standards MiCA"
-    },
-    {
-      "@id": "urn:visionflow:linked:official-journal-l-150-9-june-2023",
-      "vc:label": "Official Journal L 150 9 June 2023"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulation-eu-2023-1114",
-      "vc:label": "Regulation EU 2023-1114"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:crypto-asset-service-provider",
-      "vc:label": "Crypto-Asset Service Provider"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-finance-package",
-      "vc:label": "Digital Finance Package"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stablecoin",
-      "vc:label": "Stablecoin"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

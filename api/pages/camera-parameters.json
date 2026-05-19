@@ -3,53 +3,57 @@
   "title": "Camera Parameters",
   "slug": "camera-parameters",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:camera-parameters",
+  "classIri": "urn:ngm:class:camera-parameters",
   "domain": "spatial-computing",
-  "definition": "The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.",
+  "definition": "The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:imaging-parameters",
+      "id": "urn:ngm:class:imaging-parameters",
       "label": "Imaging Parameters"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:camera-calibration",
+        "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:visionflow:owl:class:calibration-target",
+        "id": "urn:ngm:class:calibration-target",
         "label": "Calibration Target"
       },
       {
-        "id": "urn:visionflow:owl:class:optimization-algorithm",
+        "id": "urn:ngm:class:optimization-algorithm",
         "label": "Optimization Algorithm"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:object-measurement",
+        "id": "urn:ngm:class:object-measurement",
         "label": "Object Measurement"
       },
       {
-        "id": "urn:visionflow:linked:scene-localization",
+        "id": "urn:ngm:class:scene-localization",
         "label": "Scene Localization"
       },
       {
-        "id": "urn:visionflow:owl:class:3-d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -180,94 +180,79 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accessibility-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accessibility-standard",
+  "@type": "Class",
   "label": "Accessibility Standard",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f7b166d73383e98b79db8c0cad9399476160f8b8b79f8fd8452b9e66e4997be6"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7b166d73383e98b79db8c0cad9399476160f8b8b79f8fd8452b9e66e4997be6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Specification ensuring equitable access to virtual content and experiences for users with diverse abilities and disabilities.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "established",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:accessibility-requirement",
+        "label": "Accessibility Requirement"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-metric",
+        "label": "Compliance Metric"
+      },
+      {
+        "@id": "urn:ngm:class:testing-protocol",
+        "label": "Testing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:xr-accessibility-guideline",
+        "label": "XR Accessibility Guideline"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:accessibility-guideline",
+        "label": "Accessibility Guideline"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-standard",
+        "label": "User Interface Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-xr-experience",
+        "label": "Inclusive XR Experience"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   },
-  "vc:isPartOf": [
+  "sameAs": [
     {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-requirement",
-      "vc:label": "Accessibility Requirement"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-metric",
-      "vc:label": "Compliance Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:testing-protocol",
-      "vc:label": "Testing Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:xr-accessibility-guideline",
-      "vc:label": "XR Accessibility Guideline"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-guideline",
-      "vc:label": "Accessibility Guideline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-interface-standard",
-      "vc:label": "User Interface Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:equitable-access",
-      "vc:label": "Equitable Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:universal-design",
-      "vc:label": "Universal Design"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:inclusive-xr-experience",
-      "vc:label": "Inclusive XR Experience"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
+      "@id": "urn:ngm:class:accessibility-standards",
+      "label": "Accessibility Standards"
     }
   ]
 }

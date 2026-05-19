@@ -160,72 +160,57 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-immersive-reality-capture-crossover",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-immersive-reality-capture-crossover",
+  "@type": "Class",
   "label": "ETSI Domain Immersive + Reality Capture Crossover",
+  "definition": "Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
-      "vc:label": "Etsi Metaverse Domain Model"
+      "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+      "label": "Etsi Metaverse Domain Model"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:07287a57fd407f18f570b27b30ed73df41bc71f68dd87099fc7b43058c6bbf03"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:etsi-domain-immersive",
+        "label": "ETSI Domain Immersive"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-reality-capture",
+        "label": "ETSI Domain Reality Capture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:photorealistic-immersion",
+        "label": "Photorealistic Immersion"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-model",
+        "label": "ETSI Metaverse Domain Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:07287a57fd407f18f570b27b30ed73df41bc71f68dd87099fc7b43058c6bbf03@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-model",
-      "vc:label": "ETSI Metaverse Domain Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-immersive",
-      "vc:label": "ETSI Domain Immersive"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:etsi-domain-reality-capture",
-      "vc:label": "ETSI Domain Reality Capture"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:photorealistic-immersion",
-      "vc:label": "Photorealistic Immersion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-interaction",
-      "vc:label": "Spatial Interaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:volumetric-capture",
-      "vc:label": "Volumetric Capture"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

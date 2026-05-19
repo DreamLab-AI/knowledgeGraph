@@ -580,396 +580,311 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:google-deep-mind",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:google-deep-mind",
+  "@type": "Class",
   "label": "Google DeepMind",
+  "definition": "Google DeepMind is the artificial general intelligence research laboratory of Alphabet Inc., headquartered at S2 Handyside Building, King's Cross, London with ~staff and additional sites in Mountain View, Zurich, Paris, Montreal and Tel Aviv, formed in April 2023 through the formal merger of Deep...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-research-laboratory",
-      "vc:label": "AI Research Laboratory"
+      "@id": "urn:ngm:class:ai-research-laboratory",
+      "label": "AI Research Laboratory"
     },
     {
-      "@id": "urn:visionflow:linked:alphabet-subsidiary",
-      "vc:label": "Alphabet Subsidiary"
-    },
-    {
-      "@id": "urn:visionflow:linked:corporate-research-lab",
-      "vc:label": "Corporate Research Lab"
+      "@id": "urn:ngm:class:alphabet-subsidiary",
+      "label": "Alphabet Subsidiary"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c76a96ca0ca579aa79fe0abd3519e7c26d74661833c9b3f8d40bddaae8e70163"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:alpha-code",
+        "label": "AlphaCode"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-fold-programme",
+        "label": "AlphaFold Programme"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-geometry",
+        "label": "AlphaGeometry"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-go-family",
+        "label": "AlphaGo Family"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-proof",
+        "label": "AlphaProof"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-star",
+        "label": "AlphaStar"
+      },
+      {
+        "@id": "urn:ngm:class:alpha-zero",
+        "label": "AlphaZero"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-safety-framework",
+        "label": "Frontier Safety Framework"
+      },
+      {
+        "@id": "urn:ngm:class:gato-generalist-agent",
+        "label": "Gato Generalist Agent"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-model-family",
+        "label": "Gemini Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:genie-world-model",
+        "label": "Genie World Model"
+      },
+      {
+        "@id": "urn:ngm:class:imagen-image-generation",
+        "label": "Imagen Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:sima-agent",
+        "label": "SIMA Agent"
+      },
+      {
+        "@id": "urn:ngm:class:veo-video-generation",
+        "label": "Veo Video Generation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:alphabet-capital",
+        "label": "Alphabet Capital"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:massive-training-data",
+        "label": "Massive Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-infrastructure",
+        "label": "Reinforcement Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:research-talent-pipeline",
+        "label": "Research Talent Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:tpu-compute",
+        "label": "TPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:game-playing-superhuman-agents",
+        "label": "Game-Playing Superhuman Agents"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-learning",
+        "label": "Robotic Learning"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-discovery",
+        "label": "Scientific Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:population-based-training",
+        "label": "Population-Based Training"
+      },
+      {
+        "@id": "urn:ngm:class:self-play-learning",
+        "label": "Self-Play Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:distributed-reinforcement-learning",
+        "label": "Distributed Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "@id": "urn:ngm:class:pathways-system",
+        "label": "Pathways System"
+      },
+      {
+        "@id": "urn:ngm:class:self-play",
+        "label": "Self-Play"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:tpu-v4",
+        "label": "TPU v4"
+      },
+      {
+        "@id": "urn:ngm:class:tpu-v5p",
+        "label": "TPU v5p"
+      },
+      {
+        "@id": "urn:ngm:class:tpu-v6-trillium",
+        "label": "TPU v6 Trillium"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:google-brain",
+        "label": "Google Brain"
+      },
+      {
+        "@id": "urn:ngm:class:royal-society",
+        "label": "Royal Society"
+      },
+      {
+        "@id": "urn:ngm:class:uk-ai-security-institute",
+        "label": "UK AI Security Institute"
+      },
+      {
+        "@id": "urn:ngm:class:university-college-london",
+        "label": "University College London"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:android-ai-features",
+        "label": "Android AI Features"
+      },
+      {
+        "@id": "urn:ngm:class:chrome-ai-features",
+        "label": "Chrome AI Features"
+      },
+      {
+        "@id": "urn:ngm:class:google-cloud-vertex-ai",
+        "label": "Google Cloud Vertex AI"
+      },
+      {
+        "@id": "urn:ngm:class:google-search",
+        "label": "Google Search"
+      },
+      {
+        "@id": "urn:ngm:class:google-workspace",
+        "label": "Google Workspace"
+      },
+      {
+        "@id": "urn:ngm:class:isomorphic-labs",
+        "label": "Isomorphic Labs"
+      },
+      {
+        "@id": "urn:ngm:class:nhs-research-partnerships",
+        "label": "NHS Research Partnerships"
+      },
+      {
+        "@id": "urn:ngm:class:verily",
+        "label": "Verily"
+      },
+      {
+        "@id": "urn:ngm:class:waymo",
+        "label": "Waymo"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-safety-framework",
+        "label": "Frontier Safety Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:uk-aisi-safety-testing-mou",
+        "label": "UK AISI Safety Testing MOU"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c76a96ca0ca579aa79fe0abd3519e7c26d74661833c9b3f8d40bddaae8e70163@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Google DeepMind is the artificial general intelligence research laboratory of Alphabet Inc., headquartered at S2 Handyside Building, King's Cross, London with ~5,000 staff and additional sites in Mountain View, Zurich, Paris, Montreal and Tel Aviv, formed in April 2023 through the formal merger of DeepMind Technologies Limited (the London-founded research lab acquired by Google in January 2014 for approximately $400-500M after being founded in September 2010 by Cambridge-trained neuroscientist and games designer Demis Hassabis, machine-learning theorist Shane Legg, and entrepreneur Mustafa Suleyman with seed investment from Founders Fund/Horizons Ventures/Elon Musk/Peter Thiel) with the Google Brain team (the Mountain View-based deep-learning research group founded 2011 by Jeff Dean, Greg Corrado and Andrew Ng that produced TensorFlow, the Transformer architecture, BERT, and the Pathways system), unifying under CEO Demis Hassabis as a single Alphabet division reporting directly to Sundar Pichai, mandated to \"responsibly build AI to benefit humanity\" through a research-to-product pipeline that has produced an extraordinarily concentrated portfolio of breakthrough systems spanning de",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:alpha-code",
-      "vc:label": "AlphaCode"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-fold-programme",
-      "vc:label": "AlphaFold Programme"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-geometry",
-      "vc:label": "AlphaGeometry"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-go-family",
-      "vc:label": "AlphaGo Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-proof",
-      "vc:label": "AlphaProof"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-star",
-      "vc:label": "AlphaStar"
-    },
-    {
-      "@id": "urn:visionflow:linked:alpha-zero",
-      "vc:label": "AlphaZero"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-safety-framework",
-      "vc:label": "Frontier Safety Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:gato-generalist-agent",
-      "vc:label": "Gato Generalist Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:gemini-model-family",
-      "vc:label": "Gemini Model Family"
-    },
-    {
-      "@id": "urn:visionflow:linked:genie-world-model",
-      "vc:label": "Genie World Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:imagen-image-generation",
-      "vc:label": "Imagen Image Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sima-agent",
-      "vc:label": "SIMA Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:veo-video-generation",
-      "vc:label": "Veo Video Generation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:alphabet-capital",
-      "vc:label": "Alphabet Capital"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-training",
-      "vc:label": "Distributed Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:massive-training-data",
-      "vc:label": "Massive Training Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:reinforcement-learning-infrastructure",
-      "vc:label": "Reinforcement Learning Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:research-talent-pipeline",
-      "vc:label": "Research Talent Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:tpu-compute",
-      "vc:label": "TPU Compute"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:game-playing-superhuman-agents",
-      "vc:label": "Game-Playing Superhuman Agents"
-    },
-    {
-      "@id": "urn:visionflow:linked:mathematical-reasoning",
-      "vc:label": "Mathematical Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:multimodal-reasoning",
-      "vc:label": "Multimodal Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:protein-structure-prediction",
-      "vc:label": "Protein Structure Prediction"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-learning",
-      "vc:label": "Robotic Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-discovery",
-      "vc:label": "Scientific Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:video-generation",
-      "vc:label": "Video Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:deep-reinforcement-learning",
-      "vc:label": "Deep Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:population-based-training",
-      "vc:label": "Population-Based Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-play-learning",
-      "vc:label": "Self-Play Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixture-of-experts",
-      "vc:label": "Mixture of Experts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:monte-carlo-tree-search",
-      "vc:label": "Monte Carlo Tree Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-methods",
-      "vc:label": "Bayesian Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:optimisation-theory",
-      "vc:label": "Optimisation Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probabilistic-inference",
-      "vc:label": "Probabilistic Inference"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:android-ai-features",
-      "vc:label": "Android AI Features"
-    },
-    {
-      "@id": "urn:visionflow:linked:chrome-ai-features",
-      "vc:label": "Chrome AI Features"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-cloud-vertex-ai",
-      "vc:label": "Google Cloud Vertex AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-search",
-      "vc:label": "Google Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-workspace",
-      "vc:label": "Google Workspace"
-    },
-    {
-      "@id": "urn:visionflow:linked:isomorphic-labs",
-      "vc:label": "Isomorphic Labs"
-    },
-    {
-      "@id": "urn:visionflow:linked:nhs-research-partnerships",
-      "vc:label": "NHS Research Partnerships"
-    },
-    {
-      "@id": "urn:visionflow:linked:verily",
-      "vc:label": "Verily"
-    },
-    {
-      "@id": "urn:visionflow:linked:waymo",
-      "vc:label": "Waymo"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:distributed-reinforcement-learning",
-      "vc:label": "Distributed Reinforcement Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:jax",
-      "vc:label": "JAX"
-    },
-    {
-      "@id": "urn:visionflow:linked:pathways-system",
-      "vc:label": "Pathways System"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-play",
-      "vc:label": "Self-Play"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow",
-      "vc:label": "TensorFlow"
-    },
-    {
-      "@id": "urn:visionflow:linked:tpu-v4",
-      "vc:label": "TPU v4"
-    },
-    {
-      "@id": "urn:visionflow:linked:tpu-v5p",
-      "vc:label": "TPU v5p"
-    },
-    {
-      "@id": "urn:visionflow:linked:tpu-v6-trillium",
-      "vc:label": "TPU v6 Trillium"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning-from-human-feedback",
-      "vc:label": "Reinforcement Learning from Human Feedback"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:anthropic",
-      "vc:label": "Anthropic"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-fair",
-      "vc:label": "Meta FAIR"
-    },
-    {
-      "@id": "urn:visionflow:linked:microsoft-research-ai",
-      "vc:label": "Microsoft Research AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:mistral-ai",
-      "vc:label": "Mistral AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:x-ai",
-      "vc:label": "xAI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:open-ai",
-      "vc:label": "OpenAI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:alphabet-inc",
-      "vc:label": "Alphabet Inc"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:google-brain",
-      "vc:label": "Google Brain"
-    },
-    {
-      "@id": "urn:visionflow:linked:royal-society",
-      "vc:label": "Royal Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-ai-security-institute",
-      "vc:label": "UK AI Security Institute"
-    },
-    {
-      "@id": "urn:visionflow:linked:university-college-london",
-      "vc:label": "University College London"
-    },
-    {
-      "@id": "urn:visionflow:linked:university-of-cambridge",
-      "vc:label": "University of Cambridge"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:frontier-model-forum",
-      "vc:label": "Frontier Model Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-safety-framework",
-      "vc:label": "Frontier Safety Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-42001",
-      "vc:label": "ISO/IEC 42001"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-ai-rmf",
-      "vc:label": "NIST AI RMF"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-aisi-safety-testing-mou",
-      "vc:label": "UK AISI Safety Testing MOU"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eu-ai-act",
-      "vc:label": "EU AI Act"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:frontier-lab",
-      "vc:label": "Frontier Lab"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

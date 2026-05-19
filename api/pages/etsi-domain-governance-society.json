@@ -3,27 +3,31 @@
   "title": "ETSI_Domain_Governance___Society",
   "slug": "etsi-domain-governance-society",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-governance-society",
+  "classIri": "urn:ngm:class:etsi-domain-governance-society",
   "domain": "artificial-intelligence",
-  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure. This domain ensures [[Social Equity]], [[Community Participation]], [[Accessibility Standards]], and [[Cultural Respect]] in technology governance.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

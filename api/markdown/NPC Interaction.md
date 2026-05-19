@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:npc-interaction",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:npc-interaction",
+  "@type": "Class",
   "label": "NPC Interaction",
+  "definition": "The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:game-mechanics",
-      "vc:label": "Game Mechanics"
+      "@id": "urn:ngm:class:game-mechanics",
+      "label": "Game Mechanics"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:770d416f04a209151360c7a0c178c195c6c1c89bbbf3769dcece359b46638789"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:immersive-gameplay",
+        "label": "Immersive Gameplay"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:770d416f04a209151360c7a0c178c195c6c1c89bbbf3769dcece359b46638789@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The systems and mechanics enabling player communication and engagement with non-player characters in video games and virtual worlds, increasingly powered by AI and large language models to generate dynamic, unscripted dialogue and contextual responses.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:immersive-gameplay",
-      "vc:label": "Immersive Gameplay"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -200,124 +200,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:reality-capture-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:reality-capture-system",
+  "@type": "Class",
   "label": "Reality Capture System",
+  "definition": "Physical hardware system comprising 3D scanners, LIDAR sensors, photogrammetry cameras, and associated equipment for acquiring spatial and visual data from real-world environments to create digital representations.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7edecf6d42caf2e06b68950c00b60e9937b71ae853cc62cb93d802a806173312"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-scanner",
+        "label": "3D Scanner"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-sensor",
+        "label": "LIDAR Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry-camera",
+        "label": "Photogrammetry Camera"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processor",
+        "label": "Point Cloud Processor"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture-rig",
+        "label": "Motion Capture Rig"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-processing-hardware",
+        "label": "Data Processing Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-calibration",
+        "label": "Spatial Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:3-d-model-generation",
+        "label": "3D Model Generation"
+      },
+      {
+        "@id": "urn:ngm:class:environment-reconstruction",
+        "label": "Environment Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:visual-representation",
+        "label": "Visual Representation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-twin-creation-pipeline",
+        "label": "Digital Twin Creation Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7edecf6d42caf2e06b68950c00b60e9937b71ae853cc62cb93d802a806173312@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical hardware system comprising 3D scanners, LIDAR sensors, photogrammetry cameras, and associated equipment for acquiring spatial and visual data from real-world environments to create digital representations.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-creation-pipeline",
-      "vc:label": "Digital Twin Creation Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-production-workflow",
-      "vc:label": "Virtual Production Workflow"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-scanner",
-      "vc:label": "3D Scanner"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-sensor",
-      "vc:label": "Depth Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:lidar-sensor",
-      "vc:label": "LIDAR Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:photogrammetry-camera",
-      "vc:label": "Photogrammetry Camera"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-processor",
-      "vc:label": "Point Cloud Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:tracking-system",
-      "vc:label": "Tracking System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-capture-rig",
-      "vc:label": "Motion Capture Rig"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:data-processing-hardware",
-      "vc:label": "Data Processing Hardware"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:spatial-calibration",
-      "vc:label": "Spatial Calibration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:3-d-model-generation",
-      "vc:label": "3D Model Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:environment-reconstruction",
-      "vc:label": "Environment Reconstruction"
-    },
-    {
-      "@id": "urn:visionflow:linked:visual-representation",
-      "vc:label": "Visual Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-creation",
-      "vc:label": "Digital Twin Creation"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:iso-iec-17820",
-      "vc:label": "ISO/IEC 17820"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-cloud-processing",
-      "vc:label": "Point Cloud Processing"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

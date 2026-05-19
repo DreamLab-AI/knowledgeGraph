@@ -3,62 +3,71 @@
   "title": "Hardware Abstraction Layer (HAL)",
   "slug": "hardware-abstraction-layer-hal",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hardware-abstraction-layer-hal",
+  "classIri": "urn:ngm:class:hardware-abstraction-layer-hal",
   "domain": "spatial-computing",
   "definition": "Software interface that lets applications interact with hardware without device-specific code, providing a standardized abstraction between software and hardware components.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:abstraction-modules",
+        "id": "urn:ngm:class:abstraction-modules",
         "label": "Abstraction Modules"
       },
       {
-        "id": "urn:visionflow:linked:api-interfaces",
+        "id": "urn:ngm:class:api-interfaces",
         "label": "API Interfaces"
       },
       {
-        "id": "urn:visionflow:linked:device-drivers",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Drivers"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:hardware-resources",
+        "id": "urn:ngm:class:hardware-resources",
         "label": "Hardware Resources"
       },
       {
-        "id": "urn:visionflow:owl:class:operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:device-portability",
+        "id": "urn:ngm:class:device-portability",
         "label": "Device Portability"
       },
       {
-        "id": "urn:visionflow:linked:platform-independence",
+        "id": "urn:ngm:class:platform-independence",
         "label": "Platform Independence"
       },
       {
-        "id": "urn:visionflow:owl:class:unified-hardware-access",
+        "id": "urn:ngm:class:unified-hardware-access",
         "label": "Unified Hardware Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

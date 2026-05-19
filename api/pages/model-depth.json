@@ -3,19 +3,18 @@
   "title": "Model Depth",
   "slug": "model-depth",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:model-depth",
+  "classIri": "urn:ngm:class:model-depth",
   "domain": "artificial-intelligence",
   "definition": "The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

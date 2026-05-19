@@ -156,48 +156,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:enterprise-blockchain-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:enterprise-blockchain-architecture",
+  "@type": "Class",
   "label": "Enterprise Blockchain Architecture",
+  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by [[Hyperledger F...",
+  "domain": "blockchain",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bdb12fd3730c7ae2d3237a8f2128b4fdec557356139cf7a799957188f554b8cd"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bc-0120-consensus-mechanism",
+        "label": "BC-0120-consensus-mechanism"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bdb12fd3730c7ae2d3237a8f2128b4fdec557356139cf7a799957188f554b8cd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by [[Hyperledger Fabric]], [[Hyperledger Besu]], and [[Corda]].",
-  "vc:qualityScore": {
-    "@value": "0.40",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bc-0120-consensus-mechanism",
-      "vc:label": "BC-0120-consensus-mechanism"
-    }
-  ]
+  "quality": 0.4,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,40 +3,44 @@
   "title": "Process",
   "slug": "process",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:process",
+  "classIri": "urn:ngm:class:process",
   "domain": "infrastructure",
-  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome. Processes represent structured temporal progressions involving multiple agents, systems, or components working in coordination, with defined control flow, duration, and observable states.",
+  "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:temporal-entity",
+      "id": "urn:ngm:class:temporal-entity",
       "label": "Temporal Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:automation",
+        "id": "urn:ngm:class:automation",
         "label": "Automation"
       },
       {
-        "id": "urn:visionflow:linked:business-process-management",
+        "id": "urn:ngm:class:business-process-management",
         "label": "Business Process Management"
       },
       {
-        "id": "urn:visionflow:owl:class:orchestration",
+        "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

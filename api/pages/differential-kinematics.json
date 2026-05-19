@@ -3,74 +3,78 @@
   "title": "Differential Kinematics",
   "slug": "differential-kinematics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:differential-kinematics",
+  "classIri": "urn:ngm:class:differential-kinematics",
   "domain": "robotics",
-  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators. The Jacobian provides the linear relationship between joint angular velocities and end-effector Cartesian velocities, forming the foundation for [[VelocityControl]], [[Singularity Analysis]], and [[Numerical Inverse Kinematics]] algorithms.",
+  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:motion-mathematics",
+      "id": "urn:ngm:class:motion-mathematics",
       "label": "Motion Mathematics"
     },
     {
-      "id": "urn:visionflow:owl:class:robot-kinematics",
+      "id": "urn:ngm:class:robot-kinematics",
       "label": "Robot Kinematics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:jacobian-matrix",
+        "id": "urn:ngm:class:jacobian-matrix",
         "label": "Jacobian Matrix"
       },
       {
-        "id": "urn:visionflow:linked:singularity-condition",
+        "id": "urn:ngm:class:singularity-condition",
         "label": "Singularity Condition"
       },
       {
-        "id": "urn:visionflow:linked:velocity-transformation",
+        "id": "urn:ngm:class:velocity-transformation",
         "label": "Velocity Transformation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:joint-configuration",
+        "id": "urn:ngm:class:joint-configuration",
         "label": "Joint Configuration"
       },
       {
-        "id": "urn:visionflow:linked:position-kinematics",
+        "id": "urn:ngm:class:position-kinematics",
         "label": "Position Kinematics"
       },
       {
-        "id": "urn:visionflow:linked:velocity-inputs",
+        "id": "urn:ngm:class:velocity-inputs",
         "label": "Velocity Inputs"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:end-effector-velocity-control",
+        "id": "urn:ngm:class:end-effector-velocity-control",
         "label": "End-Effector Velocity Control"
       },
       {
-        "id": "urn:visionflow:linked:force-torque-transformation",
+        "id": "urn:ngm:class:force-torque-transformation",
         "label": "Force/Torque Transformation"
       },
       {
-        "id": "urn:visionflow:linked:singularity-detection",
+        "id": "urn:ngm:class:singularity-detection",
         "label": "Singularity Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:inverse-kinematics",
+        "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

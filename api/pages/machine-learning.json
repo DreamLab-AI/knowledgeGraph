@@ -3,19 +3,18 @@
   "title": "Machine Learning",
   "slug": "machine-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:machine-learning",
+  "classIri": "urn:ngm:class:machine-learning",
   "domain": "artificial-intelligence",
   "definition": "Machine Learning is a concept in artificial intelligence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence-core",
+      "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

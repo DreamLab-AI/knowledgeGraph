@@ -3,70 +3,79 @@
   "title": "Storage Layer",
   "slug": "storage-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:storage-layer",
+  "classIri": "urn:ngm:class:storage-layer",
   "domain": "infrastructure",
   "definition": "Hardware and software infrastructure responsible for persistent retention, retrieval, and management of data and digital assets across distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure-layer",
+      "id": "urn:ngm:class:infrastructure-layer",
       "label": "Infrastructure Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:block-storage",
+        "id": "urn:ngm:class:block-storage",
         "label": "Block Storage"
       },
       {
-        "id": "urn:visionflow:linked:cache-layer",
+        "id": "urn:ngm:class:cache-layer",
         "label": "Cache Layer"
       },
       {
-        "id": "urn:visionflow:linked:object-storage",
+        "id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
       },
       {
-        "id": "urn:visionflow:owl:class:database-system",
+        "id": "urn:ngm:class:database-system",
         "label": "Database System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:file-system",
+        "id": "urn:ngm:class:file-system",
         "label": "File System"
       },
       {
-        "id": "urn:visionflow:linked:network-connectivity",
+        "id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-hardware",
+        "id": "urn:ngm:class:storage-hardware",
         "label": "Storage Hardware"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-delivery",
+        "id": "urn:ngm:class:content-delivery",
         "label": "Content Delivery"
       },
       {
-        "id": "urn:visionflow:linked:data-persistence",
+        "id": "urn:ngm:class:data-persistence",
         "label": "Data Persistence"
       },
       {
-        "id": "urn:visionflow:owl:class:asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure-layer",
+        "label": "Infrastructure Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

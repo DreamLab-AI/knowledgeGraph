@@ -220,120 +220,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:tokenization",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:tokenization",
+  "@type": "Class",
   "label": "Tokenization",
+  "definition": "Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:339cd24c96194c7ba4deac3138299e9d8e99a9ee41beadc2797a7b2b43b50224"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:asset-metadata",
+        "label": "Asset Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:token-standard-protocol",
+        "label": "Token Standard Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:ownership-transfer",
+        "label": "Ownership Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:nft-minting",
+        "label": "NFT Minting"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain-economy",
+        "label": "Blockchain Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:339cd24c96194c7ba4deac3138299e9d8e99a9ee41beadc2797a7b2b43b50224@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-economy",
-      "vc:label": "Blockchain Economy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-asset-management",
-      "vc:label": "Digital Asset Management"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:asset-metadata",
-      "vc:label": "Asset Metadata"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-transaction",
-      "vc:label": "Blockchain Transaction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:token-standard",
-      "vc:label": "Token Standard"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:token-standard-protocol",
-      "vc:label": "Token Standard Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-keys",
-      "vc:label": "Cryptographic Keys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-wallet",
-      "vc:label": "Digital Wallet"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:fractional-ownership",
-      "vc:label": "Fractional Ownership"
-    },
-    {
-      "@id": "urn:visionflow:linked:ownership-transfer",
-      "vc:label": "Ownership Transfer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-trading",
-      "vc:label": "Asset Trading"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:nft-minting",
-      "vc:label": "NFT Minting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-signature",
-      "vc:label": "Digital Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-ledger",
-      "vc:label": "Distributed Ledger"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

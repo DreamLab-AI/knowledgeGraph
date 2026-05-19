@@ -3,19 +3,18 @@
   "title": "rb 0067 force torque sensor",
   "slug": "rb-0067-force-torque-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0067-force-torque-sensor",
+  "classIri": "urn:ngm:class:rb-0067-force-torque-sensor",
   "domain": "robotics",
   "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:force-torque-sensor",
+      "id": "urn:ngm:class:force-torque-sensor",
       "label": "Force Torque Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

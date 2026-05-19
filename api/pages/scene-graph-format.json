@@ -3,19 +3,18 @@
   "title": "Scene Graph Format",
   "slug": "scene-graph-format",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:scene-graph-format",
+  "classIri": "urn:ngm:class:scene-graph-format",
   "domain": "spatial-computing",
   "definition": "Scene Graph Format is a spatial computing concept and a type of Scene Graph.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:scene-graph",
+      "id": "urn:ngm:class:scene-graph",
       "label": "Scene Graph"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

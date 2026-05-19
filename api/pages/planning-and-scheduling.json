@@ -3,36 +3,45 @@
   "title": "Planning and Scheduling",
   "slug": "planning-and-scheduling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:planning-and-scheduling",
+  "classIri": "urn:ngm:class:planning-and-scheduling",
   "domain": "artificial-intelligence",
   "definition": "Planning and Scheduling is a artificial intelligence concept and a type of Artificial Intelligence. that enables Resource Management, Robotics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:resource-management",
+        "id": "urn:ngm:class:resource-management",
         "label": "Resource Management"
       },
       {
-        "id": "urn:visionflow:owl:class:robotics",
+        "id": "urn:ngm:class:robotics",
         "label": "Robotics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:strips",
+        "label": "STRIPS"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

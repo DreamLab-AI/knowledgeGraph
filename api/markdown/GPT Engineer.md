@@ -348,314 +348,239 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:gpt-engineer",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:gpt-engineer",
+  "@type": "Class",
   "label": "GPT Engineer",
+  "definition": "GPT Engineer is an open-source agentic software-development framework initiated by Anton Osika in June 2023 that autonomously transforms a natural-language specification into a working multi-file codebase through a sequential loop of specification elicitation, file-level planning, code generation...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
+      "@id": "urn:ngm:class:ai-adoption",
+      "label": "AI Adoption"
     },
     {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
+      "@id": "urn:ngm:class:cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c3dde21a42e3b5d314a20ec147edcecd8f58bde189e0a49de8a7fbe69fdc3c7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:file-planning-agent",
+        "label": "File Planning Agent"
+      },
+      {
+        "@id": "urn:ngm:class:sandbox-execution",
+        "label": "Sandbox Execution"
+      },
+      {
+        "@id": "urn:ngm:class:self-repair-loop",
+        "label": "Self-Repair Loop"
+      },
+      {
+        "@id": "urn:ngm:class:specification-elicitation",
+        "label": "Specification Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:open-ai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "@id": "urn:ngm:class:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-assisted-software-engineering",
+        "label": "AI-Assisted Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:automated-software-scaffolding",
+        "label": "Automated Software Scaffolding"
+      },
+      {
+        "@id": "urn:ngm:class:full-stack-application-generation",
+        "label": "Full-Stack Application Generation"
+      },
+      {
+        "@id": "urn:ngm:class:non-engineer-development",
+        "label": "Non-Engineer Development"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:agentic-loop",
+        "label": "Agentic Loop"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:multi-file-code-generation",
+        "label": "Multi-File Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-framework",
+        "label": "ReAct Framework"
+      },
+      {
+        "@id": "urn:ngm:class:self-debugging-code-generation",
+        "label": "Self-Debugging Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:git-hub",
+        "label": "GitHub"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:react",
+        "label": "React"
+      },
+      {
+        "@id": "urn:ngm:class:supabase",
+        "label": "Supabase"
+      },
+      {
+        "@id": "urn:ngm:class:type-script",
+        "label": "TypeScript"
+      },
+      {
+        "@id": "urn:ngm:class:docker",
+        "label": "Docker"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hackathon-development",
+        "label": "Hackathon Development"
+      },
+      {
+        "@id": "urn:ngm:class:no-code-development",
+        "label": "No-Code Development"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:startup-prototyping",
+        "label": "Startup Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:web-development",
+        "label": "Web Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:human-eval",
+        "label": "HumanEval"
+      },
+      {
+        "@id": "urn:ngm:class:mbpp-benchmark",
+        "label": "MBPP Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:open-ai-api",
+        "label": "OpenAI API"
+      },
+      {
+        "@id": "urn:ngm:class:swe-bench-benchmark",
+        "label": "SWE-bench Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c3dde21a42e3b5d314a20ec147edcecd8f58bde189e0a49de8a7fbe69fdc3c7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "GPT Engineer is an open-source agentic software-development framework initiated by Anton Osika in June 2023 that autonomously transforms a natural-language specification into a working multi-file codebase through a sequential loop of specification elicitation, file-level planning, code generation, sandbox execution, and iterative self-repair — embodying the scaffold-then-edit paradigm for autonomous codegen agents and catalysing an entire product category of prompt-to-codebase generators that by 2026 encompasses Lovable.dev, Bolt.new, Replit Agent, v0, and commercial autonomous software engineering services. The repository accumulated 50,000+ GitHub stars within weeks of its June 2023 publication, 20,000+ forks, and contributions from 300+ developers, making it the fastest-growing AI coding repository of that period; it briefly held the top position in GitHub trending across all languages. In early 2024 Osika co-founded Lovable AB (Lovable.dev), the commercial full-stack web-application generator extending GPT Engineer's agentic loop to produce complete React/Supabase codebases from a single prompt; Lovable raised a Series-A of approximately $15 million USD in mid-2024 and by Q1 20",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:file-planning-agent",
-      "vc:label": "File Planning Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandbox-execution",
-      "vc:label": "Sandbox Execution"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-repair-loop",
-      "vc:label": "Self-Repair Loop"
-    },
-    {
-      "@id": "urn:visionflow:linked:specification-elicitation",
-      "vc:label": "Specification Elicitation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:code-generation",
-      "vc:label": "Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-window",
-      "vc:label": "Context Window"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:open-ai-api",
-      "vc:label": "OpenAI API"
-    },
-    {
-      "@id": "urn:visionflow:linked:sandbox-environment",
-      "vc:label": "Sandbox Environment"
-    },
-    {
-      "@id": "urn:visionflow:linked:version-control",
-      "vc:label": "Version Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:context-window",
-      "vc:label": "Context Window"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:prompt-engineering",
-      "vc:label": "Prompt Engineering"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-assisted-software-engineering",
-      "vc:label": "AI-Assisted Software Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:automated-software-scaffolding",
-      "vc:label": "Automated Software Scaffolding"
-    },
-    {
-      "@id": "urn:visionflow:linked:full-stack-application-generation",
-      "vc:label": "Full-Stack Application Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:non-engineer-development",
-      "vc:label": "Non-Engineer Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-prototyping",
-      "vc:label": "Rapid Prototyping"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:agentic-loop",
-      "vc:label": "Agentic Loop"
-    },
-    {
-      "@id": "urn:visionflow:linked:chain-of-thought",
-      "vc:label": "Chain of Thought"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-file-code-generation",
-      "vc:label": "Multi-File Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-act-framework",
-      "vc:label": "ReAct Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-debugging-code-generation",
-      "vc:label": "Self-Debugging Code Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tool-use",
-      "vc:label": "Tool Use"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenisation",
-      "vc:label": "Tokenisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:hackathon-development",
-      "vc:label": "Hackathon Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:no-code-development",
-      "vc:label": "No-Code Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open Source AI"
-    },
-    {
-      "@id": "urn:visionflow:linked:software-development",
-      "vc:label": "Software Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:startup-prototyping",
-      "vc:label": "Startup Prototyping"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-development",
-      "vc:label": "Web Development"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:git-hub",
-      "vc:label": "GitHub"
-    },
-    {
-      "@id": "urn:visionflow:linked:python",
-      "vc:label": "Python"
-    },
-    {
-      "@id": "urn:visionflow:linked:react",
-      "vc:label": "React"
-    },
-    {
-      "@id": "urn:visionflow:linked:supabase",
-      "vc:label": "Supabase"
-    },
-    {
-      "@id": "urn:visionflow:linked:type-script",
-      "vc:label": "TypeScript"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:docker",
-      "vc:label": "Docker"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:aider",
-      "vc:label": "Aider"
-    },
-    {
-      "@id": "urn:visionflow:linked:cline",
-      "vc:label": "Cline"
-    },
-    {
-      "@id": "urn:visionflow:linked:cursor",
-      "vc:label": "Cursor"
-    },
-    {
-      "@id": "urn:visionflow:linked:devin",
-      "vc:label": "Devin"
-    },
-    {
-      "@id": "urn:visionflow:linked:git-hub-copilot",
-      "vc:label": "GitHub Copilot"
-    },
-    {
-      "@id": "urn:visionflow:linked:replit-agent",
-      "vc:label": "Replit Agent"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:open-source-ai",
-      "vc:label": "Open Source AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-adoption",
-      "vc:label": "AI Adoption"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:competition-in-ai",
-      "vc:label": "Competition in AI"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:human-eval",
-      "vc:label": "HumanEval"
-    },
-    {
-      "@id": "urn:visionflow:linked:mbpp-benchmark",
-      "vc:label": "MBPP Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-ai-api",
-      "vc:label": "OpenAI API"
-    },
-    {
-      "@id": "urn:visionflow:linked:swe-bench-benchmark",
-      "vc:label": "SWE-bench Benchmark"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -13,27 +13,14 @@
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v1",
-  "@type": "OntologyClass",
-  "@id": "urn:visionflow:owl:class:distributed-collaboration",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-collaboration",
+  "@type": "Class",
   "label": "Distributed Collaboration",
-  "vc:sourceDomain": "distributed-collaboration",
   "definition": "Distributed Collaboration is a foundational concept in distributed collaboration that serves as a classification parent for 19 related concepts in the ontology.",
-  "subClassOf": [],
-  "vc:hasPart": [],
-  "vc:enables": [],
-  "vc:requires": [],
-  "vc:implements": [],
-  "vc:qualityScore": {
-    "@value": "0.3",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.5",
-    "@type": "xsd:float"
-  },
-  "vc:maturity": "draft",
-  "vc:status": "stub-promoted"
+  "domain": "distributed-collaboration",
+  "maturity": "draft",
+  "quality": 0.3
 }
 ```
 

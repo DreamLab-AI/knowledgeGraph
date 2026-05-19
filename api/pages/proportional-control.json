@@ -3,19 +3,18 @@
   "title": "Proportional Control",
   "slug": "proportional-control",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:proportional-control",
+  "classIri": "urn:ngm:class:proportional-control",
   "domain": "robotics",
   "definition": "Proportional control applies gain to current error signal.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:feedback-control",
+      "id": "urn:ngm:class:feedback-control",
       "label": "Feedback Control"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

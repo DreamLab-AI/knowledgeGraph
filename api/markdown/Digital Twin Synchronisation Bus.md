@@ -196,116 +196,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-twin-synchronisation-bus",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-twin-synchronisation-bus",
+  "@type": "Class",
   "label": "Digital Twin Synchronisation Bus",
+  "definition": "Digital Twin Synchronisation Bus is a type of Digital Twin Infrastructure in the spatial computing domain.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-twin-infrastructure",
-      "vc:label": "Digital Twin Infrastructure"
+      "@id": "urn:ngm:class:digital-twin-infrastructure",
+      "label": "Digital Twin Infrastructure"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d4fd0b74b852b1911ba0d715428d40e39b4396bcb74a23ae83765b3d56f2e306"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution-module",
+        "label": "Conflict Resolution Module"
+      },
+      {
+        "@id": "urn:ngm:class:event-stream-processor",
+        "label": "Event Stream Processor"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronization-engine",
+        "label": "State Synchronization Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:state-store",
+        "label": "State Store"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bidirectional-data-flow",
+        "label": "Bidirectional Data Flow"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-twin-orchestration",
+        "label": "Distributed Twin Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:multi-instance-state-coherence",
+        "label": "Multi-Instance State Coherence"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-digital-twin-synchronization",
+        "label": "Real-Time Digital Twin Synchronization"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-twin-infrastructure",
+        "label": "Digital Twin Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d4fd0b74b852b1911ba0d715428d40e39b4396bcb74a23ae83765b3d56f2e306@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Middleware infrastructure maintaining real-time state coherence and bidirectional synchronisation among distributed digital twin instances through event streaming and conflict resolution. bridges-to:: [[Autonomous Robot]]",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-infrastructure",
-      "vc:label": "Digital Twin Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:conflict-resolution-module",
-      "vc:label": "Conflict Resolution Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:event-stream-processor",
-      "vc:label": "Event Stream Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-broker",
-      "vc:label": "Message Broker"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-synchronization-engine",
-      "vc:label": "State Synchronization Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:event-log",
-      "vc:label": "Event Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-queue",
-      "vc:label": "Message Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:state-store",
-      "vc:label": "State Store"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-protocol",
-      "vc:label": "Network Protocol"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bidirectional-data-flow",
-      "vc:label": "Bidirectional Data Flow"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-twin-orchestration",
-      "vc:label": "Distributed Twin Orchestration"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-instance-state-coherence",
-      "vc:label": "Multi-Instance State Coherence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-digital-twin-synchronization",
-      "vc:label": "Real-Time Digital Twin Synchronization"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:publish-subscribe-pattern",
-      "vc:label": "Publish-Subscribe Pattern"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:event-driven-architecture",
-      "vc:label": "Event-Driven Architecture"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

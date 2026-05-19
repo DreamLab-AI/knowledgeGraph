@@ -3,27 +3,31 @@
   "title": "AI Governance Maturity Model",
   "slug": "ai-governance-maturity-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-governance-maturity-model",
+  "classIri": "urn:ngm:class:ai-governance-maturity-model",
   "domain": "artificial-intelligence",
-  "definition": "AI Governance Maturity Model is an assessment framework that defines progressive maturity levels for AI governance capabilities across multiple dimensions, enabling organizations to evaluate current practices, identify gaps, benchmark against peers, and guide continuous improvement toward trustworthy AI deployment. These models characterize maturity through defined levels (typically 1-5) representing progression from ad-hoc reactive practices to optimized proactive governance, with each level specifying capabilities, processes, and artifacts expected at that stage. Maturity dimensions typically include governance structure and leadership (executive commitment, organizational roles, policy frameworks), risk management (identification, assessment, mitigation, monitoring), ethical practices (principles adoption, ethics review processes, fairness auditing), technical practices (documentation standards, testing protocols, monitoring systems), compliance and audit (regulatory alignment, audit procedures, evidence collection), stakeholder engagement (consultation processes, transparency practices, redress mechanisms), and continuous improvement (metrics collection, lessons learned, iterat",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
+  "definition": "AI Governance Maturity Model is an assessment framework that defines progressive maturity levels for AI governance capabilities across multiple dimensions, enabling organizations to evaluate current practices, identify gaps, benchmark against peers, and guide continuous improvement toward trustwo...",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "artificial-intelligence"
+      }
+    ],
     "requires": [],
     "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

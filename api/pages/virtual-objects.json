@@ -3,19 +3,18 @@
   "title": "Virtual Objects",
   "slug": "virtual-objects",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-objects",
+  "classIri": "urn:ngm:class:virtual-objects",
   "domain": "spatial-computing",
   "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-asset",
+      "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

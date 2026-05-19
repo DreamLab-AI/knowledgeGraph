@@ -3,32 +3,36 @@
   "title": "Spatial Anchors",
   "slug": "spatial-anchors",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-anchors",
+  "classIri": "urn:ngm:class:spatial-anchors",
   "domain": "spatial-computing",
   "definition": "Virtual reference points that bind digital content to specific physical locations in augmented reality environments, using sensor fusion from cameras, GPS, and accelerometers to maintain persistent positioning and orientation of virtual objects relative to real-world spaces.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ar-technology",
+      "id": "urn:ngm:class:ar-technology",
       "label": "AR Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:persistent-ar-placement",
+        "id": "urn:ngm:class:persistent-ar-placement",
         "label": "Persistent AR Placement"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

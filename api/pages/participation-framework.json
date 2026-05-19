@@ -3,32 +3,36 @@
   "title": "Participation Framework",
   "slug": "participation-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:participation-framework",
+  "classIri": "urn:ngm:class:participation-framework",
   "domain": "spatial-computing",
-  "definition": "A structured approach to designing stakeholder engagement processes that establish goals, principles, methods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.",
+  "definition": "A structured approach to designing stakeholder engagement processes that establish goals, principles, mods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance-framework",
+      "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:inclusive-decision-making",
+        "id": "urn:ngm:class:inclusive-decision-making",
         "label": "Inclusive Decision Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

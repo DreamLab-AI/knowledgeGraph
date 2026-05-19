@@ -3,32 +3,36 @@
   "title": "Spatial Measurement",
   "slug": "spatial-measurement",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:spatial-measurement",
+  "classIri": "urn:ngm:class:spatial-measurement",
   "domain": "spatial-computing",
   "definition": "Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:depth-sensing",
+      "id": "urn:ngm:class:depth-sensing",
       "label": "Depth Sensing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:3-d-environment-mapping",
+        "id": "urn:ngm:class:3-d-environment-mapping",
         "label": "3D Environment Mapping"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

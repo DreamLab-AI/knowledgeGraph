@@ -3,45 +3,49 @@
   "title": "Responsible AI",
   "slug": "responsible-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:responsible-ai",
+  "classIri": "urn:ngm:class:responsible-ai",
   "domain": "artificial-intelligence",
-  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ethical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance throughout the AI lifecycle to ensure that AI systems are developed and used in ways that benefit individuals and society whilst minimising negative consequences, respecting human rights and democratic values, and maintaining clear lines of responsibility for AI-driven outcomes.",
+  "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-governance",
+      "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:risk-management-processes",
+        "id": "urn:ngm:class:risk-management-processes",
         "label": "risk management processes"
       },
       {
-        "id": "urn:visionflow:owl:class:ai-impact-assessment",
+        "id": "urn:ngm:class:ai-impact-assessment",
         "label": "AI Impact Assessment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:social-licence-for-ai",
+        "id": "urn:ngm:class:social-licence-for-ai",
         "label": "social licence for AI"
       },
       {
-        "id": "urn:visionflow:linked:trustworthy-ai",
+        "id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "AI Hardware",
   "slug": "ai-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-hardware",
+  "classIri": "urn:ngm:class:ai-hardware",
   "domain": "artificial-intelligence",
-  "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.",
+  "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computer-hardware",
+      "id": "urn:ngm:class:computer-hardware",
       "label": "Computer Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

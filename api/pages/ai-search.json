@@ -3,159 +3,271 @@
   "title": "AI Search",
   "slug": "ai-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-search",
+  "classIri": "urn:ngm:class:ai-search",
   "domain": "artificial-intelligence",
-  "definition": "**AI Search** (also termed *generative search*, *answer engine*, *conversational search*, or *retrieval-augmented search*) is the class of web-scale information-access systems that pair a large language model (LLM) with a live retrieval layer over web indexes, document stores, or proprietary corpora to produce **direct natural-language answers with inline citations** rather than the ranked list of ten blue links characteristic of classical web search (Google PageRank, Bing, DuckDuckGo, Yahoo), instantiated commercially by **Perplexity AI** (founded August 2022 by Aravind Srinivas, Denis Yarats, Johnny Ho and Andy Konwinski; $500M Series E May 2025 at $14B valuation; Pro Search agentic multi-step retrieval; Spaces shared workspaces with custom system prompts launched October 2024; Comet agentic browser July 2025), **OpenAI ChatGPT Search** (SearchGPT prototype 25 July 2024, integrated into ChatGPT 31 October 2024 for Plus/Team, free tier from December 2024, powered by Bing Index via the Microsoft partnership plus direct licensing deals with News Corp, Axel Springer, AP, Le Monde, Vox Media, the Atlantic, Financial Times and Reddit $60M/year), **Google AI Overviews / AI Mode / Notebo",
+  "definition": "AI Search (also termed generative search, answer engine, conversational search, or retrieval-augmented search) is the class of web-scale information-access systems that pair a large language model (LLM) with a live retrieval layer over web indexes, document stores, or proprietary corpora to produ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:question-answering-system",
+      "id": "urn:ngm:class:question-answering-system",
       "label": "Question Answering System"
     },
     {
-      "id": "urn:visionflow:linked:retrieval-augmented-generation",
+      "id": "urn:ngm:class:retrieval-augmented-generation",
       "label": "Retrieval-Augmented Generation"
-    },
-    {
-      "id": "urn:visionflow:owl:class:search-engine",
-      "label": "Search Engine"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:answer-synthesiser",
+        "id": "urn:ngm:class:answer-synthesiser",
         "label": "Answer Synthesiser"
       },
       {
-        "id": "urn:visionflow:linked:citation-grounding-layer",
+        "id": "urn:ngm:class:citation-grounding-layer",
         "label": "Citation Grounding Layer"
       },
       {
-        "id": "urn:visionflow:linked:dense-retriever",
+        "id": "urn:ngm:class:dense-retriever",
         "label": "Dense Retriever"
       },
       {
-        "id": "urn:visionflow:linked:embedding-index",
+        "id": "urn:ngm:class:embedding-index",
         "label": "Embedding Index"
       },
       {
-        "id": "urn:visionflow:linked:follow-up-suggester",
+        "id": "urn:ngm:class:follow-up-suggester",
         "label": "Follow-up Suggester"
       },
       {
-        "id": "urn:visionflow:linked:llm-generator",
+        "id": "urn:ngm:class:llm-generator",
         "label": "LLM Generator"
       },
       {
-        "id": "urn:visionflow:linked:query-understanding-module",
+        "id": "urn:ngm:class:query-understanding-module",
         "label": "Query Understanding Module"
       },
       {
-        "id": "urn:visionflow:linked:reranker",
+        "id": "urn:ngm:class:reranker",
         "label": "Reranker"
       },
       {
-        "id": "urn:visionflow:linked:sparse-retriever",
+        "id": "urn:ngm:class:sparse-retriever",
         "label": "Sparse Retriever"
       },
       {
-        "id": "urn:visionflow:linked:web-index",
+        "id": "urn:ngm:class:web-index",
         "label": "Web Index"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:content-licensing-agreement",
+        "id": "urn:ngm:class:content-licensing-agreement",
         "label": "Content Licensing Agreement"
       },
       {
-        "id": "urn:visionflow:linked:embedding-model",
+        "id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
       },
       {
-        "id": "urn:visionflow:linked:inference-infrastructure",
+        "id": "urn:ngm:class:inference-infrastructure",
         "label": "Inference Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:large-language-model",
+        "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
       },
       {
-        "id": "urn:visionflow:linked:tokeniser",
+        "id": "urn:ngm:class:tokeniser",
         "label": "Tokeniser"
       },
       {
-        "id": "urn:visionflow:linked:vector-database",
+        "id": "urn:ngm:class:vector-database",
         "label": "Vector Database"
       },
       {
-        "id": "urn:visionflow:linked:web-crawler",
+        "id": "urn:ngm:class:web-crawler",
         "label": "Web Crawler"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:agentic-browsing",
+        "id": "urn:ngm:class:agentic-browsing",
         "label": "Agentic Browsing"
       },
       {
-        "id": "urn:visionflow:linked:citation-grounded-answers",
+        "id": "urn:ngm:class:citation-grounded-answers",
         "label": "Citation-Grounded Answers"
       },
       {
-        "id": "urn:visionflow:linked:conversational-web-access",
+        "id": "urn:ngm:class:conversational-web-access",
         "label": "Conversational Web Access"
       },
       {
-        "id": "urn:visionflow:linked:multi-source-synthesis",
+        "id": "urn:ngm:class:multi-source-synthesis",
         "label": "Multi-Source Synthesis"
       },
       {
-        "id": "urn:visionflow:linked:programmatic-knowledge-lookup",
+        "id": "urn:ngm:class:programmatic-knowledge-lookup",
         "label": "Programmatic Knowledge Lookup"
       },
       {
-        "id": "urn:visionflow:linked:research-workflows",
+        "id": "urn:ngm:class:research-workflows",
         "label": "Research Workflows"
       },
       {
-        "id": "urn:visionflow:linked:zero-click-information-access",
+        "id": "urn:ngm:class:zero-click-information-access",
         "label": "Zero-Click Information Access"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:chain-of-thought-reasoning",
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
         "label": "Chain-of-Thought Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:cross-encoder-reranking",
+        "id": "urn:ngm:class:cross-encoder-reranking",
         "label": "Cross-Encoder Reranking"
       },
       {
-        "id": "urn:visionflow:linked:dense-passage-retrieval",
+        "id": "urn:ngm:class:dense-passage-retrieval",
         "label": "Dense Passage Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:hybrid-retrieval",
+        "id": "urn:ngm:class:hybrid-retrieval",
         "label": "Hybrid Retrieval"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-augmented-generation",
+        "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "id": "urn:visionflow:linked:tool-use",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:reciprocal-rank-fusion",
+        "label": "Reciprocal Rank Fusion"
+      },
+      {
+        "id": "urn:ngm:class:sentence-embeddings",
+        "label": "Sentence Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:streaming-generation",
+        "label": "Streaming Generation"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:customer-support",
+        "label": "Customer Support"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-knowledge-management",
+        "label": "Enterprise Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:journalism",
+        "label": "Journalism"
+      },
+      {
+        "id": "urn:ngm:class:legal-research",
+        "label": "Legal Research"
+      },
+      {
+        "id": "urn:ngm:class:medical-information-retrieval",
+        "label": "Medical Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-article-50",
+        "label": "EU AI Act Article 50"
+      },
+      {
+        "id": "urn:ngm:class:ico-ai-guidance",
+        "label": "ICO AI Guidance"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:trec-rag-track",
+        "label": "TREC RAG Track"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act-2023",
+        "label": "UK Online Safety Act 2023"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-browser",
+        "label": "Agentic Browser"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:web-search",
+        "label": "Web Search"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
   },
   "wikilinks": [
     {

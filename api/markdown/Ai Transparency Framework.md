@@ -148,76 +148,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-transparency-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-transparency-framework",
+  "@type": "Class",
   "label": "Ai Transparency Framework",
+  "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential i...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2715a1a7bb63038b1b83e58daececceb7f0431a12a5f88542bcbb2fb5b26d04c"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audit-mechanisms",
+        "label": "Audit Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-communication",
+        "label": "Stakeholder Communication"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2715a1a7bb63038b1b83e58daececceb7f0431a12a5f88542bcbb2fb5b26d04c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential impacts.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audit-mechanisms",
-      "vc:label": "Audit Mechanisms"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-communication",
-      "vc:label": "Stakeholder Communication"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:documentation-standards",
-      "vc:label": "Documentation Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-accountability",
-      "vc:label": "Algorithmic Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:explainable-ai",
-      "vc:label": "Explainable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

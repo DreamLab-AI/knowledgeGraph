@@ -3,32 +3,36 @@
   "title": "Game Narratives",
   "slug": "game-narratives",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:game-narratives",
+  "classIri": "urn:ngm:class:game-narratives",
   "domain": "spatial-computing",
   "definition": "Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:interactive-storytelling",
+      "id": "urn:ngm:class:interactive-storytelling",
       "label": "Interactive Storytelling"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:immersive-gaming-experiences",
+        "id": "urn:ngm:class:immersive-gaming-experiences",
         "label": "Immersive Gaming Experiences"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

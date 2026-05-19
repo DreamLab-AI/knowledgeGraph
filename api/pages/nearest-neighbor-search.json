@@ -3,32 +3,36 @@
   "title": "Nearest Neighbor Search",
   "slug": "nearest-neighbor-search",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:nearest-neighbor-search",
+  "classIri": "urn:ngm:class:nearest-neighbor-search",
   "domain": "spatial-computing",
-  "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate methods (ANN) trading minor accuracy for millisecond-scale retrieval from billions of objects.",
+  "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate mods (ANN) trading minor accuracy for millisecond-scale retrieval from s of objects.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:search-algorithm",
+      "id": "urn:ngm:class:search-algorithm",
       "label": "Search Algorithm"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:semantic-search",
+        "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

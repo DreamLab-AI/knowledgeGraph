@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0021-robot-kinematics",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0021-robot-kinematics",
+  "@type": "Class",
   "label": "rb 0021 robot kinematics",
+  "definition": "robot kinematics is a robotics and autonomous systems concept and a type of Kinematics.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:kinematics",
-      "vc:label": "Kinematics"
+      "@id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1b50623c2cfcc10fadbfa8273b03de816bcbeda48339aa6c096c1adf3731150e"
-  },
-  "vc:inferenceRule": "R1LabelContainsParentTerm",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1b50623c2cfcc10fadbfa8273b03de816bcbeda48339aa6c096c1adf3731150e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "robot kinematics is a robotics and autonomous systems concept and a type of Kinematics."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1LabelContainsParentTerm"
+  }
 }
 ```
 

@@ -3,53 +3,57 @@
   "title": "Carbon Registry",
   "slug": "carbon-registry",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-registry",
+  "classIri": "urn:ngm:class:carbon-registry",
   "domain": "spatial-computing",
   "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:environmental-registry",
+      "id": "urn:ngm:class:environmental-registry",
       "label": "Environmental Registry"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:database-infrastructure",
+        "id": "urn:ngm:class:database-infrastructure",
         "label": "Database Infrastructure"
       },
       {
-        "id": "urn:visionflow:linked:unique-identifiers",
+        "id": "urn:ngm:class:unique-identifiers",
         "label": "Unique Identifiers"
       },
       {
-        "id": "urn:visionflow:linked:verification-process",
+        "id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:credit-tracking",
+        "id": "urn:ngm:class:credit-tracking",
         "label": "Credit Tracking"
       },
       {
-        "id": "urn:visionflow:linked:double-counting-prevention",
+        "id": "urn:ngm:class:double-counting-prevention",
         "label": "Double Counting Prevention"
       },
       {
-        "id": "urn:visionflow:linked:market-transparency",
+        "id": "urn:ngm:class:market-transparency",
         "label": "Market Transparency"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -176,114 +176,73 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cardano",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cardano",
+  "@type": "Class",
   "label": "Cardano",
+  "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain-protocol",
-      "vc:label": "Blockchain Protocol"
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
     },
     {
-      "@id": "urn:visionflow:owl:class:smart-contract-platform",
-      "vc:label": "Smart Contract Platform"
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1950ff3e6c3b3cb48f4bfd842f0064a614bc89809f6f207a12268f35b72c3241"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:computation-layer",
+        "label": "Computation Layer"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-infrastructure",
+        "label": "Off-Chain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-smart-contracts",
+        "label": "Scalable Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:haskell",
+        "label": "Haskell"
+      },
+      {
+        "@id": "urn:ngm:class:plutus-smart-contract-language",
+        "label": "Plutus Smart Contract Language"
+      },
+      {
+        "@id": "urn:ngm:class:ouroboros-consensus",
+        "label": "Ouroboros Consensus"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1950ff3e6c3b3cb48f4bfd842f0064a614bc89809f6f207a12268f35b72c3241@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts. Emphasizes formal verification, sustainability, decentralization, and provable security guarantees.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:computation-layer",
-      "vc:label": "Computation Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:off-chain-infrastructure",
-      "vc:label": "Off-Chain Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:settlement-layer",
-      "vc:label": "Settlement Layer"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:formal-verification",
-      "vc:label": "Formal Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:scalable-smart-contracts",
-      "vc:label": "Scalable Smart Contracts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:interoperability",
-      "vc:label": "Interoperability"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:haskell",
-      "vc:label": "Haskell"
-    },
-    {
-      "@id": "urn:visionflow:linked:plutus-smart-contract-language",
-      "vc:label": "Plutus Smart Contract Language"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ouroboros-consensus",
-      "vc:label": "Ouroboros Consensus"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:academic-research",
-      "vc:label": "Academic Research"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:enterprise-blockchain",
-      "vc:label": "Enterprise Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

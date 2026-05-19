@@ -3,19 +3,18 @@
   "title": "Hidden Dimension",
   "slug": "hidden-dimension",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hidden-dimension",
+  "classIri": "urn:ngm:class:hidden-dimension",
   "domain": "spatial-computing",
   "definition": "The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hyperparameter",
+      "id": "urn:ngm:class:hyperparameter",
       "label": "Hyperparameter"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

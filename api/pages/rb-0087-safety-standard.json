@@ -3,19 +3,18 @@
   "title": "rb 0087 safety standard",
   "slug": "rb-0087-safety-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0087-safety-standard",
+  "classIri": "urn:ngm:class:rb-0087-safety-standard",
   "domain": "robotics",
   "definition": "safety standard is a robotics and autonomous systems concept and a type of Robot Standard.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-standard",
+      "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

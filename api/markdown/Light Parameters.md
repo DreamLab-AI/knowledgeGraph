@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:light-parameters",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:light-parameters",
+  "@type": "Class",
   "label": "Light Parameters",
+  "definition": "Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:rendering-technology",
-      "vc:label": "Rendering Technology"
+      "@id": "urn:ngm:class:rendering-technology",
+      "label": "Rendering Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:9562a5d1baeb72ea8798ce8fe1410897d44a58897b2cebee59d2f023fadeca02"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:visual-realism",
+        "label": "Visual Realism"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:9562a5d1baeb72ea8798ce8fe1410897d44a58897b2cebee59d2f023fadeca02@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:visual-realism",
-      "vc:label": "Visual Realism"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

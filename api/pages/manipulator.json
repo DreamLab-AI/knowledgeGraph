@@ -3,19 +3,18 @@
   "title": "Manipulator",
   "slug": "manipulator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:manipulator",
+  "classIri": "urn:ngm:class:manipulator",
   "domain": "robotics",
   "definition": "A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot",
+      "id": "urn:ngm:class:robot",
       "label": "Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.99,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-rb-0001",
+        "label": "Robot (RB-0001)"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

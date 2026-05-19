@@ -200,112 +200,87 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-enhancing-computation-pec",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-enhancing-computation-pec",
+  "@type": "Class",
   "label": "Privacy-Enhancing Computation (PEC)",
+  "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic mods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dc9718685a5974c68bbd169931bcf62965230ee53598a66dd58d00747eed3e7c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:privacy-compliant-processing",
+        "label": "Privacy-Compliant Processing"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy-Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:secure-data-sharing",
+        "label": "Secure Data Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:privacy-architecture",
+        "label": "Privacy Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dc9718685a5974c68bbd169931bcf62965230ee53598a66dd58d00747eed3e7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic methods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:privacy-architecture",
-      "vc:label": "Privacy Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:security-framework",
-      "vc:label": "Security Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:homomorphic-encryption",
-      "vc:label": "Homomorphic Encryption"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-multi-party-computation",
-      "vc:label": "Secure Multi-Party Computation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-management",
-      "vc:label": "Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:privacy-compliant-processing",
-      "vc:label": "Privacy-Compliant Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:confidential-computing",
-      "vc:label": "Confidential Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-analytics",
-      "vc:label": "Privacy-Preserving Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:secure-data-sharing",
-      "vc:label": "Secure Data Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:privacy-models",
-      "vc:label": "Privacy Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-computation-protocols",
-      "vc:label": "Secure Computation Protocols"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

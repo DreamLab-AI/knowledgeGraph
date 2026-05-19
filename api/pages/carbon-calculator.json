@@ -3,53 +3,57 @@
   "title": "Carbon Calculator",
   "slug": "carbon-calculator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:carbon-calculator",
+  "classIri": "urn:ngm:class:carbon-calculator",
   "domain": "spatial-computing",
-  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon footprint.",
+  "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:sustainability-tool",
+      "id": "urn:ngm:class:sustainability-tool",
       "label": "Sustainability Tool"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:activity-data",
+        "id": "urn:ngm:class:activity-data",
         "label": "Activity Data"
       },
       {
-        "id": "urn:visionflow:linked:calculation-methodology",
+        "id": "urn:ngm:class:calculation-methodology",
         "label": "Calculation Methodology"
       },
       {
-        "id": "urn:visionflow:linked:emission-factors",
+        "id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:emissions-estimation",
+        "id": "urn:ngm:class:emissions-estimation",
         "label": "Emissions Estimation"
       },
       {
-        "id": "urn:visionflow:linked:footprint-awareness",
+        "id": "urn:ngm:class:footprint-awareness",
         "label": "Footprint Awareness"
       },
       {
-        "id": "urn:visionflow:linked:reduction-planning",
+        "id": "urn:ngm:class:reduction-planning",
         "label": "Reduction Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -144,76 +144,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-origin-declaration",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-origin-declaration",
+  "@type": "Class",
   "label": "Ai Origin Declaration",
+  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of c...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:content-authenticity",
-      "vc:label": "Content Authenticity"
+      "@id": "urn:ngm:class:content-authenticity",
+      "label": "Content Authenticity"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standards",
+        "label": "Metadata Standards"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:content-verification",
+        "label": "Content Verification"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c03982a12adfd090f2529a00f2eda9e610d016a37073fd93054c807b1293825e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of content authenticity and origin.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signing",
-      "vc:label": "Cryptographic Signing"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-watermarking",
-      "vc:label": "Digital Watermarking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-standards",
-      "vc:label": "Metadata Standards"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:content-verification",
-      "vc:label": "Content Verification"
-    },
-    {
-      "@id": "urn:visionflow:linked:deepfake-detection",
-      "vc:label": "Deepfake Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:trust-infrastructure",
-      "vc:label": "Trust Infrastructure"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Virtual Camera",
   "slug": "virtual-camera",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-camera",
+  "classIri": "urn:ngm:class:virtual-camera",
   "domain": "spatial-computing",
   "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-production",
+      "id": "urn:ngm:class:virtual-production",
       "label": "Virtual Production"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

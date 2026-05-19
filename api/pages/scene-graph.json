@@ -3,86 +3,111 @@
   "title": "Scene Graph",
   "slug": "scene-graph",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:scene-graph",
+  "classIri": "urn:ngm:class:scene-graph",
   "domain": "spatial-computing",
   "definition": "A hierarchical tree-based data structure organizing and describing the spatial, logical, and rendering relationships among objects in a 3D scene, enabling efficient traversal, culling, and rendering operations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:camera-node",
+        "id": "urn:ngm:class:camera-node",
         "label": "Camera Node"
       },
       {
-        "id": "urn:visionflow:linked:geometry-node",
+        "id": "urn:ngm:class:geometry-node",
         "label": "Geometry Node"
       },
       {
-        "id": "urn:visionflow:linked:group-node",
+        "id": "urn:ngm:class:group-node",
         "label": "Group Node"
       },
       {
-        "id": "urn:visionflow:linked:scene-node",
+        "id": "urn:ngm:class:scene-node",
         "label": "Scene Node"
       },
       {
-        "id": "urn:visionflow:linked:transform-node",
+        "id": "urn:ngm:class:transform-node",
         "label": "Transform Node"
       },
       {
-        "id": "urn:visionflow:owl:class:light-node",
+        "id": "urn:ngm:class:light-node",
         "label": "Light Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:bounding-volume",
+        "id": "urn:ngm:class:bounding-volume",
         "label": "Bounding Volume"
       },
       {
-        "id": "urn:visionflow:linked:transform-matrix",
+        "id": "urn:ngm:class:transform-matrix",
         "label": "Transform Matrix"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-index",
+        "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Index"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:frustum-culling",
+        "id": "urn:ngm:class:frustum-culling",
         "label": "Frustum Culling"
       },
       {
-        "id": "urn:visionflow:linked:scene-rendering",
+        "id": "urn:ngm:class:scene-rendering",
         "label": "Scene Rendering"
       },
       {
-        "id": "urn:visionflow:owl:class:collision-detection",
+        "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
       },
       {
-        "id": "urn:visionflow:owl:class:level-of-detail",
+        "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-queries",
+        "id": "urn:ngm:class:spatial-queries",
         "label": "Spatial Queries"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-engine",
+        "label": "3D Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

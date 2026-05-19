@@ -140,68 +140,47 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:adversarial-attacks",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:adversarial-attacks",
+  "@type": "Class",
   "label": "Adversarial Attacks",
+  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significan...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-security-threats",
-      "vc:label": "AI Security Threats"
+      "@id": "urn:ngm:class:ai-security-threats",
+      "label": "AI Security Threats"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:crafted-perturbations",
+        "label": "Crafted Perturbations"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-of-target-model",
+        "label": "Knowledge of Target Model"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-evasion",
+        "label": "Model Evasion"
+      },
+      {
+        "@id": "urn:ngm:class:system-manipulation",
+        "label": "System Manipulation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dc3bf3f087aa8a863fbfbc8532c5cb0159290f415a3da323679990652af77cff@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significant to AI systems.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:crafted-perturbations",
-      "vc:label": "Crafted Perturbations"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-of-target-model",
-      "vc:label": "Knowledge of Target Model"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:model-evasion",
-      "vc:label": "Model Evasion"
-    },
-    {
-      "@id": "urn:visionflow:linked:system-manipulation",
-      "vc:label": "System Manipulation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Photorealistic Rendering",
   "slug": "photorealistic-rendering",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:photorealistic-rendering",
+  "classIri": "urn:ngm:class:photorealistic-rendering",
   "domain": "spatial-computing",
   "definition": "Photorealistic Rendering is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

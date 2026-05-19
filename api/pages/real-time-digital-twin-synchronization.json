@@ -3,32 +3,36 @@
   "title": "Real Time Digital Twin Synchronization",
   "slug": "real-time-digital-twin-synchronization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:real-time-digital-twin-synchronization",
+  "classIri": "urn:ngm:class:real-time-digital-twin-synchronization",
   "domain": "spatial-computing",
   "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-twin-technology",
+      "id": "urn:ngm:class:digital-twin-technology",
       "label": "Digital Twin Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:virtual-real-interaction",
+        "id": "urn:ngm:class:virtual-real-interaction",
         "label": "Virtual Real Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:communication-software",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:communication-software",
+  "@type": "Class",
   "label": "Communication Software",
+  "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services t...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:collaboration-technology",
-      "vc:label": "Collaboration Technology"
+      "@id": "urn:ngm:class:collaboration-technology",
+      "label": "Collaboration Technology"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:a4041eae290f22e267fe8963c7d24579ea8c18f5b25f645bc9f4ad532a6e1d6e"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-visual-systems",
+        "label": "Audio Visual Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-meetings",
+        "label": "Virtual Meetings"
+      },
+      {
+        "@id": "urn:ngm:class:remote-communication",
+        "label": "Remote Communication"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a4041eae290f22e267fe8963c7d24579ea8c18f5b25f645bc9f4ad532a6e1d6e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services that bridge physical and digital worlds.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-visual-systems",
-      "vc:label": "Audio Visual Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-interface",
-      "vc:label": "User Interface"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:real-time-collaboration",
-      "vc:label": "Real-Time Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-meetings",
-      "vc:label": "Virtual Meetings"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:remote-communication",
-      "vc:label": "Remote Communication"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Unified Hardware Access",
   "slug": "unified-hardware-access",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:unified-hardware-access",
+  "classIri": "urn:ngm:class:unified-hardware-access",
   "domain": "spatial-computing",
   "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hardware-abstraction",
+      "id": "urn:ngm:class:hardware-abstraction",
       "label": "Hardware Abstraction"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -160,54 +160,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robotics-telepresence-bridge",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robotics-telepresence-bridge",
+  "@type": "Class",
   "label": "Robotics-Telepresence Bridge",
+  "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social ...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-collaboration",
-      "vc:label": "distributed-collaboration"
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "distributed-collaboration"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "active",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e4ab9731e8ec794b84856268b360fdfaa5d4554143591abde9e2e197392a1e95"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tele-203-haptic-feedback-telepresence",
+        "label": "TELE-203-haptic-feedback-telepresence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:hazardous-environment-access",
+        "label": "HazardousEnvironmentAccess"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e4ab9731e8ec794b84856268b360fdfaa5d4554143591abde9e2e197392a1e95@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social presence and immersive interfaces to enable embodied remote interaction with physical environments.\"",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:tele-203-haptic-feedback-telepresence",
-      "vc:label": "TELE-203-haptic-feedback-telepresence"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:hazardous-environment-access",
-      "vc:label": "HazardousEnvironmentAccess"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

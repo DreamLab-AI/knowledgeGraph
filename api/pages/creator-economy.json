@@ -3,94 +3,98 @@
   "title": "Creator Economy",
   "slug": "creator-economy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:creator-economy",
+  "classIri": "urn:ngm:class:creator-economy",
   "domain": "spatial-computing",
   "definition": "Ecosystem enabling individuals and organizations to design, build, and monetize virtual content and experiences through digital marketplaces, tokenization, and economic incentive structures.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:content-distribution-platform",
+        "id": "urn:ngm:class:content-distribution-platform",
         "label": "Content Distribution Platform"
       },
       {
-        "id": "urn:visionflow:linked:monetization-system",
+        "id": "urn:ngm:class:monetization-system",
         "label": "Monetization System"
       },
       {
-        "id": "urn:visionflow:linked:token-economy",
+        "id": "urn:ngm:class:token-economy",
         "label": "Token Economy"
       },
       {
-        "id": "urn:visionflow:owl:class:creator-royalty-token",
+        "id": "urn:ngm:class:creator-royalty-token",
         "label": "Creator Royalty Token"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset-workflow",
+        "id": "urn:ngm:class:digital-asset-workflow",
         "label": "Digital Asset Workflow"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-goods",
+        "id": "urn:ngm:class:digital-goods",
         "label": "Digital Goods"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-marketplace",
+        "id": "urn:ngm:class:digital-marketplace",
         "label": "Digital Marketplace"
       },
       {
-        "id": "urn:visionflow:owl:class:metaverse-content-pipeline",
+        "id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:payment-processing",
+        "id": "urn:ngm:class:payment-processing",
         "label": "Payment Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:creator-monetization",
+        "id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetization"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-asset-trading",
+        "id": "urn:ngm:class:digital-asset-trading",
         "label": "Digital Asset Trading"
       },
       {
-        "id": "urn:visionflow:owl:class:nft-minting",
+        "id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
       },
       {
-        "id": "urn:visionflow:owl:class:royalty-distribution",
+        "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

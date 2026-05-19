@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-offset-trading",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-offset-trading",
+  "@type": "Class",
   "label": "Carbon Offset Trading",
+  "definition": "The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-trading",
-      "vc:label": "Environmental Trading"
+      "@id": "urn:ngm:class:environmental-trading",
+      "label": "Environmental Trading"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:db2907bf47d70525a12eff92cab7fa79b4ad3a4c4fd6aaeac817d175f49a8d2b"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:market-infrastructure",
+        "label": "Market Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:trading-platform",
+        "label": "Trading Platform"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "@id": "urn:ngm:class:offset-liquidity",
+        "label": "Offset Liquidity"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:db2907bf47d70525a12eff92cab7fa79b4ad3a4c4fd6aaeac817d175f49a8d2b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:market-infrastructure",
-      "vc:label": "Market Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:trading-platform",
-      "vc:label": "Trading Platform"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:carbon-registry",
-      "vc:label": "Carbon Registry"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:carbon-price-discovery",
-      "vc:label": "Carbon Price Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-finance",
-      "vc:label": "Climate Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:offset-liquidity",
-      "vc:label": "Offset Liquidity"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

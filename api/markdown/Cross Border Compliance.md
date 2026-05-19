@@ -564,358 +564,287 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-border-compliance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-border-compliance",
+  "@type": "Class",
   "label": "Cross Border Compliance",
+  "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law ([[GDPR]], [[UK GDPR]], [[CCPA]], [[PIPL]], [[DPDPA 2023]]), AI regu...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:compliance-programs",
-      "vc:label": "Compliance Programs"
+      "@id": "urn:ngm:class:compliance-programs",
+      "label": "Compliance Programs"
     },
     {
-      "@id": "urn:visionflow:linked:international-law",
-      "vc:label": "International Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-risk-management",
-      "vc:label": "Legal Risk Management"
+      "@id": "urn:ngm:class:international-law",
+      "label": "International Law"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:99e97dc755cd52d368d1f66cf91fe57d778da86ca3e888dee944b50d03c23fc7"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-architecture",
+        "label": "Compliance Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-transfer-mechanism",
+        "label": "Data Transfer Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-liaison",
+        "label": "Enforcement Liaison"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdictional-mapping",
+        "label": "Jurisdictional Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:legal-entity-structure",
+        "label": "Legal Entity Structure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-monitoring",
+        "label": "Regulatory Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-impact-assessment",
+        "label": "Transfer Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-residency-infrastructure",
+        "label": "Data Residency Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-framework",
+        "label": "KYC AML Framework"
+      },
+      {
+        "@id": "urn:ngm:class:legal-expertise",
+        "label": "Legal Expertise"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-intelligence",
+        "label": "Regulatory Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-impact-assessment",
+        "label": "Transfer Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-enforcement",
+        "label": "Cross-Border Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:global-market-access",
+        "label": "Global Market Access"
+      },
+      {
+        "@id": "urn:ngm:class:level-playing-field",
+        "label": "Level Playing Field"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-trust",
+        "label": "Regulatory Trust"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:basel-iii-standards",
+        "label": "Basel III Standards"
+      },
+      {
+        "@id": "urn:ngm:class:binding-corporate-rules",
+        "label": "Binding Corporate Rules"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-standard-contractual-clauses",
+        "label": "GDPR Standard Contractual Clauses"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca-passporting",
+        "label": "MiCA Passporting"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-carf-reporting",
+        "label": "OECD CARF Reporting"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:adequacy-decisions",
+        "label": "Adequacy Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:binding-corporate-rules",
+        "label": "Binding Corporate Rules"
+      },
+      {
+        "@id": "urn:ngm:class:ivms-101",
+        "label": "IVMS 101"
+      },
+      {
+        "@id": "urn:ngm:class:legal-entity-architecture",
+        "label": "Legal Entity Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:reg-tech",
+        "label": "RegTech"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      },
+      {
+        "@id": "urn:ngm:class:standard-contractual-clauses",
+        "label": "Standard Contractual Clauses"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:brussels-effect",
+        "label": "Brussels Effect"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:digital-trade-agreements",
+        "label": "Digital Trade Agreements"
+      },
+      {
+        "@id": "urn:ngm:class:extraterritorial-jurisdiction",
+        "label": "Extraterritorial Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-legal-assistance",
+        "label": "Mutual Legal Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-carf",
+        "label": "OECD CARF"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-harmonisation",
+        "label": "Regulatory Harmonisation"
+      },
+      {
+        "@id": "urn:ngm:class:schrems-ii",
+        "label": "Schrems II"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-rights",
+        "label": "Data Protection Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-single-market",
+        "label": "Digital Single Market"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:tax-transparency",
+        "label": "Tax Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "@id": "urn:ngm:class:edpb",
+        "label": "EDPB"
+      },
+      {
+        "@id": "urn:ngm:class:eu-commission",
+        "label": "EU Commission"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:iapp",
+        "label": "IAPP"
+      },
+      {
+        "@id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:99e97dc755cd52d368d1f66cf91fe57d778da86ca3e888dee944b50d03c23fc7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law ([[GDPR]], [[UK GDPR]], [[CCPA]], [[PIPL]], [[DPDPA 2023]]), AI regulation ([[EU AI Act]] extraterritorial scope, [[OECD AI Principles]]), financial regulation ([[MiCA]], [[FATF Travel Rule]], [[Bank Secrecy Act]]), and trade rules, whilst managing [[Jurisdictional Differences]], [[Regulatory Harmonisation]] gaps, [[Data Sovereignty]] conflicts, and cross-border [[Enforcement Coordination]]. Cross-border compliance represents one of the most structurally complex domains in modern governance: organisations serving customers in multiple countries must simultaneously satisfy legal frameworks designed in isolation, enforced by independent authorities, and frequently imposing contradictory obligations — for instance the EU's [[GDPR]] may prohibit transferring personal data to a jurisdiction where the US [[CLOUD Act]] compels disclosure of the same data. The costs of multi-jurisdictional compliance reach $50–150 million annually for major digital platforms, whils",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-architecture",
-      "vc:label": "Compliance Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-transfer-mechanism",
-      "vc:label": "Data Transfer Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:enforcement-liaison",
-      "vc:label": "Enforcement Liaison"
-    },
-    {
-      "@id": "urn:visionflow:linked:jurisdictional-mapping",
-      "vc:label": "Jurisdictional Mapping"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-entity-structure",
-      "vc:label": "Legal Entity Structure"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-monitoring",
-      "vc:label": "Regulatory Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-impact-assessment",
-      "vc:label": "Transfer Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:data-residency-infrastructure",
-      "vc:label": "Data Residency Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:kyc-aml-framework",
-      "vc:label": "KYC AML Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-expertise",
-      "vc:label": "Legal Expertise"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-intelligence",
-      "vc:label": "Regulatory Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-screening",
-      "vc:label": "Sanctions Screening"
-    },
-    {
-      "@id": "urn:visionflow:linked:transfer-impact-assessment",
-      "vc:label": "Transfer Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-impact-assessment",
-      "vc:label": "Privacy Impact Assessment"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-border-enforcement",
-      "vc:label": "Cross-Border Enforcement"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-crime-prevention",
-      "vc:label": "Financial Crime Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:global-market-access",
-      "vc:label": "Global Market Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:level-playing-field",
-      "vc:label": "Level Playing Field"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-trust",
-      "vc:label": "Regulatory Trust"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consumer-protection",
-      "vc:label": "Consumer Protection"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:basel-iii-standards",
-      "vc:label": "Basel III Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:binding-corporate-rules",
-      "vc:label": "Binding Corporate Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf-travel-rule",
-      "vc:label": "FATF Travel Rule"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr-standard-contractual-clauses",
-      "vc:label": "GDPR Standard Contractual Clauses"
-    },
-    {
-      "@id": "urn:visionflow:linked:mi-ca-passporting",
-      "vc:label": "MiCA Passporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-ai-principles",
-      "vc:label": "OECD AI Principles"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-carf-reporting",
-      "vc:label": "OECD CARF Reporting"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:adequacy-decisions",
-      "vc:label": "Adequacy Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-regulation",
-      "vc:label": "AI Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-protection-law",
-      "vc:label": "Data Protection Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:international-trade-law",
-      "vc:label": "International Trade Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-law",
-      "vc:label": "Privacy Law"
-    },
-    {
-      "@id": "urn:visionflow:linked:sanctions-regimes",
-      "vc:label": "Sanctions Regimes"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:anti-money-laundering",
-      "vc:label": "Anti-Money Laundering"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-protection-rights",
-      "vc:label": "Data Protection Rights"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-single-market",
-      "vc:label": "Digital Single Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability",
-      "vc:label": "Financial Stability"
-    },
-    {
-      "@id": "urn:visionflow:linked:tax-transparency",
-      "vc:label": "Tax Transparency"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-trustworthiness",
-      "vc:label": "AI Trustworthiness"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:adequacy-decisions",
-      "vc:label": "Adequacy Decisions"
-    },
-    {
-      "@id": "urn:visionflow:linked:binding-corporate-rules",
-      "vc:label": "Binding Corporate Rules"
-    },
-    {
-      "@id": "urn:visionflow:linked:ivms-101",
-      "vc:label": "IVMS 101"
-    },
-    {
-      "@id": "urn:visionflow:linked:legal-entity-architecture",
-      "vc:label": "Legal Entity Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:reg-tech",
-      "vc:label": "RegTech"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-based-approach",
-      "vc:label": "Risk-Based Approach"
-    },
-    {
-      "@id": "urn:visionflow:linked:standard-contractual-clauses",
-      "vc:label": "Standard Contractual Clauses"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-monitoring",
-      "vc:label": "Compliance Monitoring"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:data-nationalism",
-      "vc:label": "Data Nationalism"
-    },
-    {
-      "@id": "urn:visionflow:linked:forum-shopping",
-      "vc:label": "Forum Shopping"
-    },
-    {
-      "@id": "urn:visionflow:linked:jurisdictional-fragmentation",
-      "vc:label": "Jurisdictional Fragmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-arbitrage",
-      "vc:label": "Regulatory Arbitrage"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-capture",
-      "vc:label": "Regulatory Capture"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:brussels-effect",
-      "vc:label": "Brussels Effect"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:digital-trade-agreements",
-      "vc:label": "Digital Trade Agreements"
-    },
-    {
-      "@id": "urn:visionflow:linked:extraterritorial-jurisdiction",
-      "vc:label": "Extraterritorial Jurisdiction"
-    },
-    {
-      "@id": "urn:visionflow:linked:mutual-legal-assistance",
-      "vc:label": "Mutual Legal Assistance"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd-carf",
-      "vc:label": "OECD CARF"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-harmonisation",
-      "vc:label": "Regulatory Harmonisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:schrems-ii",
-      "vc:label": "Schrems II"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:basel-committee",
-      "vc:label": "Basel Committee"
-    },
-    {
-      "@id": "urn:visionflow:linked:edpb",
-      "vc:label": "EDPB"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-commission",
-      "vc:label": "EU Commission"
-    },
-    {
-      "@id": "urn:visionflow:linked:fatf",
-      "vc:label": "FATF"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-stability-board",
-      "vc:label": "Financial Stability Board"
-    },
-    {
-      "@id": "urn:visionflow:linked:iapp",
-      "vc:label": "IAPP"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico",
-      "vc:label": "ICO"
-    },
-    {
-      "@id": "urn:visionflow:linked:iosco",
-      "vc:label": "IOSCO"
-    },
-    {
-      "@id": "urn:visionflow:linked:oecd",
-      "vc:label": "OECD"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

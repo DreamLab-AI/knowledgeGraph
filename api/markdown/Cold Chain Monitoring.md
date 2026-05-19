@@ -468,432 +468,347 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cold-chain-monitoring",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cold-chain-monitoring",
+  "@type": "Class",
   "label": "Cold Chain Monitoring",
+  "definition": "Cold chain monitoring is an integrated infrastructure discipline encompassing sensor networks, communication protocols, data management platforms, and provenance-recording systems that collectively maintain, verify, and audit temperature-controlled conditions for perishable goods across the entir...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:compliance-infrastructure",
-      "vc:label": "Compliance Infrastructure"
+      "@id": "urn:ngm:class:compliance-infrastructure",
+      "label": "Compliance Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:logistics-management",
-      "vc:label": "Logistics Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:monitoring-systems",
-      "vc:label": "Monitoring Systems"
+      "@id": "urn:ngm:class:logistics-management",
+      "label": "Logistics Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2e74e02e37936adeae0b38f53819736e559079f87be027d0567aebfd1c88b97f"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:alert-system",
+        "label": "Alert System"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-records",
+        "label": "Blockchain Records"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-of-compliance",
+        "label": "Certificate of Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics-platform",
+        "label": "Data Analytics Platform"
+      },
+      {
+        "@id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "@id": "urn:ngm:class:temperature-logger",
+        "label": "Temperature Logger"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-dashboard",
+        "label": "Compliance Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:refrigeration-technology",
+        "label": "Refrigeration Technology"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Networks"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-standards",
+        "label": "Calibration Standards"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-lot-release",
+        "label": "Automated Lot Release"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-evidence",
+        "label": "Compliance Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:excursion-detection",
+        "label": "Excursion Detection"
+      },
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dscsa-compliance",
+        "label": "DSCSA Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:fsma-204",
+        "label": "FSMA 204"
+      },
+      {
+        "@id": "urn:ngm:class:gdp-chapter-9",
+        "label": "GDP Chapter 9"
+      },
+      {
+        "@id": "urn:ngm:class:good-distribution-practice",
+        "label": "Good Distribution Practice"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "GS1 EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:iata-temperature-control-regulations",
+        "label": "IATA Temperature Control Regulations"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22000",
+        "label": "ISO 22000"
+      },
+      {
+        "@id": "urn:ngm:class:who-evm",
+        "label": "WHO EVM"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "GS1 EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-wan",
+        "label": "LoRaWAN"
+      },
+      {
+        "@id": "urn:ngm:class:nb-io-t",
+        "label": "NB-IoT"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-connectivity",
+        "label": "Satellite Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Networks"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Registry"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:biologics-logistics",
+        "label": "Biologics Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:chemical-logistics",
+        "label": "Chemical Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "@id": "urn:ngm:class:insurance-claims-processing",
+        "label": "Insurance Claims Processing"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:vaccine-distribution",
+        "label": "Vaccine Distribution"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:codex-alimentarius",
+        "label": "Codex Alimentarius"
+      },
+      {
+        "@id": "urn:ngm:class:eu-gdp-guidelines",
+        "label": "EU GDP Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:fda-dscsa",
+        "label": "FDA DSCSA"
+      },
+      {
+        "@id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      },
+      {
+        "@id": "urn:ngm:class:iata-temperature-control-regulations",
+        "label": "IATA Temperature Control Regulations"
+      },
+      {
+        "@id": "urn:ngm:class:iso-22000",
+        "label": "ISO 22000"
+      },
+      {
+        "@id": "urn:ngm:class:mhra-gdp-chapter-9",
+        "label": "MHRA GDP Chapter 9"
+      },
+      {
+        "@id": "urn:ngm:class:uk-food-standards-agency",
+        "label": "UK Food Standards Agency"
+      },
+      {
+        "@id": "urn:ngm:class:who-evm",
+        "label": "WHO EVM"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2e74e02e37936adeae0b38f53819736e559079f87be027d0567aebfd1c88b97f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cold chain monitoring is an integrated infrastructure discipline encompassing sensor networks, communication protocols, data management platforms, and provenance-recording systems that collectively maintain, verify, and audit temperature-controlled conditions for perishable goods across the entirety of storage, transportation, and distribution networks from point of manufacture or harvest through every handover in storage and transit until delivery to the end recipient. A fully instrumented cold chain constitutes a multi-layer system: at the physical stratum [[IoT Sensors]] measure temperature, humidity, shock, tilt, and luminance at intervals from 15 seconds to 15 minutes; at the connectivity stratum cellular IoT (NB-IoT, LTE-M), Bluetooth Low Energy (BLE), LoRaWAN, and satellite links relay sensor telemetry to cloud processing platforms; at the data stratum [[Blockchain Records]] and [[GS1]] EPCIS 2.0 event streams create tamper-evident, interoperable custody ledgers; at the intelligence stratum machine learning and [[Digital Twin]] models predict excursions before they occur, enabling preemptive intervention rather than post-hoc incident reporting. The global cold chain monitori",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:alert-system",
-      "vc:label": "Alert System"
-    },
-    {
-      "@id": "urn:visionflow:linked:blockchain-records",
-      "vc:label": "Blockchain Records"
-    },
-    {
-      "@id": "urn:visionflow:linked:certificate-of-compliance",
-      "vc:label": "Certificate of Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-analytics-platform",
-      "vc:label": "Data Analytics Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-gateway",
-      "vc:label": "Edge Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfid",
-      "vc:label": "RFID"
-    },
-    {
-      "@id": "urn:visionflow:linked:temperature-logger",
-      "vc:label": "Temperature Logger"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-dashboard",
-      "vc:label": "Compliance Dashboard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:io-t-sensors",
-      "vc:label": "IoT Sensors"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:gs1-standards",
-      "vc:label": "GS1 Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:refrigeration-technology",
-      "vc:label": "Refrigeration Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-networks",
-      "vc:label": "Sensor Networks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:calibration-standards",
-      "vc:label": "Calibration Standards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-lot-release",
-      "vc:label": "Automated Lot Release"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-evidence",
-      "vc:label": "Compliance Evidence"
-    },
-    {
-      "@id": "urn:visionflow:linked:excursion-detection",
-      "vc:label": "Excursion Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:food-safety",
-      "vc:label": "Food Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:pharmaceutical-supply-chain",
-      "vc:label": "Pharmaceutical Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "Sustainability Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:traceability",
-      "vc:label": "Traceability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:predictive-maintenance",
-      "vc:label": "Predictive Maintenance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:dscsa-compliance",
-      "vc:label": "DSCSA Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:fsma-204",
-      "vc:label": "FSMA 204"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdp-chapter-9",
-      "vc:label": "GDP Chapter 9"
-    },
-    {
-      "@id": "urn:visionflow:linked:good-distribution-practice",
-      "vc:label": "Good Distribution Practice"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1-epcis",
-      "vc:label": "GS1 EPCIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:iata-temperature-control-regulations",
-      "vc:label": "IATA Temperature Control Regulations"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22000",
-      "vc:label": "ISO 22000"
-    },
-    {
-      "@id": "urn:visionflow:linked:who-evm",
-      "vc:label": "WHO EVM"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:logistics",
-      "vc:label": "Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:refrigeration-technology",
-      "vc:label": "Refrigeration Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-analytics",
-      "vc:label": "Data Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:biologics-logistics",
-      "vc:label": "Biologics Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:chemical-logistics",
-      "vc:label": "Chemical Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:food-safety",
-      "vc:label": "Food Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:insurance-claims-processing",
-      "vc:label": "Insurance Claims Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:pharmaceutical-supply-chain",
-      "vc:label": "Pharmaceutical Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:sustainability-reporting",
-      "vc:label": "Sustainability Reporting"
-    },
-    {
-      "@id": "urn:visionflow:linked:vaccine-distribution",
-      "vc:label": "Vaccine Distribution"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:gs1-epcis",
-      "vc:label": "GS1 EPCIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:lo-ra-wan",
-      "vc:label": "LoRaWAN"
-    },
-    {
-      "@id": "urn:visionflow:linked:nb-io-t",
-      "vc:label": "NB-IoT"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfid",
-      "vc:label": "RFID"
-    },
-    {
-      "@id": "urn:visionflow:linked:satellite-connectivity",
-      "vc:label": "Satellite Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-knowledge-proofs",
-      "vc:label": "Zero-Knowledge Proofs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-data-silos",
-      "vc:label": "Centralised Data Silos"
-    },
-    {
-      "@id": "urn:visionflow:linked:manual-temperature-logging",
-      "vc:label": "Manual Temperature Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:paper-based-documentation",
-      "vc:label": "Paper-Based Documentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:periodic-checkpoint-monitoring",
-      "vc:label": "Periodic Checkpoint Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:point-in-time-monitoring",
-      "vc:label": "Point-in-Time Monitoring"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:food-safety",
-      "vc:label": "Food Safety"
-    },
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:logistics",
-      "vc:label": "Logistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:pharmaceutical-supply-chain",
-      "vc:label": "Pharmaceutical Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:rfid",
-      "vc:label": "RFID"
-    },
-    {
-      "@id": "urn:visionflow:linked:sensor-networks",
-      "vc:label": "Sensor Networks"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:traceability",
-      "vc:label": "Traceability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asset-registry",
-      "vc:label": "Asset Registry"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contracts",
-      "vc:label": "Smart Contracts"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:codex-alimentarius",
-      "vc:label": "Codex Alimentarius"
-    },
-    {
-      "@id": "urn:visionflow:linked:eu-gdp-guidelines",
-      "vc:label": "EU GDP Guidelines"
-    },
-    {
-      "@id": "urn:visionflow:linked:fda-dscsa",
-      "vc:label": "FDA DSCSA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gs1",
-      "vc:label": "GS1"
-    },
-    {
-      "@id": "urn:visionflow:linked:iata-temperature-control-regulations",
-      "vc:label": "IATA Temperature Control Regulations"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-22000",
-      "vc:label": "ISO 22000"
-    },
-    {
-      "@id": "urn:visionflow:linked:mhra-gdp-chapter-9",
-      "vc:label": "MHRA GDP Chapter 9"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-food-standards-agency",
-      "vc:label": "UK Food Standards Agency"
-    },
-    {
-      "@id": "urn:visionflow:linked:who-evm",
-      "vc:label": "WHO EVM"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:internet-of-things",
-      "vc:label": "Internet of Things"
-    },
-    {
-      "@id": "urn:visionflow:linked:supply-chain",
-      "vc:label": "Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,154 +3,163 @@
   "title": "AI Agent System",
   "slug": "ai-agent-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ai-agent-system",
+  "classIri": "urn:ngm:class:ai-agent-system",
   "domain": "artificial-intelligence",
-  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.",
-  "subClassOf": [],
+  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
   "qualityScore": 0.92,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:action-executor",
+        "id": "urn:ngm:class:action-executor",
         "label": "Action Executor"
       },
       {
-        "id": "urn:visionflow:linked:decision-engine",
+        "id": "urn:ngm:class:decision-engine",
         "label": "Decision Engine"
       },
       {
-        "id": "urn:visionflow:linked:goal-planner",
+        "id": "urn:ngm:class:goal-planner",
         "label": "Goal Planner"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-base",
+        "id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
       {
-        "id": "urn:visionflow:linked:memory-system",
+        "id": "urn:ngm:class:memory-system",
         "label": "Memory System"
       },
       {
-        "id": "urn:visionflow:linked:tool-use-system",
+        "id": "urn:ngm:class:tool-use-system",
         "label": "Tool Use System"
       },
       {
-        "id": "urn:visionflow:owl:class:communication-protocol",
+        "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-module",
+        "id": "urn:ngm:class:learning-module",
         "label": "Learning Module"
       },
       {
-        "id": "urn:visionflow:owl:class:perception-system",
+        "id": "urn:ngm:class:perception-system",
         "label": "Perception System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:action-space",
+        "id": "urn:ngm:class:action-space",
         "label": "Action Space"
       },
       {
-        "id": "urn:visionflow:linked:api-access",
+        "id": "urn:ngm:class:api-access",
         "label": "API Access"
       },
       {
-        "id": "urn:visionflow:linked:authentication-system",
+        "id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
-        "id": "urn:visionflow:linked:environment-model",
+        "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
       },
       {
-        "id": "urn:visionflow:linked:resource-budget",
+        "id": "urn:ngm:class:resource-budget",
         "label": "Resource Budget"
       },
       {
-        "id": "urn:visionflow:linked:sensor-input",
+        "id": "urn:ngm:class:sensor-input",
         "label": "Sensor Input"
       },
       {
-        "id": "urn:visionflow:owl:class:reward-function",
+        "id": "urn:ngm:class:reward-function",
         "label": "Reward Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-behavior",
+        "id": "urn:ngm:class:adaptive-behavior",
         "label": "Adaptive Behavior"
       },
       {
-        "id": "urn:visionflow:linked:autonomous-operation",
+        "id": "urn:ngm:class:autonomous-operation",
         "label": "Autonomous Operation"
       },
       {
-        "id": "urn:visionflow:linked:browser-automation",
+        "id": "urn:ngm:class:browser-automation",
         "label": "Browser Automation"
       },
       {
-        "id": "urn:visionflow:linked:database-interaction",
+        "id": "urn:ngm:class:database-interaction",
         "label": "Database Interaction"
       },
       {
-        "id": "urn:visionflow:linked:file-system-access",
+        "id": "urn:ngm:class:file-system-access",
         "label": "File System Access"
       },
       {
-        "id": "urn:visionflow:linked:goal-achievement",
+        "id": "urn:ngm:class:goal-achievement",
         "label": "Goal Achievement"
       },
       {
-        "id": "urn:visionflow:linked:multi-agent-coordination",
+        "id": "urn:ngm:class:multi-agent-coordination",
         "label": "Multi-Agent Coordination"
       },
       {
-        "id": "urn:visionflow:owl:class:code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:autonomous-behavior",
+        "id": "urn:ngm:class:autonomous-behavior",
         "label": "Autonomous Behavior"
       },
       {
-        "id": "urn:visionflow:linked:decision-making",
+        "id": "urn:ngm:class:decision-making",
         "label": "Decision Making"
       },
       {
-        "id": "urn:visionflow:linked:meta-learning",
+        "id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learning"
       },
       {
-        "id": "urn:visionflow:linked:planning-algorithm",
+        "id": "urn:ngm:class:planning-algorithm",
         "label": "Planning Algorithm"
       },
       {
-        "id": "urn:visionflow:linked:transfer-learning",
+        "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:active-learning",
+        "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:imitation-learning",
+        "id": "urn:ngm:class:imitation-learning",
         "label": "Imitation Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

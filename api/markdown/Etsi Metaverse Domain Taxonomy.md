@@ -124,48 +124,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-metaverse-domain-taxonomy",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+  "@type": "Class",
   "label": "Etsi Metaverse Domain Taxonomy",
+  "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology ind...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:taxonomy",
-      "vc:label": "Taxonomy"
+      "@id": "urn:ngm:class:taxonomy",
+      "label": "Taxonomy"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:18b645ab184f32fcd1de7bdeaf02eec324fa841e05cad4363412feafb9292cef"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:standards-interoperability",
+        "label": "Standards Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:18b645ab184f32fcd1de7bdeaf02eec324fa841e05cad4363412feafb9292cef@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology industries.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:standards-interoperability",
-      "vc:label": "Standards Interoperability"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

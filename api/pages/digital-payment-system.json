@@ -3,53 +3,57 @@
   "title": "Digital Payment System",
   "slug": "digital-payment-system",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-payment-system",
+  "classIri": "urn:ngm:class:digital-payment-system",
   "domain": "spatial-computing",
-  "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services. bridges-to:: [[Blockchain]]",
+  "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and servic...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:financial-infrastructure",
+      "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:payment-gateway",
+        "id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-payments",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
       },
       {
-        "id": "urn:visionflow:linked:virtual-transactions",
+        "id": "urn:ngm:class:virtual-transactions",
         "label": "Virtual Transactions"
       },
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

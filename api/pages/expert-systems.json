@@ -3,32 +3,36 @@
   "title": "Expert Systems",
   "slug": "expert-systems",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:expert-systems",
+  "classIri": "urn:ngm:class:expert-systems",
   "domain": "artificial-intelligence",
   "definition": "Expert Systems is a artificial intelligence concept and a type of Knowledge Representation. that enables Decision Support.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-representation",
+      "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decision-support",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

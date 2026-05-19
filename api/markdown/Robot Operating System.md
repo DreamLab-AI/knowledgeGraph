@@ -300,168 +300,121 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robot-operating-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robot-operating-system",
+  "@type": "Class",
   "label": "Robot Operating System",
+  "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-sub...",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:publish-subscribe-framework",
-      "vc:label": "Publish-Subscribe Framework"
+      "@id": "urn:ngm:class:publish-subscribe-framework",
+      "label": "Publish-Subscribe Framework"
     },
     {
-      "@id": "urn:visionflow:linked:robotic-middleware",
-      "vc:label": "Robotic Middleware"
+      "@id": "urn:ngm:class:robotic-middleware",
+      "label": "Robotic Middleware"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c7f8bc217b6c371324d1c4c0d651fdf58adf35f353d1313a0bce77d73c3ccf7c"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:colcon-build-system",
+        "label": "colcon Build System"
+      },
+      {
+        "@id": "urn:ngm:class:ros-action",
+        "label": "ROS Action"
+      },
+      {
+        "@id": "urn:ngm:class:ros-node",
+        "label": "ROS Node"
+      },
+      {
+        "@id": "urn:ngm:class:ros-package",
+        "label": "ROS Package"
+      },
+      {
+        "@id": "urn:ngm:class:ros-service",
+        "label": "ROS Service"
+      },
+      {
+        "@id": "urn:ngm:class:ros-topic",
+        "label": "ROS Topic"
+      },
+      {
+        "@id": "urn:ngm:class:urdf-robot-model",
+        "label": "URDF Robot Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cmake-build-system",
+        "label": "CMake Build System"
+      },
+      {
+        "@id": "urn:ngm:class:data-distribution-service",
+        "label": "Data Distribution Service"
+      },
+      {
+        "@id": "urn:ngm:class:python-3",
+        "label": "Python 3"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dds-rtps-protocol",
+        "label": "DDS RTPS Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rep-standards",
+        "label": "REP Standards"
+      },
+      {
+        "@id": "urn:ngm:class:sros2-security",
+        "label": "SROS2 Security"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems-platform",
+        "label": "Autonomous Systems Platform"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-software-stack",
+        "label": "Robotic Software Stack"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c7f8bc217b6c371324d1c4c0d651fdf58adf35f353d1313a0bce77d73c3ccf7c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-subscribe and service-call graph. ROS 2, built on the [[Data Distribution Service]] (DDS) transport, adds real-time guarantees, multi-platform support, and security (SROS2) absent from the original ROS 1, making it the de-facto integration substrate for both research robots and production autonomous systems, and a bridging target for [[VisionClaw Agentic Container]] agent skills interacting with physical hardware.",
-  "vc:qualityScore": {
-    "@value": "0.70",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.85",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems-platform",
-      "vc:label": "Autonomous Systems Platform"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-software-stack",
-      "vc:label": "Robotic Software Stack"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:colcon-build-system",
-      "vc:label": "colcon Build System"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-action",
-      "vc:label": "ROS Action"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-node",
-      "vc:label": "ROS Node"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-package",
-      "vc:label": "ROS Package"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-service",
-      "vc:label": "ROS Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:ros-topic",
-      "vc:label": "ROS Topic"
-    },
-    {
-      "@id": "urn:visionflow:linked:urdf-robot-model",
-      "vc:label": "URDF Robot Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cmake-build-system",
-      "vc:label": "CMake Build System"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-distribution-service",
-      "vc:label": "Data Distribution Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-3",
-      "vc:label": "Python 3"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:robot-simulation",
-      "vc:label": "Robot Simulation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:autonomous-navigation",
-      "vc:label": "Autonomous Navigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hardware-abstraction",
-      "vc:label": "Hardware Abstraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:motion-planning",
-      "vc:label": "Motion Planning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:dds-rtps-protocol",
-      "vc:label": "DDS RTPS Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:rep-standards",
-      "vc:label": "REP Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:sros2-security",
-      "vc:label": "SROS2 Security"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:c-rclcpp",
-      "vc:label": "C++ rclcpp"
-    },
-    {
-      "@id": "urn:visionflow:linked:cyclone-dds",
-      "vc:label": "CycloneDDS"
-    },
-    {
-      "@id": "urn:visionflow:linked:e-prosima-fast-dds",
-      "vc:label": "eProsima Fast DDS"
-    },
-    {
-      "@id": "urn:visionflow:linked:python-rclpy",
-      "vc:label": "Python rclpy"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:gazebo-simulator",
-      "vc:label": "Gazebo Simulator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-context-protocol",
-      "vc:label": "Model Context Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ]
+  "quality": 0.7,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

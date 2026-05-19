@@ -3,102 +3,119 @@
   "title": "Digital Constitution",
   "slug": "digital-constitution",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-constitution",
+  "classIri": "urn:ngm:class:digital-constitution",
   "domain": "spatial-computing",
-  "definition": "A foundational governance document establishing the core principles, rights, responsibilities, governance structures, and amendment procedures for a virtual society, serving as the supreme law and social contract for metaverse communities and digital platforms. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Constitution is a type of Virtual Society in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-society",
+      "id": "urn:ngm:class:virtual-society",
       "label": "Virtual Society"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:amendment-procedure",
+        "id": "urn:ngm:class:amendment-procedure",
         "label": "Amendment Procedure"
       },
       {
-        "id": "urn:visionflow:linked:bill-of-rights",
+        "id": "urn:ngm:class:bill-of-rights",
         "label": "Bill of Rights"
       },
       {
-        "id": "urn:visionflow:linked:checks-and-balances",
+        "id": "urn:ngm:class:checks-and-balances",
         "label": "Checks and Balances"
       },
       {
-        "id": "urn:visionflow:linked:constitutional-rights",
+        "id": "urn:ngm:class:constitutional-rights",
         "label": "Constitutional Rights"
       },
       {
-        "id": "urn:visionflow:linked:enforcement-mechanism",
+        "id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:judicial-system",
+        "id": "urn:ngm:class:judicial-system",
         "label": "Judicial System"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-citizenship",
+        "id": "urn:ngm:class:digital-citizenship",
         "label": "Digital Citizenship"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-structure",
+        "id": "urn:ngm:class:governance-structure",
         "label": "Governance Structure"
       },
       {
-        "id": "urn:visionflow:owl:class:separation-of-powers",
+        "id": "urn:ngm:class:separation-of-powers",
         "label": "Separation of Powers"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:legal-framework",
+        "id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:legitimate-authority",
+        "id": "urn:ngm:class:legitimate-authority",
         "label": "Legitimate Authority"
       },
       {
-        "id": "urn:visionflow:linked:rights-protection",
+        "id": "urn:ngm:class:rights-protection",
         "label": "Rights Protection"
       },
       {
-        "id": "urn:visionflow:owl:class:democratic-governance",
+        "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:rule-of-law",
+        "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
       },
       {
-        "id": "urn:visionflow:owl:class:social-contract",
+        "id": "urn:ngm:class:social-contract",
         "label": "Social Contract"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "id": "urn:ngm:class:virtual-society",
+        "label": "Virtual Society"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

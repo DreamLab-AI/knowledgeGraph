@@ -476,272 +476,207 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:decentralised-file-storage",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:decentralised-file-storage",
+  "@type": "Class",
   "label": "Decentralised file storage",
+  "definition": "Decentralised file storage denotes a class of infrastructure protocols and networks that disaggregate object/blob persistence across geographically distributed, mutually untrusting node operators using content-addressing, cryptographic accountability, and (in most implementations) crypto-economic...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:content-addressed-storage",
-      "vc:label": "Content-Addressed Storage"
+      "@id": "urn:ngm:class:content-addressed-storage",
+      "label": "Content-Addressed Storage"
     },
     {
-      "@id": "urn:visionflow:linked:distributed-storage",
-      "vc:label": "Distributed Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:permissionless-protocol",
-      "vc:label": "Permissionless Protocol"
+      "@id": "urn:ngm:class:distributed-storage",
+      "label": "Distributed Storage"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c40b06eae74f3185404664d43c30f07d665f79c6e218d1f8a8dd44a1d6d29d61"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:pinning-service",
+        "label": "Pinning Service"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-market",
+        "label": "Retrieval Market"
+      },
+      {
+        "@id": "urn:ngm:class:storage-proof",
+        "label": "Storage Proof"
+      },
+      {
+        "@id": "urn:ngm:class:storage-provider",
+        "label": "Storage Provider"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:disk-storage",
+        "label": "Disk Storage"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:nft-metadata-persistence",
+        "label": "NFT Metadata Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:permaweb",
+        "label": "Permaweb"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-storage",
+        "label": "Verifiable Storage"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bitswap-protocol",
+        "label": "Bitswap Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-replication",
+        "label": "Proof of Replication"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-spacetime",
+        "label": "Proof of Spacetime"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-erasure-coding",
+        "label": "Reed-Solomon Erasure Coding"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:car-file",
+        "label": "CAR File"
+      },
+      {
+        "@id": "urn:ngm:class:cid",
+        "label": "CID"
+      },
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      },
+      {
+        "@id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "@id": "urn:ngm:class:ucan",
+        "label": "UCAN"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-dataset-distribution",
+        "label": "AI Dataset Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-web",
+        "label": "Decentralized Web"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ipld-specifications",
+        "label": "IPLD Specifications"
+      },
+      {
+        "@id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "@id": "urn:ngm:class:ucan-working-group",
+        "label": "UCAN Working Group"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c40b06eae74f3185404664d43c30f07d665f79c6e218d1f8a8dd44a1d6d29d61@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Decentralised file storage denotes a class of infrastructure protocols and networks that disaggregate object/blob persistence across geographically distributed, mutually untrusting node operators using content-addressing, cryptographic accountability, and (in most implementations) crypto-economic incentives, in contrast to single-operator cloud object stores (S3, GCS, R2) and CDN edges (Cloudflare, Akamai, Fastly), spanning content-addressed peer-to-peer networks ([[IPFS]] launched 2015 by Juan Benet, libp2p transport, CID multi-hash addressing producing self-verifying identifiers like bafybeig..., DHT-based Kademlia content routing across 250K+ public nodes, retrieval bitswap protocol exchanging blocks 4KB-1MB), permanent storage chains ([[Arweave]] mainnet 2018 founded by Sam Williams Sevki Hasirci, \"blockweave\" SPoRA Succinct Proofs of Random Access consensus, single up-front AR-token payment endowing 200-year minimum persistence via 20%/year storage cost decline model, ~150PB stored 2025, permaweb decentralized web served via gateways arweave.net/arweave.dev), incentivized retrieval markets ([[Filecoin]] mainnet October 2020 also by Juan Benet/Protocol Labs as IPFS's incentive ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:content-identifier",
-      "vc:label": "Content Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-hash-table",
-      "vc:label": "Distributed Hash Table"
-    },
-    {
-      "@id": "urn:visionflow:linked:erasure-coding",
-      "vc:label": "Erasure Coding"
-    },
-    {
-      "@id": "urn:visionflow:linked:pinning-service",
-      "vc:label": "Pinning Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-market",
-      "vc:label": "Retrieval Market"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-proof",
-      "vc:label": "Storage Proof"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-provider",
-      "vc:label": "Storage Provider"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth",
-      "vc:label": "Bandwidth"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:disk-storage",
-      "vc:label": "Disk Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:libp2p",
-      "vc:label": "libp2p"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-sovereignty",
-      "vc:label": "Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft-metadata-persistence",
-      "vc:label": "NFT Metadata Persistence"
-    },
-    {
-      "@id": "urn:visionflow:linked:permaweb",
-      "vc:label": "Permaweb"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-storage",
-      "vc:label": "Verifiable Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:censorship-resistance",
-      "vc:label": "Censorship Resistance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bitswap-protocol",
-      "vc:label": "Bitswap Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:kademlia-dht",
-      "vc:label": "Kademlia DHT"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-replication",
-      "vc:label": "Proof of Replication"
-    },
-    {
-      "@id": "urn:visionflow:linked:proof-of-spacetime",
-      "vc:label": "Proof of Spacetime"
-    },
-    {
-      "@id": "urn:visionflow:linked:reed-solomon-erasure-coding",
-      "vc:label": "Reed-Solomon Erasure Coding"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:distributed-hash-table",
-      "vc:label": "Distributed Hash Table"
-    },
-    {
-      "@id": "urn:visionflow:linked:zk-snark",
-      "vc:label": "zk-SNARK"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:merkle-tree",
-      "vc:label": "Merkle Tree"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-cryptography",
-      "vc:label": "Public Key Cryptography"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:ai-dataset-distribution",
-      "vc:label": "AI Dataset Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-application",
-      "vc:label": "Decentralized Application"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-web",
-      "vc:label": "Decentralized Web"
-    },
-    {
-      "@id": "urn:visionflow:linked:nft",
-      "vc:label": "NFT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-storage",
-      "vc:label": "Decentralized Storage"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:car-file",
-      "vc:label": "CAR File"
-    },
-    {
-      "@id": "urn:visionflow:linked:cid",
-      "vc:label": "CID"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipld",
-      "vc:label": "IPLD"
-    },
-    {
-      "@id": "urn:visionflow:linked:multihash",
-      "vc:label": "Multihash"
-    },
-    {
-      "@id": "urn:visionflow:linked:ucan",
-      "vc:label": "UCAN"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-file-server",
-      "vc:label": "Centralised File Server"
-    },
-    {
-      "@id": "urn:visionflow:linked:cloud-object-storage",
-      "vc:label": "Cloud Object Storage"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-delivery-network",
-      "vc:label": "Content Delivery Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-attached-storage",
-      "vc:label": "Network Attached Storage"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:decentralized-identity",
-      "vc:label": "Decentralized Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ledger-technology",
-      "vc:label": "Distributed Ledger Technology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:tokenomics",
-      "vc:label": "Tokenomics"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:ipld-specifications",
-      "vc:label": "IPLD Specifications"
-    },
-    {
-      "@id": "urn:visionflow:linked:multiformats",
-      "vc:label": "Multiformats"
-    },
-    {
-      "@id": "urn:visionflow:linked:ucan-working-group",
-      "vc:label": "UCAN Working Group"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

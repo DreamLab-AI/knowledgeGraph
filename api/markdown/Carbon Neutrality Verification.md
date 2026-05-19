@@ -156,76 +156,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:carbon-neutrality-verification",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:carbon-neutrality-verification",
+  "@type": "Class",
   "label": "Carbon Neutrality Verification",
+  "definition": "The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:environmental-verification",
-      "vc:label": "Environmental Verification"
+      "@id": "urn:ngm:class:environmental-verification",
+      "label": "Environmental Verification"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:055541416ec7511179a1b726f0267a3dad36ae2a6dcb94f5b1384aa903e4923d"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:documentation-package",
+        "label": "Documentation Package"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-auditor",
+        "label": "Third Party Auditor"
+      },
+      {
+        "@id": "urn:ngm:class:verification-standard",
+        "label": "Verification Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:credibility-assurance",
+        "label": "Credibility Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing-prevention",
+        "label": "Greenwashing Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:055541416ec7511179a1b726f0267a3dad36ae2a6dcb94f5b1384aa903e4923d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:documentation-package",
-      "vc:label": "Documentation Package"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:third-party-auditor",
-      "vc:label": "Third Party Auditor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:verification-standard",
-      "vc:label": "Verification Standard"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:credibility-assurance",
-      "vc:label": "Credibility Assurance"
-    },
-    {
-      "@id": "urn:visionflow:linked:greenwashing-prevention",
-      "vc:label": "Greenwashing Prevention"
-    },
-    {
-      "@id": "urn:visionflow:linked:stakeholder-trust",
-      "vc:label": "Stakeholder Trust"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

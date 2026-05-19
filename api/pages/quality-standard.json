@@ -3,19 +3,18 @@
   "title": "Quality Standard",
   "slug": "quality-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:quality-standard",
+  "classIri": "urn:ngm:class:quality-standard",
   "domain": "robotics",
   "definition": "Quality standard defines requirements for quality management in robot manufacturing and deployment.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robot-standard",
+      "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,41 @@
   "title": "Gas Optimization",
   "slug": "gas-optimization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:gas-optimization",
+  "classIri": "urn:ngm:class:gas-optimization",
   "domain": "blockchain",
-  "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic viability.",
+  "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic vi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain",
+      "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:scalability-solutions",
+        "id": "urn:ngm:class:scalability-solutions",
         "label": "Scalability Solutions"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

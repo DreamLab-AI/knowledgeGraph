@@ -172,48 +172,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:accountable-party",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:accountable-party",
+  "@type": "Class",
   "label": "Accountable Party",
+  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ical standards.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-governance-principle",
-      "vc:label": "AI Governance Principle"
+      "@id": "urn:ngm:class:ai-governance-principle",
+      "label": "AI Governance Principle"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:058bcf26a8b147ba35a44424a27dc4d98a42ecf1cb02a76d61ffee53e37bba20@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ethical standards. Accountability in AI contexts addresses the critical question: when AI systems cause harm or produce unfair outcomes, who bears responsibility and what obligations do they have to prevent, detect, and remediate problems? Accountable parties span the AI lifecycle and value chain: data providers responsible for data quality and representativeness, model developers accountable for technical robustness and bias mitigation, deploying organizations responsible for appropriate use and human oversight, operators accountable for monitoring and maintenance, and governance bodies responsible for policy and compliance. Accountability requires more than merely identifying responsible parties—it demands establishing clear obligations, providing necessary authority and resources, implementing monitoring and reporting mechanisms, and enforcing consequences for failures. The complexity of AI systems crea",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.95",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

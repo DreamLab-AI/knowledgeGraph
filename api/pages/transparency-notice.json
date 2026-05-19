@@ -3,19 +3,18 @@
   "title": "Transparency Notice",
   "slug": "transparency-notice",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:transparency-notice",
+  "classIri": "urn:ngm:class:transparency-notice",
   "domain": "artificial-intelligence",
   "definition": "A formal disclosure document or notification that informs users about data collection practices, processing purposes, privacy policies, and their rights regarding personal information handling in digital platforms and metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:privacy-disclosure",
+      "id": "urn:ngm:class:privacy-disclosure",
       "label": "Privacy Disclosure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

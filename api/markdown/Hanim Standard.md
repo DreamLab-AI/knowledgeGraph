@@ -132,54 +132,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hanim-standard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hanim-standard",
+  "@type": "Class",
   "label": "Hanim Standard",
+  "definition": "Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulat...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:animation-standard",
-      "vc:label": "Animation Standard"
+      "@id": "urn:ngm:class:animation-standard",
+      "label": "Animation Standard"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:52e75916ea52f86edfd9464f2194a4f957b5ec83e3c11b50ec041e78ca4d4bf6"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-platform-avatars",
+        "label": "Cross-Platform Avatars"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:52e75916ea52f86edfd9464f2194a4f957b5ec83e3c11b50ec041e78ca4d4bf6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulations, and virtual environments.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:cross-platform-avatars",
-      "vc:label": "Cross-Platform Avatars"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

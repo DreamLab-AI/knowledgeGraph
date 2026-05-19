@@ -3,19 +3,18 @@
   "title": "rb 0019 exoskeleton robot",
   "slug": "rb-0019-exoskeleton-robot",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:rb-0019-exoskeleton-robot",
+  "classIri": "urn:ngm:class:rb-0019-exoskeleton-robot",
   "domain": "robotics",
   "definition": "exoskeleton robot is a robotics and autonomous systems concept and a type of Exoskeleton Robot.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:exoskeleton-robot",
+      "id": "urn:ngm:class:exoskeleton-robot",
       "label": "Exoskeleton Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

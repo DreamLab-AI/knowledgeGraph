@@ -3,53 +3,57 @@
   "title": "Ar Scene Graph",
   "slug": "ar-scene-graph",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-scene-graph",
+  "classIri": "urn:ngm:class:ar-scene-graph",
   "domain": "spatial-computing",
-  "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital content and physical environments.",
+  "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital cont...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-data-structure",
+      "id": "urn:ngm:class:spatial-data-structure",
       "label": "Spatial Data Structure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-scene-reconstruction",
+        "id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "3D Scene Reconstruction"
       },
       {
-        "id": "urn:visionflow:linked:spatial-relationships",
+        "id": "urn:ngm:class:spatial-relationships",
         "label": "Spatial Relationships"
       },
       {
-        "id": "urn:visionflow:owl:class:object-detection",
+        "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:context-aware-ar",
+        "id": "urn:ngm:class:context-aware-ar",
         "label": "Context-Aware AR"
       },
       {
-        "id": "urn:visionflow:linked:retargetable-ar-experiences",
+        "id": "urn:ngm:class:retargetable-ar-experiences",
         "label": "Retargetable AR Experiences"
       },
       {
-        "id": "urn:visionflow:linked:semantic-scene-understanding",
+        "id": "urn:ngm:class:semantic-scene-understanding",
         "label": "Semantic Scene Understanding"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

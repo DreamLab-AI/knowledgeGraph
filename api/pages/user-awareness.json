@@ -3,19 +3,18 @@
   "title": "User Awareness",
   "slug": "user-awareness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-awareness",
+  "classIri": "urn:ngm:class:user-awareness",
   "domain": "spatial-computing",
   "definition": "The understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:user-education",
+      "id": "urn:ngm:class:user-education",
       "label": "User Education"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Servo Motor",
   "slug": "servo-motor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:servo-motor",
+  "classIri": "urn:ngm:class:servo-motor",
   "domain": "robotics",
   "definition": "Servo motor provides precise position, velocity, and torque control.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:electric-motor",
+      "id": "urn:ngm:class:electric-motor",
       "label": "Electric Motor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

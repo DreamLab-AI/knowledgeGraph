@@ -440,340 +440,263 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:meeting-ai-assistant",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:meeting-ai-assistant",
+  "@type": "Class",
   "label": "Meeting AI Assistant",
+  "definition": "An AI-powered software agent that attends synchronous and asynchronous [[Virtual Meetings]] either as an autonomous bot participant or as capability embedded within a [[Meeting Platform]], providing continuous [[Automated Transcription]] via large-vocabulary [[Automatic Speech Recognition]] (ASR)...",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:ai-agent",
-      "vc:label": "AI Agent"
+      "@id": "urn:ngm:class:ai-agent",
+      "label": "AI Agent"
     },
     {
-      "@id": "urn:visionflow:linked:collaboration-software",
-      "vc:label": "Collaboration Software"
-    },
-    {
-      "@id": "urn:visionflow:linked:meeting-support-tools",
-      "vc:label": "Meeting Support Tools"
+      "@id": "urn:ngm:class:collaboration-software",
+      "label": "Collaboration Software"
     }
   ],
-  "vc:sourceDomain": "distributed-collaboration",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0ab69718866c4713db2c6bdefbb18926586cd17825c9951ac1c236d1aafe0fb3"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:action-item-extraction",
+        "label": "Action Item Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:integration-connector",
+        "label": "Integration Connector"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-minutes-generation",
+        "label": "Meeting Minutes Generation"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-summarisation",
+        "label": "Meeting Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:audio-stream",
+        "label": "Audio Stream"
+      },
+      {
+        "@id": "urn:ngm:class:llm-based-text-generation",
+        "label": "LLM-based Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-platform-access",
+        "label": "Meeting Platform Access"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-identity-model",
+        "label": "Speaker Identity Model"
+      },
+      {
+        "@id": "urn:ngm:class:transcription-engine",
+        "label": "Transcription Engine"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asynchronous-meeting-access",
+        "label": "Asynchronous Meeting Access"
+      },
+      {
+        "@id": "urn:ngm:class:decision-audit-trail",
+        "label": "Decision Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-team-coordination",
+        "label": "Distributed Team Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-preservation",
+        "label": "Knowledge Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:meeting-automation",
+        "label": "Meeting Automation"
+      },
+      {
+        "@id": "urn:ngm:class:post-meeting-workflow",
+        "label": "Post-Meeting Workflow"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:abstractive-summarisation",
+        "label": "Abstractive Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:extractive-summarisation",
+        "label": "Extractive Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:intent-detection",
+        "label": "Intent Detection"
+      },
+      {
+        "@id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:diarisation-models",
+        "label": "Diarisation Models"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      },
+      {
+        "@id": "urn:ngm:class:summarisation-models",
+        "label": "Summarisation Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-models",
+        "label": "Transformer Models"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crm-systems",
+        "label": "CRM Systems"
+      },
+      {
+        "@id": "urn:ngm:class:employee-monitoring",
+        "label": "Employee Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-meeting-platforms",
+        "label": "Virtual Meeting Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:workplace-privacy",
+        "label": "Workplace Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:customer-success",
+        "label": "Customer Success"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "@id": "urn:ngm:class:hr-performance-review",
+        "label": "HR Performance Review"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:sales-enablement",
+        "label": "Sales Enablement"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ico-guidance-on-workplace-monitoring-2024",
+        "label": "ICO Guidance on Workplace Monitoring 2024"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:uk-data-protection-act-2018",
+        "label": "UK Data Protection Act 2018"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0ab69718866c4713db2c6bdefbb18926586cd17825c9951ac1c236d1aafe0fb3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An AI-powered software agent that attends synchronous and asynchronous [[Virtual Meetings]] either as an autonomous bot participant or as capability embedded within a [[Meeting Platform]], providing continuous [[Automated Transcription]] via large-vocabulary [[Automatic Speech Recognition]] (ASR) engines at word-error rates of 3–12% on clean English business audio (rising to 18–35% on far-field multi-speaker recordings with overlapping speech or heavy accent variation), [[Speaker Diarisation]] that segments the audio timeline and assigns utterances to named participant identities using voiceprint clustering (d-vector / x-vector architectures) or authentication-linked platform identity, [[Summarisation]] compressing hours of meeting dialogue into structured artefacts including executive summary, narrative thread, decision log, and open-questions register through abstractive LLM-based generation achieving ROUGE-L 0.42–0.58 on the AMI Meeting Corpus benchmark, [[Action Item Extraction]] identifying verbal commitments and populating owner, deadline, and task-description fields via slot-filling or generative NLP models achieving F1 0.72–0.85 on annotated meeting corpora, [[Sentiment Ana",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:action-item-extraction",
-      "vc:label": "Action Item Extraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:integration-connector",
-      "vc:label": "Integration Connector"
-    },
-    {
-      "@id": "urn:visionflow:linked:meeting-minutes-generation",
-      "vc:label": "Meeting Minutes Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:meeting-summarisation",
-      "vc:label": "Meeting Summarisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-diarisation",
-      "vc:label": "Speaker Diarisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consent-management",
-      "vc:label": "Consent Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sentiment-analysis",
-      "vc:label": "Sentiment Analysis"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:audio-stream",
-      "vc:label": "Audio Stream"
-    },
-    {
-      "@id": "urn:visionflow:linked:llm-based-text-generation",
-      "vc:label": "LLM-based Text Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:meeting-platform-access",
-      "vc:label": "Meeting Platform Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-identity-model",
-      "vc:label": "Speaker Identity Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:transcription-engine",
-      "vc:label": "Transcription Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asynchronous-meeting-access",
-      "vc:label": "Asynchronous Meeting Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:decision-audit-trail",
-      "vc:label": "Decision Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-team-coordination",
-      "vc:label": "Distributed Team Coordination"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-preservation",
-      "vc:label": "Knowledge Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:meeting-automation",
-      "vc:label": "Meeting Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-meeting-workflow",
-      "vc:label": "Post-Meeting Workflow"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:abstractive-summarisation",
-      "vc:label": "Abstractive Summarisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:automatic-speech-recognition",
-      "vc:label": "Automatic Speech Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:extractive-summarisation",
-      "vc:label": "Extractive Summarisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:intent-detection",
-      "vc:label": "Intent Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:slot-filling",
-      "vc:label": "Slot Filling"
-    },
-    {
-      "@id": "urn:visionflow:linked:speaker-diarisation",
-      "vc:label": "Speaker Diarisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:named-entity-recognition",
-      "vc:label": "Named Entity Recognition"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:bert-based-nlp",
-      "vc:label": "BERT-based NLP"
-    },
-    {
-      "@id": "urn:visionflow:linked:calendar-integration",
-      "vc:label": "Calendar Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:conformer-architecture",
-      "vc:label": "Conformer Architecture"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-database",
-      "vc:label": "Vector Database"
-    },
-    {
-      "@id": "urn:visionflow:linked:whisper-asr",
-      "vc:label": "Whisper ASR"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-infrastructure",
-      "vc:label": "Cloud Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:customer-success",
-      "vc:label": "Customer Success"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-teams",
-      "vc:label": "Distributed Teams"
-    },
-    {
-      "@id": "urn:visionflow:linked:hr-performance-review",
-      "vc:label": "HR Performance Review"
-    },
-    {
-      "@id": "urn:visionflow:linked:remote-work",
-      "vc:label": "Remote Work"
-    },
-    {
-      "@id": "urn:visionflow:linked:sales-enablement",
-      "vc:label": "Sales Enablement"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:asynchronous-collaboration",
-      "vc:label": "Asynchronous Collaboration"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:diarisation-models",
-      "vc:label": "Diarisation Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-transcription",
-      "vc:label": "Real-time Transcription"
-    },
-    {
-      "@id": "urn:visionflow:linked:speech-processing",
-      "vc:label": "Speech Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:summarisation-models",
-      "vc:label": "Summarisation Models"
-    },
-    {
-      "@id": "urn:visionflow:linked:transformer-models",
-      "vc:label": "Transformer Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-graph",
-      "vc:label": "Knowledge Graph"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:email-thread-summaries",
-      "vc:label": "Email Thread Summaries"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-minute-taker",
-      "vc:label": "Human Minute Taker"
-    },
-    {
-      "@id": "urn:visionflow:linked:manual-note-taking",
-      "vc:label": "Manual Note Taking"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-hoc-recording-review",
-      "vc:label": "Post-hoc Recording Review"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:crm-systems",
-      "vc:label": "CRM Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:employee-monitoring",
-      "vc:label": "Employee Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:project-management",
-      "vc:label": "Project Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-gdpr",
-      "vc:label": "UK GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-meeting-platforms",
-      "vc:label": "Virtual Meeting Platforms"
-    },
-    {
-      "@id": "urn:visionflow:linked:workplace-privacy",
-      "vc:label": "Workplace Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ccpa",
-      "vc:label": "CCPA"
-    },
-    {
-      "@id": "urn:visionflow:linked:gdpr",
-      "vc:label": "GDPR"
-    },
-    {
-      "@id": "urn:visionflow:linked:ico-guidance-on-workplace-monitoring-2024",
-      "vc:label": "ICO Guidance on Workplace Monitoring 2024"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-27001",
-      "vc:label": "ISO/IEC 27001"
-    },
-    {
-      "@id": "urn:visionflow:linked:uk-data-protection-act-2018",
-      "vc:label": "UK Data Protection Act 2018"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

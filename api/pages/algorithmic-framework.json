@@ -3,19 +3,18 @@
   "title": "Algorithmic Framework",
   "slug": "algorithmic-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:algorithmic-framework",
+  "classIri": "urn:ngm:class:algorithmic-framework",
   "domain": "artificial-intelligence",
   "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:ai-framework",
+      "id": "urn:ngm:class:ai-framework",
       "label": "AI Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

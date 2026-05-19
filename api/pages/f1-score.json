@@ -3,19 +3,18 @@
   "title": "F1 Score",
   "slug": "f1-score",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:f1-score",
+  "classIri": "urn:ngm:class:f1-score",
   "domain": "spatial-computing",
-  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst penalising extreme imbalances, particularly useful for comparing models or setting decision thresholds when both prediction reliability and completeness are important and when class distributions are imbalanced.",
+  "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst pena...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ]
   },
   "wikilinks": [
     {

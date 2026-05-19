@@ -3,19 +3,18 @@
   "title": "Virtual Production",
   "slug": "virtual-production",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-production",
+  "classIri": "urn:ngm:class:virtual-production",
   "domain": "spatial-computing",
   "definition": "Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:real-time-rendering",
+      "id": "urn:ngm:class:real-time-rendering",
       "label": "Real Time Rendering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.94,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

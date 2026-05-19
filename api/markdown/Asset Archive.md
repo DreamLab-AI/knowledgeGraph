@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:asset-archive",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:asset-archive",
+  "@type": "Class",
   "label": "Asset Archive",
+  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:digital-repository",
-      "vc:label": "Digital Repository"
+      "@id": "urn:ngm:class:digital-repository",
+      "label": "Digital Repository"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:standardized-formats",
+        "label": "Standardized Formats"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:asset-preservation",
+        "label": "Asset Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:content-reuse",
+        "label": "Content Reuse"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0a1168147885d160e28843a3e0bf1386ae1c6c8e5fe16ad4e212bdac7ee6ff86@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across metaverse platforms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:standardized-formats",
-      "vc:label": "Standardized Formats"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:storage-infrastructure",
-      "vc:label": "Storage Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:asset-preservation",
-      "vc:label": "Asset Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:content-reuse",
-      "vc:label": "Content Reuse"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-interoperability",
-      "vc:label": "Cross-Platform Interoperability"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

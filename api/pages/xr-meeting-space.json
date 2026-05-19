@@ -3,19 +3,18 @@
   "title": "XR Meeting Space",
   "slug": "xr-meeting-space",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:xr-meeting-space",
+  "classIri": "urn:ngm:class:xr-meeting-space",
   "domain": "spatial-computing",
-  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based communication.",
+  "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based co...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-collaboration",
+      "id": "urn:ngm:class:virtual-collaboration",
       "label": "Virtual Collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

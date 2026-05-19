@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:microservices-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:microservices-architecture",
+  "@type": "Class",
   "label": "Microservices Architecture",
+  "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:system-architecture",
-      "vc:label": "System Architecture"
+      "@id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:bd21afd6b47499c69ed60333042df3f05f48cc7c6d12b61d37d4345002d5aadf"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalable-applications",
+        "label": "Scalable Applications"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bd21afd6b47499c69ed60333042df3f05f48cc7c6d12b61d37d4345002d5aadf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:scalable-applications",
-      "vc:label": "Scalable Applications"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

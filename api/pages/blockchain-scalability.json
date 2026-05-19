@@ -3,78 +3,78 @@
   "title": "Blockchain Scalability",
   "slug": "blockchain-scalability",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-scalability",
+  "classIri": "urn:ngm:class:blockchain-scalability",
   "domain": "blockchain",
-  "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.",
+  "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:protocol-architecture",
+      "id": "urn:ngm:class:protocol-architecture",
       "label": "Protocol Architecture"
     },
     {
-      "id": "urn:visionflow:linked:system-performance",
+      "id": "urn:ngm:class:system-performance",
       "label": "System Performance"
-    },
-    {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
-      "label": "Blockchain Entity"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.65,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:layer-2-solution",
+        "id": "urn:ngm:class:layer-2-solution",
         "label": "Layer 2 Solution"
       },
       {
-        "id": "urn:visionflow:linked:rollup",
+        "id": "urn:ngm:class:rollup",
         "label": "Rollup"
       },
       {
-        "id": "urn:visionflow:linked:sharding",
+        "id": "urn:ngm:class:sharding",
         "label": "Sharding"
       },
       {
-        "id": "urn:visionflow:owl:class:state-channel",
+        "id": "urn:ngm:class:state-channel",
         "label": "State Channel"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:network-infrastructure",
+        "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:high-throughput",
+        "id": "urn:ngm:class:high-throughput",
         "label": "High Throughput"
       },
       {
-        "id": "urn:visionflow:linked:low-latency",
+        "id": "urn:ngm:class:low-latency",
         "label": "Low Latency"
       },
       {
-        "id": "urn:visionflow:linked:mass-adoption",
+        "id": "urn:ngm:class:mass-adoption",
         "label": "Mass Adoption"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

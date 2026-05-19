@@ -112,41 +112,26 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:vocabulary-governance",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:vocabulary-governance",
+  "@type": "Class",
   "label": "Vocabulary Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-management",
-      "vc:label": "Knowledge Management"
-    }
-  ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b"
+  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistenc...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cd9347d2c161afe6294f04e4219df087e735ba4d221854c4111dbca94fd7e45b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

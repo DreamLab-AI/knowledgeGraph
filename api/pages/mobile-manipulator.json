@@ -3,19 +3,18 @@
   "title": "Mobile Manipulator",
   "slug": "mobile-manipulator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:mobile-manipulator",
+  "classIri": "urn:ngm:class:mobile-manipulator",
   "domain": "robotics",
   "definition": "Mobile manipulator integrates locomotion with manipulation capabilities.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:hybrid-robot",
+      "id": "urn:ngm:class:hybrid-robot",
       "label": "Hybrid Robot"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

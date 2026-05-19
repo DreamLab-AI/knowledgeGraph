@@ -3,82 +3,99 @@
   "title": "Autonomous Agent",
   "slug": "autonomous-agent",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:autonomous-agent",
+  "classIri": "urn:ngm:class:autonomous-agent",
   "domain": "spatial-computing",
   "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:action-executor",
+        "id": "urn:ngm:class:action-executor",
         "label": "Action Executor"
       },
       {
-        "id": "urn:visionflow:linked:decision-engine",
+        "id": "urn:ngm:class:decision-engine",
         "label": "Decision Engine"
       },
       {
-        "id": "urn:visionflow:linked:goal-system",
+        "id": "urn:ngm:class:goal-system",
         "label": "Goal System"
       },
       {
-        "id": "urn:visionflow:linked:perception-module",
+        "id": "urn:ngm:class:perception-module",
         "label": "Perception Module"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-component",
+        "id": "urn:ngm:class:learning-component",
         "label": "Learning Component"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:computational-resources",
+        "id": "urn:ngm:class:computational-resources",
         "label": "Computational Resources"
       },
       {
-        "id": "urn:visionflow:linked:goal-specification",
+        "id": "urn:ngm:class:goal-specification",
         "label": "Goal Specification"
       },
       {
-        "id": "urn:visionflow:owl:class:runtime-environment",
+        "id": "urn:ngm:class:runtime-environment",
         "label": "Runtime Environment"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:autonomous-behavior",
+        "id": "urn:ngm:class:autonomous-behavior",
         "label": "Autonomous Behavior"
       },
       {
-        "id": "urn:visionflow:linked:decision-support",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
       },
       {
-        "id": "urn:visionflow:linked:process-automation",
+        "id": "urn:ngm:class:process-automation",
         "label": "Process Automation"
       },
       {
-        "id": "urn:visionflow:owl:class:content-moderation",
+        "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
       },
       {
-        "id": "urn:visionflow:owl:class:npc-interaction",
+        "id": "urn:ngm:class:npc-interaction",
         "label": "NPC Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-system",
+        "label": "AI System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-environment",
+        "label": "Intelligent Environment"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -200,110 +200,95 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-computing-node",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-computing-node",
+  "@type": "Class",
   "label": "Edge Computing Node",
+  "definition": "Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:3e706fcc61ae2b16000b41ef399971a2bf73bd1f2c76f784759220e1f89549a5"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:memory-module",
+        "label": "Memory Module"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      },
+      {
+        "@id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "@id": "urn:ngm:class:storage-unit",
+        "label": "Storage Unit"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:physical-housing",
+        "label": "Physical Housing"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:local-data-processing",
+        "label": "Local Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-processing",
+        "label": "Low Latency Processing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-time Analytics"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:edge-mesh-network",
+        "label": "Edge Mesh Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-network",
+        "label": "Edge Network"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3e706fcc61ae2b16000b41ef399971a2bf73bd1f2c76f784759220e1f89549a5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical computing resource deployed near data sources to reduce latency for immersive applications through localized processing.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:edge-mesh-network",
-      "vc:label": "Edge Mesh Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-network",
-      "vc:label": "Edge Network"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cooling-system",
-      "vc:label": "Cooling System"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu",
-      "vc:label": "GPU"
-    },
-    {
-      "@id": "urn:visionflow:linked:memory-module",
-      "vc:label": "Memory Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-interface",
-      "vc:label": "Network Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:processor",
-      "vc:label": "Processor"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-unit",
-      "vc:label": "Storage Unit"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:network-connectivity",
-      "vc:label": "Network Connectivity"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-housing",
-      "vc:label": "Physical Housing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bandwidth-optimization",
-      "vc:label": "Bandwidth Optimization"
-    },
-    {
-      "@id": "urn:visionflow:linked:local-data-processing",
-      "vc:label": "Local Data Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:low-latency-processing",
-      "vc:label": "Low Latency Processing"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-analytics",
-      "vc:label": "Real-time Analytics"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

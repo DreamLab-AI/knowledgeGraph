@@ -3,78 +3,91 @@
   "title": "Environmental Sustainability Label",
   "slug": "environmental-sustainability-label",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:environmental-sustainability-label",
+  "classIri": "urn:ngm:class:environmental-sustainability-label",
   "domain": "spatial-computing",
   "definition": "Certification process and label indicating compliance with environmental sustainability standards for digital infrastructure, energy consumption, and carbon footprint in metaverse operations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:governance-framework",
+      "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:certification-issuance",
+        "id": "urn:ngm:class:certification-issuance",
         "label": "Certification Issuance"
       },
       {
-        "id": "urn:visionflow:linked:energy-consumption-audit",
+        "id": "urn:ngm:class:energy-consumption-audit",
         "label": "Energy Consumption Audit"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-footprint-assessment",
+        "id": "urn:ngm:class:carbon-footprint-assessment",
         "label": "Carbon Footprint Assessment"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:energy-monitoring-system",
+        "id": "urn:ngm:class:energy-monitoring-system",
         "label": "Energy Monitoring System"
       },
       {
-        "id": "urn:visionflow:linked:infrastructure-metrics",
+        "id": "urn:ngm:class:infrastructure-metrics",
         "label": "Infrastructure Metrics"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-accounting",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
       },
       {
-        "id": "urn:visionflow:owl:class:third-party-auditor",
+        "id": "urn:ngm:class:third-party-auditor",
         "label": "Third-Party Auditor"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:green-infrastructure-certification",
+        "id": "urn:ngm:class:green-infrastructure-certification",
         "label": "Green Infrastructure Certification"
       },
       {
-        "id": "urn:visionflow:linked:sustainability-reporting",
+        "id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Reporting"
       },
       {
-        "id": "urn:visionflow:linked:user-trust-building",
+        "id": "urn:ngm:class:user-trust-building",
         "label": "User Trust Building"
       },
       {
-        "id": "urn:visionflow:owl:class:carbon-neutrality-verification",
+        "id": "urn:ngm:class:carbon-neutrality-verification",
         "label": "Carbon Neutrality Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability-compliance-system",
+        "label": "Sustainability Compliance System"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

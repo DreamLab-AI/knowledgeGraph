@@ -3,27 +3,31 @@
   "title": "Peerto Peer Protocol",
   "slug": "peerto-peer-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:peerto-peer-protocol",
+  "classIri": "urn:ngm:class:peerto-peer-protocol",
   "domain": "blockchain",
-  "definition": "Peerto Peer Protocol is a concept within the blockchain domain. Further enrichment pending.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:blockchain",
-      "label": "blockchain"
-    }
-  ],
+  "definition": "Peerto Peer Protocol is a blockchain concept.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

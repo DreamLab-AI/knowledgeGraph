@@ -3,110 +3,114 @@
   "title": "Virtual Notary Service",
   "slug": "virtual-notary-service",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-notary-service",
+  "classIri": "urn:ngm:class:virtual-notary-service",
   "domain": "spatial-computing",
   "definition": "Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:public-key-infrastructure",
+      "id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-trail-generator",
+        "id": "urn:ngm:class:audit-trail-generator",
         "label": "Audit Trail Generator"
       },
       {
-        "id": "urn:visionflow:linked:blockchain-anchoring",
+        "id": "urn:ngm:class:blockchain-anchoring",
         "label": "Blockchain Anchoring"
       },
       {
-        "id": "urn:visionflow:linked:certificate-authority-interface",
+        "id": "urn:ngm:class:certificate-authority-interface",
         "label": "Certificate Authority Interface"
       },
       {
-        "id": "urn:visionflow:linked:hash-function-module",
+        "id": "urn:ngm:class:hash-function-module",
         "label": "Hash Function Module"
       },
       {
-        "id": "urn:visionflow:linked:timestamping-service",
+        "id": "urn:ngm:class:timestamping-service",
         "label": "Timestamping Service"
       },
       {
-        "id": "urn:visionflow:linked:verification-protocol",
+        "id": "urn:ngm:class:verification-protocol",
         "label": "Verification Protocol"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature-verification",
+        "id": "urn:ngm:class:digital-signature-verification",
         "label": "Digital Signature Verification"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:timestamp-authority",
+        "id": "urn:ngm:class:timestamp-authority",
         "label": "Timestamp Authority"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:distributed-ledger-technology-dlt",
+        "id": "urn:ngm:class:distributed-ledger-technology-dlt",
         "label": "Distributed Ledger Technology (DLT)"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:document-authentication",
+        "id": "urn:ngm:class:document-authentication",
         "label": "Document Authentication"
       },
       {
-        "id": "urn:visionflow:linked:legal-compliance",
+        "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
       },
       {
-        "id": "urn:visionflow:linked:tamper-evidence",
+        "id": "urn:ngm:class:tamper-evidence",
         "label": "Tamper Evidence"
       },
       {
-        "id": "urn:visionflow:linked:trusted-timestamping",
+        "id": "urn:ngm:class:trusted-timestamping",
         "label": "Trusted Timestamping"
       },
       {
-        "id": "urn:visionflow:owl:class:audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "id": "urn:visionflow:owl:class:non-repudiation",
+        "id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-verification",
+        "id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

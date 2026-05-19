@@ -3,32 +3,36 @@
   "title": "Physical Network Hardware",
   "slug": "physical-network-hardware",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:physical-network-hardware",
+  "classIri": "urn:ngm:class:physical-network-hardware",
   "domain": "spatial-computing",
   "definition": "The networking infrastructure components that enable connectivity and data transmission for metaverse applications, including routers, switches, access points, edge computing devices, and 5G equipment required for low-latency immersive experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:network-infrastructure",
+      "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:low-latency-connectivity",
+        "id": "urn:ngm:class:low-latency-connectivity",
         "label": "Low Latency Connectivity"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

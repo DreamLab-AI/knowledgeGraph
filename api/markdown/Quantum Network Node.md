@@ -200,118 +200,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:quantum-network-node",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:quantum-network-node",
+  "@type": "Class",
   "label": "Quantum Network Node",
+  "definition": "Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:classical-communication-interface",
+        "label": "Classical Communication Interface"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-isolation-chamber",
+        "label": "Environmental Isolation Chamber"
+      },
+      {
+        "@id": "urn:ngm:class:optical-switch",
+        "label": "Optical Switch"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-light-source",
+        "label": "Quantum Light Source"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-memory-unit",
+        "label": "Quantum Memory Unit"
+      },
+      {
+        "@id": "urn:ngm:class:single-photon-detector",
+        "label": "Single Photon Detector"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:cryogenic-cooling",
+        "label": "Cryogenic Cooling"
+      },
+      {
+        "@id": "urn:ngm:class:optical-fiber-connection",
+        "label": "Optical Fiber Connection"
+      },
+      {
+        "@id": "urn:ngm:class:vibration-isolation",
+        "label": "Vibration Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:entanglement-distribution",
+        "label": "Entanglement Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-security",
+        "label": "Post-Quantum Security"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:ultra-secure-communication",
+        "label": "Ultra-Secure Communication"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:quantum-communication-network",
+        "label": "Quantum Communication Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:78765d328b4472326448494c13d9721a86b5f2e517d56d7e60f2340ef5881ea1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Physical device utilizing quantum mechanics principles to enable quantum key distribution (QKD) or entanglement transmission for ultra-secure communication channels.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:quantum-communication-network",
-      "vc:label": "Quantum Communication Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:network-infrastructure",
-      "vc:label": "Network Infrastructure"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:classical-communication-interface",
-      "vc:label": "Classical Communication Interface"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-isolation-chamber",
-      "vc:label": "Environmental Isolation Chamber"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-switch",
-      "vc:label": "Optical Switch"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-light-source",
-      "vc:label": "Quantum Light Source"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-memory-unit",
-      "vc:label": "Quantum Memory Unit"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-photon-detector",
-      "vc:label": "Single Photon Detector"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:cryogenic-cooling",
-      "vc:label": "Cryogenic Cooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-fiber-connection",
-      "vc:label": "Optical Fiber Connection"
-    },
-    {
-      "@id": "urn:visionflow:linked:vibration-isolation",
-      "vc:label": "Vibration Isolation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:power-supply",
-      "vc:label": "Power Supply"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:entanglement-distribution",
-      "vc:label": "Entanglement Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:post-quantum-security",
-      "vc:label": "Post-Quantum Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-cryptography",
-      "vc:label": "Quantum Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantum-key-distribution",
-      "vc:label": "Quantum Key Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:ultra-secure-communication",
-      "vc:label": "Ultra-Secure Communication"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

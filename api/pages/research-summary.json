@@ -3,19 +3,18 @@
   "title": "RESEARCH_SUMMARY",
   "slug": "research-summary",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:research-summary",
+  "classIri": "urn:ngm:class:research-summary",
   "domain": "spatial-computing",
-  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across [[Metaverse]], [[Blockchain]], [[ArtificialIntelligence]], and [[Robotics]] domains. This summary distils empirical evidence, theoretical frameworks, and future research directions for stakeholders.",
+  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across [[Metaverse]], [[Blockchain]], [[ArtificialIntelligence]], and [[Robotics]] domains.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

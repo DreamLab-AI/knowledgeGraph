@@ -272,164 +272,117 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:auto-ml",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:auto-ml",
+  "@type": "Class",
   "label": "AutoML",
+  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyp...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:automated-optimisation-system",
-      "vc:label": "Automated Optimisation System"
+      "@id": "urn:ngm:class:automated-optimisation-system",
+      "label": "Automated Optimisation System"
     },
     {
-      "@id": "urn:visionflow:owl:class:machine-learning-pipeline",
-      "vc:label": "Machine Learning Pipeline"
+      "@id": "urn:ngm:class:machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "established",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:algorithm-selection",
+        "label": "Algorithm Selection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering-automation",
+        "label": "Feature Engineering Automation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-optimisation",
+        "label": "Pipeline Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:computational-budget",
+        "label": "Computational Budget"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:search-space-definition",
+        "label": "Search Space Definition"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:democratised-ml-development",
+        "label": "Democratised ML Development"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-model-iteration",
+        "label": "Rapid Model Iteration"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-experiments",
+        "label": "Reproducible Experiments"
+      },
+      {
+        "@id": "urn:ngm:class:resource-efficient-training",
+        "label": "Resource-Efficient Training"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:darts-differentiable-nas",
+        "label": "DARTS Differentiable NAS"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-neural-architecture-search",
+        "label": "Evolutionary Neural Architecture Search"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-development-lifecycle",
+        "label": "AI Development Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:mlops-platform",
+        "label": "MLOps Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f06b80884099f490825dc4c4813341f3d81e7f6481fc425c4d0b87d416cce12a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyperparameter optimisation (HPO), and ensemble construction — enabling practitioners without deep ML expertise to produce competitive models whilst simultaneously accelerating expert workflows, with modern systems such as Google AutoML, Auto-Sklearn, and NAS-based tools (DARTS, EffNet) achieving state-of-the-art performance on standard benchmarks through efficient search strategies including Bayesian optimisation, evolutionary algorithms, and differentiable architecture search.",
-  "vc:qualityScore": {
-    "@value": "0.60",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.72",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-development-lifecycle",
-      "vc:label": "AI Development Lifecycle"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlops-platform",
-      "vc:label": "MLOps Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:algorithm-selection",
-      "vc:label": "Algorithm Selection"
-    },
-    {
-      "@id": "urn:visionflow:linked:feature-engineering-automation",
-      "vc:label": "Feature Engineering Automation"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperparameter-optimisation",
-      "vc:label": "Hyperparameter Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-learning",
-      "vc:label": "Meta-Learning"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-architecture-search",
-      "vc:label": "Neural Architecture Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:pipeline-optimisation",
-      "vc:label": "Pipeline Optimisation"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:computational-budget",
-      "vc:label": "Computational Budget"
-    },
-    {
-      "@id": "urn:visionflow:linked:evaluation-metric",
-      "vc:label": "Evaluation Metric"
-    },
-    {
-      "@id": "urn:visionflow:linked:search-space-definition",
-      "vc:label": "Search Space Definition"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-dataset",
-      "vc:label": "Training Dataset"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:democratised-ml-development",
-      "vc:label": "Democratised ML Development"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-model-iteration",
-      "vc:label": "Rapid Model Iteration"
-    },
-    {
-      "@id": "urn:visionflow:linked:reproducible-experiments",
-      "vc:label": "Reproducible Experiments"
-    },
-    {
-      "@id": "urn:visionflow:linked:resource-efficient-training",
-      "vc:label": "Resource-Efficient Training"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-optimisation",
-      "vc:label": "Bayesian Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:darts-differentiable-nas",
-      "vc:label": "DARTS Differentiable NAS"
-    },
-    {
-      "@id": "urn:visionflow:linked:evolutionary-neural-architecture-search",
-      "vc:label": "Evolutionary Neural Architecture Search"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:optuna-hpo-framework",
-      "vc:label": "Optuna HPO Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:py-torch",
-      "vc:label": "PyTorch"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray-tune",
-      "vc:label": "Ray Tune"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-flow",
-      "vc:label": "TensorFlow"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:gazebo-simulator",
-      "vc:label": "Gazebo Simulator"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lang-chain",
-      "vc:label": "LangChain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:web-assembly",
-      "vc:label": "WebAssembly"
-    }
-  ]
+  "quality": 0.6,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

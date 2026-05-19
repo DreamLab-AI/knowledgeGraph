@@ -3,82 +3,95 @@
   "title": "Virtual Lighting Model",
   "slug": "virtual-lighting-model",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-lighting-model",
+  "classIri": "urn:ngm:class:virtual-lighting-model",
   "domain": "spatial-computing",
   "definition": "Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:photorealistic-rendering",
+      "id": "urn:ngm:class:photorealistic-rendering",
       "label": "Photorealistic Rendering"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:ambient-occlusion",
+        "id": "urn:ngm:class:ambient-occlusion",
         "label": "Ambient Occlusion"
       },
       {
-        "id": "urn:visionflow:linked:brdf-function",
+        "id": "urn:ngm:class:brdf-function",
         "label": "BRDF Function"
       },
       {
-        "id": "urn:visionflow:linked:light-source-model",
+        "id": "urn:ngm:class:light-source-model",
         "label": "Light Source Model"
       },
       {
-        "id": "urn:visionflow:linked:shadow-computation",
+        "id": "urn:ngm:class:shadow-computation",
         "label": "Shadow Computation"
       },
       {
-        "id": "urn:visionflow:owl:class:global-illumination",
+        "id": "urn:ngm:class:global-illumination",
         "label": "Global Illumination"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:material-properties",
+        "id": "urn:ngm:class:material-properties",
         "label": "Material Properties"
       },
       {
-        "id": "urn:visionflow:linked:shader-program",
+        "id": "urn:ngm:class:shader-program",
         "label": "Shader Program"
       },
       {
-        "id": "urn:visionflow:linked:surface-normals",
+        "id": "urn:ngm:class:surface-normals",
         "label": "Surface Normals"
       },
       {
-        "id": "urn:visionflow:owl:class:light-parameters",
+        "id": "urn:ngm:class:light-parameters",
         "label": "Light Parameters"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dynamic-lighting",
+        "id": "urn:ngm:class:dynamic-lighting",
         "label": "Dynamic Lighting"
       },
       {
-        "id": "urn:visionflow:linked:mood-and-atmosphere",
+        "id": "urn:ngm:class:mood-and-atmosphere",
         "label": "Mood and Atmosphere"
       },
       {
-        "id": "urn:visionflow:linked:realistic-illumination",
+        "id": "urn:ngm:class:realistic-illumination",
         "label": "Realistic Illumination"
       },
       {
-        "id": "urn:visionflow:owl:class:photorealistic-rendering",
+        "id": "urn:ngm:class:photorealistic-rendering",
         "label": "Photorealistic Rendering"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:shading-system",
+        "label": "Shading System"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

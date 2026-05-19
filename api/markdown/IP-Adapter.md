@@ -492,304 +492,223 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ip-adapter",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ip-adapter",
+  "@type": "Class",
   "label": "IP-Adapter",
+  "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight (parameter) cross-attention conditioning module for pretrained text-to-image diffusion models introduced by Hu Ye, Jun Zhang, Sibo Liu, Xiao Han, and Wei Yang at Tencent AI Lab in August 2023 (arXiv:2308.06721 \"IP-Adapter: Text Compatible Image P...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:cross-attention-module",
-      "vc:label": "Cross-Attention Module"
+      "@id": "urn:ngm:class:cross-attention-module",
+      "label": "Cross-Attention Module"
     },
     {
-      "@id": "urn:visionflow:linked:diffusion-model-adapter",
-      "vc:label": "Diffusion Model Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-conditioning-mechanism",
-      "vc:label": "Image Conditioning Mechanism"
+      "@id": "urn:ngm:class:diffusion-model-adapter",
+      "label": "Diffusion Model Adapter"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:70abaaaba1e446b4493299050ba8f3a30a532cc154c93c6634e437864e3289a6"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:clip-image-encoder",
+        "label": "CLIP Image Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:decoupled-cross-attention-layer",
+        "label": "Decoupled Cross-Attention Layer"
+      },
+      {
+        "@id": "urn:ngm:class:image-projection-layer",
+        "label": "Image Projection Layer"
+      },
+      {
+        "@id": "urn:ngm:class:resampler-module",
+        "label": "Resampler Module"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mask",
+        "label": "Attention Mask"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:image-feature-encoder",
+        "label": "Image Feature Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:pretrained-diffusion-u-net",
+        "label": "Pretrained Diffusion U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:character-consistency",
+        "label": "Character Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:composition-matching",
+        "label": "Composition Matching"
+      },
+      {
+        "@id": "urn:ngm:class:multi-image-blending",
+        "label": "Multi-Image Blending"
+      },
+      {
+        "@id": "urn:ngm:class:product-placement-synthesis",
+        "label": "Product Placement Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:reference-driven-generation",
+        "label": "Reference-Driven Generation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-try-on",
+        "label": "Virtual Try-On"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cross-attention-conditioning",
+        "label": "Cross-Attention Conditioning"
+      },
+      {
+        "@id": "urn:ngm:class:decoupled-attention",
+        "label": "Decoupled Attention"
+      },
+      {
+        "@id": "urn:ngm:class:image-prompt-injection",
+        "label": "Image Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:resampler-pooling",
+        "label": "Resampler Pooling"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:clip-vi-t-h-14",
+        "label": "CLIP ViT-H/14"
+      },
+      {
+        "@id": "urn:ngm:class:insight-face-arc-face",
+        "label": "InsightFace ArcFace"
+      },
+      {
+        "@id": "urn:ngm:class:perceiver-resampler",
+        "label": "Perceiver Resampler"
+      },
+      {
+        "@id": "urn:ngm:class:q-former",
+        "label": "Q-Former"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:identity-preservation",
+        "label": "Identity Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-xl",
+        "label": "Stable Diffusion XL"
+      },
+      {
+        "@id": "urn:ngm:class:subject-driven-generation",
+        "label": "Subject-Driven Generation"
+      },
+      {
+        "@id": "urn:ngm:class:flux-1",
+        "label": "FLUX.1"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:automatic1111",
+        "label": "Automatic1111"
+      },
+      {
+        "@id": "urn:ngm:class:forge",
+        "label": "Forge"
+      },
+      {
+        "@id": "urn:ngm:class:instant-id",
+        "label": "InstantID"
+      },
+      {
+        "@id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "@id": "urn:ngm:class:photo-maker",
+        "label": "PhotoMaker"
+      },
+      {
+        "@id": "urn:ngm:class:pu-lid",
+        "label": "PuLID"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:fooocus",
+        "label": "Fooocus"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ar-xiv-2308-06721",
+        "label": "arXiv 2308.06721"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui-ipadapter-plus",
+        "label": "ComfyUI_IPAdapter_plus"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Hugging Face Diffusers"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-web-ui-control-net-extension",
+        "label": "Stable Diffusion WebUI ControlNet Extension"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:70abaaaba1e446b4493299050ba8f3a30a532cc154c93c6634e437864e3289a6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight (~22M parameter) cross-attention conditioning module for pretrained text-to-image diffusion models introduced by Hu Ye, Jun Zhang, Sibo Liu, Xiao Han, and Wei Yang at Tencent AI Lab in August 2023 (arXiv:2308.06721 \"IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models\") that enables image-conditioned generation by introducing a **decoupled cross-attention mechanism**—a parallel cross-attention pathway operating on CLIP image-encoder features (ViT-H/14 or ViT-L/14 patches plus the global CLS token) running alongside the frozen text cross-attention of the host diffusion U-Net (Stable Diffusion 1.5, SDXL, or later Flux/SD3 ports), with image and text attention outputs summed before being passed through the residual stream, allowing the same model to accept a reference image as a prompt without retraining the base model and without competing with the text prompt for the same attention capacity, in contrast with prior approaches that either fine-tuned the base model (Textual Inversion, DreamBooth, LoRA) requiring per-subject training, prepended image tokens to the text embedding (Versatile Diffusion) sacri",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:clip-image-encoder",
-      "vc:label": "CLIP Image Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:decoupled-cross-attention-layer",
-      "vc:label": "Decoupled Cross-Attention Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-projection-layer",
-      "vc:label": "Image Projection Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampler-module",
-      "vc:label": "Resampler Module"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mask",
-      "vc:label": "Attention Mask"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:clip",
-      "vc:label": "CLIP"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-feature-encoder",
-      "vc:label": "Image Feature Encoder"
-    },
-    {
-      "@id": "urn:visionflow:linked:pretrained-diffusion-u-net",
-      "vc:label": "Pretrained Diffusion U-Net"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:character-consistency",
-      "vc:label": "Character Consistency"
-    },
-    {
-      "@id": "urn:visionflow:linked:composition-matching",
-      "vc:label": "Composition Matching"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-image-blending",
-      "vc:label": "Multi-Image Blending"
-    },
-    {
-      "@id": "urn:visionflow:linked:product-placement-synthesis",
-      "vc:label": "Product Placement Synthesis"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-driven-generation",
-      "vc:label": "Reference-Driven Generation"
-    },
-    {
-      "@id": "urn:visionflow:linked:virtual-try-on",
-      "vc:label": "Virtual Try-On"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:style-transfer",
-      "vc:label": "Style Transfer"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:cross-attention-conditioning",
-      "vc:label": "Cross-Attention Conditioning"
-    },
-    {
-      "@id": "urn:visionflow:linked:decoupled-attention",
-      "vc:label": "Decoupled Attention"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-prompt-injection",
-      "vc:label": "Image Prompt Injection"
-    },
-    {
-      "@id": "urn:visionflow:linked:resampler-pooling",
-      "vc:label": "Resampler Pooling"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:contrastive-language-image-pretraining",
-      "vc:label": "Contrastive Language-Image Pretraining"
-    },
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:latent-diffusion",
-      "vc:label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:visionflow:linked:vision-transformer",
-      "vc:label": "Vision Transformer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention-mechanism",
-      "vc:label": "Attention Mechanism"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:automatic1111",
-      "vc:label": "Automatic1111"
-    },
-    {
-      "@id": "urn:visionflow:linked:forge",
-      "vc:label": "Forge"
-    },
-    {
-      "@id": "urn:visionflow:linked:instant-id",
-      "vc:label": "InstantID"
-    },
-    {
-      "@id": "urn:visionflow:linked:invoke-ai",
-      "vc:label": "InvokeAI"
-    },
-    {
-      "@id": "urn:visionflow:linked:photo-maker",
-      "vc:label": "PhotoMaker"
-    },
-    {
-      "@id": "urn:visionflow:linked:pu-lid",
-      "vc:label": "PuLID"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fooocus",
-      "vc:label": "Fooocus"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:classifier-free-guidance",
-      "vc:label": "Classifier-Free Guidance"
-    },
-    {
-      "@id": "urn:visionflow:linked:clip-vi-t-h-14",
-      "vc:label": "CLIP ViT-H/14"
-    },
-    {
-      "@id": "urn:visionflow:linked:insight-face-arc-face",
-      "vc:label": "InsightFace ArcFace"
-    },
-    {
-      "@id": "urn:visionflow:linked:perceiver-resampler",
-      "vc:label": "Perceiver Resampler"
-    },
-    {
-      "@id": "urn:visionflow:linked:q-former",
-      "vc:label": "Q-Former"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:dream-booth",
-      "vc:label": "DreamBooth"
-    },
-    {
-      "@id": "urn:visionflow:linked:reference-only-control-net",
-      "vc:label": "Reference-Only ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:linked:t2-i-adapter",
-      "vc:label": "T2I-Adapter"
-    },
-    {
-      "@id": "urn:visionflow:linked:textual-inversion",
-      "vc:label": "Textual Inversion"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lo-ra",
-      "vc:label": "LoRA"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:adapter-tuning",
-      "vc:label": "Adapter Tuning"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-preservation",
-      "vc:label": "Identity Preservation"
-    },
-    {
-      "@id": "urn:visionflow:linked:image-to-image",
-      "vc:label": "Image-to-Image"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-xl",
-      "vc:label": "Stable Diffusion XL"
-    },
-    {
-      "@id": "urn:visionflow:linked:subject-driven-generation",
-      "vc:label": "Subject-Driven Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:flux-1",
-      "vc:label": "FLUX.1"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ar-xiv-2308-06721",
-      "vc:label": "arXiv 2308.06721"
-    },
-    {
-      "@id": "urn:visionflow:linked:comfy-ui-ipadapter-plus",
-      "vc:label": "ComfyUI_IPAdapter_plus"
-    },
-    {
-      "@id": "urn:visionflow:linked:hugging-face-diffusers",
-      "vc:label": "Hugging Face Diffusers"
-    },
-    {
-      "@id": "urn:visionflow:linked:stable-diffusion-web-ui-control-net-extension",
-      "vc:label": "Stable Diffusion WebUI ControlNet Extension"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:control-net",
-      "vc:label": "ControlNet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stable-diffusion",
-      "vc:label": "Stable Diffusion"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

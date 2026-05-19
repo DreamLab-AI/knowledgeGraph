@@ -192,126 +192,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compliance-audit-trail",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-audit-trail",
+  "@type": "Class",
   "label": "Compliance Audit Trail",
+  "definition": "Immutable record system demonstrating adherence to policies and regulations through cryptographically sealed logs of compliance verification activities and evidence.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0530bb4860c09a4b3adabc00c11b9616696130ef7e5c92263ddd8993f352076b"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:compliance-event-log",
+        "label": "Compliance Event Log"
+      },
+      {
+        "@id": "urn:ngm:class:policy-document",
+        "label": "Policy Document"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-evidence",
+        "label": "Regulatory Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:verification-record",
+        "label": "Verification Record"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:immutable-storage",
+        "label": "Immutable Storage"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:compliance-management-system",
+        "label": "Compliance Management System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0530bb4860c09a4b3adabc00c11b9616696130ef7e5c92263ddd8993f352076b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Immutable record system demonstrating adherence to policies and regulations through cryptographically sealed logs of compliance verification activities and evidence.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:compliance-management-system",
-      "vc:label": "Compliance Management System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:compliance-event-log",
-      "vc:label": "Compliance Event Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-document",
-      "vc:label": "Policy Document"
-    },
-    {
-      "@id": "urn:visionflow:linked:regulatory-evidence",
-      "vc:label": "Regulatory Evidence"
-    },
-    {
-      "@id": "urn:visionflow:linked:verification-record",
-      "vc:label": "Verification Record"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:timestamp",
-      "vc:label": "Timestamp"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:immutable-storage",
-      "vc:label": "Immutable Storage"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-hash",
-      "vc:label": "Cryptographic Hash"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-verification",
-      "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:audit-automation",
-      "vc:label": "Audit Automation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-provenance",
-      "vc:label": "Data Provenance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

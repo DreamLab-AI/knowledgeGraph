@@ -196,98 +196,83 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metaverse-safety-protocol",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metaverse-safety-protocol",
+  "@type": "Class",
   "label": "Metaverse Safety Protocol",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:627d15877c697e0aa2fe300daff938f7e588428a989dedb9700790e662dd6797@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
   "definition": "Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:incident-response-protocol",
+        "label": "Incident Response Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-procedure",
+        "label": "Risk Assessment Procedure"
+      },
+      {
+        "@id": "urn:ngm:class:safety-guideline",
+        "label": "Safety Guideline"
+      },
+      {
+        "@id": "urn:ngm:class:user-protection-measure",
+        "label": "User Protection Measure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:safety-assessment",
+        "label": "Safety Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:user-monitoring",
+        "label": "User Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:user-well-being",
+        "label": "User Well-being"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:safe-immersive-experience",
+        "label": "Safe Immersive Experience"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+        "label": "Metaverse governance and safeguarding"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
   },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:safety-standard",
-      "vc:label": "Safety Standard"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:governance-framework",
-      "vc:label": "Governance Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:incident-response-protocol",
-      "vc:label": "Incident Response Protocol"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-assessment-procedure",
-      "vc:label": "Risk Assessment Procedure"
-    },
-    {
-      "@id": "urn:visionflow:linked:safety-guideline",
-      "vc:label": "Safety Guideline"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-protection-measure",
-      "vc:label": "User Protection Measure"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:safety-assessment",
-      "vc:label": "Safety Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-monitoring",
-      "vc:label": "User Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:content-moderation",
-      "vc:label": "Content Moderation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:user-well-being",
-      "vc:label": "User Well-being"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-mitigation",
-      "vc:label": "Risk Mitigation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:safe-immersive-experience",
-      "vc:label": "Safe Immersive Experience"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

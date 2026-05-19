@@ -3,19 +3,18 @@
   "title": "User Safety",
   "slug": "user-safety",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:user-safety",
+  "classIri": "urn:ngm:class:user-safety",
   "domain": "spatial-computing",
-  "definition": "User Safety is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "User Safety is a type of Metaverse and Spatial Risks in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:metaverse-and-spatial-risks",
+      "id": "urn:ngm:class:metaverse-and-spatial-risks",
       "label": "Metaverse and Spatial Risks"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

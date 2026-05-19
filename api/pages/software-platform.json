@@ -3,32 +3,36 @@
   "title": "Software Platform",
   "slug": "software-platform",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:software-platform",
+  "classIri": "urn:ngm:class:software-platform",
   "domain": "spatial-computing",
-  "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scalable application delivery.",
+  "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scala...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technology-infrastructure",
+      "id": "urn:ngm:class:technology-infrastructure",
       "label": "Technology Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:application-development",
+        "id": "urn:ngm:class:application-development",
         "label": "Application Development"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

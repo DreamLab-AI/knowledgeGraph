@@ -3,19 +3,18 @@
   "title": "Location Based Experience",
   "slug": "location-based-experience",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:location-based-experience",
+  "classIri": "urn:ngm:class:location-based-experience",
   "domain": "spatial-computing",
   "definition": "Location Based Experience is a spatial computing concept and a type of Immersive Experience.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-experience",
+      "id": "urn:ngm:class:immersive-experience",
       "label": "Immersive Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

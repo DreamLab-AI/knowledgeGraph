@@ -708,368 +708,283 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:access-control-system",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:access-control-system",
+  "@type": "Class",
   "label": "Access Control System",
+  "definition": "An [[Access Control System]] is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines wher a subject (human user, service account, autonomous agent, device) is permitted to perform a r...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:authorisation-mechanism",
-      "vc:label": "Authorisation Mechanism"
+      "@id": "urn:ngm:class:authorisation-mechanism",
+      "label": "Authorisation Mechanism"
     },
     {
-      "@id": "urn:visionflow:linked:governance-control",
-      "vc:label": "Governance Control"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-security-system",
-      "vc:label": "Information Security System"
+      "@id": "urn:ngm:class:governance-control",
+      "label": "Governance Control"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:02e32028ffc08aac2e8ecedcfc7e25b88d72127b7df8f02aacfbf564f462af64"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:attribute-evaluation",
+        "label": "Attribute Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:identity-store",
+        "label": "Identity Store"
+      },
+      {
+        "@id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "@id": "urn:ngm:class:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "@id": "urn:ngm:class:token-service",
+        "label": "Token Service"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitives",
+        "label": "Cryptographic Primitives"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-time-source",
+        "label": "Trusted Time Source"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "@id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:abac",
+        "label": "ABAC"
+      },
+      {
+        "@id": "urn:ngm:class:capability-based-security",
+        "label": "Capability-Based Security"
+      },
+      {
+        "@id": "urn:ngm:class:dac",
+        "label": "DAC"
+      },
+      {
+        "@id": "urn:ngm:class:mac",
+        "label": "MAC"
+      },
+      {
+        "@id": "urn:ngm:class:pbac",
+        "label": "PBAC"
+      },
+      {
+        "@id": "urn:ngm:class:rbac",
+        "label": "RBAC"
+      },
+      {
+        "@id": "urn:ngm:class:re-bac",
+        "label": "ReBAC"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "@id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      },
+      {
+        "@id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
+        "@id": "urn:ngm:class:zanzibar",
+        "label": "Zanzibar"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:customer-identity-and-access-management",
+        "label": "Customer Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:secrets-management",
+        "label": "Secrets Management"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ansi-incits-359",
+        "label": "ANSI INCITS 359"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-4120",
+        "label": "IETF RFC 4120"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc-6749",
+        "label": "IETF RFC 6749"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27002",
+        "label": "ISO IEC 27002"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-162",
+        "label": "NIST SP 800-162"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      },
+      {
+        "@id": "urn:ngm:class:oasis-xacml",
+        "label": "OASIS XACML"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-authn",
+        "label": "W3C WebAuthn"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:02e32028ffc08aac2e8ecedcfc7e25b88d72127b7df8f02aacfbf564f462af64@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[Access Control System]] is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines whether a subject (human user, service account, autonomous agent, device) is permitted to perform a requested operation (read, write, execute, delegate, administer) against a protected resource (file, record, API endpoint, kernel object, physical door, network flow), evaluated through a formal authorisation model spanning Discretionary Access Control (DAC, owner-driven ACLs as in POSIX/NTFS), Mandatory Access Control (MAC, lattice-based confidentiality enforced by [[Bell-LaPadula Model]] no-read-up/no-write-down, integrity by [[Biba Model]] no-read-down/no-write-up, conflict-of-interest by [[Brewer-Nash Model]] Chinese Wall, transaction integrity by [[Clark-Wilson Model]] well-formed transactions and separation of duty), Role-Based Access Control (RBAC, ANSI INCITS 359-2012 four-level RBAC0-RBAC3 with role hierarchies, constraints, sessions, deployed in 78%+ enterprise IAM stacks via Active Directory security groups, Okta groups, AWS IAM roles), Attribute-Based Access Control (ABAC, NIS",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:attribute-evaluation",
-      "vc:label": "Attribute Evaluation"
-    },
-    {
-      "@id": "urn:visionflow:linked:audit-log",
-      "vc:label": "Audit Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-store",
-      "vc:label": "Identity Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-administration-point",
-      "vc:label": "Policy Administration Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-decision-point",
-      "vc:label": "Policy Decision Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-enforcement-point",
-      "vc:label": "Policy Enforcement Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:policy-information-point",
-      "vc:label": "Policy Information Point"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-manager",
-      "vc:label": "Session Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-service",
-      "vc:label": "Token Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:policy-engine",
-      "vc:label": "Policy Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:authentication",
-      "vc:label": "Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-primitives",
-      "vc:label": "Cryptographic Primitives"
-    },
-    {
-      "@id": "urn:visionflow:linked:trusted-time-source",
-      "vc:label": "Trusted Time Source"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metadata-management",
-      "vc:label": "Metadata Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:auditability",
-      "vc:label": "Auditability"
-    },
-    {
-      "@id": "urn:visionflow:linked:least-privilege",
-      "vc:label": "Least Privilege"
-    },
-    {
-      "@id": "urn:visionflow:linked:separation-of-duties",
-      "vc:label": "Separation of Duties"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:accountability",
-      "vc:label": "Accountability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:quality-assurance",
-      "vc:label": "Quality Assurance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:risk-assessment",
-      "vc:label": "Risk Assessment"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:abac",
-      "vc:label": "ABAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:capability-based-security",
-      "vc:label": "Capability-Based Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:dac",
-      "vc:label": "DAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:mac",
-      "vc:label": "MAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:pbac",
-      "vc:label": "PBAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:rbac",
-      "vc:label": "RBAC"
-    },
-    {
-      "@id": "urn:visionflow:linked:re-bac",
-      "vc:label": "ReBAC"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:directory-service",
-      "vc:label": "Directory Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:secure-logging",
-      "vc:label": "Secure Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-synchronisation",
-      "vc:label": "Time Synchronisation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptography",
-      "vc:label": "Cryptography"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:forensic-investigation",
-      "vc:label": "Forensic Investigation"
-    },
-    {
-      "@id": "urn:visionflow:linked:incident-response",
-      "vc:label": "Incident Response"
-    },
-    {
-      "@id": "urn:visionflow:linked:privileged-access-management",
-      "vc:label": "Privileged Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:compliance-framework",
-      "vc:label": "Compliance Framework"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:kerberos",
-      "vc:label": "Kerberos"
-    },
-    {
-      "@id": "urn:visionflow:linked:ldap",
-      "vc:label": "LDAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth-2-0",
-      "vc:label": "OAuth 2.0"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-policy-agent",
-      "vc:label": "Open Policy Agent"
-    },
-    {
-      "@id": "urn:visionflow:linked:saml",
-      "vc:label": "SAML"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-authn",
-      "vc:label": "WebAuthn"
-    },
-    {
-      "@id": "urn:visionflow:linked:xacml",
-      "vc:label": "XACML"
-    },
-    {
-      "@id": "urn:visionflow:linked:zanzibar",
-      "vc:label": "Zanzibar"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:capability-based-security",
-      "vc:label": "Capability-Based Security"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralised-identifier",
-      "vc:label": "Decentralised Identifier"
-    },
-    {
-      "@id": "urn:visionflow:linked:passwordless-authentication",
-      "vc:label": "Passwordless Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-credential",
-      "vc:label": "Verifiable Credential"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:customer-identity-and-access-management",
-      "vc:label": "Customer Identity and Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-factor-authentication",
-      "vc:label": "Multi-Factor Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:privileged-access-management",
-      "vc:label": "Privileged Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:secrets-management",
-      "vc:label": "Secrets Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-sign-on",
-      "vc:label": "Single Sign-On"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:ansi-incits-359",
-      "vc:label": "ANSI INCITS 359"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-4120",
-      "vc:label": "IETF RFC 4120"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-rfc-6749",
-      "vc:label": "IETF RFC 6749"
-    },
-    {
-      "@id": "urn:visionflow:linked:iso-iec-27002",
-      "vc:label": "ISO IEC 27002"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-162",
-      "vc:label": "NIST SP 800-162"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist-sp-800-207",
-      "vc:label": "NIST SP 800-207"
-    },
-    {
-      "@id": "urn:visionflow:linked:oasis-xacml",
-      "vc:label": "OASIS XACML"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-authn",
-      "vc:label": "W3C WebAuthn"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-provider",
-      "vc:label": "Identity Provider"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:smart-contract",
-      "vc:label": "Smart Contract"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

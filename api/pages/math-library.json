@@ -3,19 +3,18 @@
   "title": "Math Library",
   "slug": "math-library",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:math-library",
+  "classIri": "urn:ngm:class:math-library",
   "domain": "spatial-computing",
   "definition": "A math library component in the Metaverse domain that required by PhysicsEngine.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-library",
+      "id": "urn:ngm:class:software-library",
       "label": "Software Library"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

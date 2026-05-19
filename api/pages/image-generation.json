@@ -3,19 +3,18 @@
   "title": "Image Generation",
   "slug": "image-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:image-generation",
+  "classIri": "urn:ngm:class:image-generation",
   "domain": "spatial-computing",
-  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.",
+  "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

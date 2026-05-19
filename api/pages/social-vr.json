@@ -3,19 +3,18 @@
   "title": "Social VR",
   "slug": "social-vr",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:social-vr",
+  "classIri": "urn:ngm:class:social-vr",
   "domain": "spatial-computing",
-  "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable diverse social activities from casual hangouts and professional meetings to educational workshops and entertainment events, with spatial audio and gesture recognition enhancing social presence. Integration with [[DecentralizedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] creates interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.",
+  "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-reality",
+      "id": "urn:ngm:class:virtual-reality",
       "label": "Virtual Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,32 +3,36 @@
   "title": "Infrared Illuminator",
   "slug": "infrared-illuminator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:infrared-illuminator",
+  "classIri": "urn:ngm:class:infrared-illuminator",
   "domain": "spatial-computing",
   "definition": "Light-emitting devices that project infrared wavelengths to enable VR/AR tracking sensors to function in low-light or dark environments, enhancing hand tracking accuracy, controller detection, and spatial awareness for immersive experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:tracking-hardware",
+      "id": "urn:ngm:class:tracking-hardware",
       "label": "Tracking Hardware"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:dark-environment-vr",
+        "id": "urn:ngm:class:dark-environment-vr",
         "label": "Dark Environment VR"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,78 +3,87 @@
   "title": "Service Layer",
   "slug": "service-layer",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:service-layer",
+  "classIri": "urn:ngm:class:service-layer",
   "domain": "spatial-computing",
   "definition": "Collection of reusable services exposed via APIs for identity, assets, physics, and analytics that enable application functionality and interoperability in virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing-layer",
+      "id": "urn:ngm:class:spatial-computing-layer",
       "label": "Spatial Computing Layer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:analytics-service",
+        "id": "urn:ngm:class:analytics-service",
         "label": "Analytics Service"
       },
       {
-        "id": "urn:visionflow:linked:asset-service",
+        "id": "urn:ngm:class:asset-service",
         "label": "Asset Service"
       },
       {
-        "id": "urn:visionflow:linked:identity-service",
+        "id": "urn:ngm:class:identity-service",
         "label": "Identity Service"
       },
       {
-        "id": "urn:visionflow:linked:physics-service",
+        "id": "urn:ngm:class:physics-service",
         "label": "Physics Service"
       },
       {
-        "id": "urn:visionflow:owl:class:api-gateway",
+        "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:api-management",
+        "id": "urn:ngm:class:api-management",
         "label": "API Management"
       },
       {
-        "id": "urn:visionflow:linked:data-models",
+        "id": "urn:ngm:class:data-models",
         "label": "Data Models"
       },
       {
-        "id": "urn:visionflow:linked:service-orchestration",
+        "id": "urn:ngm:class:service-orchestration",
         "label": "Service Orchestration"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:api-integration",
+        "id": "urn:ngm:class:api-integration",
         "label": "API Integration"
       },
       {
-        "id": "urn:visionflow:linked:service-composition",
+        "id": "urn:ngm:class:service-composition",
         "label": "Service Composition"
       },
       {
-        "id": "urn:visionflow:linked:service-discovery",
+        "id": "urn:ngm:class:service-discovery",
         "label": "Service Discovery"
       },
       {
-        "id": "urn:visionflow:owl:class:microservices-architecture",
+        "id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-layer",
+        "label": "Data Layer"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

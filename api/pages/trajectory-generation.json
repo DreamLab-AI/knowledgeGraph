@@ -3,49 +3,62 @@
   "title": "Trajectory Generation",
   "slug": "trajectory-generation",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trajectory-generation",
+  "classIri": "urn:ngm:class:trajectory-generation",
   "domain": "robotics",
   "definition": "The process of computing a time-parameterized path that specifies the position, velocity, and acceleration of a robot's joints or end-effector as functions of time, enabling smooth motion from start to goal configurations while respecting kinematic and dynamic constraints.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:motion-planning",
+      "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.96,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:goal-configuration",
+        "id": "urn:ngm:class:goal-configuration",
         "label": "Goal Configuration"
       },
       {
-        "id": "urn:visionflow:linked:rb-1016-path-planning",
+        "id": "urn:ngm:class:rb-1016-path-planning",
         "label": "RB-1016-path-planning"
       },
       {
-        "id": "urn:visionflow:linked:start-configuration",
+        "id": "urn:ngm:class:start-configuration",
         "label": "Start Configuration"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:robot-motion",
+        "id": "urn:ngm:class:robot-motion",
         "label": "Robot Motion"
       },
       {
-        "id": "urn:visionflow:linked:task-execution",
+        "id": "urn:ngm:class:task-execution",
         "label": "Task Execution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rb-1005-forward-kinematics",
+        "label": "RB-1005-forward-kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rb-1006-inverse-kinematics",
+        "label": "RB-1006-inverse-kinematics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

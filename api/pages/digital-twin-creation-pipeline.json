@@ -3,53 +3,57 @@
   "title": "Digital Twin Creation Pipeline",
   "slug": "digital-twin-creation-pipeline",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-twin-creation-pipeline",
+  "classIri": "urn:ngm:class:digital-twin-creation-pipeline",
   "domain": "spatial-computing",
-  "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems. bridges-to:: [[Computer Vision]]",
+  "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:3-d-content-pipeline",
+      "id": "urn:ngm:class:3-d-content-pipeline",
       "label": "3D Content Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:3-d-scanning",
+        "id": "urn:ngm:class:3-d-scanning",
         "label": "3D Scanning"
       },
       {
-        "id": "urn:visionflow:linked:point-cloud-processing",
+        "id": "urn:ngm:class:point-cloud-processing",
         "label": "Point Cloud Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:photogrammetry",
+        "id": "urn:ngm:class:photogrammetry",
         "label": "Photogrammetry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-digitization",
+        "id": "urn:ngm:class:asset-digitization",
         "label": "Asset Digitization"
       },
       {
-        "id": "urn:visionflow:linked:real-time-monitoring",
+        "id": "urn:ngm:class:real-time-monitoring",
         "label": "Real-Time Monitoring"
       },
       {
-        "id": "urn:visionflow:linked:virtual-replica-creation",
+        "id": "urn:ngm:class:virtual-replica-creation",
         "label": "Virtual Replica Creation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

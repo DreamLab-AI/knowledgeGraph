@@ -3,53 +3,57 @@
   "title": "Archival Standards",
   "slug": "archival-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:archival-standards",
+  "classIri": "urn:ngm:class:archival-standards",
   "domain": "spatial-computing",
-  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.",
+  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across techno...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:preservation-standards",
+      "id": "urn:ngm:class:preservation-standards",
       "label": "Preservation Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:preservation-planning",
+        "id": "urn:ngm:class:preservation-planning",
         "label": "Preservation Planning"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-management",
+        "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       },
       {
-        "id": "urn:visionflow:owl:class:storage-infrastructure",
+        "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:content-authenticity",
+        "id": "urn:ngm:class:content-authenticity",
         "label": "Content Authenticity"
       },
       {
-        "id": "urn:visionflow:linked:format-migration",
+        "id": "urn:ngm:class:format-migration",
         "label": "Format Migration"
       },
       {
-        "id": "urn:visionflow:linked:long-term-preservation",
+        "id": "urn:ngm:class:long-term-preservation",
         "label": "Long-Term Preservation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

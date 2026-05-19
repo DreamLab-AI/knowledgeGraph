@@ -160,41 +160,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:etsi-domain-interoperability-creative",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:etsi-domain-interoperability-creative",
+  "@type": "Class",
   "label": "ETSI_Domain_Interoperability___Creative",
+  "definition": "The ETSI functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content—including three-dimensional models, tex...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:infrastructure",
-      "vc:label": "infrastructure"
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "mature",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:51badc05f40fc25fdb92de3a83cd00aebadcfd7254a96d04f8c44a1ebc700815"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:51badc05f40fc25fdb92de3a83cd00aebadcfd7254a96d04f8c44a1ebc700815@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The ETSI (European Telecommunications Standards Institute) functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content—including three-dimensional models, textures, animations, audio-visual assets, interactive experiences, and immersive environments—to be created once and deployed seamlessly across heterogeneous platforms, rendering engines, virtual worlds, and augmented reality applications without fidelity degradation or proprietary format lock-in, achieved through standardized file formats (wherein glTF 2.0 from Khronos Group achieves 89% industry adoption for real-time 3D asset exchange with PBR physically-based rendering material support, USD Universal Scene Description from Pixar Animation Studios and NVIDIA enables complex scene composition with layer-based non-destructive editing adopted by 67% of AAA game studios and visual effects houses, FBX from Autodesk maintains 72% market share for animation interchange despite proprietary limitations), cross-platform interchange protocols (includi",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

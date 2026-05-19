@@ -3,19 +3,18 @@
   "title": "TELE 001 telepresence",
   "slug": "tele-001-telepresence",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tele-001-telepresence",
+  "classIri": "urn:ngm:class:tele-001-telepresence",
   "domain": "distributed-collaboration",
-  "definition": "T E L E 001 telepresence is a concept within the telecollaboration domain. Further enrichment pending.",
+  "definition": "TELE 001 telepresence is a type of Distributed Collaboration in the distributed collaboration domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:distributed-collaboration",
+      "id": "urn:ngm:class:distributed-collaboration",
       "label": "distributed-collaboration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

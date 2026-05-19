@@ -3,155 +3,279 @@
   "title": "Education and AI",
   "slug": "education-and-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:education-and-ai",
+  "classIri": "urn:ngm:class:education-and-ai",
   "domain": "artificial-intelligence",
-  "definition": "Education and AI (Artificial Intelligence in Education, AIED) denotes the deployment of machine-learning systems\u2014intelligent tutoring systems (ITS) such as Carnegie Learning Mathia at 600K+ US students across 1,500+ districts, ALEKS at 25M+ cumulative users since 1996, Knewton (acquired Wiley 2019 for ~$17M after raising $157M), Squirrel AI at 5M+ K-12 Chinese students across 4,000+ centres in 700+ cities; conversational AI tutors built on large language models such as Khan Academy Khanmigo (GPT-4) at 1M+ students across 90+ districts free to US/Canada teachers from August 2024, Synthesis Tutor ($35M Series A 2024, Andreessen Horowitz) at $35/month family plan, Mathpresso QANDA at 90M+ users across 50+ countries, Brilliant.org at 10M+ active learners, MagicSchool AI at 4M+ educators across 6,000+ US schools with 80+ teacher tools at $99/teacher/year; generative-AI assistants (ChatGPT, Claude, Gemini) used by 26% of US teens 13-17 for schoolwork per Pew Research 2024 (up from 13% in 2023) and 70% of teens for any generative AI per Common Sense Media 2024; AI grading and integrity tooling (Gradescope at 2,600+ universities processing 100M+ submissions reducing grading time 70%, Turni",
+  "definition": "Education and AI (Artificial Intelligence in Education, AIED) denotes the deployment of machine-learning systems\u2014intelligent tutoring systems (ITS) such as Carnegie Learning Mathia at 600K+ US students across + districts, ALEKS at 25M+ cumulative users Knewton (acquired Wiley 2019 for ~after rais...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:applied-ai",
+      "id": "urn:ngm:class:applied-ai",
       "label": "Applied AI"
     },
     {
-      "id": "urn:visionflow:linked:conversational-ai-applications",
+      "id": "urn:ngm:class:conversational-ai-applications",
       "label": "Conversational AI Applications"
-    },
-    {
-      "id": "urn:visionflow:linked:human-centred-ai",
-      "label": "Human-Centred AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:adaptive-learning",
+        "id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning"
       },
       {
-        "id": "urn:visionflow:linked:ai-detection",
+        "id": "urn:ngm:class:ai-detection",
         "label": "AI Detection"
       },
       {
-        "id": "urn:visionflow:linked:ai-literacy-curriculum",
+        "id": "urn:ngm:class:ai-literacy-curriculum",
         "label": "AI Literacy Curriculum"
       },
       {
-        "id": "urn:visionflow:linked:ai-tutor",
+        "id": "urn:ngm:class:ai-tutor",
         "label": "AI Tutor"
       },
       {
-        "id": "urn:visionflow:linked:automated-grading",
+        "id": "urn:ngm:class:automated-grading",
         "label": "Automated Grading"
       },
       {
-        "id": "urn:visionflow:linked:intelligent-tutoring-system",
+        "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring System"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-tracing",
+        "id": "urn:ngm:class:knowledge-tracing",
         "label": "Knowledge Tracing"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-analytics",
+        "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:assessment-framework",
+        "id": "urn:ngm:class:assessment-framework",
         "label": "Assessment Framework"
       },
       {
-        "id": "urn:visionflow:linked:curriculum",
+        "id": "urn:ngm:class:curriculum",
         "label": "Curriculum"
       },
       {
-        "id": "urn:visionflow:linked:pedagogical-theory",
+        "id": "urn:ngm:class:pedagogical-theory",
         "label": "Pedagogical Theory"
       },
       {
-        "id": "urn:visionflow:linked:safeguarding-policy",
+        "id": "urn:ngm:class:safeguarding-policy",
         "label": "Safeguarding Policy"
       },
       {
-        "id": "urn:visionflow:linked:student-data",
+        "id": "urn:ngm:class:student-data",
         "label": "Student Data"
       },
       {
-        "id": "urn:visionflow:linked:teacher-oversight",
+        "id": "urn:ngm:class:teacher-oversight",
         "label": "Teacher Oversight"
       },
       {
-        "id": "urn:visionflow:owl:class:large-language-models",
+        "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:accessibility-provisioning",
+        "id": "urn:ngm:class:accessibility-provisioning",
         "label": "Accessibility Provisioning"
       },
       {
-        "id": "urn:visionflow:linked:differentiated-instruction",
+        "id": "urn:ngm:class:differentiated-instruction",
         "label": "Differentiated Instruction"
       },
       {
-        "id": "urn:visionflow:linked:formative-feedback",
+        "id": "urn:ngm:class:formative-feedback",
         "label": "Formative Feedback"
       },
       {
-        "id": "urn:visionflow:linked:mastery-learning",
+        "id": "urn:ngm:class:mastery-learning",
         "label": "Mastery Learning"
       },
       {
-        "id": "urn:visionflow:linked:personalised-learning",
+        "id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Learning"
       },
       {
-        "id": "urn:visionflow:linked:scalable-tutoring",
+        "id": "urn:ngm:class:scalable-tutoring",
         "label": "Scalable Tutoring"
       },
       {
-        "id": "urn:visionflow:linked:teacher-time-recovery",
+        "id": "urn:ngm:class:teacher-time-recovery",
         "label": "Teacher Time Recovery"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bayesian-knowledge-tracing",
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
         "label": "Bayesian Knowledge Tracing"
       },
       {
-        "id": "urn:visionflow:linked:item-response-theory",
+        "id": "urn:ngm:class:item-response-theory",
         "label": "Item Response Theory"
       },
       {
-        "id": "urn:visionflow:linked:retrieval-practice",
+        "id": "urn:ngm:class:retrieval-practice",
         "label": "Retrieval Practice"
       },
       {
-        "id": "urn:visionflow:linked:rubric-based-assessment",
+        "id": "urn:ngm:class:rubric-based-assessment",
         "label": "Rubric-Based Assessment"
       },
       {
-        "id": "urn:visionflow:linked:socratic-dialogue",
+        "id": "urn:ngm:class:socratic-dialogue",
         "label": "Socratic Dialogue"
       },
       {
-        "id": "urn:visionflow:linked:spaced-repetition",
+        "id": "urn:ngm:class:spaced-repetition",
         "label": "Spaced Repetition"
       },
       {
-        "id": "urn:visionflow:linked:worked-example-generation",
+        "id": "urn:ngm:class:worked-example-generation",
         "label": "Worked Example Generation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:khan-academy",
+        "label": "Khan Academy"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-immersive-reader",
+        "label": "Microsoft Immersive Reader"
+      },
+      {
+        "id": "urn:ngm:class:claude",
+        "label": "Claude"
+      },
+      {
+        "id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      },
+      {
+        "id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "id": "urn:ngm:class:perplexity",
+        "label": "Perplexity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aleks",
+        "label": "ALEKS"
+      },
+      {
+        "id": "urn:ngm:class:carnegie-learning-mathia",
+        "label": "Carnegie Learning Mathia"
+      },
+      {
+        "id": "urn:ngm:class:century-tech",
+        "label": "Century Tech"
+      },
+      {
+        "id": "urn:ngm:class:duolingo-max",
+        "label": "Duolingo Max"
+      },
+      {
+        "id": "urn:ngm:class:gradescope",
+        "label": "Gradescope"
+      },
+      {
+        "id": "urn:ngm:class:khanmigo",
+        "label": "Khanmigo"
+      },
+      {
+        "id": "urn:ngm:class:magic-school",
+        "label": "MagicSchool"
+      },
+      {
+        "id": "urn:ngm:class:squirrel-ai",
+        "label": "Squirrel AI"
+      },
+      {
+        "id": "urn:ngm:class:synthesis-tutor",
+        "label": "Synthesis Tutor"
+      },
+      {
+        "id": "urn:ngm:class:tassomai",
+        "label": "Tassomai"
+      },
+      {
+        "id": "urn:ngm:class:turnitin-ai-detection",
+        "label": "Turnitin AI Detection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:df-e-generative-ai-guidance",
+        "label": "DfE Generative AI Guidance"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act-annex-iii",
+        "label": "EU AI Act Annex III"
+      },
+      {
+        "id": "urn:ngm:class:ib-ai-policy",
+        "label": "IB AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-literacy-framework",
+        "label": "OECD AI Literacy Framework"
+      },
+      {
+        "id": "urn:ngm:class:ofqual-ai-guidance",
+        "label": "Ofqual AI Guidance"
+      },
+      {
+        "id": "urn:ngm:class:unesco-ai-education-recommendation",
+        "label": "UNESCO AI Education Recommendation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-literacy",
+        "label": "AI Literacy"
+      },
+      {
+        "id": "urn:ngm:class:assessment-integrity",
+        "label": "Assessment Integrity"
+      },
+      {
+        "id": "urn:ngm:class:datafication",
+        "label": "Datafication"
+      },
+      {
+        "id": "urn:ngm:class:ethan-mollick",
+        "label": "Ethan Mollick"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Client side DCO",
   "slug": "client-side-dco",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:client-side-dco",
+  "classIri": "urn:ngm:class:client-side-dco",
   "domain": "infrastructure",
   "definition": "Client side DCO is a technology infrastructure concept and a type of Decentralised Web.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:decentralised-web",
+      "id": "urn:ngm:class:decentralised-web",
       "label": "Decentralised Web"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "stub",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,28 +3,27 @@
   "title": "Safety",
   "slug": "safety",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:safety",
+  "classIri": "urn:ngm:class:safety",
   "domain": "spatial-computing",
   "definition": "The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:hazard-analysis",
+        "id": "urn:ngm:class:hazard-analysis",
         "label": "Hazard Analysis"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-ai-0079",
+        "id": "urn:ngm:class:risk-assessment-ai-0079",
         "label": "Risk Assessment (AI-0079)"
       }
     ],
@@ -32,7 +31,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

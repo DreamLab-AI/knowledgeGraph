@@ -3,19 +3,18 @@
   "title": "Hardware Platform Agnostic",
   "slug": "hardware-platform-agnostic",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hardware-platform-agnostic",
+  "classIri": "urn:ngm:class:hardware-platform-agnostic",
   "domain": "spatial-computing",
-  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations. Hardware-/Platform-Agnostic systems achieve portability through abstraction layers that decouple functionality from underlying physical or operating system constraints.",
+  "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

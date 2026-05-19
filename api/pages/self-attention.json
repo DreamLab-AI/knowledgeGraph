@@ -3,19 +3,18 @@
   "title": "Self Attention",
   "slug": "self-attention",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:self-attention",
+  "classIri": "urn:ngm:class:self-attention",
   "domain": "artificial-intelligence",
   "definition": "An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:transformer",
+      "id": "urn:ngm:class:transformer",
       "label": "Transformer"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

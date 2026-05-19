@@ -532,340 +532,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:distributed-computing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:distributed-computing",
+  "@type": "Class",
   "label": "Distributed Computing",
+  "definition": "Distributed Computing is a computational paradigm in which networked autonomous nodes (processes, machines, datacentres or geographic regions) coordinate through message passing over partially synchronous networks to solve problems no single node can solve alone or to scale capacity beyond a sing...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:concurrent-computing",
-      "vc:label": "Concurrent Computing"
+      "@id": "urn:ngm:class:concurrent-computing",
+      "label": "Concurrent Computing"
     },
     {
-      "@id": "urn:visionflow:linked:coordination-systems",
-      "vc:label": "Coordination Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:networked-systems",
-      "vc:label": "Networked Systems"
+      "@id": "urn:ngm:class:coordination-systems",
+      "label": "Coordination Systems"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:e2699493fd6b86cbd2898083410a3e4d8a4006e81c194f64994a2a4fe8a39e59"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:coordination-service",
+        "label": "Coordination Service"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-lock",
+        "label": "Distributed Lock"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:replication-mechanism",
+        "label": "Replication Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:identity-and-naming",
+        "label": "Identity and Naming"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:partial-failure-tolerance",
+        "label": "Partial Failure Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:serialisation-format",
+        "label": "Serialisation Format"
+      },
+      {
+        "@id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:elastic-capacity",
+        "label": "Elastic Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-distribution",
+        "label": "Geographic Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:actor-model",
+        "label": "Actor Model"
+      },
+      {
+        "@id": "urn:ngm:class:bulk-synchronous-parallel",
+        "label": "Bulk Synchronous Parallel"
+      },
+      {
+        "@id": "urn:ngm:class:map-reduce",
+        "label": "MapReduce"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "@id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:ray",
+        "label": "Ray"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:zoo-keeper",
+        "label": "ZooKeeper"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-computing",
+        "label": "Peer-to-Peer Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Databases"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-analytics",
+        "label": "Streaming Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:apache-software-foundation",
+        "label": "Apache Software Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      },
+      {
+        "@id": "urn:ngm:class:g-rpc-specification",
+        "label": "gRPC Specification"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-quic",
+        "label": "IETF QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e2699493fd6b86cbd2898083410a3e4d8a4006e81c194f64994a2a4fe8a39e59@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Distributed Computing is a computational paradigm in which networked autonomous nodes (processes, machines, datacentres or geographic regions) coordinate through message passing over partially synchronous networks to solve problems no single node can solve alone or to scale capacity beyond a single machine's limits, formalised through foundational theory (Lamport's happens-before relation and logical clocks 1978 establishing partial order over distributed events, Fidge 1988 and Mattern 1989 vector clocks capturing concurrent causality with O(n)-component timestamps, Lamport Shostak Pease Byzantine generals 1982 proving 3f+1 nodes required to tolerate f arbitrary faults, FLP impossibility Fischer Lynch Paterson 1985 proving deterministic consensus impossible in pure asynchrony with a single crash, CAP Brewer 2000 conjecture and Gilbert-Lynch 2002 proof establishing the consistency-availability-partition trilemma, Abadi 2012 PACELC extending CAP with else-latency-consistency tradeoffs during normal operation, the two-generals problem demonstrating impossibility of reliable agreement over lossy channels), implemented through consensus protocols (Paxos Lamport 1998 and Multi-Paxos and ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:coordination-service",
-      "vc:label": "Coordination Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-lock",
-      "vc:label": "Distributed Lock"
-    },
-    {
-      "@id": "urn:visionflow:linked:leader-election",
-      "vc:label": "Leader Election"
-    },
-    {
-      "@id": "urn:visionflow:linked:logical-clock",
-      "vc:label": "Logical Clock"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-queue",
-      "vc:label": "Message Queue"
-    },
-    {
-      "@id": "urn:visionflow:linked:replication-mechanism",
-      "vc:label": "Replication Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:consensus-protocol",
-      "vc:label": "Consensus Protocol"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gossip-protocol",
-      "vc:label": "Gossip Protocol"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:identity-and-naming",
-      "vc:label": "Identity and Naming"
-    },
-    {
-      "@id": "urn:visionflow:linked:message-passing",
-      "vc:label": "Message Passing"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-communication",
-      "vc:label": "Network Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:partial-failure-tolerance",
-      "vc:label": "Partial Failure Tolerance"
-    },
-    {
-      "@id": "urn:visionflow:linked:serialisation-format",
-      "vc:label": "Serialisation Format"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-synchronisation",
-      "vc:label": "Time Synchronisation"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:distributed-ai-training",
-      "vc:label": "Distributed AI Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:elastic-capacity",
-      "vc:label": "Elastic Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:geographic-distribution",
-      "vc:label": "Geographic Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-availability",
-      "vc:label": "High Availability"
-    },
-    {
-      "@id": "urn:visionflow:linked:horizontal-scalability",
-      "vc:label": "Horizontal Scalability"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:fault-tolerance",
-      "vc:label": "Fault Tolerance"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:actor-model",
-      "vc:label": "Actor Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:bulk-synchronous-parallel",
-      "vc:label": "Bulk Synchronous Parallel"
-    },
-    {
-      "@id": "urn:visionflow:linked:map-reduce",
-      "vc:label": "MapReduce"
-    },
-    {
-      "@id": "urn:visionflow:linked:paxos",
-      "vc:label": "Paxos"
-    },
-    {
-      "@id": "urn:visionflow:linked:pbft",
-      "vc:label": "PBFT"
-    },
-    {
-      "@id": "urn:visionflow:linked:raft",
-      "vc:label": "Raft"
-    },
-    {
-      "@id": "urn:visionflow:linked:saga-pattern",
-      "vc:label": "Saga Pattern"
-    },
-    {
-      "@id": "urn:visionflow:linked:two-phase-commit",
-      "vc:label": "Two-Phase Commit"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:crdt",
-      "vc:label": "CRDT"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:byzantine-generals-problem",
-      "vc:label": "Byzantine Generals Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:cap-theorem",
-      "vc:label": "CAP Theorem"
-    },
-    {
-      "@id": "urn:visionflow:linked:flp-impossibility",
-      "vc:label": "FLP Impossibility"
-    },
-    {
-      "@id": "urn:visionflow:linked:lamport-timestamps",
-      "vc:label": "Lamport Timestamps"
-    },
-    {
-      "@id": "urn:visionflow:linked:pacelc",
-      "vc:label": "PACELC"
-    },
-    {
-      "@id": "urn:visionflow:linked:two-generals-problem",
-      "vc:label": "Two Generals Problem"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-clocks",
-      "vc:label": "Vector Clocks"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-consensus",
-      "vc:label": "Blockchain Consensus"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-ai-training",
-      "vc:label": "Distributed AI Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:distributed-databases",
-      "vc:label": "Distributed Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:microservices",
-      "vc:label": "Microservices"
-    },
-    {
-      "@id": "urn:visionflow:linked:streaming-analytics",
-      "vc:label": "Streaming Analytics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:apache-flink",
-      "vc:label": "Apache Flink"
-    },
-    {
-      "@id": "urn:visionflow:linked:apache-kafka",
-      "vc:label": "Apache Kafka"
-    },
-    {
-      "@id": "urn:visionflow:linked:apache-spark",
-      "vc:label": "Apache Spark"
-    },
-    {
-      "@id": "urn:visionflow:linked:etcd",
-      "vc:label": "etcd"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-rpc",
-      "vc:label": "gRPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:kubernetes",
-      "vc:label": "Kubernetes"
-    },
-    {
-      "@id": "urn:visionflow:linked:ray",
-      "vc:label": "Ray"
-    },
-    {
-      "@id": "urn:visionflow:linked:service-mesh",
-      "vc:label": "Service Mesh"
-    },
-    {
-      "@id": "urn:visionflow:linked:zoo-keeper",
-      "vc:label": "ZooKeeper"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:centralised-computing",
-      "vc:label": "Centralised Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:embarrassingly-parallel-batch",
-      "vc:label": "Embarrassingly Parallel Batch"
-    },
-    {
-      "@id": "urn:visionflow:linked:mainframe-computing",
-      "vc:label": "Mainframe Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-machine-multiprocessing",
-      "vc:label": "Single-Machine Multiprocessing"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:cloud-native",
-      "vc:label": "Cloud Native"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-performance-computing",
-      "vc:label": "High-Performance Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:peer-to-peer-computing",
-      "vc:label": "Peer-to-Peer Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:federated-learning",
-      "vc:label": "Federated Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:apache-software-foundation",
-      "vc:label": "Apache Software Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:cncf",
-      "vc:label": "CNCF"
-    },
-    {
-      "@id": "urn:visionflow:linked:g-rpc-specification",
-      "vc:label": "gRPC Specification"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf-quic",
-      "vc:label": "IETF QUIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:mpi-forum",
-      "vc:label": "MPI Forum"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-telemetry",
-      "vc:label": "OpenTelemetry"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

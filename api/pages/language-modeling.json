@@ -3,19 +3,18 @@
   "title": "Language Modeling",
   "slug": "language-modeling",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:language-modeling",
+  "classIri": "urn:ngm:class:language-modeling",
   "domain": "spatial-computing",
-  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.",
+  "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

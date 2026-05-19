@@ -3,19 +3,18 @@
   "title": "blockchain core concepts",
   "slug": "blockchain-core-concepts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:blockchain-core-concepts",
+  "classIri": "urn:ngm:class:blockchain-core-concepts",
   "domain": "infrastructure",
-  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataStructure|data structures]] ([[MerkleTree|Merkle trees]], [[HashFunction|hash functions]]). Essential components include [[Transaction|transactions]], [[SmartContract|smart contracts]], [[Token|tokens]], and [[BlockchainGovernance|governance mechanisms]], with application frameworks spanning [[DecentralisedFinance|DeFi]], [[NFT|NFTs]], and [[MetaverseEconomy|metaverse economies]]. Broader considerations encompass [[Scalability|scalability]] solutions ([[LayerTwo|Layer 2s]]), [[Interoperability|cross-chain interoperability]], [[PrivacyEnhancements|privacy enhancements]], and [[RegulatoryCompliance|regulatory compliance]] across jurisdictions.",
+  "definition": "Core blockchain concepts encompass distributed ledger technology fundamentals including [[Consensus|consensus mechanisms]] ([[ProofOfWork|PoW]], [[ProofOfStake|PoS]]), [[CryptographyFundamentals|cryptographic primitives]] ([[PublicKeyEncryption|PKC]], [[DigitalSignature|signatures]]), and [[DataS...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

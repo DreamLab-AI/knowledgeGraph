@@ -3,44 +3,48 @@
   "title": "Motion Tracking",
   "slug": "motion-tracking",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:motion-tracking",
+  "classIri": "urn:ngm:class:motion-tracking",
   "domain": "robotics",
-  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications. In XR contexts, motion tracking is fundamental to creating embodied presence by translating user movements into avatar animations and enabling natural interaction with virtual environments.",
+  "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:xr-input-technologies",
+      "id": "urn:ngm:class:xr-input-technologies",
       "label": "XR Input Technologies"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:avatar-animation",
+        "id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation"
       },
       {
-        "id": "urn:visionflow:linked:embodied-presence",
+        "id": "urn:ngm:class:embodied-presence",
         "label": "Embodied Presence"
       },
       {
-        "id": "urn:visionflow:linked:gesture-control",
+        "id": "urn:ngm:class:gesture-control",
         "label": "Gesture Control"
       },
       {
-        "id": "urn:visionflow:linked:user-identification",
+        "id": "urn:ngm:class:user-identification",
         "label": "User Identification"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

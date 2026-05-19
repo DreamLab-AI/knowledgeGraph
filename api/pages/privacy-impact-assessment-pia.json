@@ -3,86 +3,99 @@
   "title": "Privacy Impact Assessment (PIA)",
   "slug": "privacy-impact-assessment-pia",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:privacy-impact-assessment-pia",
+  "classIri": "urn:ngm:class:privacy-impact-assessment-pia",
   "domain": "spatial-computing",
-  "definition": "Systematic evaluation process that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ethical standards.",
+  "definition": "Systematic eprocess that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ical standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:compliance-verification-system",
+        "id": "urn:ngm:class:compliance-verification-system",
         "label": "Compliance Verification System"
       },
       {
-        "id": "urn:visionflow:linked:impact-analysis-framework",
+        "id": "urn:ngm:class:impact-analysis-framework",
         "label": "Impact Analysis Framework"
       },
       {
-        "id": "urn:visionflow:linked:mitigation-strategy-generator",
+        "id": "urn:ngm:class:mitigation-strategy-generator",
         "label": "Mitigation Strategy Generator"
       },
       {
-        "id": "urn:visionflow:linked:risk-identification-module",
+        "id": "urn:ngm:class:risk-identification-module",
         "label": "Risk Identification Module"
       },
       {
-        "id": "urn:visionflow:linked:stakeholder-consultation-engine",
+        "id": "urn:ngm:class:stakeholder-consultation-engine",
         "label": "Stakeholder Consultation Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-flow-mapping",
+        "id": "urn:ngm:class:data-flow-mapping",
         "label": "Data Flow Mapping"
       },
       {
-        "id": "urn:visionflow:linked:privacy-requirements",
+        "id": "urn:ngm:class:privacy-requirements",
         "label": "Privacy Requirements"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-compliance-database",
+        "id": "urn:ngm:class:regulatory-compliance-database",
         "label": "Regulatory Compliance Database"
       },
       {
-        "id": "urn:visionflow:linked:risk-assessment-methodology",
+        "id": "urn:ngm:class:risk-assessment-methodology",
         "label": "Risk Assessment Methodology"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:gdpr-compliance",
+        "id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
       },
       {
-        "id": "urn:visionflow:linked:user-trust",
+        "id": "urn:ngm:class:user-trust",
         "label": "User Trust"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-by-design",
+        "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
       },
       {
-        "id": "urn:visionflow:owl:class:risk-mitigation",
+        "id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       },
       {
-        "id": "urn:visionflow:owl:class:transparent-data-processing",
+        "id": "urn:ngm:class:transparent-data-processing",
         "label": "Transparent Data Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-protection-management-system",
+        "label": "Data Protection Management System"
+      },
+      {
+        "id": "urn:ngm:class:privacy-governance-framework",
+        "label": "Privacy Governance Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,36 +3,45 @@
   "title": "Power Supply",
   "slug": "power-supply",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:power-supply",
+  "classIri": "urn:ngm:class:power-supply",
   "domain": "infrastructure",
-  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices. In data center contexts, power supply systems include redundant PSUs, uninterruptible power supplies (UPS), and power distribution units (PDUs).",
+  "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:continuous-operation",
+        "id": "urn:ngm:class:continuous-operation",
         "label": "Continuous Operation"
       },
       {
-        "id": "urn:visionflow:linked:system-reliability",
+        "id": "urn:ngm:class:system-reliability",
         "label": "System Reliability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

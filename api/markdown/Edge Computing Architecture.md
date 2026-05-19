@@ -128,48 +128,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:edge-computing-architecture",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:edge-computing-architecture",
+  "@type": "Class",
   "label": "Edge Computing Architecture",
+  "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:distributed-system-architecture",
-      "vc:label": "Distributed System Architecture"
+      "@id": "urn:ngm:class:distributed-system-architecture",
+      "label": "Distributed System Architecture"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:39c5fffee110b00731d5aa97bffa1951b2b4be4f283b7e0a66def052818cbbcd"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:low-latency-experiences",
+        "label": "Low-Latency Experiences"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:39c5fffee110b00731d5aa97bffa1951b2b4be4f283b7e0a66def052818cbbcd@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:low-latency-experiences",
-      "vc:label": "Low-Latency Experiences"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

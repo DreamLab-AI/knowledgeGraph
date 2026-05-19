@@ -140,76 +140,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compliance-dashboard",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compliance-dashboard",
+  "@type": "Class",
   "label": "Compliance Dashboard",
+  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compli...",
+  "domain": "artificial-intelligence",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:regulatory-technology",
-      "vc:label": "Regulatory Technology"
+      "@id": "urn:ngm:class:regulatory-technology",
+      "label": "Regulatory Technology"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea"
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:analytics-engine",
+        "label": "Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:risk-visualization",
+        "label": "Risk Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0d242a219ca1f647e8594fbab94ef248bda82070d97fd8530bdc1ab5a83909ea@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:analytics-engine",
-      "vc:label": "Analytics Engine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-integration",
-      "vc:label": "Data Integration"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:real-time-monitoring",
-      "vc:label": "Real-Time Monitoring"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-visualization",
-      "vc:label": "Risk Visualization"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-reporting",
-      "vc:label": "Regulatory Reporting"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

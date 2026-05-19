@@ -380,322 +380,255 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:hand-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hand-tracking",
+  "@type": "Class",
   "label": "Hand Tracking",
+  "definition": "Hand Tracking is a real-time computational pipeline that continuously estimates the three-dimensional position, orientation, and articulation state of one or both human hands from sensor input, delivering a skeletal or parametric representation of all fingers and joints at interactive framerates ...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "Gesture Recognition"
+      "@id": "urn:ngm:class:gesture-recognition",
+      "label": "Gesture Recognition"
     },
     {
-      "@id": "urn:visionflow:owl:class:pose-estimation",
-      "vc:label": "Pose Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:human-computer-interaction",
-      "vc:label": "Human-Computer Interaction"
+      "@id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c2095ad75c517f1594120298ed11f1add995992f549b08ed2744491f3c5f1999"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:confidence-estimator",
+        "label": "Confidence Estimator"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:hand-skeleton-model",
+        "label": "Hand Skeleton Model"
+      },
+      {
+        "@id": "urn:ngm:class:keypoint-detector",
+        "label": "Keypoint Detector"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-constraint-model",
+        "label": "Kinematic Constraint Model"
+      },
+      {
+        "@id": "urn:ngm:class:landmark-regressor",
+        "label": "Landmark Regressor"
+      },
+      {
+        "@id": "urn:ngm:class:palm-detector",
+        "label": "Palm Detector"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-filter",
+        "label": "Temporal Filter"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:annotated-hand-dataset",
+        "label": "Annotated Hand Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:calibration-data",
+        "label": "Calibration Data"
+      },
+      {
+        "@id": "urn:ngm:class:camera-sensor",
+        "label": "Camera Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:air-typing",
+        "label": "Air Typing"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:pinch-interaction",
+        "label": "Pinch Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-teleoperation",
+        "label": "Robotic Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:sign-language-recognition",
+        "label": "Sign Language Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-training-simulation",
+        "label": "Surgical Training Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:touchless-hci",
+        "label": "Touchless HCI"
+      },
+      {
+        "@id": "urn:ngm:class:xr-interaction",
+        "label": "XR Interaction"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:apple-vision-os-hand-input",
+        "label": "Apple visionOS Hand Input"
+      },
+      {
+        "@id": "urn:ngm:class:mano-model",
+        "label": "MANO Model"
+      },
+      {
+        "@id": "urn:ngm:class:media-pipe-hands",
+        "label": "MediaPipe Hands"
+      },
+      {
+        "@id": "urn:ngm:class:meta-hand-tracking-sdk",
+        "label": "Meta Hand Tracking SDK"
+      },
+      {
+        "@id": "urn:ngm:class:ultraleap-sdk",
+        "label": "Ultraleap SDK"
+      },
+      {
+        "@id": "urn:ngm:class:web-xr-hand-input-api",
+        "label": "WebXR Hand Input API"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:electromyography",
+        "label": "Electromyography"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-illumination",
+        "label": "Infrared Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:leap-motion",
+        "label": "Leap Motion"
+      },
+      {
+        "@id": "urn:ngm:class:media-pipe",
+        "label": "MediaPipe"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      },
+      {
+        "@id": "urn:ngm:class:apple-vision-pro",
+        "label": "Apple Vision Pro"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-surgery",
+        "label": "Robotic Surgery"
+      },
+      {
+        "@id": "urn:ngm:class:sign-language-recognition",
+        "label": "Sign Language Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-9241-ergonomics-of-human-system-interaction",
+        "label": "ISO 9241 Ergonomics of Human-System Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr-hand-tracking-extension",
+        "label": "OpenXR Hand Tracking Extension"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-xr-hand-input-api",
+        "label": "W3C WebXR Hand Input API"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c2095ad75c517f1594120298ed11f1add995992f549b08ed2744491f3c5f1999@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Hand Tracking is a real-time computational pipeline that continuously estimates the three-dimensional position, orientation, and articulation state of one or both human hands from sensor input, delivering a skeletal or parametric representation of all fingers and joints at interactive framerates (typically 30-120 Hz) without requiring the user to hold or wear any instrumented device. The output—commonly the 21-keypoint hand skeleton standardised by MediaPipe Hands (Zhang et al. 2020) or the MANO parametric mesh model (Romero et al. 2017 with 45 pose parameters and 10 shape parameters)—drives interaction in extended reality (XR) headsets, sign language recognition pipelines, surgical training simulators, and touchless human–computer interfaces. Hand tracking sits at the intersection of [[Computer Vision]], [[Pose Estimation]], and [[Sensor Fusion]], consuming data from depth cameras (structured light / time-of-flight), passive RGB cameras, multi-camera stereo arrays, near-infrared (NIR) illuminated sensors, or wrist-worn electromyography (EMG) arrays, and fusing those modalities through deep convolutional detectors, graph neural networks modelling kinematic constraints, and probabil",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:confidence-estimator",
-      "vc:label": "Confidence Estimator"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-sensor",
-      "vc:label": "Depth Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:hand-skeleton-model",
-      "vc:label": "Hand Skeleton Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:keypoint-detector",
-      "vc:label": "Keypoint Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:kinematic-constraint-model",
-      "vc:label": "Kinematic Constraint Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:landmark-regressor",
-      "vc:label": "Landmark Regressor"
-    },
-    {
-      "@id": "urn:visionflow:linked:palm-detector",
-      "vc:label": "Palm Detector"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-filter",
-      "vc:label": "Temporal Filter"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:annotated-hand-dataset",
-      "vc:label": "Annotated Hand Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:calibration-data",
-      "vc:label": "Calibration Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:camera-sensor",
-      "vc:label": "Camera Sensor"
-    },
-    {
-      "@id": "urn:visionflow:linked:depth-sensor",
-      "vc:label": "Depth Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:real-time-processing",
-      "vc:label": "Real-Time Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:air-typing",
-      "vc:label": "Air Typing"
-    },
-    {
-      "@id": "urn:visionflow:linked:gesture-recognition",
-      "vc:label": "Gesture Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:pinch-interaction",
-      "vc:label": "Pinch Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-teleoperation",
-      "vc:label": "Robotic Teleoperation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sign-language-recognition",
-      "vc:label": "Sign Language Recognition"
-    },
-    {
-      "@id": "urn:visionflow:linked:surgical-training-simulation",
-      "vc:label": "Surgical Training Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:touchless-hci",
-      "vc:label": "Touchless HCI"
-    },
-    {
-      "@id": "urn:visionflow:linked:xr-interaction",
-      "vc:label": "XR Interaction"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:apple-vision-os-hand-input",
-      "vc:label": "Apple visionOS Hand Input"
-    },
-    {
-      "@id": "urn:visionflow:linked:mano-model",
-      "vc:label": "MANO Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-pipe-hands",
-      "vc:label": "MediaPipe Hands"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-hand-tracking-sdk",
-      "vc:label": "Meta Hand Tracking SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:ultraleap-sdk",
-      "vc:label": "Ultraleap SDK"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-xr-hand-input-api",
-      "vc:label": "WebXR Hand Input API"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:skeletal-pose-estimation",
-      "vc:label": "Skeletal Pose Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:convolutional-neural-network",
-      "vc:label": "Convolutional Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:depth-estimation",
-      "vc:label": "Depth Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-neural-network",
-      "vc:label": "Graph Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:kalman-filter",
-      "vc:label": "Kalman Filter"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:accessibility-technology",
-      "vc:label": "Accessibility Technology"
-    },
-    {
-      "@id": "urn:visionflow:linked:apple-vision-pro",
-      "vc:label": "Apple Vision Pro"
-    },
-    {
-      "@id": "urn:visionflow:linked:extended-reality",
-      "vc:label": "Extended Reality"
-    },
-    {
-      "@id": "urn:visionflow:linked:meta-quest",
-      "vc:label": "Meta Quest"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotic-surgery",
-      "vc:label": "Robotic Surgery"
-    },
-    {
-      "@id": "urn:visionflow:linked:sign-language-recognition",
-      "vc:label": "Sign Language Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:electromyography",
-      "vc:label": "Electromyography"
-    },
-    {
-      "@id": "urn:visionflow:linked:infrared-illumination",
-      "vc:label": "Infrared Illumination"
-    },
-    {
-      "@id": "urn:visionflow:linked:stereo-vision",
-      "vc:label": "Stereo Vision"
-    },
-    {
-      "@id": "urn:visionflow:linked:structured-light",
-      "vc:label": "Structured Light"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-of-flight-sensor",
-      "vc:label": "Time-of-Flight Sensor"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformer-architecture",
-      "vc:label": "Transformer Architecture"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:body-tracking",
-      "vc:label": "Body Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:controller-based-input",
-      "vc:label": "Controller-Based Input"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-glove",
-      "vc:label": "Data Glove"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:eye-tracking",
-      "vc:label": "Eye Tracking"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:marker-based-tracking",
-      "vc:label": "Marker-Based Tracking"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:leap-motion",
-      "vc:label": "Leap Motion"
-    },
-    {
-      "@id": "urn:visionflow:linked:media-pipe",
-      "vc:label": "MediaPipe"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:augmented-reality",
-      "vc:label": "Augmented Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:mixed-reality",
-      "vc:label": "Mixed Reality"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:object-detection",
-      "vc:label": "Object Detection"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:pose-estimation",
-      "vc:label": "Pose Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-reality",
-      "vc:label": "Virtual Reality"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iso-9241-ergonomics-of-human-system-interaction",
-      "vc:label": "ISO 9241 Ergonomics of Human-System Interaction"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-xr-hand-tracking-extension",
-      "vc:label": "OpenXR Hand Tracking Extension"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-web-xr-hand-input-api",
-      "vc:label": "W3C WebXR Hand Input API"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

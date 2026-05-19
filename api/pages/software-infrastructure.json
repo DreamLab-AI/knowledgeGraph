@@ -3,19 +3,18 @@
   "title": "Software Infrastructure",
   "slug": "software-infrastructure",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:software-infrastructure",
+  "classIri": "urn:ngm:class:software-infrastructure",
   "domain": "infrastructure",
-  "definition": "Software Infrastructure is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Software Infrastructure is a type of Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,86 +3,99 @@
   "title": "Digital Real Estate",
   "slug": "digital-real-estate",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-real-estate",
+  "classIri": "urn:ngm:class:digital-real-estate",
   "domain": "spatial-computing",
-  "definition": "Tokenised virtual land parcels and property within metaverse worlds that can be owned, developed, monetised, and traded as digital assets. bridges-to:: [[Blockchain]]",
+  "definition": "Digital Real Estate is a type of Virtual Economy in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:virtual-economy",
+      "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:development-rights",
+        "id": "urn:ngm:class:development-rights",
         "label": "Development Rights"
       },
       {
-        "id": "urn:visionflow:linked:ownership-token",
+        "id": "urn:ngm:class:ownership-token",
         "label": "Ownership Token"
       },
       {
-        "id": "urn:visionflow:linked:property-metadata",
+        "id": "urn:ngm:class:property-metadata",
         "label": "Property Metadata"
       },
       {
-        "id": "urn:visionflow:owl:class:land-parcel",
+        "id": "urn:ngm:class:land-parcel",
         "label": "Land Parcel"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-coordinates",
+        "id": "urn:ngm:class:spatial-coordinates",
         "label": "Spatial Coordinates"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:owl:class:blockchain-infrastructure",
+        "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-wallet",
+        "id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contracts",
+        "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       },
       {
-        "id": "urn:visionflow:owl:class:spatial-computing",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:advertising-space",
+        "id": "urn:ngm:class:advertising-space",
         "label": "Advertising Space"
       },
       {
-        "id": "urn:visionflow:linked:community-building",
+        "id": "urn:ngm:class:community-building",
         "label": "Community Building"
       },
       {
-        "id": "urn:visionflow:linked:event-hosting",
+        "id": "urn:ngm:class:event-hosting",
         "label": "Event Hosting"
       },
       {
-        "id": "urn:visionflow:linked:property-development",
+        "id": "urn:ngm:class:property-development",
         "label": "Property Development"
       },
       {
-        "id": "urn:visionflow:owl:class:virtual-commerce",
+        "id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

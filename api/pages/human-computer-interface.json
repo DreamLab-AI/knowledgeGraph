@@ -3,19 +3,18 @@
   "title": "Human Computer Interface",
   "slug": "human-computer-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:human-computer-interface",
+  "classIri": "urn:ngm:class:human-computer-interface",
   "domain": "spatial-computing",
-  "definition": "Human Computer Interface is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Human Computer Interface is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

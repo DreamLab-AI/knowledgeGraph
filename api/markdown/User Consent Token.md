@@ -220,132 +220,99 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:user-consent-token",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:user-consent-token",
+  "@type": "Class",
   "label": "User Consent Token",
+  "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:consent-payload",
+        "label": "Consent Payload"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:scope-definition",
+        "label": "Scope Definition"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consent-registry",
+        "label": "Consent Registry"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-policy",
+        "label": "Privacy Policy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-privacy-compliance",
+        "label": "Automated Privacy Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:consent-audit-trail",
+        "label": "Consent Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:consent-revocation",
+        "label": "Consent Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:user-data-sovereignty",
+        "label": "User Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:granular-consent-control",
+        "label": "Granular Consent Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:consent-management-framework",
+        "label": "Consent Management Framework"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8c954024f6cf099111b9cccb38261e57dfeb0426c82561307881276ecc29cb56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:consent-management-framework",
-      "vc:label": "Consent Management Framework"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:consent-payload",
-      "vc:label": "Consent Payload"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-signature",
-      "vc:label": "Cryptographic Signature"
-    },
-    {
-      "@id": "urn:visionflow:linked:revocation-mechanism",
-      "vc:label": "Revocation Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:scope-definition",
-      "vc:label": "Scope Definition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:timestamp",
-      "vc:label": "Timestamp"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:consent-registry",
-      "vc:label": "Consent Registry"
-    },
-    {
-      "@id": "urn:visionflow:linked:cryptographic-key",
-      "vc:label": "Cryptographic Key"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-schema",
-      "vc:label": "Data Schema"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-policy",
-      "vc:label": "Privacy Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-privacy-compliance",
-      "vc:label": "Automated Privacy Compliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:consent-audit-trail",
-      "vc:label": "Consent Audit Trail"
-    },
-    {
-      "@id": "urn:visionflow:linked:consent-revocation",
-      "vc:label": "Consent Revocation"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-data-sovereignty",
-      "vc:label": "User Data Sovereignty"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:granular-consent-control",
-      "vc:label": "Granular Consent Control"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:blockchain-ledger",
-      "vc:label": "Blockchain Ledger"
-    },
-    {
-      "@id": "urn:visionflow:linked:decentralized-identifier-did",
-      "vc:label": "Decentralized Identifier (DID)"
-    },
-    {
-      "@id": "urn:visionflow:linked:time-oracle",
-      "vc:label": "Time Oracle"
-    },
-    {
-      "@id": "urn:visionflow:linked:verifiable-credential",
-      "vc:label": "Verifiable Credential"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -176,56 +176,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:conflict-mineral-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:conflict-mineral-tracking",
+  "@type": "Class",
   "label": "Conflict Mineral Tracking",
+  "definition": "Blockchain applications addressing ical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions.",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:261db8079ac7f735aedb4ad50f51a5d58d3a6da97817f10f36bf42eab1a0ef39@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain applications addressing ethical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions. Over 6,000 companies spend £500 million annually on conflict mineral due diligence under Dodd-Frank Section 1502 and EU Conflict Minerals Regulation, with blockchain implementations by Circulor (Volvo, VW, Tesla), RCS Global Better Sourcing (Apple, Samsung), and Everledger demonstrating 40-60% reductions in due diligence costs through automated verification, immutable custody chains, and cryptographic material fingerprinting that enable 5-15% premium pricing for verified responsible sourcing whilst dramatically reducing human rights abuses.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
-  },
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:did-nostr-identity",
-      "vc:label": "DID Nostr Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-economy",
-      "vc:label": "Virtual Economy"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

@@ -3,163 +3,331 @@
   "title": "Enterprise Smart Contracts",
   "slug": "enterprise-smart-contracts",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:enterprise-smart-contracts",
+  "classIri": "urn:ngm:class:enterprise-smart-contracts",
   "domain": "blockchain",
-  "definition": "**Enterprise smart contracts** are self-executing code artefacts deployed on permissioned [[Distributed Ledger Technology]] platforms \u2014 [[Hyperledger Fabric]] chaincode (Go/Node.js/Java), [[R3 Corda]] CorDapps (Kotlin/JVM), [[Quorum Blockchain]] and [[Hyperledger Besu]] (EVM permissioned with Tessera/Orion private state), [[Hyperledger Iroha]] (command-based), [[R3 Conclave]] (Intel SGX confidential computing), [[JPM Onyx]] Coin Systems, and Microsoft's Confidential Consortium Framework \u2014 that automate multi-party business agreements under regulated governance, confidentiality, and legal-enforceability constraints fundamentally different from public-blockchain code (e.g., [[Ethereum]] [[Solidity]] on Mainnet, [[Solana]] programs). Where public smart contracts prioritise trustlessness, censorship resistance, and immutable \"code is law\" semantics, enterprise smart contracts prioritise organisational governance (multi-party endorsement, on-chain voting), regulatory compliance (KYC/AML/sanctions screening, [[GDPR]] right-to-erasure reconciliation), business confidentiality (private data collections, point-to-point flows, encrypted contracts via Tessera/Orion, [[Zero-Knowledge Proofs]] ",
+  "definition": "Enterprise smart contracts are self-executing code artefacts deployed on permissioned [[Distributed Ledger Technology]] platforms \u2014 [[Hyperledger Fabric]] chaincode (Go/Node.js/Java), [[R3 Corda]] CorDapps (Kotlin/JVM), [[Quorum Blockchain]] and [[Hyperledger Besu]] (EVM permissioned with Tessera...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:business-logic-code",
+      "id": "urn:ngm:class:business-logic-code",
       "label": "Business Logic Code"
     },
     {
-      "id": "urn:visionflow:linked:multi-party-agreement",
+      "id": "urn:ngm:class:multi-party-agreement",
       "label": "Multi-Party Agreement"
-    },
-    {
-      "id": "urn:visionflow:linked:permissioned-compute-artefact",
-      "label": "Permissioned Compute Artefact"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:chaincode",
+        "id": "urn:ngm:class:chaincode",
         "label": "Chaincode"
       },
       {
-        "id": "urn:visionflow:linked:contract-state",
+        "id": "urn:ngm:class:contract-state",
         "label": "Contract State"
       },
       {
-        "id": "urn:visionflow:linked:cor-dapp",
+        "id": "urn:ngm:class:cor-dapp",
         "label": "CorDapp"
       },
       {
-        "id": "urn:visionflow:linked:endorsement-policy",
+        "id": "urn:ngm:class:endorsement-policy",
         "label": "Endorsement Policy"
       },
       {
-        "id": "urn:visionflow:linked:flow-logic",
+        "id": "urn:ngm:class:flow-logic",
         "label": "Flow Logic"
       },
       {
-        "id": "urn:visionflow:linked:notary-service",
+        "id": "urn:ngm:class:notary-service",
         "label": "Notary Service"
       },
       {
-        "id": "urn:visionflow:linked:private-data-collection",
+        "id": "urn:ngm:class:private-data-collection",
         "label": "Private Data Collection"
       },
       {
-        "id": "urn:visionflow:linked:ricardian-contract-template",
+        "id": "urn:ngm:class:ricardian-contract-template",
         "label": "Ricardian Contract Template"
       },
       {
-        "id": "urn:visionflow:linked:solidity-contract",
+        "id": "urn:ngm:class:solidity-contract",
         "label": "Solidity Contract"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:audit-function",
+        "id": "urn:ngm:class:audit-function",
         "label": "Audit Function"
       },
       {
-        "id": "urn:visionflow:linked:certificate-authority",
+        "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:visionflow:linked:legal-agreement",
+        "id": "urn:ngm:class:legal-agreement",
         "label": "Legal Agreement"
       },
       {
-        "id": "urn:visionflow:owl:class:governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       },
       {
-        "id": "urn:visionflow:owl:class:permissioned-blockchain",
+        "id": "urn:ngm:class:permissioned-blockchain",
         "label": "Permissioned Blockchain"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:atomic-settlement",
+        "id": "urn:ngm:class:atomic-settlement",
         "label": "Atomic Settlement"
       },
       {
-        "id": "urn:visionflow:linked:delivery-versus-payment",
+        "id": "urn:ngm:class:delivery-versus-payment",
         "label": "Delivery-Versus-Payment"
       },
       {
-        "id": "urn:visionflow:linked:insurance-claim-automation",
+        "id": "urn:ngm:class:insurance-claim-automation",
         "label": "Insurance Claim Automation"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-reporting-automation",
+        "id": "urn:ngm:class:regulatory-reporting-automation",
         "label": "Regulatory Reporting Automation"
       },
       {
-        "id": "urn:visionflow:linked:syndicated-lending-automation",
+        "id": "urn:ngm:class:syndicated-lending-automation",
         "label": "Syndicated Lending Automation"
       },
       {
-        "id": "urn:visionflow:linked:tokenised-securities",
+        "id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenised Securities"
       },
       {
-        "id": "urn:visionflow:linked:trade-finance-automation",
+        "id": "urn:ngm:class:trade-finance-automation",
         "label": "Trade Finance Automation"
       },
       {
-        "id": "urn:visionflow:owl:class:provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:accord-project-cicero",
+        "id": "urn:ngm:class:accord-project-cicero",
         "label": "Accord Project Cicero"
       },
       {
-        "id": "urn:visionflow:linked:erc-1400-security-token",
+        "id": "urn:ngm:class:erc-1400-security-token",
         "label": "ERC-1400 Security Token"
       },
       {
-        "id": "urn:visionflow:linked:erc-3475-abstract-bond",
+        "id": "urn:ngm:class:erc-3475-abstract-bond",
         "label": "ERC-3475 Abstract Bond"
       },
       {
-        "id": "urn:visionflow:linked:erc-3643-t-rex",
+        "id": "urn:ngm:class:erc-3643-t-rex",
         "label": "ERC-3643 T-REX"
       },
       {
-        "id": "urn:visionflow:linked:finos-common-domain-model",
+        "id": "urn:ngm:class:finos-common-domain-model",
         "label": "FINOS Common Domain Model"
       },
       {
-        "id": "urn:visionflow:linked:isda-common-domain-model",
+        "id": "urn:ngm:class:isda-common-domain-model",
         "label": "ISDA Common Domain Model"
       },
       {
-        "id": "urn:visionflow:linked:ricardian-contracts",
+        "id": "urn:ngm:class:ricardian-contracts",
         "label": "Ricardian Contracts"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:amd-sev-snp",
+        "label": "AMD SEV-SNP"
+      },
+      {
+        "id": "urn:ngm:class:aws-nitro-enclaves",
+        "label": "AWS Nitro Enclaves"
+      },
+      {
+        "id": "urn:ngm:class:azure-confidential-ledger",
+        "label": "Azure Confidential Ledger"
+      },
+      {
+        "id": "urn:ngm:class:go",
+        "label": "Go"
+      },
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:java",
+        "label": "Java"
+      },
+      {
+        "id": "urn:ngm:class:kotlin",
+        "label": "Kotlin"
+      },
+      {
+        "id": "urn:ngm:class:node-js",
+        "label": "Node.js"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-proxy-pattern",
+        "label": "OpenZeppelin Proxy Pattern"
+      },
+      {
+        "id": "urn:ngm:class:orion",
+        "label": "Orion"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:tessera",
+        "label": "Tessera"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consortium-governance",
+        "label": "Consortium Governance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:multi-party-workflow",
+        "label": "Multi-Party Workflow"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:accord-project",
+        "label": "Accord Project"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "id": "urn:ngm:class:erc-3475",
+        "label": "ERC-3475"
+      },
+      {
+        "id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "id": "urn:ngm:class:finos-cdm",
+        "label": "FINOS CDM"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:isda-cdm",
+        "label": "ISDA CDM"
+      },
+      {
+        "id": "urn:ngm:class:iso-tc-307",
+        "label": "ISO TC 307"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:b3i",
+        "label": "B3i"
+      },
+      {
+        "id": "urn:ngm:class:contour",
+        "label": "Contour"
+      },
+      {
+        "id": "urn:ngm:class:dtcc-digital-securities-initiative",
+        "label": "DTCC Digital Securities Initiative"
+      },
+      {
+        "id": "urn:ngm:class:finastra-fusion-lender-comm",
+        "label": "Finastra Fusion LenderComm"
+      },
+      {
+        "id": "urn:ngm:class:insurwave",
+        "label": "Insurwave"
+      },
+      {
+        "id": "urn:ngm:class:jpm-onyx",
+        "label": "JPM Onyx"
+      },
+      {
+        "id": "urn:ngm:class:marco-polo-network",
+        "label": "Marco Polo Network"
+      },
+      {
+        "id": "urn:ngm:class:project-cedar",
+        "label": "Project Cedar"
+      },
+      {
+        "id": "urn:ngm:class:project-mariana",
+        "label": "Project Mariana"
+      },
+      {
+        "id": "urn:ngm:class:project-rosalind",
+        "label": "Project Rosalind"
+      },
+      {
+        "id": "urn:ngm:class:trade-lens",
+        "label": "TradeLens"
+      },
+      {
+        "id": "urn:ngm:class:we-trade",
+        "label": "we.trade"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,78 +3,82 @@
   "title": "Cognitive Feedback Interface",
   "slug": "cognitive-feedback-interface",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cognitive-feedback-interface",
+  "classIri": "urn:ngm:class:cognitive-feedback-interface",
   "domain": "spatial-computing",
   "definition": "Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:adaptive-ui-controller",
+        "id": "urn:ngm:class:adaptive-ui-controller",
         "label": "Adaptive UI Controller"
       },
       {
-        "id": "urn:visionflow:linked:attention-tracker",
+        "id": "urn:ngm:class:attention-tracker",
         "label": "Attention Tracker"
       },
       {
-        "id": "urn:visionflow:linked:cognitive-state-monitor",
+        "id": "urn:ngm:class:cognitive-state-monitor",
         "label": "Cognitive State Monitor"
       },
       {
-        "id": "urn:visionflow:linked:workload-analyzer",
+        "id": "urn:ngm:class:workload-analyzer",
         "label": "Workload Analyzer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:brain-computer-interface",
+        "id": "urn:ngm:class:brain-computer-interface",
         "label": "Brain-Computer Interface"
       },
       {
-        "id": "urn:visionflow:linked:cognitive-model",
+        "id": "urn:ngm:class:cognitive-model",
         "label": "Cognitive Model"
       },
       {
-        "id": "urn:visionflow:owl:class:eye-tracking",
+        "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-information-display",
+        "id": "urn:ngm:class:adaptive-information-display",
         "label": "Adaptive Information Display"
       },
       {
-        "id": "urn:visionflow:linked:cognitive-load-management",
+        "id": "urn:ngm:class:cognitive-load-management",
         "label": "Cognitive Load Management"
       },
       {
-        "id": "urn:visionflow:linked:personalized-ux",
+        "id": "urn:ngm:class:personalized-ux",
         "label": "Personalized UX"
       },
       {
-        "id": "urn:visionflow:owl:class:attention-aware-interaction",
+        "id": "urn:ngm:class:attention-aware-interaction",
         "label": "Attention-Aware Interaction"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

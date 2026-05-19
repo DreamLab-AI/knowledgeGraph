@@ -212,122 +212,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:synthetic-data-generator",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:synthetic-data-generator",
+  "@type": "Class",
   "label": "Synthetic Data Generator",
+  "definition": "AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-anonymization-pipeline",
-      "vc:label": "Data Anonymization Pipeline"
+      "@id": "urn:ngm:class:data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:4fcbb3499279a2fda35c49bf21daafcbd4f21e3fc05e272030005e1e91d8b1d2"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:data-simulator",
+        "label": "Data Simulator"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-validator",
+        "label": "Privacy Validator"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analyzer",
+        "label": "Statistical Analyzer"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:privacy-metrics",
+        "label": "Privacy Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-models",
+        "label": "Statistical Models"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:testing-dataset-creation",
+        "label": "Testing Dataset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy-Preserving Data Sharing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ai-pipeline",
+        "label": "AI Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-management-platform",
+        "label": "Data Management Platform"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:4fcbb3499279a2fda35c49bf21daafcbd4f21e3fc05e272030005e1e91d8b1d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI-powered system that produces artificial datasets preserving statistical properties and structural characteristics of original data while protecting privacy and enabling testing scenarios.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:ai-pipeline",
-      "vc:label": "AI Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:linked:data-management-platform",
-      "vc:label": "Data Management Platform"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:data-simulator",
-      "vc:label": "Data Simulator"
-    },
-    {
-      "@id": "urn:visionflow:linked:privacy-validator",
-      "vc:label": "Privacy Validator"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-analyzer",
-      "vc:label": "Statistical Analyzer"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-model",
-      "vc:label": "Generative Model"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:privacy-metrics",
-      "vc:label": "Privacy Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-models",
-      "vc:label": "Statistical Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning-framework",
-      "vc:label": "Machine Learning Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:data-augmentation",
-      "vc:label": "Data Augmentation"
-    },
-    {
-      "@id": "urn:visionflow:linked:testing-dataset-creation",
-      "vc:label": "Testing Dataset Creation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:model-training",
-      "vc:label": "Model Training"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
-      "vc:label": "Privacy-Preserving Data Sharing"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:owl:class:differential-privacy",
-      "vc:label": "Differential Privacy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-adversarial-network",
-      "vc:label": "Generative Adversarial Network"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:computer-vision",
-      "vc:label": "Computer Vision"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

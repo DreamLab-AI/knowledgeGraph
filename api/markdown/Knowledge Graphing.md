@@ -584,454 +584,371 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:knowledge-graphing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:knowledge-graphing",
+  "@type": "Class",
   "label": "Knowledge Graphing",
+  "definition": "Knowledge Graphing is the discipline and computational framework for constructing, enriching, storing, querying, and reasoning over structured semantic knowledge encoded as a graph of typed entities (nodes) and directed typed relationships (edges), spanning formal [[Semantic Web]] standards (RDF/...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:data-engineering",
-      "vc:label": "Data Engineering"
+      "@id": "urn:ngm:class:data-engineering",
+      "label": "Data Engineering"
     },
     {
-      "@id": "urn:visionflow:linked:graph-databases",
-      "vc:label": "Graph Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-engineering",
-      "vc:label": "Ontology Engineering"
+      "@id": "urn:ngm:class:graph-databases",
+      "label": "Graph Databases"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b5114fc3b7f9ce07af9f2f6777e0d4d1b47bb8a35eb6da7107111c8d1151c062"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dbpedia",
+        "label": "DBpedia"
+      },
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embeddings",
+        "label": "Knowledge Graph Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "@id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-completion",
+        "label": "Knowledge Graph Completion"
+      },
+      {
+        "@id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-hop Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:compl-ex",
+        "label": "ComplEx"
+      },
+      {
+        "@id": "urn:ngm:class:description-logics",
+        "label": "Description Logics"
+      },
+      {
+        "@id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:owl-reasoning",
+        "label": "OWL Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:trans-e",
+        "label": "TransE"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:llama-index",
+        "label": "LlamaIndex"
+      },
+      {
+        "@id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:cli-multi-agent-systems",
+        "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dbpedia",
+        "label": "DBpedia"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "@id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-ontology",
+        "label": "Metaverse Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-rag-scrapbook",
+        "label": "Multi Agent RAG scrapbook"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-conversation-with-ais",
+        "label": "Ontology conversation with AIs"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:biomedical-research",
+        "label": "Biomedical Research"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic-claude",
+        "label": "Anthropic Claude"
+      },
+      {
+        "@id": "urn:ngm:class:chat-gpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-gql-standard",
+        "label": "ISO GQL Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "@id": "urn:ngm:class:owl-2-w3-c-recommendation",
+        "label": "OWL 2 W3C Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org-vocabulary",
+        "label": "schema.org Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-1-1-w3-c-recommendation",
+        "label": "SPARQL 1.1 W3C Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-rdf-standard",
+        "label": "W3C RDF Standard"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b5114fc3b7f9ce07af9f2f6777e0d4d1b47bb8a35eb6da7107111c8d1151c062@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Knowledge Graphing is the discipline and computational framework for constructing, enriching, storing, querying, and reasoning over structured semantic knowledge encoded as a graph of typed entities (nodes) and directed typed relationships (edges), spanning formal [[Semantic Web]] standards (RDF/OWL/SPARQL), property graph databases ([[Neo4j]], TigerGraph, Amazon Neptune), [[Knowledge Graph Embeddings]] models (TransE, ComplEx, RotatE achieving mean reciprocal rank 0.55-0.79 on FB15k-237 and WN18RR benchmarks), [[Graph Neural Network]] completion methods (R-GCN, CompGCN, NBFNet), LLM-augmented hybrid retrieval architectures ([[GraphRAG]], [[LangChain]], [[LlamaIndex]]), and large curated open knowledge bases (Wikidata 112M+ items / 1.6B+ statements, DBpedia 3B+ RDF triples, Freebase legacy, schema.org 600+ types deployed on 45M+ websites), enabling enterprise search (Google Knowledge Graph 500B+ facts, Amazon Product Graph 1B+ item relationships), biomedical discovery (Open Targets 18M+ disease-gene-drug associations, STRING 20B+ protein interactions), financial intelligence (HSBC AML graph 3B+ transaction nodes, FIBO financial industry ontology 100K+ concepts), and scientific lite",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:dbpedia",
-      "vc:label": "DBpedia"
-    },
-    {
-      "@id": "urn:visionflow:linked:entity-resolution",
-      "vc:label": "Entity Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-graph-embeddings",
-      "vc:label": "Knowledge Graph Embeddings"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology",
-      "vc:label": "Ontology"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl",
-      "vc:label": "OWL"
-    },
-    {
-      "@id": "urn:visionflow:linked:property-graph",
-      "vc:label": "Property Graph"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdf",
-      "vc:label": "RDF"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:triple-store",
-      "vc:label": "Triple Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:wikidata",
-      "vc:label": "Wikidata"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-neural-network",
-      "vc:label": "Graph Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sparql-endpoint",
-      "vc:label": "SPARQL Endpoint"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:coreference-resolution",
-      "vc:label": "Coreference Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:entity-resolution",
-      "vc:label": "Entity Resolution"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-extraction",
-      "vc:label": "Information Extraction"
-    },
-    {
-      "@id": "urn:visionflow:linked:ontology-engineering",
-      "vc:label": "Ontology Engineering"
-    },
-    {
-      "@id": "urn:visionflow:linked:relation-extraction",
-      "vc:label": "Relation Extraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:named-entity-recognition",
-      "vc:label": "Named Entity Recognition"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:federated-query",
-      "vc:label": "Federated Query"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-rag",
-      "vc:label": "GraphRAG"
-    },
-    {
-      "@id": "urn:visionflow:linked:knowledge-graph-completion",
-      "vc:label": "Knowledge Graph Completion"
-    },
-    {
-      "@id": "urn:visionflow:linked:link-prediction",
-      "vc:label": "Link Prediction"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-hop-reasoning",
-      "vc:label": "Multi-hop Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-systems",
-      "vc:label": "Recommendation Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:retrieval-augmented-generation",
-      "vc:label": "Retrieval Augmented Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:explainable-ai",
-      "vc:label": "Explainable AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:question-answering",
-      "vc:label": "Question Answering"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-search",
-      "vc:label": "Semantic Search"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:community-detection",
-      "vc:label": "Community Detection"
-    },
-    {
-      "@id": "urn:visionflow:linked:compl-ex",
-      "vc:label": "ComplEx"
-    },
-    {
-      "@id": "urn:visionflow:linked:description-logics",
-      "vc:label": "Description Logics"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-embedding",
-      "vc:label": "Graph Embedding"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl-reasoning",
-      "vc:label": "OWL Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-org",
-      "vc:label": "Schema.org"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql",
-      "vc:label": "SPARQL"
-    },
-    {
-      "@id": "urn:visionflow:linked:trans-e",
-      "vc:label": "TransE"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-bias-and-variance",
-      "vc:label": "Algorithmic Bias and Variance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:description-logics",
-      "vc:label": "Description Logics"
-    },
-    {
-      "@id": "urn:visionflow:linked:graph-theory",
-      "vc:label": "Graph Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:information-extraction",
-      "vc:label": "Information Extraction"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:attention",
-      "vc:label": "Attention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:natural-language-processing",
-      "vc:label": "Natural Language Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:biomedical-research",
-      "vc:label": "Biomedical Research"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:enterprise-search",
-      "vc:label": "Enterprise Search"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-regulation",
-      "vc:label": "Financial Regulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:recommendation-systems",
-      "vc:label": "Recommendation Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:anthropic-claude",
-      "vc:label": "Anthropic Claude"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:chat-gpt",
-      "vc:label": "ChatGPT"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:clinical-decision-support",
-      "vc:label": "Clinical Decision Support"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:llama-index",
-      "vc:label": "LlamaIndex"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-databases",
-      "vc:label": "Vector Databases"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agents",
-      "vc:label": "Agents"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cli-multi-agent-systems",
-      "vc:label": "CLI Multi-Agent Systems"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:comfy-ui",
-      "vc:label": "ComfyUI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:evaluation-benchmarks-and-leaderboards",
-      "vc:label": "Evaluation benchmarks and leaderboards"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:graph-neural-network",
-      "vc:label": "Graph Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:lang-chain",
-      "vc:label": "LangChain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:large-language-models",
-      "vc:label": "Large Language Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:transformers",
-      "vc:label": "Transformers"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:columnar-databases",
-      "vc:label": "Columnar Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:document-stores",
-      "vc:label": "Document Stores"
-    },
-    {
-      "@id": "urn:visionflow:linked:key-value-stores",
-      "vc:label": "Key-Value Stores"
-    },
-    {
-      "@id": "urn:visionflow:linked:relational-databases",
-      "vc:label": "Relational Databases"
-    },
-    {
-      "@id": "urn:visionflow:linked:vector-databases",
-      "vc:label": "Vector Databases"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-network",
-      "vc:label": "Blockchain Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:decentralised-web",
-      "vc:label": "Decentralised Web"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:dbpedia",
-      "vc:label": "DBpedia"
-    },
-    {
-      "@id": "urn:visionflow:linked:linked-data",
-      "vc:label": "Linked Data"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-org",
-      "vc:label": "Schema.org"
-    },
-    {
-      "@id": "urn:visionflow:linked:wikidata",
-      "vc:label": "Wikidata"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:agentic-internet",
-      "vc:label": "Agentic Internet"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-search",
-      "vc:label": "AI Search"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:brain-computer-interfaces",
-      "vc:label": "Brain Computer Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cognitive-ai",
-      "vc:label": "Cognitive AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-ontology",
-      "vc:label": "Metaverse Ontology"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:multi-agent-rag-scrapbook",
-      "vc:label": "Multi Agent RAG scrapbook"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ontology-conversation-with-ais",
-      "vc:label": "Ontology conversation with AIs"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:semantic-web",
-      "vc:label": "Semantic Web"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:iso-gql-standard",
-      "vc:label": "ISO GQL Standard"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-standards",
-      "vc:label": "Open Standards"
-    },
-    {
-      "@id": "urn:visionflow:linked:owl-2-w3-c-recommendation",
-      "vc:label": "OWL 2 W3C Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:linked:schema-org-vocabulary",
-      "vc:label": "schema.org Vocabulary"
-    },
-    {
-      "@id": "urn:visionflow:linked:sparql-1-1-w3-c-recommendation",
-      "vc:label": "SPARQL 1.1 W3C Recommendation"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c-rdf-standard",
-      "vc:label": "W3C RDF Standard"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

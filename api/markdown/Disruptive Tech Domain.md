@@ -128,60 +128,39 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:disruptive-tech-domain",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:disruptive-tech-domain",
+  "@type": "Class",
   "label": "Disruptive Tech Domain",
+  "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices.",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:domain",
-      "vc:label": "Domain"
+      "@id": "urn:ngm:class:domain",
+      "label": "Domain"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2fab2c700d0e18c6d0d71f23c9e46089067ec838bb829625b24f148b59dba320"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:aiapplications-domain",
+        "label": "AIApplicationsDomain"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:technology-forecasting",
+        "label": "Technology Forecasting"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2fab2c700d0e18c6d0d71f23c9e46089067ec838bb829625b24f148b59dba320@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices. This domain spans AI, Blockchain, Metaverse, Robotics, and Telecollaboration, tagging concepts that represent paradigm shifts, emerging capabilities, or technologies displacing established approaches. Used for strategic analysis, trend identification, and innovation portfolio management.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:aiapplications-domain",
-      "vc:label": "AIApplicationsDomain"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:technology-forecasting",
-      "vc:label": "Technology Forecasting"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

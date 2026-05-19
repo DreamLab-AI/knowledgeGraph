@@ -152,76 +152,55 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:content-moderation-standards",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:content-moderation-standards",
+  "@type": "Class",
   "label": "Content Moderation Standards",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:platform-governance",
-      "vc:label": "Platform Governance"
-    }
-  ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4"
+  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both tradit...",
+  "domain": "spatial-computing",
+  "maturity": "draft",
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:ai-detection-systems",
+        "label": "AI Detection Systems"
+      },
+      {
+        "@id": "urn:ngm:class:human-moderators",
+        "label": "Human Moderators"
+      },
+      {
+        "@id": "urn:ngm:class:moderation-tools",
+        "label": "Moderation Tools"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:community-trust",
+        "label": "Community Trust"
+      },
+      {
+        "@id": "urn:ngm:class:harassment-prevention",
+        "label": "Harassment Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:618d0d0b051e3af95f332b45674a2f46808a0348f544bc52b03c1147533d4ca4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both traditional content moderation and new behavioral moderation approaches.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:ai-detection-systems",
-      "vc:label": "AI Detection Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:human-moderators",
-      "vc:label": "Human Moderators"
-    },
-    {
-      "@id": "urn:visionflow:linked:moderation-tools",
-      "vc:label": "Moderation Tools"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:community-trust",
-      "vc:label": "Community Trust"
-    },
-    {
-      "@id": "urn:visionflow:linked:harassment-prevention",
-      "vc:label": "Harassment Prevention"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:user-safety",
-      "vc:label": "User Safety"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

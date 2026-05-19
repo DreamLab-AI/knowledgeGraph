@@ -3,23 +3,22 @@
   "title": "Merkle Tree",
   "slug": "merkle-tree",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:merkle-tree",
+  "classIri": "urn:ngm:class:merkle-tree",
   "domain": "blockchain",
   "definition": "Hierarchical hash data structure within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:blockchain-entity",
+      "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },
     {
-      "id": "urn:visionflow:owl:class:cryptographic-primitive",
+      "id": "urn:ngm:class:cryptographic-primitive",
       "label": "CryptographicPrimitive"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -27,7 +26,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

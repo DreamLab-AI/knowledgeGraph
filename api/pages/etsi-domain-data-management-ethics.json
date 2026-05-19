@@ -3,66 +3,75 @@
   "title": "ETSI Domain: Data Management + Ethics",
   "slug": "etsi-domain-data-management-ethics",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-data-management-ethics",
+  "classIri": "urn:ngm:class:etsi-domain-data-management-ethics",
   "domain": "artificial-intelligence",
-  "definition": "Crossover domain for ETSI metaverse categorisation addressing ethical data handling, privacy-preserving storage, consent management, and responsible data governance.",
+  "definition": "Crossover domain for ETSI metaverse categorisation addressing ical data handling, privacy-preserving storage, consent management, and responsible data governance.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:anonymization",
+        "id": "urn:ngm:class:anonymization",
         "label": "Anonymization"
       },
       {
-        "id": "urn:visionflow:linked:audit-logging",
+        "id": "urn:ngm:class:audit-logging",
         "label": "Audit Logging"
       },
       {
-        "id": "urn:visionflow:linked:privacy-controls",
+        "id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
       },
       {
-        "id": "urn:visionflow:owl:class:consent-management",
+        "id": "urn:ngm:class:consent-management",
         "label": "Consent Management"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ethics-and-law",
+        "id": "urn:ngm:class:ethics-and-law",
         "label": "Ethics & Law"
       },
       {
-        "id": "urn:visionflow:owl:class:data-management",
+        "id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:user-control",
+        "id": "urn:ngm:class:user-control",
         "label": "User Control"
       },
       {
-        "id": "urn:visionflow:owl:class:compliance-verification",
+        "id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-preserving-analytics",
+        "id": "urn:ngm:class:privacy-preserving-analytics",
         "label": "Privacy-Preserving Analytics"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "ETSI Metaverse Domain Taxonomy"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

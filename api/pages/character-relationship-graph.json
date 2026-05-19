@@ -3,53 +3,57 @@
   "title": "Character Relationship Graph",
   "slug": "character-relationship-graph",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:character-relationship-graph",
+  "classIri": "urn:ngm:class:character-relationship-graph",
   "domain": "spatial-computing",
   "definition": "A network data structure representing narrative characters as vertices and their interactions or relationships as edges, used to model social dynamics, drive procedural story generation, and analyze narrative structure through graph theory and social network analysis.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:social-network-graph",
+      "id": "urn:ngm:class:social-network-graph",
       "label": "Social Network Graph"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:character-attributes",
+        "id": "urn:ngm:class:character-attributes",
         "label": "Character Attributes"
       },
       {
-        "id": "urn:visionflow:linked:relationship-modeling",
+        "id": "urn:ngm:class:relationship-modeling",
         "label": "Relationship Modeling"
       },
       {
-        "id": "urn:visionflow:owl:class:graph-database",
+        "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:character-ai",
+        "id": "urn:ngm:class:character-ai",
         "label": "Character AI"
       },
       {
-        "id": "urn:visionflow:linked:narrative-generation",
+        "id": "urn:ngm:class:narrative-generation",
         "label": "Narrative Generation"
       },
       {
-        "id": "urn:visionflow:linked:story-analysis",
+        "id": "urn:ngm:class:story-analysis",
         "label": "Story Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

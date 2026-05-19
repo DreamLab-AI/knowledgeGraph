@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:privacy-preserving-data-sharing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+  "@type": "Class",
   "label": "Privacy Preserving Data Sharing",
+  "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-sharing",
-      "vc:label": "Data Sharing"
+      "@id": "urn:ngm:class:data-sharing",
+      "label": "Data Sharing"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6fcc5f99f99d3c789105cc3c88851384300a7cd672bf9769d8e61041ade58404"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:collaborative-analytics",
+        "label": "Collaborative Analytics"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6fcc5f99f99d3c789105cc3c88851384300a7cd672bf9769d8e61041ade58404@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:collaborative-analytics",
-      "vc:label": "Collaborative Analytics"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

@@ -3,19 +3,18 @@
   "title": "Vocabulary Services",
   "slug": "vocabulary-services",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:vocabulary-services",
+  "classIri": "urn:ngm:class:vocabulary-services",
   "domain": "spatial-computing",
   "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-management",
+      "id": "urn:ngm:class:knowledge-management",
       "label": "Knowledge Management"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

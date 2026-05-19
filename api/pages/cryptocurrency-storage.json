@@ -3,19 +3,18 @@
   "title": "Cryptocurrency Storage",
   "slug": "cryptocurrency-storage",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptocurrency-storage",
+  "classIri": "urn:ngm:class:cryptocurrency-storage",
   "domain": "blockchain",
   "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-wallet",
+      "id": "urn:ngm:class:digital-wallet",
       "label": "Digital Wallet"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Conversational AI",
   "slug": "conversational-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:conversational-ai",
+  "classIri": "urn:ngm:class:conversational-ai",
   "domain": "artificial-intelligence",
   "definition": "Conversational AI is a artificial intelligence concept and a type of Natural Language Processing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:natural-language-processing",
+      "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

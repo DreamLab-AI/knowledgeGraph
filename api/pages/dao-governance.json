@@ -3,32 +3,36 @@
   "title": "DAO Governance",
   "slug": "dao-governance",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:dao-governance",
+  "classIri": "urn:ngm:class:dao-governance",
   "domain": "artificial-intelligence",
-  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. DAOs are non-hierarchical organisations that perform and record routine tasks on peer-to-peer, cryptographically secure networks, with governance rules encoded as smart contracts that automatically execute approved decisions.",
+  "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:community-governance",
+      "id": "urn:ngm:class:community-governance",
       "label": "Community Governance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
-  "maturity": "reviewed",
-  "status": "active",
+  "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-decision-making",
+        "id": "urn:ngm:class:decentralised-decision-making",
         "label": "Decentralised Decision-Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,19 +3,18 @@
   "title": "Neural Radiance Fields",
   "slug": "neural-radiance-fields",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:neural-radiance-fields",
+  "classIri": "urn:ngm:class:neural-radiance-fields",
   "domain": "distributed-collaboration",
-  "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetric ray marching and gradient-based optimisation.\"",
+  "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetr...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:real-time-rendering-pipeline",
+      "id": "urn:ngm:class:real-time-rendering-pipeline",
       "label": "Real-Time Rendering Pipeline"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "emerging",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

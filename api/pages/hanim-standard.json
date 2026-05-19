@@ -3,32 +3,36 @@
   "title": "Hanim Standard",
   "slug": "hanim-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hanim-standard",
+  "classIri": "urn:ngm:class:hanim-standard",
   "domain": "spatial-computing",
-  "definition": "Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulations, and virtual environments.",
+  "definition": "Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulat...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:animation-standard",
+      "id": "urn:ngm:class:animation-standard",
       "label": "Animation Standard"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-platform-avatars",
+        "id": "urn:ngm:class:cross-platform-avatars",
         "label": "Cross-Platform Avatars"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

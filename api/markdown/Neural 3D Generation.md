@@ -280,140 +280,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:neural-3-d-generation",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:neural-3-d-generation",
+  "@type": "Class",
   "label": "Neural 3D Generation",
+  "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
+  "domain": "artificial-intelligence",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "artificial-intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "complete",
-  "vc:maturity": "emerging",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:3-d-representation",
+        "label": "3D Representation"
+      },
+      {
+        "@id": "urn:ngm:class:training-pipeline",
+        "label": "Training Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:3-d-asset-dataset",
+        "label": "3D Asset Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:camera-parameters",
+        "label": "Camera Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:automated-3-d-modeling",
+        "label": "Automated 3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-generation",
+        "label": "Digital Twin Generation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment-creation",
+        "label": "Virtual Environment Creation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:gan",
+        "label": "GAN"
+      },
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.90",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:3-d-representation",
-      "vc:label": "3D Representation"
-    },
-    {
-      "@id": "urn:visionflow:linked:training-pipeline",
-      "vc:label": "Training Pipeline"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-model",
-      "vc:label": "Generative Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-network",
-      "vc:label": "Neural Network"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:rendering-engine",
-      "vc:label": "Rendering Engine"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:3-d-asset-dataset",
-      "vc:label": "3D Asset Dataset"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-compute",
-      "vc:label": "GPU Compute"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:camera-parameters",
-      "vc:label": "Camera Parameters"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:automated-3-d-modeling",
-      "vc:label": "Automated 3D Modeling"
-    },
-    {
-      "@id": "urn:visionflow:linked:rapid-prototyping",
-      "vc:label": "Rapid Prototyping"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin-generation",
-      "vc:label": "Digital Twin Generation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-environment-creation",
-      "vc:label": "Virtual Environment Creation"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:diffusion-model",
-      "vc:label": "Diffusion Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:gan",
-      "vc:label": "GAN"
-    },
-    {
-      "@id": "urn:visionflow:linked:vae",
-      "vc:label": "VAE"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:gaussian-splatting",
-      "vc:label": "Gaussian Splatting"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:neural-radiance-field",
-      "vc:label": "Neural Radiance Field"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:3-d-model",
-      "vc:label": "3D Model"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:avatar",
-      "vc:label": "Avatar"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:virtual-world",
-      "vc:label": "Virtual World"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

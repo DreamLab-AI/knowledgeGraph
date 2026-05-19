@@ -3,19 +3,18 @@
   "title": "ETSI_Domain_Infrastructure_Data",
   "slug": "etsi-domain-infrastructure-data",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:etsi-domain-infrastructure-data",
+  "classIri": "urn:ngm:class:etsi-domain-infrastructure-data",
   "domain": "infrastructure",
-  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards. Infrastructure data coordination operates via Trustworthy Data Spaces architecture (ETSI GR PDL 034), International Data Spaces framework, and [[NGSI-LD]] APIs enabling context-aware data exchange with Policy Enforcement Points and Federated Catalogs, supported by F5G standards (ETSI GR F5G 019) providing low-latency backbone connectivity and multi-access edge computing use cases (ETSI GR MEC 043), addressing data sovereignty, security, and real-to-virtual integration challenges across distributed networks.",
+  "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:infrastructure",
+      "id": "urn:ngm:class:infrastructure",
       "label": "infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.4,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

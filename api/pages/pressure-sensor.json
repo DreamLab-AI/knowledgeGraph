@@ -3,19 +3,18 @@
   "title": "Pressure Sensor",
   "slug": "pressure-sensor",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:pressure-sensor",
+  "classIri": "urn:ngm:class:pressure-sensor",
   "domain": "robotics",
   "definition": "Pressure Sensor is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:sensor",
+      "label": "Sensor"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "robotics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

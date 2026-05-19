@@ -3,19 +3,18 @@
   "title": "ZK-SNARKs",
   "slug": "zk-snarks",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:zk-snarks",
+  "classIri": "urn:ngm:class:zk-snarks",
   "domain": "spatial-computing",
-  "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verifier, though requiring a trusted setup ceremony.",
+  "definition": "Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge - a cryptographic proof system enabling one party to prove possession of information without revealing the information itself, characterized by small proof sizes, fast verification, and no interaction required between prover and verif...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:zero-knowledge-proof",
+      "id": "urn:ngm:class:zero-knowledge-proof",
       "label": "Zero Knowledge Proof"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

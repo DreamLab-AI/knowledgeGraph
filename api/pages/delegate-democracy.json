@@ -3,131 +3,275 @@
   "title": "Delegate Democracy",
   "slug": "delegate-democracy",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:delegate-democracy",
+  "classIri": "urn:ngm:class:delegate-democracy",
   "domain": "blockchain",
-  "definition": "**Delegate Democracy** (also known as **liquid democracy**, **delegative democracy**, or **proxy democracy**) is a hybrid political and organisational governance model \u2014 formalised in modern computer-mediated form by [[Bryan Ford]] in his 2002 paper *Delegative Democracy* (Yale, later Swiss EPFL) and intellectually rooted in [[Lewis Carroll]]'s 1884 pamphlet *The Principles of Parliamentary Representation* and [[James Madison]]'s Federalist No. 10 (1787) defence of representative-republican filtering of popular passion \u2014 in which every citizen, token holder, or member retains the right to vote directly on any issue but may at any time **delegate** their voting power to a chosen proxy, who may further re-delegate (transitive or chained delegation), producing an emergent topology where domain experts accumulate influence whilst delegators retain instant revocation rights and direct-voting fallback. The model resolves the historical tension between **direct democracy** (epistemically demanding, vulnerable to rational ignorance and Arrow-impossibility-style aggregation failures) and **representative democracy** (intermittent accountability, principal-agent decay, gerrymandering, captur",
+  "definition": "Delegate Democracy (also known as liquid democracy, delegative democracy, or proxy democracy) is a hybrid political and organisational governance model \u2014 formalised in modern computer-mediated form by [[Bryan Ford]] in his 2002 paper Delegative Democracy (Yale, later Swiss EPFL) and intellectuall...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:collective-decision-making",
+      "id": "urn:ngm:class:collective-decision-making",
       "label": "Collective Decision Making"
     },
     {
-      "id": "urn:visionflow:linked:hybrid-democracy",
+      "id": "urn:ngm:class:hybrid-democracy",
       "label": "Hybrid Democracy"
-    },
-    {
-      "id": "urn:visionflow:linked:social-choice-mechanism",
-      "label": "Social Choice Mechanism"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:delegate",
+        "id": "urn:ngm:class:delegate",
         "label": "Delegate"
       },
       {
-        "id": "urn:visionflow:linked:delegate-discovery",
+        "id": "urn:ngm:class:delegate-discovery",
         "label": "Delegate Discovery"
       },
       {
-        "id": "urn:visionflow:linked:delegator",
+        "id": "urn:ngm:class:delegator",
         "label": "Delegator"
       },
       {
-        "id": "urn:visionflow:linked:domain-specific-delegation",
+        "id": "urn:ngm:class:domain-specific-delegation",
         "label": "Domain Specific Delegation"
       },
       {
-        "id": "urn:visionflow:linked:instant-revocation",
+        "id": "urn:ngm:class:instant-revocation",
         "label": "Instant Revocation"
       },
       {
-        "id": "urn:visionflow:linked:transitive-re-delegation",
+        "id": "urn:ngm:class:transitive-re-delegation",
         "label": "Transitive Re-delegation"
       },
       {
-        "id": "urn:visionflow:linked:vote-delegation",
+        "id": "urn:ngm:class:vote-delegation",
         "label": "Vote Delegation"
       },
       {
-        "id": "urn:visionflow:linked:voting-power-checkpoints",
+        "id": "urn:ngm:class:voting-power-checkpoints",
         "label": "Voting Power Checkpoints"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:membership-cryptographic-identity",
+        "id": "urn:ngm:class:membership-cryptographic-identity",
         "label": "Membership Cryptographic Identity"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-or-verifiable-vote-recording",
+        "id": "urn:ngm:class:on-chain-or-verifiable-vote-recording",
         "label": "On-Chain Or Verifiable Vote Recording"
       },
       {
-        "id": "urn:visionflow:linked:quorum-mechanism",
+        "id": "urn:ngm:class:quorum-mechanism",
         "label": "Quorum Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:voting-power-accounting",
+        "id": "urn:ngm:class:voting-power-accounting",
         "label": "Voting Power Accounting"
       },
       {
-        "id": "urn:visionflow:owl:class:proposal-system",
+        "id": "urn:ngm:class:proposal-system",
         "label": "Proposal System"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:continuous-accountability",
+        "id": "urn:ngm:class:continuous-accountability",
         "label": "Continuous Accountability"
       },
       {
-        "id": "urn:visionflow:linked:expert-aggregation",
+        "id": "urn:ngm:class:expert-aggregation",
         "label": "Expert Aggregation"
       },
       {
-        "id": "urn:visionflow:linked:professional-governance-class",
+        "id": "urn:ngm:class:professional-governance-class",
         "label": "Professional Governance Class"
       },
       {
-        "id": "urn:visionflow:linked:rational-delegation",
+        "id": "urn:ngm:class:rational-delegation",
         "label": "Rational Delegation"
       },
       {
-        "id": "urn:visionflow:linked:reduced-voter-fatigue",
+        "id": "urn:ngm:class:reduced-voter-fatigue",
         "label": "Reduced Voter Fatigue"
       },
       {
-        "id": "urn:visionflow:linked:specialised-governance-domains",
+        "id": "urn:ngm:class:specialised-governance-domains",
         "label": "Specialised Governance Domains"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:carroll-proportional-representation",
+        "id": "urn:ngm:class:carroll-proportional-representation",
         "label": "Carroll Proportional Representation"
       },
       {
-        "id": "urn:visionflow:linked:ford-delegative-theory",
+        "id": "urn:ngm:class:ford-delegative-theory",
         "label": "Ford Delegative Theory"
       },
       {
-        "id": "urn:visionflow:linked:loar-transitive-delegation-calculus",
+        "id": "urn:ngm:class:loar-transitive-delegation-calculus",
         "label": "Loar Transitive Delegation Calculus"
       },
       {
-        "id": "urn:visionflow:linked:madisonian-republican-filter",
+        "id": "urn:ngm:class:madisonian-republican-filter",
         "label": "Madisonian Republican Filter"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agora-forum",
+        "label": "Agora Forum"
+      },
+      {
+        "id": "urn:ngm:class:compound-bravo-governance",
+        "label": "Compound Bravo Governance"
+      },
+      {
+        "id": "urn:ngm:class:decidim-platform",
+        "label": "Decidim Platform"
+      },
+      {
+        "id": "urn:ngm:class:democracy-os-platform",
+        "label": "DemocracyOS Platform"
+      },
+      {
+        "id": "urn:ngm:class:erc20-votes-extension",
+        "label": "ERC20Votes Extension"
+      },
+      {
+        "id": "urn:ngm:class:karma-delegate-analytics",
+        "label": "Karma Delegate Analytics"
+      },
+      {
+        "id": "urn:ngm:class:liquid-feedback-platform",
+        "label": "LiquidFeedback Platform"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-off-chain-signed-voting",
+        "label": "Snapshot Off-Chain Signed Voting"
+      },
+      {
+        "id": "urn:ngm:class:tally-frontend",
+        "label": "Tally Frontend"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:citizen-engagement",
+        "label": "Citizen Engagement"
+      },
+      {
+        "id": "urn:ngm:class:dao-operations",
+        "label": "DAO Operations"
+      },
+      {
+        "id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      },
+      {
+        "id": "urn:ngm:class:public-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:subsidiarity",
+        "label": "Subsidiarity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:compound-governor-bravo-reference-implementation",
+        "label": "Compound Governor Bravo Reference Implementation"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:erc-712-typed-structured-data-signing",
+        "label": "ERC-712 Typed Structured Data Signing"
+      },
+      {
+        "id": "urn:ngm:class:open-zeppelin-governor-contracts",
+        "label": "OpenZeppelin Governor Contracts"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-strategy-specification",
+        "label": "Snapshot Strategy Specification"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai16z-dao",
+        "label": "ai16z DAO"
+      },
+      {
+        "id": "urn:ngm:class:aragon-court",
+        "label": "Aragon Court"
+      },
+      {
+        "id": "urn:ngm:class:better-reykjavik",
+        "label": "Better Reykjavik"
+      },
+      {
+        "id": "urn:ngm:class:compound-bravo",
+        "label": "Compound Bravo"
+      },
+      {
+        "id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "id": "urn:ngm:class:curve-wars",
+        "label": "Curve Wars"
+      },
+      {
+        "id": "urn:ngm:class:democracy-os",
+        "label": "DemocracyOS"
+      },
+      {
+        "id": "urn:ngm:class:ens-dao",
+        "label": "ENS DAO"
+      },
+      {
+        "id": "urn:ngm:class:liquid-feedback",
+        "label": "LiquidFeedback"
+      },
+      {
+        "id": "urn:ngm:class:olas-autonolas",
+        "label": "Olas Autonolas"
+      },
+      {
+        "id": "urn:ngm:class:open-rights-group",
+        "label": "Open Rights Group"
+      },
+      {
+        "id": "urn:ngm:class:optimism-citizens-house",
+        "label": "Optimism Citizens House"
+      },
+      {
+        "id": "urn:ngm:class:optimism-token-house",
+        "label": "Optimism Token House"
+      },
+      {
+        "id": "urn:ngm:class:pirate-party-germany",
+        "label": "Pirate Party Germany"
+      },
+      {
+        "id": "urn:ngm:class:sortition-foundation",
+        "label": "Sortition Foundation"
+      },
+      {
+        "id": "urn:ngm:class:uniswap-governance",
+        "label": "Uniswap Governance"
+      }
+    ]
   },
   "wikilinks": [
     {

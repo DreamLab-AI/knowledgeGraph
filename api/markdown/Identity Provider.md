@@ -444,322 +444,267 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:identity-provider",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:identity-provider",
+  "@type": "Class",
   "label": "Identity Provider",
+  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals — humans, service accounts, devices, and workloads — and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, oper...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:security-infrastructure",
-      "vc:label": "Security Infrastructure"
+      "@id": "urn:ngm:class:security-infrastructure",
+      "label": "Security Infrastructure"
     },
     {
-      "@id": "urn:visionflow:linked:trust-service",
-      "vc:label": "Trust Service"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:authentication-service",
-      "vc:label": "Authentication Service"
+      "@id": "urn:ngm:class:trust-service",
+      "label": "Trust Service"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:b5e0d0fade3b8147c5fcebfb8792530d9ba53347f51ab6ee3ce3f05eec0b3196"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-engine",
+        "label": "Authentication Engine"
+      },
+      {
+        "@id": "urn:ngm:class:credential-store",
+        "label": "Credential Store"
+      },
+      {
+        "@id": "urn:ngm:class:federation-gateway",
+        "label": "Federation Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:mfa-module",
+        "label": "MFA Module"
+      },
+      {
+        "@id": "urn:ngm:class:risk-engine",
+        "label": "Risk Engine"
+      },
+      {
+        "@id": "urn:ngm:class:session-manager",
+        "label": "Session Manager"
+      },
+      {
+        "@id": "urn:ngm:class:token-issuance-service",
+        "label": "Token Issuance Service"
+      },
+      {
+        "@id": "urn:ngm:class:user-directory",
+        "label": "User Directory"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:continuous-authentication",
+        "label": "Continuous Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-authorization",
+        "label": "Delegated Authorization"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-governance",
+        "label": "Identity Governance"
+      },
+      {
+        "@id": "urn:ngm:class:passkey-authentication",
+        "label": "Passkey Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "@id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      },
+      {
+        "@id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      },
+      {
+        "@id": "urn:ngm:class:push-notification",
+        "label": "Push Notification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-identity",
+        "label": "Cross-Platform Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-framework",
+        "label": "Digital Identity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:b2-c-identity",
+        "label": "B2C Identity"
+      },
+      {
+        "@id": "urn:ngm:class:b2-e-identity",
+        "label": "B2E Identity"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-authentication",
+        "label": "Risk-Based Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:social-login",
+        "label": "Social Login"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b5e0d0fade3b8147c5fcebfb8792530d9ba53347f51ab6ee3ce3f05eec0b3196@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals — humans, service accounts, devices, and workloads — and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, operating within trust frameworks governed by open federation protocols ([[SAML]] 2.0, [[OAuth]] 2.0, [[OpenID Connect]] 1.0/FAPI 2.0, [[SCIM]] 2.0) and implementing credential lifecycle management (registration, provisioning, [[Multi-Factor Authentication|multi-factor authentication]], session management, credential rotation, revocation) across B2E (business-to-employee) workforce environments, B2C (business-to-consumer) customer-facing deployments, B2B federation spanning organisational boundaries, and M2M (machine-to-machine) workload identity. The commercial IdP market is dominated by Okta (22,000+ customers, $2.25B FY2026 revenue), Microsoft Entra ID (formerly Azure Active Directory, 700M+ tenants, 1.3B monthly active users), Auth0 (acquired by Okta 2021, $6.5B, developer-focused), Ping Identity (acquired by Thales 2023, $2.8B, enterprise), ForgeRock (acquired by Ping Identity/Thales 2023,",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:audit-log",
-      "vc:label": "Audit Log"
-    },
-    {
-      "@id": "urn:visionflow:linked:authentication-engine",
-      "vc:label": "Authentication Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:credential-store",
-      "vc:label": "Credential Store"
-    },
-    {
-      "@id": "urn:visionflow:linked:federation-gateway",
-      "vc:label": "Federation Gateway"
-    },
-    {
-      "@id": "urn:visionflow:linked:mfa-module",
-      "vc:label": "MFA Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-engine",
-      "vc:label": "Risk Engine"
-    },
-    {
-      "@id": "urn:visionflow:linked:session-manager",
-      "vc:label": "Session Manager"
-    },
-    {
-      "@id": "urn:visionflow:linked:token-issuance-service",
-      "vc:label": "Token Issuance Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-directory",
-      "vc:label": "User Directory"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:directory-service",
-      "vc:label": "Directory Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-security",
-      "vc:label": "Network Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cryptographic-key-management",
-      "vc:label": "Cryptographic Key Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:public-key-infrastructure",
-      "vc:label": "Public Key Infrastructure"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:continuous-authentication",
-      "vc:label": "Continuous Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:delegated-authorization",
-      "vc:label": "Delegated Authorization"
-    },
-    {
-      "@id": "urn:visionflow:linked:federated-identity",
-      "vc:label": "Federated Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:identity-governance",
-      "vc:label": "Identity Governance"
-    },
-    {
-      "@id": "urn:visionflow:linked:passkey-authentication",
-      "vc:label": "Passkey Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:privileged-access-management",
-      "vc:label": "Privileged Access Management"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-sign-on",
-      "vc:label": "Single Sign-On"
-    },
-    {
-      "@id": "urn:visionflow:linked:zero-trust-architecture",
-      "vc:label": "Zero Trust Architecture"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:fido2",
-      "vc:label": "FIDO2"
-    },
-    {
-      "@id": "urn:visionflow:linked:kerberos",
-      "vc:label": "Kerberos"
-    },
-    {
-      "@id": "urn:visionflow:linked:ldap",
-      "vc:label": "LDAP"
-    },
-    {
-      "@id": "urn:visionflow:linked:oauth",
-      "vc:label": "OAuth"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-connect",
-      "vc:label": "OpenID Connect"
-    },
-    {
-      "@id": "urn:visionflow:linked:saml",
-      "vc:label": "SAML"
-    },
-    {
-      "@id": "urn:visionflow:linked:scim",
-      "vc:label": "SCIM"
-    },
-    {
-      "@id": "urn:visionflow:linked:web-authn",
-      "vc:label": "WebAuthn"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cryptographic-hash-function",
-      "vc:label": "Cryptographic Hash Function"
-    },
-    {
-      "@id": "urn:visionflow:linked:directory-service",
-      "vc:label": "Directory Service"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-web-token",
-      "vc:label": "JSON Web Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:transport-layer-security",
-      "vc:label": "Transport Layer Security"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-certificate",
-      "vc:label": "Digital Certificate"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:b2-c-identity",
-      "vc:label": "B2C Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:b2-e-identity",
-      "vc:label": "B2E Identity"
-    },
-    {
-      "@id": "urn:visionflow:linked:multi-factor-authentication",
-      "vc:label": "Multi-Factor Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:passwordless-authentication",
-      "vc:label": "Passwordless Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:risk-based-authentication",
-      "vc:label": "Risk-Based Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-login",
-      "vc:label": "Social Login"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:api-gateway",
-      "vc:label": "API Gateway"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:biometric-authentication",
-      "vc:label": "Biometric Authentication"
-    },
-    {
-      "@id": "urn:visionflow:linked:hardware-security-module",
-      "vc:label": "Hardware Security Module"
-    },
-    {
-      "@id": "urn:visionflow:linked:json-web-token",
-      "vc:label": "JSON Web Token"
-    },
-    {
-      "@id": "urn:visionflow:linked:pkce",
-      "vc:label": "PKCE"
-    },
-    {
-      "@id": "urn:visionflow:linked:push-notification",
-      "vc:label": "Push Notification"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:owl:class:decentralized-identity-did",
-      "vc:label": "Decentralized Identity (DID)"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-authentication-architecture",
-      "vc:label": "Distributed Authentication Architecture"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:self-sovereign-identity",
-      "vc:label": "Self-Sovereign Identity"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:owl:class:aml-kyc-compliance",
-      "vc:label": "AML KYC Compliance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cross-platform-identity",
-      "vc:label": "Cross-Platform Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity",
-      "vc:label": "Digital Identity"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-identity-framework",
-      "vc:label": "Digital Identity Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-federation",
-      "vc:label": "Identity Federation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-verification",
-      "vc:label": "Identity Verification"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:fido-alliance",
-      "vc:label": "FIDO Alliance"
-    },
-    {
-      "@id": "urn:visionflow:linked:ietf",
-      "vc:label": "IETF"
-    },
-    {
-      "@id": "urn:visionflow:linked:nist",
-      "vc:label": "NIST"
-    },
-    {
-      "@id": "urn:visionflow:linked:oasis",
-      "vc:label": "OASIS"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-id-foundation",
-      "vc:label": "OpenID Foundation"
-    },
-    {
-      "@id": "urn:visionflow:linked:w3-c",
-      "vc:label": "W3C"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

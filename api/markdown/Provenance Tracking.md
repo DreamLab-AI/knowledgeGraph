@@ -248,41 +248,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:provenance-tracking",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:provenance-tracking",
+  "@type": "Class",
   "label": "Provenance Tracking",
+  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling reduction in tracing time (7 days to 2.2 seconds), combating £30 counterfeit markets, and supporting ...",
+  "domain": "blockchain",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "blockchain"
+      "@id": "urn:ngm:class:blockchain",
+      "label": "blockchain"
     }
   ],
-  "vc:sourceDomain": "blockchain",
-  "vc:status": "complete",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fa82e9ebf3aa0b5ffb22fd41266934e85e80b555c1bb45214f02d56a74d43ec2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling 99.97% reduction in tracing time (7 days to 2.2 seconds), combating £30 billion counterfeit markets, and supporting applications across food safety (Walmart, IBM Food Trust), luxury goods (De Beers Tracr), pharmaceuticals, and ethical sourcing verification.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.89",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

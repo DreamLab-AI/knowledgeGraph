@@ -3,167 +3,319 @@
   "title": "Ethereum",
   "slug": "ethereum",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ethereum",
+  "classIri": "urn:ngm:class:ethereum",
   "domain": "blockchain",
-  "definition": "**Ethereum** is the leading general-purpose, Turing-complete, smart-contract-enabled public blockchain \u2014 conceived by Russian-Canadian programmer **Vitalik Buterin** in a November 2013 whitepaper titled *\"Ethereum: A Next-Generation Smart Contract and Decentralized Application Platform\"* circulated at the Bitcoin \"Crypto Renaissance\" gathering in Toronto, co-founded with Gavin Wood (architect of the Yellow Paper formal specification and the Solidity programming language), Joseph Lubin (founder of ConsenSys), Charles Hoskinson (later founder of Cardano), Anthony Di Iorio, Mihai Alisie, Amir Chetrit and Jeffrey Wilcke, funded through a July-August 2014 crowdsale that distributed ~60M ETH for ~31,500 BTC (~$18.3M at the time), launched as the **Frontier** mainnet on **30 July 2015** and evolved through successive hard-fork upgrades \u2014 Homestead (March 2016), the contentious DAO-hack hard fork (June 2016) that bifurcated the network into Ethereum (ETH, the rolled-back chain) and Ethereum Classic (ETC, the immutable chain), Byzantium and Constantinople (2017-2019), Beacon Chain genesis (1 December 2020), Altair (October 2021), the historic **Merge** on **15 September 2022** transitioning",
+  "definition": "ereum is the leading general-purpose, Turing-complete, smart-contract-enabled public blockchain \u2014 conceived by Russian-Canadian programmer Vitalik Buterin in a November 2013 whitepaper titled \"ereum: A Next-Generation Smart Contract and Decentralized Application Platform\" circulated at the Bitcoi...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:decentralised-computing-platform",
+      "id": "urn:ngm:class:decentralised-computing-platform",
       "label": "Decentralised Computing Platform"
     },
     {
-      "id": "urn:visionflow:linked:layer-1-blockchain",
+      "id": "urn:ngm:class:layer-1-blockchain",
       "label": "Layer 1 Blockchain"
-    },
-    {
-      "id": "urn:visionflow:linked:programmable-money",
-      "label": "Programmable Money"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:beacon-chain",
+        "id": "urn:ngm:class:beacon-chain",
         "label": "Beacon Chain"
       },
       {
-        "id": "urn:visionflow:linked:blob-storage",
+        "id": "urn:ngm:class:blob-storage",
         "label": "Blob Storage"
       },
       {
-        "id": "urn:visionflow:linked:consensus-client",
+        "id": "urn:ngm:class:consensus-client",
         "label": "Consensus Client"
       },
       {
-        "id": "urn:visionflow:linked:eip-1559-fee-market",
+        "id": "urn:ngm:class:eip-1559-fee-market",
         "label": "EIP-1559 Fee Market"
       },
       {
-        "id": "urn:visionflow:linked:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
-        "id": "urn:visionflow:linked:execution-client",
+        "id": "urn:ngm:class:execution-client",
         "label": "Execution Client"
       },
       {
-        "id": "urn:visionflow:linked:gas-mechanism",
+        "id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"
       },
       {
-        "id": "urn:visionflow:linked:state-trie",
+        "id": "urn:ngm:class:state-trie",
         "label": "State Trie"
       },
       {
-        "id": "urn:visionflow:linked:validator-set",
+        "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
       },
       {
-        "id": "urn:visionflow:owl:class:mempool",
+        "id": "urn:ngm:class:mempool",
         "label": "Mempool"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:client-diversity",
+        "id": "urn:ngm:class:client-diversity",
         "label": "Client Diversity"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-signatures",
+        "id": "urn:ngm:class:cryptographic-signatures",
         "label": "Cryptographic Signatures"
       },
       {
-        "id": "urn:visionflow:linked:validator-stake",
+        "id": "urn:ngm:class:validator-stake",
         "label": "Validator Stake"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash Function"
       },
       {
-        "id": "urn:visionflow:owl:class:merkle-tree",
+        "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
       {
-        "id": "urn:visionflow:owl:class:peer-to-peer-network",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer to Peer Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:decentralised-application",
+        "id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-autonomous-organisation",
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:visionflow:linked:decentralised-finance",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:visionflow:linked:non-fungible-token",
+        "id": "urn:ngm:class:non-fungible-token",
         "label": "Non Fungible Token"
       },
       {
-        "id": "urn:visionflow:linked:on-chain-governance",
+        "id": "urn:ngm:class:on-chain-governance",
         "label": "On-Chain Governance"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
       {
-        "id": "urn:visionflow:owl:class:stablecoin",
+        "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
       },
       {
-        "id": "urn:visionflow:owl:class:tokenisation",
+        "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:casper-ffg",
+        "id": "urn:ngm:class:casper-ffg",
         "label": "Casper FFG"
       },
       {
-        "id": "urn:visionflow:linked:eip-1559",
+        "id": "urn:ngm:class:eip-1559",
         "label": "EIP-1559"
       },
       {
-        "id": "urn:visionflow:linked:lmd-ghost",
+        "id": "urn:ngm:class:lmd-ghost",
         "label": "LMD-GHOST"
       },
       {
-        "id": "urn:visionflow:linked:proposer-builder-separation",
+        "id": "urn:ngm:class:proposer-builder-separation",
         "label": "Proposer Builder Separation"
       },
       {
-        "id": "urn:visionflow:linked:rollup-centric-roadmap",
+        "id": "urn:ngm:class:rollup-centric-roadmap",
         "label": "Rollup-Centric Roadmap"
       },
       {
-        "id": "urn:visionflow:owl:class:account-abstraction",
+        "id": "urn:ngm:class:account-abstraction",
         "label": "Account Abstraction"
       },
       {
-        "id": "urn:visionflow:owl:class:gasper-consensus",
+        "id": "urn:ngm:class:gasper-consensus",
         "label": "Gasper Consensus"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-stake",
+        "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bls-signatures",
+        "label": "BLS Signatures"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa-secp256k1",
+        "label": "ECDSA secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:ngm:class:patricia-merkle-trie",
+        "label": "Patricia Merkle Trie"
+      },
+      {
+        "id": "urn:ngm:class:rlp-encoding",
+        "label": "RLP Encoding"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:verkle-tree",
+        "label": "Verkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Tokens"
+      },
+      {
+        "id": "urn:ngm:class:erc-721-nfts",
+        "label": "ERC-721 NFTs"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-rollups",
+        "label": "Layer 2 Rollups"
+      },
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "id": "urn:ngm:class:restaking",
+        "label": "Restaking"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:beacon-chain-specification",
+        "label": "Beacon Chain Specification"
+      },
+      {
+        "id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      },
+      {
+        "id": "urn:ngm:class:eip-7702",
+        "label": "EIP-7702"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "id": "urn:ngm:class:erc-4337",
+        "label": "ERC-4337"
+      },
+      {
+        "id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "id": "urn:ngm:class:erc-standard",
+        "label": "ERC Standard"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "id": "urn:ngm:class:yellow-paper",
+        "label": "Yellow Paper"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consen-sys",
+        "label": "ConsenSys"
+      },
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-classic",
+        "label": "Ethereum Classic"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-foundation",
+        "label": "Ethereum Foundation"
+      },
+      {
+        "id": "urn:ngm:class:gavin-wood",
+        "label": "Gavin Wood"
+      },
+      {
+        "id": "urn:ngm:class:joseph-lubin",
+        "label": "Joseph Lubin"
+      },
+      {
+        "id": "urn:ngm:class:layer-2",
+        "label": "Layer 2"
+      },
+      {
+        "id": "urn:ngm:class:vitalik-buterin",
+        "label": "Vitalik Buterin"
+      },
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ]
   },
   "wikilinks": [
     {

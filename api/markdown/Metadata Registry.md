@@ -116,48 +116,33 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:metadata-registry",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:metadata-registry",
+  "@type": "Class",
   "label": "Metadata Registry",
+  "definition": "Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.",
+  "domain": "infrastructure",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
+      "@id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:c28390e09f329a0015903cd135b284749cd904b3a502b0b9482fc8fb53cbdc9c"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:enterprise-data-consistency",
+        "label": "Enterprise Data Consistency"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:c28390e09f329a0015903cd135b284749cd904b3a502b0b9482fc8fb53cbdc9c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:enterprise-data-consistency",
-      "vc:label": "Enterprise Data Consistency"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

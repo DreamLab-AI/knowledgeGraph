@@ -3,19 +3,18 @@
   "title": "Tendermint Consensus",
   "slug": "tendermint-consensus",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:tendermint-consensus",
+  "classIri": "urn:ngm:class:tendermint-consensus",
   "domain": "blockchain",
   "definition": "A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+      "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
   "maturity": "established",
-  "status": "complete",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

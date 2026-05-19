@@ -3,155 +3,299 @@
   "title": "Cross-Chain Bridge",
   "slug": "cross-chain-bridge",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cross-chain-bridge",
+  "classIri": "urn:ngm:class:cross-chain-bridge",
   "domain": "blockchain",
-  "definition": "A **Cross-Chain Bridge** is a protocol-level interoperability artefact \u2014 comprising on-chain smart contracts on each connected blockchain plus an off-chain attestation, relay, or proving infrastructure \u2014 that enables the trust-minimised transfer of fungible tokens, non-fungible tokens, arbitrary message payloads, and remote contract calls between sovereign blockchain networks with heterogeneous consensus mechanisms, virtual machines, and finality regimes; canonically partitioned by mechanism into **lock-and-mint** (source-chain escrow plus destination-chain canonical or wrapped issuance \u2014 WBTC BitGo $9B 2025 custody, Polygon PoS Bridge, Avalanche Bridge), **burn-and-mint** (canonical-issuer model with destination-side mint authority \u2014 Circle CCTP for USDC since 2023, LayerZero OFT standard, Wormhole Native Token Transfers 2024), **atomic swap** (Hash Time-Locked Contracts enabling trustless peer-to-peer cross-chain exchange \u2014 Bitcoin-Litecoin original 2017, Decred-Bitcoin, COMIT Network, Atomex), **liquidity-pool / liquidity-network** (paired LP pools on each chain with rebalancing \u2014 Hop Protocol AMM exit pools, Synapse nUSD/nETH metapools, Stargate Delta-algorithm unified pools, C",
+  "definition": "A Cross-Chain Bridge is a protocol-level interoperability artefact \u2014 comprising on-chain smart contracts on each connected blockchain plus an off-chain attestation, relay, or proving infrastructure \u2014 that enables the trust-minimised transfer of fungible tokens, non-fungible tokens, arbitrary mess...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:asset-transfer-mechanism",
+      "id": "urn:ngm:class:asset-transfer-mechanism",
       "label": "Asset Transfer Mechanism"
     },
     {
-      "id": "urn:visionflow:linked:cross-chain-application",
+      "id": "urn:ngm:class:cross-chain-application",
       "label": "Cross-Chain Application"
-    },
-    {
-      "id": "urn:visionflow:linked:smart-contract-protocol",
-      "label": "Smart Contract Protocol"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:bridge-contract",
+        "id": "urn:ngm:class:bridge-contract",
         "label": "Bridge Contract"
       },
       {
-        "id": "urn:visionflow:linked:cryptographic-proof-system",
+        "id": "urn:ngm:class:cryptographic-proof-system",
         "label": "Cryptographic Proof System"
       },
       {
-        "id": "urn:visionflow:linked:message-verification-module",
+        "id": "urn:ngm:class:message-verification-module",
         "label": "Message Verification Module"
       },
       {
-        "id": "urn:visionflow:linked:settlement-contract",
+        "id": "urn:ngm:class:settlement-contract",
         "label": "Settlement Contract"
       },
       {
-        "id": "urn:visionflow:linked:validator-set",
+        "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
       },
       {
-        "id": "urn:visionflow:owl:class:light-client",
+        "id": "urn:ngm:class:light-client",
         "label": "Light Client"
       },
       {
-        "id": "urn:visionflow:owl:class:liquidity-pool",
+        "id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
       },
       {
-        "id": "urn:visionflow:owl:class:relayer",
+        "id": "urn:ngm:class:relayer",
         "label": "Relayer"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:cryptographic-hash-function",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:visionflow:linked:destination-chain-execution",
+        "id": "urn:ngm:class:destination-chain-execution",
         "label": "Destination Chain Execution"
       },
       {
-        "id": "urn:visionflow:linked:source-chain-finality",
+        "id": "urn:ngm:class:source-chain-finality",
         "label": "Source Chain Finality"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
+        "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:chain-abstraction",
+        "id": "urn:ngm:class:chain-abstraction",
         "label": "Chain Abstraction"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-asset-transfer",
+        "id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross-Chain Asset Transfer"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-composability",
+        "id": "urn:ngm:class:cross-chain-composability",
         "label": "Cross-Chain Composability"
       },
       {
-        "id": "urn:visionflow:linked:cross-chain-swap",
+        "id": "urn:ngm:class:cross-chain-swap",
         "label": "Cross-Chain Swap"
       },
       {
-        "id": "urn:visionflow:linked:multi-chain-de-fi",
+        "id": "urn:ngm:class:multi-chain-de-fi",
         "label": "Multi-Chain DeFi"
       },
       {
-        "id": "urn:visionflow:linked:omnichain-application",
+        "id": "urn:ngm:class:omnichain-application",
         "label": "Omnichain Application"
       },
       {
-        "id": "urn:visionflow:linked:wrapped-token",
+        "id": "urn:ngm:class:wrapped-token",
         "label": "Wrapped Token"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:burn-and-mint-bridge",
+        "id": "urn:ngm:class:burn-and-mint-bridge",
         "label": "Burn-and-Mint Bridge"
       },
       {
-        "id": "urn:visionflow:linked:hash-time-locked-contract",
+        "id": "urn:ngm:class:hash-time-locked-contract",
         "label": "Hash Time-Locked Contract"
       },
       {
-        "id": "urn:visionflow:linked:intent-based-bridge",
+        "id": "urn:ngm:class:intent-based-bridge",
         "label": "Intent-Based Bridge"
       },
       {
-        "id": "urn:visionflow:linked:liquidity-pool-bridge",
+        "id": "urn:ngm:class:liquidity-pool-bridge",
         "label": "Liquidity Pool Bridge"
       },
       {
-        "id": "urn:visionflow:linked:lock-and-mint-bridge",
+        "id": "urn:ngm:class:lock-and-mint-bridge",
         "label": "Lock-and-Mint Bridge"
       },
       {
-        "id": "urn:visionflow:linked:optimistic-verification",
+        "id": "urn:ngm:class:optimistic-verification",
         "label": "Optimistic Verification"
       },
       {
-        "id": "urn:visionflow:linked:zero-knowledge-light-client",
+        "id": "urn:ngm:class:zero-knowledge-light-client",
         "label": "Zero-Knowledge Light Client"
       },
       {
-        "id": "urn:visionflow:owl:class:atomic-swap",
+        "id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralised-verifier-network",
+        "label": "Decentralised Verifier Network"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "id": "urn:ngm:class:solver-network",
+        "label": "Solver Network"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bridged-stablecoin",
+        "label": "Bridged Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:chain-abstraction-wallet",
+        "label": "Chain Abstraction Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-dex",
+        "label": "Cross-Chain DEX"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-governance",
+        "label": "Cross-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-nft",
+        "label": "Cross-Chain NFT"
+      },
+      {
+        "id": "urn:ngm:class:multi-chain-lending",
+        "label": "Multi-Chain Lending"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-real-world-asset-transfer",
+        "label": "Tokenised Real-World Asset Transfer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:chain-agnostic-standards-alliance",
+        "label": "Chain Agnostic Standards Alliance"
+      },
+      {
+        "id": "urn:ngm:class:erc-7281",
+        "label": "ERC-7281"
+      },
+      {
+        "id": "urn:ngm:class:erc-7683",
+        "label": "ERC-7683"
+      },
+      {
+        "id": "urn:ngm:class:ibc-specification",
+        "label": "IBC Specification"
+      },
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:open-bridge-standard",
+        "label": "Open Bridge Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:across-protocol",
+        "label": "Across Protocol"
+      },
+      {
+        "id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "id": "urn:ngm:class:chainlink-ccip",
+        "label": "Chainlink CCIP"
+      },
+      {
+        "id": "urn:ngm:class:connext",
+        "label": "Connext"
+      },
+      {
+        "id": "urn:ngm:class:hyperlane",
+        "label": "Hyperlane"
+      },
+      {
+        "id": "urn:ngm:class:jumper-exchange",
+        "label": "Jumper Exchange"
+      },
+      {
+        "id": "urn:ngm:class:layer-zero",
+        "label": "LayerZero"
+      },
+      {
+        "id": "urn:ngm:class:li-fi",
+        "label": "LI.FI"
+      },
+      {
+        "id": "urn:ngm:class:nexus-mutual",
+        "label": "Nexus Mutual"
+      },
+      {
+        "id": "urn:ngm:class:polygon-zk-evm-bridge",
+        "label": "Polygon zkEVM Bridge"
+      },
+      {
+        "id": "urn:ngm:class:polymer-hub",
+        "label": "Polymer Hub"
+      },
+      {
+        "id": "urn:ngm:class:squid-router",
+        "label": "Squid Router"
+      },
+      {
+        "id": "urn:ngm:class:stargate",
+        "label": "Stargate"
+      },
+      {
+        "id": "urn:ngm:class:synapse-protocol",
+        "label": "Synapse Protocol"
+      },
+      {
+        "id": "urn:ngm:class:wormhole",
+        "label": "Wormhole"
+      }
+    ]
   },
   "wikilinks": [
     {

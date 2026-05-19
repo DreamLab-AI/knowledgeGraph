@@ -3,19 +3,18 @@
   "title": "Virtual Reality",
   "slug": "virtual-reality",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-reality",
+  "classIri": "urn:ngm:class:virtual-reality",
   "domain": "spatial-computing",
   "definition": "Virtual Reality is a spatial computing concept and a type of Extended Reality (XR).",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:extended-reality-xr",
+      "id": "urn:ngm:class:extended-reality-xr",
       "label": "Extended Reality (XR)"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

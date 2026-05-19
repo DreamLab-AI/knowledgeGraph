@@ -912,356 +912,275 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:compute-infrastructure",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:compute-infrastructure",
+  "@type": "Class",
   "label": "Compute Infrastructure",
+  "definition": "[[Compute Infrastructure]] in the artificial intelligence era denotes the integrated stack of accelerated silicon, high-bandwidth interconnect fabrics, multi-megawatt power and cooling plant, and orchestration software that hosts the training and inference of frontier neural-network models at ind...",
+  "domain": "infrastructure",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:computing-infrastructure",
-      "vc:label": "Computing Infrastructure"
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:ecbc06a88660ceb1021fdeee30965a5d466ac63e8c09213749642438cb765b56"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-asic",
+        "label": "AI ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:datacentre-network",
+        "label": "Datacentre Network"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-accelerator",
+        "label": "GPU Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:infini-band",
+        "label": "InfiniBand"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-cooling",
+        "label": "Liquid Cooling"
+      },
+      {
+        "@id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
+      },
+      {
+        "@id": "urn:ngm:class:power-distribution",
+        "label": "Power Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:spectrum-x",
+        "label": "Spectrum-X"
+      },
+      {
+        "@id": "urn:ngm:class:storage-systems",
+        "label": "Storage Systems"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:co-wo-s-packaging",
+        "label": "CoWoS Packaging"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-capacity",
+        "label": "Cooling Capacity"
+      },
+      {
+        "@id": "urn:ngm:class:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "@id": "urn:ngm:class:hbm-memory",
+        "label": "HBM Memory"
+      },
+      {
+        "@id": "urn:ngm:class:network-fabric",
+        "label": "Network Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:semiconductor-supply-chain",
+        "label": "Semiconductor Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:skilled-operators",
+        "label": "Skilled Operators"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-factory",
+        "label": "AI Factory"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model-inference",
+        "label": "Foundation Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "@id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-arithmetic",
+        "label": "Mixed-Precision Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:direct-current-distribution",
+        "label": "Direct Current Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:fp4-arithmetic",
+        "label": "FP4 Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:fp8-arithmetic",
+        "label": "FP8 Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:gpudirect",
+        "label": "GPUDirect"
+      },
+      {
+        "@id": "urn:ngm:class:hbm3e",
+        "label": "HBM3e"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-cooling",
+        "label": "Liquid Cooling"
+      },
+      {
+        "@id": "urn:ngm:class:rdma",
+        "label": "RDMA"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-supply-chain",
+        "label": "AI Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscaler",
+        "label": "Hyperscaler"
+      },
+      {
+        "@id": "urn:ngm:class:nuclear-power",
+        "label": "Nuclear Power"
+      },
+      {
+        "@id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-companies",
+        "label": "AI Companies"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-training",
+        "label": "Frontier Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-research",
+        "label": "Sovereign Research"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:infini-band-trade-association",
+        "label": "InfiniBand Trade Association"
+      },
+      {
+        "@id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      },
+      {
+        "@id": "urn:ngm:class:open-compute-project",
+        "label": "Open Compute Project"
+      },
+      {
+        "@id": "urn:ngm:class:ualink-consortium",
+        "label": "UALink Consortium"
+      },
+      {
+        "@id": "urn:ngm:class:ultra-ethernet-consortium",
+        "label": "Ultra Ethernet Consortium"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ecbc06a88660ceb1021fdeee30965a5d466ac63e8c09213749642438cb765b56@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "[[Compute Infrastructure]] in the artificial intelligence era denotes the integrated stack of accelerated silicon, high-bandwidth interconnect fabrics, multi-megawatt power and cooling plant, and orchestration software that hosts the training and inference of frontier neural-network models at industrial scale, encompassing dense matrix-multiply accelerators ([[NVIDIA H100]] Hopper SXM5 with 80 GB HBM3 / 3.35 TB·s⁻¹ / 989 TFLOPS BF16 tensor / 1,979 TFLOPS FP8; [[NVIDIA H200]] 141 GB HBM3e / 4.8 TB·s⁻¹ shipping H2 2024; [[NVIDIA B100]]/[[NVIDIA B200]] Blackwell announced GTC 2024 with 192 GB HBM3e / 8 TB·s⁻¹ / 18 PFLOPS FP4 sparse per B200; [[NVIDIA GB200]] NVL72 rack-scale 72-GPU coherent domain via fifth-generation [[NVLink]] 1.8 TB·s⁻¹ per GPU shipping early 2025; [[NVIDIA B300]] Blackwell Ultra GTC 2025 with 288 GB HBM3e / 8 TB·s⁻¹ / 15 PFLOPS FP4 dense per GPU and GB300 NVL72 delivering 1.1 EFLOPS FP4 dense per 132-140 kW liquid-cooled rack; [[AMD MI300X]] CDNA3 with 192 GB HBM3 / 5.3 TB·s⁻¹ / 1.3 PFLOPS BF16 launched December 2023; [[AMD MI325X]] 256 GB HBM3e October 2024; [[AMD MI350X]] CDNA4 288 GB HBM3e with FP4/FP6 datatypes for 2025; [[Intel Gaudi 3]] 128 GB HBM2e / 1.835 ",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-asic",
-      "vc:label": "AI ASIC"
-    },
-    {
-      "@id": "urn:visionflow:linked:datacentre-network",
-      "vc:label": "Datacentre Network"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpu-accelerator",
-      "vc:label": "GPU Accelerator"
-    },
-    {
-      "@id": "urn:visionflow:linked:high-bandwidth-memory",
-      "vc:label": "High-Bandwidth Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:infini-band",
-      "vc:label": "InfiniBand"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-cooling",
-      "vc:label": "Liquid Cooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:nvlink",
-      "vc:label": "NVLink"
-    },
-    {
-      "@id": "urn:visionflow:linked:orchestration-layer",
-      "vc:label": "Orchestration Layer"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-distribution",
-      "vc:label": "Power Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:spectrum-x",
-      "vc:label": "Spectrum-X"
-    },
-    {
-      "@id": "urn:visionflow:linked:storage-systems",
-      "vc:label": "Storage Systems"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:co-wo-s-packaging",
-      "vc:label": "CoWoS Packaging"
-    },
-    {
-      "@id": "urn:visionflow:linked:cooling-capacity",
-      "vc:label": "Cooling Capacity"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrical-power",
-      "vc:label": "Electrical Power"
-    },
-    {
-      "@id": "urn:visionflow:linked:hbm-memory",
-      "vc:label": "HBM Memory"
-    },
-    {
-      "@id": "urn:visionflow:linked:network-fabric",
-      "vc:label": "Network Fabric"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-supply-chain",
-      "vc:label": "Semiconductor Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:skilled-operators",
-      "vc:label": "Skilled Operators"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-factory",
-      "vc:label": "AI Factory"
-    },
-    {
-      "@id": "urn:visionflow:linked:foundation-model-inference",
-      "vc:label": "Foundation Model Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:large-language-model-training",
-      "vc:label": "Large Language Model Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-simulation",
-      "vc:label": "Scientific Simulation"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-ai",
-      "vc:label": "Sovereign AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:distributed-system",
-      "vc:label": "Distributed System"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:collective-communication",
-      "vc:label": "Collective Communication"
-    },
-    {
-      "@id": "urn:visionflow:linked:expert-parallelism",
-      "vc:label": "Expert Parallelism"
-    },
-    {
-      "@id": "urn:visionflow:linked:mixed-precision-arithmetic",
-      "vc:label": "Mixed-Precision Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:model-parallelism",
-      "vc:label": "Model Parallelism"
-    },
-    {
-      "@id": "urn:visionflow:linked:pipeline-parallelism",
-      "vc:label": "Pipeline Parallelism"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-computation",
-      "vc:label": "Tensor Computation"
-    },
-    {
-      "@id": "urn:visionflow:linked:tensor-parallelism",
-      "vc:label": "Tensor Parallelism"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:cuda",
-      "vc:label": "CUDA"
-    },
-    {
-      "@id": "urn:visionflow:linked:electrical-grid",
-      "vc:label": "Electrical Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:hbm-supply",
-      "vc:label": "HBM Supply"
-    },
-    {
-      "@id": "urn:visionflow:linked:optical-networking",
-      "vc:label": "Optical Networking"
-    },
-    {
-      "@id": "urn:visionflow:linked:rocm",
-      "vc:label": "ROCm"
-    },
-    {
-      "@id": "urn:visionflow:linked:semiconductor-manufacturing",
-      "vc:label": "Semiconductor Manufacturing"
-    },
-    {
-      "@id": "urn:visionflow:linked:tsmc",
-      "vc:label": "TSMC"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:autonomous-systems",
-      "vc:label": "Autonomous Systems"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-modelling",
-      "vc:label": "Climate Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:frontier-model-training",
-      "vc:label": "Frontier Model Training"
-    },
-    {
-      "@id": "urn:visionflow:linked:inference-serving",
-      "vc:label": "Inference Serving"
-    },
-    {
-      "@id": "urn:visionflow:linked:scientific-computing",
-      "vc:label": "Scientific Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-research",
-      "vc:label": "Sovereign Research"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:direct-current-distribution",
-      "vc:label": "Direct Current Distribution"
-    },
-    {
-      "@id": "urn:visionflow:linked:fp4-arithmetic",
-      "vc:label": "FP4 Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:fp8-arithmetic",
-      "vc:label": "FP8 Arithmetic"
-    },
-    {
-      "@id": "urn:visionflow:linked:gpudirect",
-      "vc:label": "GPUDirect"
-    },
-    {
-      "@id": "urn:visionflow:linked:hbm3e",
-      "vc:label": "HBM3e"
-    },
-    {
-      "@id": "urn:visionflow:linked:liquid-cooling",
-      "vc:label": "Liquid Cooling"
-    },
-    {
-      "@id": "urn:visionflow:linked:rdma",
-      "vc:label": "RDMA"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:classical-cloud-compute",
-      "vc:label": "Classical Cloud Compute"
-    },
-    {
-      "@id": "urn:visionflow:linked:cpu-centric-datacentre",
-      "vc:label": "CPU-Centric Datacentre"
-    },
-    {
-      "@id": "urn:visionflow:linked:edge-inference",
-      "vc:label": "Edge Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:fp64-optimised-hpc",
-      "vc:label": "FP64-Optimised HPC"
-    },
-    {
-      "@id": "urn:visionflow:linked:traditional-hpc",
-      "vc:label": "Traditional HPC"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:ai-supply-chain",
-      "vc:label": "AI Supply Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:hyperscaler",
-      "vc:label": "Hyperscaler"
-    },
-    {
-      "@id": "urn:visionflow:linked:nuclear-power",
-      "vc:label": "Nuclear Power"
-    },
-    {
-      "@id": "urn:visionflow:linked:power-grid",
-      "vc:label": "Power Grid"
-    },
-    {
-      "@id": "urn:visionflow:linked:sovereign-ai",
-      "vc:label": "Sovereign AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:cloud-computing",
-      "vc:label": "Cloud Computing"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:infini-band-trade-association",
-      "vc:label": "InfiniBand Trade Association"
-    },
-    {
-      "@id": "urn:visionflow:linked:mlcommons",
-      "vc:label": "MLCommons"
-    },
-    {
-      "@id": "urn:visionflow:linked:open-compute-project",
-      "vc:label": "Open Compute Project"
-    },
-    {
-      "@id": "urn:visionflow:linked:ualink-consortium",
-      "vc:label": "UALink Consortium"
-    },
-    {
-      "@id": "urn:visionflow:linked:ultra-ethernet-consortium",
-      "vc:label": "Ultra Ethernet Consortium"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sovereign-ai",
-      "vc:label": "Sovereign AI"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-companies",
-      "vc:label": "AI Companies"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:training-data",
-      "vc:label": "Training Data"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

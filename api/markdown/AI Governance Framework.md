@@ -188,122 +188,91 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:ai-governance-framework",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:ai-governance-framework",
+  "@type": "Class",
   "label": "AI Governance Framework",
+  "definition": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:ai-governance",
-      "vc:label": "AI Governance"
+      "@id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-policy",
+        "label": "Compliance Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics-checklist",
+        "label": "AI Ethics Checklist"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency-index",
+        "label": "Algorithmic Transparency Index"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-framework",
+        "label": "Ethical Framework"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-transparency",
+        "label": "AI Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-ai-operation",
+        "label": "Ethical AI Operation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d8c20f5d2c4f0f9c8cdce389a97e0ba56494cec86f2b2b61f91fe45381b41ec8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Set of policies and procedures ensuring responsible development and operation of AI components in the metaverse.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:owl:class:governance-model",
-      "vc:label": "Governance Model"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:ai-risk-assessment",
-      "vc:label": "AI Risk Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:audit-mechanism",
-      "vc:label": "Audit Mechanism"
-    },
-    {
-      "@id": "urn:visionflow:linked:compliance-policy",
-      "vc:label": "Compliance Policy"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ai-ethics-checklist",
-      "vc:label": "AI Ethics Checklist"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:algorithmic-transparency-index",
-      "vc:label": "Algorithmic Transparency Index"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:ethical-framework",
-      "vc:label": "Ethical Framework"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:owl:class:access-control",
-      "vc:label": "Access Control"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-governance",
-      "vc:label": "Data Governance"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:ai-accountability",
-      "vc:label": "AI Accountability"
-    },
-    {
-      "@id": "urn:visionflow:linked:ai-transparency",
-      "vc:label": "AI Transparency"
-    },
-    {
-      "@id": "urn:visionflow:linked:ethical-ai-operation",
-      "vc:label": "Ethical AI Operation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:responsible-ai",
-      "vc:label": "Responsible AI"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:policy-framework",
-      "vc:label": "Policy Framework"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-agent-system",
-      "vc:label": "AI Agent System"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

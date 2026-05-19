@@ -3,19 +3,18 @@
   "title": "Trustworthy AI Framework",
   "slug": "trustworthy-ai-framework",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:trustworthy-ai-framework",
+  "classIri": "urn:ngm:class:trustworthy-ai-framework",
   "domain": "artificial-intelligence",
-  "definition": "Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ethical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation. Developed primarily by the EU High-Level Expert Group on AI (2019) and formalized in the EU AI Act (2024), this framework defines trustworthiness through seven key dimensions: human agency and oversight (preserving meaningful human control), technical robustness and safety (ensuring reliable and secure performance), privacy and data governance (protecting personal information and data rights), transparency and explainability (enabling understanding of system operation and decisions), diversity non-discrimination and fairness (ensuring equitable treatment across demographic groups), societal and environmental wellbeing (considering broader impacts on communities and sustainability), and accountability (establishing clear responsibility and redress mechanisms). The framework implements a risk-based approach categorizing AI systems by impact level (unacceptable risk, high risk, limited risk, minima",
+  "definition": "Trustworthy AI Framework is a comprehensive governance and standards framework establishing principles, requirements, and assessment processes to ensure AI systems are lawful, ical, and robust throughout their lifecycle, protecting fundamental rights while enabling beneficial innovation.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "artificial-intelligence"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

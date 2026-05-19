@@ -3,159 +3,307 @@
   "title": "Consortium Blockchain",
   "slug": "consortium-blockchain",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:consortium-blockchain",
+  "classIri": "urn:ngm:class:consortium-blockchain",
   "domain": "blockchain",
-  "definition": "**Consortium Blockchain** is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix \u2014 occupying a deliberate middle position in the trust spectrum between fully public permissionless blockchains ([[Bitcoin]], [[Ethereum]] mainnet, [[Solana]]) where any party may validate and read all state, and fully private internal blockchains operated by a single organisation. The defining structural property is **multi-organisation governance under a hybrid trust model**: validators are known and contractually accountable rather than anonymous, the consensus assumption reduces to an M-of-N honest-majority among a finite committee (typically 4-21 validating organisations) rather than to a probabilistic cryptoeconomic majority among an open validator set, and access policies (transaction submission, channel membership, oracle attestation, smart-contract endorsement) are explicitly negotiated between members rather than enforced by open economic incentives. The four-decade lineage extends from **Practical Byzantine Fault Toleranc",
+  "definition": "Consortium Blockchain is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix \u2014 occupying a deliberate middle position in th...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:federated-system",
+      "id": "urn:ngm:class:federated-system",
       "label": "Federated System"
     },
     {
-      "id": "urn:visionflow:linked:multi-organisation-database",
+      "id": "urn:ngm:class:multi-organisation-database",
       "label": "Multi-Organisation Database"
-    },
-    {
-      "id": "urn:visionflow:owl:class:permissioned-network",
-      "label": "Permissioned Network"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:certificate-authority",
+        "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:visionflow:linked:chaincode-container",
+        "id": "urn:ngm:class:chaincode-container",
         "label": "Chaincode Container"
       },
       {
-        "id": "urn:visionflow:linked:channels-and-private-data-collections",
+        "id": "urn:ngm:class:channels-and-private-data-collections",
         "label": "Channels and Private Data Collections"
       },
       {
-        "id": "urn:visionflow:linked:endorsement-policy",
+        "id": "urn:ngm:class:endorsement-policy",
         "label": "Endorsement Policy"
       },
       {
-        "id": "urn:visionflow:linked:membership-service-provider",
+        "id": "urn:ngm:class:membership-service-provider",
         "label": "Membership Service Provider"
       },
       {
-        "id": "urn:visionflow:linked:notary-service",
+        "id": "urn:ngm:class:notary-service",
         "label": "Notary Service"
       },
       {
-        "id": "urn:visionflow:linked:off-chain-data-store",
+        "id": "urn:ngm:class:off-chain-data-store",
         "label": "Off-Chain Data Store"
       },
       {
-        "id": "urn:visionflow:linked:ordering-service",
+        "id": "urn:ngm:class:ordering-service",
         "label": "Ordering Service"
       },
       {
-        "id": "urn:visionflow:owl:class:validator-node",
+        "id": "urn:ngm:class:validator-node",
         "label": "Validator Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:multi-party-governance",
+        "id": "urn:ngm:class:multi-party-governance",
         "label": "Multi-Party Governance"
       },
       {
-        "id": "urn:visionflow:linked:network-membership-agreement",
+        "id": "urn:ngm:class:network-membership-agreement",
         "label": "Network Membership Agreement"
       },
       {
-        "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management-system",
+        "id": "urn:ngm:class:identity-management-system",
         "label": "Identity Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-infrastructure",
+        "id": "urn:ngm:class:public-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract-platform",
+        "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:atomic-dv-p-settlement",
+        "id": "urn:ngm:class:atomic-dv-p-settlement",
         "label": "Atomic DvP Settlement"
       },
       {
-        "id": "urn:visionflow:linked:regulatory-reporting-automation",
+        "id": "urn:ngm:class:regulatory-reporting-automation",
         "label": "Regulatory Reporting Automation"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:linked:supply-chain-provenance",
+        "id": "urn:ngm:class:supply-chain-provenance",
         "label": "Supply Chain Provenance"
       },
       {
-        "id": "urn:visionflow:linked:tokenised-deposit",
+        "id": "urn:ngm:class:tokenised-deposit",
         "label": "Tokenised Deposit"
       },
       {
-        "id": "urn:visionflow:linked:tokenised-real-world-asset",
+        "id": "urn:ngm:class:tokenised-real-world-asset",
         "label": "Tokenised Real-World Asset"
       },
       {
-        "id": "urn:visionflow:linked:trade-finance-digitisation",
+        "id": "urn:ngm:class:trade-finance-digitisation",
         "label": "Trade Finance Digitisation"
       },
       {
-        "id": "urn:visionflow:linked:wholesale-cbdc",
+        "id": "urn:ngm:class:wholesale-cbdc",
         "label": "Wholesale CBDC"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:crash-fault-tolerant-ordering",
+        "id": "urn:ngm:class:crash-fault-tolerant-ordering",
         "label": "Crash Fault Tolerant Ordering"
       },
       {
-        "id": "urn:visionflow:linked:ibft",
+        "id": "urn:ngm:class:ibft",
         "label": "IBFT"
       },
       {
-        "id": "urn:visionflow:linked:pbft",
+        "id": "urn:ngm:class:pbft",
         "label": "PBFT"
       },
       {
-        "id": "urn:visionflow:linked:qbft",
+        "id": "urn:ngm:class:qbft",
         "label": "QBFT"
       },
       {
-        "id": "urn:visionflow:linked:raft-consensus",
+        "id": "urn:ngm:class:raft-consensus",
         "label": "Raft Consensus"
       },
       {
-        "id": "urn:visionflow:linked:smart-bft",
+        "id": "urn:ngm:class:smart-bft",
         "label": "Smart BFT"
       },
       {
-        "id": "urn:visionflow:owl:class:proof-of-authority",
+        "id": "urn:ngm:class:proof-of-authority",
         "label": "Proof of Authority"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:azure-confidential-consortium-framework",
+        "label": "Azure Confidential Consortium Framework"
+      },
+      {
+        "id": "urn:ngm:class:go-quorum",
+        "label": "GoQuorum"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-iroha",
+        "label": "Hyperledger Iroha"
+      },
+      {
+        "id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:citi-token-services",
+        "label": "Citi Token Services"
+      },
+      {
+        "id": "urn:ngm:class:ebsi",
+        "label": "EBSI"
+      },
+      {
+        "id": "urn:ngm:class:hsbc-orion",
+        "label": "HSBC Orion"
+      },
+      {
+        "id": "urn:ngm:class:ibm-food-trust",
+        "label": "IBM Food Trust"
+      },
+      {
+        "id": "urn:ngm:class:jpmorgan-onyx",
+        "label": "JPMorgan Onyx"
+      },
+      {
+        "id": "urn:ngm:class:kinexys",
+        "label": "Kinexys"
+      },
+      {
+        "id": "urn:ngm:class:medi-ledger",
+        "label": "MediLedger"
+      },
+      {
+        "id": "urn:ngm:class:project-agor",
+        "label": "Project Agor\u00e1"
+      },
+      {
+        "id": "urn:ngm:class:project-m-bridge",
+        "label": "Project mBridge"
+      },
+      {
+        "id": "urn:ngm:class:project-rosalind",
+        "label": "Project Rosalind"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      },
+      {
+        "id": "urn:ngm:class:eth-trust-security-levels",
+        "label": "EthTrust Security Levels"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-foundation",
+        "label": "Hyperledger Foundation"
+      },
+      {
+        "id": "urn:ngm:class:inter-work-alliance-token-taxonomy",
+        "label": "InterWork Alliance Token Taxonomy"
+      },
+      {
+        "id": "urn:ngm:class:iso-22739",
+        "label": "ISO 22739"
+      },
+      {
+        "id": "urn:ngm:class:iso-23257",
+        "label": "ISO 23257"
+      },
+      {
+        "id": "urn:ngm:class:iso-24165",
+        "label": "ISO 24165"
+      },
+      {
+        "id": "urn:ngm:class:iso-tr-23455",
+        "label": "ISO/TR 23455"
+      },
+      {
+        "id": "urn:ngm:class:linux-foundation-decentralized-trust",
+        "label": "Linux Foundation Decentralized Trust"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cbdc",
+        "label": "CBDC"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ]
   },
   "wikilinks": [
     {

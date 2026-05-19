@@ -500,336 +500,259 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:stochastic-process",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:stochastic-process",
+  "@type": "Class",
   "label": "Stochastic Process",
+  "definition": "A stochastic process is a mathematically rigorous framework for describing the probabilistic evolution of a system over time (or another index set), defined formally as a collection of random variables {X_t : t ∈ T} all defined on a common probability space (Ω, ℱ, ℙ) and indexed by a parameter se...",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:linked:dynamical-system",
-      "vc:label": "Dynamical System"
+      "@id": "urn:ngm:class:dynamical-system",
+      "label": "Dynamical System"
     },
     {
-      "@id": "urn:visionflow:linked:mathematical-statistics",
-      "vc:label": "Mathematical Statistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:measure-theory",
-      "vc:label": "Measure Theory"
+      "@id": "urn:ngm:class:mathematical-statistics",
+      "label": "Mathematical Statistics"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "production-ready",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:f1462b35c0d852627a01bd4f7103de8bbbf89f46adbd6d557241d0aed9b4ee28"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:l-vy-process",
+        "label": "Lévy Process"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "@id": "urn:ngm:class:martingale",
+        "label": "Martingale"
+      },
+      {
+        "@id": "urn:ngm:class:ornstein-uhlenbeck-process",
+        "label": "Ornstein-Uhlenbeck Process"
+      },
+      {
+        "@id": "urn:ngm:class:poisson-process",
+        "label": "Poisson Process"
+      },
+      {
+        "@id": "urn:ngm:class:sample-path",
+        "label": "Sample Path"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:wiener-process",
+        "label": "Wiener Process"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:filtration",
+        "label": "Filtration"
+      },
+      {
+        "@id": "urn:ngm:class:it-calculus",
+        "label": "Itô Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "@id": "urn:ngm:class:probability-space",
+        "label": "Probability Space"
+      },
+      {
+        "@id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-integration",
+        "label": "Stochastic Integration"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-derivatives-pricing",
+        "label": "Financial Derivatives Pricing"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      },
+      {
+        "@id": "urn:ngm:class:mcmc-sampling",
+        "label": "MCMC Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:neural-sde",
+        "label": "Neural SDE"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:chapman-kolmogorov-equation",
+        "label": "Chapman-Kolmogorov Equation"
+      },
+      {
+        "@id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      },
+      {
+        "@id": "urn:ngm:class:fokker-planck-equation",
+        "label": "Fokker-Planck Equation"
+      },
+      {
+        "@id": "urn:ngm:class:it-lemma",
+        "label": "Itô Lemma"
+      },
+      {
+        "@id": "urn:ngm:class:kolmogorov-backward-equation",
+        "label": "Kolmogorov Backward Equation"
+      },
+      {
+        "@id": "urn:ngm:class:markov-property",
+        "label": "Markov Property"
+      },
+      {
+        "@id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:it-integral",
+        "label": "Itô Integral"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:wiener-process",
+        "label": "Wiener Process"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiology-modelling",
+        "label": "Epidemiology Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-finance",
+        "label": "Quantitative Finance"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-state-estimation",
+        "label": "Robotics State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:annals-of-probability",
+        "label": "Annals of Probability"
+      },
+      {
+        "@id": "urn:ngm:class:journal-of-the-royal-statistical-society",
+        "label": "Journal of the Royal Statistical Society"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory-and-related-fields",
+        "label": "Probability Theory and Related Fields"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-processes-and-their-applications",
+        "label": "Stochastic Processes and their Applications"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f1462b35c0d852627a01bd4f7103de8bbbf89f46adbd6d557241d0aed9b4ee28@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "A stochastic process is a mathematically rigorous framework for describing the probabilistic evolution of a system over time (or another index set), defined formally as a collection of random variables {X_t : t ∈ T} all defined on a common probability space (Ω, ℱ, ℙ) and indexed by a parameter set T (commonly T = ℝ₊ for continuous time or T = ℕ for discrete time), where each X_t : Ω → S maps from the sample space Ω to the state space S (which may be discrete, continuous, finite, countable, or a function space), with the full collection encoding the joint probabilistic law of all time-marginals and their dependencies. The foundational taxonomy partitions processes by state space and time index: **discrete-time discrete-state** Markov chains governed by transition matrices P = [p_{ij}] where p_{ij} = ℙ(X_{n+1} = j | X_n = i) satisfying the Markov property ℙ(X_{n+1} = j | X_0,...,X_n) = ℙ(X_{n+1} = j | X_n); **continuous-time discrete-state** processes including the Poisson process N(t) ∼ Poisson(λt) with independent increments and rate parameter λ > 0, and continuous-time Markov chains with infinitesimal generator matrix Q = [q_{ij}] where q_{ij} ≥ 0 (i≠j) and ∑_j q_{ij} = 0; **conti",
-  "vc:qualityScore": {
-    "@value": "0.52",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.87",
-    "@type": "xsd:float"
-  },
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:filtration",
-      "vc:label": "Filtration"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaussian-process",
-      "vc:label": "Gaussian Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:l-vy-process",
-      "vc:label": "Lévy Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-chain",
-      "vc:label": "Markov Chain"
-    },
-    {
-      "@id": "urn:visionflow:linked:martingale",
-      "vc:label": "Martingale"
-    },
-    {
-      "@id": "urn:visionflow:linked:ornstein-uhlenbeck-process",
-      "vc:label": "Ornstein-Uhlenbeck Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:poisson-process",
-      "vc:label": "Poisson Process"
-    },
-    {
-      "@id": "urn:visionflow:linked:sample-path",
-      "vc:label": "Sample Path"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-differential-equation",
-      "vc:label": "Stochastic Differential Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:wiener-process",
-      "vc:label": "Wiener Process"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:filtration",
-      "vc:label": "Filtration"
-    },
-    {
-      "@id": "urn:visionflow:linked:it-calculus",
-      "vc:label": "Itô Calculus"
-    },
-    {
-      "@id": "urn:visionflow:linked:measure-theory",
-      "vc:label": "Measure Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-space",
-      "vc:label": "Probability Space"
-    },
-    {
-      "@id": "urn:visionflow:linked:sigma-algebra",
-      "vc:label": "Sigma Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-integration",
-      "vc:label": "Stochastic Integration"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-optimisation",
-      "vc:label": "Bayesian Optimisation"
-    },
-    {
-      "@id": "urn:visionflow:linked:financial-derivatives-pricing",
-      "vc:label": "Financial Derivatives Pricing"
-    },
-    {
-      "@id": "urn:visionflow:linked:gaussian-process-regression",
-      "vc:label": "Gaussian Process Regression"
-    },
-    {
-      "@id": "urn:visionflow:linked:mcmc-sampling",
-      "vc:label": "MCMC Sampling"
-    },
-    {
-      "@id": "urn:visionflow:linked:neural-sde",
-      "vc:label": "Neural SDE"
-    },
-    {
-      "@id": "urn:visionflow:linked:uncertainty-quantification",
-      "vc:label": "Uncertainty Quantification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:reinforcement-learning",
-      "vc:label": "Reinforcement Learning"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:chapman-kolmogorov-equation",
-      "vc:label": "Chapman-Kolmogorov Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:detailed-balance",
-      "vc:label": "Detailed Balance"
-    },
-    {
-      "@id": "urn:visionflow:linked:fokker-planck-equation",
-      "vc:label": "Fokker-Planck Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:it-lemma",
-      "vc:label": "Itô Lemma"
-    },
-    {
-      "@id": "urn:visionflow:linked:kolmogorov-backward-equation",
-      "vc:label": "Kolmogorov Backward Equation"
-    },
-    {
-      "@id": "urn:visionflow:linked:markov-property",
-      "vc:label": "Markov Property"
-    },
-    {
-      "@id": "urn:visionflow:linked:score-matching",
-      "vc:label": "Score Matching"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:differential-equations",
-      "vc:label": "Differential Equations"
-    },
-    {
-      "@id": "urn:visionflow:linked:functional-analysis",
-      "vc:label": "Functional Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:linear-algebra",
-      "vc:label": "Linear Algebra"
-    },
-    {
-      "@id": "urn:visionflow:linked:measure-theory",
-      "vc:label": "Measure Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory",
-      "vc:label": "Probability Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-analysis",
-      "vc:label": "Real Analysis"
-    }
-  ],
-  "vc:supports": [
-    {
-      "@id": "urn:visionflow:linked:bayesian-inference",
-      "vc:label": "Bayesian Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:climate-modelling",
-      "vc:label": "Climate Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:epidemiology-modelling",
-      "vc:label": "Epidemiology Modelling"
-    },
-    {
-      "@id": "urn:visionflow:linked:quantitative-finance",
-      "vc:label": "Quantitative Finance"
-    },
-    {
-      "@id": "urn:visionflow:linked:robotics-state-estimation",
-      "vc:label": "Robotics State Estimation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:generative-ai",
-      "vc:label": "Generative AI"
-    }
-  ],
-  "vc:uses": [
-    {
-      "@id": "urn:visionflow:linked:it-integral",
-      "vc:label": "Itô Integral"
-    },
-    {
-      "@id": "urn:visionflow:linked:kernel-methods",
-      "vc:label": "Kernel Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:monte-carlo-methods",
-      "vc:label": "Monte Carlo Methods"
-    },
-    {
-      "@id": "urn:visionflow:linked:variational-inference",
-      "vc:label": "Variational Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:wiener-process",
-      "vc:label": "Wiener Process"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:stochastic-gradient-descent",
-      "vc:label": "Stochastic Gradient Descent"
-    }
-  ],
-  "vc:contrastsWith": [
-    {
-      "@id": "urn:visionflow:linked:autoregressive-model",
-      "vc:label": "Autoregressive Model"
-    },
-    {
-      "@id": "urn:visionflow:linked:deterministic-dynamical-system",
-      "vc:label": "Deterministic Dynamical System"
-    },
-    {
-      "@id": "urn:visionflow:linked:frequentist-statistics",
-      "vc:label": "Frequentist Statistics"
-    },
-    {
-      "@id": "urn:visionflow:linked:ordinary-differential-equation",
-      "vc:label": "Ordinary Differential Equation"
-    }
-  ],
-  "vc:relatedTo": [
-    {
-      "@id": "urn:visionflow:linked:information-theory",
-      "vc:label": "Information Theory"
-    },
-    {
-      "@id": "urn:visionflow:linked:statistical-physics",
-      "vc:label": "Statistical Physics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:control-theory",
-      "vc:label": "Control Theory"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:deep-learning",
-      "vc:label": "Deep Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ],
-  "vc:standardizedBy": [
-    {
-      "@id": "urn:visionflow:linked:annals-of-probability",
-      "vc:label": "Annals of Probability"
-    },
-    {
-      "@id": "urn:visionflow:linked:journal-of-the-royal-statistical-society",
-      "vc:label": "Journal of the Royal Statistical Society"
-    },
-    {
-      "@id": "urn:visionflow:linked:probability-theory-and-related-fields",
-      "vc:label": "Probability Theory and Related Fields"
-    },
-    {
-      "@id": "urn:visionflow:linked:stochastic-processes-and-their-applications",
-      "vc:label": "Stochastic Processes and their Applications"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:financial-mathematics",
-      "vc:label": "Financial Mathematics"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:diffusion-models",
-      "vc:label": "Diffusion Models"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    }
-  ]
+  "quality": 0.52,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

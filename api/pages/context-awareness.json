@@ -3,90 +3,107 @@
   "title": "Context Awareness",
   "slug": "context-awareness",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:context-awareness",
+  "classIri": "urn:ngm:class:context-awareness",
   "domain": "spatial-computing",
   "definition": "The capability of computing systems to sense, interpret, and respond to environmental conditions, user state, situational factors, and contextual information to dynamically adapt behavior and deliver personalized experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:behavioral-adaptation",
+        "id": "urn:ngm:class:behavioral-adaptation",
         "label": "Behavioral Adaptation"
       },
       {
-        "id": "urn:visionflow:linked:context-modeling",
+        "id": "urn:ngm:class:context-modeling",
         "label": "Context Modeling"
       },
       {
-        "id": "urn:visionflow:linked:environmental-sensing",
+        "id": "urn:ngm:class:environmental-sensing",
         "label": "Environmental Sensing"
       },
       {
-        "id": "urn:visionflow:linked:situational-inference",
+        "id": "urn:ngm:class:situational-inference",
         "label": "Situational Inference"
       },
       {
-        "id": "urn:visionflow:linked:user-state-detection",
+        "id": "urn:ngm:class:user-state-detection",
         "label": "User State Detection"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:decision-logic",
+        "id": "urn:ngm:class:decision-logic",
         "label": "Decision Logic"
       },
       {
-        "id": "urn:visionflow:owl:class:data-processing",
+        "id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
       },
       {
-        "id": "urn:visionflow:owl:class:knowledge-representation",
+        "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
       {
-        "id": "urn:visionflow:owl:class:sensor-fusion",
+        "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-interfaces",
+        "id": "urn:ngm:class:adaptive-interfaces",
         "label": "Adaptive Interfaces"
       },
       {
-        "id": "urn:visionflow:linked:ambient-intelligence",
+        "id": "urn:ngm:class:ambient-intelligence",
         "label": "Ambient Intelligence"
       },
       {
-        "id": "urn:visionflow:linked:personalized-experiences",
+        "id": "urn:ngm:class:personalized-experiences",
         "label": "Personalized Experiences"
       },
       {
-        "id": "urn:visionflow:linked:proactive-services",
+        "id": "urn:ngm:class:proactive-services",
         "label": "Proactive Services"
       },
       {
-        "id": "urn:visionflow:linked:smart-environments",
+        "id": "urn:ngm:class:smart-environments",
         "label": "Smart Environments"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:adaptive-computing",
+        "label": "Adaptive Computing"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent Systems"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

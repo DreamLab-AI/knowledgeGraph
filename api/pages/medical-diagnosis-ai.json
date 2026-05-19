@@ -3,19 +3,18 @@
   "title": "Medical Diagnosis AI",
   "slug": "medical-diagnosis-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:medical-diagnosis-ai",
+  "classIri": "urn:ngm:class:medical-diagnosis-ai",
   "domain": "artificial-intelligence",
-  "definition": "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.",
+  "definition": "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:medical-ai",
+      "id": "urn:ngm:class:medical-ai",
       "label": "Medical AI"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

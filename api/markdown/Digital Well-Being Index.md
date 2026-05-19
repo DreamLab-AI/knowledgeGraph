@@ -224,142 +224,103 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:digital-well-being-index",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:digital-well-being-index",
+  "@type": "Class",
   "label": "Digital Well-Being Index",
+  "definition": "Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:metaverse-governance-and-safeguarding",
-      "vc:label": "Metaverse governance and safeguarding"
+      "@id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:35f17649597538afaf4da773c729b4e78021771e497792bd1c8792dcff78db96"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cognitive-load-measurements",
+        "label": "Cognitive Load Measurements"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-wellness-scores",
+        "label": "Emotional Wellness Scores"
+      },
+      {
+        "@id": "urn:ngm:class:physical-activity-indicators",
+        "label": "Physical Activity Indicators"
+      },
+      {
+        "@id": "urn:ngm:class:screen-time-metrics",
+        "label": "Screen Time Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:sleep-impact-assessment",
+        "label": "Sleep Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:social-engagement-scores",
+        "label": "Social Engagement Scores"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:behavioral-tracking",
+        "label": "Behavioral Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:health-data-integration",
+        "label": "Health Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-analysis-tools",
+        "label": "Temporal Analysis Tools"
+      },
+      {
+        "@id": "urn:ngm:class:usage-analytics",
+        "label": "Usage Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:healthy-engagement-recommendations",
+        "label": "Healthy Engagement Recommendations"
+      },
+      {
+        "@id": "urn:ngm:class:platform-health-reports",
+        "label": "Platform Health Reports"
+      },
+      {
+        "@id": "urn:ngm:class:usage-alerts",
+        "label": "Usage Alerts"
+      },
+      {
+        "@id": "urn:ngm:class:parental-controls",
+        "label": "Parental Controls"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:platform-governance-framework",
+        "label": "Platform Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:user-health-monitoring-system",
+        "label": "User Health Monitoring System"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:35f17649597538afaf4da773c729b4e78021771e497792bd1c8792dcff78db96@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:platform-governance-framework",
-      "vc:label": "Platform Governance Framework"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-health-monitoring-system",
-      "vc:label": "User Health Monitoring System"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:cognitive-load-measurements",
-      "vc:label": "Cognitive Load Measurements"
-    },
-    {
-      "@id": "urn:visionflow:linked:emotional-wellness-scores",
-      "vc:label": "Emotional Wellness Scores"
-    },
-    {
-      "@id": "urn:visionflow:linked:physical-activity-indicators",
-      "vc:label": "Physical Activity Indicators"
-    },
-    {
-      "@id": "urn:visionflow:linked:screen-time-metrics",
-      "vc:label": "Screen Time Metrics"
-    },
-    {
-      "@id": "urn:visionflow:linked:sleep-impact-assessment",
-      "vc:label": "Sleep Impact Assessment"
-    },
-    {
-      "@id": "urn:visionflow:linked:social-engagement-scores",
-      "vc:label": "Social Engagement Scores"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-tracking",
-      "vc:label": "Behavioral Tracking"
-    },
-    {
-      "@id": "urn:visionflow:linked:health-data-integration",
-      "vc:label": "Health Data Integration"
-    },
-    {
-      "@id": "urn:visionflow:linked:temporal-analysis-tools",
-      "vc:label": "Temporal Analysis Tools"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-analytics",
-      "vc:label": "Usage Analytics"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:healthy-engagement-recommendations",
-      "vc:label": "Healthy Engagement Recommendations"
-    },
-    {
-      "@id": "urn:visionflow:linked:platform-health-reports",
-      "vc:label": "Platform Health Reports"
-    },
-    {
-      "@id": "urn:visionflow:linked:usage-alerts",
-      "vc:label": "Usage Alerts"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:parental-controls",
-      "vc:label": "Parental Controls"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-compliance",
-      "vc:label": "Regulatory Compliance"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:activity-logging",
-      "vc:label": "Activity Logging"
-    },
-    {
-      "@id": "urn:visionflow:linked:self-report-surveys",
-      "vc:label": "Self-Report Surveys"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-psychology-profile",
-      "vc:label": "Metaverse Psychology Profile"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:wearable-device-integration",
-      "vc:label": "Wearable Device Integration"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:telecollaboration",
-      "vc:label": "Telecollaboration"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

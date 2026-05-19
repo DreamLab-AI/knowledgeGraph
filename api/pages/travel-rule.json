@@ -3,159 +3,271 @@
   "title": "Travel Rule",
   "slug": "travel-rule",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:travel-rule",
+  "classIri": "urn:ngm:class:travel-rule",
   "domain": "blockchain",
-  "definition": "The **Travel Rule** (formally [[Financial Action Task Force|FATF]] Recommendation 16) is an anti-money-laundering regulatory requirement mandating that [[Virtual Asset Service Provider|Virtual Asset Service Providers]] (VASPs) and custodial financial institutions collect, verify, and transmit originator and beneficiary identifying information alongside qualifying fund transfers \u2014 mirroring wire-transfer transparency obligations first established for banks in 1996 under US Bank Secrecy Act regulations. Originally promulgated by [[FinCEN]] for traditional financial institutions, the rule was extended to virtual assets by the FATF in its June 2019 Interpretive Note to R.16, requiring VASPs to obtain and hold: full legal name; account number or unique transaction reference; and at least one of (physical address; national identity number; customer identification number; date and place of birth) for the originator; and full legal name plus account number or [[Blockchain]] address for the beneficiary. This data must be transmitted to the receiving VASP immediately and securely \u2014 outside the blockchain \u2014 for transfers exceeding jurisdiction-specific thresholds (typically USD/EUR 1,000 per ",
+  "definition": "The Travel Rule (formally [[Financial Action Task Force|FATF]] Recommendation 16) is an anti-money-laundering regulatory requirement mandating that [[Virtual Asset Service Provider|Virtual Asset Service Providers]] (VASPs) and custodial financial institutions collect, verify, and transmit origina...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:anti-money-laundering",
+      "id": "urn:ngm:class:anti-money-laundering",
       "label": "Anti-Money Laundering"
     },
     {
-      "id": "urn:visionflow:linked:counter-terrorist-financing",
+      "id": "urn:ngm:class:counter-terrorist-financing",
       "label": "Counter-Terrorist Financing"
-    },
-    {
-      "id": "urn:visionflow:linked:fatf-recommendation",
-      "label": "FATF Recommendation"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:beneficiary-information-requirement",
+        "id": "urn:ngm:class:beneficiary-information-requirement",
         "label": "Beneficiary Information Requirement"
       },
       {
-        "id": "urn:visionflow:linked:eba-travel-rule-guidelines",
+        "id": "urn:ngm:class:eba-travel-rule-guidelines",
         "label": "EBA Travel Rule Guidelines"
       },
       {
-        "id": "urn:visionflow:linked:ivms-101",
+        "id": "urn:ngm:class:ivms-101",
         "label": "IVMS 101"
       },
       {
-        "id": "urn:visionflow:linked:notabene",
+        "id": "urn:ngm:class:notabene",
         "label": "Notabene"
       },
       {
-        "id": "urn:visionflow:linked:originator-information-requirement",
+        "id": "urn:ngm:class:originator-information-requirement",
         "label": "Originator Information Requirement"
       },
       {
-        "id": "urn:visionflow:linked:self-hosted-wallet-verification",
+        "id": "urn:ngm:class:self-hosted-wallet-verification",
         "label": "Self-Hosted Wallet Verification"
       },
       {
-        "id": "urn:visionflow:linked:sunrise-problem",
+        "id": "urn:ngm:class:sunrise-problem",
         "label": "Sunrise Problem"
       },
       {
-        "id": "urn:visionflow:linked:travel-rule-protocol",
+        "id": "urn:ngm:class:travel-rule-protocol",
         "label": "Travel Rule Protocol"
       },
       {
-        "id": "urn:visionflow:linked:trisa",
+        "id": "urn:ngm:class:trisa",
         "label": "TRISA"
       },
       {
-        "id": "urn:visionflow:linked:vasp-discovery",
+        "id": "urn:ngm:class:vasp-discovery",
         "label": "VASP Discovery"
       },
       {
-        "id": "urn:visionflow:linked:veriscope",
+        "id": "urn:ngm:class:veriscope",
         "label": "Veriscope"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:blockchain-analytics",
+        "id": "urn:ngm:class:blockchain-analytics",
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:visionflow:linked:kyc-verification",
+        "id": "urn:ngm:class:kyc-verification",
         "label": "KYC Verification"
       },
       {
-        "id": "urn:visionflow:linked:record-keeping",
+        "id": "urn:ngm:class:record-keeping",
         "label": "Record Keeping"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-screening",
+        "id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:visionflow:linked:vasp-registration",
+        "id": "urn:ngm:class:vasp-registration",
         "label": "VASP Registration"
       },
       {
-        "id": "urn:visionflow:linked:vasp-to-vasp-messaging",
+        "id": "urn:ngm:class:vasp-to-vasp-messaging",
         "label": "VASP-to-VASP Messaging"
       },
       {
-        "id": "urn:visionflow:linked:virtual-asset-service-provider",
+        "id": "urn:ngm:class:virtual-asset-service-provider",
         "label": "Virtual Asset Service Provider"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:aml-enforcement",
+        "id": "urn:ngm:class:aml-enforcement",
         "label": "AML Enforcement"
       },
       {
-        "id": "urn:visionflow:linked:cross-border-payment-transparency",
+        "id": "urn:ngm:class:cross-border-payment-transparency",
         "label": "Cross-Border Payment Transparency"
       },
       {
-        "id": "urn:visionflow:linked:financial-intelligence",
+        "id": "urn:ngm:class:financial-intelligence",
         "label": "Financial Intelligence"
       },
       {
-        "id": "urn:visionflow:linked:law-enforcement-access",
+        "id": "urn:ngm:class:law-enforcement-access",
         "label": "Law Enforcement Access"
       },
       {
-        "id": "urn:visionflow:linked:sanctions-compliance",
+        "id": "urn:ngm:class:sanctions-compliance",
         "label": "Sanctions Compliance"
       },
       {
-        "id": "urn:visionflow:linked:transaction-tracing",
+        "id": "urn:ngm:class:transaction-tracing",
         "label": "Transaction Tracing"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:bank-secrecy-act",
+        "id": "urn:ngm:class:bank-secrecy-act",
         "label": "Bank Secrecy Act"
       },
       {
-        "id": "urn:visionflow:linked:eba-travel-rule-guidelines",
+        "id": "urn:ngm:class:eba-travel-rule-guidelines",
         "label": "EBA Travel Rule Guidelines"
       },
       {
-        "id": "urn:visionflow:linked:fatf-recommendation-16",
+        "id": "urn:ngm:class:fatf-recommendation-16",
         "label": "FATF Recommendation 16"
       },
       {
-        "id": "urn:visionflow:linked:ivms-101",
+        "id": "urn:ngm:class:ivms-101",
         "label": "IVMS 101"
       },
       {
-        "id": "urn:visionflow:linked:money-laundering-regulations",
+        "id": "urn:ngm:class:money-laundering-regulations",
         "label": "Money Laundering Regulations"
       },
       {
-        "id": "urn:visionflow:linked:transfer-of-funds-regulation",
+        "id": "urn:ngm:class:transfer-of-funds-regulation",
         "label": "Transfer of Funds Regulation"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-address-attribution",
+        "label": "Blockchain Address Attribution"
+      },
+      {
+        "id": "urn:ngm:class:https-messaging",
+        "label": "HTTPS Messaging"
+      },
+      {
+        "id": "urn:ngm:class:ivms-101",
+        "label": "IVMS 101"
+      },
+      {
+        "id": "urn:ngm:class:legal-entity-identifier",
+        "label": "Legal Entity Identifier"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      },
+      {
+        "id": "urn:ngm:class:de-risking-prevention",
+        "label": "De-risking Prevention"
+      },
+      {
+        "id": "urn:ngm:class:financial-intelligence-units",
+        "label": "Financial Intelligence Units"
+      },
+      {
+        "id": "urn:ngm:class:law-enforcement-access",
+        "label": "Law Enforcement Access"
+      },
+      {
+        "id": "urn:ngm:class:ofac-compliance",
+        "label": "OFAC Compliance"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "id": "urn:ngm:class:fca",
+        "label": "FCA"
+      },
+      {
+        "id": "urn:ngm:class:fin-cen",
+        "label": "FinCEN"
+      },
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "id": "urn:ngm:class:gbbc-digital-finance",
+        "label": "GBBC Digital Finance"
+      },
+      {
+        "id": "urn:ngm:class:global-digital-finance",
+        "label": "Global Digital Finance"
+      },
+      {
+        "id": "urn:ngm:class:ivms-101-working-group",
+        "label": "IVMS 101 Working Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:stablecoins",
+        "label": "Stablecoins"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -3,53 +3,57 @@
   "title": "Digital Asset Ecosystem",
   "slug": "digital-asset-ecosystem",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:digital-asset-ecosystem",
+  "classIri": "urn:ngm:class:digital-asset-ecosystem",
   "domain": "spatial-computing",
-  "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure. bridges-to:: [[Blockchain]]",
+  "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralize...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:digital-economy",
+      "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:exchange-platforms",
+        "id": "urn:ngm:class:exchange-platforms",
         "label": "Exchange Platforms"
       },
       {
-        "id": "urn:visionflow:linked:wallet-infrastructure",
+        "id": "urn:ngm:class:wallet-infrastructure",
         "label": "Wallet Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:blockchain-network",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:asset-tokenization",
+        "id": "urn:ngm:class:asset-tokenization",
         "label": "Asset Tokenization"
       },
       {
-        "id": "urn:visionflow:owl:class:de-fi-services",
+        "id": "urn:ngm:class:de-fi-services",
         "label": "DeFi Services"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-ownership",
+        "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

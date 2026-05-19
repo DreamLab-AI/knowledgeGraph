@@ -3,78 +3,91 @@
   "title": "Glossary Index",
   "slug": "glossary-index",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:glossary-index",
+  "classIri": "urn:ngm:class:glossary-index",
   "domain": "spatial-computing",
   "definition": "A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:knowledge-organization-system",
+      "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cross-references",
+        "id": "urn:ngm:class:cross-references",
         "label": "Cross References"
       },
       {
-        "id": "urn:visionflow:linked:synonym-mappings",
+        "id": "urn:ngm:class:synonym-mappings",
         "label": "Synonym Mappings"
       },
       {
-        "id": "urn:visionflow:linked:term-definitions",
+        "id": "urn:ngm:class:term-definitions",
         "label": "Term Definitions"
       },
       {
-        "id": "urn:visionflow:linked:usage-examples",
+        "id": "urn:ngm:class:usage-examples",
         "label": "Usage Examples"
       },
       {
-        "id": "urn:visionflow:owl:class:category-hierarchies",
+        "id": "urn:ngm:class:category-hierarchies",
         "label": "Category Hierarchies"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:multi-language-support",
+        "id": "urn:ngm:class:multi-language-support",
         "label": "Multi-Language Support"
       },
       {
-        "id": "urn:visionflow:owl:class:metaverse-ontology-schema",
+        "id": "urn:ngm:class:metaverse-ontology-schema",
         "label": "Metaverse Ontology Schema"
       },
       {
-        "id": "urn:visionflow:owl:class:skos-vocabulary",
+        "id": "urn:ngm:class:skos-vocabulary",
         "label": "SKOS Vocabulary"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:consistency-checking",
+        "id": "urn:ngm:class:consistency-checking",
         "label": "Consistency Checking"
       },
       {
-        "id": "urn:visionflow:linked:terminology-lookup",
+        "id": "urn:ngm:class:terminology-lookup",
         "label": "Terminology Lookup"
       },
       {
-        "id": "urn:visionflow:owl:class:learning-resources",
+        "id": "urn:ngm:class:learning-resources",
         "label": "Learning Resources"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-search",
+        "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:documentation-system",
+        "label": "Documentation System"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management-infrastructure",
+        "label": "Knowledge Management Infrastructure"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

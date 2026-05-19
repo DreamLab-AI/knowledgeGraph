@@ -3,155 +3,279 @@
   "title": "Decentralized Identifiers",
   "slug": "decentralized-identifiers",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:decentralized-identifiers",
+  "classIri": "urn:ngm:class:decentralized-identifiers",
   "domain": "blockchain",
-  "definition": "A [[W3C]]-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form `did:<method>:<method-specific-id>` controlled directly by their subjects without dependency on centralised registration authorities, certificate authorities, or domain registrars, resolving to JSON-LD or JSON `application/did+ld+json` / `application/did+json` DID Documents containing verification methods (Ed25519, secp256k1, P-256, BLS12-381 G2, JsonWebKey2020, Multikey, BBS+), authentication / assertionMethod / keyAgreement / capabilityInvocation / capabilityDelegation verification relationships, service endpoints (DIDCommMessaging, LinkedDomains, CredentialRegistry), controller, alsoKnownAs and deactivation metadata, implemented across 180+ registered DID methods including web-hosted [[did:web]] (HTTPS-derived, lowest friction, no ledger), self-certifying [[did:key]] (raw multibase-encoded public key, no registry, no rotation), Microsoft Sidetree-on-Bitcoin [[did:ion]] (batched operations via IPFS Content Identifiers, ~80,000 DIDs by 2024 before Microsoft 2024 sunset announcem",
+  "definition": "A [[W3C]]-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form `did:<mod>:<mod-specific-id>` controlled directly by their subjects without dependency on c...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:cryptographic-identifier",
+      "id": "urn:ngm:class:cryptographic-identifier",
       "label": "Cryptographic Identifier"
     },
     {
-      "id": "urn:visionflow:linked:identifier",
+      "id": "urn:ngm:class:identifier",
       "label": "Identifier"
-    },
-    {
-      "id": "urn:visionflow:linked:self-sovereign-identifier",
-      "label": "Self-Sovereign Identifier"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:did-controller",
+        "id": "urn:ngm:class:did-controller",
         "label": "DID Controller"
       },
       {
-        "id": "urn:visionflow:linked:did-document",
+        "id": "urn:ngm:class:did-document",
         "label": "DID Document"
       },
       {
-        "id": "urn:visionflow:linked:did-method",
+        "id": "urn:ngm:class:did-method",
         "label": "DID Method"
       },
       {
-        "id": "urn:visionflow:linked:did-resolver",
+        "id": "urn:ngm:class:did-resolver",
         "label": "DID Resolver"
       },
       {
-        "id": "urn:visionflow:linked:did-url",
+        "id": "urn:ngm:class:did-url",
         "label": "DID URL"
       },
       {
-        "id": "urn:visionflow:linked:service-endpoint",
+        "id": "urn:ngm:class:service-endpoint",
         "label": "Service Endpoint"
       },
       {
-        "id": "urn:visionflow:linked:verification-method",
+        "id": "urn:ngm:class:verification-method",
         "label": "Verification Method"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:did-resolution-protocol",
+        "id": "urn:ngm:class:did-resolution-protocol",
         "label": "DID Resolution Protocol"
       },
       {
-        "id": "urn:visionflow:linked:json-ld",
+        "id": "urn:ngm:class:json-ld",
         "label": "JSON-LD"
       },
       {
-        "id": "urn:visionflow:linked:key-management-system",
+        "id": "urn:ngm:class:key-management-system",
         "label": "Key Management System"
       },
       {
-        "id": "urn:visionflow:owl:class:public-key-cryptography",
+        "id": "urn:ngm:class:public-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-data-registry",
+        "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:pairwise-pseudonymous-identifiers",
+        "id": "urn:ngm:class:pairwise-pseudonymous-identifiers",
         "label": "Pairwise Pseudonymous Identifiers"
       },
       {
-        "id": "urn:visionflow:linked:passwordless-authentication",
+        "id": "urn:ngm:class:passwordless-authentication",
         "label": "Passwordless Authentication"
       },
       {
-        "id": "urn:visionflow:linked:portable-identity",
+        "id": "urn:ngm:class:portable-identity",
         "label": "Portable Identity"
       },
       {
-        "id": "urn:visionflow:linked:selective-disclosure",
+        "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:visionflow:owl:class:self-sovereign-identity",
+        "id": "urn:ngm:class:self-sovereign-identity",
         "label": "Self-Sovereign Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:verifiable-credentials",
+        "id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credentials"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:did-cheqd",
+        "id": "urn:ngm:class:did-cheqd",
         "label": "did:cheqd"
       },
       {
-        "id": "urn:visionflow:linked:did-ethr",
+        "id": "urn:ngm:class:did-ethr",
         "label": "did:ethr"
       },
       {
-        "id": "urn:visionflow:linked:did-indy",
+        "id": "urn:ngm:class:did-indy",
         "label": "did:indy"
       },
       {
-        "id": "urn:visionflow:linked:did-ion",
+        "id": "urn:ngm:class:did-ion",
         "label": "did:ion"
       },
       {
-        "id": "urn:visionflow:linked:did-jwk",
+        "id": "urn:ngm:class:did-jwk",
         "label": "did:jwk"
       },
       {
-        "id": "urn:visionflow:linked:did-key",
+        "id": "urn:ngm:class:did-key",
         "label": "did:key"
       },
       {
-        "id": "urn:visionflow:linked:did-peer",
+        "id": "urn:ngm:class:did-peer",
         "label": "did:peer"
       },
       {
-        "id": "urn:visionflow:linked:did-plc",
+        "id": "urn:ngm:class:did-plc",
         "label": "did:plc"
       },
       {
-        "id": "urn:visionflow:linked:did-web",
+        "id": "urn:ngm:class:did-web",
         "label": "did:web"
       },
       {
-        "id": "urn:visionflow:linked:did-webvh",
+        "id": "urn:ngm:class:did-webvh",
         "label": "did:webvh"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "id": "urn:ngm:class:merkle-logs",
+        "label": "Merkle Logs"
+      },
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anon-creds",
+        "label": "AnonCreds"
+      },
+      {
+        "id": "urn:ngm:class:didcomm-v2",
+        "label": "DIDComm v2"
+      },
+      {
+        "id": "urn:ngm:class:ebsi",
+        "label": "EBSI"
+      },
+      {
+        "id": "urn:ngm:class:european-digital-identity-wallet",
+        "label": "European Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:gov-uk-one-login",
+        "label": "GOV.UK One Login"
+      },
+      {
+        "id": "urn:ngm:class:open-id4-vc",
+        "label": "OpenID4VC"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-stack",
+        "label": "Trust over IP Stack"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "id": "urn:ngm:class:ietf-oauth-working-group",
+        "label": "IETF OAuth Working Group"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-jtc-1-sc-27",
+        "label": "ISO/IEC JTC 1/SC 27"
+      },
+      {
+        "id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-did-working-group",
+        "label": "W3C DID Working Group"
+      },
+      {
+        "id": "urn:ngm:class:w3-c-verifiable-credentials-working-group",
+        "label": "W3C Verifiable Credentials Working Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "id": "urn:ngm:class:soulbound-tokens",
+        "label": "Soulbound Tokens"
+      },
+      {
+        "id": "urn:ngm:class:sovrin-network",
+        "label": "Sovrin Network"
+      },
+      {
+        "id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust over IP Foundation"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "id": "urn:ngm:class:hyperledger-indy",
+        "label": "Hyperledger Indy"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ]
   },
   "wikilinks": [
     {

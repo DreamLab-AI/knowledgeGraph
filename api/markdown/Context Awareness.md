@@ -236,146 +236,107 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:context-awareness",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:context-awareness",
+  "@type": "Class",
   "label": "Context Awareness",
+  "definition": "The capability of computing systems to sense, interpret, and respond to environmental conditions, user state, situational factors, and contextual information to dynamically adapt behavior and deliver personalized experiences.",
+  "domain": "spatial-computing",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:spatial-computing",
-      "vc:label": "spatial-computing"
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "spatial-computing"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "draft",
-  "vc:maturity": "mature",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:04a364eacf6f3ef8d27eeb37f6974ac64cfab30dcc0cef5af57e8c87c9b13169"
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:behavioral-adaptation",
+        "label": "Behavioral Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:context-modeling",
+        "label": "Context Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sensing",
+        "label": "Environmental Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:situational-inference",
+        "label": "Situational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:user-state-detection",
+        "label": "User State Detection"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:decision-logic",
+        "label": "Decision Logic"
+      },
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:adaptive-interfaces",
+        "label": "Adaptive Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:ambient-intelligence",
+        "label": "Ambient Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-experiences",
+        "label": "Personalized Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:proactive-services",
+        "label": "Proactive Services"
+      },
+      {
+        "@id": "urn:ngm:class:smart-environments",
+        "label": "Smart Environments"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:adaptive-computing",
+        "label": "Adaptive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-systems",
+        "label": "Intelligent Systems"
+      }
+    ]
   },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:04a364eacf6f3ef8d27eeb37f6974ac64cfab30dcc0cef5af57e8c87c9b13169@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "The capability of computing systems to sense, interpret, and respond to environmental conditions, user state, situational factors, and contextual information to dynamically adapt behavior and deliver personalized experiences.",
-  "vc:qualityScore": {
-    "@value": "0.35",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:isPartOf": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-computing",
-      "vc:label": "Adaptive Computing"
-    },
-    {
-      "@id": "urn:visionflow:linked:pervasive-computing",
-      "vc:label": "Pervasive Computing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:intelligent-systems",
-      "vc:label": "Intelligent Systems"
-    }
-  ],
-  "vc:hasPart": [
-    {
-      "@id": "urn:visionflow:linked:behavioral-adaptation",
-      "vc:label": "Behavioral Adaptation"
-    },
-    {
-      "@id": "urn:visionflow:linked:context-modeling",
-      "vc:label": "Context Modeling"
-    },
-    {
-      "@id": "urn:visionflow:linked:environmental-sensing",
-      "vc:label": "Environmental Sensing"
-    },
-    {
-      "@id": "urn:visionflow:linked:situational-inference",
-      "vc:label": "Situational Inference"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-state-detection",
-      "vc:label": "User State Detection"
-    }
-  ],
-  "vc:requires": [
-    {
-      "@id": "urn:visionflow:linked:decision-logic",
-      "vc:label": "Decision Logic"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:data-processing",
-      "vc:label": "Data Processing"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:knowledge-representation",
-      "vc:label": "Knowledge Representation"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:machine-learning",
-      "vc:label": "Machine Learning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:sensor-fusion",
-      "vc:label": "Sensor Fusion"
-    }
-  ],
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:adaptive-interfaces",
-      "vc:label": "Adaptive Interfaces"
-    },
-    {
-      "@id": "urn:visionflow:linked:ambient-intelligence",
-      "vc:label": "Ambient Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-experiences",
-      "vc:label": "Personalized Experiences"
-    },
-    {
-      "@id": "urn:visionflow:linked:proactive-services",
-      "vc:label": "Proactive Services"
-    },
-    {
-      "@id": "urn:visionflow:linked:smart-environments",
-      "vc:label": "Smart Environments"
-    }
-  ],
-  "vc:dependsOn": [
-    {
-      "@id": "urn:visionflow:linked:io-t-infrastructure",
-      "vc:label": "IoT Infrastructure"
-    },
-    {
-      "@id": "urn:visionflow:linked:real-time-analytics",
-      "vc:label": "Real-Time Analytics"
-    },
-    {
-      "@id": "urn:visionflow:linked:semantic-reasoning",
-      "vc:label": "Semantic Reasoning"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:edge-computing",
-      "vc:label": "Edge Computing"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:linked:sensor-input",
-      "vc:label": "Sensor Input"
-    }
-  ]
+  "quality": 0.35,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
+  }
 }
 ```
 

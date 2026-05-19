@@ -320,41 +320,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:robot-control",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:robot-control",
+  "@type": "Class",
   "label": "Robot Control",
+  "definition": "Robot Control - The systems, algorithms, and modologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
+  "domain": "robotics",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:robotics-application",
-      "vc:label": "Robotics Application"
+      "@id": "urn:ngm:class:robotics-application",
+      "label": "Robotics Application"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "corrected",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:1eb4a99a80ff425f8769ade5493c234788cecb0c4409177116de1aeaf13a9462"
-  },
-  "vc:inferenceRule": "R5DomainRootFallback",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1eb4a99a80ff425f8769ade5493c234788cecb0c4409177116de1aeaf13a9462@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Robot Control - The systems, algorithms, and methodologies that enable robots to execute tasks autonomously or semi-autonomously through sensing, decision-making, and actuation",
-  "vc:qualityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.92,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R5DomainRootFallback"
   }
 }
 ```

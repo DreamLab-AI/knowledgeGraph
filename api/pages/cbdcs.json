@@ -3,155 +3,275 @@
   "title": "CBDCs",
   "slug": "cbdcs",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cbdcs",
+  "classIri": "urn:ngm:class:cbdcs",
   "domain": "blockchain",
-  "definition": "**Central Bank Digital Currencies (CBDCs)** are sovereign digital money issued directly by a nation's central bank, representing a liability of the issuing central bank rather than a commercial bank or private institution, denominated in the official unit of account (e.g. pounds sterling, euros, yuan), and designed to function as legal tender alongside or in place of physical cash and commercial-bank deposits. CBDCs combine the trust and finality of central-bank money \u2014 which carries zero credit risk, unlike commercial-bank deposits \u2014 with the programmability, traceability, and efficiency of digital payment infrastructure, enabling near-instant settlement, potential offline operation, and conditional or rule-based transaction logic. They are distinguished from [[Stablecoins]] (private issuance, typically collateral-backed) and [[Cryptocurrency]] (decentralised, no central issuer) by the direct liability relationship with a sovereign monetary authority and the absence of algorithmic price stabilisation mechanisms.",
+  "definition": "Central Bank Digital Currencies (CBDCs) are sovereign digital money issued directly by a nation's central bank, representing a liability of the issuing central bank rather than a commercial bank or private institution, denominated in the official unit of account and designed to function as legal ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:central-bank-money",
+      "id": "urn:ngm:class:central-bank-money",
       "label": "Central Bank Money"
     },
     {
-      "id": "urn:visionflow:linked:legal-tender",
+      "id": "urn:ngm:class:legal-tender",
       "label": "Legal Tender"
-    },
-    {
-      "id": "urn:visionflow:linked:payment-instrument",
-      "label": "Payment Instrument"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.52,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "production-ready",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:cbdc-api",
+        "id": "urn:ngm:class:cbdc-api",
         "label": "CBDC API"
       },
       {
-        "id": "urn:visionflow:linked:cbdc-ledger",
+        "id": "urn:ngm:class:cbdc-ledger",
         "label": "CBDC Ledger"
       },
       {
-        "id": "urn:visionflow:linked:cbdc-wallet",
+        "id": "urn:ngm:class:cbdc-wallet",
         "label": "CBDC Wallet"
       },
       {
-        "id": "urn:visionflow:linked:distribution-tier",
+        "id": "urn:ngm:class:distribution-tier",
         "label": "Distribution Tier"
       },
       {
-        "id": "urn:visionflow:linked:offline-cbdc",
+        "id": "urn:ngm:class:offline-cbdc",
         "label": "Offline CBDC"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:linked:retail-cbdc",
+        "id": "urn:ngm:class:retail-cbdc",
         "label": "Retail CBDC"
       },
       {
-        "id": "urn:visionflow:linked:wholesale-cbdc",
+        "id": "urn:ngm:class:wholesale-cbdc",
         "label": "Wholesale CBDC"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:central-bank",
+        "id": "urn:ngm:class:central-bank",
         "label": "Central Bank"
       },
       {
-        "id": "urn:visionflow:linked:financial-regulation",
+        "id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:visionflow:linked:payment-infrastructure",
+        "id": "urn:ngm:class:payment-infrastructure",
         "label": "Payment Infrastructure"
       },
       {
-        "id": "urn:visionflow:owl:class:aml-kyc-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-security",
+        "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:visionflow:owl:class:monetary-sovereignty",
+        "id": "urn:ngm:class:monetary-sovereignty",
         "label": "Monetary Sovereignty"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:cross-border-payments",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross Border Payments"
       },
       {
-        "id": "urn:visionflow:linked:financial-inclusion",
+        "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
-        "id": "urn:visionflow:linked:monetary-policy-transmission",
+        "id": "urn:ngm:class:monetary-policy-transmission",
         "label": "Monetary Policy Transmission"
       },
       {
-        "id": "urn:visionflow:linked:offline-payments",
+        "id": "urn:ngm:class:offline-payments",
         "label": "Offline Payments"
       },
       {
-        "id": "urn:visionflow:linked:programmable-money",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
       {
-        "id": "urn:visionflow:linked:real-time-settlement",
+        "id": "urn:ngm:class:real-time-settlement",
         "label": "Real Time Settlement"
       },
       {
-        "id": "urn:visionflow:linked:smart-contract-execution",
+        "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
       },
       {
-        "id": "urn:visionflow:owl:class:micropayments",
+        "id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:centralised-ledger-design",
+        "id": "urn:ngm:class:centralised-ledger-design",
         "label": "Centralised Ledger Design"
       },
       {
-        "id": "urn:visionflow:linked:dlt-ledger-design",
+        "id": "urn:ngm:class:dlt-ledger-design",
         "label": "DLT Ledger Design"
       },
       {
-        "id": "urn:visionflow:linked:interoperability-protocol",
+        "id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
       },
       {
-        "id": "urn:visionflow:linked:tiered-anonymity",
+        "id": "urn:ngm:class:tiered-anonymity",
         "label": "Tiered Anonymity"
       },
       {
-        "id": "urn:visionflow:linked:two-tier-distribution-model",
+        "id": "urn:ngm:class:two-tier-distribution-model",
         "label": "Two Tier Distribution Model"
       },
       {
-        "id": "urn:visionflow:owl:class:privacy-by-design",
+        "id": "urn:ngm:class:privacy-by-design",
         "label": "Privacy By Design"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-standards",
+        "label": "API Standards"
+      },
+      {
+        "id": "urn:ngm:class:dlt",
+        "label": "DLT"
+      },
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:currency-internationalisation",
+        "label": "Currency Internationalisation"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:payment-efficiency",
+        "label": "Payment Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-enforcement",
+        "label": "Sanctions Enforcement"
+      },
+      {
+        "id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "id": "urn:ngm:class:bis-cpmi-standards",
+        "label": "BIS CPMI Standards"
+      },
+      {
+        "id": "urn:ngm:class:ecb-digital-euro-regulation",
+        "label": "ECB Digital Euro Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
+        "label": "FATF Guidance on Virtual Assets"
+      },
+      {
+        "id": "urn:ngm:class:fsb-cross-border-payments-roadmap",
+        "label": "FSB Cross Border Payments Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:imf-cbdc-framework",
+        "label": "IMF CBDC Framework"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      },
+      {
+        "id": "urn:ngm:class:digital-pound",
+        "label": "Digital Pound"
+      },
+      {
+        "id": "urn:ngm:class:digital-yuan",
+        "label": "Digital Yuan"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:m-bridge",
+        "label": "mBridge"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "id": "urn:ngm:class:project-nexus",
+        "label": "Project Nexus"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
   },
   "wikilinks": [
     {

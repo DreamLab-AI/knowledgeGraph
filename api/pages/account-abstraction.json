@@ -3,115 +3,119 @@
   "title": "Account Abstraction",
   "slug": "account-abstraction",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:account-abstraction",
+  "classIri": "urn:ngm:class:account-abstraction",
   "domain": "blockchain",
-  "definition": "A paradigm shift in Ethereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts (EOAs controlled by private keys) and contract accounts through a novel UserOperation mempool architecture where bundlers aggregate operations into single transactions, paymaster contracts sponsor gas fees enabling gasless user experiences, and EntryPoint singleton contract (deployed at 0x5FF137D4b0FDCD49DcA30c7CF57E578a026d2789 across 30+ EVM chains as of January 2025) validates signatures and executes operations, supporting 2.4 million accounts managing $840 million in assets with 18,000+ daily active wallets, enabling innovations including social recovery through guardian networks (threshold m-of-n approval patterns reducing single-point-of-failure private key loss), session keys for limited-scope permissions (game applications granting temporary transaction authority without full account control), batch transactions reducing 5-8 separate operations into single atomic execution saving",
+  "definition": "A paradigm shift in ereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts ...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:smart-contract",
+      "id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.87,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:account-factory",
+        "id": "urn:ngm:class:account-factory",
         "label": "Account Factory"
       },
       {
-        "id": "urn:visionflow:linked:bundler",
+        "id": "urn:ngm:class:bundler",
         "label": "Bundler"
       },
       {
-        "id": "urn:visionflow:linked:entry-point-contract",
+        "id": "urn:ngm:class:entry-point-contract",
         "label": "EntryPoint Contract"
       },
       {
-        "id": "urn:visionflow:linked:paymaster-contract",
+        "id": "urn:ngm:class:paymaster-contract",
         "label": "Paymaster Contract"
       },
       {
-        "id": "urn:visionflow:linked:signature-aggregator",
+        "id": "urn:ngm:class:signature-aggregator",
         "label": "Signature Aggregator"
       },
       {
-        "id": "urn:visionflow:linked:user-operation",
+        "id": "urn:ngm:class:user-operation",
         "label": "UserOperation"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:evm",
+        "id": "urn:ngm:class:evm",
         "label": "EVM"
       },
       {
-        "id": "urn:visionflow:linked:gas-abstraction",
+        "id": "urn:ngm:class:gas-abstraction",
         "label": "Gas Abstraction"
       },
       {
-        "id": "urn:visionflow:linked:signature-verification",
+        "id": "urn:ngm:class:signature-verification",
         "label": "Signature Verification"
       },
       {
-        "id": "urn:visionflow:owl:class:ethereum",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum"
       },
       {
-        "id": "urn:visionflow:owl:class:smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:account-recovery",
+        "id": "urn:ngm:class:account-recovery",
         "label": "Account Recovery"
       },
       {
-        "id": "urn:visionflow:linked:batch-operations",
+        "id": "urn:ngm:class:batch-operations",
         "label": "Batch Operations"
       },
       {
-        "id": "urn:visionflow:linked:gasless-transactions",
+        "id": "urn:ngm:class:gasless-transactions",
         "label": "Gasless Transactions"
       },
       {
-        "id": "urn:visionflow:linked:programmable-validation",
+        "id": "urn:ngm:class:programmable-validation",
         "label": "Programmable Validation"
       },
       {
-        "id": "urn:visionflow:linked:session-keys",
+        "id": "urn:ngm:class:session-keys",
         "label": "Session Keys"
       },
       {
-        "id": "urn:visionflow:linked:social-recovery",
+        "id": "urn:ngm:class:social-recovery",
         "label": "Social Recovery"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:visionflow:linked:erc-4337",
+        "id": "urn:ngm:class:erc-4337",
         "label": "ERC-4337"
       },
       {
-        "id": "urn:visionflow:linked:gas-sponsorship",
+        "id": "urn:ngm:class:gas-sponsorship",
         "label": "Gas Sponsorship"
       },
       {
-        "id": "urn:visionflow:linked:user-operation-mempool",
+        "id": "urn:ngm:class:user-operation-mempool",
         "label": "UserOperation Mempool"
       },
       {
-        "id": "urn:visionflow:owl:class:account-model",
+        "id": "urn:ngm:class:account-model",
         "label": "Account Model"
       }
     ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

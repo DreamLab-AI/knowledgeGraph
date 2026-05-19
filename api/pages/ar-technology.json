@@ -3,57 +3,61 @@
   "title": "AR Technology",
   "slug": "ar-technology",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:ar-technology",
+  "classIri": "urn:ngm:class:ar-technology",
   "domain": "spatial-computing",
-  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments. Core components include [[AR Registration]], [[Computer Vision]], [[3D Rendering Engine]]s, and [[Sensor Input]] fusion, spanning applications from mobile filters to enterprise industrial systems requiring precise spatial anchoring and persistent content management.",
+  "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:extended-reality",
+      "id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:display-technology",
+        "id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-frame",
+        "id": "urn:ngm:class:ar-frame",
         "label": "AR Frame"
       },
       {
-        "id": "urn:visionflow:owl:class:ar-registration",
+        "id": "urn:ngm:class:ar-registration",
         "label": "AR Registration"
       },
       {
-        "id": "urn:visionflow:owl:class:edge-computing",
+        "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:industrial-guidance",
+        "id": "urn:ngm:class:industrial-guidance",
         "label": "Industrial Guidance"
       },
       {
-        "id": "urn:visionflow:linked:remote-assistance",
+        "id": "urn:ngm:class:remote-assistance",
         "label": "Remote Assistance"
       },
       {
-        "id": "urn:visionflow:linked:spatial-computing-applications",
+        "id": "urn:ngm:class:spatial-computing-applications",
         "label": "Spatial Computing Applications"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

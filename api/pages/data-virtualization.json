@@ -3,53 +3,57 @@
   "title": "Data Virtualization",
   "slug": "data-virtualization",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-virtualization",
+  "classIri": "urn:ngm:class:data-virtualization",
   "domain": "infrastructure",
-  "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reducing data management complexity.",
+  "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reduci...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:data-integration",
+      "id": "urn:ngm:class:data-integration",
       "label": "Data Integration"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:data-connectors",
+        "id": "urn:ngm:class:data-connectors",
         "label": "Data Connectors"
       },
       {
-        "id": "urn:visionflow:linked:query-engine",
+        "id": "urn:ngm:class:query-engine",
         "label": "Query Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:metadata-management",
+        "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-federation",
+        "id": "urn:ngm:class:data-federation",
         "label": "Data Federation"
       },
       {
-        "id": "urn:visionflow:linked:real-time-data-access",
+        "id": "urn:ngm:class:real-time-data-access",
         "label": "Real-Time Data Access"
       },
       {
-        "id": "urn:visionflow:linked:unified-data-view",
+        "id": "urn:ngm:class:unified-data-view",
         "label": "Unified Data View"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

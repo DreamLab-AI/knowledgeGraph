@@ -160,64 +160,49 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:medical-ai",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:medical-ai",
+  "@type": "Class",
   "label": "Medical AI",
+  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
     },
     {
-      "@id": "urn:visionflow:owl:class:healthcare-technology",
-      "vc:label": "Healthcare Technology"
+      "@id": "urn:ngm:class:healthcare-technology",
+      "label": "Healthcare Technology"
     }
   ],
-  "vc:sourceDomain": "artificial-intelligence",
-  "vc:status": "active",
-  "vc:maturity": "production-ready",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-analysis",
+        "label": "Medical Imaging Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:personalized-medicine",
+        "label": "Personalized Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0846d1808c6565e74e664213baa22c0b0584e8a0c7c4ba19fa43d279ee2c99d8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support. As of August 2024, approximately 950 FDA-approved AI/ML medical devices exist, with the global AI healthcare market valued at USD 26.6 billion (2024) projected to reach USD 187 billion by 2030 at ~38.5% CAGR.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.92",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:drug-discovery",
-      "vc:label": "Drug Discovery"
-    },
-    {
-      "@id": "urn:visionflow:linked:medical-imaging-analysis",
-      "vc:label": "Medical Imaging Analysis"
-    },
-    {
-      "@id": "urn:visionflow:linked:personalized-medicine",
-      "vc:label": "Personalized Medicine"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:clinical-decision-support",
-      "vc:label": "Clinical Decision Support"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

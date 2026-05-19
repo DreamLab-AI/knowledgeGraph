@@ -3,82 +3,95 @@
   "title": "Emotional Analytics Engine",
   "slug": "emotional-analytics-engine",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:emotional-analytics-engine",
+  "classIri": "urn:ngm:class:emotional-analytics-engine",
   "domain": "spatial-computing",
   "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:affective-state-predictor",
+        "id": "urn:ngm:class:affective-state-predictor",
         "label": "Affective State Predictor"
       },
       {
-        "id": "urn:visionflow:linked:facial-expression-analyzer",
+        "id": "urn:ngm:class:facial-expression-analyzer",
         "label": "Facial Expression Analyzer"
       },
       {
-        "id": "urn:visionflow:linked:physiological-sensor-processor",
+        "id": "urn:ngm:class:physiological-sensor-processor",
         "label": "Physiological Sensor Processor"
       },
       {
-        "id": "urn:visionflow:linked:sentiment-classification-model",
+        "id": "urn:ngm:class:sentiment-classification-model",
         "label": "Sentiment Classification Model"
       },
       {
-        "id": "urn:visionflow:linked:voice-emotion-detector",
+        "id": "urn:ngm:class:voice-emotion-detector",
         "label": "Voice Emotion Detector"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:privacy-protection",
+        "id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data-stream",
+        "id": "urn:ngm:class:sensor-data-stream",
         "label": "Sensor Data Stream"
       },
       {
-        "id": "urn:visionflow:owl:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-model",
         "label": "Machine Learning Model"
       },
       {
-        "id": "urn:visionflow:owl:class:real-time-processing",
+        "id": "urn:ngm:class:real-time-processing",
         "label": "Real-Time Processing"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:adaptive-user-interface",
+        "id": "urn:ngm:class:adaptive-user-interface",
         "label": "Adaptive User Interface"
       },
       {
-        "id": "urn:visionflow:linked:mental-health-monitoring",
+        "id": "urn:ngm:class:mental-health-monitoring",
         "label": "Mental Health Monitoring"
       },
       {
-        "id": "urn:visionflow:owl:class:emotion-aware-interaction",
+        "id": "urn:ngm:class:emotion-aware-interaction",
         "label": "Emotion-Aware Interaction"
       },
       {
-        "id": "urn:visionflow:owl:class:sentiment-analysis",
+        "id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:affective-computing-system",
+        "label": "Affective Computing System"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-analytics-platform",
+        "label": "User Experience Analytics Platform"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -3,53 +3,62 @@
   "title": "Cryptographic Protocol",
   "slug": "cryptographic-protocol",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-protocol",
+  "classIri": "urn:ngm:class:cryptographic-protocol",
   "domain": "infrastructure",
-  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives. Enabling [[Consensus-Protocol|consensus]], privacy-preserving verification, and trustless multi-party computation across [[Convergence]] domains including [[Blockchain]], [[Collaboration]], and [[Digital-Infrastructure]].",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:security-framework",
-      "label": "Security Framework"
-    }
-  ],
+  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.55,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:encryption-scheme",
+        "id": "urn:ngm:class:encryption-scheme",
         "label": "Encryption-Scheme"
       },
       {
-        "id": "urn:visionflow:owl:class:digital-signature",
+        "id": "urn:ngm:class:digital-signature",
         "label": "Digital-Signature"
       },
       {
-        "id": "urn:visionflow:owl:class:hash-function",
+        "id": "urn:ngm:class:hash-function",
         "label": "Hash-Function"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:blockchain-security",
+        "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain-Security"
       },
       {
-        "id": "urn:visionflow:linked:privacy-preservation",
+        "id": "urn:ngm:class:privacy-preservation",
         "label": "Privacy-Preservation"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-protocol",
+        "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus-Protocol"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

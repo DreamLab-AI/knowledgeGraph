@@ -124,41 +124,24 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:third-party-auditor",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:third-party-auditor",
+  "@type": "Class",
   "label": "Third Party Auditor",
+  "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
+  "domain": "spatial-computing",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:security-services",
-      "vc:label": "Security Services"
+      "@id": "urn:ngm:class:security-services",
+      "label": "Security Services"
     }
   ],
-  "vc:sourceDomain": "spatial-computing",
-  "vc:status": "active",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:2d72b001bdf9a56b52c90a2c8ce776d9f4a5031ebf522f0a997124f29a9df11e"
-  },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2d72b001bdf9a56b52c90a2c8ce776d9f4a5031ebf522f0a997124f29a9df11e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
   }
 }
 ```

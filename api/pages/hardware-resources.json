@@ -3,32 +3,36 @@
   "title": "Hardware Resources",
   "slug": "hardware-resources",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:hardware-resources",
+  "classIri": "urn:ngm:class:hardware-resources",
   "domain": "spatial-computing",
   "definition": "The physical computing infrastructure required for metaverse access and operation, encompassing VR/AR headsets, computing devices, display technologies, tracking sensors, and connectivity hardware that collectively enable immersive virtual experiences.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:computing-infrastructure",
+      "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:metaverse-access",
+        "id": "urn:ngm:class:metaverse-access",
         "label": "Metaverse Access"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

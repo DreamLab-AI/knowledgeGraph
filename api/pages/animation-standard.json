@@ -3,27 +3,31 @@
   "title": "Animation Standard",
   "slug": "animation-standard",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:animation-standard",
+  "classIri": "urn:ngm:class:animation-standard",
   "domain": "spatial-computing",
-  "definition": "Animation Standard is a concept within the metaverse domain. Further enrichment pending.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:spatial-computing",
-      "label": "spatial-computing"
-    }
-  ],
+  "definition": "Animation Standard is a spatial computing concept.",
+  "subClassOf": [],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "spatial-computing"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

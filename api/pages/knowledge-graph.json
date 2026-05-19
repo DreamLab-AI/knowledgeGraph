@@ -3,86 +3,99 @@
   "title": "Knowledge Graph",
   "slug": "knowledge-graph",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:knowledge-graph",
+  "classIri": "urn:ngm:class:knowledge-graph",
   "domain": "spatial-computing",
   "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:spatial-computing",
+      "id": "urn:ngm:class:spatial-computing",
       "label": "spatial-computing"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:entity-node",
+        "id": "urn:ngm:class:entity-node",
         "label": "Entity Node"
       },
       {
-        "id": "urn:visionflow:linked:inference-engine",
+        "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
       },
       {
-        "id": "urn:visionflow:linked:ontology-schema",
+        "id": "urn:ngm:class:ontology-schema",
         "label": "Ontology Schema"
       },
       {
-        "id": "urn:visionflow:linked:relationship-edge",
+        "id": "urn:ngm:class:relationship-edge",
         "label": "Relationship Edge"
       },
       {
-        "id": "urn:visionflow:linked:semantic-property",
+        "id": "urn:ngm:class:semantic-property",
         "label": "Semantic Property"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:ontology",
+        "id": "urn:ngm:class:ontology",
         "label": "Ontology"
       },
       {
-        "id": "urn:visionflow:linked:schema-definition",
+        "id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
       },
       {
-        "id": "urn:visionflow:linked:triple-store",
+        "id": "urn:ngm:class:triple-store",
         "label": "Triple Store"
       },
       {
-        "id": "urn:visionflow:owl:class:graph-database",
+        "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:ai-reasoning",
+        "id": "urn:ngm:class:ai-reasoning",
         "label": "AI Reasoning"
       },
       {
-        "id": "urn:visionflow:linked:knowledge-discovery",
+        "id": "urn:ngm:class:knowledge-discovery",
         "label": "Knowledge Discovery"
       },
       {
-        "id": "urn:visionflow:linked:recommendation-system",
+        "id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation System"
       },
       {
-        "id": "urn:visionflow:owl:class:question-answering",
+        "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
       },
       {
-        "id": "urn:visionflow:owl:class:semantic-search",
+        "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:semantic-web-infrastructure",
+        "label": "Semantic Web Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

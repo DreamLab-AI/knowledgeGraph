@@ -3,32 +3,36 @@
   "title": "Distributed System Architecture",
   "slug": "distributed-system-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:distributed-system-architecture",
+  "classIri": "urn:ngm:class:distributed-system-architecture",
   "domain": "spatial-computing",
-  "definition": "An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting millions of concurrent users.",
+  "definition": "An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting s of concurrent users.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:system-architecture",
+      "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:metaverse-infrastructure",
+        "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Metaverse Infrastructure"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

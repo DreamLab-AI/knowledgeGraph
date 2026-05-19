@@ -3,78 +3,82 @@
   "title": "Robot Learning",
   "slug": "robot-learning",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-learning",
+  "classIri": "urn:ngm:class:robot-learning",
   "domain": "robotics",
-  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.",
+  "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforceme...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
+      "id": "urn:ngm:class:robotics",
       "label": "robotics"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.89,
-  "maturity": "production-ready",
-  "status": "mature",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:self-supervised-learning",
+        "id": "urn:ngm:class:self-supervised-learning",
         "label": "SelfSupervisedLearning"
       },
       {
-        "id": "urn:visionflow:linked:transfer-learning",
+        "id": "urn:ngm:class:transfer-learning",
         "label": "TransferLearning"
       },
       {
-        "id": "urn:visionflow:owl:class:imitation-learning",
+        "id": "urn:ngm:class:imitation-learning",
         "label": "ImitationLearning"
       },
       {
-        "id": "urn:visionflow:owl:class:reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "ReinforcementLearning"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:compute-resources",
+        "id": "urn:ngm:class:compute-resources",
         "label": "ComputeResources"
       },
       {
-        "id": "urn:visionflow:linked:sensor-data",
+        "id": "urn:ngm:class:sensor-data",
         "label": "SensorData"
       },
       {
-        "id": "urn:visionflow:linked:simulation-environment",
+        "id": "urn:ngm:class:simulation-environment",
         "label": "SimulationEnvironment"
       },
       {
-        "id": "urn:visionflow:owl:class:training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "TrainingData"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:skill-acquisition",
+        "id": "urn:ngm:class:skill-acquisition",
         "label": "SkillAcquisition"
       },
       {
-        "id": "urn:visionflow:owl:class:adaptive-control",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "AdaptiveControl"
       },
       {
-        "id": "urn:visionflow:owl:class:autonomous-navigation",
+        "id": "urn:ngm:class:autonomous-navigation",
         "label": "AutonomousNavigation"
       },
       {
-        "id": "urn:visionflow:owl:class:manipulation",
+        "id": "urn:ngm:class:manipulation",
         "label": "Manipulation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

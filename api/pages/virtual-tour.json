@@ -3,19 +3,18 @@
   "title": "Virtual Tour",
   "slug": "virtual-tour",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:virtual-tour",
+  "classIri": "urn:ngm:class:virtual-tour",
   "domain": "spatial-computing",
   "definition": "An interactive 360-degree digital representation of a physical location that enables remote exploration through web browsers or VR headsets, commonly used in real estate, museums, hospitality, and education to provide immersive walkthroughs without physical presence.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:immersive-experience",
+      "id": "urn:ngm:class:immersive-experience",
       "label": "Immersive Experience"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

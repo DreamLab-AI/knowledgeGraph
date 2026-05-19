@@ -3,28 +3,6 @@
   "title": "apicall-not-ok",
   "slug": "apicall-not-ok",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:apicall-not-ok",
-  "domain": "infrastructure",
-  "definition": "apicall-not-ok is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "draft",
-  "status": "stub",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": []
-  },
   "wikilinks": [],
   "backlinks": [
     {

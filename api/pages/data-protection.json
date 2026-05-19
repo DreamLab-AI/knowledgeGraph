@@ -3,86 +3,103 @@
   "title": "Data Protection",
   "slug": "data-protection",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:data-protection",
+  "classIri": "urn:ngm:class:data-protection",
   "domain": "spatial-computing",
   "definition": "A comprehensive set of processes and technologies that safeguard personal and system data in virtual environments through encryption, access control, privacy preservation, and regulatory compliance mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-architecture",
+      "id": "urn:ngm:class:security-architecture",
       "label": "Security Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
-  "maturity": "mature",
-  "status": "draft",
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:visionflow:linked:audit-system",
+        "id": "urn:ngm:class:audit-system",
         "label": "Audit System"
       },
       {
-        "id": "urn:visionflow:linked:data-loss-prevention",
+        "id": "urn:ngm:class:data-loss-prevention",
         "label": "Data Loss Prevention"
       },
       {
-        "id": "urn:visionflow:linked:encryption-service",
+        "id": "urn:ngm:class:encryption-service",
         "label": "Encryption Service"
       },
       {
-        "id": "urn:visionflow:linked:privacy-policy-engine",
+        "id": "urn:ngm:class:privacy-policy-engine",
         "label": "Privacy Policy Engine"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control-system",
+        "id": "urn:ngm:class:access-control-system",
         "label": "Access Control System"
       }
     ],
     "requires": [
       {
-        "id": "urn:visionflow:linked:authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Authentication"
       },
       {
-        "id": "urn:visionflow:linked:authorization",
+        "id": "urn:ngm:class:authorization",
         "label": "Authorization"
       },
       {
-        "id": "urn:visionflow:owl:class:cryptographic-keys",
+        "id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:visionflow:owl:class:identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:data-privacy",
+        "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
       },
       {
-        "id": "urn:visionflow:linked:data-sovereignty",
+        "id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:visionflow:linked:gdpr-compliance",
+        "id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
       },
       {
-        "id": "urn:visionflow:linked:user-trust",
+        "id": "urn:ngm:class:user-trust",
         "label": "User Trust"
       },
       {
-        "id": "urn:visionflow:owl:class:secure-data-sharing",
+        "id": "urn:ngm:class:secure-data-sharing",
         "label": "Secure Data Sharing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      },
+      {
+        "id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      }
+    ],
+    "relatedTo": []
   },
   "wikilinks": [
     {

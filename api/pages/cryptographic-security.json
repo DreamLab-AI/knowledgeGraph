@@ -3,19 +3,18 @@
   "title": "Cryptographic Security",
   "slug": "cryptographic-security",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:cryptographic-security",
+  "classIri": "urn:ngm:class:cryptographic-security",
   "domain": "infrastructure",
-  "definition": "Cryptographic Security is a concept within the metaverse domain. Further enrichment pending.",
+  "definition": "Cryptographic Security is a type of Security Framework in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:security-framework",
+      "id": "urn:ngm:class:security-framework",
       "label": "Security Framework"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

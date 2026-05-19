@@ -3,19 +3,18 @@
   "title": "Robot Actuator",
   "slug": "robot-actuator",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:robot-actuator",
+  "classIri": "urn:ngm:class:robot-actuator",
   "domain": "robotics",
-  "definition": "Robot Actuator is a concept within the robotics domain. Further enrichment pending.",
+  "definition": "Robot Actuator is a type of Hardware Component in the robotics domain.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,17 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "robotics"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

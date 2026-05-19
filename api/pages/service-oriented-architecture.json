@@ -3,32 +3,36 @@
   "title": "Service Oriented Architecture",
   "slug": "service-oriented-architecture",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:service-oriented-architecture",
+  "classIri": "urn:ngm:class:service-oriented-architecture",
   "domain": "spatial-computing",
   "definition": "An architectural style organizing software as loosely coupled, interoperable services that communicate through standardized interfaces, enabling modular composition of metaverse functionality through reusable components and well-defined contracts.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:software-architecture",
+      "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.35,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:owl:class:system-interoperability",
+        "id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

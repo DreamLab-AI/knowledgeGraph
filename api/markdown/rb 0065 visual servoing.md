@@ -108,42 +108,25 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:rb-0065-visual-servoing",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:rb-0065-visual-servoing",
+  "@type": "Class",
   "label": "rb 0065 visual servoing",
+  "definition": "visual servoing is a robotics and autonomous systems concept and a type of Feedback Control.",
+  "domain": "robotics",
+  "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:feedback-control",
-      "vc:label": "Feedback Control"
+      "@id": "urn:ngm:class:feedback-control",
+      "label": "Feedback Control"
     }
   ],
-  "vc:sourceDomain": "robotics",
-  "vc:status": "draft",
-  "vc:maturity": "draft",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:6433494d70801555a905144d7801960a893cc275a91e9bfb99cc2762e31ebb88"
-  },
-  "vc:inferenceRule": "R3SemanticCategoryInference",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6433494d70801555a905144d7801960a893cc275a91e9bfb99cc2762e31ebb88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "definition": "visual servoing is a robotics and autonomous systems concept and a type of Feedback Control."
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:lcr-swarm",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R3SemanticCategoryInference"
+  }
 }
 ```
 

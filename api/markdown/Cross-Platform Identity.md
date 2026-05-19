@@ -136,72 +136,51 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
-  "@id": "urn:visionflow:owl:class:cross-platform-identity",
-  "@type": "OntologyClass",
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:cross-platform-identity",
+  "@type": "Class",
   "label": "Cross-Platform Identity",
+  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries.",
+  "domain": "infrastructure",
+  "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:visionflow:owl:class:identity-management",
-      "vc:label": "Identity Management"
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
     }
   ],
-  "vc:sourceDomain": "infrastructure",
-  "vc:status": "active",
-  "vc:maturity": "reviewed",
-  "vc:definedIn": {
-    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee"
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:federated-access",
+        "label": "Federated Access"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:trust-relationships",
+        "label": "Trust Relationships"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ]
   },
-  "vc:inferenceRule": "R1Explicit",
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ba924e6f43fa0a7c8caa17667dbf183c433e39da5f0b1a1f387c7accfdb4dee@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  },
-  "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries. It enables seamless authentication and authorisation across heterogeneous environments through federated identity management, allowing users to access resources across domains without maintaining separate credentials for each system.",
-  "vc:qualityScore": {
-    "@value": "0.50",
-    "@type": "xsd:float"
-  },
-  "vc:authorityScore": {
-    "@value": "0.00",
-    "@type": "xsd:float"
-  },
-  "vc:enables": [
-    {
-      "@id": "urn:visionflow:linked:federated-access",
-      "vc:label": "Federated Access"
-    },
-    {
-      "@id": "urn:visionflow:linked:single-sign-on",
-      "vc:label": "Single Sign-On"
-    },
-    {
-      "@id": "urn:visionflow:linked:user-experience",
-      "vc:label": "User Experience"
-    }
-  ],
-  "vc:implements": [
-    {
-      "@id": "urn:visionflow:linked:trust-relationships",
-      "vc:label": "Trust Relationships"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:identity-federation",
-      "vc:label": "Identity Federation"
-    }
-  ],
-  "vc:bridgesTo": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    }
-  ]
+  "quality": 0.5,
+  "provenance": {
+    "attributedTo": "did:nostr:jjohare",
+    "generatedAt": "2026-05-18T07:12:05Z",
+    "inferenceRule": "R1Explicit"
+  }
 }
 ```
 

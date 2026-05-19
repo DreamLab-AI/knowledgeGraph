@@ -3,53 +3,57 @@
   "title": "Compatibility Standards",
   "slug": "compatibility-standards",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:compatibility-standards",
+  "classIri": "urn:ngm:class:compatibility-standards",
   "domain": "spatial-computing",
-  "definition": "Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without vendor lock-in.",
+  "definition": "Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without ve...",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:technical-standards",
+      "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.0,
   "maturity": "draft",
-  "status": "active",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:visionflow:linked:industry-collaboration",
+        "id": "urn:ngm:class:industry-collaboration",
         "label": "Industry Collaboration"
       },
       {
-        "id": "urn:visionflow:linked:protocol-development",
+        "id": "urn:ngm:class:protocol-development",
         "label": "Protocol Development"
       },
       {
-        "id": "urn:visionflow:linked:standards-bodies",
+        "id": "urn:ngm:class:standards-bodies",
         "label": "Standards Bodies"
       }
     ],
     "enables": [
       {
-        "id": "urn:visionflow:linked:asset-portability",
+        "id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
       },
       {
-        "id": "urn:visionflow:linked:cross-platform-experience",
+        "id": "urn:ngm:class:cross-platform-experience",
         "label": "Cross-Platform Experience"
       },
       {
-        "id": "urn:visionflow:owl:class:interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

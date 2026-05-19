@@ -3,48 +3,52 @@
   "title": "Medical AI",
   "slug": "medical-ai",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:medical-ai",
+  "classIri": "urn:ngm:class:medical-ai",
   "domain": "artificial-intelligence",
-  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support. As of August 2024, approximately 950 FDA-approved AI/ML medical devices exist, with the global AI healthcare market valued at USD 26.6 billion (2024) projected to reach USD 187 billion by 2030 at ~38.5% CAGR.",
+  "definition": "Medical AI encompasses artificial intelligence and machine learning applications in healthcare for disease detection, diagnosis, treatment planning, and clinical decision support.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:owl:class:artificial-intelligence",
+      "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
-      "id": "urn:visionflow:owl:class:healthcare-technology",
+      "id": "urn:ngm:class:healthcare-technology",
       "label": "Healthcare Technology"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.92,
-  "maturity": "production-ready",
-  "status": "active",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:visionflow:linked:drug-discovery",
+        "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
       },
       {
-        "id": "urn:visionflow:linked:medical-imaging-analysis",
+        "id": "urn:ngm:class:medical-imaging-analysis",
         "label": "Medical Imaging Analysis"
       },
       {
-        "id": "urn:visionflow:linked:personalized-medicine",
+        "id": "urn:ngm:class:personalized-medicine",
         "label": "Personalized Medicine"
       },
       {
-        "id": "urn:visionflow:owl:class:clinical-decision-support",
+        "id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

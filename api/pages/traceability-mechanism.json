@@ -3,19 +3,18 @@
   "title": "Traceability Mechanism",
   "slug": "traceability-mechanism",
   "public": true,
-  "classIri": "urn:visionflow:owl:class:traceability-mechanism",
+  "classIri": "urn:ngm:class:traceability-mechanism",
   "domain": "artificial-intelligence",
-  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging. Traceability addresses a critical challenge in AI governance: when an AI system produces harmful or unexpected outputs, stakeholders must be able to trace back through the causal chain to understand why the system behaved as it did, identify responsible parties, and implement corrective measures. Traceability mechanisms encompass data provenance tracking (recording origins, transformations, and quality of training data), model versioning (maintaining records of architectures, hyperparameters, and training procedures), decision logging (capturing inputs, outputs, and intermediate states for individual predictions), and audit trails (documenting who made what changes when and why). Effective traceability requires balancing competing concerns: comprehensive documentation versus storage and computational costs, transparency versus intellectual property protection, detailed logging versus privacy preservation, and r",
+  "definition": "A Traceability Mechanism is a systematic approach for recording, maintaining, and retrieving comprehensive documentation of an AI system's development process, data lineage, decision-making logic, and operational history to enable accountability, auditability, and debugging.",
   "subClassOf": [
     {
-      "id": "urn:visionflow:linked:ai-governance-principle",
+      "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }
   ],
+  "entityType": "Class",
   "qualityScore": 0.5,
-  "authorityScore": 0.95,
-  "maturity": "mature",
-  "status": "complete",
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -23,7 +22,12 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": []
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {
